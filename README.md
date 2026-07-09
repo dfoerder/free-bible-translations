@@ -72,6 +72,27 @@ python3 tools/normalize.py --check  # nur validieren (Exit-Code ≠ 0 bei Fehler
 `normalize.py` prüft dabei: gültiges JSON, `name` vorhanden, rein numerische
 Kapitel-/Versschlüssel, keine leeren Verse, Anzahl der Bücher.
 
+## Vergleichen & prüfen (`compare.html`)
+
+Zum versweisen Gegenüberstellen von Grundtext und modernisierter Fassung gibt
+es die Seite `compare.html`: Inhaltsverzeichnis (AT/NT) links, zwei Spalten
+nebeneinander, **wortgenaues Hervorheben der Änderungen**, Filter „nur geänderte
+Verse" und eine Änderungs-Statistik pro Kapitel. Das Übersetzungspaar ist oben
+wählbar (Luther, Schlachter, Segond, Riveduta, Reina-Valera).
+
+Sie lädt die JSON-Dateien per `fetch`, braucht also einen lokalen Server
+(direktes Öffnen als Datei blockiert der Browser):
+
+```bash
+python3 -m http.server 8123      # im Projektordner
+# dann im Browser öffnen:
+#   http://localhost:8123/compare.html
+#   http://localhost:8123/compare.html#l1912mod/43/3   (Deep-Link: Joh 3)
+```
+
+Die Seite ist datengetrieben: neue Übersetzungspaare (aus `manifest.json`)
+erscheinen automatisch, sobald ein Eintrag ein `base`-Feld hat.
+
 ## Wie modernisiert wird
 
 Modernisierte Fassungen (`…mod`) entstehen aus dem gemeinfreien Grundtext über

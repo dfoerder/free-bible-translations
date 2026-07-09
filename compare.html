@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bibel-Vergleich · Grundtext ↔ modernisiert</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --line: #e5e7eb;
+    --panel: #f9fafb; --accent: #2563eb; --accent-bg: #eff6ff;
+    --del-bg: #fde8e8; --del-fg: #9b1c1c;
+    --ins-bg: #def7ec; --ins-fg: #03543f;
+    --sidebar-w: 240px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --fg: #e5e7eb; --muted: #9ca3af; --line: #2a2f3a;
+      --panel: #171a21; --accent: #60a5fa; --accent-bg: #1e293b;
+      --del-bg: #3b1d1d; --del-fg: #f8b4b4;
+      --ins-bg: #10291f; --ins-fg: #84e1bc;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--fg); background: var(--bg); display: flex; flex-direction: column; height: 100vh;
+  }
+  header {
+    display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+    padding: 10px 16px; border-bottom: 1px solid var(--line); background: var(--panel);
+  }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; white-space: nowrap; }
+  header .grow { flex: 1; }
+  select, button {
+    font: inherit; color: var(--fg); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 7px; padding: 5px 9px; cursor: pointer;
+  }
+  label.toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; user-select: none; }
+  .layout { display: flex; flex: 1; min-height: 0; }
+  nav {
+    width: var(--sidebar-w); border-right: 1px solid var(--line); overflow-y: auto;
+    padding: 8px 0; background: var(--panel); flex-shrink: 0;
+  }
+  nav .grp { padding: 10px 14px 4px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  nav a {
+    display: block; padding: 5px 14px; color: var(--fg); text-decoration: none; font-size: 14px;
+    border-left: 3px solid transparent; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  nav a:hover { background: var(--accent-bg); }
+  nav a.active { background: var(--accent-bg); border-left-color: var(--accent); font-weight: 600; }
+  main { flex: 1; overflow-y: auto; padding: 0 0 40px; min-width: 0; }
+  .chapbar {
+    position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line);
+    padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  }
+  .chapbar .title { font-weight: 600; margin-right: 8px; }
+  .chapbar .stat { color: var(--muted); font-size: 13px; margin-left: auto; }
+  .chip {
+    min-width: 30px; text-align: center; padding: 3px 8px; border: 1px solid var(--line);
+    border-radius: 6px; background: var(--bg); cursor: pointer; font-size: 13px;
+  }
+  .chip:hover { background: var(--accent-bg); }
+  .chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .colhead, .row { display: grid; grid-template-columns: 52px 1fr 1fr; gap: 0; }
+  .colhead {
+    position: sticky; top: 49px; z-index: 4; background: var(--panel);
+    border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); font-weight: 600;
+  }
+  .colhead > div { padding: 8px 14px; }
+  .row { border-bottom: 1px solid var(--line); }
+  .row:hover { background: var(--panel); }
+  .row.changed { background: color-mix(in srgb, var(--accent-bg) 45%, transparent); }
+  .row.changed:hover { background: var(--accent-bg); }
+  .row > div { padding: 8px 14px; }
+  .vn { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; text-align: right; padding-right: 12px; user-select: none; }
+  .src { border-right: 1px solid var(--line); }
+  .missing { color: var(--muted); font-style: italic; }
+  del.df { background: var(--del-bg); color: var(--del-fg); text-decoration: none; border-radius: 3px; }
+  ins.df { background: var(--ins-bg); color: var(--ins-fg); text-decoration: none; border-radius: 3px; }
+  .empty-state { padding: 48px; text-align: center; color: var(--muted); }
+  @media (max-width: 720px) {
+    nav { position: fixed; inset: 0 auto 0 0; z-index: 20; transform: translateX(-100%); transition: transform .2s; box-shadow: 2px 0 12px rgba(0,0,0,.2); }
+    body.nav-open nav { transform: none; }
+    .colhead, .row { grid-template-columns: 40px 1fr; }
+    .src { border-right: none; border-bottom: 1px dashed var(--line); }
+    .colhead .dst { display: none; }
+    #menuBtn { display: inline-block; }
+  }
+  #menuBtn { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <button id="menuBtn" title="Bücher">☰</button>
+  <h1>Bibel-Vergleich</h1>
+  <select id="pairSel" title="Übersetzung"></select>
+  <label class="toggle"><input type="checkbox" id="onlyChanged"> nur geänderte Verse</label>
+  <label class="toggle"><input type="checkbox" id="diffOn" checked> Unterschiede hervorheben</label>
+  <span class="grow"></span>
+</header>
+<div class="layout">
+  <nav id="toc"></nav>
+  <main id="main"><div class="empty-state">Lade …</div></main>
+</div>
+<script>
+const state = { pairs: [], books: [], byNum: {}, pair: null, book: null, chapter: null,
+                onlyChanged: false, diff: true, cache: {} };
+
+// ---------- Daten laden ----------
+async function loadJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${url}: ${r.status}`);
+  return r.json();
+}
+
+async function init() {
+  let manifest, books;
+  try {
+    [manifest, books] = await Promise.all([loadJSON('manifest.json'), loadJSON('books.json')]);
+  } catch (e) {
+    document.getElementById('main').innerHTML =
+      `<div class="empty-state">Konnte Daten nicht laden (${e.message}).<br>
+       Läuft die Seite über einen lokalen Server?<br>
+       <code>python3 -m http.server</code> im Projektordner starten,
+       dann <code>http://localhost:8000/compare.html</code> öffnen.</div>`;
+    return;
+  }
+  state.books = books;
+  books.forEach(b => state.byNum[b.number] = b);
+
+  // Paare aus dem Manifest: jede "modernized"-Übersetzung mit ihrem Grundtext
+  const byId = {}; manifest.translations.forEach(t => byId[t.id] = t);
+  state.pairs = manifest.translations
+    .filter(t => t.type === 'modernized' && byId[t.base])
+    .map(t => ({
+      lang: t.lang, src: t.base, dst: t.id,
+      srcName: byId[t.base].name, dstName: t.name,
+      langName: manifest.languages[t.lang] || t.lang,
+    }));
+
+  const sel = document.getElementById('pairSel');
+  state.pairs.forEach((p, i) => {
+    const o = document.createElement('option');
+    o.value = i; o.textContent = `${p.langName} · ${p.srcName}`;
+    sel.appendChild(o);
+  });
+
+  sel.onchange = () => { selectPair(+sel.value); pushHash(); };
+  document.getElementById('onlyChanged').onchange = e => { state.onlyChanged = e.target.checked; render(); };
+  document.getElementById('diffOn').onchange = e => { state.diff = e.target.checked; render(); };
+  document.getElementById('menuBtn').onclick = () => document.body.classList.toggle('nav-open');
+  window.addEventListener('hashchange', applyHash);
+
+  applyHash();
+}
+
+function selectPair(i) {
+  state.pair = state.pairs[i];
+  document.getElementById('pairSel').value = i;
+  buildTOC();
+}
+
+// ---------- Inhaltsverzeichnis ----------
+function buildTOC() {
+  const toc = document.getElementById('toc');
+  toc.innerHTML = '';
+  const lang = state.pair.lang;
+  for (const [test, label] of [['OT', 'Altes Testament'], ['NT', 'Neues Testament']]) {
+    const h = document.createElement('div'); h.className = 'grp'; h.textContent = label; toc.appendChild(h);
+    state.books.filter(b => b.testament === test).forEach(b => {
+      const a = document.createElement('a');
+      a.textContent = b.name[lang] || b.name.eng;
+      a.dataset.num = b.number;
+      a.onclick = () => { openBook(b.number, 1); pushHash(); document.body.classList.remove('nav-open'); };
+      toc.appendChild(a);
+    });
+  }
+  markActiveBook();
+}
+function markActiveBook() {
+  document.querySelectorAll('#toc a').forEach(a =>
+    a.classList.toggle('active', +a.dataset.num === state.book));
+}
+
+// ---------- Buch/Kapitel laden ----------
+async function openBook(num, chap) {
+  state.book = num;
+  markActiveBook();
+  const p = state.pair;
+  const key = `${p.lang}/${p.src}/${p.dst}/${num}`;
+  const main = document.getElementById('main');
+  if (!state.cache[key]) {
+    main.innerHTML = '<div class="empty-state">Lade Buch …</div>';
+    try {
+      const [srcData, dstData] = await Promise.all([
+        loadJSON(`${p.lang}/${p.src}/${num}_${p.src}.json`),
+        loadJSON(`${p.lang}/${p.dst}/${num}_${p.dst}.json`),
+      ]);
+      state.cache[key] = { srcData, dstData };
+    } catch (e) {
+      main.innerHTML = `<div class="empty-state">Fehler: ${e.message}</div>`;
+      return;
+    }
+  }
+  const chaps = Object.keys(state.cache[key].srcData.chapters).map(Number).sort((a, b) => a - b);
+  state.chapter = chaps.includes(chap) ? chap : chaps[0];
+  render();
+}
+
+// ---------- Wort-Diff ----------
+const TOK = /\s+|[0-9A-Za-zÀ-ÖØ-öø-ÿäöüÄÖÜß]+|[^\s0-9A-Za-zÀ-ÖØ-öø-ÿäöüÄÖÜß]+/g;
+function tokenize(s) { return s.match(TOK) || []; }
+function esc(s) { return s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c])); }
+
+function diffOps(a, b) {
+  const n = a.length, m = b.length;
+  const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+  for (let i = n - 1; i >= 0; i--)
+    for (let j = m - 1; j >= 0; j--)
+      dp[i][j] = a[i] === b[j] ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+  const ops = []; let i = 0, j = 0;
+  while (i < n && j < m) {
+    if (a[i] === b[j]) { ops.push(['eq', a[i]]); i++; j++; }
+    else if (dp[i + 1][j] >= dp[i][j + 1]) { ops.push(['del', a[i++]]); }
+    else { ops.push(['ins', b[j++]]); }
+  }
+  while (i < n) ops.push(['del', a[i++]]);
+  while (j < m) ops.push(['ins', b[j++]]);
+  return ops;
+}
+function renderDiff(srcText, dstText) {
+  if (!state.diff) return [esc(srcText), esc(dstText)];
+  const ops = diffOps(tokenize(srcText), tokenize(dstText));
+  let s = '', d = '';
+  for (const [t, tok] of ops) {
+    const e = esc(tok);
+    if (t === 'eq') { s += e; d += e; }
+    else if (t === 'del') { s += `<del class="df">${e}</del>`; }
+    else { d += `<ins class="df">${e}</ins>`; }
+  }
+  return [s, d];
+}
+
+// ---------- Rendern ----------
+function render() {
+  if (state.book == null) {
+    document.getElementById('main').innerHTML =
+      '<div class="empty-state">Ein Buch aus dem Inhaltsverzeichnis wählen.</div>';
+    return;
+  }
+  const p = state.pair;
+  const key = `${p.lang}/${p.src}/${p.dst}/${state.book}`;
+  const { srcData, dstData } = state.cache[key];
+  const chaps = Object.keys(srcData.chapters).map(Number).sort((a, b) => a - b);
+  const c = String(state.chapter);
+  const sVerses = srcData.chapters[c] || {};
+  const dVerses = dstData.chapters[c] || {};
+  const vnums = [...new Set([...Object.keys(sVerses), ...Object.keys(dVerses)])].map(Number).sort((a, b) => a - b);
+
+  let changed = 0;
+  const rows = vnums.map(v => {
+    const st = sVerses[v] ?? '', dt = dVerses[v] ?? '';
+    const isChanged = st.trim() !== dt.trim();
+    if (isChanged) changed++;
+    return { v, st, dt, isChanged };
+  });
+
+  const bookName = state.byNum[state.book].name[p.lang] || srcData.name;
+  const main = document.getElementById('main');
+
+  let html = `<div class="chapbar">
+    <span class="title">${esc(bookName)}</span>
+    ${chaps.map(n => `<span class="chip ${n === state.chapter ? 'active' : ''}" data-c="${n}">${n}</span>`).join('')}
+    <span class="stat">${changed} von ${rows.length} Versen geändert</span>
+  </div>
+  <div class="colhead"><div class="vn"></div><div class="src">${esc(p.srcName)}</div><div class="dst">${esc(p.dstName)}</div></div>`;
+
+  const visible = state.onlyChanged ? rows.filter(r => r.isChanged) : rows;
+  if (!visible.length) {
+    html += `<div class="empty-state">${state.onlyChanged ? 'Keine geänderten Verse in diesem Kapitel.' : 'Kapitel ist leer.'}</div>`;
+  } else {
+    for (const r of visible) {
+      const [sHtml, dHtml] = renderDiff(r.st, r.dt);
+      const src = r.st ? sHtml : '<span class="missing">—</span>';
+      const dst = r.dt ? dHtml : '<span class="missing">—</span>';
+      html += `<div class="row ${r.isChanged ? 'changed' : ''}">
+        <div class="vn">${r.v}</div><div class="src">${src}</div><div class="dst">${dst}</div></div>`;
+    }
+  }
+  main.innerHTML = html;
+  main.scrollTop = 0;
+  main.querySelectorAll('.chip').forEach(ch =>
+    ch.onclick = () => { state.chapter = +ch.dataset.c; render(); pushHash(); });
+}
+
+// ---------- URL-Hash (Deep-Links / Lesezeichen) ----------
+function pushHash() {
+  const p = state.pair;
+  const h = state.book ? `#${p.dst}/${state.book}/${state.chapter}` : `#${p.dst}`;
+  if (location.hash !== h) history.replaceState(null, '', h);
+}
+function applyHash() {
+  const parts = (location.hash.replace(/^#/, '')).split('/').filter(Boolean);
+  let idx = 0;
+  if (parts[0]) { const i = state.pairs.findIndex(p => p.dst === parts[0]); if (i >= 0) idx = i; }
+  selectPair(idx);
+  if (parts[1]) openBook(+parts[1], +parts[2] || 1);
+  else render();
+}
+
+init();
+</script>
+</body>
+</html>

@@ -8,3 +8,6 @@ __pycache__/
 # Batch-Status & Secrets (nicht einchecken)
 tools/.modernize_state.json
 .env
+
+# lokale, maschinenspezifische Claude-Settings
+.claude/settings.local.json
