@@ -15,11 +15,16 @@ sodass sie sich leicht in Apps, Websites oder Skripten weiterverwenden lassen.
 | Deutsch | `sch1951mod` | Schlachter 1951 (modernisiert) | leicht modernisiert | 66 Bücher |
 | Deutsch | `l1912` | Luther 1912 | Grundtext | 66 Bücher, 31171 Verse |
 | Deutsch | `l1912mod` | Luther 1912 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `l1912`) |
+| English | `web` | World English Bible | Grundtext (bereits modern) | 66 Bücher, 31095 Verse |
+| Français | `lsg1910` | Louis Segond 1910 | Grundtext | 66 Bücher, 31169 Verse |
+| Français | `lsg1910mod` | Louis Segond 1910 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `lsg1910`) |
+| Italiano | `riv1927` | Riveduta (Luzzi) 1927 | Grundtext | 66 Bücher, 31039 Verse |
+| Italiano | `riv1927mod` | Riveduta (Luzzi) 1927 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `riv1927`) |
+| Español | `rv1909` | Reina-Valera 1909 | Grundtext | 66 Bücher, 31084 Verse |
+| Español | `rv1909mod` | Reina-Valera 1909 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `rv1909`) |
 
-Weitere gemeinfreie Übersetzungen (Englisch, Französisch, Italienisch,
-Spanisch) sind im Schwesterprojekt `../bible-reader` vorbereitet und können
-übernommen werden — siehe `manifest.json` → `planned` und die
-[Roadmap](#roadmap).
+Insgesamt **11 Übersetzungen in 5 Sprachen** (726 Buchdateien). Zur Lizenz-/
+Gemeinfreiheitslage jeder Übersetzung: siehe unten.
 
 Zur Lizenz-/Gemeinfreiheitslage jeder Übersetzung: **[SOURCES.md](SOURCES.md)**.
 
@@ -102,7 +107,7 @@ Buchbereiche sind frei wählbar (`40-43`, `1`, `1-66`), `--skip-existing`
       Public Domain; versgenau deckungsgleich mit `l1912mod`).
 - [ ] `sch1951mod` mit der vollen Pipeline neu erzeugen (aktuell nur leicht,
       d. h. uneinheitlich zu `l1912mod`).
-- [ ] Weitere Sprachen übernehmen: `eng/web`, `fra/lsg1910(mod)`,
+- [x] Weitere Sprachen übernommen: `eng/web`, `fra/lsg1910(mod)`,
       `ita/riv1927(mod)`, `spa/rv1909(mod)`.
 - [ ] Projektlizenz für die Sammlung/Bearbeitungen festlegen.
 

@@ -24,7 +24,7 @@ Zwei leere Platzhalter-Verse der englischen Zählung (5. Mose 29:29, Maleachi 4:
 wurden entfernt; dadurch ist der Text **versgenau deckungsgleich** mit `l1912mod`
 (66 Bücher, 31171 Verse, deutsche Maleachi-Zählung mit 3 Kapiteln).
 
-## Weitere Sprachen (im App-Repo vorbereitet, noch nicht in dieser Sammlung)
+## Weitere Sprachen (in dieser Sammlung enthalten)
 
 | ID | Übersetzung | Grundtext gemeinfrei? | Begründung |
 |----|-------------|-----------------------|------------|
