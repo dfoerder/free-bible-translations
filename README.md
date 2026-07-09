@@ -101,6 +101,10 @@ deutschsprachigen System-Prompt. Leitlinien: Rechtschreibung angleichen,
 veraltete Wörter ersetzen, Schachtelsätze auflösen, **Ton bewahren, inhaltlich
 treu bleiben, nichts hinzufügen oder weglassen, Eigennamen behalten**.
 
+**Das genaue Konzept — welche Regeln gelten und Vorher/Nachher-Beispiele —
+steht in [MODERNIZATION.md](MODERNIZATION.md).** Die maßgebliche, ausführbare
+Fassung ist der System-Prompt in [`tools/modernize_submit.py`](tools/modernize_submit.py).
+
 ```bash
 export ANTHROPIC_API_KEY=sk-ant-...
 
