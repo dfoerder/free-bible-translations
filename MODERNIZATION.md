@@ -36,7 +36,8 @@ Leser (auch Nicht-Muttersprachler)."* — mit diesen Regeln:
    - `erkannte sie (nicht)` → schlief (nicht) mit ihr
    - weitere veraltete Ausdrücke sinngemäß
 3. **Satzbau vereinfachen** — lange Schachtelsätze in kürzere, klare Sätze teilen.
-4. **Ton bewahren** — würdevoll und biblisch, aber klar verständlich.
+4. **Natürliche, heutige Sprache** — klar und verständlich; **kein** altertümlicher
+   oder gehoben-„biblischer" Ton, sondern so, wie man heute normal schreibt.
 5. **Inhaltlich treu bleiben** — keine theologischen Änderungen, keine
    Ergänzungen, nichts weglassen.
 6. **Eigennamen beibehalten** wie im Original.

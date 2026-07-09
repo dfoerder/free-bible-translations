@@ -98,8 +98,9 @@ erscheinen automatisch, sobald ein Eintrag ein `base`-Feld hat.
 Modernisierte Fassungen (`…mod`) entstehen aus dem gemeinfreien Grundtext über
 die **Anthropic Batch-API** (50 % günstiger), kapitelweise, mit einem
 deutschsprachigen System-Prompt. Leitlinien: Rechtschreibung angleichen,
-veraltete Wörter ersetzen, Schachtelsätze auflösen, **Ton bewahren, inhaltlich
-treu bleiben, nichts hinzufügen oder weglassen, Eigennamen behalten**.
+veraltete Wörter ersetzen, Schachtelsätze auflösen, **natürliche heutige Sprache
+(kein biblischer Ton), inhaltlich treu bleiben, nichts hinzufügen oder weglassen,
+Eigennamen behalten**.
 
 **Das genaue Konzept — welche Regeln gelten und Vorher/Nachher-Beispiele —
 steht in [MODERNIZATION.md](MODERNIZATION.md).** Die maßgebliche, ausführbare

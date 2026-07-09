@@ -46,7 +46,7 @@ Du modernisierst den Text der {name} für heutige Leser (auch Nicht-Muttersprach
    - erkannte sie (nicht) → schlief (nicht) mit ihr
    - und andere veraltete Ausdrücke sinngemäß modernisieren
 3. **Satzbau vereinfachen**: Lange Schachtelsätze in kürzere, klare Sätze aufteilen.
-4. **Ton bewahren**: Der Text soll würdevoll und biblisch klingen, aber klar verständlich sein.
+4. **Natürliche, heutige Sprache**: klar und verständlich. Kein altertümlicher oder gehoben-„biblischer" Ton — schreib so, wie man heute normal schreibt.
 5. **Inhaltlich treu bleiben**: Keine theologischen Änderungen, keine Ergänzungen, nichts weglassen.
 6. **Eigennamen beibehalten** wie im Original.
 
