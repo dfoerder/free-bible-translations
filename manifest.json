@@ -11,6 +11,17 @@
   },
   "translations": [
     {
+      "id": "l1912",
+      "lang": "deu",
+      "name": "Luther 1912",
+      "year": 1912,
+      "type": "source",
+      "publicDomain": true,
+      "license": "Gemeinfrei (Lutherbibel Revision 1912).",
+      "source": "Beblia Holy-Bible-XML-Format (GermanLuther1912Bible.xml), Public Domain",
+      "status": "vollständig (66 Bücher, 31171 Verse); versgenau deckungsgleich mit l1912mod"
+    },
+    {
       "id": "sch1951",
       "lang": "deu",
       "name": "Schlachter 1951",
@@ -34,13 +45,13 @@
       "id": "l1912mod",
       "lang": "deu",
       "name": "Luther 1912 (modernisiert)",
-      "base": "Luther 1912 (l1912)",
+      "base": "l1912",
       "type": "modernized",
       "method": "voll — Anthropic Batch-API, Rechtschreibung + veraltete Wörter + Satzbau",
       "model": "claude-sonnet-4-20250514",
       "publicDomain": true,
       "license": "Basistext Luther 1912 ist gemeinfrei.",
-      "status": "vollständig (66 Bücher). Hinweis: der l1912-Quelltext liegt in dieser Sammlung noch nicht bei."
+      "status": "vollständig (66 Bücher, 31171 Verse)"
     }
   ],
   "planned": {

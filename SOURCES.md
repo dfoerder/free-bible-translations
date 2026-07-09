@@ -13,8 +13,16 @@ Grundtexte (siehe [README.md](README.md) → „Wie modernisiert wird").
 
 | ID | Übersetzung | Grundtext gemeinfrei? | Begründung |
 |----|-------------|-----------------------|------------|
-| `l1912mod` | Luther 1912 (modernisiert) | **Ja** | Die Lutherbibel in der Revision von 1912 wird durchgängig als gemeinfrei behandelt; der Text ist weit über 100 Jahre alt. |
+| `l1912` / `l1912mod` | Luther 1912 (Grundtext / modernisiert) | **Ja** | Die Lutherbibel in der Revision von 1912 wird durchgängig als gemeinfrei behandelt; der Text ist weit über 100 Jahre alt. |
 | `sch1951` / `sch1951mod` | Schlachter 1951 | **Zu prüfen** | Franz Eugen Schlachter (†1911) schuf die Urfassung (1905, gemeinfrei). Die **Revision 1951** wurde von späteren Bearbeitern (Genfer Bibelgesellschaft) erstellt; deren Schutzfrist (70 Jahre nach Tod des jeweiligen Bearbeiters) ist möglicherweise **noch nicht abgelaufen**. Status daher unklar. |
+
+### Herkunft `deu/l1912`
+
+Der Grundtext wurde aus dem Repository **Beblia/Holy-Bible-XML-Format**
+(`GermanLuther1912Bible.xml`, dort als „Public Domain" ausgewiesen) importiert.
+Zwei leere Platzhalter-Verse der englischen Zählung (5. Mose 29:29, Maleachi 4:1)
+wurden entfernt; dadurch ist der Text **versgenau deckungsgleich** mit `l1912mod`
+(66 Bücher, 31171 Verse, deutsche Maleachi-Zählung mit 3 Kapiteln).
 
 ## Weitere Sprachen (im App-Repo vorbereitet, noch nicht in dieser Sammlung)
 

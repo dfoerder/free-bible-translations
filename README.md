@@ -13,7 +13,8 @@ sodass sie sich leicht in Apps, Websites oder Skripten weiterverwenden lassen.
 |---------|----|-------------|-----|-------|
 | Deutsch | `sch1951` | Schlachter 1951 | Grundtext | 66 Bücher |
 | Deutsch | `sch1951mod` | Schlachter 1951 (modernisiert) | leicht modernisiert | 66 Bücher |
-| Deutsch | `l1912mod` | Luther 1912 (modernisiert) | voll modernisiert | 66 Bücher |
+| Deutsch | `l1912` | Luther 1912 | Grundtext | 66 Bücher, 31171 Verse |
+| Deutsch | `l1912mod` | Luther 1912 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `l1912`) |
 
 Weitere gemeinfreie Übersetzungen (Englisch, Französisch, Italienisch,
 Spanisch) sind im Schwesterprojekt `../bible-reader` vorbereitet und können
@@ -97,8 +98,8 @@ Buchbereiche sind frei wählbar (`40-43`, `1`, `1-66`), `--skip-existing`
 
 - [ ] Rechtelage klären, offene Punkte in [SOURCES.md](SOURCES.md) auflösen
       (v. a. Schlachter 1951).
-- [ ] Luther-1912-**Grundtext** (`deu/l1912`) mit in die Sammlung aufnehmen
-      (bisher nur die modernisierte Fassung vorhanden).
+- [x] Luther-1912-**Grundtext** (`deu/l1912`) aufgenommen (Quelle: Beblia,
+      Public Domain; versgenau deckungsgleich mit `l1912mod`).
 - [ ] `sch1951mod` mit der vollen Pipeline neu erzeugen (aktuell nur leicht,
       d. h. uneinheitlich zu `l1912mod`).
 - [ ] Weitere Sprachen übernehmen: `eng/web`, `fra/lsg1910(mod)`,
