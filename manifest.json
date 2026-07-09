@@ -1,0 +1,55 @@
+{
+  "schema": "bibles-translations/manifest@1",
+  "description": "Sammlung gemeinfreier, für heutige Leser modernisierter Bibelübersetzungen. Ordnerpfad je Übersetzung: <lang>/<id>/ mit 66 Buchdateien <nr>_<id>.json.",
+  "canonicalFormat": "JSON, UTF-8, json.dumps(obj, ensure_ascii=False, indent=0) — ein Vers pro Zeile.",
+  "languages": {
+    "deu": "Deutsch",
+    "eng": "English",
+    "fra": "Français",
+    "ita": "Italiano",
+    "spa": "Español"
+  },
+  "translations": [
+    {
+      "id": "sch1951",
+      "lang": "deu",
+      "name": "Schlachter 1951",
+      "year": 1951,
+      "type": "source",
+      "publicDomain": "unklar",
+      "license": "Zu prüfen — Rechtelage der Revision 1951 nicht eindeutig gemeinfrei; siehe SOURCES.md.",
+      "status": "vollständig (66 Bücher)"
+    },
+    {
+      "id": "sch1951mod",
+      "lang": "deu",
+      "name": "Schlachter 1951 (modernisiert)",
+      "base": "sch1951",
+      "type": "modernized",
+      "method": "leicht — v. a. Rechtschreibung (z. B. ward→wurde); NICHT die volle KI-Pipeline",
+      "publicDomain": "folgt Basistext (unklar)",
+      "status": "vollständig, aber uneinheitlich zur KI-Pipeline — Neu-Modernisierung empfohlen"
+    },
+    {
+      "id": "l1912mod",
+      "lang": "deu",
+      "name": "Luther 1912 (modernisiert)",
+      "base": "Luther 1912 (l1912)",
+      "type": "modernized",
+      "method": "voll — Anthropic Batch-API, Rechtschreibung + veraltete Wörter + Satzbau",
+      "model": "claude-sonnet-4-20250514",
+      "publicDomain": true,
+      "license": "Basistext Luther 1912 ist gemeinfrei.",
+      "status": "vollständig (66 Bücher). Hinweis: der l1912-Quelltext liegt in dieser Sammlung noch nicht bei."
+    }
+  ],
+  "planned": {
+    "note": "Im App-Repo (../bible-reader/bibles) liegen zusätzlich vorbereitete Übersetzungen, die in diese Sammlung übernommen werden können.",
+    "translations": [
+      "eng/web (World English Bible, gemeinfrei — bereits modernes Englisch)",
+      "fra/lsg1910 + lsg1910mod (Louis Segond 1910, gemeinfrei)",
+      "ita/riv1927 + riv1927mod (Riveduta/Luzzi 1927, gemeinfrei)",
+      "spa/rv1909 + rv1909mod (Reina-Valera 1909, gemeinfrei)"
+    ]
+  }
+}

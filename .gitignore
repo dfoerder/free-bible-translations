@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Batch-Status & Secrets (nicht einchecken)
+tools/.modernize_state.json
+.env
