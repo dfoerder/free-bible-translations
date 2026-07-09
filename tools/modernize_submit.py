@@ -101,7 +101,7 @@ def main():
     ap.add_argument("--src", required=True, help="Quell-Übersetzungs-ID, z. B. l1912")
     ap.add_argument("--dst", required=True, help="Ziel-Übersetzungs-ID, z. B. l1912mod")
     ap.add_argument("--name", required=True, help="Anzeigename für den Prompt, z. B. 'Luther-Bibel von 1912'")
-    ap.add_argument("--model", default=os.environ.get("MODERNIZE_MODEL", "claude-sonnet-4-20250514"))
+    ap.add_argument("--model", default=os.environ.get("MODERNIZE_MODEL", "claude-opus-4-8"))
     ap.add_argument("--skip-existing", action="store_true")
     ap.add_argument("books", nargs="+", help="Buchbereiche, z. B. 1-66 oder 40-43 1")
     args = ap.parse_args()

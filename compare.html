@@ -142,7 +142,7 @@ async function init() {
   const sel = document.getElementById('pairSel');
   state.pairs.forEach((p, i) => {
     const o = document.createElement('option');
-    o.value = i; o.textContent = `${p.langName} · ${p.srcName}`;
+    o.value = i; o.textContent = `${p.langName} · ${p.srcName} → ${p.dstName}`;
     sel.appendChild(o);
   });
 

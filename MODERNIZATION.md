@@ -7,7 +7,9 @@ entstehen — und nach welchen Regeln `l1912mod` konkret erzeugt wurde.
 
 - Der Grundtext wird **kapitelweise** an ein KI-Modell (Anthropic Claude) über
   die **Batch-API** gegeben, zusammen mit dem unten stehenden System-Prompt.
-- Modell für `l1912mod`: `claude-sonnet-4-20250514`.
+- Modell: `claude-opus-4-8` (Standard der Pipeline). Das bestehende `l1912mod`
+  wurde noch mit `claude-sonnet-4-20250514` und der alten Ton-Regel erzeugt und
+  wird bei einem Neulauf ersetzt.
 - Das Modell gibt nur modernisierte Verse zurück (JSON), Versnummern bleiben
   erhalten → die modernisierte Fassung ist **versgenau deckungsgleich** mit dem
   Grundtext (bei `l1912` geprüft: 0 Abweichungen, 31171 Verse).
