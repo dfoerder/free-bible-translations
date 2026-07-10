@@ -97,9 +97,9 @@
       "name": "Riveduta (Luzzi) 1927 (modernisiert)",
       "base": "riv1927",
       "type": "modernized",
-      "method": "voll — Anthropic Batch-API",
+      "method": "minimal — nur zwei Wortersetzungen (Iddio→Dio, Figliuolo→Figlio); ~85% der Verse sind byte-identisch mit riv1927. KEINE echte Sprachmodernisierung (Satzbau/Apostroph-Archaismen wie de’/s’ unverändert) — Neu-Modernisierung mit dem vollen Konzept steht aus.",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit riv1927"
+      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit riv1927, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
     },
     {
       "id": "rv1909",
@@ -120,6 +120,16 @@
       "method": "leicht — nur Rechtschreibung der Orthographie von 1909 (fué→fue, vió→vio, á→a); ~55% der Verse sind byte-identisch mit rv1909. KEINE echte Sprachmodernisierung (Wortschatz/Satzbau unverändert) — Neu-Modernisierung mit dem vollen Konzept steht aus.",
       "publicDomain": true,
       "status": "vollständig (66 Bücher); versgenau deckungsgleich mit rv1909, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
+    },
+    {
+      "id": "rv1909mod_neu",
+      "lang": "spa",
+      "name": "Reina-Valera 1909 (Test: volle Modernisierung)",
+      "base": "rv1909",
+      "type": "modernized",
+      "method": "TESTLAUF — voller Ansatz analog zum deutschen Konzept (natürliches heutiges Spanisch, kein archaischer Ton), von Claude direkt erstellt (kein Batch-Lauf); nur Mateo (Buch 40) Kapitel 1-5",
+      "publicDomain": true,
+      "status": "TEST — nur Mateo 1-5 (138 Verse), nicht Teil der Sammlung"
     }
   ]
 }
