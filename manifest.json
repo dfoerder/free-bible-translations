@@ -117,9 +117,9 @@
       "name": "Reina-Valera 1909 (modernisiert)",
       "base": "rv1909",
       "type": "modernized",
-      "method": "voll — Anthropic Batch-API",
+      "method": "leicht — nur Rechtschreibung der Orthographie von 1909 (fué→fue, vió→vio, á→a); ~55% der Verse sind byte-identisch mit rv1909. KEINE echte Sprachmodernisierung (Wortschatz/Satzbau unverändert) — Neu-Modernisierung mit dem vollen Konzept steht aus.",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit rv1909"
+      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit rv1909, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
     }
   ]
 }
