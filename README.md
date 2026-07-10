@@ -14,7 +14,7 @@ sodass sie sich leicht in Apps, Websites oder Skripten weiterverwenden lassen.
 | Deutsch | `sch1951` | Schlachter 1951 | Grundtext | 66 Bücher |
 | Deutsch | `sch1951mod` | Schlachter 1951 (modernisiert) | leicht modernisiert | 66 Bücher |
 | Deutsch | `l1912` | Luther 1912 | Grundtext | 66 Bücher, 31171 Verse |
-| Deutsch | `l1912mod` | Luther 1912 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `l1912`) — **NT (40–66) + Pentateuch (1–5) im neuen Stil fertig, Bücher 6–39 noch im alten Stil** |
+| Deutsch | `l1912mod` | Luther 1912 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `l1912`) |
 | English | `web` | World English Bible | Grundtext (bereits modern) | 66 Bücher, 31095 Verse |
 | Français | `lsg1910` | Louis Segond 1910 | Grundtext | 66 Bücher, 31169 Verse |
 | Français | `lsg1910mod` | Louis Segond 1910 (modernisiert) | voll modernisiert | 66 Bücher (versgenau zu `lsg1910`) |
@@ -136,9 +136,9 @@ Buchbereiche sind frei wählbar (`40-43`, `1`, `1-66`), `--skip-existing`
       siehe [MODERNIZATION.md](MODERNIZATION.md)).
 - [x] `l1912mod` — **Pentateuch** (Bücher 1–5, 1. Mose bis 5. Mose) ebenso
       neu modernisiert.
-- [ ] `l1912mod` — **restliches Altes Testament** (Bücher 6–39, Josua bis
-      Maleachi) mit demselben Konzept neu modernisieren (aktuell noch älteres
-      Verfahren/Ton).
+- [x] `l1912mod` — **restliches Altes Testament** (Bücher 6–39, Josua bis
+      Maleachi) mit demselben Konzept neu modernisiert. `l1912mod` ist damit
+      komplett (alle 66 Bücher im einheitlichen neuen Stil).
 - [ ] `sch1951mod` mit der vollen Pipeline neu erzeugen (aktuell nur leicht,
       d. h. uneinheitlich zu `l1912mod`).
 - [x] Weitere Sprachen übernommen: `eng/web`, `fra/lsg1910(mod)`,

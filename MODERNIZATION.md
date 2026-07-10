@@ -9,14 +9,12 @@ entstehen — und nach welchen Regeln `l1912mod` konkret erzeugt wurde.
   die **Batch-API** gegeben, zusammen mit dem unten stehenden System-Prompt.
 - Modell: `claude-sonnet-5` (Standard der Pipeline — günstiger als Opus, für
   diese Textmenge das bessere Kosten/Nutzen-Verhältnis).
-- **Aktueller Stand von `l1912mod` ist gemischt:** **Neues Testament**
-  (Bücher 40–66) und **Pentateuch** (Bücher 1–5, 1.–5. Mose) wurden komplett
-  mit dem aktuellen Konzept (Regel 4 = natürliche heutige Sprache, kein
-  biblischer Ton) neu modernisiert, mit `claude-opus-4-8` bzw.
-  `claude-sonnet-5`. Die restlichen Bücher 6–39 (Josua bis Maleachi) stammen
-  noch aus dem ursprünglichen Lauf mit `claude-sonnet-4-20250514` und der
-  älteren Ton-Regel („würdevoll und biblisch") — eine Neu-Modernisierung ist
-  geplant (siehe [README](README.md) → Roadmap).
+- **`l1912mod` ist vollständig mit dem aktuellen Konzept modernisiert:** alle
+  66 Bücher (Regel 4 = natürliche heutige Sprache, kein biblischer Ton), mit
+  `claude-opus-4-8` bzw. `claude-sonnet-5`. Neues Testament (40–66) und
+  Pentateuch (1–5) wurden zuerst modernisiert und vom Nutzer per
+  Vergleichstool geprüft; die restlichen Bücher 6–39 (Josua bis Maleachi)
+  folgten anschließend nach demselben Konzept.
 - Das Modell gibt nur modernisierte Verse zurück (JSON), Versnummern bleiben
   erhalten → die modernisierte Fassung ist **versgenau deckungsgleich** mit dem
   Grundtext (bei `l1912` geprüft: 0 Abweichungen, 31171 Verse).
@@ -59,13 +57,11 @@ Leser (auch Nicht-Muttersprachler)."* — mit diesen Regeln:
 | Ton + Satzbau (Johannes 3:3, NT — neuer Stil) | **Wahrlich, wahrlich**, ich sage dir: Es sei denn, **daß** jemand von neuem geboren werde… | **Ich versichere dir:** Wer nicht neu geboren wird, kann… |
 | Ton (Markus 16:6, NT — neuer Stil) | Er aber **sprach** zu ihnen: **Entsetzt euch nicht!**… **Siehe da** die Stätte… | Er **sagte** zu ihnen: **Erschreckt nicht!**… **Hier ist** die Stelle… |
 | Zahlwort (4. Mose 1:46, Pentateuch — neuer Stil) | …**sechsmal hunderttausend und dreitausend fünfhundertundfünfzig**. | …**sechshundertdreitausendfünfhundertfünfzig**. (Wert unverändert, nur moderne Schreibweise) |
-| Rechtschreibung (Josua 1:9, Bücher 6–39 — noch alter Stil) | **Siehe**, ich habe dir geboten, **daß** du getrost und freudig seist. **Laß** dir nicht grauen… | **Siehe**, ich habe dir geboten, **dass** du getrost und freudig seist. **Lass** dir nicht grauen… (nur Rechtschreibung, Ton/Satzbau unverändert) |
+| Ton + Satzbau (Josua 1:9, Bücher 6–39 — neuer Stil) | **Siehe**, ich habe dir geboten, **daß** du getrost und freudig seist. **Laß** dir nicht grauen und entsetze dich nicht… | Ich habe dir befohlen, mutig und stark zu sein. **Hab keine Angst** und lass dich nicht entmutigen… |
 
-Die Beispiele aus Büchern 6–39 zeigen den **noch nicht neu modernisierten**
-Stand (Regeln 1–3 und 5–6 galten schon vorher; nur Regel 4, der Ton, war
-anders — „Siehe" und der Satzbau bleiben dort noch altertümlich). Die
-Pentateuch- und NT-Beispiele zeigen den **aktuellen** Stand nach der
-Neu-Modernisierung.
+Alle Beispiele oben zeigen den **aktuellen, einheitlichen Stand** nach der
+Neu-Modernisierung — Pentateuch, NT und die restlichen Bücher 6–39 folgen
+demselben Konzept (Regel 4 = natürliche heutige Sprache, kein biblischer Ton).
 
 **Bekannte kleine Inkonsistenz:** Bei großen Zahlen (v. a. in 4. Mose) schreiben
 manche Kapitel sie in moderner Zusammenschreibung („sechshundertdreitausend"),

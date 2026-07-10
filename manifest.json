@@ -47,10 +47,10 @@
       "name": "Luther 1912 (modernisiert)",
       "base": "l1912",
       "type": "modernized",
-      "method": "gemischter Stand — NT (Bücher 40-66) und Pentateuch (Bücher 1-5) neu modernisiert mit natürlicher heutiger Sprache (kein biblischer Ton), Modelle claude-opus-4-8/claude-sonnet-5; restliches AT (Bücher 6-39, Josua bis Maleachi) noch mit älterem Verfahren (claude-sonnet-4-20250514, altes würdevoll-biblisches Ton-Konzept) — Neu-Modernisierung geplant, siehe README Roadmap",
+      "method": "komplett neu modernisiert mit natürlicher heutiger Sprache (kein biblischer Ton), Modelle claude-opus-4-8/claude-sonnet-5",
       "publicDomain": true,
       "license": "Basistext Luther 1912 ist gemeinfrei.",
-      "status": "vollständig (66 Bücher, 31171 Verse); versgenau deckungsgleich mit l1912. NT + Pentateuch fertig im neuen Stil, Bücher 6-39 noch im alten Stil."
+      "status": "vollständig (66 Bücher, 31171 Verse); versgenau deckungsgleich mit l1912. Alle 66 Bücher im einheitlichen neuen Stil."
     },
     {
       "id": "web",
