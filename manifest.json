@@ -47,11 +47,10 @@
       "name": "Luther 1912 (modernisiert)",
       "base": "l1912",
       "type": "modernized",
-      "method": "voll — Anthropic Batch-API, Rechtschreibung + veraltete Wörter + Satzbau",
-      "model": "claude-sonnet-4-20250514",
+      "method": "gemischter Stand — NT (Bücher 40-66) neu modernisiert mit natürlicher heutiger Sprache (kein biblischer Ton), Modelle claude-opus-4-8/claude-sonnet-5; AT (Bücher 1-39) noch mit älterem Verfahren (claude-sonnet-4-20250514, altes würdevoll-biblisches Ton-Konzept) — Neu-Modernisierung des AT geplant, siehe README Roadmap",
       "publicDomain": true,
       "license": "Basistext Luther 1912 ist gemeinfrei.",
-      "status": "vollständig (66 Bücher, 31171 Verse)"
+      "status": "vollständig (66 Bücher, 31171 Verse); versgenau deckungsgleich mit l1912. NT fertig im neuen Stil, AT noch im alten Stil."
     },
     {
       "id": "web",

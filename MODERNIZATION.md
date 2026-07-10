@@ -8,9 +8,14 @@ entstehen — und nach welchen Regeln `l1912mod` konkret erzeugt wurde.
 - Der Grundtext wird **kapitelweise** an ein KI-Modell (Anthropic Claude) über
   die **Batch-API** gegeben, zusammen mit dem unten stehenden System-Prompt.
 - Modell: `claude-sonnet-5` (Standard der Pipeline — günstiger als Opus, für
-  diese Textmenge das bessere Kosten/Nutzen-Verhältnis). Das bestehende
-  `l1912mod` wurde noch mit `claude-sonnet-4-20250514` und der alten Ton-Regel
-  erzeugt und wird bei einem Neulauf ersetzt.
+  diese Textmenge das bessere Kosten/Nutzen-Verhältnis).
+- **Aktueller Stand von `l1912mod` ist gemischt:** Das **Neue Testament**
+  (Bücher 40–66) wurde komplett mit dem aktuellen Konzept (Regel 4 = natürliche
+  heutige Sprache, kein biblischer Ton) neu modernisiert, mit `claude-opus-4-8`
+  bzw. `claude-sonnet-5`. Das **Alte Testament** (Bücher 1–39) stammt noch aus
+  dem ursprünglichen Lauf mit `claude-sonnet-4-20250514` und der älteren
+  Ton-Regel („würdevoll und biblisch") — eine Neu-Modernisierung ist geplant
+  (siehe [README](README.md) → Roadmap).
 - Das Modell gibt nur modernisierte Verse zurück (JSON), Versnummern bleiben
   erhalten → die modernisierte Fassung ist **versgenau deckungsgleich** mit dem
   Grundtext (bei `l1912` geprüft: 0 Abweichungen, 31171 Verse).
@@ -49,10 +54,15 @@ Leser (auch Nicht-Muttersprachler)."* — mit diesen Regeln:
 
 | Regel | Grundtext (Luther 1912) | modernisiert |
 |-------|-------------------------|--------------|
-| Rechtschreibung (1. Mose 1:5) | …Da **ward** aus Abend und Morgen der erste Tag. | …Da **wurde** aus Abend und Morgen der erste Tag. |
-| Wörter + Satzbau (Johannes 3:16) | **Also**… geliebt, **daß**… gab, **auf daß** alle… | **So**… geliebt, **dass**… gab, **damit** alle… |
-| Veraltetes Wort (1. Mose 2:24) | …an seinem **Weibe hangen**… | …seiner **Frau anhangen**… |
-| Genealogie (1. Mose 5:6) | …**zeugte** Enos | …**war der Vater von** Enos. |
+| Rechtschreibung (1. Mose 1:5, AT — alter Stil) | …Da **ward** aus Abend und Morgen der erste Tag. | …Da **wurde** aus Abend und Morgen der erste Tag. |
+| Veraltetes Wort (1. Mose 2:24, AT — alter Stil) | …an seinem **Weibe hangen**… | …seiner **Frau anhangen**… |
+| Genealogie (1. Mose 5:6, AT — alter Stil) | …**zeugte** Enos | …**war der Vater von** Enos. |
+| Ton + Satzbau (Johannes 3:3, NT — neuer Stil) | **Wahrlich, wahrlich**, ich sage dir: Es sei denn, **daß** jemand von neuem geboren werde… | **Ich versichere dir:** Wer nicht neu geboren wird, kann… |
+| Ton (Markus 16:6, NT — neuer Stil) | Er aber **sprach** zu ihnen: **Entsetzt euch nicht!**… **Siehe da** die Stätte… | Er **sagte** zu ihnen: **Erschreckt nicht!**… **Hier ist** die Stelle… |
+
+Die AT-Beispiele zeigen den **noch nicht neu modernisierten** Stand (Regeln 1–3
+und 5–6 galten schon vorher; nur Regel 4, der Ton, war anders). Die NT-Beispiele
+zeigen den **aktuellen** Stand nach der Neu-Modernisierung.
 
 Alle Änderungen lassen sich versweise in [`compare.html`](compare.html) mit
 wortgenauem Diff nachvollziehen.
