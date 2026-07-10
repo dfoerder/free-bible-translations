@@ -77,9 +77,9 @@
       "name": "Louis Segond 1910 (modernisiert)",
       "base": "lsg1910",
       "type": "modernized",
-      "method": "voll — Anthropic Batch-API",
+      "method": "Wortglossar — ca. 15 archaische Begriffe systematisch ersetzt (sacrificateur→prêtre, postérité→descendance, holocauste→sacrifice brûlé, sépulcre→tombeau, iniquité→injustice, publicain→collecteur d’impôts, u.a.); ~96,6% der Verse sind byte-identisch mit lsg1910. KEIN Satzumbau, archaische Formeln wie 'voici' unverändert — keine echte Sprachmodernisierung, Neu-Modernisierung mit dem vollen Konzept steht aus.",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit lsg1910"
+      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit lsg1910, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
     },
     {
       "id": "riv1927",
