@@ -12,6 +12,10 @@ Beispiele:
   # nur Evangelien, anderes Modell, schon Vorhandenes überspringen:
   python3 tools/modernize_submit.py --lang deu --src l1912 --dst l1912mod \\
       --name "Luther-Bibel von 1912" --model claude-sonnet-5 --skip-existing 40-43
+
+  # Reina-Valera 1909, Neues Testament (Quelle = Grundtext rv1909):
+  python3 tools/modernize_submit.py --lang spa --src rv1909 --dst rv1909mod \\
+      --name "Reina-Valera de 1909" 40-66
 """
 import argparse
 import json
@@ -26,7 +30,8 @@ BATCH_API_URL = "https://api.anthropic.com/v1/messages/batches"
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".modernize_state.json")
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
-SYSTEM_PROMPT_TMPL = """\
+SYSTEM_PROMPTS = {
+    "deu": """\
 Du modernisierst den Text der {name} für heutige Leser (auch Nicht-Muttersprachler).
 
 ## Regeln
@@ -57,7 +62,46 @@ Gib NUR ein JSON-Objekt zurück. Schlüssel = Versnummern (Strings). Werte = mod
 Beispiel:
 {{"1": "Am Anfang schuf Gott Himmel und Erde.", "2": "Und die Erde war leer und öde..."}}
 
-Kein Markdown, keine Erklärungen — nur das JSON-Objekt."""
+Kein Markdown, keine Erklärungen — nur das JSON-Objekt.""",
+    "spa": """\
+Modernizas el texto de la {name} para lectores actuales (también no hispanohablantes nativos).
+
+## Reglas
+
+1. **Ortografía moderna**: fué→fue, vió→vio, á/é/ó/í/ú con tilde diacrítica→sin tilde (a/e/o/i/u), é→y donde corresponda.
+2. **Palabras y fórmulas arcaicas**:
+   - engendró → fue el padre de
+   - he aquí → eliminar o sustituir por lenguaje natural (Entonces, En aquel momento…)
+   - marido/mujer → esposo/esposa (según contexto)
+   - transmigración → destierro / cautiverio
+   - magos → sabios / astrólogos del oriente
+   - parirá → dará a luz
+   - no la conoció → no tuvo relaciones con ella
+   - escribas → maestros de la ley
+   - príncipes de los sacerdotes → principales sacerdotes
+   - guiador → gobernante / líder
+   - arrepentíos → arrepiéntanse
+   - y otras expresiones arcaicas de forma equivalente
+3. **Simplificar la sintaxis**: oraciones largas y encadenadas en frases más cortas y claras; reducir el abuso inicial de «Y».
+4. **Español natural y actual**: claro y comprensible. Sin tono arcaico ni «biblico» elevado — escribe como se escribe hoy en español estándar.
+5. **Fidelidad al contenido**: sin cambios teológicos, sin añadir ni omitir nada.
+6. **Nombres propios**: conservar; se permite ortografía moderna (Thamar→Tamar, Bethlehem→Belén).
+7. **Registro latinoamericano**: sustituir «vosotros» y sus formas verbales (sois, tenéis, haréis, arrepentíos…) por «ustedes» y sus formas correspondientes (son, tienen, harán, arrepiéntanse…) — esta traducción se usa hoy casi exclusivamente en Latinoamérica, no en España.
+
+## Formato de salida
+
+Devuelve SOLO un objeto JSON. Claves = números de versículo (strings). Valores = texto modernizado (string).
+
+Ejemplo:
+{{"1": "En el principio creó Dios los cielos y la tierra.", "2": "La tierra estaba desordenada y vacía..."}}
+
+Sin Markdown, sin explicaciones — solo el objeto JSON.""",
+}
+
+USER_MSG_TMPL = {
+    "deu": "{book_name}, Kapitel {chap_nr} ({src_label}):\n\n{verses}\n\nModernisiere alle Verse dieses Kapitels. Gib das Ergebnis als JSON zurück.",
+    "spa": "{book_name}, capítulo {chap_nr} ({src_label}):\n\n{verses}\n\nModerniza todos los versículos de este capítulo. Devuelve el resultado como JSON.",
+}
 
 
 def parse_book_ranges(args):
@@ -87,12 +131,22 @@ def already_modernized(lang, dst, book_nr, chap_nr):
     return str(chap_nr) in data.get("chapters", {})
 
 
-def build_user_message(book_name, chap_nr, verses, src_label):
-    lines = [f"{book_name}, Kapitel {chap_nr} ({src_label}):\n"]
-    for vnum in sorted(verses.keys(), key=int):
-        lines.append(f"{vnum}: {verses[vnum]}")
-    lines.append("\nModernisiere alle Verse dieses Kapitels. Gib das Ergebnis als JSON zurück.")
-    return "\n".join(lines)
+def system_prompt(lang, name):
+    tmpl = SYSTEM_PROMPTS.get(lang, SYSTEM_PROMPTS["deu"])
+    return tmpl.format(name=name)
+
+
+def build_user_message(lang, book_name, chap_nr, verses, src_label):
+    verse_lines = "\n".join(
+        f"{vnum}: {verses[vnum]}" for vnum in sorted(verses.keys(), key=int)
+    )
+    tmpl = USER_MSG_TMPL.get(lang, USER_MSG_TMPL["deu"])
+    return tmpl.format(
+        book_name=book_name,
+        chap_nr=chap_nr,
+        src_label=src_label,
+        verses=verse_lines,
+    )
 
 
 def main():
@@ -111,7 +165,7 @@ def main():
         sys.exit(1)
 
     books = parse_book_ranges(args.books)
-    system_prompt = SYSTEM_PROMPT_TMPL.format(name=args.name)
+    prompt = system_prompt(args.lang, args.name)
 
     requests = []
     for book_nr in books:
@@ -127,13 +181,13 @@ def main():
         for chap_nr in sorted(chapters.keys(), key=int):
             if args.skip_existing and already_modernized(args.lang, args.dst, book_nr, int(chap_nr)):
                 continue
-            user_msg = build_user_message(book_name, chap_nr, chapters[chap_nr], args.name)
+            user_msg = build_user_message(args.lang, book_name, chap_nr, chapters[chap_nr], args.name)
             requests.append({
                 "custom_id": f"b{book_nr}_c{chap_nr}",
                 "params": {
                     "model": args.model,
                     "max_tokens": 16000,
-                    "system": system_prompt,
+                    "system": prompt,
                     "messages": [{"role": "user", "content": user_msg}],
                 },
             })

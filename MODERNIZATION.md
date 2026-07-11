@@ -21,6 +21,11 @@ entstehen — und nach welchen Regeln `l1912mod` konkret erzeugt wurde.
 - Die maßgebliche, ausführbare Fassung dieser Regeln steht im Code:
   [`tools/modernize_submit.py`](tools/modernize_submit.py) → `SYSTEM_PROMPT_TMPL`.
   Dieses Dokument ist die lesbare Beschreibung davon.
+- **Portionsgröße ≈ 1/10 der Bibel pro Paket, gemessen in Versen (nicht Büchern).**
+  Buchlängen schwanken stark (die Evangelien allein sind zusammen schon >12 %
+  der Bibel) — Bücher zählen ist daher kein verlässliches Maß. Nach jedem
+  Paket **stoppen und dem Nutzer zur Prüfung vorlegen**, bevor das nächste
+  Paket gestartet wird.
 
 > Hinweis zur Herkunft: `l1912mod` wurde ursprünglich im Schwesterprojekt
 > `bible-reader` erzeugt (`modernize_batch_submit.py`, **identischer Regeltext**).
