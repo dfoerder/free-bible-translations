@@ -117,19 +117,9 @@
       "name": "Reina-Valera 1909 (modernisiert)",
       "base": "rv1909",
       "type": "modernized",
-      "method": "leicht — nur Rechtschreibung der Orthographie von 1909 (fué→fue, vió→vio, á→a); ~55% der Verse sind byte-identisch mit rv1909. KEINE echte Sprachmodernisierung (Wortschatz/Satzbau unverändert) — Neu-Modernisierung mit dem vollen Konzept steht aus.",
+      "method": "komplett neu modernisiert mit natürlichem heutigem Latein­amerika-Spanisch (kein archaischer Ton), lateinamerikanisches vosotros→ustedes-Register, Modell claude-sonnet-5",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit rv1909, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
-    },
-    {
-      "id": "rv1909mod_neu",
-      "lang": "spa",
-      "name": "Reina-Valera 1909 (Test: volle Modernisierung)",
-      "base": "rv1909",
-      "type": "modernized",
-      "method": "TESTLAUF — voller Ansatz analog zum deutschen Konzept (natürliches heutiges Spanisch, kein archaischer Ton), von Claude direkt erstellt (kein Batch-Lauf); nur Mateo (Buch 40) Kapitel 1-5",
-      "publicDomain": true,
-      "status": "TEST — nur Mateo 1-5 (138 Verse), nicht Teil der Sammlung"
+      "status": "vollständig (66 Bücher, 31084 Verse); versgenau deckungsgleich mit rv1909. Alle 66 Bücher im einheitlichen neuen Stil, \"Jehová\" durchgängig wie im Grundtext beibehalten."
     }
   ]
 }
