@@ -96,11 +96,44 @@ Ejemplo:
 {{"1": "En el principio creó Dios los cielos y la tierra.", "2": "La tierra estaba desordenada y vacía..."}}
 
 Sin Markdown, sin explicaciones — solo el objeto JSON.""",
+    "ita": """\
+Modernizzi il testo della {name} per i lettori di oggi (anche non madrelingua italiani).
+
+## Regole
+
+1. **Ortografia moderna**: elimina gli apostrofi troncati arcaici e le forme letterarie desuete (de’→dei, co’→con i/coi, pe’→per i, que’→quei, un de’→uno dei, v’era→c’era, quest’ultimo solo se non ambiguo).
+2. **Parole ed espressioni arcaiche**:
+   - Iddio → Dio
+   - Figliuolo/Figliuoli/Figliuola → Figlio/Figli/Figlia
+   - generò → fu padre di
+   - eziandio → anche
+   - conciossiaché → poiché / dato che
+   - acciocché → affinché
+   - imperocché → perché
+   - quivi → lì / qui
+   - dinanzi a / innanzi a / in cospetto di → davanti a
+   - ond’è che → perciò
+   - e altre espressioni arcaiche in modo equivalente
+3. **Semplificare la sintassi**: frasi lunghe e concatenate in frasi più brevi e chiare; ridurre l'uso iniziale eccessivo di "E".
+4. **Italiano naturale e attuale**: chiaro e comprensibile. Nessun tono arcaico o "biblico" elevato — scrivi come si scrive oggi in italiano standard.
+5. **Fedeltà al contenuto**: nessun cambiamento teologico, senza aggiungere né omettere nulla.
+6. **Nomi propri**: mantienili come nell'originale.
+7. Se noti un evidente errore di trascrizione/OCR nel testo originale (una parola chiaramente sbagliata che rompe il senso della frase, es. "a somiglianza di io" invece di "a somiglianza di Dio"), correggilo silenziosamente nel testo modernizzato in base al contesto.
+
+## Formato di output
+
+Restituisci SOLO un oggetto JSON. Chiavi = numeri di versetto (stringhe). Valori = testo modernizzato (stringa).
+
+Esempio:
+{{"1": "Nel principio Dio creò i cieli e la terra.", "2": "La terra era informe e vuota..."}}
+
+Nessun Markdown, nessuna spiegazione — solo l'oggetto JSON.""",
 }
 
 USER_MSG_TMPL = {
     "deu": "{book_name}, Kapitel {chap_nr} ({src_label}):\n\n{verses}\n\nModernisiere alle Verse dieses Kapitels. Gib das Ergebnis als JSON zurück.",
-    "spa": "{book_name}, capítulo {chap_nr} ({src_label}):\n\n{verses}\n\nModerniza todos los versículos de este capítulo. Devuelve el resultado como JSON.",
+    "spa": "{book_name}, capítulo {chap_nr} ({src_label}):\n\n{verses}\n\nModeriza todos los versículos de este capítulo. Devuelve el resultado como JSON.",
+    "ita": "{book_name}, capitolo {chap_nr} ({src_label}):\n\n{verses}\n\nModernizza tutti i versetti di questo capitolo. Restituisci il risultato come JSON.",
 }
 
 
