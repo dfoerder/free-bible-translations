@@ -97,9 +97,9 @@
       "name": "Riveduta (Luzzi) 1927 (modernisiert)",
       "base": "riv1927",
       "type": "modernized",
-      "method": "minimal — nur zwei Wortersetzungen (Iddio→Dio, Figliuolo→Figlio); ~85% der Verse sind byte-identisch mit riv1927. KEINE echte Sprachmodernisierung (Satzbau/Apostroph-Archaismen wie de’/s’ unverändert) — Neu-Modernisierung mit dem vollen Konzept steht aus.",
+      "method": "komplett neu modernisiert mit natürlichem heutigem Italienisch (kein archaischer/biblischer Ton), Apostroph-Archaismen aufgelöst (de’/co’/v’era usw.), Modell claude-sonnet-5. Bislang neu modernisiert: die vier Evangelien (Bücher 40-43); restliche Bücher noch im alten Minimal-Stand (nur Iddio→Dio, Figliuolo→Figlio).",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit riv1927, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
+      "status": "in Arbeit — Evangelien (40-43) vollständig neu modernisiert und geprüft (versgenau deckungsgleich mit riv1927); Bücher 1-39 und 44-66 noch im alten minimalen Stand, Neu-Modernisierung folgt in weiteren Paketen"
     },
     {
       "id": "rv1909",
