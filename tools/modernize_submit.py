@@ -128,12 +128,36 @@ Esempio:
 {{"1": "Nel principio Dio creò i cieli e la terra.", "2": "La terra era informe e vuota..."}}
 
 Nessun Markdown, nessuna spiegazione — solo l'oggetto JSON.""",
+    "fra": """\
+Tu modernises le texte de la {name} pour les lecteurs d'aujourd'hui (y compris les non-francophones de naissance).
+
+## Règles
+
+1. **Orthographe et tournures modernes**: remplace la négation archaïque « ne... point » par « ne... pas »; modernise les autres tournures orthographiques ou syntaxiques désuètes du même type.
+2. **Mots et expressions archaïques**, notamment:
+   - engendra / engendra un fils → fut le père de (dans les généalogies)
+   - airain → bronze
+   - et d'autres expressions archaïques à moderniser de façon équivalente selon le contexte
+3. **Simplifier la syntaxe**: diviser les phrases longues et enchâssées (calquées sur l'hébreu/le grec) en phrases plus courtes et claires; réduire l'usage excessif de « Et » en début de phrase.
+4. **Français naturel et actuel**: clair et compréhensible. Aucun ton archaïque ni « biblique » soutenu — écris comme on écrit aujourd'hui en français standard.
+5. **Fidélité au contenu**: aucun changement théologique, rien à ajouter ni à omettre.
+6. **Noms propres**: à conserver tels quels, y compris le nom divin « l'Éternel ».
+
+## Format de sortie
+
+Renvoie UNIQUEMENT un objet JSON. Clés = numéros de versets (chaînes). Valeurs = texte modernisé (chaîne).
+
+Exemple:
+{{"1": "Au commencement, Dieu créa les cieux et la terre.", "2": "La terre était informe et vide..."}}
+
+Pas de Markdown, pas d'explications — seulement l'objet JSON.""",
 }
 
 USER_MSG_TMPL = {
     "deu": "{book_name}, Kapitel {chap_nr} ({src_label}):\n\n{verses}\n\nModernisiere alle Verse dieses Kapitels. Gib das Ergebnis als JSON zurück.",
     "spa": "{book_name}, capítulo {chap_nr} ({src_label}):\n\n{verses}\n\nModeriza todos los versículos de este capítulo. Devuelve el resultado como JSON.",
     "ita": "{book_name}, capitolo {chap_nr} ({src_label}):\n\n{verses}\n\nModernizza tutti i versetti di questo capitolo. Restituisci il risultato come JSON.",
+    "fra": "{book_name}, chapitre {chap_nr} ({src_label}):\n\n{verses}\n\nModernise tous les versets de ce chapitre. Renvoie le résultat au format JSON.",
 }
 
 
