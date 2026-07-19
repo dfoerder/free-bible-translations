@@ -137,6 +137,10 @@ Tu modernises le texte de la {name} pour les lecteurs d'aujourd'hui (y compris l
 2. **Mots et expressions archaïques**, notamment:
    - engendra / engendra un fils → fut le père de (dans les généalogies)
    - airain → bronze
+   - sacrificateur(s) / souverain sacrificateur → prêtre(s) / grand prêtre
+   - postérité → descendance
+   - iniquité → injustice
+   - libation → offrande liquide (attention à l'élision: « d'offrande liquide », pas « de offrande »)
    - et d'autres expressions archaïques à moderniser de façon équivalente selon le contexte
 3. **Simplifier la syntaxe**: diviser les phrases longues et enchâssées (calquées sur l'hébreu/le grec) en phrases plus courtes et claires; réduire l'usage excessif de « Et » en début de phrase.
 4. **Français naturel et actuel**: clair et compréhensible. Aucun ton archaïque ni « biblique » soutenu — écris comme on écrit aujourd'hui en français standard.
