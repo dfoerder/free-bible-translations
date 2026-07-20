@@ -77,9 +77,9 @@
       "name": "Louis Segond 1910 (modernisiert)",
       "base": "lsg1910",
       "type": "modernized",
-      "method": "Wortglossar — ca. 15 archaische Begriffe systematisch ersetzt (sacrificateur→prêtre, postérité→descendance, holocauste→sacrifice brûlé, sépulcre→tombeau, iniquité→injustice, publicain→collecteur d’impôts, u.a.); ~96,6% der Verse sind byte-identisch mit lsg1910. KEIN Satzumbau, archaische Formeln wie 'voici' unverändert — keine echte Sprachmodernisierung, Neu-Modernisierung mit dem vollen Konzept steht aus.",
+      "method": "komplett neu modernisiert mit natürlichem heutigem Französisch (kein archaischer/biblischer Ton); Segond 1910 war schon relativ modern, daher gezielt nur echte Archaismen behoben (ne...point→ne...pas, engendra→fut le père de, airain→bronze, sacrificateur(s)→prêtre(s)/grand prêtre, postérité→descendance, iniquité→injustice, libation→offrande liquide, u. a.), natürlich bereits moderne Verse unangetastet gelassen; Gottesname l'Éternel durchgängig beibehalten, Modell claude-sonnet-5.",
       "publicDomain": true,
-      "status": "vollständig (66 Bücher); versgenau deckungsgleich mit lsg1910, aber uneinheitlich zum vollen Konzept — siehe MODERNIZATION.md"
+      "status": "vollständig (66 Bücher, 31169 Verse); versgenau deckungsgleich mit lsg1910, alle 66 Bücher im einheitlichen neuen Stil und glossarkonsistent (AT und NT)."
     },
     {
       "id": "riv1927",
