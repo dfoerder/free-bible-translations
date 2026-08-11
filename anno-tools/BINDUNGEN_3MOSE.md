@@ -150,8 +150,19 @@ Der Bestand macht dieselbe Unterscheidung — 2Mo 12,8 und 29,31 tragen *meat*,
 die hundert übrigen Belege *flesh*. **Am Verb entscheiden, nicht am Wort.**
 
 **`ewig` weicht im Französischen auf *perpétuel* aus**, wo `HERR` (*ÉTERNEL*)
-im selben Vers steht — 3Mo 6,11 · 6,15 · 7,34 · 7,36. Zwei Agenten haben das
-unabhängig voneinander so gelöst.
+im selben Vers steht. Das gilt **generell**, nicht nur an den zuerst
+gefundenen Stellen 3Mo 6,11 · 6,15 · 7,34 · 7,36 — vier Agenten haben es
+unabhängig voneinander so gelöst, zuletzt in 23,41 und 24,3/8/9. Wo `HERR`
+im Vers fehlt, bleibt es *éternel*.
+
+**Fünf deutsche Wörter für die Dauerformel.** „Ein ewiges/ewige …" heißt im
+Buch je nach Kapitel `Ordnung` (*order*, 3,17 · 20,8 · 20,22), `Recht`
+(*ordinance*, 6,11 · 6,15 · 24,22), `Gesetz` (*law*, 6,2 · 6,7 · 6,18),
+`Regel` (*rule*, 23,14 · 23,21 · 23,31 · 23,41 · 24,3 · 24,9) und
+`Rechtsvorschrift` (*legal rules*, 19,37 · 20,22). Dazu kommen `Satzung`
+(*statutes*) und `Rechtsbestimmung` (*ordinances*), die **nur in Kapitel 18**
+stehen. Alle sieben behalten ihre eigene Glosse — der Text unterscheidet sie,
+also unterscheidet die Annotation sie auch. **Nicht angleichen.**
 
 Aus **3Mo 4** (Sündopfer) — Schuld, Versehen und die Altarteile:
 
