@@ -153,6 +153,23 @@ Schreibung des Quelltextes gilt**, auch wenn 4. Mose es anders schreibt:
 `Sinai`, `Arnon` (in Kap. 1), `Zin`, `Jaser` und `Kemosch` kommen in 5Mo 1–2
 **nicht** vor. Der Berg heißt `Horeb`.
 
+### Die Völkerliste schreibt sich im selben Buch zweimal verschieden
+
+Der Quelltext ist bei den sieben Völkern **in sich uneinheitlich**, und das ist
+kein Annotationsfehler:
+
+| 7,1 | 20,17 |
+|---|---|
+| `Hetiter` | `Hethiter` |
+| `Perisiter` | `Pheresiter` |
+| `Hiwiter` | `Heviter` |
+
+`Girgasiter`, `Amoriter`, `Kanaaniter` und `Jebusiter` stimmen überein; 20,17
+lässt die Girgasiter weg. **Jede Stelle bekommt das Lemma ihrer eigenen
+Schreibung**, alle bekommen dieselbe Glosse (*Hittites · heteos · Héthiens ·
+Hittei* usw.). Auch Reihenfolge und Auswahl weichen von 2Mo 23,23 ab —
+Schreibung aus dem Text übernehmen, Reihenfolge nicht.
+
 **`Sered` ist zweideutig:** der Bestand kennt die Person (*Sered*, 1Mo 46,14 ·
 4Mo 26,26) und den Bach (*Zered*, 4Mo 21,12). 5Mo 2,13/14 meint den Bach.
 
