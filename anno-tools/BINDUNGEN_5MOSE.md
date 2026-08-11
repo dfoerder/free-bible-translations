@@ -163,6 +163,19 @@ und 6,14 wurden nachträglich darauf gezogen.
 **Gott ist in diesem Buch nicht „eifernd" und nicht „eifersüchtig".** 4,24 und
 6,15 sagen beide `ein leidenschaftlicher Gott`.
 
+### Latente Kollisionen: zeichengleich, aber nie im selben Vers
+
+Zwei Wortpaare tragen im Bestand dieselbe Glosse und stehen im ganzen Korpus
+**nirgends im selben Vers**. Nach der Kollisionsregel bleibt es so — aber wer
+ein Kapitel annotiert, das beide führt, muss ausweichen und es melden.
+
+| Paar | Bestandsglosse | Ausweichlesart |
+|---|---|---|
+| `Zeugnis` / `Aussage` | testimony · testimonio · témoignage · testimonianza (**alle vier Spalten gleich**) | für `Aussage` etwa *statement · declaración · déclaration · dichiarazione* |
+| `Getreide` / `Weizen` | siehe unten — drei von vier Spalten gleich | für `Getreide` *cereales · céréales · cereali* |
+
+`Zeugnis` steht in 19,18, `Aussage` in 19,15 — ein Vers auseinander.
+
 ### `Getreide` und `Weizen` sind im Bestand nur im Englischen unterscheidbar
 
 | | en | es | fr | it |
