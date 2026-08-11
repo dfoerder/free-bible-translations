@@ -93,6 +93,33 @@ von dort übernehmen, nicht neu bilden.
 **Achtung:** der Text schreibt `Nahesson` (nicht „Nachasson"), und in 1,7 steht
 er im Nominativ.
 
+## `sprengen` hat im vierten Buch eine zweite Lesart
+
+Die Bindung aus 3. Mose — `sprengen` = *dash / esparcir / répandre / spargere* —
+gilt für **Blut an den Altar**, vierzehnmal belegt. In 4Mo 8,7 wird
+`Reinigungswasser` auf Menschen gesprengt; „dash purification water on them"
+ist im Englischen falsch. Dort gilt die Lesart, die der Bestand unter
+`besprengen` führt (3Mo 14,7 · 2Mo 29,21): *sprinkle / rociar / asperger /
+aspergere*.
+
+Damit sind `sprengen` und `besprengen` in **dieser einen** Lesart zeichengleich.
+Sie stehen nirgends im selben Vers. **4Mo 19 hat dieselbe Stelle wieder** —
+dort dieselbe Entscheidung treffen. Das ist derselbe Kontextsplit wie bei
+`Fleisch` (flesh/meat) und `bringen` (bring/offer): **am Objekt entscheiden,
+nicht am Wort.**
+
+## Drei deutsche Wörter für dasselbe Bauwerk
+
+4Mo 9 hat `Wohnung`, `Stiftshütte` und `Hütte` in **einem** Kapitel. Sie
+bleiben getrennt: *dwelling* · *tabernacle* · *tent*. `Hütte` trägt hier
+bewusst nicht die 2Mo-33-Lesart *tabernacle*, sonst wäre es von `Stiftshütte`
+nicht zu unterscheiden.
+
+Ebenso trägt jedes Kapitel sein eigenes Wort für die Weihegabe: 3Mo 7
+`Webeopfer`, 4Mo 6 `schwenken`/`Schwenkbrust`, 4Mo 8 `Weihgabe`. **Gleiche
+Sache, verschiedene deutsche Wörter, eigene Lemmata** — und die Glossen dürfen
+nicht zeichengleich werden.
+
 ## Was die Listen dieses Buches gefährlich macht
 
 4Mo 1 hat zwölf gleich gebaute Zählblöcke — und **drei davon brechen das
