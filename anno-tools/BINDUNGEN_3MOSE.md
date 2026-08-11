@@ -27,7 +27,7 @@ stillschweigend folgen.
 | `hochheilig` | most holy | santísimo | très saint | santissimo | C1 |
 | `Feinmehl` | fine flour | flor de harina | fleur de farine | fior di farina | C1 |
 | `Weihrauch` | frankincense | incienso | encens | incenso | C1 |
-| `Fett` | fat | grasa | graisse | grasso | B1 |
+| `Fett` | fat | grasa | graisse | grasso | B2 |
 | `Blut` | blood | sangre | sang | sangue | A2 |
 
 Formen sind **kontextuell** zu beugen (Numerus, Tempus, Person) — die Tabelle
@@ -87,6 +87,33 @@ aus, wo `Opfer` im selben Vers steht. Das ist gewollt und geprüft.
 
 **Kein Mehrwort-Eintrag für „Opfer bringen"** — die Bedeutung ergibt sich aus
 den Teilen.
+
+Aus **3Mo 6** (Priesterordnungen):
+
+| Deutsch | en | es | fr | it | Level |
+|---|---|---|---|---|---|
+| `Herd` (Altarherd) | hearth | fogón | foyer | focolare | A2 |
+| `Hose` (leinene) | undergarment | calzoncillos | caleçon | mutande | A2 |
+| `Handvoll` (ein Token) | handful | puñado | poignée | manciata | B1 |
+| `verlöschen` | go out | apagarse | s'éteindre | spegnersi | C1 |
+| `Topf` | pot | olla | pot | pentola | A2 |
+| `Kupfertopf` | copper pot | olla de cobre | pot de cuivre | pentola di rame | C1 |
+| `scheuern` | scour | fregar | récurer | strofinare | B2 |
+| `ausspülen` | rinse out | enjuagar | rincer | sciacquare | B2 |
+| `aufheben` (Asche) | take up | recoger | ramasser | raccogliere | B1 |
+| `zurichten` (Opfer) | arrange | disponer | disposer | disporre | B2 |
+| `Vorhof` | courtyard | patio | cour | cortile | C1 |
+| `Stätte` | place | lugar | lieu | luogo | C1 |
+| `Sühne leisten` (Mehrwort) | make atonement | hacer expiación | faire l'expiation | fare espiazione | C1 |
+
+**Drei Wörter für dieselbe Formel.** „Ein ewiges …" heißt in 3,17 `Ordnung`
+(*order*), in 6,11 und 6,15 `Recht` (*ordinance*), und `Gesetz` (*law*) steht
+für die Opfergesetze in 6,2/7/18. Alle drei behalten ihre eigene Glosse — der
+Text unterscheidet sie, also unterscheidet die Annotation sie auch.
+
+Ebenso stehen `bringen`, `darbringen` und `opfern` in 3Mo 6 nebeneinander:
+*offer* · *offer* … — in 6,14 stehen `darbringen` und `opfern` **im selben
+Vers**, dort trägt `darbringen` *offer* und `opfern` *sacrifice*.
 
 Aus **3Mo 2** (Speisopfer):
 
