@@ -1,0 +1,3429 @@
+{
+ "1": [
+  {
+   "pos": 0,
+   "form": "Die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "The",
+   "es": "Los",
+   "fr": "Les",
+   "it": "I"
+  },
+  {
+   "pos": 1,
+   "form": "Familienoberhäupter",
+   "lemma": "Familienoberhaupt",
+   "level": "C1",
+   "en": "heads of families",
+   "es": "jefes de familias",
+   "fr": "chefs de familles",
+   "it": "capi delle famiglie"
+  },
+  {
+   "pos": 2,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "del",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 3,
+   "form": "Geschlechts",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineage",
+   "es": "linaje",
+   "fr": "lignée",
+   "it": "stirpe"
+  },
+  {
+   "pos": 4,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 5,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 6,
+   "form": "Gileads",
+   "lemma": "Gilead",
+   "level": "A1",
+   "en": "of Gilead",
+   "es": "de Galaad",
+   "fr": "de Galaad",
+   "it": "di Galaad"
+  },
+  {
+   "pos": 7,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
+  },
+  {
+   "pos": 8,
+   "form": "Sohnes",
+   "lemma": "Sohn",
+   "level": "A1",
+   "en": "son",
+   "es": "hijo",
+   "fr": "fils",
+   "it": "figlio"
+  },
+  {
+   "pos": 9,
+   "form": "Machirs",
+   "lemma": "Machir",
+   "level": "A1",
+   "en": "of Machir",
+   "es": "de Maquir",
+   "fr": "de Makir",
+   "it": "di Machir"
+  },
+  {
+   "pos": 10,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "who",
+   "es": "que",
+   "fr": "qui",
+   "it": "che"
+  },
+  {
+   "pos": 11,
+   "form": "ein",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "a",
+   "es": "un",
+   "fr": "un",
+   "it": "un"
+  },
+  {
+   "pos": 12,
+   "form": "Sohn",
+   "lemma": "Sohn",
+   "level": "A1",
+   "en": "son",
+   "es": "hijo",
+   "fr": "fils",
+   "it": "figlio"
+  },
+  {
+   "pos": 13,
+   "form": "Manasses",
+   "lemma": "Manasse",
+   "level": "A1",
+   "en": "of Manasseh",
+   "es": "de Manasés",
+   "fr": "de Manassé",
+   "it": "di Manasse"
+  },
+  {
+   "pos": 14,
+   "form": "war",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "was",
+   "es": "era",
+   "fr": "était",
+   "it": "era"
+  },
+  {
+   "pos": 15,
+   "form": "von",
+   "lemma": "von",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 16,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 17,
+   "form": "Geschlechtern",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineages",
+   "es": "linajes",
+   "fr": "lignées",
+   "it": "stirpi"
+  },
+  {
+   "pos": 18,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 19,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 20,
+   "form": "Josephs",
+   "lemma": "Joseph",
+   "level": "A1",
+   "en": "of Joseph",
+   "es": "de José",
+   "fr": "de Joseph",
+   "it": "di Giuseppe"
+  },
+  {
+   "pos": 21,
+   "form": "traten",
+   "lemma": "treten",
+   "level": "B1",
+   "en": "stepped",
+   "es": "se acercaron",
+   "fr": "s'approchèrent",
+   "it": "si avvicinarono"
+  },
+  {
+   "pos": 22,
+   "form": "vor",
+   "lemma": "vor",
+   "level": "A1",
+   "en": "forward",
+   "es": "adelante",
+   "fr": "en avant",
+   "it": "avanti"
+  },
+  {
+   "pos": 23,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 24,
+   "form": "redeten",
+   "lemma": "reden",
+   "level": "B1",
+   "en": "spoke",
+   "es": "hablaron",
+   "fr": "parlèrent",
+   "it": "parlarono"
+  },
+  {
+   "pos": 25,
+   "form": "vor",
+   "lemma": "vor",
+   "level": "A1",
+   "en": "before",
+   "es": "ante",
+   "fr": "devant",
+   "it": "davanti a"
+  },
+  {
+   "pos": 26,
+   "form": "Mose",
+   "lemma": "Mose",
+   "level": "A1",
+   "en": "Moses",
+   "es": "Moisés",
+   "fr": "Moïse",
+   "it": "Mosè"
+  },
+  {
+   "pos": 27,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 28,
+   "form": "vor",
+   "lemma": "vor",
+   "level": "A1",
+   "en": "before",
+   "es": "ante",
+   "fr": "devant",
+   "it": "davanti a"
+  },
+  {
+   "pos": 29,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 30,
+   "form": "Fürsten",
+   "lemma": "Fürst",
+   "level": "B2",
+   "en": "princes",
+   "es": "príncipes",
+   "fr": "princes",
+   "it": "principi"
+  },
+  {
+   "pos": 31,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 32,
+   "form": "Familienoberhäuptern",
+   "lemma": "Familienoberhaupt",
+   "level": "C1",
+   "en": "heads of families",
+   "es": "jefes de familias",
+   "fr": "chefs de familles",
+   "it": "capi delle famiglie"
+  },
+  {
+   "pos": 33,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 34,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 35,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 21,
+   "pos_end": 22,
+   "form": "traten vor",
+   "lemma": "vortreten",
+   "level": "B1",
+   "en": "stepped forward",
+   "es": "se adelantaron",
+   "fr": "s'avancèrent",
+   "it": "si fecero avanti"
+  }
+ ],
+ "2": [
+  {
+   "pos": 0,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 1,
+   "form": "sagten",
+   "lemma": "sagen",
+   "level": "A1",
+   "en": "said",
+   "es": "dijeron",
+   "fr": "dirent",
+   "it": "dissero"
+  },
+  {
+   "pos": 2,
+   "form": "Meinem",
+   "lemma": "mein",
+   "level": "A1",
+   "en": "My",
+   "es": "A mi",
+   "fr": "À mon",
+   "it": "Al mio"
+  },
+  {
+   "pos": 3,
+   "form": "Herrn",
+   "lemma": "Herr",
+   "level": "A1",
+   "en": "master",
+   "es": "señor",
+   "fr": "maître",
+   "it": "padrone"
+  },
+  {
+   "pos": 4,
+   "form": "hat",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "has",
+   "es": "ha",
+   "fr": "a",
+   "it": "ha"
+  },
+  {
+   "pos": 5,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "l'",
+   "it": "il"
+  },
+  {
+   "pos": 6,
+   "form": "HERR",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 7,
+   "form": "befohlen",
+   "lemma": "befehlen",
+   "level": "B2",
+   "en": "commanded",
+   "es": "mandado",
+   "fr": "ordonné",
+   "it": "comandato"
+  },
+  {
+   "pos": 8,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
+  },
+  {
+   "pos": 9,
+   "form": "Land",
+   "lemma": "Land",
+   "level": "A1",
+   "en": "land",
+   "es": "país",
+   "fr": "pays",
+   "it": "paese"
+  },
+  {
+   "pos": 10,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "to the",
+   "es": "a los",
+   "fr": "aux",
+   "it": "ai"
+  },
+  {
+   "pos": 11,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 12,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 13,
+   "form": "durch",
+   "lemma": "durch",
+   "level": "A2",
+   "en": "by",
+   "es": "por",
+   "fr": "par",
+   "it": "per"
+  },
+  {
+   "pos": 14,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "le",
+   "it": "la"
+  },
+  {
+   "pos": 15,
+   "form": "Los",
+   "lemma": "Los",
+   "level": "B2",
+   "en": "lot",
+   "es": "suerte",
+   "fr": "sort",
+   "it": "sorte"
+  },
+  {
+   "pos": 16,
+   "form": "als",
+   "lemma": "als",
+   "level": "A2",
+   "en": "as",
+   "es": "como",
+   "fr": "comme",
+   "it": "come"
+  },
+  {
+   "pos": 17,
+   "form": "Erbe",
+   "lemma": "Erbe",
+   "level": "B2",
+   "en": "inheritance",
+   "es": "herencia",
+   "fr": "héritage",
+   "it": "eredità"
+  },
+  {
+   "pos": 18,
+   "form": "zu",
+   "lemma": "zu",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 19,
+   "form": "geben",
+   "lemma": "geben",
+   "level": "A1",
+   "en": "give",
+   "es": "dar",
+   "fr": "donner",
+   "it": "dare"
+  },
+  {
+   "pos": 20,
+   "form": "Auch",
+   "lemma": "auch",
+   "level": "A1",
+   "en": "Also",
+   "es": "También",
+   "fr": "Aussi",
+   "it": "Anche"
+  },
+  {
+   "pos": 21,
+   "form": "wurde",
+   "lemma": "werden",
+   "level": "A1",
+   "en": "was",
+   "es": "fue",
+   "fr": "fut",
+   "it": "fu"
+  },
+  {
+   "pos": 22,
+   "form": "meinem",
+   "lemma": "mein",
+   "level": "A1",
+   "en": "my",
+   "es": "a mi",
+   "fr": "à mon",
+   "it": "al mio"
+  },
+  {
+   "pos": 23,
+   "form": "Herrn",
+   "lemma": "Herr",
+   "level": "A1",
+   "en": "master",
+   "es": "señor",
+   "fr": "maître",
+   "it": "padrone"
+  },
+  {
+   "pos": 24,
+   "form": "vom",
+   "lemma": "vom",
+   "level": "A1",
+   "en": "by the",
+   "es": "por el",
+   "fr": "par le",
+   "it": "dal"
+  },
+  {
+   "pos": 25,
+   "form": "HERRN",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 26,
+   "form": "befohlen",
+   "lemma": "befehlen",
+   "level": "B2",
+   "en": "commanded",
+   "es": "mandado",
+   "fr": "ordonné",
+   "it": "comandato"
+  },
+  {
+   "pos": 27,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 28,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 29,
+   "form": "unseres",
+   "lemma": "unser",
+   "level": "A1",
+   "en": "of our",
+   "es": "de nuestro",
+   "fr": "de notre",
+   "it": "di nostro"
+  },
+  {
+   "pos": 30,
+   "form": "Bruders",
+   "lemma": "Bruder",
+   "level": "A1",
+   "en": "brother",
+   "es": "hermano",
+   "fr": "frère",
+   "it": "fratello"
+  },
+  {
+   "pos": 31,
+   "form": "Zelophehad",
+   "lemma": "Zelophehad",
+   "level": "A1",
+   "en": "Zelophehad",
+   "es": "Zelofehad",
+   "fr": "Tselophchad",
+   "it": "Zelofcad"
+  },
+  {
+   "pos": 32,
+   "form": "seinen",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "his",
+   "es": "sus",
+   "fr": "ses",
+   "it": "le sue"
+  },
+  {
+   "pos": 33,
+   "form": "Töchtern",
+   "lemma": "Tochter",
+   "level": "A1",
+   "en": "daughters",
+   "es": "hijas",
+   "fr": "filles",
+   "it": "figlie"
+  },
+  {
+   "pos": 34,
+   "form": "zu",
+   "lemma": "zu",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 35,
+   "form": "geben",
+   "lemma": "geben",
+   "level": "A1",
+   "en": "give",
+   "es": "dar",
+   "fr": "donner",
+   "it": "dare"
+  }
+ ],
+ "3": [
+  {
+   "pos": 0,
+   "form": "Wenn",
+   "lemma": "wenn",
+   "level": "A1",
+   "en": "If",
+   "es": "Si",
+   "fr": "Si",
+   "it": "Se"
+  },
+  {
+   "pos": 1,
+   "form": "diese",
+   "lemma": "dieser",
+   "level": "A1",
+   "en": "these",
+   "es": "estas",
+   "fr": "celles-ci",
+   "it": "queste"
+  },
+  {
+   "pos": 2,
+   "form": "aber",
+   "lemma": "aber",
+   "level": "A1",
+   "en": "but",
+   "es": "pero",
+   "fr": "mais",
+   "it": "ma"
+  },
+  {
+   "pos": 3,
+   "form": "einen",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "one",
+   "es": "uno",
+   "fr": "un",
+   "it": "uno"
+  },
+  {
+   "pos": 4,
+   "form": "aus",
+   "lemma": "aus",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 5,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 6,
+   "form": "anderen",
+   "lemma": "ander",
+   "level": "A1",
+   "en": "other",
+   "es": "otras",
+   "fr": "autres",
+   "it": "altre"
+  },
+  {
+   "pos": 7,
+   "form": "Stämmen",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribes",
+   "es": "tribus",
+   "fr": "tribus",
+   "it": "tribù"
+  },
+  {
+   "pos": 8,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 9,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 10,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 11,
+   "form": "heiraten",
+   "lemma": "heiraten",
+   "level": "A1",
+   "en": "marry",
+   "es": "se casan con",
+   "fr": "épousent",
+   "it": "sposano"
+  },
+  {
+   "pos": 12,
+   "form": "wird",
+   "lemma": "werden",
+   "level": "A1",
+   "en": "will become",
+   "es": "se hará",
+   "fr": "deviendra",
+   "it": "diventerà"
+  },
+  {
+   "pos": 13,
+   "form": "unser",
+   "lemma": "unser",
+   "level": "A1",
+   "en": "our",
+   "es": "nuestra",
+   "fr": "notre",
+   "it": "la nostra"
+  },
+  {
+   "pos": 14,
+   "form": "väterliches",
+   "lemma": "väterlich",
+   "level": "B2",
+   "en": "paternal",
+   "es": "paterna",
+   "fr": "paternelle",
+   "it": "paterna"
+  },
+  {
+   "pos": 15,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 16,
+   "form": "kleiner",
+   "lemma": "klein",
+   "level": "A1",
+   "en": "smaller",
+   "es": "más pequeña",
+   "fr": "plus petite",
+   "it": "più piccola"
+  },
+  {
+   "pos": 17,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 18,
+   "form": "was",
+   "lemma": "was",
+   "level": "A1",
+   "en": "what",
+   "es": "lo que",
+   "fr": "ce que",
+   "it": "ciò che"
+  },
+  {
+   "pos": 19,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 20,
+   "form": "besitzen",
+   "lemma": "besitzen",
+   "level": "B1",
+   "en": "possess",
+   "es": "poseen",
+   "fr": "possèdent",
+   "it": "possiedono"
+  },
+  {
+   "pos": 21,
+   "form": "kommt",
+   "lemma": "kommen",
+   "level": "A1",
+   "en": "comes",
+   "es": "viene",
+   "fr": "vient",
+   "it": "viene"
+  },
+  {
+   "pos": 22,
+   "form": "zum",
+   "lemma": "zum",
+   "level": "A1",
+   "en": "to the",
+   "es": "a la",
+   "fr": "à la",
+   "it": "alla"
+  },
+  {
+   "pos": 23,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 24,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 25,
+   "form": "Stammes",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 26,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "into",
+   "es": "en",
+   "fr": "dans",
+   "it": "in"
+  },
+  {
+   "pos": 27,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "which",
+   "es": "la que",
+   "fr": "laquelle",
+   "it": "cui"
+  },
+  {
+   "pos": 28,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 29,
+   "form": "einheiraten",
+   "lemma": "einheiraten",
+   "level": "B2",
+   "en": "marry into",
+   "es": "se casan dentro",
+   "fr": "se marient dans",
+   "it": "si sposano dentro"
+  },
+  {
+   "pos": 30,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
+   "pos": 31,
+   "form": "wird",
+   "lemma": "werden",
+   "level": "A1",
+   "en": "will be",
+   "es": "será",
+   "fr": "sera",
+   "it": "sarà"
+  },
+  {
+   "pos": 32,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "le",
+   "it": "la"
+  },
+  {
+   "pos": 33,
+   "form": "Los",
+   "lemma": "Los",
+   "level": "B2",
+   "en": "lot",
+   "es": "suerte",
+   "fr": "sort",
+   "it": "sorte"
+  },
+  {
+   "pos": 34,
+   "form": "unseres",
+   "lemma": "unser",
+   "level": "A1",
+   "en": "of our",
+   "es": "de nuestra",
+   "fr": "de notre",
+   "it": "della nostra"
+  },
+  {
+   "pos": 35,
+   "form": "Erbteils",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 36,
+   "form": "verringert",
+   "lemma": "verringern",
+   "level": "B2",
+   "en": "reduced",
+   "es": "reducida",
+   "fr": "réduit",
+   "it": "ridotta"
+  }
+ ],
+ "4": [
+  {
+   "pos": 0,
+   "form": "Und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "And",
+   "es": "Y",
+   "fr": "Et",
+   "it": "E"
+  },
+  {
+   "pos": 1,
+   "form": "wenn",
+   "lemma": "wenn",
+   "level": "A1",
+   "en": "when",
+   "es": "cuando",
+   "fr": "quand",
+   "it": "quando"
+  },
+  {
+   "pos": 2,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
+  },
+  {
+   "pos": 3,
+   "form": "Halljahr",
+   "lemma": "Halljahr",
+   "level": "C1",
+   "en": "Jubilee",
+   "es": "jubileo",
+   "fr": "jubilé",
+   "it": "giubileo"
+  },
+  {
+   "pos": 4,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 5,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 6,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 7,
+   "form": "kommt",
+   "lemma": "kommen",
+   "level": "A1",
+   "en": "comes",
+   "es": "llega",
+   "fr": "vient",
+   "it": "viene"
+  },
+  {
+   "pos": 8,
+   "form": "wird",
+   "lemma": "werden",
+   "level": "A1",
+   "en": "will",
+   "es": "va a",
+   "fr": "va",
+   "it": "sta per"
+  },
+  {
+   "pos": 9,
+   "form": "ihr",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "su",
+   "fr": "leur",
+   "it": "la loro"
+  },
+  {
+   "pos": 10,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 11,
+   "form": "zum",
+   "lemma": "zum",
+   "level": "A1",
+   "en": "to the",
+   "es": "a la",
+   "fr": "à la",
+   "it": "alla"
+  },
+  {
+   "pos": 12,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 13,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 14,
+   "form": "Stammes",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 15,
+   "form": "hinzukommen",
+   "lemma": "hinzukommen",
+   "level": "B2",
+   "en": "be added",
+   "es": "añadirse",
+   "fr": "s'ajouter",
+   "it": "aggiungersi"
+  },
+  {
+   "pos": 16,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "into",
+   "es": "en",
+   "fr": "dans",
+   "it": "in"
+  },
+  {
+   "pos": 17,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "which",
+   "es": "la que",
+   "fr": "laquelle",
+   "it": "cui"
+  },
+  {
+   "pos": 18,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 19,
+   "form": "eingeheiratet",
+   "lemma": "einheiraten",
+   "level": "B2",
+   "en": "married into",
+   "es": "casado dentro",
+   "fr": "mariées dans",
+   "it": "sposate dentro"
+  },
+  {
+   "pos": 20,
+   "form": "haben",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "have",
+   "es": "han",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 21,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
+   "pos": 22,
+   "form": "wird",
+   "lemma": "werden",
+   "level": "A1",
+   "en": "will be",
+   "es": "será",
+   "fr": "sera",
+   "it": "sarà"
+  },
+  {
+   "pos": 23,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 24,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 25,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 26,
+   "form": "Stammes",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 27,
+   "form": "unserer",
+   "lemma": "unser",
+   "level": "A1",
+   "en": "of our",
+   "es": "de nuestros",
+   "fr": "de nos",
+   "it": "dei nostri"
+  },
+  {
+   "pos": 28,
+   "form": "Väter",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "fathers",
+   "es": "padres",
+   "fr": "pères",
+   "it": "padri"
+  },
+  {
+   "pos": 29,
+   "form": "um",
+   "lemma": "um",
+   "level": "A1",
+   "en": "by",
+   "es": "en",
+   "fr": "de",
+   "it": "di"
+  },
+  {
+   "pos": 30,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "that",
+   "es": "lo",
+   "fr": "ce",
+   "it": "ciò"
+  },
+  {
+   "pos": 31,
+   "form": "verringert",
+   "lemma": "verringern",
+   "level": "B2",
+   "en": "reduced",
+   "es": "reducida",
+   "fr": "réduite",
+   "it": "ridotta"
+  },
+  {
+   "pos": 32,
+   "form": "was",
+   "lemma": "was",
+   "level": "A1",
+   "en": "which",
+   "es": "que",
+   "fr": "que",
+   "it": "che"
+  },
+  {
+   "pos": 33,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 34,
+   "form": "besitzen",
+   "lemma": "besitzen",
+   "level": "B1",
+   "en": "possess",
+   "es": "poseen",
+   "fr": "possèdent",
+   "it": "possiedono"
+  }
+ ],
+ "5": [
+  {
+   "pos": 0,
+   "form": "Mose",
+   "lemma": "Mose",
+   "level": "A1",
+   "en": "Moses",
+   "es": "Moisés",
+   "fr": "Moïse",
+   "it": "Mosè"
+  },
+  {
+   "pos": 1,
+   "form": "befahl",
+   "lemma": "befehlen",
+   "level": "B2",
+   "en": "commanded",
+   "es": "mandó",
+   "fr": "ordonna",
+   "it": "ordinò"
+  },
+  {
+   "pos": 2,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "to the",
+   "es": "a los",
+   "fr": "aux",
+   "it": "ai"
+  },
+  {
+   "pos": 3,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 4,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 5,
+   "form": "nach",
+   "lemma": "nach",
+   "level": "A1",
+   "en": "according to",
+   "es": "según",
+   "fr": "selon",
+   "it": "secondo"
+  },
+  {
+   "pos": 6,
+   "form": "dem",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "l'",
+   "it": "l'"
+  },
+  {
+   "pos": 7,
+   "form": "Befehl",
+   "lemma": "Befehl",
+   "level": "B2",
+   "en": "command",
+   "es": "orden",
+   "fr": "ordre",
+   "it": "ordine"
+  },
+  {
+   "pos": 8,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "del",
+   "fr": "de l'",
+   "it": "del"
+  },
+  {
+   "pos": 9,
+   "form": "HERRN",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 10,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 11,
+   "form": "sagte",
+   "lemma": "sagen",
+   "level": "A1",
+   "en": "said",
+   "es": "dijo",
+   "fr": "dit",
+   "it": "disse"
+  },
+  {
+   "pos": 12,
+   "form": "Der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "The",
+   "es": "La",
+   "fr": "La",
+   "it": "La"
+  },
+  {
+   "pos": 13,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 14,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 15,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 16,
+   "form": "Josephs",
+   "lemma": "Joseph",
+   "level": "A1",
+   "en": "of Joseph",
+   "es": "de José",
+   "fr": "de Joseph",
+   "it": "di Giuseppe"
+  },
+  {
+   "pos": 17,
+   "form": "hat",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "has",
+   "es": "ha",
+   "fr": "a",
+   "it": "ha"
+  },
+  {
+   "pos": 18,
+   "form": "recht",
+   "lemma": "recht",
+   "level": "B1",
+   "en": "rightly",
+   "es": "con razón",
+   "fr": "justement",
+   "it": "giustamente"
+  },
+  {
+   "pos": 19,
+   "form": "gesprochen",
+   "lemma": "sprechen",
+   "level": "A2",
+   "en": "spoken",
+   "es": "hablado",
+   "fr": "parlé",
+   "it": "parlato"
+  }
+ ],
+ "6": [
+  {
+   "pos": 0,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "This",
+   "es": "Esto",
+   "fr": "Cela",
+   "it": "Questo"
+  },
+  {
+   "pos": 1,
+   "form": "befiehlt",
+   "lemma": "befehlen",
+   "level": "B2",
+   "en": "commands",
+   "es": "manda",
+   "fr": "ordonne",
+   "it": "comanda"
+  },
+  {
+   "pos": 2,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "l'",
+   "it": "il"
+  },
+  {
+   "pos": 3,
+   "form": "HERR",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 4,
+   "form": "für",
+   "lemma": "für",
+   "level": "A1",
+   "en": "for",
+   "es": "para",
+   "fr": "pour",
+   "it": "per"
+  },
+  {
+   "pos": 5,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 6,
+   "form": "Töchter",
+   "lemma": "Tochter",
+   "level": "A1",
+   "en": "daughters",
+   "es": "hijas",
+   "fr": "filles",
+   "it": "figlie"
+  },
+  {
+   "pos": 7,
+   "form": "Zelophehads",
+   "lemma": "Zelophehad",
+   "level": "A1",
+   "en": "of Zelophehad",
+   "es": "de Zelofehad",
+   "fr": "de Tselophchad",
+   "it": "di Zelofcad"
+  },
+  {
+   "pos": 8,
+   "form": "Sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "They",
+   "es": "Ellas",
+   "fr": "Elles",
+   "it": "Esse"
+  },
+  {
+   "pos": 9,
+   "form": "sollen",
+   "lemma": "sollen",
+   "level": "A2",
+   "en": "shall",
+   "es": "deben",
+   "fr": "doivent",
+   "it": "devono"
+  },
+  {
+   "pos": 10,
+   "form": "heiraten",
+   "lemma": "heiraten",
+   "level": "A1",
+   "en": "marry",
+   "es": "casarse con",
+   "fr": "épouser",
+   "it": "sposare"
+  },
+  {
+   "pos": 11,
+   "form": "wen",
+   "lemma": "wer",
+   "level": "A1",
+   "en": "whomever",
+   "es": "a quien",
+   "fr": "celui que",
+   "it": "chi"
+  },
+  {
+   "pos": 12,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 13,
+   "form": "wollen",
+   "lemma": "wollen",
+   "level": "A1",
+   "en": "want",
+   "es": "quieren",
+   "fr": "veulent",
+   "it": "vogliono"
+  },
+  {
+   "pos": 14,
+   "form": "aber",
+   "lemma": "aber",
+   "level": "A1",
+   "en": "but",
+   "es": "pero",
+   "fr": "mais",
+   "it": "ma"
+  },
+  {
+   "pos": 15,
+   "form": "nur",
+   "lemma": "nur",
+   "level": "A1",
+   "en": "only",
+   "es": "solo",
+   "fr": "seulement",
+   "it": "solo"
+  },
+  {
+   "pos": 16,
+   "form": "innerhalb",
+   "lemma": "innerhalb",
+   "level": "B2",
+   "en": "within",
+   "es": "dentro de",
+   "fr": "à l'intérieur de",
+   "it": "entro"
+  },
+  {
+   "pos": 17,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "del",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 18,
+   "form": "Geschlechts",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineage",
+   "es": "linaje",
+   "fr": "lignée",
+   "it": "stirpe"
+  },
+  {
+   "pos": 19,
+   "form": "vom",
+   "lemma": "vom",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 20,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 21,
+   "form": "ihres",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "of their",
+   "es": "de su",
+   "fr": "de leur",
+   "it": "del loro"
+  },
+  {
+   "pos": 22,
+   "form": "Vaters",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "father",
+   "es": "padre",
+   "fr": "père",
+   "it": "padre"
+  }
+ ],
+ "7": [
+  {
+   "pos": 0,
+   "form": "damit",
+   "lemma": "damit",
+   "level": "B1",
+   "en": "so that",
+   "es": "para que",
+   "fr": "afin que",
+   "it": "affinché"
+  },
+  {
+   "pos": 1,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 2,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 3,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 4,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 5,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 6,
+   "form": "nicht",
+   "lemma": "nicht",
+   "level": "A1",
+   "en": "not",
+   "es": "no",
+   "fr": "ne pas",
+   "it": "non"
+  },
+  {
+   "pos": 7,
+   "form": "von",
+   "lemma": "von",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 8,
+   "form": "einem",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "one",
+   "es": "una",
+   "fr": "une",
+   "it": "una"
+  },
+  {
+   "pos": 9,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 10,
+   "form": "zum",
+   "lemma": "zum",
+   "level": "A1",
+   "en": "to the",
+   "es": "a la",
+   "fr": "à l'",
+   "it": "all'"
+  },
+  {
+   "pos": 11,
+   "form": "anderen",
+   "lemma": "ander",
+   "level": "A1",
+   "en": "other",
+   "es": "otra",
+   "fr": "autre",
+   "it": "altra"
+  },
+  {
+   "pos": 12,
+   "form": "übergeht",
+   "lemma": "übergehen",
+   "level": "B2",
+   "en": "passes",
+   "es": "pase",
+   "fr": "passe",
+   "it": "passi"
+  },
+  {
+   "pos": 13,
+   "form": "Denn",
+   "lemma": "denn",
+   "level": "A2",
+   "en": "For",
+   "es": "Porque",
+   "fr": "Car",
+   "it": "Poiché"
+  },
+  {
+   "pos": 14,
+   "form": "jeder",
+   "lemma": "jeder",
+   "level": "A1",
+   "en": "each one",
+   "es": "cada uno",
+   "fr": "chacun",
+   "it": "ciascuno"
+  },
+  {
+   "pos": 15,
+   "form": "unter",
+   "lemma": "unter",
+   "level": "A2",
+   "en": "among",
+   "es": "entre",
+   "fr": "parmi",
+   "it": "tra"
+  },
+  {
+   "pos": 16,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 17,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 18,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 19,
+   "form": "soll",
+   "lemma": "sollen",
+   "level": "A2",
+   "en": "shall",
+   "es": "debe",
+   "fr": "doit",
+   "it": "deve"
+  },
+  {
+   "pos": 20,
+   "form": "am",
+   "lemma": "am",
+   "level": "A1",
+   "en": "to the",
+   "es": "a la",
+   "fr": "à l'",
+   "it": "all'"
+  },
+  {
+   "pos": 21,
+   "form": "Erbe",
+   "lemma": "Erbe",
+   "level": "B2",
+   "en": "inheritance",
+   "es": "herencia",
+   "fr": "héritage",
+   "it": "eredità"
+  },
+  {
+   "pos": 22,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 23,
+   "form": "Stammes",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 24,
+   "form": "seiner",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "of his",
+   "es": "de sus",
+   "fr": "de ses",
+   "it": "dei suoi"
+  },
+  {
+   "pos": 25,
+   "form": "Väter",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "fathers",
+   "es": "padres",
+   "fr": "pères",
+   "it": "padri"
+  },
+  {
+   "pos": 26,
+   "form": "festhalten",
+   "lemma": "festhalten",
+   "level": "B1",
+   "en": "hold on to",
+   "es": "aferrarse",
+   "fr": "s'attacher",
+   "it": "attenersi"
+  }
+ ],
+ "8": [
+  {
+   "pos": 0,
+   "form": "Und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "And",
+   "es": "Y",
+   "fr": "Et",
+   "it": "E"
+  },
+  {
+   "pos": 1,
+   "form": "jede",
+   "lemma": "jeder",
+   "level": "A1",
+   "en": "every",
+   "es": "toda",
+   "fr": "toute",
+   "it": "ogni"
+  },
+  {
+   "pos": 2,
+   "form": "Tochter",
+   "lemma": "Tochter",
+   "level": "A1",
+   "en": "daughter",
+   "es": "hija",
+   "fr": "fille",
+   "it": "figlia"
+  },
+  {
+   "pos": 3,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "who",
+   "es": "que",
+   "fr": "qui",
+   "it": "che"
+  },
+  {
+   "pos": 4,
+   "form": "ein",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "a",
+   "es": "una",
+   "fr": "une",
+   "it": "una"
+  },
+  {
+   "pos": 5,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 6,
+   "form": "unter",
+   "lemma": "unter",
+   "level": "A2",
+   "en": "among",
+   "es": "entre",
+   "fr": "parmi",
+   "it": "tra"
+  },
+  {
+   "pos": 7,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 8,
+   "form": "Stämmen",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribes",
+   "es": "tribus",
+   "fr": "tribus",
+   "it": "tribù"
+  },
+  {
+   "pos": 9,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 10,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 11,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 12,
+   "form": "besitzt",
+   "lemma": "besitzen",
+   "level": "B1",
+   "en": "possesses",
+   "es": "posee",
+   "fr": "possède",
+   "it": "possiede"
+  },
+  {
+   "pos": 13,
+   "form": "soll",
+   "lemma": "sollen",
+   "level": "A2",
+   "en": "shall",
+   "es": "debe",
+   "fr": "doit",
+   "it": "deve"
+  },
+  {
+   "pos": 14,
+   "form": "einen",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "one",
+   "es": "uno",
+   "fr": "un",
+   "it": "uno"
+  },
+  {
+   "pos": 15,
+   "form": "aus",
+   "lemma": "aus",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 16,
+   "form": "dem",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 17,
+   "form": "Geschlecht",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineage",
+   "es": "linaje",
+   "fr": "lignée",
+   "it": "stirpe"
+  },
+  {
+   "pos": 18,
+   "form": "vom",
+   "lemma": "vom",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 19,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 20,
+   "form": "ihres",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "of her",
+   "es": "de su",
+   "fr": "de son",
+   "it": "del suo"
+  },
+  {
+   "pos": 21,
+   "form": "Vaters",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "father",
+   "es": "padre",
+   "fr": "père",
+   "it": "padre"
+  },
+  {
+   "pos": 22,
+   "form": "heiraten",
+   "lemma": "heiraten",
+   "level": "A1",
+   "en": "marry",
+   "es": "casarse con",
+   "fr": "épouser",
+   "it": "sposare"
+  },
+  {
+   "pos": 23,
+   "form": "damit",
+   "lemma": "damit",
+   "level": "B1",
+   "en": "so that",
+   "es": "para que",
+   "fr": "afin que",
+   "it": "affinché"
+  },
+  {
+   "pos": 24,
+   "form": "jeder",
+   "lemma": "jeder",
+   "level": "A1",
+   "en": "each one",
+   "es": "cada uno",
+   "fr": "chacun",
+   "it": "ciascuno"
+  },
+  {
+   "pos": 25,
+   "form": "unter",
+   "lemma": "unter",
+   "level": "A2",
+   "en": "among",
+   "es": "entre",
+   "fr": "parmi",
+   "it": "tra"
+  },
+  {
+   "pos": 26,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 27,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 28,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 29,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "l'",
+   "it": "l'"
+  },
+  {
+   "pos": 30,
+   "form": "Erbe",
+   "lemma": "Erbe",
+   "level": "B2",
+   "en": "inheritance",
+   "es": "herencia",
+   "fr": "héritage",
+   "it": "eredità"
+  },
+  {
+   "pos": 31,
+   "form": "seiner",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "of his",
+   "es": "de sus",
+   "fr": "de ses",
+   "it": "dei suoi"
+  },
+  {
+   "pos": 32,
+   "form": "Väter",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "fathers",
+   "es": "padres",
+   "fr": "pères",
+   "it": "padri"
+  },
+  {
+   "pos": 33,
+   "form": "behält",
+   "lemma": "behalten",
+   "level": "B1",
+   "en": "keeps",
+   "es": "conserve",
+   "fr": "garde",
+   "it": "conservi"
+  }
+ ],
+ "9": [
+  {
+   "pos": 0,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 1,
+   "form": "kein",
+   "lemma": "kein",
+   "level": "A1",
+   "en": "no",
+   "es": "ninguna",
+   "fr": "aucune",
+   "it": "nessuna"
+  },
+  {
+   "pos": 2,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 3,
+   "form": "von",
+   "lemma": "von",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 4,
+   "form": "einem",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "one",
+   "es": "una",
+   "fr": "une",
+   "it": "una"
+  },
+  {
+   "pos": 5,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 6,
+   "form": "auf",
+   "lemma": "auf",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 7,
+   "form": "einen",
+   "lemma": "ein",
+   "level": "A1",
+   "en": "an",
+   "es": "una",
+   "fr": "une",
+   "it": "un'"
+  },
+  {
+   "pos": 8,
+   "form": "anderen",
+   "lemma": "ander",
+   "level": "A1",
+   "en": "other",
+   "es": "otra",
+   "fr": "autre",
+   "it": "altra"
+  },
+  {
+   "pos": 9,
+   "form": "übergeht",
+   "lemma": "übergehen",
+   "level": "B2",
+   "en": "passes",
+   "es": "pase",
+   "fr": "passe",
+   "it": "passi"
+  },
+  {
+   "pos": 10,
+   "form": "sondern",
+   "lemma": "sondern",
+   "level": "B1",
+   "en": "but",
+   "es": "sino",
+   "fr": "mais",
+   "it": "ma"
+  },
+  {
+   "pos": 11,
+   "form": "jeder",
+   "lemma": "jeder",
+   "level": "A1",
+   "en": "each one",
+   "es": "cada uno",
+   "fr": "chacun",
+   "it": "ciascuno"
+  },
+  {
+   "pos": 12,
+   "form": "an",
+   "lemma": "an",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 13,
+   "form": "seinem",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "his",
+   "es": "su",
+   "fr": "son",
+   "it": "la sua"
+  },
+  {
+   "pos": 14,
+   "form": "Erbe",
+   "lemma": "Erbe",
+   "level": "B2",
+   "en": "inheritance",
+   "es": "herencia",
+   "fr": "héritage",
+   "it": "eredità"
+  },
+  {
+   "pos": 15,
+   "form": "unter",
+   "lemma": "unter",
+   "level": "A2",
+   "en": "among",
+   "es": "entre",
+   "fr": "parmi",
+   "it": "tra"
+  },
+  {
+   "pos": 16,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 17,
+   "form": "Stämmen",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribes",
+   "es": "tribus",
+   "fr": "tribus",
+   "it": "tribù"
+  },
+  {
+   "pos": 18,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 19,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 20,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 21,
+   "form": "festhält",
+   "lemma": "festhalten",
+   "level": "B1",
+   "en": "holds on to",
+   "es": "se aferre",
+   "fr": "s'attache",
+   "it": "si attenga"
+  }
+ ],
+ "10": [
+  {
+   "pos": 0,
+   "form": "Wie",
+   "lemma": "wie",
+   "level": "A1",
+   "en": "As",
+   "es": "Como",
+   "fr": "Comme",
+   "it": "Come"
+  },
+  {
+   "pos": 1,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "l'",
+   "it": "il"
+  },
+  {
+   "pos": 2,
+   "form": "HERR",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 3,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "it",
+   "es": "lo",
+   "fr": "l'",
+   "it": "lo"
+  },
+  {
+   "pos": 4,
+   "form": "Mose",
+   "lemma": "Mose",
+   "level": "A1",
+   "en": "Moses",
+   "es": "Moisés",
+   "fr": "Moïse",
+   "it": "Mosè"
+  },
+  {
+   "pos": 5,
+   "form": "befohlen",
+   "lemma": "befehlen",
+   "level": "B2",
+   "en": "commanded",
+   "es": "mandado",
+   "fr": "ordonné",
+   "it": "comandato"
+  },
+  {
+   "pos": 6,
+   "form": "hatte",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "had",
+   "es": "había",
+   "fr": "avait",
+   "it": "aveva"
+  },
+  {
+   "pos": 7,
+   "form": "so",
+   "lemma": "so",
+   "level": "A1",
+   "en": "so",
+   "es": "así",
+   "fr": "ainsi",
+   "it": "così"
+  },
+  {
+   "pos": 8,
+   "form": "machten",
+   "lemma": "machen",
+   "level": "A1",
+   "en": "did",
+   "es": "hicieron",
+   "fr": "firent",
+   "it": "fecero"
+  },
+  {
+   "pos": 9,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "it",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 10,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 11,
+   "form": "Töchter",
+   "lemma": "Tochter",
+   "level": "A1",
+   "en": "daughters",
+   "es": "hijas",
+   "fr": "filles",
+   "it": "figlie"
+  },
+  {
+   "pos": 12,
+   "form": "Zelophehads",
+   "lemma": "Zelophehad",
+   "level": "A1",
+   "en": "of Zelophehad",
+   "es": "de Zelofehad",
+   "fr": "de Tselophchad",
+   "it": "di Zelofcad"
+  }
+ ],
+ "11": [
+  {
+   "pos": 0,
+   "form": "Mahela",
+   "lemma": "Mahela",
+   "level": "A1",
+   "en": "Mahlah",
+   "es": "Maala",
+   "fr": "Machla",
+   "it": "Macla"
+  },
+  {
+   "pos": 1,
+   "form": "Thirza",
+   "lemma": "Thirza",
+   "level": "A1",
+   "en": "Tirzah",
+   "es": "Tirsa",
+   "fr": "Thirtsa",
+   "it": "Tirza"
+  },
+  {
+   "pos": 2,
+   "form": "Hogla",
+   "lemma": "Hogla",
+   "level": "A1",
+   "en": "Hoglah",
+   "es": "Hogla",
+   "fr": "Hogla",
+   "it": "Ogla"
+  },
+  {
+   "pos": 3,
+   "form": "Milka",
+   "lemma": "Milka",
+   "level": "A1",
+   "en": "Milcah",
+   "es": "Milca",
+   "fr": "Milca",
+   "it": "Milca"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Noa",
+   "lemma": "Noa",
+   "level": "A1",
+   "en": "Noah",
+   "es": "Noa",
+   "fr": "Noa",
+   "it": "Noa"
+  },
+  {
+   "pos": 6,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "they",
+   "es": "ellas",
+   "fr": "elles",
+   "it": "esse"
+  },
+  {
+   "pos": 7,
+   "form": "heirateten",
+   "lemma": "heiraten",
+   "level": "A1",
+   "en": "married",
+   "es": "se casaron con",
+   "fr": "épousèrent",
+   "it": "sposarono"
+  },
+  {
+   "pos": 8,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 9,
+   "form": "Söhne",
+   "lemma": "Sohn",
+   "level": "A1",
+   "en": "sons",
+   "es": "hijos",
+   "fr": "fils",
+   "it": "figli"
+  },
+  {
+   "pos": 10,
+   "form": "ihrer",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "of their",
+   "es": "de sus",
+   "fr": "de leurs",
+   "it": "dei loro"
+  },
+  {
+   "pos": 11,
+   "form": "Onkel",
+   "lemma": "Onkel",
+   "level": "A2",
+   "en": "uncles",
+   "es": "tíos",
+   "fr": "oncles",
+   "it": "zii"
+  }
+ ],
+ "12": [
+  {
+   "pos": 0,
+   "form": "aus",
+   "lemma": "aus",
+   "level": "A1",
+   "en": "from",
+   "es": "de",
+   "fr": "de",
+   "it": "da"
+  },
+  {
+   "pos": 1,
+   "form": "dem",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 2,
+   "form": "Geschlecht",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineage",
+   "es": "linaje",
+   "fr": "lignée",
+   "it": "stirpe"
+  },
+  {
+   "pos": 3,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 4,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 5,
+   "form": "Manasses",
+   "lemma": "Manasse",
+   "level": "A1",
+   "en": "of Manasseh",
+   "es": "de Manasés",
+   "fr": "de Manassé",
+   "it": "di Manasse"
+  },
+  {
+   "pos": 6,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
+  },
+  {
+   "pos": 7,
+   "form": "Sohnes",
+   "lemma": "Sohn",
+   "level": "A1",
+   "en": "son",
+   "es": "hijo",
+   "fr": "fils",
+   "it": "figlio"
+  },
+  {
+   "pos": 8,
+   "form": "Josephs",
+   "lemma": "Joseph",
+   "level": "A1",
+   "en": "of Joseph",
+   "es": "de José",
+   "fr": "de Joseph",
+   "it": "di Giuseppe"
+  },
+  {
+   "pos": 9,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
+   "pos": 10,
+   "form": "blieb",
+   "lemma": "bleiben",
+   "level": "A1",
+   "en": "remained",
+   "es": "quedó",
+   "fr": "resta",
+   "it": "rimase"
+  },
+  {
+   "pos": 11,
+   "form": "ihr",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "su",
+   "fr": "leur",
+   "it": "la loro"
+  },
+  {
+   "pos": 12,
+   "form": "Erbteil",
+   "lemma": "Erbteil",
+   "level": "C1",
+   "en": "hereditary portion",
+   "es": "porción hereditaria",
+   "fr": "part héréditaire",
+   "it": "porzione ereditaria"
+  },
+  {
+   "pos": 13,
+   "form": "beim",
+   "lemma": "beim",
+   "level": "A1",
+   "en": "with the",
+   "es": "con la",
+   "fr": "auprès de la",
+   "it": "presso la"
+  },
+  {
+   "pos": 14,
+   "form": "Stamm",
+   "lemma": "Stamm",
+   "level": "B2",
+   "en": "tribe",
+   "es": "tribu",
+   "fr": "tribu",
+   "it": "tribù"
+  },
+  {
+   "pos": 15,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "del",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 16,
+   "form": "Geschlechts",
+   "lemma": "Geschlecht",
+   "level": "C1",
+   "en": "lineage",
+   "es": "linaje",
+   "fr": "lignée",
+   "it": "stirpe"
+  },
+  {
+   "pos": 17,
+   "form": "ihres",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "of their",
+   "es": "de su",
+   "fr": "de leur",
+   "it": "del loro"
+  },
+  {
+   "pos": 18,
+   "form": "Vaters",
+   "lemma": "Vater",
+   "level": "A1",
+   "en": "father",
+   "es": "padre",
+   "fr": "père",
+   "it": "padre"
+  }
+ ],
+ "13": [
+  {
+   "pos": 0,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estos",
+   "fr": "Ce",
+   "it": "Questi"
+  },
+  {
+   "pos": 1,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 2,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 3,
+   "form": "Gebote",
+   "lemma": "Gebot",
+   "level": "B1",
+   "en": "commandments",
+   "es": "mandamientos",
+   "fr": "commandements",
+   "it": "comandamenti"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Rechtsbestimmungen",
+   "lemma": "Rechtsbestimmung",
+   "level": "C1",
+   "en": "ordinances",
+   "es": "ordenanzas",
+   "fr": "ordonnances",
+   "it": "ordinanze"
+  },
+  {
+   "pos": 6,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "which",
+   "es": "que",
+   "fr": "que",
+   "it": "che"
+  },
+  {
+   "pos": 7,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "l'",
+   "it": "il"
+  },
+  {
+   "pos": 8,
+   "form": "HERR",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 9,
+   "form": "durch",
+   "lemma": "durch",
+   "level": "A2",
+   "en": "through",
+   "es": "por",
+   "fr": "par",
+   "it": "per"
+  },
+  {
+   "pos": 10,
+   "form": "Mose",
+   "lemma": "Mose",
+   "level": "A1",
+   "en": "Moses",
+   "es": "Moisés",
+   "fr": "Moïse",
+   "it": "Mosè"
+  },
+  {
+   "pos": 11,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "to the",
+   "es": "a los",
+   "fr": "aux",
+   "it": "ai"
+  },
+  {
+   "pos": 12,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 13,
+   "form": "Israel",
+   "lemma": "Israel",
+   "level": "A1",
+   "en": "of Israel",
+   "es": "de Israel",
+   "fr": "d'Israël",
+   "it": "d'Israele"
+  },
+  {
+   "pos": 14,
+   "form": "gab",
+   "lemma": "geben",
+   "level": "A1",
+   "en": "gave",
+   "es": "dio",
+   "fr": "donna",
+   "it": "diede"
+  },
+  {
+   "pos": 15,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "dans",
+   "it": "in"
+  },
+  {
+   "pos": 16,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "las",
+   "fr": "les",
+   "it": "le"
+  },
+  {
+   "pos": 17,
+   "form": "Ebenen",
+   "lemma": "Ebene",
+   "level": "B2",
+   "en": "plains",
+   "es": "llanuras",
+   "fr": "plaines",
+   "it": "pianure"
+  },
+  {
+   "pos": 18,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de los",
+   "fr": "des",
+   "it": "dei"
+  },
+  {
+   "pos": 19,
+   "form": "Moabiter",
+   "lemma": "Moabiter",
+   "level": "B2",
+   "en": "Moabites",
+   "es": "moabitas",
+   "fr": "Moabites",
+   "it": "Moabiti"
+  },
+  {
+   "pos": 20,
+   "form": "am",
+   "lemma": "am",
+   "level": "A1",
+   "en": "by the",
+   "es": "junto al",
+   "fr": "près du",
+   "it": "presso il"
+  },
+  {
+   "pos": 21,
+   "form": "Jordan",
+   "lemma": "Jordan",
+   "level": "A1",
+   "en": "Jordan",
+   "es": "Jordán",
+   "fr": "Jourdain",
+   "it": "Giordano"
+  },
+  {
+   "pos": 22,
+   "form": "gegenüber",
+   "lemma": "gegenüber",
+   "level": "B2",
+   "en": "opposite",
+   "es": "frente a",
+   "fr": "en face de",
+   "it": "di fronte a"
+  },
+  {
+   "pos": 23,
+   "form": "von",
+   "lemma": "von",
+   "level": "A1",
+   "en": "of",
+   "es": "de",
+   "fr": "de",
+   "it": "di"
+  },
+  {
+   "pos": 24,
+   "form": "Jericho",
+   "lemma": "Jericho",
+   "level": "A1",
+   "en": "Jericho",
+   "es": "Jericó",
+   "fr": "Jéricho",
+   "it": "Gerico"
+  }
+ ]
+}
