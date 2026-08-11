@@ -218,8 +218,14 @@ kein Annotationsfehler:
 | `Perisiter` | `Pheresiter` |
 | `Hiwiter` | `Heviter` |
 
+**7,1 ist die Abweichung, nicht 20,17.** `Hethiter` (17×), `Pheresiter` und
+`Heviter` stehen mit genau diesen Glossen längst im Bestand (1Mo 15,20 · 1Mo
+13,7 · 2Mo 3,8); `Hetiter`, `Perisiter` und `Hiwiter` sind dort **nirgends**
+belegt. 7,1 führt also drei neue Lemmata ein.
+
 `Girgasiter`, `Amoriter`, `Kanaaniter` und `Jebusiter` stimmen überein; 20,17
-lässt die Girgasiter weg. **Jede Stelle bekommt das Lemma ihrer eigenen
+lässt die Girgasiter weg und stellt Amoriter und Kanaaniter vor die
+Pheresiter. **Jede Stelle bekommt das Lemma ihrer eigenen
 Schreibung**, alle bekommen dieselbe Glosse (*Hittites · heteos · Héthiens ·
 Hittei* usw.). Auch Reihenfolge und Auswahl weichen von 2Mo 23,23 ab —
 Schreibung aus dem Text übernehmen, Reihenfolge nicht.
