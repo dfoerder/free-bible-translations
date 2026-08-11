@@ -93,6 +93,22 @@ von dort übernehmen, nicht neu bilden.
 **Achtung:** der Text schreibt `Nahesson` (nicht „Nachasson"), und in 1,7 steht
 er im Nominativ.
 
+### `Deguel` und `Reguel` — nicht harmonisieren
+
+Gads Stammvater heißt in **1,14 · 7,42 · 10,20 `Deguel`**, in **2,14 dagegen
+`Reguel`**. Das ist **kein Modernisierungsfehler**: der Luther 1912 hat es
+genauso, und er folgt damit dem hebräischen Text, der in 2,14 *Reuel* und
+sonst *Deuel* liest — eine der bekannten Varianten des Buches. Beide Formen
+bleiben stehen und bekommen ihre eigene Glosse.
+
+Davon zu trennen ist **`Reguel` in 10,29**: das ist Hobabs Vater, ein
+Midianiter, also eine **andere Person**. Der Agent von 4Mo 10 hat den Fall
+aufgedeckt und richtig als meldepflichtig behandelt, statt zu glätten.
+
+Ebenso stehen gelassen: `Ahi-Eser` (10,25, mit Bindestrich) neben `Ahieser`
+(1,12 · 2,25) und `Gideonis` (10,24, Genitiv-s) neben `des Gideoni`. Das Lemma
+folgt der Textschreibung, die Glosse dem Bestand.
+
 ## `sprengen` hat im vierten Buch eine zweite Lesart
 
 Die Bindung aus 3. Mose — `sprengen` = *dash / esparcir / répandre / spargere* —
