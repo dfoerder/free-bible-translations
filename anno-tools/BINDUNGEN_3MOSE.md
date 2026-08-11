@@ -149,6 +149,11 @@ Als Speise, die gegessen wird: *meat / carne / viande / carne* (3Mo 7,15–21).
 Der Bestand macht dieselbe Unterscheidung — 2Mo 12,8 und 29,31 tragen *meat*,
 die hundert übrigen Belege *flesh*. **Am Verb entscheiden, nicht am Wort.**
 
+Eine Ausnahme, die der Agent von 3Mo 26 gefunden hat: in 26,29 wird gegessen,
+aber es ist das Fleisch der eigenen Kinder. *meat/viande* ist dort im Register
+falsch — die Stelle trägt *flesh/chair*. **Die Regel gilt für Schlachtvieh,
+nicht für Menschenfleisch.**
+
 **`ewig` weicht im Französischen auf *perpétuel* aus**, wo `HERR` (*ÉTERNEL*)
 im selben Vers steht. Das gilt **generell**, nicht nur an den zuerst
 gefundenen Stellen 3Mo 6,11 · 6,15 · 7,34 · 7,36 — vier Agenten haben es
