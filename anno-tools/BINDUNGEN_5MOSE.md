@@ -135,6 +135,19 @@ und 6,14 wurden nachträglich darauf gezogen.
 **Gott ist in diesem Buch nicht „eifernd" und nicht „eifersüchtig".** 4,24 und
 6,15 sagen beide `ein leidenschaftlicher Gott`.
 
+### `Getreide` und `Weizen` sind im Bestand nur im Englischen unterscheidbar
+
+| | en | es | fr | it |
+|---|---|---|---|---|
+| `Getreide` (25×) | grain | trigo | blé | grano |
+| `Weizen` (10×) | wheat | trigo | blé | grano |
+
+Drei von vier Spalten sind gleich. Im ganzen Korpus stehen die beiden Wörter
+**nirgends im selben Vers**, deshalb bleibt es nach der Kollisionsregel so
+stehen. `Weizen` steht in 8,8, `Getreide` in 11,14 — **sobald ein Kapitel
+beide führt, muss `Getreide` auf *cereales · céréales · cereali* ausweichen**,
+und dann korpusweit.
+
 ## Namen: der Prompt lag siebenmal daneben
 
 Beide Agenten haben unabhängig dieselbe Sorte Fehler gemeldet. **Die
