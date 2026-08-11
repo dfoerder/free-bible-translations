@@ -208,6 +208,9 @@ schreiben `Hesbon` und `Basan`, **29,6 schreibt `Heschbon` und `Baschan`**.
 `Heschbon` ist im ganzen Bestand unbelegt, `Baschan` genau einmal (4Mo 32,33).
 Jede Stelle behält ihre Schreibung als Lemma und teilt die Glosse.
 
+**Und ein Stammesname:** 27,13 schreibt `Naphthali`, **34,2 schreibt
+`Naphtali`**. Auch hier zwei Lemmata, eine Glosse.
+
 **Auch `Gräuel` schreibt sich zweimal verschieden:** 17,1 und 18,12 haben
 `Gräuel`, 22,5 hat `Greuel`. Beide Schreibungen sind im Bestand belegt, beide
 tragen *abomination · abominación · abomination · abominazione*, jede Stelle
