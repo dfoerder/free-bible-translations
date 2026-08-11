@@ -194,6 +194,11 @@ und dann korpusweit.
 Beide Agenten haben unabhängig dieselbe Sorte Fehler gemeldet. **Die
 Schreibung des Quelltextes gilt**, auch wenn 4. Mose es anders schreibt:
 
+**Auch `Gräuel` schreibt sich zweimal verschieden:** 17,1 und 18,12 haben
+`Gräuel`, 22,5 hat `Greuel`. Beide Schreibungen sind im Bestand belegt, beide
+tragen *abomination · abominación · abomination · abominazione*, jede Stelle
+behält ihr eigenes Lemma.
+
 | oft erwartet | steht wirklich da |
 |---|---|
 | Kadesch-Barnea | **Kades-Barnea** |
