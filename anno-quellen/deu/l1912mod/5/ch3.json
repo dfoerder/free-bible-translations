@@ -12,6 +12,20 @@
   },
   {
    "pos": 1,
+   "parts": [
+    1,
+    3
+   ],
+   "form": "wandten uns",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turned",
+   "es": "nos volvimos",
+   "fr": "nous tournâmes",
+   "it": "ci volgemmo"
+  },
+  {
+   "pos": 1,
    "form": "wandten",
    "lemma": "wenden",
    "level": "B1",
@@ -49,6 +63,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 5,
+   "parts": [
+    5,
+    11
+   ],
+   "form": "zogen hinauf",
+   "lemma": "hinaufziehen",
+   "level": "B2",
+   "en": "went up",
+   "es": "subimos",
+   "fr": "montâmes",
+   "it": "salimmo"
   },
   {
    "pos": 5,
@@ -182,6 +210,20 @@
   },
   {
    "pos": 18,
+   "parts": [
+    18,
+    25
+   ],
+   "form": "zog aus",
+   "lemma": "ausziehen",
+   "level": "B1",
+   "en": "marched out",
+   "es": "salió",
+   "fr": "sortit",
+   "it": "uscì"
+  },
+  {
+   "pos": 18,
    "form": "zog",
    "lemma": "ziehen",
    "level": "A2",
@@ -309,48 +351,6 @@
    "es": "luchar",
    "fr": "combattre",
    "it": "combattere"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    3
-   ],
-   "form": "wandten uns",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turned",
-   "es": "nos volvimos",
-   "fr": "nous tournâmes",
-   "it": "ci volgemmo"
-  },
-  {
-   "pos": 5,
-   "parts": [
-    5,
-    11
-   ],
-   "form": "zogen hinauf",
-   "lemma": "hinaufziehen",
-   "level": "B2",
-   "en": "went up",
-   "es": "subimos",
-   "fr": "montâmes",
-   "it": "salimmo"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    25
-   ],
-   "form": "zog aus",
-   "lemma": "ausziehen",
-   "level": "B1",
-   "en": "marched out",
-   "es": "salió",
-   "fr": "sortit",
-   "it": "uscì"
   }
  ],
  "2": [
@@ -413,6 +413,17 @@
    "es": "mí",
    "fr": "moi",
    "it": "me"
+  },
+  {
+   "pos": 6,
+   "pos_end": 8,
+   "form": "Fürchte dich nicht",
+   "lemma": "sich nicht fürchten",
+   "level": "B1",
+   "en": "Don't be afraid",
+   "es": "No temas",
+   "fr": "N'aie pas peur",
+   "it": "Non temere"
   },
   {
    "pos": 6,
@@ -563,6 +574,17 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
+  },
+  {
+   "pos": 21,
+   "pos_end": 24,
+   "form": "in deine Hände gegeben",
+   "lemma": "in die Hand geben",
+   "level": "B2",
+   "en": "delivered into your hands",
+   "es": "entregado en tus manos",
+   "fr": "livré entre tes mains",
+   "it": "consegnato nelle tue mani"
   },
   {
    "pos": 21,
@@ -803,28 +825,6 @@
    "es": "estaba sentado",
    "fr": "était assis",
    "it": "era seduto"
-  },
-  {
-   "pos": 6,
-   "pos_end": 8,
-   "form": "Fürchte dich nicht",
-   "lemma": "sich nicht fürchten",
-   "level": "B1",
-   "en": "Don't be afraid",
-   "es": "No temas",
-   "fr": "N'aie pas peur",
-   "it": "Non temere"
-  },
-  {
-   "pos": 21,
-   "pos_end": 24,
-   "form": "in deine Hände gegeben",
-   "lemma": "in die Hand geben",
-   "level": "B2",
-   "en": "delivered into your hands",
-   "es": "entregado en tus manos",
-   "fr": "livré entre tes mains",
-   "it": "consegnato nelle tue mani"
   }
  ],
  "3": [
@@ -837,6 +837,22 @@
    "es": "Así",
    "fr": "Ainsi",
    "it": "Così"
+  },
+  {
+   "pos": 1,
+   "parts": [
+    1,
+    15,
+    16,
+    17
+   ],
+   "form": "gab in unsere Hände",
+   "lemma": "in die Hand geben",
+   "level": "B2",
+   "en": "delivered into our hands",
+   "es": "entregó en nuestras manos",
+   "fr": "livra entre nos mains",
+   "it": "consegnò nelle nostre mani"
   },
   {
    "pos": 1,
@@ -1090,6 +1106,17 @@
   },
   {
    "pos": 26,
+   "pos_end": 27,
+   "form": "übrig blieb",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "was left",
+   "es": "quedó",
+   "fr": "resta",
+   "it": "rimase"
+  },
+  {
+   "pos": 26,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -1107,33 +1134,6 @@
    "es": "quedó",
    "fr": "resta",
    "it": "rimase"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    15,
-    16,
-    17
-   ],
-   "form": "gab in unsere Hände",
-   "lemma": "in die Hand geben",
-   "level": "B2",
-   "en": "delivered into our hands",
-   "es": "entregó en nuestras manos",
-   "fr": "livra entre nos mains",
-   "it": "consegnò nelle nostre mani"
-  },
-  {
-   "pos": 26,
-   "pos_end": 27,
-   "form": "übrig blieb",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "was left",
-   "es": "quedó",
-   "fr": "resta",
-   "it": "rimase"
   }
  ],
  "4": [
@@ -1146,6 +1146,20 @@
    "es": "En aquel tiempo",
    "fr": "En ce temps-là",
    "it": "A quel tempo"
+  },
+  {
+   "pos": 1,
+   "parts": [
+    1,
+    6
+   ],
+   "form": "nahmen ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocupamos",
+   "fr": "nous emparâmes de",
+   "it": "occupammo"
   },
   {
    "pos": 1,
@@ -1206,6 +1220,17 @@
    "es": "dentro",
    "fr": "dedans",
    "it": "dentro"
+  },
+  {
+   "pos": 8,
+   "pos_end": 9,
+   "form": "es gab",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "there was",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'era"
   },
   {
    "pos": 8,
@@ -1291,7 +1316,7 @@
    "pos": 16,
    "form": "abnahmen",
    "lemma": "abnehmen",
-   "level": "B2",
+   "level": "B1",
    "en": "took away",
    "es": "quitamos",
    "fr": "enlevâmes",
@@ -1406,31 +1431,6 @@
    "es": "Basán",
    "fr": "Basan",
    "it": "Basan"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    6
-   ],
-   "form": "nahmen ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocupamos",
-   "fr": "nous emparâmes de",
-   "it": "occupammo"
-  },
-  {
-   "pos": 8,
-   "pos_end": 9,
-   "form": "es gab",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "there was",
-   "es": "había",
-   "fr": "il y avait",
-   "it": "c'era"
   }
  ],
  "5": [
@@ -1556,6 +1556,17 @@
   },
   {
    "pos": 12,
+   "pos_end": 13,
+   "form": "gab es",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "there were",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'erano"
+  },
+  {
+   "pos": 12,
    "form": "gab",
    "lemma": "geben",
    "level": "A1",
@@ -1643,17 +1654,6 @@
    "es": "muros",
    "fr": "murailles",
    "it": "mura"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "gab es",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "there were",
-   "es": "había",
-   "fr": "il y avait",
-   "it": "c'erano"
   }
  ],
  "6": [
@@ -1686,6 +1686,17 @@
    "es": "las",
    "fr": "les",
    "it": "le"
+  },
+  {
+   "pos": 3,
+   "pos_end": 4,
+   "form": "so wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "just as",
+   "es": "así como",
+   "fr": "tout comme",
+   "it": "così come"
   },
   {
    "pos": 3,
@@ -1896,17 +1907,6 @@
    "es": "hijos",
    "fr": "enfants",
    "it": "figli"
-  },
-  {
-   "pos": 3,
-   "pos_end": 4,
-   "form": "so wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "just as",
-   "es": "así como",
-   "fr": "tout comme",
-   "it": "così come"
   }
  ],
  "7": [
@@ -2234,6 +2234,17 @@
   },
   {
    "pos": 20,
+   "pos_end": 21,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
+  },
+  {
+   "pos": 20,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -2271,17 +2282,6 @@
    "es": "Hermón",
    "fr": "Hermon",
    "it": "Ermon"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "bis zum",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
   }
  ],
  "9": [
@@ -2973,6 +2973,20 @@
   },
   {
    "pos": 2,
+   "parts": [
+    2,
+    5
+   ],
+   "form": "nahmen ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocupamos",
+   "fr": "nous emparâmes de",
+   "it": "occupammo"
+  },
+  {
+   "pos": 2,
    "form": "nahmen",
    "lemma": "nehmen",
    "level": "A1",
@@ -3010,6 +3024,20 @@
    "es": "dentro",
    "fr": "dedans",
    "it": "dentro"
+  },
+  {
+   "pos": 6,
+   "parts": [
+    6,
+    8
+   ],
+   "form": "Von an",
+   "lemma": "von an",
+   "level": "B1",
+   "en": "From onwards",
+   "es": "Desde",
+   "fr": "À partir de",
+   "it": "A partire da"
   },
   {
    "pos": 6,
@@ -3250,34 +3278,6 @@
    "es": "ciudades",
    "fr": "villes",
    "it": "città"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    5
-   ],
-   "form": "nahmen ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocupamos",
-   "fr": "nous emparâmes de",
-   "it": "occupammo"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    8
-   ],
-   "form": "Von an",
-   "lemma": "von an",
-   "level": "B1",
-   "en": "From onwards",
-   "es": "Desde",
-   "fr": "À partir de",
-   "it": "A partire da"
   }
  ],
  "13": [
@@ -3605,6 +3605,20 @@
   },
   {
    "pos": 4,
+   "parts": [
+    4,
+    17
+   ],
+   "form": "nahm ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocupó",
+   "fr": "s'empara de",
+   "it": "occupò"
+  },
+  {
+   "pos": 4,
    "form": "nahm",
    "lemma": "nehmen",
    "level": "A1",
@@ -3652,6 +3666,17 @@
    "es": "Argob",
    "fr": "Argob",
    "it": "Argob"
+  },
+  {
+   "pos": 9,
+   "pos_end": 10,
+   "form": "bis an",
+   "lemma": "bis an",
+   "level": "A2",
+   "en": "as far as",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
   },
   {
    "pos": 9,
@@ -3882,31 +3907,6 @@
    "es": "hoy",
    "fr": "aujourd'hui",
    "it": "oggi"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "bis an",
-   "lemma": "bis an",
-   "level": "A2",
-   "en": "as far as",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
-  },
-  {
-   "pos": 4,
-   "parts": [
-    4,
-    17
-   ],
-   "form": "nahm ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocupó",
-   "fr": "s'empara de",
-   "it": "occupò"
   }
  ],
  "15": [
@@ -4064,6 +4064,17 @@
   },
   {
    "pos": 11,
+   "pos_end": 12,
+   "form": "bis an",
+   "lemma": "bis an",
+   "level": "A2",
+   "en": "as far as",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
+  },
+  {
+   "pos": 11,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -4194,6 +4205,17 @@
   },
   {
    "pos": 26,
+   "pos_end": 27,
+   "form": "bis an",
+   "lemma": "bis an",
+   "level": "A2",
+   "en": "as far as",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
+  },
+  {
+   "pos": 26,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -4311,28 +4333,6 @@
    "es": "es",
    "fr": "est",
    "it": "è"
-  },
-  {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "bis an",
-   "lemma": "bis an",
-   "level": "A2",
-   "en": "as far as",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
-  },
-  {
-   "pos": 26,
-   "pos_end": 27,
-   "form": "bis an",
-   "lemma": "bis an",
-   "level": "A2",
-   "en": "as far as",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
   }
  ],
  "17": [
@@ -4435,6 +4435,17 @@
    "es": "Cineret",
    "fr": "Kinnéreth",
    "it": "Kinneret"
+  },
+  {
+   "pos": 10,
+   "pos_end": 11,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
   },
   {
    "pos": 10,
@@ -4565,17 +4576,6 @@
    "es": "oriente",
    "fr": "orient",
    "it": "oriente"
-  },
-  {
-   "pos": 10,
-   "pos_end": 11,
-   "form": "bis zum",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
   }
  ],
  "18": [
@@ -5195,6 +5195,17 @@
   },
   {
    "pos": 6,
+   "pos_end": 7,
+   "form": "Ruhe gibt",
+   "lemma": "Ruhe geben",
+   "level": "B1",
+   "en": "gives rest",
+   "es": "da descanso",
+   "fr": "donne du repos",
+   "it": "dà riposo"
+  },
+  {
+   "pos": 6,
    "form": "Ruhe",
    "lemma": "Ruhe",
    "level": "A2",
@@ -5522,17 +5533,6 @@
    "es": "he",
    "fr": "ai",
    "it": "ho"
-  },
-  {
-   "pos": 6,
-   "pos_end": 7,
-   "form": "Ruhe gibt",
-   "lemma": "Ruhe geben",
-   "level": "B1",
-   "en": "gives rest",
-   "es": "da descanso",
-   "fr": "donne du repos",
-   "it": "dà riposo"
   }
  ],
  "21": [
@@ -5870,6 +5870,17 @@
  "22": [
   {
    "pos": 0,
+   "pos_end": 2,
+   "form": "Fürchtet euch nicht",
+   "lemma": "sich nicht fürchten",
+   "level": "B1",
+   "en": "Don't be afraid",
+   "es": "No temáis",
+   "fr": "N'ayez pas peur",
+   "it": "Non temete"
+  },
+  {
+   "pos": 0,
    "form": "Fürchtet",
    "lemma": "fürchten",
    "level": "B1",
@@ -5997,17 +6008,6 @@
    "es": "vosotros",
    "fr": "vous",
    "it": "voi"
-  },
-  {
-   "pos": 0,
-   "pos_end": 2,
-   "form": "Fürchtet euch nicht",
-   "lemma": "sich nicht fürchten",
-   "level": "B1",
-   "en": "Don't be afraid",
-   "es": "No temáis",
-   "fr": "N'ayez pas peur",
-   "it": "Non temete"
   }
  ],
  "23": [
@@ -6265,6 +6265,17 @@
   },
   {
    "pos": 17,
+   "pos_end": 18,
+   "form": "gibt es",
+   "lemma": "es gibt",
+   "level": "A2",
+   "en": "is there",
+   "es": "hay",
+   "fr": "y a-t-il",
+   "it": "c'è"
+  },
+  {
+   "pos": 17,
    "form": "gibt",
    "lemma": "geben",
    "level": "A1",
@@ -6452,20 +6463,23 @@
    "es": "podría",
    "fr": "pourrait",
    "it": "potrebbe"
-  },
-  {
-   "pos": 17,
-   "pos_end": 18,
-   "form": "gibt es",
-   "lemma": "es gibt",
-   "level": "A2",
-   "en": "is there",
-   "es": "hay",
-   "fr": "y a-t-il",
-   "it": "c'è"
   }
  ],
  "25": [
+  {
+   "pos": 0,
+   "parts": [
+    0,
+    2
+   ],
+   "form": "Lass hinübergehen",
+   "lemma": "hinübergehen lassen",
+   "level": "B2",
+   "en": "Let cross over",
+   "es": "Déjame pasar",
+   "fr": "Laisse-moi passer",
+   "it": "Lasciami passare"
+  },
   {
    "pos": 0,
    "form": "Lass",
@@ -6635,20 +6649,6 @@
    "es": "Líbano",
    "fr": "Liban",
    "it": "Libano"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    2
-   ],
-   "form": "Lass hinübergehen",
-   "lemma": "hinübergehen lassen",
-   "level": "B2",
-   "en": "Let cross over",
-   "es": "Déjame pasar",
-   "fr": "Laisse-moi passer",
-   "it": "Lasciami passare"
   }
  ],
  "26": [
@@ -6794,6 +6794,17 @@
   },
   {
    "pos": 14,
+   "pos_end": 17,
+   "form": "Lass es genug sein",
+   "lemma": "es genug sein lassen",
+   "level": "B2",
+   "en": "Let that be enough",
+   "es": "Basta ya",
+   "fr": "Que cela suffise",
+   "it": "Basti così"
+  },
+  {
+   "pos": 14,
    "form": "Lass",
    "lemma": "lassen",
    "level": "A2",
@@ -6844,6 +6855,17 @@
   },
   {
    "pos": 19,
+   "pos_end": 20,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più"
+  },
+  {
+   "pos": 19,
    "form": "nicht",
    "lemma": "nicht",
    "level": "A1",
@@ -6891,28 +6913,6 @@
    "es": "mí",
    "fr": "moi",
    "it": "me"
-  },
-  {
-   "pos": 14,
-   "pos_end": 17,
-   "form": "Lass es genug sein",
-   "lemma": "es genug sein lassen",
-   "level": "B2",
-   "en": "Let that be enough",
-   "es": "Basta ya",
-   "fr": "Que cela suffise",
-   "it": "Basti così"
-  },
-  {
-   "pos": 19,
-   "pos_end": 20,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più"
   }
  ],
  "27": [
@@ -6995,6 +6995,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 8,
+   "pos_end": 10,
+   "form": "schau dich um",
+   "lemma": "sich umschauen",
+   "level": "B1",
+   "en": "look around",
+   "es": "mira alrededor",
+   "fr": "regarde autour de toi",
+   "it": "guardati intorno"
   },
   {
    "pos": 8,
@@ -7225,17 +7236,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 8,
-   "pos_end": 10,
-   "form": "schau dich um",
-   "lemma": "sich umschauen",
-   "level": "B2",
-   "en": "look around",
-   "es": "mira alrededor",
-   "fr": "regarde autour de toi",
-   "it": "guardati intorno"
   }
  ],
  "28": [
@@ -7248,6 +7248,21 @@
    "es": "Pero",
    "fr": "Mais",
    "it": "Ma"
+  },
+  {
+   "pos": 1,
+   "parts": [
+    1,
+    3,
+    4
+   ],
+   "form": "gib den Auftrag",
+   "lemma": "den Auftrag geben",
+   "level": "B2",
+   "en": "give the instruction",
+   "es": "da la orden",
+   "fr": "donne l'ordre",
+   "it": "da' l'ordine"
   },
   {
    "pos": 1,
@@ -7388,6 +7403,20 @@
    "es": "va a",
    "fr": "va",
    "it": "sta per"
+  },
+  {
+   "pos": 15,
+   "parts": [
+    15,
+    18
+   ],
+   "form": "vor her",
+   "lemma": "vor jemandem her",
+   "level": "B2",
+   "en": "ahead of",
+   "es": "delante de",
+   "fr": "devant",
+   "it": "davanti a"
   },
   {
    "pos": 15,
@@ -7558,35 +7587,6 @@
    "es": "vas a",
    "fr": "vas",
    "it": "stai per"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    3,
-    4
-   ],
-   "form": "gib den Auftrag",
-   "lemma": "den Auftrag geben",
-   "level": "B2",
-   "en": "give the instruction",
-   "es": "da la orden",
-   "fr": "donne l'ordre",
-   "it": "da' l'ordine"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    18
-   ],
-   "form": "vor her",
-   "lemma": "vor jemandem her",
-   "level": "B2",
-   "en": "ahead of",
-   "es": "delante de",
-   "fr": "devant",
-   "it": "davanti a"
   }
  ],
  "29": [

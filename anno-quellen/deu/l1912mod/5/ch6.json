@@ -313,17 +313,6 @@
  ],
  "2": [
   {
-   "pos": 25,
-   "pos_end": 28,
-   "form": "euer ganzes Leben lang",
-   "lemma": "ein Leben lang",
-   "level": "B1",
-   "en": "all your life long",
-   "es": "todos los días de vuestra vida",
-   "fr": "tous les jours de votre vie",
-   "it": "tutti i giorni della vostra vita"
-  },
-  {
    "pos": 0,
    "form": "damit",
    "lemma": "damit",
@@ -565,6 +554,17 @@
   },
   {
    "pos": 25,
+   "pos_end": 28,
+   "form": "euer ganzes Leben lang",
+   "lemma": "ein Leben lang",
+   "level": "B1",
+   "en": "all your life long",
+   "es": "todos los días de vuestra vida",
+   "fr": "tous les jours de votre vie",
+   "it": "tutti i giorni della vostra vita"
+  },
+  {
+   "pos": 25,
    "form": "euer",
    "lemma": "euer",
    "level": "A1",
@@ -646,42 +646,6 @@
  ],
  "3": [
   {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "darauf achten",
-   "lemma": "darauf achten",
-   "level": "B1",
-   "en": "take care",
-   "es": "tener cuidado",
-   "fr": "prendre garde",
-   "it": "stare attento"
-  },
-  {
-   "pos": 11,
-   "pos_end": 14,
-   "form": "es dir gut geht",
-   "lemma": "es geht gut",
-   "level": "A2",
-   "en": "it may go well with you",
-   "es": "te vaya bien",
-   "fr": "tu sois heureux",
-   "it": "tu sia felice"
-  },
-  {
-   "pos": 17,
-   "parts": [
-    17,
-    19
-   ],
-   "form": "euch vermehrt",
-   "lemma": "sich vermehren",
-   "level": "B2",
-   "en": "multiply",
-   "es": "os multipliquéis",
-   "fr": "vous multipliiez",
-   "it": "vi moltiplichiate"
-  },
-  {
    "pos": 0,
    "form": "Israel",
    "lemma": "Israel",
@@ -730,6 +694,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 5,
+   "pos_end": 6,
+   "form": "darauf achten",
+   "lemma": "darauf achten",
+   "level": "B1",
+   "en": "take care",
+   "es": "tener cuidado",
+   "fr": "prendre garde",
+   "it": "stare attento"
   },
   {
    "pos": 5,
@@ -793,6 +768,17 @@
   },
   {
    "pos": 11,
+   "pos_end": 14,
+   "form": "es dir gut geht",
+   "lemma": "es geht gut",
+   "level": "A2",
+   "en": "it may go well with you",
+   "es": "te vaya bien",
+   "fr": "tu sois heureux",
+   "it": "tu sia felice"
+  },
+  {
+   "pos": 11,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -850,6 +836,20 @@
    "es": "vosotros",
    "fr": "vous",
    "it": "voi"
+  },
+  {
+   "pos": 17,
+   "parts": [
+    17,
+    19
+   ],
+   "form": "euch vermehrt",
+   "lemma": "sich vermehren",
+   "level": "B2",
+   "en": "multiply",
+   "es": "os multipliquéis",
+   "fr": "vous multipliiez",
+   "it": "vi moltiplichiate"
   },
   {
    "pos": 17,
@@ -1197,39 +1197,6 @@
  ],
  "5": [
   {
-   "pos": 8,
-   "pos_end": 10,
-   "form": "mit ganzem Herzen",
-   "lemma": "mit ganzem Herzen",
-   "level": "B2",
-   "en": "with all your heart",
-   "es": "con todo tu corazón",
-   "fr": "de tout ton cœur",
-   "it": "con tutto il tuo cuore"
-  },
-  {
-   "pos": 11,
-   "pos_end": 13,
-   "form": "mit ganzer Seele",
-   "lemma": "mit ganzer Seele",
-   "level": "B2",
-   "en": "with all your soul",
-   "es": "con toda tu alma",
-   "fr": "de toute ton âme",
-   "it": "con tutta la tua anima"
-  },
-  {
-   "pos": 15,
-   "pos_end": 17,
-   "form": "mit aller Kraft",
-   "lemma": "mit aller Kraft",
-   "level": "B1",
-   "en": "with all your strength",
-   "es": "con todas tus fuerzas",
-   "fr": "de toute ta force",
-   "it": "con tutta la tua forza"
-  },
-  {
    "pos": 0,
    "form": "Und",
    "lemma": "und",
@@ -1311,6 +1278,17 @@
   },
   {
    "pos": 8,
+   "pos_end": 10,
+   "form": "mit ganzem Herzen",
+   "lemma": "mit ganzem Herzen",
+   "level": "B2",
+   "en": "with all your heart",
+   "es": "con todo tu corazón",
+   "fr": "de tout ton cœur",
+   "it": "con tutto il tuo cuore"
+  },
+  {
+   "pos": 8,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -1338,6 +1316,17 @@
    "es": "corazón",
    "fr": "cœur",
    "it": "cuore"
+  },
+  {
+   "pos": 11,
+   "pos_end": 13,
+   "form": "mit ganzer Seele",
+   "lemma": "mit ganzer Seele",
+   "level": "B2",
+   "en": "with all your soul",
+   "es": "con toda tu alma",
+   "fr": "de toute ton âme",
+   "it": "con tutta la tua anima"
   },
   {
    "pos": 11,
@@ -1381,6 +1370,17 @@
   },
   {
    "pos": 15,
+   "pos_end": 17,
+   "form": "mit aller Kraft",
+   "lemma": "mit aller Kraft",
+   "level": "B1",
+   "en": "with all your strength",
+   "es": "con todas tus fuerzas",
+   "fr": "de toute ta force",
+   "it": "con tutta la tua forza"
+  },
+  {
+   "pos": 15,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -1411,17 +1411,6 @@
   }
  ],
  "6": [
-  {
-   "pos": 11,
-   "pos_end": 13,
-   "form": "zu Herzen nehmen",
-   "lemma": "zu Herzen nehmen",
-   "level": "B2",
-   "en": "take to heart",
-   "es": "guardar en el corazón",
-   "fr": "prendre à cœur",
-   "it": "prendere a cuore"
-  },
   {
    "pos": 0,
    "form": "Und",
@@ -1534,6 +1523,17 @@
   },
   {
    "pos": 11,
+   "pos_end": 13,
+   "form": "zu Herzen nehmen",
+   "lemma": "zu Herzen nehmen",
+   "level": "B2",
+   "en": "take to heart",
+   "es": "guardar en el corazón",
+   "fr": "prendre à cœur",
+   "it": "prendere a cuore"
+  },
+  {
+   "pos": 11,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -1564,17 +1564,6 @@
   }
  ],
  "7": [
-  {
-   "pos": 21,
-   "pos_end": 22,
-   "form": "dich hinlegst",
-   "lemma": "sich hinlegen",
-   "level": "A2",
-   "en": "lie down",
-   "es": "te acuestas",
-   "fr": "te couches",
-   "it": "ti corichi"
-  },
   {
    "pos": 0,
    "form": "und",
@@ -1784,6 +1773,17 @@
    "es": "tú",
    "fr": "tu",
    "it": "tu"
+  },
+  {
+   "pos": 21,
+   "pos_end": 22,
+   "form": "dich hinlegst",
+   "lemma": "sich hinlegen",
+   "level": "A2",
+   "en": "lie down",
+   "es": "te acuestas",
+   "fr": "te couches",
+   "it": "ti corichi"
   },
   {
    "pos": 21,
@@ -2677,7 +2677,7 @@
    "pos": 22,
    "form": "Ölbäumen",
    "lemma": "Ölbaum",
-   "level": "B1",
+   "level": "B2",
    "en": "olive trees",
    "es": "olivos",
    "fr": "oliviers",
@@ -2806,6 +2806,16 @@
  ],
  "12": [
   {
+   "pos": 0,
+   "form": "dann",
+   "lemma": "dann",
+   "level": "A1",
+   "en": "then",
+   "es": "entonces",
+   "fr": "alors",
+   "it": "allora"
+  },
+  {
    "pos": 1,
    "pos_end": 2,
    "form": "hüte dich",
@@ -2815,16 +2825,6 @@
    "es": "guárdate",
    "fr": "garde-toi",
    "it": "guardati"
-  },
-  {
-   "pos": 0,
-   "form": "dann",
-   "lemma": "dann",
-   "level": "A1",
-   "en": "then",
-   "es": "entonces",
-   "fr": "alors",
-   "it": "allora"
   },
   {
    "pos": 1,
@@ -3141,20 +3141,6 @@
  ],
  "14": [
   {
-   "pos": 9,
-   "parts": [
-    9,
-    11
-   ],
-   "form": "um herum",
-   "lemma": "um herum",
-   "level": "B1",
-   "en": "around",
-   "es": "alrededor de",
-   "fr": "autour de",
-   "it": "attorno a"
-  },
-  {
    "pos": 0,
    "form": "Ihr",
    "lemma": "ihr",
@@ -3243,6 +3229,20 @@
    "es": "que",
    "fr": "qui",
    "it": "che"
+  },
+  {
+   "pos": 9,
+   "parts": [
+    9,
+    11
+   ],
+   "form": "um herum",
+   "lemma": "um herum",
+   "level": "A2",
+   "en": "around",
+   "es": "alrededor de",
+   "fr": "autour de",
+   "it": "attorno a"
   },
   {
    "pos": 9,
@@ -3579,17 +3579,6 @@
  ],
  "16": [
   {
-   "pos": 7,
-   "pos_end": 10,
-   "form": "auf die Probe stellen",
-   "lemma": "auf die Probe stellen",
-   "level": "B2",
-   "en": "put to the test",
-   "es": "poner a prueba",
-   "fr": "mettre à l'épreuve",
-   "it": "mettere alla prova"
-  },
-  {
    "pos": 0,
    "form": "Ihr",
    "lemma": "ihr",
@@ -3658,6 +3647,17 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
+  },
+  {
+   "pos": 7,
+   "pos_end": 10,
+   "form": "auf die Probe stellen",
+   "lemma": "auf die Probe stellen",
+   "level": "B2",
+   "en": "put to the test",
+   "es": "poner a prueba",
+   "fr": "mettre à l'épreuve",
+   "it": "mettere alla prova"
   },
   {
    "pos": 7,
@@ -3954,17 +3954,6 @@
  ],
  "18": [
   {
-   "pos": 14,
-   "pos_end": 17,
-   "form": "es dir gut geht",
-   "lemma": "es geht gut",
-   "level": "A2",
-   "en": "it may go well with you",
-   "es": "te vaya bien",
-   "fr": "tu sois heureux",
-   "it": "tu sia felice"
-  },
-  {
    "pos": 0,
    "form": "damit",
    "lemma": "damit",
@@ -4103,6 +4092,17 @@
    "es": "para que",
    "fr": "afin que",
    "it": "affinché"
+  },
+  {
+   "pos": 14,
+   "pos_end": 17,
+   "form": "es dir gut geht",
+   "lemma": "es geht gut",
+   "level": "A2",
+   "en": "it may go well with you",
+   "es": "te vaya bien",
+   "fr": "tu sois heureux",
+   "it": "tu sia felice"
   },
   {
    "pos": 14,
@@ -4439,17 +4439,6 @@
  ],
  "20": [
   {
-   "pos": 4,
-   "pos_end": 5,
-   "form": "eines Tages",
-   "lemma": "eines Tages",
-   "level": "B1",
-   "en": "one day",
-   "es": "algún día",
-   "fr": "un jour",
-   "it": "un giorno"
-  },
-  {
    "pos": 0,
    "form": "Wenn",
    "lemma": "wenn",
@@ -4488,6 +4477,17 @@
    "es": "hijo",
    "fr": "fils",
    "it": "figlio"
+  },
+  {
+   "pos": 4,
+   "pos_end": 5,
+   "form": "eines Tages",
+   "lemma": "eines Tages",
+   "level": "B1",
+   "en": "one day",
+   "es": "algún día",
+   "fr": "un jour",
+   "it": "un giorno"
   },
   {
    "pos": 4,
@@ -5116,6 +5116,16 @@
  ],
  "23": [
   {
+   "pos": 0,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
    "pos": 1,
    "parts": [
     1,
@@ -5128,30 +5138,6 @@
    "es": "sacó",
    "fr": "emmena",
    "it": "condusse via"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    13
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
-  },
-  {
-   "pos": 0,
-   "form": "und",
-   "lemma": "und",
-   "level": "A1",
-   "en": "and",
-   "es": "y",
-   "fr": "et",
-   "it": "e"
   },
   {
    "pos": 1,
@@ -5202,6 +5188,20 @@
    "es": "fuera",
    "fr": "loin",
    "it": "via"
+  },
+  {
+   "pos": 6,
+   "parts": [
+    6,
+    13
+   ],
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per"
   },
   {
    "pos": 6,
@@ -5355,54 +5355,6 @@
   }
  ],
  "24": [
-  {
-   "pos": 21,
-   "pos_end": 24,
-   "form": "unser ganzes Leben lang",
-   "lemma": "ein Leben lang",
-   "level": "B1",
-   "en": "all our life long",
-   "es": "todos los días de nuestra vida",
-   "fr": "tous les jours de notre vie",
-   "it": "tutti i giorni della nostra vita"
-  },
-  {
-   "pos": 19,
-   "parts": [
-    19,
-    25,
-    26
-   ],
-   "form": "es gut geht",
-   "lemma": "es geht gut",
-   "level": "A2",
-   "en": "it may go well with us",
-   "es": "nos vaya bien",
-   "fr": "nous soyons heureux",
-   "it": "ci vada bene"
-  },
-  {
-   "pos": 27,
-   "pos_end": 28,
-   "form": "so wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "just as",
-   "es": "así como",
-   "fr": "tout comme",
-   "it": "così come"
-  },
-  {
-   "pos": 31,
-   "pos_end": 33,
-   "form": "der Fall ist",
-   "lemma": "der Fall sein",
-   "level": "B1",
-   "en": "is the case",
-   "es": "es el caso",
-   "fr": "est le cas",
-   "it": "è il caso"
-  },
   {
    "pos": 0,
    "form": "Und",
@@ -5595,6 +5547,21 @@
   },
   {
    "pos": 19,
+   "parts": [
+    19,
+    25,
+    26
+   ],
+   "form": "es gut geht",
+   "lemma": "es geht gut",
+   "level": "A2",
+   "en": "it may go well with us",
+   "es": "nos vaya bien",
+   "fr": "nous soyons heureux",
+   "it": "ci vada bene"
+  },
+  {
+   "pos": 19,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -5612,6 +5579,17 @@
    "es": "nos",
    "fr": "nous",
    "it": "ci"
+  },
+  {
+   "pos": 21,
+   "pos_end": 24,
+   "form": "unser ganzes Leben lang",
+   "lemma": "ein Leben lang",
+   "level": "B1",
+   "en": "all our life long",
+   "es": "todos los días de nuestra vida",
+   "fr": "tous les jours de notre vie",
+   "it": "tutti i giorni della nostra vita"
   },
   {
    "pos": 21,
@@ -5675,6 +5653,17 @@
   },
   {
    "pos": 27,
+   "pos_end": 28,
+   "form": "so wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "just as",
+   "es": "así como",
+   "fr": "tout comme",
+   "it": "così come"
+  },
+  {
+   "pos": 27,
    "form": "so",
    "lemma": "so",
    "level": "A1",
@@ -5712,6 +5701,17 @@
    "es": "hoy",
    "fr": "aujourd'hui",
    "it": "oggi"
+  },
+  {
+   "pos": 31,
+   "pos_end": 33,
+   "form": "der Fall ist",
+   "lemma": "der Fall sein",
+   "level": "B1",
+   "en": "is the case",
+   "es": "es el caso",
+   "fr": "est le cas",
+   "it": "è il caso"
   },
   {
    "pos": 31,

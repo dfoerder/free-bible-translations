@@ -22,6 +22,17 @@
   },
   {
    "pos": 2,
+   "form": "hör zu",
+   "lemma": "zuhören",
+   "level": "A2",
+   "en": "listen",
+   "es": "escucha",
+   "fr": "écoute",
+   "it": "ascolta",
+   "pos_end": 3
+  },
+  {
+   "pos": 2,
    "form": "hör",
    "lemma": "hören",
    "level": "A1",
@@ -339,17 +350,6 @@
    "es": "da",
    "fr": "donne",
    "it": "dà"
-  },
-  {
-   "pos": 2,
-   "form": "hör zu",
-   "lemma": "zuhören",
-   "level": "A2",
-   "en": "listen",
-   "es": "escucha",
-   "fr": "écoute",
-   "it": "ascolta",
-   "pos_end": 3
   }
  ],
  "2": [
@@ -387,7 +387,7 @@
    "pos": 3,
    "form": "hinzufügen",
    "lemma": "hinzufügen",
-   "level": "B1",
+   "level": "B2",
    "en": "add",
    "es": "añadir",
    "fr": "ajouter",
@@ -909,7 +909,7 @@
    "pos": 25,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "from among",
    "es": "de entre",
    "fr": "du milieu de",
@@ -1695,11 +1695,22 @@
    "pos": 27,
    "form": "müssen",
    "lemma": "müssen",
-   "level": "A2",
+   "level": "A1",
    "en": "must",
    "es": "deban",
    "fr": "devront",
    "it": "dovranno"
+  },
+  {
+   "pos": 28,
+   "form": "Was für ein",
+   "lemma": "was für ein",
+   "level": "A2",
+   "en": "What a",
+   "es": "Qué",
+   "fr": "Quel",
+   "it": "Che",
+   "pos_end": 30
   },
   {
    "pos": 28,
@@ -1773,6 +1784,17 @@
   },
   {
    "pos": 35,
+   "form": "was für eine",
+   "lemma": "was für ein",
+   "level": "A2",
+   "en": "what a",
+   "es": "qué",
+   "fr": "quelle",
+   "it": "che",
+   "pos_end": 37
+  },
+  {
+   "pos": 35,
    "form": "was",
    "lemma": "was",
    "level": "A1",
@@ -1820,28 +1842,6 @@
    "es": "nación",
    "fr": "nation",
    "it": "nazione"
-  },
-  {
-   "pos": 28,
-   "form": "Was für ein",
-   "lemma": "was für ein",
-   "level": "A2",
-   "en": "What a",
-   "es": "Qué",
-   "fr": "Quel",
-   "it": "Che",
-   "pos_end": 30
-  },
-  {
-   "pos": 35,
-   "form": "was für eine",
-   "lemma": "was für ein",
-   "level": "A2",
-   "en": "what a",
-   "es": "qué",
-   "fr": "quelle",
-   "it": "che",
-   "pos_end": 37
   }
  ],
  "7": [
@@ -1864,6 +1864,17 @@
    "es": "dónde",
    "fr": "où",
    "it": "dove"
+  },
+  {
+   "pos": 2,
+   "form": "gibt es",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "is there",
+   "es": "hay",
+   "fr": "y a-t-il",
+   "it": "c'è",
+   "pos_end": 3
   },
   {
    "pos": 2,
@@ -2037,6 +2048,17 @@
   },
   {
    "pos": 19,
+   "form": "jedes Mal wenn",
+   "lemma": "jedes Mal wenn",
+   "level": "B1",
+   "en": "every time",
+   "es": "cada vez que",
+   "fr": "chaque fois que",
+   "it": "ogni volta che",
+   "pos_end": 21
+  },
+  {
+   "pos": 19,
    "form": "jedes",
    "lemma": "jeder",
    "level": "A1",
@@ -2094,28 +2116,6 @@
    "es": "invocamos",
    "fr": "invoquons",
    "it": "invochiamo"
-  },
-  {
-   "pos": 2,
-   "form": "gibt es",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "is there",
-   "es": "hay",
-   "fr": "y a-t-il",
-   "it": "c'è",
-   "pos_end": 3
-  },
-  {
-   "pos": 19,
-   "form": "jedes Mal wenn",
-   "lemma": "jedes Mal wenn",
-   "level": "B1",
-   "en": "every time",
-   "es": "cada vez que",
-   "fr": "chaque fois que",
-   "it": "ogni volta che",
-   "pos_end": 21
   }
  ],
  "8": [
@@ -2138,6 +2138,17 @@
    "es": "dónde",
    "fr": "où",
    "it": "dove"
+  },
+  {
+   "pos": 2,
+   "form": "gibt es",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "is there",
+   "es": "hay",
+   "fr": "y a-t-il",
+   "it": "c'è",
+   "pos_end": 3
   },
   {
    "pos": 2,
@@ -2358,20 +2369,20 @@
    "es": "presento",
    "fr": "présente",
    "it": "presento"
-  },
-  {
-   "pos": 2,
-   "form": "gibt es",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "is there",
-   "es": "hay",
-   "fr": "y a-t-il",
-   "it": "c'è",
-   "pos_end": 3
   }
  ],
  "9": [
+  {
+   "pos": 0,
+   "form": "Hüte dich",
+   "lemma": "sich hüten",
+   "level": "B2",
+   "en": "Be on your guard",
+   "es": "Guárdate",
+   "fr": "Garde-toi",
+   "it": "Guàrdati",
+   "pos_end": 1
+  },
   {
    "pos": 0,
    "form": "Hüte",
@@ -2411,6 +2422,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 4,
+   "form": "pass auf",
+   "lemma": "aufpassen",
+   "level": "A2",
+   "en": "watch out",
+   "es": "ten cuidado",
+   "fr": "fais attention",
+   "it": "fa' attenzione",
+   "parts": [
+    4,
+    8
+   ]
   },
   {
    "pos": 4,
@@ -2624,6 +2649,17 @@
   },
   {
    "pos": 25,
+   "form": "dein Leben lang",
+   "lemma": "sein Leben lang",
+   "level": "B1",
+   "en": "all your life",
+   "es": "toda tu vida",
+   "fr": "toute ta vie",
+   "it": "tutta la tua vita",
+   "pos_end": 27
+  },
+  {
+   "pos": 25,
    "form": "dein",
    "lemma": "dein",
    "level": "A1",
@@ -2761,42 +2797,6 @@
    "es": "nietos",
    "fr": "petits-enfants",
    "it": "nipoti"
-  },
-  {
-   "pos": 0,
-   "form": "Hüte dich",
-   "lemma": "sich hüten",
-   "level": "B2",
-   "en": "Be on your guard",
-   "es": "Guárdate",
-   "fr": "Garde-toi",
-   "it": "Guàrdati",
-   "pos_end": 1
-  },
-  {
-   "pos": 4,
-   "form": "pass auf",
-   "lemma": "aufpassen",
-   "level": "A2",
-   "en": "watch out",
-   "es": "ten cuidado",
-   "fr": "fais attention",
-   "it": "fa' attenzione",
-   "parts": [
-    4,
-    8
-   ]
-  },
-  {
-   "pos": 25,
-   "form": "dein Leben lang",
-   "lemma": "sein Leben lang",
-   "level": "B1",
-   "en": "all your life",
-   "es": "toda tu vida",
-   "fr": "toute ta vie",
-   "it": "tutta la tua vita",
-   "pos_end": 27
   }
  ],
  "10": [
@@ -3094,7 +3094,7 @@
    "pos": 29,
    "form": "Worte",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "words",
    "es": "palabras",
    "fr": "paroles",
@@ -3159,6 +3159,17 @@
    "es": "temer",
    "fr": "craindre",
    "it": "temere"
+  },
+  {
+   "pos": 36,
+   "form": "ihr ganzes Leben lang",
+   "lemma": "sein Leben lang",
+   "level": "B1",
+   "en": "all their lives",
+   "es": "toda su vida",
+   "fr": "toute leur vie",
+   "it": "tutta la loro vita",
+   "pos_end": 39
   },
   {
    "pos": 36,
@@ -3279,17 +3290,6 @@
    "es": "enseñen",
    "fr": "enseignent",
    "it": "insegnino"
-  },
-  {
-   "pos": 36,
-   "form": "ihr ganzes Leben lang",
-   "lemma": "sein Leben lang",
-   "level": "B1",
-   "en": "all their lives",
-   "es": "toda su vida",
-   "fr": "toute leur vie",
-   "it": "tutta la loro vita",
-   "pos_end": 39
   }
  ],
  "11": [
@@ -3297,7 +3297,7 @@
    "pos": 0,
    "form": "Da",
    "lemma": "da",
-   "level": "A1",
+   "level": "A2",
    "en": "Then",
    "es": "Entonces",
    "fr": "Alors",
@@ -3305,9 +3305,23 @@
   },
   {
    "pos": 1,
+   "form": "tratet heran",
+   "lemma": "herantreten",
+   "level": "B2",
+   "en": "came up",
+   "es": "os acercasteis",
+   "fr": "vous approchâtes",
+   "it": "vi avvicinaste",
+   "parts": [
+    1,
+    3
+   ]
+  },
+  {
+   "pos": 1,
    "form": "tratet",
    "lemma": "treten",
-   "level": "A2",
+   "level": "B1",
    "en": "stepped",
    "es": "pasasteis",
    "fr": "avançâtes",
@@ -3495,6 +3509,17 @@
   },
   {
    "pos": 20,
+   "form": "es gab",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "there was",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'era",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -3562,31 +3587,6 @@
    "es": "tinieblas",
    "fr": "ténèbres",
    "it": "tenebre"
-  },
-  {
-   "pos": 1,
-   "form": "tratet heran",
-   "lemma": "herantreten",
-   "level": "B2",
-   "en": "came up",
-   "es": "os acercasteis",
-   "fr": "vous approchâtes",
-   "it": "vi avvicinaste",
-   "parts": [
-    1,
-    3
-   ]
-  },
-  {
-   "pos": 20,
-   "form": "es gab",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "there was",
-   "es": "había",
-   "fr": "il y avait",
-   "it": "c'era",
-   "pos_end": 21
   }
  ],
  "12": [
@@ -3664,7 +3664,7 @@
    "pos": 7,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -3724,7 +3724,7 @@
    "pos": 13,
    "form": "Worte",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "words",
    "es": "palabras",
    "fr": "paroles",
@@ -3966,7 +3966,7 @@
    "pos": 15,
    "form": "Worte",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "Words",
    "es": "Palabras",
    "fr": "Paroles",
@@ -4108,7 +4108,7 @@
    "pos": 6,
    "form": "selben",
    "lemma": "selb",
-   "level": "A2",
+   "level": "B1",
    "en": "same",
    "es": "mismo",
    "fr": "même",
@@ -4118,7 +4118,7 @@
    "pos": 7,
    "form": "Zeit",
    "lemma": "Zeit",
-   "level": "A2",
+   "level": "A1",
    "en": "time",
    "es": "tiempo",
    "fr": "temps",
@@ -4328,9 +4328,23 @@
  "15": [
   {
    "pos": 0,
+   "form": "Achtet auf",
+   "lemma": "achten auf",
+   "level": "B1",
+   "en": "Take care of",
+   "es": "Cuidad de",
+   "fr": "Veillez sur",
+   "it": "Badate a",
+   "parts": [
+    0,
+    3
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Achtet",
    "lemma": "achten",
-   "level": "B2",
+   "level": "B1",
    "en": "Watch",
    "es": "Cuidad",
    "fr": "Veillez",
@@ -4490,7 +4504,7 @@
    "pos": 16,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -4585,20 +4599,6 @@
    "es": "visto",
    "fr": "vu",
    "it": "visto"
-  },
-  {
-   "pos": 0,
-   "form": "Achtet auf",
-   "lemma": "achten auf",
-   "level": "B2",
-   "en": "Take care of",
-   "es": "Cuidad de",
-   "fr": "Veillez sur",
-   "it": "Badate a",
-   "parts": [
-    0,
-    3
-   ]
   }
  ],
  "16": [
@@ -4898,7 +4898,7 @@
    "pos": 10,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "under",
    "es": "bajo",
    "fr": "sous",
@@ -5040,7 +5040,7 @@
    "pos": 11,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "under",
    "es": "debajo de",
    "fr": "sous",
@@ -5320,6 +5320,17 @@
   },
   {
    "pos": 25,
+   "form": "verführen lässt",
+   "lemma": "sich verführen lassen",
+   "level": "B2",
+   "en": "let yourself be led astray",
+   "es": "te dejes seducir",
+   "fr": "te laisses entraîner",
+   "it": "ti lasci sedurre",
+   "pos_end": 26
+  },
+  {
+   "pos": 25,
    "form": "verführen",
    "lemma": "verführen",
    "level": "B2",
@@ -5482,7 +5493,7 @@
    "pos": 42,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "under",
    "es": "bajo",
    "fr": "sous",
@@ -5537,17 +5548,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 25,
-   "form": "verführen lässt",
-   "lemma": "sich verführen lassen",
-   "level": "B2",
-   "en": "let yourself be led astray",
-   "es": "te dejes seducir",
-   "fr": "te laisses entraîner",
-   "it": "ti lasci sedurre",
-   "pos_end": 26
   }
  ],
  "20": [
@@ -6219,7 +6219,7 @@
    "pos": 1,
    "form": "muss",
    "lemma": "müssen",
-   "level": "A2",
+   "level": "A1",
    "en": "must",
    "es": "debo",
    "fr": "dois",
@@ -6427,6 +6427,17 @@
   }
  ],
  "23": [
+  {
+   "pos": 0,
+   "form": "Hütet euch",
+   "lemma": "sich hüten",
+   "level": "B2",
+   "en": "Be on your guard",
+   "es": "Guardaos",
+   "fr": "Gardez-vous",
+   "it": "Guardatevi",
+   "pos_end": 1
+  },
   {
    "pos": 0,
    "form": "Hütet",
@@ -6671,7 +6682,7 @@
    "pos": 24,
    "form": "irgendeiner",
    "lemma": "irgendein",
-   "level": "A2",
+   "level": "B1",
    "en": "any",
    "es": "cualquier",
    "fr": "quelque",
@@ -6776,17 +6787,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 0,
-   "form": "Hütet euch",
-   "lemma": "sich hüten",
-   "level": "B2",
-   "en": "Be on your guard",
-   "es": "Guardaos",
-   "fr": "Gardez-vous",
-   "it": "Guardatevi",
-   "pos_end": 1
   }
  ],
  "24": [
@@ -6874,7 +6874,7 @@
    "pos": 8,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -6951,6 +6951,20 @@
    "es": "pues",
    "fr": "donc",
    "it": "dunque"
+  },
+  {
+   "pos": 3,
+   "form": "Kinder bekommt",
+   "lemma": "Kinder bekommen",
+   "level": "A2",
+   "en": "have children",
+   "es": "tengáis hijos",
+   "fr": "avez des enfants",
+   "it": "avete figli",
+   "parts": [
+    3,
+    6
+   ]
   },
   {
    "pos": 3,
@@ -7106,7 +7120,7 @@
    "pos": 18,
    "form": "irgendeiner",
    "lemma": "irgendein",
-   "level": "A2",
+   "level": "B1",
    "en": "any",
    "es": "cualquier",
    "fr": "quelque",
@@ -7271,20 +7285,6 @@
    "es": "irritáis",
    "fr": "irritez",
    "it": "irritate"
-  },
-  {
-   "pos": 3,
-   "form": "Kinder bekommt",
-   "lemma": "Kinder bekommen",
-   "level": "B1",
-   "en": "have children",
-   "es": "tengáis hijos",
-   "fr": "avez des enfants",
-   "it": "avete figli",
-   "parts": [
-    3,
-    6
-   ]
   }
  ],
  "26": [
@@ -7300,9 +7300,23 @@
   },
   {
    "pos": 1,
+   "form": "rufe an",
+   "lemma": "anrufen",
+   "level": "B2",
+   "en": "call upon",
+   "es": "invoco",
+   "fr": "invoque",
+   "it": "invoco",
+   "parts": [
+    1,
+    11
+   ]
+  },
+  {
+   "pos": 1,
    "form": "rufe",
    "lemma": "rufen",
-   "level": "A2",
+   "level": "A1",
    "en": "call",
    "es": "llamo",
    "fr": "appelle",
@@ -7677,20 +7691,6 @@
    "es": "seréis",
    "fr": "serez",
    "it": "sarete"
-  },
-  {
-   "pos": 1,
-   "form": "rufe an",
-   "lemma": "anrufen",
-   "level": "B2",
-   "en": "call upon",
-   "es": "invoco",
-   "fr": "invoque",
-   "it": "invoco",
-   "parts": [
-    1,
-    11
-   ]
   }
  ],
  "27": [
@@ -7748,7 +7748,7 @@
    "pos": 5,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "among",
    "es": "entre",
    "fr": "parmi",
@@ -7868,7 +7868,7 @@
    "pos": 17,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "among",
    "es": "entre",
    "fr": "parmi",
@@ -7893,6 +7893,17 @@
    "es": "naciones",
    "fr": "nations",
    "it": "nazioni"
+  },
+  {
+   "pos": 20,
+   "form": "übrig bleiben",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "be left",
+   "es": "quedar",
+   "fr": "rester",
+   "it": "rimanere",
+   "pos_end": 21
   },
   {
    "pos": 20,
@@ -7973,17 +7984,6 @@
    "es": "va a",
    "fr": "va",
    "it": "sta per"
-  },
-  {
-   "pos": 20,
-   "form": "übrig bleiben",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "be left",
-   "es": "quedar",
-   "fr": "rester",
-   "it": "rimanere",
-   "pos_end": 21
   }
  ],
  "28": [
@@ -8171,7 +8171,7 @@
    "pos": 19,
    "form": "noch",
    "lemma": "noch",
-   "level": "A2",
+   "level": "A1",
    "en": "nor",
    "es": "ni",
    "fr": "ni",
@@ -8211,7 +8211,7 @@
    "pos": 23,
    "form": "noch",
    "lemma": "noch",
-   "level": "A2",
+   "level": "A1",
    "en": "nor",
    "es": "ni",
    "fr": "ni",
@@ -9059,7 +9059,7 @@
    "pos": 0,
    "form": "Frag",
    "lemma": "fragen",
-   "level": "A2",
+   "level": "A1",
    "en": "Ask",
    "es": "Pregunta",
    "fr": "Interroge",
@@ -9109,7 +9109,7 @@
    "pos": 5,
    "form": "Zeiten",
    "lemma": "Zeit",
-   "level": "A2",
+   "level": "A1",
    "en": "times",
    "es": "tiempos",
    "fr": "temps",
@@ -9169,7 +9169,7 @@
    "pos": 11,
    "form": "seit",
    "lemma": "seit",
-   "level": "B1",
+   "level": "A2",
    "en": "since",
    "es": "desde",
    "fr": "depuis",
@@ -9239,7 +9239,7 @@
    "pos": 18,
    "form": "Menschen",
    "lemma": "Mensch",
-   "level": "B1",
+   "level": "A1",
    "en": "man",
    "es": "hombre",
    "fr": "homme",
@@ -9379,7 +9379,7 @@
    "pos": 32,
    "form": "je",
    "lemma": "je",
-   "level": "A2",
+   "level": "B1",
    "en": "ever",
    "es": "alguna vez",
    "fr": "jamais",
@@ -9449,7 +9449,7 @@
    "pos": 39,
    "form": "man",
    "lemma": "man",
-   "level": "A2",
+   "level": "A1",
    "en": "anyone",
    "es": "se",
    "fr": "on",
@@ -9459,7 +9459,7 @@
    "pos": 40,
    "form": "je",
    "lemma": "je",
-   "level": "A2",
+   "level": "B1",
    "en": "ever",
    "es": "alguna vez",
    "fr": "jamais",
@@ -9581,7 +9581,7 @@
    "pos": 7,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -9606,6 +9606,17 @@
    "es": "oyó",
    "fr": "entendit",
    "it": "udì"
+  },
+  {
+   "pos": 10,
+   "form": "so wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "just as",
+   "es": "así como",
+   "fr": "tout comme",
+   "it": "così come",
+   "pos_end": 11
   },
   {
    "pos": 10,
@@ -9689,6 +9700,17 @@
   },
   {
    "pos": 18,
+   "form": "am Leben blieb",
+   "lemma": "am Leben bleiben",
+   "level": "B1",
+   "en": "stayed alive",
+   "es": "siguió con vida",
+   "fr": "resta en vie",
+   "it": "rimase in vita",
+   "pos_end": 20
+  },
+  {
+   "pos": 18,
    "form": "am",
    "lemma": "am",
    "level": "A1",
@@ -9716,28 +9738,6 @@
    "es": "quedó",
    "fr": "resta",
    "it": "rimase"
-  },
-  {
-   "pos": 10,
-   "form": "so wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "just as",
-   "es": "así como",
-   "fr": "tout comme",
-   "it": "così come",
-   "pos_end": 11
-  },
-  {
-   "pos": 18,
-   "form": "am Leben blieb",
-   "lemma": "am Leben bleiben",
-   "level": "B1",
-   "en": "stayed alive",
-   "es": "siguió con vida",
-   "fr": "resta en vie",
-   "it": "rimase in vita",
-   "pos_end": 20
   }
  ],
  "34": [
@@ -9765,7 +9765,7 @@
    "pos": 2,
    "form": "je",
    "lemma": "je",
-   "level": "A2",
+   "level": "B1",
    "en": "ever",
    "es": "alguna vez",
    "fr": "jamais",
@@ -9795,7 +9795,7 @@
    "pos": 5,
    "form": "versucht",
    "lemma": "versuchen",
-   "level": "B1",
+   "level": "B2",
    "en": "attempted",
    "es": "intentado",
    "fr": "tenté",
@@ -9805,7 +9805,7 @@
    "pos": 6,
    "form": "hinzugehen",
    "lemma": "hingehen",
-   "level": "B1",
+   "level": "A2",
    "en": "to go",
    "es": "ir",
    "fr": "aller",
@@ -9820,6 +9820,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 8,
+   "form": "sich nehmen",
+   "lemma": "sich nehmen",
+   "level": "B1",
+   "en": "take for himself",
+   "es": "tomarse",
+   "fr": "se prendre",
+   "it": "prendersi",
+   "parts": [
+    8,
+    17
+   ]
   },
   {
    "pos": 8,
@@ -9925,7 +9939,7 @@
    "pos": 19,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -9945,7 +9959,7 @@
    "pos": 21,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -9965,7 +9979,7 @@
    "pos": 23,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -9985,7 +9999,7 @@
    "pos": 25,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -10005,7 +10019,7 @@
    "pos": 27,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -10095,7 +10109,7 @@
    "pos": 36,
    "form": "durch",
    "lemma": "durch",
-   "level": "A1",
+   "level": "A2",
    "en": "by",
    "es": "mediante",
    "fr": "par",
@@ -10120,6 +10134,17 @@
    "es": "hechos",
    "fr": "actes",
    "it": "atti"
+  },
+  {
+   "pos": 39,
+   "form": "so wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "just as",
+   "es": "así como",
+   "fr": "tout comme",
+   "it": "così come",
+   "pos_end": 40
   },
   {
    "pos": 39,
@@ -10280,31 +10305,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 8,
-   "form": "sich nehmen",
-   "lemma": "sich nehmen",
-   "level": "B1",
-   "en": "take for himself",
-   "es": "tomarse",
-   "fr": "se prendre",
-   "it": "prendersi",
-   "parts": [
-    8,
-    17
-   ]
-  },
-  {
-   "pos": 39,
-   "form": "so wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "just as",
-   "es": "así como",
-   "fr": "tout comme",
-   "it": "così come",
-   "pos_end": 40
   }
  ],
  "35": [
@@ -10552,6 +10552,17 @@
   },
   {
    "pos": 8,
+   "form": "hören lassen",
+   "lemma": "hören lassen",
+   "level": "B2",
+   "en": "made hear",
+   "es": "hizo oír",
+   "fr": "fit entendre",
+   "it": "fece udire",
+   "pos_end": 9
+  },
+  {
+   "pos": 8,
    "form": "hören",
    "lemma": "hören",
    "level": "A1",
@@ -10604,7 +10615,7 @@
    "pos": 13,
    "form": "erziehen",
    "lemma": "erziehen",
-   "level": "B1",
+   "level": "B2",
    "en": "instruct",
    "es": "instruir",
    "fr": "instruire",
@@ -10704,7 +10715,7 @@
    "pos": 23,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -10764,7 +10775,7 @@
    "pos": 29,
    "form": "Worte",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "words",
    "es": "palabras",
    "fr": "paroles",
@@ -10794,7 +10805,7 @@
    "pos": 32,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -10809,17 +10820,6 @@
    "es": "oído",
    "fr": "entendu",
    "it": "udito"
-  },
-  {
-   "pos": 8,
-   "form": "hören lassen",
-   "lemma": "hören lassen",
-   "level": "B2",
-   "en": "made hear",
-   "es": "hizo oír",
-   "fr": "fit entendre",
-   "it": "fece udire",
-   "pos_end": 9
   }
  ],
  "37": [
@@ -10827,7 +10827,7 @@
    "pos": 0,
    "form": "Weil",
    "lemma": "weil",
-   "level": "B1",
+   "level": "A1",
    "en": "Because",
    "es": "Porque",
    "fr": "Parce que",
@@ -11229,7 +11229,7 @@
    "pos": 14,
    "form": "hineinzubringen",
    "lemma": "hineinbringen",
-   "level": "B2",
+   "level": "B1",
    "en": "to bring in",
    "es": "hacerte entrar",
    "fr": "faire entrer",
@@ -11449,6 +11449,17 @@
   },
   {
    "pos": 7,
+   "form": "zu Herzen nehmen",
+   "lemma": "zu Herzen nehmen",
+   "level": "B2",
+   "en": "take to heart",
+   "es": "tomar a pecho",
+   "fr": "prendre à cœur",
+   "it": "prendere a cuore",
+   "pos_end": 9
+  },
+  {
+   "pos": 7,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -11531,7 +11542,7 @@
    "pos": 15,
    "form": "oben",
    "lemma": "oben",
-   "level": "A2",
+   "level": "B1",
    "en": "above",
    "es": "arriba",
    "fr": "en haut",
@@ -11636,17 +11647,6 @@
    "es": "otro",
    "fr": "autre",
    "it": "altro"
-  },
-  {
-   "pos": 7,
-   "form": "zu Herzen nehmen",
-   "lemma": "zu Herzen nehmen",
-   "level": "B2",
-   "en": "take to heart",
-   "es": "tomar a pecho",
-   "fr": "prendre à cœur",
-   "it": "prendere a cuore",
-   "pos_end": 9
   }
  ],
  "40": [
@@ -11832,6 +11832,17 @@
   },
   {
    "pos": 18,
+   "form": "gut geht",
+   "lemma": "gut gehen",
+   "level": "A2",
+   "en": "go well",
+   "es": "vaya bien",
+   "fr": "aille bien",
+   "it": "vada bene",
+   "pos_end": 19
+  },
+  {
+   "pos": 18,
    "form": "gut",
    "lemma": "gut",
    "level": "A1",
@@ -11982,6 +11993,17 @@
   },
   {
    "pos": 33,
+   "form": "für immer",
+   "lemma": "für immer",
+   "level": "A2",
+   "en": "forever",
+   "es": "para siempre",
+   "fr": "pour toujours",
+   "it": "per sempre",
+   "pos_end": 34
+  },
+  {
+   "pos": 33,
    "form": "für",
    "lemma": "für",
    "level": "A1",
@@ -12009,28 +12031,6 @@
    "es": "da",
    "fr": "donne",
    "it": "dà"
-  },
-  {
-   "pos": 18,
-   "form": "gut geht",
-   "lemma": "gut gehen",
-   "level": "B1",
-   "en": "go well",
-   "es": "vaya bien",
-   "fr": "aille bien",
-   "it": "vada bene",
-   "pos_end": 19
-  },
-  {
-   "pos": 33,
-   "form": "für immer",
-   "lemma": "für immer",
-   "level": "A2",
-   "en": "forever",
-   "es": "para siempre",
-   "fr": "pour toujours",
-   "it": "per sempre",
-   "pos_end": 34
   }
  ],
  "41": [
@@ -12038,11 +12038,25 @@
    "pos": 0,
    "form": "Da",
    "lemma": "da",
-   "level": "A1",
+   "level": "A2",
    "en": "Then",
    "es": "Entonces",
    "fr": "Alors",
    "it": "Allora"
+  },
+  {
+   "pos": 1,
+   "form": "wählte aus",
+   "lemma": "auswählen",
+   "level": "B1",
+   "en": "selected",
+   "es": "escogió",
+   "fr": "désigna",
+   "it": "designò",
+   "parts": [
+    1,
+    8
+   ]
   },
   {
    "pos": 1,
@@ -12143,20 +12157,6 @@
    "es": "oriente",
    "fr": "orient",
    "it": "oriente"
-  },
-  {
-   "pos": 1,
-   "form": "wählte aus",
-   "lemma": "auswählen",
-   "level": "B1",
-   "en": "selected",
-   "es": "escogió",
-   "fr": "désigna",
-   "it": "designò",
-   "parts": [
-    1,
-    8
-   ]
   }
  ],
  "42": [
@@ -13242,6 +13242,20 @@
   },
   {
    "pos": 1,
+   "form": "nahmen ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocuparon",
+   "fr": "s'emparèrent de",
+   "it": "occuparono",
+   "parts": [
+    1,
+    4
+   ]
+  },
+  {
+   "pos": 1,
    "form": "nahmen",
    "lemma": "nehmen",
    "level": "A1",
@@ -13479,23 +13493,23 @@
    "es": "estaban",
    "fr": "étaient",
    "it": "erano"
-  },
-  {
-   "pos": 1,
-   "form": "nahmen ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocuparon",
-   "fr": "s'emparèrent de",
-   "it": "occuparono",
-   "parts": [
-    1,
-    4
-   ]
   }
  ],
  "48": [
+  {
+   "pos": 0,
+   "form": "von an",
+   "lemma": "von an",
+   "level": "B1",
+   "en": "from onwards",
+   "es": "desde",
+   "fr": "à partir de",
+   "it": "a partire da",
+   "parts": [
+    0,
+    2
+   ]
+  },
   {
    "pos": 0,
    "form": "von",
@@ -13598,6 +13612,17 @@
   },
   {
    "pos": 10,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 11
+  },
+  {
+   "pos": 10,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -13675,31 +13700,6 @@
    "es": "Hermón",
    "fr": "Hermon",
    "it": "Ermon"
-  },
-  {
-   "pos": 0,
-   "form": "von an",
-   "lemma": "von an",
-   "level": "B1",
-   "en": "from onwards",
-   "es": "desde",
-   "fr": "à partir de",
-   "it": "a partire da",
-   "parts": [
-    0,
-    2
-   ]
-  },
-  {
-   "pos": 10,
-   "form": "bis zum",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a",
-   "pos_end": 11
   }
  ],
  "49": [
@@ -13792,6 +13792,17 @@
    "es": "oriente",
    "fr": "orient",
    "it": "oriente"
+  },
+  {
+   "pos": 9,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -13892,17 +13903,6 @@
    "es": "Pisga",
    "fr": "Pisga",
    "it": "Pisga"
-  },
-  {
-   "pos": 9,
-   "form": "bis zum",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a",
-   "pos_end": 10
   }
  ]
 }
