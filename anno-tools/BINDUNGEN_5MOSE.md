@@ -57,9 +57,13 @@ diritti*; in der Rechtspflege (16,19 · 16,20 „das Recht nicht beugen") steht
 der Singular *justice · derecho · droit · diritto* — die Lesart des wörtlich
 identischen Satzes 2Mo 23,6.
 
-**Ausnahme 1,17:** dort stehen `Gericht` und `Richten` im selben Vers, deshalb
-trägt `Gericht` hier *court · tribunal · tribunal · tribunale* statt der
-Bestandslesart *judgment*. Nur an dieser Stelle.
+**`Gericht` ist in diesem Buch das Forum, nicht das Urteil.** Beide bisherigen
+Belege — 1,17 „im Gericht niemanden bevorzugen" und 17,8 „ein Fall vor
+Gericht" — verlangen *court · tribunal · tribunal · tribunale*, nicht die
+Bestandsmehrheit *judgment*. Das Urteil heißt hier `Urteil` (17,9 · 17,11) und
+trägt *judgment · juicio · jugement · giudizio*; in 1,17 steht `Richten`
+daneben. Erst wo `Gericht` erkennbar den Richtspruch meint, gilt wieder
+*judgment*.
 
 `Anführer` und `Haupt` stehen **in 1,15 nebeneinander** und sind deshalb
 zwangsgetrennt. Von den sieben Rechtswörtern des Bestands hat 5Mo 1 nur
