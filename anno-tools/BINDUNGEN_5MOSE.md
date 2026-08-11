@@ -30,7 +30,8 @@ dasteht.
 |---|---|---|
 | `Anführer` | leaders · jefes · chefs · capi | B2 |
 | `Haupt` | heads · cabezas · têtes · teste | B1 |
-| `Amtmann` | officers · oficiales · officiers · ufficiali | C1 |
+| `Amtmann` (1,15 `Amtleute`) | officers · oficiales · officiers · ufficiali | C1 |
+| `Beamter` (16,18 `Beamte`) | officials · funcionarios · fonctionnaires · funzionari | B2 |
 | `Richter` / `richten` | judges · jueces · juges · giudici / judge · juzgar · juger · giudicare | B1 |
 | `Gericht` | judgment · juicio · jugement · giudizio | B2 |
 | `Gebot` | commandments · mandamientos · commandements · comandamenti | B1 |
@@ -46,6 +47,15 @@ nur `Gesetz`, `Befehl`, `Gericht`, `richten`, `Richter` · 5Mo 2 **keines** ·
 5Mo 6 vier plus `Zeugnis`, kein `Ordnung`. Erst im Quelltext nachsehen, dann
 binden. Wo mehrere im **selben Vers** stehen (4,8 · 4,45 · 6,1 · 6,2 · 6,17 ·
 6,20), müssen alle vier Sprachspalten paarweise verschieden sein.
+
+`Amtmann` und `Beamter` sind **zwei** deutsche Wörter für dasselbe Amt und
+stehen nie im selben Vers — trotzdem getrennte Lemmata und getrennte Glossen.
+
+**`Recht` hat zwei Lesarten, und die Liste entscheidet.** In den Gesetzeslisten
+(4,1 · 6,1 · 8,11 · 12,1) steht der Plural *ordinances · derechos · droits ·
+diritti*; in der Rechtspflege (16,19 · 16,20 „das Recht nicht beugen") steht
+der Singular *justice · derecho · droit · diritto* — die Lesart des wörtlich
+identischen Satzes 2Mo 23,6.
 
 **Ausnahme 1,17:** dort stehen `Gericht` und `Richten` im selben Vers, deshalb
 trägt `Gericht` hier *court · tribunal · tribunal · tribunale* statt der
