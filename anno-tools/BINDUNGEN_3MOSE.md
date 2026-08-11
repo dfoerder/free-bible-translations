@@ -88,6 +88,43 @@ aus, wo `Opfer` im selben Vers steht. Das ist gewollt und geprüft.
 **Kein Mehrwort-Eintrag für „Opfer bringen"** — die Bedeutung ergibt sich aus
 den Teilen.
 
+Aus **3Mo 4** (Sündopfer) — Schuld, Versehen und die Altarteile:
+
+| Deutsch | en | es | fr | it | Level |
+|---|---|---|---|---|---|
+| `Boden` (des Altars) | base | base | base | base | B1 |
+| `Sühne leisten` (Mehrwort) | make atonement | hacer expiación | faire l'expiation | fare espiazione | C1 |
+| `aus Versehen` (Mehrwort) | inadvertently | por inadvertencia | par inadvertance | per inavvertenza | B2 |
+| `Versehen` | oversight | descuido | inadvertance | svista | B2 |
+| `unabsichtlich` | unintentionally | involuntariamente | involontairement | involontariamente | B2 |
+| `verstoßen` (gegen ein Gebot) | violate | infringir | enfreindre | trasgredire | B2 |
+| `sich schuldig machen` (Mehrwort) | make oneself guilty | se hace culpable | se rend coupable | si rende colpevole | B2 |
+| `Schuld auf sich laden` (Mehrwort) | incur guilt | incurren en culpa | encourent une faute | incorrono in colpa | C1 |
+| `geben` (an die Hörner) | put | poner | mettre | mettere | A1 |
+| `gesalbt` | anointed | ungido | oint | unto | B2 |
+| `Gemeinde` | congregation | congregación | congrégation | congregazione | B2 |
+| `Ältester` | elders | ancianos | anciens | anziani | B2 |
+| `Fürst` | prince | príncipe | prince | principe | B2 |
+| `einfach` (Volk) | common | común | ordinaire | comune | B1 |
+| `Bock` / `Ziegenbock` | male goat | macho cabrío | bouc | capro | B2 |
+| `Ziege` | goat | cabra | chèvre | capra | B1 |
+| `Fell` | skin | piel | peau | pelle | B2 |
+| `Mist` | dung | estiércol | fumier | sterco | B2 |
+| `Lager` | camp | campamento | camp | accampamento | B1 |
+| `Stelle` (Schlachtort) | place | lugar | endroit | posto | B1 |
+| `tauchen` | dip | mojar | tremper | intingere | B1 |
+| `darbringen` | offer | ofrecer | offrir | offrire | B2 |
+| `hinausbringen` | take out | sacar | faire sortir | portare fuori | B2 |
+
+`Boden` ist im Bestand 25× der Erdboden (*ground/suelo/sol/terreno*); der
+Altarsockel kommt erst ab 3Mo 4,7 vor und trägt *base*. `verstoßen` ist im NT
+nur „jemanden verstoßen" (*rejected*) — „gegen ein Gebot verstoßen" ist eine
+andere Konstruktion am selben Lemma.
+
+**`Rind` und `Stier` sind in fr und it zeichengleich** (*taureau/toro*). Sie
+stehen in 3Mo 4 nie im selben Vers, deshalb **nicht** aufgelöst — wer sie
+zusammen findet, meldet es.
+
 Aus **3Mo 6** (Priesterordnungen):
 
 | Deutsch | en | es | fr | it | Level |
