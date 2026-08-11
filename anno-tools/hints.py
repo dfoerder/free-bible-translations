@@ -26,6 +26,8 @@ import sys
 
 import common as C
 
+MIN_STAMM = 4  # 5 war zu lang: 'beugt' fand 'beugen' nicht (5Mo 27,19)
+
 FUNKTION = {'der', 'die', 'das', 'den', 'dem', 'des', 'und', 'oder', 'ein', 'eine',
             'einen', 'einem', 'eines', 'einer', 'zu', 'in', 'an', 'auf', 'mit',
             'von', 'für', 'ist', 'sind', 'war', 'waren', 'nicht', 'er', 'sie',
@@ -54,7 +56,7 @@ def analyse(nr, kap=None):
     stamm = collections.defaultdict(set)
     for lemma in lemma_formen:
         if len(lemma) >= 5:
-            stamm[lemma[:5].lower()].add(lemma)
+            stamm[lemma[:MIN_STAMM].lower()].add(lemma)
 
     # Mehrheitsglosse je Form (für die Kollisionsprüfung)
     haupt = {}
@@ -70,7 +72,7 @@ def analyse(nr, kap=None):
 
             for f in formen:
                 if f not in form_lesarten and f not in unbelegt:
-                    verwandt = sorted(stamm.get(f[:5].lower(), set()))[:3] if len(f) >= 5 else []
+                    verwandt = sorted(stamm.get(f[:MIN_STAMM].lower(), set()))[:3] if len(f) >= MIN_STAMM else []
                     unbelegt[f] = (f'{k},{v}', verwandt)
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
                     lesarten = {(lm, en) for (lm, en, _, _, _) in form_lesarten[f]}

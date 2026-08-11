@@ -22,7 +22,7 @@ import sys
 
 import common as C
 
-MIN_STAMM = 5
+MIN_STAMM = 4
 MAX_LESARTEN = 6          # sonst wird der Extrakt für Funktionswörter unlesbar
 DECKUNG = 0.9             # so viele Belege sollen die gezeigten Lesarten abdecken
 
