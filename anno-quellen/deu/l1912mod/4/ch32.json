@@ -730,6 +730,17 @@
   },
   {
    "pos": 2,
+   "form": "sagten weiter",
+   "lemma": "weiter sagen",
+   "level": "A2",
+   "en": "went on to say",
+   "es": "siguieron diciendo",
+   "fr": "poursuivirent",
+   "it": "continuarono",
+   "pos_end": 3
+  },
+  {
+   "pos": 2,
    "form": "sagten",
    "lemma": "sagen",
    "level": "A1",
@@ -767,6 +778,20 @@
    "es": "nosotros",
    "fr": "nous",
    "it": "noi"
+  },
+  {
+   "pos": 6,
+   "form": "Gnade gefunden",
+   "lemma": "Gnade finden",
+   "level": "B2",
+   "en": "found favor",
+   "es": "hallado gracia",
+   "fr": "trouvé grâce",
+   "it": "trovato grazia",
+   "parts": [
+    6,
+    9
+   ]
   },
   {
    "pos": 6,
@@ -880,6 +905,17 @@
   },
   {
    "pos": 17,
+   "form": "zu eigen",
+   "lemma": "zu eigen",
+   "level": "B2",
+   "en": "as property",
+   "es": "en propiedad",
+   "fr": "en propriété",
+   "it": "in proprietà",
+   "pos_end": 18
+  },
+  {
+   "pos": 17,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -977,42 +1013,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 2,
-   "pos_end": 3,
-   "form": "sagten weiter",
-   "lemma": "weiter sagen",
-   "level": "A2",
-   "en": "went on to say",
-   "es": "siguieron diciendo",
-   "fr": "poursuivirent",
-   "it": "continuarono"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    9
-   ],
-   "form": "Gnade gefunden",
-   "lemma": "Gnade finden",
-   "level": "B2",
-   "en": "found favor",
-   "es": "hallado gracia",
-   "fr": "trouvé grâce",
-   "it": "trovato grazia"
-  },
-  {
-   "pos": 17,
-   "pos_end": 18,
-   "form": "zu eigen",
-   "lemma": "zu eigen",
-   "level": "B2",
-   "en": "as property",
-   "es": "en propiedad",
-   "fr": "en propriété",
-   "it": "in proprietà"
   }
  ],
  "6": [
@@ -1088,6 +1088,17 @@
   },
   {
    "pos": 7,
+   "form": "in den Krieg ziehen",
+   "lemma": "in den Krieg ziehen",
+   "level": "B1",
+   "en": "go to war",
+   "es": "ir a la guerra",
+   "fr": "partir en guerre",
+   "it": "andare in guerra",
+   "pos_end": 10
+  },
+  {
+   "pos": 7,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -1155,17 +1166,6 @@
    "es": "permanecéis aquí",
    "fr": "restez ici",
    "it": "restate qui"
-  },
-  {
-   "pos": 7,
-   "pos_end": 10,
-   "form": "in den Krieg ziehen",
-   "lemma": "in den Krieg ziehen",
-   "level": "B1",
-   "en": "go to war",
-   "es": "ir a la guerra",
-   "fr": "partir en guerre",
-   "it": "andare in guerra"
   }
  ],
  "7": [
@@ -1645,6 +1645,20 @@
   },
   {
    "pos": 12,
+   "form": "brachten ab",
+   "lemma": "abbringen",
+   "level": "B2",
+   "en": "turned away",
+   "es": "apartaron",
+   "fr": "détournèrent",
+   "it": "distolsero",
+   "parts": [
+    12,
+    18
+   ]
+  },
+  {
+   "pos": 12,
    "form": "brachten",
    "lemma": "bringen",
    "level": "A1",
@@ -1822,20 +1836,6 @@
    "es": "quería",
    "fr": "voulait",
    "it": "voleva"
-  },
-  {
-   "pos": 12,
-   "parts": [
-    12,
-    18
-   ],
-   "form": "brachten ab",
-   "lemma": "abbringen",
-   "level": "B2",
-   "en": "turned away",
-   "es": "apartaron",
-   "fr": "détournèrent",
-   "it": "distolsero"
   }
  ],
  "10": [
@@ -2010,6 +2010,20 @@
    "es": "han",
    "fr": "sont",
    "it": "sono"
+  },
+  {
+   "pos": 7,
+   "form": "von an",
+   "lemma": "von etwas an",
+   "level": "B1",
+   "en": "from twenty years on",
+   "es": "desde los veinte años",
+   "fr": "à partir de vingt ans",
+   "it": "dai venti anni in poi",
+   "parts": [
+    7,
+    10
+   ]
   },
   {
    "pos": 7,
@@ -2270,20 +2284,6 @@
    "es": "han",
    "fr": "ont",
    "it": "hanno"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    10
-   ],
-   "form": "von an",
-   "lemma": "von etwas an",
-   "level": "B1",
-   "en": "from twenty years on",
-   "es": "desde los veinte años",
-   "fr": "à partir de vingt ans",
-   "it": "dai venti anni in poi"
   }
  ],
  "12": [
@@ -2581,6 +2581,20 @@
   },
   {
    "pos": 10,
+   "form": "ließ umherziehen",
+   "lemma": "umherziehen lassen",
+   "level": "B2",
+   "en": "made wander",
+   "es": "hizo vagar",
+   "fr": "fit errer",
+   "it": "fece vagare",
+   "parts": [
+    10,
+    17
+   ]
+  },
+  {
+   "pos": 10,
    "form": "ließ",
    "lemma": "lassen",
    "level": "A2",
@@ -2788,20 +2802,6 @@
    "es": "había",
    "fr": "avait",
    "it": "aveva"
-  },
-  {
-   "pos": 10,
-   "parts": [
-    10,
-    17
-   ],
-   "form": "ließ umherziehen",
-   "lemma": "umherziehen lassen",
-   "level": "B2",
-   "en": "made wander",
-   "es": "hizo vagar",
-   "fr": "fit errer",
-   "it": "fece vagare"
   }
  ],
  "14": [
@@ -2824,6 +2824,22 @@
    "es": "ahora",
    "fr": "maintenant",
    "it": "ora"
+  },
+  {
+   "pos": 2,
+   "form": "tretet an die Stelle",
+   "lemma": "an die Stelle treten",
+   "level": "B2",
+   "en": "take the place",
+   "es": "ocupáis el lugar",
+   "fr": "prenez la place",
+   "it": "prendete il posto",
+   "parts": [
+    2,
+    4,
+    5,
+    6
+   ]
   },
   {
    "pos": 2,
@@ -2947,6 +2963,20 @@
   },
   {
    "pos": 14,
+   "form": "facht an",
+   "lemma": "anfachen",
+   "level": "B2",
+   "en": "stir up",
+   "es": "aviváis",
+   "fr": "attisez",
+   "it": "attizzate",
+   "parts": [
+    14,
+    25
+   ]
+  },
+  {
+   "pos": 14,
    "form": "facht",
    "lemma": "fachen",
    "level": "B2",
@@ -3037,6 +3067,17 @@
   },
   {
    "pos": 23,
+   "form": "noch mehr",
+   "lemma": "noch mehr",
+   "level": "A2",
+   "en": "even more",
+   "es": "aún más",
+   "fr": "encore plus",
+   "it": "ancora di più",
+   "pos_end": 24
+  },
+  {
+   "pos": 23,
    "form": "noch",
    "lemma": "noch",
    "level": "A1",
@@ -3064,47 +3105,6 @@
    "es": "en",
    "fr": "en",
    "it": "in"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    4,
-    5,
-    6
-   ],
-   "form": "tretet an die Stelle",
-   "lemma": "an die Stelle treten",
-   "level": "B2",
-   "en": "take the place",
-   "es": "ocupáis el lugar",
-   "fr": "prenez la place",
-   "it": "prendete il posto"
-  },
-  {
-   "pos": 23,
-   "pos_end": 24,
-   "form": "noch mehr",
-   "lemma": "noch mehr",
-   "level": "A2",
-   "en": "even more",
-   "es": "aún más",
-   "fr": "encore plus",
-   "it": "ancora di più"
-  },
-  {
-   "pos": 14,
-   "parts": [
-    14,
-    25
-   ],
-   "form": "facht an",
-   "lemma": "anfachen",
-   "level": "B2",
-   "en": "stir up",
-   "es": "aviváis",
-   "fr": "attisez",
-   "it": "attizzate"
   }
  ],
  "15": [
@@ -3137,6 +3137,20 @@
    "es": "vosotros",
    "fr": "vous",
    "it": "voi"
+  },
+  {
+   "pos": 3,
+   "form": "euch abwendet",
+   "lemma": "sich abwenden",
+   "level": "B2",
+   "en": "turn away",
+   "es": "os apartáis",
+   "fr": "vous détournez",
+   "it": "vi allontanate",
+   "parts": [
+    3,
+    6
+   ]
   },
   {
    "pos": 3,
@@ -3330,6 +3344,17 @@
   },
   {
    "pos": 22,
+   "form": "zugrunde richten",
+   "lemma": "zugrunde richten",
+   "level": "B2",
+   "en": "destroy",
+   "es": "destruir",
+   "fr": "ruiner",
+   "it": "rovinare",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "zugrunde",
    "lemma": "zugrunde",
    "level": "C1",
@@ -3347,31 +3372,6 @@
    "es": "llevar",
    "fr": "mener",
    "it": "portare"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    6
-   ],
-   "form": "euch abwendet",
-   "lemma": "sich abwenden",
-   "level": "B2",
-   "en": "turn away",
-   "es": "os apartáis",
-   "fr": "vous détournez",
-   "it": "vi allontanate"
-  },
-  {
-   "pos": 22,
-   "pos_end": 23,
-   "form": "zugrunde richten",
-   "lemma": "zugrunde richten",
-   "level": "B2",
-   "en": "destroy",
-   "es": "destruir",
-   "fr": "ruiner",
-   "it": "rovinare"
   }
  ],
  "16": [
@@ -3619,6 +3619,17 @@
   },
   {
    "pos": 4,
+   "form": "uns bewaffnen",
+   "lemma": "sich bewaffnen",
+   "level": "B2",
+   "en": "arm ourselves",
+   "es": "armarnos",
+   "fr": "nous armer",
+   "it": "armarci",
+   "pos_end": 5
+  },
+  {
+   "pos": 4,
    "form": "uns",
    "lemma": "wir",
    "level": "A1",
@@ -3646,6 +3657,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 7,
+   "form": "vor her",
+   "lemma": "vor jemandem her",
+   "level": "B2",
+   "en": "ahead of",
+   "es": "delante de",
+   "fr": "devant",
+   "it": "davanti a",
+   "parts": [
+    7,
+    11
+   ]
   },
   {
    "pos": 7,
@@ -3926,31 +3951,6 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
-  },
-  {
-   "pos": 4,
-   "pos_end": 5,
-   "form": "uns bewaffnen",
-   "lemma": "sich bewaffnen",
-   "level": "B2",
-   "en": "arm ourselves",
-   "es": "armarnos",
-   "fr": "nous armer",
-   "it": "armarci"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    11
-   ],
-   "form": "vor her",
-   "lemma": "vor jemandem her",
-   "level": "B2",
-   "en": "ahead of",
-   "es": "delante de",
-   "fr": "devant",
-   "it": "davanti a"
   }
  ],
  "18": [
@@ -4240,7 +4240,7 @@
    "pos": 15,
    "form": "diesseits",
    "lemma": "diesseits",
-   "level": "C1",
+   "level": "B2",
    "en": "on this side",
    "es": "de este lado",
    "fr": "de ce côté",
@@ -4380,6 +4380,20 @@
   },
   {
    "pos": 8,
+   "form": "euch rüsten",
+   "lemma": "sich rüsten",
+   "level": "B2",
+   "en": "equip yourselves",
+   "es": "prepararos",
+   "fr": "vous équiper",
+   "it": "equipaggiarvi",
+   "parts": [
+    8,
+    16
+   ]
+  },
+  {
+   "pos": 8,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -4467,20 +4481,6 @@
    "es": "preparar",
    "fr": "équiper",
    "it": "equipaggiare"
-  },
-  {
-   "pos": 8,
-   "parts": [
-    8,
-    16
-   ],
-   "form": "euch rüsten",
-   "lemma": "sich rüsten",
-   "level": "B2",
-   "en": "equip yourselves",
-   "es": "prepararos",
-   "fr": "vous équiper",
-   "it": "equipaggiarvi"
   }
  ],
  "21": [
@@ -5100,6 +5100,20 @@
   },
   {
    "pos": 7,
+   "form": "versündigt euch",
+   "lemma": "sich versündigen",
+   "level": "B2",
+   "en": "transgress",
+   "es": "transgredís",
+   "fr": "transgressez",
+   "it": "trasgredite",
+   "parts": [
+    7,
+    9
+   ]
+  },
+  {
+   "pos": 7,
    "form": "versündigt",
    "lemma": "sich versündigen",
    "level": "B2",
@@ -5220,6 +5234,17 @@
   },
   {
    "pos": 19,
+   "form": "zu spüren bekommen",
+   "lemma": "zu spüren bekommen",
+   "level": "B2",
+   "en": "get to feel",
+   "es": "llegar a sentir",
+   "fr": "finir par ressentir",
+   "it": "arrivare a sentire",
+   "pos_end": 21
+  },
+  {
+   "pos": 19,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -5247,31 +5272,6 @@
    "es": "obtener",
    "fr": "obtenir",
    "it": "ottenere"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    9
-   ],
-   "form": "versündigt euch",
-   "lemma": "sich versündigen",
-   "level": "B2",
-   "en": "transgress",
-   "es": "transgredís",
-   "fr": "transgressez",
-   "it": "trasgredite"
-  },
-  {
-   "pos": 19,
-   "pos_end": 21,
-   "form": "zu spüren bekommen",
-   "lemma": "zu spüren bekommen",
-   "level": "B2",
-   "en": "get to feel",
-   "es": "llegar a sentir",
-   "fr": "finir par ressentir",
-   "it": "arrivare a sentire"
   }
  ],
  "24": [
@@ -5913,6 +5913,17 @@
   },
   {
    "pos": 10,
+   "form": "in den Krieg ziehen",
+   "lemma": "in den Krieg ziehen",
+   "level": "B1",
+   "en": "go to war",
+   "es": "ir a la guerra",
+   "fr": "partir en guerre",
+   "it": "andare in guerra",
+   "pos_end": 13
+  },
+  {
+   "pos": 10,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -6000,17 +6011,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 10,
-   "pos_end": 13,
-   "form": "in den Krieg ziehen",
-   "lemma": "in den Krieg ziehen",
-   "level": "B1",
-   "en": "go to war",
-   "es": "ir a la guerra",
-   "fr": "partir en guerre",
-   "it": "andare in guerra"
   }
  ],
  "28": [
@@ -6023,6 +6023,20 @@
    "es": "Entonces",
    "fr": "Alors",
    "it": "Allora"
+  },
+  {
+   "pos": 1,
+   "form": "gab Anweisung",
+   "lemma": "Anweisung geben",
+   "level": "B1",
+   "en": "gave instructions",
+   "es": "dio instrucciones",
+   "fr": "donna des instructions",
+   "it": "diede istruzioni",
+   "parts": [
+    1,
+    19
+   ]
   },
   {
    "pos": 1,
@@ -6213,20 +6227,6 @@
    "es": "instrucciones",
    "fr": "instructions",
    "it": "istruzioni"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    19
-   ],
-   "form": "gab Anweisung",
-   "lemma": "Anweisung geben",
-   "level": "B1",
-   "en": "gave instructions",
-   "es": "dio instrucciones",
-   "fr": "donna des instructions",
-   "it": "diede istruzioni"
   }
  ],
  "29": [
@@ -6612,6 +6612,17 @@
   },
   {
    "pos": 38,
+   "form": "zu eigen",
+   "lemma": "zu eigen",
+   "level": "B2",
+   "en": "as property",
+   "es": "en propiedad",
+   "fr": "en propriété",
+   "it": "in proprietà",
+   "pos_end": 39
+  },
+  {
+   "pos": 38,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -6629,17 +6640,6 @@
    "es": "propio",
    "fr": "propre",
    "it": "proprio"
-  },
-  {
-   "pos": 38,
-   "pos_end": 39,
-   "form": "zu eigen",
-   "lemma": "zu eigen",
-   "level": "B2",
-   "en": "as property",
-   "es": "en propiedad",
-   "fr": "en propriété",
-   "it": "in proprietà"
   }
  ],
  "30": [
@@ -7171,7 +7171,7 @@
    "pos": 15,
    "form": "diesseits",
    "lemma": "diesseits",
-   "level": "C1",
+   "level": "B2",
    "en": "on this side",
    "es": "de este lado",
    "fr": "de ce côté",
@@ -7991,6 +7991,20 @@
   },
   {
    "pos": 9,
+   "form": "gaben Namen",
+   "lemma": "den Namen geben",
+   "level": "B1",
+   "en": "gave names",
+   "es": "pusieron nombres",
+   "fr": "donnèrent des noms",
+   "it": "diedero i nomi",
+   "parts": [
+    9,
+    15
+   ]
+  },
+  {
+   "pos": 9,
    "form": "gaben",
    "lemma": "geben",
    "level": "A1",
@@ -8058,20 +8072,6 @@
    "es": "nombres",
    "fr": "noms",
    "it": "nomi"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    15
-   ],
-   "form": "gaben Namen",
-   "lemma": "den Namen geben",
-   "level": "B1",
-   "en": "gave names",
-   "es": "pusieron nombres",
-   "fr": "donnèrent des noms",
-   "it": "diedero i nomi"
   }
  ],
  "39": [
@@ -8164,6 +8164,20 @@
    "es": "Galaad",
    "fr": "Galaad",
    "it": "Galaad"
+  },
+  {
+   "pos": 9,
+   "form": "nahmen ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocuparon",
+   "fr": "s'emparèrent de",
+   "it": "occuparono",
+   "parts": [
+    9,
+    11
+   ]
   },
   {
    "pos": 9,
@@ -8264,20 +8278,6 @@
    "es": "habitaban",
    "fr": "habitaient",
    "it": "abitavano"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    11
-   ],
-   "form": "nahmen ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocuparon",
-   "fr": "s'emparèrent de",
-   "it": "occuparono"
   }
  ],
  "40": [
@@ -8465,6 +8465,17 @@
   },
   {
    "pos": 5,
+   "form": "zog hin",
+   "lemma": "hinziehen",
+   "level": "B2",
+   "en": "went there",
+   "es": "fue allá",
+   "fr": "alla là-bas",
+   "it": "andò là",
+   "pos_end": 6
+  },
+  {
+   "pos": 5,
    "form": "zog",
    "lemma": "ziehen",
    "level": "A2",
@@ -8482,6 +8493,20 @@
    "es": "allá",
    "fr": "là",
    "it": "là"
+  },
+  {
+   "pos": 7,
+   "form": "nahm ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocupó",
+   "fr": "s'empara de",
+   "it": "occupò",
+   "parts": [
+    7,
+    10
+   ]
   },
   {
    "pos": 7,
@@ -8572,31 +8597,6 @@
    "es": "de Jair",
    "fr": "de Jaïr",
    "it": "di Iair"
-  },
-  {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "zog hin",
-   "lemma": "hinziehen",
-   "level": "B2",
-   "en": "went there",
-   "es": "fue allá",
-   "fr": "alla là-bas",
-   "it": "andò là"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    10
-   ],
-   "form": "nahm ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocupó",
-   "fr": "s'empara de",
-   "it": "occupò"
   }
  ],
  "42": [
@@ -8609,6 +8609,17 @@
    "es": "Noba",
    "fr": "Nobach",
    "it": "Noba"
+  },
+  {
+   "pos": 1,
+   "form": "zog hin",
+   "lemma": "hinziehen",
+   "level": "B2",
+   "en": "went there",
+   "es": "fue allá",
+   "fr": "alla là-bas",
+   "it": "andò là",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -8629,6 +8640,20 @@
    "es": "allá",
    "fr": "là",
    "it": "là"
+  },
+  {
+   "pos": 3,
+   "form": "nahm ein",
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "captured",
+   "es": "ocupó",
+   "fr": "s'empara de",
+   "it": "occupò",
+   "parts": [
+    3,
+    8
+   ]
   },
   {
    "pos": 3,
@@ -8769,31 +8794,6 @@
    "es": "nombre",
    "fr": "nom",
    "it": "nome"
-  },
-  {
-   "pos": 1,
-   "pos_end": 2,
-   "form": "zog hin",
-   "lemma": "hinziehen",
-   "level": "B2",
-   "en": "went there",
-   "es": "fue allá",
-   "fr": "alla là-bas",
-   "it": "andò là"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    8
-   ],
-   "form": "nahm ein",
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "captured",
-   "es": "ocupó",
-   "fr": "s'empara de",
-   "it": "occupò"
   }
  ]
 }

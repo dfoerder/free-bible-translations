@@ -1384,6 +1384,17 @@
   },
   {
    "pos": 15,
+   "form": "schlechter dastehen",
+   "lemma": "schlechter dastehen",
+   "level": "B2",
+   "en": "be worse off",
+   "es": "salir perjudicados",
+   "fr": "être désavantagés",
+   "it": "essere svantaggiati",
+   "pos_end": 16
+  },
+  {
+   "pos": 15,
    "form": "schlechter",
    "lemma": "schlecht",
    "level": "A1",
@@ -1401,17 +1412,6 @@
    "es": "estar ahí",
    "fr": "être là",
    "it": "stare lì"
-  },
-  {
-   "pos": 15,
-   "form": "schlechter dastehen",
-   "lemma": "schlechter dastehen",
-   "level": "B2",
-   "en": "be worse off",
-   "es": "salir perjudicados",
-   "fr": "être désavantagés",
-   "it": "essere svantaggiati",
-   "pos_end": 16
   },
   {
    "pos": 17,
@@ -1961,6 +1961,17 @@
   },
   {
    "pos": 17,
+   "form": "weit weg",
+   "lemma": "weit weg",
+   "level": "A2",
+   "en": "far away",
+   "es": "muy lejos",
+   "fr": "très loin",
+   "it": "molto lontano",
+   "pos_end": 18
+  },
+  {
+   "pos": 17,
    "form": "weit",
    "lemma": "weit",
    "level": "A2",
@@ -1978,17 +1989,6 @@
    "es": "fuera",
    "fr": "ailleurs",
    "it": "via"
-  },
-  {
-   "pos": 17,
-   "form": "weit weg",
-   "lemma": "weit weg",
-   "level": "A2",
-   "en": "far away",
-   "es": "muy lejos",
-   "fr": "très loin",
-   "it": "molto lontano",
-   "pos_end": 18
   },
   {
    "pos": 19,
@@ -3726,6 +3726,20 @@
   },
   {
    "pos": 1,
+   "form": "sich erhob",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rose up",
+   "es": "se levantaba",
+   "fr": "se levait",
+   "it": "si levava",
+   "parts": [
+    1,
+    7
+   ]
+  },
+  {
+   "pos": 1,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3795,17 +3809,17 @@
    "it": "levava"
   },
   {
-   "pos": 1,
-   "form": "sich erhob",
-   "lemma": "sich erheben",
+   "pos": 8,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
    "level": "B2",
-   "en": "rose up",
-   "es": "se levantaba",
-   "fr": "se levait",
-   "it": "si levava",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
    "parts": [
-    1,
-    7
+    8,
+    12
    ]
   },
   {
@@ -3857,20 +3871,6 @@
    "es": "adelante",
    "fr": "plus loin",
    "it": "oltre"
-  },
-  {
-   "pos": 8,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    8,
-    12
-   ]
   },
   {
    "pos": 13,
@@ -3954,6 +3954,20 @@
   },
   {
    "pos": 21,
+   "form": "schlugen auf",
+   "lemma": "aufschlagen",
+   "level": "B2",
+   "en": "pitched",
+   "es": "plantaban",
+   "fr": "dressaient",
+   "it": "piantavano",
+   "parts": [
+    21,
+    27
+   ]
+  },
+  {
+   "pos": 21,
    "form": "schlugen",
    "lemma": "schlagen",
    "level": "A2",
@@ -4021,20 +4035,6 @@
    "es": "arriba",
    "fr": "en haut",
    "it": "su"
-  },
-  {
-   "pos": 21,
-   "form": "schlugen auf",
-   "lemma": "aufschlagen",
-   "level": "B2",
-   "en": "pitched",
-   "es": "plantaban",
-   "fr": "dressaient",
-   "it": "piantavano",
-   "parts": [
-    21,
-    27
-   ]
   }
  ],
  "18": [
@@ -4090,6 +4090,20 @@
   },
   {
    "pos": 5,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    5,
+    9
+   ]
+  },
+  {
+   "pos": 5,
    "form": "zogen",
    "lemma": "ziehen",
    "level": "A2",
@@ -4139,20 +4153,6 @@
    "it": "oltre"
   },
   {
-   "pos": 5,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    5,
-    9
-   ]
-  },
-  {
    "pos": 10,
    "form": "und",
    "lemma": "und",
@@ -4194,6 +4194,20 @@
   },
   {
    "pos": 14,
+   "form": "lagerten sich",
+   "lemma": "sich lagern",
+   "level": "B2",
+   "en": "encamped",
+   "es": "acampaban",
+   "fr": "campaient",
+   "it": "si accampavano",
+   "parts": [
+    14,
+    16
+   ]
+  },
+  {
+   "pos": 14,
    "form": "lagerten",
    "lemma": "lagern",
    "level": "B2",
@@ -4221,20 +4235,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 14,
-   "form": "lagerten sich",
-   "lemma": "sich lagern",
-   "level": "B2",
-   "en": "encamped",
-   "es": "acampaban",
-   "fr": "campaient",
-   "it": "si accampavano",
-   "parts": [
-    14,
-    16
-   ]
   },
   {
    "pos": 17,
@@ -4460,6 +4460,21 @@
   },
   {
    "pos": 10,
+   "form": "hielten sich an",
+   "lemma": "sich halten an",
+   "level": "B2",
+   "en": "kept",
+   "es": "cumplían",
+   "fr": "observaient",
+   "it": "osservavano",
+   "parts": [
+    10,
+    11,
+    15
+   ]
+  },
+  {
+   "pos": 10,
    "form": "hielten",
    "lemma": "halten",
    "level": "A2",
@@ -4519,21 +4534,6 @@
    "it": "a"
   },
   {
-   "pos": 10,
-   "form": "hielten sich an",
-   "lemma": "sich halten an",
-   "level": "B2",
-   "en": "kept",
-   "es": "cumplían",
-   "fr": "observaient",
-   "it": "osservavano",
-   "parts": [
-    10,
-    11,
-    15
-   ]
-  },
-  {
    "pos": 16,
    "form": "das",
    "lemma": "der",
@@ -4585,6 +4585,20 @@
   },
   {
    "pos": 21,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    21,
+    23
+   ]
+  },
+  {
+   "pos": 21,
    "form": "zogen",
    "lemma": "ziehen",
    "level": "A2",
@@ -4612,20 +4626,6 @@
    "es": "adelante",
    "fr": "plus loin",
    "it": "oltre"
-  },
-  {
-   "pos": 21,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    21,
-    23
-   ]
   }
  ],
  "20": [
@@ -4741,6 +4741,20 @@
   },
   {
    "pos": 11,
+   "form": "lagerten sich",
+   "lemma": "sich lagern",
+   "level": "B2",
+   "en": "encamped",
+   "es": "acampaban",
+   "fr": "campaient",
+   "it": "si accampavano",
+   "parts": [
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
    "form": "lagerten",
    "lemma": "lagern",
    "level": "B2",
@@ -4768,20 +4782,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 11,
-   "form": "lagerten sich",
-   "lemma": "sich lagern",
-   "level": "B2",
-   "en": "encamped",
-   "es": "acampaban",
-   "fr": "campaient",
-   "it": "si accampavano",
-   "parts": [
-    11,
-    13
-   ]
   },
   {
    "pos": 14,
@@ -4842,6 +4842,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 20,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    20,
+    26
+   ]
   },
   {
    "pos": 20,
@@ -4912,23 +4926,23 @@
    "es": "adelante",
    "fr": "plus loin",
    "it": "oltre"
-  },
-  {
-   "pos": 20,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    20,
-    26
-   ]
   }
  ],
  "21": [
+  {
+   "pos": 0,
+   "form": "War da",
+   "lemma": "da sein",
+   "level": "A2",
+   "en": "Was there",
+   "es": "Estaba presente",
+   "fr": "Était là",
+   "it": "Era lì",
+   "parts": [
+    0,
+    7
+   ]
+  },
   {
    "pos": 0,
    "form": "War",
@@ -5010,20 +5024,6 @@
    "it": "lì"
   },
   {
-   "pos": 0,
-   "form": "War da",
-   "lemma": "da sein",
-   "level": "A2",
-   "en": "Was there",
-   "es": "Estaba presente",
-   "fr": "Était là",
-   "it": "Era lì",
-   "parts": [
-    0,
-    7
-   ]
-  },
-  {
    "pos": 8,
    "form": "und",
    "lemma": "und",
@@ -5032,6 +5032,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 9,
+   "form": "erhob sich",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rose up",
+   "es": "se levantaba",
+   "fr": "se levait",
+   "it": "si levava",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -5054,17 +5065,6 @@
    "it": "si"
   },
   {
-   "pos": 9,
-   "form": "erhob sich",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "rose up",
-   "es": "se levantaba",
-   "fr": "se levait",
-   "it": "si levava",
-   "pos_end": 10
-  },
-  {
    "pos": 11,
    "form": "dann",
    "lemma": "dann",
@@ -5073,6 +5073,20 @@
    "es": "entonces",
    "fr": "alors",
    "it": "allora"
+  },
+  {
+   "pos": 12,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    12,
+    14
+   ]
   },
   {
    "pos": 12,
@@ -5105,17 +5119,17 @@
    "it": "oltre"
   },
   {
-   "pos": 12,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
+   "pos": 15,
+   "form": "Erhob sich",
+   "lemma": "sich erheben",
    "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
+   "en": "Rose up",
+   "es": "Se levantaba",
+   "fr": "Se levait",
+   "it": "Si levava",
    "parts": [
-    12,
-    14
+    15,
+    17
    ]
   },
   {
@@ -5149,20 +5163,6 @@
    "it": "si"
   },
   {
-   "pos": 15,
-   "form": "Erhob sich",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "Rose up",
-   "es": "Se levantaba",
-   "fr": "Se levait",
-   "it": "Si levava",
-   "parts": [
-    15,
-    17
-   ]
-  },
-  {
    "pos": 18,
    "form": "tagsüber",
    "lemma": "tagsüber",
@@ -5191,6 +5191,20 @@
    "es": "de noche",
    "fr": "de nuit",
    "it": "di notte"
+  },
+  {
+   "pos": 21,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    21,
+    24
+   ]
   },
   {
    "pos": 21,
@@ -5231,20 +5245,6 @@
    "es": "adelante",
    "fr": "plus loin",
    "it": "oltre"
-  },
-  {
-   "pos": 21,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    21,
-    24
-   ]
   }
  ],
  "22": [
@@ -5450,6 +5450,20 @@
   },
   {
    "pos": 20,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    20,
+    22
+   ]
+  },
+  {
+   "pos": 20,
    "form": "zogen",
    "lemma": "ziehen",
    "level": "A2",
@@ -5479,17 +5493,17 @@
    "it": "oltre"
   },
   {
-   "pos": 20,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
+   "pos": 23,
+   "form": "Erhob sich",
+   "lemma": "sich erheben",
    "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
+   "en": "Rose up",
+   "es": "Se levantaba",
+   "fr": "Se levait",
+   "it": "Si levava",
    "parts": [
-    20,
-    22
+    23,
+    25
    ]
   },
   {
@@ -5523,20 +5537,6 @@
    "it": "si"
   },
   {
-   "pos": 23,
-   "form": "Erhob sich",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "Rose up",
-   "es": "Se levantaba",
-   "fr": "Se levait",
-   "it": "Si levava",
-   "parts": [
-    23,
-    25
-   ]
-  },
-  {
    "pos": 26,
    "form": "dann",
    "lemma": "dann",
@@ -5545,6 +5545,20 @@
    "es": "entonces",
    "fr": "alors",
    "it": "allora"
+  },
+  {
+   "pos": 27,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    27,
+    29
+   ]
   },
   {
    "pos": 27,
@@ -5575,20 +5589,6 @@
    "es": "adelante",
    "fr": "plus loin",
    "it": "oltre"
-  },
-  {
-   "pos": 27,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    27,
-    29
-   ]
   }
  ],
  "23": [
@@ -5734,6 +5734,20 @@
   },
   {
    "pos": 14,
+   "form": "zogen weiter",
+   "lemma": "weiterziehen",
+   "level": "B2",
+   "en": "moved on",
+   "es": "seguían adelante",
+   "fr": "poursuivaient leur route",
+   "it": "proseguivano",
+   "parts": [
+    14,
+    16
+   ]
+  },
+  {
+   "pos": 14,
    "form": "zogen",
    "lemma": "ziehen",
    "level": "A2",
@@ -5763,20 +5777,6 @@
    "it": "oltre"
   },
   {
-   "pos": 14,
-   "form": "zogen weiter",
-   "lemma": "weiterziehen",
-   "level": "B2",
-   "en": "moved on",
-   "es": "seguían adelante",
-   "fr": "poursuivaient leur route",
-   "it": "proseguivano",
-   "parts": [
-    14,
-    16
-   ]
-  },
-  {
    "pos": 17,
    "form": "So",
    "lemma": "so",
@@ -5785,6 +5785,21 @@
    "es": "Así",
    "fr": "Ainsi",
    "it": "Così"
+  },
+  {
+   "pos": 18,
+   "form": "hielten sich an",
+   "lemma": "sich halten an",
+   "level": "B2",
+   "en": "kept",
+   "es": "cumplían",
+   "fr": "observaient",
+   "it": "osservavano",
+   "parts": [
+    18,
+    20,
+    21
+   ]
   },
   {
    "pos": 18,
@@ -5825,21 +5840,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 18,
-   "form": "hielten sich an",
-   "lemma": "sich halten an",
-   "level": "B2",
-   "en": "kept",
-   "es": "cumplían",
-   "fr": "observaient",
-   "it": "osservavano",
-   "parts": [
-    18,
-    20,
-    21
-   ]
   },
   {
    "pos": 22,

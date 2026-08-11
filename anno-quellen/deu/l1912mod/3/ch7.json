@@ -1224,6 +1224,17 @@
   },
   {
    "pos": 20,
+   "form": "Sühne leistet",
+   "lemma": "Sühne leisten",
+   "level": "C1",
+   "en": "makes atonement",
+   "es": "hace expiación",
+   "fr": "fait l'expiation",
+   "it": "fa espiazione",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "Sühne",
    "lemma": "Sühne",
    "level": "C1",
@@ -1241,17 +1252,6 @@
    "es": "hace",
    "fr": "fait",
    "it": "fa"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "Sühne leistet",
-   "lemma": "Sühne leisten",
-   "level": "C1",
-   "en": "makes atonement",
-   "es": "hace expiación",
-   "fr": "fait l'expiation",
-   "it": "fa espiazione"
   }
  ],
  "8": [
@@ -2781,6 +2781,17 @@
   },
   {
    "pos": 24,
+   "form": "übrig bleiben",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "be left over",
+   "es": "sobrar",
+   "fr": "rester",
+   "it": "avanzare",
+   "pos_end": 25
+  },
+  {
+   "pos": 24,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -2798,17 +2809,6 @@
    "es": "quedar",
    "fr": "rester",
    "it": "rimanere"
-  },
-  {
-   "pos": 24,
-   "pos_end": 25,
-   "form": "übrig bleiben",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "be left over",
-   "es": "sobrar",
-   "fr": "rester",
-   "it": "avanzare"
   }
  ],
  "16": [
@@ -3024,6 +3024,20 @@
   },
   {
    "pos": 21,
+   "form": "Bleibt übrig",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "is left over",
+   "es": "sobra",
+   "fr": "reste",
+   "it": "avanza",
+   "parts": [
+    21,
+    28
+   ]
+  },
+  {
+   "pos": 21,
    "form": "Bleibt",
    "lemma": "bleiben",
    "level": "A1",
@@ -3151,20 +3165,6 @@
    "es": "comer",
    "fr": "manger",
    "it": "mangiare"
-  },
-  {
-   "pos": 21,
-   "parts": [
-    21,
-    28
-   ],
-   "form": "Bleibt übrig",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "is left over",
-   "es": "sobra",
-   "fr": "reste",
-   "it": "avanza"
   }
  ],
  "17": [
@@ -3260,6 +3260,17 @@
   },
   {
    "pos": 9,
+   "form": "übrig ist",
+   "lemma": "übrig sein",
+   "level": "B1",
+   "en": "is left",
+   "es": "queda",
+   "fr": "reste",
+   "it": "resta",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -3327,17 +3338,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "übrig ist",
-   "lemma": "übrig sein",
-   "level": "B1",
-   "en": "is left",
-   "es": "queda",
-   "fr": "reste",
-   "it": "resta"
   }
  ],
  "18": [
@@ -3623,6 +3623,17 @@
   },
   {
    "pos": 28,
+   "form": "gilt als",
+   "lemma": "gelten als",
+   "level": "B2",
+   "en": "is regarded as",
+   "es": "se considera",
+   "fr": "est considéré comme",
+   "it": "è considerato come",
+   "pos_end": 29
+  },
+  {
+   "pos": 28,
    "form": "gilt",
    "lemma": "gelten",
    "level": "B2",
@@ -3683,6 +3694,17 @@
   },
   {
    "pos": 34,
+   "form": "macht sich schuldig",
+   "lemma": "sich schuldig machen",
+   "level": "B2",
+   "en": "is guilty",
+   "es": "se hace culpable",
+   "fr": "se rend coupable",
+   "it": "si rende colpevole",
+   "pos_end": 36
+  },
+  {
+   "pos": 34,
    "form": "macht",
    "lemma": "machen",
    "level": "A1",
@@ -3710,28 +3732,6 @@
    "es": "culpable",
    "fr": "coupable",
    "it": "colpevole"
-  },
-  {
-   "pos": 28,
-   "pos_end": 29,
-   "form": "gilt als",
-   "lemma": "gelten als",
-   "level": "B2",
-   "en": "is regarded as",
-   "es": "se considera",
-   "fr": "est considéré comme",
-   "it": "è considerato come"
-  },
-  {
-   "pos": 34,
-   "pos_end": 36,
-   "form": "macht sich schuldig",
-   "lemma": "sich schuldig machen",
-   "level": "B2",
-   "en": "is guilty",
-   "es": "se hace culpable",
-   "fr": "se rend coupable",
-   "it": "si rende colpevole"
   }
  ],
  "19": [
@@ -3784,6 +3784,17 @@
    "es": "inmundo",
    "fr": "impur",
    "it": "immondo"
+  },
+  {
+   "pos": 5,
+   "form": "in Berührung kommt",
+   "lemma": "in Berührung kommen",
+   "level": "B2",
+   "en": "comes into contact",
+   "es": "entra en contacto",
+   "fr": "entre en contact",
+   "it": "entra in contatto",
+   "pos_end": 7
   },
   {
    "pos": 5,
@@ -3984,17 +3995,6 @@
    "es": "comer",
    "fr": "manger",
    "it": "mangiare"
-  },
-  {
-   "pos": 5,
-   "pos_end": 7,
-   "form": "in Berührung kommt",
-   "lemma": "in Berührung kommen",
-   "level": "B2",
-   "en": "comes into contact",
-   "es": "entra en contacto",
-   "fr": "entre en contact",
-   "it": "entra in contatto"
   }
  ],
  "20": [
@@ -5292,6 +5292,20 @@
   },
   {
    "pos": 6,
+   "form": "weder noch",
+   "lemma": "weder ... noch",
+   "level": "B1",
+   "en": "neither ... nor",
+   "es": "ni ... ni",
+   "fr": "ni ... ni",
+   "it": "né ... né",
+   "parts": [
+    6,
+    9
+   ]
+  },
+  {
+   "pos": 6,
    "form": "weder",
    "lemma": "weder",
    "level": "B1",
@@ -5389,20 +5403,6 @@
    "es": "habitéis",
    "fr": "habitez",
    "it": "abitate"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    9
-   ],
-   "form": "weder noch",
-   "lemma": "weder ... noch",
-   "level": "B1",
-   "en": "neither ... nor",
-   "es": "ni ... ni",
-   "fr": "ni ... ni",
-   "it": "né ... né"
   }
  ],
  "27": [

@@ -446,6 +446,20 @@
   },
   {
    "pos": 9,
+   "form": "sich nähert",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approaches",
+   "es": "se acerca",
+   "fr": "s'approche",
+   "it": "si avvicina",
+   "parts": [
+    9,
+    13
+   ]
+  },
+  {
+   "pos": 9,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -493,20 +507,6 @@
    "es": "acerca",
    "fr": "approche",
    "it": "avvicina"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    13
-   ],
-   "form": "sich nähert",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approaches",
-   "es": "se acerca",
-   "fr": "s'approche",
-   "it": "si avvicina"
   },
   {
    "pos": 14,
@@ -1336,6 +1336,17 @@
   },
   {
    "pos": 1,
+   "form": "so etwas",
+   "lemma": "so etwas",
+   "level": "A2",
+   "en": "such a thing",
+   "es": "algo así",
+   "fr": "une chose pareille",
+   "it": "una cosa simile",
+   "pos_end": 2
+  },
+  {
+   "pos": 1,
    "form": "so",
    "lemma": "so",
    "level": "A1",
@@ -1353,17 +1364,6 @@
    "es": "algo",
    "fr": "quelque chose",
    "it": "qualcosa"
-  },
-  {
-   "pos": 1,
-   "pos_end": 2,
-   "form": "so etwas",
-   "lemma": "so etwas",
-   "level": "A2",
-   "en": "such a thing",
-   "es": "algo así",
-   "fr": "une chose pareille",
-   "it": "una cosa simile"
   },
   {
    "pos": 3,
@@ -1527,6 +1527,20 @@
   },
   {
    "pos": 19,
+   "form": "sich waschen",
+   "lemma": "sich waschen",
+   "level": "A2",
+   "en": "wash himself",
+   "es": "lavarse",
+   "fr": "se laver",
+   "it": "lavarsi",
+   "parts": [
+    19,
+    23
+   ]
+  },
+  {
+   "pos": 19,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1574,20 +1588,6 @@
    "es": "lavar",
    "fr": "laver",
    "it": "lavare"
-  },
-  {
-   "pos": 19,
-   "parts": [
-    19,
-    23
-   ],
-   "form": "sich waschen",
-   "lemma": "sich waschen",
-   "level": "A2",
-   "en": "wash himself",
-   "es": "lavarse",
-   "fr": "se laver",
-   "it": "lavarsi"
   }
  ],
  "7": [
@@ -1915,6 +1915,20 @@
   },
   {
    "pos": 13,
+   "form": "sich verunreinigt",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile himself",
+   "es": "contaminarse",
+   "fr": "se souiller",
+   "it": "contaminarsi",
+   "parts": [
+    13,
+    16
+   ]
+  },
+  {
+   "pos": 13,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1952,20 +1966,6 @@
    "es": "contamine",
    "fr": "souille",
    "it": "contamini"
-  },
-  {
-   "pos": 13,
-   "parts": [
-    13,
-    16
-   ],
-   "form": "sich verunreinigt",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile himself",
-   "es": "contaminarse",
-   "fr": "se souiller",
-   "it": "contaminarsi"
   },
   {
    "pos": 17,
@@ -2101,6 +2101,17 @@
   },
   {
    "pos": 9,
+   "form": "Sünde auf sich laden",
+   "lemma": "Sünde auf sich laden",
+   "level": "C1",
+   "en": "incur sin",
+   "es": "incurran en pecado",
+   "fr": "encourent un péché",
+   "it": "incorrano in peccato",
+   "pos_end": 12
+  },
+  {
+   "pos": 9,
    "form": "Sünde",
    "lemma": "Sünde",
    "level": "B1",
@@ -2138,17 +2149,6 @@
    "es": "carguen",
    "fr": "chargent",
    "it": "carichino"
-  },
-  {
-   "pos": 9,
-   "pos_end": 12,
-   "form": "Sünde auf sich laden",
-   "lemma": "Sünde auf sich laden",
-   "level": "C1",
-   "en": "incur sin",
-   "es": "incurran en pecado",
-   "fr": "encourent un péché",
-   "it": "incorrano in peccato"
   },
   {
    "pos": 13,
@@ -2202,6 +2202,17 @@
   },
   {
    "pos": 18,
+   "form": "sich entweihen",
+   "lemma": "sich entweihen",
+   "level": "C1",
+   "en": "desecrate themselves",
+   "es": "se profanan",
+   "fr": "se profanent",
+   "it": "si profanano",
+   "pos_end": 19
+  },
+  {
+   "pos": 18,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2219,17 +2230,6 @@
    "es": "profanan",
    "fr": "profanent",
    "it": "profanano"
-  },
-  {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "sich entweihen",
-   "lemma": "sich entweihen",
-   "level": "C1",
-   "en": "desecrate themselves",
-   "es": "se profanan",
-   "fr": "se profanent",
-   "it": "si profanano"
   },
   {
    "pos": 20,
@@ -2385,6 +2385,17 @@
   },
   {
    "pos": 8,
+   "form": "auch nicht",
+   "lemma": "auch nicht",
+   "level": "A2",
+   "en": "nor",
+   "es": "tampoco",
+   "fr": "non plus",
+   "it": "neppure",
+   "pos_end": 9
+  },
+  {
+   "pos": 8,
    "form": "auch",
    "lemma": "auch",
    "level": "A1",
@@ -2402,17 +2413,6 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
-  },
-  {
-   "pos": 8,
-   "pos_end": 9,
-   "form": "auch nicht",
-   "lemma": "auch nicht",
-   "level": "A2",
-   "en": "nor",
-   "es": "tampoco",
-   "fr": "non plus",
-   "it": "neppure"
   },
   {
    "pos": 10,
@@ -3042,9 +3042,23 @@
   },
   {
    "pos": 13,
+   "form": "kehrt zurück",
+   "lemma": "zurückkehren",
+   "level": "B1",
+   "en": "returns",
+   "es": "vuelve",
+   "fr": "retourne",
+   "it": "ritorna",
+   "parts": [
+    13,
+    20
+   ]
+  },
+  {
+   "pos": 13,
    "form": "kehrt",
    "lemma": "kehren",
-   "level": "B2",
+   "level": "B1",
    "en": "turns",
    "es": "vuelve",
    "fr": "tourne",
@@ -3119,20 +3133,6 @@
    "es": "atrás",
    "fr": "en arrière",
    "it": "indietro"
-  },
-  {
-   "pos": 13,
-   "parts": [
-    13,
-    20
-   ],
-   "form": "kehrt zurück",
-   "lemma": "zurückkehren",
-   "level": "B1",
-   "en": "returns",
-   "es": "vuelve",
-   "fr": "retourne",
-   "it": "ritorna"
   },
   {
    "pos": 21,
@@ -3358,6 +3358,17 @@
   },
   {
    "pos": 2,
+   "form": "aus Versehen",
+   "lemma": "aus Versehen",
+   "level": "B2",
+   "en": "inadvertently",
+   "es": "por inadvertencia",
+   "fr": "par inadvertance",
+   "it": "per inavvertenza",
+   "pos_end": 3
+  },
+  {
+   "pos": 2,
    "form": "aus",
    "lemma": "aus",
    "level": "A1",
@@ -3375,17 +3386,6 @@
    "es": "descuido",
    "fr": "inadvertance",
    "it": "svista"
-  },
-  {
-   "pos": 2,
-   "pos_end": 3,
-   "form": "aus Versehen",
-   "lemma": "aus Versehen",
-   "level": "B2",
-   "en": "inadvertently",
-   "es": "por inadvertencia",
-   "fr": "par inadvertance",
-   "it": "per inavvertenza"
   },
   {
    "pos": 4,
@@ -3753,6 +3753,20 @@
   },
   {
    "pos": 2,
+   "form": "sich belädt",
+   "lemma": "sich beladen",
+   "level": "B2",
+   "en": "burdens oneself",
+   "es": "se cargue",
+   "fr": "se charge",
+   "it": "si carichi",
+   "parts": [
+    2,
+    6
+   ]
+  },
+  {
+   "pos": 2,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3800,20 +3814,6 @@
    "es": "cargue",
    "fr": "charge",
    "it": "carichi"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    6
-   ],
-   "form": "sich belädt",
-   "lemma": "sich beladen",
-   "level": "B2",
-   "en": "burdens oneself",
-   "es": "se cargue",
-   "fr": "se charge",
-   "it": "si carichi"
   },
   {
    "pos": 7,
@@ -4221,6 +4221,17 @@
   },
   {
    "pos": 22,
+   "form": "sei es",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether it be",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia esso",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -4238,17 +4249,6 @@
    "es": "ello",
    "fr": "il",
    "it": "esso"
-  },
-  {
-   "pos": 22,
-   "pos_end": 23,
-   "form": "sei es",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether it be",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia esso"
   },
   {
    "pos": 24,
@@ -4292,6 +4292,17 @@
   },
   {
    "pos": 28,
+   "form": "aus freiem Willen",
+   "lemma": "aus freiem Willen",
+   "level": "B2",
+   "en": "of free will",
+   "es": "de libre voluntad",
+   "fr": "de plein gré",
+   "it": "di libera volontà",
+   "pos_end": 30
+  },
+  {
+   "pos": 28,
    "form": "aus",
    "lemma": "aus",
    "level": "A1",
@@ -4319,17 +4330,6 @@
    "es": "voluntad",
    "fr": "gré",
    "it": "volontà"
-  },
-  {
-   "pos": 28,
-   "pos_end": 30,
-   "form": "aus freiem Willen",
-   "lemma": "aus freiem Willen",
-   "level": "B2",
-   "en": "of free will",
-   "es": "de libre voluntad",
-   "fr": "de plein gré",
-   "it": "di libera volontà"
   },
   {
    "pos": 31,
@@ -4789,6 +4789,17 @@
   },
   {
    "pos": 12,
+   "form": "aus freiem Willen",
+   "lemma": "aus freiem Willen",
+   "level": "B2",
+   "en": "of free will",
+   "es": "de libre voluntad",
+   "fr": "de plein gré",
+   "it": "di libera volontà",
+   "pos_end": 14
+  },
+  {
+   "pos": 12,
    "form": "aus",
    "lemma": "aus",
    "level": "A1",
@@ -4816,17 +4827,6 @@
    "es": "voluntad",
    "fr": "gré",
    "it": "volontà"
-  },
-  {
-   "pos": 12,
-   "pos_end": 14,
-   "form": "aus freiem Willen",
-   "lemma": "aus freiem Willen",
-   "level": "B2",
-   "en": "of free will",
-   "es": "de libre voluntad",
-   "fr": "de plein gré",
-   "it": "di libera volontà"
   },
   {
    "pos": 15,
@@ -5706,6 +5706,17 @@
   },
   {
    "pos": 16,
+   "form": "So etwas",
+   "lemma": "so etwas",
+   "level": "A2",
+   "en": "Such a thing",
+   "es": "Algo así",
+   "fr": "Une chose pareille",
+   "it": "Una cosa simile",
+   "pos_end": 17
+  },
+  {
+   "pos": 16,
    "form": "So",
    "lemma": "so",
    "level": "A1",
@@ -5723,17 +5734,6 @@
    "es": "algo",
    "fr": "quelque chose",
    "it": "qualcosa"
-  },
-  {
-   "pos": 16,
-   "pos_end": 17,
-   "form": "So etwas",
-   "lemma": "so etwas",
-   "level": "A2",
-   "en": "Such a thing",
-   "es": "Algo así",
-   "fr": "Une chose pareille",
-   "it": "Una cosa simile"
   },
   {
    "pos": 18,
@@ -6333,6 +6333,20 @@
   },
   {
    "pos": 18,
+   "form": "Vom an",
+   "lemma": "von an",
+   "level": "B1",
+   "en": "from on",
+   "es": "a partir de",
+   "fr": "à partir de",
+   "it": "a partire da",
+   "parts": [
+    18,
+    21
+   ]
+  },
+  {
+   "pos": 18,
    "form": "Vom",
    "lemma": "vom",
    "level": "A1",
@@ -6370,20 +6384,6 @@
    "es": "en adelante",
    "fr": "en avant",
    "it": "in poi"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    21
-   ],
-   "form": "Vom an",
-   "lemma": "von an",
-   "level": "B2",
-   "en": "from on",
-   "es": "a partir de",
-   "fr": "à partir de",
-   "it": "a partire da"
   },
   {
    "pos": 22,
@@ -7319,6 +7319,20 @@
   },
   {
    "pos": 6,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    6,
+    9
+   ]
+  },
+  {
+   "pos": 6,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -7366,20 +7380,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    9
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
   },
   {
    "pos": 11,

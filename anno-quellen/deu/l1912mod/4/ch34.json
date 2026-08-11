@@ -588,6 +588,20 @@
   },
   {
    "pos": 3,
+   "form": "sich wendet",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turns",
+   "es": "se vuelve",
+   "fr": "se tourne",
+   "it": "si volge",
+   "parts": [
+    3,
+    8
+   ]
+  },
+  {
+   "pos": 3,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -645,20 +659,6 @@
    "es": "vuelve",
    "fr": "tourne",
    "it": "volge"
-  },
-  {
-   "pos": 3,
-   "form": "sich wendet",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turns",
-   "es": "se vuelve",
-   "fr": "se tourne",
-   "it": "si volge",
-   "parts": [
-    3,
-    8
-   ]
   },
   {
    "pos": 9,
@@ -734,7 +734,7 @@
    "pos": 16,
    "form": "ausläuft",
    "lemma": "auslaufen",
-   "level": "B2",
+   "level": "B1",
    "en": "ends",
    "es": "termina",
    "fr": "aboutit",
@@ -844,6 +844,20 @@
   },
   {
    "pos": 1,
+   "form": "sich wendet",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turns",
+   "es": "se vuelve",
+   "fr": "se tourne",
+   "it": "si volge",
+   "parts": [
+    1,
+    7
+   ]
+  },
+  {
+   "pos": 1,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -911,20 +925,6 @@
    "es": "vuelve",
    "fr": "tourne",
    "it": "volge"
-  },
-  {
-   "pos": 1,
-   "form": "sich wendet",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turns",
-   "es": "se vuelve",
-   "fr": "se tourne",
-   "it": "si volge",
-   "parts": [
-    1,
-    7
-   ]
   },
   {
    "pos": 8,
@@ -1760,6 +1760,20 @@
   },
   {
    "pos": 3,
+   "form": "führt hinab",
+   "lemma": "hinabführen",
+   "level": "B2",
+   "en": "goes down",
+   "es": "desciende",
+   "fr": "descend",
+   "it": "scende",
+   "parts": [
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 3,
    "form": "führt",
    "lemma": "führen",
    "level": "A2",
@@ -1797,20 +1811,6 @@
    "es": "abajo",
    "fr": "en bas",
    "it": "giù"
-  },
-  {
-   "pos": 3,
-   "form": "führt hinab",
-   "lemma": "hinabführen",
-   "level": "B2",
-   "en": "goes down",
-   "es": "desciende",
-   "fr": "descend",
-   "it": "scende",
-   "parts": [
-    3,
-    6
-   ]
   },
   {
    "pos": 7,
@@ -1874,6 +1874,20 @@
   },
   {
    "pos": 13,
+   "form": "führt hinab",
+   "lemma": "hinabführen",
+   "level": "B2",
+   "en": "goes down",
+   "es": "desciende",
+   "fr": "descend",
+   "it": "scende",
+   "parts": [
+    13,
+    16
+   ]
+  },
+  {
+   "pos": 13,
    "form": "führt",
    "lemma": "führen",
    "level": "A2",
@@ -1913,20 +1927,6 @@
    "it": "giù"
   },
   {
-   "pos": 13,
-   "form": "führt hinab",
-   "lemma": "hinabführen",
-   "level": "B2",
-   "en": "goes down",
-   "es": "desciende",
-   "fr": "descend",
-   "it": "scende",
-   "parts": [
-    13,
-    16
-   ]
-  },
-  {
    "pos": 17,
    "form": "und",
    "lemma": "und",
@@ -1935,6 +1935,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 18,
+   "form": "wendet sich",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turns",
+   "es": "se vuelve",
+   "fr": "se tourne",
+   "it": "si volge",
+   "pos_end": 19
   },
   {
    "pos": 18,
@@ -1955,17 +1966,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 18,
-   "form": "wendet sich",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turns",
-   "es": "se vuelve",
-   "fr": "se tourne",
-   "it": "si volge",
-   "pos_end": 19
   },
   {
    "pos": 20,
@@ -2041,6 +2041,17 @@
   },
   {
    "pos": 1,
+   "form": "geht hinab",
+   "lemma": "hinabgehen",
+   "level": "B1",
+   "en": "goes down",
+   "es": "desciende",
+   "fr": "descend",
+   "it": "scende",
+   "pos_end": 2
+  },
+  {
+   "pos": 1,
    "form": "geht",
    "lemma": "gehen",
    "level": "A1",
@@ -2058,17 +2069,6 @@
    "es": "abajo",
    "fr": "en bas",
    "it": "giù"
-  },
-  {
-   "pos": 1,
-   "form": "geht hinab",
-   "lemma": "hinabgehen",
-   "level": "B2",
-   "en": "goes down",
-   "es": "desciende",
-   "fr": "descend",
-   "it": "scende",
-   "pos_end": 2
   },
   {
    "pos": 3,

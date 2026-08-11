@@ -316,6 +316,21 @@
  "3": [
   {
    "pos": 0,
+   "form": "Sowohl als auch",
+   "lemma": "sowohl als auch",
+   "level": "B2",
+   "en": "both and",
+   "es": "tanto como",
+   "fr": "aussi bien que",
+   "it": "sia sia",
+   "parts": [
+    0,
+    2,
+    3
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Sowohl",
    "lemma": "sowohl",
    "level": "B2",
@@ -543,21 +558,6 @@
    "es": "habito",
    "fr": "habite",
    "it": "abito"
-  },
-  {
-   "pos": 0,
-   "form": "Sowohl als auch",
-   "lemma": "sowohl als auch",
-   "level": "B2",
-   "en": "both and",
-   "es": "tanto como",
-   "fr": "aussi bien que",
-   "it": "sia sia",
-   "parts": [
-    0,
-    2,
-    3
-   ]
   }
  ],
  "4": [
@@ -2391,6 +2391,17 @@
   },
   {
    "pos": 20,
+   "form": "ohne dass",
+   "lemma": "ohne dass",
+   "level": "B1",
+   "en": "without",
+   "es": "sin que",
+   "fr": "sans que",
+   "it": "senza che",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "ohne",
    "lemma": "ohne",
    "level": "A1",
@@ -2481,6 +2492,17 @@
   },
   {
    "pos": 29,
+   "form": "auf frischer Tat",
+   "lemma": "auf frischer Tat",
+   "level": "C1",
+   "en": "in the very act",
+   "es": "en flagrante",
+   "fr": "en flagrant délit",
+   "it": "in flagrante",
+   "pos_end": 31
+  },
+  {
+   "pos": 29,
    "form": "auf",
    "lemma": "auf",
    "level": "A1",
@@ -2528,28 +2550,6 @@
    "es": "fue",
    "fr": "fut",
    "it": "fu"
-  },
-  {
-   "pos": 20,
-   "form": "ohne dass",
-   "lemma": "ohne dass",
-   "level": "B1",
-   "en": "without",
-   "es": "sin que",
-   "fr": "sans que",
-   "it": "senza che",
-   "pos_end": 21
-  },
-  {
-   "pos": 29,
-   "form": "auf frischer Tat",
-   "lemma": "auf frischer Tat",
-   "level": "C1",
-   "en": "in the very act",
-   "es": "en flagrante",
-   "fr": "en flagrant délit",
-   "it": "in flagrante",
-   "pos_end": 31
   }
  ],
  "14": [
@@ -3705,6 +3705,17 @@
   },
   {
    "pos": 6,
+   "form": "schwören lassen",
+   "lemma": "schwören lassen",
+   "level": "B2",
+   "en": "make swear",
+   "es": "hacer jurar",
+   "fr": "faire jurer",
+   "it": "far giurare",
+   "pos_end": 7
+  },
+  {
+   "pos": 6,
    "form": "schwören",
    "lemma": "schwören",
    "level": "B2",
@@ -4052,17 +4063,6 @@
    "es": "dañar",
    "fr": "nuire",
    "it": "nuocere"
-  },
-  {
-   "pos": 6,
-   "form": "schwören lassen",
-   "lemma": "schwören lassen",
-   "level": "B2",
-   "en": "make swear",
-   "es": "hacer jurar",
-   "fr": "faire jurer",
-   "it": "far giurare",
-   "pos_end": 7
   }
  ],
  "20": [
@@ -4357,6 +4357,17 @@
    "es": "maldición",
    "fr": "malédiction",
    "it": "maledizione"
+  },
+  {
+   "pos": 9,
+   "form": "schwören lassen",
+   "lemma": "schwören lassen",
+   "level": "B2",
+   "en": "make swear",
+   "es": "hacer jurar",
+   "fr": "faire jurer",
+   "it": "far giurare",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -4657,17 +4668,6 @@
    "es": "hace",
    "fr": "fait",
    "it": "fa"
-  },
-  {
-   "pos": 9,
-   "form": "schwören lassen",
-   "lemma": "schwören lassen",
-   "level": "B2",
-   "en": "make swear",
-   "es": "hacer jurar",
-   "fr": "faire jurer",
-   "it": "far giurare",
-   "pos_end": 10
   }
  ],
  "22": [
@@ -5147,6 +5147,17 @@
   },
   {
    "pos": 7,
+   "form": "zu trinken geben",
+   "lemma": "zu trinken geben",
+   "level": "B1",
+   "en": "give to drink",
+   "es": "dar de beber",
+   "fr": "donner à boire",
+   "it": "dare da bere",
+   "pos_end": 9
+  },
+  {
+   "pos": 7,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -5254,17 +5265,6 @@
    "es": "entre",
    "fr": "entre",
    "it": "entri"
-  },
-  {
-   "pos": 7,
-   "form": "zu trinken geben",
-   "lemma": "zu trinken geben",
-   "level": "B1",
-   "en": "give to drink",
-   "es": "dar de beber",
-   "fr": "donner à boire",
-   "it": "dare da bere",
-   "pos_end": 9
   }
  ],
  "25": [
@@ -5702,6 +5702,17 @@
   },
   {
    "pos": 22,
+   "form": "zu trinken geben",
+   "lemma": "zu trinken geben",
+   "level": "B1",
+   "en": "give to drink",
+   "es": "dar de beber",
+   "fr": "donner à boire",
+   "it": "dare da bere",
+   "pos_end": 24
+  },
+  {
+   "pos": 22,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -5729,17 +5740,6 @@
    "es": "dar",
    "fr": "donner",
    "it": "dare"
-  },
-  {
-   "pos": 22,
-   "form": "zu trinken geben",
-   "lemma": "zu trinken geben",
-   "level": "B1",
-   "en": "give to drink",
-   "es": "dar de beber",
-   "fr": "donner à boire",
-   "it": "dare da bere",
-   "pos_end": 24
   }
  ],
  "27": [
@@ -5995,6 +5995,20 @@
   },
   {
    "pos": 25,
+   "form": "sich auswirken",
+   "lemma": "sich auswirken",
+   "level": "C1",
+   "en": "take effect",
+   "es": "surtir efecto",
+   "fr": "faire effet",
+   "it": "fare effetto",
+   "parts": [
+    25,
+    27
+   ]
+  },
+  {
+   "pos": 25,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -6222,20 +6236,6 @@
    "es": "convertirse",
    "fr": "devenir",
    "it": "diventare"
-  },
-  {
-   "pos": 25,
-   "form": "sich auswirken",
-   "lemma": "sich auswirken",
-   "level": "C1",
-   "en": "take effect",
-   "es": "surtir efecto",
-   "fr": "faire effet",
-   "it": "fare effetto",
-   "parts": [
-    25,
-    27
-   ]
   }
  ],
  "28": [
@@ -6401,6 +6401,17 @@
   },
   {
    "pos": 16,
+   "form": "Kinder bekommen",
+   "lemma": "Kinder bekommen",
+   "level": "A2",
+   "en": "have children",
+   "es": "tener hijos",
+   "fr": "avoir des enfants",
+   "it": "avere figli",
+   "pos_end": 17
+  },
+  {
+   "pos": 16,
    "form": "Kinder",
    "lemma": "Kind",
    "level": "A1",
@@ -6418,17 +6429,6 @@
    "es": "tener",
    "fr": "avoir",
    "it": "avere"
-  },
-  {
-   "pos": 16,
-   "form": "Kinder bekommen",
-   "lemma": "Kinder bekommen",
-   "level": "A2",
-   "en": "have children",
-   "es": "tener hijos",
-   "fr": "avoir des enfants",
-   "it": "avere figli",
-   "pos_end": 17
   }
  ],
  "29": [

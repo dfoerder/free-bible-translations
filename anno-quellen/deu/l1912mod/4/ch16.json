@@ -102,18 +102,18 @@
   },
   {
    "pos": 10,
-   "parts": [
-    10,
-    11,
-    26
-   ],
    "form": "tat sich zusammen",
    "lemma": "sich zusammentun",
    "level": "B2",
    "en": "joined together",
    "es": "se unió",
    "fr": "s'associa",
-   "it": "si unì"
+   "it": "si unì",
+   "parts": [
+    10,
+    11,
+    26
+   ]
   },
   {
    "pos": 10,
@@ -309,14 +309,14 @@
   },
   {
    "pos": 2,
-   "pos_end": 3,
    "form": "empörten sich",
    "lemma": "sich empören",
    "level": "C1",
    "en": "rose up",
    "es": "se sublevaron",
    "fr": "se soulevèrent",
-   "it": "si sollevarono"
+   "it": "si sollevarono",
+   "pos_end": 3
   },
   {
    "pos": 2,
@@ -532,14 +532,14 @@
   },
   {
    "pos": 1,
-   "pos_end": 2,
    "form": "versammelten sich",
    "lemma": "sich versammeln",
    "level": "B1",
    "en": "gathered",
    "es": "se reunieron",
    "fr": "se rassemblèrent",
-   "it": "si radunarono"
+   "it": "si radunarono",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -653,14 +653,14 @@
   },
   {
    "pos": 12,
-   "pos_end": 14,
    "form": "geht zu weit",
    "lemma": "zu weit gehen",
    "level": "B2",
    "en": "go too far",
    "es": "vais demasiado lejos",
    "fr": "allez trop loin",
-   "it": "andate troppo oltre"
+   "it": "andate troppo oltre",
+   "pos_end": 14
   },
   {
    "pos": 12,
@@ -834,18 +834,18 @@
   },
   {
    "pos": 29,
-   "parts": [
-    29,
-    31,
-    32
-   ],
    "form": "stellt euch über",
    "lemma": "sich über jemanden stellen",
    "level": "B2",
    "en": "set yourselves above",
    "es": "os ponéis por encima de",
    "fr": "vous élevez au-dessus de",
-   "it": "vi ponete al di sopra di"
+   "it": "vi ponete al di sopra di",
+   "parts": [
+    29,
+    31,
+    32
+   ]
   },
   {
    "pos": 29,
@@ -971,17 +971,17 @@
   },
   {
    "pos": 4,
-   "parts": [
-    4,
-    6
-   ],
    "form": "fiel nieder",
    "lemma": "niederfallen",
    "level": "B2",
    "en": "fell down",
    "es": "se postró",
    "fr": "se prosterna",
-   "it": "si prostrò"
+   "it": "si prostrò",
+   "parts": [
+    4,
+    6
+   ]
   },
   {
    "pos": 4,
@@ -1621,14 +1621,14 @@
   },
   {
    "pos": 19,
-   "pos_end": 21,
    "form": "geht zu weit",
    "lemma": "zu weit gehen",
    "level": "B2",
    "en": "go too far",
    "es": "vais demasiado lejos",
    "fr": "allez trop loin",
-   "it": "andate troppo oltre"
+   "it": "andate troppo oltre",
+   "pos_end": 21
   },
   {
    "pos": 19,
@@ -2338,14 +2338,14 @@
   },
   {
    "pos": 17,
-   "pos_end": 18,
    "form": "auch noch",
    "lemma": "auch noch",
    "level": "B1",
    "en": "as well",
    "es": "además",
    "fr": "en plus",
-   "it": "per giunta"
+   "it": "per giunta",
+   "pos_end": 18
   },
   {
    "pos": 17,
@@ -2441,18 +2441,18 @@
   },
   {
    "pos": 5,
-   "parts": [
-    5,
-    6,
-    10
-   ],
    "form": "lehnt euch auf",
    "lemma": "sich auflehnen",
    "level": "B2",
    "en": "are rebelling",
    "es": "os rebeláis",
    "fr": "vous révoltez",
-   "it": "vi ribellate"
+   "it": "vi ribellate",
+   "parts": [
+    5,
+    6,
+    10
+   ]
   },
   {
    "pos": 5,
@@ -2628,14 +2628,14 @@
   },
   {
    "pos": 1,
-   "pos_end": 2,
    "form": "schickte hin",
    "lemma": "hinschicken",
    "level": "B2",
    "en": "sent for them",
    "es": "mandó llamar",
    "fr": "envoya chercher",
-   "it": "mandò a chiamare"
+   "it": "mandò a chiamare",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -2669,17 +2669,17 @@
   },
   {
    "pos": 4,
-   "parts": [
-    4,
-    11
-   ],
    "form": "ließ rufen",
    "lemma": "rufen lassen",
-   "level": "B2",
+   "level": "B1",
    "en": "had summoned",
    "es": "hizo llamar",
    "fr": "fit appeler",
-   "it": "fece chiamare"
+   "it": "fece chiamare",
+   "parts": [
+    4,
+    11
+   ]
   },
   {
    "pos": 4,
@@ -3067,7 +3067,7 @@
    "pos": 24,
    "form": "Musst",
    "lemma": "müssen",
-   "level": "A2",
+   "level": "A1",
    "en": "Must",
    "es": "Debes",
    "fr": "Dois-tu",
@@ -3095,14 +3095,14 @@
   },
   {
    "pos": 27,
-   "pos_end": 28,
    "form": "auch noch",
    "lemma": "auch noch",
    "level": "B1",
    "en": "as well",
    "es": "además",
    "fr": "en plus",
-   "it": "per giunta"
+   "it": "per giunta",
+   "pos_end": 28
   },
   {
    "pos": 27,
@@ -3428,14 +3428,14 @@
   },
   {
    "pos": 27,
-   "pos_end": 28,
    "form": "auch noch",
    "lemma": "auch noch",
    "level": "B1",
    "en": "as well",
    "es": "además",
    "fr": "en plus",
-   "it": "per giunta"
+   "it": "per giunta",
+   "pos_end": 28
   },
   {
    "pos": 27,
@@ -3611,17 +3611,17 @@
   },
   {
    "pos": 9,
-   "parts": [
-    9,
-    13
-   ],
    "form": "Nimm an",
    "lemma": "annehmen",
    "level": "B1",
    "en": "Accept",
    "es": "Acepta",
    "fr": "Accepte",
-   "it": "Accetta"
+   "it": "Accetta",
+   "parts": [
+    9,
+    13
+   ]
   },
   {
    "pos": 9,
@@ -3695,14 +3695,14 @@
   },
   {
    "pos": 16,
-   "pos_end": 17,
    "form": "nicht einmal",
    "lemma": "nicht einmal",
    "level": "A2",
    "en": "not even",
    "es": "ni siquiera",
    "fr": "pas même",
-   "it": "neppure"
+   "it": "neppure",
+   "pos_end": 17
   },
   {
    "pos": 16,
@@ -4878,14 +4878,14 @@
  "21": [
   {
    "pos": 0,
-   "pos_end": 1,
    "form": "Trennt euch",
    "lemma": "sich trennen",
    "level": "B1",
    "en": "Separate yourselves",
    "es": "Separaos",
    "fr": "Séparez-vous",
-   "it": "Separatevi"
+   "it": "Separatevi",
+   "pos_end": 1
   },
   {
    "pos": 0,
@@ -5011,14 +5011,14 @@
   },
   {
    "pos": 2,
-   "pos_end": 3,
    "form": "fielen nieder",
    "lemma": "niederfallen",
    "level": "B2",
    "en": "fell down",
    "es": "se postraron",
    "fr": "se prosternèrent",
-   "it": "si prostrarono"
+   "it": "si prostrarono",
+   "pos_end": 3
   },
   {
    "pos": 2,
@@ -5396,17 +5396,17 @@
   },
   {
    "pos": 3,
-   "parts": [
-    3,
-    12
-   ],
    "form": "Weicht zurück",
    "lemma": "zurückweichen",
-   "level": "B2",
+   "level": "C1",
    "en": "Withdraw",
    "es": "Retiraos",
    "fr": "Retirez-vous",
-   "it": "Ritiratevi"
+   "it": "Ritiratevi",
+   "parts": [
+    3,
+    12
+   ]
   },
   {
    "pos": 3,
@@ -5522,14 +5522,14 @@
   },
   {
    "pos": 1,
-   "pos_end": 2,
    "form": "stand auf",
    "lemma": "aufstehen",
    "level": "A2",
    "en": "got up",
    "es": "se levantó",
    "fr": "se leva",
-   "it": "si alzò"
+   "it": "si alzò",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -5725,14 +5725,14 @@
   },
   {
    "pos": 5,
-   "pos_end": 6,
    "form": "Geht weg",
    "lemma": "weggehen",
    "level": "A2",
    "en": "Go away",
    "es": "Marchaos",
    "fr": "Allez-vous-en",
-   "it": "Andatevene"
+   "it": "Andatevene",
+   "pos_end": 6
   },
   {
    "pos": 5,
@@ -5968,17 +5968,17 @@
   },
   {
    "pos": 1,
-   "parts": [
-    1,
-    3
-   ],
    "form": "gingen weg",
    "lemma": "weggehen",
    "level": "A2",
    "en": "went away",
    "es": "se fueron",
    "fr": "s'en allèrent",
-   "it": "se ne andarono"
+   "it": "se ne andarono",
+   "parts": [
+    1,
+    3
+   ]
   },
   {
    "pos": 1,
@@ -6122,14 +6122,14 @@
   },
   {
    "pos": 15,
-   "pos_end": 16,
    "form": "gingen heraus",
    "lemma": "herausgehen",
    "level": "B1",
    "en": "came out",
    "es": "salieron",
    "fr": "sortirent",
-   "it": "uscirono"
+   "it": "uscirono",
+   "pos_end": 16
   },
   {
    "pos": 15,
@@ -6163,14 +6163,14 @@
   },
   {
    "pos": 18,
-   "pos_end": 19,
    "form": "stellten sich",
    "lemma": "sich stellen",
    "level": "B1",
    "en": "took their stand",
    "es": "se pusieron",
    "fr": "se placèrent",
-   "it": "si misero"
+   "it": "si misero",
+   "pos_end": 19
   },
   {
    "pos": 18,
@@ -6880,14 +6880,14 @@
   },
   {
    "pos": 6,
-   "pos_end": 7,
    "form": "geschehen lässt",
    "lemma": "geschehen lassen",
    "level": "B2",
    "en": "brings about",
    "es": "hace suceder",
    "fr": "fait arriver",
-   "it": "fa accadere"
+   "it": "fa accadere",
+   "pos_end": 7
   },
   {
    "pos": 6,
@@ -7303,17 +7303,17 @@
   },
   {
    "pos": 7,
-   "parts": [
-    7,
-    12
-   ],
    "form": "riss auf",
    "lemma": "aufreißen",
    "level": "B2",
    "en": "split open",
    "es": "se abrió",
    "fr": "se fendit",
-   "it": "si squarciò"
+   "it": "si squarciò",
+   "parts": [
+    7,
+    12
+   ]
   },
   {
    "pos": 7,
@@ -7601,17 +7601,17 @@
   },
   {
    "pos": 1,
-   "parts": [
-    1,
-    11
-   ],
    "form": "fuhren hinab",
    "lemma": "hinabfahren",
    "level": "B2",
    "en": "went down",
    "es": "descendieron",
    "fr": "descendirent",
-   "it": "scesero"
+   "it": "scesero",
+   "parts": [
+    1,
+    11
+   ]
   },
   {
    "pos": 1,
@@ -7755,17 +7755,17 @@
   },
   {
    "pos": 15,
-   "parts": [
-    15,
-    17
-   ],
    "form": "deckte zu",
    "lemma": "zudecken",
    "level": "B2",
    "en": "covered over",
    "es": "cubrió",
    "fr": "recouvrit",
-   "it": "ricoprì"
+   "it": "ricoprì",
+   "parts": [
+    15,
+    17
+   ]
   },
   {
    "pos": 15,
@@ -7809,17 +7809,17 @@
   },
   {
    "pos": 19,
-   "parts": [
-    19,
-    26
-   ],
    "form": "kamen um",
    "lemma": "umkommen",
    "level": "B2",
    "en": "perished",
    "es": "perecieron",
    "fr": "périrent",
-   "it": "perirono"
+   "it": "perirono",
+   "parts": [
+    19,
+    26
+   ]
   },
   {
    "pos": 19,
@@ -8127,17 +8127,17 @@
   },
   {
    "pos": 1,
-   "parts": [
-    1,
-    5
-   ],
    "form": "ging aus",
    "lemma": "ausgehen",
    "level": "B1",
    "en": "went out",
    "es": "salió",
    "fr": "sortit",
-   "it": "uscì"
+   "it": "uscì",
+   "parts": [
+    1,
+    5
+   ]
   },
   {
    "pos": 1,

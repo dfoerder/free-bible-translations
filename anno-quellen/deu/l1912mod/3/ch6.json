@@ -3490,16 +3490,6 @@
   },
   {
    "pos": 6,
-   "form": "an",
-   "lemma": "an",
-   "level": "A1",
-   "en": "in",
-   "es": "en",
-   "fr": "à",
-   "it": "a"
-  },
-  {
-   "pos": 6,
    "form": "an seiner Stelle",
    "lemma": "an seiner Stelle",
    "level": "B1",
@@ -3508,6 +3498,16 @@
    "fr": "à sa place",
    "it": "al suo posto",
    "pos_end": 8
+  },
+  {
+   "pos": 6,
+   "form": "an",
+   "lemma": "an",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "à",
+   "it": "a"
   },
   {
    "pos": 7,
@@ -5077,16 +5077,6 @@
   },
   {
    "pos": 10,
-   "form": "um",
-   "lemma": "um",
-   "level": "A1",
-   "en": "in order",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
-  },
-  {
-   "pos": 10,
    "form": "um zu",
    "lemma": "um zu",
    "level": "A2",
@@ -5098,6 +5088,16 @@
     10,
     14
    ]
+  },
+  {
+   "pos": 10,
+   "form": "um",
+   "lemma": "um",
+   "level": "A1",
+   "en": "in order",
+   "es": "para",
+   "fr": "pour",
+   "it": "per"
   },
   {
    "pos": 11,
@@ -5121,16 +5121,6 @@
   },
   {
    "pos": 13,
-   "form": "Sühne",
-   "lemma": "Sühne",
-   "level": "C1",
-   "en": "atonement",
-   "es": "expiación",
-   "fr": "expiation",
-   "it": "espiazione"
-  },
-  {
-   "pos": 13,
    "form": "Sühne leisten",
    "lemma": "Sühne leisten",
    "level": "C1",
@@ -5142,6 +5132,16 @@
     13,
     15
    ]
+  },
+  {
+   "pos": 13,
+   "form": "Sühne",
+   "lemma": "Sühne",
+   "level": "C1",
+   "en": "atonement",
+   "es": "expiación",
+   "fr": "expiation",
+   "it": "espiazione"
   },
   {
    "pos": 14,

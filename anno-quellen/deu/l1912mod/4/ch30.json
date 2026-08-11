@@ -346,14 +346,14 @@
   },
   {
    "pos": 5,
-   "pos_end": 6,
    "form": "Gelübde ablegt",
    "lemma": "ein Gelübde ablegen",
-   "level": "C1",
+   "level": "B2",
    "en": "makes a vow",
    "es": "hace un voto",
    "fr": "fait un vœu",
-   "it": "fa un voto"
+   "it": "fa un voto",
+   "pos_end": 6
   },
   {
    "pos": 5,
@@ -427,17 +427,17 @@
   },
   {
    "pos": 12,
-   "parts": [
-    12,
-    14
-   ],
    "form": "sich bindet",
    "lemma": "sich binden",
    "level": "B2",
    "en": "binds himself",
    "es": "se obliga",
    "fr": "se lie",
-   "it": "si lega"
+   "it": "si lega",
+   "parts": [
+    12,
+    14
+   ]
   },
   {
    "pos": 12,
@@ -693,14 +693,14 @@
   },
   {
    "pos": 6,
-   "pos_end": 7,
    "form": "Gelübde ablegt",
    "lemma": "ein Gelübde ablegen",
-   "level": "C1",
+   "level": "B2",
    "en": "makes a vow",
    "es": "hace un voto",
    "fr": "fait un vœu",
-   "it": "fa un voto"
+   "it": "fa un voto",
+   "pos_end": 7
   },
   {
    "pos": 6,
@@ -734,17 +734,17 @@
   },
   {
    "pos": 9,
-   "parts": [
-    9,
-    11
-   ],
    "form": "sich bindet",
    "lemma": "sich binden",
    "level": "B2",
    "en": "binds herself",
    "es": "se obliga",
    "fr": "se lie",
-   "it": "si lega"
+   "it": "si lega",
+   "parts": [
+    9,
+    11
+   ]
   },
   {
    "pos": 9,
@@ -1242,17 +1242,17 @@
   },
   {
    "pos": 15,
-   "parts": [
-    15,
-    18
-   ],
    "form": "weder noch",
    "lemma": "weder ... noch",
    "level": "B1",
    "en": "neither ... nor",
    "es": "ni ... ni",
    "fr": "ni ... ni",
-   "it": "né ... né"
+   "it": "né ... né",
+   "parts": [
+    15,
+    18
+   ]
   },
   {
    "pos": 15,
@@ -1598,14 +1598,14 @@
   },
   {
    "pos": 15,
-   "pos_end": 18,
    "form": "über die Lippen gekommen",
    "lemma": "über die Lippen kommen",
    "level": "B2",
    "en": "escaped her lips",
    "es": "escapado de sus labios",
    "fr": "échappé de ses lèvres",
-   "it": "sfuggito dalle sue labbra"
+   "it": "sfuggito dalle sue labbra",
+   "pos_end": 18
   },
   {
    "pos": 15,
@@ -2053,14 +2053,14 @@
   },
   {
    "pos": 22,
-   "pos_end": 25,
    "form": "über die Lippen gekommen",
    "lemma": "über die Lippen kommen",
    "level": "B2",
    "en": "escaped her lips",
    "es": "escapado de sus labios",
    "fr": "échappé de ses lèvres",
-   "it": "sfuggito dalle sue labbra"
+   "it": "sfuggito dalle sue labbra",
+   "pos_end": 25
   },
   {
    "pos": 22,
@@ -2286,14 +2286,14 @@
   },
   {
    "pos": 9,
-   "pos_end": 10,
    "form": "ganz gleich",
    "lemma": "ganz gleich",
    "level": "B1",
    "en": "no matter",
    "es": "sin importar",
    "fr": "peu importe",
-   "it": "non importa"
+   "it": "non importa",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -2449,14 +2449,14 @@
   },
   {
    "pos": 8,
-   "pos_end": 9,
    "form": "Gelübde ablegt",
    "lemma": "ein Gelübde ablegen",
-   "level": "C1",
+   "level": "B2",
    "en": "makes a vow",
    "es": "hace un voto",
    "fr": "fait un vœu",
-   "it": "fa un voto"
+   "it": "fa un voto",
+   "pos_end": 9
   },
   {
    "pos": 8,
@@ -2490,17 +2490,17 @@
   },
   {
    "pos": 11,
-   "parts": [
-    11,
-    15
-   ],
    "form": "sich bindet",
    "lemma": "sich binden",
    "level": "B2",
    "en": "binds herself",
    "es": "se obliga",
    "fr": "se lie",
-   "it": "si lega"
+   "it": "si lega",
+   "parts": [
+    11,
+    15
+   ]
   },
   {
    "pos": 11,
@@ -2778,18 +2778,18 @@
  "13": [
   {
    "pos": 0,
-   "parts": [
-    0,
-    13,
-    14
-   ],
    "form": "Erklärt für nichtig",
    "lemma": "für nichtig erklären",
    "level": "C1",
    "en": "Declares void",
    "es": "Declara nulo",
    "fr": "Déclare nul",
-   "it": "Dichiara nullo"
+   "it": "Dichiara nullo",
+   "parts": [
+    0,
+    13,
+    14
+   ]
   },
   {
    "pos": 0,
@@ -3063,17 +3063,17 @@
   },
   {
    "pos": 27,
-   "parts": [
-    27,
-    29
-   ],
    "form": "weder noch",
    "lemma": "weder ... noch",
    "level": "B1",
    "en": "neither ... nor",
    "es": "ni ... ni",
    "fr": "ni ... ni",
-   "it": "né ... né"
+   "it": "né ... né",
+   "parts": [
+    27,
+    29
+   ]
   },
   {
    "pos": 27,
@@ -3167,14 +3167,14 @@
   },
   {
    "pos": 36,
-   "pos_end": 38,
    "form": "für nichtig erklärt",
    "lemma": "für nichtig erklären",
    "level": "C1",
    "en": "declared void",
    "es": "declarado nulo",
    "fr": "déclaré nul",
-   "it": "dichiarato nullo"
+   "it": "dichiarato nullo",
+   "pos_end": 38
   },
   {
    "pos": 36,
@@ -3704,17 +3704,17 @@
  "16": [
   {
    "pos": 0,
-   "parts": [
-    0,
-    4
-   ],
    "form": "Hebt auf",
    "lemma": "aufheben",
    "level": "B1",
    "en": "Annuls",
    "es": "Anula",
    "fr": "Annule",
-   "it": "Annulla"
+   "it": "Annulla",
+   "parts": [
+    0,
+    4
+   ]
   },
   {
    "pos": 0,

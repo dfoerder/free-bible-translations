@@ -906,6 +906,20 @@
   },
   {
    "pos": 21,
+   "form": "sich nähern",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approach",
+   "es": "se acerquen",
+   "fr": "s'approchent",
+   "it": "si avvicinino",
+   "parts": [
+    21,
+    23
+   ]
+  },
+  {
+   "pos": 21,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -953,6 +967,21 @@
    "es": "no",
    "fr": "ne pas",
    "it": "non"
+  },
+  {
+   "pos": 26,
+   "form": "sowohl als auch",
+   "lemma": "sowohl als auch",
+   "level": "B2",
+   "en": "both and",
+   "es": "tanto como",
+   "fr": "aussi bien que",
+   "it": "sia sia",
+   "parts": [
+    26,
+    28,
+    29
+   ]
   },
   {
    "pos": 26,
@@ -1013,35 +1042,6 @@
    "es": "muráis",
    "fr": "mouriez",
    "it": "moriate"
-  },
-  {
-   "pos": 21,
-   "form": "sich nähern",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approach",
-   "es": "se acerquen",
-   "fr": "s'approchent",
-   "it": "si avvicinino",
-   "parts": [
-    21,
-    23
-   ]
-  },
-  {
-   "pos": 26,
-   "form": "sowohl als auch",
-   "lemma": "sowohl als auch",
-   "level": "B2",
-   "en": "both and",
-   "es": "tanto como",
-   "fr": "aussi bien que",
-   "it": "sia sia",
-   "parts": [
-    26,
-    28,
-    29
-   ]
   }
  ],
  "4": [
@@ -1247,6 +1247,20 @@
   },
   {
    "pos": 20,
+   "form": "sich anschließen",
+   "lemma": "sich anschließen",
+   "level": "B2",
+   "en": "join",
+   "es": "unirse",
+   "fr": "se joindre",
+   "it": "unirsi",
+   "parts": [
+    20,
+    22
+   ]
+  },
+  {
+   "pos": 20,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1274,20 +1288,6 @@
    "es": "unir",
    "fr": "joindre",
    "it": "unire"
-  },
-  {
-   "pos": 20,
-   "form": "sich anschließen",
-   "lemma": "sich anschließen",
-   "level": "B2",
-   "en": "join",
-   "es": "unirse",
-   "fr": "se joindre",
-   "it": "unirsi",
-   "parts": [
-    20,
-    22
-   ]
   }
  ],
  "5": [
@@ -1315,7 +1315,7 @@
    "pos": 2,
    "form": "nun",
    "lemma": "nun",
-   "level": "A1",
+   "level": "A2",
    "en": "now",
    "es": "ahora",
    "fr": "maintenant",
@@ -1423,6 +1423,17 @@
   },
   {
    "pos": 13,
+   "form": "von nun an",
+   "lemma": "von nun an",
+   "level": "B1",
+   "en": "from now on",
+   "es": "de ahora en adelante",
+   "fr": "désormais",
+   "it": "d'ora in poi",
+   "pos_end": 15
+  },
+  {
+   "pos": 13,
    "form": "von",
    "lemma": "von",
    "level": "A1",
@@ -1435,7 +1446,7 @@
    "pos": 14,
    "form": "nun",
    "lemma": "nun",
-   "level": "A1",
+   "level": "A2",
    "en": "now",
    "es": "ahora",
    "fr": "maintenant",
@@ -1485,7 +1496,7 @@
    "pos": 19,
    "form": "über",
    "lemma": "über",
-   "level": "A1",
+   "level": "A2",
    "en": "over",
    "es": "sobre",
    "fr": "sur",
@@ -1530,17 +1541,6 @@
    "es": "venga",
    "fr": "vienne",
    "it": "venga"
-  },
-  {
-   "pos": 13,
-   "form": "von nun an",
-   "lemma": "von nun an",
-   "level": "B1",
-   "en": "from now on",
-   "es": "de ahora en adelante",
-   "fr": "désormais",
-   "it": "d'ora in poi",
-   "pos_end": 15
   }
  ],
  "6": [
@@ -2000,7 +2000,7 @@
    "pos": 16,
    "form": "hinter",
    "lemma": "hinter",
-   "level": "A1",
+   "level": "A2",
    "en": "behind",
    "es": "detrás de",
    "fr": "derrière",
@@ -2148,6 +2148,20 @@
   },
   {
    "pos": 31,
+   "form": "sich nähert",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approaches",
+   "es": "se acerca",
+   "fr": "s'approche",
+   "it": "si avvicina",
+   "parts": [
+    31,
+    34
+   ]
+  },
+  {
+   "pos": 31,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2215,20 +2229,6 @@
    "es": "morir",
    "fr": "mourir",
    "it": "morire"
-  },
-  {
-   "pos": 31,
-   "form": "sich nähert",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approaches",
-   "es": "se acerca",
-   "fr": "s'approche",
-   "it": "si avvicina",
-   "parts": [
-    31,
-    34
-   ]
   }
  ],
  "8": [
@@ -4048,6 +4048,17 @@
   },
   {
    "pos": 7,
+   "form": "sei es",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia",
+   "pos_end": 8
+  },
+  {
+   "pos": 7,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -4198,6 +4209,17 @@
   },
   {
    "pos": 22,
+   "form": "auslösen lassen",
+   "lemma": "auslösen lassen",
+   "level": "B2",
+   "en": "have redeemed",
+   "es": "hacer redimir",
+   "fr": "faire racheter",
+   "it": "far riscattare",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "auslösen",
    "lemma": "auslösen",
    "level": "B2",
@@ -4275,28 +4297,6 @@
    "es": "animal",
    "fr": "animal",
    "it": "animale"
-  },
-  {
-   "pos": 7,
-   "form": "sei es",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia",
-   "pos_end": 8
-  },
-  {
-   "pos": 22,
-   "form": "auslösen lassen",
-   "lemma": "auslösen lassen",
-   "level": "B2",
-   "en": "have redeemed",
-   "es": "hacer redimir",
-   "fr": "faire racheter",
-   "it": "far riscattare",
-   "pos_end": 23
   }
  ],
  "16": [
@@ -4664,6 +4664,17 @@
   },
   {
    "pos": 12,
+   "form": "auslösen lassen",
+   "lemma": "auslösen lassen",
+   "level": "B2",
+   "en": "have redeemed",
+   "es": "hacer redimir",
+   "fr": "faire racheter",
+   "it": "far riscattare",
+   "pos_end": 13
+  },
+  {
+   "pos": 12,
    "form": "auslösen",
    "lemma": "auslösen",
    "level": "B2",
@@ -4941,17 +4952,6 @@
    "es": "quemar",
    "fr": "brûler",
    "it": "bruciare"
-  },
-  {
-   "pos": 12,
-   "form": "auslösen lassen",
-   "lemma": "auslösen lassen",
-   "level": "B2",
-   "en": "have redeemed",
-   "es": "hacer redimir",
-   "fr": "faire racheter",
-   "it": "far riscattare",
-   "pos_end": 13
   }
  ],
  "18": [
@@ -5369,6 +5369,17 @@
   },
   {
    "pos": 26,
+   "form": "für immer",
+   "lemma": "für immer",
+   "level": "A2",
+   "en": "forever",
+   "es": "para siempre",
+   "fr": "pour toujours",
+   "it": "per sempre",
+   "pos_end": 27
+  },
+  {
+   "pos": 26,
    "form": "für",
    "lemma": "für",
    "level": "A1",
@@ -5466,17 +5477,6 @@
    "es": "descendientes",
    "fr": "descendants",
    "it": "discendenti"
-  },
-  {
-   "pos": 26,
-   "form": "für immer",
-   "lemma": "für immer",
-   "level": "A2",
-   "en": "forever",
-   "es": "para siempre",
-   "fr": "pour toujours",
-   "it": "per sempre",
-   "pos_end": 27
   }
  ],
  "20": [
@@ -5934,6 +5934,20 @@
   },
   {
    "pos": 15,
+   "form": "Dienst tun",
+   "lemma": "Dienst tun",
+   "level": "B2",
+   "en": "do service",
+   "es": "prestan servicio",
+   "fr": "font le service",
+   "it": "prestano servizio",
+   "parts": [
+    15,
+    22
+   ]
+  },
+  {
+   "pos": 15,
    "form": "Dienst",
    "lemma": "Dienst",
    "level": "B1",
@@ -6011,20 +6025,6 @@
    "es": "hacen",
    "fr": "font",
    "it": "fanno"
-  },
-  {
-   "pos": 15,
-   "form": "Dienst tun",
-   "lemma": "Dienst tun",
-   "level": "B2",
-   "en": "do service",
-   "es": "prestan servicio",
-   "fr": "font le service",
-   "it": "prestano servizio",
-   "parts": [
-    15,
-    22
-   ]
   }
  ],
  "22": [
@@ -6070,6 +6070,20 @@
   },
   {
    "pos": 4,
+   "form": "sich nähern",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approach",
+   "es": "se acerquen",
+   "fr": "s'approchent",
+   "it": "si avvicinino",
+   "parts": [
+    4,
+    12
+   ]
+  },
+  {
+   "pos": 4,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -6077,6 +6091,17 @@
    "es": "se",
    "fr": "s'",
    "it": "si"
+  },
+  {
+   "pos": 5,
+   "form": "von nun an",
+   "lemma": "von nun an",
+   "level": "B1",
+   "en": "from now on",
+   "es": "de ahora en adelante",
+   "fr": "désormais",
+   "it": "d'ora in poi",
+   "pos_end": 7
   },
   {
    "pos": 5,
@@ -6092,7 +6117,7 @@
    "pos": 6,
    "form": "nun",
    "lemma": "nun",
-   "level": "A1",
+   "level": "A2",
    "en": "now",
    "es": "ahora",
    "fr": "maintenant",
@@ -6160,6 +6185,17 @@
   },
   {
    "pos": 13,
+   "form": "Schuld auf sich laden",
+   "lemma": "Schuld auf sich laden",
+   "level": "C1",
+   "en": "incur guilt",
+   "es": "incurran en culpa",
+   "fr": "encourent une faute",
+   "it": "incorrano in colpa",
+   "pos_end": 16
+  },
+  {
+   "pos": 13,
    "form": "Schuld",
    "lemma": "Schuld",
    "level": "B1",
@@ -6217,42 +6253,6 @@
    "es": "mueran",
    "fr": "meurent",
    "it": "muoiano"
-  },
-  {
-   "pos": 5,
-   "form": "von nun an",
-   "lemma": "von nun an",
-   "level": "B1",
-   "en": "from now on",
-   "es": "de ahora en adelante",
-   "fr": "désormais",
-   "it": "d'ora in poi",
-   "pos_end": 7
-  },
-  {
-   "pos": 4,
-   "form": "sich nähern",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approach",
-   "es": "se acerquen",
-   "fr": "s'approchent",
-   "it": "si avvicinino",
-   "parts": [
-    4,
-    12
-   ]
-  },
-  {
-   "pos": 13,
-   "form": "Schuld auf sich laden",
-   "lemma": "Schuld auf sich laden",
-   "level": "C1",
-   "en": "incur guilt",
-   "es": "incurran en culpa",
-   "fr": "encourent une faute",
-   "it": "incorrano in colpa",
-   "pos_end": 16
   }
  ],
  "23": [
@@ -6260,7 +6260,7 @@
    "pos": 0,
    "form": "sondern",
    "lemma": "sondern",
-   "level": "A2",
+   "level": "B1",
    "en": "but",
    "es": "sino",
    "fr": "mais",
@@ -6375,6 +6375,20 @@
    "es": "la",
    "fr": "la",
    "it": "la"
+  },
+  {
+   "pos": 12,
+   "form": "Verantwortung tragen",
+   "lemma": "Verantwortung tragen",
+   "level": "B2",
+   "en": "bear responsibility",
+   "es": "llevar la responsabilidad",
+   "fr": "porter la responsabilité",
+   "it": "portare la responsabilità",
+   "parts": [
+    12,
+    14
+   ]
   },
   {
    "pos": 12,
@@ -6565,20 +6579,6 @@
    "es": "poseer",
    "fr": "posséder",
    "it": "possedere"
-  },
-  {
-   "pos": 12,
-   "form": "Verantwortung tragen",
-   "lemma": "Verantwortung tragen",
-   "level": "B2",
-   "en": "bear responsibility",
-   "es": "llevar la responsabilidad",
-   "fr": "porter la responsabilité",
-   "it": "portare la responsabilità",
-   "parts": [
-    12,
-    14
-   ]
   }
  ],
  "24": [
@@ -6766,7 +6766,7 @@
    "pos": 18,
    "form": "Deshalb",
    "lemma": "deshalb",
-   "level": "A2",
+   "level": "B1",
    "en": "Therefore",
    "es": "Por eso",
    "fr": "C'est pourquoi",
@@ -8540,6 +8540,17 @@
   },
   {
    "pos": 4,
+   "form": "Schuld auf euch laden",
+   "lemma": "Schuld auf sich laden",
+   "level": "C1",
+   "en": "incur guilt",
+   "es": "incurrir en culpa",
+   "fr": "encourir une faute",
+   "it": "incorrere in colpa",
+   "pos_end": 7
+  },
+  {
+   "pos": 4,
    "form": "Schuld",
    "lemma": "Schuld",
    "level": "B1",
@@ -8777,17 +8788,6 @@
    "es": "morir",
    "fr": "mourir",
    "it": "morire"
-  },
-  {
-   "pos": 4,
-   "form": "Schuld auf euch laden",
-   "lemma": "Schuld auf sich laden",
-   "level": "C1",
-   "en": "incur guilt",
-   "es": "incurrir en culpa",
-   "fr": "encourir une faute",
-   "it": "incorrere in colpa",
-   "pos_end": 7
   }
  ]
 }

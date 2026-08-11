@@ -142,6 +142,20 @@
   },
   {
    "pos": 14,
+   "form": "sich verunreinigen",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile himself",
+   "es": "contaminarse",
+   "fr": "se souiller",
+   "it": "contaminarsi",
+   "parts": [
+    14,
+    21
+   ]
+  },
+  {
+   "pos": 14,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -219,20 +233,6 @@
    "es": "contaminar",
    "fr": "souiller",
    "it": "contaminare"
-  },
-  {
-   "pos": 14,
-   "form": "sich verunreinigen",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile himself",
-   "es": "contaminarse",
-   "fr": "se souiller",
-   "it": "contaminarsi",
-   "parts": [
-    14,
-    21
-   ]
   }
  ],
  "2": [
@@ -540,6 +540,17 @@
   },
   {
    "pos": 14,
+   "form": "sich verunreinigen",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile himself",
+   "es": "contaminarse",
+   "fr": "se souiller",
+   "it": "contaminarsi",
+   "pos_end": 15
+  },
+  {
+   "pos": 14,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -557,17 +568,6 @@
    "es": "contaminar",
    "fr": "souiller",
    "it": "contaminare"
-  },
-  {
-   "pos": 14,
-   "form": "sich verunreinigen",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile himself",
-   "es": "contaminarse",
-   "fr": "se souiller",
-   "it": "contaminarsi",
-   "pos_end": 15
   }
  ],
  "4": [
@@ -600,6 +600,20 @@
    "es": "él",
    "fr": "il",
    "it": "egli"
+  },
+  {
+   "pos": 3,
+   "form": "sich verunreinigen",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile himself",
+   "es": "contaminarse",
+   "fr": "se souiller",
+   "it": "contaminarsi",
+   "parts": [
+    3,
+    9
+   ]
   },
   {
    "pos": 3,
@@ -683,6 +697,20 @@
   },
   {
    "pos": 11,
+   "form": "sich entweihen",
+   "lemma": "sich entweihen",
+   "level": "C1",
+   "en": "desecrate himself",
+   "es": "profanarse",
+   "fr": "se profaner",
+   "it": "profanarsi",
+   "parts": [
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -710,34 +738,6 @@
    "es": "profanar",
    "fr": "profaner",
    "it": "profanare"
-  },
-  {
-   "pos": 3,
-   "form": "sich verunreinigen",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile himself",
-   "es": "contaminarse",
-   "fr": "se souiller",
-   "it": "contaminarsi",
-   "parts": [
-    3,
-    9
-   ]
-  },
-  {
-   "pos": 11,
-   "form": "sich entweihen",
-   "lemma": "sich entweihen",
-   "level": "C1",
-   "en": "desecrate himself",
-   "es": "profanarse",
-   "fr": "se profaner",
-   "it": "profanarsi",
-   "parts": [
-    11,
-    13
-   ]
   }
  ],
  "5": [
@@ -760,6 +760,20 @@
    "es": "deben",
    "fr": "doivent",
    "it": "devono"
+  },
+  {
+   "pos": 2,
+   "form": "sich kahlscheren",
+   "lemma": "sich kahlscheren",
+   "level": "C1",
+   "en": "shave themselves bald",
+   "es": "raparse",
+   "fr": "se raser",
+   "it": "rasarsi",
+   "parts": [
+    2,
+    7
+   ]
   },
   {
    "pos": 2,
@@ -895,7 +909,7 @@
    "pos": 15,
    "form": "Male",
    "lemma": "Mal",
-   "level": "B2",
+   "level": "A2",
    "en": "marks",
    "es": "marcas",
    "fr": "marques",
@@ -940,20 +954,6 @@
    "es": "grabar",
    "fr": "inciser",
    "it": "incidere"
-  },
-  {
-   "pos": 2,
-   "form": "sich kahlscheren",
-   "lemma": "sich kahlscheren",
-   "level": "C1",
-   "en": "shave themselves bald",
-   "es": "raparse",
-   "fr": "se raser",
-   "it": "rasarsi",
-   "parts": [
-    2,
-    7
-   ]
   }
  ],
  "6": [
@@ -1109,6 +1109,20 @@
   },
   {
    "pos": 15,
+   "form": "bringen dar",
+   "lemma": "darbringen",
+   "level": "B2",
+   "en": "offer",
+   "es": "ofrecen",
+   "fr": "offrent",
+   "it": "offrono",
+   "parts": [
+    15,
+    20
+   ]
+  },
+  {
+   "pos": 15,
    "form": "bringen",
    "lemma": "bringen",
    "level": "A1",
@@ -1256,20 +1270,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 15,
-   "form": "bringen dar",
-   "lemma": "darbringen",
-   "level": "B2",
-   "en": "offer",
-   "es": "ofrecen",
-   "fr": "offrent",
-   "it": "offrono",
-   "parts": [
-    15,
-    20
-   ]
   }
  ],
  "7": [
@@ -1617,6 +1617,20 @@
   },
   {
    "pos": 9,
+   "form": "bringt dar",
+   "lemma": "darbringen",
+   "level": "B2",
+   "en": "offers",
+   "es": "ofrece",
+   "fr": "offre",
+   "it": "offre",
+   "parts": [
+    9,
+    14
+   ]
+  },
+  {
+   "pos": 9,
    "form": "bringt",
    "lemma": "bringen",
    "level": "A1",
@@ -1814,20 +1828,6 @@
    "es": "santo",
    "fr": "saint",
    "it": "santo"
-  },
-  {
-   "pos": 9,
-   "form": "bringt dar",
-   "lemma": "darbringen",
-   "level": "B2",
-   "en": "offers",
-   "es": "ofrece",
-   "fr": "offre",
-   "it": "offre",
-   "parts": [
-    9,
-    14
-   ]
   }
  ],
  "9": [
@@ -1880,6 +1880,20 @@
    "es": "sacerdote",
    "fr": "prêtre",
    "it": "sacerdote"
+  },
+  {
+   "pos": 5,
+   "form": "sich zuwendet",
+   "lemma": "sich zuwenden",
+   "level": "B2",
+   "en": "turns to",
+   "es": "se vuelve a",
+   "fr": "se tourne vers",
+   "it": "si volge a",
+   "parts": [
+    5,
+    8
+   ]
   },
   {
    "pos": 5,
@@ -2040,20 +2054,6 @@
    "es": "deshonrado",
    "fr": "déshonoré",
    "it": "disonorato"
-  },
-  {
-   "pos": 5,
-   "form": "sich zuwendet",
-   "lemma": "sich zuwenden",
-   "level": "B2",
-   "en": "turns to",
-   "es": "se vuelve a",
-   "fr": "se tourne vers",
-   "it": "si volge a",
-   "parts": [
-    5,
-    8
-   ]
   }
  ],
  "10": [
@@ -2351,6 +2351,20 @@
   },
   {
    "pos": 2,
+   "form": "sich nähern",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approach",
+   "es": "acercarse",
+   "fr": "s'approcher",
+   "it": "avvicinarsi",
+   "parts": [
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 2,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2401,6 +2415,20 @@
   },
   {
    "pos": 7,
+   "form": "sich verunreinigen",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile himself",
+   "es": "contaminarse",
+   "fr": "se souiller",
+   "it": "contaminarsi",
+   "parts": [
+    7,
+    16
+   ]
+  },
+  {
+   "pos": 7,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2408,6 +2436,20 @@
    "es": "se",
    "fr": "se",
    "it": "si"
+  },
+  {
+   "pos": 8,
+   "form": "weder noch",
+   "lemma": "weder ... noch",
+   "level": "B1",
+   "en": "neither ... nor",
+   "es": "ni ... ni",
+   "fr": "ni ... ni",
+   "it": "né ... né",
+   "parts": [
+    8,
+    12
+   ]
   },
   {
    "pos": 8,
@@ -2498,48 +2540,6 @@
    "es": "contaminar",
    "fr": "souiller",
    "it": "contaminare"
-  },
-  {
-   "pos": 2,
-   "form": "sich nähern",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approach",
-   "es": "acercarse",
-   "fr": "s'approcher",
-   "it": "avvicinarsi",
-   "parts": [
-    2,
-    5
-   ]
-  },
-  {
-   "pos": 8,
-   "form": "weder noch",
-   "lemma": "weder ... noch",
-   "level": "B1",
-   "en": "neither ... nor",
-   "es": "ni ... ni",
-   "fr": "ni ... ni",
-   "it": "né ... né",
-   "parts": [
-    8,
-    12
-   ]
-  },
-  {
-   "pos": 7,
-   "form": "sich verunreinigen",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile himself",
-   "es": "contaminarse",
-   "fr": "se souiller",
-   "it": "contaminarsi",
-   "parts": [
-    7,
-    16
-   ]
   }
  ],
  "12": [
@@ -2867,6 +2867,17 @@
   },
   {
    "pos": 4,
+   "form": "zur Frau nehmen",
+   "lemma": "zur Frau nehmen",
+   "level": "B2",
+   "en": "take as wife",
+   "es": "tomar por esposa",
+   "fr": "prendre pour femme",
+   "it": "prendere in moglie",
+   "pos_end": 6
+  },
+  {
+   "pos": 4,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -2894,17 +2905,6 @@
    "es": "tomar",
    "fr": "prendre",
    "it": "prendere"
-  },
-  {
-   "pos": 4,
-   "form": "zur Frau nehmen",
-   "lemma": "zur Frau nehmen",
-   "level": "B2",
-   "en": "take as wife",
-   "es": "tomar por esposa",
-   "fr": "prendre pour femme",
-   "it": "prendere in moglie",
-   "pos_end": 6
   }
  ],
  "14": [
@@ -3080,6 +3080,17 @@
   },
   {
    "pos": 17,
+   "form": "zur Frau nehmen",
+   "lemma": "zur Frau nehmen",
+   "level": "B2",
+   "en": "take as wife",
+   "es": "tomar por esposa",
+   "fr": "prendre pour femme",
+   "it": "prendere in moglie",
+   "pos_end": 19
+  },
+  {
+   "pos": 17,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -3107,17 +3118,6 @@
    "es": "tomar",
    "fr": "prendre",
    "it": "prendere"
-  },
-  {
-   "pos": 17,
-   "form": "zur Frau nehmen",
-   "lemma": "zur Frau nehmen",
-   "level": "B2",
-   "en": "take as wife",
-   "es": "tomar por esposa",
-   "fr": "prendre pour femme",
-   "it": "prendere in moglie",
-   "pos_end": 19
   }
  ],
  "15": [
@@ -3517,6 +3517,20 @@
   },
   {
    "pos": 17,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    17,
+    22
+   ]
+  },
+  {
+   "pos": 17,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -3584,20 +3598,6 @@
    "es": "sacrificar",
    "fr": "sacrifier",
    "it": "sacrificare"
-  },
-  {
-   "pos": 17,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    17,
-    22
-   ]
   }
  ],
  "18": [
@@ -3670,6 +3670,17 @@
    "es": "presentarse",
    "fr": "se présenter",
    "it": "presentarsi"
+  },
+  {
+   "pos": 7,
+   "form": "sei er",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether he be",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia egli",
+   "pos_end": 8
   },
   {
    "pos": 7,
@@ -3780,17 +3791,6 @@
    "es": "miembro",
    "fr": "membre",
    "it": "membro"
-  },
-  {
-   "pos": 7,
-   "form": "sei er",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether he be",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia egli",
-   "pos_end": 8
   }
  ],
  "19": [
@@ -4390,6 +4390,20 @@
   },
   {
    "pos": 27,
+   "form": "sich nähern",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approach",
+   "es": "acercarse",
+   "fr": "s'approcher",
+   "it": "avvicinarsi",
+   "parts": [
+    27,
+    33
+   ]
+  },
+  {
+   "pos": 27,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -4460,6 +4474,20 @@
   },
   {
    "pos": 34,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    34,
+    36
+   ]
+  },
+  {
+   "pos": 34,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -4497,34 +4525,6 @@
    "es": "sacrificar",
    "fr": "sacrifier",
    "it": "sacrificare"
-  },
-  {
-   "pos": 27,
-   "form": "sich nähern",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approach",
-   "es": "acercarse",
-   "fr": "s'approcher",
-   "it": "avvicinarsi",
-   "parts": [
-    27,
-    33
-   ]
-  },
-  {
-   "pos": 34,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    34,
-    36
-   ]
   }
  ],
  "22": [
@@ -4610,6 +4610,21 @@
   },
   {
    "pos": 8,
+   "form": "sowohl als auch",
+   "lemma": "sowohl als auch",
+   "level": "B2",
+   "en": "both and",
+   "es": "tanto como",
+   "fr": "aussi bien que",
+   "it": "sia sia",
+   "parts": [
+    8,
+    11,
+    12
+   ]
+  },
+  {
+   "pos": 8,
    "form": "sowohl",
    "lemma": "sowohl",
    "level": "B2",
@@ -4677,21 +4692,6 @@
    "es": "santísimo",
    "fr": "très saint",
    "it": "santissimo"
-  },
-  {
-   "pos": 8,
-   "form": "sowohl als auch",
-   "lemma": "sowohl als auch",
-   "level": "B2",
-   "en": "both and",
-   "es": "tanto como",
-   "fr": "aussi bien que",
-   "it": "sia sia",
-   "parts": [
-    8,
-    11,
-    12
-   ]
   }
  ],
  "23": [
@@ -4774,6 +4774,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 8,
+   "form": "sich nähern",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approach",
+   "es": "acercarse",
+   "fr": "s'approcher",
+   "it": "avvicinarsi",
+   "parts": [
+    8,
+    12
+   ]
   },
   {
    "pos": 8,
@@ -5004,20 +5018,6 @@
    "es": "santifica",
    "fr": "sanctifie",
    "it": "santifica"
-  },
-  {
-   "pos": 8,
-   "form": "sich nähern",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approach",
-   "es": "acercarse",
-   "fr": "s'approcher",
-   "it": "avvicinarsi",
-   "parts": [
-    8,
-    12
-   ]
   }
  ],
  "24": [
@@ -5040,6 +5040,17 @@
    "es": "dijo",
    "fr": "dit",
    "it": "disse"
+  },
+  {
+   "pos": 2,
+   "form": "das alles",
+   "lemma": "das alles",
+   "level": "A2",
+   "en": "all this",
+   "es": "todo esto",
+   "fr": "tout cela",
+   "it": "tutto questo",
+   "pos_end": 3
   },
   {
    "pos": 2,
@@ -5130,17 +5141,6 @@
    "es": "de Israel",
    "fr": "d'Israël",
    "it": "d'Israele"
-  },
-  {
-   "pos": 2,
-   "form": "das alles",
-   "lemma": "das alles",
-   "level": "A2",
-   "en": "all this",
-   "es": "todo esto",
-   "fr": "tout cela",
-   "it": "tutto questo",
-   "pos_end": 3
   }
  ]
 }

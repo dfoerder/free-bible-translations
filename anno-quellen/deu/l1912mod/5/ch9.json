@@ -2,6 +2,17 @@
  "1": [
   {
    "pos": 0,
+   "lemma": "zuhören",
+   "level": "A2",
+   "en": "Listen",
+   "es": "Escucha",
+   "fr": "Écoute",
+   "it": "Ascolta",
+   "pos_end": 1,
+   "form": "Hör zu"
+  },
+  {
+   "pos": 0,
    "form": "Hör",
    "lemma": "hören",
    "level": "A1",
@@ -339,17 +350,6 @@
    "es": "son",
    "fr": "sont",
    "it": "sono"
-  },
-  {
-   "pos": 0,
-   "lemma": "zuhören",
-   "level": "A2",
-   "en": "Listen",
-   "es": "Escucha",
-   "fr": "Écoute",
-   "it": "Ascolta",
-   "pos_end": 1,
-   "form": "Hör zu"
   }
  ],
  "2": [
@@ -739,7 +739,7 @@
    "pos": 17,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -1671,9 +1671,20 @@
   },
   {
    "pos": 30,
+   "lemma": "sein Wort halten",
+   "level": "B2",
+   "en": "keeps his word",
+   "es": "cumple su palabra",
+   "fr": "tient sa parole",
+   "it": "mantiene la sua parola",
+   "pos_end": 31,
+   "form": "Wort hält"
+  },
+  {
+   "pos": 30,
    "form": "Wort",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "word",
    "es": "palabra",
    "fr": "parole",
@@ -1798,17 +1809,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 30,
-   "lemma": "sein Wort halten",
-   "level": "B2",
-   "en": "keeps his word",
-   "es": "cumple su palabra",
-   "fr": "tient sa parole",
-   "it": "mantiene la sua parola",
-   "pos_end": 31,
-   "form": "Wort hält"
   }
  ],
  "6": [
@@ -2026,6 +2026,17 @@
  "7": [
   {
    "pos": 0,
+   "lemma": "daran denken",
+   "level": "B1",
+   "en": "Remember",
+   "es": "Acuérdate",
+   "fr": "Souviens-toi",
+   "it": "Ricorda",
+   "pos_end": 1,
+   "form": "Denk daran"
+  },
+  {
+   "pos": 0,
    "form": "Denk",
    "lemma": "denken",
    "level": "A1",
@@ -2183,6 +2194,20 @@
    "es": "has",
    "fr": "as",
    "it": "hai"
+  },
+  {
+   "pos": 16,
+   "lemma": "von … an",
+   "level": "B1",
+   "en": "From onwards",
+   "es": "Desde",
+   "fr": "À partir de",
+   "it": "A partire da",
+   "parts": [
+    16,
+    19
+   ],
+   "form": "Von an"
   },
   {
    "pos": 16,
@@ -2393,31 +2418,6 @@
    "es": "desobedientes",
    "fr": "désobéissants",
    "it": "disobbedienti"
-  },
-  {
-   "pos": 0,
-   "lemma": "daran denken",
-   "level": "B1",
-   "en": "Remember",
-   "es": "Acuérdate",
-   "fr": "Souviens-toi",
-   "it": "Ricorda",
-   "pos_end": 1,
-   "form": "Denk daran"
-  },
-  {
-   "pos": 16,
-   "lemma": "von … an",
-   "level": "B1",
-   "en": "From onwards",
-   "es": "Desde",
-   "fr": "À partir de",
-   "it": "A partire da",
-   "parts": [
-    16,
-    19
-   ],
-   "form": "Von an"
   }
  ],
  "8": [
@@ -3199,7 +3199,7 @@
    "pos": 18,
    "form": "Worte",
    "lemma": "Wort",
-   "level": "B1",
+   "level": "A1",
    "en": "words",
    "es": "palabras",
    "fr": "paroles",
@@ -3299,7 +3299,7 @@
    "pos": 28,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -3601,6 +3601,17 @@
   },
   {
    "pos": 4,
+   "lemma": "aufstehen",
+   "level": "A2",
+   "en": "Get up",
+   "es": "Levántate",
+   "fr": "Lève-toi",
+   "it": "Alzati",
+   "pos_end": 5,
+   "form": "Steh auf"
+  },
+  {
+   "pos": 4,
    "form": "Steh",
    "lemma": "stehen",
    "level": "A1",
@@ -3618,6 +3629,20 @@
    "es": "arriba",
    "fr": "debout",
    "it": "su"
+  },
+  {
+   "pos": 6,
+   "lemma": "hinuntergehen",
+   "level": "B1",
+   "en": "go down",
+   "es": "baja",
+   "fr": "descends",
+   "it": "scendi",
+   "parts": [
+    6,
+    10
+   ],
+   "form": "geh hinunter"
   },
   {
    "pos": 6,
@@ -3768,6 +3793,17 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
+  },
+  {
+   "pos": 21,
+   "lemma": "sich verderben",
+   "level": "B2",
+   "en": "has corrupted itself",
+   "es": "se ha corrompido",
+   "fr": "s'est corrompu",
+   "it": "si è corrotto",
+   "pos_end": 22,
+   "form": "sich verdorben"
   },
   {
    "pos": 21,
@@ -3978,42 +4014,6 @@
    "es": "hecho",
    "fr": "fait",
    "it": "fatto"
-  },
-  {
-   "pos": 4,
-   "lemma": "aufstehen",
-   "level": "A2",
-   "en": "Get up",
-   "es": "Levántate",
-   "fr": "Lève-toi",
-   "it": "Alzati",
-   "pos_end": 5,
-   "form": "Steh auf"
-  },
-  {
-   "pos": 6,
-   "lemma": "hinuntergehen",
-   "level": "B1",
-   "en": "go down",
-   "es": "baja",
-   "fr": "descends",
-   "it": "scendi",
-   "parts": [
-    6,
-    10
-   ],
-   "form": "geh hinunter"
-  },
-  {
-   "pos": 21,
-   "lemma": "sich verderben",
-   "level": "B2",
-   "en": "has corrupted itself",
-   "es": "se ha corrompido",
-   "fr": "s'est corrompu",
-   "it": "si è corrotto",
-   "pos_end": 22,
-   "form": "sich verdorben"
   }
  ],
  "13": [
@@ -4169,6 +4169,17 @@
   }
  ],
  "14": [
+  {
+   "pos": 0,
+   "lemma": "jemanden in Ruhe lassen",
+   "level": "B1",
+   "en": "Leave me alone",
+   "es": "Déjame en paz",
+   "fr": "Laisse-moi tranquille",
+   "it": "Lasciami in pace",
+   "pos_end": 3,
+   "form": "Lass mich in Ruhe"
+  },
   {
    "pos": 0,
    "form": "Lass",
@@ -4448,17 +4459,6 @@
    "es": "es",
    "fr": "est",
    "it": "è"
-  },
-  {
-   "pos": 0,
-   "lemma": "jemanden in Ruhe lassen",
-   "level": "B1",
-   "en": "Leave me alone",
-   "es": "Déjame en paz",
-   "fr": "Laisse-moi tranquille",
-   "it": "Lasciami in pace",
-   "pos_end": 3,
-   "form": "Lass mich in Ruhe"
   }
  ],
  "15": [
@@ -4471,6 +4471,21 @@
    "es": "Entonces",
    "fr": "Alors",
    "it": "Allora"
+  },
+  {
+   "pos": 1,
+   "lemma": "sich umwenden",
+   "level": "B1",
+   "en": "turned around",
+   "es": "me di la vuelta",
+   "fr": "me retournai",
+   "it": "mi voltai",
+   "parts": [
+    1,
+    3,
+    4
+   ],
+   "form": "wandte mich um"
   },
   {
    "pos": 1,
@@ -4521,6 +4536,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 6,
+   "lemma": "hinuntergehen",
+   "level": "B1",
+   "en": "went down",
+   "es": "bajé",
+   "fr": "descendis",
+   "it": "scesi",
+   "parts": [
+    6,
+    9
+   ],
+   "form": "ging hinunter"
   },
   {
    "pos": 6,
@@ -4691,35 +4720,6 @@
    "es": "manos",
    "fr": "mains",
    "it": "mani"
-  },
-  {
-   "pos": 1,
-   "lemma": "sich umwenden",
-   "level": "B1",
-   "en": "turned around",
-   "es": "me di la vuelta",
-   "fr": "me retournai",
-   "it": "mi voltai",
-   "parts": [
-    1,
-    3,
-    4
-   ],
-   "form": "wandte mich um"
-  },
-  {
-   "pos": 6,
-   "lemma": "hinuntergehen",
-   "level": "B1",
-   "en": "went down",
-   "es": "bajé",
-   "fr": "descendis",
-   "it": "scesi",
-   "parts": [
-    6,
-    9
-   ],
-   "form": "ging hinunter"
   }
  ],
  "16": [
@@ -5249,6 +5249,20 @@
   },
   {
    "pos": 2,
+   "lemma": "niederfallen",
+   "level": "B2",
+   "en": "fell down",
+   "es": "me postré",
+   "fr": "me prosternai",
+   "it": "mi prostrai",
+   "parts": [
+    2,
+    6
+   ],
+   "form": "fiel nieder"
+  },
+  {
+   "pos": 2,
    "form": "fiel",
    "lemma": "fallen",
    "level": "A1",
@@ -5646,20 +5660,6 @@
    "es": "irritasteis",
    "fr": "irritâtes",
    "it": "irritaste"
-  },
-  {
-   "pos": 2,
-   "lemma": "niederfallen",
-   "level": "B2",
-   "en": "fell down",
-   "es": "me postré",
-   "fr": "me prosternai",
-   "it": "mi prostrai",
-   "parts": [
-    2,
-    6
-   ],
-   "form": "fiel nieder"
   }
  ],
  "19": [
@@ -5682,6 +5682,17 @@
    "es": "yo",
    "fr": "je",
    "it": "io"
+  },
+  {
+   "pos": 2,
+   "lemma": "Angst haben",
+   "level": "A2",
+   "en": "was afraid",
+   "es": "tenía miedo",
+   "fr": "avais peur",
+   "it": "avevo paura",
+   "pos_end": 3,
+   "form": "hatte Angst"
   },
   {
    "pos": 2,
@@ -5962,17 +5973,6 @@
    "es": "vez",
    "fr": "fois",
    "it": "volta"
-  },
-  {
-   "pos": 2,
-   "lemma": "Angst haben",
-   "level": "A2",
-   "en": "was afraid",
-   "es": "tenía miedo",
-   "fr": "avais peur",
-   "it": "avevo paura",
-   "pos_end": 3,
-   "form": "hatte Angst"
   }
  ],
  "20": [
@@ -6310,6 +6310,20 @@
   },
   {
    "pos": 11,
+   "lemma": "einschmelzen",
+   "level": "C1",
+   "en": "melted down",
+   "es": "fundí",
+   "fr": "fis fondre",
+   "it": "fusi",
+   "parts": [
+    11,
+    15
+   ],
+   "form": "schmolz ein"
+  },
+  {
+   "pos": 11,
    "form": "schmolz",
    "lemma": "schmelzen",
    "level": "B2",
@@ -6342,7 +6356,7 @@
    "pos": 14,
    "form": "Feuer",
    "lemma": "Feuer",
-   "level": "A2",
+   "level": "A1",
    "en": "fire",
    "es": "fuego",
    "fr": "feu",
@@ -6567,20 +6581,6 @@
    "es": "desciende",
    "fr": "descend",
    "it": "scende"
-  },
-  {
-   "pos": 11,
-   "lemma": "einschmelzen",
-   "level": "C1",
-   "en": "melted down",
-   "es": "fundí",
-   "fr": "fis fondre",
-   "it": "fusi",
-   "parts": [
-    11,
-    15
-   ],
-   "form": "schmolz ein"
   }
  ],
  "22": [
@@ -6818,6 +6818,17 @@
   },
   {
    "pos": 9,
+   "lemma": "hinaufziehen",
+   "level": "B2",
+   "en": "Go up",
+   "es": "Subid",
+   "fr": "Montez",
+   "it": "Salite",
+   "pos_end": 10,
+   "form": "Zieht hinauf"
+  },
+  {
+   "pos": 9,
    "form": "Zieht",
    "lemma": "ziehen",
    "level": "A2",
@@ -6845,6 +6856,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 12,
+   "lemma": "einnehmen",
+   "level": "B2",
+   "en": "take",
+   "es": "ocupad",
+   "fr": "prenez",
+   "it": "occupate",
+   "parts": [
+    12,
+    15
+   ],
+   "form": "nehmt ein"
   },
   {
    "pos": 12,
@@ -7115,31 +7140,6 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
-  },
-  {
-   "pos": 9,
-   "lemma": "hinaufziehen",
-   "level": "B2",
-   "en": "Go up",
-   "es": "Subid",
-   "fr": "Montez",
-   "it": "Salite",
-   "pos_end": 10,
-   "form": "Zieht hinauf"
-  },
-  {
-   "pos": 12,
-   "lemma": "einnehmen",
-   "level": "B2",
-   "en": "take",
-   "es": "ocupad",
-   "fr": "prenez",
-   "it": "occupate",
-   "parts": [
-    12,
-    15
-   ],
-   "form": "nehmt ein"
   }
  ],
  "24": [
@@ -7264,6 +7264,20 @@
    "es": "Así",
    "fr": "Ainsi",
    "it": "Così"
+  },
+  {
+   "pos": 1,
+   "lemma": "niederfallen",
+   "level": "B2",
+   "en": "fell down",
+   "es": "me postré",
+   "fr": "me prosternai",
+   "it": "mi prostrai",
+   "parts": [
+    1,
+    11
+   ],
+   "form": "fiel nieder"
   },
   {
    "pos": 1,
@@ -7464,20 +7478,6 @@
    "es": "destruir",
    "fr": "détruire",
    "it": "distruggere"
-  },
-  {
-   "pos": 1,
-   "lemma": "niederfallen",
-   "level": "B2",
-   "en": "fell down",
-   "es": "me postré",
-   "fr": "me prosternai",
-   "it": "mi prostrai",
-   "parts": [
-    1,
-    11
-   ],
-   "form": "fiel nieder"
   }
  ],
  "26": [
@@ -7795,6 +7795,17 @@
  "27": [
   {
    "pos": 0,
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "Remember",
+   "es": "Acuérdate de",
+   "fr": "Souviens-toi de",
+   "it": "Ricordati di",
+   "pos_end": 1,
+   "form": "Denk an"
+  },
+  {
+   "pos": 0,
    "form": "Denk",
    "lemma": "denken",
    "level": "A1",
@@ -7992,17 +8003,6 @@
    "es": "pueblo",
    "fr": "peuple",
    "it": "popolo"
-  },
-  {
-   "pos": 0,
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "Remember",
-   "es": "Acuérdate de",
-   "fr": "Souviens-toi de",
-   "it": "Ricordati di",
-   "pos_end": 1,
-   "form": "Denk an"
   }
  ],
  "28": [

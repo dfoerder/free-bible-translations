@@ -386,6 +386,17 @@
   },
   {
    "pos": 7,
+   "form": "rund um",
+   "lemma": "rund um",
+   "level": "B1",
+   "en": "around",
+   "es": "alrededor de",
+   "fr": "autour de",
+   "it": "intorno a",
+   "pos_end": 8
+  },
+  {
+   "pos": 7,
    "form": "rund",
    "lemma": "rund",
    "level": "B1",
@@ -403,17 +414,6 @@
    "es": "alrededor de",
    "fr": "autour de",
    "it": "attorno a"
-  },
-  {
-   "pos": 7,
-   "form": "rund um",
-   "lemma": "rund um",
-   "level": "B1",
-   "en": "around",
-   "es": "alrededor de",
-   "fr": "autour de",
-   "it": "intorno a",
-   "pos_end": 8
   },
   {
    "pos": 9,
@@ -719,16 +719,6 @@
   },
   {
    "pos": 8,
-   "form": "sich",
-   "lemma": "sich",
-   "level": "A1",
-   "en": "itself",
-   "es": "se",
-   "fr": "se",
-   "it": "si"
-  },
-  {
-   "pos": 8,
    "form": "sich erstrecken",
    "lemma": "sich erstrecken",
    "level": "B2",
@@ -740,6 +730,16 @@
     8,
     16
    ]
+  },
+  {
+   "pos": 8,
+   "form": "sich",
+   "lemma": "sich",
+   "level": "A1",
+   "en": "itself",
+   "es": "se",
+   "fr": "se",
+   "it": "si"
   },
   {
    "pos": 9,
@@ -1135,6 +1135,17 @@
   },
   {
    "pos": 30,
+   "form": "in der Mitte",
+   "lemma": "in der Mitte",
+   "level": "B1",
+   "en": "in the middle",
+   "es": "en medio",
+   "fr": "au milieu",
+   "it": "in mezzo",
+   "pos_end": 32
+  },
+  {
+   "pos": 30,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -1162,17 +1173,6 @@
    "es": "medio",
    "fr": "milieu",
    "it": "mezzo"
-  },
-  {
-   "pos": 30,
-   "form": "in der Mitte",
-   "lemma": "in der Mitte",
-   "level": "B1",
-   "en": "in the middle",
-   "es": "en medio",
-   "fr": "au milieu",
-   "it": "in mezzo",
-   "pos_end": 32
   },
   {
    "pos": 33,
@@ -2670,6 +2670,17 @@
   },
   {
    "pos": 24,
+   "form": "vor Gericht gestanden",
+   "lemma": "vor Gericht stehen",
+   "level": "B2",
+   "en": "stood trial",
+   "es": "comparecido en juicio",
+   "fr": "comparu en justice",
+   "it": "comparso in giudizio",
+   "pos_end": 26
+  },
+  {
+   "pos": 24,
    "form": "vor",
    "lemma": "vor",
    "level": "A1",
@@ -2697,17 +2708,6 @@
    "es": "estado",
    "fr": "tenu",
    "it": "stato"
-  },
-  {
-   "pos": 24,
-   "form": "vor Gericht gestanden",
-   "lemma": "vor Gericht stehen",
-   "level": "B2",
-   "en": "stood trial",
-   "es": "comparecido en juicio",
-   "fr": "comparu en justice",
-   "it": "comparso in giudizio",
-   "pos_end": 26
   },
   {
    "pos": 27,
@@ -3409,6 +3409,17 @@
   },
   {
    "pos": 14,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte",
+   "pos_end": 18
+  },
+  {
+   "pos": 14,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -3456,17 +3467,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 14,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte",
-   "pos_end": 18
   }
  ],
  "17": [
@@ -3692,6 +3692,17 @@
   },
   {
    "pos": 22,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte",
+   "pos_end": 26
+  },
+  {
+   "pos": 22,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -3739,17 +3750,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 22,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte",
-   "pos_end": 26
   }
  ],
  "18": [
@@ -3965,6 +3965,17 @@
   },
   {
    "pos": 21,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte",
+   "pos_end": 25
+  },
+  {
+   "pos": 21,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -4012,17 +4023,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 21,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte",
-   "pos_end": 25
   }
  ],
  "19": [
@@ -4522,6 +4522,17 @@
   },
   {
    "pos": 19,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte",
+   "pos_end": 23
+  },
+  {
+   "pos": 19,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -4569,17 +4580,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 19,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte",
-   "pos_end": 23
   },
   {
    "pos": 24,
@@ -4785,6 +4785,17 @@
   },
   {
    "pos": 6,
+   "form": "aus Versehen",
+   "lemma": "aus Versehen",
+   "level": "B2",
+   "en": "inadvertently",
+   "es": "por inadvertencia",
+   "fr": "par inadvertance",
+   "it": "per inavvertenza",
+   "pos_end": 7
+  },
+  {
+   "pos": 6,
    "form": "aus",
    "lemma": "aus",
    "level": "A1",
@@ -4802,17 +4813,6 @@
    "es": "descuido",
    "fr": "inadvertance",
    "it": "svista"
-  },
-  {
-   "pos": 6,
-   "form": "aus Versehen",
-   "lemma": "aus Versehen",
-   "level": "B2",
-   "en": "inadvertently",
-   "es": "por inadvertencia",
-   "fr": "par inadvertance",
-   "it": "per inavvertenza",
-   "pos_end": 7
   },
   {
    "pos": 8,
@@ -5462,16 +5462,6 @@
   },
   {
    "pos": 11,
-   "form": "zurück",
-   "lemma": "zurück",
-   "level": "A2",
-   "en": "back",
-   "es": "de vuelta",
-   "fr": "en arrière",
-   "it": "indietro"
-  },
-  {
-   "pos": 11,
    "form": "zurück bringen",
    "lemma": "zurückbringen",
    "level": "B1",
@@ -5483,6 +5473,16 @@
     11,
     15
    ]
+  },
+  {
+   "pos": 11,
+   "form": "zurück",
+   "lemma": "zurück",
+   "level": "A2",
+   "en": "back",
+   "es": "de vuelta",
+   "fr": "en arrière",
+   "it": "indietro"
   },
   {
    "pos": 12,
@@ -5516,6 +5516,17 @@
   },
   {
    "pos": 15,
+   "form": "bringen lassen",
+   "lemma": "bringen lassen",
+   "level": "B1",
+   "en": "have brought",
+   "es": "hacer traer",
+   "fr": "faire amener",
+   "it": "far portare",
+   "pos_end": 16
+  },
+  {
+   "pos": 15,
    "form": "bringen",
    "lemma": "bringen",
    "level": "A1",
@@ -5533,17 +5544,6 @@
    "es": "hacer",
    "fr": "faire",
    "it": "far"
-  },
-  {
-   "pos": 15,
-   "form": "bringen lassen",
-   "lemma": "bringen lassen",
-   "level": "B2",
-   "en": "have brought",
-   "es": "hacer traer",
-   "fr": "faire amener",
-   "it": "far portare",
-   "pos_end": 16
   },
   {
    "pos": 17,
@@ -6637,6 +6637,20 @@
   },
   {
    "pos": 14,
+   "form": "reicht aus",
+   "lemma": "ausreichen",
+   "level": "B1",
+   "en": "is enough",
+   "es": "basta",
+   "fr": "suffit",
+   "it": "basta",
+   "parts": [
+    14,
+    16
+   ]
+  },
+  {
+   "pos": 14,
    "form": "reicht",
    "lemma": "reichen",
    "level": "B1",
@@ -6666,17 +6680,17 @@
    "it": "fuori"
   },
   {
-   "pos": 14,
-   "form": "reicht aus",
-   "lemma": "ausreichen",
-   "level": "B1",
-   "en": "is enough",
-   "es": "basta",
-   "fr": "suffit",
-   "it": "basta",
+   "pos": 17,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
    "parts": [
-    14,
-    16
+    17,
+    21
    ]
   },
   {
@@ -6728,20 +6742,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 17,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    17,
-    21
-   ]
   },
   {
    "pos": 22,
@@ -6937,6 +6937,17 @@
   },
   {
    "pos": 18,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte",
+   "pos_end": 22
+  },
+  {
+   "pos": 18,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -6984,17 +6995,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 18,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte",
-   "pos_end": 22
   }
  ],
  "32": [

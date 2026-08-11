@@ -134,6 +134,17 @@
   },
   {
    "pos": 8,
+   "form": "Gelübde ablegt",
+   "lemma": "ein Gelübde ablegen",
+   "level": "B2",
+   "en": "makes a vow",
+   "es": "hace un voto",
+   "fr": "fait un vœu",
+   "it": "fa un voto",
+   "pos_end": 9
+  },
+  {
+   "pos": 8,
    "form": "Gelübde",
    "lemma": "Gelübde",
    "level": "C1",
@@ -151,17 +162,6 @@
    "es": "hace",
    "fr": "fait",
    "it": "fa"
-  },
-  {
-   "pos": 8,
-   "form": "Gelübde ablegt",
-   "lemma": "ein Gelübde ablegen",
-   "level": "C1",
-   "en": "makes a vow",
-   "es": "hace un voto",
-   "fr": "fait un vœu",
-   "it": "fa un voto",
-   "pos_end": 9
   },
   {
    "pos": 10,
@@ -813,6 +813,17 @@
   },
   {
    "pos": 3,
+   "form": "bis zu",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -830,17 +841,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 3,
-   "form": "bis zu",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a",
-   "pos_end": 4
   },
   {
    "pos": 5,
@@ -1328,6 +1328,20 @@
   },
   {
    "pos": 11,
+   "form": "sich vorstellen",
+   "lemma": "sich vorstellen",
+   "level": "B1",
+   "en": "present himself",
+   "es": "presentarse",
+   "fr": "se présenter",
+   "it": "presentarsi",
+   "parts": [
+    11,
+    14
+   ]
+  },
+  {
+   "pos": 11,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1365,20 +1379,6 @@
    "es": "presentar",
    "fr": "présenter",
    "it": "presentare"
-  },
-  {
-   "pos": 11,
-   "form": "sich vorstellen",
-   "lemma": "sich vorstellen",
-   "level": "B1",
-   "en": "present himself",
-   "es": "presentarse",
-   "fr": "se présenter",
-   "it": "presentarsi",
-   "parts": [
-    11,
-    14
-   ]
   },
   {
    "pos": 15,
@@ -1532,6 +1532,17 @@
   },
   {
    "pos": 30,
+   "form": "Gelübde abgelegt",
+   "lemma": "ein Gelübde ablegen",
+   "level": "B2",
+   "en": "made a vow",
+   "es": "hecho un voto",
+   "fr": "fait un vœu",
+   "it": "fatto un voto",
+   "pos_end": 31
+  },
+  {
+   "pos": 30,
    "form": "Gelübde",
    "lemma": "Gelübde",
    "level": "C1",
@@ -1549,17 +1560,6 @@
    "es": "hecho",
    "fr": "fait",
    "it": "fatto"
-  },
-  {
-   "pos": 30,
-   "form": "Gelübde abgelegt",
-   "lemma": "ein Gelübde ablegen",
-   "level": "C1",
-   "en": "made a vow",
-   "es": "hecho un voto",
-   "fr": "fait un vœu",
-   "it": "fatto un voto",
-   "pos_end": 31
   },
   {
    "pos": 32,
@@ -1737,7 +1737,7 @@
    "pos": 14,
    "form": "davon",
    "lemma": "davon",
-   "level": "A2",
+   "level": "B1",
    "en": "of it",
    "es": "de ello",
    "fr": "de cela",
@@ -4227,6 +4227,17 @@
   },
   {
    "pos": 16,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più",
+   "pos_end": 17
+  },
+  {
+   "pos": 16,
    "form": "nicht",
    "lemma": "nicht",
    "level": "A1",
@@ -4244,17 +4255,6 @@
    "es": "más",
    "fr": "plus",
    "it": "più"
-  },
-  {
-   "pos": 16,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più",
-   "pos_end": 17
   },
   {
    "pos": 18,
@@ -5392,7 +5392,7 @@
    "pos": 2,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "among",
    "es": "entre",
    "fr": "parmi",
@@ -6854,7 +6854,7 @@
    "pos": 10,
    "form": "unter",
    "lemma": "unter",
-   "level": "A1",
+   "level": "A2",
    "en": "under",
    "es": "bajo",
    "fr": "sous",

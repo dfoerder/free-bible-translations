@@ -404,6 +404,17 @@
   },
   {
    "pos": 33,
+   "form": "noch nie",
+   "lemma": "noch nie",
+   "level": "A2",
+   "en": "never before",
+   "es": "nunca jamás",
+   "fr": "jamais encore",
+   "it": "mai prima",
+   "pos_end": 34
+  },
+  {
+   "pos": 33,
    "form": "noch",
    "lemma": "noch",
    "level": "A1",
@@ -421,17 +432,6 @@
    "es": "nunca",
    "fr": "jamais",
    "it": "mai"
-  },
-  {
-   "pos": 33,
-   "pos_end": 34,
-   "form": "noch nie",
-   "lemma": "noch nie",
-   "level": "A2",
-   "en": "never before",
-   "es": "nunca jamás",
-   "fr": "jamais encore",
-   "it": "mai prima"
   },
   {
    "pos": 35,
@@ -657,6 +657,17 @@
   },
   {
    "pos": 18,
+   "form": "schlachten lassen",
+   "lemma": "schlachten lassen",
+   "level": "B2",
+   "en": "have slaughtered",
+   "es": "mandar degollar",
+   "fr": "faire égorger",
+   "it": "far sgozzare",
+   "pos_end": 19
+  },
+  {
+   "pos": 18,
    "form": "schlachten",
    "lemma": "schlachten",
    "level": "B2",
@@ -674,17 +685,6 @@
    "es": "hacer",
    "fr": "faire",
    "it": "fare"
-  },
-  {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "schlachten lassen",
-   "lemma": "schlachten lassen",
-   "level": "B2",
-   "en": "have slaughtered",
-   "es": "mandar degollar",
-   "fr": "faire égorger",
-   "it": "far sgozzare"
   }
  ],
  "4": [
@@ -840,6 +840,17 @@
   },
   {
    "pos": 15,
+   "form": "in Richtung",
+   "lemma": "in Richtung",
+   "level": "B1",
+   "en": "toward",
+   "es": "hacia",
+   "fr": "vers",
+   "it": "verso",
+   "pos_end": 16
+  },
+  {
+   "pos": 15,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -857,17 +868,6 @@
    "es": "dirección",
    "fr": "direction",
    "it": "direzione"
-  },
-  {
-   "pos": 15,
-   "pos_end": 16,
-   "form": "in Richtung",
-   "lemma": "in Richtung",
-   "level": "B1",
-   "en": "toward",
-   "es": "hacia",
-   "fr": "vers",
-   "it": "verso"
   },
   {
    "pos": 17,
@@ -1287,6 +1287,20 @@
   },
   {
    "pos": 7,
+   "form": "sich baden",
+   "lemma": "sich baden",
+   "level": "B1",
+   "en": "bathe himself",
+   "es": "bañarse",
+   "fr": "se baigner",
+   "it": "bagnarsi",
+   "parts": [
+    7,
+    10
+   ]
+  },
+  {
+   "pos": 7,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1324,20 +1338,6 @@
    "es": "bañar",
    "fr": "baigner",
    "it": "bagnare"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    10
-   ],
-   "form": "sich baden",
-   "lemma": "sich baden",
-   "level": "B1",
-   "en": "bathe himself",
-   "es": "bañarse",
-   "fr": "se baigner",
-   "it": "bagnarsi"
   },
   {
    "pos": 11,
@@ -1583,6 +1583,17 @@
   },
   {
    "pos": 11,
+   "form": "sich baden",
+   "lemma": "sich baden",
+   "level": "B1",
+   "en": "bathe himself",
+   "es": "bañarse",
+   "fr": "se baigner",
+   "it": "bagnarsi",
+   "pos_end": 12
+  },
+  {
+   "pos": 11,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1600,17 +1611,6 @@
    "es": "bañar",
    "fr": "baigner",
    "it": "bagnare"
-  },
-  {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "sich baden",
-   "lemma": "sich baden",
-   "level": "B1",
-   "en": "bathe himself",
-   "es": "bañarse",
-   "fr": "se baigner",
-   "it": "bagnarsi"
   },
   {
    "pos": 13,
@@ -2522,6 +2522,20 @@
   },
   {
    "pos": 2,
+   "form": "sich entsündigen",
+   "lemma": "sich entsündigen",
+   "level": "C1",
+   "en": "purify himself from sin",
+   "es": "purificarse del pecado",
+   "fr": "se purifier du péché",
+   "it": "purificarsi dal peccato",
+   "parts": [
+    2,
+    10
+   ]
+  },
+  {
+   "pos": 2,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2611,20 +2625,6 @@
    "it": "purificare dal peccato"
   },
   {
-   "pos": 2,
-   "parts": [
-    2,
-    10
-   ],
-   "form": "sich entsündigen",
-   "lemma": "sich entsündigen",
-   "level": "C1",
-   "en": "purify himself from sin",
-   "es": "purificarse del pecado",
-   "fr": "se purifier du péché",
-   "it": "purificarsi dal peccato"
-  },
-  {
    "pos": 11,
    "form": "dann",
    "lemma": "dann",
@@ -2666,6 +2666,20 @@
   },
   {
    "pos": 15,
+   "form": "Entsündigt sich",
+   "lemma": "sich entsündigen",
+   "level": "C1",
+   "en": "Purifies himself from sin",
+   "es": "Se purifica del pecado",
+   "fr": "Se purifie du péché",
+   "it": "Si purifica dal peccato",
+   "parts": [
+    15,
+    17
+   ]
+  },
+  {
+   "pos": 15,
    "form": "Entsündigt",
    "lemma": "entsündigen",
    "level": "C1",
@@ -2693,20 +2707,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    17
-   ],
-   "form": "Entsündigt sich",
-   "lemma": "sich entsündigen",
-   "level": "C1",
-   "en": "Purifies himself from sin",
-   "es": "Se purifica del pecado",
-   "fr": "Se purifie du péché",
-   "it": "Si purifica dal peccato"
   },
   {
    "pos": 18,
@@ -2892,6 +2892,20 @@
   },
   {
    "pos": 7,
+   "form": "sich entsündigen",
+   "lemma": "sich entsündigen",
+   "level": "C1",
+   "en": "purify himself from sin",
+   "es": "purificarse del pecado",
+   "fr": "se purifier du péché",
+   "it": "purificarsi dal peccato",
+   "parts": [
+    7,
+    9
+   ]
+  },
+  {
+   "pos": 7,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2919,20 +2933,6 @@
    "es": "purificar del pecado",
    "fr": "purifier du péché",
    "it": "purificare dal peccato"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    9
-   ],
-   "form": "sich entsündigen",
-   "lemma": "sich entsündigen",
-   "level": "C1",
-   "en": "purify himself from sin",
-   "es": "purificarse del pecado",
-   "fr": "se purifier du péché",
-   "it": "purificarsi dal peccato"
   },
   {
    "pos": 10,
@@ -4678,6 +4678,20 @@
   },
   {
    "pos": 19,
+   "form": "sich baden",
+   "lemma": "sich baden",
+   "level": "B1",
+   "en": "bathe himself",
+   "es": "bañarse",
+   "fr": "se baigner",
+   "it": "bagnarsi",
+   "parts": [
+    19,
+    22
+   ]
+  },
+  {
+   "pos": 19,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -4715,20 +4729,6 @@
    "es": "bañar",
    "fr": "baigner",
    "it": "bagnare"
-  },
-  {
-   "pos": 19,
-   "parts": [
-    19,
-    22
-   ],
-   "form": "sich baden",
-   "lemma": "sich baden",
-   "level": "B1",
-   "en": "bathe himself",
-   "es": "bañarse",
-   "fr": "se baigner",
-   "it": "bagnarsi"
   },
   {
    "pos": 23,
@@ -4844,6 +4844,20 @@
   },
   {
    "pos": 5,
+   "form": "sich entsündigen",
+   "lemma": "sich entsündigen",
+   "level": "C1",
+   "en": "purify himself from sin",
+   "es": "purificarse del pecado",
+   "fr": "se purifier du péché",
+   "it": "purificarsi dal peccato",
+   "parts": [
+    5,
+    7
+   ]
+  },
+  {
+   "pos": 5,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -4871,20 +4885,6 @@
    "es": "purificar del pecado",
    "fr": "purifier du péché",
    "it": "purificare dal peccato"
-  },
-  {
-   "pos": 5,
-   "parts": [
-    5,
-    7
-   ],
-   "form": "sich entsündigen",
-   "lemma": "sich entsündigen",
-   "level": "C1",
-   "en": "purify himself from sin",
-   "es": "purificarse del pecado",
-   "fr": "se purifier du péché",
-   "it": "purificarsi dal peccato"
   },
   {
    "pos": 8,

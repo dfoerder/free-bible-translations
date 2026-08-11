@@ -124,6 +124,17 @@
   },
   {
    "pos": 3,
+   "form": "rund um",
+   "lemma": "rund um",
+   "level": "B1",
+   "en": "around",
+   "es": "alrededor de",
+   "fr": "autour de",
+   "it": "intorno a",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "rund",
    "lemma": "rund",
    "level": "B1",
@@ -281,17 +292,6 @@
    "es": "familias",
    "fr": "familles",
    "it": "famiglie"
-  },
-  {
-   "pos": 3,
-   "form": "rund um",
-   "lemma": "rund um",
-   "level": "B1",
-   "en": "around",
-   "es": "alrededor de",
-   "fr": "autour de",
-   "it": "intorno a",
-   "pos_end": 4
   }
  ],
  "3": [
@@ -2125,6 +2125,17 @@
   },
   {
    "pos": 15,
+   "form": "So wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "Just as",
+   "es": "Así como",
+   "fr": "Tout comme",
+   "it": "Così come",
+   "pos_end": 16
+  },
+  {
+   "pos": 15,
    "form": "So",
    "lemma": "so",
    "level": "A1",
@@ -2272,17 +2283,6 @@
    "es": "bandera",
    "fr": "bannière",
    "it": "bandiera"
-  },
-  {
-   "pos": 15,
-   "form": "So wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "Just as",
-   "es": "Así como",
-   "fr": "Tout comme",
-   "it": "Così come",
-   "pos_end": 16
   }
  ],
  "18": [
@@ -4450,6 +4450,17 @@
   },
   {
    "pos": 13,
+   "form": "lagerten sich",
+   "lemma": "sich lagern",
+   "level": "B2",
+   "en": "encamped",
+   "es": "acamparon",
+   "fr": "campèrent",
+   "it": "si accamparono",
+   "pos_end": 14
+  },
+  {
+   "pos": 13,
    "form": "lagerten",
    "lemma": "lagern",
    "level": "B2",
@@ -4507,6 +4518,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 19,
+   "form": "zogen aus",
+   "lemma": "ausziehen",
+   "level": "B1",
+   "en": "marched out",
+   "es": "salieron",
+   "fr": "sortirent",
+   "it": "uscirono",
+   "pos_end": 20
   },
   {
    "pos": 19,
@@ -4597,28 +4619,6 @@
    "es": "familia",
    "fr": "famille",
    "it": "famiglia"
-  },
-  {
-   "pos": 13,
-   "form": "lagerten sich",
-   "lemma": "sich lagern",
-   "level": "B2",
-   "en": "encamped",
-   "es": "acamparon",
-   "fr": "campèrent",
-   "it": "si accamparono",
-   "pos_end": 14
-  },
-  {
-   "pos": 19,
-   "form": "zogen aus",
-   "lemma": "ausziehen",
-   "level": "B1",
-   "en": "marched out",
-   "es": "salieron",
-   "fr": "sortirent",
-   "it": "uscirono",
-   "pos_end": 20
   }
  ]
 }

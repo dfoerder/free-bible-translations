@@ -1014,7 +1014,7 @@
    "pos": 2,
    "form": "Täler",
    "lemma": "Tal",
-   "level": "B1",
+   "level": "A2",
    "en": "valleys",
    "es": "valles",
    "fr": "vallées",
@@ -1029,6 +1029,17 @@
    "es": "que",
    "fr": "qui",
    "it": "che"
+  },
+  {
+   "pos": 4,
+   "form": "sich ausbreiten",
+   "lemma": "sich ausbreiten",
+   "level": "B2",
+   "en": "spread out",
+   "es": "se extienden",
+   "fr": "s'étendent",
+   "it": "si estendono",
+   "pos_end": 5
   },
   {
    "pos": 4,
@@ -1049,17 +1060,6 @@
    "es": "extienden",
    "fr": "étendent",
    "it": "stendono"
-  },
-  {
-   "pos": 4,
-   "form": "sich ausbreiten",
-   "lemma": "sich ausbreiten",
-   "level": "B2",
-   "en": "spread out",
-   "es": "se extienden",
-   "fr": "s'étendent",
-   "it": "si estendono",
-   "pos_end": 5
   },
   {
    "pos": 6,
@@ -1085,7 +1085,7 @@
    "pos": 8,
    "form": "Gärten",
    "lemma": "Garten",
-   "level": "A1",
+   "level": "A2",
    "en": "gardens",
    "es": "jardines",
    "fr": "jardins",
@@ -1505,6 +1505,17 @@
   },
   {
    "pos": 25,
+   "form": "sich erheben",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rise up",
+   "es": "levantarse",
+   "fr": "se lever",
+   "it": "sollevarsi",
+   "pos_end": 26
+  },
+  {
+   "pos": 25,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1522,17 +1533,6 @@
    "es": "levantar",
    "fr": "élever",
    "it": "sollevare"
-  },
-  {
-   "pos": 25,
-   "form": "sich erheben",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "rise up",
-   "es": "levantarse",
-   "fr": "se lever",
-   "it": "sollevarsi",
-   "pos_end": 26
   }
  ],
  "8": [
@@ -1850,6 +1850,17 @@
   },
   {
    "pos": 2,
+   "form": "sich niedergelegt",
+   "lemma": "sich niederlegen",
+   "level": "B2",
+   "en": "lain down",
+   "es": "acostado",
+   "fr": "couché",
+   "it": "coricato",
+   "pos_end": 3
+  },
+  {
+   "pos": 2,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1867,17 +1878,6 @@
    "es": "acostado",
    "fr": "couché",
    "it": "coricato"
-  },
-  {
-   "pos": 2,
-   "form": "sich niedergelegt",
-   "lemma": "sich niederlegen",
-   "level": "B2",
-   "en": "lain down",
-   "es": "acostado",
-   "fr": "couché",
-   "it": "coricato",
-   "pos_end": 3
   },
   {
    "pos": 4,
@@ -1991,6 +1991,20 @@
   },
   {
    "pos": 15,
+   "form": "sich erheben",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rise up",
+   "es": "levantarse",
+   "fr": "se lever",
+   "it": "sollevarsi",
+   "parts": [
+    15,
+    19
+   ]
+  },
+  {
+   "pos": 15,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2040,18 +2054,15 @@
    "it": "sollevare"
   },
   {
-   "pos": 15,
-   "form": "sich erheben",
-   "lemma": "sich erheben",
+   "pos": 20,
+   "form": "Gesegnet sei",
+   "lemma": "gesegnet sein",
    "level": "B2",
-   "en": "rise up",
-   "es": "levantarse",
-   "fr": "se lever",
-   "it": "sollevarsi",
-   "parts": [
-    15,
-    19
-   ]
+   "en": "Blessed is",
+   "es": "Bendito sea",
+   "fr": "Béni soit",
+   "it": "Benedetto sia",
+   "pos_end": 21
   },
   {
    "pos": 20,
@@ -2072,17 +2083,6 @@
    "es": "sea",
    "fr": "soit",
    "it": "sia"
-  },
-  {
-   "pos": 20,
-   "form": "Gesegnet sei",
-   "lemma": "gesegnet sein",
-   "level": "B2",
-   "en": "Blessed is",
-   "es": "Bendito sea",
-   "fr": "Béni soit",
-   "it": "Benedetto sia",
-   "pos_end": 21
   },
   {
    "pos": 22,
@@ -2228,6 +2228,17 @@
   },
   {
    "pos": 6,
+   "form": "schlug die Hände zusammen",
+   "lemma": "die Hände zusammenschlagen",
+   "level": "B2",
+   "en": "clapped his hands",
+   "es": "batió las manos",
+   "fr": "frappa des mains",
+   "it": "batté le mani",
+   "pos_end": 9
+  },
+  {
+   "pos": 6,
    "form": "schlug",
    "lemma": "schlagen",
    "level": "A2",
@@ -2265,17 +2276,6 @@
    "es": "juntas",
    "fr": "ensemble",
    "it": "insieme"
-  },
-  {
-   "pos": 6,
-   "form": "schlug die Hände zusammen",
-   "lemma": "die Hände zusammenschlagen",
-   "level": "B2",
-   "en": "clapped his hands",
-   "es": "batió las manos",
-   "fr": "frappa des mains",
-   "it": "batté le mani",
-   "pos_end": 9
   },
   {
    "pos": 10,
@@ -2511,6 +2511,17 @@
   },
   {
    "pos": 2,
+   "form": "mach dich fort",
+   "lemma": "sich fortmachen",
+   "level": "B2",
+   "en": "be off",
+   "es": "vete",
+   "fr": "va-t'en",
+   "it": "vattene",
+   "pos_end": 4
+  },
+  {
+   "pos": 2,
    "form": "mach",
    "lemma": "machen",
    "level": "A1",
@@ -2538,17 +2549,6 @@
    "es": "lejos",
    "fr": "loin",
    "it": "lontano"
-  },
-  {
-   "pos": 2,
-   "form": "mach dich fort",
-   "lemma": "sich fortmachen",
-   "level": "B2",
-   "en": "be off",
-   "es": "vete",
-   "fr": "va-t'en",
-   "it": "vattene",
-   "pos_end": 4
   },
   {
    "pos": 5,
@@ -2876,6 +2876,17 @@
  "13": [
   {
    "pos": 0,
+   "form": "Selbst wenn",
+   "lemma": "selbst wenn",
+   "level": "B1",
+   "en": "Even if",
+   "es": "Aunque",
+   "fr": "Même si",
+   "it": "Anche se",
+   "pos_end": 1
+  },
+  {
+   "pos": 0,
    "form": "Selbst",
    "lemma": "selbst",
    "level": "B1",
@@ -2893,17 +2904,6 @@
    "es": "si",
    "fr": "si",
    "it": "se"
-  },
-  {
-   "pos": 0,
-   "form": "Selbst wenn",
-   "lemma": "selbst wenn",
-   "level": "B1",
-   "en": "Even if",
-   "es": "Aunque",
-   "fr": "Même si",
-   "it": "Anche se",
-   "pos_end": 1
   },
   {
    "pos": 2,
@@ -4077,7 +4077,7 @@
    "pos": 7,
    "form": "schaue",
    "lemma": "schauen",
-   "level": "B1",
+   "level": "A2",
    "en": "behold",
    "es": "contemplo",
    "fr": "contemple",
@@ -4115,6 +4115,17 @@
   },
   {
    "pos": 11,
+   "form": "aus der Nähe",
+   "lemma": "aus der Nähe",
+   "level": "B1",
+   "en": "from close by",
+   "es": "de cerca",
+   "fr": "de près",
+   "it": "da vicino",
+   "pos_end": 13
+  },
+  {
+   "pos": 11,
    "form": "aus",
    "lemma": "aus",
    "level": "A1",
@@ -4142,17 +4153,6 @@
    "es": "cercanía",
    "fr": "proximité",
    "it": "vicinanza"
-  },
-  {
-   "pos": 11,
-   "form": "aus der Nähe",
-   "lemma": "aus der Nähe",
-   "level": "B1",
-   "en": "from close by",
-   "es": "de cerca",
-   "fr": "de près",
-   "it": "da vicino",
-   "pos_end": 13
   },
   {
    "pos": 14,
@@ -4700,6 +4700,17 @@
   },
   {
    "pos": 12,
+   "form": "übrig ist",
+   "lemma": "übrig sein",
+   "level": "B1",
+   "en": "is left",
+   "es": "queda",
+   "fr": "reste",
+   "it": "resta",
+   "pos_end": 13
+  },
+  {
+   "pos": 12,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -4717,17 +4728,6 @@
    "es": "está",
    "fr": "est",
    "it": "è"
-  },
-  {
-   "pos": 12,
-   "form": "übrig ist",
-   "lemma": "übrig sein",
-   "level": "B1",
-   "en": "is left",
-   "es": "queda",
-   "fr": "reste",
-   "it": "resta",
-   "pos_end": 13
   }
  ],
  "20": [
@@ -4913,6 +4913,17 @@
   },
   {
    "pos": 18,
+   "form": "am Ende",
+   "lemma": "am Ende",
+   "level": "B1",
+   "en": "in the end",
+   "es": "al final",
+   "fr": "à la fin",
+   "it": "alla fine",
+   "pos_end": 19
+  },
+  {
+   "pos": 18,
    "form": "am",
    "lemma": "am",
    "level": "A1",
@@ -4930,17 +4941,6 @@
    "es": "final",
    "fr": "fin",
    "it": "fine"
-  },
-  {
-   "pos": 18,
-   "form": "am Ende",
-   "lemma": "am Ende",
-   "level": "B1",
-   "en": "in the end",
-   "es": "al final",
-   "fr": "à la fin",
-   "it": "alla fine",
-   "pos_end": 19
   },
   {
    "pos": 20,
@@ -4974,6 +4974,17 @@
   },
   {
    "pos": 23,
+   "form": "zugrunde gehen",
+   "lemma": "zugrunde gehen",
+   "level": "B2",
+   "en": "perish",
+   "es": "perecer",
+   "fr": "périr",
+   "it": "perire",
+   "pos_end": 24
+  },
+  {
+   "pos": 23,
    "form": "zugrunde",
    "lemma": "zugrunde",
    "level": "C1",
@@ -4991,17 +5002,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 23,
-   "form": "zugrunde gehen",
-   "lemma": "zugrunde gehen",
-   "level": "B2",
-   "en": "perish",
-   "es": "perecer",
-   "fr": "périr",
-   "it": "perire",
-   "pos_end": 24
   }
  ],
  "21": [
@@ -5391,6 +5391,17 @@
   },
   {
    "pos": 3,
+   "form": "noch einmal",
+   "lemma": "noch einmal",
+   "level": "A2",
+   "en": "once more",
+   "es": "otra vez",
+   "fr": "encore une fois",
+   "it": "ancora una volta",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "noch",
    "lemma": "noch",
    "level": "A1",
@@ -5408,17 +5419,6 @@
    "es": "una vez",
    "fr": "une fois",
    "it": "una volta"
-  },
-  {
-   "pos": 3,
-   "form": "noch einmal",
-   "lemma": "noch einmal",
-   "level": "A2",
-   "en": "once more",
-   "es": "otra vez",
-   "fr": "encore une fois",
-   "it": "ancora una volta",
-   "pos_end": 4
   },
   {
    "pos": 5,
@@ -5686,6 +5686,17 @@
   },
   {
    "pos": 1,
+   "form": "machte sich auf",
+   "lemma": "sich aufmachen",
+   "level": "B2",
+   "en": "set out",
+   "es": "se puso en marcha",
+   "fr": "se mit en route",
+   "it": "si mise in cammino",
+   "pos_end": 3
+  },
+  {
+   "pos": 1,
    "form": "machte",
    "lemma": "machen",
    "level": "A1",
@@ -5715,15 +5726,15 @@
    "it": "su"
   },
   {
-   "pos": 1,
-   "form": "machte sich auf",
-   "lemma": "sich aufmachen",
+   "pos": 4,
+   "form": "zog fort",
+   "lemma": "fortziehen",
    "level": "B2",
-   "en": "set out",
-   "es": "se puso en marcha",
-   "fr": "se mit en route",
-   "it": "si mise in cammino",
-   "pos_end": 3
+   "en": "departed",
+   "es": "se marchó",
+   "fr": "partit",
+   "it": "partì",
+   "pos_end": 5
   },
   {
    "pos": 4,
@@ -5746,17 +5757,6 @@
    "it": "lontano"
   },
   {
-   "pos": 4,
-   "form": "zog fort",
-   "lemma": "fortziehen",
-   "level": "B2",
-   "en": "departed",
-   "es": "se marchó",
-   "fr": "partit",
-   "it": "partì",
-   "pos_end": 5
-  },
-  {
    "pos": 6,
    "form": "und",
    "lemma": "und",
@@ -5765,6 +5765,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 7,
+   "form": "kehrte zurück",
+   "lemma": "zurückkehren",
+   "level": "B1",
+   "en": "returned",
+   "es": "regresó",
+   "fr": "retourna",
+   "it": "tornò",
+   "parts": [
+    7,
+    11
+   ]
   },
   {
    "pos": 7,
@@ -5815,20 +5829,6 @@
    "es": "de vuelta",
    "fr": "en arrière",
    "it": "indietro"
-  },
-  {
-   "pos": 7,
-   "form": "kehrte zurück",
-   "lemma": "zurückkehren",
-   "level": "B1",
-   "en": "returned",
-   "es": "regresó",
-   "fr": "retourna",
-   "it": "tornò",
-   "parts": [
-    7,
-    11
-   ]
   },
   {
    "pos": 12,

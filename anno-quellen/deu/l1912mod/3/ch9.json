@@ -32,6 +32,20 @@
   },
   {
    "pos": 3,
+   "form": "rief zusammen",
+   "lemma": "zusammenrufen",
+   "level": "B1",
+   "en": "called together",
+   "es": "convocó",
+   "fr": "convoqua",
+   "it": "convocò",
+   "parts": [
+    3,
+    13
+   ]
+  },
+  {
+   "pos": 3,
    "form": "rief",
    "lemma": "rufen",
    "level": "A1",
@@ -139,20 +153,6 @@
    "es": "juntos",
    "fr": "ensemble",
    "it": "insieme"
-  },
-  {
-   "pos": 3,
-   "form": "rief zusammen",
-   "lemma": "zusammenrufen",
-   "level": "B1",
-   "en": "called together",
-   "es": "convocó",
-   "fr": "convoqua",
-   "it": "convocò",
-   "parts": [
-    3,
-    13
-   ]
   }
  ],
  "2": [
@@ -702,6 +702,20 @@
   },
   {
    "pos": 8,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    8,
+    12
+   ]
+  },
+  {
+   "pos": 8,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -889,20 +903,6 @@
    "es": "aparecer",
    "fr": "apparaître",
    "it": "apparire"
-  },
-  {
-   "pos": 8,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    8,
-    12
-   ]
   }
  ],
  "5": [
@@ -1492,6 +1492,17 @@
   },
   {
    "pos": 16,
+   "form": "leiste Sühne",
+   "lemma": "Sühne leisten",
+   "level": "C1",
+   "en": "make atonement",
+   "es": "haz expiación",
+   "fr": "fais l'expiation",
+   "it": "fa' espiazione",
+   "pos_end": 17
+  },
+  {
+   "pos": 16,
    "form": "leiste",
    "lemma": "leisten",
    "level": "B2",
@@ -1632,6 +1643,20 @@
   },
   {
    "pos": 30,
+   "form": "leiste Sühne",
+   "lemma": "Sühne leisten",
+   "level": "C1",
+   "en": "make atonement",
+   "es": "haz expiación",
+   "fr": "fais l'expiation",
+   "it": "fa' espiazione",
+   "parts": [
+    30,
+    34
+   ]
+  },
+  {
+   "pos": 30,
    "form": "leiste",
    "lemma": "leisten",
    "level": "B2",
@@ -1739,31 +1764,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 16,
-   "form": "leiste Sühne",
-   "lemma": "Sühne leisten",
-   "level": "C1",
-   "en": "make atonement",
-   "es": "haz expiación",
-   "fr": "fais l'expiation",
-   "it": "fa' espiazione",
-   "pos_end": 17
-  },
-  {
-   "pos": 30,
-   "form": "leiste Sühne",
-   "lemma": "Sühne leisten",
-   "level": "C1",
-   "en": "make atonement",
-   "es": "haz expiación",
-   "fr": "fais l'expiation",
-   "it": "fa' espiazione",
-   "parts": [
-    30,
-    34
-   ]
   }
  ],
  "8": [
@@ -3607,6 +3607,17 @@
   },
   {
    "pos": 15,
+   "form": "zusätzlich zum",
+   "lemma": "zusätzlich zu",
+   "level": "B1",
+   "en": "in addition to",
+   "es": "además del",
+   "fr": "en plus de l'",
+   "it": "oltre all'",
+   "pos_end": 16
+  },
+  {
+   "pos": 15,
    "form": "zusätzlich",
    "lemma": "zusätzlich",
    "level": "B1",
@@ -3634,17 +3645,6 @@
    "es": "holocausto de la mañana",
    "fr": "holocauste du matin",
    "it": "olocausto del mattino"
-  },
-  {
-   "pos": 15,
-   "form": "zusätzlich zum",
-   "lemma": "zusätzlich zu",
-   "level": "B1",
-   "en": "in addition to",
-   "es": "además del",
-   "fr": "en plus de l'",
-   "it": "oltre all'",
-   "pos_end": 16
   }
  ],
  "18": [
@@ -4618,6 +4618,20 @@
   },
   {
    "pos": 11,
+   "form": "stieg herab",
+   "lemma": "herabsteigen",
+   "level": "B1",
+   "en": "came down",
+   "es": "bajó",
+   "fr": "descendit",
+   "it": "scese",
+   "parts": [
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
    "form": "stieg",
    "lemma": "steigen",
    "level": "A2",
@@ -4755,20 +4769,6 @@
    "es": "había",
    "fr": "avait",
    "it": "aveva"
-  },
-  {
-   "pos": 11,
-   "form": "stieg herab",
-   "lemma": "herabsteigen",
-   "level": "B1",
-   "en": "came down",
-   "es": "bajó",
-   "fr": "descendit",
-   "it": "scese",
-   "parts": [
-    11,
-    13
-   ]
   }
  ],
  "23": [
@@ -5036,6 +5036,20 @@
   },
   {
    "pos": 2,
+   "form": "ging aus",
+   "lemma": "ausgehen",
+   "level": "B1",
+   "en": "went out",
+   "es": "salió",
+   "fr": "sortit",
+   "it": "uscì",
+   "parts": [
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 2,
    "form": "ging",
    "lemma": "gehen",
    "level": "A1",
@@ -5266,6 +5280,17 @@
   },
   {
    "pos": 25,
+   "form": "fielen auf ihr Angesicht",
+   "lemma": "auf das Angesicht fallen",
+   "level": "B2",
+   "en": "fell on their faces",
+   "es": "se postraron sobre su rostro",
+   "fr": "se prosternèrent la face contre terre",
+   "it": "si prostrarono con la faccia a terra",
+   "pos_end": 28
+  },
+  {
+   "pos": 25,
    "form": "fielen",
    "lemma": "fallen",
    "level": "A1",
@@ -5303,31 +5328,6 @@
    "es": "rostro",
    "fr": "face",
    "it": "volto"
-  },
-  {
-   "pos": 2,
-   "form": "ging aus",
-   "lemma": "ausgehen",
-   "level": "B1",
-   "en": "went out",
-   "es": "salió",
-   "fr": "sortit",
-   "it": "uscì",
-   "parts": [
-    2,
-    5
-   ]
-  },
-  {
-   "pos": 25,
-   "form": "fielen auf ihr Angesicht",
-   "lemma": "auf das Angesicht fallen",
-   "level": "B2",
-   "en": "fell on their faces",
-   "es": "se postraron sobre su rostro",
-   "fr": "se prosternèrent la face contre terre",
-   "it": "si prostrarono con la faccia a terra",
-   "pos_end": 28
   }
  ]
 }

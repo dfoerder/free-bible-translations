@@ -4078,6 +4078,17 @@
  "24": [
   {
    "pos": 0,
+   "form": "Auf diese Weise",
+   "lemma": "auf diese Weise",
+   "level": "B1",
+   "en": "In this way",
+   "es": "De esta manera",
+   "fr": "De cette manière",
+   "it": "In questo modo",
+   "pos_end": 2
+  },
+  {
+   "pos": 0,
    "form": "Auf",
    "lemma": "auf",
    "level": "A1",
@@ -4105,17 +4116,6 @@
    "es": "manera",
    "fr": "manière",
    "it": "modo"
-  },
-  {
-   "pos": 0,
-   "pos_end": 2,
-   "form": "Auf diese Weise",
-   "lemma": "auf diese Weise",
-   "level": "B1",
-   "en": "In this way",
-   "es": "De esta manera",
-   "fr": "De cette manière",
-   "it": "In questo modo"
   },
   {
    "pos": 3,
@@ -5381,24 +5381,24 @@
   },
   {
    "pos": 3,
-   "form": "um",
-   "lemma": "um",
-   "level": "A1",
-   "en": "in order",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    5
-   ],
    "form": "um zu",
    "lemma": "um zu",
    "level": "A2",
    "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    3,
+    5
+   ]
+  },
+  {
+   "pos": 3,
+   "form": "um",
+   "lemma": "um",
+   "level": "A1",
+   "en": "in order",
    "es": "para",
    "fr": "pour",
    "it": "per"

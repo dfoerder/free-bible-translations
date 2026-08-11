@@ -1974,7 +1974,7 @@
    "pos": 11,
    "form": "damit",
    "lemma": "damit",
-   "level": "A2",
+   "level": "B1",
    "en": "so that",
    "es": "para que",
    "fr": "afin que",
@@ -2348,7 +2348,7 @@
    "pos": 0,
    "form": "dazu",
    "lemma": "dazu",
-   "level": "A2",
+   "level": "B1",
    "en": "in addition",
    "es": "además",
    "fr": "en outre",
@@ -2950,6 +2950,20 @@
   },
   {
    "pos": 3,
+   "form": "vom an",
+   "lemma": "von ... an",
+   "level": "B1",
+   "en": "starting from",
+   "es": "a partir de",
+   "fr": "à partir de",
+   "it": "a partire da",
+   "parts": [
+    3,
+    8
+   ]
+  },
+  {
+   "pos": 3,
    "form": "vom",
    "lemma": "vom",
    "level": "A1",
@@ -3007,20 +3021,6 @@
    "es": "en adelante",
    "fr": "en avant",
    "it": "in poi"
-  },
-  {
-   "pos": 3,
-   "form": "vom an",
-   "lemma": "von ... an",
-   "level": "B1",
-   "en": "starting from",
-   "es": "a partir de",
-   "fr": "à partir de",
-   "it": "a partire da",
-   "parts": [
-    3,
-    8
-   ]
   },
   {
    "pos": 9,
@@ -3894,7 +3894,7 @@
    "pos": 0,
    "form": "Dazu",
    "lemma": "dazu",
-   "level": "A2",
+   "level": "B1",
    "en": "In addition",
    "es": "Además",
    "fr": "En outre",
@@ -5895,6 +5895,20 @@
   },
   {
    "pos": 1,
+   "form": "sich entsagt",
+   "lemma": "sich entsagen",
+   "level": "C1",
+   "en": "denies himself",
+   "es": "se niega a sí mismo",
+   "fr": "se mortifie",
+   "it": "si mortifica",
+   "parts": [
+    1,
+    6
+   ]
+  },
+  {
+   "pos": 1,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -5952,20 +5966,6 @@
    "es": "renuncia",
    "fr": "renonce",
    "it": "rinuncia"
-  },
-  {
-   "pos": 1,
-   "form": "sich entsagt",
-   "lemma": "sich entsagen",
-   "level": "C1",
-   "en": "denies himself",
-   "es": "se niega a sí mismo",
-   "fr": "se mortifie",
-   "it": "si mortifica",
-   "parts": [
-    1,
-    6
-   ]
   },
   {
    "pos": 7,
@@ -9050,7 +9050,7 @@
    "pos": 0,
    "form": "damit",
    "lemma": "damit",
-   "level": "A2",
+   "level": "B1",
    "en": "so that",
    "es": "para que",
    "fr": "afin que",

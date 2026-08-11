@@ -1200,21 +1200,6 @@
  ],
  "5": [
   {
-   "pos": 1,
-   "parts": [
-    1,
-    3,
-    4
-   ],
-   "form": "wandte mich um",
-   "lemma": "sich umwenden",
-   "level": "B2",
-   "en": "turned around",
-   "es": "me volví",
-   "fr": "me retournai",
-   "it": "mi voltai"
-  },
-  {
    "pos": 0,
    "form": "Dann",
    "lemma": "dann",
@@ -1223,6 +1208,21 @@
    "es": "Entonces",
    "fr": "Alors",
    "it": "Allora"
+  },
+  {
+   "pos": 1,
+   "parts": [
+    1,
+    3,
+    4
+   ],
+   "form": "wandte mich um",
+   "lemma": "sich umwenden",
+   "level": "B1",
+   "en": "turned around",
+   "es": "me volví",
+   "fr": "me retournai",
+   "it": "mi voltai"
   },
   {
    "pos": 1,
@@ -1507,17 +1507,6 @@
  ],
  "6": [
   {
-   "pos": 19,
-   "pos_end": 21,
-   "form": "an seiner Stelle",
-   "lemma": "an seiner Stelle",
-   "level": "B1",
-   "en": "in his place",
-   "es": "en su lugar",
-   "fr": "à sa place",
-   "it": "al suo posto"
-  },
-  {
    "pos": 0,
    "form": "Die",
    "lemma": "der",
@@ -1706,6 +1695,17 @@
    "es": "llegó a ser",
    "fr": "devint",
    "it": "divenne"
+  },
+  {
+   "pos": 19,
+   "pos_end": 21,
+   "form": "an seiner Stelle",
+   "lemma": "an seiner Stelle",
+   "level": "B1",
+   "en": "in his place",
+   "es": "en su lugar",
+   "fr": "à sa place",
+   "it": "al suo posto"
   },
   {
    "pos": 19,
@@ -1912,31 +1912,6 @@
  ],
  "8": [
   {
-   "pos": 3,
-   "parts": [
-    3,
-    9
-   ],
-   "form": "sonderte aus",
-   "lemma": "aussondern",
-   "level": "B2",
-   "en": "set apart",
-   "es": "apartó",
-   "fr": "mit à part",
-   "it": "separò"
-  },
-  {
-   "pos": 30,
-   "pos_end": 33,
-   "form": "bis zum heutigen Tag",
-   "lemma": "bis zum heutigen Tag",
-   "level": "B1",
-   "en": "to this day",
-   "es": "hasta el día de hoy",
-   "fr": "jusqu'à ce jour",
-   "it": "fino ad oggi"
-  },
-  {
    "pos": 0,
    "form": "Zur",
    "lemma": "zur",
@@ -1965,6 +1940,20 @@
    "es": "tiempo",
    "fr": "temps",
    "it": "tempo"
+  },
+  {
+   "pos": 3,
+   "parts": [
+    3,
+    9
+   ],
+   "form": "sonderte aus",
+   "lemma": "aussondern",
+   "level": "B2",
+   "en": "set apart",
+   "es": "apartó",
+   "fr": "mit à part",
+   "it": "separò"
   },
   {
    "pos": 3,
@@ -2235,6 +2224,17 @@
    "es": "pronunciar",
    "fr": "prononcer",
    "it": "pronunciare"
+  },
+  {
+   "pos": 30,
+   "pos_end": 33,
+   "form": "bis zum heutigen Tag",
+   "lemma": "bis zum heutigen Tag",
+   "level": "B1",
+   "en": "to this day",
+   "es": "hasta el día de hoy",
+   "fr": "jusqu'à ce jour",
+   "it": "fino ad oggi"
   },
   {
    "pos": 30,
@@ -2823,31 +2823,6 @@
  ],
  "11": [
   {
-   "pos": 4,
-   "pos_end": 6,
-   "form": "Mach dich auf",
-   "lemma": "sich aufmachen",
-   "level": "B2",
-   "en": "Set out",
-   "es": "Ponte en marcha",
-   "fr": "Mets-toi en route",
-   "it": "Mettiti in cammino"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    12
-   ],
-   "form": "vor her",
-   "lemma": "vor jemandem her",
-   "level": "B2",
-   "en": "ahead of",
-   "es": "delante de",
-   "fr": "devant",
-   "it": "davanti a"
-  },
-  {
    "pos": 0,
    "form": "Er",
    "lemma": "er",
@@ -2886,6 +2861,17 @@
    "es": "mí",
    "fr": "moi",
    "it": "me"
+  },
+  {
+   "pos": 4,
+   "pos_end": 6,
+   "form": "Mach dich auf",
+   "lemma": "sich aufmachen",
+   "level": "B2",
+   "en": "Set out",
+   "es": "Ponte en marcha",
+   "fr": "Mets-toi en route",
+   "it": "Mettiti in cammino"
   },
   {
    "pos": 4,
@@ -2936,6 +2922,20 @@
    "es": "ve",
    "fr": "va",
    "it": "va'"
+  },
+  {
+   "pos": 9,
+   "parts": [
+    9,
+    12
+   ],
+   "form": "vor her",
+   "lemma": "vor jemandem her",
+   "level": "B2",
+   "en": "ahead of",
+   "es": "delante de",
+   "fr": "devant",
+   "it": "davanti a"
   },
   {
    "pos": 9,
@@ -3139,28 +3139,6 @@
   }
  ],
  "12": [
-  {
-   "pos": 31,
-   "pos_end": 33,
-   "form": "von ganzem Herzen",
-   "lemma": "von ganzem Herzen",
-   "level": "B1",
-   "en": "with all your heart",
-   "es": "con todo tu corazón",
-   "fr": "de tout ton cœur",
-   "it": "con tutto il tuo cuore"
-  },
-  {
-   "pos": 35,
-   "pos_end": 36,
-   "form": "ganzer Seele",
-   "lemma": "von ganzer Seele",
-   "level": "B2",
-   "en": "with all your soul",
-   "es": "con toda tu alma",
-   "fr": "de toute ton âme",
-   "it": "con tutta la tua anima"
-  },
   {
    "pos": 0,
    "form": "Nun",
@@ -3473,6 +3451,17 @@
   },
   {
    "pos": 31,
+   "pos_end": 33,
+   "form": "von ganzem Herzen",
+   "lemma": "von ganzem Herzen",
+   "level": "B1",
+   "en": "with all your heart",
+   "es": "con todo tu corazón",
+   "fr": "de tout ton cœur",
+   "it": "con tutto il tuo cuore"
+  },
+  {
+   "pos": 31,
    "form": "von",
    "lemma": "von",
    "level": "A1",
@@ -3513,6 +3502,17 @@
   },
   {
    "pos": 35,
+   "pos_end": 36,
+   "form": "ganzer Seele",
+   "lemma": "von ganzer Seele",
+   "level": "B2",
+   "en": "with all your soul",
+   "es": "con toda tu alma",
+   "fr": "de toute ton âme",
+   "it": "con tutta la tua anima"
+  },
+  {
+   "pos": 35,
    "form": "ganzer",
    "lemma": "ganz",
    "level": "A2",
@@ -3543,17 +3543,6 @@
   }
  ],
  "13": [
-  {
-   "pos": 16,
-   "pos_end": 19,
-   "form": "es dir gut geht",
-   "lemma": "es geht gut",
-   "level": "A2",
-   "en": "it may go well with you",
-   "es": "te vaya bien",
-   "fr": "tu sois heureux",
-   "it": "tu sia felice"
-  },
   {
    "pos": 0,
    "form": "dass",
@@ -3713,6 +3702,17 @@
    "es": "para que",
    "fr": "afin que",
    "it": "affinché"
+  },
+  {
+   "pos": 16,
+   "pos_end": 19,
+   "form": "es dir gut geht",
+   "lemma": "es geht gut",
+   "level": "A2",
+   "en": "it may go well with you",
+   "es": "te vaya bien",
+   "fr": "tu sois heureux",
+   "it": "tu sia felice"
   },
   {
    "pos": 16,
@@ -3969,6 +3969,16 @@
  ],
  "15": [
   {
+   "pos": 0,
+   "form": "Trotzdem",
+   "lemma": "trotzdem",
+   "level": "B1",
+   "en": "Nevertheless",
+   "es": "Aun así",
+   "fr": "Malgré tout",
+   "it": "Ciò nonostante"
+  },
+  {
    "pos": 1,
    "parts": [
     1,
@@ -3981,27 +3991,6 @@
    "es": "se complació",
    "fr": "prit plaisir",
    "it": "si compiacque"
-  },
-  {
-   "pos": 24,
-   "pos_end": 26,
-   "form": "der Fall ist",
-   "lemma": "der Fall sein",
-   "level": "B1",
-   "en": "is the case",
-   "es": "es el caso",
-   "fr": "est le cas",
-   "it": "è il caso"
-  },
-  {
-   "pos": 0,
-   "form": "Trotzdem",
-   "lemma": "trotzdem",
-   "level": "B1",
-   "en": "Nevertheless",
-   "es": "Aun así",
-   "fr": "Malgré tout",
-   "it": "Ciò nonostante"
   },
   {
    "pos": 1,
@@ -4235,6 +4224,17 @@
   },
   {
    "pos": 24,
+   "pos_end": 26,
+   "form": "der Fall ist",
+   "lemma": "der Fall sein",
+   "level": "B1",
+   "en": "is the case",
+   "es": "es el caso",
+   "fr": "est le cas",
+   "it": "è il caso"
+  },
+  {
+   "pos": 24,
    "form": "der",
    "lemma": "der",
    "level": "A1",
@@ -4265,17 +4265,6 @@
   }
  ],
  "16": [
-  {
-   "pos": 7,
-   "pos_end": 8,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più"
-  },
   {
    "pos": 0,
    "form": "So",
@@ -4345,6 +4334,17 @@
    "es": "seáis",
    "fr": "soyez",
    "it": "siate"
+  },
+  {
+   "pos": 7,
+   "pos_end": 8,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più"
   },
   {
    "pos": 7,
@@ -4671,17 +4671,6 @@
  ],
  "18": [
   {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "Recht schafft",
-   "lemma": "Recht schaffen",
-   "level": "B2",
-   "en": "renders justice",
-   "es": "hace justicia",
-   "fr": "rend justice",
-   "it": "rende giustizia"
-  },
-  {
    "pos": 0,
    "form": "der",
    "lemma": "der",
@@ -4730,6 +4719,17 @@
    "es": "viudas",
    "fr": "veuves",
    "it": "vedove"
+  },
+  {
+   "pos": 5,
+   "pos_end": 6,
+   "form": "Recht schafft",
+   "lemma": "Recht schaffen",
+   "level": "B2",
+   "en": "renders justice",
+   "es": "hace justicia",
+   "fr": "rend justice",
+   "it": "rende giustizia"
   },
   {
    "pos": 5,
@@ -5460,20 +5460,6 @@
  ],
  "22": [
   {
-   "pos": 2,
-   "parts": [
-    2,
-    8
-   ],
-   "form": "zogen hinab",
-   "lemma": "hinabziehen",
-   "level": "B2",
-   "en": "went down",
-   "es": "bajaron",
-   "fr": "descendirent",
-   "it": "scesero"
-  },
-  {
    "pos": 0,
    "form": "Deine",
    "lemma": "dein",
@@ -5492,6 +5478,20 @@
    "es": "padres",
    "fr": "pères",
    "it": "padri"
+  },
+  {
+   "pos": 2,
+   "parts": [
+    2,
+    8
+   ],
+   "form": "zogen hinab",
+   "lemma": "hinabziehen",
+   "level": "B2",
+   "en": "went down",
+   "es": "bajaron",
+   "fr": "descendirent",
+   "it": "scesero"
   },
   {
    "pos": 2,

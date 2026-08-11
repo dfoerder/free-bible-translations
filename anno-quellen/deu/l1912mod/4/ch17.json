@@ -466,6 +466,20 @@
   },
   {
    "pos": 19,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    19,
+    23
+   ]
+  },
+  {
+   "pos": 19,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -693,20 +707,6 @@
    "es": "servir",
    "fr": "servir",
    "it": "servire"
-  },
-  {
-   "pos": 19,
-   "parts": [
-    19,
-    23
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
   }
  ],
  "4": [
@@ -882,6 +882,20 @@
   },
   {
    "pos": 17,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    17,
+    21
+   ]
+  },
+  {
+   "pos": 17,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -939,20 +953,6 @@
    "es": "recubrir",
    "fr": "recouvrir",
    "it": "ricoprire"
-  },
-  {
-   "pos": 17,
-   "parts": [
-    17,
-    21
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
   }
  ],
  "5": [
@@ -1025,6 +1025,20 @@
    "es": "para que",
    "fr": "afin que",
    "it": "affinché"
+  },
+  {
+   "pos": 7,
+   "form": "sich nähert",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approaches",
+   "es": "se acerca",
+   "fr": "s'approche",
+   "it": "si avvicina",
+   "parts": [
+    7,
+    19
+   ]
   },
   {
    "pos": 7,
@@ -1155,6 +1169,20 @@
    "es": "acerca",
    "fr": "approche",
    "it": "avvicina"
+  },
+  {
+   "pos": 20,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    20,
+    22
+   ]
   },
   {
    "pos": 20,
@@ -1385,34 +1413,6 @@
    "es": "ordenado",
    "fr": "ordonné",
    "it": "ordinato"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    19
-   ],
-   "form": "sich nähert",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approaches",
-   "es": "se acerca",
-   "fr": "s'approche",
-   "it": "si avvicina"
-  },
-  {
-   "pos": 20,
-   "parts": [
-    20,
-    22
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
   }
  ],
  "6": [
@@ -1670,6 +1670,20 @@
   },
   {
    "pos": 1,
+   "form": "sich versammelte",
+   "lemma": "sich versammeln",
+   "level": "B1",
+   "en": "gathered",
+   "es": "se reunió",
+   "fr": "se rassembla",
+   "it": "si radunò",
+   "parts": [
+    1,
+    8
+   ]
+  },
+  {
+   "pos": 1,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1747,6 +1761,17 @@
    "es": "reunió",
    "fr": "rassembla",
    "it": "radunò"
+  },
+  {
+   "pos": 9,
+   "form": "wandten sich",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turned",
+   "es": "se volvieron",
+   "fr": "se tournèrent",
+   "it": "si volsero",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -1917,31 +1942,6 @@
    "es": "apareció",
    "fr": "apparut",
    "it": "apparve"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    8
-   ],
-   "form": "sich versammelte",
-   "lemma": "sich versammeln",
-   "level": "B1",
-   "en": "gathered",
-   "es": "se reunió",
-   "fr": "se rassembla",
-   "it": "si radunò"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "wandten sich",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turned",
-   "es": "se volvieron",
-   "fr": "se tournèrent",
-   "it": "si volsero"
   }
  ],
  "8": [
@@ -2091,6 +2091,17 @@
  "10": [
   {
    "pos": 0,
+   "form": "Entfernt euch",
+   "lemma": "sich entfernen",
+   "level": "B1",
+   "en": "Get away",
+   "es": "Apartaos",
+   "fr": "Éloignez-vous",
+   "it": "Allontanatevi",
+   "pos_end": 1
+  },
+  {
+   "pos": 0,
    "form": "Entfernt",
    "lemma": "entfernen",
    "level": "B1",
@@ -2201,6 +2212,20 @@
   },
   {
    "pos": 11,
+   "form": "fielen nieder",
+   "lemma": "niederfallen",
+   "level": "B2",
+   "en": "fell down",
+   "es": "se postraron",
+   "fr": "se prosternèrent",
+   "it": "si prostrarono",
+   "parts": [
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
    "form": "fielen",
    "lemma": "fallen",
    "level": "A1",
@@ -2228,31 +2253,6 @@
    "es": "abajo",
    "fr": "à terre",
    "it": "giù"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Entfernt euch",
-   "lemma": "sich entfernen",
-   "level": "B1",
-   "en": "Get away",
-   "es": "Apartaos",
-   "fr": "Éloignez-vous",
-   "it": "Allontanatevi"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    13
-   ],
-   "form": "fielen nieder",
-   "lemma": "niederfallen",
-   "level": "B2",
-   "en": "fell down",
-   "es": "se postraron",
-   "fr": "se prosternèrent",
-   "it": "si prostrarono"
   }
  ],
  "11": [
@@ -2325,6 +2325,20 @@
    "es": "sartén",
    "fr": "poêle",
    "it": "padella"
+  },
+  {
+   "pos": 7,
+   "form": "lege hinein",
+   "lemma": "hineinlegen",
+   "level": "B2",
+   "en": "put in",
+   "es": "pon dentro",
+   "fr": "mets dedans",
+   "it": "metti dentro",
+   "parts": [
+    7,
+    11
+   ]
   },
   {
    "pos": 7,
@@ -2615,20 +2629,6 @@
    "es": "comenzado",
    "fr": "commencé",
    "it": "cominciato"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    11
-   ],
-   "form": "lege hinein",
-   "lemma": "hineinlegen",
-   "level": "B2",
-   "en": "put in",
-   "es": "pon dentro",
-   "fr": "mets dedans",
-   "it": "metti dentro"
   }
  ],
  "12": [
@@ -2721,6 +2721,17 @@
    "es": "corrió",
    "fr": "courut",
    "it": "corse"
+  },
+  {
+   "pos": 9,
+   "form": "mitten unter",
+   "lemma": "mitten unter",
+   "level": "B1",
+   "en": "in the midst of",
+   "es": "en medio de",
+   "fr": "au milieu de",
+   "it": "in mezzo a",
+   "pos_end": 10
   },
   {
    "pos": 9,
@@ -2921,17 +2932,6 @@
    "es": "pueblo",
    "fr": "peuple",
    "it": "popolo"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "mitten unter",
-   "lemma": "mitten unter",
-   "level": "B1",
-   "en": "in the midst of",
-   "es": "en medio de",
-   "fr": "au milieu de",
-   "it": "in mezzo a"
   }
  ],
  "13": [
@@ -2944,6 +2944,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 1,
+   "form": "stellte sich",
+   "lemma": "sich stellen",
+   "level": "B1",
+   "en": "took his place",
+   "es": "se puso",
+   "fr": "se plaça",
+   "it": "si mise",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -3074,17 +3085,6 @@
    "es": "detenida",
    "fr": "arrêtée",
    "it": "fermata"
-  },
-  {
-   "pos": 1,
-   "pos_end": 2,
-   "form": "stellte sich",
-   "lemma": "sich stellen",
-   "level": "B1",
-   "en": "took his place",
-   "es": "se puso",
-   "fr": "se plaça",
-   "it": "si mise"
   }
  ],
  "14": [
@@ -3252,6 +3252,20 @@
   },
   {
    "pos": 1,
+   "form": "kam zurück",
+   "lemma": "zurückkommen",
+   "level": "A2",
+   "en": "came back",
+   "es": "volvió",
+   "fr": "revint",
+   "it": "tornò",
+   "parts": [
+    1,
+    10
+   ]
+  },
+  {
+   "pos": 1,
    "form": "kam",
    "lemma": "kommen",
    "level": "A1",
@@ -3399,20 +3413,6 @@
    "es": "detenida",
    "fr": "arrêtée",
    "it": "fermata"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    10
-   ],
-   "form": "kam zurück",
-   "lemma": "zurückkommen",
-   "level": "A2",
-   "en": "came back",
-   "es": "volvió",
-   "fr": "revint",
-   "it": "tornò"
   }
  ],
  "16": [
@@ -3690,6 +3690,17 @@
   },
   {
    "pos": 20,
+   "form": "jedes Einzelnen",
+   "lemma": "jeder Einzelne",
+   "level": "B2",
+   "en": "of each one",
+   "es": "de cada uno",
+   "fr": "de chacun",
+   "it": "di ciascuno",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "jedes",
    "lemma": "jeder",
    "level": "A1",
@@ -3737,17 +3748,6 @@
    "es": "bastón",
    "fr": "bâton",
    "it": "bastone"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "jedes Einzelnen",
-   "lemma": "jeder Einzelne",
-   "level": "B2",
-   "en": "of each one",
-   "es": "de cada uno",
-   "fr": "de chacun",
-   "it": "di ciascuno"
   }
  ],
  "18": [
@@ -3933,6 +3933,20 @@
   },
   {
    "pos": 18,
+   "form": "es geben",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "there be",
+   "es": "haber",
+   "fr": "y avoir",
+   "it": "esserci",
+   "parts": [
+    18,
+    21
+   ]
+  },
+  {
+   "pos": 18,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -3970,20 +3984,6 @@
    "es": "haber",
    "fr": "avoir",
    "it": "essere"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    21
-   ],
-   "form": "es geben",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "there be",
-   "es": "haber",
-   "fr": "y avoir",
-   "it": "esserci"
   }
  ],
  "19": [
@@ -4291,6 +4291,17 @@
   },
   {
    "pos": 17,
+   "form": "zum Schweigen bringen",
+   "lemma": "zum Schweigen bringen",
+   "level": "B2",
+   "en": "silence",
+   "es": "hacer callar",
+   "fr": "faire taire",
+   "it": "far tacere",
+   "pos_end": 19
+  },
+  {
+   "pos": 17,
    "form": "zum",
    "lemma": "zum",
    "level": "A1",
@@ -4318,17 +4329,6 @@
    "es": "traer",
    "fr": "apporter",
    "it": "portare"
-  },
-  {
-   "pos": 17,
-   "pos_end": 19,
-   "form": "zum Schweigen bringen",
-   "lemma": "zum Schweigen bringen",
-   "level": "B2",
-   "en": "silence",
-   "es": "hacer callar",
-   "fr": "faire taire",
-   "it": "far tacere"
   }
  ],
  "21": [
@@ -5060,6 +5060,20 @@
   },
   {
    "pos": 1,
+   "form": "trug heraus",
+   "lemma": "heraustragen",
+   "level": "B2",
+   "en": "carried out",
+   "es": "sacó",
+   "fr": "porta dehors",
+   "it": "portò fuori",
+   "parts": [
+    1,
+    6
+   ]
+  },
+  {
+   "pos": 1,
    "form": "trug",
    "lemma": "tragen",
    "level": "A2",
@@ -5220,6 +5234,20 @@
   },
   {
    "pos": 17,
+   "form": "nahm zurück",
+   "lemma": "zurücknehmen",
+   "level": "B1",
+   "en": "took back",
+   "es": "recuperó",
+   "fr": "reprit",
+   "it": "riprese",
+   "parts": [
+    17,
+    20
+   ]
+  },
+  {
+   "pos": 17,
    "form": "nahm",
    "lemma": "nehmen",
    "level": "A1",
@@ -5257,34 +5285,6 @@
    "es": "atrás",
    "fr": "en arrière",
    "it": "indietro"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    6
-   ],
-   "form": "trug heraus",
-   "lemma": "heraustragen",
-   "level": "B2",
-   "en": "carried out",
-   "es": "sacó",
-   "fr": "porta dehors",
-   "it": "portò fuori"
-  },
-  {
-   "pos": 17,
-   "parts": [
-    17,
-    20
-   ],
-   "form": "nahm zurück",
-   "lemma": "zurücknehmen",
-   "level": "B1",
-   "en": "took back",
-   "es": "recuperó",
-   "fr": "reprit",
-   "it": "riprese"
   }
  ],
  "25": [
@@ -5804,6 +5804,17 @@
   },
   {
    "pos": 8,
+   "form": "gehen zugrunde",
+   "lemma": "zugrunde gehen",
+   "level": "B2",
+   "en": "are perishing",
+   "es": "perecemos",
+   "fr": "périssons",
+   "it": "periamo",
+   "pos_end": 9
+  },
+  {
+   "pos": 8,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -5831,6 +5842,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 11,
+   "form": "kommen um",
+   "lemma": "umkommen",
+   "level": "B2",
+   "en": "are dying",
+   "es": "morimos",
+   "fr": "mourons",
+   "it": "moriamo",
+   "pos_end": 12
   },
   {
    "pos": 11,
@@ -5904,6 +5926,17 @@
   },
   {
    "pos": 18,
+   "form": "kommen um",
+   "lemma": "umkommen",
+   "level": "B2",
+   "en": "are dying",
+   "es": "morimos",
+   "fr": "mourons",
+   "it": "moriamo",
+   "pos_end": 19
+  },
+  {
+   "pos": 18,
    "form": "kommen",
    "lemma": "kommen",
    "level": "A1",
@@ -5921,39 +5954,6 @@
    "es": "a la muerte",
    "fr": "à la mort",
    "it": "a morte"
-  },
-  {
-   "pos": 8,
-   "pos_end": 9,
-   "form": "gehen zugrunde",
-   "lemma": "zugrunde gehen",
-   "level": "B2",
-   "en": "are perishing",
-   "es": "perecemos",
-   "fr": "périssons",
-   "it": "periamo"
-  },
-  {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "kommen um",
-   "lemma": "umkommen",
-   "level": "B2",
-   "en": "are dying",
-   "es": "morimos",
-   "fr": "mourons",
-   "it": "moriamo"
-  },
-  {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "kommen um",
-   "lemma": "umkommen",
-   "level": "B2",
-   "en": "are dying",
-   "es": "morimos",
-   "fr": "mourons",
-   "it": "moriamo"
   }
  ],
  "28": [
@@ -5966,6 +5966,20 @@
    "es": "El que",
    "fr": "Celui qui",
    "it": "Chi"
+  },
+  {
+   "pos": 1,
+   "form": "sich nähert",
+   "lemma": "sich nähern",
+   "level": "B1",
+   "en": "approaches",
+   "es": "se acerca",
+   "fr": "s'approche",
+   "it": "si avvicina",
+   "parts": [
+    1,
+    6
+   ]
   },
   {
    "pos": 1,
@@ -6086,20 +6100,6 @@
    "es": "perecer",
    "fr": "périr",
    "it": "perire"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    6
-   ],
-   "form": "sich nähert",
-   "lemma": "sich nähern",
-   "level": "B1",
-   "en": "approaches",
-   "es": "se acerca",
-   "fr": "s'approche",
-   "it": "si avvicina"
   }
  ]
 }

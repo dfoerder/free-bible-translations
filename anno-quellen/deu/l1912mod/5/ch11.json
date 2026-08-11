@@ -1,17 +1,6 @@
 {
  "1": [
   {
-   "pos": 17,
-   "form": "dein Leben lang",
-   "lemma": "sein Leben lang",
-   "level": "B1",
-   "en": "all your life",
-   "es": "toda tu vida",
-   "fr": "toute ta vie",
-   "it": "tutta la tua vita",
-   "pos_end": 19
-  },
-  {
    "pos": 0,
    "form": "So",
    "lemma": "so",
@@ -180,6 +169,17 @@
    "es": "derechos",
    "fr": "droits",
    "it": "diritti"
+  },
+  {
+   "pos": 17,
+   "form": "dein Leben lang",
+   "lemma": "sein Leben lang",
+   "level": "B1",
+   "en": "all your life",
+   "es": "toda tu vida",
+   "fr": "toute ta vie",
+   "it": "tutta la tua vita",
+   "pos_end": 19
   },
   {
    "pos": 17,
@@ -728,20 +728,6 @@
  ],
  "4": [
   {
-   "pos": 16,
-   "form": "ließ kommen",
-   "lemma": "kommen lassen",
-   "level": "B1",
-   "en": "made come",
-   "es": "hizo venir",
-   "fr": "fit venir",
-   "it": "fece venire",
-   "parts": [
-    16,
-    23
-   ]
-  },
-  {
    "pos": 0,
    "form": "Erkennt",
    "lemma": "erkennen",
@@ -900,6 +886,20 @@
    "es": "Él",
    "fr": "Il",
    "it": "Egli"
+  },
+  {
+   "pos": 16,
+   "form": "ließ kommen",
+   "lemma": "kommen lassen",
+   "level": "B1",
+   "en": "made come",
+   "es": "hizo venir",
+   "fr": "fit venir",
+   "it": "fece venire",
+   "parts": [
+    16,
+    23
+   ]
   },
   {
    "pos": 16,
@@ -1266,17 +1266,6 @@
  ],
  "6": [
   {
-   "pos": 31,
-   "form": "mitten unter",
-   "lemma": "mitten unter",
-   "level": "B1",
-   "en": "in the midst of",
-   "es": "en medio de",
-   "fr": "au milieu de",
-   "it": "in mezzo a",
-   "pos_end": 32
-  },
-  {
    "pos": 0,
    "form": "und",
    "lemma": "und",
@@ -1470,7 +1459,7 @@
    "pos": 19,
    "form": "auftat",
    "lemma": "auftun",
-   "level": "B2",
+   "level": "C1",
    "en": "opened",
    "es": "abrió",
    "fr": "ouvrit",
@@ -1585,6 +1574,17 @@
    "es": "bienes",
    "fr": "biens",
    "it": "beni"
+  },
+  {
+   "pos": 31,
+   "form": "mitten unter",
+   "lemma": "mitten unter",
+   "level": "B1",
+   "en": "in the midst of",
+   "es": "en medio de",
+   "fr": "au milieu de",
+   "it": "in mezzo a",
+   "pos_end": 32
   },
   {
    "pos": 31,
@@ -2759,46 +2759,6 @@
  ],
  "12": [
   {
-   "pos": 2,
-   "form": "um sich sorgt",
-   "lemma": "sich sorgen um",
-   "level": "B1",
-   "en": "cares for",
-   "es": "cuida de",
-   "fr": "prend soin de",
-   "it": "si prende cura di",
-   "parts": [
-    2,
-    4,
-    9
-   ]
-  },
-  {
-   "pos": 10,
-   "form": "auf sehen",
-   "lemma": "sehen auf",
-   "level": "B1",
-   "en": "watch over",
-   "es": "velan por",
-   "fr": "veillent sur",
-   "it": "vegliano su",
-   "parts": [
-    10,
-    19
-   ]
-  },
-  {
-   "pos": 24,
-   "form": "bis an",
-   "lemma": "bis an",
-   "level": "A2",
-   "en": "to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a",
-   "pos_end": 25
-  },
-  {
    "pos": 0,
    "form": "ein",
    "lemma": "ein",
@@ -2817,6 +2777,21 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
+  },
+  {
+   "pos": 2,
+   "form": "um sich sorgt",
+   "lemma": "sich sorgen um",
+   "level": "B1",
+   "en": "cares for",
+   "es": "cuida de",
+   "fr": "prend soin de",
+   "it": "si prende cura di",
+   "parts": [
+    2,
+    4,
+    9
+   ]
   },
   {
    "pos": 2,
@@ -2897,6 +2872,20 @@
    "es": "preocupa",
    "fr": "soucie",
    "it": "preoccupa"
+  },
+  {
+   "pos": 10,
+   "form": "auf sehen",
+   "lemma": "sehen auf",
+   "level": "B1",
+   "en": "watch over",
+   "es": "velan por",
+   "fr": "veillent sur",
+   "it": "vegliano su",
+   "parts": [
+    10,
+    19
+   ]
   },
   {
    "pos": 10,
@@ -3040,6 +3029,17 @@
   },
   {
    "pos": 24,
+   "form": "bis an",
+   "lemma": "bis an",
+   "level": "A2",
+   "en": "to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 25
+  },
+  {
+   "pos": 24,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -3081,46 +3081,6 @@
  ],
  "13": [
   {
-   "pos": 3,
-   "form": "auf hört",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listen to",
-   "es": "escucháis",
-   "fr": "écoutez",
-   "it": "ascoltate",
-   "parts": [
-    3,
-    6
-   ]
-  },
-  {
-   "pos": 19,
-   "form": "von ganzem Herzen",
-   "lemma": "von ganzem Herzen",
-   "level": "B1",
-   "en": "with all your heart",
-   "es": "con todo vuestro corazón",
-   "fr": "de tout votre cœur",
-   "it": "con tutto il vostro cuore",
-   "pos_end": 21
-  },
-  {
-   "pos": 19,
-   "form": "von ganzer Seele",
-   "lemma": "von ganzer Seele",
-   "level": "B2",
-   "en": "with all your soul",
-   "es": "con toda vuestra alma",
-   "fr": "de toute votre âme",
-   "it": "con tutta la vostra anima",
-   "parts": [
-    19,
-    23,
-    24
-   ]
-  },
-  {
    "pos": 0,
    "form": "Wenn",
    "lemma": "wenn",
@@ -3149,6 +3109,20 @@
    "es": "ahora",
    "fr": "maintenant",
    "it": "ora"
+  },
+  {
+   "pos": 3,
+   "form": "auf hört",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listen to",
+   "es": "escucháis",
+   "fr": "écoutez",
+   "it": "ascoltate",
+   "parts": [
+    3,
+    6
+   ]
   },
   {
    "pos": 3,
@@ -3312,6 +3286,32 @@
   },
   {
    "pos": 19,
+   "form": "von ganzem Herzen",
+   "lemma": "von ganzem Herzen",
+   "level": "B1",
+   "en": "with all your heart",
+   "es": "con todo vuestro corazón",
+   "fr": "de tout votre cœur",
+   "it": "con tutto il vostro cuore",
+   "pos_end": 21
+  },
+  {
+   "pos": 19,
+   "form": "von ganzer Seele",
+   "lemma": "von ganzer Seele",
+   "level": "B2",
+   "en": "with all your soul",
+   "es": "con toda vuestra alma",
+   "fr": "de toute votre âme",
+   "it": "con tutta la vostra anima",
+   "parts": [
+    19,
+    23,
+    24
+   ]
+  },
+  {
+   "pos": 19,
    "form": "von",
    "lemma": "von",
    "level": "A1",
@@ -3393,17 +3393,6 @@
  ],
  "14": [
   {
-   "pos": 5,
-   "form": "zur rechten Zeit",
-   "lemma": "zur rechten Zeit",
-   "level": "B1",
-   "en": "at the right time",
-   "es": "a su debido tiempo",
-   "fr": "au moment voulu",
-   "it": "a suo tempo",
-   "pos_end": 7
-  },
-  {
    "pos": 0,
    "form": "dann",
    "lemma": "dann",
@@ -3452,6 +3441,17 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
+  },
+  {
+   "pos": 5,
+   "form": "zur rechten Zeit",
+   "lemma": "zur rechten Zeit",
+   "level": "B1",
+   "en": "at the right time",
+   "es": "a su debido tiempo",
+   "fr": "au moment voulu",
+   "it": "a suo tempo",
+   "pos_end": 7
   },
   {
    "pos": 5,
@@ -3646,17 +3646,6 @@
  ],
  "15": [
   {
-   "pos": 14,
-   "form": "satt werdet",
-   "lemma": "satt werden",
-   "level": "B1",
-   "en": "be satisfied",
-   "es": "os saciéis",
-   "fr": "soyez rassasiés",
-   "it": "siate saziati",
-   "pos_end": 15
-  },
-  {
    "pos": 0,
    "form": "Und",
    "lemma": "und",
@@ -3798,6 +3787,17 @@
   },
   {
    "pos": 14,
+   "form": "satt werdet",
+   "lemma": "satt werden",
+   "level": "B1",
+   "en": "be satisfied",
+   "es": "os saciéis",
+   "fr": "soyez rassasiés",
+   "it": "siate saziati",
+   "pos_end": 15
+  },
+  {
+   "pos": 14,
    "form": "satt",
    "lemma": "satt",
    "level": "B1",
@@ -3828,21 +3828,6 @@
    "fr": "Gardez-vous",
    "it": "Guardatevi",
    "pos_end": 1
-  },
-  {
-   "pos": 4,
-   "form": "sich verführen lässt",
-   "lemma": "sich verführen lassen",
-   "level": "B2",
-   "en": "lets itself be led astray",
-   "es": "se deje seducir",
-   "fr": "se laisse entraîner",
-   "it": "si lasci sedurre",
-   "parts": [
-    4,
-    8,
-    9
-   ]
   },
   {
    "pos": 0,
@@ -3883,6 +3868,21 @@
    "es": "que",
    "fr": "que",
    "it": "che"
+  },
+  {
+   "pos": 4,
+   "form": "sich verführen lässt",
+   "lemma": "sich verführen lassen",
+   "level": "B2",
+   "en": "lets itself be led astray",
+   "es": "se deje seducir",
+   "fr": "se laisse entraîner",
+   "it": "si lasci sedurre",
+   "parts": [
+    4,
+    8,
+    9
+   ]
   },
   {
    "pos": 4,
@@ -4036,17 +4036,6 @@
   }
  ],
  "17": [
-  {
-   "pos": 22,
-   "form": "wachsen lässt",
-   "lemma": "wachsen lassen",
-   "level": "B2",
-   "en": "lets grow",
-   "es": "deje crecer",
-   "fr": "laisse pousser",
-   "it": "lasci crescere",
-   "pos_end": 23
-  },
   {
    "pos": 0,
    "form": "Sonst",
@@ -4269,6 +4258,17 @@
   },
   {
    "pos": 22,
+   "form": "wachsen lässt",
+   "lemma": "wachsen lassen",
+   "level": "B2",
+   "en": "lets grow",
+   "es": "deje crecer",
+   "fr": "laisse pousser",
+   "it": "lasci crescere",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "wachsen",
    "lemma": "wachsen",
    "level": "A2",
@@ -4440,6 +4440,16 @@
  ],
  "18": [
   {
+   "pos": 0,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
    "pos": 1,
    "form": "nehmt zu Herzen",
    "lemma": "zu Herzen nehmen",
@@ -4453,16 +4463,6 @@
     4,
     5
    ]
-  },
-  {
-   "pos": 0,
-   "form": "So",
-   "lemma": "so",
-   "level": "A1",
-   "en": "So",
-   "es": "Así",
-   "fr": "Ainsi",
-   "it": "Così"
   },
   {
    "pos": 1,
@@ -4697,17 +4697,6 @@
  ],
  "19": [
   {
-   "pos": 18,
-   "form": "dich hinlegst",
-   "lemma": "sich hinlegen",
-   "level": "A2",
-   "en": "lie down",
-   "es": "te acuestas",
-   "fr": "te couches",
-   "it": "ti corichi",
-   "pos_end": 19
-  },
-  {
    "pos": 0,
    "form": "Lehrt",
    "lemma": "lehren",
@@ -4886,6 +4875,17 @@
    "es": "tú",
    "fr": "tu",
    "it": "tu"
+  },
+  {
+   "pos": 18,
+   "form": "dich hinlegst",
+   "lemma": "sich hinlegen",
+   "level": "A2",
+   "en": "lie down",
+   "es": "te acuestas",
+   "fr": "te couches",
+   "it": "ti corichi",
+   "pos_end": 19
   },
   {
    "pos": 18,
@@ -5334,17 +5334,6 @@
  ],
  "22": [
   {
-   "pos": 12,
-   "form": "danach handelt",
-   "lemma": "danach handeln",
-   "level": "B2",
-   "en": "act on them",
-   "es": "los ponéis en práctica",
-   "fr": "les mettez en pratique",
-   "it": "li mettete in pratica",
-   "pos_end": 13
-  },
-  {
    "pos": 0,
    "form": "Denn",
    "lemma": "denn",
@@ -5463,6 +5452,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 12,
+   "form": "danach handelt",
+   "lemma": "danach handeln",
+   "level": "B2",
+   "en": "act on them",
+   "es": "los ponéis en práctica",
+   "fr": "les mettez en pratique",
+   "it": "li mettete in pratica",
+   "pos_end": 13
   },
   {
    "pos": 12,
@@ -5839,17 +5839,6 @@
  ],
  "24": [
   {
-   "pos": 19,
-   "form": "bis zum",
-   "lemma": "bis zu",
-   "level": "A2",
-   "en": "up to",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a",
-   "pos_end": 20
-  },
-  {
    "pos": 0,
    "form": "Jeder",
    "lemma": "jeder",
@@ -6041,6 +6030,17 @@
   },
   {
    "pos": 19,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 20
+  },
+  {
+   "pos": 19,
    "form": "bis",
    "lemma": "bis",
    "level": "A2",
@@ -6131,17 +6131,6 @@
   }
  ],
  "25": [
-  {
-   "pos": 17,
-   "form": "kommen lassen",
-   "lemma": "kommen lassen",
-   "level": "B1",
-   "en": "bring",
-   "es": "hacer venir",
-   "fr": "faire venir",
-   "it": "far venire",
-   "pos_end": 18
-  },
   {
    "pos": 0,
    "form": "Niemand",
@@ -6314,6 +6303,17 @@
   },
   {
    "pos": 17,
+   "form": "kommen lassen",
+   "lemma": "kommen lassen",
+   "level": "B1",
+   "en": "bring",
+   "es": "hacer venir",
+   "fr": "faire venir",
+   "it": "far venire",
+   "pos_end": 18
+  },
+  {
+   "pos": 17,
    "form": "kommen",
    "lemma": "kommen",
    "level": "A1",
@@ -6425,20 +6425,6 @@
  ],
  "26": [
   {
-   "pos": 2,
-   "form": "lege vor",
-   "lemma": "vorlegen",
-   "level": "B2",
-   "en": "set before",
-   "es": "presento",
-   "fr": "présente",
-   "it": "presento",
-   "parts": [
-    2,
-    8
-   ]
-  },
-  {
    "pos": 0,
    "form": "Siehe",
    "lemma": "siehe",
@@ -6457,6 +6443,20 @@
    "es": "yo",
    "fr": "je",
    "it": "io"
+  },
+  {
+   "pos": 2,
+   "form": "lege vor",
+   "lemma": "vorlegen",
+   "level": "B2",
+   "en": "set before",
+   "es": "presento",
+   "fr": "présente",
+   "it": "presento",
+   "parts": [
+    2,
+    8
+   ]
   },
   {
    "pos": 2,
@@ -7015,17 +7015,6 @@
  ],
  "29": [
   {
-   "pos": 22,
-   "form": "aussprechen lassen",
-   "lemma": "aussprechen lassen",
-   "level": "B2",
-   "en": "have pronounced",
-   "es": "hacer pronunciar",
-   "fr": "faire prononcer",
-   "it": "far pronunciare",
-   "pos_end": 23
-  },
-  {
    "pos": 0,
    "form": "Wenn",
    "lemma": "wenn",
@@ -7247,6 +7236,17 @@
   },
   {
    "pos": 22,
+   "form": "aussprechen lassen",
+   "lemma": "aussprechen lassen",
+   "level": "B2",
+   "en": "have pronounced",
+   "es": "hacer pronunciar",
+   "fr": "faire prononcer",
+   "it": "far pronunciare",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "aussprechen",
    "lemma": "aussprechen",
    "level": "B2",
@@ -7338,17 +7338,6 @@
  ],
  "30": [
   {
-   "pos": 5,
-   "form": "in Richtung",
-   "lemma": "in Richtung",
-   "level": "B1",
-   "en": "toward",
-   "es": "hacia",
-   "fr": "vers",
-   "it": "verso",
-   "pos_end": 6
-  },
-  {
    "pos": 0,
    "form": "die",
    "lemma": "der",
@@ -7397,6 +7386,17 @@
    "es": "se sitúan",
    "fr": "se trouvent",
    "it": "si trovano"
+  },
+  {
+   "pos": 5,
+   "form": "in Richtung",
+   "lemma": "in Richtung",
+   "level": "B1",
+   "en": "toward",
+   "es": "hacia",
+   "fr": "vers",
+   "it": "verso",
+   "pos_end": 6
   },
   {
    "pos": 5,
@@ -7843,6 +7843,16 @@
  ],
  "32": [
   {
+   "pos": 0,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
    "pos": 1,
    "form": "achtet darauf",
    "lemma": "darauf achten",
@@ -7855,30 +7865,6 @@
     1,
     3
    ]
-  },
-  {
-   "pos": 4,
-   "form": "nach handeln",
-   "lemma": "handeln nach",
-   "level": "B2",
-   "en": "to act according to",
-   "es": "actuar según",
-   "fr": "agir selon",
-   "it": "agire secondo",
-   "parts": [
-    4,
-    10
-   ]
-  },
-  {
-   "pos": 0,
-   "form": "So",
-   "lemma": "so",
-   "level": "A1",
-   "en": "So",
-   "es": "Así",
-   "fr": "Ainsi",
-   "it": "Così"
   },
   {
    "pos": 1,
@@ -7909,6 +7895,20 @@
    "es": "a ello",
    "fr": "à cela",
    "it": "a ciò"
+  },
+  {
+   "pos": 4,
+   "form": "nach handeln",
+   "lemma": "handeln nach",
+   "level": "B2",
+   "en": "to act according to",
+   "es": "actuar según",
+   "fr": "agir selon",
+   "it": "agire secondo",
+   "parts": [
+    4,
+    10
+   ]
   },
   {
    "pos": 4,

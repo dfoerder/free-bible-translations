@@ -436,6 +436,17 @@
   },
   {
    "pos": 4,
+   "form": "Stell dich",
+   "lemma": "sich stellen",
+   "level": "B1",
+   "en": "Take your stand",
+   "es": "Colócate",
+   "fr": "Tiens-toi",
+   "it": "Mettiti",
+   "pos_end": 5
+  },
+  {
+   "pos": 4,
    "form": "Stell",
    "lemma": "stellen",
    "level": "A2",
@@ -453,17 +464,6 @@
    "es": "te",
    "fr": "toi",
    "it": "ti"
-  },
-  {
-   "pos": 4,
-   "form": "Stell dich",
-   "lemma": "sich stellen",
-   "level": "A2",
-   "en": "Take your stand",
-   "es": "Colócate",
-   "fr": "Tiens-toi",
-   "it": "Mettiti",
-   "pos_end": 5
   },
   {
    "pos": 6,
@@ -697,6 +697,20 @@
   },
   {
    "pos": 29,
+   "form": "ging hin",
+   "lemma": "hingehen",
+   "level": "A2",
+   "en": "went there",
+   "es": "fue allá",
+   "fr": "y alla",
+   "it": "ci andò",
+   "parts": [
+    29,
+    31
+   ]
+  },
+  {
+   "pos": 29,
    "form": "ging",
    "lemma": "gehen",
    "level": "A1",
@@ -724,20 +738,6 @@
    "es": "allá",
    "fr": "là",
    "it": "là"
-  },
-  {
-   "pos": 29,
-   "form": "ging hin",
-   "lemma": "hingehen",
-   "level": "A2",
-   "en": "went there",
-   "es": "fue allá",
-   "fr": "y alla",
-   "it": "ci andò",
-   "parts": [
-    29,
-    31
-   ]
   }
  ],
  "4": [
@@ -1529,6 +1529,17 @@
   },
   {
    "pos": 16,
+   "form": "holen lassen",
+   "lemma": "holen lassen",
+   "level": "B1",
+   "en": "sent for",
+   "es": "hecho traer",
+   "fr": "fait venir",
+   "it": "fatto venire",
+   "pos_end": 17
+  },
+  {
+   "pos": 16,
    "form": "holen",
    "lemma": "holen",
    "level": "A2",
@@ -1546,17 +1557,6 @@
    "es": "hecho",
    "fr": "fait",
    "it": "fatto"
-  },
-  {
-   "pos": 16,
-   "form": "holen lassen",
-   "lemma": "holen lassen",
-   "level": "B2",
-   "en": "sent for",
-   "es": "hecho traer",
-   "fr": "fait venir",
-   "it": "fatto venire",
-   "pos_end": 17
   },
   {
    "pos": 18,
@@ -1984,6 +1984,20 @@
   },
   {
    "pos": 14,
+   "form": "schaue an",
+   "lemma": "anschauen",
+   "level": "B1",
+   "en": "behold",
+   "es": "contemplo",
+   "fr": "contemple",
+   "it": "contemplo",
+   "parts": [
+    14,
+    17
+   ]
+  },
+  {
+   "pos": 14,
    "form": "schaue",
    "lemma": "schauen",
    "level": "A2",
@@ -2021,20 +2035,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 14,
-   "form": "schaue an",
-   "lemma": "anschauen",
-   "level": "B1",
-   "en": "behold",
-   "es": "contemplo",
-   "fr": "contemple",
-   "it": "contemplo",
-   "parts": [
-    14,
-    17
-   ]
   },
   {
    "pos": 18,
@@ -2078,6 +2078,17 @@
   },
   {
    "pos": 22,
+   "form": "für sich",
+   "lemma": "für sich",
+   "level": "B1",
+   "en": "on its own",
+   "es": "aparte",
+   "fr": "à part",
+   "it": "da sé",
+   "pos_end": 23
+  },
+  {
+   "pos": 22,
    "form": "für",
    "lemma": "für",
    "level": "A1",
@@ -2095,17 +2106,6 @@
    "es": "sí",
    "fr": "soi",
    "it": "sé"
-  },
-  {
-   "pos": 22,
-   "form": "für sich",
-   "lemma": "für sich",
-   "level": "B1",
-   "en": "on its own",
-   "es": "aparte",
-   "fr": "à part",
-   "it": "da sé",
-   "pos_end": 23
   },
   {
    "pos": 24,
@@ -2291,6 +2291,17 @@
   },
   {
    "pos": 9,
+   "form": "auch nur",
+   "lemma": "auch nur",
+   "level": "B1",
+   "en": "even just",
+   "es": "siquiera",
+   "fr": "ne serait-ce que",
+   "it": "anche solo",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "auch",
    "lemma": "auch",
    "level": "A1",
@@ -2308,17 +2319,6 @@
    "es": "solo",
    "fr": "seulement",
    "it": "solo"
-  },
-  {
-   "pos": 9,
-   "form": "auch nur",
-   "lemma": "auch nur",
-   "level": "B2",
-   "en": "even just",
-   "es": "siquiera",
-   "fr": "ne serait-ce que",
-   "it": "anche solo",
-   "pos_end": 10
   },
   {
    "pos": 11,
@@ -2574,6 +2574,20 @@
   },
   {
    "pos": 6,
+   "form": "tust an",
+   "lemma": "antun",
+   "level": "B2",
+   "en": "are doing",
+   "es": "estás haciendo",
+   "fr": "fais-tu",
+   "it": "stai facendo",
+   "parts": [
+    6,
+    9
+   ]
+  },
+  {
+   "pos": 6,
    "form": "tust",
    "lemma": "tun",
    "level": "A1",
@@ -2613,20 +2627,6 @@
    "it": "a"
   },
   {
-   "pos": 6,
-   "form": "tust an",
-   "lemma": "antun",
-   "level": "B2",
-   "en": "are doing",
-   "es": "estás haciendo",
-   "fr": "fais-tu",
-   "it": "stai facendo",
-   "parts": [
-    6,
-    9
-   ]
-  },
-  {
    "pos": 10,
    "form": "Ich",
    "lemma": "ich",
@@ -2658,6 +2658,17 @@
   },
   {
    "pos": 13,
+   "form": "holen lassen",
+   "lemma": "holen lassen",
+   "level": "B1",
+   "en": "sent for",
+   "es": "hecho traer",
+   "fr": "fait venir",
+   "it": "fatto venire",
+   "pos_end": 14
+  },
+  {
+   "pos": 13,
    "form": "holen",
    "lemma": "holen",
    "level": "A2",
@@ -2677,15 +2688,18 @@
    "it": "fatto"
   },
   {
-   "pos": 13,
-   "form": "holen lassen",
-   "lemma": "holen lassen",
-   "level": "B2",
-   "en": "sent for",
-   "es": "hecho traer",
-   "fr": "fait venir",
-   "it": "fatto venire",
-   "pos_end": 14
+   "pos": 15,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    15,
+    18
+   ]
   },
   {
    "pos": 15,
@@ -2726,20 +2740,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 15,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    15,
-    18
-   ]
   },
   {
    "pos": 19,
@@ -2827,7 +2827,7 @@
    "pos": 2,
    "form": "Muss",
    "lemma": "müssen",
-   "level": "A2",
+   "level": "A1",
    "en": "Must",
    "es": "Debo",
    "fr": "Dois",
@@ -3531,6 +3531,17 @@
   },
   {
    "pos": 4,
+   "form": "Stell dich",
+   "lemma": "sich stellen",
+   "level": "B1",
+   "en": "Take your stand",
+   "es": "Colócate",
+   "fr": "Tiens-toi",
+   "it": "Mettiti",
+   "pos_end": 5
+  },
+  {
+   "pos": 4,
    "form": "Stell",
    "lemma": "stellen",
    "level": "A2",
@@ -3548,17 +3559,6 @@
    "es": "te",
    "fr": "toi",
    "it": "ti"
-  },
-  {
-   "pos": 4,
-   "form": "Stell dich",
-   "lemma": "sich stellen",
-   "level": "A2",
-   "en": "Take your stand",
-   "es": "Colócate",
-   "fr": "Tiens-toi",
-   "it": "Mettiti",
-   "pos_end": 5
   },
   {
    "pos": 6,
@@ -4188,6 +4188,17 @@
   },
   {
    "pos": 7,
+   "form": "Steh auf",
+   "lemma": "aufstehen",
+   "level": "A2",
+   "en": "Get up",
+   "es": "Levántate",
+   "fr": "Lève-toi",
+   "it": "Alzati",
+   "pos_end": 8
+  },
+  {
+   "pos": 7,
    "form": "Steh",
    "lemma": "stehen",
    "level": "A1",
@@ -4205,17 +4216,6 @@
    "es": "arriba",
    "fr": "debout",
    "it": "su"
-  },
-  {
-   "pos": 7,
-   "form": "Steh auf",
-   "lemma": "aufstehen",
-   "level": "A2",
-   "en": "Get up",
-   "es": "Levántate",
-   "fr": "Lève-toi",
-   "it": "Alzati",
-   "pos_end": 8
   },
   {
    "pos": 9,
@@ -4249,6 +4249,17 @@
   },
   {
    "pos": 12,
+   "form": "Nimm zu Ohren",
+   "lemma": "zu Ohren nehmen",
+   "level": "C1",
+   "en": "Give ear",
+   "es": "Presta oído",
+   "fr": "Prête l'oreille",
+   "it": "Porgi orecchio",
+   "pos_end": 14
+  },
+  {
+   "pos": 12,
    "form": "Nimm",
    "lemma": "nehmen",
    "level": "A1",
@@ -4276,17 +4287,6 @@
    "es": "oídos",
    "fr": "oreilles",
    "it": "orecchi"
-  },
-  {
-   "pos": 12,
-   "form": "Nimm zu Ohren",
-   "lemma": "zu Ohren nehmen",
-   "level": "C1",
-   "en": "Give ear",
-   "es": "Presta oído",
-   "fr": "Prête l'oreille",
-   "it": "Porgi orecchio",
-   "pos_end": 14
   },
   {
    "pos": 15,
@@ -4494,7 +4494,7 @@
    "pos": 14,
    "form": "reut",
    "lemma": "reuen",
-   "level": "C1",
+   "level": "B2",
    "en": "should regret",
    "es": "se arrepienta",
    "fr": "se repente",
@@ -4714,6 +4714,17 @@
   },
   {
    "pos": 5,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "pos_end": 6
+  },
+  {
+   "pos": 5,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -4731,17 +4742,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 5,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "pos_end": 6
   },
   {
    "pos": 7,
@@ -5241,6 +5241,17 @@
   },
   {
    "pos": 1,
+   "form": "es gibt",
+   "lemma": "es gibt",
+   "level": "A2",
+   "en": "there is",
+   "es": "hay",
+   "fr": "il y a",
+   "it": "c'è",
+   "pos_end": 2
+  },
+  {
+   "pos": 1,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -5258,17 +5269,6 @@
    "es": "hay",
    "fr": "y a",
    "it": "è"
-  },
-  {
-   "pos": 1,
-   "form": "es gibt",
-   "lemma": "es gibt",
-   "level": "A2",
-   "en": "there is",
-   "es": "hay",
-   "fr": "il y a",
-   "it": "c'è",
-   "pos_end": 2
   },
   {
    "pos": 3,
@@ -5544,6 +5544,17 @@
   },
   {
    "pos": 4,
+   "form": "sich erheben",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rise up",
+   "es": "levantarse",
+   "fr": "se lever",
+   "it": "sollevarsi",
+   "pos_end": 5
+  },
+  {
+   "pos": 4,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -5561,17 +5572,6 @@
    "es": "levantar",
    "fr": "élever",
    "it": "sollevare"
-  },
-  {
-   "pos": 4,
-   "form": "sich erheben",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "rise up",
-   "es": "levantarse",
-   "fr": "se lever",
-   "it": "sollevarsi",
-   "pos_end": 5
   },
   {
    "pos": 6,
@@ -5685,6 +5685,20 @@
   },
   {
    "pos": 17,
+   "form": "sich niederlegen",
+   "lemma": "sich niederlegen",
+   "level": "B2",
+   "en": "lie down",
+   "es": "acostarse",
+   "fr": "se coucher",
+   "it": "coricarsi",
+   "parts": [
+    17,
+    19
+   ]
+  },
+  {
+   "pos": 17,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -5712,20 +5726,6 @@
    "es": "acostar",
    "fr": "coucher",
    "it": "coricare"
-  },
-  {
-   "pos": 17,
-   "form": "sich niederlegen",
-   "lemma": "sich niederlegen",
-   "level": "B2",
-   "en": "lie down",
-   "es": "acostarse",
-   "fr": "se coucher",
-   "it": "coricarsi",
-   "parts": [
-    17,
-    19
-   ]
   },
   {
    "pos": 20,

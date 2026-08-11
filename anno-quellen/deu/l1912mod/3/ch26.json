@@ -182,24 +182,24 @@
   },
   {
    "pos": 18,
-   "form": "um",
-   "lemma": "um",
-   "level": "A1",
-   "en": "in order",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    20
-   ],
    "form": "um anzubeten",
    "lemma": "um zu",
    "level": "A2",
    "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    18,
+    20
+   ]
+  },
+  {
+   "pos": 18,
+   "form": "um",
+   "lemma": "um",
+   "level": "A1",
+   "en": "in order",
    "es": "para",
    "fr": "pour",
    "it": "per"
@@ -298,6 +298,20 @@
  "2": [
   {
    "pos": 0,
+   "form": "Haltet ein",
+   "lemma": "einhalten",
+   "level": "B2",
+   "en": "Keep",
+   "es": "Guardad",
+   "fr": "Gardez",
+   "it": "Osservate",
+   "parts": [
+    0,
+    3
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Haltet",
    "lemma": "halten",
    "level": "A2",
@@ -305,20 +319,6 @@
    "es": "Sostened",
    "fr": "Tenez",
    "it": "Tenete"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    3
-   ],
-   "form": "Haltet ein",
-   "lemma": "einhalten",
-   "level": "B2",
-   "en": "Keep",
-   "es": "Guardad",
-   "fr": "Gardez",
-   "it": "Osservate"
   },
   {
    "pos": 1,
@@ -596,6 +596,17 @@
   },
   {
    "pos": 4,
+   "form": "zur rechten Zeit",
+   "lemma": "zur rechten Zeit",
+   "level": "B1",
+   "en": "at the right time",
+   "es": "a su debido tiempo",
+   "fr": "au moment voulu",
+   "it": "a suo tempo",
+   "pos_end": 6
+  },
+  {
+   "pos": 4,
    "form": "zur",
    "lemma": "zu",
    "level": "A1",
@@ -603,17 +614,6 @@
    "es": "al",
    "fr": "au",
    "it": "al"
-  },
-  {
-   "pos": 4,
-   "pos_end": 6,
-   "form": "zur rechten Zeit",
-   "lemma": "zur rechten Zeit",
-   "level": "B1",
-   "en": "at the right time",
-   "es": "a su debido tiempo",
-   "fr": "au moment voulu",
-   "it": "a suo tempo"
   },
   {
    "pos": 5,
@@ -851,7 +851,7 @@
    "pos": 3,
    "form": "bis",
    "lemma": "bis",
-   "level": "A1",
+   "level": "A2",
    "en": "until",
    "es": "hasta",
    "fr": "jusqu'à",
@@ -921,7 +921,7 @@
    "pos": 10,
    "form": "bis",
    "lemma": "bis",
-   "level": "A1",
+   "level": "A2",
    "en": "until",
    "es": "hasta",
    "fr": "jusqu'à",
@@ -1787,6 +1787,20 @@
   },
   {
    "pos": 2,
+   "form": "mich zuwenden",
+   "lemma": "sich zuwenden",
+   "level": "B2",
+   "en": "turn to",
+   "es": "volverme a",
+   "fr": "me tourner vers",
+   "it": "volgermi a",
+   "parts": [
+    2,
+    4
+   ]
+  },
+  {
+   "pos": 2,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -1794,20 +1808,6 @@
    "es": "me",
    "fr": "me",
    "it": "mi"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    4
-   ],
-   "form": "mich zuwenden",
-   "lemma": "sich zuwenden",
-   "level": "B2",
-   "en": "turn to",
-   "es": "volverme a",
-   "fr": "me tourner vers",
-   "it": "volgermi a"
   },
   {
    "pos": 3,
@@ -1841,6 +1841,20 @@
   },
   {
    "pos": 6,
+   "form": "wachsen lassen",
+   "lemma": "wachsen lassen",
+   "level": "B2",
+   "en": "make grow",
+   "es": "hacer crecer",
+   "fr": "faire croître",
+   "it": "far crescere",
+   "parts": [
+    6,
+    11
+   ]
+  },
+  {
+   "pos": 6,
    "form": "wachsen",
    "lemma": "wachsen",
    "level": "A2",
@@ -1848,20 +1862,6 @@
    "es": "crecer",
    "fr": "croître",
    "it": "crescere"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    11
-   ],
-   "form": "wachsen lassen",
-   "lemma": "wachsen lassen",
-   "level": "B2",
-   "en": "make grow",
-   "es": "hacer crecer",
-   "fr": "faire croître",
-   "it": "far crescere"
   },
   {
    "pos": 7,
@@ -2693,6 +2693,17 @@
   },
   {
    "pos": 27,
+   "form": "gehen lassen",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "made go",
+   "es": "hecho andar",
+   "fr": "fait marcher",
+   "it": "fatto camminare",
+   "pos_end": 28
+  },
+  {
+   "pos": 27,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -2700,17 +2711,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 27,
-   "pos_end": 28,
-   "form": "gehen lassen",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "made go",
-   "es": "hecho andar",
-   "fr": "fait marcher",
-   "it": "fatto camminare"
   },
   {
    "pos": 28,
@@ -3422,6 +3422,20 @@
   },
   {
    "pos": 2,
+   "form": "mich wenden",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turn",
+   "es": "volverme",
+   "fr": "me retourner",
+   "it": "rivolgermi",
+   "parts": [
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 2,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -3429,20 +3443,6 @@
    "es": "me",
    "fr": "me",
    "it": "mi"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    5
-   ],
-   "form": "mich wenden",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turn",
-   "es": "volverme",
-   "fr": "me retourner",
-   "it": "rivolgermi"
   },
   {
    "pos": 3,
@@ -3598,7 +3598,7 @@
    "pos": 18,
    "form": "über",
    "lemma": "über",
-   "level": "A1",
+   "level": "A2",
    "en": "over",
    "es": "sobre",
    "fr": "sur",
@@ -4304,6 +4304,20 @@
   },
   {
    "pos": 2,
+   "form": "euch widersetzt",
+   "lemma": "sich widersetzen",
+   "level": "B2",
+   "en": "resist",
+   "es": "os oponéis",
+   "fr": "vous opposez",
+   "it": "vi opponete",
+   "parts": [
+    2,
+    5
+   ]
+  },
+  {
+   "pos": 2,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -4311,20 +4325,6 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    5
-   ],
-   "form": "euch widersetzt",
-   "lemma": "sich widersetzen",
-   "level": "B2",
-   "en": "resist",
-   "es": "os oponéis",
-   "fr": "vous opposez",
-   "it": "vi opponete"
   },
   {
    "pos": 3,
@@ -4720,6 +4720,17 @@
   },
   {
    "pos": 20,
+   "form": "werden lassen",
+   "lemma": "werden lassen",
+   "level": "B1",
+   "en": "make become",
+   "es": "hacer llegar a ser",
+   "fr": "faire devenir",
+   "it": "far diventare",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "werden",
    "lemma": "werden",
    "level": "A1",
@@ -4727,17 +4738,6 @@
    "es": "llegar a ser",
    "fr": "devenir",
    "it": "diventare"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "werden lassen",
-   "lemma": "werden lassen",
-   "level": "B1",
-   "en": "make become",
-   "es": "hacer llegar a ser",
-   "fr": "faire devenir",
-   "it": "far diventare"
   },
   {
    "pos": 21,
@@ -4813,6 +4813,21 @@
  "23": [
   {
    "pos": 0,
+   "form": "Lasst euch zurechtweisen",
+   "lemma": "sich zurechtweisen lassen",
+   "level": "B2",
+   "en": "let yourselves be corrected",
+   "es": "dejaros corregir",
+   "fr": "vous laisser reprendre",
+   "it": "lasciarvi correggere",
+   "parts": [
+    0,
+    2,
+    9
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Lasst",
    "lemma": "lassen",
    "level": "A2",
@@ -4820,21 +4835,6 @@
    "es": "Dejáis",
    "fr": "Laissez",
    "it": "Lasciate"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    2,
-    9
-   ],
-   "form": "Lasst euch zurechtweisen",
-   "lemma": "sich zurechtweisen lassen",
-   "level": "B2",
-   "en": "let yourselves be corrected",
-   "es": "dejaros corregir",
-   "fr": "vous laisser reprendre",
-   "it": "lasciarvi correggere"
   },
   {
    "pos": 1,
@@ -4938,6 +4938,17 @@
   },
   {
    "pos": 11,
+   "form": "widersetzt euch",
+   "lemma": "sich widersetzen",
+   "level": "B2",
+   "en": "resist",
+   "es": "os oponéis",
+   "fr": "vous opposez",
+   "it": "vi opponete",
+   "pos_end": 12
+  },
+  {
+   "pos": 11,
    "form": "widersetzt",
    "lemma": "widersetzen",
    "level": "B2",
@@ -4945,17 +4956,6 @@
    "es": "oponéis",
    "fr": "opposez",
    "it": "opponete"
-  },
-  {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "widersetzt euch",
-   "lemma": "sich widersetzen",
-   "level": "B2",
-   "en": "resist",
-   "es": "os oponéis",
-   "fr": "vous opposez",
-   "it": "vi opponete"
   },
   {
    "pos": 12,
@@ -5031,6 +5031,20 @@
   },
   {
    "pos": 4,
+   "form": "mich stellen",
+   "lemma": "sich stellen",
+   "level": "B1",
+   "en": "take a stand",
+   "es": "ponerme",
+   "fr": "me dresser",
+   "it": "pormi",
+   "parts": [
+    4,
+    7
+   ]
+  },
+  {
+   "pos": 4,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -5038,20 +5052,6 @@
    "es": "me",
    "fr": "me",
    "it": "mi"
-  },
-  {
-   "pos": 4,
-   "parts": [
-    4,
-    7
-   ],
-   "form": "mich stellen",
-   "lemma": "sich stellen",
-   "level": "B2",
-   "en": "take a stand",
-   "es": "ponerme",
-   "fr": "me dresser",
-   "it": "pormi"
   },
   {
    "pos": 5,
@@ -5229,7 +5229,7 @@
    "pos": 5,
    "form": "über",
    "lemma": "über",
-   "level": "A1",
+   "level": "A2",
    "en": "upon",
    "es": "sobre",
    "fr": "sur",
@@ -5337,6 +5337,20 @@
   },
   {
    "pos": 16,
+   "form": "euch zurückzieht",
+   "lemma": "sich zurückziehen",
+   "level": "B2",
+   "en": "withdraw",
+   "es": "os retiráis",
+   "fr": "vous retirez",
+   "it": "vi ritirate",
+   "parts": [
+    16,
+    20
+   ]
+  },
+  {
+   "pos": 16,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -5344,20 +5358,6 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
-  },
-  {
-   "pos": 16,
-   "parts": [
-    16,
-    20
-   ],
-   "form": "euch zurückzieht",
-   "lemma": "sich zurückziehen",
-   "level": "B2",
-   "en": "withdraw",
-   "es": "os retiráis",
-   "fr": "vous retirez",
-   "it": "vi ritirate"
   },
   {
    "pos": 17,
@@ -5935,6 +5935,17 @@
   },
   {
    "pos": 8,
+   "form": "widersetzt euch",
+   "lemma": "sich widersetzen",
+   "level": "B2",
+   "en": "resist",
+   "es": "os oponéis",
+   "fr": "vous opposez",
+   "it": "vi opponete",
+   "pos_end": 9
+  },
+  {
+   "pos": 8,
    "form": "widersetzt",
    "lemma": "widersetzen",
    "level": "B2",
@@ -5942,17 +5953,6 @@
    "es": "oponéis",
    "fr": "opposez",
    "it": "opponete"
-  },
-  {
-   "pos": 8,
-   "pos_end": 9,
-   "form": "widersetzt euch",
-   "lemma": "sich widersetzen",
-   "level": "B2",
-   "en": "resist",
-   "es": "os oponéis",
-   "fr": "vous opposez",
-   "it": "vi opponete"
   },
   {
    "pos": 9,
@@ -6018,6 +6018,20 @@
   },
   {
    "pos": 3,
+   "form": "mich stellen",
+   "lemma": "sich stellen",
+   "level": "B1",
+   "en": "take a stand",
+   "es": "ponerme",
+   "fr": "me dresser",
+   "it": "pormi",
+   "parts": [
+    3,
+    8
+   ]
+  },
+  {
+   "pos": 3,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -6025,20 +6039,6 @@
    "es": "me",
    "fr": "me",
    "it": "mi"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    8
-   ],
-   "form": "mich stellen",
-   "lemma": "sich stellen",
-   "level": "B2",
-   "en": "take a stand",
-   "es": "ponerme",
-   "fr": "me dresser",
-   "it": "pormi"
   },
   {
    "pos": 4,
@@ -6730,6 +6730,20 @@
   },
   {
    "pos": 7,
+   "form": "sich entsetzen",
+   "lemma": "sich entsetzen",
+   "level": "C1",
+   "en": "be appalled",
+   "es": "horrorizarse",
+   "fr": "s'épouvanter",
+   "it": "sbigottirsi",
+   "parts": [
+    7,
+    14
+   ]
+  },
+  {
+   "pos": 7,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -6737,20 +6751,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    14
-   ],
-   "form": "sich entsetzen",
-   "lemma": "sich entsetzen",
-   "level": "C1",
-   "en": "be appalled",
-   "es": "horrorizarse",
-   "fr": "s'épouvanter",
-   "it": "sbigottirsi"
   },
   {
    "pos": 8,
@@ -6908,7 +6908,7 @@
    "pos": 7,
    "form": "verstreuen",
    "lemma": "verstreuen",
-   "level": "B2",
+   "level": "C1",
    "en": "scatter",
    "es": "dispersar",
    "fr": "disperser",
@@ -6946,6 +6946,20 @@
   },
   {
    "pos": 11,
+   "form": "hinter her",
+   "lemma": "hinter jemandem her",
+   "level": "B2",
+   "en": "in pursuit of",
+   "es": "en persecución de",
+   "fr": "à la poursuite de",
+   "it": "all'inseguimento di",
+   "parts": [
+    11,
+    13
+   ]
+  },
+  {
+   "pos": 11,
    "form": "hinter",
    "lemma": "hinter",
    "level": "A2",
@@ -6953,20 +6967,6 @@
    "es": "detrás de",
    "fr": "derrière",
    "it": "dietro"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    13
-   ],
-   "form": "hinter her",
-   "lemma": "hinter jemandem her",
-   "level": "B2",
-   "en": "in pursuit of",
-   "es": "en persecución de",
-   "fr": "à la poursuite de",
-   "it": "all'inseguimento di"
   },
   {
    "pos": 12,
@@ -7516,7 +7516,7 @@
    "pos": 12,
    "form": "als",
    "lemma": "als",
-   "level": "A1",
+   "level": "A2",
    "en": "when",
    "es": "cuando",
    "fr": "quand",
@@ -7594,6 +7594,17 @@
   },
   {
    "pos": 20,
+   "form": "ruhen lassen",
+   "lemma": "ruhen lassen",
+   "level": "B1",
+   "en": "let rest",
+   "es": "dejar descansar",
+   "fr": "laisser reposer",
+   "it": "lasciar riposare",
+   "pos_end": 21
+  },
+  {
+   "pos": 20,
    "form": "ruhen",
    "lemma": "ruhen",
    "level": "B1",
@@ -7601,17 +7612,6 @@
    "es": "descansar",
    "fr": "reposer",
    "it": "riposare"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "ruhen lassen",
-   "lemma": "ruhen lassen",
-   "level": "B1",
-   "en": "let rest",
-   "es": "dejar descansar",
-   "fr": "laisser reposer",
-   "it": "lasciar riposare"
   },
   {
    "pos": 21,
@@ -8119,6 +8119,20 @@
   },
   {
    "pos": 15,
+   "form": "euch erheben",
+   "lemma": "sich erheben",
+   "level": "B2",
+   "en": "rise up",
+   "es": "levantaros",
+   "fr": "vous lever",
+   "it": "sollevarvi",
+   "parts": [
+    15,
+    20
+   ]
+  },
+  {
+   "pos": 15,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -8126,20 +8140,6 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    20
-   ],
-   "form": "euch erheben",
-   "lemma": "sich erheben",
-   "level": "B2",
-   "en": "rise up",
-   "es": "levantaros",
-   "fr": "vous lever",
-   "it": "sollevarvi"
   },
   {
    "pos": 16,
@@ -8255,6 +8255,17 @@
   },
   {
    "pos": 5,
+   "form": "zugrunde gehen",
+   "lemma": "zugrunde gehen",
+   "level": "B2",
+   "en": "perish",
+   "es": "perecer",
+   "fr": "périr",
+   "it": "perire",
+   "pos_end": 6
+  },
+  {
+   "pos": 5,
    "form": "zugrunde",
    "lemma": "zugrunde",
    "level": "C1",
@@ -8262,17 +8273,6 @@
    "es": "a la ruina",
    "fr": "à la ruine",
    "it": "in rovina"
-  },
-  {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "zugrunde gehen",
-   "lemma": "zugrunde gehen",
-   "level": "B2",
-   "en": "perish",
-   "es": "perecer",
-   "fr": "périr",
-   "it": "perire"
   },
   {
    "pos": 6,
@@ -8780,6 +8780,20 @@
   },
   {
    "pos": 15,
+   "form": "sich versündigt",
+   "lemma": "sich versündigen",
+   "level": "B2",
+   "en": "sinned",
+   "es": "han pecado",
+   "fr": "ont péché",
+   "it": "hanno peccato",
+   "parts": [
+    15,
+    18
+   ]
+  },
+  {
+   "pos": 15,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -8787,20 +8801,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    18
-   ],
-   "form": "sich versündigt",
-   "lemma": "sich versündigen",
-   "level": "B2",
-   "en": "sinned",
-   "es": "han pecado",
-   "fr": "ont péché",
-   "it": "hanno peccato"
   },
   {
    "pos": 16,
@@ -8844,6 +8844,20 @@
   },
   {
    "pos": 20,
+   "form": "sich widersetzt",
+   "lemma": "sich widersetzen",
+   "level": "B2",
+   "en": "resisted",
+   "es": "se han opuesto",
+   "fr": "se sont opposés",
+   "it": "si sono opposti",
+   "parts": [
+    20,
+    22
+   ]
+  },
+  {
+   "pos": 20,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -8851,20 +8865,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 20,
-   "parts": [
-    20,
-    22
-   ],
-   "form": "sich widersetzt",
-   "lemma": "sich widersetzen",
-   "level": "B2",
-   "en": "resisted",
-   "es": "se han opuesto",
-   "fr": "se sont opposés",
-   "it": "si sono opposti"
   },
   {
    "pos": 21,
@@ -8902,7 +8902,7 @@
    "pos": 0,
    "form": "Darum",
    "lemma": "darum",
-   "level": "A2",
+   "level": "B1",
    "en": "Therefore",
    "es": "Por eso",
    "fr": "C'est pourquoi",
@@ -8930,6 +8930,20 @@
   },
   {
    "pos": 3,
+   "form": "mich widersetzen",
+   "lemma": "sich widersetzen",
+   "level": "B2",
+   "en": "oppose",
+   "es": "oponerme",
+   "fr": "m'opposer",
+   "it": "oppormi",
+   "parts": [
+    3,
+    6
+   ]
+  },
+  {
+   "pos": 3,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -8937,20 +8951,6 @@
    "es": "me",
    "fr": "me",
    "it": "mi"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    6
-   ],
-   "form": "mich widersetzen",
-   "lemma": "sich widersetzen",
-   "level": "B2",
-   "en": "oppose",
-   "es": "oponerme",
-   "fr": "m'opposer",
-   "it": "oppormi"
   },
   {
    "pos": 4,
@@ -9084,6 +9084,20 @@
   },
   {
    "pos": 17,
+   "form": "sich demütigen",
+   "lemma": "sich demütigen",
+   "level": "B2",
+   "en": "humble itself",
+   "es": "humillarse",
+   "fr": "s'humilier",
+   "it": "umiliarsi",
+   "parts": [
+    17,
+    21
+   ]
+  },
+  {
+   "pos": 17,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -9091,20 +9105,6 @@
    "es": "se",
    "fr": "se",
    "it": "si"
-  },
-  {
-   "pos": 17,
-   "parts": [
-    17,
-    21
-   ],
-   "form": "sich demütigen",
-   "lemma": "sich demütigen",
-   "level": "C1",
-   "en": "humble itself",
-   "es": "humillarse",
-   "fr": "s'humilier",
-   "it": "umiliarsi"
   },
   {
    "pos": 18,
@@ -9260,6 +9260,20 @@
   },
   {
    "pos": 2,
+   "form": "an denken",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "remember",
+   "es": "acordarme de",
+   "fr": "me souvenir de",
+   "it": "ricordarmi di",
+   "parts": [
+    2,
+    18
+   ]
+  },
+  {
+   "pos": 2,
    "form": "an",
    "lemma": "an",
    "level": "A1",
@@ -9267,20 +9281,6 @@
    "es": "en",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    18
-   ],
-   "form": "an denken",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "remember",
-   "es": "acordarme de",
-   "fr": "me souvenir de",
-   "it": "ricordarmi di"
   },
   {
    "pos": 3,
@@ -9474,6 +9474,20 @@
   },
   {
    "pos": 22,
+   "form": "an denken",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "remember",
+   "es": "acordarme de",
+   "fr": "me souvenir de",
+   "it": "ricordarmi di",
+   "parts": [
+    22,
+    25
+   ]
+  },
+  {
+   "pos": 22,
    "form": "an",
    "lemma": "an",
    "level": "A1",
@@ -9481,20 +9495,6 @@
    "es": "en",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 22,
-   "parts": [
-    22,
-    25
-   ],
-   "form": "an denken",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "remember",
-   "es": "acordarme de",
-   "fr": "me souvenir de",
-   "it": "ricordarmi di"
   },
   {
    "pos": 23,
@@ -9862,24 +9862,24 @@
  "44": [
   {
    "pos": 0,
-   "form": "Selbst",
-   "lemma": "selbst",
-   "level": "A2",
-   "en": "Even",
-   "es": "Incluso",
-   "fr": "Même",
-   "it": "Persino"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
    "form": "Selbst wenn",
    "lemma": "selbst wenn",
    "level": "B1",
    "en": "Even if",
    "es": "Aunque",
    "fr": "Même si",
-   "it": "Anche se"
+   "it": "Anche se",
+   "pos_end": 1
+  },
+  {
+   "pos": 0,
+   "form": "Selbst",
+   "lemma": "selbst",
+   "level": "B1",
+   "en": "Even",
+   "es": "Incluso",
+   "fr": "Même",
+   "it": "Persino"
   },
   {
    "pos": 1,
@@ -9985,7 +9985,7 @@
    "pos": 11,
    "form": "deshalb",
    "lemma": "deshalb",
-   "level": "A2",
+   "level": "B1",
    "en": "for that",
    "es": "por eso",
    "fr": "pour autant",
@@ -10093,6 +10093,17 @@
   },
   {
    "pos": 22,
+   "form": "zu Ende wäre",
+   "lemma": "zu Ende sein",
+   "level": "B1",
+   "en": "be at an end",
+   "es": "acabarse",
+   "fr": "être fini",
+   "it": "essere finito",
+   "pos_end": 24
+  },
+  {
+   "pos": 22,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -10100,17 +10111,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 22,
-   "pos_end": 24,
-   "form": "zu Ende wäre",
-   "lemma": "zu Ende sein",
-   "level": "B1",
-   "en": "be at an end",
-   "es": "acabarse",
-   "fr": "être fini",
-   "it": "essere finito"
   },
   {
    "pos": 23,
@@ -10336,6 +10336,20 @@
   },
   {
    "pos": 4,
+   "form": "an denken",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "remember",
+   "es": "acordarme de",
+   "fr": "me souvenir de",
+   "it": "ricordarmi di",
+   "parts": [
+    4,
+    8
+   ]
+  },
+  {
+   "pos": 4,
    "form": "an",
    "lemma": "an",
    "level": "A1",
@@ -10343,20 +10357,6 @@
    "es": "en",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 4,
-   "parts": [
-    4,
-    8
-   ],
-   "form": "an denken",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "remember",
-   "es": "acordarme de",
-   "fr": "me souvenir de",
-   "it": "ricordarmi di"
   },
   {
    "pos": 5,
@@ -10402,7 +10402,7 @@
    "pos": 9,
    "form": "als",
    "lemma": "als",
-   "level": "A1",
+   "level": "A2",
    "en": "when",
    "es": "cuando",
    "fr": "quand",
@@ -10510,24 +10510,24 @@
   },
   {
    "pos": 20,
-   "form": "um",
-   "lemma": "um",
-   "level": "A1",
-   "en": "in order",
-   "es": "para",
-   "fr": "afin de",
-   "it": "al fine di"
-  },
-  {
-   "pos": 20,
-   "parts": [
-    20,
-    23
-   ],
    "form": "um zu",
    "lemma": "um zu",
    "level": "A2",
    "en": "in order to",
+   "es": "para",
+   "fr": "afin de",
+   "it": "al fine di",
+   "parts": [
+    20,
+    23
+   ]
+  },
+  {
+   "pos": 20,
+   "form": "um",
+   "lemma": "um",
+   "level": "A1",
+   "en": "in order",
    "es": "para",
    "fr": "afin de",
    "it": "al fine di"
@@ -10708,11 +10708,22 @@
    "pos": 10,
    "form": "zwischen",
    "lemma": "zwischen",
-   "level": "A1",
+   "level": "A2",
    "en": "between",
    "es": "entre",
    "fr": "entre",
    "it": "tra"
+  },
+  {
+   "pos": 11,
+   "form": "sich selbst",
+   "lemma": "sich selbst",
+   "level": "A2",
+   "en": "himself",
+   "es": "sí mismo",
+   "fr": "lui-même",
+   "it": "sé stesso",
+   "pos_end": 12
   },
   {
    "pos": 11,
@@ -10725,21 +10736,10 @@
    "it": "sé"
   },
   {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "sich selbst",
-   "lemma": "sich selbst",
-   "level": "A2",
-   "en": "himself",
-   "es": "sí mismo",
-   "fr": "lui-même",
-   "it": "sé stesso"
-  },
-  {
    "pos": 12,
    "form": "selbst",
    "lemma": "selbst",
-   "level": "A2",
+   "level": "B1",
    "en": "self",
    "es": "mismo",
    "fr": "même",

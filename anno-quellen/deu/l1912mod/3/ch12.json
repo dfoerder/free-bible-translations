@@ -184,6 +184,17 @@
   },
   {
    "pos": 11,
+   "form": "zur Welt bringt",
+   "lemma": "zur Welt bringen",
+   "level": "B1",
+   "en": "gives birth to",
+   "es": "da a luz",
+   "fr": "met au monde",
+   "it": "dà alla luce",
+   "pos_end": 13
+  },
+  {
+   "pos": 11,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -211,17 +222,6 @@
    "es": "trae",
    "fr": "amène",
    "it": "porta"
-  },
-  {
-   "pos": 11,
-   "pos_end": 13,
-   "form": "zur Welt bringt",
-   "lemma": "zur Welt bringen",
-   "level": "B1",
-   "en": "gives birth to",
-   "es": "da a luz",
-   "fr": "met au monde",
-   "it": "dà alla luce"
   },
   {
    "pos": 14,
@@ -499,6 +499,17 @@
   },
   {
    "pos": 6,
+   "form": "zu Hause",
+   "lemma": "zu Hause",
+   "level": "A2",
+   "en": "at home",
+   "es": "en casa",
+   "fr": "à la maison",
+   "it": "a casa",
+   "pos_end": 7
+  },
+  {
+   "pos": 6,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -516,17 +527,6 @@
    "es": "casa",
    "fr": "maison",
    "it": "casa"
-  },
-  {
-   "pos": 6,
-   "pos_end": 7,
-   "form": "zu Hause",
-   "lemma": "zu Hause",
-   "level": "A2",
-   "en": "at home",
-   "es": "en casa",
-   "fr": "à la maison",
-   "it": "a casa"
   },
   {
    "pos": 8,
@@ -557,6 +557,20 @@
    "es": "ella",
    "fr": "elle",
    "it": "lei"
+  },
+  {
+   "pos": 11,
+   "form": "sich reinigt",
+   "lemma": "sich reinigen",
+   "level": "B1",
+   "en": "purifies herself",
+   "es": "se purifica",
+   "fr": "se purifie",
+   "it": "si purifica",
+   "parts": [
+    11,
+    15
+   ]
   },
   {
    "pos": 11,
@@ -607,20 +621,6 @@
    "es": "purifica",
    "fr": "purifie",
    "it": "purifica"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    15
-   ],
-   "form": "sich reinigt",
-   "lemma": "sich reinigen",
-   "level": "B1",
-   "en": "purifies herself",
-   "es": "se purifica",
-   "fr": "se purifie",
-   "it": "si purifica"
   },
   {
    "pos": 16,
@@ -806,6 +806,21 @@
  "5": [
   {
    "pos": 0,
+   "form": "Bringt zur Welt",
+   "lemma": "zur Welt bringen",
+   "level": "B1",
+   "en": "Gives birth to",
+   "es": "Da a luz",
+   "fr": "Met au monde",
+   "it": "Dà alla luce",
+   "parts": [
+    0,
+    5,
+    6
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Bringt",
    "lemma": "bringen",
    "level": "A1",
@@ -873,21 +888,6 @@
    "es": "mundo",
    "fr": "monde",
    "it": "mondo"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    5,
-    6
-   ],
-   "form": "Bringt zur Welt",
-   "lemma": "zur Welt bringen",
-   "level": "B1",
-   "en": "Gives birth to",
-   "es": "Da a luz",
-   "fr": "Met au monde",
-   "it": "Dà alla luce"
   },
   {
    "pos": 7,
@@ -1031,6 +1031,17 @@
   },
   {
    "pos": 21,
+   "form": "zu Hause",
+   "lemma": "zu Hause",
+   "level": "A2",
+   "en": "at home",
+   "es": "en casa",
+   "fr": "à la maison",
+   "it": "a casa",
+   "pos_end": 22
+  },
+  {
+   "pos": 21,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -1048,17 +1059,6 @@
    "es": "casa",
    "fr": "maison",
    "it": "casa"
-  },
-  {
-   "pos": 21,
-   "pos_end": 22,
-   "form": "zu Hause",
-   "lemma": "zu Hause",
-   "level": "A2",
-   "en": "at home",
-   "es": "en casa",
-   "fr": "à la maison",
-   "it": "a casa"
   },
   {
    "pos": 23,
@@ -1089,6 +1089,20 @@
    "es": "ella",
    "fr": "elle",
    "it": "lei"
+  },
+  {
+   "pos": 26,
+   "form": "sich reinigt",
+   "lemma": "sich reinigen",
+   "level": "B1",
+   "en": "purifies herself",
+   "es": "se purifica",
+   "fr": "se purifie",
+   "it": "si purifica",
+   "parts": [
+    26,
+    30
+   ]
   },
   {
    "pos": 26,
@@ -1139,20 +1153,6 @@
    "es": "purifica",
    "fr": "purifie",
    "it": "purifica"
-  },
-  {
-   "pos": 26,
-   "parts": [
-    26,
-    30
-   ],
-   "form": "sich reinigt",
-   "lemma": "sich reinigen",
-   "level": "B1",
-   "en": "purifies herself",
-   "es": "se purifica",
-   "fr": "se purifie",
-   "it": "si purifica"
   }
  ],
  "6": [
@@ -1840,6 +1840,17 @@
   },
   {
    "pos": 31,
+   "form": "zur Welt bringt",
+   "lemma": "zur Welt bringen",
+   "level": "B1",
+   "en": "gives birth to",
+   "es": "da a luz",
+   "fr": "met au monde",
+   "it": "dà alla luce",
+   "pos_end": 33
+  },
+  {
+   "pos": 31,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -1867,17 +1878,6 @@
    "es": "trae",
    "fr": "amène",
    "it": "porta"
-  },
-  {
-   "pos": 31,
-   "pos_end": 33,
-   "form": "zur Welt bringt",
-   "lemma": "zur Welt bringen",
-   "level": "B1",
-   "en": "gives birth to",
-   "es": "da a luz",
-   "fr": "met au monde",
-   "it": "dà alla luce"
   }
  ],
  "8": [

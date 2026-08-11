@@ -1670,6 +1670,20 @@
   },
   {
    "pos": 17,
+   "form": "sich bewegt",
+   "lemma": "sich bewegen",
+   "level": "B1",
+   "en": "moves",
+   "es": "se mueve",
+   "fr": "se meut",
+   "it": "si muove",
+   "parts": [
+    17,
+    20
+   ]
+  },
+  {
+   "pos": 17,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1707,20 +1721,6 @@
    "es": "mueve",
    "fr": "meut",
    "it": "muove"
-  },
-  {
-   "pos": 17,
-   "form": "sich bewegt",
-   "lemma": "sich bewegen",
-   "level": "B1",
-   "en": "moves",
-   "es": "se mueve",
-   "fr": "se meut",
-   "it": "si muove",
-   "parts": [
-    17,
-    20
-   ]
   },
   {
    "pos": 21,
@@ -1896,6 +1896,20 @@
   },
   {
    "pos": 7,
+   "form": "euch scheut",
+   "lemma": "sich scheuen",
+   "level": "C1",
+   "en": "shrink back",
+   "es": "os apartéis",
+   "fr": "vous détourniez",
+   "it": "vi ritraiate",
+   "parts": [
+    7,
+    11
+   ]
+  },
+  {
+   "pos": 7,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -1943,20 +1957,6 @@
    "es": "apartéis",
    "fr": "détourniez",
    "it": "ritraiate"
-  },
-  {
-   "pos": 7,
-   "form": "euch scheut",
-   "lemma": "sich scheuen",
-   "level": "C1",
-   "en": "shrink back",
-   "es": "os apartéis",
-   "fr": "vous détourniez",
-   "it": "vi ritraiate",
-   "parts": [
-    7,
-    11
-   ]
   }
  ],
  "12": [
@@ -2838,6 +2838,17 @@
   },
   {
    "pos": 3,
+   "form": "sich bewegt",
+   "lemma": "sich bewegen",
+   "level": "B1",
+   "en": "moves",
+   "es": "se mueve",
+   "fr": "se meut",
+   "it": "si muove",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2855,17 +2866,6 @@
    "es": "mueve",
    "fr": "meut",
    "it": "muove"
-  },
-  {
-   "pos": 3,
-   "form": "sich bewegt",
-   "lemma": "sich bewegen",
-   "level": "B1",
-   "en": "moves",
-   "es": "se mueve",
-   "fr": "se meut",
-   "it": "si muove",
-   "pos_end": 4
   },
   {
    "pos": 5,
@@ -3031,6 +3031,17 @@
   },
   {
    "pos": 4,
+   "form": "sich bewegt",
+   "lemma": "sich bewegen",
+   "level": "B1",
+   "en": "moves",
+   "es": "se mueve",
+   "fr": "se meut",
+   "it": "si muove",
+   "pos_end": 5
+  },
+  {
+   "pos": 4,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3048,17 +3059,6 @@
    "es": "mueve",
    "fr": "meut",
    "it": "muove"
-  },
-  {
-   "pos": 4,
-   "form": "sich bewegt",
-   "lemma": "sich bewegen",
-   "level": "B1",
-   "en": "moves",
-   "es": "se mueve",
-   "fr": "se meut",
-   "it": "si muove",
-   "pos_end": 5
   },
   {
    "pos": 6,
@@ -3586,6 +3586,17 @@
   },
   {
    "pos": 1,
+   "form": "alles andere",
+   "lemma": "alles andere",
+   "level": "A2",
+   "en": "everything else",
+   "es": "todo lo demás",
+   "fr": "tout le reste",
+   "it": "tutto il resto",
+   "pos_end": 2
+  },
+  {
+   "pos": 1,
    "form": "alles",
    "lemma": "alles",
    "level": "A1",
@@ -3603,17 +3614,6 @@
    "es": "demás",
    "fr": "autre",
    "it": "altro"
-  },
-  {
-   "pos": 1,
-   "form": "alles andere",
-   "lemma": "alles andere",
-   "level": "A2",
-   "en": "everything else",
-   "es": "todo lo demás",
-   "fr": "tout le reste",
-   "it": "tutto il resto",
-   "pos_end": 2
   },
   {
    "pos": 3,
@@ -5255,6 +5255,17 @@
   },
   {
    "pos": 9,
+   "form": "sei es",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -5272,17 +5283,6 @@
    "es": "ello",
    "fr": "ce",
    "it": "esso"
-  },
-  {
-   "pos": 9,
-   "form": "sei es",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia",
-   "pos_end": 10
   },
   {
    "pos": 11,
@@ -6032,6 +6032,17 @@
   },
   {
    "pos": 9,
+   "form": "sei es",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -6049,17 +6060,6 @@
    "es": "ello",
    "fr": "ce",
    "it": "esso"
-  },
-  {
-   "pos": 9,
-   "form": "sei es",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia",
-   "pos_end": 10
   },
   {
    "pos": 11,
@@ -7769,6 +7769,22 @@
  "43": [
   {
    "pos": 0,
+   "form": "Macht euch zum Abscheu",
+   "lemma": "sich zum Abscheu machen",
+   "level": "C1",
+   "en": "make yourselves loathsome",
+   "es": "os hagáis repulsivos",
+   "fr": "vous rendez répugnants",
+   "it": "vi rendete ripugnanti",
+   "parts": [
+    0,
+    1,
+    4,
+    5
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Macht",
    "lemma": "machen",
    "level": "A1",
@@ -7828,22 +7844,6 @@
    "it": "ribrezzo"
   },
   {
-   "pos": 0,
-   "form": "Macht euch zum Abscheu",
-   "lemma": "sich zum Abscheu machen",
-   "level": "C1",
-   "en": "make yourselves loathsome",
-   "es": "os hagáis repulsivos",
-   "fr": "vous rendez répugnants",
-   "it": "vi rendete ripugnanti",
-   "parts": [
-    0,
-    1,
-    4,
-    5
-   ]
-  },
-  {
    "pos": 6,
    "form": "und",
    "lemma": "und",
@@ -7852,6 +7852,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 7,
+   "form": "verunreinigt euch",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile yourselves",
+   "es": "os contaminéis",
+   "fr": "vous souillez",
+   "it": "vi contaminate",
+   "pos_end": 8
   },
   {
    "pos": 7,
@@ -7872,17 +7883,6 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
-  },
-  {
-   "pos": 7,
-   "form": "verunreinigt euch",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile yourselves",
-   "es": "os contaminéis",
-   "fr": "vous souillez",
-   "it": "vi contaminate",
-   "pos_end": 8
   },
   {
    "pos": 9,
@@ -7936,6 +7936,17 @@
   },
   {
    "pos": 14,
+   "form": "euch beschmutzt",
+   "lemma": "sich beschmutzen",
+   "level": "B2",
+   "en": "soil yourselves",
+   "es": "os ensuciáis",
+   "fr": "vous salissez",
+   "it": "vi sporcate",
+   "pos_end": 15
+  },
+  {
+   "pos": 14,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -7953,17 +7964,6 @@
    "es": "ensuciáis",
    "fr": "salissez",
    "it": "sporcate"
-  },
-  {
-   "pos": 14,
-   "form": "euch beschmutzt",
-   "lemma": "sich beschmutzen",
-   "level": "B2",
-   "en": "soil yourselves",
-   "es": "os ensuciáis",
-   "fr": "vous salissez",
-   "it": "vi sporcate",
-   "pos_end": 15
   }
  ],
  "44": [
@@ -8069,6 +8069,17 @@
   },
   {
    "pos": 10,
+   "form": "euch heiligen",
+   "lemma": "sich heiligen",
+   "level": "C1",
+   "en": "sanctify yourselves",
+   "es": "santificaros",
+   "fr": "vous sanctifier",
+   "it": "santificarvi",
+   "pos_end": 11
+  },
+  {
+   "pos": 10,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -8086,17 +8097,6 @@
    "es": "santificar",
    "fr": "sanctifier",
    "it": "santificare"
-  },
-  {
-   "pos": 10,
-   "form": "euch heiligen",
-   "lemma": "sich heiligen",
-   "level": "C1",
-   "en": "sanctify yourselves",
-   "es": "santificaros",
-   "fr": "vous sanctifier",
-   "it": "santificarvi",
-   "pos_end": 11
   },
   {
    "pos": 12,
@@ -8190,6 +8190,20 @@
   },
   {
    "pos": 21,
+   "form": "euch verunreinigen",
+   "lemma": "sich verunreinigen",
+   "level": "C1",
+   "en": "defile yourselves",
+   "es": "contaminaros",
+   "fr": "vous souiller",
+   "it": "contaminarvi",
+   "parts": [
+    21,
+    26
+   ]
+  },
+  {
+   "pos": 21,
    "form": "euch",
    "lemma": "ihr",
    "level": "A1",
@@ -8247,20 +8261,6 @@
    "es": "contaminar",
    "fr": "souiller",
    "it": "contaminare"
-  },
-  {
-   "pos": 21,
-   "form": "euch verunreinigen",
-   "lemma": "sich verunreinigen",
-   "level": "C1",
-   "en": "defile yourselves",
-   "es": "contaminaros",
-   "fr": "vous souiller",
-   "it": "contaminarvi",
-   "parts": [
-    21,
-    26
-   ]
   },
   {
    "pos": 27,
@@ -8426,6 +8426,20 @@
   },
   {
    "pos": 11,
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per",
+   "parts": [
+    11,
+    14
+   ]
+  },
+  {
+   "pos": 11,
    "form": "um",
    "lemma": "um",
    "level": "A1",
@@ -8463,20 +8477,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 11,
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per",
-   "parts": [
-    11,
-    14
-   ]
   },
   {
    "pos": 15,
@@ -8702,6 +8702,20 @@
   },
   {
    "pos": 12,
+   "form": "sich bewegen",
+   "lemma": "sich bewegen",
+   "level": "B1",
+   "en": "move",
+   "es": "se mueven",
+   "fr": "se meuvent",
+   "it": "si muovono",
+   "parts": [
+    12,
+    15
+   ]
+  },
+  {
+   "pos": 12,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -8739,20 +8753,6 @@
    "es": "mueven",
    "fr": "meuvent",
    "it": "muovono"
-  },
-  {
-   "pos": 12,
-   "form": "sich bewegen",
-   "lemma": "sich bewegen",
-   "level": "B1",
-   "en": "move",
-   "es": "se mueven",
-   "fr": "se meuvent",
-   "it": "si muovono",
-   "parts": [
-    12,
-    15
-   ]
   },
   {
    "pos": 16,

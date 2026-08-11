@@ -132,6 +132,17 @@
   },
   {
    "pos": 13,
+   "form": "Unzucht zu treiben",
+   "lemma": "Unzucht treiben",
+   "level": "C1",
+   "en": "commit sexual immorality",
+   "es": "cometer fornicación",
+   "fr": "se livrer à la débauche",
+   "it": "commettere fornicazione",
+   "pos_end": 15
+  },
+  {
+   "pos": 13,
    "form": "Unzucht",
    "lemma": "Unzucht",
    "level": "C1",
@@ -159,17 +170,6 @@
    "es": "cometer",
    "fr": "commettre",
    "it": "commettere"
-  },
-  {
-   "pos": 13,
-   "form": "Unzucht zu treiben",
-   "lemma": "Unzucht treiben",
-   "level": "C1",
-   "en": "commit sexual immorality",
-   "es": "cometer fornicación",
-   "fr": "se livrer à la débauche",
-   "it": "commettere fornicazione",
-   "pos_end": 15
   }
  ],
  "2": [
@@ -182,6 +182,20 @@
    "es": "Estas",
    "fr": "Celles-ci",
    "it": "Queste"
+  },
+  {
+   "pos": 1,
+   "form": "luden ein",
+   "lemma": "einladen",
+   "level": "A2",
+   "en": "invited",
+   "es": "invitaron",
+   "fr": "invitèrent",
+   "it": "invitarono",
+   "parts": [
+    1,
+    9
+   ]
   },
   {
    "pos": 1,
@@ -335,6 +349,20 @@
   },
   {
    "pos": 16,
+   "form": "betete an",
+   "lemma": "anbeten",
+   "level": "B2",
+   "en": "worshiped",
+   "es": "adoró",
+   "fr": "adora",
+   "it": "adorò",
+   "parts": [
+    16,
+    19
+   ]
+  },
+  {
+   "pos": 16,
    "form": "betete",
    "lemma": "beten",
    "level": "B1",
@@ -372,34 +400,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 1,
-   "form": "luden ein",
-   "lemma": "einladen",
-   "level": "A2",
-   "en": "invited",
-   "es": "invitaron",
-   "fr": "invitèrent",
-   "it": "invitarono",
-   "parts": [
-    1,
-    9
-   ]
-  },
-  {
-   "pos": 16,
-   "form": "betete an",
-   "lemma": "anbeten",
-   "level": "B2",
-   "en": "worshiped",
-   "es": "adoró",
-   "fr": "adora",
-   "it": "adorò",
-   "parts": [
-    16,
-    19
-   ]
   }
  ],
  "3": [
@@ -412,6 +412,21 @@
    "es": "Israel",
    "fr": "Israël",
    "it": "Israele"
+  },
+  {
+   "pos": 1,
+   "form": "schloss sich an",
+   "lemma": "sich anschließen",
+   "level": "B2",
+   "en": "joined",
+   "es": "se unió",
+   "fr": "se joignit",
+   "it": "si unì",
+   "parts": [
+    1,
+    2,
+    5
+   ]
   },
   {
    "pos": 1,
@@ -552,21 +567,6 @@
    "es": "encendida",
    "fr": "allumée",
    "it": "accesa"
-  },
-  {
-   "pos": 1,
-   "form": "schloss sich an",
-   "lemma": "sich anschließen",
-   "level": "B2",
-   "en": "joined",
-   "es": "se unió",
-   "fr": "se joignit",
-   "it": "si unì",
-   "parts": [
-    1,
-    2,
-    5
-   ]
   }
  ],
  "4": [
@@ -679,6 +679,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 11,
+   "form": "hänge auf",
+   "lemma": "aufhängen",
+   "level": "B2",
+   "en": "hang up",
+   "es": "cuelga",
+   "fr": "suspends",
+   "it": "appendi",
+   "parts": [
+    11,
+    16
+   ]
   },
   {
    "pos": 11,
@@ -802,6 +816,20 @@
   },
   {
    "pos": 23,
+   "form": "sich abwendet",
+   "lemma": "sich abwenden",
+   "level": "B2",
+   "en": "turns away",
+   "es": "se aparte",
+   "fr": "se détourne",
+   "it": "si allontani",
+   "parts": [
+    23,
+    26
+   ]
+  },
+  {
+   "pos": 23,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -839,34 +867,6 @@
    "es": "aparte",
    "fr": "détourne",
    "it": "allontani"
-  },
-  {
-   "pos": 11,
-   "form": "hänge auf",
-   "lemma": "aufhängen",
-   "level": "B2",
-   "en": "hang up",
-   "es": "cuelga",
-   "fr": "suspends",
-   "it": "appendi",
-   "parts": [
-    11,
-    16
-   ]
-  },
-  {
-   "pos": 23,
-   "form": "sich abwendet",
-   "lemma": "sich abwenden",
-   "level": "B2",
-   "en": "turns away",
-   "es": "se aparte",
-   "fr": "se détourne",
-   "it": "si allontani",
-   "parts": [
-    23,
-    26
-   ]
   }
  ],
  "5": [
@@ -992,6 +992,20 @@
   },
   {
    "pos": 12,
+   "form": "sich angeschlossen",
+   "lemma": "sich anschließen",
+   "level": "B2",
+   "en": "joined",
+   "es": "se han unido",
+   "fr": "se sont joints",
+   "it": "si sono uniti",
+   "parts": [
+    12,
+    15
+   ]
+  },
+  {
+   "pos": 12,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1039,20 +1053,6 @@
    "es": "han",
    "fr": "ont",
    "it": "hanno"
-  },
-  {
-   "pos": 12,
-   "form": "sich angeschlossen",
-   "lemma": "sich anschließen",
-   "level": "B2",
-   "en": "joined",
-   "es": "se han unido",
-   "fr": "se sont joints",
-   "it": "si sono uniti",
-   "parts": [
-    12,
-    15
-   ]
   }
  ],
  "6": [
@@ -1510,6 +1510,20 @@
   },
   {
    "pos": 12,
+   "form": "stand auf",
+   "lemma": "aufstehen",
+   "level": "A2",
+   "en": "got up",
+   "es": "se levantó",
+   "fr": "se leva",
+   "it": "si alzò",
+   "parts": [
+    12,
+    17
+   ]
+  },
+  {
+   "pos": 12,
    "form": "stand",
    "lemma": "stehen",
    "level": "A1",
@@ -1637,20 +1651,6 @@
    "es": "mano",
    "fr": "main",
    "it": "mano"
-  },
-  {
-   "pos": 12,
-   "form": "stand auf",
-   "lemma": "aufstehen",
-   "level": "A2",
-   "en": "got up",
-   "es": "se levantó",
-   "fr": "se leva",
-   "it": "si alzò",
-   "parts": [
-    12,
-    17
-   ]
   }
  ],
  "8": [
@@ -1866,6 +1866,20 @@
   },
   {
    "pos": 21,
+   "form": "hörte auf",
+   "lemma": "aufhören",
+   "level": "A2",
+   "en": "stopped",
+   "es": "cesó",
+   "fr": "cessa",
+   "it": "cessò",
+   "parts": [
+    21,
+    28
+   ]
+  },
+  {
+   "pos": 21,
    "form": "hörte",
    "lemma": "hören",
    "level": "A1",
@@ -1943,20 +1957,6 @@
    "es": "arriba",
    "fr": "en haut",
    "it": "su"
-  },
-  {
-   "pos": 21,
-   "form": "hörte auf",
-   "lemma": "aufhören",
-   "level": "A2",
-   "en": "stopped",
-   "es": "cesó",
-   "fr": "cessa",
-   "it": "cessò",
-   "parts": [
-    21,
-    28
-   ]
   }
  ],
  "9": [
@@ -2266,6 +2266,20 @@
   },
   {
    "pos": 19,
+   "form": "sich eingesetzt",
+   "lemma": "sich einsetzen",
+   "level": "B2",
+   "en": "devoted himself",
+   "es": "se ha dedicado",
+   "fr": "s'est dévoué",
+   "it": "si è dedicato",
+   "parts": [
+    19,
+    22
+   ]
+  },
+  {
+   "pos": 19,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2423,20 +2437,6 @@
    "es": "he",
    "fr": "ai",
    "it": "ho"
-  },
-  {
-   "pos": 19,
-   "form": "sich eingesetzt",
-   "lemma": "sich einsetzen",
-   "level": "B2",
-   "en": "devoted himself",
-   "es": "se ha dedicado",
-   "fr": "s'est dévoué",
-   "it": "si è dedicato",
-   "parts": [
-    19,
-    22
-   ]
   }
  ],
  "12": [
@@ -2694,6 +2694,20 @@
   },
   {
    "pos": 15,
+   "form": "sich eingesetzt",
+   "lemma": "sich einsetzen",
+   "level": "B2",
+   "en": "devoted himself",
+   "es": "se ha dedicado",
+   "fr": "s'est dévoué",
+   "it": "si è dedicato",
+   "parts": [
+    15,
+    19
+   ]
+  },
+  {
+   "pos": 15,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2801,20 +2815,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 15,
-   "form": "sich eingesetzt",
-   "lemma": "sich einsetzen",
-   "level": "B2",
-   "en": "devoted himself",
-   "es": "se ha dedicado",
-   "fr": "s'est dévoué",
-   "it": "si è dedicato",
-   "parts": [
-    15,
-    19
-   ]
   }
  ],
  "14": [
@@ -3286,6 +3286,21 @@
  "17": [
   {
    "pos": 0,
+   "form": "Fügt Schaden zu",
+   "lemma": "Schaden zufügen",
+   "level": "B2",
+   "en": "Do harm",
+   "es": "Haced daño",
+   "fr": "Faites du mal",
+   "it": "Fate del male",
+   "parts": [
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Fügt",
    "lemma": "zufügen",
    "level": "B2",
@@ -3363,21 +3378,6 @@
    "es": "los",
    "fr": "les",
    "it": "li"
-  },
-  {
-   "pos": 0,
-   "form": "Fügt Schaden zu",
-   "lemma": "Schaden zufügen",
-   "level": "B2",
-   "en": "Do harm",
-   "es": "Haced daño",
-   "fr": "Faites du mal",
-   "it": "Fate del male",
-   "parts": [
-    0,
-    3,
-    4
-   ]
   }
  ],
  "18": [
@@ -3420,6 +3420,17 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
+  },
+  {
+   "pos": 4,
+   "form": "Schaden zugefügt",
+   "lemma": "Schaden zufügen",
+   "level": "B2",
+   "en": "done harm",
+   "es": "hecho daño",
+   "fr": "fait du mal",
+   "it": "fatto del male",
+   "pos_end": 5
   },
   {
    "pos": 4,
@@ -3770,17 +3781,6 @@
    "es": "fue",
    "fr": "fut",
    "it": "fu"
-  },
-  {
-   "pos": 4,
-   "form": "Schaden zugefügt",
-   "lemma": "Schaden zufügen",
-   "level": "B2",
-   "en": "done harm",
-   "es": "hecho daño",
-   "fr": "fait du mal",
-   "it": "fatto del male",
-   "pos_end": 5
   }
  ]
 }

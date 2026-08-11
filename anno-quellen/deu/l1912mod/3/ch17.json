@@ -618,6 +618,17 @@
   },
   {
    "pos": 20,
+   "form": "macht sich schuldig",
+   "lemma": "sich schuldig machen",
+   "level": "B2",
+   "en": "makes himself guilty",
+   "es": "se hace culpable",
+   "fr": "se rend coupable",
+   "it": "si rende colpevole",
+   "pos_end": 22
+  },
+  {
+   "pos": 20,
    "form": "macht",
    "lemma": "machen",
    "level": "A1",
@@ -775,17 +786,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 20,
-   "form": "macht sich schuldig",
-   "lemma": "sich schuldig machen",
-   "level": "B2",
-   "en": "makes himself guilty",
-   "es": "se hace culpable",
-   "fr": "se rend coupable",
-   "it": "si rende colpevole",
-   "pos_end": 22
   }
  ],
  "5": [
@@ -1415,6 +1415,17 @@
   },
   {
    "pos": 5,
+   "form": "auf keinen Fall",
+   "lemma": "auf keinen Fall",
+   "level": "B1",
+   "en": "by no means",
+   "es": "de ninguna manera",
+   "fr": "en aucun cas",
+   "it": "in nessun caso",
+   "pos_end": 7
+  },
+  {
+   "pos": 5,
    "form": "auf",
    "lemma": "auf",
    "level": "A1",
@@ -1512,6 +1523,17 @@
    "es": "ellos",
    "fr": "ils",
    "it": "essi"
+  },
+  {
+   "pos": 15,
+   "form": "Abgötterei getrieben",
+   "lemma": "Abgötterei treiben",
+   "level": "C1",
+   "en": "committed idolatry",
+   "es": "cometido idolatría",
+   "fr": "commis l'idolâtrie",
+   "it": "commesso idolatria",
+   "pos_end": 16
   },
   {
    "pos": 15,
@@ -1652,28 +1674,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 5,
-   "form": "auf keinen Fall",
-   "lemma": "auf keinen Fall",
-   "level": "B1",
-   "en": "by no means",
-   "es": "de ninguna manera",
-   "fr": "en aucun cas",
-   "it": "in nessun caso",
-   "pos_end": 7
-  },
-  {
-   "pos": 15,
-   "form": "Abgötterei getrieben",
-   "lemma": "Abgötterei treiben",
-   "level": "C1",
-   "en": "committed idolatry",
-   "es": "cometido idolatría",
-   "fr": "commis l'idolâtrie",
-   "it": "commesso idolatria",
-   "pos_end": 16
   }
  ],
  "8": [
@@ -2163,6 +2163,17 @@
   },
   {
    "pos": 3,
+   "form": "sei er",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether he be",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia egli",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -2343,6 +2354,17 @@
   },
   {
    "pos": 21,
+   "form": "mich wenden",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turn",
+   "es": "volverme",
+   "fr": "me tourner",
+   "it": "volgermi",
+   "pos_end": 22
+  },
+  {
+   "pos": 21,
    "form": "mich",
    "lemma": "ich",
    "level": "A1",
@@ -2380,6 +2402,17 @@
    "es": "lo",
    "fr": "le",
    "it": "lo"
+  },
+  {
+   "pos": 25,
+   "form": "mitten aus",
+   "lemma": "mitten aus",
+   "level": "B1",
+   "en": "from the midst of",
+   "es": "de en medio de",
+   "fr": "du milieu de",
+   "it": "di mezzo a",
+   "pos_end": 26
   },
   {
    "pos": 25,
@@ -2430,39 +2463,6 @@
    "es": "excluir",
    "fr": "exclure",
    "it": "escludere"
-  },
-  {
-   "pos": 3,
-   "form": "sei er",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether he be",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia egli",
-   "pos_end": 4
-  },
-  {
-   "pos": 21,
-   "form": "mich wenden",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turn",
-   "es": "volverme",
-   "fr": "me tourner",
-   "it": "volgermi",
-   "pos_end": 22
-  },
-  {
-   "pos": 25,
-   "form": "mitten aus",
-   "lemma": "mitten aus",
-   "level": "B1",
-   "en": "from the midst of",
-   "es": "de en medio de",
-   "fr": "du milieu de",
-   "it": "di mezzo a",
-   "pos_end": 26
   }
  ],
  "11": [
@@ -3032,6 +3032,17 @@
   },
   {
    "pos": 3,
+   "form": "sei er",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether he be",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia egli",
+   "pos_end": 4
+  },
+  {
+   "pos": 3,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -3319,17 +3330,6 @@
    "es": "cubrir",
    "fr": "couvrir",
    "it": "coprire"
-  },
-  {
-   "pos": 3,
-   "form": "sei er",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether he be",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia egli",
-   "pos_end": 4
   }
  ],
  "14": [
@@ -3867,6 +3867,17 @@
   },
   {
    "pos": 12,
+   "form": "sei er",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether he be",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia egli",
+   "pos_end": 13
+  },
+  {
+   "pos": 12,
    "form": "sei",
    "lemma": "sein",
    "level": "A1",
@@ -3964,6 +3975,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 22,
+   "form": "sich baden",
+   "lemma": "sich baden",
+   "level": "B1",
+   "en": "bathe himself",
+   "es": "bañarse",
+   "fr": "se baigner",
+   "it": "bagnarsi",
+   "parts": [
+    22,
+    25
+   ]
   },
   {
    "pos": 22,
@@ -4104,31 +4129,6 @@
    "es": "limpio",
    "fr": "pur",
    "it": "puro"
-  },
-  {
-   "pos": 12,
-   "form": "sei er",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether he be",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia egli",
-   "pos_end": 13
-  },
-  {
-   "pos": 22,
-   "form": "sich baden",
-   "lemma": "sich baden",
-   "level": "B1",
-   "en": "bathe himself",
-   "es": "bañarse",
-   "fr": "se baigner",
-   "it": "bagnarsi",
-   "parts": [
-    22,
-    25
-   ]
   }
  ],
  "16": [
@@ -4194,6 +4194,17 @@
   },
   {
    "pos": 6,
+   "form": "badet sich",
+   "lemma": "sich baden",
+   "level": "B1",
+   "en": "bathes himself",
+   "es": "se baña",
+   "fr": "se baigne",
+   "it": "si bagna",
+   "pos_end": 7
+  },
+  {
+   "pos": 6,
    "form": "badet",
    "lemma": "baden",
    "level": "B1",
@@ -4221,6 +4232,21 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
+  },
+  {
+   "pos": 9,
+   "form": "macht sich schuldig",
+   "lemma": "sich schuldig machen",
+   "level": "B2",
+   "en": "makes himself guilty",
+   "es": "se hace culpable",
+   "fr": "se rend coupable",
+   "it": "si rende colpevole",
+   "parts": [
+    9,
+    11,
+    12
+   ]
   },
   {
    "pos": 9,
@@ -4261,32 +4287,6 @@
    "es": "culpable",
    "fr": "coupable",
    "it": "colpevole"
-  },
-  {
-   "pos": 6,
-   "form": "badet sich",
-   "lemma": "sich baden",
-   "level": "B1",
-   "en": "bathes himself",
-   "es": "se baña",
-   "fr": "se baigne",
-   "it": "si bagna",
-   "pos_end": 7
-  },
-  {
-   "pos": 9,
-   "form": "macht sich schuldig",
-   "lemma": "sich schuldig machen",
-   "level": "B2",
-   "en": "makes himself guilty",
-   "es": "se hace culpable",
-   "fr": "se rend coupable",
-   "it": "si rende colpevole",
-   "parts": [
-    9,
-    11,
-    12
-   ]
   }
  ]
 }

@@ -354,6 +354,17 @@
   },
   {
    "pos": 7,
+   "form": "versammelten sich",
+   "lemma": "sich versammeln",
+   "level": "B1",
+   "en": "gathered",
+   "es": "se reunieron",
+   "fr": "se rassemblèrent",
+   "it": "si radunarono",
+   "pos_end": 8
+  },
+  {
+   "pos": 7,
    "form": "versammelten",
    "lemma": "versammeln",
    "level": "B1",
@@ -411,17 +422,6 @@
    "es": "Aarón",
    "fr": "Aaron",
    "it": "Aaronne"
-  },
-  {
-   "pos": 7,
-   "pos_end": 8,
-   "form": "versammelten sich",
-   "lemma": "sich versammeln",
-   "level": "B1",
-   "en": "gathered",
-   "es": "se reunieron",
-   "fr": "se rassemblèrent",
-   "it": "si radunarono"
   }
  ],
  "3": [
@@ -981,6 +981,20 @@
   },
   {
    "pos": 18,
+   "form": "es gibt",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "there are",
+   "es": "hay",
+   "fr": "il y a",
+   "it": "ci sono",
+   "parts": [
+    18,
+    25
+   ]
+  },
+  {
+   "pos": 18,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -988,6 +1002,20 @@
    "es": "ello",
    "fr": "il",
    "it": "ci"
+  },
+  {
+   "pos": 19,
+   "form": "weder noch",
+   "lemma": "weder ... noch",
+   "level": "B1",
+   "en": "neither ... nor",
+   "es": "ni ... ni",
+   "fr": "ni ... ni",
+   "it": "né ... né",
+   "parts": [
+    19,
+    21
+   ]
   },
   {
    "pos": 19,
@@ -1013,7 +1041,7 @@
    "pos": 21,
    "form": "noch",
    "lemma": "noch",
-   "level": "B1",
+   "level": "A1",
    "en": "nor",
    "es": "ni",
    "fr": "ni",
@@ -1033,7 +1061,7 @@
    "pos": 23,
    "form": "noch",
    "lemma": "noch",
-   "level": "B1",
+   "level": "A1",
    "en": "nor",
    "es": "ni",
    "fr": "ni",
@@ -1118,34 +1146,6 @@
    "es": "beber",
    "fr": "boire",
    "it": "bere"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    25
-   ],
-   "form": "es gibt",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "there are",
-   "es": "hay",
-   "fr": "il y a",
-   "it": "ci sono"
-  },
-  {
-   "pos": 19,
-   "parts": [
-    19,
-    21
-   ],
-   "form": "weder noch",
-   "lemma": "weder ... noch",
-   "level": "B1",
-   "en": "neither ... nor",
-   "es": "ni ... ni",
-   "fr": "ni ... ni",
-   "it": "né ... né"
   }
  ],
  "6": [
@@ -1178,6 +1178,17 @@
    "es": "Aarón",
    "fr": "Aaron",
    "it": "Aaronne"
+  },
+  {
+   "pos": 3,
+   "form": "gingen weg",
+   "lemma": "weggehen",
+   "level": "A2",
+   "en": "went away",
+   "es": "se fueron",
+   "fr": "s'en allèrent",
+   "it": "se ne andarono",
+   "pos_end": 4
   },
   {
    "pos": 3,
@@ -1281,6 +1292,17 @@
   },
   {
    "pos": 13,
+   "form": "warfen sich nieder",
+   "lemma": "sich niederwerfen",
+   "level": "B2",
+   "en": "bowed down",
+   "es": "se postraron",
+   "fr": "se prosternèrent",
+   "it": "si prostrarono",
+   "pos_end": 15
+  },
+  {
+   "pos": 13,
    "form": "warfen",
    "lemma": "werfen",
    "level": "B1",
@@ -1378,28 +1400,6 @@
    "es": "SEÑOR",
    "fr": "ÉTERNEL",
    "it": "SIGNORE"
-  },
-  {
-   "pos": 3,
-   "pos_end": 4,
-   "form": "gingen weg",
-   "lemma": "weggehen",
-   "level": "A2",
-   "en": "went away",
-   "es": "se fueron",
-   "fr": "s'en allèrent",
-   "it": "se ne andarono"
-  },
-  {
-   "pos": 13,
-   "pos_end": 15,
-   "form": "warfen sich nieder",
-   "lemma": "sich niederwerfen",
-   "level": "B2",
-   "en": "bowed down",
-   "es": "se postraron",
-   "fr": "se prosternèrent",
-   "it": "si prostrarono"
   }
  ],
  "7": [
@@ -2363,6 +2363,20 @@
   },
   {
    "pos": 13,
+   "form": "floss heraus",
+   "lemma": "herausfließen",
+   "level": "B2",
+   "en": "flowed out",
+   "es": "brotó",
+   "fr": "jaillit",
+   "it": "sgorgò",
+   "parts": [
+    13,
+    16
+   ]
+  },
+  {
+   "pos": 13,
    "form": "floss",
    "lemma": "fließen",
    "level": "B1",
@@ -2480,20 +2494,6 @@
    "es": "pudieron",
    "fr": "purent",
    "it": "poterono"
-  },
-  {
-   "pos": 13,
-   "parts": [
-    13,
-    16
-   ],
-   "form": "floss heraus",
-   "lemma": "herausfließen",
-   "level": "B2",
-   "en": "flowed out",
-   "es": "brotó",
-   "fr": "jaillit",
-   "it": "sgorgò"
   }
  ],
  "12": [
@@ -2606,6 +2606,20 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
+  },
+  {
+   "pos": 11,
+   "form": "an geglaubt",
+   "lemma": "glauben an",
+   "level": "B1",
+   "en": "believed in",
+   "es": "creído en",
+   "fr": "cru en",
+   "it": "creduto in",
+   "parts": [
+    11,
+    13
+   ]
   },
   {
    "pos": 11,
@@ -2876,20 +2890,6 @@
    "es": "voy a",
    "fr": "vais",
    "it": "sto per"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    13
-   ],
-   "form": "an geglaubt",
-   "lemma": "glauben an",
-   "level": "B1",
-   "en": "believed in",
-   "es": "creído en",
-   "fr": "cru en",
-   "it": "creduto in"
   }
  ],
  "13": [
@@ -3075,6 +3075,20 @@
   },
   {
    "pos": 18,
+   "form": "sich erwies",
+   "lemma": "sich erweisen",
+   "level": "C1",
+   "en": "showed himself",
+   "es": "se mostró",
+   "fr": "se montra",
+   "it": "si mostrò",
+   "parts": [
+    18,
+    23
+   ]
+  },
+  {
+   "pos": 18,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3132,20 +3146,6 @@
    "es": "mostró",
    "fr": "montra",
    "it": "mostrò"
-  },
-  {
-   "pos": 18,
-   "parts": [
-    18,
-    23
-   ],
-   "form": "sich erwies",
-   "lemma": "sich erweisen",
-   "level": "B2",
-   "en": "showed himself",
-   "es": "se mostró",
-   "fr": "se montra",
-   "it": "si mostrò"
   }
  ],
  "14": [
@@ -3168,6 +3168,20 @@
    "es": "envió",
    "fr": "envoya",
    "it": "mandò"
+  },
+  {
+   "pos": 2,
+   "form": "von aus",
+   "lemma": "von … aus",
+   "level": "B1",
+   "en": "from",
+   "es": "desde",
+   "fr": "depuis",
+   "it": "da",
+   "parts": [
+    2,
+    4
+   ]
   },
   {
    "pos": 2,
@@ -3258,6 +3272,20 @@
    "es": "Así",
    "fr": "Ainsi",
    "it": "Così"
+  },
+  {
+   "pos": 11,
+   "form": "lässt sagen",
+   "lemma": "sagen lassen",
+   "level": "B2",
+   "en": "sends word",
+   "es": "manda decir",
+   "fr": "fait dire",
+   "it": "manda a dire",
+   "parts": [
+    11,
+    16
+   ]
   },
   {
    "pos": 11,
@@ -3418,34 +3446,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    4
-   ],
-   "form": "von aus",
-   "lemma": "von … aus",
-   "level": "B1",
-   "en": "from",
-   "es": "desde",
-   "fr": "depuis",
-   "it": "da"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    16
-   ],
-   "form": "lässt sagen",
-   "lemma": "sagen lassen",
-   "level": "B2",
-   "en": "sends word",
-   "es": "manda decir",
-   "fr": "fait dire",
-   "it": "manda a dire"
   }
  ],
  "15": [
@@ -3468,6 +3468,20 @@
    "es": "padres",
    "fr": "pères",
    "it": "padri"
+  },
+  {
+   "pos": 2,
+   "form": "zogen hinab",
+   "lemma": "hinabziehen",
+   "level": "B2",
+   "en": "went down",
+   "es": "bajaron",
+   "fr": "descendirent",
+   "it": "scesero",
+   "parts": [
+    2,
+    5
+   ]
   },
   {
    "pos": 2,
@@ -3668,20 +3682,6 @@
    "es": "mal",
    "fr": "mal",
    "it": "male"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    5
-   ],
-   "form": "zogen hinab",
-   "lemma": "hinabziehen",
-   "level": "B2",
-   "en": "went down",
-   "es": "bajaron",
-   "fr": "descendirent",
-   "it": "scesero"
   }
  ],
  "16": [
@@ -4321,7 +4321,7 @@
    "pos": 33,
    "form": "abzuweichen",
    "lemma": "abweichen",
-   "level": "B2",
+   "level": "C1",
    "en": "turning aside",
    "es": "desviarnos",
    "fr": "dévier",
@@ -4513,11 +4513,25 @@
    "pos": 12,
    "form": "sonst",
    "lemma": "sonst",
-   "level": "A2",
+   "level": "B1",
    "en": "otherwise",
    "es": "de lo contrario",
    "fr": "sinon",
    "it": "altrimenti"
+  },
+  {
+   "pos": 13,
+   "form": "ziehe entgegen",
+   "lemma": "entgegenziehen",
+   "level": "B2",
+   "en": "will march out to meet",
+   "es": "saldré al encuentro",
+   "fr": "sortirai à la rencontre",
+   "it": "uscirò incontro",
+   "parts": [
+    13,
+    19
+   ]
   },
   {
    "pos": 13,
@@ -4588,20 +4602,6 @@
    "es": "al encuentro",
    "fr": "à la rencontre",
    "it": "incontro"
-  },
-  {
-   "pos": 13,
-   "parts": [
-    13,
-    19
-   ],
-   "form": "ziehe entgegen",
-   "lemma": "entgegenziehen",
-   "level": "B2",
-   "en": "will march out to meet",
-   "es": "saldré al encuentro",
-   "fr": "sortirai à la rencontre",
-   "it": "uscirò incontro"
   }
  ],
  "19": [
@@ -5069,6 +5069,20 @@
   },
   {
    "pos": 10,
+   "form": "zogen entgegen",
+   "lemma": "entgegenziehen",
+   "level": "B2",
+   "en": "marched out to meet",
+   "es": "salieron al encuentro",
+   "fr": "sortirent à la rencontre",
+   "it": "uscirono incontro",
+   "parts": [
+    10,
+    18
+   ]
+  },
+  {
+   "pos": 10,
    "form": "zogen",
    "lemma": "ziehen",
    "level": "A2",
@@ -5156,20 +5170,6 @@
    "es": "al encuentro",
    "fr": "à la rencontre",
    "it": "incontro"
-  },
-  {
-   "pos": 10,
-   "parts": [
-    10,
-    18
-   ],
-   "form": "zogen entgegen",
-   "lemma": "entgegenziehen",
-   "level": "B2",
-   "en": "marched out to meet",
-   "es": "salieron al encuentro",
-   "fr": "sortirent à la rencontre",
-   "it": "uscirono incontro"
   }
  ],
  "21": [
@@ -5182,6 +5182,17 @@
    "es": "Así",
    "fr": "Ainsi",
    "it": "Così"
+  },
+  {
+   "pos": 1,
+   "form": "weigerten sich",
+   "lemma": "sich weigern",
+   "level": "B2",
+   "en": "refused",
+   "es": "se negaron",
+   "fr": "refusèrent",
+   "it": "si rifiutarono",
+   "pos_end": 2
   },
   {
    "pos": 1,
@@ -5325,6 +5336,20 @@
   },
   {
    "pos": 15,
+   "form": "wich aus",
+   "lemma": "ausweichen",
+   "level": "B2",
+   "en": "avoided",
+   "es": "evitó",
+   "fr": "évita",
+   "it": "evitò",
+   "parts": [
+    15,
+    17
+   ]
+  },
+  {
+   "pos": 15,
    "form": "wich",
    "lemma": "weichen",
    "level": "C1",
@@ -5352,31 +5377,6 @@
    "es": "a un lado",
    "fr": "de côté",
    "it": "da parte"
-  },
-  {
-   "pos": 1,
-   "pos_end": 2,
-   "form": "weigerten sich",
-   "lemma": "sich weigern",
-   "level": "B2",
-   "en": "refused",
-   "es": "se negaron",
-   "fr": "refusèrent",
-   "it": "si rifiutarono"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    17
-   ],
-   "form": "wich aus",
-   "lemma": "ausweichen",
-   "level": "B2",
-   "en": "avoided",
-   "es": "evitó",
-   "fr": "évita",
-   "it": "evitò"
   }
  ],
  "22": [
@@ -5409,6 +5409,20 @@
    "es": "de Israel",
    "fr": "d'Israël",
    "it": "d'Israele"
+  },
+  {
+   "pos": 3,
+   "form": "brachen auf",
+   "lemma": "aufbrechen",
+   "level": "B2",
+   "en": "set out",
+   "es": "partieron",
+   "fr": "partirent",
+   "it": "partirono",
+   "parts": [
+    3,
+    6
+   ]
   },
   {
    "pos": 3,
@@ -5539,20 +5553,6 @@
    "es": "Hor",
    "fr": "Hor",
    "it": "Hor"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    6
-   ],
-   "form": "brachen auf",
-   "lemma": "aufbrechen",
-   "level": "B2",
-   "en": "set out",
-   "es": "partieron",
-   "fr": "partirent",
-   "it": "partirono"
   }
  ],
  "23": [
@@ -6164,6 +6164,20 @@
  "26": [
   {
    "pos": 0,
+   "form": "Zieh aus",
+   "lemma": "ausziehen",
+   "level": "B1",
+   "en": "Take off",
+   "es": "Quita",
+   "fr": "Ôte",
+   "it": "Togli",
+   "parts": [
+    0,
+    4
+   ]
+  },
+  {
+   "pos": 0,
    "form": "Zieh",
    "lemma": "ausziehen",
    "level": "B1",
@@ -6221,6 +6235,20 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 6,
+   "form": "lege an",
+   "lemma": "anlegen",
+   "level": "B1",
+   "en": "put on",
+   "es": "pon",
+   "fr": "mets sur",
+   "it": "metti addosso",
+   "parts": [
+    6,
+    11
+   ]
   },
   {
    "pos": 6,
@@ -6381,34 +6409,6 @@
    "es": "morir",
    "fr": "mourir",
    "it": "morire"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    4
-   ],
-   "form": "Zieh aus",
-   "lemma": "ausziehen",
-   "level": "B1",
-   "en": "Take off",
-   "es": "Quita",
-   "fr": "Ôte",
-   "it": "Togli"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    11
-   ],
-   "form": "lege an",
-   "lemma": "anlegen",
-   "level": "B1",
-   "en": "put on",
-   "es": "pon",
-   "fr": "mets sur",
-   "it": "metti addosso"
   }
  ],
  "27": [
@@ -6636,6 +6636,20 @@
   },
   {
    "pos": 1,
+   "form": "zog aus",
+   "lemma": "ausziehen",
+   "level": "B1",
+   "en": "took off",
+   "es": "quitó",
+   "fr": "ôta",
+   "it": "tolse",
+   "parts": [
+    1,
+    5
+   ]
+  },
+  {
+   "pos": 1,
    "form": "zog",
    "lemma": "ausziehen",
    "level": "B1",
@@ -6696,6 +6710,20 @@
   },
   {
    "pos": 7,
+   "form": "legte an",
+   "lemma": "anlegen",
+   "level": "B1",
+   "en": "put on",
+   "es": "puso",
+   "fr": "mit sur",
+   "it": "mise addosso",
+   "parts": [
+    7,
+    12
+   ]
+  },
+  {
+   "pos": 7,
    "form": "legte",
    "lemma": "anlegen",
    "level": "B1",
@@ -6753,34 +6781,6 @@
    "es": "encima",
    "fr": "sur",
    "it": "addosso"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    5
-   ],
-   "form": "zog aus",
-   "lemma": "ausziehen",
-   "level": "B1",
-   "en": "took off",
-   "es": "quitó",
-   "fr": "ôta",
-   "it": "tolse"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    12
-   ],
-   "form": "legte an",
-   "lemma": "anlegen",
-   "level": "B1",
-   "en": "put on",
-   "es": "puso",
-   "fr": "mit sur",
-   "it": "mise addosso"
   }
  ],
  "29": [
@@ -6896,6 +6896,20 @@
   },
   {
    "pos": 11,
+   "form": "stiegen herab",
+   "lemma": "herabsteigen",
+   "level": "B1",
+   "en": "came down",
+   "es": "bajaron",
+   "fr": "redescendirent",
+   "it": "discesero",
+   "parts": [
+    11,
+    14
+   ]
+  },
+  {
+   "pos": 11,
    "form": "stiegen",
    "lemma": "steigen",
    "level": "A2",
@@ -6933,20 +6947,6 @@
    "es": "abajo",
    "fr": "en bas",
    "it": "giù"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    14
-   ],
-   "form": "stiegen herab",
-   "lemma": "herabsteigen",
-   "level": "B2",
-   "en": "came down",
-   "es": "bajaron",
-   "fr": "redescendirent",
-   "it": "discesero"
   }
  ]
 }

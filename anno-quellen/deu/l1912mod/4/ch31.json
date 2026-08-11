@@ -74,6 +74,17 @@
  "2": [
   {
    "pos": 0,
+   "form": "Nimm Rache",
+   "lemma": "Rache nehmen",
+   "level": "B2",
+   "en": "Avenge",
+   "es": "Venga",
+   "fr": "Venge",
+   "it": "Vendica",
+   "pos_end": 1
+  },
+  {
+   "pos": 0,
    "form": "Nimm",
    "lemma": "nehmen",
    "level": "A1",
@@ -91,17 +102,6 @@
    "es": "venganza",
    "fr": "vengeance",
    "it": "vendetta"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Nimm Rache",
-   "lemma": "Rache nehmen",
-   "level": "B2",
-   "en": "Avenge",
-   "es": "Venga",
-   "fr": "Venge",
-   "it": "Vendica"
   },
   {
    "pos": 2,
@@ -1065,6 +1065,17 @@
   },
   {
    "pos": 1,
+   "form": "führten Krieg",
+   "lemma": "Krieg führen",
+   "level": "B1",
+   "en": "waged war",
+   "es": "hicieron guerra",
+   "fr": "firent la guerre",
+   "it": "mossero guerra",
+   "pos_end": 2
+  },
+  {
+   "pos": 1,
    "form": "führten",
    "lemma": "führen",
    "level": "A2",
@@ -1082,17 +1093,6 @@
    "es": "guerra",
    "fr": "guerre",
    "it": "guerra"
-  },
-  {
-   "pos": 1,
-   "pos_end": 2,
-   "form": "führten Krieg",
-   "lemma": "Krieg führen",
-   "level": "B1",
-   "en": "waged war",
-   "es": "hicieron guerra",
-   "fr": "firent la guerre",
-   "it": "mossero guerra"
   },
   {
    "pos": 3,
@@ -1630,6 +1630,20 @@
   },
   {
    "pos": 3,
+   "form": "nahmen gefangen",
+   "lemma": "gefangen nehmen",
+   "level": "B2",
+   "en": "took captive",
+   "es": "llevaron cautivos",
+   "fr": "emmenèrent captifs",
+   "it": "fecero prigionieri",
+   "parts": [
+    3,
+    11
+   ]
+  },
+  {
+   "pos": 3,
    "form": "nahmen",
    "lemma": "nehmen",
    "level": "A1",
@@ -1717,20 +1731,6 @@
    "es": "cautivos",
    "fr": "prisonniers",
    "it": "prigionieri"
-  },
-  {
-   "pos": 3,
-   "parts": [
-    3,
-    11
-   ],
-   "form": "nahmen gefangen",
-   "lemma": "gefangen nehmen",
-   "level": "B2",
-   "en": "took captive",
-   "es": "llevaron cautivos",
-   "fr": "emmenèrent captifs",
-   "it": "fecero prigionieri"
   },
   {
    "pos": 12,
@@ -2592,6 +2592,20 @@
   },
   {
    "pos": 9,
+   "form": "gingen entgegen",
+   "lemma": "entgegengehen",
+   "level": "B2",
+   "en": "went to meet",
+   "es": "salieron al encuentro",
+   "fr": "allèrent à la rencontre",
+   "it": "andarono incontro",
+   "parts": [
+    9,
+    11
+   ]
+  },
+  {
+   "pos": 9,
    "form": "gingen",
    "lemma": "gehen",
    "level": "A1",
@@ -2619,20 +2633,6 @@
    "es": "al encuentro",
    "fr": "à la rencontre",
    "it": "incontro"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    11
-   ],
-   "form": "gingen entgegen",
-   "lemma": "entgegengehen",
-   "level": "B2",
-   "en": "went to meet",
-   "es": "salieron al encuentro",
-   "fr": "allèrent à la rencontre",
-   "it": "andarono incontro"
   },
   {
    "pos": 12,
@@ -2970,6 +2970,17 @@
   },
   {
    "pos": 9,
+   "form": "leben lassen",
+   "lemma": "leben lassen",
+   "level": "B2",
+   "en": "spared",
+   "es": "dejado con vida",
+   "fr": "laissé en vie",
+   "it": "lasciato in vita",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "leben",
    "lemma": "leben",
    "level": "A1",
@@ -2987,17 +2998,6 @@
    "es": "dejado",
    "fr": "laissé",
    "it": "lasciato"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "leben lassen",
-   "lemma": "leben lassen",
-   "level": "B2",
-   "en": "spared",
-   "es": "dejado con vida",
-   "fr": "laissé en vie",
-   "it": "lasciato in vita"
   }
  ],
  "16": [
@@ -3143,6 +3143,20 @@
   },
   {
    "pos": 14,
+   "form": "sich versündigen",
+   "lemma": "sich versündigen",
+   "level": "B2",
+   "en": "sin",
+   "es": "pecar",
+   "fr": "pécher",
+   "it": "peccare",
+   "parts": [
+    14,
+    22
+   ]
+  },
+  {
+   "pos": 14,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3230,20 +3244,6 @@
    "es": "cometer pecado",
    "fr": "commettre un péché",
    "it": "commettere peccato"
-  },
-  {
-   "pos": 14,
-   "parts": [
-    14,
-    22
-   ],
-   "form": "sich versündigen",
-   "lemma": "sich versündigen",
-   "level": "B2",
-   "en": "sin",
-   "es": "pecar",
-   "fr": "pécher",
-   "it": "peccare"
   },
   {
    "pos": 23,
@@ -3631,6 +3631,20 @@
   },
   {
    "pos": 11,
+   "form": "lasst leben",
+   "lemma": "leben lassen",
+   "level": "B2",
+   "en": "let live",
+   "es": "dejad con vida",
+   "fr": "laissez en vie",
+   "it": "lasciate in vita",
+   "parts": [
+    11,
+    14
+   ]
+  },
+  {
+   "pos": 11,
    "form": "lasst",
    "lemma": "lassen",
    "level": "A2",
@@ -3668,23 +3682,20 @@
    "es": "vivir",
    "fr": "vivre",
    "it": "vivere"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    14
-   ],
-   "form": "lasst leben",
-   "lemma": "leben lassen",
-   "level": "B2",
-   "en": "let live",
-   "es": "dejad con vida",
-   "fr": "laissez en vie",
-   "it": "lasciate in vita"
   }
  ],
  "19": [
+  {
+   "pos": 0,
+   "form": "Lagert euch",
+   "lemma": "sich lagern",
+   "level": "B2",
+   "en": "Encamp",
+   "es": "Acampaos",
+   "fr": "Campez",
+   "it": "Accampatevi",
+   "pos_end": 1
+  },
   {
    "pos": 0,
    "form": "Lagert",
@@ -3704,17 +3715,6 @@
    "es": "os",
    "fr": "vous",
    "it": "vi"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Lagert euch",
-   "lemma": "sich lagern",
-   "level": "B2",
-   "en": "Encamp",
-   "es": "Acampaos",
-   "fr": "Campez",
-   "it": "Accampatevi"
   },
   {
    "pos": 2,
@@ -4518,7 +4518,7 @@
    "pos": 4,
    "form": "aushält",
    "lemma": "aushalten",
-   "level": "B2",
+   "level": "B1",
    "en": "withstands",
    "es": "resiste",
    "fr": "résiste",
@@ -4566,6 +4566,17 @@
   },
   {
    "pos": 9,
+   "form": "gehen lassen",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "pass through",
+   "es": "hacer pasar",
+   "fr": "faire passer",
+   "it": "far passare",
+   "pos_end": 10
+  },
+  {
+   "pos": 9,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -4583,17 +4594,6 @@
    "es": "hacer",
    "fr": "faire",
    "it": "fare"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "gehen lassen",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "pass through",
-   "es": "hacer pasar",
-   "fr": "faire passer",
-   "it": "far passare"
   },
   {
    "pos": 11,
@@ -4769,7 +4769,7 @@
    "pos": 28,
    "form": "aushält",
    "lemma": "aushalten",
-   "level": "B2",
+   "level": "B1",
    "en": "withstands",
    "es": "resiste",
    "fr": "résiste",
@@ -4817,6 +4817,17 @@
   },
   {
    "pos": 33,
+   "form": "gehen lassen",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "pass through",
+   "es": "hacer pasar",
+   "fr": "faire passer",
+   "it": "far passare",
+   "pos_end": 34
+  },
+  {
+   "pos": 33,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -4834,17 +4845,6 @@
    "es": "hacer",
    "fr": "faire",
    "it": "fare"
-  },
-  {
-   "pos": 33,
-   "pos_end": 34,
-   "form": "gehen lassen",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "pass through",
-   "es": "hacer pasar",
-   "fr": "faire passer",
-   "it": "far passare"
   }
  ],
  "24": [
@@ -7560,7 +7560,7 @@
    "pos": 6,
    "form": "zustand",
    "lemma": "zustehen",
-   "level": "B2",
+   "level": "C1",
    "en": "was due",
    "es": "correspondía",
    "fr": "revenait",
