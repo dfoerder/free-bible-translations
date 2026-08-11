@@ -42,7 +42,7 @@ nennt die Grundlesart, nicht die einzige zulässige Form.
 | `Gedächtnisopfer` | memorial offering | ofrenda memorial | offrande de souvenir | offerta memoriale | C1 |
 | `Sühne` | atonement | expiación | expiation | espiazione | C1 |
 | `fehlerlos` | without defect | sin defecto | sans défaut | senza difetto | B2 |
-| `Eingeweide` | entrails | entrañas | entrailles | interiora | C1 |
+| `Eingeweide` | entrails | entrañas | entrailles | viscere | C1 |
 | `Lenden` | loins | lomos | reins | lombi | C1 |
 | `Kleinvieh` | small livestock | ganado menor | petit bétail | bestiame minuto | C1 |
 | `abheben` (Opferanteil) | take off | separar | prélever | prelevare | B2 |
@@ -87,6 +87,35 @@ aus, wo `Opfer` im selben Vers steht. Das ist gewollt und geprüft.
 
 **Kein Mehrwort-Eintrag für „Opfer bringen"** — die Bedeutung ergibt sich aus
 den Teilen.
+
+Aus **3Mo 7** (Priesteranteil) — die restlichen Opfernamen:
+
+| Deutsch | en | es | fr | it | Level |
+|---|---|---|---|---|---|
+| `Webeopfer` | wave offering | ofrenda mecida | offrande balancée | offerta agitata | C1 |
+| `Webebrust` | breast of the wave offering | pecho de la ofrenda mecida | poitrine de l'offrande balancée | petto dell'offerta agitata | C2 |
+| `Hebeschulter` | shoulder of the heave offering | hombro de la ofrenda elevada | épaule de l'offrande prélevée | spalla dell'offerta elevata | C2 |
+| `Lobopfer` | sacrifice of praise | sacrificio de alabanza | sacrifice de louange | sacrificio di lode | C1 |
+| `Gelübdeopfer` | vow offering | ofrenda votiva | offrande votive | offerta votiva | C1 |
+| `Einsetzungsopfer` | ordination offerings | ofrendas de ordenación | offrandes d'ordination | offerte di ordinazione | C1 |
+| `ausschließen` (Ausrottungsformel) | cut off | excluido | exclu | escluso | B2 |
+| `verunreinigen` | defiled | contaminado | souillé | contaminato | C1 |
+| `widerwärtig` | detestable | repugnante | répugnant | ripugnante | C1 |
+| `verenden` | perished | muertos | morts | morti | B2 |
+| `Berührung` | contact | contacto | contact | contatto | B2 |
+| `freiwillig` | voluntary | voluntario | volontaire | volontario | B2 |
+
+Damit sind **alle sechs Opferarten von 3Mo 7,37** gebunden.
+
+**`Fleisch` hat zwei Lesarten, und beide sind richtig.** Als Opferfleisch, das
+verbrannt oder berührt wird: *flesh / carne / chair / carne* (3Mo 4,11 · 6,20).
+Als Speise, die gegessen wird: *meat / carne / viande / carne* (3Mo 7,15–21).
+Der Bestand macht dieselbe Unterscheidung — 2Mo 12,8 und 29,31 tragen *meat*,
+die hundert übrigen Belege *flesh*. **Am Verb entscheiden, nicht am Wort.**
+
+**`ewig` weicht im Französischen auf *perpétuel* aus**, wo `HERR` (*ÉTERNEL*)
+im selben Vers steht — 3Mo 6,11 · 6,15 · 7,34 · 7,36. Zwei Agenten haben das
+unabhängig voneinander so gelöst.
 
 Aus **3Mo 4** (Sündopfer) — Schuld, Versehen und die Altarteile:
 
