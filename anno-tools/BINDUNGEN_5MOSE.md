@@ -214,6 +214,21 @@ Schreibung aus dem Text übernehmen, Reihenfolge nicht.
 **`Sered` ist zweideutig:** der Bestand kennt die Person (*Sered*, 1Mo 46,14 ·
 4Mo 26,26) und den Bach (*Zered*, 4Mo 21,12). 5Mo 2,13/14 meint den Bach.
 
+## `kein`, `keiner` und `niemand` in einem Vers
+
+18,10 und 18,11 führen alle drei nebeneinander. Der Bestand kann sie außerhalb
+des Englischen nicht auseinanderhalten — `keiner` = *no one · nadie · personne ·
+nessuno* (3Mo 25,14) ist zeichengleich mit `niemand`, `keiner` = *none · ninguno
+· aucun · nessuno* (2Mo 14,28) ist im Französischen zeichengleich mit `kein`.
+
+Die Trennung, die in 5Mo 18 gilt und ab jetzt für das Buch bindet:
+
+| | en | es | fr | it |
+|---|---|---|---|---|
+| `niemand` | no one | nadie | personne | nessuno |
+| `keiner` | none | ninguno | **nul** | **alcuno** |
+| `kein` | no | ningún | aucun | nessun |
+
 ## Zwei Kollisionen, die stehen bleiben
 
 `denn` = *For* und `lang` = *for* stehen in **2,7** im selben Vers. Beide
