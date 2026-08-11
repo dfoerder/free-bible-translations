@@ -33,8 +33,23 @@ dasteht.
 | `Amtmann` | officers · oficiales · officiers · ufficiali | C1 |
 | `Richter` / `richten` | judges · jueces · juges · giudici / judge · juzgar · juger · giudicare | B1 |
 | `Gericht` | judgment · juicio · jugement · giudizio | B2 |
-| `Gebot` | commandment · mandamiento · commandement · comandamento | B2 |
-| `Gesetz` | law · ley · loi · legge | B1 |
+| `Gebot` | commandments · mandamientos · commandements · comandamenti | B1 |
+| `Recht` | ordinances · derechos · droits · diritti | B1 |
+| `Ordnung` | orders · órdenes · ordres · ordini | B1 |
+| `Gesetz` | law(s) · ley(es) · loi(s) · legge/leggi | B1 |
+| `Zeugnis` | testimonies · testimonios · témoignages · testimonianze | B2 |
+| `gebieten` | commanded · mandado · ordonné · comandato | B2 |
+
+**Welche Rechtswörter dastehen, entscheidet jedes Kapitel neu.** Bisher: 5Mo 1
+nur `Gesetz`, `Befehl`, `Gericht`, `richten`, `Richter` · 5Mo 2 **keines** ·
+5Mo 4 fünf (`Gebot`, `Recht`, `Ordnung`, `Gesetz`, `Zeugnis`, kein `Satzung`) ·
+5Mo 6 vier plus `Zeugnis`, kein `Ordnung`. Erst im Quelltext nachsehen, dann
+binden. Wo mehrere im **selben Vers** stehen (4,8 · 4,45 · 6,1 · 6,2 · 6,17 ·
+6,20), müssen alle vier Sprachspalten paarweise verschieden sein.
+
+**Ausnahme 1,17:** dort stehen `Gericht` und `Richten` im selben Vers, deshalb
+trägt `Gericht` hier *court · tribunal · tribunal · tribunale* statt der
+Bestandslesart *judgment*. Nur an dieser Stelle.
 
 `Anführer` und `Haupt` stehen **in 1,15 nebeneinander** und sind deshalb
 zwangsgetrennt. Von den sieben Rechtswörtern des Bestands hat 5Mo 1 nur
@@ -89,6 +104,36 @@ Die Vergangenheitsform bleibt *captured* (4Mo 21,24).
 `Angst` ist *dread*, weil `fürchten` im selben Vers (1,29) steht. `weh` als
 **Adjektiv** ist ein eigenes Lemma — der Bestand kennt nur das Substantiv
 `Weh` = *woe*.
+
+### Bund, Wort und Gottesdienst (aus 5Mo 4 und 6)
+
+| Deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `Bund` | covenant · pacto · alliance · alleanza | B2 |
+| `Tafel` / `steinern` | tablets · tablas · tables · tavole / stone · de piedra · de pierre · di pietra | B2 |
+| `Bild` / `Gestalt` | image(s) · imagen(es) · image(s) · immagine/-i / form · figura · forme · forma | A2/B2 |
+| `Stimme` / `Wort` | voice · voz · voix · voce / words · palabras · paroles · parole | A2/B1 |
+| `Wolke` / `Dunkelheit` / `Finsternis` | clouds · nubes · nuées · nubi / gloom · oscuridad · obscurité · oscurità / darkness · tinieblas · ténèbres · tenebre | A2/B1/C1 |
+| `lieben` · `Herz` · `Seele` · `Kraft` | love · amar · aimer · amare / heart · corazón · cœur · cuore / soul · alma · âme · anima / strength · fuerza · force · forza | A1/A2/B1/A2 |
+| `befolgen` / `halten` / `bewahren` | follow · cumplir · suivre · seguire / keep · guardar · garder · osservare / keep · guardar · garder · custodire | B2/A2/B1 |
+| `fürchten` / `lehren` | fear · temer · craindre · temere / teach · enseñar · enseigner · insegnare | B1 |
+| `Volk` / `Völker` / `Nation` | people · pueblo · peuple · popolo / **peoples · pueblos · peuples · popoli** / nation · nación · nation · nazione | B1 |
+| `Zeichen` / `Wunder` | sign(s) · señal(es) · signe(s) · segno/segni / wonders · prodigios · prodiges · prodigi | B1 |
+| `Erbe` / `Gerechtigkeit` | inheritance · herencia · héritage · eredità / righteousness · justicia · justice · giustizia | B2 |
+| `Sklave` / `Sklaverei` | slaves · esclavos · esclaves · schiavi / slavery · esclavitud · esclavage · schiavitù | B2 |
+| `Zorn` / `entbrennen` | wrath · ira · colère · ira / blazes · arda · s'enflamme · arda | B2/C1 |
+| `leidenschaftlich` / `furchterregend` | passionate · apasionado · passionné · appassionato / fearsome · terribles · terribles · terribili | B2/C1 |
+| `verzehrend` / `vertilgen` | consuming · devorador · dévorant · divorante / wipes out · exterminar · exterminer · sterminare | C1 |
+| `Milch` / `Honig` | milk · leche · lait · latte / honey · miel · miel · miele | A1/A2 |
+
+**`Wunder` ist *wonders*, nicht *miracles*** — die *miracles*-Mehrheit im
+Bestand ist NT. **`Kraft` ist in der Formel „mit aller Kraft" *strength***,
+nicht *power*: der Bestand glossiert genau diese Formel in Markus 12,30, dem
+Zitat von 5Mo 6,5, so. **`Völker` ist *peoples***, nicht *nations* — 5Mo 2,25
+und 6,14 wurden nachträglich darauf gezogen.
+
+**Gott ist in diesem Buch nicht „eifernd" und nicht „eifersüchtig".** 4,24 und
+6,15 sagen beide `ein leidenschaftlicher Gott`.
 
 ## Namen: der Prompt lag siebenmal daneben
 
