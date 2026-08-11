@@ -189,6 +189,15 @@ stehen. `Weizen` steht in 8,8, `Getreide` in 11,14 — **sobald ein Kapitel
 beide führt, muss `Getreide` auf *cereales · céréales · cereali* ausweichen**,
 und dann korpusweit.
 
+## Ein Grammatikfehler im Quelltext: 23,10
+
+> „Wenn **du** gegen deine Feinde **auszieht** und ein Lager aufschlägst …"
+
+Subjekt 2. Sg., Verb 3. Sg./2. Pl. Das ist ein Modernisierungsfehler in
+`l1912mod`, kein Annotationsproblem. Die Annotation folgt dem Subjekt (`du` →
+*march out · sales · sors · esci*). **Die Stelle gehört im Bibeltext
+korrigiert**, nicht in der Annotation.
+
 ## Namen: der Prompt lag siebenmal daneben
 
 Beide Agenten haben unabhängig dieselbe Sorte Fehler gemeldet. **Die
