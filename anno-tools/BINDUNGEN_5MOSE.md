@@ -63,7 +63,8 @@ Gericht" — verlangen *court · tribunal · tribunal · tribunale*, nicht die
 Bestandsmehrheit *judgment*. Das Urteil heißt hier `Urteil` (17,9 · 17,11) und
 trägt *judgment · juicio · jugement · giudizio*; in 1,17 steht `Richten`
 daneben. Erst wo `Gericht` erkennbar den Richtspruch meint, gilt wieder
-*judgment*.
+*judgment* — und das ist **32,41** („meine Hand zum Gericht greift"), der
+einzige Beleg dieser Lesart im Buch.
 
 `Anführer` und `Haupt` stehen **in 1,15 nebeneinander** und sind deshalb
 zwangsgetrennt. Von den sieben Rechtswörtern des Bestands hat 5Mo 1 nur
