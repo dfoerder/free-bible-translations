@@ -126,6 +126,20 @@ Die Vergangenheitsform bleibt *captured* (4Mo 21,24).
 | `verzehrend` / `vertilgen` | consuming · devorador · dévorant · divorante / wipes out · exterminar · exterminer · sterminare | C1 |
 | `Milch` / `Honig` | milk · leche · lait · latte / honey · miel · miel · miele | A1/A2 |
 
+**Die Schema-Formel steht nur in 6,5 vollständig.** Danach ist sie jedes Mal
+verkürzt, und die Präposition wechselt:
+
+| Stelle | Wortlaut |
+|---|---|
+| 6,5 | `mit ganzem Herzen`, `mit ganzer Seele`, `mit aller Kraft` |
+| 10,12 | `von ganzem Herzen und ganzer Seele` — **kein `Kraft`**, `von` statt `mit` |
+| 11,13 | `von ganzem Herzen und ganzer Seele` — kein `Kraft` |
+| 13,4 | `von ganzem Herzen` — **weder `Seele` noch `Kraft`** |
+
+`von ganzem Herzen` ist B1 (Mt 22,37), `mit ganzem Herzen` B2 — verschiedene
+Mehrwort-Einträge, nicht dasselbe. Die `Kraft` = *strength*-Sonderregel greift
+außerhalb von 6,5 also bisher nirgends; überall sonst ist `Kraft` = *power*.
+
 **`Wunder` ist *wonders*, nicht *miracles*** — die *miracles*-Mehrheit im
 Bestand ist NT. **`Kraft` ist in der Formel „mit aller Kraft" *strength***,
 nicht *power*: der Bestand glossiert genau diese Formel in Markus 12,30, dem
