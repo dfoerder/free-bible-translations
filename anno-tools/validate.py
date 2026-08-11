@@ -133,25 +133,30 @@ def validate_chapter(nr, kap, data, partial=False, von=None, bis=None):
 
 
 def validate_book(nr, quiet=False):
-    """Gebaute Anno-Datei gegen den Quelltext prüfen (Ebene 1 + Vollständigkeit)."""
+    """Gebaute Anno-Datei gegen den Quelltext prüfen (Ebene 1 + Vollständigkeit).
+
+    Ein Buch in Arbeit ist kein Fehler: fehlende Kapitel werden gemeldet, aber
+    nicht als Befund gezählt — sonst steht jedes laufende Buch auf FEHLER."""
     src = C.load_source(nr)['chapters']
     ann = C.load_anno(nr, cache=False)['chapters']
     errs = []
     fehlend = [k for k in src if k not in ann]
-    if fehlend:
-        errs.append(f'Kapitel fehlen ganz: {sorted(fehlend, key=int)}')
     for kap in sorted(set(src) & set(ann), key=int):
         errs += validate_chapter(nr, kap, ann[kap])
     if not quiet:
         for e in errs:
             print(e)
-    return errs
+    return errs, fehlend
 
 
 def gegenrechnung(nr):
-    """Tokens im Quelltext − Einzelworteinträge = alleinstehende Satzzeichen."""
+    """Tokens im Quelltext − Einzelworteinträge = alleinstehende Satzzeichen.
+
+    Gezählt wird nur über die Kapitel, die die Anno-Datei enthält — sonst
+    rechnet ein Buch in Arbeit gegen den ganzen Quelltext."""
     src = C.load_source(nr)['chapters']
     ann = C.load_anno(nr, cache=False)['chapters']
+    src = {k: v for k, v in src.items() if k in ann}
     tok = sum(len(C.tokens(t)) for vs in src.values() for t in vs.values())
     zeichen = sum(1 for vs in src.values() for t in vs.values()
                   for x in C.tokens(t) if C.is_punct_only(x))
@@ -167,12 +172,14 @@ if __name__ == '__main__':
     nrs = C.anno_books() if sys.argv[1] == 'alle' else [int(a) for a in sys.argv[1:]]
     schlimm = 0
     for nr in nrs:
-        errs = validate_book(nr, quiet=True)
+        errs, fehlend = validate_book(nr, quiet=True)
         tok, einzel, mehr, zeichen = gegenrechnung(nr)
         name = C.load_source(nr)['name']
         ok = 'ok' if not errs and tok - einzel == zeichen else 'FEHLER'
+        offen = f' · {len(fehlend)} Kapitel offen' if fehlend else ''
         print(f'{nr:>2} {name:<20} {tok} Tokens − {einzel} Einzel = {tok-einzel} '
-              f'(Satzzeichen {zeichen}) · {mehr} Mehrwort · {len(errs)} Befunde  [{ok}]')
+              f'(Satzzeichen {zeichen}) · {mehr} Mehrwort · {len(errs)} Befunde'
+              f'{offen}  [{ok}]')
         for e in errs[:40]:
             print('   ', e)
         schlimm += len(errs) + (0 if tok - einzel == zeichen else 1)

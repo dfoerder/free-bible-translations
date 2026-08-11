@@ -21,6 +21,8 @@ import argparse
 import collections
 
 import common as C
+import hints
+
 
 # Vorangestellte Artikel und Kasuspräpositionen aller vier Zielsprachen.
 # Ohne sie besteht der Bericht aus Paaren wie `Abraham` / `de Abraham`.
@@ -78,6 +80,8 @@ def bericht(nr, min_belege=3, alle=False):
     kandidaten = []
     einzelfaelle = 0
     for lemma, gruppen in eigen.items():
+        if lemma.lower() in hints.FUNKTION:    # Artikel und Pronomen weichen
+            continue                           # legitim in jedem zweiten Vers ab
         if len({g[0] for g in gruppen}) < 2:   # nur echte Bedeutungsspaltungen
             continue
         groessen = sorted((len(s) for s in gruppen.values()), reverse=True)
