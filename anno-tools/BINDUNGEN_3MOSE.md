@@ -88,6 +88,42 @@ aus, wo `Opfer` im selben Vers steht. Das ist gewollt und geprüft.
 **Kein Mehrwort-Eintrag für „Opfer bringen"** — die Bedeutung ergibt sich aus
 den Teilen.
 
+Aus **3Mo 10–16** — Reinheit, Krankheit, Versöhnungstag:
+
+| Deutsch | en | es | fr | it | Level |
+|---|---|---|---|---|---|
+| `unrein` | unclean | inmundo | impur | immondo | B2 |
+| `rein` | clean | limpio | pur | puro | B1 |
+| `Reinigung` | purification | purificación | purification | purificazione | B2 |
+| `Kadaver` | carcass | cadáver | carcasse | carcassa | C1 |
+| `Aas` | carcass | carroña | charogne | carogna | C1 |
+| `Kriechtier` | creeping thing | animal rastrero | bête rampante | animale strisciante | C1 |
+| `Klaue` | hoof | pezuña | sabot | zoccolo | B2 |
+| `wiederkäuen` | chew the cud | rumiar | ruminer | ruminare | C1 |
+| `Flosse` / `Schuppe` | fins / scales | aletas / escamas | nageoires / écailles | pinne / squame | C1 |
+| `Monatsblutung` | monthly period | menstruación | règles | mestruazioni | C1 |
+| `Blutung` | bleeding | hemorragia | perte de sang | emorragia | C1 |
+| `Gnadenstuhl` | mercy seat | propiciatorio | propitiatoire | propiziatorio | C1 |
+| `entsühnen` | make atonement for | hacer expiación por | faire l'expiation pour | fare espiazione per | C1 |
+| `Entsühnung` | atonement | expiación | expiation | espiazione | C1 |
+| `entsündigen` | purify from sin | purificar del pecado | purifier du péché | purificare dal peccato | C1 |
+| `Asasel` | Azazel | Azazel | Azazel | Azazel | A1 |
+| `Wildnis` | wilderness | yermo | terre sauvage | terra selvaggia | C1 |
+| `Kot` | excrement | excremento | excréments | escrementi | B2 |
+| `Räucherpfanne` | censer | incensario | encensoir | incensiere | C1 |
+| `fasten` | fast | ayunar | jeûner | digiunare | B2 |
+| `Einheimischer` | natives | nativos | indigènes | nativi | B2 |
+| `bis zum Abend` (Formel) | until the evening | hasta el atardecer | jusqu'au soir | fino alla sera | — |
+
+**`Aas` und `Kadaver` sind im Englischen zeichengleich** (*carcass*). Sie stehen
+in 3Mo 5 und 11 nie im selben Vers, deshalb nicht aufgelöst — wer sie zusammen
+findet, meldet es.
+
+**Vier deutsche Wörter für die Sühne, alle verschieden gebunden**: `sühnen`
+(3Mo 1,4), `Sühne leisten` (3Mo 4–7), `entsündigen` (3Mo 8,15), `entsühnen`
+und `Entsühnung` (3Mo 10,17 und das ganze Kapitel 16). Sie sind
+**nicht** austauschbar — jedes Kapitel benutzt sein eigenes.
+
 Aus **3Mo 7** (Priesteranteil) — die restlichen Opfernamen:
 
 | Deutsch | en | es | fr | it | Level |
