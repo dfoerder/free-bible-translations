@@ -46,6 +46,17 @@ Reihenfolge folgt dem Text.
 `Diener` B1, `Knecht` B2 und `Gehilfe` B2 sind **drei** Lemmata und stehen in
 1,1 zu zweit im selben Vers (`Diener des HERRN` / `Moses Gehilfe`).
 
+**Aber `Diener` gilt nicht durchweg:** 18,7 sagt `Mose, der **Knecht** Gottes`.
+`Diener` kommt in Kapitel 18 nirgends vor, also keine Kollision — die Regel
+lautet trotzdem: **am Vers entscheiden, nicht am Buch.**
+
+**Das Bauwerk heißt in Josua `die Hütte des Stifts`** (18,1 · 19,51) — drei
+Tokens, Mehrwort-Eintrag C2 *Tent of Meeting · tabernáculo de reunión · tente
+d'assignation · tenda di convegno*, `Stift` C2 *meeting · reunión ·
+assignation · convegno*, `Hütte` B1. Weder `Stiftshütte` noch `Wohnung` noch
+`Zelt der Begegnung` (5Mo 31,14) kommen vor. Zwei Agenten haben die Glossen
+unabhängig gleich gebildet.
+
 ## Die Völkerliste folgt der Bestandsschreibung
 
 Jos 1,4 schreibt `Hethiter`, Jos 3,10 `Kanaaniter · Hethiter · Heviter ·
@@ -145,8 +156,9 @@ Keine der vier Zielbibeln stützt sie — die Annotation folgt dem Text, aber
 | 19,13 | `Mithoar` als **Ortsname** | ein Partizip: „which stretches to Neah" / „se prolongeait" — hebr. `hammetho'ar` |
 | 19,8 | `Baalath-Beer-Ramath` als **ein** Token | **zwei** Namen: „Baalath Beer, Ramah of the South" |
 | 17,11 | `Nepheth` als **Ortsname** | „three heights / tres regiones / trois contrées / tre regioni elevate" |
+| 18,9 | **kein `Buch`** — nur „zeichneten es … auf" | „in a book / en un libro / dans un livre / in un libro" |
 
-Dazu die Lücke in **10,3** (siehe unten) — vier Eingriffe in einem Buch.
+Dazu die Lücke in **10,3** (siehe unten) — fünf Eingriffe in einem Buch.
 
 ## Eine Lücke im Quelltext: Jos 10,3
 
