@@ -159,8 +159,23 @@ Keine der vier Zielbibeln stützt sie — die Annotation folgt dem Text, aber
 | 18,9 | **kein `Buch`** — nur „zeichneten es … auf" | „in a book / en un libro / dans un livre / in un libro" |
 | 22,22 | die Gottesanrufung steht **einmal**: „Der starke Gott, der HERR" | **zweimal**: „The Mighty One, God, Yahweh, the Mighty One, God, Yahweh" |
 | 22,14 | endet mit „aus jedem Stamm Israels einen" | + „all of them heads of their fathers' houses" |
+| 23,4 | ohne Interjektion | „Behold / Miren / Voyez / Ecco" |
+| 23,6 | **ein** Verb: „haltet euch genau an alles" | **zwei**: „to keep **and to do**" / „guardar **y cumplir**" |
+| 23,11 | ohne Objekt: „achtet sorgfältig darauf" | „heed **to yourselves**" / „cuiden mucho **de sus vidas**" |
+| 23,16 | „andern Göttern **dient**" | + Bewegungsverb: „**go and** serve" / „**van a** honrar" |
 
-Dazu die Lücke in **10,3** (siehe unten) — **sieben** Eingriffe in einem Buch.
+Dazu die Lücke in **10,3** (siehe unten) — **elf** Eingriffe in einem Buch.
+
+## Zwei deutsche Wörter für dasselbe Alter
+
+13,1 sagt `hoch**betagt**`, **23,1 und 23,2 sagen `wohl betagt`** — an strukturell
+gleicher Stelle („Josua war alt und …"). `betagt` C1 ist im Bestand unbelegt
+und übernimmt die Glosse von `hochbetagt`; `wohl` B2 steht daneben. Dasselbe
+Muster wie `Hesbon`/`Heschbon` in 5. Mose.
+
+**Und der Zuspruch steht in 23,6 zum ersten Mal allein:** `Seid deshalb sehr
+mutig` — **ohne `stark`**. Alle vier Belege in Josua 1 und alle drei in 5. Mose
+führen beides.
 
 ## Eine Lücke im Quelltext: Jos 10,3
 

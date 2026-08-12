@@ -29,7 +29,7 @@ dasteht.
 | Deutsch | en · es · fr · it | Level |
 |---|---|---|
 | `Anführer` | leaders · jefes · chefs · capi | B2 |
-| `Haupt` | heads · cabezas · têtes · teste | B1 |
+| `Haupt` | heads · cabezas · têtes · teste | C1 |
 | `Amtmann` (1,15 `Amtleute`) | officers · oficiales · officiers · ufficiali | C1 |
 | `Beamter` (16,18 `Beamte`) | officials · funcionarios · fonctionnaires · funzionari | B2 |
 | `Richter` / `richten` | judges · jueces · juges · giudici / judge · juzgar · juger · giudicare | B1 |
