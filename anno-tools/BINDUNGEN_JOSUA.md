@@ -119,6 +119,21 @@ corne de bélier · corno d'ariete* C1 und `Horn` B1. Und `Bronze`/`Eisen`
 stehen nicht als Substantive da, sondern als Adjektive `bronzen` und
 `eisern`, beide B2.
 
+## Eine Lücke im Quelltext: Jos 10,3
+
+> „Da sandte er zu Hoham, dem König von Hebron, zu Piream, dem König von
+> Jarmuth, und zu **Japhia, dem König von Eglon**…"
+
+Das sind **drei** Adressaten — aber 10,5 spricht von `die fünf Könige` und
+zählt fünf Städte auf, darunter **Lachis**. Alle vier Zielbibeln haben in 10,3
+**vier** Adressaten: Hoham/Hebron, Piram/Jarmuth, **Japhia/Lachish**,
+**Debir/Eglon**. Der `l1912mod` hängt Japhia an Eglon und lässt den König von
+Lachis sowie **Debir** ganz weg.
+
+Die Annotation folgt dem Text: `Debir` ist in Josua 10 ausschließlich **Stadt**
+(10,38.39), nie Personenname. **Die Stelle gehört im Bibeltext geprüft**, nicht
+in der Annotation.
+
 ## `Holzhauer` und `Holzfäller` sind zwei Wörter
 
 5Mo 29,10 sagt `Holzhauer` *woodcutter · leñador · bûcheron · taglialegna*,
