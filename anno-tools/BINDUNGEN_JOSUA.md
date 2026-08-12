@@ -135,6 +135,19 @@ daneben, hier sind es sieben Städte). Er steckt **nicht** in der
 Modernisierung: alle vier Zielbibeln nennen dieselbe Zahl und listen dieselben
 Namen. Nachzählen, melden, stehen lassen.
 
+## Drei Stellen, an denen der Übersetzer eingegriffen hat
+
+Keine der vier Zielbibeln stützt sie — die Annotation folgt dem Text, aber
+**die Stellen gehören im Bibeltext geprüft**:
+
+| Stelle | `l1912mod` | alle vier Zielbibeln |
+|---|---|---|
+| 19,13 | `Mithoar` als **Ortsname** | ein Partizip: „which stretches to Neah" / „se prolongeait" — hebr. `hammetho'ar` |
+| 19,8 | `Baalath-Beer-Ramath` als **ein** Token | **zwei** Namen: „Baalath Beer, Ramah of the South" |
+| 17,11 | `Nepheth` als **Ortsname** | „three heights / tres regiones / trois contrées / tre regioni elevate" |
+
+Dazu die Lücke in **10,3** (siehe unten) — vier Eingriffe in einem Buch.
+
 ## Eine Lücke im Quelltext: Jos 10,3
 
 > „Da sandte er zu Hoham, dem König von Hebron, zu Piream, dem König von
