@@ -53,6 +53,17 @@ Pheresiter · Girgasiter · Amoriter · Jebusiter` — **durchweg die Formen von
 5Mo 20,17 und des übrigen Bestands**, nicht die Sonderformen `Hetiter`,
 `Hiwiter`, `Perisiter` aus 5Mo 7,1. Das bestätigt: 7,1 war die Abweichung.
 
+**Die Liste ist nicht überall vollständig.** Jos 3,10 nennt **sieben** Völker,
+**Jos 9,1 nur sechs** — die `Girgasiter` fehlen —, und die Reihenfolge ist eine
+andere. 5Mo 20,17 lässt die Girgasiter ebenfalls weg. Nachzählen, nicht
+ergänzen.
+
+## `Holzhauer` und `Holzfäller` sind zwei Wörter
+
+5Mo 29,10 sagt `Holzhauer` *woodcutter · leñador · bûcheron · taglialegna*,
+**Jos 9,21.23.27 sagt `Holzfäller`** — dieselbe Glosse, eigenes Lemma. Der
+`Wasserträger` heißt in beiden Büchern gleich.
+
 ## Namen, bei denen Josua über den Bestand hinausgeht
 
 **`Adam` ist in 3,16 eine Stadt, nicht der Urmensch.** Der Bestand führt
