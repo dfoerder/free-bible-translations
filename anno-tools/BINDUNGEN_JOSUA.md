@@ -53,10 +53,17 @@ Pheresiter · Girgasiter · Amoriter · Jebusiter` — **durchweg die Formen von
 5Mo 20,17 und des übrigen Bestands**, nicht die Sonderformen `Hetiter`,
 `Hiwiter`, `Perisiter` aus 5Mo 7,1. Das bestätigt: 7,1 war die Abweichung.
 
-**Die Liste ist nicht überall vollständig.** Jos 3,10 nennt **sieben** Völker,
-**Jos 9,1 nur sechs** — die `Girgasiter` fehlen —, und die Reihenfolge ist eine
-andere. 5Mo 20,17 lässt die Girgasiter ebenfalls weg. Nachzählen, nicht
-ergänzen.
+**Die Liste schrumpft von Kapitel zu Kapitel. Nachzählen, nicht ergänzen:**
+
+| Stelle | Zahl | wer fehlt |
+|---|---|---|
+| 3,10 | **7** | — |
+| 9,1 | **6** | Girgasiter |
+| 12,8 | **6** | Girgasiter — dieselben sechs, dieselbe Reihenfolge wie 9,1 |
+| 11,3 | **5** | Girgasiter **und Amoriter** |
+
+An 11,3 haben alle vier Zielbibeln die Amoriter — der deutsche Text lässt sie
+weg. Stehen gelassen. 5Mo 20,17 lässt die Girgasiter ebenfalls weg.
 
 ## Der Bann: Kapitel 6 und Kapitel 7 sagen es verschieden
 
@@ -69,6 +76,16 @@ bandita* — beide stehen in **7,12 im selben Vers** und sind zwangsgetrennt.
 
 Daneben führt 7,1 und 7,11 weiterhin `der Vernichtung Geweihten`. **Zwei
 Formeln im selben Kapitel.**
+
+**Und Kapitel 11 hat eine dritte:** `der Vernichtung **weihen**`, aktiv und
+transitiv (11,11.12.21 `weihten/weihte sie der Vernichtung`), passiv in 11,20
+`der Vernichtung geweiht werden`. Damit stehen drei Fassungen nebeneinander —
+6,17 `übergeben`, 6,18/7,1/7,11 `Geweihtes`, 11,11 ff. `weihen`. Kein
+Mehrwort-Eintrag; der Bestand annotiert sie überall Wort für Wort.
+
+**`Kinneroth` ist die dritte deutsche Schreibung** desselben Sees: `Kinneret`
+(4Mo 34,11), `Kinnereth` (5Mo 3,17), **`Kinneroth`** (Jos 11,2 · 12,3). Die
+englische Zielbibel unterscheidet genauso (Chinnereth ↔ Chinneroth).
 
 Josua 6 dagegen kennt nur die zweite und kombiniert dort die beiden Wörter,
 die 5Mo 13,16.18 getrennt führt:
