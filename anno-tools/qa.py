@@ -102,8 +102,13 @@ def pruefe_verse(nr, kap, vers, text, entries, namen, befunde):
     for l in C.LANGS:
         lauf = 1
         for i in range(1, len(einzel)):
+            # Gleiche Glosse ist nur dann verdaechtig, wenn *verschiedene*
+            # deutsche Woerter sie tragen. Wiederholt der Text dasselbe Wort
+            # (1Sam 3,10 'Samuel, Samuel! Samuel antwortete'), muss die Glosse
+            # sich wiederholen - das ist kein Befund, sondern der Quelltext.
             gleich = (einzel[i][l] == einzel[i - 1][l]
-                      and einzel[i]['pos'] == einzel[i - 1]['pos'] + 1)
+                      and einzel[i]['pos'] == einzel[i - 1]['pos'] + 1
+                      and einzel[i].get('lemma') != einzel[i - 1].get('lemma'))
             lauf = lauf + 1 if gleich else 1
             if lauf == 3:
                 p = einzel[i - 2]['pos']
