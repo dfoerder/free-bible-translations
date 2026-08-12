@@ -58,11 +58,20 @@ Pheresiter · Girgasiter · Amoriter · Jebusiter` — **durchweg die Formen von
 andere. 5Mo 20,17 lässt die Girgasiter ebenfalls weg. Nachzählen, nicht
 ergänzen.
 
-## Der Bann heißt in Josua nicht `Bann`
+## Der Bann: Kapitel 6 und Kapitel 7 sagen es verschieden
 
-Wie in 5. Mose kommen **`bannen` und `Bann` nirgends vor**, auch nicht bei der
-Vernichtung Jerichos. Josua 6 kombiniert die beiden Wörter, die 5Mo 13,16.18
-getrennt führt:
+**In Josua 7 steht `Bann` — als erstes Mal seit 3. Mose.** In 5. Mose kam das
+Wort nirgends vor, in Josua 6 auch nicht; 7,12 sagt `sie stehen **unter dem
+Bann**` und `das **Gebannte** … entfernt`, 7,13 und 7,15 `Gebanntes` und
+`am Gebannten`. `Bann` C1 *ban · anatema · interdit · interdetto* (4Mo 18,14),
+`Gebanntes` C1 *banned thing · cosa anatematizada · chose bannie · cosa
+bandita* — beide stehen in **7,12 im selben Vers** und sind zwangsgetrennt.
+
+Daneben führt 7,1 und 7,11 weiterhin `der Vernichtung Geweihten`. **Zwei
+Formeln im selben Kapitel.**
+
+Josua 6 dagegen kennt nur die zweite und kombiniert dort die beiden Wörter,
+die 5Mo 13,16.18 getrennt führt:
 
 | Stelle | Wortlaut |
 |---|---|
@@ -71,7 +80,19 @@ getrennt führt:
 | 6,21 | `**vernichteten** mit dem Schwert` |
 | 6,26 | `**Verflucht** sei vor dem HERRN` |
 
-`Untergang` kommt ebenfalls nicht vor. `weihen` C1 *dedicated · consagrada ·
+`Untergang` kommt in keinem der beiden Kapitel vor. **`verbrennen` ist B1**,
+nicht B2 — 17 Belege im Bestand, kein einziger B2.
+
+**Und die Verengung in 7,14–18 läuft nicht über das Los.** Der Text kennt
+weder `Los` noch `Geschlecht` noch `Haus`, sondern verengt mit `bestimmen`
+über vier Glieder: `Stamm` B2 → `Sippe` *clan · clan · clan · clan* C1 →
+`Familie` A1 → `Mann` A1, jedes als `X für X` (Muster `Kopf für Kopf`,
+4Mo 1,2). Alle vier stehen in **7,14 im selben Vers** und sind dort in allen
+vier Spalten verschieden.
+
+**Ein Name doppelt sich innerhalb eines Kapitels:** 7,1 schreibt `Serachs`,
+7,18 und 7,24 schreiben `Serahs` — dieselbe Person. `Serah` steht im Bestand
+(1Mo 36,33), `Serach` nirgends. Zwei Lemmata, eine Glosse. `weihen` C1 *dedicated · consagrada ·
 consacrée · consacrata* und `Geweihtes` C1 *consecrated thing · consagrado ·
 chose consacrée · cosa consacrata* aus 2Mo 29,36 und 3Mo 5,16.
 
