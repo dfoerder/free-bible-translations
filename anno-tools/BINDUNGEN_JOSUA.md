@@ -119,6 +119,22 @@ corne de bélier · corno d'ariete* C1 und `Horn` B1. Und `Bronze`/`Eisen`
 stehen nicht als Substantive da, sondern als Adjektive `bronzen` und
 `eisern`, beide B2.
 
+## Die Summen: dreimal aufgegangen, dreimal nicht
+
+| Stelle | genannt | gezählt |
+|---|---|---|
+| 12,24 | einunddreißig Könige | **31** ✓ |
+| 13,3 | fünf Fürsten der Philister | **5** ✓ |
+| 13,21 | fünf Fürsten Midians | **5** ✓ |
+| 9,1 / 12,8 | sieben Völker (implizit) | **6** — Girgasiter fehlen |
+| 11,3 | dieselbe Liste | **5** — Girgasiter und Amoriter fehlen |
+| **15,32** | **neunundzwanzig Städte** | **36** — sieben zu viel |
+
+**15,32 ist der größte Summenfehler des Projekts** (4Mo 3 lag bei 300 Personen
+daneben, hier sind es sieben Städte). Er steckt **nicht** in der
+Modernisierung: alle vier Zielbibeln nennen dieselbe Zahl und listen dieselben
+Namen. Nachzählen, melden, stehen lassen.
+
 ## Eine Lücke im Quelltext: Jos 10,3
 
 > „Da sandte er zu Hoham, dem König von Hebron, zu Piream, dem König von
