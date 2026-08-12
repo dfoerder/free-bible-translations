@@ -426,6 +426,17 @@
   },
   {
    "pos": 13,
+   "pos_end": 14,
+   "form": "selbst nicht",
+   "lemma": "selbst nicht",
+   "level": "B1",
+   "en": "not even",
+   "es": "ni siquiera",
+   "fr": "pas même",
+   "it": "neppure"
+  },
+  {
+   "pos": 13,
    "form": "selbst",
    "lemma": "selbst",
    "level": "B1",
@@ -563,17 +574,6 @@
    "es": "venir",
    "fr": "venir",
    "it": "venire"
-  },
-  {
-   "pos": 13,
-   "pos_end": 14,
-   "form": "selbst nicht",
-   "lemma": "selbst nicht",
-   "level": "B1",
-   "en": "not even",
-   "es": "ni siquiera",
-   "fr": "pas même",
-   "it": "neppure"
   }
  ],
  "4": [
@@ -699,6 +699,17 @@
   },
   {
    "pos": 12,
+   "pos_end": 13,
+   "form": "selbst nicht",
+   "lemma": "selbst nicht",
+   "level": "B1",
+   "en": "not even",
+   "es": "ni siquiera",
+   "fr": "pas même",
+   "it": "neppure"
+  },
+  {
+   "pos": 12,
    "form": "selbst",
    "lemma": "selbst",
    "level": "B1",
@@ -786,17 +797,6 @@
    "es": "entrar",
    "fr": "entrer",
    "it": "entrare"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "selbst nicht",
-   "lemma": "selbst nicht",
-   "level": "B1",
-   "en": "not even",
-   "es": "ni siquiera",
-   "fr": "pas même",
-   "it": "neppure"
   }
  ],
  "5": [
@@ -1204,6 +1204,20 @@
   },
   {
    "pos": 7,
+   "parts": [
+    7,
+    9
+   ],
+   "form": "auf hören",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listen to",
+   "es": "escuchar",
+   "fr": "écouter",
+   "it": "ascoltare"
+  },
+  {
+   "pos": 7,
    "form": "auf",
    "lemma": "auf",
    "level": "A1",
@@ -1391,20 +1405,6 @@
    "es": "amaba",
    "fr": "aimait",
    "it": "amava"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    9
-   ],
-   "form": "auf hören",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listen to",
-   "es": "escuchar",
-   "fr": "écouter",
-   "it": "ascoltare"
   }
  ],
  "7": [
@@ -1427,6 +1427,17 @@
    "es": "debes",
    "fr": "dois",
    "it": "devi"
+  },
+  {
+   "pos": 2,
+   "pos_end": 4,
+   "form": "dein Leben lang",
+   "lemma": "sein Leben lang",
+   "level": "B1",
+   "en": "all your life",
+   "es": "toda tu vida",
+   "fr": "toute ta vie",
+   "it": "tutta la tua vita"
   },
   {
    "pos": 2,
@@ -1527,17 +1538,6 @@
    "es": "buscar",
    "fr": "chercher",
    "it": "cercare"
-  },
-  {
-   "pos": 2,
-   "pos_end": 4,
-   "form": "dein Leben lang",
-   "lemma": "sein Leben lang",
-   "level": "B1",
-   "en": "all your life",
-   "es": "toda tu vida",
-   "fr": "toute ta vie",
-   "it": "tutta la tua vita"
   }
  ],
  "8": [
@@ -1693,6 +1693,17 @@
   },
   {
    "pos": 15,
+   "pos_end": 16,
+   "form": "auch nicht",
+   "lemma": "auch nicht",
+   "level": "A2",
+   "en": "neither",
+   "es": "tampoco",
+   "fr": "non plus",
+   "it": "neppure"
+  },
+  {
+   "pos": 15,
    "form": "auch",
    "lemma": "auch",
    "level": "A1",
@@ -1800,17 +1811,6 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
-  },
-  {
-   "pos": 15,
-   "pos_end": 16,
-   "form": "auch nicht",
-   "lemma": "auch nicht",
-   "level": "A2",
-   "en": "neither",
-   "es": "tampoco",
-   "fr": "non plus",
-   "it": "neppure"
   }
  ],
  "9": [
@@ -2068,6 +2068,17 @@
   },
   {
    "pos": 11,
+   "pos_end": 12,
+   "form": "hüte dich",
+   "lemma": "sich hüten",
+   "level": "B2",
+   "en": "beware",
+   "es": "guárdate",
+   "fr": "garde-toi",
+   "it": "guardati"
+  },
+  {
+   "pos": 11,
    "form": "hüte",
    "lemma": "hüten",
    "level": "B2",
@@ -2115,17 +2126,6 @@
    "es": "mal",
    "fr": "mal",
    "it": "male"
-  },
-  {
-   "pos": 11,
-   "pos_end": 12,
-   "form": "hüte dich",
-   "lemma": "sich hüten",
-   "level": "B2",
-   "en": "beware",
-   "es": "guárdate",
-   "fr": "garde-toi",
-   "it": "guardati"
   }
  ],
  "11": [
@@ -2383,6 +2383,21 @@
   },
   {
    "pos": 2,
+   "parts": [
+    2,
+    7,
+    8
+   ],
+   "form": "sich gewaschen hat",
+   "lemma": "sich waschen",
+   "level": "A2",
+   "en": "has washed himself",
+   "es": "se ha lavado",
+   "fr": "s'est lavé",
+   "it": "si è lavato"
+  },
+  {
+   "pos": 2,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -2560,21 +2575,6 @@
    "es": "volver",
    "fr": "retourner",
    "it": "tornare"
-  },
-  {
-   "pos": 2,
-   "parts": [
-    2,
-    7,
-    8
-   ],
-   "form": "sich gewaschen hat",
-   "lemma": "sich waschen",
-   "level": "A2",
-   "en": "has washed himself",
-   "es": "se ha lavado",
-   "fr": "s'est lavé",
-   "it": "si è lavato"
   }
  ],
  "13": [
@@ -2802,6 +2802,20 @@
   },
   {
    "pos": 7,
+   "parts": [
+    7,
+    9
+   ],
+   "form": "dich hinsetzen",
+   "lemma": "sich hinsetzen",
+   "level": "A2",
+   "en": "sit down",
+   "es": "sentarte",
+   "fr": "t'asseoir",
+   "it": "sederti"
+  },
+  {
+   "pos": 7,
    "form": "dich",
    "lemma": "du",
    "level": "A1",
@@ -2979,20 +2993,6 @@
    "es": "ha",
    "fr": "est",
    "it": "è"
-  },
-  {
-   "pos": 7,
-   "parts": [
-    7,
-    9
-   ],
-   "form": "dich hinsetzen",
-   "lemma": "sich hinsetzen",
-   "level": "A2",
-   "en": "sit down",
-   "es": "sentarte",
-   "fr": "t'asseoir",
-   "it": "sederti"
   }
  ],
  "15": [
@@ -3058,6 +3058,17 @@
   },
   {
    "pos": 6,
+   "pos_end": 7,
+   "form": "mitten durch",
+   "lemma": "mitten durch",
+   "level": "B1",
+   "en": "right through",
+   "es": "por en medio de",
+   "fr": "au milieu de",
+   "it": "in mezzo a"
+  },
+  {
+   "pos": 6,
    "form": "mitten",
    "lemma": "mitten",
    "level": "B1",
@@ -3095,6 +3106,20 @@
    "es": "campamento",
    "fr": "camp",
    "it": "accampamento"
+  },
+  {
+   "pos": 10,
+   "parts": [
+    10,
+    12
+   ],
+   "form": "um zu",
+   "lemma": "um zu",
+   "level": "A2",
+   "en": "in order to",
+   "es": "para",
+   "fr": "pour",
+   "it": "per"
   },
   {
    "pos": 10,
@@ -3308,6 +3333,17 @@
   },
   {
    "pos": 31,
+   "pos_end": 33,
+   "form": "zu sehen ist",
+   "lemma": "zu sehen sein",
+   "level": "B1",
+   "en": "can be seen",
+   "es": "se ve",
+   "fr": "est visible",
+   "it": "si vede"
+  },
+  {
+   "pos": 31,
    "form": "zu",
    "lemma": "zu",
    "level": "A1",
@@ -3358,6 +3394,20 @@
   },
   {
    "pos": 36,
+   "parts": [
+    36,
+    40
+   ],
+   "form": "sich abwendet",
+   "lemma": "sich abwenden",
+   "level": "B2",
+   "en": "turns away",
+   "es": "se aparte",
+   "fr": "se détourne",
+   "it": "si allontani"
+  },
+  {
+   "pos": 36,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3405,56 +3455,6 @@
    "es": "aparte",
    "fr": "détourne",
    "it": "allontani"
-  },
-  {
-   "pos": 6,
-   "pos_end": 7,
-   "form": "mitten durch",
-   "lemma": "mitten durch",
-   "level": "B1",
-   "en": "right through",
-   "es": "por en medio de",
-   "fr": "au milieu de",
-   "it": "in mezzo a"
-  },
-  {
-   "pos": 10,
-   "parts": [
-    10,
-    12
-   ],
-   "form": "um zu",
-   "lemma": "um zu",
-   "level": "A2",
-   "en": "in order to",
-   "es": "para",
-   "fr": "pour",
-   "it": "per"
-  },
-  {
-   "pos": 31,
-   "pos_end": 33,
-   "form": "zu sehen ist",
-   "lemma": "zu sehen sein",
-   "level": "B1",
-   "en": "can be seen",
-   "es": "se ve",
-   "fr": "est visible",
-   "it": "si vede"
-  },
-  {
-   "pos": 36,
-   "parts": [
-    36,
-    40
-   ],
-   "form": "sich abwendet",
-   "lemma": "sich abwenden",
-   "level": "B2",
-   "en": "turns away",
-   "es": "se aparte",
-   "fr": "se détourne",
-   "it": "si allontani"
   }
  ],
  "16": [
@@ -3732,6 +3732,20 @@
   },
   {
    "pos": 10,
+   "parts": [
+    10,
+    15
+   ],
+   "form": "sich aussucht",
+   "lemma": "sich aussuchen",
+   "level": "B1",
+   "en": "picks out for himself",
+   "es": "se escoge",
+   "fr": "se choisit",
+   "it": "si sceglie"
+  },
+  {
+   "pos": 10,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -3879,23 +3893,23 @@
    "es": "oprimir",
    "fr": "opprimer",
    "it": "opprimere"
-  },
-  {
-   "pos": 10,
-   "parts": [
-    10,
-    15
-   ],
-   "form": "sich aussucht",
-   "lemma": "sich aussuchen",
-   "level": "B1",
-   "en": "picks out for himself",
-   "es": "se escoge",
-   "fr": "se choisit",
-   "it": "si sceglie"
   }
  ],
  "18": [
+  {
+   "pos": 0,
+   "parts": [
+    0,
+    16
+   ],
+   "form": "Es geben",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "There shall be",
+   "es": "Habrá",
+   "fr": "Il y aura",
+   "it": "Ci sarà"
+  },
   {
    "pos": 0,
    "form": "Es",
@@ -4065,20 +4079,6 @@
    "es": "haber",
    "fr": "avoir",
    "it": "essere"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    16
-   ],
-   "form": "Es geben",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "There shall be",
-   "es": "Habrá",
-   "fr": "Il y aura",
-   "it": "Ci sarà"
   }
  ],
  "19": [
@@ -4456,6 +4456,20 @@
   },
   {
    "pos": 8,
+   "parts": [
+    8,
+    11
+   ],
+   "form": "weder noch",
+   "lemma": "weder ... noch",
+   "level": "B1",
+   "en": "neither ... nor",
+   "es": "ni ... ni",
+   "fr": "ni ... ni",
+   "it": "né ... né"
+  },
+  {
+   "pos": 8,
    "form": "weder",
    "lemma": "weder",
    "level": "B1",
@@ -4536,6 +4550,17 @@
   },
   {
    "pos": 16,
+   "pos_end": 17,
+   "form": "irgendetwas anderes",
+   "lemma": "irgendetwas anderes",
+   "level": "B1",
+   "en": "anything else",
+   "es": "ninguna otra cosa",
+   "fr": "quoi que ce soit d'autre",
+   "it": "nient'altro"
+  },
+  {
+   "pos": 16,
    "form": "irgendetwas",
    "lemma": "irgendetwas",
    "level": "B1",
@@ -4576,6 +4601,17 @@
   },
   {
    "pos": 20,
+   "pos_end": 21,
+   "form": "Wucher treiben",
+   "lemma": "Wucher treiben",
+   "level": "C1",
+   "en": "practice usury",
+   "es": "practicar la usura",
+   "fr": "faire de l'usure",
+   "it": "praticare l'usura"
+  },
+  {
+   "pos": 20,
    "form": "Wucher",
    "lemma": "Wucher",
    "level": "C1",
@@ -4603,42 +4639,6 @@
    "es": "puede",
    "fr": "peut",
    "it": "può"
-  },
-  {
-   "pos": 8,
-   "parts": [
-    8,
-    11
-   ],
-   "form": "weder noch",
-   "lemma": "weder ... noch",
-   "level": "B1",
-   "en": "neither ... nor",
-   "es": "ni ... ni",
-   "fr": "ni ... ni",
-   "it": "né ... né"
-  },
-  {
-   "pos": 16,
-   "pos_end": 17,
-   "form": "irgendetwas anderes",
-   "lemma": "irgendetwas anderes",
-   "level": "B1",
-   "en": "anything else",
-   "es": "ninguna otra cosa",
-   "fr": "quoi que ce soit d'autre",
-   "it": "nient'altro"
-  },
-  {
-   "pos": 20,
-   "pos_end": 21,
-   "form": "Wucher treiben",
-   "lemma": "Wucher treiben",
-   "level": "C1",
-   "en": "practice usury",
-   "es": "practicar la usura",
-   "fr": "faire de l'usure",
-   "it": "praticare l'usura"
   }
  ],
  "21": [
@@ -4924,6 +4924,17 @@
   },
   {
    "pos": 28,
+   "pos_end": 30,
+   "form": "in Besitz nehmen",
+   "lemma": "in Besitz nehmen",
+   "level": "B2",
+   "en": "take possession",
+   "es": "tomar posesión",
+   "fr": "prendre possession",
+   "it": "prendere possesso"
+  },
+  {
+   "pos": 28,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -4961,17 +4972,6 @@
    "es": "vas a",
    "fr": "vas",
    "it": "stai per"
-  },
-  {
-   "pos": 28,
-   "pos_end": 30,
-   "form": "in Besitz nehmen",
-   "lemma": "in Besitz nehmen",
-   "level": "B2",
-   "en": "take possession",
-   "es": "tomar posesión",
-   "fr": "prendre possession",
-   "it": "prendere possesso"
   }
  ],
  "22": [
@@ -5014,6 +5014,17 @@
    "es": "SEÑOR",
    "fr": "ÉTERNEL",
    "it": "SIGNORE"
+  },
+  {
+   "pos": 4,
+   "pos_end": 6,
+   "form": "ein Gelübde ablegst",
+   "lemma": "ein Gelübde ablegen",
+   "level": "B2",
+   "en": "make a vow",
+   "es": "haces un voto",
+   "fr": "fais un vœu",
+   "it": "fai un voto"
   },
   {
    "pos": 4,
@@ -5284,17 +5295,6 @@
    "es": "convertirse",
    "fr": "devenir",
    "it": "diventare"
-  },
-  {
-   "pos": 4,
-   "pos_end": 6,
-   "form": "ein Gelübde ablegst",
-   "lemma": "ein Gelübde ablegen",
-   "level": "B2",
-   "en": "make a vow",
-   "es": "haces un voto",
-   "fr": "fais un vœu",
-   "it": "fai un voto"
   }
  ],
  "23": [
@@ -5347,6 +5347,17 @@
    "es": "omites",
    "fr": "omets",
    "it": "ometti"
+  },
+  {
+   "pos": 5,
+   "pos_end": 7,
+   "form": "ein Gelübde abzulegen",
+   "lemma": "ein Gelübde ablegen",
+   "level": "B2",
+   "en": "to make a vow",
+   "es": "hacer un voto",
+   "fr": "faire un vœu",
+   "it": "fare un voto"
   },
   {
    "pos": 5,
@@ -5437,17 +5448,6 @@
    "es": "ti",
    "fr": "toi",
    "it": "te"
-  },
-  {
-   "pos": 5,
-   "pos_end": 7,
-   "form": "ein Gelübde abzulegen",
-   "lemma": "ein Gelübde ablegen",
-   "level": "B2",
-   "en": "to make a vow",
-   "es": "hacer un voto",
-   "fr": "faire un vœu",
-   "it": "fare un voto"
   }
  ],
  "24": [
@@ -5553,6 +5553,17 @@
   },
   {
    "pos": 10,
+   "pos_end": 11,
+   "form": "danach handeln",
+   "lemma": "danach handeln",
+   "level": "B2",
+   "en": "act accordingly",
+   "es": "ponerlo en práctica",
+   "fr": "le mettre en pratique",
+   "it": "metterlo in pratica"
+  },
+  {
+   "pos": 10,
    "form": "danach",
    "lemma": "danach",
    "level": "A2",
@@ -5570,6 +5581,17 @@
    "es": "actuar",
    "fr": "agir",
    "it": "agire"
+  },
+  {
+   "pos": 12,
+   "pos_end": 13,
+   "form": "so wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "just as",
+   "es": "tal como",
+   "fr": "tout comme",
+   "it": "proprio come"
   },
   {
    "pos": 12,
@@ -5750,28 +5772,6 @@
    "es": "has",
    "fr": "as",
    "it": "hai"
-  },
-  {
-   "pos": 10,
-   "pos_end": 11,
-   "form": "danach handeln",
-   "lemma": "danach handeln",
-   "level": "B2",
-   "en": "act accordingly",
-   "es": "ponerlo en práctica",
-   "fr": "le mettre en pratique",
-   "it": "metterlo in pratica"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "so wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "just as",
-   "es": "tal como",
-   "fr": "tout comme",
-   "it": "proprio come"
   }
  ],
  "25": [
@@ -5874,6 +5874,17 @@
    "es": "tú",
    "fr": "tu",
    "it": "tu"
+  },
+  {
+   "pos": 10,
+   "pos_end": 11,
+   "form": "so viele",
+   "lemma": "so viele",
+   "level": "A2",
+   "en": "as many",
+   "es": "tantas",
+   "fr": "autant de",
+   "it": "tante"
   },
   {
    "pos": 10,
@@ -6074,17 +6085,6 @@
    "es": "meter",
    "fr": "mettre",
    "it": "mettere"
-  },
-  {
-   "pos": 10,
-   "pos_end": 11,
-   "form": "so viele",
-   "lemma": "so viele",
-   "level": "A2",
-   "en": "as many",
-   "es": "tantas",
-   "fr": "autant de",
-   "it": "tante"
   }
  ],
  "26": [

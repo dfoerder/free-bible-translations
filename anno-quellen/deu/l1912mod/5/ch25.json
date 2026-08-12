@@ -12,16 +12,6 @@
   },
   {
    "pos": 1,
-   "form": "es",
-   "lemma": "es",
-   "level": "A1",
-   "en": "there",
-   "es": "ello",
-   "fr": "il",
-   "it": "ci"
-  },
-  {
-   "pos": 1,
    "form": "es gibt",
    "lemma": "es geben",
    "level": "A2",
@@ -33,6 +23,16 @@
     1,
     6
    ]
+  },
+  {
+   "pos": 1,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "there",
+   "es": "ello",
+   "fr": "il",
+   "it": "ci"
   },
   {
    "pos": 2,
@@ -388,16 +388,6 @@
   },
   {
    "pos": 10,
-   "form": "niederlegen",
-   "lemma": "niederlegen",
-   "level": "B2",
-   "en": "lay down",
-   "es": "acostar",
-   "fr": "coucher",
-   "it": "coricare"
-  },
-  {
-   "pos": 10,
    "form": "niederlegen lassen",
    "lemma": "niederlegen lassen",
    "level": "B2",
@@ -406,6 +396,16 @@
    "fr": "faire coucher",
    "it": "far coricare",
    "pos_end": 11
+  },
+  {
+   "pos": 10,
+   "form": "niederlegen",
+   "lemma": "niederlegen",
+   "level": "B2",
+   "en": "lay down",
+   "es": "acostar",
+   "fr": "coucher",
+   "it": "coricare"
   },
   {
    "pos": 11,
@@ -1205,16 +1205,6 @@
   },
   {
    "pos": 26,
-   "form": "sich",
-   "lemma": "sich",
-   "level": "A1",
-   "en": "himself",
-   "es": "se",
-   "fr": "se",
-   "it": "si"
-  },
-  {
-   "pos": 26,
    "form": "sich zusammentun",
    "lemma": "sich zusammentun",
    "level": "B2",
@@ -1226,6 +1216,16 @@
     26,
     29
    ]
+  },
+  {
+   "pos": 26,
+   "form": "sich",
+   "lemma": "sich",
+   "level": "A1",
+   "en": "himself",
+   "es": "se",
+   "fr": "se",
+   "it": "si"
   },
   {
    "pos": 27,
@@ -1269,16 +1269,6 @@
   },
   {
    "pos": 31,
-   "form": "zur",
-   "lemma": "zur",
-   "level": "A1",
-   "en": "as",
-   "es": "por",
-   "fr": "pour",
-   "it": "in"
-  },
-  {
-   "pos": 31,
    "form": "zur Frau nehmen",
    "lemma": "zur Frau nehmen",
    "level": "B2",
@@ -1287,6 +1277,16 @@
    "fr": "prendre pour femme",
    "it": "prendere in moglie",
    "pos_end": 33
+  },
+  {
+   "pos": 31,
+   "form": "zur",
+   "lemma": "zur",
+   "level": "A1",
+   "en": "as",
+   "es": "por",
+   "fr": "pour",
+   "it": "in"
   },
   {
    "pos": 32,
@@ -1734,16 +1734,6 @@
   },
   {
    "pos": 20,
-   "form": "weigert",
-   "lemma": "weigern",
-   "level": "B2",
-   "en": "refuses",
-   "es": "niega",
-   "fr": "refuse",
-   "it": "rifiuta"
-  },
-  {
-   "pos": 20,
    "form": "weigert sich",
    "lemma": "sich weigern",
    "level": "B2",
@@ -1752,6 +1742,16 @@
    "fr": "refuse",
    "it": "si rifiuta",
    "pos_end": 21
+  },
+  {
+   "pos": 20,
+   "form": "weigert",
+   "lemma": "weigern",
+   "level": "B2",
+   "en": "refuses",
+   "es": "niega",
+   "fr": "refuse",
+   "it": "rifiuta"
   },
   {
    "pos": 21,
@@ -2037,16 +2037,6 @@
   },
   {
    "pos": 14,
-   "form": "dabei",
-   "lemma": "dabei",
-   "level": "B1",
-   "en": "by it",
-   "es": "en ello",
-   "fr": "là-dessus",
-   "it": "in questo"
-  },
-  {
-   "pos": 14,
    "form": "dabei bleibt",
    "lemma": "dabei bleiben",
    "level": "B2",
@@ -2055,6 +2045,16 @@
    "fr": "persiste",
    "it": "insiste",
    "pos_end": 15
+  },
+  {
+   "pos": 14,
+   "form": "dabei",
+   "lemma": "dabei",
+   "level": "B1",
+   "en": "by it",
+   "es": "en ello",
+   "fr": "là-dessus",
+   "it": "in questo"
   },
   {
    "pos": 15,
@@ -3016,16 +3016,6 @@
   },
   {
    "pos": 9,
-   "form": "Rücksicht",
-   "lemma": "Rücksicht",
-   "level": "B2",
-   "en": "consideration",
-   "es": "consideración",
-   "fr": "égard",
-   "it": "riguardo"
-  },
-  {
-   "pos": 9,
    "form": "Rücksicht nehmen",
    "lemma": "Rücksicht nehmen",
    "level": "B2",
@@ -3037,6 +3027,16 @@
     9,
     12
    ]
+  },
+  {
+   "pos": 9,
+   "form": "Rücksicht",
+   "lemma": "Rücksicht",
+   "level": "B2",
+   "en": "consideration",
+   "es": "consideración",
+   "fr": "égard",
+   "it": "riguardo"
   },
   {
    "pos": 10,
@@ -3274,16 +3274,6 @@
   },
   {
    "pos": 5,
-   "form": "es",
-   "lemma": "es",
-   "level": "A1",
-   "en": "there",
-   "es": "ello",
-   "fr": "il",
-   "it": "ci"
-  },
-  {
-   "pos": 5,
    "form": "es geben",
    "lemma": "es geben",
    "level": "A2",
@@ -3295,6 +3285,16 @@
     5,
     10
    ]
+  },
+  {
+   "pos": 5,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "there",
+   "es": "ello",
+   "fr": "il",
+   "it": "ci"
   },
   {
    "pos": 6,
@@ -3712,16 +3712,6 @@
   },
   {
    "pos": 2,
-   "form": "so",
-   "lemma": "so",
-   "level": "A1",
-   "en": "such",
-   "es": "así",
-   "fr": "ainsi",
-   "it": "così"
-  },
-  {
-   "pos": 2,
    "form": "so etwas",
    "lemma": "so etwas",
    "level": "A2",
@@ -3730,6 +3720,16 @@
    "fr": "une chose pareille",
    "it": "una cosa simile",
    "pos_end": 3
+  },
+  {
+   "pos": 2,
+   "form": "so",
+   "lemma": "so",
+   "level": "A1",
+   "en": "such",
+   "es": "así",
+   "fr": "ainsi",
+   "it": "così"
   },
   {
    "pos": 3,
@@ -3875,16 +3875,6 @@
  "17": [
   {
    "pos": 0,
-   "form": "Denk",
-   "lemma": "denken",
-   "level": "A1",
-   "en": "Think",
-   "es": "Piensa",
-   "fr": "Pense",
-   "it": "Pensa"
-  },
-  {
-   "pos": 0,
    "form": "Denk daran",
    "lemma": "daran denken",
    "level": "B1",
@@ -3893,6 +3883,16 @@
    "fr": "Souviens-toi",
    "it": "Ricorda",
    "pos_end": 1
+  },
+  {
+   "pos": 0,
+   "form": "Denk",
+   "lemma": "denken",
+   "level": "A1",
+   "en": "Think",
+   "es": "Piensa",
+   "fr": "Pense",
+   "it": "Pensa"
   },
   {
    "pos": 1,

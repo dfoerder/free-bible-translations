@@ -495,17 +495,6 @@
  ],
  "3": [
   {
-   "pos": 14,
-   "pos_end": 15,
-   "form": "sei es",
-   "lemma": "sei es",
-   "level": "B1",
-   "en": "whether",
-   "es": "ya sea",
-   "fr": "que ce soit",
-   "it": "sia"
-  },
-  {
    "pos": 0,
    "form": "Das",
    "lemma": "der",
@@ -644,6 +633,17 @@
    "es": "sacrifican",
    "fr": "sacrifient",
    "it": "sacrificano"
+  },
+  {
+   "pos": 14,
+   "pos_end": 15,
+   "form": "sei es",
+   "lemma": "sei es",
+   "level": "B1",
+   "en": "whether",
+   "es": "ya sea",
+   "fr": "que ce soit",
+   "it": "sia"
   },
   {
    "pos": 14,
@@ -1010,28 +1010,6 @@
  ],
  "5": [
   {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "Dienst tut",
-   "lemma": "Dienst tun",
-   "level": "B2",
-   "en": "serves",
-   "es": "sirve",
-   "fr": "fait le service",
-   "it": "presta servizio"
-  },
-  {
-   "pos": 24,
-   "pos_end": 25,
-   "form": "für immer",
-   "lemma": "für immer",
-   "level": "A2",
-   "en": "forever",
-   "es": "para siempre",
-   "fr": "pour toujours",
-   "it": "per sempre"
-  },
-  {
    "pos": 0,
    "form": "Denn",
    "lemma": "denn",
@@ -1213,6 +1191,17 @@
   },
   {
    "pos": 18,
+   "pos_end": 19,
+   "form": "Dienst tut",
+   "lemma": "Dienst tun",
+   "level": "B2",
+   "en": "serves",
+   "es": "sirve",
+   "fr": "fait le service",
+   "it": "presta servizio"
+  },
+  {
+   "pos": 18,
    "form": "Dienst",
    "lemma": "Dienst",
    "level": "B1",
@@ -1273,6 +1262,17 @@
   },
   {
    "pos": 24,
+   "pos_end": 25,
+   "form": "für immer",
+   "lemma": "für immer",
+   "level": "A2",
+   "en": "forever",
+   "es": "para siempre",
+   "fr": "pour toujours",
+   "it": "per sempre"
+  },
+  {
+   "pos": 24,
    "form": "für",
    "lemma": "für",
    "level": "A1",
@@ -1293,17 +1293,6 @@
   }
  ],
  "6": [
-  {
-   "pos": 20,
-   "pos_end": 22,
-   "form": "aus freiem Willen",
-   "lemma": "aus freiem Willen",
-   "level": "B2",
-   "en": "of free will",
-   "es": "de libre voluntad",
-   "fr": "de plein gré",
-   "it": "di libera volontà"
-  },
   {
    "pos": 0,
    "form": "Wenn",
@@ -1503,6 +1492,17 @@
    "es": "y",
    "fr": "et",
    "it": "e"
+  },
+  {
+   "pos": 20,
+   "pos_end": 22,
+   "form": "aus freiem Willen",
+   "lemma": "aus freiem Willen",
+   "level": "B2",
+   "en": "of free will",
+   "es": "de libre voluntad",
+   "fr": "de plein gré",
+   "it": "di libera volontà"
   },
   {
    "pos": 20,
@@ -2277,31 +2277,6 @@
  ],
  "10": [
   {
-   "pos": 14,
-   "pos_end": 15,
-   "form": "gehen lässt",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "makes pass",
-   "es": "hace pasar",
-   "fr": "fait passer",
-   "it": "fa passare"
-  },
-  {
-   "pos": 22,
-   "parts": [
-    22,
-    24
-   ],
-   "form": "auf achtet",
-   "lemma": "achten auf",
-   "level": "B1",
-   "en": "heeds",
-   "es": "presta atención a",
-   "fr": "prête attention à",
-   "it": "presta attenzione a"
-  },
-  {
    "pos": 0,
    "form": "Bei",
    "lemma": "bei",
@@ -2443,6 +2418,17 @@
   },
   {
    "pos": 14,
+   "pos_end": 15,
+   "form": "gehen lässt",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "makes pass",
+   "es": "hace pasar",
+   "fr": "fait passer",
+   "it": "fa passare"
+  },
+  {
+   "pos": 14,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -2520,6 +2506,20 @@
    "es": "que",
    "fr": "qui",
    "it": "che"
+  },
+  {
+   "pos": 22,
+   "parts": [
+    22,
+    24
+   ],
+   "form": "auf achtet",
+   "lemma": "achten auf",
+   "level": "B1",
+   "en": "heeds",
+   "es": "presta atención a",
+   "fr": "prête attention à",
+   "it": "presta attenzione a"
   },
   {
    "pos": 22,
@@ -2696,17 +2696,6 @@
  ],
  "12": [
   {
-   "pos": 2,
-   "pos_end": 3,
-   "form": "so etwas",
-   "lemma": "so etwas",
-   "level": "A2",
-   "en": "such a thing",
-   "es": "algo así",
-   "fr": "une chose pareille",
-   "it": "una cosa simile"
-  },
-  {
    "pos": 0,
    "form": "Denn",
    "lemma": "denn",
@@ -2725,6 +2714,17 @@
    "es": "el que",
    "fr": "celui qui",
    "it": "chi"
+  },
+  {
+   "pos": 2,
+   "pos_end": 3,
+   "form": "so etwas",
+   "lemma": "so etwas",
+   "level": "A2",
+   "en": "such a thing",
+   "es": "algo así",
+   "fr": "une chose pareille",
+   "it": "una cosa simile"
   },
   {
    "pos": 2,
@@ -3031,31 +3031,6 @@
  ],
  "14": [
   {
-   "pos": 8,
-   "pos_end": 9,
-   "form": "hören auf",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listen to",
-   "es": "escuchan a",
-   "fr": "écoutent",
-   "it": "ascoltano"
-  },
-  {
-   "pos": 16,
-   "parts": [
-    16,
-    24
-   ],
-   "form": "dich verhalten",
-   "lemma": "sich verhalten",
-   "level": "B2",
-   "en": "behave",
-   "es": "comportarte",
-   "fr": "te comporter",
-   "it": "comportarti"
-  },
-  {
    "pos": 0,
    "form": "Denn",
    "lemma": "denn",
@@ -3137,6 +3112,17 @@
   },
   {
    "pos": 8,
+   "pos_end": 9,
+   "form": "hören auf",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listen to",
+   "es": "escuchan a",
+   "fr": "écoutent",
+   "it": "ascoltano"
+  },
+  {
+   "pos": 8,
    "form": "hören",
    "lemma": "hören",
    "level": "A1",
@@ -3214,6 +3200,20 @@
    "es": "debes",
    "fr": "dois",
    "it": "devi"
+  },
+  {
+   "pos": 16,
+   "parts": [
+    16,
+    24
+   ],
+   "form": "dich verhalten",
+   "lemma": "sich verhalten",
+   "level": "B2",
+   "en": "behave",
+   "es": "comportarte",
+   "fr": "te comporter",
+   "it": "comportarti"
   },
   {
    "pos": 16,
@@ -3531,28 +3531,6 @@
    "it": "Così come"
   },
   {
-   "pos": 22,
-   "pos_end": 23,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più"
-  },
-  {
-   "pos": 35,
-   "pos_end": 36,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più"
-  },
-  {
    "pos": 0,
    "form": "So",
    "lemma": "so",
@@ -3774,6 +3752,17 @@
   },
   {
    "pos": 22,
+   "pos_end": 23,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più"
+  },
+  {
+   "pos": 22,
    "form": "nicht",
    "lemma": "nicht",
    "level": "A1",
@@ -3901,6 +3890,17 @@
    "es": "fuego",
    "fr": "feu",
    "it": "fuoco"
+  },
+  {
+   "pos": 35,
+   "pos_end": 36,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più"
   },
   {
    "pos": 35,
@@ -4369,31 +4369,6 @@
  ],
  "19": [
   {
-   "pos": 3,
-   "parts": [
-    3,
-    6
-   ],
-   "form": "auf hört",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listens to",
-   "es": "escucha",
-   "fr": "écoute",
-   "it": "ascolta"
-  },
-  {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "Rechenschaft fordern",
-   "lemma": "Rechenschaft fordern",
-   "level": "B2",
-   "en": "call to account",
-   "es": "pedir cuentas",
-   "fr": "demander des comptes",
-   "it": "chiedere conto"
-  },
-  {
    "pos": 0,
    "form": "Und",
    "lemma": "und",
@@ -4422,6 +4397,20 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
+  },
+  {
+   "pos": 3,
+   "parts": [
+    3,
+    6
+   ],
+   "form": "auf hört",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listens to",
+   "es": "escucha",
+   "fr": "écoute",
+   "it": "ascolta"
   },
   {
    "pos": 3,
@@ -4572,6 +4561,17 @@
    "es": "yo",
    "fr": "je",
    "it": "io"
+  },
+  {
+   "pos": 18,
+   "pos_end": 19,
+   "form": "Rechenschaft fordern",
+   "lemma": "Rechenschaft fordern",
+   "level": "B2",
+   "en": "call to account",
+   "es": "pedir cuentas",
+   "fr": "demander des comptes",
+   "it": "chiedere conto"
   },
   {
    "pos": 18,
@@ -4908,20 +4908,6 @@
  ],
  "21": [
   {
-   "pos": 2,
-   "parts": [
-    2,
-    4
-   ],
-   "form": "dich fragst",
-   "lemma": "sich fragen",
-   "level": "B2",
-   "en": "wonder",
-   "es": "te preguntas",
-   "fr": "te demandes",
-   "it": "ti chiedi"
-  },
-  {
    "pos": 0,
    "form": "Wenn",
    "lemma": "wenn",
@@ -4940,6 +4926,20 @@
    "es": "tú",
    "fr": "tu",
    "it": "tu"
+  },
+  {
+   "pos": 2,
+   "parts": [
+    2,
+    4
+   ],
+   "form": "dich fragst",
+   "lemma": "sich fragen",
+   "level": "B1",
+   "en": "wonder",
+   "es": "te preguntas",
+   "fr": "te demandes",
+   "it": "ti chiedi"
   },
   {
    "pos": 2,
@@ -5084,34 +5084,6 @@
  ],
  "22": [
   {
-   "pos": 14,
-   "parts": [
-    14,
-    16
-   ],
-   "form": "trifft ein",
-   "lemma": "eintreffen",
-   "level": "B2",
-   "en": "comes true",
-   "es": "se cumple",
-   "fr": "se réalise",
-   "it": "si avvera"
-  },
-  {
-   "pos": 28,
-   "parts": [
-    28,
-    30
-   ],
-   "form": "dich fürchten",
-   "lemma": "sich fürchten",
-   "level": "B1",
-   "en": "fear",
-   "es": "temer",
-   "fr": "craindre",
-   "it": "temere"
-  },
-  {
    "pos": 0,
    "form": "Wenn",
    "lemma": "wenn",
@@ -5253,6 +5225,20 @@
   },
   {
    "pos": 14,
+   "parts": [
+    14,
+    16
+   ],
+   "form": "trifft ein",
+   "lemma": "eintreffen",
+   "level": "B2",
+   "en": "comes true",
+   "es": "se cumple",
+   "fr": "se réalise",
+   "it": "si avvera"
+  },
+  {
+   "pos": 14,
    "form": "trifft",
    "lemma": "treffen",
    "level": "A2",
@@ -5390,6 +5376,20 @@
    "es": "tú",
    "fr": "tu",
    "it": "tu"
+  },
+  {
+   "pos": 28,
+   "parts": [
+    28,
+    30
+   ],
+   "form": "dich fürchten",
+   "lemma": "sich fürchten",
+   "level": "B1",
+   "en": "fear",
+   "es": "temer",
+   "fr": "craindre",
+   "it": "temere"
   },
   {
    "pos": 28,

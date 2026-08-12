@@ -1380,6 +1380,17 @@
   },
   {
    "pos": 15,
+   "pos_end": 19,
+   "form": "stand kurz vor dem Untergang",
+   "lemma": "kurz vor dem Untergang stehen",
+   "level": "C1",
+   "en": "was on the verge of ruin",
+   "es": "estaba al borde de la ruina",
+   "fr": "était au bord de la ruine",
+   "it": "era sull'orlo della rovina"
+  },
+  {
+   "pos": 15,
    "form": "stand",
    "lemma": "stehen",
    "level": "A1",
@@ -1437,6 +1448,20 @@
    "es": "Él",
    "fr": "Il",
    "it": "Egli"
+  },
+  {
+   "pos": 21,
+   "parts": [
+    21,
+    24
+   ],
+   "form": "zog hinab",
+   "lemma": "hinabziehen",
+   "level": "B2",
+   "en": "went down",
+   "es": "descendió",
+   "fr": "descendit",
+   "it": "scese"
   },
   {
    "pos": 21,
@@ -1580,6 +1605,20 @@
   },
   {
    "pos": 35,
+   "parts": [
+    35,
+    37
+   ],
+   "form": "wurde zu",
+   "lemma": "werden zu",
+   "level": "A2",
+   "en": "became",
+   "es": "se convirtió en",
+   "fr": "devint",
+   "it": "divenne"
+  },
+  {
+   "pos": 35,
    "form": "wurde",
    "lemma": "werden",
    "level": "A1",
@@ -1667,45 +1706,6 @@
    "es": "nación",
    "fr": "nation",
    "it": "nazione"
-  },
-  {
-   "pos": 15,
-   "pos_end": 19,
-   "form": "stand kurz vor dem Untergang",
-   "lemma": "kurz vor dem Untergang stehen",
-   "level": "C1",
-   "en": "was on the verge of ruin",
-   "es": "estaba al borde de la ruina",
-   "fr": "était au bord de la ruine",
-   "it": "era sull'orlo della rovina"
-  },
-  {
-   "pos": 21,
-   "parts": [
-    21,
-    24
-   ],
-   "form": "zog hinab",
-   "lemma": "hinabziehen",
-   "level": "B2",
-   "en": "went down",
-   "es": "descendió",
-   "fr": "descendit",
-   "it": "scese"
-  },
-  {
-   "pos": 35,
-   "parts": [
-    35,
-    37
-   ],
-   "form": "wurde zu",
-   "lemma": "werden zu",
-   "level": "A2",
-   "en": "became",
-   "es": "se convirtió en",
-   "fr": "devint",
-   "it": "divenne"
   }
  ],
  "6": [
@@ -2761,6 +2761,20 @@
   },
   {
    "pos": 1,
+   "parts": [
+    1,
+    6
+   ],
+   "form": "dich freuen",
+   "lemma": "sich freuen",
+   "level": "A2",
+   "en": "rejoice",
+   "es": "alegrarte",
+   "fr": "te réjouir",
+   "it": "rallegrarti"
+  },
+  {
+   "pos": 1,
    "form": "dich",
    "lemma": "du",
    "level": "A1",
@@ -2941,6 +2955,17 @@
   },
   {
    "pos": 19,
+   "pos_end": 20,
+   "form": "zusammen mit",
+   "lemma": "zusammen mit",
+   "level": "B1",
+   "en": "together with",
+   "es": "junto con",
+   "fr": "avec",
+   "it": "insieme a"
+  },
+  {
+   "pos": 19,
    "form": "zusammen",
    "lemma": "zusammen",
    "level": "A2",
@@ -3048,31 +3073,6 @@
    "es": "habita",
    "fr": "habite",
    "it": "abita"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    6
-   ],
-   "form": "dich freuen",
-   "lemma": "sich freuen",
-   "level": "A2",
-   "en": "rejoice",
-   "es": "alegrarte",
-   "fr": "te réjouir",
-   "it": "rallegrarti"
-  },
-  {
-   "pos": 19,
-   "pos_end": 20,
-   "form": "zusammen mit",
-   "lemma": "zusammen mit",
-   "level": "B1",
-   "en": "together with",
-   "es": "junto con",
-   "fr": "avec",
-   "it": "insieme a"
   }
  ],
  "12": [
@@ -4816,6 +4816,20 @@
   },
   {
    "pos": 9,
+   "parts": [
+    9,
+    15
+   ],
+   "form": "nach handelst",
+   "lemma": "handeln nach",
+   "level": "B2",
+   "en": "act according to",
+   "es": "actúes según",
+   "fr": "agisses selon",
+   "it": "agisca secondo"
+  },
+  {
+   "pos": 9,
    "form": "nach",
    "lemma": "nach",
    "level": "A1",
@@ -4916,6 +4930,17 @@
   },
   {
    "pos": 19,
+   "pos_end": 21,
+   "form": "mit ganzem Herzen",
+   "lemma": "mit ganzem Herzen",
+   "level": "B2",
+   "en": "with all your heart",
+   "es": "con todo tu corazón",
+   "fr": "de tout ton cœur",
+   "it": "con tutto il tuo cuore"
+  },
+  {
+   "pos": 19,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -4956,6 +4981,17 @@
   },
   {
    "pos": 23,
+   "pos_end": 24,
+   "form": "ganzer Seele",
+   "lemma": "mit ganzer Seele",
+   "level": "B2",
+   "en": "with all your soul",
+   "es": "con toda tu alma",
+   "fr": "de toute ton âme",
+   "it": "con tutta la tua anima"
+  },
+  {
+   "pos": 23,
    "form": "ganzer",
    "lemma": "ganz",
    "level": "A2",
@@ -4983,42 +5019,6 @@
    "es": "cumplas",
    "fr": "suives",
    "it": "segua"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    15
-   ],
-   "form": "nach handelst",
-   "lemma": "handeln nach",
-   "level": "B2",
-   "en": "act according to",
-   "es": "actúes según",
-   "fr": "agisses selon",
-   "it": "agisca secondo"
-  },
-  {
-   "pos": 19,
-   "pos_end": 21,
-   "form": "mit ganzem Herzen",
-   "lemma": "mit ganzem Herzen",
-   "level": "B2",
-   "en": "with all your heart",
-   "es": "con todo tu corazón",
-   "fr": "de tout ton cœur",
-   "it": "con tutto il tuo cuore"
-  },
-  {
-   "pos": 23,
-   "pos_end": 24,
-   "form": "ganzer Seele",
-   "lemma": "mit ganzer Seele",
-   "level": "B2",
-   "en": "with all your soul",
-   "es": "con toda tu alma",
-   "fr": "de toute ton âme",
-   "it": "con tutta la tua anima"
   }
  ],
  "17": [

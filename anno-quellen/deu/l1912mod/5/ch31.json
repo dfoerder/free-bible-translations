@@ -62,16 +62,6 @@
   },
   {
    "pos": 6,
-   "form": "richtete",
-   "lemma": "richten",
-   "level": "B1",
-   "en": "directed",
-   "es": "dirigió",
-   "fr": "adressa",
-   "it": "rivolse"
-  },
-  {
-   "pos": 6,
    "parts": [
     6,
     9
@@ -83,6 +73,16 @@
    "es": "dirigió a",
    "fr": "adressa à",
    "it": "rivolse a"
+  },
+  {
+   "pos": 6,
+   "form": "richtete",
+   "lemma": "richten",
+   "level": "B1",
+   "en": "directed",
+   "es": "dirigió",
+   "fr": "adressa",
+   "it": "rivolse"
   },
   {
    "pos": 7,
@@ -248,16 +248,6 @@
   },
   {
    "pos": 12,
-   "form": "nicht",
-   "lemma": "nicht",
-   "level": "A1",
-   "en": "not",
-   "es": "no",
-   "fr": "ne",
-   "it": "non"
-  },
-  {
-   "pos": 12,
    "pos_end": 13,
    "form": "nicht mehr",
    "lemma": "nicht mehr",
@@ -266,6 +256,16 @@
    "es": "ya no",
    "fr": "ne plus",
    "it": "non più"
+  },
+  {
+   "pos": 12,
+   "form": "nicht",
+   "lemma": "nicht",
+   "level": "A1",
+   "en": "not",
+   "es": "no",
+   "fr": "ne",
+   "it": "non"
   },
   {
    "pos": 13,
@@ -521,16 +521,6 @@
   },
   {
    "pos": 6,
-   "form": "vor",
-   "lemma": "vor",
-   "level": "A1",
-   "en": "ahead of",
-   "es": "delante de",
-   "fr": "devant",
-   "it": "davanti a"
-  },
-  {
-   "pos": 6,
    "parts": [
     6,
     8
@@ -538,6 +528,16 @@
    "form": "vor her",
    "lemma": "vor jemandem her",
    "level": "B2",
+   "en": "ahead of",
+   "es": "delante de",
+   "fr": "devant",
+   "it": "davanti a"
+  },
+  {
+   "pos": 6,
+   "form": "vor",
+   "lemma": "vor",
+   "level": "A1",
    "en": "ahead of",
    "es": "delante de",
    "fr": "devant",
@@ -1311,16 +1311,6 @@
   },
   {
    "pos": 4,
-   "form": "fürchtet",
-   "lemma": "fürchten",
-   "level": "B1",
-   "en": "fear",
-   "es": "temáis",
-   "fr": "craignez",
-   "it": "temete"
-  },
-  {
-   "pos": 4,
    "pos_end": 5,
    "form": "fürchtet euch",
    "lemma": "sich fürchten",
@@ -1329,6 +1319,16 @@
    "es": "tengáis miedo",
    "fr": "ayez peur",
    "it": "abbiate paura"
+  },
+  {
+   "pos": 4,
+   "form": "fürchtet",
+   "lemma": "fürchten",
+   "level": "B1",
+   "en": "fear",
+   "es": "temáis",
+   "fr": "craignez",
+   "it": "temete"
   },
   {
    "pos": 5,
@@ -1362,16 +1362,6 @@
   },
   {
    "pos": 8,
-   "form": "habt",
-   "lemma": "haben",
-   "level": "A1",
-   "en": "have",
-   "es": "tengáis",
-   "fr": "ayez",
-   "it": "abbiate"
-  },
-  {
-   "pos": 8,
    "pos_end": 10,
    "form": "habt keine Angst",
    "lemma": "keine Angst haben",
@@ -1380,6 +1370,16 @@
    "es": "no tengáis miedo",
    "fr": "n'ayez pas peur",
    "it": "non abbiate paura"
+  },
+  {
+   "pos": 8,
+   "form": "habt",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "have",
+   "es": "tengáis",
+   "fr": "ayez",
+   "it": "abbiate"
   },
   {
    "pos": 9,
@@ -2087,16 +2087,6 @@
   },
   {
    "pos": 4,
-   "form": "vor",
-   "lemma": "vor",
-   "level": "A1",
-   "en": "ahead of",
-   "es": "delante de",
-   "fr": "devant",
-   "it": "davanti a"
-  },
-  {
-   "pos": 4,
    "parts": [
     4,
     6
@@ -2104,6 +2094,16 @@
    "form": "vor her",
    "lemma": "vor jemandem her",
    "level": "B2",
+   "en": "ahead of",
+   "es": "delante de",
+   "fr": "devant",
+   "it": "davanti a"
+  },
+  {
+   "pos": 4,
+   "form": "vor",
+   "lemma": "vor",
+   "level": "A1",
    "en": "ahead of",
    "es": "delante de",
    "fr": "devant",
@@ -2261,16 +2261,6 @@
   },
   {
    "pos": 20,
-   "form": "Fürchte",
-   "lemma": "fürchten",
-   "level": "B1",
-   "en": "Fear",
-   "es": "Temas",
-   "fr": "Crains",
-   "it": "Temi"
-  },
-  {
-   "pos": 20,
    "pos_end": 21,
    "form": "Fürchte dich",
    "lemma": "sich fürchten",
@@ -2279,6 +2269,16 @@
    "es": "Tengas miedo",
    "fr": "Aie peur",
    "it": "Abbi paura"
+  },
+  {
+   "pos": 20,
+   "form": "Fürchte",
+   "lemma": "fürchten",
+   "level": "B1",
+   "en": "Fear",
+   "es": "Temas",
+   "fr": "Crains",
+   "it": "Temi"
   },
   {
    "pos": 21,
@@ -2312,16 +2312,6 @@
   },
   {
    "pos": 24,
-   "form": "hab",
-   "lemma": "haben",
-   "level": "A1",
-   "en": "have",
-   "es": "tengas",
-   "fr": "aie",
-   "it": "avere"
-  },
-  {
-   "pos": 24,
    "pos_end": 26,
    "form": "hab keine Angst",
    "lemma": "keine Angst haben",
@@ -2330,6 +2320,16 @@
    "es": "no tengas miedo",
    "fr": "n'aie pas peur",
    "it": "non aver paura"
+  },
+  {
+   "pos": 24,
+   "form": "hab",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "have",
+   "es": "tengas",
+   "fr": "aie",
+   "it": "avere"
   },
   {
    "pos": 25,
@@ -2365,16 +2365,6 @@
   },
   {
    "pos": 1,
-   "form": "schrieb",
-   "lemma": "schreiben",
-   "level": "A1",
-   "en": "wrote",
-   "es": "escribió",
-   "fr": "écrivit",
-   "it": "scrisse"
-  },
-  {
-   "pos": 1,
    "parts": [
     1,
     4
@@ -2383,6 +2373,16 @@
    "lemma": "aufschreiben",
    "level": "B1",
    "en": "wrote down",
+   "es": "escribió",
+   "fr": "écrivit",
+   "it": "scrisse"
+  },
+  {
+   "pos": 1,
+   "form": "schrieb",
+   "lemma": "schreiben",
+   "level": "A1",
+   "en": "wrote",
    "es": "escribió",
    "fr": "écrivit",
    "it": "scrisse"
@@ -2691,16 +2691,6 @@
   },
   {
    "pos": 11,
-   "form": "Fest",
-   "lemma": "Fest",
-   "level": "A2",
-   "en": "feast",
-   "es": "fiesta",
-   "fr": "fête",
-   "it": "festa"
-  },
-  {
-   "pos": 11,
    "pos_end": 13,
    "form": "Fest der Laubhütten",
    "lemma": "Fest der Laubhütten",
@@ -2709,6 +2699,16 @@
    "es": "fiesta de las Enramadas",
    "fr": "fête des Tabernacles",
    "it": "festa delle Capanne"
+  },
+  {
+   "pos": 11,
+   "form": "Fest",
+   "lemma": "Fest",
+   "level": "A2",
+   "en": "feast",
+   "es": "fiesta",
+   "fr": "fête",
+   "it": "festa"
   },
   {
    "pos": 12,
@@ -3024,16 +3024,6 @@
   },
   {
    "pos": 29,
-   "form": "vorlesen",
-   "lemma": "vorlesen",
-   "level": "B2",
-   "en": "read out",
-   "es": "leer",
-   "fr": "lire",
-   "it": "leggere"
-  },
-  {
-   "pos": 29,
    "pos_end": 30,
    "form": "vorlesen lassen",
    "lemma": "vorlesen lassen",
@@ -3042,6 +3032,16 @@
    "es": "hacer leer",
    "fr": "faire lire",
    "it": "far leggere"
+  },
+  {
+   "pos": 29,
+   "form": "vorlesen",
+   "lemma": "vorlesen",
+   "level": "B2",
+   "en": "read out",
+   "es": "leer",
+   "fr": "lire",
+   "it": "leggere"
   },
   {
    "pos": 30,
@@ -3529,16 +3529,6 @@
   },
   {
    "pos": 7,
-   "form": "noch",
-   "lemma": "noch",
-   "level": "A1",
-   "en": "yet",
-   "es": "todavía",
-   "fr": "encore",
-   "it": "ancora"
-  },
-  {
-   "pos": 7,
    "pos_end": 8,
    "form": "noch nicht",
    "lemma": "noch nicht",
@@ -3547,6 +3537,16 @@
    "es": "todavía no",
    "fr": "pas encore",
    "it": "non ancora"
+  },
+  {
+   "pos": 7,
+   "form": "noch",
+   "lemma": "noch",
+   "level": "A1",
+   "en": "yet",
+   "es": "todavía",
+   "fr": "encore",
+   "it": "ancora"
   },
   {
    "pos": 8,
@@ -4506,16 +4506,6 @@
   },
   {
    "pos": 8,
-   "form": "dich",
-   "lemma": "du",
-   "level": "A1",
-   "en": "yourself",
-   "es": "te",
-   "fr": "te",
-   "it": "ti"
-  },
-  {
-   "pos": 8,
    "parts": [
     8,
     12
@@ -4527,6 +4517,16 @@
    "es": "acostarte",
    "fr": "te coucher",
    "it": "coricarti"
+  },
+  {
+   "pos": 8,
+   "form": "dich",
+   "lemma": "du",
+   "level": "A1",
+   "en": "yourself",
+   "es": "te",
+   "fr": "te",
+   "it": "ti"
   },
   {
    "pos": 9,
@@ -4600,16 +4600,6 @@
   },
   {
    "pos": 16,
-   "form": "sich",
-   "lemma": "sich",
-   "level": "A1",
-   "en": "itself",
-   "es": "se",
-   "fr": "se",
-   "it": "si"
-  },
-  {
-   "pos": 16,
    "pos_end": 17,
    "form": "sich erheben",
    "lemma": "sich erheben",
@@ -4618,6 +4608,16 @@
    "es": "levantarse",
    "fr": "se lever",
    "it": "sollevarsi"
+  },
+  {
+   "pos": 16,
+   "form": "sich",
+   "lemma": "sich",
+   "level": "A1",
+   "en": "itself",
+   "es": "se",
+   "fr": "se",
+   "it": "si"
   },
   {
    "pos": 17,
@@ -4791,16 +4791,6 @@
   },
   {
    "pos": 34,
-   "form": "Bund",
-   "lemma": "Bund",
-   "level": "B2",
-   "en": "covenant",
-   "es": "pacto",
-   "fr": "alliance",
-   "it": "alleanza"
-  },
-  {
-   "pos": 34,
    "pos_end": 35,
    "form": "Bund brechen",
    "lemma": "den Bund brechen",
@@ -4809,6 +4799,16 @@
    "es": "romper el pacto",
    "fr": "rompre l'alliance",
    "it": "rompere l'alleanza"
+  },
+  {
+   "pos": 34,
+   "form": "Bund",
+   "lemma": "Bund",
+   "level": "B2",
+   "en": "covenant",
+   "es": "pacto",
+   "fr": "alliance",
+   "it": "alleanza"
   },
   {
    "pos": 35,
@@ -5114,16 +5114,6 @@
   },
   {
    "pos": 23,
-   "form": "zugrunde",
-   "lemma": "zugrunde",
-   "level": "C1",
-   "en": "to ruin",
-   "es": "a la ruina",
-   "fr": "à la ruine",
-   "it": "in rovina"
-  },
-  {
-   "pos": 23,
    "pos_end": 24,
    "form": "zugrunde gehen",
    "lemma": "zugrunde gehen",
@@ -5132,6 +5122,16 @@
    "es": "perecen",
    "fr": "périssent",
    "it": "periscono"
+  },
+  {
+   "pos": 23,
+   "form": "zugrunde",
+   "lemma": "zugrunde",
+   "level": "C1",
+   "en": "to ruin",
+   "es": "a la ruina",
+   "fr": "à la ruine",
+   "it": "in rovina"
   },
   {
    "pos": 24,
@@ -5285,16 +5285,6 @@
   },
   {
    "pos": 39,
-   "form": "das",
-   "lemma": "der",
-   "level": "A1",
-   "en": "this",
-   "es": "esto",
-   "fr": "cela",
-   "it": "questo"
-  },
-  {
-   "pos": 39,
    "pos_end": 40,
    "form": "das alles",
    "lemma": "das alles",
@@ -5303,6 +5293,16 @@
    "es": "todo esto",
    "fr": "tout cela",
    "it": "tutto questo"
+  },
+  {
+   "pos": 39,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "this",
+   "es": "esto",
+   "fr": "cela",
+   "it": "questo"
   },
   {
    "pos": 40,
@@ -5608,16 +5608,6 @@
   },
   {
    "pos": 19,
-   "form": "sich",
-   "lemma": "sich",
-   "level": "A1",
-   "en": "themselves",
-   "es": "se",
-   "fr": "se",
-   "it": "si"
-  },
-  {
-   "pos": 19,
    "parts": [
     19,
     22
@@ -5629,6 +5619,16 @@
    "es": "vuelto a",
    "fr": "tournés vers",
    "it": "rivolti a"
+  },
+  {
+   "pos": 19,
+   "form": "sich",
+   "lemma": "sich",
+   "level": "A1",
+   "en": "themselves",
+   "es": "se",
+   "fr": "se",
+   "it": "si"
   },
   {
    "pos": 20,
@@ -5674,16 +5674,6 @@
  "19": [
   {
    "pos": 0,
-   "form": "Schreibt",
-   "lemma": "schreiben",
-   "level": "A1",
-   "en": "Write",
-   "es": "Escribid",
-   "fr": "Écrivez",
-   "it": "Scrivete"
-  },
-  {
-   "pos": 0,
    "parts": [
     0,
     5
@@ -5692,6 +5682,16 @@
    "lemma": "aufschreiben",
    "level": "B1",
    "en": "Write down",
+   "es": "Escribid",
+   "fr": "Écrivez",
+   "it": "Scrivete"
+  },
+  {
+   "pos": 0,
+   "form": "Schreibt",
+   "lemma": "schreiben",
+   "level": "A1",
+   "en": "Write",
    "es": "Escribid",
    "fr": "Écrivez",
    "it": "Scrivete"
@@ -5798,16 +5798,6 @@
   },
   {
    "pos": 11,
-   "form": "bringt",
-   "lemma": "bringen",
-   "level": "A1",
-   "en": "bring",
-   "es": "traed",
-   "fr": "apportez",
-   "it": "portate"
-  },
-  {
-   "pos": 11,
    "parts": [
     11,
     14
@@ -5819,6 +5809,16 @@
    "es": "inculcad",
    "fr": "inculquez",
    "it": "inculcate"
+  },
+  {
+   "pos": 11,
+   "form": "bringt",
+   "lemma": "bringen",
+   "level": "A1",
+   "en": "bring",
+   "es": "traed",
+   "fr": "apportez",
+   "it": "portate"
   },
   {
    "pos": 12,
@@ -6204,16 +6204,6 @@
   },
   {
    "pos": 25,
-   "form": "satt",
-   "lemma": "satt",
-   "level": "B1",
-   "en": "full",
-   "es": "saciados",
-   "fr": "rassasiés",
-   "it": "sazi"
-  },
-  {
-   "pos": 25,
    "parts": [
     25,
     28
@@ -6225,6 +6215,16 @@
    "es": "saciarse",
    "fr": "être rassasiés",
    "it": "saziarsi"
+  },
+  {
+   "pos": 25,
+   "form": "satt",
+   "lemma": "satt",
+   "level": "B1",
+   "en": "full",
+   "es": "saciados",
+   "fr": "rassasiés",
+   "it": "sazi"
   },
   {
    "pos": 26,
@@ -6278,16 +6278,6 @@
   },
   {
    "pos": 31,
-   "form": "sich",
-   "lemma": "sich",
-   "level": "A1",
-   "en": "themselves",
-   "es": "se",
-   "fr": "se",
-   "it": "si"
-  },
-  {
-   "pos": 31,
    "parts": [
     31,
     34
@@ -6299,6 +6289,16 @@
    "es": "volverse a",
    "fr": "se tourner vers",
    "it": "volgersi a"
+  },
+  {
+   "pos": 31,
+   "form": "sich",
+   "lemma": "sich",
+   "level": "A1",
+   "en": "themselves",
+   "es": "se",
+   "fr": "se",
+   "it": "si"
   },
   {
    "pos": 32,
@@ -6392,16 +6392,6 @@
   },
   {
    "pos": 41,
-   "form": "Bund",
-   "lemma": "Bund",
-   "level": "B2",
-   "en": "covenant",
-   "es": "pacto",
-   "fr": "alliance",
-   "it": "alleanza"
-  },
-  {
-   "pos": 41,
    "pos_end": 42,
    "form": "Bund brechen",
    "lemma": "den Bund brechen",
@@ -6410,6 +6400,16 @@
    "es": "romper el pacto",
    "fr": "rompre l'alliance",
    "it": "rompere l'alleanza"
+  },
+  {
+   "pos": 41,
+   "form": "Bund",
+   "lemma": "Bund",
+   "level": "B2",
+   "en": "covenant",
+   "es": "pacto",
+   "fr": "alliance",
+   "it": "alleanza"
   },
   {
    "pos": 42,
@@ -6775,16 +6775,6 @@
   },
   {
    "pos": 35,
-   "form": "im",
-   "lemma": "im",
-   "level": "A1",
-   "en": "in the",
-   "es": "en la",
-   "fr": "dans la",
-   "it": "nella"
-  },
-  {
-   "pos": 35,
    "pos_end": 37,
    "form": "im Sinn haben",
    "lemma": "im Sinn haben",
@@ -6793,6 +6783,16 @@
    "es": "tienen en mente",
    "fr": "ont en tête",
    "it": "hanno in mente"
+  },
+  {
+   "pos": 35,
+   "form": "im",
+   "lemma": "im",
+   "level": "A1",
+   "en": "in the",
+   "es": "en la",
+   "fr": "dans la",
+   "it": "nella"
   },
   {
    "pos": 36,
@@ -6948,16 +6948,6 @@
   },
   {
    "pos": 1,
-   "form": "schrieb",
-   "lemma": "schreiben",
-   "level": "A1",
-   "en": "wrote",
-   "es": "escribió",
-   "fr": "écrivit",
-   "it": "scrisse"
-  },
-  {
-   "pos": 1,
    "parts": [
     1,
     8
@@ -6966,6 +6956,16 @@
    "lemma": "aufschreiben",
    "level": "B1",
    "en": "wrote down",
+   "es": "escribió",
+   "fr": "écrivit",
+   "it": "scrisse"
+  },
+  {
+   "pos": 1,
+   "form": "schrieb",
+   "lemma": "schreiben",
+   "level": "A1",
+   "en": "wrote",
    "es": "escribió",
    "fr": "écrivit",
    "it": "scrisse"
@@ -7114,16 +7114,6 @@
   },
   {
    "pos": 2,
-   "form": "wies",
-   "lemma": "weisen",
-   "level": "B2",
-   "en": "directed",
-   "es": "indicó",
-   "fr": "indiqua",
-   "it": "indicò"
-  },
-  {
-   "pos": 2,
    "parts": [
     2,
     7
@@ -7135,6 +7125,16 @@
    "es": "ordenó",
    "fr": "ordonna",
    "it": "ordinò"
+  },
+  {
+   "pos": 2,
+   "form": "wies",
+   "lemma": "weisen",
+   "level": "B2",
+   "en": "directed",
+   "es": "indicó",
+   "fr": "indiqua",
+   "it": "indicò"
   },
   {
    "pos": 3,
@@ -8126,16 +8126,6 @@
   },
   {
    "pos": 22,
-   "form": "Wie",
-   "lemma": "wie",
-   "level": "A1",
-   "en": "How",
-   "es": "Cuánto",
-   "fr": "Combien",
-   "it": "Quanto"
-  },
-  {
-   "pos": 22,
    "pos_end": 24,
    "form": "Wie viel mehr",
    "lemma": "wie viel mehr",
@@ -8144,6 +8134,16 @@
    "es": "Cuánto más",
    "fr": "Combien plus",
    "it": "Quanto più"
+  },
+  {
+   "pos": 22,
+   "form": "Wie",
+   "lemma": "wie",
+   "level": "A1",
+   "en": "How",
+   "es": "Cuánto",
+   "fr": "Combien",
+   "it": "Quanto"
   },
   {
    "pos": 23,
@@ -8217,16 +8217,6 @@
   },
   {
    "pos": 30,
-   "form": "der",
-   "lemma": "der",
-   "level": "A1",
-   "en": "the",
-   "es": "el",
-   "fr": "le",
-   "it": "il"
-  },
-  {
-   "pos": 30,
    "pos_end": 32,
    "form": "der Fall sein",
    "lemma": "der Fall sein",
@@ -8235,6 +8225,16 @@
    "es": "ser el caso",
    "fr": "être le cas",
    "it": "essere il caso"
+  },
+  {
+   "pos": 30,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
   },
   {
    "pos": 31,
@@ -9004,16 +9004,6 @@
   },
   {
    "pos": 1,
-   "form": "trug",
-   "lemma": "tragen",
-   "level": "A2",
-   "en": "carried",
-   "es": "llevó",
-   "fr": "porta",
-   "it": "portò"
-  },
-  {
-   "pos": 1,
    "parts": [
     1,
     13
@@ -9025,6 +9015,16 @@
    "es": "recitó",
    "fr": "récita",
    "it": "recitò"
+  },
+  {
+   "pos": 1,
+   "form": "trug",
+   "lemma": "tragen",
+   "level": "A2",
+   "en": "carried",
+   "es": "llevó",
+   "fr": "porta",
+   "it": "portò"
   },
   {
    "pos": 2,

@@ -228,7 +228,12 @@ behält ihr eigenes Lemma.
 | Refaiter | kommt nicht vor; der Text sagt **`Riesen`** |
 
 `Sinai`, `Arnon` (in Kap. 1), `Zin`, `Jaser` und `Kemosch` kommen in 5Mo 1–2
-**nicht** vor. Der Berg heißt `Horeb`.
+**nicht** vor. Der Berg heißt in der Erzählung durchweg `Horeb` — mit **einer**
+Ausnahme im ganzen Buch: **33,2**, im Segen des Mose, sagt „Der HERR ist vom
+`Sinai` gekommen". Poesie, eigene Wortwahl.
+
+**Und ein dritter Stammesname doppelt sich:** 27,12 schreibt `Isaschar`,
+**33,18 schreibt `Issaschar`**.
 
 ### Die Völkerliste schreibt sich im selben Buch zweimal verschieden
 

@@ -2,16 +2,6 @@
  "1": [
   {
    "pos": 0,
-   "form": "Achte",
-   "lemma": "achten",
-   "level": "B1",
-   "en": "Watch",
-   "es": "Cuida",
-   "fr": "Veille",
-   "it": "Bada"
-  },
-  {
-   "pos": 0,
    "form": "Achte auf",
    "lemma": "achten auf",
    "level": "B1",
@@ -20,6 +10,16 @@
    "fr": "Observe",
    "it": "Osserva",
    "pos_end": 1
+  },
+  {
+   "pos": 0,
+   "form": "Achte",
+   "lemma": "achten",
+   "level": "B1",
+   "en": "Watch",
+   "es": "Cuida",
+   "fr": "Veille",
+   "it": "Bada"
   },
   {
    "pos": 1,
@@ -747,16 +747,6 @@
   },
   {
    "pos": 20,
-   "form": "dein",
-   "lemma": "dein",
-   "level": "A1",
-   "en": "your",
-   "es": "tu",
-   "fr": "ta",
-   "it": "la tua"
-  },
-  {
-   "pos": 20,
    "form": "dein Leben lang",
    "lemma": "sein Leben lang",
    "level": "B1",
@@ -765,6 +755,16 @@
    "fr": "toute ta vie",
    "it": "tutta la tua vita",
    "pos_end": 22
+  },
+  {
+   "pos": 20,
+   "form": "dein",
+   "lemma": "dein",
+   "level": "A1",
+   "en": "your",
+   "es": "tu",
+   "fr": "ta",
+   "it": "la tua"
   },
   {
    "pos": 21,
@@ -788,16 +788,6 @@
   },
   {
    "pos": 23,
-   "form": "an",
-   "lemma": "an",
-   "level": "A1",
-   "en": "of",
-   "es": "de",
-   "fr": "de",
-   "it": "di"
-  },
-  {
-   "pos": 23,
    "form": "an denken",
    "lemma": "denken an",
    "level": "A2",
@@ -809,6 +799,16 @@
     23,
     30
    ]
+  },
+  {
+   "pos": 23,
+   "form": "an",
+   "lemma": "an",
+   "level": "A1",
+   "en": "of",
+   "es": "de",
+   "fr": "de",
+   "it": "di"
   },
   {
    "pos": 24,
@@ -984,16 +984,6 @@
   },
   {
    "pos": 10,
-   "form": "zu",
-   "lemma": "zu",
-   "level": "A1",
-   "en": "to",
-   "es": "a",
-   "fr": "à",
-   "it": "a"
-  },
-  {
-   "pos": 10,
    "form": "zu sehen sein",
    "lemma": "zu sehen sein",
    "level": "B1",
@@ -1002,6 +992,16 @@
    "fr": "être vu",
    "it": "vedersi",
    "pos_end": 12
+  },
+  {
+   "pos": 10,
+   "form": "zu",
+   "lemma": "zu",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
   },
   {
    "pos": 11,
@@ -1165,16 +1165,6 @@
   },
   {
    "pos": 27,
-   "form": "über",
-   "lemma": "über",
-   "level": "A2",
-   "en": "over",
-   "es": "por",
-   "fr": "durant",
-   "it": "durante"
-  },
-  {
-   "pos": 27,
    "form": "über Nacht",
    "lemma": "über Nacht",
    "level": "A2",
@@ -1183,6 +1173,16 @@
    "fr": "pendant la nuit",
    "it": "per la notte",
    "pos_end": 28
+  },
+  {
+   "pos": 27,
+   "form": "über",
+   "lemma": "über",
+   "level": "A2",
+   "en": "over",
+   "es": "por",
+   "fr": "durant",
+   "it": "durante"
   },
   {
    "pos": 28,
@@ -1196,16 +1196,6 @@
   },
   {
    "pos": 29,
-   "form": "bis",
-   "lemma": "bis",
-   "level": "A2",
-   "en": "until",
-   "es": "hasta",
-   "fr": "jusqu'à",
-   "it": "fino a"
-  },
-  {
-   "pos": 29,
    "form": "bis zum",
    "lemma": "bis zu",
    "level": "A2",
@@ -1214,6 +1204,16 @@
    "fr": "jusqu'au",
    "it": "fino al",
    "pos_end": 30
+  },
+  {
+   "pos": 29,
+   "form": "bis",
+   "lemma": "bis",
+   "level": "A2",
+   "en": "until",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
   },
   {
    "pos": 30,
@@ -2043,16 +2043,6 @@
   },
   {
    "pos": 23,
-   "form": "nach",
-   "lemma": "nach",
-   "level": "A1",
-   "en": "to",
-   "es": "a",
-   "fr": "à",
-   "it": "a"
-  },
-  {
-   "pos": 23,
    "form": "nach Hause",
    "lemma": "nach Hause",
    "level": "A2",
@@ -2061,6 +2051,16 @@
    "fr": "à la maison",
    "it": "a casa",
    "pos_end": 24
+  },
+  {
+   "pos": 23,
+   "form": "nach",
+   "lemma": "nach",
+   "level": "A1",
+   "en": "to",
+   "es": "a",
+   "fr": "à",
+   "it": "a"
   },
   {
    "pos": 24,
@@ -2872,16 +2872,6 @@
   },
   {
    "pos": 3,
-   "form": "dich",
-   "lemma": "du",
-   "level": "A1",
-   "en": "yourself",
-   "es": "te",
-   "fr": "te",
-   "it": "ti"
-  },
-  {
-   "pos": 3,
    "form": "dich freuen",
    "lemma": "sich freuen",
    "level": "A2",
@@ -2893,6 +2883,16 @@
     3,
     9
    ]
+  },
+  {
+   "pos": 3,
+   "form": "dich",
+   "lemma": "du",
+   "level": "A1",
+   "en": "yourself",
+   "es": "te",
+   "fr": "te",
+   "it": "ti"
   },
   {
    "pos": 4,
@@ -3378,16 +3378,6 @@
  "12": [
   {
    "pos": 0,
-   "form": "Denk",
-   "lemma": "denken",
-   "level": "A1",
-   "en": "Think",
-   "es": "Piensa",
-   "fr": "Pense",
-   "it": "Pensa"
-  },
-  {
-   "pos": 0,
    "form": "Denk daran",
    "lemma": "daran denken",
    "level": "B1",
@@ -3396,6 +3386,16 @@
    "fr": "Souviens-toi",
    "it": "Ricorda",
    "pos_end": 1
+  },
+  {
+   "pos": 0,
+   "form": "Denk",
+   "lemma": "denken",
+   "level": "A1",
+   "en": "Think",
+   "es": "Piensa",
+   "fr": "Pense",
+   "it": "Pensa"
   },
   {
    "pos": 1,
@@ -3763,16 +3763,6 @@
   },
   {
    "pos": 3,
-   "form": "dich",
-   "lemma": "du",
-   "level": "A1",
-   "en": "yourself",
-   "es": "te",
-   "fr": "te",
-   "it": "ti"
-  },
-  {
-   "pos": 3,
    "form": "dich freuen",
    "lemma": "sich freuen",
    "level": "A2",
@@ -3784,6 +3774,16 @@
     3,
     7
    ]
+  },
+  {
+   "pos": 3,
+   "form": "dich",
+   "lemma": "du",
+   "level": "A1",
+   "en": "yourself",
+   "es": "te",
+   "fr": "te",
+   "it": "ti"
   },
   {
    "pos": 4,
@@ -4841,16 +4841,6 @@
   },
   {
    "pos": 36,
-   "form": "mit",
-   "lemma": "mit",
-   "level": "A1",
-   "en": "with",
-   "es": "con",
-   "fr": "avec",
-   "it": "con"
-  },
-  {
-   "pos": 36,
    "form": "mit leeren Händen",
    "lemma": "mit leeren Händen",
    "level": "B1",
@@ -4859,6 +4849,16 @@
    "fr": "les mains vides",
    "it": "a mani vuote",
    "pos_end": 38
+  },
+  {
+   "pos": 36,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
   },
   {
    "pos": 37,

@@ -92,6 +92,17 @@
   },
   {
    "pos": 9,
+   "pos_end": 10,
+   "form": "nicht mehr",
+   "lemma": "nicht mehr",
+   "level": "A2",
+   "en": "no longer",
+   "es": "ya no",
+   "fr": "ne plus",
+   "it": "non più"
+  },
+  {
+   "pos": 9,
    "form": "nicht",
    "lemma": "nicht",
    "level": "A1",
@@ -109,17 +120,6 @@
    "es": "más",
    "fr": "plus",
    "it": "più"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "nicht mehr",
-   "lemma": "nicht mehr",
-   "level": "A2",
-   "en": "no longer",
-   "es": "ya no",
-   "fr": "ne plus",
-   "it": "non più"
   },
   {
    "pos": 11,
@@ -577,6 +577,20 @@
   },
   {
    "pos": 4,
+   "parts": [
+    4,
+    8
+   ],
+   "form": "sich wendet",
+   "lemma": "sich wenden",
+   "level": "B1",
+   "en": "turns",
+   "es": "se vuelve",
+   "fr": "se tourne",
+   "it": "si volge"
+  },
+  {
+   "pos": 4,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -624,20 +638,6 @@
    "es": "vuelve",
    "fr": "tourne",
    "it": "volge"
-  },
-  {
-   "pos": 4,
-   "parts": [
-    4,
-    8
-   ],
-   "form": "sich wendet",
-   "lemma": "sich wenden",
-   "level": "B1",
-   "en": "turns",
-   "es": "se vuelve",
-   "fr": "se tourne",
-   "it": "si volge"
   },
   {
    "pos": 9,
@@ -1023,6 +1023,17 @@
   },
   {
    "pos": 12,
+   "pos_end": 14,
+   "form": "zur Frau nehmen",
+   "lemma": "zur Frau nehmen",
+   "level": "B2",
+   "en": "take as wife",
+   "es": "tomar por esposa",
+   "fr": "prendre pour femme",
+   "it": "prendere in moglie"
+  },
+  {
+   "pos": 12,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -1050,17 +1061,6 @@
    "es": "tomar",
    "fr": "prendre",
    "it": "prendere"
-  },
-  {
-   "pos": 12,
-   "pos_end": 14,
-   "form": "zur Frau nehmen",
-   "lemma": "zur Frau nehmen",
-   "level": "B2",
-   "en": "take as wife",
-   "es": "tomar por esposa",
-   "fr": "prendre pour femme",
-   "it": "prendere in moglie"
   },
   {
    "pos": 15,
@@ -1386,6 +1386,17 @@
   },
   {
    "pos": 2,
+   "pos_end": 3,
+   "form": "vor kurzem",
+   "lemma": "vor kurzem",
+   "level": "B1",
+   "en": "recently",
+   "es": "hace poco",
+   "fr": "récemment",
+   "it": "di recente"
+  },
+  {
+   "pos": 2,
    "form": "vor",
    "lemma": "vor",
    "level": "A1",
@@ -1403,17 +1414,6 @@
    "es": "poco",
    "fr": "peu",
    "it": "poco"
-  },
-  {
-   "pos": 2,
-   "pos_end": 3,
-   "form": "vor kurzem",
-   "lemma": "vor kurzem",
-   "level": "B1",
-   "en": "recently",
-   "es": "hace poco",
-   "fr": "récemment",
-   "it": "di recente"
   },
   {
    "pos": 4,
@@ -1487,6 +1487,17 @@
   },
   {
    "pos": 11,
+   "pos_end": 14,
+   "form": "in den Krieg ziehen",
+   "lemma": "in den Krieg ziehen",
+   "level": "B1",
+   "en": "go to war",
+   "es": "ir a la guerra",
+   "fr": "partir en guerre",
+   "it": "andare in guerra"
+  },
+  {
+   "pos": 11,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -1524,17 +1535,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 11,
-   "pos_end": 14,
-   "form": "in den Krieg ziehen",
-   "lemma": "in den Krieg ziehen",
-   "level": "B1",
-   "en": "go to war",
-   "es": "ir a la guerra",
-   "fr": "partir en guerre",
-   "it": "andare in guerra"
   },
   {
    "pos": 15,
@@ -1728,6 +1728,20 @@
   },
   {
    "pos": 34,
+   "parts": [
+    34,
+    42
+   ],
+   "form": "sich freuen",
+   "lemma": "sich freuen",
+   "level": "A2",
+   "en": "rejoice",
+   "es": "alegrarse",
+   "fr": "se réjouir",
+   "it": "rallegrarsi"
+  },
+  {
+   "pos": 34,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -1815,20 +1829,6 @@
    "es": "alegrar",
    "fr": "réjouir",
    "it": "rallegrare"
-  },
-  {
-   "pos": 34,
-   "parts": [
-    34,
-    42
-   ],
-   "form": "sich freuen",
-   "lemma": "sich freuen",
-   "level": "A2",
-   "en": "rejoice",
-   "es": "alegrarse",
-   "fr": "se réjouir",
-   "it": "rallegrarsi"
   },
   {
    "pos": 43,
@@ -2096,6 +2096,17 @@
   },
   {
    "pos": 2,
+   "pos_end": 3,
+   "form": "dabei erwischt",
+   "lemma": "dabei erwischen",
+   "level": "B2",
+   "en": "caught in the act",
+   "es": "sorprendido en el acto",
+   "fr": "pris sur le fait",
+   "it": "colto in flagrante"
+  },
+  {
+   "pos": 2,
    "form": "dabei",
    "lemma": "dabei",
    "level": "B1",
@@ -2113,17 +2124,6 @@
    "es": "sorprendido",
    "fr": "surpris",
    "it": "sorpreso"
-  },
-  {
-   "pos": 2,
-   "pos_end": 3,
-   "form": "dabei erwischt",
-   "lemma": "dabei erwischen",
-   "level": "B2",
-   "en": "caught in the act",
-   "es": "sorprendido en el acto",
-   "fr": "pris sur le fait",
-   "it": "colto in flagrante"
   },
   {
    "pos": 4,
@@ -2479,6 +2479,20 @@
   },
   {
    "pos": 5,
+   "parts": [
+    5,
+    7
+   ],
+   "form": "achte darauf",
+   "lemma": "darauf achten",
+   "level": "B1",
+   "en": "watch out",
+   "es": "cuida de ello",
+   "fr": "veille à cela",
+   "it": "bada a ciò"
+  },
+  {
+   "pos": 5,
    "form": "achte",
    "lemma": "achten",
    "level": "B1",
@@ -2506,20 +2520,6 @@
    "es": "a ello",
    "fr": "à cela",
    "it": "a ciò"
-  },
-  {
-   "pos": 5,
-   "parts": [
-    5,
-    7
-   ],
-   "form": "achte darauf",
-   "lemma": "darauf achten",
-   "level": "B1",
-   "en": "watch out",
-   "es": "cuida de ello",
-   "fr": "veille à cela",
-   "it": "bada a ciò"
   },
   {
    "pos": 8,
@@ -2623,6 +2623,17 @@
   },
   {
    "pos": 18,
+   "pos_end": 19,
+   "form": "So wie",
+   "lemma": "so wie",
+   "level": "A2",
+   "en": "Just as",
+   "es": "Así como",
+   "fr": "Tout comme",
+   "it": "Così come"
+  },
+  {
+   "pos": 18,
    "form": "So",
    "lemma": "so",
    "level": "A1",
@@ -2640,17 +2651,6 @@
    "es": "como",
    "fr": "comme",
    "it": "come"
-  },
-  {
-   "pos": 18,
-   "pos_end": 19,
-   "form": "So wie",
-   "lemma": "so wie",
-   "level": "A2",
-   "en": "Just as",
-   "es": "Así como",
-   "fr": "Tout comme",
-   "it": "Così come"
   },
   {
    "pos": 20,
@@ -2776,6 +2776,17 @@
  "9": [
   {
    "pos": 0,
+   "pos_end": 1,
+   "form": "Denk daran",
+   "lemma": "daran denken",
+   "level": "B1",
+   "en": "Remember",
+   "es": "Acuérdate",
+   "fr": "Souviens-toi",
+   "it": "Ricorda"
+  },
+  {
+   "pos": 0,
    "form": "Denk",
    "lemma": "denken",
    "level": "A1",
@@ -2793,17 +2804,6 @@
    "es": "de ello",
    "fr": "de cela",
    "it": "di ciò"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Denk daran",
-   "lemma": "daran denken",
-   "level": "B1",
-   "en": "Remember",
-   "es": "Acuérdate",
-   "fr": "Souviens-toi",
-   "it": "Ricorda"
   },
   {
    "pos": 2,
@@ -3181,6 +3181,17 @@
   },
   {
    "pos": 3,
+   "pos_end": 4,
+   "form": "stehen bleiben",
+   "lemma": "stehen bleiben",
+   "level": "A2",
+   "en": "remain standing",
+   "es": "quedarte de pie",
+   "fr": "rester debout",
+   "it": "restare in piedi"
+  },
+  {
+   "pos": 3,
    "form": "stehen",
    "lemma": "stehen",
    "level": "A1",
@@ -3198,17 +3209,6 @@
    "es": "quedarte",
    "fr": "rester",
    "it": "restare"
-  },
-  {
-   "pos": 3,
-   "pos_end": 4,
-   "form": "stehen bleiben",
-   "lemma": "stehen bleiben",
-   "level": "A2",
-   "en": "remain standing",
-   "es": "quedarte de pie",
-   "fr": "rester debout",
-   "it": "restare in piedi"
   },
   {
    "pos": 5,
@@ -3434,6 +3434,17 @@
   },
   {
    "pos": 12,
+   "pos_end": 13,
+   "form": "schlafen gehen",
+   "lemma": "schlafen gehen",
+   "level": "A2",
+   "en": "go to sleep",
+   "es": "acostarte",
+   "fr": "aller dormir",
+   "it": "andare a dormire"
+  },
+  {
+   "pos": 12,
    "form": "schlafen",
    "lemma": "schlafen",
    "level": "A1",
@@ -3451,17 +3462,6 @@
    "es": "ir",
    "fr": "aller",
    "it": "andare"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "schlafen gehen",
-   "lemma": "schlafen gehen",
-   "level": "A2",
-   "en": "go to sleep",
-   "es": "acostarte",
-   "fr": "aller dormir",
-   "it": "andare a dormire"
   }
  ],
  "13": [
@@ -4341,6 +4341,20 @@
   },
   {
    "pos": 25,
+   "parts": [
+    25,
+    31
+   ],
+   "form": "ruft an",
+   "lemma": "anrufen",
+   "level": "B2",
+   "en": "calls on",
+   "es": "invoca",
+   "fr": "invoque",
+   "it": "invoca"
+  },
+  {
+   "pos": 25,
    "form": "ruft",
    "lemma": "rufen",
    "level": "A1",
@@ -4408,20 +4422,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 25,
-   "parts": [
-    25,
-    31
-   ],
-   "form": "ruft an",
-   "lemma": "anrufen",
-   "level": "B2",
-   "en": "calls on",
-   "es": "invoca",
-   "fr": "invoque",
-   "it": "invoca"
   },
   {
    "pos": 32,
@@ -4627,6 +4627,17 @@
   },
   {
    "pos": 14,
+   "pos_end": 18,
+   "form": "mit dem Tod bestraft werden",
+   "lemma": "mit dem Tod bestraft werden",
+   "level": "B2",
+   "en": "be put to death",
+   "es": "ser condenado a muerte",
+   "fr": "être puni de mort",
+   "it": "essere punito con la morte"
+  },
+  {
+   "pos": 14,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -4674,17 +4685,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 14,
-   "pos_end": 18,
-   "form": "mit dem Tod bestraft werden",
-   "lemma": "mit dem Tod bestraft werden",
-   "level": "B2",
-   "en": "be put to death",
-   "es": "ser condenado a muerte",
-   "fr": "être puni de mort",
-   "it": "essere punito con la morte"
   },
   {
    "pos": 19,
@@ -5002,6 +5002,17 @@
   },
   {
    "pos": 3,
+   "pos_end": 4,
+   "form": "daran denken",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "remember",
+   "es": "acordarte de",
+   "fr": "te souvenir de",
+   "it": "ricordarti di"
+  },
+  {
+   "pos": 3,
    "form": "daran",
    "lemma": "daran",
    "level": "B2",
@@ -5019,17 +5030,6 @@
    "es": "pensar",
    "fr": "penser",
    "it": "pensare"
-  },
-  {
-   "pos": 3,
-   "pos_end": 4,
-   "form": "daran denken",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "remember",
-   "es": "acordarte de",
-   "fr": "te souvenir de",
-   "it": "ricordarti di"
   },
   {
    "pos": 5,
@@ -5887,6 +5887,17 @@
   },
   {
    "pos": 14,
+   "pos_end": 15,
+   "form": "übrig bleibt",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "is left over",
+   "es": "sobra",
+   "fr": "reste",
+   "it": "avanza"
+  },
+  {
+   "pos": 14,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -5904,17 +5915,6 @@
    "es": "permanece",
    "fr": "demeure",
    "it": "rimane"
-  },
-  {
-   "pos": 14,
-   "pos_end": 15,
-   "form": "übrig bleibt",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "is left over",
-   "es": "sobra",
-   "fr": "reste",
-   "it": "avanza"
   },
   {
    "pos": 16,
@@ -6100,6 +6100,17 @@
   },
   {
    "pos": 9,
+   "pos_end": 10,
+   "form": "noch einmal",
+   "lemma": "noch einmal",
+   "level": "A2",
+   "en": "once more",
+   "es": "otra vez",
+   "fr": "encore une fois",
+   "it": "ancora una volta"
+  },
+  {
+   "pos": 9,
    "form": "noch",
    "lemma": "noch",
    "level": "A1",
@@ -6117,17 +6128,6 @@
    "es": "vez",
    "fr": "une fois",
    "it": "una volta"
-  },
-  {
-   "pos": 9,
-   "pos_end": 10,
-   "form": "noch einmal",
-   "lemma": "noch einmal",
-   "level": "A2",
-   "en": "once more",
-   "es": "otra vez",
-   "fr": "encore une fois",
-   "it": "ancora una volta"
   },
   {
    "pos": 11,
@@ -6151,6 +6151,17 @@
   },
   {
    "pos": 13,
+   "pos_end": 14,
+   "form": "übrig bleibt",
+   "lemma": "übrig bleiben",
+   "level": "B1",
+   "en": "is left over",
+   "es": "sobra",
+   "fr": "reste",
+   "it": "avanza"
+  },
+  {
+   "pos": 13,
    "form": "übrig",
    "lemma": "übrig",
    "level": "B1",
@@ -6168,17 +6179,6 @@
    "es": "permanece",
    "fr": "demeure",
    "it": "rimane"
-  },
-  {
-   "pos": 13,
-   "pos_end": 14,
-   "form": "übrig bleibt",
-   "lemma": "übrig bleiben",
-   "level": "B1",
-   "en": "is left over",
-   "es": "sobra",
-   "fr": "reste",
-   "it": "avanza"
   },
   {
    "pos": 15,
@@ -6304,6 +6304,17 @@
   },
   {
    "pos": 3,
+   "pos_end": 4,
+   "form": "daran denken",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "remember",
+   "es": "acordarte de",
+   "fr": "te souvenir de",
+   "it": "ricordarti di"
+  },
+  {
+   "pos": 3,
    "form": "daran",
    "lemma": "daran",
    "level": "B2",
@@ -6321,17 +6332,6 @@
    "es": "pensar",
    "fr": "penser",
    "it": "pensare"
-  },
-  {
-   "pos": 3,
-   "pos_end": 4,
-   "form": "daran denken",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "remember",
-   "es": "acordarte de",
-   "fr": "te souvenir de",
-   "it": "ricordarti di"
   },
   {
    "pos": 5,

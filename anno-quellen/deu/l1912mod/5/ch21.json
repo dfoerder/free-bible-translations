@@ -384,6 +384,20 @@
   },
   {
    "pos": 8,
+   "parts": [
+    8,
+    10
+   ],
+   "form": "vom aus",
+   "lemma": "von … aus",
+   "level": "B1",
+   "en": "starting from",
+   "es": "a partir de",
+   "fr": "à partir de",
+   "it": "a partire da"
+  },
+  {
+   "pos": 8,
    "form": "vom",
    "lemma": "vom",
    "level": "A1",
@@ -481,20 +495,6 @@
    "es": "medir",
    "fr": "mesurer",
    "it": "misurare"
-  },
-  {
-   "pos": 8,
-   "parts": [
-    8,
-    10
-   ],
-   "form": "vom aus",
-   "lemma": "von … aus",
-   "level": "B2",
-   "en": "starting from",
-   "es": "a partir de",
-   "fr": "à partir de",
-   "it": "a partire da"
   }
  ],
  "3": [
@@ -547,6 +547,17 @@
    "es": "que",
    "fr": "qui",
    "it": "che"
+  },
+  {
+   "pos": 5,
+   "pos_end": 6,
+   "form": "am nächsten",
+   "lemma": "am nächsten",
+   "level": "B1",
+   "en": "nearest",
+   "es": "más cercana",
+   "fr": "la plus proche",
+   "it": "più vicina"
   },
   {
    "pos": 5,
@@ -767,17 +778,6 @@
    "es": "ha",
    "fr": "a",
    "it": "ha"
-  },
-  {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "am nächsten",
-   "lemma": "am nächsten",
-   "level": "B1",
-   "en": "nearest",
-   "es": "más cercana",
-   "fr": "la plus proche",
-   "it": "più vicina"
   }
  ],
  "4": [
@@ -1739,6 +1739,17 @@
   },
   {
    "pos": 15,
+   "pos_end": 16,
+   "form": "auch nicht",
+   "lemma": "auch nicht",
+   "level": "A2",
+   "en": "either",
+   "es": "tampoco",
+   "fr": "non plus",
+   "it": "neppure"
+  },
+  {
+   "pos": 15,
    "form": "auch",
    "lemma": "auch",
    "level": "A1",
@@ -1766,17 +1777,6 @@
    "es": "visto",
    "fr": "vu",
    "it": "visto"
-  },
-  {
-   "pos": 15,
-   "pos_end": 16,
-   "form": "auch nicht",
-   "lemma": "auch nicht",
-   "level": "A2",
-   "en": "either",
-   "es": "tampoco",
-   "fr": "non plus",
-   "it": "neppure"
   }
  ],
  "8": [
@@ -1892,9 +1892,23 @@
   },
   {
    "pos": 11,
+   "parts": [
+    11,
+    19
+   ],
+   "form": "Lade auf",
+   "lemma": "aufladen",
+   "level": "B1",
+   "en": "Lay upon",
+   "es": "Cargues sobre",
+   "fr": "Fais retomber sur",
+   "it": "Far ricadere su"
+  },
+  {
+   "pos": 11,
    "form": "Lade",
    "lemma": "laden",
-   "level": "B2",
+   "level": "B1",
    "en": "Lay",
    "es": "Cargues",
    "fr": "Mets",
@@ -2069,20 +2083,6 @@
    "es": "ser",
    "fr": "être",
    "it": "essere"
-  },
-  {
-   "pos": 11,
-   "parts": [
-    11,
-    19
-   ],
-   "form": "Lade auf",
-   "lemma": "aufladen",
-   "level": "B2",
-   "en": "Lay upon",
-   "es": "Cargues sobre",
-   "fr": "Fais retomber sur",
-   "it": "Far ricadere su"
   }
  ],
  "9": [
@@ -2470,6 +2470,17 @@
   },
   {
    "pos": 16,
+   "pos_end": 19,
+   "form": "in die Hand gibt",
+   "lemma": "in die Hand geben",
+   "level": "B2",
+   "en": "delivers into the hand",
+   "es": "entrega en la mano",
+   "fr": "livre entre les mains",
+   "it": "consegna nelle mani"
+  },
+  {
+   "pos": 16,
    "form": "in",
    "lemma": "in",
    "level": "A1",
@@ -2557,17 +2568,6 @@
    "es": "llevas",
    "fr": "emmènes",
    "it": "porti via"
-  },
-  {
-   "pos": 16,
-   "pos_end": 19,
-   "form": "in die Hand gibt",
-   "lemma": "in die Hand geben",
-   "level": "B2",
-   "en": "delivers into the hand",
-   "es": "entrega en la mano",
-   "fr": "livre entre les mains",
-   "it": "consegna nelle mani"
   }
  ],
  "11": [
@@ -2723,6 +2723,17 @@
   },
   {
    "pos": 15,
+   "pos_end": 17,
+   "form": "zur Frau nehmen",
+   "lemma": "zur Frau nehmen",
+   "level": "B2",
+   "en": "take as wife",
+   "es": "tomar por esposa",
+   "fr": "prendre pour femme",
+   "it": "prendere in moglie"
+  },
+  {
+   "pos": 15,
    "form": "zur",
    "lemma": "zur",
    "level": "A1",
@@ -2760,17 +2771,6 @@
    "es": "quieres",
    "fr": "veux",
    "it": "vuoi"
-  },
-  {
-   "pos": 15,
-   "pos_end": 17,
-   "form": "zur Frau nehmen",
-   "lemma": "zur Frau nehmen",
-   "level": "B2",
-   "en": "take as wife",
-   "es": "tomar por esposa",
-   "fr": "prendre pour femme",
-   "it": "prendere in moglie"
   }
  ],
  "12": [
@@ -2833,6 +2833,20 @@
    "es": "casa",
    "fr": "maison",
    "it": "casa"
+  },
+  {
+   "pos": 6,
+   "parts": [
+    6,
+    10
+   ],
+   "form": "Lass abscheren",
+   "lemma": "abscheren lassen",
+   "level": "B2",
+   "en": "have shaved off",
+   "es": "haz rasurar",
+   "fr": "fais raser",
+   "it": "fa' radere"
   },
   {
    "pos": 6,
@@ -2908,7 +2922,7 @@
    "pos": 13,
    "form": "Nägel",
    "lemma": "Nagel",
-   "level": "B1",
+   "level": "A2",
    "en": "nails",
    "es": "uñas",
    "fr": "ongles",
@@ -2923,20 +2937,6 @@
    "es": "cortar",
    "fr": "couper",
    "it": "tagliare"
-  },
-  {
-   "pos": 6,
-   "parts": [
-    6,
-    10
-   ],
-   "form": "Lass abscheren",
-   "lemma": "abscheren lassen",
-   "level": "B2",
-   "en": "have shaved off",
-   "es": "haz rasurar",
-   "fr": "fais raser",
-   "it": "fa' radere"
   }
  ],
  "13": [
@@ -3009,6 +3009,17 @@
    "es": "ella",
    "fr": "elle",
    "it": "lei"
+  },
+  {
+   "pos": 7,
+   "pos_end": 8,
+   "form": "gefangen genommen",
+   "lemma": "gefangen nehmen",
+   "level": "B2",
+   "en": "taken captive",
+   "es": "tomada cautiva",
+   "fr": "faite prisonnière",
+   "it": "fatta prigioniera"
   },
   {
    "pos": 7,
@@ -3252,6 +3263,21 @@
   },
   {
    "pos": 31,
+   "parts": [
+    31,
+    33,
+    34
+   ],
+   "form": "nimm zur Frau",
+   "lemma": "zur Frau nehmen",
+   "level": "B2",
+   "en": "take as wife",
+   "es": "toma por esposa",
+   "fr": "prends pour femme",
+   "it": "prendi in moglie"
+  },
+  {
+   "pos": 31,
    "form": "nimm",
    "lemma": "nehmen",
    "level": "A1",
@@ -3349,32 +3375,6 @@
    "es": "sea",
    "fr": "soit",
    "it": "sia"
-  },
-  {
-   "pos": 7,
-   "pos_end": 8,
-   "form": "gefangen genommen",
-   "lemma": "gefangen nehmen",
-   "level": "B2",
-   "en": "taken captive",
-   "es": "tomada cautiva",
-   "fr": "faite prisonnière",
-   "it": "fatta prigioniera"
-  },
-  {
-   "pos": 31,
-   "parts": [
-    31,
-    33,
-    34
-   ],
-   "form": "nimm zur Frau",
-   "lemma": "zur Frau nehmen",
-   "level": "B2",
-   "en": "take as wife",
-   "es": "toma por esposa",
-   "fr": "prends pour femme",
-   "it": "prendi in moglie"
   }
  ],
  "14": [
@@ -3417,6 +3417,20 @@
    "es": "ningún",
    "fr": "aucune",
    "it": "nessun"
+  },
+  {
+   "pos": 4,
+   "parts": [
+    4,
+    8
+   ],
+   "form": "Lust hast",
+   "lemma": "Lust haben",
+   "level": "B1",
+   "en": "crave",
+   "es": "tienes ganas",
+   "fr": "as envie",
+   "it": "hai voglia"
   },
   {
    "pos": 4,
@@ -3497,6 +3511,17 @@
    "es": "la",
    "fr": "la",
    "it": "la"
+  },
+  {
+   "pos": 12,
+   "pos_end": 13,
+   "form": "gehen lassen",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "let go",
+   "es": "dejar ir",
+   "fr": "laisser aller",
+   "it": "lasciare andare"
   },
   {
    "pos": 12,
@@ -3717,31 +3742,6 @@
    "es": "has",
    "fr": "as",
    "it": "hai"
-  },
-  {
-   "pos": 4,
-   "parts": [
-    4,
-    8
-   ],
-   "form": "Lust hast",
-   "lemma": "Lust haben",
-   "level": "B1",
-   "en": "crave",
-   "es": "tienes ganas",
-   "fr": "as envie",
-   "it": "hai voglia"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "gehen lassen",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "let go",
-   "es": "dejar ir",
-   "fr": "laisser aller",
-   "it": "lasciare andare"
   }
  ],
  "15": [
@@ -4299,6 +4299,17 @@
   },
   {
    "pos": 24,
+   "pos_end": 25,
+   "form": "an Stelle",
+   "lemma": "an Stelle",
+   "level": "B1",
+   "en": "in place of",
+   "es": "en lugar de",
+   "fr": "à la place de",
+   "it": "al posto di"
+  },
+  {
+   "pos": 24,
    "form": "an",
    "lemma": "an",
    "level": "A1",
@@ -4406,17 +4417,6 @@
    "es": "esposa",
    "fr": "femme",
    "it": "moglie"
-  },
-  {
-   "pos": 24,
-   "pos_end": 25,
-   "form": "an Stelle",
-   "lemma": "an Stelle",
-   "level": "B1",
-   "en": "in place of",
-   "es": "en lugar de",
-   "fr": "à la place de",
-   "it": "al posto di"
   }
  ],
  "17": [
@@ -4752,6 +4752,20 @@
   },
   {
    "pos": 33,
+   "parts": [
+    33,
+    38
+   ],
+   "form": "steht zu",
+   "lemma": "zustehen",
+   "level": "C1",
+   "en": "is due",
+   "es": "corresponde",
+   "fr": "revient",
+   "it": "spetta"
+  },
+  {
+   "pos": 33,
    "form": "steht",
    "lemma": "stehen",
    "level": "A1",
@@ -4809,20 +4823,6 @@
    "es": "a",
    "fr": "à",
    "it": "a"
-  },
-  {
-   "pos": 33,
-   "parts": [
-    33,
-    38
-   ],
-   "form": "steht zu",
-   "lemma": "zustehen",
-   "level": "C1",
-   "en": "is due",
-   "es": "corresponde",
-   "fr": "revient",
-   "it": "spetta"
   }
  ],
  "18": [
@@ -4915,6 +4915,20 @@
    "es": "que",
    "fr": "qui",
    "it": "che"
+  },
+  {
+   "pos": 9,
+   "parts": [
+    9,
+    16
+   ],
+   "form": "auf hört",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listens to",
+   "es": "escucha a",
+   "fr": "écoute",
+   "it": "dà ascolto a"
   },
   {
    "pos": 9,
@@ -5095,20 +5109,6 @@
    "es": "reprenden",
    "fr": "reprennent",
    "it": "riprendono"
-  },
-  {
-   "pos": 9,
-   "parts": [
-    9,
-    16
-   ],
-   "form": "auf hört",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listens to",
-   "es": "escucha a",
-   "fr": "écoute",
-   "it": "dà ascolto a"
   }
  ],
  "19": [
@@ -5456,6 +5456,20 @@
   },
   {
    "pos": 15,
+   "parts": [
+    15,
+    17
+   ],
+   "form": "hört auf",
+   "lemma": "hören auf",
+   "level": "B1",
+   "en": "listens to",
+   "es": "escucha a",
+   "fr": "écoute",
+   "it": "dà ascolto a"
+  },
+  {
+   "pos": 15,
    "form": "hört",
    "lemma": "hören",
    "level": "A1",
@@ -5563,20 +5577,6 @@
    "es": "borracho",
    "fr": "ivrogne",
    "it": "ubriacone"
-  },
-  {
-   "pos": 15,
-   "parts": [
-    15,
-    17
-   ],
-   "form": "hört auf",
-   "lemma": "hören auf",
-   "level": "B1",
-   "en": "listens to",
-   "es": "escucha a",
-   "fr": "écoute",
-   "it": "dà ascolto a"
   }
  ],
  "21": [
@@ -5842,6 +5842,20 @@
   },
   {
    "pos": 26,
+   "parts": [
+    26,
+    28
+   ],
+   "form": "sich fürchtet",
+   "lemma": "sich fürchten",
+   "level": "B1",
+   "en": "is afraid",
+   "es": "tenga miedo",
+   "fr": "ait peur",
+   "it": "abbia paura"
+  },
+  {
+   "pos": 26,
    "form": "sich",
    "lemma": "sich",
    "level": "A1",
@@ -5869,20 +5883,6 @@
    "es": "tema",
    "fr": "craigne",
    "it": "tema"
-  },
-  {
-   "pos": 26,
-   "parts": [
-    26,
-    28
-   ],
-   "form": "sich fürchtet",
-   "lemma": "sich fürchten",
-   "level": "B1",
-   "en": "is afraid",
-   "es": "tenga miedo",
-   "fr": "ait peur",
-   "it": "abbia paura"
   }
  ],
  "22": [
@@ -6137,6 +6137,17 @@
    "es": "no",
    "fr": "pas",
    "it": "non"
+  },
+  {
+   "pos": 5,
+   "pos_end": 6,
+   "form": "über Nacht",
+   "lemma": "über Nacht",
+   "level": "A2",
+   "en": "overnight",
+   "es": "durante la noche",
+   "fr": "pendant la nuit",
+   "it": "per la notte"
   },
   {
    "pos": 5,
@@ -6487,17 +6498,6 @@
    "es": "da",
    "fr": "donne",
    "it": "dà"
-  },
-  {
-   "pos": 5,
-   "pos_end": 6,
-   "form": "über Nacht",
-   "lemma": "über Nacht",
-   "level": "A2",
-   "en": "overnight",
-   "es": "durante la noche",
-   "fr": "pendant la nuit",
-   "it": "per la notte"
   }
  ]
 }

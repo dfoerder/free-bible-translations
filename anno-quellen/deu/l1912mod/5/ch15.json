@@ -608,6 +608,20 @@
  "4": [
   {
    "pos": 0,
+   "parts": [
+    0,
+    7
+   ],
+   "form": "Es geben",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "There should be",
+   "es": "Debería haber",
+   "fr": "Il devrait y avoir",
+   "it": "Ci dovrebbe essere"
+  },
+  {
+   "pos": 0,
    "form": "Es",
    "lemma": "es",
    "level": "A1",
@@ -895,20 +909,6 @@
    "es": "va a",
    "fr": "va",
    "it": "sta per"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    7
-   ],
-   "form": "Es geben",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "There should be",
-   "es": "Debería haber",
-   "fr": "Il devrait y avoir",
-   "it": "Ci dovrebbe essere"
   }
  ],
  "5": [
@@ -1124,6 +1124,17 @@
   },
   {
    "pos": 21,
+   "pos_end": 22,
+   "form": "danach handelst",
+   "lemma": "danach handeln",
+   "level": "B2",
+   "en": "act on them",
+   "es": "los pones en práctica",
+   "fr": "les mets en pratique",
+   "it": "li metti in pratica"
+  },
+  {
+   "pos": 21,
    "form": "danach",
    "lemma": "danach",
    "level": "A2",
@@ -1141,17 +1152,6 @@
    "es": "actúas",
    "fr": "agis",
    "it": "agisci"
-  },
-  {
-   "pos": 21,
-   "pos_end": 22,
-   "form": "danach handelst",
-   "lemma": "danach handeln",
-   "level": "B1",
-   "en": "act on them",
-   "es": "los pones en práctica",
-   "fr": "les mets en pratique",
-   "it": "li metti in pratica"
   }
  ],
  "6": [
@@ -2013,6 +2013,17 @@
  "9": [
   {
    "pos": 0,
+   "pos_end": 1,
+   "form": "Achte darauf",
+   "lemma": "achten auf",
+   "level": "B1",
+   "en": "See to it",
+   "es": "Cuida de",
+   "fr": "Veille à",
+   "it": "Bada di"
+  },
+  {
+   "pos": 0,
    "form": "Achte",
    "lemma": "achten",
    "level": "B1",
@@ -2470,17 +2481,6 @@
    "es": "contado",
    "fr": "imputé",
    "it": "messo in conto"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Achte darauf",
-   "lemma": "achten auf",
-   "level": "B1",
-   "en": "See to it",
-   "es": "Cuida de",
-   "fr": "Veille à",
-   "it": "Bada di"
   }
  ],
  "10": [
@@ -2778,6 +2778,21 @@
  "11": [
   {
    "pos": 0,
+   "parts": [
+    0,
+    1,
+    6
+   ],
+   "form": "Es wird geben",
+   "lemma": "es geben",
+   "level": "A2",
+   "en": "There will be",
+   "es": "Habrá",
+   "fr": "Il y aura",
+   "it": "Ci saranno"
+  },
+  {
+   "pos": 0,
    "form": "Es",
    "lemma": "es",
    "level": "A1",
@@ -3015,21 +3030,6 @@
    "es": "país",
    "fr": "pays",
    "it": "paese"
-  },
-  {
-   "pos": 0,
-   "parts": [
-    0,
-    1,
-    6
-   ],
-   "form": "Es wird geben",
-   "lemma": "es geben",
-   "level": "A2",
-   "en": "There will be",
-   "es": "Habrá",
-   "fr": "Il y aura",
-   "it": "Ci saranno"
   }
  ],
  "12": [
@@ -3042,6 +3042,20 @@
    "es": "Si",
    "fr": "Si",
    "it": "Se"
+  },
+  {
+   "pos": 1,
+   "parts": [
+    1,
+    10
+   ],
+   "form": "sich verkauft",
+   "lemma": "sich verkaufen",
+   "level": "A2",
+   "en": "sells himself",
+   "es": "se vende",
+   "fr": "se vend",
+   "it": "si vende"
   },
   {
    "pos": 1,
@@ -3272,20 +3286,6 @@
    "es": "dejar libre",
    "fr": "libérer",
    "it": "liberare"
-  },
-  {
-   "pos": 1,
-   "parts": [
-    1,
-    10
-   ],
-   "form": "sich verkauft",
-   "lemma": "sich verkaufen",
-   "level": "A2",
-   "en": "sells himself",
-   "es": "se vende",
-   "fr": "se vend",
-   "it": "si vende"
   }
  ],
  "13": [
@@ -3381,6 +3381,17 @@
   },
   {
    "pos": 9,
+   "pos_end": 11,
+   "form": "mit leeren Händen",
+   "lemma": "mit leeren Händen",
+   "level": "B1",
+   "en": "empty-handed",
+   "es": "con las manos vacías",
+   "fr": "les mains vides",
+   "it": "a mani vuote"
+  },
+  {
+   "pos": 9,
    "form": "mit",
    "lemma": "mit",
    "level": "A1",
@@ -3411,6 +3422,17 @@
   },
   {
    "pos": 12,
+   "pos_end": 13,
+   "form": "gehen lassen",
+   "lemma": "gehen lassen",
+   "level": "B1",
+   "en": "let go",
+   "es": "dejar ir",
+   "fr": "laisser aller",
+   "it": "lasciare andare"
+  },
+  {
+   "pos": 12,
    "form": "gehen",
    "lemma": "gehen",
    "level": "A1",
@@ -3428,28 +3450,6 @@
    "es": "dejar",
    "fr": "laisser",
    "it": "lasciare"
-  },
-  {
-   "pos": 9,
-   "pos_end": 11,
-   "form": "mit leeren Händen",
-   "lemma": "mit leeren Händen",
-   "level": "B1",
-   "en": "empty-handed",
-   "es": "con las manos vacías",
-   "fr": "les mains vides",
-   "it": "a mani vuote"
-  },
-  {
-   "pos": 12,
-   "pos_end": 13,
-   "form": "gehen lassen",
-   "lemma": "gehen lassen",
-   "level": "B1",
-   "en": "let go",
-   "es": "dejar ir",
-   "fr": "laisser aller",
-   "it": "lasciare andare"
   }
  ],
  "14": [
@@ -3697,6 +3697,17 @@
  "15": [
   {
    "pos": 0,
+   "pos_end": 1,
+   "form": "Denke daran",
+   "lemma": "denken an",
+   "level": "A2",
+   "en": "Remember",
+   "es": "Acuérdate",
+   "fr": "Souviens-toi",
+   "it": "Ricordati"
+  },
+  {
+   "pos": 0,
    "form": "Denke",
    "lemma": "denken",
    "level": "A1",
@@ -3924,17 +3935,6 @@
    "es": "hoy",
    "fr": "aujourd'hui",
    "it": "oggi"
-  },
-  {
-   "pos": 0,
-   "pos_end": 1,
-   "form": "Denke daran",
-   "lemma": "denken an",
-   "level": "A2",
-   "en": "Remember",
-   "es": "Acuérdate",
-   "fr": "Souviens-toi",
-   "it": "Ricordati"
   }
  ],
  "16": [
@@ -4080,6 +4080,20 @@
   },
   {
    "pos": 14,
+   "parts": [
+    14,
+    19
+   ],
+   "form": "habe lieb",
+   "lemma": "liebhaben",
+   "level": "A2",
+   "en": "love",
+   "es": "quiero",
+   "fr": "aime",
+   "it": "voglio bene"
+  },
+  {
+   "pos": 14,
    "form": "habe",
    "lemma": "haben",
    "level": "A1",
@@ -4150,6 +4164,22 @@
   },
   {
    "pos": 21,
+   "parts": [
+    21,
+    22,
+    25,
+    26
+   ],
+   "form": "es ihm gut geht",
+   "lemma": "es geht jemandem gut",
+   "level": "B1",
+   "en": "he is well",
+   "es": "le va bien",
+   "fr": "il va bien",
+   "it": "sta bene"
+  },
+  {
+   "pos": 21,
    "form": "es",
    "lemma": "es",
    "level": "A1",
@@ -4207,36 +4237,6 @@
    "es": "va",
    "fr": "va",
    "it": "va"
-  },
-  {
-   "pos": 14,
-   "parts": [
-    14,
-    19
-   ],
-   "form": "habe lieb",
-   "lemma": "liebhaben",
-   "level": "A2",
-   "en": "love",
-   "es": "quiero",
-   "fr": "aime",
-   "it": "voglio bene"
-  },
-  {
-   "pos": 21,
-   "parts": [
-    21,
-    22,
-    25,
-    26
-   ],
-   "form": "es ihm gut geht",
-   "lemma": "es geht jemandem gut",
-   "level": "B1",
-   "en": "he is well",
-   "es": "le va bien",
-   "fr": "il va bien",
-   "it": "sta bene"
   }
  ],
  "17": [
@@ -4382,6 +4382,17 @@
   },
   {
    "pos": 14,
+   "pos_end": 15,
+   "form": "für immer",
+   "lemma": "für immer",
+   "level": "A2",
+   "en": "forever",
+   "es": "para siempre",
+   "fr": "pour toujours",
+   "it": "per sempre"
+  },
+  {
+   "pos": 14,
    "form": "für",
    "lemma": "für",
    "level": "A1",
@@ -4509,17 +4520,6 @@
    "es": "hacer",
    "fr": "faire",
    "it": "fare"
-  },
-  {
-   "pos": 14,
-   "pos_end": 15,
-   "form": "für immer",
-   "lemma": "für immer",
-   "level": "A2",
-   "en": "forever",
-   "es": "para siempre",
-   "fr": "pour toujours",
-   "it": "per sempre"
   }
  ],
  "18": [
@@ -4672,6 +4672,17 @@
    "es": "servido",
    "fr": "servi",
    "it": "servito"
+  },
+  {
+   "pos": 15,
+   "pos_end": 17,
+   "form": "doppelt so viel",
+   "lemma": "doppelt so viel",
+   "level": "B1",
+   "en": "twice as much",
+   "es": "el doble",
+   "fr": "deux fois plus",
+   "it": "il doppio"
   },
   {
    "pos": 15,
@@ -4872,17 +4883,6 @@
    "es": "haces",
    "fr": "fais",
    "it": "fai"
-  },
-  {
-   "pos": 15,
-   "pos_end": 17,
-   "form": "doppelt so viel",
-   "lemma": "doppelt so viel",
-   "level": "B1",
-   "en": "twice as much",
-   "es": "el doble",
-   "fr": "deux fois plus",
-   "it": "il doppio"
   }
  ],
  "19": [
