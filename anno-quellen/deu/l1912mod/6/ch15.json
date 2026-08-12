@@ -1593,7 +1593,7 @@
    "level": "A2",
    "en": "lies",
    "es": "está",
-   "fr": "se trouve",
+   "fr": "est",
    "it": "si trova"
   },
   {
@@ -2040,7 +2040,7 @@
    "level": "A2",
    "en": "lies",
    "es": "está",
-   "fr": "se trouve",
+   "fr": "est",
    "it": "si trova"
   },
   {
@@ -2541,10 +2541,10 @@
    "form": "steigt",
    "lemma": "steigen",
    "level": "A2",
-   "en": "descends",
-   "es": "baja",
-   "fr": "descend",
-   "it": "scende"
+   "en": "goes",
+   "es": "va",
+   "fr": "va",
+   "it": "va"
   },
   {
    "pos": 15,
@@ -2611,7 +2611,7 @@
    "form": "Thimna",
    "lemma": "Thimna",
    "level": "A1",
-   "en": "Timna",
+   "en": "Timnah",
    "es": "Timna",
    "fr": "Thimna",
    "it": "Timna"
@@ -2633,8 +2633,8 @@
    "form": "steigt hinab",
    "lemma": "hinabsteigen",
    "level": "B2",
-   "en": "goes down",
-   "es": "desciende",
+   "en": "descends",
+   "es": "baja",
    "fr": "descend",
    "it": "scende"
   }
@@ -3333,7 +3333,7 @@
    "en": "Hebron",
    "es": "Hebrón",
    "fr": "Hébron",
-   "it": "Ebron"
+   "it": "Hebron"
   }
  ],
  "14": [
@@ -5277,6 +5277,2514 @@
    "es": "aldeas",
    "fr": "villages",
    "it": "villaggi"
+  }
+ ],
+ "33": [
+  {
+   "pos": 0,
+   "form": "Im",
+   "lemma": "im",
+   "level": "A1",
+   "en": "In the",
+   "es": "En la",
+   "fr": "Dans la",
+   "it": "Nella"
+  },
+  {
+   "pos": 1,
+   "form": "Hügelland",
+   "lemma": "Hügelland",
+   "level": "C1",
+   "en": "hilly country",
+   "es": "región de colinas",
+   "fr": "région de collines",
+   "it": "regione di colline"
+  },
+  {
+   "pos": 2,
+   "form": "waren",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "were",
+   "es": "eran",
+   "fr": "étaient",
+   "it": "erano"
+  },
+  {
+   "pos": 3,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "there",
+   "es": "ello",
+   "fr": "il",
+   "it": "ci"
+  },
+  {
+   "pos": 2,
+   "form": "waren es",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "there were",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'erano",
+   "pos_end": 3
+  },
+  {
+   "pos": 4,
+   "form": "Esthaol",
+   "lemma": "Esthaol",
+   "level": "A1",
+   "en": "Eshtaol",
+   "es": "Estaol",
+   "fr": "Eschthaol",
+   "it": "Eshtaol"
+  },
+  {
+   "pos": 5,
+   "form": "Zora",
+   "lemma": "Zora",
+   "level": "A1",
+   "en": "Zorah",
+   "es": "Zora",
+   "fr": "Tsorea",
+   "it": "Tsorea"
+  },
+  {
+   "pos": 6,
+   "form": "Asna",
+   "lemma": "Asna",
+   "level": "A1",
+   "en": "Ashnah",
+   "es": "Asena",
+   "fr": "Aschna",
+   "it": "Ashna"
+  }
+ ],
+ "34": [
+  {
+   "pos": 0,
+   "form": "Sanoah",
+   "lemma": "Sanoah",
+   "level": "A1",
+   "en": "Zanoah",
+   "es": "Zanoa",
+   "fr": "Zanoach",
+   "it": "Zanoah"
+  },
+  {
+   "pos": 1,
+   "form": "En-Gannim",
+   "lemma": "En-Gannim",
+   "level": "A1",
+   "en": "En Gannim",
+   "es": "En-ganim",
+   "fr": "En-Gannim",
+   "it": "En-Gannim"
+  },
+  {
+   "pos": 2,
+   "form": "Tappuah",
+   "lemma": "Tappuah",
+   "level": "A1",
+   "en": "Tappuah",
+   "es": "Tapúa",
+   "fr": "Tappuach",
+   "it": "Tappuah"
+  },
+  {
+   "pos": 3,
+   "form": "Enam",
+   "lemma": "Enam",
+   "level": "A1",
+   "en": "Enam",
+   "es": "Enam",
+   "fr": "Énam",
+   "it": "Enam"
+  }
+ ],
+ "35": [
+  {
+   "pos": 0,
+   "form": "Jarmuth",
+   "lemma": "Jarmuth",
+   "level": "A1",
+   "en": "Jarmuth",
+   "es": "Jarmut",
+   "fr": "Jarmuth",
+   "it": "Iarmuth"
+  },
+  {
+   "pos": 1,
+   "form": "Adullam",
+   "lemma": "Adullam",
+   "level": "A1",
+   "en": "Adullam",
+   "es": "Adulam",
+   "fr": "Adullam",
+   "it": "Adullam"
+  },
+  {
+   "pos": 2,
+   "form": "Socho",
+   "lemma": "Socho",
+   "level": "A1",
+   "en": "Socoh",
+   "es": "Soco",
+   "fr": "Soco",
+   "it": "Soco"
+  },
+  {
+   "pos": 3,
+   "form": "Aseka",
+   "lemma": "Aseka",
+   "level": "A1",
+   "en": "Azekah",
+   "es": "Azeca",
+   "fr": "Azéka",
+   "it": "Azeka"
+  }
+ ],
+ "36": [
+  {
+   "pos": 0,
+   "form": "Saaraim",
+   "lemma": "Saaraim",
+   "level": "A1",
+   "en": "Shaaraim",
+   "es": "Saraim",
+   "fr": "Schaaraïm",
+   "it": "Shaaraim"
+  },
+  {
+   "pos": 1,
+   "form": "Adithaim",
+   "lemma": "Adithaim",
+   "level": "A1",
+   "en": "Adithaim",
+   "es": "Aditaim",
+   "fr": "Adithaïm",
+   "it": "Aditaim"
+  },
+  {
+   "pos": 2,
+   "form": "Gedera",
+   "lemma": "Gedera",
+   "level": "A1",
+   "en": "Gederah",
+   "es": "Gedera",
+   "fr": "Guedéra",
+   "it": "Ghedera"
+  },
+  {
+   "pos": 3,
+   "form": "Gederothaim",
+   "lemma": "Gederothaim",
+   "level": "A1",
+   "en": "Gederothaim",
+   "es": "Gederotaim",
+   "fr": "Guedérothaïm",
+   "it": "Ghederotaim"
+  },
+  {
+   "pos": 4,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 5,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 6,
+   "form": "vierzehn",
+   "lemma": "vierzehn",
+   "level": "A1",
+   "en": "fourteen",
+   "es": "catorce",
+   "fr": "quatorze",
+   "it": "quattordici"
+  },
+  {
+   "pos": 7,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 8,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 9,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 10,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "37": [
+  {
+   "pos": 0,
+   "form": "Zenan",
+   "lemma": "Zenan",
+   "level": "A1",
+   "en": "Zenan",
+   "es": "Zenán",
+   "fr": "Tsenan",
+   "it": "Tsenan"
+  },
+  {
+   "pos": 1,
+   "form": "Hadasa",
+   "lemma": "Hadasa",
+   "level": "A1",
+   "en": "Hadashah",
+   "es": "Hadasa",
+   "fr": "Hadascha",
+   "it": "Hadasha"
+  },
+  {
+   "pos": 2,
+   "form": "Migdal-Gad",
+   "lemma": "Migdal-Gad",
+   "level": "A1",
+   "en": "Migdal Gad",
+   "es": "Migdal-gad",
+   "fr": "Migdal-Gad",
+   "it": "Migdal-Gad"
+  }
+ ],
+ "38": [
+  {
+   "pos": 0,
+   "form": "Dilean",
+   "lemma": "Dilean",
+   "level": "A1",
+   "en": "Dilean",
+   "es": "Dilán",
+   "fr": "Dilean",
+   "it": "Dilean"
+  },
+  {
+   "pos": 1,
+   "form": "Mizpe",
+   "lemma": "Mizpe",
+   "level": "A1",
+   "en": "Mizpah",
+   "es": "Mizpa",
+   "fr": "Mitspé",
+   "it": "Mitspe"
+  },
+  {
+   "pos": 2,
+   "form": "Joktheel",
+   "lemma": "Joktheel",
+   "level": "A1",
+   "en": "Joktheel",
+   "es": "Jocteel",
+   "fr": "Joktheel",
+   "it": "Iokteel"
+  }
+ ],
+ "39": [
+  {
+   "pos": 0,
+   "form": "Lachis",
+   "lemma": "Lachis",
+   "level": "A1",
+   "en": "Lachish",
+   "es": "Laquis",
+   "fr": "Lakis",
+   "it": "Lakis"
+  },
+  {
+   "pos": 1,
+   "form": "Bozkath",
+   "lemma": "Bozkath",
+   "level": "A1",
+   "en": "Bozkath",
+   "es": "Boscat",
+   "fr": "Botskath",
+   "it": "Botskath"
+  },
+  {
+   "pos": 2,
+   "form": "Eglon",
+   "lemma": "Eglon",
+   "level": "A1",
+   "en": "Eglon",
+   "es": "Eglón",
+   "fr": "Églon",
+   "it": "Eglon"
+  }
+ ],
+ "40": [
+  {
+   "pos": 0,
+   "form": "Chabbon",
+   "lemma": "Chabbon",
+   "level": "A1",
+   "en": "Cabbon",
+   "es": "Cabón",
+   "fr": "Cabbon",
+   "it": "Cabbon"
+  },
+  {
+   "pos": 1,
+   "form": "Lahmas",
+   "lemma": "Lahmas",
+   "level": "A1",
+   "en": "Lahmam",
+   "es": "Lamas",
+   "fr": "Lachmas",
+   "it": "Lahmas"
+  },
+  {
+   "pos": 2,
+   "form": "Kithlis",
+   "lemma": "Kithlis",
+   "level": "A1",
+   "en": "Chitlish",
+   "es": "Quitlis",
+   "fr": "Kithlisch",
+   "it": "Kitlish"
+  }
+ ],
+ "41": [
+  {
+   "pos": 0,
+   "form": "Gederoth",
+   "lemma": "Gederoth",
+   "level": "A1",
+   "en": "Gederoth",
+   "es": "Gederot",
+   "fr": "Guedéroth",
+   "it": "Ghederoth"
+  },
+  {
+   "pos": 1,
+   "form": "Beth-Dagon",
+   "lemma": "Beth-Dagon",
+   "level": "A1",
+   "en": "Beth Dagon",
+   "es": "Bet-dagón",
+   "fr": "Beth-Dagon",
+   "it": "Beth-Dagon"
+  },
+  {
+   "pos": 2,
+   "form": "Naema",
+   "lemma": "Naema",
+   "level": "A1",
+   "en": "Naamah",
+   "es": "Naama",
+   "fr": "Naama",
+   "it": "Naama"
+  },
+  {
+   "pos": 3,
+   "form": "Makkeda",
+   "lemma": "Makkeda",
+   "level": "A1",
+   "en": "Makkedah",
+   "es": "Maceda",
+   "fr": "Makkéda",
+   "it": "Makkeda"
+  },
+  {
+   "pos": 4,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 5,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 6,
+   "form": "sechzehn",
+   "lemma": "sechzehn",
+   "level": "A2",
+   "en": "sixteen",
+   "es": "dieciséis",
+   "fr": "seize",
+   "it": "sedici"
+  },
+  {
+   "pos": 7,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 8,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 9,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 10,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "42": [
+  {
+   "pos": 0,
+   "form": "Libna",
+   "lemma": "Libna",
+   "level": "A1",
+   "en": "Libnah",
+   "es": "Libna",
+   "fr": "Libna",
+   "it": "Libna"
+  },
+  {
+   "pos": 1,
+   "form": "Ether",
+   "lemma": "Ether",
+   "level": "A1",
+   "en": "Ether",
+   "es": "Eter",
+   "fr": "Éther",
+   "it": "Ether"
+  },
+  {
+   "pos": 2,
+   "form": "Asan",
+   "lemma": "Asan",
+   "level": "A1",
+   "en": "Ashan",
+   "es": "Asán",
+   "fr": "Aschan",
+   "it": "Ashan"
+  }
+ ],
+ "43": [
+  {
+   "pos": 0,
+   "form": "Jephthah",
+   "lemma": "Jephthah",
+   "level": "A1",
+   "en": "Iphtah",
+   "es": "Jifta",
+   "fr": "Jiphtach",
+   "it": "Iftah"
+  },
+  {
+   "pos": 1,
+   "form": "Asna",
+   "lemma": "Asna",
+   "level": "A1",
+   "en": "Ashnah",
+   "es": "Asná",
+   "fr": "Aschna",
+   "it": "Ashna"
+  },
+  {
+   "pos": 2,
+   "form": "Nezib",
+   "lemma": "Nezib",
+   "level": "A1",
+   "en": "Nezib",
+   "es": "Nesib",
+   "fr": "Netsib",
+   "it": "Netsib"
+  }
+ ],
+ "44": [
+  {
+   "pos": 0,
+   "form": "Kegila",
+   "lemma": "Kegila",
+   "level": "A1",
+   "en": "Keilah",
+   "es": "Keila",
+   "fr": "Keïla",
+   "it": "Keila"
+  },
+  {
+   "pos": 1,
+   "form": "Achsib",
+   "lemma": "Achsib",
+   "level": "A1",
+   "en": "Achzib",
+   "es": "Aczib",
+   "fr": "Aczib",
+   "it": "Aczib"
+  },
+  {
+   "pos": 2,
+   "form": "Maresa",
+   "lemma": "Maresa",
+   "level": "A1",
+   "en": "Mareshah",
+   "es": "Maresa",
+   "fr": "Maréscha",
+   "it": "Maresha"
+  },
+  {
+   "pos": 3,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 4,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 5,
+   "form": "neun",
+   "lemma": "neun",
+   "level": "A1",
+   "en": "nine",
+   "es": "nueve",
+   "fr": "neuf",
+   "it": "nove"
+  },
+  {
+   "pos": 6,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 9,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "45": [
+  {
+   "pos": 0,
+   "form": "Ekron",
+   "lemma": "Ekron",
+   "level": "A1",
+   "en": "Ekron",
+   "es": "Ecrón",
+   "fr": "Ékron",
+   "it": "Ekron"
+  },
+  {
+   "pos": 1,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 2,
+   "form": "seinen",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "its",
+   "es": "sus",
+   "fr": "ses",
+   "it": "i suoi"
+  },
+  {
+   "pos": 3,
+   "form": "Ortschaften",
+   "lemma": "Ortschaft",
+   "level": "B2",
+   "en": "towns",
+   "es": "localidades",
+   "fr": "localités",
+   "it": "località"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "46": [
+  {
+   "pos": 0,
+   "form": "Von",
+   "lemma": "von",
+   "level": "A1",
+   "en": "From",
+   "es": "Desde",
+   "fr": "Depuis",
+   "it": "Da"
+  },
+  {
+   "pos": 1,
+   "form": "Ekron",
+   "lemma": "Ekron",
+   "level": "A1",
+   "en": "Ekron",
+   "es": "Ecrón",
+   "fr": "Ékron",
+   "it": "Ekron"
+  },
+  {
+   "pos": 2,
+   "form": "bis",
+   "lemma": "bis",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'",
+   "it": "fino"
+  },
+  {
+   "pos": 3,
+   "form": "zum",
+   "lemma": "zum",
+   "level": "A1",
+   "en": "to the",
+   "es": "al",
+   "fr": "à la",
+   "it": "al"
+  },
+  {
+   "pos": 2,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "as far as",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 3
+  },
+  {
+   "pos": 4,
+   "form": "Meer",
+   "lemma": "Meer",
+   "level": "A2",
+   "en": "sea",
+   "es": "mar",
+   "fr": "mer",
+   "it": "mare"
+  },
+  {
+   "pos": 5,
+   "form": "alles",
+   "lemma": "alles",
+   "level": "A1",
+   "en": "all",
+   "es": "todo",
+   "fr": "tout",
+   "it": "tutto"
+  },
+  {
+   "pos": 6,
+   "form": "was",
+   "lemma": "was",
+   "level": "A1",
+   "en": "that",
+   "es": "lo que",
+   "fr": "ce qui",
+   "it": "ciò che"
+  },
+  {
+   "pos": 7,
+   "form": "an",
+   "lemma": "an",
+   "level": "A1",
+   "en": "on",
+   "es": "con",
+   "fr": "à",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "Asdod",
+   "lemma": "Asdod",
+   "level": "A1",
+   "en": "Ashdod",
+   "es": "Asdod",
+   "fr": "Asdod",
+   "it": "Asdod"
+  },
+  {
+   "pos": 9,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 10,
+   "form": "seine",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "its",
+   "es": "sus",
+   "fr": "ses",
+   "it": "i suoi"
+  },
+  {
+   "pos": 11,
+   "form": "Dörfer",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  },
+  {
+   "pos": 12,
+   "form": "grenzt",
+   "lemma": "grenzen",
+   "level": "B2",
+   "en": "borders",
+   "es": "limita",
+   "fr": "confine",
+   "it": "confina"
+  }
+ ],
+ "47": [
+  {
+   "pos": 0,
+   "form": "Asdod",
+   "lemma": "Asdod",
+   "level": "A1",
+   "en": "Ashdod",
+   "es": "Asdod",
+   "fr": "Asdod",
+   "it": "Asdod"
+  },
+  {
+   "pos": 1,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 2,
+   "form": "seinen",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "its",
+   "es": "sus",
+   "fr": "ses",
+   "it": "i suoi"
+  },
+  {
+   "pos": 3,
+   "form": "Ortschaften",
+   "lemma": "Ortschaft",
+   "level": "B2",
+   "en": "towns",
+   "es": "localidades",
+   "fr": "localités",
+   "it": "località"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  },
+  {
+   "pos": 6,
+   "form": "Gaza",
+   "lemma": "Gaza",
+   "level": "A1",
+   "en": "Gaza",
+   "es": "Gaza",
+   "fr": "Gaza",
+   "it": "Gaza"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "seinen",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "its",
+   "es": "sus",
+   "fr": "ses",
+   "it": "i suoi"
+  },
+  {
+   "pos": 9,
+   "form": "Ortschaften",
+   "lemma": "Ortschaft",
+   "level": "B2",
+   "en": "towns",
+   "es": "localidades",
+   "fr": "localités",
+   "it": "località"
+  },
+  {
+   "pos": 10,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 11,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  },
+  {
+   "pos": 12,
+   "form": "bis",
+   "lemma": "bis",
+   "level": "A2",
+   "en": "up to",
+   "es": "hasta",
+   "fr": "jusqu'",
+   "it": "fino"
+  },
+  {
+   "pos": 13,
+   "form": "zum",
+   "lemma": "zum",
+   "level": "A1",
+   "en": "to the",
+   "es": "al",
+   "fr": "à l'",
+   "it": "all'"
+  },
+  {
+   "pos": 12,
+   "form": "bis zum",
+   "lemma": "bis zu",
+   "level": "A2",
+   "en": "as far as",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a",
+   "pos_end": 13
+  },
+  {
+   "pos": 14,
+   "form": "Wasser",
+   "lemma": "Wasser",
+   "level": "A1",
+   "en": "water",
+   "es": "agua",
+   "fr": "eau",
+   "it": "acqua"
+  },
+  {
+   "pos": 15,
+   "form": "Ägyptens",
+   "lemma": "Ägypten",
+   "level": "A1",
+   "en": "of Egypt",
+   "es": "de Egipto",
+   "fr": "d'Égypte",
+   "it": "d'Egitto"
+  },
+  {
+   "pos": 16,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 17,
+   "form": "dem",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "la",
+   "it": "il"
+  },
+  {
+   "pos": 18,
+   "form": "großen",
+   "lemma": "groß",
+   "level": "A1",
+   "en": "great",
+   "es": "gran",
+   "fr": "grande",
+   "it": "grande"
+  },
+  {
+   "pos": 19,
+   "form": "Meer",
+   "lemma": "Meer",
+   "level": "A2",
+   "en": "sea",
+   "es": "mar",
+   "fr": "mer",
+   "it": "mare"
+  },
+  {
+   "pos": 20,
+   "form": "als",
+   "lemma": "als",
+   "level": "A2",
+   "en": "as",
+   "es": "como",
+   "fr": "comme",
+   "it": "come"
+  },
+  {
+   "pos": 21,
+   "form": "Grenze",
+   "lemma": "Grenze",
+   "level": "B1",
+   "en": "border",
+   "es": "límite",
+   "fr": "limite",
+   "it": "confine"
+  }
+ ],
+ "48": [
+  {
+   "pos": 0,
+   "form": "Im",
+   "lemma": "im",
+   "level": "A1",
+   "en": "In the",
+   "es": "En la",
+   "fr": "Dans la",
+   "it": "Nella"
+  },
+  {
+   "pos": 1,
+   "form": "Bergland",
+   "lemma": "Bergland",
+   "level": "C1",
+   "en": "hill country",
+   "es": "región montañosa",
+   "fr": "région montagneuse",
+   "it": "regione montuosa"
+  },
+  {
+   "pos": 2,
+   "form": "waren",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "were",
+   "es": "eran",
+   "fr": "étaient",
+   "it": "erano"
+  },
+  {
+   "pos": 3,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "there",
+   "es": "ello",
+   "fr": "il",
+   "it": "ci"
+  },
+  {
+   "pos": 2,
+   "form": "waren es",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "there were",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'erano",
+   "pos_end": 3
+  },
+  {
+   "pos": 4,
+   "form": "Samir",
+   "lemma": "Samir",
+   "level": "A1",
+   "en": "Shamir",
+   "es": "Samir",
+   "fr": "Schamir",
+   "it": "Shamir"
+  },
+  {
+   "pos": 5,
+   "form": "Jatthir",
+   "lemma": "Jatthir",
+   "level": "A1",
+   "en": "Jattir",
+   "es": "Jatir",
+   "fr": "Jatthir",
+   "it": "Iattir"
+  },
+  {
+   "pos": 6,
+   "form": "Socho",
+   "lemma": "Socho",
+   "level": "A1",
+   "en": "Socoh",
+   "es": "Soco",
+   "fr": "Soco",
+   "it": "Soco"
+  }
+ ],
+ "49": [
+  {
+   "pos": 0,
+   "form": "Danna",
+   "lemma": "Danna",
+   "level": "A1",
+   "en": "Dannah",
+   "es": "Dana",
+   "fr": "Danna",
+   "it": "Danna"
+  },
+  {
+   "pos": 1,
+   "form": "Kirjath-Sanna",
+   "lemma": "Kirjath-Sanna",
+   "level": "A1",
+   "en": "Kiriath Sannah",
+   "es": "Quiriat-sana",
+   "fr": "Kirjath-Sanna",
+   "it": "Kiriath-Sanna"
+  },
+  {
+   "pos": 2,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "this",
+   "es": "esto",
+   "fr": "cela",
+   "it": "questo"
+  },
+  {
+   "pos": 3,
+   "form": "ist",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "is",
+   "es": "es",
+   "fr": "est",
+   "it": "è"
+  },
+  {
+   "pos": 4,
+   "form": "Debir",
+   "lemma": "Debir",
+   "level": "A1",
+   "en": "Debir",
+   "es": "Debir",
+   "fr": "Debir",
+   "it": "Debir"
+  }
+ ],
+ "50": [
+  {
+   "pos": 0,
+   "form": "Anab",
+   "lemma": "Anab",
+   "level": "A1",
+   "en": "Anab",
+   "es": "Anab",
+   "fr": "Anab",
+   "it": "Anab"
+  },
+  {
+   "pos": 1,
+   "form": "Esthemo",
+   "lemma": "Esthemo",
+   "level": "A1",
+   "en": "Eshtemoh",
+   "es": "Estemoa",
+   "fr": "Eschthemo",
+   "it": "Esthemo"
+  },
+  {
+   "pos": 2,
+   "form": "Anim",
+   "lemma": "Anim",
+   "level": "A1",
+   "en": "Anim",
+   "es": "Anim",
+   "fr": "Anim",
+   "it": "Anim"
+  }
+ ],
+ "51": [
+  {
+   "pos": 0,
+   "form": "Gosen",
+   "lemma": "Gosen",
+   "level": "A1",
+   "en": "Goshen",
+   "es": "Gosén",
+   "fr": "Gosen",
+   "it": "Goscen"
+  },
+  {
+   "pos": 1,
+   "form": "Holon",
+   "lemma": "Holon",
+   "level": "A1",
+   "en": "Holon",
+   "es": "Holón",
+   "fr": "Holon",
+   "it": "Holon"
+  },
+  {
+   "pos": 2,
+   "form": "Gilo",
+   "lemma": "Gilo",
+   "level": "A1",
+   "en": "Giloh",
+   "es": "Gilo",
+   "fr": "Guilo",
+   "it": "Ghilo"
+  },
+  {
+   "pos": 3,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 4,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 5,
+   "form": "elf",
+   "lemma": "elf",
+   "level": "A1",
+   "en": "eleven",
+   "es": "once",
+   "fr": "onze",
+   "it": "undici"
+  },
+  {
+   "pos": 6,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 9,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "52": [
+  {
+   "pos": 0,
+   "form": "Arab",
+   "lemma": "Arab",
+   "level": "A1",
+   "en": "Arab",
+   "es": "Arab",
+   "fr": "Arab",
+   "it": "Arab"
+  },
+  {
+   "pos": 1,
+   "form": "Duma",
+   "lemma": "Duma",
+   "level": "A1",
+   "en": "Dumah",
+   "es": "Duma",
+   "fr": "Duma",
+   "it": "Duma"
+  },
+  {
+   "pos": 2,
+   "form": "Esean",
+   "lemma": "Esean",
+   "level": "A1",
+   "en": "Eshan",
+   "es": "Esán",
+   "fr": "Eschean",
+   "it": "Escean"
+  }
+ ],
+ "53": [
+  {
+   "pos": 0,
+   "form": "Janum",
+   "lemma": "Janum",
+   "level": "A1",
+   "en": "Janim",
+   "es": "Janum",
+   "fr": "Janum",
+   "it": "Ianum"
+  },
+  {
+   "pos": 1,
+   "form": "Beth-Thappuah",
+   "lemma": "Beth-Thappuah",
+   "level": "A1",
+   "en": "Beth Tappuah",
+   "es": "Bet-tapúa",
+   "fr": "Beth-Tappuach",
+   "it": "Beth-Tappuah"
+  },
+  {
+   "pos": 2,
+   "form": "Apheka",
+   "lemma": "Apheka",
+   "level": "A1",
+   "en": "Aphekah",
+   "es": "Afeca",
+   "fr": "Aphéka",
+   "it": "Afeka"
+  }
+ ],
+ "54": [
+  {
+   "pos": 0,
+   "form": "Humta",
+   "lemma": "Humta",
+   "level": "A1",
+   "en": "Humtah",
+   "es": "Humta",
+   "fr": "Humta",
+   "it": "Humta"
+  },
+  {
+   "pos": 1,
+   "form": "Kirjath-Arba",
+   "lemma": "Kirjath-Arba",
+   "level": "A1",
+   "en": "Kiriath Arba",
+   "es": "Quiriat-arba",
+   "fr": "Kirjath-Arba",
+   "it": "Kiriath-Arba"
+  },
+  {
+   "pos": 2,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "this",
+   "es": "esto",
+   "fr": "cela",
+   "it": "questo"
+  },
+  {
+   "pos": 3,
+   "form": "ist",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "is",
+   "es": "es",
+   "fr": "est",
+   "it": "è"
+  },
+  {
+   "pos": 4,
+   "form": "Hebron",
+   "lemma": "Hebron",
+   "level": "A1",
+   "en": "Hebron",
+   "es": "Hebrón",
+   "fr": "Hébron",
+   "it": "Hebron"
+  },
+  {
+   "pos": 5,
+   "form": "Zior",
+   "lemma": "Zior",
+   "level": "A1",
+   "en": "Zior",
+   "es": "Sior",
+   "fr": "Tsior",
+   "it": "Tsior"
+  },
+  {
+   "pos": 6,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 7,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 8,
+   "form": "neun",
+   "lemma": "neun",
+   "level": "A1",
+   "en": "nine",
+   "es": "nueve",
+   "fr": "neuf",
+   "it": "nove"
+  },
+  {
+   "pos": 9,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 10,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 11,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 12,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "55": [
+  {
+   "pos": 0,
+   "form": "Maon",
+   "lemma": "Maon",
+   "level": "A1",
+   "en": "Maon",
+   "es": "Maón",
+   "fr": "Maon",
+   "it": "Maon"
+  },
+  {
+   "pos": 1,
+   "form": "Karmel",
+   "lemma": "Karmel",
+   "level": "A1",
+   "en": "Carmel",
+   "es": "Carmel",
+   "fr": "Carmel",
+   "it": "Carmel"
+  },
+  {
+   "pos": 2,
+   "form": "Siph",
+   "lemma": "Siph",
+   "level": "A1",
+   "en": "Ziph",
+   "es": "Zif",
+   "fr": "Ziph",
+   "it": "Zif"
+  },
+  {
+   "pos": 3,
+   "form": "Jutta",
+   "lemma": "Jutta",
+   "level": "A1",
+   "en": "Jutah",
+   "es": "Juta",
+   "fr": "Juta",
+   "it": "Iuta"
+  }
+ ],
+ "56": [
+  {
+   "pos": 0,
+   "form": "Jesreel",
+   "lemma": "Jesreel",
+   "level": "A1",
+   "en": "Jezreel",
+   "es": "Jezreel",
+   "fr": "Jizreel",
+   "it": "Iizreel"
+  },
+  {
+   "pos": 1,
+   "form": "Jokdeam",
+   "lemma": "Jokdeam",
+   "level": "A1",
+   "en": "Jokdeam",
+   "es": "Jocdeam",
+   "fr": "Jokdeam",
+   "it": "Iokdeam"
+  },
+  {
+   "pos": 2,
+   "form": "Sanoah",
+   "lemma": "Sanoah",
+   "level": "A1",
+   "en": "Zanoah",
+   "es": "Zanoa",
+   "fr": "Zanoach",
+   "it": "Zanoah"
+  }
+ ],
+ "57": [
+  {
+   "pos": 0,
+   "form": "Hakain",
+   "lemma": "Hakain",
+   "level": "A1",
+   "en": "Kain",
+   "es": "Caín",
+   "fr": "Kaïn",
+   "it": "Kain"
+  },
+  {
+   "pos": 1,
+   "form": "Gibea",
+   "lemma": "Gibea",
+   "level": "A1",
+   "en": "Gibeah",
+   "es": "Gabaa",
+   "fr": "Guibea",
+   "it": "Ghibea"
+  },
+  {
+   "pos": 2,
+   "form": "Thimna",
+   "lemma": "Thimna",
+   "level": "A1",
+   "en": "Timnah",
+   "es": "Timna",
+   "fr": "Thimna",
+   "it": "Timna"
+  },
+  {
+   "pos": 3,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 4,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 5,
+   "form": "zehn",
+   "lemma": "zehn",
+   "level": "A1",
+   "en": "ten",
+   "es": "diez",
+   "fr": "dix",
+   "it": "dieci"
+  },
+  {
+   "pos": 6,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 9,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "58": [
+  {
+   "pos": 0,
+   "form": "Halhul",
+   "lemma": "Halhul",
+   "level": "A1",
+   "en": "Halhul",
+   "es": "Halhul",
+   "fr": "Halhul",
+   "it": "Halhul"
+  },
+  {
+   "pos": 1,
+   "form": "Beth-Zur",
+   "lemma": "Beth-Zur",
+   "level": "A1",
+   "en": "Beth Zur",
+   "es": "Bet-sur",
+   "fr": "Beth-Tsur",
+   "it": "Beth-Tsur"
+  },
+  {
+   "pos": 2,
+   "form": "Gedor",
+   "lemma": "Gedor",
+   "level": "A1",
+   "en": "Gedor",
+   "es": "Gedor",
+   "fr": "Guedor",
+   "it": "Ghedor"
+  }
+ ],
+ "59": [
+  {
+   "pos": 0,
+   "form": "Maarath",
+   "lemma": "Maarath",
+   "level": "A1",
+   "en": "Maarath",
+   "es": "Maarat",
+   "fr": "Maarath",
+   "it": "Maarath"
+  },
+  {
+   "pos": 1,
+   "form": "Beth-Anoth",
+   "lemma": "Beth-Anoth",
+   "level": "A1",
+   "en": "Beth Anoth",
+   "es": "Bet-anot",
+   "fr": "Beth-Anoth",
+   "it": "Beth-Anoth"
+  },
+  {
+   "pos": 2,
+   "form": "Elthekon",
+   "lemma": "Elthekon",
+   "level": "A1",
+   "en": "Eltekon",
+   "es": "Eltecón",
+   "fr": "Elthekon",
+   "it": "Eltekon"
+  },
+  {
+   "pos": 3,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 4,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 5,
+   "form": "sechs",
+   "lemma": "sechs",
+   "level": "A1",
+   "en": "six",
+   "es": "seis",
+   "fr": "six",
+   "it": "sei"
+  },
+  {
+   "pos": 6,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 9,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "60": [
+  {
+   "pos": 0,
+   "form": "Kirjath-Baal",
+   "lemma": "Kirjath-Baal",
+   "level": "A1",
+   "en": "Kiriath Baal",
+   "es": "Quiriat-baal",
+   "fr": "Kirjath-Baal",
+   "it": "Kiriath-Baal"
+  },
+  {
+   "pos": 1,
+   "form": "das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "this",
+   "es": "esto",
+   "fr": "cela",
+   "it": "questo"
+  },
+  {
+   "pos": 2,
+   "form": "ist",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "is",
+   "es": "es",
+   "fr": "est",
+   "it": "è"
+  },
+  {
+   "pos": 3,
+   "form": "Kirjath-Jearim",
+   "lemma": "Kirjath-Jearim",
+   "level": "A1",
+   "en": "Kiriath Jearim",
+   "es": "Quiriat-jearim",
+   "fr": "Kirjath-Jearim",
+   "it": "Kiriath-Jearim"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Harabba",
+   "lemma": "Harabba",
+   "level": "A1",
+   "en": "Rabbah",
+   "es": "Rabá",
+   "fr": "Rabba",
+   "it": "Rabba"
+  },
+  {
+   "pos": 6,
+   "form": "zwei",
+   "lemma": "zwei",
+   "level": "A1",
+   "en": "two",
+   "es": "dos",
+   "fr": "deux",
+   "it": "due"
+  },
+  {
+   "pos": 7,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 8,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 9,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 10,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "61": [
+  {
+   "pos": 0,
+   "form": "In",
+   "lemma": "in",
+   "level": "A1",
+   "en": "In",
+   "es": "En",
+   "fr": "Dans",
+   "it": "In"
+  },
+  {
+   "pos": 1,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "le",
+   "it": "il"
+  },
+  {
+   "pos": 2,
+   "form": "Wüste",
+   "lemma": "Wüste",
+   "level": "B1",
+   "en": "desert",
+   "es": "desierto",
+   "fr": "désert",
+   "it": "deserto"
+  },
+  {
+   "pos": 3,
+   "form": "waren",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "were",
+   "es": "eran",
+   "fr": "étaient",
+   "it": "erano"
+  },
+  {
+   "pos": 4,
+   "form": "es",
+   "lemma": "es",
+   "level": "A1",
+   "en": "there",
+   "es": "ello",
+   "fr": "il",
+   "it": "ci"
+  },
+  {
+   "pos": 3,
+   "form": "waren es",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "there were",
+   "es": "había",
+   "fr": "il y avait",
+   "it": "c'erano",
+   "pos_end": 4
+  },
+  {
+   "pos": 5,
+   "form": "Beth-Araba",
+   "lemma": "Beth-Araba",
+   "level": "A1",
+   "en": "Beth Arabah",
+   "es": "Bet-arabá",
+   "fr": "Beth-Araba",
+   "it": "Beth-Araba"
+  },
+  {
+   "pos": 6,
+   "form": "Middin",
+   "lemma": "Middin",
+   "level": "A1",
+   "en": "Middin",
+   "es": "Midín",
+   "fr": "Middin",
+   "it": "Middin"
+  },
+  {
+   "pos": 7,
+   "form": "Sechacha",
+   "lemma": "Sechacha",
+   "level": "A1",
+   "en": "Secacah",
+   "es": "Secaca",
+   "fr": "Secaca",
+   "it": "Secacah"
+  }
+ ],
+ "62": [
+  {
+   "pos": 0,
+   "form": "Nibsan",
+   "lemma": "Nibsan",
+   "level": "A1",
+   "en": "Nibshan",
+   "es": "Nibsán",
+   "fr": "Nibschan",
+   "it": "Nibshan"
+  },
+  {
+   "pos": 1,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "la",
+   "it": "la"
+  },
+  {
+   "pos": 2,
+   "form": "Salzstadt",
+   "lemma": "Salzstadt",
+   "level": "C1",
+   "en": "City of Salt",
+   "es": "Ciudad de la Sal",
+   "fr": "Ville du Sel",
+   "it": "Città del Sale"
+  },
+  {
+   "pos": 3,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 4,
+   "form": "Engedi",
+   "lemma": "Engedi",
+   "level": "A1",
+   "en": "En Gedi",
+   "es": "En-gadi",
+   "fr": "En-Guédi",
+   "it": "Enghedi"
+  },
+  {
+   "pos": 5,
+   "form": "Das",
+   "lemma": "der",
+   "level": "A1",
+   "en": "These",
+   "es": "Estas",
+   "fr": "Voici",
+   "it": "Queste"
+  },
+  {
+   "pos": 6,
+   "form": "sind",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "are",
+   "es": "son",
+   "fr": "sont",
+   "it": "sono"
+  },
+  {
+   "pos": 7,
+   "form": "sechs",
+   "lemma": "sechs",
+   "level": "A1",
+   "en": "six",
+   "es": "seis",
+   "fr": "six",
+   "it": "sei"
+  },
+  {
+   "pos": 8,
+   "form": "Städte",
+   "lemma": "Stadt",
+   "level": "A1",
+   "en": "cities",
+   "es": "ciudades",
+   "fr": "villes",
+   "it": "città"
+  },
+  {
+   "pos": 9,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 10,
+   "form": "ihren",
+   "lemma": "ihr",
+   "level": "A1",
+   "en": "their",
+   "es": "sus",
+   "fr": "leurs",
+   "it": "i loro"
+  },
+  {
+   "pos": 11,
+   "form": "Dörfern",
+   "lemma": "Dorf",
+   "level": "A2",
+   "en": "villages",
+   "es": "aldeas",
+   "fr": "villages",
+   "it": "villaggi"
+  }
+ ],
+ "63": [
+  {
+   "pos": 0,
+   "form": "Die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "The",
+   "es": "Los",
+   "fr": "Les",
+   "it": "I"
+  },
+  {
+   "pos": 1,
+   "form": "Jebusiter",
+   "lemma": "Jebusiter",
+   "level": "B2",
+   "en": "Jebusites",
+   "es": "jebuseos",
+   "fr": "Jébusiens",
+   "it": "Gebusei"
+  },
+  {
+   "pos": 2,
+   "form": "aber",
+   "lemma": "aber",
+   "level": "A1",
+   "en": "but",
+   "es": "pero",
+   "fr": "mais",
+   "it": "ma"
+  },
+  {
+   "pos": 3,
+   "form": "wohnten",
+   "lemma": "wohnen",
+   "level": "A1",
+   "en": "dwelt",
+   "es": "habitaban",
+   "fr": "habitaient",
+   "it": "abitavano"
+  },
+  {
+   "pos": 4,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 5,
+   "form": "Jerusalem",
+   "lemma": "Jerusalem",
+   "level": "A1",
+   "en": "Jerusalem",
+   "es": "Jerusalén",
+   "fr": "Jérusalem",
+   "it": "Gerusalemme"
+  },
+  {
+   "pos": 6,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 7,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 8,
+   "form": "Kinder",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 9,
+   "form": "Juda",
+   "lemma": "Juda",
+   "level": "A1",
+   "en": "of Judah",
+   "es": "de Judá",
+   "fr": "de Juda",
+   "it": "di Giuda"
+  },
+  {
+   "pos": 10,
+   "form": "konnten",
+   "lemma": "können",
+   "level": "A1",
+   "en": "could",
+   "es": "pudieron",
+   "fr": "purent",
+   "it": "poterono"
+  },
+  {
+   "pos": 11,
+   "form": "sie",
+   "lemma": "sie",
+   "level": "A1",
+   "en": "them",
+   "es": "ellos",
+   "fr": "eux",
+   "it": "loro"
+  },
+  {
+   "pos": 12,
+   "form": "nicht",
+   "lemma": "nicht",
+   "level": "A1",
+   "en": "not",
+   "es": "no",
+   "fr": "pas",
+   "it": "non"
+  },
+  {
+   "pos": 13,
+   "form": "vertreiben",
+   "lemma": "vertreiben",
+   "level": "B2",
+   "en": "drive out",
+   "es": "expulsar",
+   "fr": "chasser",
+   "it": "scacciare"
+  },
+  {
+   "pos": 14,
+   "form": "So",
+   "lemma": "so",
+   "level": "A1",
+   "en": "So",
+   "es": "Así",
+   "fr": "Ainsi",
+   "it": "Così"
+  },
+  {
+   "pos": 15,
+   "form": "blieben",
+   "lemma": "bleiben",
+   "level": "A1",
+   "en": "stayed",
+   "es": "se quedaron",
+   "fr": "restèrent",
+   "it": "rimasero"
+  },
+  {
+   "pos": 16,
+   "form": "die",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 17,
+   "form": "Jebusiter",
+   "lemma": "Jebusiter",
+   "level": "B2",
+   "en": "Jebusites",
+   "es": "jebuseos",
+   "fr": "Jébusiens",
+   "it": "Gebusei"
+  },
+  {
+   "pos": 18,
+   "form": "bis",
+   "lemma": "bis",
+   "level": "A2",
+   "en": "until",
+   "es": "hasta",
+   "fr": "jusqu'à",
+   "it": "fino a"
+  },
+  {
+   "pos": 19,
+   "form": "heute",
+   "lemma": "heute",
+   "level": "A1",
+   "en": "today",
+   "es": "hoy",
+   "fr": "aujourd'hui",
+   "it": "oggi"
+  },
+  {
+   "pos": 18,
+   "form": "bis heute",
+   "lemma": "bis heute",
+   "level": "B1",
+   "en": "to this day",
+   "es": "hasta hoy",
+   "fr": "jusqu'à ce jour",
+   "it": "fino a oggi",
+   "pos_end": 19
+  },
+  {
+   "pos": 20,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 21,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "los",
+   "fr": "les",
+   "it": "i"
+  },
+  {
+   "pos": 22,
+   "form": "Kindern",
+   "lemma": "Kind",
+   "level": "A1",
+   "en": "children",
+   "es": "hijos",
+   "fr": "enfants",
+   "it": "figli"
+  },
+  {
+   "pos": 23,
+   "form": "Juda",
+   "lemma": "Juda",
+   "level": "A1",
+   "en": "of Judah",
+   "es": "de Judá",
+   "fr": "de Juda",
+   "it": "di Giuda"
+  },
+  {
+   "pos": 24,
+   "form": "zusammen",
+   "lemma": "zusammen",
+   "level": "A2",
+   "en": "together",
+   "es": "juntos",
+   "fr": "ensemble",
+   "it": "insieme"
+  },
+  {
+   "pos": 25,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "à",
+   "it": "a"
+  },
+  {
+   "pos": 26,
+   "form": "Jerusalem",
+   "lemma": "Jerusalem",
+   "level": "A1",
+   "en": "Jerusalem",
+   "es": "Jerusalén",
+   "fr": "Jérusalem",
+   "it": "Gerusalemme"
   }
  ]
 }
