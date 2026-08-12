@@ -77,7 +77,18 @@ def analyse(nr, kap=None):
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
                     lesarten = {(lm, en) for (lm, en, _, _, _) in form_lesarten[f]}
                     if len({lm for lm, _ in lesarten}) > 1 or len(lesarten) > 3:
-                        mehrdeutig[f] = (f'{k},{v}', sorted(lesarten)[:5])
+                        # Erst je Lemma eine Lesart, dann auffuellen: sonst
+                        # schneidet der Deckel ein ganzes Lemma weg
+                        # (`gehoert` zeigte nur `gehoeren`, nie `hoeren`).
+                        gewaehlt, gesehen = [], set()
+                        for lm, en in sorted(lesarten):      # je Lemma eine
+                            if lm not in gesehen:
+                                gesehen.add(lm)
+                                gewaehlt.append((lm, en))
+                        for eintrag in sorted(lesarten):     # dann auffuellen
+                            if eintrag not in gewaehlt and len(gewaehlt) < 5:
+                                gewaehlt.append(eintrag)
+                        mehrdeutig[f] = (f'{k},{v}', sorted(gewaehlt))
 
             # Kollisionen im Vers
             nach_glosse = collections.defaultdict(set)
