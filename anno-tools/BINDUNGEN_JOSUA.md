@@ -58,6 +58,29 @@ Pheresiter · Girgasiter · Amoriter · Jebusiter` — **durchweg die Formen von
 andere. 5Mo 20,17 lässt die Girgasiter ebenfalls weg. Nachzählen, nicht
 ergänzen.
 
+## Der Bann heißt in Josua nicht `Bann`
+
+Wie in 5. Mose kommen **`bannen` und `Bann` nirgends vor**, auch nicht bei der
+Vernichtung Jerichos. Josua 6 kombiniert die beiden Wörter, die 5Mo 13,16.18
+getrennt führt:
+
+| Stelle | Wortlaut |
+|---|---|
+| 6,17 | `dem HERRN **geweiht** und der **Vernichtung übergeben**` |
+| 6,18 | `von dem der **Vernichtung Geweihten**` · `zieht ihr die **Vernichtung** über euch` |
+| 6,21 | `**vernichteten** mit dem Schwert` |
+| 6,26 | `**Verflucht** sei vor dem HERRN` |
+
+`Untergang` kommt ebenfalls nicht vor. `weihen` C1 *dedicated · consagrada ·
+consacrée · consacrata* und `Geweihtes` C1 *consecrated thing · consagrado ·
+chose consacrée · cosa consacrata* aus 2Mo 29,36 und 3Mo 5,16.
+
+**Auch die Instrumente heißen anders:** nicht `Posaune` (17× im Bestand,
+keinmal hier), sondern **`Widderhorn`** *ram's horn · cuerno de carnero ·
+corne de bélier · corno d'ariete* C1 und `Horn` B1. Und `Bronze`/`Eisen`
+stehen nicht als Substantive da, sondern als Adjektive `bronzen` und
+`eisern`, beide B2.
+
 ## `Holzhauer` und `Holzfäller` sind zwei Wörter
 
 5Mo 29,10 sagt `Holzhauer` *woodcutter · leñador · bûcheron · taglialegna*,
