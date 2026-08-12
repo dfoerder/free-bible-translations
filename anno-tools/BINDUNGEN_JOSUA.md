@@ -157,8 +157,10 @@ Keine der vier Zielbibeln stützt sie — die Annotation folgt dem Text, aber
 | 19,8 | `Baalath-Beer-Ramath` als **ein** Token | **zwei** Namen: „Baalath Beer, Ramah of the South" |
 | 17,11 | `Nepheth` als **Ortsname** | „three heights / tres regiones / trois contrées / tre regioni elevate" |
 | 18,9 | **kein `Buch`** — nur „zeichneten es … auf" | „in a book / en un libro / dans un livre / in un libro" |
+| 22,22 | die Gottesanrufung steht **einmal**: „Der starke Gott, der HERR" | **zweimal**: „The Mighty One, God, Yahweh, the Mighty One, God, Yahweh" |
+| 22,14 | endet mit „aus jedem Stamm Israels einen" | + „all of them heads of their fathers' houses" |
 
-Dazu die Lücke in **10,3** (siehe unten) — fünf Eingriffe in einem Buch.
+Dazu die Lücke in **10,3** (siehe unten) — **sieben** Eingriffe in einem Buch.
 
 ## Eine Lücke im Quelltext: Jos 10,3
 
