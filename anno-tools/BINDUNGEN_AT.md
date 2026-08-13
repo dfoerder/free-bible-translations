@@ -17,7 +17,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 
 | Lemma | AT (bindend) | NT-Mehrheit (hier falsch) |
 |---|---|---|
-| `Mann` | *men* / *hombres* / *hommes* / *uomini* (404/733) | *man* (224/385) |
+| `Mann` | *men* / *hombres* / *hommes* / *uomini* (407/737) | *man* (224/385) |
 | `Gemeinde` | *congregation* / *congregación* / *congrégation* / *congregazione* (137/137) | *church* (76/113) |
 | `reden` | *spoke* / *habló* / *parla* / *parlò* (101/201) | *speak* (47/212) |
 | `Heer` | *army* / *ejército* / *armée* / *esercito* (101/105) | *armies* (3/6) |
@@ -27,14 +27,14 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Lot` | *shekels* / *siclos* / *sicles* / *sicli* (54/98) | *Lot* (3/5) |
 | `mitten` | *in the middle* / *en medio* / *au milieu* / *in mezzo* (48/55) | *right* (14/29) |
 | `Fleisch` | *meat* / *carne* / *viande* / *carne* (46/81) | *flesh* (86/89) |
-| `gegenüber` | *opposite* / *frente a* / *en face de* / *di fronte a* (41/52) | *toward* (13/23) |
+| `gegenüber` | *opposite* / *frente a* / *en face de* / *di fronte a* (42/53) | *toward* (13/23) |
 | `Stab` | *staff* / *bastón* / *bâton* / *bastone* (41/55) | *rod* (4/6) |
 | `Ochse` | *ox* / *buey* / *bœuf* / *bue* (35/38) | *oxen* (6/10) |
-| `entgegen` | *to meet* / *al encuentro* / *à la rencontre* / *incontro* (32/50) | *toward* (15/21) |
+| `entgegen` | *to meet* / *al encuentro* / *à la rencontre* / *incontro* (33/51) | *toward* (15/21) |
 | `Mal` | *mark* / *marca* / *marque* / *segno* (31/61) | *time* (28/32) |
+| `hundert` | *one hundred* / *cien* / *cent* / *cento* (29/35) | *hundred* (6/8) |
 | `Kraft` | *strength* / *fuerza* / *force* / *forza* (28/43) | *power* (81/106) |
 | `Eli` | *Eli* / *Elí* / *Éli* / *Eli* (28/36) | *my God* (4/5) |
-| `hundert` | *one hundred* / *cien* / *cent* / *cento* (27/33) | *hundred* (6/8) |
 | `Decke` | *covering* / *cubierta* / *couverture* / *coperta* (26/32) | *veil* (4/4) |
 | `Höhle` | *cave* / *cueva* / *grotte* / *grotta* (23/25) | *dens* (2/4) |
 | `dadurch` | *thereby* / *por ello* / *par là* / *per questo* (23/24) | *through it* (10/19) |
@@ -45,7 +45,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Ertrag` | *yield* / *rendimiento* / *rendement* / *rendimento* (16/18) | *fruit* (4/4) |
 | `links` | *the left* / *la izquierda* / *gauche* / *sinistra* (16/16) | *on the left* (6/6) |
 | `rechts` | *the right* / *la derecha* / *droite* / *destra* (16/17) | *on the right* (7/7) |
-| `Essen` | *meal* / *comida* / *repas* / *pasto* (15/30) | *food* (10/22) |
+| `Rat` | *advice* / *consejo* / *conseil* / *consiglio* (16/16) | *council* (24/32) |
 | `Lohn` | *wages* / *salario* / *salaire* / *salario* (15/18) | *reward* (26/35) |
 | `Bock` | *male goat* / *macho cabrío* / *bouc* / *capro* (15/25) | *goats* (6/6) |
 | `Wunder` | *wonders* / *prodigios* / *prodiges* / *prodigi* (15/18) | *miracles* (17/35) |
@@ -54,9 +54,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `nämlich` | *namely* / *a saber* / *à savoir* / *cioè* (14/23) | *in fact* (41/59) |
 | `Rest` | *rest* / *resto* / *reste* / *resto* (13/15) | *leftovers* (3/7) |
 | `ausschließen` | *cut off* / *excluido* / *exclu* / *escluso* (13/15) | *excluded* (2/7) |
-| `Rat` | *advice* / *consejo* / *conseil* / *consiglio* (13/13) | *council* (24/32) |
+| `Krug` | *jar* / *cántaro* / *cruche* / *brocca* (13/17) | *jugs* (2/5) |
 | `bestehen` | *consisted* / *constaba* / *se composait* / *era composto* (12/21) | *stand* (12/37) |
-| `Krug` | *jar* / *cántaro* / *cruche* / *brocca* (12/16) | *jugs* (2/5) |
 | `genauso` | *the same way* / *del mismo modo* / *de même* / *allo stesso modo* (12/19) | *In the same way* (12/28) |
 | `Versöhnung` | *atonement* / *expiación* / *expiation* / *espiazione* (12/12) | *reconciliation* (4/6) |
 | `Gewalt` | *violence* / *violencia* / *violence* / *violenza* (11/18) | *force* (8/18) |
@@ -98,106 +97,107 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `auftragen` | *commanded* / *encargado* / *ordonné* / *ordinato* (4/8) | *instructed* (5/10) |
 | `verführen` | *lead astray* / *seducir* / *entraîner* / *sedurre* (4/8) | *deceive* (3/25) |
 
-## AT-Bindungen (1104 Lemmata)
+## AT-Bindungen (1107 Lemmata)
 
 | Lemma | en | es | fr | it | Belege |
 |---|---|---|---|---|---|
-| `und` | and | y | et | e | 8631/9167 |
-| `HERR` | LORD | SEÑOR | ÉTERNEL | SIGNORE | 2619/2619 |
-| `mit` | with | con | avec | con | 1876/1992 |
-| `zu` | to | a | à | a | 1695/2375 |
-| `nicht` | not | no | pas | non | 1426/1606 |
-| `sagen` | said | dijo | dit | disse | 1224/2011 |
-| `Gott` | God | Dios | Dieu | Dio | 921/1143 |
+| `und` | and | y | et | e | 8652/9189 |
+| `HERR` | LORD | SEÑOR | ÉTERNEL | SIGNORE | 2625/2625 |
+| `mit` | with | con | avec | con | 1883/1999 |
+| `zu` | to | a | à | a | 1699/2388 |
+| `nicht` | not | no | pas | non | 1427/1608 |
+| `sagen` | said | dijo | dit | disse | 1231/2019 |
+| `Gott` | God | Dios | Dieu | Dio | 921/1144 |
 | `Land` | land | país | pays | paese | 749/780 |
-| `Volk` | people | pueblo | peuple | popolo | 670/784 |
-| `da` | Then | Entonces | Alors | Allora | 660/742 |
-| `aber` | but | pero | mais | ma | 631/922 |
+| `Volk` | people | pueblo | peuple | popolo | 672/786 |
+| `da` | Then | Entonces | Alors | Allora | 662/744 |
+| `aber` | but | pero | mais | ma | 632/923 |
+| `Sohn` | son | hijo | fils | figlio | 629/1005 |
 | `Mose` | Moses | Moisés | Moïse | Mosè | 626/662 |
-| `Sohn` | son | hijo | fils | figlio | 623/998 |
 | `Kind` | children | hijos | enfants | figli | 614/663 |
-| `dass` | that | que | que | che | 565/583 |
-| `damit` | so that | para que | afin que | affinché | 530/619 |
-| `für` | for | para | pour | per | 527/808 |
-| `Israel` | of Israel | de Israel | d'Israël | d'Israele | 517/919 |
-| `vor` | before | ante | devant | davanti a | 512/835 |
-| `denn` | for | porque | car | poiché | 488/821 |
-| `König` | king | rey | roi | re | 465/518 |
-| `Vater` | father | padre | père | padre | 445/564 |
-| `wie` | as | como | comme | come | 429/791 |
+| `dass` | that | que | que | che | 566/584 |
+| `für` | for | para | pour | per | 531/813 |
+| `damit` | so that | para que | afin que | affinché | 530/620 |
+| `Israel` | of Israel | de Israel | d'Israël | d'Israele | 520/924 |
+| `vor` | before | ante | devant | davanti a | 513/836 |
+| `denn` | for | porque | car | poiché | 491/824 |
+| `all` | all | todos | tous | tutti | 488/972 |
+| `König` | king | rey | roi | re | 480/533 |
+| `Vater` | father | padre | père | padre | 450/569 |
+| `wie` | as | como | comme | come | 431/794 |
 | `oder` | or | o | ou | o | 388/402 |
+| `David` | David | David | David | Davide | 385/498 |
 | `Tag` | day | día | jour | giorno | 382/527 |
-| `David` | David | David | David | Davide | 380/489 |
-| `um` | in order | para | pour | per | 375/611 |
-| `Haus` | house | casa | maison | casa | 344/399 |
-| `auch` | also | también | aussi | anche | 339/470 |
+| `um` | in order | para | pour | per | 376/612 |
+| `Haus` | house | casa | maison | casa | 348/403 |
+| `auch` | also | también | aussi | anche | 340/471 |
 | `gegen` | against | contra | contre | contro | 333/349 |
-| `Hand` | hand | mano | main | mano | 322/458 |
-| `dann` | then | entonces | alors | allora | 300/477 |
+| `Hand` | hand | mano | main | mano | 323/459 |
+| `dann` | then | entonces | alors | allora | 301/479 |
+| `dort` | there | allí | là | lì | 297/359 |
 | `Ägypten` | Egypt | Egipto | Égypte | Egitto | 296/315 |
-| `dort` | there | allí | là | lì | 295/357 |
 | `über` | over | sobre | sur | su | 293/520 |
 | `Stadt` | city | ciudad | ville | città | 257/448 |
 | `Priester` | priest | sacerdote | prêtre | sacerdote | 254/326 |
-| `Saul` | Saul | Saúl | Saül | Saul | 252/341 |
-| `man` | one | se | on | si | 236/315 |
+| `Saul` | Saul | Saúl | Saül | Saul | 252/343 |
+| `man` | one | se | on | si | 238/317 |
 | `Aaron` | Aaron | Aarón | Aaron | Aaronne | 226/296 |
 | `Jahr` | years | años | ans | anni | 213/287 |
 | `unter` | among | entre | parmi | tra | 211/343 |
 | `Israelit` | Israelites | israelitas | Israélites | Israeliti | 211/216 |
 | `sodass` | so that | de modo que | de sorte que | così che | 210/218 |
 | `Nachkomme` | descendants | descendientes | descendants | discendenti | 205/212 |
-| `heute` | today | hoy | aujourd'hui | oggi | 203/229 |
+| `heute` | today | hoy | aujourd'hui | oggi | 204/231 |
 | `Wasser` | water | agua | eau | acqua | 201/213 |
 | `zwei` | two | dos | deux | due | 201/207 |
 | `Erde` | earth | tierra | terre | terra | 198/213 |
+| `antworten` | answered | respondió | répondit | rispose | 194/253 |
 | `Altar` | altar | altar | autel | altare | 193/202 |
 | `essen` | eat | comer | manger | mangiare | 192/327 |
-| `antworten` | answered | respondió | répondit | rispose | 190/249 |
 | `Bruder` | brother | hermano | frère | fratello | 177/331 |
 | `Jakob` | Jacob | Jacob | Jacob | Giacobbe | 176/209 |
 | `Philister` | Philistines | filisteos | Philistins | Filistei | 174/203 |
 | `Josua` | Joshua | Josué | Josué | Giosuè | 173/187 |
-| `alles` | everything | todo | tout | tutto | 168/266 |
+| `alles` | everything | todo | tout | tutto | 168/267 |
 | `Stamm` | tribe | tribu | tribu | tribù | 167/237 |
 | `weil` | because | porque | parce que | perché | 156/200 |
-| `Wüste` | desert | desierto | désert | deserto | 152/152 |
-| `Zeit` | time | tiempo | temps | tempo | 151/169 |
+| `Wüste` | desert | desierto | désert | deserto | 153/153 |
+| `Zeit` | time | tiempo | temps | tempo | 152/170 |
 | `wieder` | again | de nuevo | de nouveau | di nuovo | 143/153 |
 | `sieben` | seven | siete | sept | sette | 143/164 |
 | `Berg` | mountain | monte | montagne | monte | 141/162 |
+| `Leben` | life | vida | vie | vita | 140/144 |
+| `Blut` | blood | sangre | sang | sangue | 140/140 |
 | `Pharao` | Pharaoh | Faraón | Pharaon | Faraone | 140/199 |
-| `Leben` | life | vida | vie | vita | 139/143 |
-| `Blut` | blood | sangre | sang | sangue | 139/139 |
 | `Jordan` | Jordan | Jordán | Jourdain | Giordano | 139/139 |
 | `nichts` | nothing | nada | rien | nulla | 139/146 |
 | `Lager` | camp | campamento | camp | accampamento | 139/153 |
-| `Diener` | servant | servidor | serviteur | servitore | 137/263 |
+| `Diener` | servant | servidor | serviteur | servitore | 138/266 |
 | `Stiftshütte` | tabernacle | tabernáculo | tabernacle | tabernacolo | 133/133 |
 | `Ort` | place | lugar | lieu | luogo | 131/144 |
-| `Auge` | eyes | ojos | yeux | occhi | 125/138 |
+| `Auge` | eyes | ojos | yeux | occhi | 127/140 |
 | `Tochter` | daughter | hija | fille | figlia | 125/246 |
 | `Brandopfer` | burnt offering | holocausto | holocauste | olocausto | 124/156 |
 | `Vieh` | livestock | bestias | bestiaux | bestie | 121/129 |
 | `Joseph` | Joseph | José | Joseph | Giuseppe | 120/169 |
 | `Samuel` | Samuel | Samuel | Samuel | Samuele | 120/125 |
 | `Feld` | field | campo | champ | campo | 119/131 |
+| `sondern` | but | sino | mais | ma | 119/127 |
 | `Herz` | heart | corazón | cœur | cuore | 118/120 |
-| `sondern` | but | sino | mais | ma | 118/126 |
+| `warum` | Why | Por qué | Pourquoi | Perché | 117/136 |
 | `unrein` | unclean | inmundo | impur | immondo | 117/154 |
 | `Name` | name | nombre | nom | nome | 115/160 |
-| `warum` | Why | Por qué | Pourquoi | Perché | 114/133 |
-| `jetzt` | now | ahora | maintenant | ora | 113/134 |
+| `jetzt` | now | ahora | maintenant | ora | 114/135 |
 | `Weg` | way | camino | chemin | via | 113/143 |
 | `Abraham` | Abraham | Abraham | Abraham | Abrahamo | 113/139 |
 | `gebieten` | commanded | mandado | ordonné | comandato | 111/159 |
 | `zurück` | back | atrás | en arrière | indietro | 111/138 |
 | `Schwert` | sword | espada | épée | spada | 108/109 |
 | `Wort` | words | palabras | paroles | parole | 108/158 |
-| `Brot` | bread | pan | pain | pane | 105/118 |
+| `Brot` | bread | pan | pain | pane | 106/120 |
 | `Wohnung` | dwelling | morada | demeure | dimora | 104/108 |
 | `zwischen` | between | entre | entre | tra | 102/104 |
-| `Kopf` | head | cabeza | tête | testa | 101/108 |
+| `Kopf` | head | cabeza | tête | testa | 102/109 |
 | `nur` | only | solo | seulement | solo | 101/152 |
 | `Morgen` | morning | mañana | matin | mattino | 100/106 |
 | `drei` | three | tres | trois | tre | 100/106 |
@@ -207,11 +207,11 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Feuer` | fire | fuego | feu | fuoco | 97/97 |
 | `Lade` | ark | arca | arche | arca | 97/97 |
 | `Bund` | covenant | pacto | alliance | alleanza | 96/96 |
-| `jung` | young | joven | jeune | giovane | 95/177 |
-| `Herr` | lord | señor | seigneur | signore | 94/176 |
+| `Herr` | lord | señor | seigneur | signore | 96/179 |
+| `jung` | young | joven | jeune | giovane | 95/178 |
+| `fragen` | asked | preguntó | demanda | chiese | 95/166 |
 | `Geschlecht` | lineages | linajes | lignées | stirpi | 94/183 |
-| `wo` | where | donde | où | dove | 92/135 |
-| `fragen` | asked | preguntó | demanda | chiese | 92/162 |
+| `wo` | where | donde | où | dove | 92/136 |
 | `Kleid` | clothes | vestidos | vêtements | vesti | 91/113 |
 | `Öl` | oil | aceite | huile | olio | 91/91 |
 | `Nacht` | night | noche | nuit | notte | 90/102 |
@@ -220,7 +220,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Himmel` | heaven | cielo | ciel | cielo | 88/107 |
 | `dazu` | besides | además | en plus | inoltre | 85/144 |
 | `Gold` | gold | oro | or | oro | 85/87 |
-| `Leute` | people | gente | gens | gente | 84/87 |
+| `Leute` | people | gente | gens | gente | 85/88 |
 | `wegen` | because of | a causa de | à cause de | a causa di | 83/89 |
 | `Juda` | Judah | Judá | Juda | Giuda | 83/129 |
 | `Ägypter` | Egyptians | egipcios | Égyptiens | Egiziani | 82/93 |
@@ -245,20 +245,21 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `hier` | here | aquí | ici | qui | 72/101 |
 | `Schuld` | guilt | culpa | faute | colpa | 70/70 |
 | `niemand` | no one | nadie | personne | nessuno | 70/108 |
-| `nun` | now | ahora | maintenant | ora | 69/124 |
+| `nun` | now | ahora | maintenant | ora | 69/125 |
+| `befehlen` | commanded | mandado | ordonné | comandato | 68/117 |
 | `Erbe` | inheritance | herencia | héritage | eredità | 68/72 |
 | `sehr` | very | muy | très | molto | 67/91 |
 | `Amoriter` | Amorites | amorreos | Amoréens | Amorei | 67/68 |
 | `Fremder` | stranger | extranjero | étranger | straniero | 67/101 |
-| `befehlen` | commanded | mandado | ordonné | comandato | 67/116 |
 | `Eingang` | entrance | entrada | entrée | ingresso | 67/67 |
+| `Absalom` | Absalom | Absalón | Absalom | Absalom | 67/87 |
 | `Abend` | evening | atardecer | soir | sera | 66/87 |
+| `Zelt` | tent | tienda | tente | tenda | 66/82 |
 | `Elle` | cubits | codos | coudées | cubiti | 66/75 |
 | `Kanaan` | Canaan | Canaán | Canaan | Canaan | 66/76 |
 | `Stier` | bull | toro | taureau | toro | 66/91 |
 | `Erbteil` | hereditary portion | porción hereditaria | part héréditaire | porzione ereditaria | 66/69 |
 | `Fett` | fat | grasa | graisse | grasso | 65/65 |
-| `Zelt` | tent | tienda | tente | tenda | 65/81 |
 | `lagern` | camped | acamparon | campèrent | accamparono | 65/99 |
 | `weder` | neither | ni | ni | né | 63/64 |
 | `Gilead` | Gilead | Galaad | Galaad | Galaad | 63/76 |
@@ -274,7 +275,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Abram` | Abram | Abram | Abram | Abram | 59/62 |
 | `Moabiter` | Moabites | moabitas | Moabites | Moabiti | 59/59 |
 | `Zorn` | wrath | ira | colère | ira | 59/59 |
-| `Absalom` | Absalom | Absalón | Absalom | Absalom | 59/77 |
 | `Opfer` | sacrifice | sacrificio | sacrifice | sacrificio | 58/97 |
 | `Arbeit` | labor | trabajo | travail | lavoro | 57/63 |
 | `Tod` | death | muerte | mort | morte | 57/58 |
@@ -286,12 +286,12 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `daher` | from him | de él | de lui | da lui | 54/59 |
 | `Engel` | angel | ángel | ange | angelo | 54/58 |
 | `Junge` | boy | muchacho | garçon | ragazzo | 54/58 |
-| `Familie` | family | familia | famille | famiglia | 52/85 |
+| `Familie` | family | familia | famille | famiglia | 53/86 |
 | `Rind` | cattle | ganado | bétail | bestiame | 52/100 |
 | `Esau` | Esau | Esaú | Ésaü | Esaù | 52/80 |
 | `Dienst` | service | servicio | service | servizio | 52/52 |
 | `Benjamin` | Benjamin | Benjamín | Benjamin | Beniamino | 52/92 |
-| `jener` | that | aquel | ce | quel | 51/62 |
+| `jener` | that | aquel | ce | quel | 51/63 |
 | `Hebron` | Hebron | Hebrón | Hébron | Hebron | 51/51 |
 | `Bote` | messengers | mensajeros | messagers | messaggeri | 51/59 |
 | `einjährig` | year-old | de un año | d'un an | di un anno | 51/51 |
@@ -301,12 +301,12 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Kampf` | battle | batalla | combat | battaglia | 50/52 |
 | `Gesetz` | law | ley | loi | legge | 50/64 |
 | `Bileam` | Balaam | Balaam | Balaam | Balaam | 50/53 |
+| `Wein` | wine | vino | vin | vino | 49/50 |
 | `Gebiet` | region | región | région | regione | 49/52 |
+| `heraus` | out | fuera | dehors | fuori | 49/50 |
 | `Sünde` | sin | pecado | péché | peccato | 48/63 |
 | `hinab` | down | abajo | en bas | giù | 48/48 |
 | `Sichem` | Shechem | Siquem | Sichem | Sichem | 48/53 |
-| `Wein` | wine | vino | vin | vino | 47/48 |
-| `heraus` | out | fuera | dehors | fuori | 47/48 |
 | `Widder` | ram | carnero | bélier | ariete | 47/81 |
 | `nächst` | next | siguiente | suivant | seguente | 47/53 |
 | `Geld` | money | dinero | argent | denaro | 47/49 |
@@ -327,12 +327,13 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `hin` | there | allá | là | là | 42/68 |
 | `ob` | whether | si | si | se | 42/44 |
 | `Knecht` | servant | siervo | serviteur | servo | 42/77 |
+| `während` | while | mientras | pendant que | mentre | 42/75 |
 | `silbern` | silver | de plata | d'argent | d'argento | 42/42 |
 | `Jericho` | Jericho | Jericó | Jéricho | Gerico | 42/42 |
 | `Osten` | east | oriente | orient | oriente | 41/41 |
 | `nie` | never | nunca | jamais | mai | 41/45 |
+| `Stein` | stones | piedras | pierres | pietre | 41/82 |
 | `Silber` | silver | plata | argent | argento | 41/41 |
-| `während` | while | mientras | pendant que | mentre | 41/74 |
 | `Ephraim` | of Ephraim | de Efraín | d'Éphraïm | di Efraim | 41/76 |
 | `Dankopfer` | peace offering | sacrificio de paz | sacrifice de paix | sacrificio di pace | 41/61 |
 | `Räucherwerk` | incense | incienso | encens | incenso | 41/41 |
@@ -340,7 +341,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Frucht` | fruits | frutos | fruits | frutti | 40/64 |
 | `darin` | in it | en ella | dedans | dentro | 40/73 |
 | `trinken` | drink | beber | boire | bere | 40/78 |
-| `Stein` | stone | piedra | pierre | pietra | 40/80 |
 | `Besitz` | possession | posesión | possession | possesso | 40/65 |
 | `Gelübde` | vow | voto | vœu | voto | 40/45 |
 | `Leinen` | linen | lino | lin | lino | 40/40 |
@@ -362,7 +362,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Gideon` | Gideon | Gedeón | Gédéon | Gedeone | 36/40 |
 | `schwanger` | pregnant | embarazada | enceinte | incinta | 35/36 |
 | `Ebene` | plain | llanura | plaine | pianura | 35/41 |
-| `Esel` | donkey | asno | âne | asino | 35/67 |
+| `Esel` | donkey | asno | âne | asino | 35/69 |
 | `bevor` | before | antes de que | avant que | prima che | 35/42 |
 | `Krieg` | war | guerra | guerre | guerra | 35/40 |
 | `Gerät` | utensils | utensilios | ustensiles | utensili | 35/38 |
@@ -376,14 +376,15 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Segen` | blessing | bendición | bénédiction | benedizione | 34/34 |
 | `Ai` | Ai | Hai | Aï | Ai | 34/35 |
 | `Friede` | peace | paz | paix | pace | 34/39 |
+| `tot` | dead | muerto | mort | morto | 34/45 |
 | `Beute` | spoil | botín | butin | bottino | 34/39 |
 | `Erstgeburt` | firstborn | primogénito | premier-né | primogenito | 34/36 |
 | `Wolke` | cloud | nube | nuée | nuvola | 33/40 |
 | `los` | off | en marcha | en route | via | 33/39 |
-| `tot` | dead | muerto | mort | morto | 33/44 |
+| `Jerusalem` | Jerusalem | Jerusalén | Jérusalem | Gerusalemme | 33/34 |
 | `Simson` | Samson | Sansón | Samson | Sansone | 33/36 |
 | `nachdem` | after | después de que | après que | dopo che | 32/55 |
-| `Gnade` | grace | gracia | grâce | grazia | 32/36 |
+| `Gnade` | grace | gracia | grâce | grazia | 32/37 |
 | `angenehm` | pleasant | agradable | agréable | gradevole | 32/32 |
 | `Anteil` | share | parte | part | parte | 32/33 |
 | `Person` | persons | personas | personnes | persone | 32/34 |
@@ -401,9 +402,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Trankopfer` | drink offering | libación | libation | libagione | 31/44 |
 | `darbringen` | offer | ofrecer | offrir | offrire | 31/57 |
 | `fehlerlos` | without defect | sin defecto | sans défaut | senza difetto | 31/31 |
-| `Jerusalem` | Jerusalem | Jerusalén | Jérusalem | Gerusalemme | 31/32 |
 | `Gibea` | Gibeah | Gabaa | Guibea | Ghibea | 31/31 |
-| `Stelle` | place | lugar | endroit | posto | 30/54 |
+| `Stelle` | place | lugar | endroit | posto | 30/55 |
 | `Boden` | ground | suelo | sol | terreno | 30/56 |
 | `Kamel` | camels | camellos | chameaux | cammelli | 30/33 |
 | `Amalekiter` | Amalekites | amalecitas | Amalécites | Amalekiti | 30/33 |
@@ -441,6 +441,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Gewand` | garment | vestidura | vêtement | veste | 27/31 |
 | `Jebusiter` | Jebusites | jebuseos | Jébusiens | Gebusei | 27/27 |
 | `sowie` | as well as | así como | ainsi que | così come | 27/30 |
+| `Unglück` | misfortune | desgracia | malheur | disgrazia | 27/27 |
 | `Scharlach` | scarlet | escarlata | écarlate | scarlatto | 27/27 |
 | `Akazienholz` | acacia wood | madera de acacia | bois d'acacia | legno di acacia | 27/27 |
 | `Nun` | of Nun | de Nun | de Nun | di Nun | 27/27 |
@@ -451,7 +452,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Duft` | fragrance | aroma | parfum | profumo | 26/26 |
 | `Hethiter` | Hittites | heteos | Héthiens | Hittei | 26/34 |
 | `wahr` | true | cierto | vrai | vero | 26/34 |
-| `Unglück` | misfortune | desgracia | malheur | disgrazia | 26/26 |
 | `Tor` | gate | puerta | porte | porta | 26/40 |
 | `Rebekka` | Rebekah | Rebeca | Rebecca | Rebecca | 26/29 |
 | `fest` | firmly | firmemente | fermement | saldamente | 26/32 |
@@ -482,7 +482,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `jenseits` | beyond | al otro lado | au-delà | di là | 23/42 |
 | `Kasten` | ark | arca | arche | arca | 23/23 |
 | `Seir` | Seir | Seir | Séir | Seir | 23/25 |
-| `verneigen` | bowed | inclinó | inclina | inchinò | 23/32 |
+| `verneigen` | bowed | inclinó | inclina | inchinò | 23/33 |
 | `Milch` | milk | leche | lait | latte | 23/23 |
 | `ungesäuert` | unleavened | sin levadura | sans levain | azzimo | 23/41 |
 | `Bergland` | hill country | región montañosa | région montagneuse | regione montuosa | 23/23 |
@@ -509,6 +509,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Arnon` | Arnon | Arnón | Arnon | Arnon | 22/22 |
 | `Boas` | Boaz | Booz | Boaz | Boaz | 22/23 |
 | `verflucht` | Cursed | Maldito | Maudit | Maledetto | 21/38 |
+| `nein` | No | No | Non | No | 21/22 |
 | `solange` | as long as | mientras | tant que | finché | 21/31 |
 | `Sodom` | Sodom | Sodoma | Sodome | Sodoma | 21/23 |
 | `Hungersnot` | famine | hambruna | famine | carestia | 21/21 |
@@ -516,6 +517,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `versprechen` | promised | prometido | promis | promesso | 21/24 |
 | `etwa` | about | unos | environ | circa | 21/32 |
 | `betragen` | amounted to | ascendió a | s'éleva à | ammontò a | 21/23 |
+| `Sippe` | clan | clan | clan | clan | 21/35 |
 | `schuldig` | guilty | culpable | coupable | colpevole | 21/27 |
 | `Passah` | Passover | Pascua | Pâque | Pasqua | 21/21 |
 | `gezwirnt` | twined | torcido | retors | ritorto | 21/21 |
@@ -523,14 +525,13 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Sihon` | Sihon | Sehón | Sihon | Sihon | 21/30 |
 | `Hinterhalt` | ambush | emboscada | embuscade | imboscata | 21/21 |
 | `Fell` | skin | piel | peau | pelle | 20/25 |
-| `nein` | No | No | Non | No | 20/21 |
 | `siebenmal` | seven times | siete veces | sept fois | sette volte | 20/20 |
 | `Westen` | west | occidente | occident | occidente | 20/20 |
 | `Kuh` | cows | vacas | vaches | mucche | 20/31 |
 | `überall` | everywhere | por todas partes | partout | dappertutto | 20/21 |
 | `Eid` | oath | juramento | serment | giuramento | 20/21 |
 | `Witwe` | widow | viuda | veuve | vedova | 20/24 |
-| `Sippe` | clan | clan | clan | clan | 20/34 |
+| `Krieger` | warriors | guerreros | guerriers | guerrieri | 20/24 |
 | `Salböl` | anointing oil | aceite de la unción | huile d'onction | olio dell'unzione | 20/20 |
 | `Eingeweide` | entrails | entrañas | entrailles | viscere | 20/20 |
 | `Feueropfer` | offering made by fire | ofrenda encendida | offrande consumée par le feu | offerta consumata dal fuoco | 20/23 |
@@ -548,7 +549,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `trotzdem` | nevertheless | aun así | malgré tout | ciò nonostante | 19/21 |
 | `entsprechend` | according to | conforme a | selon | secondo | 19/23 |
 | `Ruhe` | rest | descanso | repos | riposo | 19/22 |
-| `Krieger` | warriors | guerreros | guerriers | guerrieri | 19/23 |
 | `Lampe` | lamps | lámparas | lampes | lampade | 19/20 |
 | `rundherum` | all around | en derredor | tout autour | tutt'intorno | 19/19 |
 | `Zehntel` | tenths | décimas partes | dixièmes | decimi | 19/32 |
@@ -566,6 +566,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Schulter` | shoulder | hombro | épaule | spalla | 18/26 |
 | `Macht` | power | poder | pouvoir | potere | 18/19 |
 | `ja` | Yes | Sí | Oui | Sì | 18/26 |
+| `obwohl` | although | aunque | bien que | benché | 18/21 |
 | `Stadttor` | city gate | puerta de la ciudad | porte de la ville | porta della città | 18/18 |
 | `indem` | by | al | en | col | 18/28 |
 | `Prophet` | prophet | profeta | prophète | profeta | 18/27 |
@@ -587,7 +588,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Kain` | Cain | Caín | Caïn | Caino | 17/17 |
 | `Plage` | plague | plaga | plaie | piaga | 17/25 |
 | `Zehnter` | tithe | diezmo | dîme | decima | 17/21 |
-| `obwohl` | although | aunque | bien que | benché | 17/20 |
 | `ach` | Oh | Ay | Ah | Ah | 17/17 |
 | `heran` | up | cerca | près | vicino | 17/19 |
 | `laut` | loudly | fuerte | fort | forte | 17/27 |
@@ -595,6 +595,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `helfen` | help | ayudar | aider | aiutare | 17/34 |
 | `Haar` | hair | cabellos | cheveux | capelli | 17/33 |
 | `Schilfmeer` | Red Sea | mar Rojo | mer Rouge | mar Rosso | 17/17 |
+| `Gipfel` | summit | cumbre | sommet | vetta | 17/17 |
+| `Königreich` | kingdom | reino | royaume | regno | 17/20 |
 | `Niere` | kidneys | riñones | rognons | reni | 17/17 |
 | `Purpurstoff` | purple | púrpura | pourpre | porpora | 17/17 |
 | `Kaleb` | Caleb | Caleb | Caleb | Caleb | 17/27 |
@@ -606,14 +608,13 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Norden` | north | norte | nord | nord | 16/16 |
 | `dorthin` | there | allá | là | là | 16/30 |
 | `Holz` | wood | leña | bois | legna | 16/25 |
-| `Nebenfrau` | concubine | concubina | concubine | concubina | 16/19 |
+| `Nebenfrau` | concubine | concubina | concubine | concubina | 16/21 |
 | `Hebräer` | Hebrews | hebreos | Hébreux | Ebrei | 16/18 |
 | `Korb` | basket | cesta | panier | cesta | 16/18 |
 | `Fall` | case | caso | cas | caso | 16/20 |
 | `hinaufziehen` | go up | subir | monter | salire | 16/28 |
 | `Löwe` | lion | león | lion | leone | 16/18 |
 | `steinigen` | stone | apedrear | lapider | lapidare | 16/22 |
-| `Gipfel` | summit | cumbre | sommet | vetta | 16/16 |
 | `bestrafen` | punished | castigado | puni | punito | 16/24 |
 | `sprengen` | dash | esparcir | répandre | spargere | 16/29 |
 | `Sühne` | atonement | expiación | expiation | espiazione | 16/16 |
@@ -632,13 +633,17 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Weinberg` | vineyards | viñas | vignes | vigne | 15/28 |
 | `Beamter` | officials | funcionarios | fonctionnaires | funzionari | 15/15 |
 | `Eselin` | donkey | burra | ânesse | asina | 15/26 |
+| `Staub` | dust | polvo | poussière | polvere | 15/15 |
 | `Hälfte` | half | mitad | moitié | metà | 15/20 |
+| `namens` | named | llamado | nommé | di nome | 15/23 |
+| `vielleicht` | Perhaps | Quizá | Peut-être | Forse | 15/26 |
 | `acht` | eighth | octavo | huitième | ottavo | 15/24 |
 | `Kalb` | calf | becerro | veau | vitello | 15/18 |
 | `tatsächlich` | indeed | ciertamente | vraiment | davvero | 15/17 |
 | `Mesopotamien` | Mesopotamia | Mesopotamia | Mésopotamie | Mesopotamia | 15/15 |
 | `erstgeboren` | firstborn | primogénito | premier-né | primogenito | 15/17 |
 | `sogar` | even | incluso | même | perfino | 15/16 |
+| `Fluch` | curse | maldición | malédiction | maledizione | 15/23 |
 | `küssen` | kissed | besó | embrassa | baciò | 15/18 |
 | `außer` | except | excepto | sauf | eccetto | 15/25 |
 | `Not` | distress | angustia | angoisse | angoscia | 15/16 |
@@ -651,7 +656,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Reiter` | horsemen | jinetes | cavaliers | cavalieri | 15/18 |
 | `Abstammung` | ancestry | ascendencia | ascendance | ascendenza | 15/15 |
 | `Toter` | dead person | muerto | mort | morto | 15/20 |
-| `Königreich` | kingdom | reino | royaume | regno | 15/18 |
 | `Gürtel` | belt | cinto | ceinture | cintura | 15/17 |
 | `leinen` | linen | de lino | de lin | di lino | 15/15 |
 | `vermengen` | blended | amasada | pétrie | impastata | 15/22 |
@@ -660,22 +664,19 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `erobern` | captured | conquistó | conquit | conquistò | 15/30 |
 | `Waffenträger` | armor bearer | escudero | porteur d'armes | scudiero | 15/16 |
 | `Michal` | Michal | Mical | Mical | Mical | 15/16 |
+| `siehe` | behold | he aquí | voici | ecco | 14/24 |
 | `Garten` | garden | huerto | jardin | giardino | 14/15 |
 | `Regen` | rain | lluvia | pluie | pioggia | 14/14 |
 | `Ernte` | harvest | cosecha | moisson | messe | 14/14 |
 | `Ortschaft` | towns | localidades | localités | località | 14/15 |
 | `Pheresiter` | Perizzites | ferezeos | Phéréziens | Ferezei | 14/14 |
 | `Gegend` | region | región | région | regione | 14/14 |
-| `Staub` | dust | polvo | poussière | polvere | 14/14 |
 | `nachts` | at night | de noche | de nuit | di notte | 14/14 |
 | `Schlacht` | battle | batalla | bataille | battaglia | 14/14 |
 | `herausführen` | led out | sacado | fait sortir | fatto uscire | 14/16 |
 | `Kadaver` | carcass | cadáver | carcasse | carcassa | 14/18 |
-| `namens` | named | llamado | nommé | di nome | 14/22 |
-| `vielleicht` | Perhaps | Quizá | Peut-être | Forse | 14/25 |
 | `genug` | enough | suficiente | assez | abbastanza | 14/23 |
 | `Ordnung` | order | orden | ordre | ordine | 14/26 |
-| `Fluch` | curse | maldición | malédiction | maledizione | 14/22 |
 | `Geruch` | smell | olor | odeur | odore | 14/14 |
 | `Tau` | dew | rocío | rosée | rugiada | 14/14 |
 | `Gruppe` | group | grupo | groupe | gruppo | 14/21 |
@@ -699,7 +700,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Keïla` | Keilah | Keila | Keïla | Keila | 14/14 |
 | `Tamar` | Tamar | Tamar | Tamar | Tamar | 14/14 |
 | `wild` | wild | salvajes | sauvages | selvatici | 13/17 |
-| `siehe` | behold | he aquí | voici | ecco | 13/23 |
 | `Werk` | works | obras | œuvres | opere | 13/22 |
 | `Cherub` | cherubim | querubines | chérubins | cherubini | 13/15 |
 | `Erz` | bronze | bronce | bronze | bronzo | 13/13 |
@@ -716,11 +716,15 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Hagar` | Hagar | Agar | Agar | Agar | 13/13 |
 | `Kuchen` | cakes | tortas | gâteaux | focacce | 13/18 |
 | `greifen` | grabbed | agarró | saisit | afferrò | 13/26 |
+| `zurückgeben` | give back | devolver | rendre | restituire | 13/18 |
+| `außerdem` | moreover | además | en outre | inoltre | 13/21 |
 | `Dienerin` | maidservant | servidora | servante | servitrice | 13/24 |
 | `Heerführer` | army commander | jefe del ejército | chef d'armée | comandante dell'esercito | 13/13 |
 | `leisten` | make | hacer | faire | fare | 13/20 |
 | `Erstgeborener` | firstborn | primogénito | premier-né | primogenito | 13/19 |
 | `Reise` | journey | viaje | voyage | viaggio | 13/13 |
+| `Treue` | faithfulness | fidelidad | fidélité | fedeltà | 13/13 |
+| `Freund` | friend | amigo | ami | amico | 13/16 |
 | `Isaschar` | Issachar | Isacar | Issacar | Issacar | 13/22 |
 | `heimlich` | secretly | en secreto | en secret | in segreto | 13/13 |
 | `erkunden` | scout out | explorar | explorer | esplorare | 13/26 |
@@ -737,18 +741,19 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Ekron` | Ekron | Ecrón | Ékron | Ekron | 13/15 |
 | `Sisera` | Sisera | Sísara | Sisera | Sisera | 13/17 |
 | `Hanna` | Hannah | Ana | Anne | Anna | 13/15 |
+| `Abischai` | Abishai | Abisai | Abischaï | Abishai | 13/15 |
 | `Kriechtier` | creeping things | animales rastreros | bêtes rampantes | animali striscianti | 12/15 |
 | `dreihundert` | three hundred | trescientos | trois cents | trecento | 12/14 |
+| `Dach` | roof | techo | toit | tetto | 12/12 |
 | `Schrecken` | terror | espanto | terreur | terrore | 12/13 |
 | `Gaza` | Gaza | Gaza | Gaza | Gaza | 12/12 |
+| `zweihundert` | two hundred | doscientos | deux cents | duecento | 12/17 |
 | `Riese` | giants | gigantes | géants | giganti | 12/14 |
 | `nördlich` | north | al norte | au nord | a nord | 12/15 |
+| `Elend` | misery | miseria | misère | miseria | 12/12 |
 | `Moab` | of Moab | de Moab | de Moab | di Moab | 12/22 |
-| `zurückgeben` | give back | devolver | rendre | restituire | 12/17 |
-| `außerdem` | moreover | además | en outre | inoltre | 12/20 |
 | `Beer-Seba` | Beersheba | Beerseba | Beer-Schéba | Beer-Sceba | 12/12 |
 | `Jungfrau` | virgin | virgen | vierge | vergine | 12/13 |
-| `Treue` | faithfulness | fidelidad | fidélité | fedeltà | 12/12 |
 | `Hals` | neck | cuello | cou | collo | 12/13 |
 | `Naphthali` | Naphtali | Neftalí | Nephthali | Neftali | 12/21 |
 | `hinüber` | over | al otro lado | de l'autre côté | dall'altra parte | 12/12 |
@@ -787,16 +792,13 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Stern` | stars | estrellas | étoiles | stelle | 11/12 |
 | `Adam` | Adam | Adán | Adam | Adamo | 11/13 |
 | `Bauch` | belly | vientre | ventre | ventre | 11/11 |
-| `Dach` | roof | techo | toit | tetto | 11/11 |
 | `trocken` | dry | seco | sec | asciutto | 11/17 |
-| `zweihundert` | two hundred | doscientos | deux cents | duecento | 11/16 |
 | `Schwiegertochter` | daughter-in-law | nuera | belle-fille | nuora | 11/14 |
 | `östlich` | to the east | al este | à l'est | a est | 11/12 |
 | `Mamre` | Mamre | Mamre | Mamré | Mamre | 11/11 |
 | `Ziege` | goats | cabras | chèvres | capre | 11/21 |
 | `Alter` | age | edad | âge | età | 11/17 |
 | `Ismael` | Ishmael | Ismael | Ismaël | Ismaele | 11/17 |
-| `Elend` | misery | miseria | misère | miseria | 11/11 |
 | `alle` | all | todos | tous | tutti | 11/21 |
 | `Stroh` | straw | paja | paille | paglia | 11/11 |
 | `vierzehn` | fourteen | catorce | quatorze | quattordici | 11/12 |
@@ -837,7 +839,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Sebach` | Zebah | Zeba | Zébach | Zebah | 11/11 |
 | `Zalmunna` | Zalmunna | Zalmuna | Tsalmunna | Tsalmunna | 11/11 |
 | `Abjatar` | Abiathar | Abiatar | Abiathar | Abiathar | 11/14 |
-| `Abischai` | Abishai | Abisai | Abischaï | Abishai | 11/13 |
+| `Ziba` | Ziba | Siba | Tsiba | Tsiba | 11/14 |
+| `Ahitofel` | Ahithophel | Ahitofel | Achitophel | Ahitofel | 11/17 |
 | `lebendig` | living | viviente | vivant | vivente | 10/17 |
 | `tief` | deeper | más profundo | plus profond | più profondo | 10/18 |
 | `Bein` | legs | piernas | jambes | gambe | 10/12 |
@@ -855,7 +858,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Schwiegersohn` | son-in-law | yerno | gendre | genero | 10/11 |
 | `unschuldig` | innocent | inocente | innocent | innocente | 10/13 |
 | `fesseln` | tie up | atar | ligoter | legare | 10/16 |
-| `Freund` | friend | amigo | ami | amico | 10/13 |
 | `Junges` | young | crías | petits | piccoli | 10/13 |
 | `Edomiter` | Edomites | edomitas | Édomites | Edomiti | 10/15 |
 | `Kette` | chains | cadenas | chaînes | catene | 10/20 |
@@ -882,6 +884,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Verzückung` | trance | éxtasis | extase | estasi | 10/10 |
 | `Ahimaaz` | Ahimaaz | Ahimaas | Achimaats | Ahimaats | 10/11 |
 | `Ahimelech` | Ahimelech | Ahimelec | Achimélec | Ahimelec | 10/13 |
+| `Zeruja` | Zeruiah | Sarvia | Tseruja | Tseruia | 10/10 |
 | `leer` | empty | vacías | vides | vuote | 9/18 |
 | `Pflanze` | plants | plantas | plantes | piante | 9/9 |
 | `kriechen` | crawls | repta | rampe | striscia | 9/18 |
@@ -897,6 +900,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Salzmeer` | Salt Sea | mar Salado | mer Salée | mar Salato | 9/9 |
 | `vierzehnt` | fourteenth | decimocuarto | quatorzième | quattordicesimo | 9/9 |
 | `Grube` | pit | fosa | fosse | fossa | 9/11 |
+| `erschöpft` | exhausted | agotados | épuisés | sfiniti | 9/15 |
 | `Sand` | sand | arena | sable | sabbia | 9/9 |
 | `Gast` | guest | invitado | invité | ospite | 9/12 |
 | `Ephron` | Ephron | Efrón | Éphron | Efron | 9/12 |
@@ -956,6 +960,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Wachposten` | garrison | guarnición | poste | guarnigione | 9/9 |
 | `Ner` | of Ner | de Ner | de Ner | di Ner | 9/10 |
 | `Asaël` | Asahel | Asael | Asaël | Asael | 9/10 |
+| `Huschai` | Hushai | Husai | Huschaï | Hushai | 9/11 |
 | `viert` | fourth | cuarta | quatrième | quarta | 8/15 |
 | `fünft` | fifth | quinto | cinquième | quinto | 8/9 |
 | `Schlaf` | sleep | sueño | sommeil | sonno | 8/8 |
@@ -1047,10 +1052,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Ehud` | Ehud | Aod | Éhud | Ehud | 8/8 |
 | `Rätsel` | riddle | enigma | énigme | indovinello | 8/8 |
 | `Löser` | redeemer | redentor | rédempteur | redentore | 8/8 |
-| `Zeruja` | Zeruiah | Sarvia | Tseruja | Tseruia | 8/8 |
-| `Mefiboschet` | Mephibosheth | Mefiboset | Mephiboscheth | Mefibosheth | 8/9 |
+| `Mefiboschet` | Mephibosheth | Mefiboset | Mephiboscheth | Mefibosheth | 8/11 |
 | `Zadok` | Zadok | Sadoc | Tsadok | Tsadok | 8/12 |
-| `Ahitofel` | Ahithophel | Ahitofel | Achitophel | Ahitofel | 8/12 |
 | `sichtbar` | visible | visible | visible | visibile | 7/8 |
 | `Fisch` | fish | peces | poissons | pesci | 7/8 |
 | `Ada` | Adah | Ada | Ada | Ada | 7/8 |
@@ -1062,7 +1065,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `aufteilen` | divide up | repartir | partager | dividere | 7/12 |
 | `Haran` | Haran | Harán | Charran | Carran | 7/13 |
 | `Keniter` | Kenites | ceneos | Kéniens | Kenei | 7/12 |
-| `erschöpft` | exhausted | agotados | épuisés | sfiniti | 7/13 |
 | `Sklavin` | slave woman | esclava | esclave | schiava | 7/8 |
 | `Sorge` | worries | preocupaciones | soucis | preoccupazioni | 7/8 |
 | `wert` | worth | de valor | de valeur | di valore | 7/9 |
@@ -1107,7 +1109,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `tapfer` | valiant | valientes | vaillants | valorosi | 7/11 |
 | `Jerubbaal` | of Jerubbaal | de Jerobaal | de Jerubbaal | di Ierubbaal | 7/13 |
 | `Tempel` | temple | templo | temple | tempio | 7/8 |
-| `Huschai` | Hushai | Husai | Huschaï | Hushai | 7/8 |
 | `nackt` | naked | desnudo | nu | nudo | 6/8 |
 | `Höhe` | heights | alturas | hauteurs | alture | 6/10 |
 | `insgesamt` | in all | en total | en tout | in tutto | 6/9 |
@@ -1130,6 +1131,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Amt` | office | cargo | charge | carica | 6/10 |
 | `Wahrsager` | soothsayers | adivinos | devins | indovini | 6/12 |
 | `woher` | where from | de dónde | d'où | da dove | 6/11 |
+| `hingehen` | go | ir | aller | andare | 6/10 |
 | `Hezron` | Hezron | Hezrón | Hetsron | Hetsron | 6/8 |
 | `bekannt` | known | conocido | connu | conosciuto | 6/8 |
 | `Schuh` | shoes | sandalias | sandales | sandali | 6/9 |
@@ -1151,7 +1153,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Rimmon` | Rimmon | Rimón | Rimmon | Rimmon | 6/8 |
 | `Dagon` | Dagon | Dagón | Dagon | Dagon | 6/8 |
 | `Anhöhe` | high place | lugar alto | haut lieu | alto luogo | 6/8 |
-| `Ziba` | Ziba | Siba | Tsiba | Tsiba | 6/8 |
 | `Same` | seed | semilla | semence | seme | 5/9 |
 | `untertan` | subject | sujetos | assujettis | soggetti | 5/8 |
 | `decken` | covered | cubrió | couvrit | coprì | 5/9 |
@@ -1163,6 +1164,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `einfach` | simply | simplemente | simplement | semplicemente | 5/8 |
 | `bestätigen` | confirmed | confirmado | confirmé | confermato | 5/8 |
 | `träumen` | dreamed | soñado | rêvé | sognato | 5/10 |
+| `Trinken` | drinking | beber | boire | bere | 5/8 |
 | `Ana` | of Anah | de Aná | d'Ana | di Ana | 5/9 |
 | `Reguel` | Reuel | Reuel | Réuel | Reuel | 5/9 |
 | `deuten` | interpret | interpretar | interpréter | interpretare | 5/10 |
@@ -1171,7 +1173,6 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Sklave` | slaves | esclavos | esclaves | schiavi | 5/10 |
 | `Speise` | food | comida | nourriture | cibo | 5/9 |
 | `kaum` | Hardly | Apenas | À peine | Appena | 5/9 |
-| `hingehen` | go | ir | aller | andare | 5/9 |
 | `auferlegen` | impose | imponer | imposer | imporre | 5/9 |
 | `Amminadab` | of Amminadab | de Aminadab | d'Amminadab | di Aminadab | 5/8 |
 | `Nahesson` | Nahshon | Naasón | Nachschon | Nahshon | 5/8 |
@@ -1192,8 +1193,10 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Vaterhaus` | fathers' houses | casas paternas | maisons paternelles | case paterne | 5/8 |
 | `erbeuten` | captured | capturada | capturée | catturata | 5/10 |
 | `Ölbaum` | olive trees | olivos | oliviers | ulivi | 5/8 |
+| `Benjaminiter` | Benjamite | benjamita | Benjamite | Beniaminita | 5/9 |
 | `Maß` | measure | medida | mesure | misura | 4/8 |
 | `wiegen` | weighed | pesó | pesa | pesò | 4/8 |
+| `inzwischen` | by now | ya | désormais | ormai | 4/8 |
 | `fett` | fat | gordas | grasses | grasse | 4/8 |
 | `heftig` | violently | violentamente | violemment | violentemente | 4/8 |
 | `Anweisung` | instructions | instrucciones | instructions | istruzioni | 4/8 |
@@ -1205,4 +1208,3 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Jair` | Jair | Jair | Jaïr | Iair | 4/8 |
 | `vielmehr` | rather | más bien | plutôt | piuttosto | 4/8 |
 | `erwecken` | raise up | levantar | susciter | suscitare | 4/8 |
-| `Benjaminiter` | Benjamites | benjamitas | Benjamites | Beniaminiti | 4/8 |
