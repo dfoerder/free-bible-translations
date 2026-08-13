@@ -73,6 +73,21 @@ Seite. Rund vierzig Wörter sind so korpusweit korrigiert worden — `HERR`,
 Bestandsmehrheit ist nur dann ein Argument, wenn die Belege aus **vergleichbaren
 Kontexten** stammen.
 
+*Zwei Dinge, an denen sich schon mehrere Agenten verrechnet haben:*
+
+- **`lexicon.py` und `fixgloss.py` trennen nicht nach Testamenten.** Eine große
+  Belegzahl kann fast ganz aus dem NT stammen. Bei `nämlich` sind von 49 Belegen
+  für *in fact* **41 aus dem Neuen Testament** — im AT steht diese Lesart nur
+  achtmal. Wer die Gesamtzahl gegen `BINDUNGEN_AT.md` hält, hält die Falle gegen
+  die Warnung davor. Im Zweifel die genannten Belegstellen ansehen.
+- **Die Bindungstabelle ist bedeutungsblind.** Sie nennt je Lemma die häufigste
+  AT-Lesart, auch wo das Wort zwei Bedeutungen hat. `nämlich` steht im AT
+  **14:14** zwischen der erklärenden Lesart (*namely*) und der kausalen
+  (*in fact* / *for*) — da gibt es keine Bindung, sondern eine Entscheidung am
+  Vers. Die Präambel der Tabelle sagt das selbst: eine Bindung gilt für dieselbe
+  **Bedeutung**, nicht für dieselbe Buchstabenfolge. Wo beides auseinanderfällt,
+  entscheidet die Bedeutung — und du meldest es.
+
 **Die Dublette formuliert neu.** Wo der Text sich wiederholt (2Mo 25–31 ↔
 35–40, die Opferordnungen in 3Mo 1–7, die Musterungen in 4Mo 1 ↔ 26), ist die
 zweite Fassung fast nie wörtlich gleich: `Bronze`/`Erz`, `Vorhof`/`Hof`,
