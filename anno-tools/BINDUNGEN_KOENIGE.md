@@ -128,3 +128,19 @@ Königen Israels"), aber *with · con · avec · con* („bei seinen Vorfahren")
   glossiert den falschen Mann.
 - **`Sela`** ist im Bestand die Person Schela (1Mo 38,5). In 2Kön 14,7 ist es
   die edomitische Stadt.
+- **`Johanan`** ist im Bestand nur über Lk 3,27 belegt — der Mann aus der
+  Lukas-Genealogie, *of Joanan · de Joanán · de Joanan · di Ioanan*. In
+  2Kön 25,23 ist es Johanan ben Kareach, *Johanan · Johanán · Jochanan ·
+  Iohanan*.
+- **`Haran`** trägt zwei Lesarten, und der Extrakt zeigt zuerst die falsche:
+  die **Person** (1Mo 11,26–29) ist fr *Haran* / it *Haran*, die **Stadt**
+  (1Mo 11,31 – 12,5 · 27,43 · 28,10 · 29,4 · 2Kön 19,12) fr **Charran** /
+  it **Carran**.
+- **`Mizpa`** bleibt Eigenname. Die Übersetzung `Warte` gilt nur für 1Mo 31,49,
+  wo Luther selbst verdeutscht — an allen 19 anderen Stellen steht der bloße
+  Name.
+- **`Adrammelech`** ist in 2Kön 17,31 der Götze von Sefarwajim und in 19,37
+  Sanheribs Sohn; **`Seraja`** ist in 25,18 der Oberpriester und in 25,23 der
+  Sohn Tanhumets. Zwei Träger, ein Name, dieselbe Glosse.
+- **`Oberpriester`** (2Kön 25,18) ist **nicht** `Hoherpriester` (22,4.8) —
+  zwei verschiedene Wörter im selben Buch, zwei Glossen.
