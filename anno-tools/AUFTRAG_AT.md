@@ -14,6 +14,13 @@ seinem Kapitel besonders ist; alles Wiederkehrende steht hier.
    sie übersetzt.
 4. Die Hinweise lesen, die der Prompt nennt (`hints.py`): unbelegte Formen,
    Kollisionen im Vers, mehrdeutige Formen.
+   **Die Kollisionsliste ist nicht vollständig.** `hints.py` blendet
+   Funktionswörter aus, sonst ersäuft der Bericht im Rauschen — darunter `aus`,
+   `an`, `auf`, `zu`, `nach`, `vor`, `über`, `um`. Genau das sind aber die
+   **Partikeln trennbarer Verben**, und die tragen eine eigene Bedeutung: in
+   2Kön 6,7 standen `aus` (von *ausstrecken*) und `heraus` im selben Vers und
+   trugen in allen vier Sprachen dieselbe Glosse. Der Fall wurde nicht gemeldet
+   und war trotzdem echt. **Partikeln also selbst nachzählen.**
 5. `BINDUNGEN_AT.md` lesen, Abschnitt zum eigenen Buch und die allgemeinen
    Bindungen.
 
