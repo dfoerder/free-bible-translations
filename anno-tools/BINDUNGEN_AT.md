@@ -1143,8 +1143,8 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `tapfer` | valiant | valientes | vaillants | valorosi | 7/12 |
 | `Jerubbaal` | of Jerubbaal | de Jerobaal | de Jerubbaal | di Ierubbaal | 7/13 |
 | `Hiram` | Hiram | Hiram | Hiram | Hiram | 7/11 |
+| `Batseba` | Bathsheba | Betsabé | Bath-Schéba | Bath-Sceba | 7/10 |
 | `Barsillai` | Barzillai | Barzilai | Barzillaï | Barzillai | 7/9 |
-| `Bath-Seba` | Bathsheba | Betsabé | Bath-Schéba | Bath-Sceba | 7/8 |
 | `nackt` | naked | desnudo | nu | nudo | 6/8 |
 | `Flut` | flood | diluvio | déluge | diluvio | 6/8 |
 | `abstammen` | descend | descienden | descendent | discendono | 6/9 |
