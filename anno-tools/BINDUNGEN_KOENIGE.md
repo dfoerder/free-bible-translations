@@ -47,6 +47,27 @@ Bedeutung **allein** tragen. Neun Einträge sind so korrigiert worden.
 in der Chronik"**. `Alles` ist im Buch 12 einheitlich *Everything · Todo · Tout ·
 Tutto*. **Jede Stelle einzeln am Text prüfen.**
 
+## Die Botenformel „So spricht der HERR"
+
+Im Französischen ist `spricht` 26:19 zwischen *parle* und *dit* auseinander
+gelaufen — in 2Kön allein 4:4, und die Kapitel 20 und 21 haben es gleichzeitig
+verschieden geprägt. Die Belege trennen sich aber **sauber nach der Stellung**,
+und das ist auch die Konvention der LSG:
+
+| Fall | Beispiel | `spricht` fr |
+|---|---|---|
+| **einleitend** (`So`/`Darum`/`Denn so` … `spricht der HERR:`) | 2Kön 19,20 | **parle** |
+| **nachgestellt** (nach Komma, am Satzende) | „Nichts wird übrig bleiben, spricht der HERR." (2Kön 20,17) | **dit** |
+
+Englisch, Spanisch und Italienisch unterscheiden nicht: durchgehend
+*says · dice · dice*. Die Entscheidung fällt am **vorangehenden Token** — endet
+es auf ein Komma, ist es die nachgestellte Formel. 16 Einträge in den Büchern
+6, 9, 11 und 12 sind danach nachgezogen worden.
+
+Der französische Artikel davor ist **`l'`**, nie `le`: *l'ÉTERNEL*. 62 Einträge
+in sechs Büchern standen auf `le` und sind korrigiert; der Bestand hat
+1072-mal die richtige Form.
+
 ## Die Nachfolgeformel
 
 > … wurde König an seiner Stelle.
