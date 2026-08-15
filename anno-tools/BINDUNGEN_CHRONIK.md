@@ -50,8 +50,14 @@ Zwei Schemata, und die Wahl hängt an Numerus und Funktion:
 
 | Fall | Schema | Beispiel |
 |---|---|---|
-| **Sippenname im Plural** (4Mo-26-Schema) | en *Xites* · es *xitas* (klein) · fr *Xites* (groß) · it *xiti* (klein) | `Netofatiter`, `Zorathiter`, `Kiniter` |
+| **Sippenname im Plural** (4Mo-26-Schema) | en *Xites* · es *xitas* (**klein**) · fr *Xites* (**groß**) · it *Xiti* (**groß**) | `Netofatiter`, `Zorathiter`, `Kiniter` |
 | **Epitheton im Singular** (2Sam-23-Schema) | en *Xite* · es *xita* · fr *de X* / *d'X* · it *da X* | `der Ahohiter`, `der Mithniter` |
+
+**Die Groß-/Kleinschreibung ist ausgezählt, nicht geraten:** im Bestand stehen
+Gentilizia im **Spanischen zu 843:33 klein** und im **Italienischen zu 704:172
+groß**. Die 172 italienischen Kleinschreibungen sind fast alle die
+`da X`-Formen des Singular-Schemas, wo nur die Präposition kleingeschrieben
+ist. 16 echte Ausreißer in 1Chr 2 und 5 sind nachgezogen worden.
 
 Feminine Epitheta tragen echte Adjektive, nicht *de X*: `Jesreelitin` =
 *Jezreelitess · jezreelita · Jizreélite · Izreelita*, ebenso `Karmelitin`.
