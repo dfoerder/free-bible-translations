@@ -173,6 +173,24 @@ aptos para el combate · aptes au combat · atti al combattimento*.
 `David` A1 = *David · David · David · **Davide*** (508 Belege) ·
 `Fürst` B2 = *prince · príncipe · prince · principe* (72 Belege; 2Sam 5,2 und
 7,8 sind nachgezogen worden) · `Anführer` B2 = *leader · jefe · chef · capo* ·
-`Oberhaupt` B2 = *head · cabeza · tête · testa* · `Hauptmann` B2 = *captain ·
-capitán · capitaine · capitano`. Die drei kollidieren in 1Chr 11,6 und sind
-dort in allen vier Sprachen getrennt worden.
+**`Oberhaupt` B2 = *head · jefe · chef · capo*** (13 Belege; Plural *heads ·
+jefes · chefs · capi*) · `Haupt` C1 = *head · cabeza · tête · capo*, Plural
+*heads · cabezas · têtes · teste* · `Hauptmann` B2 = *captain · capitán ·
+capitaine · capitano*.
+
+**Die Ausnahme ist 1Chr 11,6**, wo `Oberhaupt`, `Anführer` und `Hauptmann` in
+einem Vers stehen. Dort weicht `Oberhaupt` **lokal** auf *cabeza · tête ·
+testa* aus. Das ist die einzige Stelle; überall sonst gilt die Mehrheitslesart.
+Eine frühere Fassung dieser Tabelle hat den Ausreißer zitiert — gemeldet vom
+Agenten von 1Chr 7.
+
+**`Torhüter`** C1 = *gatekeepers · porteros · portiers · portinai* entsteht in
+1Chr 15 neu und kommt ab dort 38-mal vor (16 · 23 · 26, 2Chr, Esra, Nehemia).
+Es trägt dieselbe Glosse wie das einmalige `Torwächter` (2Kön 7,11); die
+beiden stehen nirgends im selben Vers, deshalb bleibt es nach SPEC
+unaufgelöst.
+
+**`Posaune`** ist im Bestand *trumpets · trompetas · trompettes · trombe* wie
+`Trompete`. Beide stehen im ganzen l1912mod **nur in 1Chr 15,28** zusammen;
+dort — und nur dort — weicht `Posaune` auf *horns · bocinas · cors · corni*
+aus (Schofar gegen Chatsotserah). Die 39 übrigen Belege bleiben unverändert.
