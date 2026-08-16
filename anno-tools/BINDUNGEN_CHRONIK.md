@@ -53,6 +53,18 @@ Zwei Schemata, und die Wahl hängt an Numerus und Funktion:
 | **Sippenname im Plural** (4Mo-26-Schema) | en *Xites* · es *xitas* (**klein**) · fr *Xites* (**groß**) · it *Xiti* (**groß**) | `Netofatiter`, `Zorathiter`, `Kiniter` |
 | **Epitheton im Singular** (2Sam-23-Schema) | en *Xite* · es *xita* · fr *de X* / *d'X* · it *da X* | `der Ahohiter`, `der Mithniter` |
 
+**Warnung zum Massenzug.** Ein Skript, das Gentilizia über die Endung `-iter`
+filtert, trifft auch `weiter`, `Reiter`, `Arbeiter`, `Leiter`, `Begleiter`,
+`Mitarbeiter` — beim Versuch, die italienische Großschreibung nachzuziehen,
+waren so **1000 Einträge in allen Büchern** betroffen statt der sechs
+gemeinten. Der Zug ist vollständig zurückgesetzt worden. **Jeder korpusweite
+Zug wird erst gezählt und die Trefferliste angesehen, bevor geschrieben wird**
+— die Zahl allein verrät den Fehler sofort.
+
+Offen geblieben ist dabei `Kahathiter` = it **`kehatiti`** (9 Belege,
+durchgehend klein). Es steht gegen das Schema, ist in sich aber konsistent;
+eine Angleichung wäre ein eigener, gezählter Zug.
+
 **Die Groß-/Kleinschreibung ist ausgezählt, nicht geraten:** im Bestand stehen
 Gentilizia im **Spanischen zu 843:33 klein** und im **Italienischen zu 704:172
 groß**. Die 172 italienischen Kleinschreibungen sind fast alle die
