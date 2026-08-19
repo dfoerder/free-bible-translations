@@ -1,165 +1,248 @@
 # PARALLELEN_2CHR — die Verszuordnung, ausgemessen
 
 Erzeugt aus dem Quelltext, **versweise** gegen 1./2. Samuel, 1./2. Könige,
-1. Chronik, Esra, Nehemia und Jeremia. Eine frühere Fassung dieser Karte hat
-Kapitel gegen Kapitel gemessen und dabei jede Parallele übersehen, die über
-eine Kapitelgrenze der Quelle läuft — so galt 2Chr 5,1 als Sondergut, obwohl
-es mit 27 gemeinsamen Tokens die engste Parallele seines Kapitels zu
-**1Kön 7,51** ist. **Kapitelweise Messung reicht nicht.**
+1. Chronik, Esra, Nehemia und Jeremia.
 
-Gelistet ist je Vers die beste Entsprechung ab 8 gemeinsamen Tokens in Blöcken
-ab vier Wörtern, dazu der Versatz *innerhalb* des Verspaars und beide
-Verslängen. **Der Versatz ist eine Messung, keine Erlaubnis zum Übertragen** —
-er streut innerhalb eines Kapitels weit, und die Verslängen unterscheiden sich
-fast immer.
+**Messung:** gemeinsame Tokens in Blöcken ab **3** Wörtern, gelistet ab
+**6** Tokens gesamt. Der Versatz ist über dieselben Blöcke berechnet.
+**Kürzere Blöcke weiten die Spanne** — mehrere Agenten haben bei eigener
+Messung ab zwei Wörtern breitere Bereiche gefunden als hier stehen. Die Zahlen
+sind eine Orientierung, **keine Erlaubnis zum Übertragen**: jede Position ist
+in *beiden* Quelltexten selbst abzuleiten.
 
-`Esra`, `Neh` und `Jer` sind **noch nicht annotiert** und stehen als Vorlage
-nicht zur Verfügung; solche Zeilen sind mit `(nicht annotiert)` markiert.
+Eine frühere Fassung maß Kapitel gegen Kapitel und war blind für jede
+Parallele über eine Kapitelgrenze der Quelle (2Chr 5,1 ↔ 1Kön 7,51 galt als
+Sondergut). Eine zweite verlangte Blöcke ab vier Wörtern und übersah dadurch
+2Chr 7,4 · 7,8 · 7,19. **Beide Fehler haben die Agenten gefunden, weil sie
+selbst gemessen haben.**
 
-## 2Chr 1 — 18 Verse, 459 Tokens · 2 Verse mit Parallele · 28 gemeinsame Tokens (6 %)
+Wo ein **zweiter** Quellvers ebenfalls die Schwelle erreicht, ist er als
+`auch:`-Zeile angehängt — der Chronist zieht öfter zwei Verse zusammen.
+
+`Esra`, `Neh` und `Jer` sind **noch nicht annotiert** und als Vorlage nicht
+verfügbar; solche Zeilen sind markiert.
+
+## 2Chr 1 — 18 Verse, 459 Tokens · 7 Verse mit Parallele · 70 gemeinsame Tokens (15 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 1,2 | 1Chr 28,1 | 7 | +12 | 27 / 47 |
+| ↳ auch: | 1Chr 26,26 | 6 | +8 | 27 / 27 |
+| 1,4 | 1Chr 15,3 | 7 | +3 … +4 | 26 / 21 |
+| 1,11 | 1Kön 3,11 | 7 | -16 … -1 | 51 / 33 |
 | 1,14 | 1Kön 10,26 | 11 | -4 … -3 | 27 / 24 |
-| 1,17 | 1Kön 10,29 | 17 | +0 … +1 | 29 / 31 |
+| 1,15 | 1Kön 10,27 | 7 | -5 … -4 | 24 / 20 |
+| 1,16 | 1Kön 10,28 | 11 | +0 … +1 | 17 / 19 |
+| 1,17 | 1Kön 10,29 | 20 | +0 … +1 | 29 / 31 |
 
-## 2Chr 2 — 17 Verse, 501 Tokens · 3 Verse mit Parallele · 24 gemeinsame Tokens (4 %)
+## 2Chr 2 — 17 Verse, 501 Tokens · 7 Verse mit Parallele · 54 gemeinsame Tokens (10 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 2,2 | 2Sam 3,12 | 7 | -4 … +0 | 36 / 29 |
+| ↳ auch: | 2Kön 3,7 | 7 | +1 | 36 / 53 |
 | 2,3 | 1Kön 5,19 | 8 | +2 | 48 / 42 |
+| ↳ auch: | 1Chr 22,7 | 8 | +8 | 48 / 20 |
 | 2,5 | 1Kön 8,27 | 8 | +0 | 36 / 31 |
+| 2,7 | 1Kön 5,20 | 7 | -10 | 30 / 50 |
+| 2,10 | 1Kön 10,9 | 9 | +11 … +12 | 22 / 38 |
 | 2,11 | 1Kön 1,48 | 8 | +2 | 42 / 30 |
+| ↳ auch: | 1Kön 8,15 | 8 | -1 | 42 / 25 |
+| 2,13 | 1Kön 7,14 | 7 | +1 … +2 | 66 / 45 |
 
-## 2Chr 3 — 17 Verse, 384 Tokens · 0 Verse mit Parallele · 0 gemeinsame Tokens (0 %)
-
-**Sondergut** — kein Vers hat eine Entsprechung ab 8 gemeinsamen Tokens.
-
-## 2Chr 4 — 22 Verse, 436 Tokens · 4 Verse mit Parallele · 46 gemeinsame Tokens (10 %)
+## 2Chr 3 — 17 Verse, 384 Tokens · 1 Verse mit Parallele · 6 gemeinsame Tokens (1 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 4,4 | 1Kön 7,25 | 17 | -1 … +1 | 34 / 31 |
-| 4,5 | 1Kön 7,26 | 11 | +0 … +1 | 22 / 23 |
-| 4,13 | 1Kön 7,42 | 9 | +0 … +1 | 22 / 23 |
+| 3,1 | 1Chr 21,18 | 6 | -8 | 34 / 27 |
+| ↳ auch: | 1Chr 21,28 | 6 | -16 | 34 / 22 |
+
+## 2Chr 4 — 22 Verse, 436 Tokens · 10 Verse mit Parallele · 103 gemeinsame Tokens (23 %)
+
+| 2Chr | Parallele | Tok | Versatz im Vers | Längen |
+|---|---|---|---|---|
+| 4,1 | 1Kön 6,20 | 7 | -3 | 16 / 26 |
+| ↳ auch: | 1Kön 6,2 | 6 | +3 | 16 / 19 |
+| 4,2 | 1Kön 7,23 | 7 | +5 … +8 | 25 / 31 |
+| 4,4 | 1Kön 7,25 | 20 | -4 … +1 | 34 / 31 |
+| 4,5 | 1Kön 7,26 | 14 | +0 … +1 | 22 / 23 |
+| 4,11 | 1Kön 7,40 | 7 | -1 … +1 | 21 / 24 |
+| ↳ auch: | 1Kön 7,45 | 6 | -3 … +0 | 21 / 24 |
+| 4,12 | 1Kön 7,41 | 9 | -12 … +0 | 24 / 25 |
+| 4,13 | 1Kön 7,42 | 15 | +0 … +2 | 22 / 23 |
+| ↳ auch: | 1Kön 7,41 | 6 | -9 | 22 / 25 |
+| 4,16 | 1Kön 7,45 | 7 | -4 … -1 | 23 / 24 |
 | 4,17 | 1Kön 7,46 | 9 | +0 | 15 / 14 |
+| 4,19 | 1Kön 7,48 | 8 | +0 | 20 / 21 |
 
-## 2Chr 5 — 14 Verse, 383 Tokens · 10 Verse mit Parallele · 167 gemeinsame Tokens (43 %)
+## 2Chr 5 — 14 Verse, 383 Tokens · 11 Verse mit Parallele · 186 gemeinsame Tokens (48 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 5,1 | 1Kön 7,51 | 19 | +0 … +2 | 40 / 40 |
+| 5,1 | 1Kön 7,51 | 22 | +0 … +2 | 40 / 40 |
 | 5,2 | 1Kön 8,1 | 22 | +1 | 27 / 28 |
 | 5,4 | 1Kön 8,3 | 8 | +0 | 12 / 14 |
 | 5,5 | 1Kön 8,4 | 16 | -1 … +0 | 25 / 24 |
 | 5,6 | 1Kön 8,5 | 20 | -3 … +5 | 29 / 33 |
 | 5,7 | 1Kön 8,6 | 17 | -2 … +0 | 23 / 21 |
 | 5,8 | 1Kön 8,7 | 13 | +1 … +3 | 20 / 23 |
-| 5,9 | 1Kön 8,8 | 16 | -3 … +0 | 34 / 30 |
-| 5,10 | 1Kön 8,9 | 19 | +2 | 30 / 32 |
+| 5,9 | 1Kön 8,8 | 19 | -4 … +0 | 34 / 30 |
+| 5,10 | 1Kön 8,9 | 25 | +0 … +2 | 30 / 32 |
+| 5,13 | 1Kön 8,10 | 7 | -40 | 54 / 14 |
+| ↳ auch: | Esra 3,11 *(nicht annotiert)* | 6 | -28 … -16 | 54 / 40 |
 | 5,14 | 1Kön 8,11 | 17 | +0 | 21 / 22 |
 
-## 2Chr 6 — 42 Verse, 1233 Tokens · 30 Verse mit Parallele · 540 gemeinsame Tokens (43 %)
+## 2Chr 6 — 42 Verse, 1233 Tokens · 36 Verse mit Parallele · 618 gemeinsame Tokens (50 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 6,1 | 1Kön 8,12 | 12 | +0 | 12 / 12 |
+| 6,2 | 1Kön 8,13 | 9 | -3 … +0 | 20 / 18 |
+| 6,3 | 1Kön 8,14 | 7 | +1 | 15 / 19 |
 | 6,4 | 1Kön 8,15 | 23 | +0 | 25 / 25 |
-| 6,5 | 1Kön 8,16 | 8 | +4 … +5 | 42 / 45 |
+| ↳ auch: | 1Kön 1,48 | 8 | +3 | 25 / 30 |
+| 6,5 | 1Kön 8,16 | 14 | +4 … +5 | 42 / 45 |
 | 6,6 | 1Kön 8,16 | 9 | +23 | 22 / 45 |
 | 6,7 | 1Kön 8,17 | 10 | +3 | 15 / 18 |
+| ↳ auch: | 1Kön 5,19 | 9 | -1 … +0 | 15 / 42 |
 | 6,8 | 1Kön 8,18 | 11 | -2 … +0 | 20 / 25 |
 | 6,9 | 1Kön 8,19 | 16 | +0 … +4 | 19 / 23 |
+| ↳ auch: | 1Kön 5,19 | 6 | +23 | 19 / 42 |
 | 6,10 | 1Kön 8,20 | 31 | -1 … +1 | 39 / 40 |
+| ↳ auch: | 1Kön 8,17 | 9 | -22 | 39 / 18 |
+| 6,11 | 1Kön 8,21 | 10 | +0 … +2 | 21 / 29 |
+| 6,12 | 1Kön 8,22 | 9 | -2 … -1 | 18 / 18 |
+| 6,13 | 1Kön 7,27 | 6 | -5 | 40 / 18 |
 | 6,14 | 1Kön 8,23 | 16 | -2 … +1 | 36 / 34 |
-| 6,15 | 1Kön 8,24 | 24 | +0 | 33 / 33 |
+| ↳ auch: | 2Kön 19,15 | 6 | +4 … +7 | 36 / 30 |
+| 6,15 | 1Kön 8,24 | 27 | +0 | 33 / 33 |
 | 6,16 | 1Kön 8,25 | 32 | -7 … +0 | 51 / 44 |
+| ↳ auch: | 1Kön 9,5 | 11 | +0 … +4 | 51 / 32 |
 | 6,17 | 1Kön 8,26 | 10 | -1 | 16 / 17 |
 | 6,18 | 1Kön 8,27 | 26 | -2 | 33 / 31 |
-| 6,19 | 1Kön 8,28 | 11 | -3 … +0 | 25 / 26 |
+| 6,19 | 1Kön 8,28 | 14 | -3 … +0 | 25 / 26 |
 | 6,20 | 1Kön 8,29 | 17 | +0 | 35 / 34 |
 | 6,21 | 1Kön 8,30 | 15 | +0 | 31 / 26 |
+| ↳ auch: | 1Kön 8,52 | 8 | +4 | 31 / 22 |
 | 6,22 | 1Kön 8,31 | 22 | +0 | 27 / 28 |
 | 6,23 | 1Kön 8,32 | 17 | -2 | 33 / 31 |
-| 6,24 | 1Kön 8,33 | 14 | +0 | 31 / 34 |
+| 6,24 | 1Kön 8,33 | 17 | +0 … +7 | 31 / 34 |
 | 6,25 | 1Kön 8,34 | 11 | -4 … -2 | 27 / 23 |
-| 6,26 | 1Kön 8,35 | 17 | +0 | 35 / 38 |
-| 6,27 | 1Kön 8,36 | 23 | -3 … -2 | 40 / 37 |
+| ↳ auch: | Jer 30,3 *(nicht annotiert)* | 10 | +5 … +11 | 27 / 40 |
+| 6,26 | 1Kön 8,35 | 20 | +0 | 35 / 38 |
+| 6,27 | 1Kön 8,36 | 26 | -3 … -2 | 40 / 37 |
+| ↳ auch: | 1Kön 8,34 | 6 | -15 … -2 | 40 / 23 |
+| 6,28 | 1Kön 8,37 | 7 | -1 | 33 / 29 |
 | 6,29 | 1Kön 8,38 | 11 | -7 … -3 | 32 / 29 |
-| 6,31 | 1Kön 8,40 | 12 | -4 | 21 / 17 |
+| 6,31 | 1Kön 8,40 | 15 | -4 … +0 | 21 / 17 |
 | 6,32 | 1Kön 8,41 | 18 | +0 | 33 / 21 |
+| ↳ auch: | 1Kön 8,42 | 7 | -13 … -9 | 33 / 25 |
 | 6,33 | 1Kön 8,43 | 31 | -1 … +2 | 47 / 49 |
 | 6,34 | 1Kön 8,44 | 27 | +0 | 39 / 40 |
+| ↳ auch: | 1Kön 8,48 | 18 | +4 … +14 | 39 / 54 |
 | 6,36 | 1Kön 8,46 | 13 | +0 | 36 / 34 |
 | 6,37 | 1Kön 8,47 | 25 | +2 … +3 | 33 / 36 |
-| 6,38 | 1Kön 8,48 | 28 | +1 … +8 | 45 / 54 |
+| 6,38 | 1Kön 8,48 | 34 | +1 … +9 | 45 / 54 |
+| ↳ auch: | 1Kön 8,44 | 16 | -6 | 45 / 40 |
 
-## 2Chr 7 — 22 Verse, 628 Tokens · 9 Verse mit Parallele · 115 gemeinsame Tokens (18 %)
+## 2Chr 7 — 22 Verse, 628 Tokens · 18 Verse mit Parallele · 204 gemeinsame Tokens (32 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 7,1 | 2Kön 1,10 | 6 | +17 | 26 / 34 |
+| ↳ auch: | 1Kön 8,11 | 6 | -6 | 26 / 22 |
+| 7,2 | 1Kön 8,11 | 10 | +0 … +2 | 21 / 22 |
+| 7,4 | 1Kön 8,62 | 9 | +0 … +1 | 12 / 13 |
+| ↳ auch: | 1Sam 11,15 | 6 | -1 … +3 | 12 / 32 |
 | 7,5 | 1Kön 8,63 | 10 | +3 | 20 / 23 |
-| 7,7 | 1Kön 8,64 | 9 | +3 … +4 | 42 / 47 |
-| 7,10 | 1Kön 8,66 | 11 | +0 | 35 / 35 |
-| 7,16 | 1Kön 9,3 | 11 | +20 … +21 | 25 / 44 |
-| 7,17 | 1Kön 9,4 | 13 | +0 … +5 | 23 / 28 |
+| 7,6 | 1Chr 16,41 | 9 | -10 … -6 | 46 / 24 |
+| 7,7 | 1Kön 8,64 | 12 | +3 … +4 | 42 / 47 |
+| 7,8 | 1Kön 8,65 | 8 | -3 … +0 | 24 / 37 |
+| 7,10 | 1Kön 8,66 | 14 | -3 … +0 | 35 / 35 |
+| 7,11 | 1Kön 9,1 | 6 | -1 … +2 | 31 / 22 |
+| 7,12 | 1Kön 9,3 | 7 | -6 | 24 / 44 |
+| 7,14 | Jer 7,10 *(nicht annotiert)* | 6 | +8 | 36 / 31 |
+| ↳ auch: | Jer 7,14 *(nicht annotiert)* | 6 | +2 | 36 / 32 |
+| 7,16 | 1Kön 9,3 | 14 | +19 … +21 | 25 / 44 |
+| 7,17 | 1Kön 9,4 | 16 | +0 … +5 | 23 / 28 |
 | 7,18 | 1Kön 9,5 | 20 | +0 … +3 | 29 / 32 |
-| 7,20 | 1Kön 9,7 | 11 | +0 | 38 / 38 |
+| ↳ auch: | 1Kön 8,25 | 6 | -2 | 29 / 44 |
+| 7,19 | 1Kön 9,6 | 7 | +0 … +7 | 25 / 30 |
+| 7,20 | 1Kön 9,7 | 14 | +0 | 38 / 38 |
 | 7,21 | 1Kön 9,8 | 11 | +1 | 27 / 28 |
-| 7,22 | 1Kön 9,9 | 19 | -2 … +0 | 41 / 41 |
+| 7,22 | 1Kön 9,9 | 25 | -2 … +0 | 41 / 41 |
+| ↳ auch: | Jer 22,9 *(nicht annotiert)* | 8 | -11 … +0 | 41 / 21 |
 
-## 2Chr 8 — 18 Verse, 424 Tokens · 2 Verse mit Parallele · 24 gemeinsame Tokens (5 %)
+## 2Chr 8 — 18 Verse, 424 Tokens · 8 Verse mit Parallele · 69 gemeinsame Tokens (16 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 8,1 | 1Kön 9,10 | 9 | +0 … +5 | 16 / 19 |
 | 8,6 | 1Kön 9,19 | 11 | -2 … +0 | 31 / 30 |
+| 8,7 | 1Kön 9,20 | 6 | +0 | 17 / 17 |
+| 8,8 | 1Kön 9,21 | 7 | -1 … +2 | 22 / 28 |
 | 8,11 | 1Kön 9,24 | 13 | -1 … +0 | 47 / 25 |
+| 8,12 | 1Kön 9,25 | 6 | -2 … +0 | 21 / 30 |
+| 8,16 | 1Kön 7,51 | 7 | +0 … +25 | 27 / 40 |
+| ↳ auch: | Jer 26,2 *(nicht annotiert)* | 7 | -2 … +1 | 27 / 40 |
+| 8,18 | 1Kön 9,28 | 10 | -19 … -18 | 33 / 14 |
 
-## 2Chr 9 — 31 Verse, 737 Tokens · 22 Verse mit Parallele · 284 gemeinsame Tokens (38 %)
+## 2Chr 9 — 31 Verse, 737 Tokens · 24 Verse mit Parallele · 338 gemeinsame Tokens (45 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 9,1 | 1Kön 10,2 | 18 | -17 … -10 | 51 / 34 |
-| 9,3 | 1Kön 10,4 | 10 | +0 … +1 | 16 / 17 |
-| 9,4 | 1Kön 10,5 | 11 | -3 … +1 | 38 / 35 |
+| 9,1 | 1Kön 10,2 | 24 | -19 … -10 | 51 / 34 |
+| ↳ auch: | 1Kön 10,1 | 10 | -7 … +0 | 51 / 29 |
+| 9,3 | 1Kön 10,4 | 13 | +0 … +1 | 16 / 17 |
+| 9,4 | 1Kön 10,5 | 17 | -3 … +1 | 38 / 35 |
 | 9,5 | 1Kön 10,6 | 19 | +0 | 19 / 19 |
 | 9,6 | 1Kön 10,7 | 22 | -1 … +1 | 38 / 39 |
-| 9,7 | 1Kön 10,8 | 10 | -1 | 18 / 17 |
-| 9,8 | 1Kön 10,9 | 15 | -11 … +0 | 49 / 38 |
+| 9,7 | 1Kön 10,8 | 13 | -1 … +0 | 18 / 17 |
+| 9,8 | 1Kön 10,9 | 24 | -11 … +2 | 49 / 38 |
 | 9,9 | 1Kön 10,10 | 21 | +0 … +2 | 29 / 31 |
 | 9,10 | 1Kön 10,11 | 8 | -4 … -2 | 18 / 16 |
-| 9,11 | 1Kön 10,12 | 8 | +1 | 36 / 41 |
+| 9,11 | 1Kön 10,12 | 11 | +0 … +1 | 36 / 41 |
 | 9,12 | 1Kön 10,13 | 22 | -2 … +1 | 35 / 33 |
+| 9,15 | 1Kön 10,16 | 7 | -3 … -1 | 19 / 16 |
 | 9,17 | 1Kön 10,18 | 9 | -8 | 23 / 17 |
-| 9,18 | 1Kön 10,19 | 8 | -1 … +0 | 23 / 25 |
+| ↳ auch: | 1Kön 10,17 | 9 | +12 | 23 / 21 |
+| 9,18 | 1Kön 10,19 | 11 | -1 … +2 | 23 / 25 |
 | 9,20 | 1Kön 10,21 | 14 | +0 … +1 | 25 / 27 |
 | 9,21 | 1Kön 10,22 | 13 | -1 | 27 / 26 |
 | 9,22 | 1Kön 10,23 | 12 | +0 | 12 / 12 |
 | 9,23 | 1Kön 10,24 | 10 | +2 | 19 / 21 |
-| 9,24 | 1Kön 10,25 | 9 | +0 | 18 / 19 |
+| 9,24 | 1Kön 10,25 | 12 | +0 … +1 | 18 / 19 |
 | 9,26 | 1Kön 5,1 | 11 | +1 | 18 / 29 |
-| 9,29 | 1Chr 29,29 | 9 | -4 … +1 | 40 / 30 |
+| 9,27 | 1Kön 10,27 | 8 | -3 … -2 | 22 / 20 |
+| 9,29 | 1Chr 29,29 | 12 | -5 … +1 | 40 / 30 |
+| ↳ auch: | 1Kön 11,41 | 8 | +0 | 40 / 26 |
 | 9,30 | 1Kön 11,42 | 10 | +0 … +2 | 10 / 12 |
 | 9,31 | 2Kön 15,38 | 15 | -1 … +0 | 22 / 22 |
+| ↳ auch: | 1Kön 15,24 | 14 | -1 … +0 | 22 / 22 |
 
-## 2Chr 10 — 19 Verse, 502 Tokens · 15 Verse mit Parallele · 228 gemeinsame Tokens (45 %)
+## 2Chr 10 — 19 Verse, 502 Tokens · 17 Verse mit Parallele · 270 gemeinsame Tokens (53 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 10,1 | 1Kön 12,1 | 15 | -1 … +0 | 17 / 16 |
 | 10,2 | 1Kön 12,2 | 11 | +0 … +2 | 25 / 25 |
-| 10,4 | 1Kön 12,4 | 15 | -1 … +0 | 30 / 29 |
-| 10,5 | 1Kön 12,5 | 9 | +2 | 14 / 17 |
-| 10,6 | 1Kön 12,6 | 14 | -1 … +0 | 30 / 29 |
+| 10,4 | 1Kön 12,4 | 21 | -2 … +0 | 30 / 29 |
+| 10,5 | 1Kön 12,5 | 12 | +0 … +2 | 14 / 17 |
+| 10,6 | 1Kön 12,6 | 17 | -1 … +0 | 30 / 29 |
 | 10,7 | 1Kön 12,7 | 9 | -1 … +0 | 25 / 26 |
 | 10,8 | 1Kön 12,8 | 18 | -3 … +0 | 28 / 23 |
-| 10,9 | 1Kön 12,9 | 16 | +0 … +1 | 26 / 27 |
+| 10,9 | 1Kön 12,9 | 19 | +0 … +1 | 26 / 27 |
 | 10,10 | 1Kön 12,10 | 30 | -3 … +1 | 46 / 47 |
 | 10,11 | 1Kön 12,11 | 13 | -1 … +0 | 30 / 29 |
-| 10,14 | 1Kön 12,14 | 20 | +0 | 38 / 38 |
+| ↳ auch: | 1Kön 12,14 | 9 | +8 | 30 / 38 |
+| 10,13 | 1Kön 12,13 | 8 | +0 … +1 | 14 / 14 |
+| 10,14 | 1Kön 12,14 | 23 | +0 | 38 / 38 |
+| ↳ auch: | 1Kön 12,11 | 10 | -9 | 38 / 29 |
 | 10,15 | 1Kön 12,15 | 19 | +0 … +2 | 34 / 36 |
-| 10,16 | 1Kön 12,16 | 15 | -1 … +0 | 54 / 47 |
+| ↳ auch: | 1Kön 15,29 | 6 | +8 … +10 | 34 / 39 |
+| 10,16 | 1Kön 12,16 | 24 | -3 … +0 | 54 / 47 |
 | 10,17 | 1Kön 12,17 | 13 | +0 | 14 / 14 |
+| 10,18 | 1Kön 12,18 | 7 | +0 … +2 | 28 / 30 |
 | 10,19 | 1Kön 12,19 | 11 | +0 | 12 / 12 |
 
 ## 2Chr 11 — 23 Verse, 423 Tokens · 4 Verse mit Parallele · 68 gemeinsame Tokens (16 %)
@@ -168,250 +251,461 @@ nicht zur Verfügung; solche Zeilen sind mit `(nicht annotiert)` markiert.
 |---|---|---|---|---|
 | 11,1 | 1Kön 12,21 | 26 | +0 … +4 | 30 / 36 |
 | 11,2 | 1Kön 12,22 | 9 | -1 … +0 | 11 / 10 |
+| ↳ auch: | 1Sam 15,10 | 7 | +0 | 11 / 8 |
 | 11,3 | 1Kön 12,23 | 9 | +0 | 16 / 20 |
 | 11,4 | 1Kön 12,24 | 24 | +0 … +2 | 38 / 44 |
 
-## 2Chr 12 — 16 Verse, 425 Tokens · 7 Verse mit Parallele · 114 gemeinsame Tokens (26 %)
+## 2Chr 12 — 16 Verse, 425 Tokens · 8 Verse mit Parallele · 127 gemeinsame Tokens (29 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 12,2 | 1Kön 14,25 | 14 | +0 | 22 / 15 |
-| 12,9 | 1Kön 14,26 | 12 | -10 … -9 | 39 / 29 |
+| ↳ auch: | 2Kön 18,13 | 6 | +0 | 22 / 21 |
+| 12,5 | 1Sam 2,27 | 7 | -13 | 43 / 33 |
+| ↳ auch: | 2Kön 1,6 | 7 | -12 … +0 | 43 / 63 |
+| 12,9 | 1Kön 14,26 | 15 | -10 … -9 | 39 / 29 |
+| ↳ auch: | 1Kön 14,25 | 8 | +5 | 39 / 15 |
 | 12,10 | 1Kön 14,27 | 17 | +0 | 22 / 23 |
-| 12,11 | 1Kön 14,28 | 15 | -1 … +0 | 24 / 23 |
+| 12,11 | 1Kön 14,28 | 18 | -1 … +0 | 24 / 23 |
 | 12,13 | 1Kön 14,21 | 32 | -2 | 49 / 49 |
+| ↳ auch: | 1Kön 22,42 | 11 | -28 … -10 | 49 / 24 |
 | 12,15 | 1Chr 29,29 | 9 | +2 … +8 | 32 / 30 |
 | 12,16 | 1Kön 15,8 | 15 | +0 | 17 / 17 |
+| ↳ auch: | 1Kön 22,51 | 15 | +0 … +3 | 17 / 20 |
 
-## 2Chr 13 — 23 Verse, 578 Tokens · 2 Verse mit Parallele · 25 gemeinsame Tokens (4 %)
+## 2Chr 13 — 23 Verse, 578 Tokens · 4 Verse mit Parallele · 41 gemeinsame Tokens (7 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 13,1 | 1Kön 15,1 | 8 | +0 … +3 | 11 / 14 |
+| ↳ auch: | 1Kön 15,9 | 7 | +0 … +2 | 11 / 13 |
 | 13,2 | 1Kön 15,2 | 9 | +0 | 23 / 15 |
+| ↳ auch: | 2Kön 23,31 | 8 | +9 | 23 / 26 |
+| 13,22 | 1Kön 16,5 | 8 | +0 | 23 / 24 |
+| ↳ auch: | 1Kön 16,27 | 8 | +0 | 23 / 28 |
 | 13,23 | 1Kön 15,8 | 16 | +0 | 27 / 17 |
+| ↳ auch: | 1Kön 22,51 | 15 | +0 … +3 | 27 / 20 |
 
-## 2Chr 14 — 14 Verse, 356 Tokens · 0 Verse mit Parallele · 0 gemeinsame Tokens (0 %)
+## 2Chr 14 — 14 Verse, 356 Tokens · 2 Verse mit Parallele · 12 gemeinsame Tokens (3 %)
 
-**Sondergut** — kein Vers hat eine Entsprechung ab 8 gemeinsamen Tokens.
+| 2Chr | Parallele | Tok | Versatz im Vers | Längen |
+|---|---|---|---|---|
+| 14,1 | 2Kön 12,3 | 6 | +0 | 11 / 15 |
+| 14,3 | 1Chr 29,20 | 6 | +11 | 20 / 33 |
 
-## 2Chr 15 — 19 Verse, 438 Tokens · 1 Verse mit Parallele · 8 gemeinsame Tokens (1 %)
+## 2Chr 15 — 19 Verse, 438 Tokens · 3 Verse mit Parallele · 26 gemeinsame Tokens (5 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 15,12 | 2Kön 23,3 | 8 | +12 | 19 / 52 |
+| ↳ auch: | 1Kön 8,48 | 7 | -7 … -6 | 19 / 54 |
+| 15,15 | 1Chr 29,9 | 6 | +0 … +2 | 32 / 22 |
+| 15,18 | 1Kön 15,15 | 12 | +4 … +6 | 21 / 24 |
+| ↳ auch: | 1Kön 7,51 | 6 | +7 … +17 | 21 / 40 |
 
-## 2Chr 16 — 14 Verse, 398 Tokens · 5 Verse mit Parallele · 72 gemeinsame Tokens (18 %)
+## 2Chr 16 — 14 Verse, 398 Tokens · 7 Verse mit Parallele · 101 gemeinsame Tokens (25 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 16,1 | 1Kön 15,17 | 9 | -7 … -6 | 30 / 29 |
-| 16,2 | 1Kön 15,18 | 14 | +2 … +16 | 32 / 48 |
-| 16,3 | 1Kön 15,19 | 28 | +0 … +4 | 34 / 38 |
+| 16,1 | 1Kön 15,17 | 12 | -7 … -1 | 30 / 29 |
+| 16,2 | 1Kön 15,18 | 17 | +0 … +16 | 32 / 48 |
+| ↳ auch: | 2Kön 16,8 | 6 | -1 … +1 | 32 / 28 |
+| 16,3 | 1Kön 15,19 | 31 | +0 … +4 | 34 / 38 |
 | 16,4 | 1Kön 15,20 | 10 | +0 | 21 / 22 |
-| 16,6 | 1Kön 15,22 | 11 | -1 … +2 | 30 / 33 |
+| 16,6 | 1Kön 15,22 | 17 | -1 … +3 | 30 / 33 |
+| 16,7 | 1Kön 3,11 | 8 | -17 … -13 | 43 / 33 |
+| 16,14 | 2Kön 12,22 | 6 | +11 … +14 | 45 / 32 |
+| ↳ auch: | 2Kön 9,28 | 6 | +6 | 45 / 19 |
 
-## 2Chr 17 — 19 Verse, 338 Tokens · 0 Verse mit Parallele · 0 gemeinsame Tokens (0 %)
+## 2Chr 17 — 19 Verse, 338 Tokens · 1 Verse mit Parallele · 7 gemeinsame Tokens (2 %)
 
-**Sondergut** — kein Vers hat eine Entsprechung ab 8 gemeinsamen Tokens.
+| 2Chr | Parallele | Tok | Versatz im Vers | Längen |
+|---|---|---|---|---|
+| 17,1 | 1Kön 15,24 | 7 | +14 | 13 / 22 |
 
-## 2Chr 18 — 34 Verse, 892 Tokens · 25 Verse mit Parallele · 416 gemeinsame Tokens (46 %)
+## 2Chr 18 — 34 Verse, 892 Tokens · 30 Verse mit Parallele · 482 gemeinsame Tokens (54 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 18,3 | 1Kön 22,4 | 13 | -8 … -2 | 41 / 36 |
-| 18,5 | 1Kön 22,6 | 15 | +2 | 36 / 41 |
-| 18,7 | 1Kön 22,8 | 20 | +1 … +4 | 46 / 45 |
+| ↳ auch: | 2Kön 3,7 | 10 | -1 … +12 | 41 / 53 |
+| 18,5 | 1Kön 22,6 | 21 | +0 … +2 | 36 / 41 |
+| ↳ auch: | 1Kön 22,15 | 7 | +0 | 36 / 43 |
+| 18,6 | 1Kön 22,7 | 9 | -1 … +0 | 16 / 15 |
+| 18,7 | 1Kön 22,8 | 23 | +0 … +4 | 46 / 45 |
+| ↳ auch: | 1Kön 22,18 | 6 | -12 … -11 | 46 / 23 |
 | 18,8 | 1Kön 22,9 | 14 | -1 … +0 | 16 / 15 |
 | 18,9 | 1Kön 22,10 | 25 | -2 … +3 | 32 / 30 |
-| 18,10 | 1Kön 22,11 | 19 | +0 … +2 | 26 / 28 |
+| ↳ auch: | 1Kön 22,29 | 8 | +2 | 32 / 15 |
+| 18,10 | 1Kön 22,11 | 22 | +0 … +2 | 26 / 28 |
+| ↳ auch: | 1Kön 20,13 | 6 | +0 | 26 / 36 |
+| 18,11 | 1Kön 22,12 | 12 | +0 … +2 | 24 / 24 |
+| ↳ auch: | 2Kön 18,30 | 8 | -1 … +5 | 24 / 31 |
+| 18,12 | 1Kön 22,13 | 6 | +0 … +4 | 32 / 30 |
 | 18,13 | 1Kön 22,14 | 11 | -1 | 16 / 15 |
+| ↳ auch: | 2Kön 5,20 | 6 | +26 | 16 / 44 |
 | 18,14 | 1Kön 22,15 | 20 | +0 | 40 / 43 |
+| ↳ auch: | 1Kön 22,6 | 11 | +2 | 40 / 41 |
 | 18,15 | 1Kön 22,16 | 17 | +0 … +1 | 23 / 23 |
 | 18,16 | 1Kön 22,17 | 22 | +0 … +1 | 31 / 32 |
-| 18,17 | 1Kön 22,18 | 12 | +0 | 21 / 23 |
+| 18,17 | 1Kön 22,18 | 15 | +0 | 21 / 23 |
+| ↳ auch: | 1Kön 22,8 | 7 | +15 | 21 / 45 |
 | 18,18 | 1Kön 22,19 | 23 | +1 | 27 / 28 |
 | 18,19 | 1Kön 22,20 | 12 | -3 … +1 | 29 / 26 |
 | 18,20 | 1Kön 22,21 | 13 | +0 … +2 | 21 / 21 |
 | 18,21 | 1Kön 22,22 | 22 | -3 … +1 | 31 / 33 |
+| 18,22 | 1Kön 22,23 | 16 | +0 … +1 | 23 / 24 |
 | 18,23 | 1Kön 22,24 | 13 | +0 | 30 / 30 |
 | 18,24 | 1Kön 22,25 | 18 | +0 | 22 / 22 |
 | 18,25 | 1Kön 22,26 | 18 | +0 | 18 / 18 |
 | 18,26 | 1Kön 22,27 | 19 | +1 … +2 | 21 / 23 |
 | 18,27 | 1Kön 22,28 | 16 | +0 | 23 / 23 |
 | 18,28 | 1Kön 22,29 | 12 | +0 | 16 / 15 |
+| ↳ auch: | 1Kön 22,10 | 8 | -2 | 16 / 30 |
 | 18,29 | 1Kön 22,30 | 15 | +0 | 34 / 33 |
+| ↳ auch: | 1Kön 22,8 | 6 | +0 | 34 / 45 |
 | 18,30 | 1Kön 22,31 | 16 | -3 … +0 | 24 / 21 |
+| 18,31 | 1Kön 22,32 | 8 | -4 … +0 | 35 / 20 |
 | 18,32 | 1Kön 22,33 | 12 | -1 | 17 / 16 |
 | 18,33 | 1Kön 22,34 | 19 | +0 … +4 | 35 / 38 |
 
-## 2Chr 19 — 11 Verse, 317 Tokens · 0 Verse mit Parallele · 0 gemeinsame Tokens (0 %)
-
-**Sondergut** — kein Vers hat eine Entsprechung ab 8 gemeinsamen Tokens.
-
-## 2Chr 20 — 37 Verse, 984 Tokens · 3 Verse mit Parallele · 41 gemeinsame Tokens (4 %)
+## 2Chr 19 — 11 Verse, 317 Tokens · 1 Verse mit Parallele · 6 gemeinsame Tokens (1 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 20,31 | 1Kön 22,42 | 18 | -4 | 26 / 24 |
-| 20,32 | 1Kön 22,43 | 14 | +0 | 19 / 19 |
-| 20,34 | 1Kön 22,46 | 9 | +0 | 32 / 29 |
+| 19,10 | 1Chr 13,2 | 6 | +19 … +33 | 52 / 51 |
+| ↳ auch: | 1Sam 14,34 | 6 | -17 … +1 | 52 / 56 |
 
-## 2Chr 21 — 20 Verse, 528 Tokens · 8 Verse mit Parallele · 119 gemeinsame Tokens (22 %)
+## 2Chr 20 — 37 Verse, 984 Tokens · 8 Verse mit Parallele · 78 gemeinsame Tokens (7 %)
+
+| 2Chr | Parallele | Tok | Versatz im Vers | Längen |
+|---|---|---|---|---|
+| 20,6 | 1Kön 8,23 | 7 | -3 … +0 | 31 / 34 |
+| ↳ auch: | 1Chr 29,12 | 6 | -9 | 31 / 27 |
+| 20,14 | Neh 11,22 *(nicht annotiert)* | 7 | -7 … -6 | 30 / 33 |
+| ↳ auch: | Neh 11,4 *(nicht annotiert)* | 6 | +3 … +5 | 30 / 34 |
+| 20,18 | 1Kön 1,31 | 8 | +0 | 25 / 23 |
+| 20,19 | 1Kön 16,33 | 6 | -3 | 25 / 23 |
+| ↳ auch: | Esra 6,21 *(nicht annotiert)* | 6 | +10 | 25 / 32 |
+| 20,31 | 1Kön 22,42 | 21 | -4 … -2 | 26 / 24 |
+| ↳ auch: | 2Kön 15,33 | 14 | -4 | 26 / 24 |
+| 20,32 | 1Kön 22,43 | 14 | +0 | 19 / 19 |
+| 20,33 | 2Kön 12,4 | 6 | +0 | 21 / 17 |
+| ↳ auch: | 2Kön 15,4 | 6 | +0 | 21 / 17 |
+| 20,34 | 1Kön 22,46 | 9 | +0 | 32 / 29 |
+| ↳ auch: | 1Kön 14,19 | 8 | +0 | 32 / 23 |
+
+## 2Chr 21 — 20 Verse, 528 Tokens · 9 Verse mit Parallele · 128 gemeinsame Tokens (24 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 21,1 | 1Kön 22,51 | 19 | +0 | 20 / 20 |
+| ↳ auch: | 1Kön 15,24 | 17 | +0 … +2 | 20 / 22 |
 | 21,5 | 2Kön 8,17 | 13 | +0 | 15 / 15 |
+| ↳ auch: | 1Kön 14,21 | 11 | +8 | 15 / 49 |
 | 21,6 | 2Kön 8,18 | 15 | -1 … +1 | 27 / 28 |
+| ↳ auch: | 2Kön 15,18 | 6 | -21 | 27 / 27 |
 | 21,7 | 2Kön 8,19 | 15 | -8 … +0 | 34 / 26 |
 | 21,8 | 2Kön 8,20 | 15 | -1 … +0 | 16 / 15 |
 | 21,9 | 2Kön 8,21 | 16 | -2 … +0 | 29 / 35 |
 | 21,10 | 2Kön 8,22 | 11 | +0 | 28 / 16 |
+| ↳ auch: | 2Kön 21,22 | 6 | -18 | 28 / 16 |
+| 21,12 | 2Kön 19,20 | 9 | -13 … -1 | 40 / 33 |
+| ↳ auch: | Jer 34,2 *(nicht annotiert)* | 9 | -11 … -8 | 40 / 39 |
 | 21,20 | 2Kön 8,17 | 15 | +0 | 36 / 15 |
+| ↳ auch: | 2Kön 16,2 | 12 | +0 | 36 / 31 |
 
-## 2Chr 22 — 12 Verse, 398 Tokens · 5 Verse mit Parallele · 96 gemeinsame Tokens (24 %)
+## 2Chr 22 — 12 Verse, 398 Tokens · 6 Verse mit Parallele · 105 gemeinsame Tokens (26 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 22,1 | 2Kön 8,25 | 6 | -19 | 38 / 19 |
 | 22,2 | 2Kön 8,26 | 18 | +0 | 22 / 28 |
-| 22,5 | 2Kön 8,28 | 16 | -7 … -4 | 32 / 25 |
+| ↳ auch: | 2Kön 21,19 | 15 | +0 | 22 / 27 |
+| 22,5 | 2Kön 8,28 | 19 | -7 … -4 | 32 / 25 |
+| ↳ auch: | 2Kön 8,29 | 6 | +6 | 32 / 54 |
 | 22,6 | 2Kön 8,29 | 37 | +2 … +3 | 51 / 54 |
+| ↳ auch: | 2Kön 9,15 | 12 | -1 … +0 | 51 / 42 |
 | 22,10 | 2Kön 11,1 | 9 | +0 | 24 / 18 |
 | 22,11 | 2Kön 11,2 | 16 | -12 … +6 | 56 / 44 |
 
-## 2Chr 23 — 21 Verse, 631 Tokens · 4 Verse mit Parallele · 57 gemeinsame Tokens (9 %)
+## 2Chr 23 — 21 Verse, 631 Tokens · 16 Verse mit Parallele · 157 gemeinsame Tokens (24 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 23,1 | 2Kön 11,4 | 7 | +0 … +18 | 36 / 46 |
+| 23,2 | Neh 12,27 *(nicht annotiert)* | 7 | -2 … +2 | 22 / 35 |
 | 23,4 | 2Kön 11,5 | 9 | +4 | 22 / 27 |
+| 23,7 | 2Kön 11,8 | 7 | -6 … -5 | 31 / 26 |
+| ↳ auch: | 2Kön 11,11 | 6 | -1 … +0 | 31 / 30 |
+| 23,8 | 2Kön 11,9 | 10 | -3 … -2 | 36 / 31 |
 | 23,10 | 2Kön 11,11 | 16 | +3 … +4 | 31 / 30 |
+| 23,11 | 2Kön 11,12 | 12 | +2 … +5 | 32 / 37 |
+| 23,12 | 2Kön 11,13 | 7 | -4 … +0 | 21 / 17 |
+| 23,13 | 2Kön 11,14 | 10 | -1 … +1 | 46 / 38 |
+| ↳ auch: | 2Sam 6,5 | 6 | -22 … -18 | 46 / 22 |
 | 23,14 | 2Kön 11,15 | 24 | -9 … +0 | 48 / 39 |
 | 23,15 | 2Kön 11,16 | 8 | +0 | 23 / 25 |
+| 23,16 | 2Kön 11,17 | 7 | +1 | 20 / 30 |
+| 23,17 | 2Kön 11,18 | 6 | -1 … +0 | 29 / 40 |
+| 23,18 | Neh 10,35 *(nicht annotiert)* | 7 | +5 … +11 | 44 / 43 |
+| ↳ auch: | Esra 3,2 *(nicht annotiert)* | 7 | +5 | 44 / 42 |
+| 23,20 | 2Kön 11,19 | 9 | -4 … -2 | 46 / 41 |
+| ↳ auch: | Esra 3,11 *(nicht annotiert)* | 6 | +8 … +12 | 46 / 40 |
+| 23,21 | 2Kön 11,20 | 11 | +0 … +7 | 20 / 26 |
 
-## 2Chr 24 — 27 Verse, 766 Tokens · 3 Verse mit Parallele · 35 gemeinsame Tokens (4 %)
+## 2Chr 24 — 27 Verse, 766 Tokens · 10 Verse mit Parallele · 82 gemeinsame Tokens (10 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 24,1 | 1Kön 22,42 | 14 | +0 | 21 / 24 |
+| ↳ auch: | 2Kön 14,2 | 14 | +0 | 21 / 23 |
+| 24,2 | 2Kön 12,3 | 10 | +0 … +4 | 11 / 15 |
 | 24,11 | 2Kön 12,11 | 13 | -10 … -8 | 51 / 33 |
+| 24,12 | 1Chr 26,27 | 7 | -26 | 40 / 14 |
+| 24,16 | 2Kön 12,22 | 6 | +14 … +17 | 22 / 32 |
+| 24,18 | Esra 1,3 *(nicht annotiert)* | 6 | +19 | 28 / 37 |
+| 24,20 | Jer 42,9 *(nicht annotiert)* | 6 | -16 | 47 / 24 |
+| 24,24 | 2Kön 21,22 | 6 | -20 | 37 / 16 |
+| 24,25 | 2Kön 21,23 | 6 | -11 | 49 / 14 |
+| ↳ auch: | 2Kön 12,22 | 6 | -21 … -18 | 49 / 32 |
 | 24,27 | 2Kön 12,22 | 8 | -5 | 37 / 32 |
 
-## 2Chr 25 — 28 Verse, 809 Tokens · 10 Verse mit Parallele · 157 gemeinsame Tokens (19 %)
+## 2Chr 25 — 28 Verse, 809 Tokens · 16 Verse mit Parallele · 210 gemeinsame Tokens (25 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 25,1 | 2Kön 14,2 | 18 | +0 | 21 / 23 |
+| ↳ auch: | 2Kön 18,2 | 17 | +0 | 21 / 24 |
+| 25,2 | 2Kön 14,3 | 6 | +0 | 11 / 22 |
+| ↳ auch: | 2Kön 15,3 | 6 | +0 | 11 / 11 |
 | 25,3 | 2Kön 14,5 | 11 | +4 | 17 / 21 |
-| 25,4 | 2Kön 14,6 | 15 | -1 … +4 | 42 / 46 |
+| 25,4 | 2Kön 14,6 | 18 | -1 … +4 | 42 / 46 |
+| 25,5 | 1Chr 28,1 | 6 | +9 | 46 / 47 |
+| 25,15 | 1Chr 13,10 | 7 | +0 | 36 / 27 |
 | 25,17 | 2Kön 14,8 | 11 | -5 | 30 / 27 |
 | 25,18 | 2Kön 14,9 | 32 | -5 … +0 | 49 / 44 |
+| ↳ auch: | 2Kön 14,11 | 6 | +6 … +13 | 49 / 29 |
 | 25,19 | 2Kön 14,10 | 17 | -2 … +0 | 34 / 34 |
 | 25,21 | 2Kön 14,11 | 11 | +5 … +10 | 24 / 29 |
+| ↳ auch: | 2Kön 14,13 | 6 | -4 … -2 | 24 / 41 |
 | 25,23 | 2Kön 14,13 | 19 | -3 … +2 | 38 / 41 |
-| 25,24 | 2Kön 14,14 | 8 | +0 | 31 / 30 |
-| 25,25 | 2Kön 14,17 | 15 | +0 | 24 / 26 |
+| 25,24 | 2Kön 14,14 | 11 | +0 | 31 / 30 |
+| 25,25 | 2Kön 14,17 | 21 | +0 … +2 | 24 / 26 |
+| ↳ auch: | 2Kön 14,13 | 8 | -4 … +0 | 24 / 41 |
+| 25,26 | 1Kön 14,19 | 8 | +0 | 24 / 23 |
+| ↳ auch: | 1Kön 16,5 | 8 | +0 | 24 / 24 |
+| 25,27 | 2Kön 14,19 | 6 | -6 … -5 | 27 / 21 |
+| 25,28 | 2Kön 14,20 | 8 | +0 … +2 | 16 / 19 |
+| ↳ auch: | 2Kön 12,22 | 7 | +8 | 16 / 32 |
 
-## 2Chr 26 — 23 Verse, 606 Tokens · 3 Verse mit Parallele · 42 gemeinsame Tokens (6 %)
+## 2Chr 26 — 23 Verse, 606 Tokens · 6 Verse mit Parallele · 63 gemeinsame Tokens (10 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 26,1 | 2Kön 14,21 | 13 | +1 | 22 / 24 |
+| ↳ auch: | 2Kön 23,30 | 10 | +14 | 22 / 36 |
 | 26,3 | 2Kön 15,2 | 18 | +0 | 21 / 23 |
+| ↳ auch: | 2Kön 15,33 | 14 | +0 | 21 / 24 |
+| 26,4 | 2Kön 14,3 | 6 | +0 | 14 / 22 |
+| ↳ auch: | 2Kön 15,3 | 6 | +0 | 14 / 11 |
+| 26,21 | 2Kön 15,5 | 7 | -10 … +3 | 40 / 30 |
+| 26,22 | 1Kön 22,46 | 8 | +0 | 22 / 29 |
+| ↳ auch: | 1Kön 14,19 | 8 | +0 | 22 / 23 |
 | 26,23 | 1Kön 15,24 | 11 | -7 … +0 | 29 / 22 |
+| ↳ auch: | 1Kön 14,31 | 10 | -1 … +0 | 29 / 28 |
 
-## 2Chr 27 — 9 Verse, 197 Tokens · 3 Verse mit Parallele · 47 gemeinsame Tokens (23 %)
+## 2Chr 27 — 9 Verse, 197 Tokens · 5 Verse mit Parallele · 65 gemeinsame Tokens (32 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 27,1 | 2Kön 15,33 | 17 | +0 | 22 / 24 |
+| 27,1 | 2Kön 15,33 | 20 | +0 … +2 | 22 / 24 |
+| ↳ auch: | 2Kön 18,2 | 16 | +0 | 22 / 24 |
+| 27,2 | 2Kön 15,3 | 7 | +0 | 32 / 11 |
+| ↳ auch: | 2Kön 15,34 | 7 | +0 | 32 / 11 |
+| 27,7 | 1Kön 22,46 | 8 | +0 | 25 / 29 |
+| ↳ auch: | 1Kön 16,5 | 8 | +0 | 25 / 24 |
 | 27,8 | 2Kön 15,33 | 15 | +0 | 15 / 24 |
-| 27,9 | 1Kön 15,8 | 15 | +0 | 17 / 17 |
+| ↳ auch: | 2Kön 14,2 | 14 | +0 | 15 / 23 |
+| 27,9 | 2Kön 16,20 | 15 | +0 … +3 | 17 / 20 |
+| ↳ auch: | 1Kön 15,8 | 15 | +0 | 17 / 17 |
 
-## 2Chr 28 — 27 Verse, 727 Tokens · 5 Verse mit Parallele · 62 gemeinsame Tokens (8 %)
+## 2Chr 28 — 27 Verse, 727 Tokens · 10 Verse mit Parallele · 99 gemeinsame Tokens (13 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 28,1 | 2Kön 16,2 | 24 | +0 … +2 | 29 / 31 |
+| 28,1 | 2Kön 16,2 | 27 | +0 … +2 | 29 / 31 |
+| ↳ auch: | 2Kön 15,33 | 12 | +0 | 29 / 24 |
 | 28,3 | 1Kön 14,24 | 9 | -4 | 27 / 23 |
+| ↳ auch: | 2Kön 16,3 | 9 | +3 | 27 / 30 |
 | 28,4 | 2Kön 16,4 | 8 | +3 | 15 / 18 |
+| 28,5 | Jer 44,30 *(nicht annotiert)* | 6 | +7 … +29 | 42 / 53 |
+| ↳ auch: | Jer 46,26 *(nicht annotiert)* | 6 | -4 … +7 | 42 / 38 |
+| 28,6 | 1Chr 29,20 | 6 | -3 | 26 / 33 |
+| 28,9 | Esra 8,28 *(nicht annotiert)* | 6 | -19 … -2 | 54 / 30 |
+| 28,21 | Jer 52,13 *(nicht annotiert)* | 7 | -1 | 26 / 24 |
+| ↳ auch: | Jer 27,18 *(nicht annotiert)* | 6 | +21 | 26 / 45 |
+| 28,25 | 2Kön 21,22 | 6 | -12 | 22 / 16 |
 | 28,26 | 1Kön 14,29 | 9 | +0 | 28 / 23 |
-| 28,27 | 2Kön 16,20 | 12 | -8 … +0 | 28 / 20 |
+| ↳ auch: | 1Kön 15,7 | 9 | +0 | 28 / 29 |
+| 28,27 | 2Kön 16,20 | 15 | -8 … +3 | 28 / 20 |
+| ↳ auch: | 2Kön 15,38 | 11 | -6 … +3 | 28 / 22 |
 
-## 2Chr 29 — 36 Verse, 950 Tokens · 3 Verse mit Parallele · 34 gemeinsame Tokens (3 %)
+## 2Chr 29 — 36 Verse, 950 Tokens · 7 Verse mit Parallele · 60 gemeinsame Tokens (6 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 29,1 | 2Kön 18,2 | 17 | +0 | 22 / 24 |
+| ↳ auch: | 2Kön 14,2 | 17 | +0 | 22 / 23 |
+| 29,2 | 2Kön 14,3 | 6 | +0 | 14 / 22 |
+| ↳ auch: | 2Kön 15,3 | 6 | +0 | 14 / 11 |
 | 29,5 | 1Chr 15,12 | 8 | +0 … +5 | 29 / 36 |
+| ↳ auch: | Esra 1,3 *(nicht annotiert)* | 6 | +7 | 29 / 37 |
+| 29,16 | 2Kön 23,6 | 6 | -28 … -15 | 44 / 35 |
 | 29,25 | 1Chr 25,6 | 9 | +9 | 39 / 34 |
+| ↳ auch: | 1Chr 15,28 | 6 | +0 … +6 | 39 / 20 |
+| 29,29 | 2Sam 16,14 | 7 | -7 | 18 / 15 |
+| ↳ auch: | 2Sam 17,16 | 7 | +15 | 18 / 33 |
+| 29,32 | Esra 8,35 *(nicht annotiert)* | 7 | +9 | 23 / 32 |
 
-## 2Chr 30 — 27 Verse, 750 Tokens · 1 Verse mit Parallele · 9 gemeinsame Tokens (1 %)
+## 2Chr 30 — 27 Verse, 750 Tokens · 4 Verse mit Parallele · 28 gemeinsame Tokens (3 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 30,6 | 1Sam 7,3 | 7 | -3 … +0 | 57 / 46 |
+| ↳ auch: | 2Kön 17,39 | 6 | -33 … -30 | 57 / 17 |
+| 30,15 | Esra 6,19 *(nicht annotiert)* | 6 | +4 | 26 / 14 |
+| ↳ auch: | Esra 1,5 *(nicht annotiert)* | 6 | +3 … +7 | 26 / 37 |
+| 30,19 | 1Chr 29,20 | 6 | +6 | 23 / 33 |
 | 30,21 | Esra 6,22 *(nicht annotiert)* | 9 | -9 … -8 | 37 / 40 |
 
-## 2Chr 31 — 21 Verse, 603 Tokens · 0 Verse mit Parallele · 0 gemeinsame Tokens (0 %)
-
-**Sondergut** — kein Vers hat eine Entsprechung ab 8 gemeinsamen Tokens.
-
-## 2Chr 32 — 33 Verse, 924 Tokens · 3 Verse mit Parallele · 31 gemeinsame Tokens (3 %)
+## 2Chr 31 — 21 Verse, 603 Tokens · 3 Verse mit Parallele · 21 gemeinsame Tokens (3 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 32,14 | 2Kön 18,35 | 10 | -4 … +0 | 28 / 24 |
-| 32,15 | 2Kön 18,29 | 9 | -30 … +2 | 50 / 19 |
-| 32,33 | 2Kön 20,21 | 12 | -19 … +0 | 35 / 16 |
+| 31,3 | 1Chr 16,40 | 7 | -15 | 36 / 26 |
+| 31,4 | 1Chr 13,2 | 7 | +27 … +28 | 29 / 51 |
+| 31,17 | 1Chr 23,27 | 7 | -1 | 22 / 15 |
 
-## 2Chr 33 — 25 Verse, 641 Tokens · 11 Verse mit Parallele · 157 gemeinsame Tokens (24 %)
+## 2Chr 32 — 33 Verse, 924 Tokens · 11 Verse mit Parallele · 88 gemeinsame Tokens (9 %)
+
+| 2Chr | Parallele | Tok | Versatz im Vers | Längen |
+|---|---|---|---|---|
+| 32,1 | 2Kön 17,3 | 6 | -7 | 25 / 19 |
+| 32,9 | 2Kön 25,1 | 7 | +2 … +10 | 39 / 31 |
+| ↳ auch: | Jer 24,1 *(nicht annotiert)* | 6 | +3 … +16 | 39 / 48 |
+| 32,11 | 2Kön 18,30 | 8 | -9 … -5 | 36 / 31 |
+| 32,14 | 2Kön 18,35 | 13 | -5 … +0 | 28 / 24 |
+| 32,15 | 2Kön 18,29 | 9 | -30 … +2 | 50 / 19 |
+| ↳ auch: | 2Kön 18,35 | 7 | -26 … -18 | 50 / 24 |
+| 32,17 | Jer 25,15 *(nicht annotiert)* | 6 | -12 … -2 | 45 / 30 |
+| 32,20 | 2Kön 20,1 | 6 | +2 | 17 / 35 |
+| 32,22 | 2Kön 16,7 | 6 | +16 … +17 | 28 / 44 |
+| ↳ auch: | 2Kön 18,33 | 6 | +0 … +1 | 28 / 18 |
+| 32,24 | 2Kön 20,1 | 7 | +0 … +1 | 20 / 35 |
+| 32,32 | 1Kön 16,5 | 8 | -3 … +0 | 33 / 24 |
+| ↳ auch: | 1Kön 16,27 | 8 | -3 … +0 | 33 / 28 |
+| 32,33 | 2Kön 20,21 | 12 | -19 … +0 | 35 / 16 |
+| ↳ auch: | 2Kön 16,20 | 8 | -15 … +0 | 35 / 20 |
+
+## 2Chr 33 — 25 Verse, 641 Tokens · 16 Verse mit Parallele · 207 gemeinsame Tokens (32 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 33,1 | 2Kön 21,1 | 14 | +0 | 15 / 19 |
+| ↳ auch: | 1Kön 14,21 | 11 | +8 | 15 / 49 |
 | 33,2 | 2Kön 21,2 | 17 | +0 … +1 | 19 / 20 |
-| 33,3 | 2Kön 21,3 | 10 | +0 … +7 | 29 / 36 |
+| ↳ auch: | 2Kön 16,3 | 10 | +11 | 19 / 30 |
+| 33,3 | 2Kön 21,3 | 16 | +0 … +9 | 29 / 36 |
+| 33,4 | 2Kön 21,7 | 7 | +5 | 22 / 41 |
+| ↳ auch: | 2Kön 21,4 | 6 | -2 | 22 / 20 |
 | 33,5 | 2Kön 21,5 | 9 | -2 … +0 | 15 / 13 |
 | 33,6 | 2Kön 21,6 | 10 | -7 | 36 / 27 |
 | 33,7 | 2Kön 21,7 | 31 | -7 … +0 | 47 / 41 |
+| ↳ auch: | 2Kön 21,4 | 7 | -25 … -14 | 47 / 20 |
 | 33,8 | 2Kön 21,8 | 13 | +1 | 41 / 41 |
+| ↳ auch: | Jer 16,15 *(nicht annotiert)* | 7 | +4 … +26 | 41 / 42 |
 | 33,9 | 2Kön 21,9 | 11 | +1 | 24 / 25 |
+| ↳ auch: | 1Kön 14,24 | 7 | -1 | 24 / 23 |
+| 33,11 | 2Kön 25,7 | 9 | -6 … -5 | 29 / 23 |
+| 33,15 | Jer 27,18 *(nicht annotiert)* | 6 | +9 … +15 | 37 / 45 |
+| 33,18 | 1Kön 14,19 | 14 | -15 … +0 | 38 / 23 |
+| ↳ auch: | 1Kön 16,5 | 14 | -14 … +0 | 38 / 24 |
 | 33,20 | 2Kön 21,18 | 12 | +0 … +4 | 16 / 20 |
+| ↳ auch: | 1Kön 15,8 | 12 | +0 … +1 | 16 / 17 |
 | 33,21 | 2Kön 21,19 | 14 | +0 | 15 / 27 |
+| ↳ auch: | 2Kön 8,26 | 10 | +0 | 15 / 28 |
+| 33,22 | 2Kön 3,2 | 8 | +0 … +3 | 27 / 27 |
+| ↳ auch: | 2Kön 8,27 | 6 | +7 | 27 / 27 |
 | 33,25 | 2Kön 21,24 | 16 | -4 … +0 | 28 / 24 |
 
-## 2Chr 34 — 33 Verse, 977 Tokens · 12 Verse mit Parallele · 193 gemeinsame Tokens (19 %)
+## 2Chr 34 — 33 Verse, 977 Tokens · 19 Verse mit Parallele · 271 gemeinsame Tokens (27 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
 | 34,1 | 2Kön 22,1 | 14 | +0 | 15 / 26 |
-| 34,20 | 2Kön 22,12 | 8 | +3 | 21 / 24 |
+| ↳ auch: | 2Kön 8,17 | 8 | +0 | 15 / 15 |
+| 34,2 | 2Kön 22,2 | 6 | +0 | 20 / 23 |
+| 34,8 | 2Kön 22,3 | 7 | -6 … +0 | 40 / 25 |
+| 34,10 | 2Kön 12,12 | 6 | +1 … +2 | 35 / 30 |
+| 34,15 | 2Kön 22,8 | 8 | +2 | 21 / 26 |
+| 34,18 | 2Kön 22,10 | 6 | +0 | 22 / 22 |
+| 34,19 | 2Kön 22,11 | 9 | +0 | 12 / 12 |
+| ↳ auch: | 1Kön 13,4 | 6 | +0 | 12 / 40 |
+| 34,20 | 2Kön 22,12 | 11 | +3 | 21 / 24 |
 | 34,21 | 2Kön 22,13 | 18 | -2 | 53 / 50 |
 | 34,22 | 2Kön 22,14 | 11 | -1 … +1 | 40 / 37 |
 | 34,23 | 2Kön 22,15 | 17 | +1 | 20 / 21 |
-| 34,24 | 2Kön 22,16 | 16 | +0 | 31 / 31 |
-| 34,25 | 2Kön 22,17 | 12 | +0 | 31 / 32 |
+| ↳ auch: | Jer 37,7 *(nicht annotiert)* | 9 | -4 | 20 / 35 |
+| 34,24 | 2Kön 22,16 | 19 | -1 … +0 | 31 / 31 |
+| ↳ auch: | 2Sam 12,11 | 8 | +0 | 31 / 37 |
+| 34,25 | 2Kön 22,17 | 15 | +0 … +2 | 31 / 32 |
 | 34,26 | 2Kön 22,18 | 20 | -1 … +0 | 32 / 24 |
-| 34,27 | 2Kön 22,19 | 25 | +8 … +18 | 46 / 64 |
-| 34,28 | 2Kön 22,20 | 11 | +1 | 39 / 38 |
-| 34,30 | 2Kön 23,2 | 14 | +1 … +4 | 43 / 47 |
+| ↳ auch: | Jer 23,2 *(nicht annotiert)* | 8 | -18 | 32 / 38 |
+| 34,27 | 2Kön 22,19 | 31 | +0 … +22 | 46 / 64 |
+| 34,28 | 2Kön 22,20 | 17 | +1 | 39 / 38 |
+| ↳ auch: | 2Kön 22,19 | 6 | +1 | 39 / 64 |
+| 34,29 | 2Kön 23,1 | 6 | -1 | 14 / 16 |
+| 34,30 | 2Kön 23,2 | 23 | +0 … +4 | 43 / 47 |
 | 34,31 | 2Kön 23,3 | 27 | +0 … +1 | 44 / 52 |
+| ↳ auch: | 1Kön 8,48 | 7 | -18 … -17 | 44 / 54 |
 
-## 2Chr 35 — 27 Verse, 786 Tokens · 1 Verse mit Parallele · 8 gemeinsame Tokens (1 %)
+## 2Chr 35 — 27 Verse, 786 Tokens · 4 Verse mit Parallele · 30 gemeinsame Tokens (3 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
+| 35,1 | Esra 6,19 *(nicht annotiert)* | 7 | -4 | 18 / 14 |
 | 35,12 | Esra 6,18 *(nicht annotiert)* | 8 | -2 | 32 / 24 |
+| ↳ auch: | 1Chr 16,40 | 7 | -12 … -5 | 32 / 26 |
+| 35,21 | 2Sam 3,12 | 7 | -1 | 56 / 29 |
+| 35,26 | 1Kön 16,5 | 8 | +0 | 18 / 24 |
+| ↳ auch: | 1Kön 16,27 | 8 | +0 | 18 / 28 |
 
-## 2Chr 36 — 23 Verse, 657 Tokens · 8 Verse mit Parallele · 123 gemeinsame Tokens (18 %)
+## 2Chr 36 — 23 Verse, 657 Tokens · 13 Verse mit Parallele · 165 gemeinsame Tokens (25 %)
 
 | 2Chr | Parallele | Tok | Versatz im Vers | Längen |
 |---|---|---|---|---|
-| 36,1 | 2Kön 23,30 | 12 | +15 | 21 / 36 |
+| 36,1 | 2Kön 23,30 | 15 | +15 … +17 | 21 / 36 |
+| ↳ auch: | 2Kön 14,21 | 9 | +2 … +4 | 21 / 24 |
 | 36,2 | 2Kön 23,31 | 15 | +0 | 15 / 26 |
+| ↳ auch: | 2Kön 24,8 | 12 | +0 | 15 / 26 |
 | 36,3 | 2Kön 23,33 | 14 | +10 | 25 / 35 |
+| ↳ auch: | 2Kön 18,14 | 6 | +2 … +25 | 25 / 52 |
+| 36,4 | 2Kön 24,17 | 8 | +0 | 32 / 20 |
+| ↳ auch: | 2Kön 23,34 | 6 | +0 | 32 / 31 |
 | 36,5 | 2Kön 16,2 | 17 | +0 … +1 | 23 / 31 |
-| 36,9 | 2Kön 24,8 | 10 | +0 | 24 / 26 |
+| ↳ auch: | 2Kön 23,36 | 15 | +0 | 23 / 26 |
+| 36,6 | Jer 39,7 *(nicht annotiert)* | 6 | -4 | 20 / 16 |
+| ↳ auch: | Jer 52,11 *(nicht annotiert)* | 6 | +0 … +9 | 20 / 27 |
+| 36,8 | 1Kön 16,5 | 8 | +0 | 38 / 24 |
+| ↳ auch: | 1Kön 16,27 | 8 | +0 | 38 / 28 |
+| 36,9 | 2Kön 16,2 | 11 | -3 … +0 | 24 / 31 |
+| ↳ auch: | 2Kön 24,8 | 10 | +0 | 24 / 26 |
+| 36,10 | 2Sam 9,5 | 7 | -11 … -3 | 35 / 18 |
 | 36,11 | 2Kön 24,18 | 14 | +0 | 15 / 26 |
-| 36,22 | Esra 1,1 *(nicht annotiert)* | 13 | -2 … +0 | 43 / 37 |
+| ↳ auch: | Jer 52,1 *(nicht annotiert)* | 14 | +0 | 15 / 24 |
+| 36,17 | 2Kön 8,12 | 6 | +14 | 37 / 42 |
+| 36,22 | Esra 1,1 *(nicht annotiert)* | 16 | -4 … +0 | 43 / 37 |
+| ↳ auch: | Esra 5,13 *(nicht annotiert)* | 7 | +1 | 43 / 20 |
 | 36,23 | Esra 1,2 *(nicht annotiert)* | 28 | -2 … +0 | 53 / 32 |
 
