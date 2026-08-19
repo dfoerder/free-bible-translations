@@ -157,33 +157,38 @@ Auch *innerhalb* eines Kapitelpaars streuen die Versätze weit: 2Chr 25 gegen
 Kapitelanfang gemessener Versatz gilt am Kapitelende nicht mehr. **Jeder Block
 wird einzeln gemessen.**
 
-### Die Parallelenkarte, ausgezählt
+### Die Parallelenkarte steht in einer eigenen Datei
 
-Anteil wörtlich übereinstimmender Tokens in Blöcken ab sechs Wörtern:
+**`PARALLELEN_2CHR.md`** listet für **jeden Vers** des Buches die beste
+Entsprechung, die Zahl der gemeinsamen Tokens, den Versatz *innerhalb* des
+Verspaars und beide Verslängen. Jeder Agentenauftrag verweist darauf.
 
-| 2. Chronik | Parallele | Anteil | größter Block |
-|---|---|---|---|
-| **6** | 1Kön 8 | **513 / 1233 = 42 %** | 30 Tokens, Versatz +195 |
-| **18** | 1Kön 22 | **360 / 892 = 40 %** | 32 Tokens, Versatz +15 |
-| **9** | 1Kön 10 | 214 / 737 = 29 % | 27 Tokens, Versatz +12 |
-| **10** | 1Kön 12 | 193 / 502 = 38 % | 16 Tokens, Versatz −1 |
-| **5** | 1Kön 8 | 146 / 383 = 38 % | 22 Tokens, Versatz −39 |
-| **33** | 2Kön 21 | 142 / 641 = 22 % | 22 Tokens, Versatz −77 |
-| **34** | 2Kön 22 | 138 / 977 = 14 % | 18 Tokens, Versatz −234 |
-| **25** | 2Kön 14 | 117 / 809 = 14 % | 18 Tokens, Versatz +24 |
-| 22 | 2Kön 8 | 78 / 398 = 20 % | 19 Tokens, Versatz +650 |
-| 23 | 2Kön 11 | 69 / 631 = 11 % | 20 Tokens, Versatz +7 |
-| 7 | 1Kön 9 | 67 / 628 = 11 % | 19 Tokens, Versatz −349 |
-| 11 | 1Kön 12 | 60 / 423 = 14 % | 12 Tokens, Versatz +539 |
-| 36 | 2Kön 23–25 | 53 / 657 = 8 % | 22 Tokens, Versatz +981 |
-| 28 · 16 · 27 · 4 · 12 · 24 | 2Kön 16 · 1Kön 15 · 2Kön 15 · 1Kön 7 · 1Kön 14 · 2Kön 12 | 4–12 % | |
+**Die erste Fassung dieser Karte war grob falsch**, weil sie Kapitel gegen
+Kapitel gemessen hat. Damit fällt jede Parallele durch, die über eine
+Kapitelgrenze der Quelle läuft: 2Chr 5,1 galt als Sondergut, obwohl es mit 27
+gemeinsamen Tokens die engste Parallele seines Kapitels zu **1Kön 7,51** ist —
+gefunden hat es der Agent, weil er selbst nachgemessen hat. Ebenso stand
+2Chr 12 mit 8 % in der Tabelle und hat in Wahrheit 26 %.
 
-**Sondergut ohne nennenswerte wörtliche Parallele** (unter 30 gemeinsamen
-Tokens): 1 · 2 · 3 · 13 · 14 · 15 · 17 · 19 · 21 · 26 · 29 · 30 · 31 · 32 · 35.
+Versweise gemessen sieht das Buch so aus:
+
+| Anteil | Kapitel |
+|---|---|
+| **über 40 %** | 18 (46) · 10 (45) · 5 (43) · 6 (43) |
+| 20–40 % | 9 (38) · 12 (26) · 22 (24) · 33 (24) · 27 (23) · 21 (22) |
+| 10–20 % | 25 (19) · 34 (19) · 7 (18) · 16 (18) · 36 (18) · 11 (16) |
+| unter 10 % | 4 · 23 · 28 · 1 · 26 · 8 · 2 · 13 · 20 · 24 · 29 · 32 · 15 · 30 · 35 |
+| **echtes Sondergut** (kein Vers mit Parallele) | **3 · 14 · 17 · 19 · 31** |
+
+Es sind also **fünf** Sondergut-Kapitel, nicht fünfzehn.
+
+**Achtung**: 2Chr 30, 35 und 36 haben Parallelen in **Esra**, 2Chr 29 in
+1. Chronik. Esra, Nehemia und Jeremia sind **noch nicht annotiert** und stehen
+als Vorlage nicht zur Verfügung — `PARALLELEN_2CHR.md` markiert das.
 
 **Achtung bei 1, 2 und 3.** Sie *erzählen* dieselbe Sache wie 1Kön 3, 5 und 6
-(Gibeon, der Vertrag mit Hiram, der Tempelbau), aber der Chronist formuliert
-neu — die Messung findet nur 7, 15 und 7 gemeinsame Tokens. Das ist die
+(Gibeon, der Vertrag mit dem König von Tyrus, der Tempelbau), aber der Chronist
+formuliert neu — versweise gemessen bleiben 6 %, 4 % und 0 %. Das ist die
 gefährlichste Sorte Parallele: inhaltsgleich, wortverschieden. **Wer abschreibt,
 glossiert falsch.**
 
