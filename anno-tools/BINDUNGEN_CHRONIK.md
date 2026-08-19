@@ -65,6 +65,33 @@ Offen geblieben ist dabei `Kahathiter` = it **`kehatiti`** (9 Belege,
 durchgehend klein). Es steht gegen das Schema, ist in sich aber konsistent;
 eine Angleichung wäre ein eigener, gezählter Zug.
 
+### Die levitischen Sippennamen sind im Italienischen klein — alle
+
+`Kahathiter` ist **kein Einzelfall**, sondern die Spitze einer geschlossenen
+Gruppe. Der Bestand schreibt die Leviten-Sippen im Italienischen durchgehend
+klein, und zwar einheitlich:
+
+| Sippe | it | Belege |
+|---|---|---|
+| `Gersoniter` | `ghersoniti` | 6, darunter ch23,7 |
+| `Jizhariter` | `ishariti` | 2, darunter ch24,22 |
+| `Kahathiter` | `kehatiti` | 9–10 |
+| `Merariter` | `merariti` | |
+| `Hebroniter` | `ebroniti` | |
+| `Amramiter` | `amramiti` | |
+| `Usieliter` | `uzzieliti` | |
+
+**Die Ausnahme ist `Korahiter`**: dort steht der Bestand 3:1 auf **groß**, und
+die direkte Torhüter-Vorlage 1Chr 9,19 hat `Coreiti`. Folge: in **26,19 steht
+`Coreiti` neben `merariti`**, im selben Vers. Das ist bekannt und bleibt
+stehen; eine Vereinheitlichung ist ein eigener, gezählter Zug über etwa
+zwanzig Einträge — nicht über tausend, denn der `-iter`-Filter ist die Falle
+von oben.
+
+Die Belegbasis ist dünn: `Merariter`, `Hebroniter`, `Amramiter`, `Jizhariter`
+und `Usieliter` stehen je nur ein- bis zweimal, fast alle aus 4Mo 3,27 und
+26,57 f.
+
 **Die Groß-/Kleinschreibung ist ausgezählt, nicht geraten:** im Bestand stehen
 Gentilizia im **Spanischen zu 843:33 klein** und im **Italienischen zu 704:172
 groß**. Die 172 italienischen Kleinschreibungen sind fast alle die
@@ -162,6 +189,51 @@ Satzzeichen-Tokens insgesamt). Er bleibt nach SPEC unannotiert.
 
 Verteilung: Kap. 1 (2) · 2 (3) · 3 (6) · 4 (2) · 5 (4) · 7 (6) · 8 (7) ·
 9 (2) · 12 (1) · 21 (1) · 23 (5) · 24 (1) · **25 (24)** · 26 (5) · 28 (2).
+
+## „Die Obersten über tausend und über hundert"
+
+Die Wendung steht **fünfmal in 1. Chronik** (13,1 · 26,26 · 27,1 · 28,1 ·
+29,6) und danach weiter in 2. Chronik (1,2 · 25,5). Zwei gleichzeitig
+laufende Agenten haben sie in 26,26 und 27,1 verschieden geglost, obwohl sie
+wörtlich dieselbe ist. Verbindlich:
+
+| Wort | Level | en · es · fr · it |
+|---|---|---|
+| `Obersten` **bei Truppenkommando** | B2 | **chiefs** · jefes · chefs · capi |
+| `Obersten` **der Versammlung** (`Obersten Israels`, `Obersten des Volkes`) | B2 | **leaders** · jefes · chefs · capi |
+| `über` | A2 | over · sobre · sur · su |
+| `tausend` | A1 | **a thousand** · mil · mille · mille |
+| `hundert` | A1 | **a hundred** · cien · cent · cento |
+
+Nur das Englische unterscheidet; Spanisch, Französisch und Italienisch tragen
+in beiden Fällen dasselbe. Die Trennung ist ausgezählt: *leaders* hat 11
+Belege, alle vom Typ „die Obersten Israels / des Volkes" (1Chr 21,2 · 22,17 ·
+23,2 · 24,6), *chiefs* zwei, beide vom Kommandotyp — und **1Chr 15,25 ist die
+nächste Parallele**: „die Obersten über Tausend". Die sechs Belege für den
+Singular *chief* stehen sämtlich in 1Chr 15,5–8, wo je ein Mann pro Sippe
+gemeint ist.
+
+**Achtung in 28,1**: dort stehen **beide** Lesarten im selben Vers — „alle
+Obersten Israels" und „die Obersten über tausend und über hundert".
+
+`tausend`/`hundert` ist korpusweit uneinheitlich (*thousand* 6× gegen
+*a thousand* 1×, *one hundred* 4× gegen *hundred* 2× gegen *a hundred* 1×),
+und ohne Artikel ist „over thousand" im Englischen nicht grammatisch. In
+1. Chronik gilt die buchinterne Lesart von 13,1. Der Rest des Bestands
+(4Mo 31 viermal, 2Sam 18,1, 1Sam 22,7) wäre ein eigener, gezählter Zug.
+
+## `Jüngerer` und `Älterer`
+
+Der Satzteil `den Jüngeren wie den Älteren` steht in **25,8** und **26,13**
+wörtlich gleich und ist von zwei Agenten verschieden geglost *und* verschieden
+eingestuft worden. Verbindlich nach 25,8:
+
+| Wort | Level | en · es · fr · it |
+|---|---|---|
+| `Jüngerer` | A2 | younger · menor · **cadet** · **minore** |
+| `Älterer` | A2 | older · mayor · **aîné** · **maggiore** |
+
+Nicht *plus jeune* / *plus âgé* und nicht *più giovane* / *più anziano*.
 
 ## Wörter, die in diesem Buch neu entstanden sind
 
