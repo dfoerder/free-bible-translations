@@ -201,6 +201,25 @@ und die Todesformel-Familie. 2. Chronik hat eigene Fassungen der Quellenformel
 („in der Geschichte des Propheten …"), die **nicht** die der Königsbücher sind —
 am Vers prüfen.
 
+### Eine Kollisionsauflösung im Quellvers ist nicht übertragbar
+
+Der Bestand enthält an vielen Stellen Lesarten, die **nur** dastehen, weil im
+selben Vers ein zweites Wort dieselbe Glosse getragen hätte. Wer eine solche
+Lesart in den Parallelvers übernimmt, ohne zu prüfen, ob der Grund dort
+überhaupt vorliegt, schreibt eine Ausweichung fort, die nichts mehr ausweicht.
+
+Der Musterfall: **1Kön 8,24** glossiert `zugesagt` als *pledged · asegurado ·
+assuré · assicurato* statt der Korpusmehrheit *promised* (6:1). Der Grund steht
+im selben Vers — „Mit deinem Mund hast du es **versprochen**". **2Chr 6,15
+schreibt an dieser Stelle `gesagt`.** Die Kollision existiert dort nicht, und
+die Ausweichung war zurückzunehmen.
+
+**Also: bei jeder aus einer Parallele übernommenen Lesart prüfen, ob ihr Grund
+im eigenen Vers vorliegt.** Umgekehrt gilt dasselbe — eine Auflösung bleibt
+**lokal**: `bronzen` steht 36-mal auf *bronze* und nur in 1Chr 18,8 auf
+*of bronze*, `beide` steht 104-mal auf *two* und weicht nur dort auf *both*
+aus, wo `zwei` danebensteht.
+
 ### Entscheidungen aus Welle 1 (2Chr 1–3)
 
 **`bauen` ist formgebunden, nicht tempusgebunden.** Ausgezählt über den ganzen
