@@ -196,6 +196,46 @@ und die Todesformel-Familie. 2. Chronik hat eigene Fassungen der Quellenformel
 („in der Geschichte des Propheten …"), die **nicht** die der Königsbücher sind —
 am Vers prüfen.
 
+### Entscheidungen aus Welle 1 (2Chr 1–3)
+
+**`bauen` ist formgebunden, nicht tempusgebunden.** Ausgezählt über den ganzen
+Bestand:
+
+| Form | es · it | Belege |
+|---|---|---|
+| `bauen` (Inf.) | **construir · costruire** | 45 : 6 |
+| `baute` (3. Sg. Prät.) | **edificó · edificò** | 72 : 1 |
+| `bauten` (3. Pl. Prät.) | **construyeron · costruirono** | 10 : 2 |
+| `gebaut` (Part.) | **construido · costruito** | 43 : 0 |
+| `baut`, `baue` | gespalten — am Vers entscheiden | |
+
+Französisch hat durchgehend `bâtir`/`bâtit`, Englisch `build`/`built`. Also:
+**nur die Form `baute` geht auf `edificar`/`edificare`**, alles andere auf
+`construir`/`costruire`. Nicht auf eine Familie vereinheitlichen.
+
+**`Huram` bleibt `Huram`.** Der König von Tyrus heißt in der Chronik `Huram`,
+in 2Sam 5 und 1Kön 5 `Hiram` — und im ganzen Alten Testament steht `Hiram`
+**nur** an diesen zwölf Stellen. Er bekommt trotzdem nicht die `Hiram`-Glosse:
+`Huram` ist bereits ein Lemma des Bestands (1Chr 8,5, ein Benjaminit), und für
+**zwei Träger unter einem Lemma** gilt „ein Name, eine Glosse". Die
+Schreibungsvariantenregel greift nur *zwischen* zwei Lemmata. Verbindlich:
+`Huram` A1 = *Huram · Huram · Huram · Huram*. Präzedenz ist `Ornan`, das in
+1Chr 21 ebenfalls die Chronik-Schreibung behalten hat statt der Samuel-Form
+`Arawna`.
+
+Ebenso `Jafo` (2Chr 2,15) = *Joppa · Jope · Joppé · Ioppe* — hier greift die
+Schreibungsvariantenregel, weil `Joppe` ein anderes Lemma ist.
+
+**`zum` in `zum König machen`** steht im Bestand 14:3 auf
+*as · como · comme · come*. Die drei Ausnahmen (1Kön 3,7 · 1Sam 11,15 ·
+1Chr 28,4) sind sämtlich **lokale Kollisionsauflösungen**. Also: Mehrheit,
+außer der Vers enthält `wie` oder `als`. Die Bedeutung trägt ohnehin der
+Mehrwort-Eintrag `zum König machen` = *made king · proclamó rey · établit roi ·
+costituì re*.
+
+**`Herrschaft`** im Regierungs-Sinn: *reign · reinado · règne · **dominio***
+(Bestand 12:4 gegen *regno*). Gilt für beide Chronikbücher.
+
 ## Die Parallelen sind der bestimmende Umstand
 
 Fast jedes Kapitel hat eine Parallele in einem schon annotierten Buch. Die
