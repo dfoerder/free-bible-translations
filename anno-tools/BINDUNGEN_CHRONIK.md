@@ -144,6 +144,58 @@ Die letzte Zeile ist die Gegenprobe: **zwei Träger mit demselben Namen
 bekommen dieselbe Glosse.** Nur wo die Glosse selbst einer anderen Tradition
 folgt (NT-Griechisch, ein anderer Name), wird sie ersetzt.
 
+## 2. Chronik: die Parallelen sind noch schärfer
+
+**Die gemessenen Versätze reichen von −355 bis +1062** — in 1. Chronik waren
+es −49 bis +34. Das liegt daran, dass 2. Chronik ganze Erzählbögen der
+Königsbücher aufgreift, sie aber anders einteilt, kürzt und erweitert. **Ein
+übertragener Block landet in diesem Buch nicht drei Positionen daneben,
+sondern dreihundert.**
+
+Auch *innerhalb* eines Kapitelpaars streuen die Versätze weit: 2Chr 25 gegen
+2Kön 14 von −332 bis +58, 2Chr 34 gegen 2Kön 22 von −237 bis 0. Ein am
+Kapitelanfang gemessener Versatz gilt am Kapitelende nicht mehr. **Jeder Block
+wird einzeln gemessen.**
+
+### Die Parallelenkarte, ausgezählt
+
+Anteil wörtlich übereinstimmender Tokens in Blöcken ab sechs Wörtern:
+
+| 2. Chronik | Parallele | Anteil | größter Block |
+|---|---|---|---|
+| **6** | 1Kön 8 | **513 / 1233 = 42 %** | 30 Tokens, Versatz +195 |
+| **18** | 1Kön 22 | **360 / 892 = 40 %** | 32 Tokens, Versatz +15 |
+| **9** | 1Kön 10 | 214 / 737 = 29 % | 27 Tokens, Versatz +12 |
+| **10** | 1Kön 12 | 193 / 502 = 38 % | 16 Tokens, Versatz −1 |
+| **5** | 1Kön 8 | 146 / 383 = 38 % | 22 Tokens, Versatz −39 |
+| **33** | 2Kön 21 | 142 / 641 = 22 % | 22 Tokens, Versatz −77 |
+| **34** | 2Kön 22 | 138 / 977 = 14 % | 18 Tokens, Versatz −234 |
+| **25** | 2Kön 14 | 117 / 809 = 14 % | 18 Tokens, Versatz +24 |
+| 22 | 2Kön 8 | 78 / 398 = 20 % | 19 Tokens, Versatz +650 |
+| 23 | 2Kön 11 | 69 / 631 = 11 % | 20 Tokens, Versatz +7 |
+| 7 | 1Kön 9 | 67 / 628 = 11 % | 19 Tokens, Versatz −349 |
+| 11 | 1Kön 12 | 60 / 423 = 14 % | 12 Tokens, Versatz +539 |
+| 36 | 2Kön 23–25 | 53 / 657 = 8 % | 22 Tokens, Versatz +981 |
+| 28 · 16 · 27 · 4 · 12 · 24 | 2Kön 16 · 1Kön 15 · 2Kön 15 · 1Kön 7 · 1Kön 14 · 2Kön 12 | 4–12 % | |
+
+**Sondergut ohne nennenswerte wörtliche Parallele** (unter 30 gemeinsamen
+Tokens): 1 · 2 · 3 · 13 · 14 · 15 · 17 · 19 · 21 · 26 · 29 · 30 · 31 · 32 · 35.
+
+**Achtung bei 1, 2 und 3.** Sie *erzählen* dieselbe Sache wie 1Kön 3, 5 und 6
+(Gibeon, der Vertrag mit Hiram, der Tempelbau), aber der Chronist formuliert
+neu — die Messung findet nur 7, 15 und 7 gemeinsame Tokens. Das ist die
+gefährlichste Sorte Parallele: inhaltsgleich, wortverschieden. **Wer abschreibt,
+glossiert falsch.**
+
+### Die Formeln der Königsbücher gelten weiter
+
+`BINDUNGEN_KOENIGE.md` ist für dieses Buch **mitverbindlich**: die Quellen- und
+Chronikformel, die Botenformel (`spricht` fr *parle* einleitend, *dit*
+nachgestellt), `l'ÉTERNEL` statt `le`, die Nachfolgeformel `an seiner Stelle`
+und die Todesformel-Familie. 2. Chronik hat eigene Fassungen der Quellenformel
+(„in der Geschichte des Propheten …"), die **nicht** die der Königsbücher sind —
+am Vers prüfen.
+
 ## Die Parallelen sind der bestimmende Umstand
 
 Fast jedes Kapitel hat eine Parallele in einem schon annotierten Buch. Die
