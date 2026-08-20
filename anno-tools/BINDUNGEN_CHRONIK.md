@@ -297,6 +297,39 @@ Bisher: 1Chr 2 vier Proben, alle auf · 1Chr 3 sechs Proben, **fünf auf** ·
 Differenz steht schon im Luther 1912 und im masoretischen Text; klassisch
 zählt man Semaja aus dem Halbvers davor mit. **Gemeldet, nicht korrigiert.**
 
+## Die Satzzeichen-Tokens von 2. Chronik, richtig gezählt
+
+**Ein Token kann aus mehreren Satzzeichen bestehen.** Neben dem blanken `–`
+(U+2013) kommt **`–,`** vor — Gedankenstrich mit angeklebtem Komma, der
+schließende Strich eines Klammerpaars vor einem Komma. Ein Zählskript, das nur
+nach `–` sucht, übersieht ihn: in 2. Chronik sind das drei Tokens in den
+Kapiteln 10, 12 und 22, und in 1. Chronik 26 dieselbe Bauart zweimal.
+
+Richtig zählt man **Tokens, die nach dem Abstreifen aller Satzzeichen leer
+bleiben** — genau das tut auch `selfcheck.py` in seiner Gegenrechnung.
+
+Das Buch hat **44** solcher Tokens, nicht 41:
+
+| Kap | Anzahl | Verse (Anzahl je Vers, wenn > 1) |
+|---|---|---|
+| **1** | 2 | 3(2) |
+| **2** | 4 | 3 · 5 · 6 · 13 |
+| **3** | 2 | 8(2) |
+| **4** | 2 | 21(2) |
+| **5** | 5 | 1(2) · 11 · 13(2) |
+| **6** | 8 | 9 · 18 · 28(2) · 30(2) · 36(2) |
+| **8** | 2 | 6 · 13 |
+| **10** | 2 | 2(2) |
+| **11** | 1 | 10 |
+| **12** | 2 | 3(2) |
+| **14** | 2 | 7 · 10 |
+| **20** | 3 | 9(2) · 24 |
+| **21** | 1 | 13 |
+| **22** | 2 | 11(2) |
+| **29** | 1 | 32 |
+| **32** | 2 | 9(2) |
+| **36** | 3 | 18 · 22(2) |
+
 ## Der Gedankenstrich
 
 1. Chronik benutzt den **langen Strich** `–` (U+2013) als eigenes Token,
