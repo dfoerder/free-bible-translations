@@ -16,6 +16,28 @@ Sondergut). Eine zweite verlangte Blöcke ab vier Wörtern und übersah dadurch
 2Chr 7,4 · 7,8 · 7,19. **Beide Fehler haben die Agenten gefunden, weil sie
 selbst gemessen haben.**
 
+## Was diese Datei nicht zeigt
+
+**Ein Vers kann eine echte Parallele haben und trotzdem hier fehlen.** Die
+Schwelle zählt Tokens in Blöcken ab drei Wörtern; wo derselbe Inhalt mit
+umgestellter Wortfolge erzählt wird, fallen die Treffer in Zweierblöcke und
+das Verspaar rutscht unter die Schwelle. Gefundene Beispiele:
+
+| Vers | Parallele | hier gezählt | vom Agenten gezählt |
+|---|---|---|---|
+| 15,16 | 1Kön 15,13 | 5 | **17** formgleiche Positionen |
+| 15,17 | 1Kön 15,14 | 3 | 9 |
+| 7,4 · 7,8 · 7,19 | 1Kön 8,62 · 8,65 · 9,6 | 6 · 5 · 4 | 9 · 14 · 16 |
+
+**Zwei Faustregeln daraus:**
+
+1. **Die Rahmenformeln haben immer eine Parallele** — Thronbesteigung
+   („X war … Jahre alt, als er König wurde"), Quellenformel, Todes- und
+   Nachfolgeformel. Auch wenn sie hier nicht steht: in 1./2. Könige nachsehen.
+2. **Wo der Chronist umstellt, streut der Versatz weit über die hier
+   angegebene Spanne.** In 15,18 hat er die Objektliste vom Vers*kopf* ans
+   Vers*ende* verschoben — gemessen −16 bis +16, wo hier +4 … +6 steht.
+
 Wo ein **zweiter** Quellvers ebenfalls die Schwelle erreicht, ist er als
 `auch:`-Zeile angehängt — der Chronist zieht öfter zwei Verse zusammen.
 
