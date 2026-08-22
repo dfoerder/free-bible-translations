@@ -220,6 +220,30 @@ im eigenen Vers vorliegt.** Umgekehrt gilt dasselbe — eine Auflösung bleibt
 *of bronze*, `beide` steht 104-mal auf *two* und weicht nur dort auf *both*
 aus, wo `zwei` danebensteht.
 
+### Offener Befund: die Elision fehlt auch vor anderen Vokalen
+
+Die Korrektur vor `HERR` (63 Einträge) hat nur einen Ausschnitt erfasst. Der
+Agent von 2Chr 23 hat gemeldet, dass **2Kön 11,11** `beim` vor `Altar` auf
+fr *près du* / it *presso il* setzt und **2Kön 11,15** `das` vor `Heer` auf
+fr *le* / it *il*. Nachgezählt über den ganzen Bestand, nur Artikel unmittelbar
+vor ihrem Substantiv:
+
+| | fehlende Elision | richtig `l'` | Quote |
+|---|---|---|---|
+| **Französisch** (`le`/`la` vor a, e, i, o) | **332** | 3926 | 7 % |
+| **Italienisch** (`il` vor a, e, i, o) | **238** | 1763 | 11 % |
+
+Häufigste Substantive: fr *autre* (35) · *éternelle* (34) · *entier* (13) ·
+*endroit* (11) · *autel* (7) — it *accampamento* (31) · *altro* (23) ·
+*evangelo* (21) · *altare* (15) · *intero* (10).
+
+**Nicht angefasst.** Anders als bei `HERR` ist die Trefferliste **nicht
+sauber**: darunter stehen Fügungen wie fr *en chef* (11) und *à venir* (9), wo
+das Substantiv gar nicht am Anfang der Glosse steht und die Elision nicht
+greift. Ein blinder Zug über 570 Einträge wäre genau der Fehler, den die
+Warnung zum Massenzug beschreibt. Der Zug braucht eine Durchsicht der
+Trefferliste nach Kategorien.
+
 ### Offener Befund: `bis zum` doppelt die Präposition
 
 Der Agent von 2Chr 19 hat gemeldet, dass 2Chr 7,8 und 1Kön 8,65 spanisch
