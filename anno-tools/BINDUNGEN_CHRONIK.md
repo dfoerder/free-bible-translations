@@ -220,6 +220,20 @@ im eigenen Vers vorliegt.** Umgekehrt gilt dasselbe — eine Auflösung bleibt
 *of bronze*, `beide` steht 104-mal auf *two* und weicht nur dort auf *both*
 aus, wo `zwei` danebensteht.
 
+### Namen, die in 2. Chronik leicht ineinanderrutschen
+
+| Text schreibt | ist | nicht zu verwechseln mit |
+|---|---|---|
+| **`Joschafat`** (35 Belege, ab 2Chr 17,1) | der König von Juda, *Jehoshaphat · Josafat · Josaphat · Giosafat* | — **nicht** `Josaphat`; diese Schreibung gibt es im l1912mod nicht |
+| **`Amasja`** (genau **1×**, 2Chr 17,16) | ein Heerführer Joschafats, *Amasiah · Amasías · Amasia · Amasia* | **`Amazja`** (18×, Kap. 24–25), der **König**, *Amaziah · Amasías · Amatsia · Amazia* |
+| **`Michaja`** (2Chr 13,2 · 17,7) | Abias Mutter bzw. ein Fürst, *Micaiah · Micaías · Micaja · Micaia* | `Micha` in Kap. 18, der Prophet |
+| **`Huram`** | der König von Tyrus **und** der Benjaminit aus 1Chr 8,5 — ein Lemma, eine Glosse *Huram ×4* | `Hiram`, das die Chronik nie schreibt |
+| **`Asael`** (2Chr 17,8) | Schreibungsvariante, geteilte Glosse mit `Asahel` | `Asahael` (1Chr 2,16), wieder eine dritte Schreibung |
+| **`Hethiter`** (8,7) und **`Hetiter`** (1,17) | dieselbe Glosse, zwei Lemmata | — |
+
+`Amasja` und `Amazja` fallen im **Spanischen** beide auf *Amasías*. Sie stehen
+nirgends im selben Vers; nach SPEC bleibt das unaufgelöst.
+
 ### Entscheidungen aus Welle 1 (2Chr 1–3)
 
 **`bauen` ist formgebunden, nicht tempusgebunden.** Ausgezählt über den ganzen
