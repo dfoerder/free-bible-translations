@@ -220,6 +220,32 @@ im eigenen Vers vorliegt.** Umgekehrt gilt dasselbe — eine Auflösung bleibt
 *of bronze*, `beide` steht 104-mal auf *two* und weicht nur dort auf *both*
 aus, wo `zwei` danebensteht.
 
+### Offener Befund: `bis zum` doppelt die Präposition
+
+Der Agent von 2Chr 19 hat gemeldet, dass 2Chr 7,8 und 1Kön 8,65 spanisch
+„hasta al" und französisch „jusqu'à au" ergeben — die Präposition steht zweimal.
+Nachgezählt über den ganzen Bestand: **245 Paare `bis` + `zum`/`zur`,
+verteilt auf 34 verschiedene Kombinationen.**
+
+| Muster | Anzahl | Bewertung |
+|---|---|---|
+| es «hasta el/la/las» | ~149 | richtig |
+| **es «hasta al»** | **40** | Präposition doppelt |
+| **es «hasta a la» / «hasta a»** | **28** | Präposition doppelt |
+| **fr «jusqu'à au»** | **18** | Präposition doppelt |
+| **fr «jusqu'à à la» / «jusqu'à à l'»** | **20** | Präposition doppelt |
+| **fr «jusqu'au au»** | **3** | Präposition doppelt |
+
+Die sauberen Aufteilungen sind: **es** `bis` = *hasta*, `zum` = *el* / `zur` =
+*la* — die Präposition steckt bei `bis`, der Artikel bei `zum`. **fr** entweder
+`bis` = *jusqu'* mit `zum` = *au*, oder `bis` = *jusqu'à* mit `zum` = *le/la*.
+
+**Nicht angefasst.** Anders als bei der Elision vor `HERR` hängt die richtige
+Fassung hier davon ab, **wie die App zwei benachbarte Glossen zusammensetzt** —
+ob mit Leerzeichen, ob überhaupt. Das ist keine Frage, die sich aus dem Bestand
+allein entscheiden lässt. Der Zug betrifft rund **96 Einträge** und wartet auf
+eine Entscheidung.
+
 ### Namen, die in 2. Chronik leicht ineinanderrutschen
 
 | Text schreibt | ist | nicht zu verwechseln mit |
