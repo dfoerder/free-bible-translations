@@ -178,9 +178,20 @@ Versweise gemessen sieht das Buch so aus:
 | 20–40 % | 9 (38) · 12 (26) · 22 (24) · 33 (24) · 27 (23) · 21 (22) |
 | 10–20 % | 25 (19) · 34 (19) · 7 (18) · 16 (18) · 36 (18) · 11 (16) |
 | unter 10 % | 4 · 23 · 28 · 1 · 26 · 8 · 2 · 13 · 20 · 24 · 29 · 32 · 15 · 30 · 35 |
-| **echtes Sondergut** (kein Vers mit Parallele) | **3 · 14 · 17 · 19 · 31** |
+| **unter 4 %** (praktisch Sondergut) | **19 · 3 · 17 (je 1–2 %) · 14 · 30 · 31 · 35 (je 3 %)** |
 
-Es sind also **fünf** Sondergut-Kapitel, nicht fünfzehn.
+Es gibt also **kein einziges** Kapitel ohne Parallelvers — die Zeile
+„echtes Sondergut (kein Vers mit Parallele) · 3 · 14 · 17 · 19 · 31" stand hier
+falsch. Sie stammte aus der **ersten**, kapitelweise gemessenen Karte und ist
+beim Neubau nicht nachgeführt worden; der Agent von Kapitel 31 hat den
+Widerspruch gefunden. Versweise gemessen hat auch das dünnste Kapitel noch ein
+bis drei Verse mit Parallele, und **die sind benutzbar**: 2Chr 31,17 ↔
+1Chr 23,27 ist die Formel „von zwanzig Jahren an aufwärts", wörtlich, und sie
+ist in Kapitel 31 benutzt worden.
+
+**Lehre daraus**: „Sondergut" heißt in diesem Buch nie „nichts nachzuschlagen",
+sondern nur „wenig". Die Prozentzahl ist eine Erwartung an den Umfang, keine
+Erlaubnis, die Karte zu überspringen.
 
 **Achtung**: 2Chr 30, 35 und 36 haben Parallelen in **Esra**, 2Chr 29 in
 1. Chronik. Esra, Nehemia und Jeremia sind **noch nicht annotiert** und stehen
@@ -491,3 +502,78 @@ unaufgelöst.
 `Trompete`. Beide stehen im ganzen l1912mod **nur in 1Chr 15,28** zusammen;
 dort — und nur dort — weicht `Posaune` auf *horns · bocinas · cors · corni*
 aus (Schofar gegen Chatsotserah). Die 39 übrigen Belege bleiben unverändert.
+
+### Entscheidungen aus Welle 11 (2Chr 31–33)
+
+**`ganz` weicht nicht immer gleich aus.** Die Auflösung aus 17,19 und 24,5
+(`ganz` → *all of · todo · tout · tutto*) trennt dort nur, weil das benachbarte
+`alle` auf *todos · tous · tutti* steht. In **31,1** steht `all` vor einem
+Neutrum und braucht selbst *todo · tout · tutto* — dieselbe Ausweichung hätte
+**nur im Englischen** getrennt. Dort ist `ganz` deshalb auf die zweite belegte
+Lesart *all of · entero · entier · intero* gegangen, und in 31,21 lief die
+Auflösung über `allem` (*everything · todo lo · tout ce · tutto ciò*, belegt
+4Mo 31,11.23) statt über `ganzem`. **Prüf bei jeder übernommenen Auflösung, ob
+sie im neuen Vers wirklich in allen vier Sprachen trennt** — der Name des
+Wortpaars sagt darüber nichts.
+
+**Die Quellenformel hat jetzt sieben Fassungen.** 33,18 und 33,19 sind zwei
+Fassungen in einem Kapitel: 33,18 sagt „das **steht** in den Aufzeichnungen"
+— **ohne** `geschrieben`, `steht` trägt dort die Bedeutung allein
+(*is written · está escrito · est écrit · è scritto*); erst 33,19 hat die
+Spanne. 32,32 ist die Fassung von 25,26/28,26, aber ohne „von Anfang bis Ende"
+und mit der Prophetenquelle dazu. Es gibt **keinen** Namen `Hosai` im Text.
+
+**Die Todesformel von 32,33 steht in keiner der neun Listen.** Der Text sagt
+„auf dem **Weg** zu den Gräbern der **Nachkommen** Davids begraben" — nicht
+„auf der Anhöhe bei den Gräbern der Söhne", nicht „bei seinen Vorfahren"
+(so 2Kön 20,21). Dazu ein Zusatz ohne Königsbuch-Gegenstück: „erwiesen ihm bei
+seinem Tod große Ehre". 33,20 wiederum begräbt Manasse **in seinem Haus**, und
+33,25 hat für Amon **gar keine** Todesformel.
+
+**2Chr 32 ist zahlenfrei.** Keine 185 000 in 32,21 — der Chronist streicht die
+Zahl aus 2Kön 19,35. Kein Regierungsjahr, kein Datum, keine Mengenangabe. Die
+einzigen zahlnahen Wörter sind `zweite` (32,5) und `einzigen` (32,12).
+
+**`König` vor Eigennamen: die Chronik ist eindeutig, die Königsbücher sind es
+nicht.** Ausgezählt: 2. Chronik **30 klein zu 1 groß**, und die eine
+Großschreibung (10,13) steht am Satzanfang — also lückenlos regelkonform.
+1. Könige steht 27:16, 2. Könige 10:9. **Wer in der Chronik dem Parallelvers
+der Königsbücher folgt, erzeugt einen Ausreißer**; genau so ist in 33,25
+(„gegen König Amon", nach 2Kön 21,24) ein `King` entstanden und
+zurückgenommen worden.
+
+**Zwei Doppelungen sind Bestandspraxis, keine Kollision** — beide ausgezählt,
+beide bleiben stehen:
+- `zu` ↔ `nach` als *to · a · à · a*: **127 Verse** im Bestand.
+- `nach` ↔ `zu` in den Büchern 10–14: 109 Verse mit beiden, davon **79
+  identische Paare**.
+Eine buchlokale Ausweichung wäre hier der Fehler, nicht die Reparatur.
+
+**Der Kreuzabgleich der Welle fand vier Angleichungen**, die kein Prüfskript
+gemeldet hat: `setzte Hauptleute` steht in 32,6 und 33,14 wortgleich und trug
+zwei verschiedene Glossen (jetzt beide *set · puso · plaça · mise*, 9 Belege);
+`ganzen` vor Femininum stand in 32,7/32,9 auf *entera · entière · intera*,
+während 31,18 der Bestandsmehrheit *toda · toute · tutta* folgt (99 zu 8);
+`dazu` stand in 32,28 auf *en outre* — **eine Lesart, die der Bestand gar nicht
+kennt** (Mehrheit *en plus*, 166 Belege).
+
+**Befunde, gemeldet statt geglättet:**
+- **33,7 sagt „vor allen Stämmen Israels"**, wo 2Kön 21,7, 2Chr 12,13 und
+  1Kön 14,21 alle „**aus** allen Stämmen" haben. Die wörtliche Bindung `vor` =
+  *before · ante · devant · davanti a* ist gehalten — die **Bedeutung** ist
+  aber „aus/unter". Wer die Parallele überträgt, glossiert hier falsch.
+- **33,3 weicht in einem einzigen Vers fünfmal von 2Kön 21,3 ab**:
+  `Höhenheiligtümer` statt `Opferhöhen`, `niedergerissen` statt `zerstört`,
+  `den Baalim` (Pl.) statt `dem Baal`, `Ascherabilder` (Pl.), `Heer des
+  Himmels` getrennt statt `Himmelsheer`.
+- **`Josabad`** steht im Bestand 7× auf en *Jehozabad* (יְהוֹזָבָד); in 2Chr 31,13
+  ist es יוֹזָבָד = *Jozabad*. Die Bestandsglosse ist behalten worden — ein
+  deutsches Lemma, eine Glosse —, die englische Spalte trägt dort also eine zu
+  lange Namensform.
+- **`Vorratskammer` hat genau einen Bestandsbeleg, und der ist die falsche
+  Sachdomäne**: Lk 12,24, die Vorratskammer der Raben (*despensa · cellier*).
+  Für die Tempelkammern von 31,11 ist *storerooms · almacenes · magasins ·
+  magazzini* gesetzt.
+- **`Kore` (קוֹרֵא) fällt in es/fr mit `Korah` (קֹרַח) zusammen** — zwei hebräische
+  Namen, eine romanische Schreibung. Sie stehen nirgends im selben Vers; nach
+  SPEC bleibt das unaufgelöst. Italienisch ist getrennt (`Kore` / `Core`).
