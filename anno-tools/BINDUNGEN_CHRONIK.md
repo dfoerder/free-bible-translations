@@ -577,3 +577,79 @@ kennt** (Mehrheit *en plus*, 166 Belege).
 - **`Kore` (קוֹרֵא) fällt in es/fr mit `Korah` (קֹרַח) zusammen** — zwei hebräische
   Namen, eine romanische Schreibung. Sie stehen nirgends im selben Vers; nach
   SPEC bleibt das unaufgelöst. Italienisch ist getrennt (`Kore` / `Core`).
+
+### Entscheidungen aus Welle 12 (2Chr 34–36) — das Buch ist fertig
+
+**Die Karte hat für 2Chr 35 drei Königsbuch-Parallelen nicht**, die es gibt:
+35,20 ↔ 2Kön 23,29 (13 Formen, alle deckungsgleich), 35,24 ↔ 2Kön 23,30 (13),
+35,18 ↔ 2Kön 23,22 (17). Dazu zwei innerbuchliche, die keine Liste nennt:
+35,2 ↔ 2Chr 8,14 (12) und 35,12 ↔ **2Chr 23,18** (16) — *nicht* 1Chr 16,40, wie
+die Karte angibt; dort steht „im **Gesetz** des Mose", hier „im **Buch**".
+
+**Die Quellenformel hat acht Fassungen.** 35,26–27 ist die achte und setzt sich
+aus vier Bausteinen zusammen, die im Buch nie zuvor so kombiniert sind — Kopf
+wie 32,32, dann **„gemäß der Vorschrift im Gesetz des HERRN"** (steht in keiner
+anderen), dann „seine Geschichte" wie 16,11, „von Anfang bis Ende", und der
+Schluss wörtlich nur noch aus **27,7**. 36,8 ist wiederum mit 27,7 die engste
+Verwandtschaft des ganzen Buches: **20 formgleiche Positionen, null
+Glossenabweichung**.
+
+**Die spanische Altersangabe: meine frühere Messung war falsch.** Ich hatte
+26:12 für *tenía* gegen *era* gezählt und daraus geschlossen, `era` sei eine
+Buchkonvention von 2. Könige. Das Skript zählte **jedes** `war` im Vers mit,
+auch „seine Mutter *war*…". Zählt man nur das `war` **vor der Altersangabe**,
+steht es **31 zu 1**. Es war keine Konvention, sondern ein einzelner Ausreißer.
+Korrigiert: **2Kön 14,2** (es/fr/it) und **2Sam 5,4** (nur fr). Die Formel steht
+jetzt korpusweit lückenlos auf *was · tenía · avait · aveva*.
+
+**`von ganzem Herzen` ↔ `mit ganzer Seele` — vier Verse nachgezogen.** Der
+Agent von Kapitel 34 hat gemeldet, dass 2Kön 23,3 die Kollision unaufgelöst
+führt. Nachgezählt: **sechs Verse** haben beide Spannen, **vier** trugen
+identische Einzelwort-Glossen (*with · con · de · con*), zwei waren in
+2. Chronik schon gelöst. Die vier — Jos 22,5 · 2Kön 23,3 · 2Kön 23,25 — folgen
+jetzt dem 34,31-Muster: `von` = *of · de · de · di*, `mit` = *with · con ·
+**avec** · con*. Die Spannen tragen die Bedeutung ohnehin.
+
+**`Obersten der Leviten` ist *chiefs*, nicht *leaders*** — der Bestand hat für
+diese Fügung nur *chief/chiefs*. In 35,9 stand *leaders*; nachgezogen. Die
+Versammlungs-/Kommando-Unterscheidung greift bei **Kultpersonal** nicht: dort
+entscheidet die Fügung, nicht der Kontext.
+
+**`brachte` + Sachobjekt + Zielort ist französisch nicht *amena***. In 36,7
+(„brachte … Geräte … nach Babel") stand *amena*, das für **Personen** gilt.
+Der buchinterne Präzedenzfall 2Chr 25,24 (dieselbe Wegführung von
+Tempelgerät) hat *emporta*; nachgezogen.
+
+**Widerlegte Prompt-Vorgaben aus dieser Welle**, damit sie nicht wiederkehren:
+- `Geräte` ist **43:0** *utensils*, nicht *vessels*.
+- `Necho` heißt im Bestand ***Neco · Necao · Néco · Neco***, nicht „Necho".
+- `Fest` ist **A2** (57:1), nicht B1. `Sippe` Singular ist *clan*, nur der
+  Plural *clanes*; beide stehen in 35,5 im selben Vers.
+- 36,23 sagt „Wer **nun** unter euch zu seinem Volk **gehört**" — Vollverb,
+  kein Kopulasatz.
+- 35,25 sagt **nicht** „es steht in den Klageliedern geschrieben", sondern
+  „Diese Klagelieder sind **aufgezeichnet**" — eigenes Lemma `aufzeichnen`,
+  nicht die Spanne `geschrieben stehen`.
+- In 2Chr 34 kommt `König` vor Eigennamen **überhaupt nicht** vor.
+
+**Der Chronist schreibt `Haus`, wo 2. Könige `Tempel` hat** — sechsmal allein
+in Kapitel 34 (34,8 · 10 · 15 · 30). Wer den Block überträgt, glossiert
+*temple*. Ebenso `Einwohner` statt `Bewohner` (34,24 · 27 · 28), `Väter` statt
+`Vorfahren`, `Zeugnisse`/`Rechte` statt `Bestimmungen`/`Ordnungen`, und in
+34,30 **`Klein und Groß`** in umgekehrter Reihenfolge gegenüber 2Kön 23,2.
+
+**`Kores` ist eine Lemmafalle.** Die Form steht im Bestand zweimal (1Chr 9,19 ·
+26,1) und ist dort der **Genitiv von `Kore`**, dem levitischen Torhüter. In
+36,22–23 ist es Kyros von Persien. Wer dem Lexikon-Extrakt folgt, glossiert den
+falschen Mann. Dasselbe Muster bei `Nathanael` in 35,9: der AT-Träger ist
+*Nethanel* (4Mo 2,5), nicht die NT-Form.
+
+**Die Zahlenabweichung von 36,9 ist gemeldet, nicht geglättet**: die Chronik
+sagt Jojachin sei **acht** Jahre alt gewesen, 2Kön 24,8 sagt **achtzehn**, und
+die Chronik hat zusätzlich „und zehn Tage", die im Königsbuch fehlen.
+
+**`anno-quellen` trägt ältere Level als die gebauten Dateien** — das ist kein
+Fehler, sondern die Arbeitsweise von `buildbook.py`, das die Level beim Bau
+korpusweit vereinheitlicht. **Für Glossen ist die Quelle maßgeblich, für Level
+die gebaute Datei.** Wer Kapitelquellen als Vorlage liest, muss die Level aus
+`bibles/deu/l1912mod/anno/*_multi.json` nehmen.
