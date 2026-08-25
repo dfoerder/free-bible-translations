@@ -37,9 +37,11 @@ Punkt braucht die Belegverse und eine Entscheidung.
   einzige Bestandsbeleg der Wendung ist 2Kor 12,20; die beiden sind nirgends
   sonst im selben Vers geprüft. Neh 6,13 ist die erste Stelle, an der der
   Konflikt sichtbar wird — dort `verleumden` → *defame*.
-- **`zugute` hat drei Belege, alle aus Paulusbriefen**, zwei mit identischer
-  romanischer Seite bei verschiedener englischer (*to the benefit* / *to my
-  benefit*).
+- **`zugute` hat vier Belege, nicht drei** — Röm 11,28, 2Kor 11,1 **und
+  Nehemia 5,19** (der Agent von Kapitel 13 hat meine erste Zählung korrigiert).
+  5,19 und 2Kor 11,1 tragen beide en *to my benefit*, aber verschiedene
+  romanische Seiten (*en mi beneficio* gegen *en beneficio*). Nehemia 13,31
+  folgt 5,19, weil das die Formel desselben Buches ist.
 - **`erlassen` ist romanisch stabil, englisch nicht:** *cancel* (5Mo 15,2)
   gegen *forgiven* (Joh 20,23) bei identischem es *perdonado*.
 - **`jüdisch` ist nur neutestamentlich belegt** (12 Belege, alle mit it
@@ -164,6 +166,30 @@ Punkt braucht die Belegverse und eine Entscheidung.
 - **`Rind` und `Vieh` tragen beide *cattle/livestock · ganado · bétail ·
   bestiame***. In Neh 10,37 stehen sie im selben Vers, dort verse-lokal
   getrennt. Korpusweit offen.
+
+## Aus den Kapiteln 12 und 13
+
+- **Die spanischen Tornamen aus Nehemia 3 sind uneinheitlich großgeschrieben.**
+  Acht Tore heißen `puerta del …` klein, nur `Schaftor` heißt
+  `Puerta de las Ovejas` groß — das kommt aus der Bindung an Johannes 5,2.
+  Fortgeschrieben, nicht vereinheitlicht; das neue `Kerkertor` folgt der
+  Mehrheit. **Kandidat für eine Bestandsentscheidung.**
+- **`zu dieser Zeit` (A2) und `zu jener Zeit` (B1) stehen auf verschiedenen
+  Leveln**, obwohl sie dasselbe bedeuten (16 Belege gegen einen, Neh 6,17).
+- **`einrichten` hat keine passende Lesart** für „waren eingerichtet worden"
+  (12,46). Die sechs 1Kön-Belege heißen *arranged* und meinen Bau-Nischen;
+  `vorab.py` gibt genau die als Bindung aus. Genommen wurde die andere
+  Bestandslesart (1Kön 20,34 · Jos 20,2, *set up*).
+- **`lagern` kennt im Bestand nur das Feldlager** — 68 Belege *camped*, keiner
+  für „einlagern". Neh 13,5 („hatte man gelagert") ist der erste.
+- **`wandeln` kennt nur die intransitive Lesart** (*walked*, 2Chr 17,3).
+  „wandelte den Fluch in einen Segen" (13,2) ist transitiv.
+- **`Gesang` ist uneinheitlich:** dasselbe deutsche Singularwort trägt viermal
+  romanischen Plural (1Mo 31,27, 1Chr) und zweimal Singular (2Chr 29,27/28).
+- **`Vorratskammer` hat zwei weit auseinanderliegende Lesarten:** das
+  Tempelmagazin (2Chr 31,11) und die Speisekammer (Lk 12,24).
+- **`Nathanael` ist testamentarisch gespalten:** AT *Nethanel* (9 Belege)
+  gegen NT *Nathanael* (5, Johannes). Neh 12,21 nimmt die AT-Lesart.
 
 ## Werkzeugbefunde, behoben
 
