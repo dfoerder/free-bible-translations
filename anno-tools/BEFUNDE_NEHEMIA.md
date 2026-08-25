@@ -82,6 +82,31 @@ Punkt braucht die Belegverse und eine Entscheidung.
   Bibelform der Zielsprache zu setzen — dieselbe Datei macht es bei `Usa` →
   *Uzzah*.
 
+## Aus Kapitel 8
+
+- **`Josabad` weicht korpusweit in der englischen Spalte ab.** Alle 12 Belege
+  (2Kön 12,22 · 1Chr 12,4 · 12,20 zweimal · 26,4 · 2Chr 17,18 · 24,26 · 31,13 ·
+  35,9 · Esra 8,33 · 10,22 · 10,23) tragen en *Jehozabad*, aber es/fr
+  *Jozabad* und it *Iozabad*. Das Hebräische hat beides — יְהוֹזָבָד bei drei
+  Stellen, יוֹזָבָד bei den übrigen neun —, das Deutsche schreibt überall
+  `Josabad`. **Zwei mögliche Auflösungen:** die englische Spalte auf
+  *Jozabad* ziehen (dann stimmen alle vier Sprachen überein und folgen der
+  Mehrheit), oder positionsgebunden trennen wie bei `Assur`, `Lot` und
+  `Cherub`. Neh 8,7 schreibt den Bestand einstweilen fort.
+- **`Anteil` hat nur einen Beleg** (Jos 17,5, Landanteile: *shares · partes ·
+  parts · parti*). In 8,12 sind es Essensanteile — eigene Glosse *portions ·
+  porciones · portions · porzioni*, Lemma und Level unverändert.
+- **`Laubhütte` hatte nur drei Belege** (3Mo 23,42 zweimal, 5Mo 31,10). Mit den
+  vier Belegen aus Nehemia 8 verdoppelt sich der Bestand.
+- **`Ephraimtor` war entgegen meiner Vorgabe schon belegt** (2Kön 14,13 ·
+  2Chr 25,23, B2). Die vorhandene Bindung ist übernommen worden, statt einen
+  neuen Tornamen nach dem Muster zu bauen.
+- **`hints.py` meldet für Kapitel 8 null Kollisionen**, der selbstgefahrene
+  Lauf des Agenten fand drei echte: `des`/`zu` (8,1), `aus`/`seit` (8,17),
+  `auf`/`zu` (8,15). Alle drei betreffen Funktionswörter, die `hints.py`
+  ausblendet — dieselbe Lücke, vor der `AUFTRAG_AT.md` bei den Partikeln
+  trennbarer Verben warnt, hier bei Präpositionen.
+
 ## Werkzeugbefunde, behoben
 
 `levelcheck.py`, `konvention.py` und `kreuz.py` hatten den Scratchpad-Pfad der
