@@ -288,3 +288,23 @@ vier bekannten Fälle ab, einzeln keines.
 richtig ist: `Ufer` in Josua 3,15 ist im Deutschen wirklich Plural („trat über
 seine Ufer"), und `das Rechte` in 1. Johannes 2,29 ist ein anderes Wort als die
 `Rechte` im Sinne von Rechtsansprüchen.
+
+## Ein Befund über Nehemia hinaus: `hilfsverb.py alle` ist nicht null
+
+`projekt-annotation-deutsch.md` sagt, `hilfsverb.py` melde über den gesamten
+Bestand 0. Beim Buchabschluss von Nehemia meldet es **35 Fälle** — für
+Nehemia selbst 0, alle 35 liegen in älteren Büchern. Sie sind **nicht** von
+der `mehrwort.py`-Korrektur verursacht: keiner der 35 Treffer liegt in einem
+der 20 Kapitel, die dabei geändert wurden (maschinell gegengeprüft).
+
+Verteilung: Johannes 11 · 1. Korinther 5 · Matthäus 3 · 2. Korinther 3 ·
+Ruth, Lukas, Kolosser, Epheser, 1. Mose, 2. Mose je 2 · Jakobus 1.
+
+Mindestens einer ist eindeutig echt: **2. Mose 8,3** trägt an `ließen` und
+`machten` in Spanisch, Französisch und Italienisch **dieselbe** Glosse
+(*hicieron* · *firent* · *fecero*) — genau das Muster, für das das Skript
+gebaut ist. Andere sind Grenzfälle: in 1. Mose 33,15 ist französisch
+*laisser* für `mitgeben` idiomatisch vertretbar.
+
+**Offen.** Jeder Fall braucht den Vers, und das ist eine eigene Runde durch
+elf Bücher — nicht nebenbei am Rand eines Buchabschlusses zu erledigen.
