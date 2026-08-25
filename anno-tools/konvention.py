@@ -39,10 +39,19 @@ for kap in kaps:
         toks=[C.strip_punct(t) for t in src[kap][v].split()]
         belegt={(e['pos'], (e.get('parts') or [e['pos'],e.get('pos_end')])[-1])
                 for e in d[v] if C.is_multi(e)}
+        roh=src[kap][v].split()
         for a,b,maxd in WENDUNGEN:
             for i,t in enumerate(toks):
                 if t.lower()!=a: continue
                 for j in range(i+1, min(i+maxd+1, len(toks))):
+                    # Ein zweites `a` oder ein alleinstehender Gedankenstrich
+                    # beendet die Suche: in Neh 6,10 stehen zwei `um`, das
+                    # erste ohne eigenes `zu` (`um dich umzubringen`). Ohne
+                    # den Abbruch paart das Skript `um` (37) mit dem `zu`
+                    # (47) des zweiten Teilsatzes und meldet eine Luecke,
+                    # die es nicht gibt.
+                    if toks[j].lower()==a or C.is_punct_only(roh[j]):
+                        break
                     if toks[j].lower()==b:
                         lem=f'{a} {b}'
                         if (i,j) not in belegt:

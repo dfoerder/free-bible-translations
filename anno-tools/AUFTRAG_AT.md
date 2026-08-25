@@ -34,6 +34,22 @@ weggeschrieben war.
 Übersetzungen **direkt am Eintrags-Dict** zuweisen — nie eine Liste von
 Glossen bauen und hinterher per Index zusammenführen.
 
+**Feste Wendungen, die der Bestand als Mehrwort führt, nicht vergessen.** Ein
+fehlender Mehrwort-Eintrag ist für `selfcheck.py` und `qa.py` **prinzipiell
+unsichtbar**: die Einzelwörter sind vollständig und richtig, strukturell fehlt
+nichts. In Esra sind so zehn Stellen liegengeblieben, in Nehemia 4 und 5 noch
+einmal vier. Die häufigsten: `um … zu` (287 Belege), `nicht mehr` (96),
+`so wie` (95), `genau wie`, `wie wenn`. Nach dem Schreiben selbst prüfen:
+
+```
+export ANNO_OUT=<dein out-Ordner>
+python3 konvention.py <buchNr> <kapitel>
+```
+
+Es produziert **richtigerweise Fehlalarme** — bei `den König um eine Eskorte zu
+bitten` ist `um` die Rektion von `bitten`, bei `so wertvoll wie Gold` ist es die
+Vergleichsklammer. Jeden Treffer am Vers ansehen, dann entscheiden.
+
 Bei Listen (Stammeslisten, Maßangaben, Materiallisten, Opferordnungen) ein
 **eigenes kleines Prüfskript** schreiben, das die Position jedes Listenglieds
 aus dem Quelltext ableitet und den Eintrag dort dagegenhält. Aufzählungen
