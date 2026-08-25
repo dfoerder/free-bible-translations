@@ -12,7 +12,11 @@ import sys, json, glob, os, collections
 sys.path.insert(0,'/Users/dfoerd/Documents/projekte/bibel/bibles-translations/anno-tools')
 import common as C
 
-OUT='/private/tmp/claude-502/-Users-dfoerd-Documents-projekte-bibel-bible-reader/3d1d1224-a30a-484b-869b-fa465569a632/scratchpad/esra/out/'
+OUT=os.environ.get('ANNO_OUT')
+if not OUT:
+    sys.exit('ANNO_OUT nicht gesetzt — auf den out/-Ordner der laufenden '
+             'Arbeit zeigen lassen: export ANNO_OUT=…/scratchpad/<buch>/out')
+if not OUT.endswith('/'): OUT += '/'
 
 # Wendungen aus zwei Tokens, die im Bestand oft genug als Mehrwort geführt sind,
 # dass ein Fehlen erklärungsbedürftig ist. Erstes Token, letztes Token, Höchstabstand.
