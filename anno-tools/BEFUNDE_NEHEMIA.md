@@ -226,3 +226,39 @@ Bestand und sortiert nach der **Länge des längsten gemeinsamen Blocks**, nicht
 nach Ähnlichkeit. Wo beide Maße auseinandergehen, nennt es den
 Ähnlichkeitstreffer daneben. Der erste Lauf über Nehemia 11 reproduziert
 unabhängig genau die zwei Korrekturen des Agenten.
+
+**Das Einzelwort in seiner Mehrwort-Wendung — jetzt mechanisch gefunden.**
+Der Fall war seit Esra 5,12 bekannt und ist in Nehemia 9 dreimal wieder
+aufgetreten. Gefunden wurde er jedes Mal nur zufällig: `selfcheck.py` und
+`qa.py` sehen ihn prinzipiell nicht (strukturell ist beides korrekt), und
+`ausreisser.py` schlägt nur an, wenn drei Sprachen sich einig sind — bei zwei
+betroffenen Sprachen bleibt er stumm.
+
+`mehrwort.py` sucht ihn gezielt: ein **Inhaltswort** unter einem
+Mehrwort-Eintrag, dessen Glosse als **ganzes Wort** in der Glosse der Wendung
+steht und zugleich eine **Flexionsvariante** der Korpusmehrheit für diese
+Wortform ist. Beide Einschränkungen waren nötig — die erste Fassung meldete
+18 335 Stellen, fast alles Artikel und Präpositionen.
+
+Zwei Fehler im Skript selbst hat erst die Gegenprobe aufgedeckt, bei der die
+drei bekannten Nehemia-Fehler künstlich wiederhergestellt wurden: Es meldete
+**null**, weil die Enthaltensein-Prüfung auf Teilzeichenketten lief — `main`
+ist eine Teilzeichenkette von `mains`, also galt die Mehrheitsform als in der
+Wendung enthalten und der Treffer fiel weg. Seither prüft es auf Wortgrenzen.
+**Ein Prüfskript, das an den bekannten Fällen nicht anschlägt, ist nicht
+geprüft.**
+
+Der Lauf über den Gesamtbestand fand **34 Stellen in acht Büchern** — 31-mal
+`Hand`, dazu `Arm`, `Seite` und `Zeit`. Alle korrigiert, in Anno-Datei und
+Quelle, `validate.py alle` und `qa.py alle` sauber, Neubau byte-identisch.
+
+Was `mehrwort.py` **nicht** findet: den Fall, in dem die Wendung ein ganz
+anderes Wort einsetzt — `Rücken` stand italienisch auf *spalle* aus *voltare
+le spalle*, während die Mehrheit *schiena* ist. Das ist keine Flexionsvariante;
+dafür ist `ausreisser.py` zuständig. Die beiden Skripte decken zusammen alle
+vier bekannten Fälle ab, einzeln keines.
+
+**`--fix` gehört immer mit `--nur`.** Ein pauschaler Lauf korrigiert auch, was
+richtig ist: `Ufer` in Josua 3,15 ist im Deutschen wirklich Plural („trat über
+seine Ufer"), und `das Rechte` in 1. Johannes 2,29 ist ein anderes Wort als die
+`Rechte` im Sinne von Rechtsansprüchen.
