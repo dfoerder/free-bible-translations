@@ -127,6 +127,44 @@ Punkt braucht die Belegverse und eine Entscheidung.
   eigenen Kollisionslauf verlangt** — sonst löst ein Agent gewissenhaft
   zwanzig Nicht-Fälle auf.
 
+## Aus den Kapiteln 9 und 10
+
+- **Das Einzelwort übernimmt den Plural seines Mehrwort-Eintrags** — das in
+  Esra 5,12 dokumentierte Muster, hier drei weitere Fälle: `Hand` in Neh 9,27
+  und 9,30 stand französisch auf *mains*, weil der idiomatische Mehrwort-
+  Eintrag `in die Hand geben` = *livrer entre les mains* daneben stand,
+  während der deutsche Text Singular hat. Ebenso `Rücken` in 9,29 auf
+  it *spalle* aus *voltare le spalle*. Alle drei gezogen. **Das gehört in
+  jedes Prüfskript:** wo ein Mehrwort-Eintrag eine Position überdeckt, muss
+  das Einzelwort dort trotzdem dem deutschen Numerus folgen.
+- **`bis auf` trägt im Bestand *except for*** (1 Beleg). In Neh 9,32 heißt
+  „bis auf diesen Tag" *until this day* — deshalb dort **kein** Mehrwort-
+  Eintrag, weil derselbe Lemma-String sonst zwei unvereinbare Bedeutungen
+  trüge.
+- **`dein` ↔ `euer` kollidieren englisch (*your*) an 40 von 48 Bestandsstellen
+  unaufgelöst.** Englisch hat die Unterscheidung nicht. Neh 9,5 schreibt das
+  fort — eine buchlokale Sonderlösung hätte den Bestand inkonsistent gemacht.
+- **`Erbarmen` und `Barmherzigkeit` tragen beide en *mercy***. In Kapitel 9
+  stehen sie nie im selben Vers, deshalb nicht aufgelöst.
+- **`Assur` bekommt in Neh 10,18 eine dritte Lesart** (Azzur, עַזּוּר) neben
+  *Assyria* (1Mo 10,11) und *Asshur* (1Mo 10,22). Positionsgebunden wie
+  `Lot`, `Cherub` und `Mal`.
+- **`Micha` (10,12) ist die seltene Lesart:** 39 der 40 Bestandsbelege sind
+  Micha/Micaiah aus Richter und Königen, nur 2Sam 9,12 trägt dieselbe
+  hebräische Form מִיכָא = *Mica*. Der Vers hat entschieden, nicht die
+  Mehrheit.
+- **`Hosea` (10,24) folgt dem Bestand gegen die englischen Bibeln.** WEB
+  schreibt „Hoshea"; der Bestand glossiert dieselbe hebräische Form in
+  4Mo 13,8 als *Hosea*. Die englische Spalte trägt damit für Josuas Vorname
+  und den Propheten denselben Namen. **Kandidat für eine
+  Bestandsentscheidung.**
+- **`einnehmen` bekommt eine zweite Bedeutung:** alle 90 Bestandsbelege sind
+  „Land einnehmen" (*take/capture*), Neh 10,39 ist „den Zehnten einnehmen"
+  (*collect*).
+- **`Rind` und `Vieh` tragen beide *cattle/livestock · ganado · bétail ·
+  bestiame***. In Neh 10,37 stehen sie im selben Vers, dort verse-lokal
+  getrennt. Korpusweit offen.
+
 ## Werkzeugbefunde, behoben
 
 `levelcheck.py`, `konvention.py` und `kreuz.py` hatten den Scratchpad-Pfad der
