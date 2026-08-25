@@ -107,6 +107,26 @@ Punkt braucht die Belegverse und eine Entscheidung.
   ausblendet — dieselbe Lücke, vor der `AUFTRAG_AT.md` bei den Partikeln
   trennbarer Verben warnt, hier bei Präpositionen.
 
+## Aus Kapitel 11
+
+- **`Vorsteher` (C1) und `Oberhaupt` (B2) sind in es/fr/it identisch**
+  (*jefe · chef · capo*). In Kapitel 11 stehen sie nie im selben Vers, deshalb
+  nicht angefasst — aber es ist eine latente Bindungsschwäche, die in einem
+  Vers mit beiden Wörtern zuschlägt.
+- **`Aja` (11,31) ist hier eine benjaminitische Ortschaft**, im Bestand
+  (1Mo 36,24) ein Personenname. Ortslesart *Aija · Aía · Ajja · Aia* gesetzt,
+  Lemma bleibt `Aja` — die Konvention von `Cherub` und `Sia`.
+- **`Kirjath-Arba` (11,25) ist nicht `Kirjath-Jearim`** aus Neh 7,29. Eigener
+  Eintrag aus Josua 14,15.
+- **Fünfzehn scheinbare Kollisionen sind korpusweite Praxis**, nicht
+  Nachlässigkeit: `nach`/`zu` teilen sich en *to* in **200** fertigen Versen,
+  `auf`/`in` teilen sich es *en* in 181, `aus`/`von` teilen sich es *de* in
+  208, `ihr`/`sein` teilen sich es *su* in 129. Die Zielsprachen verschmelzen
+  diese Präpositionen und Possessiva. Eine Sonderlösung in einem Kapitel
+  machte den Bestand nur inkonsistent. **Das gehört in jeden Prompt, der einen
+  eigenen Kollisionslauf verlangt** — sonst löst ein Agent gewissenhaft
+  zwanzig Nicht-Fälle auf.
+
 ## Werkzeugbefunde, behoben
 
 `levelcheck.py`, `konvention.py` und `kreuz.py` hatten den Scratchpad-Pfad der
@@ -147,3 +167,24 @@ Fehlzuordnungen und die vier Verse der echten Umstellung
 (7,22 · 23 · 24 · 25 ↔ Esra 2,19 · 2,17 · 2,18 · 2,20). Kein Verfahren kann
 zwischen beidem entscheiden; das Skript benennt jetzt aber, **wo** entschieden
 werden muss.
+
+**Die Parallelensuche nach Ähnlichkeit ist bei Listen unbrauchbar** — und zwar
+so gründlich, dass ich selbst darauf hereingefallen bin, nachdem ich denselben
+Fehler in `vorlage.py` schon behoben hatte. Ich hatte für den Prompt von
+Kapitel 11 jeden Vers gegen den ganzen Bestand abgeglichen und nach
+Ähnlichkeit sortiert; der Agent hat zwei meiner acht Zuordnungen gemessen
+widerlegt.
+
+Nehemia 11,7 hat gegen 1Chr 5,14 die Ähnlichkeit **0,57**, teilt mit ihr aber
+nur `Dies sind die` — drei Allerweltswörter. Gegen 1Chr 9,7 liegt die
+Ähnlichkeit bei **0,44**, der gemeinsame Block ist aber
+`Benjamins: Sallu, der Sohn Mesullams, des Sohnes` — sieben Tokens, die es so
+nur an dieser einen Stelle gibt. Bei Genealogien besteht ein großer Teil jeder
+Zeile aus derselben Bauform; die Ähnlichkeit misst dann vor allem die
+**Gattung**, der lange Block die **Stelle**.
+
+Daraus ist `parallelen.py` entstanden: es durchsucht den ganzen annotierten
+Bestand und sortiert nach der **Länge des längsten gemeinsamen Blocks**, nicht
+nach Ähnlichkeit. Wo beide Maße auseinandergehen, nennt es den
+Ähnlichkeitstreffer daneben. Der erste Lauf über Nehemia 11 reproduziert
+unabhängig genau die zwei Korrekturen des Agenten.
