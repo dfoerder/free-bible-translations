@@ -50,6 +50,38 @@ Punkt braucht die Belegverse und eine Entscheidung.
 - **`Aufstand` hat nur NT-Belege** (*riot* 3×, *revolt* 2×). Neh 6,6 ist der
   erste AT-Beleg und nimmt *revolt*.
 
+## Aus Kapitel 7 (der Esra-2-Parallele)
+
+- **`Sia` (7,47) trägt im Bestand eine andere Person.** Die Form ist nur aus
+  1Chr 5,13 belegt (*Zia*, ein Gadit); 7,47 meint die Tempeldiener-Sippe, die
+  Esra 2,44 als `Siaha` schreibt. Nicht die Bestandslesart übernommen, sondern
+  *Sia · Sía · Sia · Sia* gesetzt. Das Lemma trägt damit zwei Lesarten — wie
+  `Cherub` und `Immer` schon.
+- **`Usa` (7,51) hängt im Bestand an Uzzah aus 2Sam 6,3** (11 Belege). Esra
+  2,49 hat dieselbe Glosse für die Tempeldiener-Sippe übernommen; Nehemia
+  folgt dem, damit die Parallelliste nicht auseinanderläuft. Falls das je
+  korrigiert wird, müssen Esra 2,49 und Neh 7,51 **gemeinsam** gehen.
+- **`Pareos` und `Parevs` sind dieselbe Sippe** und tragen beide französisch
+  *Pareosch* — eine aus der deutschen Schreibung gebildete Form, nicht die
+  übliche französische Namensform. Kandidat für eine Bestandsentscheidung.
+- **`einhängen` läuft auseinander:** Neh 6,1 führt es als Einzelwort (*hung*),
+  Neh 3,1 · 3,3 · 3,6 · 3,13 dieselbe Handlung als Mehrwort `einsetzen`.
+  7,1 folgt dem Mehrwort-Muster aus Kapitel 3.
+- **`eingeben` hat genau einen Beleg** (2Sam 14,3, *prompted · dictó · souffla
+  · suggerì*). „Gott gab mir ein" ist ein anderer Kontext als Joabs Einflüstern;
+  7,5 nimmt englisch *prompted*, romanisch aber *inspiró · inspira · ispirò*.
+  Die Vierergruppe ist für dieses Lemma damit gespalten.
+- **`erfassen` hat drei Belege in drei Bedeutungen** (*number* 1Kön 3,8,
+  *grasp* Eph 3,18 und 1Tim 6,19). „in Listen erfassen" ist eine vierte.
+- **`gottesfürchtig` war nur neutestamentlich belegt** (Apg 10,22 · 17,4);
+  7,2 ist der erste AT-Beleg.
+- **`Tür` ↔ `Tor`**: 7,3 ist nach 3,6 und 6,1 die dritte Stelle im Buch, an der
+  beide im selben Vers stehen. Der korpusweite Punkt oben bleibt offen.
+- **Geprüft und entkräftet:** Esra 2,49 glossiert das deutsche `Beasi` als
+  *Besai*. Das ist kein Fehler, sondern die Bestandskonvention, Namen in die
+  Bibelform der Zielsprache zu setzen — dieselbe Datei macht es bei `Usa` →
+  *Uzzah*.
+
 ## Werkzeugbefunde, behoben
 
 `levelcheck.py`, `konvention.py` und `kreuz.py` hatten den Scratchpad-Pfad der
@@ -72,3 +104,21 @@ der VERWANDT-Abschnitt auf `herum` und `hinab` statt aufs Lemma. Aufgedeckt
 hat es nur `levelcheck.py`. Der formbasierte Fallback trifft bei trennbaren
 und Präfixverben oft daneben — das gehört in jeden Prompt, der `hints.py`
 benutzt.
+
+`vorlage.py` hat drei Verse falsch zugeordnet, und zwar systematisch. Es suchte
+je Vers von A unabhängig den ähnlichsten Vers von B. Bei einer Liste
+gleichgebauter Zeilen (`die Nachkommen von X: Zahl;`) trägt das nicht: wenn
+Name **und** Zahl abweichen, ist der Rest der Zeile in jeder anderen Zeile
+genauso ähnlich. Neh 7,15 (Binnui/648) bekam so Esra 2,4 (Sephatja/372) statt
+2,10; ebenso 7,28. Gefunden hat es der Agent von 7,1–40, nicht das Skript.
+
+Es rechnet jetzt zusätzlich eine **ordnungserhaltende Gesamtzuordnung**
+(Needleman-Wunsch über die Ähnlichkeitsmatrix), die eine Zeile nicht
+überspringen kann, um eine zufällig ähnlichere weiter hinten zu greifen. Wo
+beide Verfahren dasselbe sagen, ist die Zuordnung belastbar; wo sie
+auseinandergehen, steht ein **WARNUNG**-Hinweis samt Wortlaut und Einträgen
+der Gegenkandidatin. In Nehemia 7 sind das genau sieben Stellen — die drei
+Fehlzuordnungen und die vier Verse der echten Umstellung
+(7,22 · 23 · 24 · 25 ↔ Esra 2,19 · 2,17 · 2,18 · 2,20). Kein Verfahren kann
+zwischen beidem entscheiden; das Skript benennt jetzt aber, **wo** entschieden
+werden muss.
