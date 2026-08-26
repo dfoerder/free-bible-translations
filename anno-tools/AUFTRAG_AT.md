@@ -143,6 +143,24 @@ bibles/fra/lsg1910/17_lsg1910.json
 bibles/ita/riv1927/17_riv1927.json
 ```
 
+**Die Ausgaben lösen auch Homographen, die das Deutsche verschmilzt.** Ester
+1,10 und 1,14 haben beide `Sethar`, und es sind zwei verschiedene Personen: WEB
+schreibt *Zethar* und *Shethar*, LSG *Zéthar* und *Schéthar*. Bei einem Namen,
+der zweimal im Buch steht, also **erst die Ausgabe aufschlagen**, bevor man ihn
+pauschal glossiert.
+
+**Eine Ausnahme, und nur diese:** wo die Schreibung der Ausgabe zufällig mit
+einem Gemeinwort der Zielsprache zusammenfällt und dadurch einen falschen Sinn
+setzt. WEB schreibt den Kämmerer in Est 1,10 „Carcass" — im Lesefluss stünde an
+einem Personennamen das englische Wort für *Kadaver*. Dort gilt die Form der
+drei anderen Ausgaben (*Carcas*). Das ist eine Ausnahme für den **Lesefluss**,
+keine Lizenz zum Modernisieren: sie greift nur bei einer echten
+Bedeutungskollision, nicht bei bloßer Altertümlichkeit.
+
+Und wo ein Name im **Bestand** schon gebunden ist, geht die Bindung vor: die
+Ausgaben schreiben `Tharsis` uneinheitlich, der Bestand hat *Tarshish · Tarsis ·
+Tarsis · Tarsis* aus zwei Belegen — die wird fortgeschrieben.
+
 Das gilt **nicht** für Fälle, in denen eine Sprache von sich selbst abweicht —
 `Ohr` italienisch 42-mal *orecchi* und 8-mal *orecchie* ist ein echter Befund,
 weil dieselbe Ausgabe nicht zwei Formen haben kann.
