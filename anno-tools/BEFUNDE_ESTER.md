@@ -49,6 +49,20 @@ wenn die Ausgabe selbst schwankt.
   `AUFTRAG_AT.md` festgehalten.
 - **`Tharsis`:** die Ausgaben schreiben uneinheitlich, der Bestand hat aus zwei
   Belegen *Tarshish · Tarsis · Tarsis · Tarsis*. Bindung geht vor.
+- **RIV1927 schreibt `Bigthan` im selben Buch zweierlei** — *Bightan* in 2,21,
+  *Bigthan* in 6,2. Ein Buchstabendreher, und zwar in derselben RIV-Passage,
+  in der schon `cimei` und `ettimo` stehen. Auf *Bigthan* vereinheitlicht
+  (2,21 und 6,2), weil das Italienische keinen Grund hat zu variieren und die
+  drei anderen Ausgaben es stützen.
+- **WEB schreibt `Bigthan` in 2,21 und `Bigthana` in 6,2** — das ist **kein**
+  Fehler, sondern folgt dem Hebräischen (בִּגְתָן / בִּגְתָנָא). Weil der
+  deutsche Text an beiden Stellen `Bigthan` hat und es dieselbe Person ist,
+  bleibt die englische Glosse einheitlich *Bigthan*: eine Namensvariante ohne
+  Referenzunterschied gehört nicht in den Lesefluss.
+- **`Seres` ist ein Homograph wie `Sethar`** — 1Chr 7,16 der Bruder des Peres
+  (*Sheresh*), in Ester Hamans Frau (*Zeresh*). Beide Agenten haben es
+  unabhängig an den Ausgaben geprüft; nachgerechnet an 5,10 · 5,14 · 6,13 in
+  allen vier Ausgaben.
 
 ## Werkzeugbefunde
 

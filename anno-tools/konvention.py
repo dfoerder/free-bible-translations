@@ -2,6 +2,11 @@
 
     konvention.py <buchNr> <kapitel …>
 
+Zwei Fehlalarmklassen sind behoben, beide von Agenten gemeldet: zwei Vorkommen
+desselben Einleitworts (Neh 6,10) und das in den Infinitiv **inkorporierte
+`zu`** (Est 6,4 `um … vorzuschlagen`), wo der Eintrag frueher endet als das
+naechste freie `zu`.
+
 Kapitel 4 hat gemeldet, dass Esra 1–3 `um zu` und `so wie` nicht als
 Mehrwort-Einträge führt, obwohl der Bestand sie 267- bzw. 91-mal kennt. Kein
 Prüfskript meldet das: strukturell ist ein fehlender Mehrwort-Eintrag kein
@@ -39,6 +44,14 @@ for kap in kaps:
         toks=[C.strip_punct(t) for t in src[kap][v].split()]
         belegt={(e['pos'], (e.get('parts') or [e['pos'],e.get('pos_end')])[-1])
                 for e in d[v] if C.is_multi(e)}
+        # Ein Mehrwort-Eintrag, der an derselben Position beginnt und dasselbe
+        # Lemma traegt, deckt die Wendung auch dann ab, wenn er frueher endet:
+        # bei `um ... vorzuschlagen` ist das `zu` in den Infinitiv inkorporiert,
+        # der Eintrag steht auf [20,23], das freie `zu` des Objektsatzes erst
+        # auf 28. Der Bestand fuehrt diese Bauform 14-mal (2Koen 3,10
+        # `um auszuliefern`, 2Chr 26,16 `um darzubringen`). Ohne diese Zeile
+        # meldet das Skript dort eine Luecke, die es nicht gibt.
+        beginnt={(e['pos'], e.get('lemma')) for e in d[v] if C.is_multi(e)}
         roh=src[kap][v].split()
         for a,b,maxd in WENDUNGEN:
             for i,t in enumerate(toks):
@@ -54,7 +67,7 @@ for kap in kaps:
                         break
                     if toks[j].lower()==b:
                         lem=f'{a} {b}'
-                        if (i,j) not in belegt:
+                        if (i,j) not in belegt and (i,lem) not in beginnt:
                             offen+=1
                             print(f'  {nr} {kap},{v} pos {i}–{j}  «{lem}»  kein Mehrwort-Eintrag '
                                   f'(Bestand: {bestand[lem]}×)  | {" ".join(toks[i:j+1])[:60]}')
