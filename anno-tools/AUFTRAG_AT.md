@@ -124,6 +124,29 @@ Bauteillesart, und drei Verse weiter steht „pro Kopf" und meint wieder den
 Kopf. Das Level bleibt trotzdem am Lemma (A1); eine Anhebung zöge alle
 Körperteil-Einträge mit.
 
+## Die Glossen folgen den vier Referenzausgaben
+
+**WEB** (en) · **RV1909mod** (es) · **LSG1910** (fr) · **RIV1927** (it). Eine
+Sprache, die bei einem Namen oder einer Wendung altertümlich wirkt, ist **kein
+Befund**, solange ihre Ausgabe es so schreibt. `Susa` trägt englisch *Shushan*
+neben romanisch *Susa · Suse · Susa* — gemeldet als Inkonsistenz, geprüft, und
+WEB schreibt tatsächlich „Shushan the palace" (Est 1,2). Nichts war zu
+vereinheitlichen.
+
+Vor jeder Meldung dieser Art die Ausgabe aufschlagen. Sie liegt in
+`bible-reader/bibles/<sprache>/<edition>/<buchNr>_<edition>.json`:
+
+```
+bibles/eng/web/17_web.json
+bibles/spa/rv1909mod/17_rv1909mod.json
+bibles/fra/lsg1910/17_lsg1910.json
+bibles/ita/riv1927/17_riv1927.json
+```
+
+Das gilt **nicht** für Fälle, in denen eine Sprache von sich selbst abweicht —
+`Ohr` italienisch 42-mal *orecchi* und 8-mal *orecchie* ist ein echter Befund,
+weil dieselbe Ausgabe nicht zwei Formen haben kann.
+
 ## Was nie passiert
 
 - ins Repository `bible-reader` schreiben

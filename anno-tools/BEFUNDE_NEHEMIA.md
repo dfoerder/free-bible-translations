@@ -6,10 +6,20 @@ Punkt braucht die Belegverse und eine Entscheidung.
 
 ## Aus Kapitel 1
 
-- **`Susan` (Esra 4,9) trägt englisch *Shushan*, romanisch aber die modernen
-  Formen *Susa · Suse · Susa*.** Das englische Feld ist die einzige archaische
-  Form der Vierergruppe. Nehemia 1,1 hat `Susa` und schreibt die Lesart fort.
-  Kandidat für eine Vereinheitlichung auf *Susa*.
+- **`Susan`/`Susa`: gemeldet, geprüft, ~~Kandidat für eine Vereinheitlichung~~
+  — Fehlalarm.** Der Agent von Nehemia 1 meldete, das englische *Shushan* sei
+  die einzige archaische Form neben den modernen *Susa · Suse · Susa*. Beim
+  Beginn von Ester (17-mal `Susa`) habe ich es an den vier Referenzausgaben
+  selbst nachgesehen: **WEB schreibt „Shushan the palace" (Est 1,2)**,
+  LSG schreibt *Suse*, RIV *Susa*, RV1909mod *Susa*. Die Vierergruppe gibt
+  also jede Ausgabe korrekt wieder. **Nichts zu vereinheitlichen.**
+
+  Daraus die Regel, die bisher nirgends stand: **die Glossen folgen den vier
+  Referenzausgaben (WEB · RV1909mod · LSG1910 · RIV1927), nicht einem
+  einheitlichen Modernitätsgrad.** Eine Sprache, die bei einem Namen
+  altertümlich wirkt, ist kein Befund, solange ihre Ausgabe es so schreibt.
+  Vor jeder Meldung dieser Art die Ausgabe aufschlagen — sie liegt in
+  `bible-reader/bibles/<sprache>/<edition>/<nr>_<edition>.json`.
 - **`Ohr` im Plural, italienisch uneinheitlich:** 42× *orecchi*, 8× *orecchie*.
   Die Gebets-Parallelen 2Chr 6,40 und 7,15 haben *orecchie*; Nehemia 1,6 folgt
   denen. Der Bruch liegt zwischen Büchern, nicht innerhalb eines Buches.
