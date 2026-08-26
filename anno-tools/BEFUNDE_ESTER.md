@@ -50,6 +50,32 @@ wenn die Ausgabe selbst schwankt.
 - **`Tharsis`:** die Ausgaben schreiben uneinheitlich, der Bestand hat aus zwei
   Belegen *Tarshish · Tarsis · Tarsis · Tarsis*. Bindung geht vor.
 
+## Werkzeugbefunde
+
+**`vorab.py` führte bei Eigennamen aktiv in die Irre.** Die Tabelle schlägt die
+Bestandslesart einer **Wortform** nach und weiß nicht, ob derselbe Träger
+gemeint ist. Für `Seres` bot sie *Sheresh · Seres · Schéresch · Seres* mit
+einem Beleg an — der Beleg ist **1Chr 7,16**, wo Seres der Bruder des Peres
+ist. Hamans Frau schreiben alle vier Ausgaben *Zeresh · Zeres · Zéresch ·
+Zeresh*. Der Agent von Kapitel 5 hat die Tabelle an den Ausgaben widerlegt;
+unabhängig nachgeprüft an 5,10 · 5,14 · 6,13 in allen vier Ausgaben.
+
+Derselbe Fall wie `Sethar` in Ester 1,10/1,14 — nur dass der dort **nicht** im
+Bestand stand und die Tabelle deshalb schwieg. Seither trägt jede
+großgeschriebene Zeile in `vorab.py` einen Warnhinweis **mit Belegstelle**:
+`Seres | … | 1 ⚠ 1. Chronika 7,16`. Die bloße Zahl ist bei einem Eigennamen
+wertlos — erst die Stelle zeigt, dass sie aus einem anderen Zusammenhang kommt.
+
+**`lexicon.py` und `hints.py` verlieren das Lemma `laden`.** `geladen`
+(Est 5,12) steht im Extrakt nur unter VERWANDT bei `Geladener`/`gelangen`,
+obwohl der Bestand 36 Belege für `laden` auf B1 hat, darunter genau die
+Einladungs-Lesart. Aufgedeckt hat es wieder nur `levelcheck.py` — die
+Präfixverb-Lücke, viertes Vorkommen in Ester.
+
+**Der Bestand widerspricht sich bei `kleiden`:** das Simplex steht auf B2
+(22 Belege), das Reflexivum `sich kleiden` auf B1 (2 Belege). Beide Lemmata
+sind fortgeschrieben worden; die Stufung ist in sich unstimmig.
+
 ## Werkzeugbefund
 
 **`hints.py` widerspricht sich bei `Pfahl` selbst:** es listet die Form als
