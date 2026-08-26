@@ -157,9 +157,26 @@ drei anderen Ausgaben (*Carcas*). Das ist eine Ausnahme für den **Lesefluss**,
 keine Lizenz zum Modernisieren: sie greift nur bei einer echten
 Bedeutungskollision, nicht bei bloßer Altertümlichkeit.
 
-Und wo ein Name im **Bestand** schon gebunden ist, geht die Bindung vor: die
-Ausgaben schreiben `Tharsis` uneinheitlich, der Bestand hat *Tarshish · Tarsis ·
-Tarsis · Tarsis* aus zwei Belegen — die wird fortgeschrieben.
+### Wo die Ausgabe entscheidet und wo der Bestand
+
+Die Ausgabe entscheidet, **wo der Bestand schweigt oder nicht antworten kann**:
+bei einem neuen Namen, bei einem Homographen (`Sethar`, `Seres`), bei einer
+Wendung ohne Beleg.
+
+Der **Bestand** entscheidet, wo er für ein gewöhnliches Wort eine feste Bindung
+hat. Eine Glosse ist ein Leseassistent: wer `Zahl` zweiundneunzigmal als
+*número* gelesen hat, soll es nicht einmal als *cantidad* sehen, bloß weil die
+Ausgabe an dieser einen Zeile anders formuliert. Drei Fälle in Ester:
+
+| Wort | Ausgabe | Bestand | genommen |
+|---|---|---|---|
+| `Tharsis` | uneinheitlich | *Tarshish · Tarsis · Tarsis · Tarsis* (2) | Bestand |
+| `Pracht` (5,11) | WEB *glory* | Est 1,4 *splendor* | Bestand |
+| `Zahl` (5,11) | RV *cantidad* | *número* (92:1) | Bestand |
+
+Die Faustregel: **die Ausgabe liefert den Namen, der Bestand die Bedeutung.**
+Wo beides zusammenfällt, gibt es keinen Konflikt; wo nicht, gewinnt bei
+Eigennamen die Ausgabe und bei gewöhnlichen Wörtern die Bindung.
 
 Das gilt **nicht** für Fälle, in denen eine Sprache von sich selbst abweicht —
 `Ohr` italienisch 42-mal *orecchi* und 8-mal *orecchie* ist ein echter Befund,

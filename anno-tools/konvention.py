@@ -52,6 +52,16 @@ for kap in kaps:
         # `um auszuliefern`, 2Chr 26,16 `um darzubringen`). Ohne diese Zeile
         # meldet das Skript dort eine Luecke, die es nicht gibt.
         beginnt={(e['pos'], e.get('lemma')) for e in d[v] if C.is_multi(e)}
+        # Welcher Mehrwort-Eintrag deckt eine Position sonst ab? Bei den
+        # berechtigten Fehlalarmen (`um Gnade zu bitten`) liegt dort ein
+        # anderes Lemma, das das Einleitwort selbst enthaelt. Das mitzudrucken
+        # spart das Nachschlagen: Esra 8,22 und Est 4,8 haben es zweimal
+        # gekostet.
+        deckung={}
+        for e in d[v]:
+            if not C.is_multi(e): continue
+            for pp in C.covered(e):
+                deckung.setdefault(pp, e.get('lemma'))
         roh=src[kap][v].split()
         for a,b,maxd in WENDUNGEN:
             for i,t in enumerate(toks):
@@ -69,7 +79,13 @@ for kap in kaps:
                         lem=f'{a} {b}'
                         if (i,j) not in belegt and (i,lem) not in beginnt:
                             offen+=1
+                            hinweis = ''
+                            anderes = deckung.get(i)
+                            if anderes and a in anderes.split():
+                                hinweis = (f'  ← an pos {i} liegt «{anderes}»; '
+                                           f'das Einleitwort gehoert vermutlich dorthin')
                             print(f'  {nr} {kap},{v} pos {i}–{j}  «{lem}»  kein Mehrwort-Eintrag '
-                                  f'(Bestand: {bestand[lem]}×)  | {" ".join(toks[i:j+1])[:60]}')
+                                  f'(Bestand: {bestand[lem]}×)  | {" ".join(toks[i:j+1])[:60]}'
+                                  f'{hinweis}')
                         break
 print(f'\n{offen} Stellen ohne Eintrag')
