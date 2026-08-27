@@ -96,3 +96,25 @@ sind fortgeschrieben worden; die Stufung ist in sich unstimmig.
 unbelegt und nennt im selben Eintrag `Pfahl` als verwandten Stamm. Der Singular
 ist tatsächlich unbelegt, der Plural `Pfähle` steht dreimal. Harmlos, aber es
 zeigt, dass der VERWANDT-Abschnitt das Lemma nicht gegen die Formliste prüft.
+
+## Ein Prozessfehler von mir, nicht von den Agenten
+
+Für die Wellenbriefings habe ich die Wiederholungsblöcke mit `bloecke.py`
+vermessen — aber die **Verspaare von Hand ausgewählt**, aus dem Gefühl heraus,
+welche Verse zusammengehören könnten. Für Ester 8 nannte meine Tabelle fünf
+Blöcke.
+
+Der Agent hat `parallelen_ch8.md` gelesen und **siebzehn** gefunden, darunter
+den mit Abstand längsten des Kapitels: **8,13 ← 3,14, Block der Länge 19,
+Ähnlichkeit 0,74** — der ganze Anfang von 8,13 ist wörtlich. In meiner Tabelle
+stand er nicht.
+
+**Die Datei lag vor.** Ich hatte `parallelen.py` für die Kapitel 7, 8 und 10 im
+Hintergrund laufen lassen, bevor ich das Briefing schrieb, und dann aus
+Handauswahl geschrieben statt aus der Ausgabe. Der Fehler ist nicht die
+Werkzeugkette, sondern ihre Nichtbenutzung.
+
+**Regel für kommende Bücher:** Das Wellenbriefing wird aus `parallelen.py`
+**abgeschrieben**, nicht aus geratenen Verspaaren zusammengestellt.
+`bloecke.py` ist für die Nachmessung eines einzelnen, bereits bekannten Paares
+da — nicht für die Suche.
