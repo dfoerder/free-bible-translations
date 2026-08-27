@@ -62,13 +62,32 @@ def level_abgleich(chapters, nr, verbose=True):
     if verbose and n:
         print(f'  Level gleiche Bedeutung: {n} Einträge angeglichen')
 
-    # 2. gleiches Lemma, buchübergreifend
+    # 2. gleiches Lemma, buchübergreifend — **aus den Kapitelquellen**, nicht
+    # aus den gebauten Dateien. Das war ein Konstruktionsfehler: die Mehrheit
+    # kam aus dem Ergebnis des letzten Builds, und damit war eine korpusweite
+    # Levelkorrektur über die Quellen prinzipiell unmöglich. Wer `vierzehnt`
+    # in allen 22 Quellen von B1 auf A2 zog, bekam beim Bauen von Buch 6 die
+    # 42 noch nicht gebauten Bücher als B1-Mehrheit entgegen und die Änderung
+    # zurück — und zwar bei jedem Buch, in jeder Reihenfolge, beliebig oft
+    # wiederholt. Ein stabiler Attraktor am falschen Ort.
+    #
+    # Die Quelle ist der bearbeitete Stand und damit die Autorität; die
+    # gebaute Datei ist ihr Ergebnis. Wo eine Quelle fehlt, springt die
+    # gebaute Datei ein.
     bestand = collections.defaultdict(collections.Counter)
     for other in C.anno_books():
         if other == int(nr):
             continue
-        for _, _, _, e in C.iter_corpus([other]):
-            bestand[e['lemma']][e['level']] += 1
+        kapitel = C.quellen_kapitel(other)
+        if kapitel:
+            for kap in kapitel:
+                for es in (C.load_quelle(other, kap) or {}).values():
+                    for e in es:
+                        if e.get('lemma') and e.get('level'):
+                            bestand[e['lemma']][e['level']] += 1
+        else:
+            for _, _, _, e in C.iter_corpus([other]):
+                bestand[e['lemma']][e['level']] += 1
     for e in alle:
         bestand[e['lemma']][e['level']] += 1
 

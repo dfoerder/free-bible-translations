@@ -118,3 +118,51 @@ Werkzeugkette, sondern ihre Nichtbenutzung.
 **abgeschrieben**, nicht aus geratenen Verspaaren zusammengestellt.
 `bloecke.py` ist für die Nachmessung eines einzelnen, bereits bekannten Paares
 da — nicht für die Suche.
+
+## Zwei Bestandsdefekte, die Ester 9 und 10 aufgedeckt haben
+
+**Die Ordinalzahlen waren uneinheitlich gestuft.** `vierzehnt` stand in allen
+22 Belegen auf **B1**, während die ganze Zehnerklasse — `elft`, `zwölft`,
+`dreizehnt`, `fünfzehnt`, `sechzehnt`, `siebzehnt`, `achtzehnt`, `neunzehnt`,
+`zwanzigst` — durchgehend **A2** ist. Ein Einzelausreißer gegen seine gesamte
+Klasse, uniform in sich und deshalb von `levelcheck.py` nicht zu finden (das
+meldet nur, wo der Bestand einheitlich ist und ein *Kapitel* abweicht).
+Gezogen, dazu `einundzwanzigst`.
+
+**Der Versuch, es zu ziehen, hat einen Konstruktionsfehler in `buildbook.py`
+freigelegt** — siehe unten. Die niedrigen Ordinalia sind weiter uneinheitlich
+(`sechst` A2 gegen `siebt`/`acht` A1), aber dort mischen sich Kardinal- und
+Ordinalhomographen; nicht angefasst.
+
+**`begehen`, `ausfallen`, `zutragen` sind im Bestand bedeutungsverschoben.**
+`begehen` kennt nur „eine Sünde begehen" (46 Belege), Est 9,22 meint „ein Fest
+begehen"; `ausfallen` kennt nur den Haarausfall aus 3Mo 13,40, Est 9,28 meint
+„nicht mehr gehalten werden"; `zutragen` kennt nur `sich zutragen` =
+*happen*, Est 9,26 meint „berichtet werden". Alle drei mit eigener Glosse am
+selben Lemma versehen.
+
+**`bedrohen` ist rein neutestamentlich belegt** (4 Belege, alle *rebuked* —
+Jesus bedroht Wind und Dämonen). Est 8,11 meint es im Wortsinn.
+
+## Der Konstruktionsfehler in `buildbook.py`
+
+Durchgang 2 des Level-Abgleichs bestimmte die Korpusmehrheit je Lemma aus den
+**gebauten** Dateien der anderen Bücher. Damit war eine korpusweite
+Levelkorrektur über die Quellen **prinzipiell unmöglich**: wer `vierzehnt` in
+allen 22 Quellen von B1 auf A2 zieht, bekommt beim Bauen von Buch 6 die 42 noch
+nicht gebauten Bücher als B1-Mehrheit entgegen — und die Änderung zurück. Bei
+jedem Buch, in jeder Reihenfolge, beliebig oft wiederholt. Ein stabiler
+Attraktor am falschen Ort.
+
+Die Mehrheit kommt jetzt aus den **Kapitelquellen**; die gebaute Datei springt
+nur ein, wo eine Quelle fehlt. Die Quelle ist der bearbeitete Stand und damit
+die Autorität — die gebaute Datei ist ihr Ergebnis.
+
+**Der Neubau hat dabei eine Regression ausgelöst, die zu diesem Fehler gehört:**
+`Kidron` in Johannes 18,1 stand in der Quelle italienisch auf *Kidron*, in der
+gebauten Datei auf *Cedron*. Eine Korrektur hatte also nur in der gebauten
+Datei gelebt — genau das, wovor die Werkzeugdoku warnt. Beide Stände waren
+falsch: RIV1927 schreibt an allen acht alttestamentlichen Stellen *Kidron* und
+in Johannes 18,1 ***Chedron***, weil es dort dem griechischen Κεδρών folgt. Die
+Ausgabe unterscheidet also selbst zwischen AT und NT; auf *Chedron* gesetzt, in
+Quelle **und** Datei.
