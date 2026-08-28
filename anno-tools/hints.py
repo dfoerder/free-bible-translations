@@ -28,6 +28,42 @@ import common as C
 
 MIN_STAMM = 4  # 5 war zu lang: 'beugt' fand 'beugen' nicht (5Mo 27,19)
 
+
+def _gemeinsam(a, b):
+    """Länge des gemeinsamen Präfixes, ohne Rücksicht auf Groß-/Kleinschreibung."""
+    a, b = a.lower(), b.lower()
+    n = 0
+    while n < min(len(a), len(b)) and a[n] == b[n]:
+        n += 1
+    return n
+
+
+def _verwandt(form, stamm, wieviel=3):
+    """Die stammverwandten Lemmata zu einer unbelegten Wortform.
+
+    **Sortiert nach dem längsten gemeinsamen Präfix**, nicht alphabetisch. Die
+    alphabetische Fassung war der teuerste Werkzeugfehler des Buches Hiob: sie
+    schnitt nach drei Einträgen ab, und weil Großbuchstaben vor Kleinbuchstaben
+    sortieren, standen dort die substantivischen Nachbarn statt des gesuchten
+    Verbs. `verlierst` bekam `Verlangen`, `Verlauf`, `Verleumder` angeboten,
+    während `verlieren` mit 14 Belegen im selben Eimer lag und nur wegen der
+    Sortierung nicht angezeigt wurde. In Hiob 4 waren so **zehn von siebzehn**
+    als unbelegt gemeldeten Formen in Wahrheit über ihr Lemma gebunden, in
+    Hiob 1 drei von zwölf, in Hiob 3 drei.
+
+    Zweites Kriterium ist die **Groß-/Kleinschreibung**: bei gleich langem
+    Präfix gehört zu einer kleingeschriebenen Form das kleingeschriebene
+    Lemma. Ohne das gewann `Traum` gegen `trauen` und `Vernunft` gegen
+    `vernehmen` — beide über die Länge, beide falsch.
+    """
+    if len(form) < MIN_STAMM:
+        return []
+    kand = stamm.get(form[:MIN_STAMM].lower(), set())
+    gross = form[:1].isupper()
+    return sorted(kand, key=lambda x: (-_gemeinsam(form, x),
+                                       0 if x[:1].isupper() == gross else 1,
+                                       abs(len(x) - len(form)), x))[:wieviel]
+
 FUNKTION = {'der', 'die', 'das', 'den', 'dem', 'des', 'und', 'oder', 'ein', 'eine',
             'einen', 'einem', 'eines', 'einer', 'zu', 'in', 'an', 'auf', 'mit',
             'von', 'für', 'ist', 'sind', 'war', 'waren', 'nicht', 'er', 'sie',
@@ -72,7 +108,7 @@ def analyse(nr, kap=None):
 
             for f in formen:
                 if f not in form_lesarten and f not in unbelegt:
-                    verwandt = sorted(stamm.get(f[:MIN_STAMM].lower(), set()))[:3] if len(f) >= MIN_STAMM else []
+                    verwandt = _verwandt(f, stamm)
                     unbelegt[f] = (f'{k},{v}', verwandt)
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
                     lesarten = {(lm, en) for (lm, en, _, _, _) in form_lesarten[f]}
