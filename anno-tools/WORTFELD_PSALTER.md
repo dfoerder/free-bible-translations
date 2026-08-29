@@ -172,6 +172,24 @@ Wort gelesen haben — in drei unabhängigen Paketen. **Bei Synonympaaren im sel
 Vers nicht auf `hints.py` verlassen**, sondern die vier Glossen der Nachbarwörter
 selbst vergleichen.
 
+### Zwei Paare, deren Auflösung schon feststeht
+
+**`Weg` ↔ `Tun`** kollidiert nur im Englischen — der Bestand glossiert `Tun`
+als *ways*, genau wie `Weg`. In Ps 103,7 ist entschieden worden: `Weg` behält
+*ways · caminos · chemins · vie*, `Tun` weicht **nur englisch** aus auf
+*deeds*, romanisch bleibt es bei *proceder · conduite · condotta*. Die beiden
+stehen in **Ps 119,3 und Ps 145,17 wieder zusammen** — dort dieselbe Auflösung
+nehmen, nicht neu entscheiden.
+
+**`fern` ↔ `weit`** tragen im Bestand in allen vier Sprachen dieselbe Glosse
+(*far · lejos · loin · lontano*, 29 bzw. 49 Belege). In Ps 103,12 aufgelöst:
+`weit` behält die Bindung, `fern` nimmt *distant · distante · éloigné ·
+distante* — die Lesart steht im Bestand schon am Adjektiv `entfernt`. In
+Ps 107–150 stehen die beiden nirgends mehr im selben Vers.
+
+Gemessen über den Gesamtbestand: **keines der beiden Paare steht sonst
+irgendwo unaufgelöst zusammen** (`glosskollision.py alle`).
+
 **Die Regel bleibt die aus Hiob:** aufgelöst wird **nur im Kollisionsvers**.
 Eine Ausweichlesart, die in einem Vers nötig war, gilt nicht im nächsten —
 `lexicon.py` zieht auch aus den frisch gebauten Kapiteln des laufenden Buches,
