@@ -68,8 +68,9 @@
 ],
 "4": [
 {"pos": 0, "form": "HERR", "lemma": "HERR", "level": "A1", "en": "LORD", "es": "SEÑOR", "fr": "ÉTERNEL", "it": "SIGNORE"},
+{"pos": 1, "pos_end": 2, "form": "tu Gutes", "lemma": "Gutes tun", "level": "A2", "en": "do good", "es": "haz el bien", "fr": "fais le bien", "it": "fa' del bene"},
 {"pos": 1, "form": "tu", "lemma": "tun", "level": "A1", "en": "do", "es": "haz", "fr": "fais", "it": "fa'"},
-{"pos": 2, "form": "Gutes", "lemma": "gut", "level": "A1", "en": "good", "es": "bien", "fr": "du bien", "it": "del bene"},
+{"pos": 2, "form": "Gutes", "lemma": "gut", "level": "A1", "en": "good", "es": "el bien", "fr": "le bien", "it": "il bene"},
 {"pos": 3, "form": "den", "lemma": "der", "level": "A1", "en": "to", "es": "a los", "fr": "aux", "it": "ai"},
 {"pos": 4, "form": "Guten", "lemma": "gut", "level": "A1", "en": "the good", "es": "buenos", "fr": "bons", "it": "buoni"},
 {"pos": 5, "form": "und", "lemma": "und", "level": "A1", "en": "and", "es": "y", "fr": "et", "it": "e"},
