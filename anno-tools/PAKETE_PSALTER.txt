@@ -1,3 +1,22 @@
+# Pakete des Psalters
+#
+# Je Zeile ein Paket. Hinter jedem Psalm steht der gemessene Versatz der vier
+# Ausgaben, dann optional zwei Angaben:
+#
+#   it fehlt: N   ANZAHL der deutschen Verse ohne italienisches Gegenstueck,
+#                 nicht die Versnummer. Bei Versatz +0 ist es genau die
+#                 Ueberschrift (de 1). Bei Versatz -1 sind es zwei: die
+#                 Ueberschrift und der erste Textvers (de 1 und de 2) — so
+#                 etwa in Ps 108, wo 108,2 der einzige echte Textvers ohne
+#                 Vorlage ist. Beide Zaehlweisen sind schon verwechselt
+#                 worden; massgeblich ist `ausgaben.py`.
+#
+#   Kollisionen:  Paare aus `hints.py`. Die Liste ist NICHT vollstaendig —
+#                 `hints.py` sieht nur, was der Bestand schon kennt.
+#                 `glosskollision.py` findet den Rest.
+#
+# Alle Angaben sind Hypothesen. Der Quelltext hat immer recht.
+
   1. Ps 1  [en +0, es +0, fr +0, it +0] | Ps 2  [en +0, es +0, fr +0, it +0] | Ps 3  [en -1, es -1, fr +0, it -1] | Ps 4  [en -1, es -1, fr +0, it -1]
   2. Ps 5  [en -1, es -1, fr +0, it -1]  it fehlt: 2  Kollisionen: Mund ↔ Rachen (5,10) | Ps 6  [en -1, es -1, fr +0, it -1] | Ps 7  [en -1, es -1, fr +0, it -1]
   3. Ps 8  [en -1, es -1, fr +0, it -1]  it fehlt: 2 | Ps 9  [en -1, es -1, fr +0, it -1]  it fehlt: 2  Kollisionen: all ↔ ganz (9,2)
