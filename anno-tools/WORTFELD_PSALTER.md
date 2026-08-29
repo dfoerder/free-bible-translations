@@ -46,8 +46,45 @@ Die Eigennamen und Melodieangaben (`Gittith`, `Jeduthun`, `Alamot`,
 der Ausgabe, die sie führt — `ausgaben.py` zeigt sie. Wo nur das Französische
 sie hat, gilt seine Schreibung, ins Englische und Spanische übertragen.
 
-`Sela` (72 Verse) und `Halleluja` (22 Verse) sind im Bestand belegt und folgen
-ihm.
+`Weise` in `nach der Weise …` ist die Melodieangabe und **nicht** die
+Bestandsbindung *way · manera · manière · modo*: *tune · melodía · air ·
+melodia*, B2. In `auf wunderbare Weise` (Ps 4,4) gilt weiter die Bindung.
+
+**Bei Versatz −1 lohnt der Blick in die italienische Zeile des deutschen
+Verses 2.** RIV zieht die Überschrift dort in seinen Vers 1 hinein, und
+`ausgaben.py` schreibt für den deutschen Vers 1 zu Recht „zählt die Ausgabe
+nicht mit" — die italienischen Überschriftenwörter stehen aber da, eine Zeile
+weiter. Für Ps 4 liest man dort `Al Capo de' musici. Per strumenti a corda.` und
+hat damit die Quelle für zwei Festlegungen dieser Tabelle.
+
+### `Sela` — der Bestand hilft hier nicht
+
+Eine erste Fassung dieses Dokuments schrieb, `Sela` sei im Bestand belegt und
+folge ihm. **Das ist falsch, und zwei Agenten haben es unabhängig voneinander
+widerlegt.** Der Bestand kennt `Sela` nur als **Eigennamen**: den Sohn Judas
+(1. Mose 38,5, *Shelah · Sela · Schéla · Sela*) und den edomitischen Felsen
+(2. Könige 14,7). Das liturgische `Sela` des Psalters ist eine andere
+Bedeutung — nach `SPEC.md` gilt eine Bindung für dieselbe Bedeutung, nicht für
+dieselbe Buchstabenfolge.
+
+Es gilt deshalb, was die vier Ausgaben schreiben, und die haben hier alle einen
+Text:
+
+| | en (WEB) | es (RV) | fr (LSG) | it (RIV) |
+|---|---|---|---|---|
+| `Sela` A1 | Selah | Selah | Pause | Sela |
+
+Das betrifft **72 Verse**. Dass Französisch als einziges übersetzt statt zu
+transkribieren, ist kein Befund — LSG druckt dort tatsächlich `— Pause`.
+
+`Halleluja` (22 Verse) ist im Bestand belegt und folgt ihm.
+
+### `Psalm` klein, nicht groß
+
+In der Kopfzeile steht `Psalm` mitten im Satz (`Ein Psalm Davids`), also
+*psalm · salmo · psaume · salmo*. Der Bestand hat beides je einmal (Apg 13,33
+groß, 1. Kor 14,26 klein) und entscheidet nichts; die Satzstellung schon.
+Level B2.
 
 ## 2. Die Lexikonfalle im Psalter — gemessen
 
