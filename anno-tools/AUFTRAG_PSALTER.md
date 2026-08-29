@@ -66,7 +66,7 @@ python3 selfcheck.py 19 <psalm> $ANNO_OUT/19/ch<psalm>.json
 python3 qa.py --kapitel 19 <psalm> $ANNO_OUT/19/ch<psalm>.json
 python3 konvention.py 19 <psalm>
 python3 sweep.py 19 --kapitel <psalm>
-python3 glosskollision.py --datei 19 <psalm> $ANNO_OUT/19/ch<psalm>.json --nurinhalt
+python3 glosskollision.py --datei 19 <psalm> $ANNO_OUT/19/ch<psalm>.json
 ```
 
 `selfcheck.py` muss fehlerfrei durchlaufen — das ist die harte Bedingung.
@@ -80,6 +80,12 @@ eigene Entscheidung entsteht. In vier Paketen sind so fünf Kollisionen
 durchgerutscht (Ps 81,2 · 84,9 · 84,10 · 88,18 · 90,11), für zwei der Kapitel
 meldete `hints.py` sogar **null Paare**. Lies die Rangfolge im Kopf des Skripts:
 **„1 von 4" ist der stärkste Verdacht**, nicht der schwächste.
+
+**Den Abschnitt „geschlossene Wortarten" mitlesen** und `--nurinhalt` bei der
+Kapitelprüfung **nicht** setzen. Aus diesem Abschnitt stammen bisher acht echte
+Kollisionen — `er`/`es`, `auf`/`über`, `der`/`sie` und weitere. Artikel und
+Präpositionen fallen in den Zielsprachen zwar dauernd zusammen, aber eben nicht
+immer folgenlos.
 
 `qa.py`, `konvention.py` und `sweep.py` melden **Verdacht, keine Fehler**:
 jeden Treffer am Vers ansehen und entscheiden. `sweep.py` sucht die

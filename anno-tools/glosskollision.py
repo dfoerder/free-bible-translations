@@ -39,8 +39,17 @@ Entscheidend ist, **in wie vielen Sprachen** die beiden zusammenfallen:
 Geschlossene Wortarten (Artikel, Präpositionen, Pronomen, Konjunktionen)
 verschmelzen in den Zielsprachen dauernd, ohne dass etwas verloren geht —
 `des`/`von` sind spanisch beide *de*, `an`/`zu` beide *a*. Sie stehen deshalb
-in einem eigenen Abschnitt am Ende, den `--nurinhalt` unterdrückt. **Aber nicht
-ausschließen:** `er`/`es` war genau so ein Paar und ein echter Fehler.
+in einem eigenen Abschnitt.
+
+**Diesen Abschnitt trotzdem lesen.** Ihm sind bisher **acht echte Kollisionen**
+entnommen worden: Ps 90,11 `er`/`es` · 95,8 `am`/`der` · 95,10 `mit`/`von` ·
+99,7 `ihnen`/`sie` · 102,13 `für`/`durch` · 102,14 `zu`/`über` · 104,3
+`auf`/`über` · 104,6 `der`/`sie`. Alle lagen bei **1–2 Sprachen**, und genau die
+stehen deshalb oben und ungekürzt. Wirklich unvermeidlich ist nur, was in allen
+vier Sprachen zusammenfällt.
+
+`--nurinhalt` unterdrückt den Abschnitt ganz — das ist für den Überblick über
+viele Bücher gedacht, **nicht für die Kapitelprüfung**.
 
 Wie jedes Prüfskript hier meldet es **Verdacht, keine Fehler**. Und wie überall
 gilt die Regel aus Hiob: aufgelöst wird **nur im Kollisionsvers**.
@@ -106,29 +115,36 @@ def kollisionen_im_vers(entries):
     keine Kollision, sondern die Wendung selbst.
     """
     treffer = collections.defaultdict(set)   # (lemA, lemB) -> {sprachen}
-    nurschreibung = collections.defaultdict(set)  # nur Gross-/Kleinschreibung
-    formen = {}                              # lemma -> gesehene Form
+    nurschreibung = collections.defaultdict(set)
+    formen = {}                              # lemma -> die kollidierende Form
     glossen = collections.defaultdict(dict)  # (lemma, sprache) -> glosse
     for sprache in SPRACHEN:
-        nach_gloss = collections.defaultdict(set)
+        # Wert ist {lemma: (form, glosse)} — **nicht** nur die Lemma-Menge.
+        # Sonst zeigt der Bericht irgendeine Form des Lemmas statt der, die
+        # tatsaechlich kollidiert: `seinem` und `war` haben beide das Lemma
+        # `sein`, und Ps 78,37 wurde als `ihr`/`war` gemeldet, obwohl
+        # `ihr`/`seinem` zusammenfaellt.
+        nach_gloss = collections.defaultdict(dict)
         for e in C.singles(entries):
             lem = e.get('lemma')
             if not lem:
                 continue
-            k = _norm(e.get(sprache))
+            roh = e.get(sprache)
+            k = _norm(roh)
             if not k:
                 continue
-            nach_gloss[k].add(lem)
-            formen.setdefault(lem, e.get('form') or lem)
-            glossen[(lem, sprache)] = e.get(sprache)
-        for k, lemmas in nach_gloss.items():
-            if len(lemmas) < 2:
+            nach_gloss[k].setdefault(lem, (e.get('form') or lem, roh))
+        for k, treffer_lem in nach_gloss.items():
+            if len(treffer_lem) < 2:
                 continue
-            ls = sorted(lemmas)
+            ls = sorted(treffer_lem)
             for i in range(len(ls)):
                 for j in range(i + 1, len(ls)):
                     a, b = ls[i], ls[j]
-                    ga, gb = glossen.get((a, sprache)), glossen.get((b, sprache))
+                    (fa, ga), (fb, gb) = treffer_lem[a], treffer_lem[b]
+                    formen[a], formen[b] = fa, fb
+                    glossen[(a, sprache)] = ga
+                    glossen[(b, sprache)] = gb
                     if ga != gb and _ist_konvention(ga, gb):
                         nurschreibung[(a, b)].add(sprache)
                     else:
@@ -229,11 +245,23 @@ def main():
             print(_zeile(f))
 
     if funktion and not a.nurinhalt:
-        print(f'\n## geschlossene Wortarten — meist unvermeidlich  ({len(funktion)})')
-        for f in sorted(funktion, key=lambda f: (len(f['sprachen']), f['nr']))[:40]:
-            print(_zeile(f))
-        if len(funktion) > 40:
-            print(f'  … {len(funktion) - 40} weitere (--nurinhalt blendet den Abschnitt aus)')
+        # Auch hier nach Sprachzahl staffeln. Der Abschnitt hiess frueher
+        # "meist unvermeidlich" und war auf 40 Zeilen gedeckelt — dabei sind
+        # ihm acht echte Kollisionen entnommen worden (Ps 90,11 `er`/`es`,
+        # 95,8, 95,10, 99,7, 102,13, 102,14, 104,3, 104,6). Unvermeidlich ist
+        # nur, was in allen vier Sprachen zusammenfaellt.
+        eins = [f for f in funktion if len(f['sprachen']) <= 2]
+        rest = [f for f in funktion if len(f['sprachen']) > 2]
+        if eins:
+            print(f'\n## geschlossene Wortarten, 1–2 Sprachen — HIER NACHSEHEN  ({len(eins)})')
+            for f in sorted(eins, key=lambda f: (len(f['sprachen']), f['nr'], int(f['kap']))):
+                print(_zeile(f))
+        if rest:
+            print(f'\n## geschlossene Wortarten, 3–4 Sprachen — meist unvermeidlich  ({len(rest)})')
+            for f in sorted(rest, key=lambda f: (f['nr'], int(f['kap'])))[:20]:
+                print(_zeile(f))
+            if len(rest) > 20:
+                print(f'  … {len(rest) - 20} weitere')
 
     if schreibung:
         print(f'\n## nur Gross-/Kleinschreibung — im Psalter die Konvention  '
