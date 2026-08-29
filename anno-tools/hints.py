@@ -29,9 +29,29 @@ import common as C
 MIN_STAMM = 4  # 5 war zu lang: 'beugt' fand 'beugen' nicht (5Mo 27,19)
 
 
+UMLAUT = str.maketrans({'ä': 'a', 'ö': 'o', 'ü': 'u', 'ß': 's'})
+
+
+def _stammkey(wort):
+    """Stammschluessel ohne Umlaut.
+
+    Der deutsche Plural umlautet: `Wald` -> `Waelder`, `Haus` -> `Haeuser`,
+    `Buch` -> `Buecher`, `Vater` -> `Vaeter`. Der Schluessel aus den ersten
+    vier Zeichen trennt diese Paare, und damit meldete das Werkzeug die Form
+    als unbelegt **ohne** ihr Lemma anzubieten — genau der Fehler, gegen den
+    der VERWANDT-Abschnitt gebaut ist.
+
+    Gefunden hat es der Agent der Psalmen 27-29: `Waelder` in 29,9 galt als
+    unbelegt, waehrend `Wald` mit 13 Belegen im Bestand steht. Dasselbe gilt
+    fuer jeden umlautenden Plural und fuer den Konjunktiv (`wuerde` gegen
+    `wurde`, `haette` gegen `hatte`).
+    """
+    return wort[:MIN_STAMM].lower().translate(UMLAUT)
+
+
 def _gemeinsam(a, b):
     """Länge des gemeinsamen Präfixes, ohne Rücksicht auf Groß-/Kleinschreibung."""
-    a, b = a.lower(), b.lower()
+    a, b = a.lower().translate(UMLAUT), b.lower().translate(UMLAUT)
     n = 0
     while n < min(len(a), len(b)) and a[n] == b[n]:
         n += 1
@@ -55,14 +75,24 @@ def _verwandt(form, stamm, wieviel=3):
     Präfix gehört zu einer kleingeschriebenen Form das kleingeschriebene
     Lemma. Ohne das gewann `Traum` gegen `trauen` und `Vernunft` gegen
     `vernehmen` — beide über die Länge, beide falsch.
+
+    Gewichtet wird nicht das gemeinsame Präfix allein, sondern **das Präfix
+    abzüglich dessen, was am Kandidaten übrig bleibt** (`2·gemeinsam − Länge`).
+    Zwei frühere Fassungen sind an den Komposita gescheitert: `Länder` bekam
+    `Landesgott`, `Landesteil`, `Landesfürst` angeboten und `Land` fiel aus
+    den ersten drei heraus, `Bäume` bekam `Baumeister` statt `Baum`. Beide
+    gewinnen über das Präfix, weil die Umlautnormalisierung `Länder` zu
+    `lander` macht und damit ein Zeichen mehr mit `Landes…` teilt als mit
+    `Land`. Wer zusätzlich zählt, was am Kandidaten hängen bleibt, dreht das
+    Verhältnis um: `Land` behält 0 übrig, `Landesgott` fünf.
     """
     if len(form) < MIN_STAMM:
         return []
-    kand = stamm.get(form[:MIN_STAMM].lower(), set())
+    kand = stamm.get(_stammkey(form), set())
     gross = form[:1].isupper()
-    return sorted(kand, key=lambda x: (-_gemeinsam(form, x),
+    return sorted(kand, key=lambda x: (-(2 * _gemeinsam(form, x) - len(x)),
                                        0 if x[:1].isupper() == gross else 1,
-                                       abs(len(x) - len(form)), x))[:wieviel]
+                                       len(x), x))[:wieviel]
 
 FUNKTION = {'der', 'die', 'das', 'den', 'dem', 'des', 'und', 'oder', 'ein', 'eine',
             'einen', 'einem', 'eines', 'einer', 'zu', 'in', 'an', 'auf', 'mit',
@@ -92,7 +122,7 @@ def analyse(nr, kap=None):
     stamm = collections.defaultdict(set)
     for lemma in lemma_formen:
         if len(lemma) >= 5:
-            stamm[lemma[:MIN_STAMM].lower()].add(lemma)
+            stamm[_stammkey(lemma)].add(lemma)
 
     # Mehrheitsglosse je Form (für die Kollisionsprüfung)
     haupt = {}
