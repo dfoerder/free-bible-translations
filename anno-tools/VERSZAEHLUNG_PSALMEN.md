@@ -74,6 +74,30 @@ dieser Stelle nicht an, sondern schreibt `FEHLT in der Datei der Ausgabe`.
 nicht zu sehen. Das ist unabhängig von der Annotation zu beheben und braucht
 den Text aus einer anderen Quelle.
 
+## Ps 60: die italienische Zeile trägt die Überschrift statt des Verses
+
+Ein dritter Schadensfall, der weder ein Versatz noch eine Lücke ist. In Ps 60
+lautet die erste italienische Zeile:
+
+> `Per il Capo de' musici. Su "il giglio della testimonianza". Inno di Davide
+> da insegnare; quand'egli mosse guerra ai Siri di Mesopotamia e ai Siri di
+> Soba e Joab`
+
+Der Satz **bricht mitten in der Überschrift ab** („e Joab"), und der Versinhalt
+(`O Dio, tu ci hai rigettati…`) fehlt vollständig. Weil die Zeile aber
+vorhanden und sogar lang ist, richtet `ausgaben.py` sie gegen den deutschen
+Vers 60,3 aus und meldet nichts — Abstand 0,13, weit unter der Warnschwelle.
+
+**`ausgaben.py` erkennt fehlende Verse, nicht vertauschten Inhalt.** Ein
+Versuch, den Fall über ein fehlendes Satzendezeichen zu finden, meldet in jeder
+Ausgabe zwei- bis dreitausend Verse (Verse enden legitim auf Komma). Ein
+Versuch über die Verslänge findet ihn gar nicht, weil die abgeschnittene
+Überschrift länger ist als der deutsche Vers. Ein Versuch über
+Überschriftenmerkmale meldet vier Verse, davon drei zu Recht.
+
+Gefunden hat ihn der Agent der Psalmen 59–61, indem er die italienische Zeile
+gelesen hat statt sie zu nehmen. Das bleibt die einzige verlässliche Prüfung.
+
 ## Die Regel
 
     ausgaben.py <buchNr> <kapitel> [<vonVers> [<bisVers>]]

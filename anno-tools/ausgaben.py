@@ -39,6 +39,17 @@ steht, ist der Versatz sichtbar und nachpruefbar.
 **Die Nummer der Ausgabe nie in einen Bericht schreiben, ohne sie hier
 abgelesen zu haben.**
 
+## Was dieses Werkzeug nicht kann
+
+Es erkennt **fehlende** Verse, nicht **vertauschten Inhalt**. In Ps 60 traegt
+die erste italienische Zeile nur die abgeschnittene Ueberschrift statt des
+Verses; die Zeile ist vorhanden und lang, also richtet das Werkzeug sie
+kommentarlos gegen den deutschen Vers 60,3 aus. Drei Versuche, das mechanisch
+zu finden, sind gescheitert — ueber das Satzendezeichen (2000-3000 Fehlalarme
+je Ausgabe), ueber die Verslaenge (findet den Fall gar nicht) und ueber
+Ueberschriftenmerkmale (vier Treffer, drei davon zu Recht). Siehe
+`VERSZAEHLUNG_PSALMEN.md`.
+
 ## Wo eine Ausgabe den Vers gar nicht hat
 
 Der italienische Psalter hat in **63 Psalmen keinen Vers 1** — in Ps 23 fehlt
