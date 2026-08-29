@@ -11,3 +11,6 @@ tools/.modernize_state.json
 
 # lokale, maschinenspezifische Claude-Settings
 .claude/settings.local.json
+
+# Teildateien der Annotations-Agenten (werden nach dem Zusammenfassen geloescht)
+anno-quellen/**/ch*.part*.json

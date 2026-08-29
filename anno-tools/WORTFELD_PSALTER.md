@@ -109,6 +109,19 @@ Fest und unstrittig, in beiden Testamenten gleich: `Herz` (*heart*),
 `Seele` (*soul*), `Güte` (*kindness · bondad · bonté · bontà*),
 `Treue` (*faithfulness*), `Zuflucht` (*refuge*), `Volk` (*people*, 947:2).
 
+**`Menschensohn` ist im Bestand ein reiner NT-Titel.** 88 Belege, **alle** aus
+dem Neuen Testament (Mt, Mk, Lk, Joh, Apg, Hebr, Offb), null aus dem Alten —
+`lexicon.py` zeigt deshalb ausschließlich den christologischen Titel *Son of Man*
+und schreibt ihn groß. Im Psalter (80,18) ist es die alttestamentliche
+Gattungsbezeichnung, und alle vier Ausgaben schreiben klein: *son of man ·
+hijo del hombre · fils de l'homme · figlio dell'uomo*. Die reinste Lexikonfalle
+des Buches, weil der Extrakt hier nicht mehrheitlich, sondern **einstimmig**
+in die falsche Richtung zeigt.
+
+**`Eber` ist ein Homograph.** 12 Belege als Patriarch (A1), in Ps 80,14 aber
+das Wildschwein: *boar · jabalí · sanglier · cinghiale*, B2. `qa.py` meldet die
+Stelle erwartungsgemäß als Eigennamen — das ist kein Fehler, sondern der Fall.
+
 **`Herrn` klein geschrieben ist im AT der *master*, nicht der *Lord*.**
 81 : 66 im AT, 286 : 12 andersherum im NT. Im Psalter ist fast immer Gott
 gemeint — dort steht dann `HERR`/`HERRN` groß, und das ist *LORD · SEÑOR ·
@@ -129,6 +142,23 @@ wichtigsten, weil sie sich durch das ganze Buch ziehen:
 - `bewahren` ↔ `halten` (119,34 · 119,106)
 - `HERR` ↔ `Herr` (16,2 · 30,9 und 32 weitere)
 
+**`hints.py` findet nicht alle.** Es meldet Kollisionen über die deutschen
+Wortformen; wo zwei verschiedene deutsche Wörter erst über die **Glosse einer
+einzelnen Sprache** zusammenfallen, sieht es nichts. In Psalm 84 lagen gleich
+zwei solche Fälle in benachbarten Versen:
+
+- 84,9 `höre` und `vernimm` — im Bestand beide spanisch *oye* (Ps 54,4 · Ps 5,3)
+- 84,10 `schau` und `blick` — im Bestand beide *look · mira · regarde · guarda*
+- 81,2 `Jauchzt … zu` und `jubelt … zu` — beide hätten `zujauchzen` getragen;
+  `hints.py` meldet für Ps 81 **null** Paare
+- 88,18 `umgeben` und `umringen` — im Bestand beide *surround · rodean ·
+  entourent · circondano*; `hints.py` meldet für Ps 88 **null** Paare
+
+Alle vier sind nur aufgefallen, weil die Agenten den Lexikon-Extrakt Wort für
+Wort gelesen haben — in drei unabhängigen Paketen. **Bei Synonympaaren im selben
+Vers nicht auf `hints.py` verlassen**, sondern die vier Glossen der Nachbarwörter
+selbst vergleichen.
+
 **Die Regel bleibt die aus Hiob:** aufgelöst wird **nur im Kollisionsvers**.
 Eine Ausweichlesart, die in einem Vers nötig war, gilt nicht im nächsten —
 `lexicon.py` zieht auch aus den frisch gebauten Kapiteln des laufenden Buches,
@@ -136,7 +166,18 @@ und was ein Kapitel entscheidet, sieht das nächste als Bestand. In Hiob sind
 so sechs Lesarten weitergereicht worden, die keine Bindung waren.
 `zweigleisig.py <buchNr>` findet sie.
 
-## 4. Die Verszählung
+## 4. Der italienische Artikel vor `HERR`
+
+`HERR` ist italienisch **`SIGNORE`**, und davor steht **`il`/`Il`** — nie
+`l'/L'`. Über den gesamten Bestand: 1955 Einträge mit `il`, 39 mit `l'`, und
+**alle 39 standen im Psalter** (Ps 12 · 24 · 25 · 27 · 28 · 29 · 31 · 32 · 33 ·
+34 · 37 · 84 · 85), am 29.08.2026 korrigiert.
+
+Die Ursache ist absehbar und wird wiederkommen: RIV schreibt `L'Eterno`, und wer
+die Ausgabe abliest statt der Bindung zu folgen, übernimmt den Apostroph. Im
+Lesefluss stand dann „L' SIGNORE".
+
+## 5. Die Verszählung
 
 Steht in `VERSZAEHLUNG_PSALMEN.md`. Kurz: in 63 der 150 Psalmen ist der
 deutsche Vers nicht der englische Vers, und der italienische Psalter hat in 63

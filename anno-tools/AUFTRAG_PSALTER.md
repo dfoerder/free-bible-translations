@@ -66,9 +66,21 @@ python3 selfcheck.py 19 <psalm> $ANNO_OUT/19/ch<psalm>.json
 python3 qa.py --kapitel 19 <psalm> $ANNO_OUT/19/ch<psalm>.json
 python3 konvention.py 19 <psalm>
 python3 sweep.py 19 --kapitel <psalm>
+python3 glosskollision.py --datei 19 <psalm> $ANNO_OUT/19/ch<psalm>.json --nurinhalt
 ```
 
 `selfcheck.py` muss fehlerfrei durchlaufen — das ist die harte Bedingung.
+
+**`glosskollision.py` ist der wichtigste der Verdachtsläufe.** Es vergleicht
+die Glossen, die du tatsächlich gesetzt hast, Vers für Vers und Sprache für
+Sprache, und meldet zwei deutsche Wörter, die dieselbe tragen. Das ist der
+blinde Fleck von `hints.py`: das sucht im Quelltext gegen den Bestand und findet
+deshalb nichts, wenn eine Form unbelegt ist oder die Kollision erst durch deine
+eigene Entscheidung entsteht. In vier Paketen sind so fünf Kollisionen
+durchgerutscht (Ps 81,2 · 84,9 · 84,10 · 88,18 · 90,11), für zwei der Kapitel
+meldete `hints.py` sogar **null Paare**. Lies die Rangfolge im Kopf des Skripts:
+**„1 von 4" ist der stärkste Verdacht**, nicht der schwächste.
+
 `qa.py`, `konvention.py` und `sweep.py` melden **Verdacht, keine Fehler**:
 jeden Treffer am Vers ansehen und entscheiden. `sweep.py` sucht die
 Mehrwort-Wendungen des Bestands im Quelltext und fragt, ob ein Eintrag darauf
