@@ -129,14 +129,32 @@ def kollisionen_im_vers(entries):
                 for j in range(i + 1, len(ls)):
                     a, b = ls[i], ls[j]
                     ga, gb = glossen.get((a, sprache)), glossen.get((b, sprache))
-                    # Unterscheiden sich die Glossen NUR in der Schreibung, ist
-                    # das im Psalter die gewollte Konvention: `HERR` -> LORD,
-                    # `Herr` -> Lord. Der Leser sieht den Unterschied.
-                    if ga != gb:
+                    if ga != gb and _ist_konvention(ga, gb):
                         nurschreibung[(a, b)].add(sprache)
                     else:
                         treffer[(a, b)].add(sprache)
     return treffer, nurschreibung, formen, glossen
+
+
+def _ist_konvention(ga, gb):
+    """Sind zwei gleichlautende Glossen durch die Schreibung wirklich getrennt?
+
+    **Ja** bei `LORD` gegen `Lord`: die Kapitälchen sind die Bibelkonvention für
+    den Gottesnamen, und der Leser sieht den Unterschied. Ebenso `SEÑOR`/`Señor`.
+
+    **Nein** bei `For` gegen `for`: das ist bloße Satzanfangs-Großschreibung,
+    im Lesefluss steht zweimal dasselbe Wort. Ps 102,15 (`Denn`/`um`) ist so
+    durchgerutscht — ein Agent hat es gemeldet, das Skript hatte es unter die
+    Konvention sortiert.
+
+    Kriterium: eine der beiden Glossen ist **durchgehend** groß geschrieben.
+    """
+    if not ga or not gb:
+        return False
+    def voll_gross(g):
+        buchstaben = [c for c in g if c.isalpha()]
+        return len(buchstaben) > 1 and all(c.isupper() for c in buchstaben)
+    return voll_gross(ga) != voll_gross(gb)
 
 
 def _ist_funktionspaar(a, b):
