@@ -60,6 +60,22 @@ import common as C
 AUSGABEN = [('en', 'eng', 'web'), ('es', 'spa', 'rv1909mod'),
             ('fr', 'fra', 'lsg1910'), ('it', 'ita', 'riv1927')]
 
+# Wo der Versatz aus dem letzten Vers falsch ist, weil die Ausgabe nicht vorn
+# etwas weglaesst, sondern hinten zwei Verse zusammenzieht. Nur eintragen, was
+# **am Inhalt** geprueft ist — die Verslaengen koennen es nicht entscheiden.
+#
+# Ps 13 fr: LSG zaehlt die Ueberschrift mit wie in allen anderen 149 Psalmen
+# (fr 1 = `Au chef des chantres. Psaume de David.` = deutsch 13,1) und zieht am
+# Ende de 6 und de 7 in fr 6 zusammen. Der Versatz aus dem letzten Vers sagt
+# -1, richtig ist 0. Gefunden vom Agenten der Psalmen 10-13, der LSG direkt
+# aus der Datei gelesen hat, statt der Tabelle zu glauben.
+#
+# Eine Fassung, die stattdessen den Versatz 0 als Kandidaten mitrechnen liess
+# und nach Verslaengen entschied, hat Ps 13 richtig bekommen und dafuer Ps 21
+# (it), Ps 58 (es), Ps 76 (en) und Ps 142 (it) falsch. Die Laengen taugen
+# dafuer nicht.
+AUSNAHMEN = {(19, '13', 'fr'): 0}
+
 SCHWACH = 0.30      # ab hier gilt die Ausrichtung als unsicher
 
 
@@ -104,19 +120,20 @@ def versatz(dkap, okap):
         return None
     dn = sorted(int(v) for v in dkap)
     on = sorted(int(v) for v in okap)
-    off = on[-1] - dn[-1]
     dl = {int(v): len(t.split()) for v, t in dkap.items()}
     ol = {int(v): len(t.split()) for v, t in okap.items()}
-    paare = [(dl[i], ol[i + off]) for i in dl if i + off in ol]
+
+    def bewerten(off):
+        paare = [(dl[i], ol[i + off]) for i in dl if i + off in ol]
+        if not paare:
+            return 1.0, len(dl)
+        s = sum(abs(a - b) / max(a, b, 1) for a, b in paare) / len(paare)
+        return s, len(dl) - len(paare)
+
+    off = on[-1] - dn[-1]
+    s, _ = bewerten(off)
     fehlend = [i for i in sorted(dl) if i + off not in ol]
-    if not paare:
-        return (off, 1.0, fehlend)
-    s = sum(abs(a - b) / max(a, b, 1) for a, b in paare) / len(paare)
-    # Deckt der Versatz fast alle Verse ab, ist die Ausrichtung in Ordnung und
-    # die Luecke eine echte Luecke der Ausgabe — nicht ein falscher Versatz.
-    # Der italienische Psalter hat in 63 Psalmen keinen Vers 1; ohne diese
-    # Unterscheidung stuende dort eine Versatzwarnung statt der Wahrheit.
-    if len(paare) < 0.9 * min(len(dkap), len(okap)):
+    if len(dkap) + off != len(okap):
         s = max(s, SCHWACH + 0.01)
     return (off, s, fehlend)
 
@@ -139,7 +156,12 @@ def main():
     versaetze = {}
     for kurz in andere:
         okap = andere[kurz].get(kap, {})
-        versaetze[kurz] = versatz(dkap, okap) if okap else None
+        v = versatz(dkap, okap) if okap else None
+        fest = AUSNAHMEN.get((args.buch, kap, kurz))
+        if v and fest is not None:
+            v = (fest, v[1], [i for i in sorted(int(x) for x in dkap)
+                              if str(i + fest) not in okap])
+        versaetze[kurz] = v
 
     print(f'# {s["name"]} {kap}\n')
     kopf = []
@@ -151,7 +173,7 @@ def main():
             marke = '  UNSICHER' if v[1] > SCHWACH else ''
             luecke = [x for x in v[2] if x + v[0] >= 1]
             if luecke:
-                marke += ('  — FEHLT in der Datei: de '
+                marke += ('  — ohne Gegenstueck: de '
                           + ', '.join(str(x) for x in luecke[:6]))
             kopf.append(f'{kurz} ({edition}): Versatz {v[0]:+d}, Abstand {v[1]:.2f}{marke}')
     print('Ausrichtung ueber die Verslaengen — die Versnummer jeder Ausgabe steht')
@@ -184,8 +206,8 @@ def main():
                     print(f'   {kurz}   -   — diesen Vers zaehlt die Ausgabe nicht mit '
                           f'(Ueberschrift)')
                 else:
-                    print(f'   {kurz} {n0:>3}   — FEHLT in der Datei der Ausgabe '
-                          f'(Datenfehler des Bestands, keine Vorlage)')
+                    print(f'   {kurz} {n0:>3}   — kein Gegenstueck in dieser Ausgabe '
+                          f'(Vers fehlt oder ist mit dem Nachbarn zusammengezogen)')
                 continue
             unsicher = vs[1] > SCHWACH
             spanne = args.umgebung or (1 if unsicher else 0)

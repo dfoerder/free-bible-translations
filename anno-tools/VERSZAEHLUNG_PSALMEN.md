@@ -28,12 +28,23 @@ Versatz = Vers der Ausgabe minus deutscher Vers.
 | en | es | fr | it | Psalmen |
 |---|---|---|---|---|
 | +0 | +0 | +0 | +0 | **87** — 1–2, 10–11, 14–17, 23–29, 32–33, 35, 37, 43, 50, 66, 71–74, 78–79, 82, 86–87, 90–91, 93–101, 103–107, 109–139, 141, 143–150 |
-| -1 | -1 | +0 | -1 | **58** — 3–9, 12, 18–22, 30–31, 34, 36, 38–42, 44–49, 53, 55–59, 61–65, 67–70, 75–77, 80–81, 83–85, 88–89, 92, 102, 108, 140, 142 |
+| -1 | -1 | +0 | -1 | **59** — 3–9, 12–13, 18–22, 30–31, 34, 36, 38–42, 44–49, 53, 55–59, 61–65, 67–70, 75–77, 80–81, 83–85, 88–89, 92, 102, 108, 140, 142 |
 | -2 | -2 | +0 | -2 | **4** — 51–52, 54, 60 |
-| -1 | -1 | -1 | -1 | **1** — 13 |
 
-Das Französische folgt dem Deutschen überall außer in Ps 13. Englisch, Spanisch
-und Italienisch lassen die Überschrift gemeinsam weg.
+**Das Französische folgt dem Deutschen in allen 150 Psalmen.** Englisch,
+Spanisch und Italienisch lassen die Überschrift gemeinsam weg.
+
+Eine erste Fassung dieser Tabelle führte Ps 13 als Ausnahme mit französischem
+Versatz −1. Das war falsch, und der Agent der Psalmen 10–13 hat es widerlegt,
+indem er LSG direkt aus der Datei gelesen hat statt der Tabelle zu glauben:
+`fr 1` ist dort die Überschrift wie überall sonst, und die Besonderheit liegt
+am **Ende** — LSG zieht die deutschen Verse 6 und 7 in seinen Vers 6 zusammen.
+Der aus dem letzten Vers errechnete Versatz muss dabei falsch herauskommen.
+
+`ausgaben.py` führt diesen Fall deshalb als geprüfte Ausnahme. Ein Versuch, ihn
+stattdessen über die Verslängen zu erkennen, hat Ps 13 richtig bekommen und
+dafür Ps 21, 58, 76 und 142 falsch — die Längen taugen dafür nicht. Was in die
+Ausnahmeliste kommt, ist **am Inhalt** geprüft.
 
 ## Der italienische Psalter: 63 Psalmen ohne ihren ersten Vers
 
