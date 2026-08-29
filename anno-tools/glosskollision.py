@@ -70,6 +70,17 @@ FUNKTION = {
     'da', 'so', 'auch', 'nicht', 'nur', 'noch', 'schon', 'ja', 'nein',
     'doch', 'weder', 'sondern', 'zwar', 'etwa', 'sehr', 'dort', 'hier',
     'sein_verb', 'haben', 'werden', 'wollen', 'sollen', 'müssen', 'können',
+    # `lassen` steht in den Zielsprachen staendig fuer das blosse Hilfsverb
+    # einer Umschreibung und faellt dann mit `haben`/`sein` zusammen
+    # (`hat`/`laesst` sind englisch beide *has*).
+    'lassen', 'selbst',
+    # Richtungspartikeln trennbarer Verben. Sie tragen die Richtung, die die
+    # Zielsprache schon im Verb hat, und fallen deshalb mit der blossen
+    # Praeposition zusammen (`auf`/`hinauf` sind italienisch beide *su*).
+    'hinein', 'hinauf', 'hinab', 'hinaus', 'hinunter', 'hinüber', 'hin',
+    'herein', 'herauf', 'herab', 'heraus', 'herunter', 'herüber', 'her',
+    'empor', 'dahin', 'davon', 'daran', 'darauf', 'darin', 'dazu', 'dagegen',
+    'weg', 'fort', 'zurück', 'vorbei', 'nieder', 'umher',
 }
 
 SPRACHEN = ('en', 'es', 'fr', 'it')
