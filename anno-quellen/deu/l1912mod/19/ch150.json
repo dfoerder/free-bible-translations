@@ -1,0 +1,714 @@
+{
+ "1": [
+  {
+   "pos": 0,
+   "form": "Halleluja",
+   "lemma": "Halleluja",
+   "level": "A1",
+   "en": "Hallelujah",
+   "es": "Aleluya",
+   "fr": "Alléluia",
+   "it": "Alleluia"
+  },
+  {
+   "pos": 1,
+   "form": "Lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "Praise",
+   "es": "Alabad",
+   "fr": "Louez",
+   "it": "Lodate"
+  },
+  {
+   "pos": 2,
+   "form": "Gott",
+   "lemma": "Gott",
+   "level": "A1",
+   "en": "God",
+   "es": "Dios",
+   "fr": "Dieu",
+   "it": "Dio"
+  },
+  {
+   "pos": 3,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "dans",
+   "it": "in"
+  },
+  {
+   "pos": 4,
+   "form": "seinem",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "his",
+   "es": "su",
+   "fr": "son",
+   "it": "il suo"
+  },
+  {
+   "pos": 5,
+   "form": "Heiligtum",
+   "lemma": "Heiligtum",
+   "level": "C1",
+   "en": "sanctuary",
+   "es": "santuario",
+   "fr": "sanctuaire",
+   "it": "santuario"
+  },
+  {
+   "pos": 6,
+   "form": "lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabad",
+   "fr": "louez",
+   "it": "lodate"
+  },
+  {
+   "pos": 7,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 8,
+   "form": "in",
+   "lemma": "in",
+   "level": "A1",
+   "en": "in",
+   "es": "en",
+   "fr": "dans",
+   "it": "in"
+  },
+  {
+   "pos": 9,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "l'",
+   "it": "la"
+  },
+  {
+   "pos": 10,
+   "form": "mächtigen",
+   "lemma": "mächtig",
+   "level": "B2",
+   "en": "mighty",
+   "es": "poderosa",
+   "fr": "puissante",
+   "it": "potente"
+  },
+  {
+   "pos": 11,
+   "form": "Weite",
+   "lemma": "Weite",
+   "level": "B2",
+   "en": "expanse",
+   "es": "extensión",
+   "fr": "étendue",
+   "it": "distesa"
+  },
+  {
+   "pos": 12,
+   "form": "seines",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "of his",
+   "es": "de su",
+   "fr": "de son",
+   "it": "del suo"
+  },
+  {
+   "pos": 13,
+   "form": "Himmels",
+   "lemma": "Himmel",
+   "level": "A2",
+   "en": "heaven",
+   "es": "cielo",
+   "fr": "ciel",
+   "it": "cielo"
+  }
+ ],
+ "2": [
+  {
+   "pos": 0,
+   "form": "Lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "Praise",
+   "es": "Alabad",
+   "fr": "Louez",
+   "it": "Lodate"
+  },
+  {
+   "pos": 1,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 2,
+   "form": "für",
+   "lemma": "für",
+   "level": "A1",
+   "en": "for",
+   "es": "por",
+   "fr": "pour",
+   "it": "per"
+  },
+  {
+   "pos": 3,
+   "form": "seine",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "his",
+   "es": "sus",
+   "fr": "ses",
+   "it": "le sue"
+  },
+  {
+   "pos": 4,
+   "form": "mächtigen",
+   "lemma": "mächtig",
+   "level": "B2",
+   "en": "mighty",
+   "es": "poderosos",
+   "fr": "puissants",
+   "it": "potenti"
+  },
+  {
+   "pos": 5,
+   "form": "Taten",
+   "lemma": "Tat",
+   "level": "B1",
+   "en": "deeds",
+   "es": "hechos",
+   "fr": "actes",
+   "it": "atti"
+  },
+  {
+   "pos": 6,
+   "form": "lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabad",
+   "fr": "louez",
+   "it": "lodate"
+  },
+  {
+   "pos": 7,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 8,
+   "form": "nach",
+   "lemma": "nach",
+   "level": "A2",
+   "en": "according to",
+   "es": "conforme a",
+   "fr": "selon",
+   "it": "secondo"
+  },
+  {
+   "pos": 9,
+   "form": "der",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "la",
+   "fr": "l'",
+   "it": "la"
+  },
+  {
+   "pos": 10,
+   "form": "Fülle",
+   "lemma": "Fülle",
+   "level": "C1",
+   "en": "abundance",
+   "es": "abundancia",
+   "fr": "abondance",
+   "it": "abbondanza"
+  },
+  {
+   "pos": 11,
+   "form": "seiner",
+   "lemma": "sein",
+   "level": "A1",
+   "en": "of his",
+   "es": "de su",
+   "fr": "de sa",
+   "it": "della sua"
+  },
+  {
+   "pos": 12,
+   "form": "Größe",
+   "lemma": "Größe",
+   "level": "B2",
+   "en": "greatness",
+   "es": "grandeza",
+   "fr": "grandeur",
+   "it": "grandezza"
+  }
+ ],
+ "3": [
+  {
+   "pos": 0,
+   "form": "Lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "Praise",
+   "es": "Alabad",
+   "fr": "Louez",
+   "it": "Lodate"
+  },
+  {
+   "pos": 1,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 2,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 3,
+   "form": "dem",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "el",
+   "fr": "au",
+   "it": "il"
+  },
+  {
+   "pos": 4,
+   "form": "Klang",
+   "lemma": "Klang",
+   "level": "B2",
+   "en": "sound",
+   "es": "sonido",
+   "fr": "son",
+   "it": "suono"
+  },
+  {
+   "pos": 5,
+   "form": "des",
+   "lemma": "der",
+   "level": "A1",
+   "en": "of the",
+   "es": "de la",
+   "fr": "de la",
+   "it": "della"
+  },
+  {
+   "pos": 6,
+   "form": "Horns",
+   "lemma": "Horn",
+   "level": "B1",
+   "en": "horn",
+   "es": "cuerno",
+   "fr": "corne",
+   "it": "corno"
+  },
+  {
+   "pos": 7,
+   "form": "lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabad",
+   "fr": "louez",
+   "it": "lodate"
+  },
+  {
+   "pos": 8,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 9,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 10,
+   "form": "Harfe",
+   "lemma": "Harfe",
+   "level": "B2",
+   "en": "harp",
+   "es": "arpa",
+   "fr": "harpe",
+   "it": "arpa"
+  },
+  {
+   "pos": 11,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 12,
+   "form": "Laute",
+   "lemma": "Laute",
+   "level": "C1",
+   "en": "lute",
+   "es": "laúd",
+   "fr": "luth",
+   "it": "liuto"
+  }
+ ],
+ "4": [
+  {
+   "pos": 0,
+   "form": "Lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "Praise",
+   "es": "Alabad",
+   "fr": "Louez",
+   "it": "Lodate"
+  },
+  {
+   "pos": 1,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 2,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 3,
+   "form": "Pauke",
+   "lemma": "Pauke",
+   "level": "C1",
+   "en": "tambourine",
+   "es": "pandero",
+   "fr": "tambourin",
+   "it": "tamburello"
+  },
+  {
+   "pos": 4,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 5,
+   "form": "Tanz",
+   "lemma": "Tanz",
+   "level": "A2",
+   "en": "dance",
+   "es": "danza",
+   "fr": "danse",
+   "it": "danza"
+  },
+  {
+   "pos": 6,
+   "form": "lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabad",
+   "fr": "louez",
+   "it": "lodate"
+  },
+  {
+   "pos": 7,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 8,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 9,
+   "form": "Saiten",
+   "lemma": "Saite",
+   "level": "B2",
+   "en": "strings",
+   "es": "cuerdas",
+   "fr": "cordes",
+   "it": "corde"
+  },
+  {
+   "pos": 10,
+   "form": "und",
+   "lemma": "und",
+   "level": "A1",
+   "en": "and",
+   "es": "y",
+   "fr": "et",
+   "it": "e"
+  },
+  {
+   "pos": 11,
+   "form": "Flöte",
+   "lemma": "Flöte",
+   "level": "B1",
+   "en": "flute",
+   "es": "flauta",
+   "fr": "flûte",
+   "it": "flauto"
+  }
+ ],
+ "5": [
+  {
+   "pos": 0,
+   "form": "Lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "Praise",
+   "es": "Alabad",
+   "fr": "Louez",
+   "it": "Lodate"
+  },
+  {
+   "pos": 1,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 2,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 3,
+   "form": "hellen",
+   "lemma": "hell",
+   "level": "A2",
+   "en": "clear",
+   "es": "claros",
+   "fr": "claires",
+   "it": "chiari"
+  },
+  {
+   "pos": 4,
+   "form": "Zimbeln",
+   "lemma": "Zimbel",
+   "level": "C1",
+   "en": "cymbals",
+   "es": "címbalos",
+   "fr": "cymbales",
+   "it": "cembali"
+  },
+  {
+   "pos": 5,
+   "form": "lobt",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabad",
+   "fr": "louez",
+   "it": "lodate"
+  },
+  {
+   "pos": 6,
+   "form": "ihn",
+   "lemma": "er",
+   "level": "A1",
+   "en": "him",
+   "es": "lo",
+   "fr": "le",
+   "it": "lo"
+  },
+  {
+   "pos": 7,
+   "form": "mit",
+   "lemma": "mit",
+   "level": "A1",
+   "en": "with",
+   "es": "con",
+   "fr": "avec",
+   "it": "con"
+  },
+  {
+   "pos": 8,
+   "form": "klingenden",
+   "lemma": "klingend",
+   "level": "B2",
+   "en": "resounding",
+   "es": "resonantes",
+   "fr": "retentissantes",
+   "it": "squillanti"
+  },
+  {
+   "pos": 9,
+   "form": "Zimbeln",
+   "lemma": "Zimbel",
+   "level": "C1",
+   "en": "cymbals",
+   "es": "címbalos",
+   "fr": "cymbales",
+   "it": "cembali"
+  }
+ ],
+ "6": [
+  {
+   "pos": 0,
+   "form": "Alles",
+   "lemma": "all",
+   "level": "A1",
+   "en": "Everything",
+   "es": "Todo",
+   "fr": "Tout",
+   "it": "Ogni cosa"
+  },
+  {
+   "pos": 1,
+   "form": "was",
+   "lemma": "was",
+   "level": "A1",
+   "en": "that",
+   "es": "lo que",
+   "fr": "ce qui",
+   "it": "che"
+  },
+  {
+   "pos": 2,
+   "form": "Atem",
+   "lemma": "Atem",
+   "level": "B2",
+   "en": "breath",
+   "es": "aliento",
+   "fr": "souffle",
+   "it": "respiro"
+  },
+  {
+   "pos": 3,
+   "form": "hat",
+   "lemma": "haben",
+   "level": "A1",
+   "en": "has",
+   "es": "tiene",
+   "fr": "a",
+   "it": "ha"
+  },
+  {
+   "pos": 4,
+   "form": "lobe",
+   "lemma": "loben",
+   "level": "B1",
+   "en": "praise",
+   "es": "alabe",
+   "fr": "loue",
+   "it": "lodi"
+  },
+  {
+   "pos": 5,
+   "form": "den",
+   "lemma": "der",
+   "level": "A1",
+   "en": "the",
+   "es": "al",
+   "fr": "l'",
+   "it": "il"
+  },
+  {
+   "pos": 6,
+   "form": "HERRN",
+   "lemma": "HERR",
+   "level": "A1",
+   "en": "LORD",
+   "es": "SEÑOR",
+   "fr": "ÉTERNEL",
+   "it": "SIGNORE"
+  },
+  {
+   "pos": 7,
+   "form": "Halleluja",
+   "lemma": "Halleluja",
+   "level": "A1",
+   "en": "Hallelujah",
+   "es": "Aleluya",
+   "fr": "Alléluia",
+   "it": "Alleluia"
+  }
+ ]
+}
