@@ -118,6 +118,12 @@ hijo del hombre · fils de l'homme · figlio dell'uomo*. Die reinste Lexikonfall
 des Buches, weil der Extrakt hier nicht mehrheitlich, sondern **einstimmig**
 in die falsche Richtung zeigt.
 
+**`Höchster` ist dieselbe Falle wie `Menschensohn`.** Im Bestand ist es
+ausschließlich der Gottestitel *Most High · Altísimo · Très-Haut · Altissimo*.
+In Ps 89,28 ist es aber der schlichte Superlativ unter Königen („der Höchste
+unter den Königen der Erde"): *highest · más excelso · plus élevé · più
+eccelso*. Wie bei `Menschensohn` zeigt der Extrakt einstimmig auf den Titel.
+
 **`Eber` ist ein Homograph.** 12 Belege als Patriarch (A1), in Ps 80,14 aber
 das Wildschwein: *boar · jabalí · sanglier · cinghiale*, B2. `qa.py` meldet die
 Stelle erwartungsgemäß als Eigennamen — das ist kein Fehler, sondern der Fall.
@@ -153,8 +159,15 @@ zwei solche Fälle in benachbarten Versen:
   `hints.py` meldet für Ps 81 **null** Paare
 - 88,18 `umgeben` und `umringen` — im Bestand beide *surround · rodean ·
   entourent · circondano*; `hints.py` meldet für Ps 88 **null** Paare
+- 89,7 `gleich` und `wie` — englisch beide *like*
+- 90,11 `er` und `es` — englisch beide *it*
+- 92,7 `törichter`/`Narr` · 94,4 `prahlen`/`sich rühmen` · 94,11 `kennt`/`weiß`
 
-Alle vier sind nur aufgefallen, weil die Agenten den Lexikon-Extrakt Wort für
+**Dafür gibt es jetzt `glosskollision.py`.** Es vergleicht die tatsächlich
+gesetzten Glossen statt des Quelltexts gegen den Bestand und findet damit
+genau diese Klasse. Pflichtlauf vor der Abgabe, siehe `AUFTRAG_PSALTER.md`.
+
+Alle sind nur aufgefallen, weil die Agenten den Lexikon-Extrakt Wort für
 Wort gelesen haben — in drei unabhängigen Paketen. **Bei Synonympaaren im selben
 Vers nicht auf `hints.py` verlassen**, sondern die vier Glossen der Nachbarwörter
 selbst vergleichen.
