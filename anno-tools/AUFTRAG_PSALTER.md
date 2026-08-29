@@ -75,6 +75,18 @@ Mehrwort-Wendungen des Bestands im Quelltext und fragt, ob ein Eintrag darauf
 liegt; ein Treffer kann auch wörtlich gemeint sein (`Er stand auf dem Berg`
 ist kein `aufstehen`).
 
+## Ein Unterschied, der kein Befund ist
+
+Die **Kapitelquelle** und das **gebaute Buch** können sich im `level`
+unterscheiden. `buildbook.py` zieht beim Bauen zwei Angleichungen durch — je
+Bedeutung und je Lemma über den ganzen Bestand — und schreibt das Ergebnis nur
+in die gebaute Datei. Ps 31,10 trägt in der Quelle `angst sein` als B2 und im
+Buch als A2; beides ist richtig, die Quelle hält die Entscheidung des Agenten,
+das Buch die korpusweite Vereinheitlichung.
+
+**Nicht als Befund melden.** Was zu melden ist: ein Level, das gegen die
+Bestandsmehrheit steht — dafür ist `levelcheck.py` da.
+
 ## Abgabe
 
 Je Psalm eine Datei `$ANNO_OUT/19/ch<psalm>.json`, Inhalt `{"<vers>": [...]}`
