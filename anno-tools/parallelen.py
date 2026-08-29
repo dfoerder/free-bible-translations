@@ -14,7 +14,9 @@ die noch gar nicht annotiert sind. Ein Buch kann eine Anno-Datei haben und
 trotzdem erst zur Haelfte gefuellt sein; der Psalter hatte 77 von 150 Kapiteln,
 als das auffiel. Treffer in einem solchen Kapitel tragen **keine Glossen**, und
 wer sie uebernimmt, uebernimmt nichts. Sie sind seither mit
-`NOCH NICHT ANNOTIERT` markiert.
+`NOCH NICHT ANNOTIERT` markiert. Gezaehlt werden sowohl die Kapitel des
+gebauten Buches als auch die Kapitelquellen unter `anno-quellen/` — waehrend
+einer laufenden Welle ist ein Kapitel oft geschrieben, aber noch nicht gebaut.
 
 ## Warum nicht nach Ähnlichkeit
 
@@ -62,9 +64,16 @@ buecher = [b for b in C.anno_books()]
 # Kapiteln, als das hier gebraucht wurde. Gesucht wird aber im **Quelltext**
 # aller Buecher mit Anno-Datei, also auch in Kapiteln ohne einen einzigen
 # Eintrag. Wer so einen Treffer "uebernimmt", uebernimmt nichts.
+# Dazu die **Kapitelquellen**: waehrend einer laufenden Welle sind Kapitel
+# fertig geschrieben, aber noch nicht gebaut. Ohne sie meldet das Skript
+# `NOCH NICHT ANNOTIERT` fuer eine Vorlage, die es laengst gibt — so geschehen
+# bei Ps 128,5, das dem Agenten fuer Ps 134,3 als fehlend angezeigt wurde,
+# obwohl ch128.json daneben lag.
 annotiert = {}
 for b in buecher:
-    annotiert[b] = set(C.load_anno(b)['chapters'])
+    aus_buch = set(C.load_anno(b)['chapters'])
+    aus_quelle = {str(k) for k in C.quellen_kapitel(b)}
+    annotiert[b] = aus_buch | aus_quelle
 
 print(f'# Parallelstellen zu {C.book_name(nr)} {kap} im annotierten Bestand\n')
 print(f'Gesucht wird der **längste gemeinsame Wortblock** (ab {minblock} Tokens),')
