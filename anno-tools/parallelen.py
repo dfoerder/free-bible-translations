@@ -7,6 +7,15 @@ Für jeden Vers des Kapitels wird der Vers des Bestands gesucht, der den
 Ähnlichkeitswert. Das ist der Unterschied, an dem die erste Fassung dieser
 Suche gescheitert ist.
 
+## Was ein Treffer wert ist
+
+Gesucht wird im **Quelltext** aller Buecher mit Anno-Datei — auch in Kapiteln,
+die noch gar nicht annotiert sind. Ein Buch kann eine Anno-Datei haben und
+trotzdem erst zur Haelfte gefuellt sein; der Psalter hatte 77 von 150 Kapiteln,
+als das auffiel. Treffer in einem solchen Kapitel tragen **keine Glossen**, und
+wer sie uebernimmt, uebernimmt nichts. Sie sind seither mit
+`NOCH NICHT ANNOTIERT` markiert.
+
 ## Warum nicht nach Ähnlichkeit
 
 Nehemia 11,7 hat gegen 1. Chronik 5,14 die Ähnlichkeit **0,57**, teilt mit ihr
@@ -48,6 +57,15 @@ alle = '--alle' in sys.argv
 quelle = C.load_source(nr)['chapters'][kap]
 buecher = [b for b in C.anno_books()]
 
+# Welche Kapitel tragen wirklich Glossen? Ein Buch kann eine Anno-Datei haben
+# und trotzdem erst zur Haelfte annotiert sein — der Psalter hatte 77 von 150
+# Kapiteln, als das hier gebraucht wurde. Gesucht wird aber im **Quelltext**
+# aller Buecher mit Anno-Datei, also auch in Kapiteln ohne einen einzigen
+# Eintrag. Wer so einen Treffer "uebernimmt", uebernimmt nichts.
+annotiert = {}
+for b in buecher:
+    annotiert[b] = set(C.load_anno(b)['chapters'])
+
 print(f'# Parallelstellen zu {C.book_name(nr)} {kap} im annotierten Bestand\n')
 print(f'Gesucht wird der **längste gemeinsame Wortblock** (ab {minblock} Tokens),')
 print('nicht die höchste Ähnlichkeit. Wo beide Maße auseinandergehen, steht der')
@@ -79,7 +97,8 @@ for v in sorted(quelle, key=int):
         continue
     gefunden += 1
     blk, r, (b, k, w) = top_block
-    print(f'## {kap},{v} ← {C.book_name(b)} {k},{w}   Block {blk}, Ähnlichkeit {r:.2f}')
+    leer = '' if k in annotiert.get(b, ()) else '   ⚠ NOCH NICHT ANNOTIERT — dort stehen keine Glossen'
+    print(f'## {kap},{v} ← {C.book_name(b)} {k},{w}   Block {blk}, Ähnlichkeit {r:.2f}{leer}')
     sm = difflib.SequenceMatcher(None, a, norm(C.load_source(b)['chapters'][k][w]))
     for bl in sm.get_matching_blocks():
         if bl.size >= minblock:
