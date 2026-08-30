@@ -226,3 +226,96 @@ Dazu die ganze Faulheitsgruppe: `Fauler`, `Faulen`, `Faulheit`, `fleißig`,
 `Fleiß` sind sämtlich unbelegt, `faul` steht zweimal im AT als
 *lazy · perezosos · paresseux · pigri* (B1). Wer sie zuerst setzt, legt sie für
 das Buch fest und trägt sie hier ein.
+
+## 9. Was Kapitel 1 festgelegt hat
+
+Kapitel 1 ist gelaufen und validiert (33 Verse, 478 Einzelwort- und 29
+Mehrwort-Einträge, `selfcheck.py`, `qa.py`, `konvention.py`, `glosskollision.py`
+und `levelcheck.py` ohne Befund). Diese Festlegungen gelten für das Buch.
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Erziehung` | training · educación · éducation · educazione | B2 | NT-Bindung, trägt |
+| `Weisung` | instruction · instrucción · instruction · istruzione | B2 | Bestand |
+| `Unerfahrener` | inexperienced · inexpertos · inexpérimentés · inesperti | C1 | Bestand, gegen die Ausgaben |
+| `Unerfahrenheit` | inexperience · inexperiencia · inexpérience · inesperienza | C1 | **neu** |
+| `Narr` | fools · necios · insensés · stolti | B2 | Bestand |
+| `Spötter` | scoffers · burladores · moqueurs · schernitori | C1 | Bestand |
+| `Spotten` (Subst.) | mocking · la burla · la moquerie · scherno | B2 | **neu**, getrennt von `Spötter` |
+| `Klugheit` | prudence · prudencia · prudence · prudenza | C1 | **Umstellung** |
+| `klug` | prudent · prudentes · prudents · prudenti | B1 | **Umstellung** |
+| `weise` | wise · sabio · sage · saggio | B2 | Bestand |
+| `Weiser` | wise · sabios · sages · saggi | B2 | Bestand |
+| `verständig` | understanding · entendido · intelligent · intelligente | B2 | Bestand |
+| `umsichtig` | circumspect · previsores · prévoyants · previdenti | C1 | **neu** |
+| `Verstand` | understanding · entendimiento · intelligence · intelletto | B2 | Bestand |
+| `Erkenntnis` | knowledge · conocimiento · connaissance · conoscenza | B2 | Bestand |
+| `Redlichkeit` | uprightness · rectitud · droiture · rettitudine | C1 | **neu** |
+| `Rat` | advice · consejo · conseil · consiglio | B1 | Bestand, AT-Lesart |
+| `Zurechtweisung` | reproof · reprensión · réprimande · riprensione | C1 | Bestand |
+| `zurechtweisen` | rebuke · reprender · reprendre · riprendere | B2 | Bestand |
+| `Verirrung` | straying · extravío · égarement · smarrimento | C1 | **neu** |
+| `Sorglosigkeit` | carelessness · despreocupación · insouciance · spensieratezza | C1 | **neu** |
+| `Spruch` | proverbs · proverbios · proverbes · proverbi | C1 | fr gegen den Bestand, s. u. |
+| `Straße` | street · calle · rue · strada | A2 | löst 7,8 · 15,19 vorab auf |
+| `Stadttor` | city gates · puertas de la ciudad · portes de la ville · porte della città | B2 | Bestand |
+| `lauern` / `auflauern` | lie in wait · acechar · guetter · tendere un agguato | C1 | Bestand |
+| `nachstellen` | lurk for · tender trampas a · dresser des pièges à · insidiare | C1 | **Umstellung**, s. u. |
+| `Wirbelwind` | whirlwind · torbellino · tourbillon · turbine | C1 | **neu** |
+
+**`Weisheit` bleibt auch personifiziert klein** (ab 1,20): *wisdom · sabiduría ·
+sagesse · sapienza*. Nur WEB schreibt „Wisdom"; RV, LSG und RIV schreiben klein,
+und der Bestand hat 110 kleingeschriebene Belege.
+
+### Die drei Umstellungen und warum sie tragen
+
+**`Klugheit` und `klug`.** Der Bestand hat für `klug` keine feste Bindung,
+sondern **18 verschiedene Lesarten über 40 Belege** — darunter *wise*,
+*prudent*, *clever*, *shrewd*, *wisely*. Die Bindungsregel („der Bestand
+entscheidet, wo er eine feste Bindung hat") greift hier also nicht. Die vier
+Ausgaben schreiben in den Sprüchen durchgehend die *prudent*-Familie
+(1,4 *prudence · sagacidad · discernement · accorgimento*, 10,5 · 10,19 ·
+12,16 · 12,23 · 13,16 · 14,8 · 14,15 jeweils *prudent · prudente · prudent ·
+prudente/accorto*), und `weise` behält damit *wise* allein. Das löst die drei
+gemeldeten Kollisionen 16,21 · 17,28 · 19,25 vorab auf.
+
+**`nachstellen`.** `auflauern` (Ps 59,4) und `nachstellen` (Ps 56,2) tragen im
+Bestand in en/es/fr dieselbe Glosse. In 1,11 und 1,18 stehen beide im selben
+Vers. Aufgelöst nach den Ausgaben (WEB „lurk secretly", LSG „Tendons des
+pièges", RIV „tendiamo insidie"). **Der Fall betrifft auch die Psalmen** und
+ist dort nicht angefasst worden.
+
+**`Spruch` französisch.** Der Bestand hat *sentences* aus einem einzigen Beleg
+(Hiob 13,12); LSG schreibt in diesem Buch durchgehend „Proverbes".
+
+### Zwei Auflösungen, die erst durch die gesetzten Glossen entstanden
+
+`glosskollision.py` hat sie gefunden, `hints.py` konnte sie nicht sehen:
+
+- **1,9 `Denn` / `für`** — beide englisch *for*. `Denn` → *Because*.
+- **1,19 `Ihre` / `ihnen`** — beide französisch *leur*. `ihnen` → fr *eux*.
+
+### `Ruhe` ist keine Buchbindung
+
+1,33 („in Ruhe leben") trägt *peace · paz · paix · pace* gegen die
+Bestandsmehrheit *rest · descanso · repos · riposo* (72×). Das ist die
+Lesart, die der Bestand für das adverbiale „in Ruhe" schon führt, und es ist
+**verse-lokal**. `Ruhe` steht im Buch noch viermal (6,4 · 17,1 · 29,9 ·
+29,17), und in 6,4 („deinen Lidern keine Ruhe") ist *rest* richtig. Nicht
+übertragen.
+
+### Ein Befund, der nachzuziehen ist
+
+**Hiob 8,13 fehlt der Mehrwort-Eintrag `es ergehen`** („So ergeht es allen, die
+Gott vergessen"). Der Bestand führt `es ergehen` sonst 11× als C1-Mehrwort. In
+Spr 1,19 — der wörtlichen Parallele — ist er gesetzt.
+
+### Zwei Korrekturen an diesem Dokument
+
+- `hints.py` gibt für `verwirf` (1,8) den falschen Stamm (`verwirren`). Das
+  Lemma ist `verwerfen`, im Bestand 28× belegt.
+- Der Satz unter 3., die vier Ausgaben schrieben für `Unerfahrener`
+  *simple · simples · stolti*, stimmt so nicht: RIV schreibt in 1,22 und 1,32
+  **`scempi`** und trennt damit selbst von `Narr` = *stolti*; LSG schreibt in
+  1,4 *simples*, in 1,22 und 1,32 aber *stupides*. Die Bestandsbindung
+  *inexperienced* steht weniger allein da als angenommen.
