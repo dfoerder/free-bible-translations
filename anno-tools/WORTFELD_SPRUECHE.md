@@ -1029,3 +1029,106 @@ auf *hastily · apresuradamente · hâtivement · frettolosamente* vereinheitlic
 Substantive; 21,5 hat das Adverb `hastig`, kein Substantiv `Hast`; 22,1 hat
 `guter Ruf` und `Ansehen`, weder `guter Name` noch `Gunst`; 22,22–23 haben
 `Bedürftigen` und die Rechts-`Sache`, weder `Geringer` noch `Gericht`.
+
+## 17. Was die Kapitel 23, 24 und 25 festgelegt haben
+
+### Die drei stärksten Dubletten des Buches sind übertragen und nachgerechnet
+
+| Paar | Ergebnis |
+|---|---|
+| **24,34 ↔ 6,11** (1,00) | 16 Einträge feldweise identisch |
+| **24,33 ↔ 6,10** (0,94) | Positionen 0–16 feldweise identisch, samt drei `ein wenig`-Mehrwörtern und `die Hände in den Schoß legen`; neu sind nur `um` und `auszuruhen` |
+| **25,24 ↔ 21,9** (wörtlich gleich) | 16 Einträge feldweise identisch, programmatisch tiefkopiert |
+
+Für den Zusatz in 24,33 ist **kein `um … zu`-Mehrwort möglich**: das `zu`
+steckt im Infinitivpräfix („aus-zu-ruhen") und ist kein eigenes Token.
+
+### 25,19 — die dokumentierte Falle hat gegriffen
+
+„wie ein **fauler** Zahn" ist `faul` = **rotten · podrido · gâtée · guasto**
+(B1), nicht die Faulheitsgruppe. Alle vier Ausgaben stützen die
+Verderbnis-Lesart; der deutsche Text sagt „faul", nicht „zerbrochen", deshalb
+*rotten* statt *broken*.
+
+### Die dichteste Stelle des Buches: 23,29
+
+Sechs Substantive in sechs Fragen. Die Falle lag bei **`Leid`**: der Bestand
+führt dafür auch die Lesart *misery · miseria · misère · miseria* — **wortgleich
+mit `Elend` in allen vier Sprachen**. Kein Prüfskript hätte das melden können,
+weil `hints.py` nur die häufigste Lesart vergleicht. Genommen ist die
+Mehrheitslesart *sorrow* (13:2).
+
+| deutsch | en · es · fr · it |
+|---|---|
+| `Elend` | misery · miseria · misère · miseria |
+| `Leid` | sorrow · dolor · douleur · dolore |
+| `Streit` | dispute · disputa · dispute · disputa |
+| `Klage` | complaint · queja · plainte · lamento |
+| `Wunde` | wounds · heridas · blessures · ferite |
+| `trübe` | dim · nublados · obscurcis · offuscati |
+
+`trübe` folgt 1Kön 14,4, wo **dieselbe Kollokation** „trübe Augen" steht.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `faul` (verdorben) | rotten · podrido · gâtée · guasto | B1 | 25,19 |
+| `Geheimnis` | secret · secreto · secret · segreto | B2 | **Lexikonfalle** — die 22 Bestandsbelege (*mystery*) sind sämtlich NT |
+| `Rat` (Ratsversammlung) | council · consejo · conseil · consiglio | B1 | zweite Bestandslesart, 24,7 |
+| `Lehre` (= Lektion) | lesson · lección · leçon · lezione | B2 | eigene Glosse neben *teaching* (55×) |
+| `rechnen` (kalkulieren) | calculates · calcula · calcule · calcola | B2 | **neue Lesart** — die Bindung meint „nicht damit rechnen" |
+| `Speise` | foods · alimentos · aliments · cibi | B2 | Bestandsmehrheit — die zweite Lesart *manjares · mets* fiele mit `Leckerbissen` zusammen |
+| `Weinsäufer` / `Vielfraß` / `Schlemmer` | wine drinkers · … / big eaters · comilones · goinfres · mangioni / glutton · glotón · glouton · ghiottone | C1 | **neu**; RV schreibt in beiden Versen *glotón*, die Bindung trennt |
+| `Mast` (Schiff) | mast · mástil · mât · albero di nave | B2 | **neu** — Homograph zu `mästen`/`Mastvieh` |
+| `Hinrichtung` | execution · ejecución · exécution · esecuzione | C1 | Bestand (24,11) |
+| `Distel` / `Unkraut` | thistles · abrojos · chardons · rovi / weeds · cizaña · ivraie · zizzania | C1/B2 | Bestand — **RIV schreibt für `Unkraut` *rovi*, und das ist die Glosse von `Distel`**; der Ausgabe zu folgen hätte beide zusammenfallen lassen |
+| `Steinmauer` | stone wall · muro de piedra · mur de pierre · muro di pietra | B2 | Bestand (2Kön 3,25) — **im Lexikon-Extrakt unsichtbar**, gefunden erst durch `levelcheck.py` |
+| `Nordwind` / `Erntetag` / `Apfel` / `Natron` | … | B2/B2/A2/C1 | **neu** (25,11–23) |
+
+### Kollisionen, die erst durch die gesetzten Glossen entstanden
+
+`hints.py` meldete für alle drei Kapitel zusammen **null** Paare.
+
+- **23,35 `geschlagen` ↔ `verprügelt`** — RIV übersetzt beide mit *percosso*.
+  `verprügeln` weicht auf *bastonato* aus.
+- **24,16 `fällt` ↔ `stürzen`** — drei der vier Ausgaben trennen selbst.
+  `stürzen` weicht auf die Bestandslesart *cast down · derribar · précipiter ·
+  precipitare* aus.
+- **24,27 `Bestell` ↔ `richte her`**, **24,6 `es` ↔ `da`** (Partikel-Fall),
+  **24,11 `zum` ↔ `zur`**, **24,25 `denen` ↔ `sie`**, **23,31 `schimmert` ↔
+  `funkelt`** (beide unbelegt), **23,10 `in` ↔ `ein`** (Partikel von
+  `eindringen`).
+
+### Ein Befund, der korpusweit zu entscheiden ist
+
+**`gib` trägt italienisch `da'` (96 Belege) gegen `da` (4).** In 25,21 steht
+genau dieses Paar auch im gebauten **Römer 12,20**, das den Vers zitiert. Eine
+verse-lokale Ausweichform hätte die Parallele auseinanderlaufen lassen —
+gemeldet, nicht angefasst.
+
+Dazu: **Ps 20,2** trägt eine falsche französische Elision (`der` vor `Not` =
+*angoisse* als *de la* statt *de l'*), und `Führung` läuft zwischen 4Mo 33,1
+(fr *conduite* · it *guida*) und Spr 11,14 (*direction* · *direzione*)
+auseinander. Beide nicht angefasst.
+
+### `Freude machen` — der Hinweis war zum zweiten Mal falsch
+
+Nach 17,21 („hat keine Freude") sagt auch **23,24 „hat Freude an ihm"**. Dort
+steht der Bestands-Mehrwort **`Freude haben`** *delights · se complace · prend
+plaisir · si compiace*. Die Regel lautet: **`Freude machen` nur, wo der Text
+„macht … Freude" sagt** — das sind 10,1 · 10,23 · 15,20.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+In Kapitel 23 sieben Stück: `Leckerbissen`, der Imperativ `erziehen`,
+`Mischtrank`, `Steuermann`, `Nattern`, `taumeln` und `Freude machen`. In
+Kapitel 24: `Todesgefahr` (der Text sagt `Hinrichtung`), `Nesseln`, `Mauer`
+(`Steinmauer`), `Erkenntnis` (zweimal `Wissen`), `Stärke` (`stark`/`Kraft`).
+In Kapitel 25: `Selbstbeherrschung` (der Text sagt „sich nicht beherrschen
+kann"), `Ohrring` (`Ring`).
+
+### Zwei Importartefakte in der italienischen Ausgabe
+
+RIV 25,13 schreibt „**sso** ristora l'anima" (das `e` von *esso* fehlt),
+RIV 23,35 „**uando** mi sveglierò" (das `q` von *quando* fehlt).
