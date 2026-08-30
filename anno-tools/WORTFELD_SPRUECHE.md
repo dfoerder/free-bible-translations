@@ -218,7 +218,7 @@ achtmal oder öfter und haben auch über das Lemma **keinen** Beleg:
 
 | Form | Vorkommen | wo zuerst |
 |---|---|---|
-| `Besser` | 12× | 12,9 (die „Besser-als"-Sprüche) |
+| ~~`Besser`~~ | 12× | 12,9 — **erledigt**: Kapitel 12 hat `besser` B1 *Better · Mejor · Mieux · Meglio* gesetzt, Kapitel 15 und 16 haben es übernommen. Gilt für alle zwölf „Besser-als"-Sprüche. |
 | `Faule` | 10× | 10,26 |
 | `verlogene` | 8× | 6,17 |
 
@@ -693,3 +693,100 @@ Bote`, die Ausgaben *böser Bote*; 13,16 sagt `mit Überlegung`, die Ausgaben
 `Rede` noch `Lüge` noch `Mund`. In Kapitel 11 fehlen `austeilen` (der Text sagt
 „gibt großzügig"), `Korn` (er sagt `Getreide`) und das Substantiv `Fluch`
 (nur das Verb `verflucht`).
+
+## 14. Was die Kapitel 14, 15 und 16 festgelegt haben
+
+### Die wörtlich identischen Verse 14,12 und 16,25
+
+Beide Kapitel liefen gleichzeitig und konnten sich nicht abstimmen; beide haben
+den Vers vollständig berichtet. Die Fassungen unterschieden sich an **drei**
+Stellen, alle drei zugunsten von Kapitel 16 entschieden:
+
+| | 14,12 | 16,25 | genommen |
+|---|---|---|---|
+| `richtig` | right · justo · juste · giusto | right · recto · droit · diritta | **16** — das gebaute 12,15 („Der Weg des Narren ist … richtig") hat dieselbe Konstruktion und trägt dort *recto · droit · diritta* |
+| `er` (it) | esso | essa | **16** — das Bezugswort `Weg` ist italienisch *via*, feminin |
+| `in` (en) | into | to | **16** |
+
+Danach sind die beiden Verse feldweise identisch, samt dem Mehrwort-Eintrag
+`am Ende` (B1, Bestand, 11 Belege).
+
+**14,27 hat den Block aus 13,14 programmatisch übernommen** — die Positionen
+4–15 sind feldweise identisch, samt `Quelle des Lebens` und `um … zu`.
+
+### Kollisionen
+
+**16,18** brachte neben dem schon gelösten `Hochmut`/`Stolz` ein zweites Paar,
+das kein Werkzeug gemeldet hatte: **`Sturz` ↔ `Fall`**, im Bestand beide
+*fall · caída · chute · caduta*. Alle vier Ausgaben trennen von selbst.
+Gesetzt: `Sturz` B2 *downfall · ruina · ruine · rovina*, `Fall` B1 unverändert.
+
+**15,13** ebenso: `fröhlich` und `heiter` stehen im selben Vers und tragen im
+Bestand spanisch und italienisch dieselbe Glosse (*alegre*, *allegro*).
+Aufgelöst nach LSG *serein* und RIV *ilare*: `heiter` = *cheerful · sereno ·
+serein · ilare*.
+
+**14,5 `Lüge` ↔ `lügen` ist ein Fehlalarm** derselben Art wie 4,16
+`Schlaf`/`schlafen`: Verb und Stammsubstantiv, Zusammenfall nur im Englischen
+und dort ebenfalls als Verb/Substantiv derselben Wurzel. Eine Auflösung müsste
+eine der beiden Buchbindungen versetzen — nicht getan.
+
+**16,21 und 16,23 lösen sich von selbst auf**: die Kapitel-1-Umstellung von
+`klug` auf die *prudent*-Familie trägt, und der 13,20-Präzedenzfall greift
+nicht, weil in 16,21 kein Substantiv und in 16,23 kein Adjektiv steht.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Straße` (Landstraße, 15,19) | highway · calzada · route · strada | A2 | **verse-lokal**; 7,8 (Stadtstraße) behält *street · calle · rue · strada* |
+| `Sturz` | downfall · ruina · ruine · rovina | B2 | **neue Lesart**, Auflösung 16,18 |
+| `heiter` | cheerful · sereno · serein · ilare | B2 | **Umstellung**, Auflösung 15,13 |
+| `Gewichtsstein` | weight stones · pesas · pierres à peser · pesi di pietra | C1 | **neu** — die Ausgaben schreiben dasselbe Wort wie für `Gewicht` und trennen nicht |
+| `Jähzorniger` | quick-tempered man · hombre iracundo · homme colérique · uomo iracondo | C1 | **neu** (14,17 · 14,29 · 15,18) — 29,22 ist der wörtliche Parallelvers |
+| `Geduldiger` | patient man · hombre paciente · homme patient · uomo paziente | B2 | **neu** |
+| `Zank` | quarreling · contienda · querelle · contesa | B2 | Bestand — trennt in 15,18 von `Streit` |
+| `gelassen` | calm · tranquilo · calme · calmo | B2 | **neu** |
+| `Selbstbetrug` | self-deception · autoengaño · tromperie de soi · autoinganno | C1 | **neu** |
+| `vorsichtig` | cautious · cauteloso · circonspect · cauto | B1 | **neu**; fr weicht auf *circonspect* aus, damit *prudent* bei `klug` bleibt |
+| `zuverlässig` | reliable · fiable · fiable · affidabile | B2 | hält `unzuverlässig` (13,17) symmetrisch |
+| `Elender` / `Geringer` / `Armer` | wretched · desdichado · malheureux · infelice / lowly one · humilde · petit · misero / poor man · pobre · pauvre · povero | C1/B2/B1 | alle drei getrennt — 14,31 hat `Geringen` und `Armen` im selben Vers |
+| `heilsam` | wholesome · saludable · salutaire · salutare | B2 | **neu**; en gegen `heilend` (15,4) und `Heilung` (12,18) abgesetzt |
+| `hervorsprudeln` (MW) | gushes out · derrama · déverse · sgorga | C1 | **neu**; fr *déverse*, weil *répand* schon `verbreiten` trägt |
+| `Beweggrund` | motives · motivos · motifs · motivi | C1 | **neu**, dem Quelltext gefolgt (Ausgaben: *spirits*) |
+| `hinterlistig` | crafty · astuto · rusé · astuto | C1 | **vereinheitlicht**, s. u. |
+| `Hinterlist` | cunning · astucia · ruse · astuzia | C1 | Bestand (1Mo 34,13), gegen die Ausgaben |
+| `Gericht` (Speise) | dish · plato · plat · piatto | B2 | **zweite Lesart** |
+| `gebahnt` | level · llana · aplanie · piana | B2 | **neu** |
+| `Todesbote` | messenger of death · mensajero de muerte · messager de mort · messaggero di morte | C1 | **neu**; gilt evtl. für 19,12 |
+
+### Was der Kreuzabgleich der drei Kapitel gefunden hat
+
+105 gemeinsame Inhaltswortformen. Zwei echte Divergenzen, beide vereinheitlicht:
+
+- **`hinterlistig`** trug in 14,17 *crafty · astuto · rusé · astuto* und in
+  16,28 *crooked · perverso · pervers · perverso*. Genommen ist die
+  *crafty*-Fassung — sie steht schon seit Kapitel 7 so, und *perverso* wäre mit
+  `Verkehrter` (2,12) zusammengefallen, genau die Kollision, die Kapitel 12 bei
+  `verschlagen` vermieden hat.
+- **`rein`** trug in 15,26 *pure · puras · pures · pure* und in 16,2
+  *clean · limpios · purs · pure*. Der Bestand führt beide Lesarten fast gleich
+  häufig (*pure* 69×, *clean* 66×), aber die *clean*-Belege sind durchweg die
+  kultische Reinheit des 3. Mose. Beide Sprüche-Stellen sind moralisch, also
+  *pure*.
+
+### Zwei Korrekturen an diesem Dokument
+
+- **`Besser` ist nicht mehr unbelegt** (Abschnitt 8): Kapitel 12 hat es in 12,9
+  gesetzt, Kapitel 15 und 16 haben es übernommen.
+- **`Straße` ist keine feste Bindung**, sondern eine Auswahl unter drei
+  Bestandslesarten (11 : 9 : 4). Abschnitt 9 führt es zu apodiktisch.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+14,16 hat keinen `Tor` (dort stehen `Weiser` und `Narr`); 14,21 hat `Elenden`,
+nicht `Armer`/`Bedürftiger`; 14,30 sagt `Eifersucht`, nicht `Neid`; 15,33 hat
+kein `Erziehung`; 15 hat weder `Rede` noch `Tadel`; 16,1–9 hat kein `Rat`, und
+**16,31 hat kein `Ehre`** — der Quelltext sagt „eine prächtige Krone", während
+alle vier Ausgaben *crown of glory · corona de honra · couronne d'honneur ·
+corona d'onore* schreiben.
