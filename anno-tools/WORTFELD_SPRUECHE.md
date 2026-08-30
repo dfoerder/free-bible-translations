@@ -1132,3 +1132,89 @@ kann"), `Ohrring` (`Ring`).
 
 RIV 25,13 schreibt „**sso** ristora l'anima" (das `e` von *esso* fehlt),
 RIV 23,35 „**uando** mi sveglierò" (das `q` von *quando* fehlt).
+
+## 18. Was die Kapitel 26, 27 und 28 festgelegt haben
+
+### Sieben Dubletten, alle übertragen und nachgerechnet
+
+| Paar | Ergebnis |
+|---|---|
+| **26,22 ↔ 18,8** (wörtlich gleich) | 13 Einträge feldweise identisch, programmatisch tiefkopiert |
+| **26,13 ↔ 22,13** | gemeinsamer Block übernommen; `Straße` ist die **Stadtstraße**, weil der Parallelismus sie neben den `Platz` stellt |
+| **26,15 ↔ 19,24** | Positionen 0–7 feldweise; `zurückzubringen` ist **ein** Token, also Einzelwort statt `parts`-Mehrwort |
+| **27,12 ↔ 22,3** | jeder Eintrag stammt aus 22,3 (18 von 19; `kommen` entfällt, alles rückt −1) |
+| **27,13 ↔ 20,16** | jeder Eintrag stammt aus 20,16 (17 von 20; `wenn`, `er`, `haftet` entfallen) |
+| **28,19 ↔ 12,11** | 13 Positionen; abweichend nur `Feld` gegen `Land` und das mitgehende Genus von `sein` |
+| **28,18 ↔ 10,9** und **28,12 ↔ 28,28** | 8 bzw. 10 Positionen feldweise identisch |
+
+**26,13 weicht dabei bewusst von allen vier Ausgaben ab**: sie schreiben
+umgekehrt (WEB *road … streets*, LSG *chemin … rues*). Der Bestand entscheidet,
+und `Platz` behält die 1,20-Bindung.
+
+### Kollisionen
+
+**27,24 `bestehen` ↔ `bleiben`** (gemeldet, echt): `bleiben` behält *remains ·
+permanece · demeure · rimane*, `bestehen` weicht auf die Bestandslesart aus
+5Mo 11,21 aus — *lasts · dura · dure · dura*. **Im selben Vers steckte eine
+zweite, die kein Werkzeug gemeldet hatte**: `für immer` und `für alle Zeit`
+tragen im Bestand beide *forever · para siempre · pour toujours · per sempre*.
+`für alle Zeit` weicht auf die zweite Bestandslesart aus (Ps 77,9).
+
+**27,19 `widerspiegeln` ↔ `spiegeln`** — **keine der vier Ausgaben trennt**.
+Der Bestand hat beide Wörter in 2Kor 3,18 und trennt dort **nur italienisch**.
+Hier in allen vier getrennt: `spiegeln` behält *reflects · refleja · reflète ·
+rispecchia*, `widerspiegeln` weicht auf *mirrors · retrata · renvoie · riflette*
+aus.
+
+**26,7 `gelähmte` ↔ `Krüppel`**, **26,14 `dreht` ↔ `wälzt`**, **26,16 `klug` ↔
+`weiser`** (die Kapitel-1-Umstellung trägt ohne Zutun) — dazu fünf Auflösungen
+aus `glosskollision.py`, für die `hints.py` **null** Paare gemeldet hatte.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `bestehen` (dauern) | lasts · dura · dure · dura | B2 | 5Mo 11,21 — 27,4 („vor Eifersucht bestehen") behält *stand · subsistir* |
+| `für alle Zeit` (MW) | for all time · por toda la eternidad · pour l'éternité · per ogni età | B2 | Ps 77,9 |
+| `widerspiegeln` | mirrors · retrata · renvoie · riflette | B2 | **Umstellung** |
+| `Herde` (Vieh) | flocks · rebaños · troupeaux · greggi | B1 | die Plurallesart — **nicht** die Schweineherde-Lesart *herd · manada · troupeau · branco* |
+| `Erbrochenes` | vomit · vómito · vomi · vomito | B2 | **neu** (26,11; 2Petr 2,22 zitiert den Vers) |
+| `Verschwender` | spendthrifts · derrochadores · dissipateurs · dissipatori | C1 | **neu** — nicht die Vielfraß-/Schlemmer-Reihe aus 23,20 |
+| `Zinswucher` | usurious interest · interés usurario · intérêt usuraire · interesse usurario | C1 | **neu** (ein Kompositum, ein Token) |
+| `Machtwechsel` | changes of power · cambios de poder · changements de pouvoir · cambi di potere | C1 | **neu** |
+| `an die Macht kommen` (MW) | come to power · llegan al poder · arrivent au pouvoir · salgono al potere | B2 | **neu** (28,12 · 28,28) |
+| `Kraut` | herb · verdura · verdure · erbaggio | B2 | 2Kön 19,26 — **nicht** die Lesart *hierba/herbe/erba*, die mit `Gras` im selben Vers zusammengefallen wäre |
+| `Salböl` (profan) | anointing oil · aceite perfumado · huile parfumée · olio profumato | C1 | zweite Bestandslesart (Lk 7,37) |
+| `Gemeinde` | congregation · congregación · congrégation · congregazione | B2 | AT-Bindung (187 Belege) gegen die NT-Lesart *church* und gegen die Ausgaben |
+| `Ohr` (Ohrmuschel, 26,17) | ears · orejas · oreilles · orecchie | A2 | **verse-lokal** — die 53 Belege auf *oídos · orecchi* sind das Gehör, hier sind es die Ohren eines Hundes |
+
+### `anrichten` — die Klammer folgt Jakobus 3,5
+
+26,28 und 28,16 hatten das Einzelwort `richtet` unter dem Mehrwort `anrichten`
+verschieden glossiert. Der einzige Bestandsbeleg dieser getrennten Klammer ist
+**Jak 3,5** und setzt `richtet` = *does · hace · fait · fa* und `an` = *on · a ·
+à · a*. 26,28 ist darauf angeglichen; die Alternative (*brings · lleva · mène ·
+porta*) wäre korpusweit mit `bringen` zusammengefallen.
+
+### `Torheit` / `Narrheit` bleibt offen
+
+Kapitel 26 ist die dichteste Narren-Sammlung des Buches und führt `Narrheit`
+**nicht** ein — es steht dreimal `Torheit`. Die in Abschnitt 3 vorgemerkte
+Auflösungsstelle entsteht damit im ganzen Buch nicht.
+
+### Zwei Bestandsbefunde für eine korpusweite Entscheidung
+
+- **`widerspiegeln` und `spiegeln` kollidieren im gebauten 2Kor 3,18** in
+  en/es/fr; nur das Italienische trennt dort. Nicht angefasst.
+- **`Verletzung` ist im Bestand unbelegt** und verdoppelt hier `Wunde` in allen
+  vier Sprachen (27,6). Falls unerwünscht, ist es eine einzige Stelle.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+27,5–6 hat `Verletzungen`, nicht `Wunden`; der Hirtenblock 27,23–27 hat weder
+`Ziege` noch `Weide` noch `Milch` als eigenes Wort (aber das Kompositum
+`Ziegenmilch`); 27,10 hat `Nachbar`, nicht `Nächster`; **`Bedürftiger` kommt im
+ganzen Kapitel 28 nicht vor**, obwohl der Prompt ihn für sechs Verse nannte;
+28,8 hat `Zinswucher`, nicht `Zins` und `Aufschlag`; 28,21 hat `Partei zu
+ergreifen` und `ein Stück Brot`; 26,19 hat keinen `Scherz`, sondern „habe doch
+nur **Spaß gemacht**".
