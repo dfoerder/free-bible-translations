@@ -464,3 +464,120 @@ es heißt `Geschenk Gottes`, nicht `Gabe`. Kapitel 6: `tausend Jahre` und
 **5,4 `dempi`** (das *a* von *adempi* fehlt) — nach 1,13, 2,10, 2,12 und 3,22
 das fünfte. Dazu in 7,14 „l'uno come 'altro" und 7,18 „chi teme ddio", die aber
 keine Glosse berühren.
+
+## 12. Was die Kapitel 8, 9 und 10 festgelegt haben
+
+### 8,14 — die einzige Vier-Sprachen-Kollision des Buches
+
+`geschieht` und zweimal `ergeht` stehen im selben Vers, und beide Lemmata
+tragen im Bestand *happens · sucede · arrive · accade*. **Drei der vier
+Ausgaben schreiben genau die Kollisionswörter** (WEB *is done … it happens*,
+RV *ocurre … les sucede*, LSG *a lieu … il arrive*); nur RIV weicht aus, und
+zwar durch Umformulierung, nicht lexikalisch.
+
+`geschehen` ist die Buchbindung und kann nicht ausweichen. Gelöst mit **zwei
+belegten Lesarten**, nichts erfunden:
+
+| | en · es · fr · it | Level | Beleg |
+|---|---|---|---|
+| `geschehen` | happens · sucede · arrive · accade | B1 | unverändert |
+| `ergehen` (Einzelwort) | goes · va · va · va | C1 | Ps 49,14 — formgleich, dieselbe Person, dasselbe Tempus |
+| `es ergehen` (Mehrwort) | it goes · les va · il en va · va loro | C1 | Hiob 8,13 · Ps 49,14 · Spr 1,19; it nach Ps 73,3 auf den Plural-Dativ angepasst |
+
+**Der Mehrwort-Eintrag trägt hier die eigentliche Arbeit**: „denen ergeht es"
+ist ein Funktionsverbgefüge, dessen Sinn sich aus den Teilen nicht ergibt.
+Prediger 2,15 führt ihn bereits — dort stand kein `geschehen` daneben.
+
+### 9,12 — `Netz` ↔ `Schlinge`, und alle naheliegenden Auswege waren vergeben
+
+Kapitel 7 hatte in 7,26 drei Fangwörter in **einem** Vers gesetzt (`Netz`
+*filet*, `Falle` *piège*, `Fessel` *entraves*). `Schlinge` brauchte also eine
+vierte Lösung — und der Bestand führt sie: **drei** Lesarten, darunter
+*snares · lazos · **lacets** · lacci* (Ps 140,6).
+
+| deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `Schlinge` | snare · lazo · lacet · laccio | B2 |
+
+Nur das Französische weicht aus; *lacet* schreibt LSG selbst in Ps 140,6. Die
+vier Fangwörter des Buches sind damit durchgehend getrennt.
+
+Im selben Vers steckte eine **zweite, ungemeldete Kollision**: `fangen` (Fische)
+↔ `verfangen` (Vögel), im Bestand beide *caught · atrapado · pris · preso*.
+
+### 9,4 `Lebender` ↔ `lebendig` — bleibt bewusst stehen
+
+`glosskollision.py` stuft es als stärksten Verdacht ein („1 von 4"), und es
+bleibt trotzdem: die Bedeutung ist **identisch** (beide sagen „am Leben"),
+drei Sprachen trennen von selbst, **alle vier Ausgaben wiederholen ihr eigenes
+Wort**, und eine englische Ausweichform (*a live dog*) würde eine
+Unterscheidung behaupten, die der Vers gerade nicht macht — die Wiederholung
+ist die Pointe.
+
+Das ist der Gegenfall zu Spr 8,13 (`Böse`/`böse`), wo Substantiv und Adjektiv
+**verschiedene Dinge** meinen und deshalb aufgelöst wurde.
+
+### Die weiteren gemeldeten Kollisionen
+
+| Vers | Paar | Befund |
+|---|---|---|
+| 8,11 | `Böse` ↔ `böse` | echt, nur en — genau die Spr-8,13-Konstellation. Das Adjektiv weicht auf *wicked* aus (Est 7,6) |
+| 8,12 | `dennoch` ↔ `doch` | echt, nur es. `dennoch` hat **nur eine** Lesart (10 Belege *sin embargo*), also weicht `doch` aus: *ciertamente* (1Mo 19,19) |
+| 8,17 | `desto` ↔ `mehr` | echt und **schärfer als gemeldet**: `Je`, `mehr` und `desto` wären französisch **alle drei** *plus*. Gelöst nach 3Mo 25,16 mit vier verschiedenen Wörtern (*Plus · davantage · d'autant · moins*) |
+| 10,13 | `Torheit` ↔ `Unsinn` | Kapitel-1-Lösung übernommen; `Wahnsinn` kommt in Kapitel 10 nicht vor, die befürchtete zweite Kollisionsstelle entsteht nicht |
+
+**`Je mehr … desto weniger` ist keine Mehrwort-Wendung.** Der Bestand führt
+`je mehr` und `desto mehr`, aber **`desto weniger` gibt es nicht**.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Ehrfurcht haben` (MW) | revere · veneran · révèrent · riveriscono | C1 | Auflösung 8,12 — Kapitel 3 hatte es mit **denselben** Glossen wie `fürchten` gesetzt |
+| `Fehler` | mistake · error · faute · errore | A2 | **Lexikonfalle in Gegenrichtung** — die AT-Bindung ist *defect* (das fehlerhafte Opfertier von 3Mo 22,19) |
+| `Salböl` (10,1) | anointing oil · aceite perfumado · huile parfumée · olio profumato | C1 | zweite Bestandslesart (Spr 27,9) — das Öl des Salbenmischers, nicht das kultische |
+| `Amt` | office · cargo · charge · carica | B2 | die weltliche der zwei Bestandslesarten |
+| `Frau` (9,9) | wife · esposa · femme · moglie | A1 | **nicht** die 7,26/7,28-Lesart — hier ist die Ehefrau gemeint |
+| `Schneller` · `Kundiger` · `Zufall` · `Planen` · `Belagerungswerk` · `Gehör finden` (MW) | … | B1/B2/B2/B2/C1/B2 | **neu** (9,10–9,14) |
+| `Fliege` · `faulig` · `Gelassenheit` · `Fähiger` · `bösartig` · `geflügelt` | … | B1/B2/C1/B2/C1/B2 | **neu** (Kapitel 10) |
+| `Härte` · `Entlassung` · `anstrengen` | hardness · dureza · dureté · durezza / discharge · licencia · congé · congedo / exerts · esfuerza · efforce · sforza | B2 | **neu** (Kapitel 8) — bei den ersten beiden **weicht LSG ab** und wurde nicht befolgt |
+| `scheuen` · `gewinnen` (Rennen) · `ziehen` (marschieren) · `erleiden` | shuns · rehúye · redoute · rifugge / win · ganan · gagnent · vincono / marched · marchó · marcha · marciò / suffer · sufren · subissent · subiscono | C1/B1/A2/B2 | **neue Lesarten** |
+
+**Drei Bindungen gegen die Ausgaben** in Kapitel 8: `Urteil` = *judgment*
+(alle vier schreiben *sentence*), `Weg` = *way* (WEB *procedure*, LSG/RIV
+*jugement*), `Atem` = *breath* (WEB *spirit*, RV *espíritu*, die Entscheidung
+aus Kapitel 3). In 10,3 lesen **WEB, LSG und RIV „die Reichen"**, nur RV folgt
+dem deutschen `Fähige`.
+
+### Bestandsbefunde
+
+- **`BINDUNGEN_AT.md` führte für `Netz` die falsche Lesart** — der Agent von
+  Kapitel 9 hat es gemeldet. Kein Generatorfehler, sondern ein Wartungsfehler:
+  die Tabelle stammte aus einem Bestand von 14 AT-Belegen, inzwischen sind es
+  31, und die Mehrheit hat sich vom Fettnetz zum Fischernetz gedreht. Tabelle
+  neu erzeugt; von 1127 gemeinsamen Lemmata haben **elf** eine andere Lesart,
+  inhaltlich schwer sind `Netz` und `Mal` (*mark* → *time*).
+- **`Kraft` (A2) und `Stärke` (B1)** tragen in en und fr dieselbe Glosse —
+  9,10/9,16, verschiedene Verse.
+- **Buch 21 führt `es geben` und `es gibt` als zwei Lemmata nebeneinander**
+  (1,9 gegen 3,12). Durchgehend `es geben` gesetzt, die Zitierform mit 105+
+  Belegen.
+- `Voraus`/`voraus` und `Arbeiter`/`Arbeitender` liegen ebenfalls doppelt.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+Kapitel 8: `Herrscher` steht nirgends im Kapitel (im Prediger erst 10,5),
+`Lebenstage` nicht in 8,15 (dort „alle Tage seines Lebens", drei Wörter),
+`gottlos` als Adjektiv **gar nicht** — alle vier Stellen sind das
+substantivierte `Gottloser`, die im Prompt genannte englische Trennung wird
+nicht gebraucht. Kapitel 9: sechs Wörter heißen anders (`Neid` statt
+`Eifersucht`, `Anerkennung` statt `Gunst`, `Klugen` statt `Verständige`,
+`Kriegswaffen` statt `Kriegsgerät`), und **9,18 sagt nicht „besser als
+Stärke"** — das steht nur in 9,16. Kapitel 10: `Brot` steht in 10,19 nicht,
+`Edler` ist ein Adjektiv, 10,9 hat kein `Eisen`.
+
+### Das sechste und siebte Importartefakt in RIV
+
+**8,13 `erché`** (das *p* von *perché* fehlt) und **9,5 `oiché`** (dasselbe
+Wort wie in 2,10). Damit sind es in diesem Buch sieben: 1,13 · 2,10 · 2,12 ·
+3,22 · 5,4 · 8,13 · 9,5.
