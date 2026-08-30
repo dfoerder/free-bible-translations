@@ -516,3 +516,195 @@ vor der `AUFTRAG_AT.md` mit 2Kön 6,7 warnt, und die `hints.py` nicht meldete.
 Schwelle ist nur einseitig erfüllt), von `parallelen.py` gefunden. Gemeinsamer
 Block von 12 Tokens: „mein Geliebter sei wie eine Gazelle oder ein junger Hirsch
 auf den". 8,14 beginnt mit „Eile" und endet auf „Bergen voller Gewürze".
+
+## 11. Paket 3 (Kap. 3 · 6 · 7) — was die Welle ergeben hat
+
+### Werkzeugfehler: `ausgaben.py` hat für Kapitel 6 lautlos falsch ausgerichtet
+
+Der Agent für Kapitel 6 hat gemeldet, dass `ausgaben.py` fuer Hld 6 **Versatz +1**
+fuer en/es/it anzeigt — ohne `UNSICHER`-Marke — und damit **jede** deutsche Zeile
+mit der falschen fremdsprachigen paart. Nachgemessen: Versatz **0** bewertet
+0,09–0,14, der angezeigte +1 bewertet 0,24–0,29.
+
+Die Ursache ist strukturell. Der Versatz kommt aus dem letzten Vers. Hat eine
+Ausgabe **einen Vers mehr**, weil ihre Kapitelgrenze weiter hinten liegt, schiebt
+diese Rechnung den Ueberhang nach **vorn**. Die vorhandene Kontrolle
+(`len(de) + versatz == len(ausgabe)`) stimmt in **beiden** Faellen und greift nie.
+
+`ausgaben.py` bewertet jetzt die Nachbarversaetze mit und meldet, wenn einer
+deutlich besser liegt (Commit `e1604ba`). Der angewandte Versatz wird **nicht**
+stillschweigend ausgetauscht — genau das lag in Ps 9, 15 und 19 daneben. Die
+Schwelle ist an fuenf Kapiteln geeicht; ueber alle 939 fertigen Kapitel melden
+4,9 % etwas, **17 Ausgabenzeilen davon waeren vorher voellig stumm geblieben**,
+darunter **Prediger 4**, das denselben Fehler traegt.
+
+**Gemessene Verszaehlung des Hoheliedes** (nicht geschaetzt, abgezaehlt):
+
+| | de | en | es | fr | it |
+|---|---|---|---|---|---|
+| Kap. 6 | 12 | 13 | 13 | 12 | 13 |
+| Kap. 7 | 14 | 13 | 13 | 14 | 13 |
+
+- **Kap. 6**: 6,1–6,12 stehen in allen fuenf Texten 1:1. Versatz **0**, nicht +1.
+  Der 13. Vers von en/es/it ist de 7,1.
+- **Kap. 7**: de 7,1 = deren **6,13**; danach de 7,n = deren 7,n−1. **LSG folgt
+  dem Deutschen.** RIV traegt die deutsche Zaehlung selbst im Text mit
+  („(7:1) Torna, torna, o Sulamita" steht unter 6,13).
+
+### Vom Koordinator angeglichen (drei Wellen-Divergenzen)
+
+- **„zwischen den Lilien weiden"** steht wortgleich in **2,16 · 4,5 · 6,3**.
+  Kapitel 2 setzte `zwischen` = *among · entre · **parmi** · tra* (zweite
+  Bestandslesart, 1Sam 2,8 — es sind mehr als zwei Lilien), Kapitel 4 nahm die
+  Mehrheitslesart *between · entre · **entre** · tra*. Die Ausgaben entscheiden:
+  WEB *among the lilies*, LSG *au milieu des lis*, RIV *fra i gigli*.
+  **4,5 auf 2,16 angeglichen.**
+- **`Weinstock` fr** in **6,11** gegen **7,13**: *vigne* gegen *cep*. Bestand
+  19:6 fuer *cep/ceps*, und Hld 2,13 steht bereits auf *ceps*. Dazu: in 7,13
+  steht `Weinberg` (*vignes*) im selben Vers — mit *vigne* eine franzoesische
+  Kollision. **6,11 auf *cep* angeglichen.**
+- **`ausschlagen`** in denselben beiden Versen: *sprouts · brota · bourgeonne ·
+  germoglia* gegen *is budding · brota · pousse · sboccia*. WEB schreibt
+  „has budded", LSG in **beiden** Versen „la vigne pousse"; *bourgeonne* und
+  *germoglia* stehen in keiner Ausgabe. **6,11 auf die Reihe aus 7,13
+  angeglichen.**
+
+Der gemeinsame Block „sehen, ob der Weinstock ausschlaegt, ob die Granatbaeume
+bluehen" (6,11 ↔ 7,13) wird von `dubletten.py` **nicht** gefuehrt, nur von
+`parallelen.py`. Das ist nach `sich abkuehlen` (2,17 ↔ 4,6) der **zweite** Fall
+im Buch, in dem gleichzeitig laufende Kapitel an einem Teilvers kollidieren,
+den kein Dublettenwerkzeug meldet.
+
+### Entscheidungen, die ueber ihr Kapitel hinausreichen
+
+- **`Gasse` / `Straße` (3,2)** — die einzige Stelle im Buch. `Straße` hat 45
+  Belege, `Gasse` 2. **`Gasse` weicht** auf seine eigene Bestandslesart
+  (Lk 14,21): *alleys · callejones · ruelles · vicoli* (B2).
+  Befund: **die vier Ausgaben verteilen genau umgekehrt** — sie geben
+  *streets/calles/rues/strade* an `Gassen` und *squares/plazas/places/piazze* an
+  `Straßen`. Ihnen zu folgen haette fuer das mit 45 Belegen gebundene `Straße`
+  eine „Platz"-Lesart erfinden muessen, die das deutsche Wort nicht hat.
+- **`loben` / `preisen` (6,9)** — `loben` hat ~110 Belege **ausnahmslos** in der
+  *praise*-Familie und kann nicht weichen. **`preisen` weicht** auf seine
+  zweite Bestandslesart: *extolled · glorificaron · glorifièrent · glorificarono*
+  (Mt 15,31 · 1Chr 16,4). Nur en musste bewegt werden.
+- **`Sulamith` (7,1, 2×)** — im Bestand unbelegt, nicht gedeutet. Schreibung der
+  Ausgaben: *Shulammite · sulamita · Sulamithe · Sulamita* (A1). Spanisch
+  **klein**, weil RV es als Gentiliknomen setzt.
+- **`zurückkehren`, nicht `umkehren` (7,1)** — der Text sagt viermal „Kehr
+  zurueck", die Partikel ist `zurück`. Bestand hat `zurückkehren` mit ueber 130
+  Belegen: *Return · Vuelve · Reviens · Torna*, in allen vier Ausgaben woertlich.
+  Bauweise wie 2,17: Mehrwort plus eigenstaendige Einzeleintraege.
+
+### Eine feste Wendung, die drei Skripte uebersehen haben
+
+**6,9 „priesen sie glücklich"** ist `glücklich preisen` — **im Bestand gefuehrt**
+(C1, Hiob 29,11 · Ps 72,17 · Spr 31,28), und Spr 31,28 hat sogar exakt dieselbe
+Konstellation (3. Pl., femininer Objektbezug): *call blessed · llaman dichosa ·
+disent heureuse · proclamano beata*. Weder `sweep.py` noch `konvention.py` noch
+`hints.py` haben sie gemeldet. Als `parts`-Eintrag gesetzt.
+
+### Befunde im Bestand
+
+- **`Rauchsäule` ist ein volles Bestandslemma** (C1, Ri 20,38 · 20,40), ebenso
+  `Lehne`, `heraufsteigen` (8 Belege) und `vorübergehen` (15) — `hints.py`
+  meldete fuer Kapitel 3 sechs „unbelegte" Formen, **wirklich neu waren zwei**.
+- **`purpurn` und `Königsgewand`** (7,2) zeigte der Lexikon-Auszug **nicht**,
+  auch nicht unter VERWANDT — nur `fixgloss.py show` fand sie. Von 18
+  „unbelegten" Formen in Kapitel 7 waren 6 laengst im Bestand.
+- **`ausschlagen` hatte im ganzen Bestand nur *knocks out*** (2Mo 21,27, einen
+  Zahn ausschlagen) — ein glatter Homograph zu „austreiben". Zweite Lesart neu.
+- **`Schale` (7,3)**: `BINDUNGEN_AT.md` fuehrt *basin · vasija · bassin · bacino*
+  und markiert *bowl* als NT-Falle. Hier ist es ein **Trinkgefaess**; die
+  *bowl*-Lesart hat 10 Belege, darunter Ri 5,25 im AT. **Die Tabelle ist an
+  dieser Stelle bedeutungsblind.**
+- **`kaum` (3,4)**: `BINDUNGEN_AT.md` nennt it *a malapena* (8/14), die
+  **grossgeschriebene** Form hat aber 10 Belege mit *Appena*. **Die Tabelle ist
+  positionsblind.**
+- **`Garten` Plural** ist im Bestand an *jardines* gebunden (2 Belege), der
+  Singular an *huerto* (25). In **6,2 stehen beide im selben Vers**; Plural auf
+  *huertos* gesetzt, damit der Vers nicht in sich den Stamm wechselt. Abweichung
+  von einem Zwei-Beleg-Lemma, gemeldet, nicht korpusweit angefasst.
+- **`Teich` (7,5)** ist gespalten (11× *pool/piscine*, 3× *étang/stagno*,
+  2× Plural *ponds/étangs*). Lemmamehrheit im Plural genommen; **LSG schreibt
+  hier *étangs* und weicht damit von sich selbst ab** (anderswo „piscine").
+- **`Ehe` (6,12)** ist der Homograph: nicht `Ehe` B1 *marriage* (24 Belege),
+  sondern die Konjunktion `ehe` A2 (Hiob 15,32).
+- **`versehen` passt in 6,12 in keiner seiner 14 Lesarten** — „Ehe ich mich
+  versah" ist das Reflexivum; `sich versehen` war unbelegt, neu als Mehrwort.
+
+### Befunde in den Ausgaben
+
+- **WEB hat in Kapitel 3 als einzigem Kapitel *keine* Sprecherangaben** (alle
+  11 Verse durchsucht). Sonst bestaetigt: „Beloved" 6,1 · 7,8, „Friends" 6,12,
+  „Lover" mitten in ihrem 6,13 (= de 7,1).
+- **Drei neue RIV-Setzfehler**, jetzt sechs insgesamt: **3,11** „il *iorno*"
+  (fehlendes g), **7,2** und **7,4** je „*e*" statt „è". Dazu die bekannten
+  „alomone" (1,5), „’ho cercato" (5,6), „l'amico uo" (5,9).
+- **Alle vier Ausgaben ziehen `Helden` und `Krieger` in 3,7 zu einem Wort
+  zusammen** („mighty men … mighty men"). Der Bestand trennt (*heroes* /
+  *warriors*) — Bestand gehalten, sonst eine Vier-Sprachen-Kollision.
+- **7,6 zweite Vershaelfte liest in allen vier Ausgaben anders** als der
+  l1912mod: dort ist ein Koenig in den Locken gefangen, im Deutschen ist das
+  Haar „in Locken gebunden". Deutsch + Bestand.
+- **7,1 `Lager`**: WEB transliteriert („the dance of Mahanaim"), die drei
+  anderen uebersetzen. Der deutsche Text hat kein Eigennamen-Signal
+  („zweier Lager") — wie 2,17 „zerklueftete Berge" **nicht** als Name geglossiert.
+- **6,12 `meines edlen Volkes`**: RIV liest „ai carri d'**Amminadab**" — ein
+  Eigenname, wo die anderen drei und der l1912mod ein Attribut haben.
+- **6,8 `Jungfrauen`**: nur WEB hat *virgins*, die drei romanischen lesen „junge
+  Frauen". Bestand (27 Belege) genommen.
+
+### Neues Vokabular
+
+| deutsch | Lemma | Lvl | en · es · fr · it | Stelle |
+|---|---|---|---|---|
+| Sänfte | `Sänfte` | C1 | carriage · litera · litière · lettiga | 3,7 · 3,9 |
+| umduften | `umduften` | C1 | perfumed · perfumada · parfumée · profumata | 3,6 |
+| Lehne | `Lehne` | B2 | backrest · respaldo · dossier · spalliera | 3,10 (2. Lesart) |
+| Blumenbeet | `Blumenbeet` | B2 | flower beds · canteros de flores · parterres de fleurs · aiuole di fiori | 6,2 |
+| Nussgarten | `Nussgarten` | C1 | nut orchard · huerto de nogales · jardin des noyers · giardino dei noci | 6,11 |
+| Granatbaum | `Granatbaum` | B2 | pomegranate trees · granados · grenadiers · melograni | 6,11 · 7,13 |
+| einzigartig | `einzigartig` | B2 | unique · única · unique · unica | 6,9 |
+| Einzige | `Einzige` | B1 | only one · única · seule · unica | 6,9 |
+| Auserwählte | `Auserwählte` | C1 | chosen one · elegida · élue · eletta | 6,9 |
+| Gebärerin | `Gebärerin` | C1 | birth mother · progenitora · génitrice · genitrice | 6,9 |
+| sich versehen | `sich versehen` | C1 | realized it · me diera cuenta · m'en aperçoive · me ne accorgessi | 6,12 |
+| Sulamith | `Sulamith` | A1 | Shulammite · sulamita · Sulamithe · Sulamita | 7,1 |
+| Fürstentochter | `Fürstentochter` | B2 | prince's daughter · hija de príncipe · fille de prince · figlia di principe | 7,2 |
+| Rundung | `Rundung` | B2 | curve · curva · contour · contorno | 7,2 |
+| Meisterhand | `Meisterhand` | C1 | a master's hand · mano de maestro · main de maître · mano di maestro | 7,2 |
+| Nabel | `Nabel` | B2 | navel · ombligo · nombril · ombelico | 7,3 |
+| Würzwein | `Würzwein` | C1 | spiced wine · vino especiado · vin épicé · vino speziato | 7,3 |
+| Weizenhaufen | `Weizenhaufen` | B2 | heap of wheat · montón de trigo · tas de blé · mucchio di grano | 7,3 |
+| Bat-Rabbim | `Bat-Rabbim` | A1 | Bathrabbim · Bat-rabim · Bath-Rabbim · Bath-Rabbim | 7,5 |
+| Wuchs | `Wuchs` | B2 | stature · talle · taille · statura | 7,8 |
+| erklimmen | `erklimmen` | C1 | climb up · subir · monter · salire | 7,9 |
+| Schlafender | `Schlafender` | B2 | sleeping ones · dormidos · endormis · dormienti | 7,10 |
+
+**Zweite Lesarten**: `Schale` B1 *bowl · copa · coupe · coppa* · `aus` A1
+*made of · hecha de · faite de · fatta di* (Material — die §9-Bewegungsregel
+greift dort **nicht**) · `am` A1 *by the · junto a la · près de la · presso la* ·
+`gelten` B2 *is directed toward · se dirige a · se porte vers · si rivolge a* ·
+`ausschlagen` C1 *is budding · brota · pousse · sboccia* · `blühen` B2
+*bloom · florecen · fleurissent · fioriscono* (**nicht** *flourish*) · `edel` B2
+*noble* (Pred 10,17) · `rund` B2 adjektivisch *redonda · ronde · rotonda* ·
+`du` A1 vokativisch *O · oh · ô · o*.
+
+### Zwei Auftragsangaben, die am Quelltext scheiterten
+
+- **`in Blüte stehen` steht weder in 6,11 noch in 7,13.** Beide Verse haben das
+  Vollverb `blühen`; 7,13 dazu das Substantiv `Blüten` und `sich öffnen`. Die
+  Zeile in §10 gilt nur fuer 2,13 und 2,15.
+- **`Wein` ist A2, nicht A1** (Bestand und `BINDUNGEN_AT.md`, 92/93 Belege).
+
+### Hinweise fuer Kapitel 8
+
+- **3,6 teilt mit 8,5 einen 8-Token-Block ab Position 0** („Wer ist die, die aus
+  der Wueste heraufsteigt"), Versatz 0 — einschliesslich der §9-Aufloesung an
+  `aus` (*out of · desde · depuis · da*, Bewegung mit Ausgangspunkt).
+- **3,4 teilt mit 8,2** den Block „ins Haus meiner Mutter".
+- **2,17 ↔ 8,14**, Aehnlichkeit 0,63, gemeinsamer Block von 12 Tokens: „mein
+  Geliebter sei wie eine Gazelle oder ein junger Hirsch auf den".
+- **8,3 ← 2,6** und **8,4 ← 2,7/3,5**, beide woertlich (siehe §10).
+- **`Apfelbaum` B1** *apple tree · manzano · pommier · melo* steht in **8,5**.
