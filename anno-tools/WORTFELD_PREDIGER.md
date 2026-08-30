@@ -581,3 +581,96 @@ Stärke"** — das steht nur in 9,16. Kapitel 10: `Brot` steht in 10,19 nicht,
 **8,13 `erché`** (das *p* von *perché* fehlt) und **9,5 `oiché`** (dasselbe
 Wort wie in 2,10). Damit sind es in diesem Buch sieben: 1,13 · 2,10 · 2,12 ·
 3,22 · 5,4 · 8,13 · 9,5.
+
+## 13. Was die Kapitel 11 und 12 festgelegt haben — und der Buchabschluss
+
+### Die LSG-Verschiebung ist bestätigt
+
+**de 11,9 = LSG 12,1**, **de 11,10 = LSG 12,2**, und danach **de 12,n =
+LSG 12,n+2** durchgehend. WEB, RV und RIV folgen dem Deutschen.
+
+**RIV führt die abweichende Zählung im Verstext mit** — nicht nur in 12,8, wie
+zunächst angenommen, sondern in **allen 14 Versen** des Kapitels 12, von
+`(12:3)` bis `(12:16)`, und ebenso in 11,9/11,10. Es ist dasselbe Zählsystem
+wie LSG, nur als Klammer statt als Versnummer.
+
+### Eine Grenze von `ausgaben.py`, die hier zum ersten Mal geschadet hat
+
+In Kapitel 4 war der gemeldete Versatz falsch, **die angezeigte Zeile aber
+richtig**. In Kapitel 11 nicht: das Werkzeug meldet `Versatz -2 … UNSICHER`
+und wendet ihn **global** an — für de 11,1/11,2 behauptet es, LSG zähle die
+Verse nicht mit (falsch, LSG hat beide), und bei de 11,5 zeigt es die
+französische Zeile 3 statt 5.
+
+`ausgaben.py` warnt seither ausdrücklich, sobald ein Versatz `UNSICHER` ist:
+dann kann **auch die Anzeige** falsch sein, und die Kapiteldatei der Ausgabe
+ist direkt aufzuschlagen.
+
+### 11,5 `Werk` ↔ `wirken` ist **nicht** der Substantiv-plus-Stammverb-Fall
+
+Das Entscheidungskriterium der drei Vorgänger (5,11 · 7,10 · 9,4) war, ob die
+Ausgaben das Wort wiederholen. **Hier tun sie es gerade nicht** — alle vier
+schreiben für `wirkt` ein Tun-Verb (WEB *who does all*, RV *que hace todas las
+cosas*, LSG *qui fait tout*, RIV *che fa tutto*). `Werk` bleibt gebunden,
+`wirken` weicht in den beiden kollidierenden Sprachen auf das Wort der eigenen
+Ausgabe aus: *works · **hace** · agit · **fa***.
+
+### 11,9 — eine Auflösung, die ich einmal falsch zurückgenommen habe
+
+In 11,9 stehen `an deiner Jugend` und `in den Tagen` im selben Vers; beide
+Präpositionen trügen *in · en · dans · in*. Kapitel 11 hat `in` verse-lokal auf
+*during · durante · pendant · durante* gesetzt (LSG *pendant les jours*, RIV
+*durante i giorni*).
+
+Kapitel 12 hat dagegen eingewandt, der Bestand binde „in den Tagen" viermal an
+*in · en · dans · in*. **Das stimmt — ist hier aber kein Argument:** eine
+verse-lokale Auflösung darf eine Bindung an der Kollisionsstelle überschreiben,
+und genau dafür ist sie da. 12,1 hat kein `an` daneben und behält deshalb die
+Bindung. Der Koordinator hatte 11,9 zwischenzeitlich angeglichen und die
+Kollision damit wiederhergestellt; zurückgenommen.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `wirken` | works · hace · agit · fa | B2 | Auflösung 11,5 |
+| `genauso wie` (MW) | just as · igual que · tout comme · proprio come | B1 | Bestand (7×) |
+| `ganz und gar` (MW) | utterly · por completo · entièrement · completamente | B1 | Bestand (Joh 9,34) — **nicht** das `vollkommen` aus 1,2 |
+| `Silberschnur` | silver cord · cordón de plata · cordon d'argent · cordone d'argento | C1 | **neu** — der Text hat **ein** Wort, deshalb entscheidet die Grundwort-**Mehrheit**, und die deckt sich mit allen vier Ausgaben |
+| `Blütezeit` | bloom · flor · fleur · fiore | C1 | **neu** — alle vier Ausgaben übersetzen das hebräische Bild, nicht das deutsche Wort |
+| `Müllerin` · `Mandelbaum` · `Klagender` · `Stachelstock` · `Studieren` · `ermüden` · `abwägen` | … | C1/B2/C1/C1/B2/B2/B2 | **neu** (Altersgedicht und Epilog) |
+| `Schreiben` (Nominalinf.) | writing · escribir · écrire · scrivere | B2 | **Lexikonfalle** — der Bestand hat *letter* (2Chr 21,12) |
+| `schlimm` (an `Tag`) | bad · malos · mauvais · cattivi | B1 | **nicht** die 5,12-Lesart *grievous · doloroso · grave · grave*; die 5Mo-28,67-Lesart deckt sich mit allen vier Ausgaben |
+| `Leib` (11,5) | womb · vientre · ventre · grembo | B2 | zweite Bestandslesart — hält `Körper` frei |
+
+### Bestandsbefunde des Buchendes
+
+- **`Leib` (B2) und `Körper` (A2)** tragen in der Körper-Lesart in allen vier
+  Sprachen dieselben Glossen (85× gegen 94×). Korpusweit fällig.
+- **`gleichermaßen` (C1) trägt it *allo stesso modo*** — identisch mit `ebenso`
+  und der Hauptlesart von `genauso`. 11,5/11,6, verschiedene Verse.
+- **LSG weicht in 12,11 ab** („un seul maître" statt des Hirten), **RIV**
+  ebenda mit *stimoli* statt *pungoli*.
+
+### Der Endstand: zwölf Kollisionen bleiben bewusst stehen
+
+`glosskollision.py` meldet über das fertige Buch **12 inhaltliche Paare**,
+davon neun in nur einer Sprache. Alle sind am Vers geprüft und gehören zu den
+in `AUFTRAG_BUCH.md` beschriebenen Klassen:
+
+| Klasse | Stellen |
+|---|---|
+| Verb und Stammsubstantiv, nur eine Sprache | 5,11 `Schlaf`/`schlafen` · 7,10 `Frage`/`Frag` · 9,4 `Lebenden`/`lebendiger` · 11,3 `fällt`/`hinfällt` |
+| Existenzverb gegen Kopula | 1,9 · 1,10 · 4,9 |
+| das englische Korrelativ „the more … the less" | 8,17 (dreimal, `der`/`Je`/`desto` sind alle *the*) |
+| stammgleiche Quantoren, von allen Ausgaben wiederholt | 2,10 `all`/`Alles` · 8,9 `All`/`alles` |
+
+**11,3 ist der einzige Vier-Sprachen-Fall, und er bleibt**: alle vier Ausgaben
+wiederholen ihr eigenes Verb (*falls … falls*, *cae … haya caído*, *tombe …
+est tombé*, *cade … cade*). Die Wiederholung ist die Pointe des Verses.
+
+### Sieben Importartefakte in der italienischen Ausgabe
+
+RIV: **1,13** `ccupazione` · **2,10** `oiché` · **2,12** `esaminate` (statt
+*esaminare*) · **3,22** `ale` · **5,4** `dempi` · **8,13** `erché` · **9,5**
+`oiché`. Fünf davon sind fehlende Anfangsbuchstaben desselben Typs.

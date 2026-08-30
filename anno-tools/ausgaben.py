@@ -193,6 +193,16 @@ def main():
     for z in kopf:
         print('   ' + z)
     print()
+    if any(v and v[1] > SCHWACH for v in versaetze.values()):
+        print('!! ACHTUNG: mindestens ein Versatz ist UNSICHER. Der geschaetzte')
+        print('!! Versatz wird global angewandt — wenn er falsch ist, stehen die')
+        print('!! Zeilen dieser Ausgabe unten AUCH FALSCH da, nicht nur die Zahl.')
+        print('!! Das passiert regelmaessig, wenn eine Ausgabe die KAPITELGRENZE')
+        print('!! anders zieht: dann ist der Versatz am Kapitelanfang 0 und kippt')
+        print('!! erst spaeter. Beispiele: Prediger 4 (dort war die Anzeige noch')
+        print('!! richtig) und Prediger 11 (dort war sie es nicht).')
+        print('!! Fuer die betroffene Ausgabe die Kapiteldatei direkt aufschlagen:')
+        print('!! bible-reader/bibles/<sprache>/<edition>/<nr>_<edition>.json\n')
 
     verse = sorted(dkap, key=int)
     if args.von:
