@@ -24,6 +24,14 @@ buchspezifisch war, steht jetzt in `WORTFELD_<BUCH>.md`.
    kommt noch (dann ist deine Reihe die Vorlage). **Wo der Text nicht wörtlich
    gleich ist, nicht abschreiben.**
 6. `BINDUNGEN_AT.md`, Abschnitt zu deinem Buch und die allgemeinen Bindungen.
+   Die Tabelle ist **erzeugt** (`bindungen.py`) und wird nach jedem fertigen
+   Buch neu gebaut — eine veraltete Tabelle führt aktiv in die Irre. Nach dem
+   Abschluss von Hiob, Psalmen und Sprüchen war sie es: `Netz` stand dort mit
+   *caul · redaño · membrane* („das Fettnetz des Opfertiers", damals 11 von 14
+   AT-Belegen), während die AT-Mehrheit inzwischen mit 18 von 31 das
+   **Fischernetz** ist. Der Agent von Prediger 9 hat es am Vers gemerkt.
+   **Wenn eine Bindung nicht zum Vers passt, immer zusätzlich `fixgloss.py`
+   fragen** — die Tabelle nennt nur die häufigste Lesart, `fixgloss.py` alle.
 7. Den **Quelltext** deines Kapitels lesen:
    `bible-reader/bibles/deu/l1912mod/<buchNr>_l1912mod.json` →
    `chapters["<kapitel>"]`. Nicht aus der Bibelkenntnis arbeiten.
