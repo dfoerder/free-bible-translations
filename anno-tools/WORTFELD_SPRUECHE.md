@@ -319,3 +319,82 @@ Spr 1,19 — der wörtlichen Parallele — ist er gesetzt.
   **`scempi`** und trennt damit selbst von `Narr` = *stolti*; LSG schreibt in
   1,4 *simples*, in 1,22 und 1,32 aber *stupides*. Die Bestandsbindung
   *inexperienced* steht weniger allein da als angenommen.
+
+## 10. Was die Kapitel 2, 3 und 4 festgelegt haben
+
+Die drei sind gleichzeitig gelaufen und gebaut; `kreuz.py 20 2 3 4` hält 69
+gemeinsame Inhaltswortformen gegeneinander.
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Besonnenheit` | discretion · discreción · réflexion · riflessione | C1 | **Umstellung**, s. u. — gilt für 2,11 · 3,21 · 5,2 |
+| `behüten` | protect · proteger · protéger · proteggere | B2 | Auflösung gegen `bewahren` |
+| `bewahren` | keep · guarda · garde · custodisce | B1 | Bestand, unverändert |
+| `Verführerin` | seductress · seductora · séductrice · seduttrice | C1 | **neu** (2,16 · 7,5) |
+| `fremd` (fem.) | foreign · ajena · étrangère · straniera | B1 | Bestand |
+| `glatt` | smooth · lisas · lisses · lisce | B2 | Bestand (4× im Buch) |
+| `Pfad` | path · senda · sentier · sentiero | B2 | Bestand — trennt sauber von `Weg` |
+| `Weg` | way · camino · chemin · via | A2 | Bestand; fr immer *chemin*, nie *voie* |
+| `gerade` (Adj.) | straight · derechas · droits · diritti | A2 | **neue Lesart**, der Bestand kennt nur temporales *just* |
+| `Friede` | peace · paz · paix · pace | B1 | Bestand |
+| `Güte` | kindness · bondad · bonté · bontà | B1 | Bestand |
+| `Freundlichkeit` | kindness · amabilidad · gentillesse · gentilezza | B2 | Bestand — **kollidiert englisch mit `Güte`** |
+| `Treue` | faithfulness · fidelidad · fidélité · fedeltà | B2 | Bestand |
+| `Baum des Lebens` | tree of life · árbol de la vida · arbre de vie · albero della vita | B1 | Bestand — gilt auch 11,30 · 13,12 · 15,4 |
+| `glücklich` | happy · feliz · heureux · felice | A2 | Bestand gegen die Ausgaben (*Dichoso · Beato*) |
+| `Schande` | disgrace · afrenta · honte · vergogna | B2 | Bestandsmehrheit 26:7 gegen die Ausgaben |
+| `Kranz` | garland · guirnalda · guirlande · ghirlanda | B2 | zweite Bestandslesart (Apg 14,13), **nicht** die Bauteil-Lesart |
+| `Krone` | crown · corona · couronne · corona | B1 | Bestand |
+| `Rede` | speech · discurso · discours · discorso | B1 | Bestand — trennt von `Wort` |
+| `Tun` | ways · proceder · conduite · condotta | B1 | romanisch bewusst *conduite/condotta*, sonst fiele es mit `Weg` zusammen |
+| `Erstlingsgabe` | firstfruits · primicias · prémices · primizie | C1 | Bestand |
+| `Treuloser` | faithless · desleales · déloyaux · sleali | C1 | Bestand (8× im Buch) |
+| `Rechtschaffener` | blameless · íntegros · intègres · integri | C1 | Bestand |
+| `Aufrichtiger` | upright · rectos · hommes droits · retti | B2 | Bestand |
+| `Verkehrtes` / `Verkehrter` | perverse things / perverse one · perversidades / perverso · … | B2 | **neu** |
+| `Liebling` | darling · predilecto · chéri · prediletto | B2 | **neu** |
+| `verlogen` | deceitful · mentiroso · mensonger · menzognero | C1 | **neu** (8× im Buch) |
+| `geradeaus` | straight ahead · de frente · en face · dritto davanti | B1 | **neu** |
+| `Gewalttätiger` | violent man · violento · violent · violento | C1 | Bestand |
+| `arglos` | innocent · sencillo · candide · semplice | C1 | Bestand |
+| `vertraut` | familiar · familiarizado · familier · familiare | B2 | Bestand |
+| `abtrünnig` | rebellious · rebelde · révolté · ribelle | C1 | Bestand, en angepasst |
+
+### `Besonnenheit` — die Lexikonfalle in Reinform
+
+Der Bestand kennt das Wort nur zweimal, beide aus 1Tim 2,15, als
+*good sense · sensatez · bon sens · assennatezza* — dort in der Bedeutung
+„Selbstbeherrschung". In den Sprüchen ist es ein Weisheitsbegriff, und **alle
+vier Ausgaben schreiben in allen drei Versen dasselbe**: 2,11 · 3,21 · 5,2
+tragen *discretion · discreción · réflexion · riflessione* (5,2 it
+*accorgimento*). Zwei NT-Belege gegen drei Vorkommen im Buch.
+
+Die Kapitel 2 und 3 hatten hier **verschieden** entschieden — Kapitel 2 nach
+den Ausgaben, Kapitel 3 nach dem Bestand. Kein Prüfskript hat das gemeldet;
+gefunden hat es der Kreuzabgleich der gleichzeitig gelaufenen Kapitel.
+Vereinheitlicht auf die Ausgabenlesart.
+
+### Zwei weitere Divergenzen aus dem Kreuzabgleich
+
+- `geraden Pfaden` steht wörtlich gleich in 2,13 und 4,11 und trug zwei
+  spanische Glossen (*derechas* gegen *rectas*) — auf *derechas* vereinheitlicht.
+- `Weg` in 4,14 trug fr *voie* statt *chemin*, weil LSG dort „la voie"
+  schreibt. Für gewöhnliche Wörter entscheidet der Bestand: *chemin*.
+
+### Was der Kreuzabgleich **nicht** angefasst hat
+
+`verlassen` trägt in 2,13 *abandoned* (Objekt: Pfade) und in 2,17 *forsaken*
+(Objekt: der Gefährte). Der Bestand führt beide Lesarten mit identischem
+es/fr/it, und die Trennung folgt dem Objekttyp — das ist keine Divergenz.
+Ebenso `finden`: 2,5 *encontrar*, 3,4 *hallar*. Die zweite Lesart ist im
+Bestand 16× an die Wendung „Gunst finden" gebunden, und genau die steht in 3,4.
+
+### Offene Kollisionsstelle für spätere Kapitel
+
+**`Güte` und `Freundlichkeit` tragen beide englisch *kindness*.** In Kapitel 3
+stehen sie in verschiedenen Versen (3,3 und 3,17) und werden deshalb nach der
+Regel nicht aufgelöst. Wo ein Kapitel sie in **einem** Vers hat, weicht
+`Freundlichkeit` aus.
+
+Dasselbe gilt für `Angst haben` (3,24) und `sich fürchten` (3,25), beide
+*be afraid · tener miedo · avoir peur · aver paura*.
