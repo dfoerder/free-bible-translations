@@ -916,3 +916,116 @@ weniger` · `zu jeder Zeit` · `fehltreten` · `sich hinreißen lassen` ·
 `Narr`, 18,10 einen **starken** Turm und 18,11 den `Besitz des Reichen`, kein
 `Reichtum`; 19,12 hat keinen `Todesbote`, 19,13 keine `zänkische Frau`, 19,18
 kein Substantiv `Erziehung`, 19,21 `Ratschluss` statt `Ratschlag`.
+
+## 16. Was die Kapitel 20, 21 und 22 festgelegt haben
+
+### 20,11 `Handeln` ↔ `Verhalten` — die Ausgaben lösen in Richtung des Dokuments auf
+
+Alle vier geben der **ersten** Vershälfte (`Verhalten`) ein Taten-Wort und der
+zweiten (`Handeln`) das Verhaltens-Wort: WEB *doings/work*, RV
+*actos/conducta*, LSG *actions/conduite*, RIV *atti/condotta*. Das deckt sich
+mit Abschnitt 11 („wo ein Kapitel beide hat, weicht `Verhalten` aus"):
+
+| | gesetzt |
+|---|---|
+| `Handeln` | conduct · conducta · conduite · condotta — unverändert |
+| `Verhalten` | **behavior · comportamiento · comportement · comportamento**, B2 |
+
+es und it stehen so schon im Bestand (1Sam 25,3), en *behavior* ist die zweite
+Bestandslesart (1Petr 3,1), fr *comportement* ist neu. Damit ist auch die
+latente fr-Kollision mit `Tun` (*conduite*) erledigt.
+
+### 21,14 `Gabe` ↔ `Geschenk` — nur Englisch fällt zusammen
+
+Der Bestand trennt in es/fr/it längst: `Geschenk` *gift · regalo · cadeau ·
+regalo* (59 Belege) gegen `Gabe` *gift · don · don · dono* (74 Belege). Nach dem
+Präzedenzfall 8,13/13,20 weicht nur die englische Glosse: `Gabe` (21,14) =
+**present**. Die WEB-Lesart *bribe* wäre korpusweit mit `Bestechung`
+zusammengefallen.
+
+Im selben Vers steckte eine zweite, von keinem Werkzeug gemeldete Kollision:
+**`besänftigen` ↔ `beruhigen`**, im Bestand beide en *appeases* und fr
+*apaise*. `beruhigen` weicht auf *calms · calma · calme · acqueta* aus — von RV
+und LSG im Vers selbst gedeckt.
+
+### `zänkisch` — zum ersten Mal gesetzt, gilt für vier Stellen
+
+| deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `zänkisch` | contentious · pendenciera · querelleuse · rissosa | C1 |
+
+Gilt für 21,9 · 21,19 · **25,24 · 27,15**. Trennt sauber von `Zank`
+(*querelle · contesa*), `Zänkerei` (*querelles · risse*, 19,13) und `Streit`
+(*dispute · disputa*).
+
+### 22,29 entsteht gar nicht
+
+`Mensch` steht dort im **Singular** (*man · hombre · homme · uomo*), `Leute` im
+Plural (*people · gente · gens · gente*) — kein Zusammenfall in irgendeiner
+Sprache. Damit ist der fünfte Fehlalarm der Kollisionsliste belegt.
+
+### Eine Kollision, die bewusst stehen bleibt
+
+**22,22 `Armen` ↔ `arm`** — „Beraube den **Armen** nicht, nur weil er **arm**
+ist" ist eine figura etymologica, und **alle vier Ausgaben wiederholen das Wort
+dort selbst**. Englisch trennt bereits (*poor man* gegen *poor*); jede
+romanische Ausweichform wäre besetzt — *necesitado* trägt `Bedürftiger` **im
+selben Vers**, *misero* trägt `Geringer`. Präzedenzfall 14,5.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `zweierlei` | differing · doble · double · doppio | B2 | **neue Lesart**, 20,10 · 20,23 |
+| `Maß` | measure · medida · mesure · misura | B1 | Bestand — trennt von `Gewicht` |
+| `haften` (einstehen) | is liable · responde · répond · risponde | B2 | **zweite Lesart** gegen *cling* |
+| `Ruf` | reputation · reputación · réputation · reputazione | B2 | Bestand (22,1) |
+| `Bedürftiger` | needy · necesitado · nécessiteux · bisognoso | B2 | Bestand |
+| `Sache` (Rechtssache) | cause · causa · cause · causa | B1 | zweite Lesart gegen *matter* |
+| `hitzköpfig` | hot-headed · de mal genio · emporté · collerico | C1 | **neu** — bewusst nicht *violento* (`Gewalttätiger`) und nicht *iracundo* (`Jähzorniger` steht im selben Vers) |
+| `hochmütig` (Adj.) | haughty · altivos · hautains · alteri | C1 | Bestand (Ps 101,5) |
+| `Ausstrahlung` | radiance · fulgor · rayonnement · fulgore | C1 | **neu** |
+| `lügenhaft` | lying · mentiroso · menteur · bugiardo | C1 | **neu**, getrennt von `verlogen` und `falsch` |
+| `Hintergedanke` | ulterior motives · segundas intenciones · arrière-pensées · secondi fini | C1 | **neu**, getrennt von `Beweggrund` |
+| `Dreschrad` | threshing wheel · rueda de trillar · roue à battre · ruota da trebbiare | C1 | **neu** |
+| `es büßen` (MW) | suffer for it · sufrir las consecuencias · en subir la peine · portarne la pena | B2 | **neu** (22,3 · 27,12) |
+| `weitergehen` | go on · siguen adelante · poursuivent leur route · proseguono | B1 | Bestand (22,3 · 27,12) |
+| `sich leihen` (MW) | borrows · pide prestado · emprunte · prende in prestito | B2 | **neu**, gegen `leihen` = *lends* abgesetzt |
+
+### `lauter` bleibt bewusst zweigleisig
+
+`lauter` hat im Bestand **keine Bindung**, sondern drei Lesarten über sechs
+Belege. Im Buch trägt es jetzt zwei:
+
+- **20,11** („ob sein Handeln lauter … ist") = *pure · pura · pure · pura* —
+  so schreiben alle vier Ausgaben, und `aufrichtig` steht im **selben** Vers,
+  womit die *upright*-Lesart ausscheidet.
+- **21,8** („der Lautere") = *innocent · inocente · innocent · innocente* —
+  ebenfalls nach den Ausgaben.
+
+Das eine ist ein Adjektiv am Handeln, das andere eine Nominalisierung. Beide
+Lesarten sind belegt und beide von den Ausgaben gedeckt; `konsistenz.py` wird
+sie melden.
+
+### Zwei korpusweite Korrekturen, aus Kapitel 20 gemeldet und nachgezogen
+
+- **`ein` vor `Gräuel` stand italienisch sechsmal falsch.** Vor *abominazione*
+  (feminin, vokalanlautend) ist nur die elidierte Form `un'` richtig; 12,22 und
+  17,15 hatten sie, 11,1 · 11,20 · 15,8 · 15,9 · 15,26 · 16,5 nicht.
+  Angeglichen.
+- **`Plan` lief im Buch auseinander.** 1,31 und 6,18 trugen noch *desseins ·
+  disegni*, ab 12,5 steht durchgehend *projets · progetti* (die
+  Kapitel-12-Entscheidung, die `Plan` von `Ratschlag` trennt). Die beiden alten
+  Stellen sind nachgezogen.
+
+Dazu aus dem Kreuzabgleich: `hastig` trug zwei Fassungen (20,21 gegen 21,5) —
+auf *hastily · apresuradamente · hâtivement · frettolosamente* vereinheitlicht.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+`Gewichtsstein` kommt in Kapitel 20 gar nicht vor; 20,4 hat `Erntezeit`, nicht
+`Ernte`; 20,20 hat das Verb `flucht`, kein Substantiv `Fluch`; 21,6 hat keine
+`Falle des Todes`; 21,4 hat die Adjektive `hochmütig` und `stolz`, nicht die
+Substantive; 21,5 hat das Adverb `hastig`, kein Substantiv `Hast`; 22,1 hat
+`guter Ruf` und `Ansehen`, weder `guter Name` noch `Gunst`; 22,22–23 haben
+`Bedürftigen` und die Rechts-`Sache`, weder `Geringer` noch `Gericht`.
