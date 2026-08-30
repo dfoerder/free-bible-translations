@@ -1,0 +1,78 @@
+# Pakete der Sprueche (Buch 20)
+#
+# Kapitel 1 laeuft allein und ist der Massstab; danach Dreierwellen in
+# Kapitelreihenfolge, damit der spaetere Vers einer Dublette den frueheren
+# schon fertig vorfindet.
+#
+# Je Kapitel: Verszahl, Kollisionspaare aus hints.py, Dublettenpartner.
+# Alle Angaben sind Hypothesen. Der Quelltext hat immer recht.
+
+ 1. Paket: Spr 1 (33 V.)
+      Spr 1: Dubletten: 1,7=9,10 [0.32], 1,8=6,20 [0.62]
+
+ 2. Paket: Spr 2 (22 V.) | Spr 3 (35 V.) | Spr 4 (27 V.)
+      Spr 2: Kollisionen: behüten/bewahren 2,8
+      Spr 2: Dubletten: 2,16=7,5 [0.77], 2,1=7,1 [0.75]
+      Spr 4: Kollisionen: Kranz/Krone 4,9, Schlaf/schlafen 4,16, ab/fern 4,27, bewahren/halten 4,13, gehen/werden 4,12
+      Spr 4: Dubletten: 4,20=5,1 [0.75]
+
+ 3. Paket: Spr 5 (23 V.) | Spr 6 (35 V.) | Spr 7 (27 V.)
+      Spr 5: Dubletten: 5,1=4,20 [0.75]
+      Spr 6: Kollisionen: Mann/Mensch 6,12, Schande/Schmach 6,33
+      Spr 6: Dubletten: 6,10=24,33 [0.94], 6,11=24,34 [1.00], 6,20=1,8 [0.62]
+      Spr 7: Kollisionen: Straße/Weg 7,8
+      Spr 7: Dubletten: 7,1=2,1 [0.75], 7,5=2,16 [0.77]
+
+ 4. Paket: Spr 8 (36 V.) | Spr 9 (18 V.) | Spr 10 (32 V.)
+      Spr 8: Kollisionen: Böse/böse 8,13, Hochmut/Stolz 8,13, Klugheit/Weisheit 8,12, Tor/Tür 8,3
+      Spr 8: Dubletten: 8,35=18,22 [0.67]
+      Spr 9: Kollisionen: Weiser/weise 9,8, tadeln/zurechtweisen 9,7
+      Spr 9: Dubletten: 9,10=1,7 [0.32], 9,16=9,4 [gleich], 9,4=9,16 [gleich]
+      Spr 10: Kollisionen: heran/nahe 10,14
+      Spr 10: Dubletten: 10,11=10,6 [0.60], 10,2=11,4 [0.67], 10,6=10,11 [0.60], 10,9=28,18 [0.64]
+
+ 5. Paket: Spr 11 (31 V.) | Spr 12 (28 V.) | Spr 13 (25 V.)
+      Spr 11: Dubletten: 11,1=20,23 [0.36], 11,4=10,2 [0.67]
+      Spr 12: Kollisionen: Gerechter/gerecht 12,5
+      Spr 12: Dubletten: 12,11=28,19 [0.71]
+      Spr 13: Kollisionen: Weiser/weise 13,20, beschämt/schändlich 13,5
+      Spr 13: Dubletten: 13,14=14,27 [0.81]
+
+ 6. Paket: Spr 14 (35 V.) | Spr 15 (33 V.) | Spr 16 (33 V.)
+      Spr 14: Kollisionen: Lüge/lügen 14,5
+      Spr 14: Dubletten: 14,12=16,25 [gleich], 14,27=13,14 [0.81]
+      Spr 15: Kollisionen: Straße/Weg 15,19
+      Spr 16: Kollisionen: Hochmut/Stolz 16,18, Weiser/klug 16,23, klug/weise 16,21
+      Spr 16: Dubletten: 16,25=14,12 [gleich]
+
+ 7. Paket: Spr 17 (28 V.) | Spr 18 (24 V.) | Spr 19 (29 V.)
+      Spr 17: Kollisionen: klug/weise 17,28
+      Spr 18: Kollisionen: Erkenntnis/Wissen 18,15
+      Spr 18: Dubletten: 18,22=8,35 [0.67], 18,8=26,22 [gleich]
+      Spr 19: Kollisionen: Schande/Schmach 19,26, fern/fort 19,7, klug/weise 19,25
+      Spr 19: Dubletten: 19,24=26,15 [0.65], 19,5=19,9 [0.83], 19,9=19,5 [0.83]
+
+ 8. Paket: Spr 20 (30 V.) | Spr 21 (31 V.) | Spr 22 (29 V.)
+      Spr 20: Kollisionen: Handeln/Verhalten 20,11
+      Spr 20: Dubletten: 20,10=20,23 [0.56], 20,16=27,13 [0.92], 20,23=11,1 [0.36], 20,23=20,10 [0.56]
+      Spr 21: Kollisionen: Gabe/Geschenk 21,14
+      Spr 21: Dubletten: 21,9=25,24 [gleich]
+      Spr 22: Kollisionen: Leute/Mensch 22,29
+      Spr 22: Dubletten: 22,13=26,13 [0.55], 22,3=27,12 [0.97]
+
+ 9. Paket: Spr 23 (35 V.) | Spr 24 (34 V.) | Spr 25 (28 V.)
+      Spr 24: Dubletten: 24,33=6,10 [0.94], 24,34=6,11 [1.00]
+      Spr 25: Dubletten: 25,24=21,9 [gleich]
+
+10. Paket: Spr 26 (28 V.) | Spr 27 (27 V.) | Spr 28 (28 V.)
+      Spr 26: Dubletten: 26,12=29,20 [0.77], 26,13=22,13 [0.55], 26,15=19,24 [0.65], 26,22=18,8 [gleich]
+      Spr 27: Kollisionen: bestehen/bleiben 27,24
+      Spr 27: Dubletten: 27,12=22,3 [0.97], 27,13=20,16 [0.92]
+      Spr 28: Dubletten: 28,12=28,28 [0.56], 28,18=10,9 [0.64], 28,19=12,11 [0.71], 28,28=28,12 [0.56]
+
+11. Paket: Spr 29 (27 V.) | Spr 30 (33 V.) | Spr 31 (31 V.)
+      Spr 29: Dubletten: 29,20=26,12 [0.77]
+      Spr 30: Kollisionen: Weg/ab 30,20, nie/niemals 30,16
+      Spr 31: Kollisionen: loben/preisen 31,28
+
+Summe: 915 Verse in 31 Kapiteln, 11 Pakete
