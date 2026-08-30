@@ -16,9 +16,20 @@ Alle Zahlen sind aus dem fertigen Bestand ausgezählt.
 | 11 | 10 | 10 | 10 | **8** | 10 |
 | 12 | 14 | 14 | 14 | **16** | 14 |
 
-Das Deutsche folgt in 4/5 dem Französischen (die Kapitelgrenze liegt anders),
-in 11/12 dem Rest. **`ausgaben.py` ist in diesen vier Kapiteln zwingend**, und
-wo es `FEHLT in der Datei der Ausgabe` schreibt, gibt es dort keine Vorlage.
+**Es sind zwei verschobene Kapitelgrenzen, keine fehlenden Verse.** Vers für
+Vers nachgemessen:
+
+| | wo die Grenze anders liegt |
+|---|---|
+| **4 / 5** | de 4,1–16 = en/es/it 4,1–16, aber **de 4,17 = en/es/it 5,1**. Danach ist ganz Kapitel 5 um eins versetzt: **de 5,n = en/es/it 5,n+1**. **Das Französische folgt dem Deutschen** in beiden Kapiteln. |
+| **11 / 12** | umgekehrt: **das Französische** zieht die Grenze zwei Verse früher. de 11,9 = fr 12,1, de 11,10 = fr 12,2, und danach **de 12,n = fr 12,n+2**. en, es und it folgen dem Deutschen. |
+
+**`ausgaben.py` meldet für Kapitel 4 `Versatz -1 … UNSICHER`, und das ist
+irreführend**: die ersten sechzehn Verse stehen auf +0, nur der siebzehnte
+rutscht. Wer den gemeldeten Versatz global anwendet, glossiert sechzehn Verse
+aus der falschen Zeile. In diesen vier Kapiteln ist **jede** Ausgabenzeile am
+Inhalt zu prüfen, nicht an der Nummer.
+
 Die übrigen acht Kapitel stimmen in allen fünf Ausgaben überein.
 
 ## 2. `vergänglich` — das Leitwort des Buches, und die Ausgaben helfen nicht
@@ -217,3 +228,118 @@ Lesart „just then".
   vanità" steht am Anfang von 1,3. `ausgaben.py` richtet trotzdem korrekt aus.
 - **RIV 1,13 hat ein Importartefakt**: „**ccupazione** penosa" — das `o` von
   *occupazione* fehlt.
+
+## 10. Was die Kapitel 2, 3 und 4 festgelegt haben
+
+### Die Ausrichtung von Kapitel 4 ist bestätigt
+
+Der Agent hat sie Vers für Vers am Inhalt nachgemessen: **4,1–16 stehen in
+allen vier Ausgaben auf +0**, nur 4,17 ist in WEB, RV und RIV der Vers 5,1;
+LSG folgt dem Deutschen. Der von `ausgaben.py` gemeldete `Versatz -1 …
+UNSICHER` ist falsch, aber das Skript **zeigt trotzdem die richtige Zeile an**
+(die verschobenen sind mit `?` markiert). Für Kapitel 5 gilt durchgehend
+de 5,n = en/es/it 5,n+1, fr = de.
+
+### Das Zeitgedicht 3,1–8 — mit eigenem Listenskript geprüft
+
+**Sieben Verse, vierzehn Paare, 28 Glieder**, positionsgenau gegen den
+Quelltext geprüft. Das Skript leitet die Position jedes Gliedes selbst ab und
+prüft zusätzlich, dass die vier Glieder eines Verses in **jeder** Sprache
+verschiedene Glossen tragen. Der erste Lauf hat die eigene Ableitung des
+Agenten widerlegt (das koordinierende `und` gehörte nicht zum Glied).
+
+**Sechs der 28 Glieder standen schon als Substantiv-Lemma im Bestand**
+(`Weinen`, `Lachen`, `Klagen`, `Schweigen`, `Reden`, `Sterben`) und wurden
+übernommen; die übrigen sind formbasiert unbelegt, ihre Verbstämme aber
+sämtlich belegt und maßgeblich. **Kein Wort neu erfunden, das es gab.**
+
+Zwei Lexikonfallen darin:
+
+- **`Sterben`** hat im Bestand zwei Lesarten — *dying · agonía · agonie ·
+  agonia* (9×, der Todeskampf von 1Mo 35,18) und *dying · morir · mourir ·
+  morire* (2×, Ps 49,18). Die Korpusmehrheit hätte hier „Agonie" gesetzt.
+- **`Klagen`** (Substantiv) ist an *groaning · gemido · gémissement · gemito*
+  gebunden (8×, das Seufzen Israels unter der Fron), während das Verb `klagen`
+  *lament* trägt. Gegen `Tanzen` ist die Klage gemeint: *mourning · lamento ·
+  lamentation · lamento*. RIVs *cordoglio* wurde gemieden, weil `Kummer` im
+  Bestand darauf gebunden ist.
+
+### Die gemeldeten Kollisionen
+
+| Vers | Paar | Befund |
+|---|---|---|
+| 2,3 | `während` ↔ `solange` (es) | `solange` weicht auf es *en tanto que* aus — **gebildet**, weil alle 86 Bestandsbelege *mientras* tragen und keine Ausgabe hier eine Konjunktion setzt |
+| 2,3 | `bis` ↔ `solange` (it) | `solange` weicht auf die **belegte** zweite Lesart *fintanto che* aus (Neh 7,3); `bis` behält *finché*, was RIV wörtlich schreibt |
+| 2,12 | `Torheit` ↔ `Unsinn` | Kapitel-1-Lösung übernommen; RV schreibt in 2,12 beide Wörter selbst |
+| 3,19 | `dasselbe` ↔ `derselbe` | echt — das Genus trennt sie **nur im Italienischen**. Gelöst mit zwei Bestandslesarten: *the same thing · lo mismo · la même chose · la stessa cosa* (1Sam 17,23) gegen *the same · el mismo · le même · lo stesso* (1Kön 19,15) |
+| 4,8 | `Mühe` ↔ `mühen` | echt, aber **nur in zwei Sprachen** (en *toil*, fr *peine*) — es und it trennen von sich aus. `mühen` weicht aus auf *labor · afano · fatigue · affatico* |
+
+Dazu **über zwanzig Kollisionen, die erst `glosskollision.py` gefunden hat**
+und für die `hints.py` nichts gemeldet hatte — darunter 2,10
+`verweigern`/`versagen` (alle vier Sprachen!), 2,15 `Da`/`dann` (alle vier) und
+in Kapitel 4 fünf weitere.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `solange` | as long as · en tanto que · tant que · fintanto che | B1 | Auflösung 2,3 |
+| `verweigern` / `versagen` | refused · negué · privai · rifiutai / denied · rehusé · refusai · negai | B2 | Auflösung 2,10 |
+| `dann` (rhetorisch) | therefore · pues · donc · dunque | A1 | Auflösung 2,15 |
+| `mühen` | labor · afano · fatigue · affatico | B2 | Auflösung 4,8 |
+| `Vergänglichkeit` | transience · fugacidad · fugacité · caducità | C1 | **neu** — der einzige Bestandsbeleg (Röm 8,21) ist *decay*, also φθορά, nicht der Qohelet-Sinn |
+| `Ruhe` (4,6) | rest · descanso · repos · riposo | A2 | Bestand 74:11 — im Prediger die Ruhe-Lesart, anders als 1,33 in den Sprüchen |
+| `Lohn` | wages · salario · salaire · salario | B1 | vereinheitlicht, s. u. |
+| `Besseres` | better · mejor · mieux · meglio | B1 | vereinheitlicht, s. u. |
+| `Atem` | breath · aliento · souffle · respiro | B2 | Bestand (28×) — **gegen WEB und RV**, die in 3,21 *spirit*/*espíritu* schreiben |
+| `jeder` | every · cada · chaque · ogni | A2 | Auflösung 3,1 gegen `alles` |
+| `Stätte` | place · lugar · lieu · luogo | C1 | ⚠ identisch mit `Ort` (A2) — verschiedene Verse, nicht aufgelöst |
+| `Park` | parks · parques · parcs · parchi | B1 | **neu**; LSG *vergers* und RV *jardines* wären mit `Gärten` kollidiert |
+| `Streben` · `ereilen` · `aufwenden` · `Einzelner` · `trostlos` · `verschränken` | … | B2/C1/B2/B2/C1/B2 | **neu** |
+
+### Was der Kreuzabgleich gefunden hat
+
+63 gemeinsame Inhaltswortformen. Zwei echte Divergenzen, beide vereinheitlicht:
+
+- **`Besseres`** trug in 2,24 *meilleur · migliore*, in 3,12 und 3,22
+  *mieux · meglio* — bei identischer Konstruktion („es gibt nichts Besseres
+  … als"). RIV schreibt an allen drei Stellen *nulla di meglio*.
+- **`Lohn`** trug in 2,10 *reward · recompensa · récompense · ricompensa*, in
+  4,9 *wages · salario · salaire · salario*. Der Bestand ist mit 32:29 fast
+  geteilt; genommen ist die AT-Lesart, die auch die Sprüche führen und die LSG
+  in 4,9 wörtlich schreibt.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+**Neun allein in Kapitel 3**: `Abbrechen`/`Bauen` heißen `Abreißen`/`Aufbauen`;
+`Steinewerfen`/`Steinesammeln` sind zwei dreigliedrige Fügungen, keine
+Komposita; `Meiden` gibt es nicht (der Text sagt „sich vom Umarmen
+fernzuhalten", und `Umarmen` steht **zweimal** im Vers); `Behalten` heißt
+`Aufbewahren`, `Nähen` heißt `Zusammennähen`; **3,9 ist nicht die Dublette zu
+1,3** (das ist 2,22) und formuliert anders; 3,16–17 haben weder `Gericht` noch
+`Gottloser`, sondern `Recht`/`Unrecht`/`Gerechtigkeit`/`Ungerechte`; **`Geist`
+steht in 3,18–21 überhaupt nicht** — der Text hat dreimal `Atem`, der
+angekündigte Zweideutigkeitsfall entsteht gar nicht; und der `Staub`-Refrain
+greift 1Mo 3,19 im Deutschen **nicht** auf, weil der modernisierte Text dort
+`Erde` sagt.
+
+In Kapitel 2: `Knechte` und `Herden` stehen nicht da (der Text hat `Diener`,
+`Dienerinnen`, `Gesinde`, `Rinder`, `Schafe`). In Kapitel 4: `Gewalt` steht
+nirgends im Prediger (4,1 hat `Macht`), und 4,12 hat eine „dreifach
+**geflochtene** Schnur", zwei Wörter.
+
+### Bestandsbefunde
+
+- **`Finsternis` (C1) und `Dunkel` (B1) tragen in allen vier Sprachen dieselben
+  Glossen** und stehen in 2,13/2,14 in benachbarten Versen. Nicht aufgelöst,
+  aber korpusweit fällig.
+- **`hinzugeben` liegt doppelt**: eigenes Lemma C1 = *add* (3Mo 27,13) und Form
+  von `hingeben` B2. In 2,3 ist `hingeben` richtig; formbasiert liest man
+  „hinzufügen".
+- `Erkenntnis`/`Wissen` — der Befund aus Kapitel 1 bestätigt sich.
+
+### Vier Importartefakte in der italienischen Ausgabe
+
+Nach 1,13 (`ccupazione`) noch: **2,10 `oiché`** (das *p* von *poiché* fehlt),
+**2,12 `esaminate`** statt *esaminare*, **3,22 `ale`** (das *t* von *tale*
+fehlt).
