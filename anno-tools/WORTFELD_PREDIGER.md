@@ -130,3 +130,90 @@ längst im Bestand stehen. In Buch 20 sind mehrere Agenten darauf
 hereingefallen und haben Wörter neu erfunden, die es gab (`Steinmauer`,
 `guttun`, `freigebig`, `Wasserlauf`). **Immer zusätzlich `lexicon.py` fragen
 und bei zusammengesetzten Wörtern das Grundwort suchen.**
+
+## 9. Was Kapitel 1 festgelegt hat
+
+Kapitel 1 ist gelaufen und validiert (18 Verse, 351 Einzelwort- und 21
+Mehrwort-Einträge, alle sechs Prüfläufe ohne Befund).
+
+### Die drei Leitwörter
+
+| deutsch | en · es · fr · it | Level | gilt für |
+|---|---|---|---|
+| `vergänglich` | transient · pasajero · éphémère · effimero | B2 | alle 25 Stellen |
+| `Haschen` | chasing · correr · courir · correre | C1 | alle 9 Stellen — **kein** Mehrwort |
+| `nach` (bei `Haschen`) | after · tras · après · dietro | A1 | dieselbe Stelle |
+| `Prediger` | Preacher · Predicador · Ecclésiaste · Ecclesiaste | B2 | alle 7 Stellen |
+
+**`vergänglich` folgt dem einzigen AT-Beleg** (Ps 39,5), nicht der
+NT-Mehrheit (6:1 *perishable*, aber dort an verderblicher Speise und
+vergänglichem Silber — „dem Verderben unterworfen", nicht „flüchtig").
+
+**Den Ausgaben ist aus einem grammatischen Grund nicht zu folgen**: alle vier
+schreiben ein Substantiv, wo der Text ein prädikatives Adjektiv hat, und das
+adjektivische Gegenstück (*vain · vano*) sagt „eitel/nichtig" — was der
+Modernisierer gerade nicht geschrieben hat. Er hat Luthers „Es ist alles ganz
+eitel" durch „Alles ist vergänglich" ersetzt und die Bedeutung damit von
+*nichtig* auf *flüchtig* verschoben.
+
+**`Haschen nach` ist bewusst kein Mehrwort-Eintrag.** `SPEC.md` erlaubt sie
+nur, wo sich die Bedeutung nicht aus den Teilen ergibt. Der Schlüssel ist
+`nach`: der Bestand führt für die Verfolgungsrichtung schon *after · tras ·
+après · dietro* (99 Belege, 1Mo 31,23 „jagte ihm nach"), und damit komponiert
+die Wendung in allen vier Sprachen sauber. **Das Spanische ist als einziges
+nicht abgelesen, sondern gebildet** — RV schreibt an allen neun Stellen
+*aflicción de espíritu*, die alte Vulgata-Lesart, und folgt dem deutschen Text
+nicht.
+
+### Die vier gemeldeten Kollisionen
+
+| Vers | Paar | Befund |
+|---|---|---|
+| 1,3 | `Mühe` ↔ `abmühen` | **echt, und schärfer als gemeldet**: `hints.py` sah nur en *toil*, tatsächlich fielen auch es *fatiga* und fr *peine* zusammen. `abmühen` weicht auf zwei belegte Bestandslesarten aus (en *labors*, fr *fatigue*) und es *afana* nach RV im Vers. |
+| 1,6 | `drehen` ↔ `kehren` | echt; `kehren` nimmt die zweite Bestandslesart *returns · vuelve · revient · torna* — passt ohnehin besser, weil es zur Klammer `zurückkehren` gehört. |
+| 1,9 | `neu` ↔ `wieder` | **Fehlalarm**: `hints.py` rechnete mit der adverbialen `neu`-Lesart („aufs Neue"); hier steht „nichts **Neues**", das Adjektiv. |
+| 1,17 | `Torheit` ↔ `Unsinn` | echt, nur es. `Unsinn` hat **einen** Bestandsbeleg und keine zweite Lesart; genommen ist RVs eigenes *locura*, das die Ausgabe an allen drei Unsinn-Versen neben *necedad* schreibt. **Gilt für 2,12 und 10,13.** |
+
+### Zwei Formfallen, die für die Folgekapitel gelten
+
+**`voller` ist zweierlei.** In 1,8 („so voller Mühsal") ist es die
+Bestandswendung `voller` B1 = *full of · lleno de · plein de · pieno di* (78
+Belege); in 1,7 („das Meer wird nicht voller") ist es der **Komparativ von
+`voll`** — anderes Lemma, A2, *fuller · más lleno · plus plein · più pieno*.
+Die Wortform ist identisch. Wer den Extrakt formbasiert liest, setzt die
+falsche Wendung.
+
+**`gerade` ist in 1,15 räumlich** (*straight · derecho · droit · diritto*, 8
+Belege), nicht temporal — die Korpusmehrheit ist mit 31 Belegen die temporale
+Lesart „just then".
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Unsinn` | nonsense · **locura** · sottise · sciocchezza | B2 | es aus RV, Rest Bestand |
+| `abmühen` | labors · afana · fatigue · affatica | B2 | Auflösung 1,3 |
+| `sich abmühen` (MW) | wears himself out · se afana · se fatigue · si affatica | B2 | Bestand (Ps 39,7) |
+| `Mühsal` | hardship · penalidad · tribulation · tribolazione | C1 | Bestand — **gegen alle vier Ausgaben**; RVs *fatiga* wäre mit `Mühe` kollidiert |
+| `Gewinn` | gain · ganancia · gain · guadagno | B1 | Bestand |
+| `plagen` (sich p.) | toil · afanen · peinent · affatichino | B2 | **neue Lesart** — die Bestandsbindung ist *plague* (die Frösche von 2Mo 7,27) |
+| `münden` | empty · desembocan · débouchent · sboccano | B2 | Bestand (Jos 15,4) — hält `fließen` im selben Vers frei |
+| `Ausgangspunkt` | starting point · punto de partida · point de départ · punto di partenza | B2 | **neu** — keine der vier Ausgaben hilft, alle übersetzen die hebräische Kreisbewegung |
+| `Späterer` | of after · de después · d'après · di poi | B2 | **neu**, symmetrisch zu `Früherer` (Hiob 18,20) |
+| `Verständnis` / `Erkenntnis` / `Wissen` | understanding · … / knowledge · … / knowledge · … | B2/B2/B1 | ⚠ `Erkenntnis` und `Wissen` tragen dieselben vier Glossen — in 1,16/1,18 verschiedene Verse, deshalb nicht aufgelöst |
+| `Kummer` / `Schmerz` | grief · pesar · chagrin · cordoglio / pain · dolor · douleur · dolore | B2/B1 | Bestand |
+| `vollkommen` (Gradadverb) | completely · completamente · complètement · completamente | B2 | **neue Lesart**; **nicht** nach 12,8 übertragen, dort steht „ganz und gar" |
+
+### Bestandsbefunde
+
+- **`Ohr` ist im Spanischen uneinheitlich**: *oído* (24×) gegen *oreja* (21×)
+  für dasselbe Lemma bei fast gleicher Belegzahl. Genommen ist *oído*.
+- `abmühen`, `mühen` und `sich abmühen` liegen als drei Lemmata nebeneinander
+  (Ps 39,7 hat zwei davon im selben Vers) — eine Bestandsaltlast.
+
+### Befunde in den Ausgaben
+
+- **RIV 1,2/1,3 verschiebt den Versschnitt**: „vanità delle vanità; tutto è
+  vanità" steht am Anfang von 1,3. `ausgaben.py` richtet trotzdem korrekt aus.
+- **RIV 1,13 hat ein Importartefakt**: „**ccupazione** penosa" — das `o` von
+  *occupazione* fehlt.
