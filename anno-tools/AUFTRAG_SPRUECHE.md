@@ -76,7 +76,7 @@ Feste Wendungen, die der Bestand als Mehrwort führt, nicht vergessen. Ein
 fehlender Mehrwort-Eintrag ist für `selfcheck.py` und `qa.py` **prinzipiell
 unsichtbar**.
 
-## Prüfung vor der Abgabe — alle fünf müssen gelaufen sein
+## Prüfung vor der Abgabe — alle sechs müssen gelaufen sein
 
 ```
 python3 selfcheck.py 20 <kap> $ANNO_OUT/20/ch<kap>.json
@@ -84,7 +84,17 @@ python3 qa.py --kapitel 20 <kap> $ANNO_OUT/20/ch<kap>.json
 python3 konvention.py 20 <kap>
 python3 sweep.py 20 --kapitel <kap>
 python3 glosskollision.py --datei 20 <kap> $ANNO_OUT/20/ch<kap>.json
+python3 levelcheck.py 20 <kap>
 ```
+
+**`levelcheck.py` gehört in die Pflichtliste**, und zwar nicht nur wegen der
+Level. Es hat in diesem Buch dreimal etwas gefunden, das kein anderer Lauf
+melden konnte: in Kapitel 25 den Bestandsbeleg `Steinmauer`, den der
+Lexikon-Extrakt formbasiert nicht zeigte, in Kapitel 22 das zusammengeschriebene
+`guttun` (belegt als `gut tun`), und in Kapitel 29 gleich **drei
+Mehrwort-Lemmata**, die als neu angesetzt waren und längst im Bestand stehen
+(`freien Lauf lassen`, `Freude bereiten`, `verschwenden`). Die anderen fünf
+Läufe waren an allen drei Stellen mit 0 Treffern durchgelaufen.
 
 `selfcheck.py` muss fehlerfrei durchlaufen — das ist die harte Bedingung.
 

@@ -1218,3 +1218,111 @@ ganzen Kapitel 28 nicht vor**, obwohl der Prompt ihn für sechs Verse nannte;
 28,8 hat `Zinswucher`, nicht `Zins` und `Aufschlag`; 28,21 hat `Partei zu
 ergreifen` und `ein Stück Brot`; 26,19 hat keinen `Scherz`, sondern „habe doch
 nur **Spaß gemacht**".
+
+## 19. Was die Kapitel 29, 30 und 31 festgelegt haben — und was am Buchende steht
+
+### 30 — die Zahlensprüche, mit eigenem Listenskript geprüft
+
+Fünf Zahlensprüche (30,15–16 · 18–19 · 21–23 · 24–28 · 29–31), **62
+Listenglieder**, positionsgenau gegen den Quelltext geprüft. Das Skript hat
+einen **Mutationstest** bestanden: nach programmatischem Vertauschen zweier
+Glossen meldet es acht Befunde.
+
+Die vier Eigennamen aus 30,1 folgen den Ausgaben: `Agur` · `Jakeh · Jaqué ·
+Jaké · Jaké` · `Ithiel · Itiel · Ithiel · Itiel` · `Ucal`. **WEB schreibt in
+30,15 „The leach has two daughters"** — „leach" ist das englische Verb
+*auslaugen*, also eine echte Bedeutungskollision im Lesefluss. Nach dem
+Est-1,10-Muster („Carcass") ist *leech* gesetzt.
+
+### Die zwei letzten gemeldeten Kollisionen
+
+**30,16 `nie` ↔ `niemals`** — echt, **nur** für 30,16 aufgelöst: `nie` steht in
+30,15 zweimal ohne Partner. `niemals` = *at no time · jamás · à aucun moment ·
+in nessun momento*; RV trennt im Vers selbst (*nunca* / *jamás*).
+
+**30,20 `Weg` ↔ `ab`** — `hints.py` sieht die falsche Sache: `ab` ist die
+Partikel von `abwischen` („wischt sich den Mund ab"), der **vierte** Fall
+dieser Art im Buch nach 9,8 · 10,14 · 19,25. Die italienische Kollision bleibt
+trotzdem echt, weil `Weg` fünfmal in 30,19–20 steht; `ab` weicht **nur
+italienisch** auf *da parte* aus.
+
+**31,28 `loben` ↔ `preisen`** — der Hinweis stimmt nur halb: `preisen …
+glücklich` ist der Bestands-Mehrwort `glücklich preisen` (Ps 72,17), gesetzt
+als getrennte Klammer. Die Kollision der **Einzelwörter** bleibt trotzdem echt;
+`preisen` weicht auf die zweite Bestandslesart *extol · ensalzan · exaltent ·
+esaltano* aus (Ps 145,2).
+
+### `Ruhe` bleibt zweigleisig — und Kapitel 29 hat beide Lesarten
+
+Abschnitt 9 hatte das seit 1,33 so vorgesehen. Der Endstand:
+
+| Stelle | gesetzt | Grund |
+|---|---|---|
+| 1,33 · 17,1 · 29,9 | peace · paz · paix · pace | „in Ruhe leben", „findet keine Ruhe" — drei der vier Ausgaben schreiben *peace* |
+| 6,4 · 29,17 | rest · descanso · repos · riposo | Bestandsmehrheit (72×); der Bestands-Mehrwort `Ruhe schenken` (Mt 11,28) sagt selbst *give rest* |
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `tüchtig` (an `Frau`) | worthy · virtuosa · vertueuse · virtuosa | B2 | löst die seit 12,4 vorgemerkte Festlegung ein (31,10 · 31,30) |
+| `Aufbrausender` | wrathful man · hombre furioso · homme furieux · uomo furioso | C1 | **neu** — getrennt von `Jähzorniger` und `hitzköpfig` |
+| `preisen` (31,28) | extol · ensalzan · exaltent · esaltano | C1 | zweite Bestandslesart |
+| `niemals` (30,16) | at no time · jamás · à aucun moment · in nessun momento | A2 | verse-lokal |
+| `Klippschliefer` | rock badgers · damanes · damans · iraci | C1 | Bestand (`Klippdachs`, Ps 104,18) — it *iraci* ist ein Fachbegriff, den keine Ausgabe stützt |
+| `Geier` | vultures · buitres · vautours · avvoltoi | B2 | Bestand, **gegen alle vier Ausgaben** (dort *eagle*) — sonst fiele es mit `Adler` aus 30,19 zusammen |
+| `Hahn` | rooster · gallo · coq · gallo | B1 | Bestand, gegen alle vier Ausgaben |
+| `stattlich` (am `Gang`) | stately · imponente · imposante · imponente | B2 | **zweite Lesart** — die zwei Bestandsbelege meinen das Aussehen einer Person, it *avvenente* wäre hier falsch |
+| `Redlicher` (Subst.) | virtuous ones · virtuosos · vertueux · virtuosi | C1 | löst 29,10 gegen `Aufrichtiger`, dessen Glosse alle vier Ausgaben dort setzen |
+| `Menschenfurcht` · `blutgierig` · `vorschnell` · `miterleben` · `verwöhnen` | … | C1/C1/C1/B2/C1 | **neu** |
+| `Spinnrocken` / `Spindel` | distaff · rueca · quenouille · ròcca / spindle · huso · fuseau · fuso | C1 | **neu** — **RV vertauscht die beiden** gegen WEB, LSG und RIV; die Mehrheit ist gesetzt |
+| `Schutzloser` · `Tüchtiges` · `weben` · `Leinengewand` | … | C1/B2/B2/C1 | **neu** (Akrostichon) |
+| `Ertrag` | yield · rendimiento · rendement · rendimento | B2 | Buchbindung gegen die Ausgaben (*fruit*) an allen acht Stellen |
+
+### Was am Buchende offen bleibt
+
+**Acht inhaltliche Kollisionen stehen bewusst**, alle dokumentiert und je am
+Vers geprüft:
+
+| Stelle | Paar | warum sie bleibt |
+|---|---|---|
+| 4,16 | `Schlaf` / `schlafen` | Verb und Stammsubstantiv, nur englisch; WEB schreibt dort selbst zweimal *sleep* |
+| 14,5 | `Lüge` / `lügen` | dasselbe |
+| 18,20 | `satt` / `gesättigt` | synonymer Parallelismus; alle vier Ausgaben wiederholen ihr eigenes Wort |
+| 22,22 | `Armen` / `arm` | figura etymologica; jede romanische Ausweichform wäre besetzt |
+| 18,24 · 29,20 | `gibt` / `ist` | das Einzelwort des Mehrworts `es gibt`, korpusweit 72× so |
+| 25,21 · 30,8 | `gib` / `von` bzw. `zu` | der korpusweite `da'`-Befund, s. u. |
+
+**Zwei Bestandsbefunde für eine korpusweite Entscheidung** (nicht angefasst):
+
+- **`gib` trägt italienisch `da'` (96 Belege) gegen `da` (4).** Zwei
+  Kollisionsstellen im Buch, und in 25,21 steht dasselbe Paar im gebauten
+  Römer 12,20, das den Vers zitiert.
+- **`widerspiegeln` und `spiegeln` kollidieren im gebauten 2Kor 3,18** in
+  en/es/fr; nur das Italienische trennt dort.
+
+Dazu kleiner: `Bestechung` it *tangente*, `bis ans` („hasta al fin"),
+Ps 20,2 fr *de la* statt *de l'*, `Führung` zwischen 4Mo 33,1 und Spr 11,14,
+`Ohr` it *orecchi* : *orecchie*.
+
+### Die Kollisionsliste des Buches, am Ende ausgezählt
+
+`hints.py` hatte 30 Paare gemeldet. Davon waren **sechs Fehlalarme**, alle von
+den Agenten am Quelltext widerlegt:
+
+| Stelle | was `hints.py` sah | was dasteht |
+|---|---|---|
+| 4,16 | `Schlaf` / `schlafen` | Verb und Stammsubstantiv, nur englisch |
+| 4,27 | `ab` / `fern` | `ab` ist die Partikel von `abweichen` |
+| 9,8 | `Weiser` / `weise` | zwei Imperative von `weisen` (`zurechtweisen`) |
+| 10,14 | `heran` / `nahe` | `heran` ist die Partikel von `heranbringen` |
+| 19,25 | `klug` / `weise` | wieder `weisen`, kein Adjektiv |
+| 22,29 | `Leute` / `Mensch` | `Mensch` steht im Singular |
+
+Dem stehen **mindestens 25 echte Kollisionen** gegenüber, die `hints.py`
+prinzipiell **nicht** sehen konnte und die `glosskollision.py` oder die
+Handprüfung gefunden hat — darunter 11,12 `Verstand`/`einsichtig`, 12,5
+`Pläne`/`Ratschläge`, 15,13 `fröhlich`/`heiter`, 16,18 `Sturz`/`Fall`, 18,14
+`ertragen`/`tragen`, 19,16 `hält`/`bewahrt`, 21,14 `besänftigen`/`beruhigen`,
+23,29 `Elend`/`Leid`, 27,19 `widerspiegeln`/`spiegeln` und 27,24 `für
+immer`/`für alle Zeit`.
