@@ -398,3 +398,95 @@ Regel nicht aufgelöst. Wo ein Kapitel sie in **einem** Vers hat, weicht
 
 Dasselbe gilt für `Angst haben` (3,24) und `sich fürchten` (3,25), beide
 *be afraid · tener miedo · avoir peur · aver paura*.
+
+## 11. Was die Kapitel 5, 6 und 7 festgelegt haben
+
+### Die Faulheitsgruppe — gilt für alle 20 Belegstellen des Buches
+
+Kapitel 6 hat sie an den vier Ausgaben über alle Belegstellen hinweg
+ausgezählt (10,4 · 10,26 · 12,24 · 12,27 · 13,4 · 15,19 · 19,15 · 19,24 ·
+20,4 · 21,5 · 21,25 · 24,30 · 26,14 · 31,13 · 31,27). Sie sind einheitlich:
+
+| deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `Fauler` / `Faule` / `Faulen` (Subst.) | sluggard · perezoso · paresseux · pigro | B2 |
+| `Faulheit` | laziness · pereza · paresse · pigrizia | B2 |
+| `fleißig` / `Fleißiger` | diligent · diligente · diligent · diligente | B2 |
+| `Fleiß` | diligence · diligencia · diligence · diligenza | B2 |
+| `faul` (Adj.) | lazy · perezoso · paresseux · pigro | B1 |
+
+Das Substantiv trägt englisch **sluggard**, nicht *lazy* — eigenes Lemma,
+eigene Glosse. **Warnung für 25,19:** dort steht „ein fauler Zahn", und das ist
+`faul` = *rotten*, nicht die Faulheitsgruppe.
+
+### Die zwei gemeldeten Kollisionen dieser Kapitel
+
+**6,12 `Mensch` ↔ `Mann`** — ohne Neuerfindung gelöst: der Bestand führt
+`Mensch` = *person · persona · personne · persona* schon 5× (4Mo 5,6). `Mann`
+behält *man · hombre · homme · uomo*.
+
+**6,33 `Schande` ↔ `Schmach`** — `Schande` behält die Festlegung aus Kapitel 3
+(*disgrace · afrenta · honte · vergogna*), `Schmach` weicht auf seine **zweite
+Bestandslesart** aus: *reproach · oprobio · outrage · oltraggio* (Ps 35,26 ·
+109,29). **Dieselbe Auflösung gilt für 19,26**, den zweiten Kollisionsvers.
+
+Im Bestand stehen `Schande` und `Schmach` 16:2 beide auf *disgrace · afrenta* —
+eine korpusweite Doppelbelegung, die außerhalb dieser zwei Verse unangetastet
+bleibt.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Fremder` | stranger · extraño · étranger · estraneo | B1 | **die NT-Lesart**, s. u. |
+| `Fremde` (fem., Subst.) | foreign woman · mujer ajena · étrangère · straniera | B2 | neu, getrennt von `Fremder` |
+| `Prostituierte` | prostitute · prostituta · prostituée · prostituta | B2 | Bestand |
+| `verführen` | seduced · sedujo · séduisit · sedusse | B2 | Ausgaben, gegen die schwache AT-Mehrheit *lead astray* |
+| `verwahren` | store up · atesora · conserve · riponi | B2 | **neu**, gegen `bewahren` abgesetzt (beide in 7,1) |
+| `Wegelagerer` | highwayman · salteador de caminos · brigand de grand chemin · brigante di strada | C1 | Bestand — 6,11 ist Vorlage für 24,34 |
+| `Mangel` | need · necesidad · besoin · bisogno | B2 | Bestand |
+| `Ameise` | ant · hormiga · fourmi · formica | B1 | neu |
+| `Anführer` / `Aufseher` / `Herrscher` | leader · jefe · chef · capo / overseer · supervisor · surveillant · sorvegliante / ruler · gobernante · dominateur · dominatore | B2/C1/B2 | Bestand — stehen in 6,7 in **einem** Vers |
+| `nichtsnutzig` | worthless · despreciable · bon à rien · buono a nulla | C1 | fr umgestellt gegen `übel` = *pervers* |
+| `Zisterne` / `Brunnen` / `Quelle` / `Wasserbach` | cistern · well · springs · streams of water … | B2/B1/B1/C1 | Bestand — stehen in 5,15–18 dicht beieinander |
+| `Wermut` | wormwood · ajenjo · absinthe · assenzio | C1 | Bestand |
+| `Fessel` | shackles · grillos · entraves · ceppi | B2 | Bestand gegen die Ausgaben (*cords*) |
+| `berauschen` | intoxicate · embriagar · enivrer · inebriare | C1 | neu |
+| `Busen` | bosom · seno · sein · seno | B2 | neu |
+| `Vertraute` | confidante · confidente · confidente · confidente | C1 | neu — die Ausgaben widersprechen einander |
+| `Ehemann` | husband · marido · mari · marito | B2 | Ausgaben; der eine Bestandsbeleg ist keine Bindung |
+
+**`Fremder` folgt der NT-Lesart, und das ist kein Versehen.** Die AT-Mehrheit
+(*stranger · extranjero · étranger · straniero*, 80×) meint durchgehend den
+**Fremdling im Land**; in 5,17 und 6,1 ist der Außenstehende gemeint, und das
+ist die Bedeutung der acht NT-Belege (Mt 25,35, Joh 10,5). Eine Bindung gilt
+für dieselbe Bedeutung, nicht für dieselbe Buchstabenfolge. Beide spanischen
+Ausgabenstellen schreiben *extraño*.
+
+### Was der Kreuzabgleich der drei Kapitel gefunden hat
+
+`kreuz.py 20 5 6 7` hält 64 gemeinsame Inhaltswortformen gegeneinander. Vier
+echte Divergenzen, alle vereinheitlicht:
+
+- **„So hört nun auf mich, meine Kinder"** steht wörtlich gleich in 5,7 und
+  7,24 und trug zwei Fassungen (`hört` *oíd · entendez · udite* gegen
+  *escuchad · écoutez · ascoltate*, `nun` fr *maintenant* gegen *donc*).
+  Auf die Korpusmehrheit und das gebaute 4,1 vereinheitlicht.
+- **`Fremden`** trug in 5,17 die AT-Lesart, in 6,1 die NT-Lesart — auf die
+  NT-Lesart vereinheitlicht (Begründung oben).
+- **`Frau`** in der Bedeutung *wife* trug es *mujer* (6,26 · 6,29) gegen
+  *esposa* (5,18) — auf die Bindung *esposa* vereinheitlicht.
+- **`geraten`** trug it *finito* (5,14) gegen *caduto* (6,3).
+
+Nachgezogen aus Kapitel 5: **`behüten` lief im Buch auseinander.** 2,8 · 2,11 ·
+5,2 tragen *protect*, 4,23 trug *Guard · Cuida · Garde · Custodisci* — also
+genau die Glosse von `bewahren`. 4,23 ist auf *Protect · Protege · Protège ·
+Proteggi* angeglichen.
+
+### Zwei offene Kollisionsstellen für spätere Kapitel
+
+- **`Verhalten` und `Tun` fallen französisch zusammen** (*conduite*). Sie
+  stehen bisher nie im selben Vers; wo ein Kapitel beide hat, weicht
+  `Verhalten` aus. `Handeln` (gemeldete Kollision 20,11) liegt daneben.
+- `Güte`/`Freundlichkeit` und `Angst haben`/`sich fürchten` — siehe
+  Abschnitt 10.
