@@ -591,3 +591,105 @@ fait la joie · rallegra* (10,1 · 10,23, und wieder in 15,20 · 17,21 · 23,24)
 - **Eine Kollision bleibt bewusst stehen:** 10,15 `ihr`/`seine`, beide spanisch
   *su*. Das Spanische hat für 3. Sg. und 3. Pl. nur diese eine Form; en, fr und
   it trennen. Eine Auflösung ginge nur über eine künstliche Form.
+
+## 13. Was die Kapitel 11, 12 und 13 festgelegt haben
+
+### 13,20 — die einzige echte `Weiser`/`weise`-Kollision, und wie sie gelöst ist
+
+„Wer mit **Weisen** umgeht, wird **weise**." `Weisen` ist das Substantiv,
+`weise` das prädikative Adjektiv — anders als in 9,8, wo beide Imperative von
+`weisen` sind.
+
+**Die vier Ausgaben lösen nicht auf**: WEB *wise men/wise*, RV *sabios/sabio*,
+LSG *sages/sage*, RIV *savi/savio*. Die Entscheidung musste am Bestand fallen.
+
+| | gesetzt |
+|---|---|
+| `Weiser` | wise · sabios · sages · saggi — **unverändert**, gilt weiter für 1,6 · 3,35 · 10,14 · 13,14 |
+| `weise` (nur in 13,20) | **sage** · sabio · sage · saggio — nur die englische Glosse weicht aus |
+
+Der Bestand trennt die beiden in es/fr/it schon über den Numerus; zusammen
+fallen sie allein im Englischen. Das ist genau die Lage von 8,13 `Böse`/`böse`,
+und die Entscheidung folgt diesem Präzedenzfall. Nicht gegangen wurde der Weg,
+`Weisen` auf *wise men* zu setzen: das hätte mit dem Substantiv ausweichen
+heißen und 13,20 gegen 1,6 · 3,35 · 10,14 laufen lassen.
+
+**Regel für den Rest des Buches:** `Weiser` bleibt überall *wise*; steht `weise`
+im **selben** Vers, weicht das Adjektiv englisch auf *sage* aus.
+
+### 12,5 `Gerechter` ↔ `gerecht` — echt, und die Ausgaben trennen selbst
+
+WEB *righteous/just*, RV *justos/rectos*, LSG *justes/équité*, RIV
+*giusti/equità*. Das gebundene Substantiv bleibt, das Adjektiv weicht aus:
+`gerecht` (nur 12,5) = *just · rectos · équitables · equi*. Die 60
+Bestandsbelege bleiben unangetastet.
+
+Im selben Vers stand eine zweite, von `hints.py` nicht gesehene Kollision:
+`Pläne` ↔ `Ratschläge`. Getrennt über `Plan` = *plans · planes · projets ·
+progetti* und `Ratschlag` = *counsels · designios · desseins · disegni*.
+
+### 13,5 `beschämt` ↔ `schändlich` — löst sich zweifach auf
+
+`schändlich` steht **adverbial** („handelt schändlich") = *shamefully ·
+vergonzosamente · honteusement · vergognosamente*; der einzige Bestandsbeleg
+(Eph 5,12) ist das Adjektiv. `beschämt` ist Teil der Wendung `sich beschämen`
+(Mehrwort, B2) = *brings shame on himself · se avergüenza · se couvre de honte ·
+si copre di vergogna*. Damit fällt französisch nichts mehr zusammen.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Waage` | balance · balanza · balance · bilancia | B1 | **gilt für 16,11 · 20,23**; en *scales* wäre Pluraletantum |
+| `Gewicht` | weight · peso · poids · peso | B1 | gilt für 20,10 · 20,23 |
+| `tüchtig` (an `Frau`) | worthy · virtuosa · vertueuse · virtuosa | B2 | **gegen den Bestand** (11× *capable*, alle „diensttaugliche Männer") — **gilt für 31,10** |
+| `Trägheit` | idleness · negligencia · nonchalance · indolenza | C1 | zieht `träge` nach (Abschnitt 12) |
+| `Ratschlag` | counsels · designios · desseins · disegni | C1 | **neu**, trennt von `Plan` |
+| `Ansehen` | esteem · estima · estime · stima | C1 | zweite Bestandslesart (2Kön 5,1) — hält `Ehre` = *honor · honra · honneur · onore* (126×) frei |
+| `Gesandter` | envoy · enviado · envoyé · inviato | B2 | AT-Lesart (1Kön 5,15), nicht *ambassador* aus dem einen NT-Beleg; trennt von `Bote` = *messenger* im selben Vers |
+| `Kluger` (Subst.) | prudent man · hombre prudente · homme prudent · uomo prudente | B1 | Fortschreibung der Kapitel-1-Umstellung |
+| `Land` (Ackerboden) | land · tierra · terre · terra | A1 | **zweite Lesart** gegen die Staatsbindung *país · pays · paese* |
+| `Fäulnis` | rottenness · podredumbre · pourriture · putredine | C1 | **neu** — **gilt auch für 14,30** |
+| `verschlagen` | shrewd · astuto · rusé · scaltro | B2 | Bestand, **gegen die Ausgaben** (*pervers*), sonst Zusammenfall mit `Verkehrter` |
+| `Führung` | leadership · dirección · direction · direzione | B2 | trennt von `Tun`/`Verhalten` (fr *conduite*) und `leiten` (it *guida*) |
+| `gottlos` (Adj.) | godless · impío · impie · empio | C1 | bewusst getrennt von `Gottloser` = *ungodly* |
+| `sicher` (prädikativ) | safe · seguro · sûr · sicuro | A2 | gegen adverbiales *safely · con seguridad · en sûreté · al sicuro* (1,33 · 3,23 · 10,9) |
+| `Vermessenheit` | presumption · presunción · présomption · presunzione | C1 | **neu**, hält Abstand zu `Hochmut` und `Stolz` |
+| `unzuverlässig` | unreliable · poco fiable · peu fiable · inaffidabile | B2 | dem Quelltext gefolgt; die Ausgaben schreiben *wicked* und hätten mit `Böser` kollidiert |
+| `hüten` (nur 13,3) | guards · cuida · veille sur · guarda | B2 | verse-lokale Auflösung gegen `bewahren` |
+| `Quelle des Lebens` (MW) | spring of life · manantial de la vida · source de la vie · sorgente della vita | B2 | Bestand (Offb 21,6) — **13,14 ist die Vorlage für 14,27** |
+
+### Vier Stellen, an denen der Quelltext gegen alle vier Ausgaben steht
+
+Überall ist der deutsche Text maßgeblich geblieben: 13,11 sagt `schnell
+gewonnen`, die Ausgaben *unrechtmäßig erworben*; 13,17 sagt `unzuverlässiger
+Bote`, die Ausgaben *böser Bote*; 13,16 sagt `mit Überlegung`, die Ausgaben
+*knowledge/connaissance*; 12,27 sagt `fängt`, die Ausgaben *röstet*.
+
+### Latente Kollisionen, bewusst nicht aufgelöst
+
+- **`Überlegung`** (13,16, *consideration · reflexión · réflexion · riflessione*)
+  fällt in fr und it mit `Besonnenheit` zusammen. Beide stehen nirgends im
+  selben Vers; alle drei `Besonnenheit`-Verse sind gebaut.
+- **`Trug`** und **`Betrug`** tragen im Bestand dieselben vier Glossen
+  (*deceit · engaño · tromperie · inganno*). In Kapitel 12 stehen sie in 12,5
+  und 12,20 — verschiedene Verse.
+- **10,15 `ihr`/`seine`** und **11,6 `die`/`sie`**, **11,26 `das`/`es`**: echte
+  Verschmelzungen der Zielsprachen, nur über Kunstformen auflösbar.
+
+### Nachgezogen
+
+- **`erlangen` lief auseinander**: 8,35 trug es spanisch *alcanza* gegen die
+  Bestandsbindung *obtiene*. Angeglichen.
+- `Ansehen` trug in 11,16 *honor* (die Glosse von `Ehre`) und in 13,15
+  *esteem* — auf *esteem* vereinheitlicht.
+- `Kluge` als Nominalisierung trug zwei Fassungen (12,16 gegen 13,16) — auf
+  *prudent man · hombre prudente · homme prudent · uomo prudente* vereinheitlicht.
+
+### Wieder drei Prompt-Hinweise, die im Text nicht stehen
+
+12,11 sagt `Land bestellt` und `satt von Brot`, nicht `Acker bebaut`/`satt an`;
+12,10 hat `Güte`, kein `Erbarmen`; der „Redeblock" 12,13–23 enthält weder
+`Rede` noch `Lüge` noch `Mund`. In Kapitel 11 fehlen `austeilen` (der Text sagt
+„gibt großzügig"), `Korn` (er sagt `Getreide`) und das Substantiv `Fluch`
+(nur das Verb `verflucht`).
