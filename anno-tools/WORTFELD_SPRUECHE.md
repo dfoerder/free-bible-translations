@@ -571,7 +571,9 @@ Schöpfungsverben sind `einsetzen`, `einsenken`, `bereiten`, `festsetzen`,
 Neue Mehrwort-Lemmata der Sammlung, die wiederkommen: `zu Fall kommen` ·
 `in die Irre gehen` · `im Zaum halten` · `zudecken` (Jak 5,20 zitiert 10,12) ·
 `hervorbringen` · `ausbleiben` · **`Freude machen`** B1 *gives joy · alegra ·
-fait la joie · rallegra* (10,1 · 10,23, und wieder in 15,20 · 17,21 · 23,24) ·
+fait la joie · rallegra* (10,1 · 10,23, wieder in 15,20 und 23,24 — **nicht**
+in 17,21: dort steht „hat keine Freude", und ein positiver Mehrwort-Eintrag
+über einer negierten Wendung wäre falsch) ·
 `zurückweisen`.
 
 ### Nachgezogen und nachzuziehen
@@ -790,3 +792,127 @@ kein `Erziehung`; 15 hat weder `Rede` noch `Tadel`; 16,1–9 hat kein `Rat`, und
 **16,31 hat kein `Ehre`** — der Quelltext sagt „eine prächtige Krone", während
 alle vier Ausgaben *crown of glory · corona de honra · couronne d'honneur ·
 corona d'onore* schreiben.
+
+## 15. Was die Kapitel 17, 18 und 19 festgelegt haben
+
+### 17,21 — die einzige Narren-Lesart des Homographen `Toren`
+
+„Wer einen **Narren** zeugt, hat nur Kummer, der Vater eines **Toren** hat keine
+Freude." Beide stehen im Vers und müssen sich unterscheiden. **Drei der vier
+Ausgaben trennen von selbst** — RV *necio/insensato*, LSG *insensé/fou*, RIV
+*stolto/uomo da nulla*; nur WEB schreibt zweimal *fool*.
+
+| | gesetzt |
+|---|---|
+| `Narr` | fool · necio · insensé · stolto — unverändert |
+| `Tor` (nur 17,21) | **foolish man · insensato · fou · insensato**, B1, Lemma `Tor` |
+
+es, fr und it stammen aus den Ausgaben und decken sich mit der eigenen
+Narren-Lesart des Bestands (Ps 14,1: *fools · necios · insensés · **insensati***
+— das Italienische trennt dort bereits). **Nur die englische Glosse hat keine
+Quelle**: WEB trennt nicht, *fool* ist `Narr`, *senseless one* ist
+`Unvernünftiger`. Genommen ist *foolish man* — verschieden von beiden und von
+`töricht` = *foolish*. Die Gate-Bindung *gate · puerta · porte · porta* bleibt
+für 8,3 · 14,19 · 31,23 · 31,31 unangetastet.
+
+### 18,15 — `Erkenntnis` ↔ `Wissen`, und nur RV trennt
+
+Die vier Ausgaben lösen fast nicht auf: WEB zweimal *knowledge*, LSG zweimal
+*science*, RIV hat für die zweite Hälfte gar kein Substantiv. **RV trennt als
+einzige — und zwar umgekehrt zur Bindung**: *conocimiento* für `Wissen`,
+*saber* für `Erkenntnis`. Da `Erkenntnis` mit 18 Vorkommen die stärkere Bindung
+hat, weicht `Wissen` aus und übernimmt dabei genau das Wort, das RV im Vers
+anbietet:
+
+| | gesetzt |
+|---|---|
+| `Erkenntnis` | knowledge · conocimiento · connaissance · conoscenza — unverändert |
+| `Wissen` (nur 18,15) | **learning · saber · savoir · sapere**, B1 |
+
+Die acht übrigen `Wissen`-Belege behalten *knowledge*.
+
+### Zwei weitere Fehlalarme der Kollisionsliste
+
+**19,25 ist wie 9,8** — `weise … zurecht` sind die Klammerhälften von
+`zurechtweisen`, kein Adjektiv. Damit sind von den fünf gemeldeten
+`klug`/`weise`-Kollisionen des Buches **drei Fehlalarme** (9,8 · 19,25 und
+16,21/16,23, wo die Kapitel-1-Umstellung ohne Zutun trägt).
+
+**17,28 trägt ohne Eingriff**: `weise` = *wise · sabio · sage · saggio* gegen
+`klug` = *prudent · prudente · prudent · prudente* trennt in allen vier
+Sprachen. Den Ausgaben zu folgen (*discerning · entendido · intelligent ·
+intelligente*) wäre hier die schlechtere Wahl gewesen — das kollidiert mit
+`verständig`.
+
+### Kollisionen, die kein Werkzeug melden konnte
+
+- **18,14 `ertragen` ↔ `tragen`** — im Bestand beide englisch *bear*.
+  `hints.py` sieht es nicht, weil die Formen verschieden sind. `tragen` weicht
+  auf seine zweite Bestandslesart *carries · lleva · porte · porta* aus.
+- **19,16 `hält` ↔ `bewahrt`** — wäre in en/es/fr zusammengefallen. `halten`
+  weicht auf *observes · cumple · observe · osserva* aus (Joh 7,19). RV und RIV
+  trennen im Vers selbst.
+- **19,7 `fern` ↔ `fort`** (gemeldet, echt) — die Bestandslesart von `fort`
+  wäre in **zwei** Sprachen zusammengefallen. Gesetzt: *gone · desaparecidos ·
+  partis · spariti*, von allen vier Ausgaben gestützt.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Zänkerei` | quarrels · peleas · querelles · risse | C1 | **neu** (19,13) — getrennt von `Zank` und `Streit` |
+| `Ratschluss` | counsel · designio · dessein · disegno | C1 | Bestand — trennt ohne Zutun von `Plan` |
+| `Streitigkeit` | disputes · pleitos · litiges · controversie | B2 | trennt von `Streit` (18,18 · 18,19) |
+| `Brüllen` (Löwe) | roaring · rugido · rugissement · ruggito | C2 | zweite Bestandslesart, nicht die Rinder-Lesart |
+| `Aufrührer` | rebel · rebelde · rebelle · ribelle | C1 | Bestand — latente Kollision mit `abtrünnig` in es/it |
+| `aufrühren` | rakes up · remueve · remue · rivanga | C1 | **neu**; en bewusst nicht *stirs up*, das trägt `erregen` |
+| `Bescheid` (= Kenntnis) | information · información · information · informazione | B2 | **zweite Lesart** — die Nachrichten-Lesart kollidierte englisch mit `Worte` im selben Vers |
+| `fremd` (= eines anderen) | another's · ajena · d'autrui · altrui | B1 | **zweite Lesart** gegen die „fremde Frau" |
+| `Einsturz` | collapse · ruina · ruine · rovina | C1 | Bestand — fällt in es/fr/it mit `Sturz` (16,18) zusammen, verschiedene Verse |
+| `erhaben` (an `Worte`) | lofty · elevadas · élevées · elevate | C1 | **zweite Lesart**; die Bindung meint Gott und Thron |
+| `Medizin` | medicine · medicina · remède · medicina | A2 | **neu**, getrennt von `Heilung`/`heilend` |
+| `Zauberstein` | magic stone · piedra mágica · pierre magique · pietra magica | C1 | **neu**, dem Quelltext gefolgt |
+| `Interesse` | interest · interés · intérêt · interesse | B1 | **neu** |
+| `Wohlleben` | Luxury · El lujo · Le luxe · Il lusso | C1 | **neu** |
+| `Ruhe` (17,1) | peace · paz · paix · pace | A2 | **verse-lokal wie 1,33** — drei der vier Ausgaben schreiben *peace*; die Bestandsmehrheit *rest* bleibt |
+| `Ofen` (17,3) | furnace · horno · fournaise · fornace | B1 | die Feuerofen-Lesart (9× gegen 4× Backofen) |
+| `stark` / `fest` (an Turm bzw. Stadt) | strong · fuerte · forte · forte / strong · fortificada · forte · forte | B1/A2 | fallen englisch zusammen, stehen aber in 18,10 und 18,11 in **verschiedenen** Versen |
+
+Neue Mehrwort-Lemmata: `Bescheid wissen` · `einen kühlen Kopf bewahren` ·
+`Handschlag geben` · `im Blick haben` · `ins Unglück geraten` · `noch viel
+weniger` · `zu jeder Zeit` · `fehltreten` · `sich hinreißen lassen` ·
+`Geschenke machen`.
+
+### Korrekturen an diesem Dokument
+
+- **`Freude machen` gilt nicht für 17,21.** Dort steht „hat keine Freude" —
+  ein positiver Mehrwort-Eintrag über einer negierten Wendung wäre falsch.
+  Abschnitt 12 ist entsprechend korrigiert.
+- **`träge` steht französisch im Maskulinum**, wo das Bezugswort maskulin ist
+  (19,15 `wer`): *nonchalant*. Die Kapitel-10-Festlegung notiert *nonchalante*
+  nach LSG, das dort „l'âme nonchalante" schreibt.
+- **`freigebig` ist nicht unbelegt** — `hints.py` meldet die Form, der Bestand
+  hat das Lemma in **Spr 11,25**, also im selben Buch. Bei der Faulheits- und
+  Freigebigkeitsgruppe immer zusätzlich `lexicon.py` fragen.
+- **`aussprechen` ist in 19,5 und 19,9 kein Mehrwort.** Der Bestands-Mehrwort
+  gehört zu 14,5 (`spricht … aus`, getrennte Klammer); die zusammenhängende
+  Form ist ein Einzelwort.
+
+### Zwei Bestandsbefunde für eine korpusweite Entscheidung
+
+- **`Bestechung` trägt italienisch *tangente*** — ein auffällig modernes Wort,
+  das keine der vier Ausgaben stützt (RIV schreibt *regali*). Der Bestand
+  bindet es dreimal, darunter Spr 15,27 in diesem Buch; deshalb in 17,23
+  beibehalten und hier gemeldet.
+- **`bis ans` liest sich in en und es falsch.** Die Bestandskonvention
+  (5Mo 30,4 · Ps 119,33 · 119,112) ergibt „hasta al fin" und „up to to the
+  end". Vier gebaute Stellen betroffen; nicht hier zu lösen.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+17,8 hat `Geschenk`, nicht `Bestechung`; 17,27 hat weder `Wissen` noch
+`Verstand` noch `schweigen`; 17,6 hat `Enkelkinder`; 17,11 hat einen
+`Aufrührer`, keinen `Böser`; 18,2 hat keinen `Unverständigen`, 18,13 keinen
+`Narr`, 18,10 einen **starken** Turm und 18,11 den `Besitz des Reichen`, kein
+`Reichtum`; 19,12 hat keinen `Todesbote`, 19,13 keine `zänkische Frau`, 19,18
+kein Substantiv `Erziehung`, 19,21 `Ratschluss` statt `Ratschlag`.
