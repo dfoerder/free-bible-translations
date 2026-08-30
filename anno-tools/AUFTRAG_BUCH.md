@@ -1,0 +1,155 @@
+# AUFTRAG_BUCH — der Ablauf für ein Kapitel der Bücher 21–39
+
+Gilt für alle noch offenen Bücher des Alten Testaments. Der Prompt eines
+Agenten nennt nur noch die Buchnummer, das Kapitel und das, was an diesem
+Kapitel besonders ist; alles Wiederkehrende steht hier.
+
+Entstanden aus `AUFTRAG_SPRUECHE.md` nach dem Abschluss von Buch 20. Was dort
+buchspezifisch war, steht jetzt in `WORTFELD_<BUCH>.md`.
+
+## Vorbereitung — in dieser Reihenfolge
+
+1. `SPEC.md` — Datenformat und Verbote.
+2. `AUFTRAG_AT.md` — der allgemeine Ablauf für das Alte Testament.
+   **Ganz lesen.** Besonders „Die drei Fallen des Alten Testaments" und
+   „Die Glossen folgen den vier Referenzausgaben".
+3. `WORTFELD_<BUCH>.md` — was für dieses Buch feststeht. Wächst mit jedem
+   Paket; lies **alle** Abschnitte, nicht nur die ersten.
+4. `VERSZAEHLUNG_21_39.md`, Abschnitt zu deinem Buch — **ob dein Kapitel
+   gegen die Ausgaben ausgerichtet ist.** Bei den Prophetenbüchern ist
+   Übereinstimmung die Ausnahme, nicht die Regel.
+5. `DUBLETTEN_<BUCH>.md`, falls vorhanden — die buchinternen Verspaare.
+   Steht dein Kapitel dort, ist der Partner entweder schon fertig (dann
+   übernimmst du seine Glossenreihe, wo der Text wörtlich gleich ist) oder er
+   kommt noch (dann ist deine Reihe die Vorlage). **Wo der Text nicht wörtlich
+   gleich ist, nicht abschreiben.**
+6. `BINDUNGEN_AT.md`, Abschnitt zu deinem Buch und die allgemeinen Bindungen.
+7. Den **Quelltext** deines Kapitels lesen:
+   `bible-reader/bibles/deu/l1912mod/<buchNr>_l1912mod.json` →
+   `chapters["<kapitel>"]`. Nicht aus der Bibelkenntnis arbeiten.
+
+## Die Werkzeuge, die du je Kapitel laufen lässt
+
+```
+python3 ausgaben.py <nr> <kap>            # die vier Ausgaben, inhaltlich ausgerichtet
+python3 lexicon.py <nr> <kap>             # wie der Bestand jede Wortform übersetzt
+python3 hints.py <nr> <kap>               # unbelegte Formen, Kollisionen, Mehrdeutigkeit
+python3 parallelen.py <nr> <kap>          # Parallelstellen im Bestand
+```
+
+**`ausgaben.py` ist Pflicht**, und bei den Propheten wichtiger als in den
+Sprüchen: die Ausrichtungskarte zeigt, dass in fast jedem Buch einzelne Kapitel
+wackeln. Wo `ausgaben.py` `FEHLT in der Datei der Ausgabe` schreibt, hat diese
+Ausgabe für den Vers **keine Vorlage** — nicht die Nachbarzeile nehmen.
+
+## Prüfung vor der Abgabe — alle sechs müssen gelaufen sein
+
+```
+python3 selfcheck.py <nr> <kap> $ANNO_OUT/<nr>/ch<kap>.json
+python3 qa.py --kapitel <nr> <kap> $ANNO_OUT/<nr>/ch<kap>.json
+python3 konvention.py <nr> <kap>
+python3 sweep.py <nr> --kapitel <kap>
+python3 glosskollision.py --datei <nr> <kap> $ANNO_OUT/<nr>/ch<kap>.json
+python3 levelcheck.py <nr> <kap>
+```
+
+`selfcheck.py` muss fehlerfrei durchlaufen — das ist die harte Bedingung. Die
+anderen fünf melden **Verdacht, keine Fehler**: jeden Treffer am Vers ansehen
+und entscheiden.
+
+### Was die Läufe in Buch 20 tatsächlich geleistet haben
+
+**`glosskollision.py` ist der wichtigste.** Über das ganze Buch 20 hat
+`hints.py` 30 Kollisionspaare gemeldet, davon waren **sechs Fehlalarme**; und
+es hat **mindestens 25 echte Kollisionen nicht gesehen**, weil es formbasiert
+im Quelltext gegen den Bestand sucht und deshalb blind ist, sobald eine Form
+unbelegt ist oder die Kollision erst durch deine eigene Entscheidung entsteht.
+In fünf Kapiteln meldete es null Paare, während `glosskollision.py` vier bis
+sechs echte fand. **Lies die Rangfolge im Kopf des Skripts: „1 von 4" ist der
+stärkste Verdacht**, und setz `--nurinhalt` nicht.
+
+**`levelcheck.py` findet mehr als Level.** In Buch 20 hat es dreimal einen
+Bestandsbeleg gefunden, den der Lexikon-Extrakt formbasiert nicht zeigte
+(`Steinmauer`, `guttun`, und drei Mehrwort-Lemmata, die ein Agent für neu
+hielt). Die anderen fünf Läufe waren dort mit 0 Treffern durchgelaufen.
+
+## Die vier Fehlerklassen, die in Buch 20 am meisten gekostet haben
+
+**1. Partikeln trennbarer Verben.** Vier der sechs `hints.py`-Fehlalarme waren
+das: `ab` in „weicht … ab", `heran` in „bringt … heran", `weise … zurecht`
+(zweimal als vermeintliches Adjektiv gemeldet, tatsächlich Imperative von
+`weisen`). **Zähl die Partikeln deines Kapitels selbst nach**, und prüfe bei
+jedem gemeldeten Paar zuerst, ob eines der beiden Wörter zu einem trennbaren
+Verb gehört.
+
+**2. Die Lexikonfalle in ihren Varianten.** Der Extrakt zeigt die
+Korpusmehrheit, und die kann aus einem ganz anderen Sachfeld stammen:
+`Geheimnis` hatte 22 Belege, **sämtlich NT** und alle *mystery*; `tüchtig` 11
+Belege, alle „diensttaugliche Männer"; `Besonnenheit` zwei NT-Belege in der
+Bedeutung „Selbstbeherrschung". Umgekehrt kann im AT die **NT**-Lesart die
+richtige sein: `Fremder` hat 80 AT-Belege als *Fremdling im Land*, aber gemeint
+war der Außenstehende. **Die Bindung gilt für dieselbe Bedeutung, nicht für
+dieselbe Buchstabenfolge** — in beide Richtungen.
+
+**3. Der Prompt-Hinweis.** In Buch 20 haben die Agenten **über fünfzig**
+Prompt-Hinweise am Quelltext widerlegt: genannte Wörter, die im Text nicht
+stehen, Substantive, die in Wahrheit Adjektive sind, Wendungen, die negiert
+sind. Der Hinweis lenkt die Aufmerksamkeit, er hat nicht recht. **Prüf jeden
+am Quelltext, und melde jede Abweichung** — das ist der häufigste echte Befund.
+
+**4. Fehlende Mehrwort-Einträge.** Für `selfcheck.py` und `qa.py` prinzipiell
+unsichtbar: die Einzelwörter sind vollständig und richtig, strukturell fehlt
+nichts. `sweep.py` und `konvention.py` suchen danach; beide melden auch
+Fehlalarme, die am Vers zu entscheiden sind.
+
+## Wo aufgelöst wird, und wo nicht
+
+Eine Kollisionsauflösung gehört **an die Kollisionsstelle, nicht ans Lemma**.
+Wo zwei deutsche Wörter im selben Vers dieselbe Glosse tragen, weicht das
+**schwächer gebundene** aus — und zwar bevorzugt auf eine **zweite Lesart, die
+der Bestand schon führt**, nicht auf eine erfundene.
+
+Wo sie in **verschiedenen** Versen stehen, wird **nicht** aufgelöst: eine
+Auflösung ohne Kollisionsstelle macht den Bestand nur inkonsistent. Melden
+genügt.
+
+Wo nur **eine Sprache** zusammenfällt, weicht nur diese eine aus. Das war in
+Buch 20 der Regelfall (8,13 · 13,20 · 21,14 · 27,19).
+
+**Manche Kollision bleibt bewusst stehen.** Verb und Stammsubstantiv
+(`Schlaf`/`schlafen`), figura etymologica („den Armen, weil er arm ist"),
+synonymer Parallelismus und die echten Verschmelzungen der Zielsprachen
+(spanisch *su* für „ihr"/„seine", französisch *le* für Artikel und Klitikon)
+sind keine Fehler. Wenn alle vier Ausgaben das Wort selbst wiederholen, ist das
+ein starkes Argument fürs Stehenlassen.
+
+## Abgabe
+
+Eine Datei `$ANNO_OUT/<nr>/ch<kap>.json`, Inhalt `{"<vers>": [...]}` über
+**alle** Verse des Kapitels.
+
+Dazu ein Bericht mit:
+
+- **Wortfeld**: jeder Begriff, der über dein Kapitel hinausläuft, mit den vier
+  Glossen und dem Level. Er kommt ins `WORTFELD_<BUCH>.md`.
+- **Abweichungen vom Auftrag**: wo der Quelltext etwas anderes sagt als ein
+  Hinweis.
+- **Befunde im Bestand**: wo der Lexikon-Extrakt uneinheitlich ist oder eine
+  Bindung falsch aussieht. Nicht selbst korpusweit korrigieren — melden.
+- **Befunde in den Ausgaben**: fehlende Verse, Importartefakte.
+- **Wenn dein Kapitel eine Dublette hat**: den Vers Wort für Wort, mit allen
+  vier Glossen und Leveln. Läuft der Partner gleichzeitig, ist das die einzige
+  Möglichkeit der Abstimmung — der Koordinator führt die Fassungen zusammen.
+
+## Ein Unterschied, der kein Befund ist
+
+Die **Kapitelquelle** und das **gebaute Buch** können sich im `level`
+unterscheiden. `buildbook.py` zieht beim Bauen zwei Angleichungen durch.
+**Nicht als Befund melden.**
+
+## Was nie passiert
+
+- ins Repository `bible-reader` schreiben (nur lesen)
+- eigene Subagenten starten
+- einen Namen deuten, den der Text nicht selbst deutet
+- ein Kapitel als „fertig" melden, das `selfcheck.py` nicht sauber durchläuft

@@ -1,0 +1,38 @@
+# Pakete des Predigers (Buch 21)
+#
+# Kapitel 1 laeuft allein und ist der Massstab; danach Dreierwellen in
+# Kapitelreihenfolge, damit der spaetere Vers einer Dublette den frueheren
+# schon fertig vorfindet.
+
+ 1. Paket: Pred 1  (18 V.)   Massstab: `vergaenglich`, `Haschen nach Wind`, `Prediger`
+                             Dubletten (Vorlage): 1,2->12,8 · 1,3->2,22 · 1,14->2,17
+                             Kollisionen: Torheit/Unsinn 1,17 · Muehe/abmuehen 1,3 ·
+                                          drehen/kehren 1,6 · neu/wieder 1,9
+
+ 2. Paket: Pred 2 (26 V.) | Pred 3 (22 V.) | Pred 4 (17 V.)
+      Pred 2: Dubletten (aus 1): 2,17<-1,14 · 2,22<-1,3
+              Kollisionen: Torheit/Unsinn 2,12 · solange/waehrend 2,3 · bis/solange 2,3
+      Pred 3: das Zeitgedicht 3,1-8 — 14 Gegensatzpaare in acht Versen, eine LISTE
+              Kollisionen: dasselbe/derselbe 3,19
+      Pred 4: VERSZAEHLUNG en/es/it 16 gegen de 17 — ausgaben.py zwingend
+              Kollisionen: Muehe/muehen 4,8
+
+ 3. Paket: Pred 5 (19 V.) | Pred 6 (12 V.) | Pred 7 (29 V.)
+      Pred 5: VERSZAEHLUNG en/es/it 20 gegen de 19 — ausgaben.py zwingend
+              Kollisionen: Schlaf/schlafen 5,11 · Schaden/Uebel 5,12 · denn/weil 5,19
+      Pred 6: Dublette (Vorlage): 6,1->10,5
+      Pred 7: Kollisionen: Frage/fragen 7,10 · gut/ja 7,11
+
+ 4. Paket: Pred 8 (17 V.) | Pred 9 (18 V.) | Pred 10 (20 V.)
+      Pred 8: Kollisionen: ergehen/geschehen 8,14 (alle vier Sprachen) ·
+                           Boese/boese 8,11 · dennoch/doch 8,12 · desto/mehr 8,17
+      Pred 9: Kollisionen: Lebender/lebendig 9,4 · Netz/Schlinge 9,12
+      Pred 10: Dublette (aus 6): 10,5<-6,1 · Kollisionen: Torheit/Unsinn 10,13
+
+ 5. Paket: Pred 11 (10 V.) | Pred 12 (14 V.)
+      Pred 11: VERSZAEHLUNG fr 8 gegen de 10 — ausgaben.py zwingend
+               Kollisionen: Werk/wirken 11,5 · ebenso/genauso 11,5
+      Pred 12: VERSZAEHLUNG fr 16 gegen de 14 — ausgaben.py zwingend
+               Dublette (aus 1): 12,8<-1,2 — der Refrain schliesst das Buch
+
+Summe: 222 Verse in 12 Kapiteln, 5 Pakete
