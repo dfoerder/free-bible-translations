@@ -146,7 +146,45 @@ def versatz(dkap, okap):
     fehlend = [i for i in sorted(dl) if i + off not in ol]
     if len(dkap) + off != len(okap):
         s = max(s, SCHWACH + 0.01)
-    return (off, s, fehlend)
+
+    # Der blinde Fleck des Versatzes-aus-dem-letzten-Vers: hat die Ausgabe EINEN
+    # Vers MEHR als das Deutsche, weil ihr Kapitel einen Vers weiter reicht (die
+    # naechste Kapitelgrenze liegt anders), dann sieht das an den blossen Zahlen
+    # genauso aus wie ein durchgehender Versatz +1 — `len(dkap) + off ==
+    # len(okap)` stimmt in BEIDEN Faellen, die Warnung oben greift also nicht.
+    # Gemessen an Hld 6: en/es/it haben 13 Verse, de und fr 12, und ihr 13. Vers
+    # ist de 7,1. Der richtige Versatz ist 0, das Werkzeug nahm +1 und paarte
+    # jede Zeile mit der falschen — lautlos, mit Abstand 0.24-0.29, also unter
+    # der Schwelle. Versatz 0 bewertet an derselben Stelle 0.09-0.14.
+    #
+    # Der Versatz wird deshalb NICHT stillschweigend ausgetauscht (genau das hat
+    # in Ps 9, 15 und 19 danebengelegen, siehe oben). Stattdessen werden die
+    # Nachbarversaetze mitbewertet, und wenn einer DEUTLICH besser liegt, traegt
+    # die Zeile eine Warnung samt Alternative — sichtbar und nachpruefbar.
+    rivale = []
+    for kandidat in (0, off - 1, off + 1):
+        if kandidat == off:
+            continue
+        ks, _ = bewerten(kandidat)
+        rivale.append((ks, kandidat))
+    rivale.sort()
+    # Die Schwelle ist an fuenf bekannten Kapiteln geeicht. Sie muss eng sein:
+    # eine Warnung, die staendig grundlos feuert, bringt jeder Agent sich ab.
+    #   FEUERT RICHTIG — verschobene Kapitelgrenze, Rest haengt hinten:
+    #     Hld 6  (0.14/0.29 · 0.09/0.24 · 0.14/0.27)
+    #     Pred 4 (0.13/0.34 · 0.12/0.32 · 0.17/0.36)
+    #   DARF NICHT FEUERN — deutsch zaehlt die Ueberschrift mit, die Ausgabe
+    #   nicht; der Versatz aus dem letzten Vers ist dort gerade der richtige:
+    #     Ps 19 it (0.19/0.31 = 0.61)  ·  Ps 15 en (0.13/0.22 = 0.59)
+    # Verhaeltnis unter 0.55 trennt beides bis auf Ps 9 it (0.52), das als
+    # bekannter Fehlalarm stehenbleibt — lieber einer zuviel als die Klasse
+    # ganz unentdeckt.
+    besser = None
+    if rivale:
+        ks, kandidat = rivale[0]
+        if ks < s - 0.08 and ks < 0.55 * s:
+            besser = (ks, kandidat)
+    return (off, s, fehlend, besser)
 
 
 def main():
@@ -171,7 +209,7 @@ def main():
         fest = AUSNAHMEN.get((args.buch, kap, kurz))
         if v and fest is not None:
             v = (fest, v[1], [i for i in sorted(int(x) for x in dkap)
-                              if str(i + fest) not in okap])
+                              if str(i + fest) not in okap], None)
         versaetze[kurz] = v
 
     print(f'# {s["name"]} {kap}\n')
@@ -182,6 +220,9 @@ def main():
             kopf.append(f'{kurz} ({edition}): fehlt')
         else:
             marke = '  UNSICHER' if v[1] > SCHWACH else ''
+            if len(v) > 3 and v[3]:
+                marke += (f'  !! Versatz {v[3][1]:+d} liegt BESSER '
+                          f'(Abstand {v[3][0]:.2f} gegen {v[1]:.2f})')
             luecke = [x for x in v[2] if x + v[0] >= 1]
             if luecke:
                 marke += ('  — ohne Gegenstueck: de '
@@ -193,6 +234,33 @@ def main():
     for z in kopf:
         print('   ' + z)
     print()
+    strittig = {k: v for k, v in versaetze.items()
+                if v and len(v) > 3 and v[3]}
+    if strittig:
+        print('!! ACHTUNG: fuer mindestens eine Ausgabe liegt ein ANDERER Versatz')
+        print('!! besser als der angewandte. Die Zeilen unten stehen dann falsch')
+        print('!! da — nicht nur die Zahl. Betroffen:')
+        for k, v in strittig.items():
+            print(f'!!   {k}: angewandt {v[0]:+d} (Abstand {v[1]:.2f}), '
+                  f'besser waere {v[3][1]:+d} (Abstand {v[3][0]:.2f})')
+        print('!!')
+        print('!! Der haeufigste Grund: die Ausgabe zieht die KAPITELGRENZE anders,')
+        print('!! der ueberzaehlige Vers haengt also HINTEN. Der Versatz kommt aber')
+        print('!! aus dem letzten Vers und schiebt ihn nach VORN — dann steht jede')
+        print('!! Zeile eine Nummer daneben. An den blossen Verszahlen sind die')
+        print('!! beiden Faelle nicht zu unterscheiden.')
+        print('!! Gemessen an Hld 6: en/es/it haben 13 Verse, de und fr 12, und ihr')
+        print('!! 13. Vers ist de 7,1 — richtig ist Versatz 0, das Werkzeug nahm +1')
+        print('!! und paarte jede Zeile mit der falschen. Ebenso Prediger 4.')
+        print('!!')
+        print('!! Es ist ein VERDACHT, keine Feststellung. Er kann auch dort feuern,')
+        print('!! wo der angewandte Versatz stimmt — naemlich wenn das Deutsche die')
+        print('!! Ueberschrift als Vers 1 mitzaehlt und die Ausgabe nicht (Ps 9, 15,')
+        print('!! 19). Dann fehlt der Vers VORN und der Versatz ist richtig negativ.')
+        print('!!')
+        print('!! So oder so: NACHMESSEN. Die Kapiteldateien unter bibles/<sprache>/')
+        print('!! <edition>/ direkt aufschlagen und Vers fuer Vers vergleichen.')
+        print('!! Der Zahl hier nicht glauben — auch der Alternative nicht.\n')
     if any(v and v[1] > SCHWACH for v in versaetze.values()):
         print('!! ACHTUNG: mindestens ein Versatz ist UNSICHER. Der geschaetzte')
         print('!! Versatz wird global angewandt — wenn er falsch ist, stehen die')
