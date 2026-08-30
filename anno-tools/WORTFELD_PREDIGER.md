@@ -292,7 +292,7 @@ in Kapitel 4 fünf weitere.
 | `Lohn` | wages · salario · salaire · salario | B1 | vereinheitlicht, s. u. |
 | `Besseres` | better · mejor · mieux · meglio | B1 | vereinheitlicht, s. u. |
 | `Atem` | breath · aliento · souffle · respiro | B2 | Bestand (28×) — **gegen WEB und RV**, die in 3,21 *spirit*/*espíritu* schreiben |
-| `jeder` | every · cada · chaque · ogni | A2 | Auflösung 3,1 gegen `alles` |
+| `jeder` | every · cada · chaque · ogni | A1 | Auflösung 3,1 gegen `alles` (Level A1, nicht A2 — vom Bestand und von `levelcheck.py` bestätigt) |
 | `Stätte` | place · lugar · lieu · luogo | C1 | ⚠ identisch mit `Ort` (A2) — verschiedene Verse, nicht aufgelöst |
 | `Park` | parks · parques · parcs · parchi | B1 | **neu**; LSG *vergers* und RV *jardines* wären mit `Gärten` kollidiert |
 | `Streben` · `ereilen` · `aufwenden` · `Einzelner` · `trostlos` · `verschränken` | … | B2/C1/B2/B2/C1/B2 | **neu** |
@@ -343,3 +343,124 @@ nirgends im Prediger (4,1 hat `Macht`), und 4,12 hat eine „dreifach
 Nach 1,13 (`ccupazione`) noch: **2,10 `oiché`** (das *p* von *poiché* fehlt),
 **2,12 `esaminate`** statt *esaminare*, **3,22 `ale`** (das *t* von *tale*
 fehlt).
+
+## 11. Was die Kapitel 5, 6 und 7 festgelegt haben
+
+### Die Ausrichtung von Kapitel 5 ist bestätigt
+
+Vers für Vers am Inhalt nachgemessen: **de 5,n = WEB/RV/RIV 5,n+1** durchgehend,
+**LSG folgt dem Deutschen** (fr 5,n = de 5,n). Die vier Ausgaben laufen also
+untereinander auseinander; für jeden Vers braucht man beide Nummern.
+`ausgaben.py` meldet die Versätze korrekt (+1/+1/+0/+1).
+
+### „ein schlimmes Übel" — die Wendung steht dreimal, und der Bestand hilft nicht
+
+5,12 · 5,15 · 6,2. Kapitel 5 und 6 liefen **gleichzeitig** und hatten sie
+verschieden gelöst (*terrible* gegen *severe · grave · grave · grave*). Der
+Bestand führt für `schlimm` **keine passende Lesart** — alle 24 Belege sind
+*worse* oder *bad*. Also entscheiden die Ausgaben, und die sind über alle drei
+Verse konsistent:
+
+| deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `schlimm` (an `Übel`) | grievous · doloroso · grave · grave | B1 |
+
+WEB schreibt zweimal *grievous*, RV zweimal *doloroso*, LSG und RIV dreimal
+*grave*. Jede Sprache bekommt das Wort ihrer eigenen Ausgabe.
+
+### Die gemeldeten Kollisionen — vier von fünf sind Fehlalarme oder anders
+
+| Vers | Paar | Befund |
+|---|---|---|
+| 5,11 | `Schlaf` ↔ `schlafen` | **Fehlalarm** — Substantiv und Stammverb, nur en; **alle vier Ausgaben wiederholen das Wort selbst**. Dieselbe Konstellation wie Spr 4,16. |
+| 5,12 | `Schaden` ↔ `Übel` | echt; `Schaden` weicht auf die belegte zweite Lesart aus (Esra 4,13), und **nur im Französischen**: *harm · daño · dommage · danno* |
+| 5,19 | `denn` ↔ `weil` | echt (es); `denn` weicht auf die belegte Lesart *pues* aus. **RV verteilt es andersherum** — hier gewinnt der Bestand über die Ausgabe |
+| 7,10 | `Frage` ↔ `fragen` | **bleibt stehen** — Imperativ `Frag` gegen Substantiv `Frage`, nur es, und dort nur bis auf die Groß-/Kleinschreibung. Das Deutsche unterscheidet die beiden selbst kaum |
+| 7,11 | `gut` ↔ `ja` | **Fehlalarm, die Kollision entsteht gar nicht**: `hints.py` rechnete mit der adverbialen `gut`-Lesart, im Vers steht der Äquativ „so gut wie" mit prädikativem Adjektiv zu einem Femininum (*buena · bonne · buona*) |
+
+Dazu **eine echte Kollision, die kein Werkzeug gemeldet hat**: 7,25 `Torheit` ↔
+`Wahnsinn`, beide im Bestand fr *folie*, und sie stehen im selben Vers („die
+Torheit des Wahnsinns"). `Wahnsinn` weicht **nur französisch** auf *démence*
+aus. Damit sind `Torheit` (*folie*), `Unsinn` (*sottise*) und `Wahnsinn`
+(*démence*) im Buch durchgehend getrennt.
+
+### `Trauer` — eine bewusste Abweichung von allen vier Ausgaben
+
+`Trauer` ist im Bestand **4:3 geteilt**: *mourning · luto · deuil · lutto* (AT)
+gegen *sorrow · tristeza · tristesse · tristezza* — und **alle drei
+sorrow-Belege sind neutestamentlich**. Genommen ist einheitlich die AT-Lesart
+an allen drei Stellen (7,2 · 7,3 · 7,4), obwohl die vier Ausgaben in 7,3
+einhellig das Traurigkeitswort schreiben.
+
+Zwei Gründe: die Lexikonfalle, und dass der modernisierte Text in 7,2–7,4
+dreimal dasselbe deutsche Wort setzt — der Leser bekäme sonst mitten in einer
+Verskette zwei Glossen für ein Wort. Zusätzlich hält *deuil* die Bahn frei für
+`Kummer`, das der Bestand an fr *chagrin* bindet (1,18).
+
+### `besser` — der Regelfall und zwei begründete Ausnahmen
+
+Regelfall *better · mejor · mieux · meglio* (B1, neun Belege in Kapitel 7).
+**Zwei Stellen tragen die kongruierende Adjektivform**, weil dort kein
+„valoir mieux"-Rahmen steht, sondern ein Prädikats- oder Objektprädikativ:
+
+- **7,3b** „macht das Herz besser" → *better · mejor · meilleur · migliore*
+  (RIV schreibt *il cuore diventa migliore*)
+- **7,10** „waren die früheren Tage besser" → *better · mejores · meilleurs ·
+  migliori* (LSG *meilleurs*, RIV *migliori*, RV *mejores*)
+
+**Bestandsbefund:** Spr 16,32 („Geduld ist besser als Heldenkraft"), die
+direkte Parallele zu 7,8b, trägt *meilleure · migliore*. Buch 20 und Buch 21
+gehen bei derselben Sprichwortbauform auseinander — gemeldet, nicht angefasst.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `Trauer` | mourning · luto · deuil · lutto | B1 | AT-Lesart, gegen die Ausgaben |
+| `Wahnsinn` | madness · locura · démence · pazzia | C1 | Auflösung 7,25 |
+| `Schaden` | harm · daño · dommage · danno | B1 | Auflösung 5,12 |
+| `Fremder` | stranger · extraño · étranger · estraneo | B1 | die NT-/Sprüche-Lesart — der Außenstehende, nicht der Fremdling im Land. **RIV schreibt *straniero*** und weicht ab |
+| `feststehen` | is known · se sabe · est connu · è noto | B2 | **neue Lesart** — alle Bestandsbelege sind *stand firm* |
+| `verbringen` | spends · vive · vit · trascorre | B1 | Auflösung 6,12 gegen `vergehen`, das in es/fr/it identisch wäre |
+| `Möglichkeit` | opportunity · oportunidad · possibilité · possibilità | B1 | **Lexikonfalle in Gegenrichtung** — die AT-Lesart ist *way · manera*, gemeint ist die NT-Lesart |
+| `zehren` / `davon zehren` (MW) | feed · consumen · mangent · mangiano / live off it · viven de ello · en vivent · ne vivono | C1/B2 | **neu** — die einzige Bestandslesart (*eats away · ronge*) passt nicht |
+| `zeugen` (von) | testifies · muestra · témoigne · testimonia | B2 | **neue Lesart** neben *begets*; keine Ausgabe übersetzt das Wort |
+| `aus der Hand lassen` (MW) | let go of · soltar · lâcher · lasciar andare | B2 | **neu** |
+| `Feiern` · `Knistern` · `Ausflucht` · `Missgeschick` · `Lebenstage` | feasting · fiesta · festin · convito / crackling · crepitar · crépitement · scoppiettio / excuses · evasivas · faux-fuyants · sotterfugi / … | B1/C1/C1/C1 | **neu** |
+| `Erpressung` / `Bestechung` | extortion · extorsión · extorsion · estorsione / bribe · soborno · pot-de-vin · tangente | C1/B2 | Bestand, gegen alle vier Ausgaben |
+| `Netz` / `Falle` / `Fessel` | net · red · filet · rete / trap · trampa · piège · trappola / shackles · grillos · entraves · ceppi | B1/B2/C1 | in 7,26 **alle drei im selben Vers**, in allen vier Sprachen getrennt |
+| `gerecht` (adjektivisch) | righteous · justo · juste · giusto | B2 | 7,16 · 7,20 — die Buch-20-Vereinheitlichung auf *justly* gilt nur adverbial |
+| `solange` (ohne Kollision) | as long as · mientras · tant que · finché | B1 | **nicht** die 2,3-Auflösung — die gilt nur, wo `während` oder `bis` daneben steht |
+
+### Für Kapitel 9 vorgemerkt
+
+`Netz` ist in 7,26 auf *net · red · filet · rete* gesetzt, `Falle` und `Fessel`
+sind dort ebenfalls vergeben. Die für 9,12 gemeldete Kollision `Netz`/`Schlinge`
+muss also mit einer **anderen** Ausweichlesart für `Schlinge` gelöst werden.
+
+### Bestandsbefunde
+
+- **`nützen` und `dienen` tragen dieselben drei romanischen Glossen** (*sirve ·
+  sert · serve*) und stehen in 6,7/6,8 in benachbarten Versen.
+- **`gottlos` und `Gottloser`** tragen beide *impío · impie · empio*; nur das
+  Englische trennt (*godless* / *ungodly*). 7,15 und 7,17, verschiedene Verse.
+- **`Arbeiter` liegt doppelt**: `Arbeiter` A2 = *workers · obreros* neben
+  `Arbeitender` B2 = *laborer · trabajador*. Altlast, korpusweit fällig.
+- **Korrektur an diesem Dokument**: `jeder` ist **A1**, nicht A2 (Abschnitt 10)
+  — vom Bestand (756 Belege) und von `levelcheck.py` bestätigt.
+
+### Prompt-Hinweise, die im Text nicht stehen
+
+Kapitel 5: `Unterdrückung` und `Beamte` (der Text hat das Verb `unterdrückt`
+und die dreistufige Steigerung `Hoher`/`Höherer`), `Erbe` steht nirgends, und
+es heißt `Geschenk Gottes`, nicht `Gabe`. Kapitel 6: `tausend Jahre` und
+`zweimal` (der Text sagt **`zweitausend`**, ein Wort), `Verlangen` (es heißt
+`Begierde`), `Streit` (es ist das Verb). Kapitel 7: **acht Stück** — `Name`,
+`Salböl`, `Todestag`, `Geburtstag`, `Trauerhaus`, `Festhaus`, `Kummer`,
+`Hochmut`, `Rechnung`, `Fallstrick` heißen im Text alle anders.
+
+### Zwei weitere Importartefakte in RIV
+
+**5,4 `dempi`** (das *a* von *adempi* fehlt) — nach 1,13, 2,10, 2,12 und 3,22
+das fünfte. Dazu in 7,14 „l'uno come 'altro" und 7,18 „chi teme ddio", die aber
+keine Glosse berühren.
