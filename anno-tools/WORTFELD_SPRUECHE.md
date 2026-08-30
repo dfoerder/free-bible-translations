@@ -145,7 +145,7 @@ schreibenden Agenten entsteht, findet nur `glosskollision.py`.
 | `Straße` ↔ `Weg` | 7,8 · 15,19 |
 | `Hochmut` ↔ `Stolz` | 8,13 · 16,18 |
 | `tadeln` ↔ `zurechtweisen` | 9,7 |
-| `Weiser` ↔ `weise` | 9,8 · 13,20 |
+| `Weiser` ↔ `weise` | ~~9,8~~ · 13,20 — 9,8 ist ein Fehlalarm, s. Abschnitt 12 |
 | `heran` ↔ `nahe` | 10,14 |
 | `fern` ↔ `fort` | 19,7 |
 | `Handeln` ↔ `Verhalten` | 20,11 |
@@ -490,3 +490,104 @@ Proteggi* angeglichen.
   `Verhalten` aus. `Handeln` (gemeldete Kollision 20,11) liegt daneben.
 - `Güte`/`Freundlichkeit` und `Angst haben`/`sich fürchten` — siehe
   Abschnitt 10.
+
+## 12. Was die Kapitel 8, 9 und 10 festgelegt haben
+
+Mit **10,1 beginnt die Spruchsammlung** (Kapitel 10–29). Ab dort steht jeder
+Vers für sich, und die Gegensatzpaare aus Kapitel 10 kommen hundertfach wieder.
+
+### Zwei Fehlalarme in der Kollisionsliste dieses Dokuments
+
+**9,8 ist keine `Weiser`/`weise`-Kollision.** Der Vers lautet „**Weise** einen
+Spötter nicht **zurecht** … **weise** einen **Weisen** **zurecht**". `Weise` und
+`weise` sind die Imperative von `weisen`, also die Klammerhälften des
+trennbaren `zurechtweisen`; nur `Weisen` ist das Substantiv. `hints.py` sieht
+das formbasiert nicht. Gesetzt als getrennte Satzklammern (`pos` + `parts`):
+`weisen` B2 *Direct · Indica · Indique · Indica*, `zurecht` B2 *right ·
+correctamente · comme il faut · a posto*, Mehrwort `zurechtweisen` B2.
+**In 13,20 steht dagegen wirklich das Adjektiv.**
+
+**10,14 ist keine `heran`/`nahe`-Kollision.** `heran` ist die Partikel des
+trennbaren `heranbringen` — genau der Fall, vor dem `AUFTRAG_AT.md` unter
+„Partikeln selbst nachzählen" warnt. Gesetzt ist ein Mehrwort-Eintrag
+`heranbringen` B2 *brings near · acerca · rapproche · avvicina* über
+`parts [10,14]`, dazu die literalen Einzelglossen. `nahe` behält die Bindung.
+
+### `träge` wird von `faul` getrennt — und der Grund steht in 19,15
+
+`träge` steht im Buch zweimal (10,4 · 19,15), `Trägheit` einmal (12,24), und
+**in 19,15 steht `Faulheit` im selben Vers**: „Faulheit versenkt einen in
+tiefen Schlaf, und wer träge ist, muss Hunger leiden." Die Ausgaben trennen
+dort von selbst (LSG *nonchalante*, RIV *indolente*, RV *ocioso* gegen
+*perezoso · paresseux · pigro* für `Fauler`).
+
+| deutsch | en · es · fr · it | Level |
+|---|---|---|
+| `träge` | idle · negligente · nonchalante · indolente | C1 |
+| `Trägheit` (12,24, noch nicht gesetzt) | idleness · negligencia · nonchalance · indolenza | C1 |
+
+en *idle* ist die zweite Bestandslesart (1Tim 5,13 · 2Petr 1,8) und deckt sich
+mit WEB 19,15 „The idle soul".
+
+### Die vier Kollisionen von Kapitel 8
+
+| Vers | Paar | Auflösung |
+|---|---|---|
+| 8,3 | `Tor` ↔ `Tür` ↔ `Eingang` | `Türen` behält *doors · puertas · portes · porte*; `Toren` weicht aus auf *gates · portones · portails · portoni*; `Eingang` *entrance · entrada · entrée · ingresso*. **Verse-lokal** — 14,19 · 31,23 · 31,31 behalten *gate · puerta · porte · porta*. |
+| 8,12 | `Klugheit` ↔ `Weisheit` | vorab durch Kapitel 1 gelöst; vier Weisheitsbegriffe im Vers, alle vier Sprachen getrennt |
+| 8,13 | `Böse` ↔ `böse` | nur englisch; das Adjektiv weicht auf *wicked* aus, die romanische Bindung bleibt |
+| 8,13 | `Hochmut` ↔ `Stolz` | nur französisch; `Hochmut` → *arrogance · soberbia · arrogance · superbia*, **gilt auch für 16,18** |
+
+### Der Quelltext gegen die Bibelkenntnis — drei Wörter, die nicht dastehen
+
+Der Prompt für Kapitel 8 nannte für die Schöpfungsrede `Urflut`,
+`Himmelsgewölbe` und `Grundfeste`. **Keines steht im l1912mod-Text.** Dort
+steht `Ozeane` (8,24), `Horizont` (8,27) und `Fundamente` (8,29). Ebenso
+kommen `gründen`/`errichten` aus 3,19 im Kapitel gar nicht vor; die
+Schöpfungsverben sind `einsetzen`, `einsenken`, `bereiten`, `festsetzen`,
+`abgrenzen`.
+
+### Weitere Festlegungen
+
+| deutsch | en · es · fr · it | Level | Herkunft |
+|---|---|---|---|
+| `tadeln` | reproves · reprocha · réprimande · rimprovera | C1 | **Umstellung**, Auflösung 9,7 gegen `zurechtweisen` |
+| `Schmach` (im ganzen Buch) | reproach · oprobio · outrage · oltraggio | C1 | Kapitel 6, in 9,7 bewusst fortgeführt statt verse-lokal zurückgesetzt |
+| `Wohlgefallen` | favor · favor · faveur · favore | C1 | **gegen den Bestand** (fünf reine NT-Belege meinen Gottes Ratschluss) — **gilt für 18,22** |
+| `laut` (an Personen) | loud · ruidosa · bruyante · rumorosa | A2 | **neue Lesart**; der Bestand kennt nur „laute Stimme" = *fuerte* |
+| `Narr` (Sg.) | fool · necio · insensé · stolto | B2 | fr *insensé* statt *fou*, damit Sg. und Pl. zusammenpassen |
+| `Verständiger` / `Unvernünftiger` | discerning one · entendido · homme intelligent · uomo intelligente / senseless one · irracional · déraisonnable · irragionevole | C1 | Bestand, Singular gebildet |
+| `Verdrehtes` | twisted things · cosas torcidas · choses tordues · cose stravolte | C1 | **nicht** den Ausgaben gefolgt: sie schreiben *perverse*, was mit `Verkehrtes` (2,12) zusammenfiele |
+| `erregen` | stirs up · despierta · excite · provoca | C1 | **neue Lesart** nach allen vier Ausgaben |
+| `ausbleiben` | is lacking · falta · manque · manca | C1 | **neue Lesart**, privativ statt temporal |
+| `Lohn` | wages · salario · salaire · salario | B1 | AT-Lesart, nicht *reward* |
+| `Streit` | dispute · disputa · dispute · disputa | B2 | Bestand, gegen die Ausgaben |
+| `Kummer` | grief · pesar · chagrin · cordoglio | B2 | Bestand (22×), gegen RV *tristeza* |
+| `Ozean` / `Horizont` / `Meerestiefe` | oceans · océanos · océans · oceani / horizon · … / ocean deep · abismo del mar · abîme de la mer · abisso del mare | B2/B2/C1 | **neu**, getrennt von `Urflut` (3,20) |
+| `Werkmeister` | master craftsman · arquitecto · maître d'œuvre · artefice | C1 | **neu** |
+| `spielen` (Kind) | played · jugaba · jouais · giocavo | A1 | **zweite Lesart**; der Bestand kennt nur die Musik-Lesart |
+| `erlassen` (Gesetze) | decree · dictan · ordonnent · decretano | B2 | **zweite Lesart**; der Bestand kennt nur „Schuld erlassen" |
+
+Neue Mehrwort-Lemmata der Sammlung, die wiederkommen: `zu Fall kommen` ·
+`in die Irre gehen` · `im Zaum halten` · `zudecken` (Jak 5,20 zitiert 10,12) ·
+`hervorbringen` · `ausbleiben` · **`Freude machen`** B1 *gives joy · alegra ·
+fait la joie · rallegra* (10,1 · 10,23, und wieder in 15,20 · 17,21 · 23,24) ·
+`zurückweisen`.
+
+### Nachgezogen und nachzuziehen
+
+- **`verlogene Rede` trug in 4,24 die femininen Adjektivformen**, obwohl `Rede`
+  in allen drei romanischen Sprachen maskulin glossiert ist (*discurso ·
+  discours · discorso*). Angeglichen. In 6,17 (`verlogene Zunge`) ist das
+  Femininum richtig und bleibt.
+- `erlesenes Silber` steht wörtlich gleich in 8,19 und 10,20 und trug zwei
+  französische Glossen — auf *de choix* vereinheitlicht (LSG hat den Ausdruck
+  nur in 10,20).
+- `Gerechten` im Singular trug in 9,9 *righteous man* gegen *righteous one*
+  (9× in Kapitel 10) — angeglichen.
+- **`einsetzen` (8,23) und `errichten` (3,19) tragen beide *established***.
+  Sie stehen nirgends im selben Vers; die Doppelbelegung kann ein späteres
+  Kapitel treffen.
+- **Eine Kollision bleibt bewusst stehen:** 10,15 `ihr`/`seine`, beide spanisch
+  *su*. Das Spanische hat für 3. Sg. und 3. Pl. nur diese eine Form; en, fr und
+  it trennen. Eine Auflösung ginge nur über eine künstliche Form.
