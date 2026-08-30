@@ -708,3 +708,97 @@ greift dort **nicht**) · `am` A1 *by the · junto a la · près de la · presso
   Geliebter sei wie eine Gazelle oder ein junger Hirsch auf den".
 - **8,3 ← 2,6** und **8,4 ← 2,7/3,5**, beide woertlich (siehe §10).
 - **`Apfelbaum` B1** *apple tree · manzano · pommier · melo* steht in **8,5**.
+
+## 12. Kapitel 8 — das Buch ist fertig
+
+**117 Verse, 2351 Einzelwort- und 56 Mehrwort-Eintraege in 8 Kapiteln.**
+
+Unabhaengige Vollstaendigkeitspruefung gegen den Quelltext (jede Tokenposition
+genau ein Eintrag, jede `form` deckungsgleich, kein Mehrwort ausserhalb seines
+Verses, kein Feld leer, kein ungueltiges Level, kein Grammatik-Tag):
+**0 Befunde.**
+
+### Die fuenf Uebernahmen in Kapitel 8
+
+Der Agent hat sie nicht geglaubt, sondern zweimal nachgemessen — erst den
+Quelltext zeichenweise, dann die Eintraege Feld fuer Feld. Ergebnis:
+
+| Uebernahme | Befund |
+|---|---|
+| 8,3 ← 2,6 | **zeichengleich**, unveraendert |
+| 8,4 ← 2,7 (= 3,5) | **nicht** zeichengleich: 2,7 hat `Jerusalems,`, 8,4 `Jerusalems:` — auf `form`-Ebene gleich. Pos 6–13 gestrichen, 14–27 auf 6–19 umgezaehlt |
+| 8,5 ← 3,6 | der „8-Token-Block" ist zeichenweise nur **7** Tokens: `heraufsteigt` gegen `heraufsteigt,` |
+| 8,2 ← 3,4 | zeichengleich (3,4 Pos 26–29 = 8,2 Pos 5–8) |
+| 8,14 ← 2,17 | zeichengleich, 12 Tokens (2,17 Pos 11–22 = 8,14 Pos 1–12) |
+
+**Fuer kuenftige Buecher:** Dublettenangaben gelten auf **`form`-Ebene**, nicht
+zeichenweise. Ein `diff`-basiertes Pruefskript meldet an der Satzzeichenstelle
+einen Unterschied, wo keiner ist.
+
+### Entscheidungen
+
+- **`man` / `einer` (8,7)** — beide en *one*. `man` weicht auf seine zweite
+  Bestandslesart *they · se · on · si* (150 Belege), **nur in 8,7**; in 8,8
+  bleibt es auf *one*.
+- **`führen` / `bringen` (8,2)** — von keinem Skript gemeldet. Beide tragen
+  spanisch *llevar* (29× / 58×) und waeren im selben Vers zusammengefallen.
+  `bringen` weicht auf *bring · **traer** · amener · portare* (22 Belege).
+- **`Unter` / `unter` (8,5)** — zwei Vorkommen desselben Wortes in
+  verschiedener Funktion, dazu `auf`. Ohne die dritte Bestandslesart
+  *amid · entre · parmi · tra* waeren zwei davon in **allen vier** Sprachen
+  zusammengefallen.
+- **`Glut` (8,6) bleibt beim Bestand** (*embers · brasas · braises · braci*),
+  obwohl **alle vier** Ausgaben „ardours/llamas/ardeurs/ardori" lesen: die
+  Ausweichlesart haette in allen vier Sprachen denselben Stamm wie
+  `loderndes` getragen.
+- **`Wächter` (8,11) — bewusst NICHT die AT-Bindung.** `BINDUNGEN_AT.md`
+  bindet an *watchman · centinela · sentinelle · sentinella* und markiert
+  *guards* als NT-Falle. Das ist hier die **falsche Bedeutung**: 3,3 und 5,7
+  sind Stadtwaechter, 8,11 sind Weinbergspaechter. Genommen ist
+  *guards · guardias · gardes · guardie* (5 Belege, 2 davon AT). Die
+  naheliegende Alternative *keeper · guardián · gardien · custode* ist die
+  feste Bindung von **`Hüter`** — das im **Folgevers 8,12** steht.
+- **`Brust` (8,1) Singular** = *breast · pecho · poitrine · petto*, nicht die
+  Buch-Reihe. `parallelen.py` fand **Ps 22,10** mit dem zeichengleichen
+  Halbvers „an der Brust meiner Mutter"; von dort woertlich uebernommen.
+
+### Wieder: „unbelegt" war meist belegt
+
+`hints.py` meldete 10 unbelegte Formen, **wirklich neu waren drei**. Und wieder
+zeigte der Lexikon-Auszug zwei Lemmata **auch unter VERWANDT nicht** — nur
+`fixgloss.py show` fand sie: **`verstärken`** (4 Belege) und **`bieten`**
+(5 Belege, `Böte` stand sogar unter UNBELEGT).
+
+Bilanz ueber das Buch: Kap. 1 — 17 von 20 belegt · Kap. 3 — 4 von 6 ·
+Kap. 5 — 19 von 26 · Kap. 7 — 6 von 18 · Kap. 8 — 7 von 10.
+
+### Ausgabenbefunde
+
+- **WEB-Sprecherangaben in Kapitel 8: sechs** („Friends" 8,4 · 8,7,
+  „Beloved" 8,9 · 8,13, „Lover" 8,12) — vier mehr, als der Auftrag nannte.
+- **Neu, andere Klasse: LSG 8,14 endet mit einer freistehenden Tilde** —
+  „Sur les montagnes des aromates! **~**". In Kap. 1–7 nicht aufgetreten.
+- **RIV: keine neuen Setzfehler in Kapitel 8.** Es bleibt bei den sechs
+  bekannten (1,5 · 3,11 · 5,6 · 5,9 · 7,2 · 7,4).
+- **RV1909mod 8,6 laesst den Gottesnamen weg** („una llama ardiente"), wo
+  WEB *flame of Yahweh*, LSG *flamme de l'Éternel*, RIV *fiamma dell'Eterno*
+  und der l1912mod „eine Flamme des HERRN" haben.
+- **8,5 `empfangen`**: RV und RIV lesen **gebaeren**, wo der deutsche Text
+  `empfangen` und getrennt `unter Wehen geboren` sagt.
+
+### Nach dem Buch: `BINDUNGEN_AT.md` neu erzeugt
+
+1899 → **1909 Lemmata**, 20 neu (darunter `Geliebte`, `Geliebter`, `Gazelle`,
+`Myrrhe`, `Siegel`, `Palme`, `lieblich`, `ehrfurchtgebietend`).
+
+**Genau eine Bindung ist gekippt:** `Flamme` von *flames* auf *flame* — durch
+Hld 8,6. Es ist ein 7:7-Gleichstand, bei dem die Reihenfolge entscheidet.
+
+Das hat einen Randfall der Tabelle sichtbar gemacht: ihr Kopftext sagte
+„haeufigste Lesart **ueber** die Haelfte", die Bedingung im Code laesst aber
+**genau** die Haelfte durch (`anteil < 0.5: continue`). Betroffen sind
+**91 Lemmata**. Nachgemessen, bevor etwas geaendert wurde: von den 21 echten
+50:50-Gleichstaenden unterscheidet sich **keiner** in der Bedeutung — alle sind
+Numerusvarianten derselben Lesart. Eine Verschaerfung haette 91 brauchbare
+Zeilen fuer nichts gekostet. **Die Schwelle bleibt; der Kopftext ist berichtigt
+und benennt den Randfall jetzt** (Commit an `bindungen.py`).

@@ -82,7 +82,14 @@ def bericht(min_belege=8):
          'Körperteil und Sockel. Bei anderer Bedeutung eigene Glosse **und',
          'eigenes Lemma**.', '',
          f'Aufgenommen sind Lemmata mit mindestens {min_belege} Belegen im AT,',
-         'deren häufigste Lesart über die Hälfte der Belege trägt.', '']
+         'deren häufigste Lesart **mindestens die Hälfte** der Belege trägt.',
+         '',
+         'Steht dort genau die Hälfte, ist der Zweitplatzierte gleichauf und',
+         'die Zeile durch die Reihenfolge entschieden, nicht durch das Korpus.',
+         'Das betrifft 91 Lemmata. Nachgemessen: bei allen 21 echten 50:50-Faellen',
+         'unterscheiden sich die beiden Lesarten nur im Numerus, nicht in der',
+         'Bedeutung (`Flamme` *flame* gegen *flames*) — die Bindung traegt also,',
+         'die Zahl ist nur knapp. Deshalb bleibt die Schwelle bei >= 0.5.', '']
 
     L += ['## Lexikonfallen — AT-Lesart weicht von der NT-Mehrheit ab', '',
           'Der Lexikon-Extrakt zeigt die **Korpusmehrheit**. Bei diesen Wörtern',
