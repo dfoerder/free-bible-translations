@@ -298,3 +298,129 @@ Mehrwort `Recht verschaffen` B2 · `die Sache fuehren` B2.
 hat **72 Verse** mit beiden Lemmata nebeneinander (die Adonai-JHWH-Formel, hier
 1,24) und trennt immer ueber Gross-/Kleinschreibung. `glosskollision.py` fuehrt
 das in einer eigenen, nicht mitgezaehlten Rubrik.
+
+## 8. Paket 2 (Kap. 2 · 3 · 4)
+
+### `belegt.py` hat sich in seiner ersten Welle bezahlt gemacht
+
+Das Werkzeug wurde nach dem `Heerscharen`-Fehler gebaut. In dieser Welle hat es
+**mehr als zwanzig** Form/Lemma-Abweichungen aufgedeckt, bei denen
+`fixgloss.py show` geschwiegen haette:
+
+| Kapitel | von `hints.py` als unbelegt gemeldet | wirklich neu |
+|---|---|---|
+| 2 | 13 | 6 |
+| 3 | 22 | 15 |
+| 4 | — | 4 |
+
+Kapitel 3 allein fand dreizehn Formen, deren Lemma anders heisst (`Mäntel` →
+`Mantel` 32 Belege, `Turbane` → `Turban`, `Halsketten` → `Halskette`,
+`Ohrringe` → `Ohrring`, `Festgewänder` → `Festgewand`, `Hemden` → `Hemd`,
+`Ringe` → `Ring`, `Umhänge` → `Umhang` …). Kapitel 2 fand **`Anbeten` mit 26
+Belegen** unter dem Infinitiv-Lemma `anbeten`.
+
+**Aber das Werkzeug zeigt nur hin, es urteilt nicht.** Bei `hochmütigen` (2,11)
+fand es neun Belege unter `Hochmütiger` — dem **substantivierten** Lemma. Im
+Vers steht das Wort attributiv bei `Augen`, ist also das Adjektiv `hochmütig`,
+das eigenstaendig mit 13 Belegen dasteht. Der Agent hat das Lemma korrigiert.
+
+### Die zwei buchinternen Dubletten von Kapitel 2
+
+- **2,11 ↔ 2,17** ist **nicht** parallel gebaut: 2,11 hat *Augen + erniedrigen*,
+  2,17 *Hochmut + sich beugen*, und `sich beugen` wandert zwischen den Versen
+  von den Stolzen auf den Hochmut. Woertlich gleich sind nur der Mittelteil
+  (`die Stolzen werden sich … muessen`) und die Schlussformel (Pos 15–23 gegen
+  14–22) — dort Glosse fuer Glosse identisch.
+- **2,19 ↔ 2,21**: der Schwanz ab Position 7 ist in **Wortlaut und Glossen
+  identisch**, 19 Eintraege, nachgeprueft. Der Kopf hat **vier verschiedene
+  Komposita**, nicht zwei: `Felsenhöhle` + `Erdkluft` (2,19) gegen `Felsspalte`
+  + `Steinkluft` (2,21). Systematik der Trennung:
+  **Höhle→caverna, Kluft→grieta/crepaccio, Spalte→hendidura/fenditura.**
+
+### Entscheidungen, die weiterlaufen
+
+- **`Mantel` gegen `Umhang` (3,22) — die teuerste Stelle des Schmuckkatalogs.**
+  `Mantel` ist mit 28 von 32 Belegen an *cloak · manto · manteau · mantello*
+  gebunden, **und WEB, LSG und RIV setzen genau diese Woerter an den anderen
+  Slot.** Wer der Ausgabe folgt, spaltet `Mantel` gegen seine 32 Belege — und
+  `Mantel` steht in **3,6 desselben Kapitels** noch einmal. Bestand behalten,
+  `Umhang` weicht auf *capes · capas · capes · scialli*.
+- **`Spross` C1 = *branch · renuevo · germe · germoglio*** (4,2). Das Substantiv
+  ist wirklich unbelegt — `belegt.py` findet nur die Verbform `spross` von
+  `sprießen` und warnt selbst vor der Verwechslung. Gewaehlt ist die Reihe, die
+  in **fuenf von sechs** Belegstellen des ganzen Prophetenkorpus so dasteht
+  (Jes 4,2 · 11,1 · Jer 23,5 · 33,15 · Sach 3,8 · 6,12) — die Reihe des
+  **Motivs**, nicht die einer Stelle. Damit bleibt **11,1** kollisionsfrei, wo
+  `Reis` und `Spross` im selben Vers stehen: `Reis` ist unbelegt und kann
+  *shoot · vara · rameau · ramo* frei nehmen.
+  **`Spross` steht im Buch nur zweimal** (4,2 · 11,1) — die „fuenf
+  Sproesslinge" der Vorbereitung sind Verbformen von `sprießen`.
+- **`einhergehen` gegen `schreiten` (3,16)** — von keinem Skript gemeldet.
+  Der Bestand bindet `schreiten` an *stride · caminan · **marchent** ·
+  incedono*, und **LSG schreibt fuer `einhergehen` ebenfalls „marchent"**. Wer
+  der Ausgabe folgt, kollidiert. `einhergehen` weicht auf *walk along · andan ·
+  s'avancent · se ne vanno*.
+- **`Fremder` B1 gegen `Fremde` B2** — dieselbe Wortform, zwei Woerter. In 1,7
+  sind es Personen (*strangers · extranjeros*), in 2,6 ist „Kinder der Fremde"
+  der **Genitiv Singular** des fremden Landes (*foreign land · extranjero ·
+  étranger · estero*); der Plural von `Fremder` hiesse „der Fremden".
+  `buildbook.py` meldet die Levelspreizung — sie ist richtig.
+
+### Neue Lexikonfallen
+
+| Wort | Bestandslesart | warum sie hier nicht passt |
+|---|---|---|
+| `Umhang` | *hangings · cortinas · toiles · cortine* (12×, Stiftshuette) | 3,22 ist ein Kleidungsstueck |
+| `Wohlgeruch` | *pleasing aroma · olor grato* (1 Beleg, 3Mo 2,12, Opfersprache) | 3,24 ist Parfuem, dem `Gestank` gegenuebergestellt |
+| `einhergehen` | *goes along with* (Jak 2,1, abstrakt) | 3,16 ist koerperliches Gehen |
+| `verfuehrerisch` | *deceiving* (1Tim 4,1, Geister) | 3,16 sind Blicke → *seductive* |
+| `erhaben` | *exalted · exaltado · élevé · esaltato* (9×) | **praedikativ** richtig (2,2 · 2,11 · 2,12 · 2,17), **attributiv** in 2,14 „erhabene Huegel" → *lofty · elevadas · élevées · elevate* |
+| `Erde` | — | 2,10: **alle vier** Ausgaben schreiben „Staub"; der Quelltext sagt `Erde`, und dasselbe Lemma steht in 2,19/2,21 im selben Kapitel |
+
+### Zwei Bestandsbefunde, die spaeter teuer werden koennen
+
+- **`Ohrring` B2 und `Ohrgehänge` B2 tragen restlos dieselbe Reihe**
+  *earrings · pendientes · boucles d'oreilles · orecchini* unter **zwei
+  Lemmata**. Ebenso **`Armreif` B2 und `Armring` C1** (*bracelets · brazaletes ·
+  bracelets · braccialetti*) — dieselbe Sache, verschiedenes Level. In jedem
+  Vers, der beide fuehrte, waere das eine Vier-Sprachen-Kollision.
+- **`Hoheit` C1 (9 Belege) und `Majestät` (4) tragen beide**
+  *majesty · majestad · majesté · maestà*. Solange sie in verschiedenen Versen
+  stehen, nicht aufloesen; wo sie zusammentreffen, weicht `Hoheit`.
+- **`Knabe` C1 (1 Beleg) neben `Junge` A1** — dieselbe Sache, Levelspreizung
+  A1↔C1. Beide stehen in 3,4 / 3,5 nebeneinander, durch den Numerus getrennt.
+  Bestand befolgt, nicht korrigiert.
+
+### Ausgabenbefunde
+
+- **RIV: zwei neue Setzfehler** — 3,8 „**rovocare**" (*provocare*), dazu ein
+  Numerusfehler 3,16 „le **figliuolo** di Sion" (*figliuole*) und ein
+  Personenfehler 3,14 „nelle **nostre** case" (muesste *vostre* sein, es ist
+  Gottes Anklage gegen die Aeltesten). **Kapitel 2 hat keinen einzigen** — die
+  Dichte schwankt stark.
+- **RV1909mod: die spanische Schmuckliste 3,18–23 ist gegen das Deutsche
+  verschoben.** 3,19 beginnt mit *los collares* (deutsch 3,18), 3,23 setzt
+  *los tocados* an die `Schleiertücher`-Stelle. **Nach der deutschen Bedeutung
+  glossieren, nicht nach dem spanischen Slot.**
+- **2,16 hat im Deutschen keinen Eigennamen**: „alle **Schiffe im Meer**", wo
+  alle vier Ausgaben *Tarsis* tragen.
+
+### Vorlagen fuer spaetere Kapitel (aus `parallelen.py`, nicht aus `dubletten.py`)
+
+- **2,20 → 31,7** — Neun-Token-Block „jenem Tag wird jeder seine silbernen und
+  goldenen Götzen" (Aehnlichkeit 0,52)
+- **2,12 → 13,9** — Fuenferblock „Denn der Tag des HERRN"
+- **2,22 → 10,20** — „nicht mehr auf den"
+- **2,1 → 13,1** — die Ueberschriftformel; 2,1 steht vollstaendig im Bericht und
+  ist gegen Jes 1,1 **und** 2Koen 19,2 abgeglichen
+
+Das ist dasselbe Muster wie im Hohelied: **`dubletten.py` misst ganze Verse und
+findet diese Teilvers-Parallelen nicht.** Der Kreuzvergleich vor dem Bauen
+bleibt Pflicht.
+
+### Auflösungen, die NUR an ihrer Stelle gelten
+
+`weil` es *ya que* (nur 3,8) · `Unglück` fr *infortune* (nur 3,9) · `einer`
+fr *quelqu'un* (nur 3,6) · `in` *within · dentro de · dans · dentro* (nur 3,7) ·
+`einzig` es *único* it *unico* (nur 4,1) · `aus` *out of · desde · depuis · da*
+(nur an Bewegungsstellen).
