@@ -161,3 +161,40 @@ unterscheiden. `buildbook.py` zieht beim Bauen zwei Angleichungen durch.
 - eigene Subagenten starten
 - einen Namen deuten, den der Text nicht selbst deutet
 - ein Kapitel als „fertig" melden, das `selfcheck.py` nicht sauber durchläuft
+
+## „Im Bestand unbelegt" — erst `belegt.py` fragen, dann glauben
+
+**Zweimal in zwei Buechern hat die Vorbereitung ein Wort als unbelegt gefuehrt,
+das laengst im Bestand stand.** Beide Male stand es im Auftrag als Tatsache, und
+beide Male hat erst der Kapitelagent es widerlegt:
+
+| Wort | Buch | angeblich | tatsaechlich |
+|---|---|---|---|
+| `beschwoeren` | Hohelied | „im AT unbelegt (NT 3×)" | **13 Belege, 9 davon AT** |
+| `Heerscharen` | Jesaja | „im gesamten Bestand unbelegt" | **34 Belege** unter Lemma `Heerschar` |
+
+Die Ursache ist beide Male dieselbe: **`fixgloss.py show` erwartet ein LEMMA,
+keine Wortform.** Es schweigt bei `beschwoere` (Lemma `beschwoeren`) und bei
+`Heerscharen` (Lemma `Heerschar`, der Bestand normalisiert auf den Singular).
+Wer die Form abfragt, die im Quelltext steht, bekommt „nichts gefunden" und
+haelt das fuer eine Auskunft ueber die Sache.
+
+**Deshalb: `belegt.py <Wortform>` fragen.** Es sucht die Form direkt im
+gebauten Bestand, nennt das Lemma, unter dem sie gefuehrt wird, und warnt
+ausdruecklich, wenn Lemma und Form auseinandergehen.
+
+```
+python3 belegt.py Heerscharen
+python3 belegt.py Braut Schleier beschwoere      # mehrere auf einmal
+python3 belegt.py -d 23                          # alle unbelegten Formen eines Buches
+```
+
+Es unterscheidet Gross- und Kleinschreibung, wo sie zwei Woerter trennt
+(`Spross` das Substantiv gegen `spross` von `sprießen`).
+
+**Bleibt es dabei, dass die Form unbelegt ist**, erst dann `lexicon.py` ueber
+den Stamm und `fixgloss.py show <vermutetes Lemma>` — und erst danach etwas
+Neues erfinden.
+
+**Und umgekehrt:** steht im Auftrag „unbelegt", ist das ein **Hinweis, keine
+Tatsache**. Pruefen und die Abweichung melden, wie es beide Agenten getan haben.

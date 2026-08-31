@@ -41,14 +41,57 @@ Beides stimmt **ab Vers 2**. Der erste Vers ist ein Sonderfall:
   dem **zweiten** Teil von de 64,1 (Feuer, siedendes Wasser, Feinde); der erste
   Teil steht am Ende von fr 63,19. Ab fr 64,2 = de 64,2 laeuft es gleich.
 
-## 2. Die Leitformel: `Heerscharen` — 60 Verse, im Bestand UNBELEGT
+## 2. Die Leitformel: `Heerscharen` — 60 Verse, im Bestand 34-mal BELEGT
+
+> **KORREKTUR (nach Kapitel 1).** Hier stand zuerst „im Bestand UNBELEGT",
+> gestuetzt auf `fixgloss.py show Heerscharen` → nichts. **Das war falsch.**
+> Der Bestand normalisiert das Lemma auf den **Singular**: `fixgloss.py show
+> Heerschar` liefert **34 Belege**, restlos einheitlich, ohne jede Spaltung.
+> Ich hatte die **Wortform** abgefragt statt das **Lemma** — derselbe Fehler wie
+> bei `beschwoeren` im Hohelied, zwei Buecher in Folge. Siehe §7.
 
 „Der HERR der Heerscharen" ist die Signaturformel Jesajas und steht in
 **60 Versen**, verteilt ueber das ganze Buch (Kap. 19 siebenmal, 10 und 22 je
-fuenfmal, 5 und 14 je viermal). `fixgloss.py show Heerscharen` findet **nichts**.
+fuenfmal, 5 und 14 je viermal).
 
-**Alle vier Ausgaben sind sich einig** (geprueft an 1,9):
-*Armies · ejércitos · armées · eserciti*.
+### Gesetzt: Lemma `Heerschar`, C1, *hosts · ejércitos · armées · eserciti*
+
+Drei der vier Ausgaben decken sich mit dem Bestand (RV *ejércitos*,
+LSG *armées*, RIV *eserciti*). **Nur WEB weicht ab** und schreibt durchgehend
+*Armies* — die WEB-Revision hat „Hosts" flaechendeckend ersetzt, nachgeprueft an
+2Sam 5,10 · 1Koen 18,15 · Ps 24,10 · Jak 5,4.
+
+**Der Bestand gewinnt**, und der entscheidende Grund ist nicht die Zahl:
+
+**2. Koenige 19,31 traegt `Heerschar` UND `Rest` in einem Vers** — und dieser
+Vers ist die direkte Parallele zu **Jes 37,32**, das Paket 14 uebernehmen wird.
+Er steht bereits annotiert im Bestand:
+
+```
+Heerscharen  →  Heerschar  C1  hosts · ejércitos · armées · eserciti
+Rest         →  Rest       B1  remnant · remanente · reste · resto
+```
+
+Mit *Armies* truege derselbe deutsche Satz in Jesaja eine andere Glossenreihe
+als in 2. Koenige — genau der Schaden, den §4 als groesste Gefahr des Buches
+benennt. Mit *hosts* bleibt das Lemma korpusweit **94-mal einheitlich**.
+
+### Die Kollisionsprobe fuer 13,4 geht auf
+
+| | Heerscharen | Heer | trennt |
+|---|---|---|---|
+| en | **hosts** | army | lexikalisch |
+| es | ejércitos | ejército | Numerus |
+| fr | armées | armée | Numerus |
+| it | eserciti | esercito | Numerus |
+
+Kollisionsfrei — im Englischen sogar sauberer als bei WEB selbst
+(*Armies*/*army*). **13,4 braucht keine Sonderloesung.**
+
+**Aber Achtung fuer Kapitel 13:** `Heer` hat im Bestand auch eine Plurallesart
+*armies · ejércitos · armées · eserciti* (11 Belege). Die darf dort **nicht**
+genommen werden — sie fiele in allen vier Sprachen mit `Heerschar` zusammen.
+In 13,4 steht „ein Heer", Singular.
 
 **Die einzige Kollisionsstelle im ganzen Buch ist 13,4** — der einzige Vers, in
 dem `Heerscharen` und `Heer` zusammenstehen: „Der HERR der **Heerscharen**
