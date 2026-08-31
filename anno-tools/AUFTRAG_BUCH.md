@@ -198,3 +198,35 @@ Neues erfinden.
 
 **Und umgekehrt:** steht im Auftrag „unbelegt", ist das ein **Hinweis, keine
 Tatsache**. Pruefen und die Abweichung melden, wie es beide Agenten getan haben.
+
+## Wenn der l1912mod einen Namen selbst uebersetzt
+
+Die Regel „**niemals einen Namen deuten, den der Text nicht selbst deutet**"
+hat eine Kehrseite, die leicht uebersehen wird: **manchmal deutet der Text
+selbst** — dann wird die Deutung glossiert, nicht die Transliteration.
+
+Gefunden vom Agenten fuer **Jesaja 8**. Der Auftrag nannte den Namen aus 8,1
+und 8,3 `Maher-Schalal-Hasch-Bas`. Der l1912mod schreibt dort aber
+
+> „schreib darauf in gewoehnlicher Schrift: **Schnell-Raub-Eilige-Beute**"
+
+— vier deutsche Woerter in einem Bindestrich-Token. Luther macht das
+gelegentlich, und **der Bestand folgt ihm bereits**:
+
+| Stelle | hebraeisch | l1912mod | Bestandsglosse |
+|---|---|---|---|
+| 1Mo 23 u. oe. | Machpela | `Doppelhöhle` C1 | *double cave · cueva doble · grotte double · grotta doppia* |
+| Ri 20,1 u. oe. | Mizpa | `Warte` C1 | *watchtower · atalaya · tour de guet · torre di guardia* |
+
+**Woran man die beiden Faelle unterscheidet:** steht im deutschen Text ein
+deutsches Wort (oder eine Kette deutscher Woerter), wird es **uebersetzt** —
+auch wenn die Ausgaben transliterieren. Steht dort eine Lautfolge ohne deutsche
+Bedeutung (`Baal-Hamon`, `Adoni-Zedek`, `Abel-Mehola`), bleibt sie **Name**.
+Alle Bindestrich-Lemmata des Bestands ausser den beiden oben sind
+Transliterationen und bleiben es.
+
+Die Ausgaben helfen hier nicht: in Jes 8,1 **uebersetzen LSG und RIV** („Qu'on
+se haate de piller, qu'on se precipite sur le butin" / „Affrettate il
+saccheggio! Presto, al bottino!") und **transliterieren in 8,3**, waehrend WEB
+und RV an beiden Stellen transliterieren. Entschieden wird nach dem deutschen
+Text.
