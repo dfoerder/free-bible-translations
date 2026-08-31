@@ -424,3 +424,139 @@ bleibt Pflicht.
 fr *quelqu'un* (nur 3,6) · `in` *within · dentro de · dans · dentro* (nur 3,7) ·
 `einzig` es *único* it *unico* (nur 4,1) · `aus` *out of · desde · depuis · da*
 (nur an Bewegungsstellen).
+
+## 9. Paket 3 (Kap. 5 · 6 · 7)
+
+### Zwei Luecken in `belegt.py`, beide von Agenten gefunden und geschlossen
+
+1. **Die Umkehrung der Heerschar-Falle** (Kap. 6): `forttreiben` steht im
+   Bestand nur als `forttreibt` / `treibt fort` / `treibe fort`. Die Formsuche
+   meldete „nicht belegt", `fixgloss.py show` lieferte drei Belege. Das Werkzeug
+   indiziert jetzt **Form und Lemma**. Wirkung ueber das ganze Buch: die Zahl
+   der scheinbar unbelegten Wortformen faellt von **849 auf 708**.
+2. **Der starre Praefixvergleich** (Kap. 5): `sauer` wurde zu `saure` nicht
+   gefunden (Vokalwechsel), `hacken` nicht zu `gehackt` (ge-Praefix). Jetzt mit
+   Endungsabbau, Umlautaufloesung und Aehnlichkeitsmass; Lemma-Kandidaten werden
+   getrennt ausgewiesen.
+
+**Was das Werkzeug weiterhin nicht kann, und auch nicht soll:** urteilen. Bei
+`reihen` (5,8) und `brausen` (5,30) meldet es die **grossgeschriebenen
+Substantive** `Reihe` und `Brausen` und warnt vor der Verwechslung — im Vers
+stehen die Verben. Bei `hochmütigen` (2,11) wies es auf das substantivierte
+`Hochmütiger`, gebraucht ist das Adjektiv. **Es zeigt hin; entschieden wird am
+Vers.**
+
+### Die Recht/Gerechtigkeit-Probe in 5,7
+
+Die kritischste Stelle des Buches, weil beide Woerter im selben Vers stehen:
+
+| | Recht | Gerechtigkeit |
+|---|---|---|
+| en | justice | righteousness |
+| es | **derecho** | justicia |
+| fr | **droit** | justice |
+| it | **diritto** | giustizia |
+
+In allen vier Sprachen getrennt. Die 18-Beleg-Nebenlesart von `Recht`
+(*justice · justicia · justice · giustizia*) haette hier **dreifach**
+kollidiert. WEB schreibt an dieser Stelle selbst „justice … righteousness".
+
+**5,16 hat kein `Recht`, sondern `Gericht`** B2 *judgment · juicio · jugement ·
+giudizio* — die im Auftrag angekuendigte zweite Gegenueberstellung gibt es
+nicht. `Recht` steht im Kapitel nur zweimal (5,7 · 5,23).
+
+### Vom Koordinator angeglichen
+
+- **`herbeipfeifen`** — Kapitel 5 und 7 haben dasselbe neue Lemma
+  **unabhaengig voneinander erfunden** und drei von vier Glossen verschieden
+  gesetzt. Angeglichen auf die Fassung aus Kapitel 7 (*whistle for · llamar con
+  un silbido · siffler · fischiare*), weil fr und it dort den Ausgaben an
+  **beiden** Stellen folgen. Das ist eine neue Klasse von Wellendivergenz: nicht
+  ein Teilvers, sondern ein **neues Lemma an zwei Stellen derselben Welle**.
+- **`Gesicht`** — Kapitel 3 nahm die 8-Beleg-Variante *cara · faccia*, der
+  Bestand hat mit **94 von 110** Belegen *face · rostro · visage · volto*.
+  Auf die Mehrheit angeglichen.
+
+### Neue Lexikonfallen
+
+| Wort | Bestandslesart | warum sie hier nicht passt |
+|---|---|---|
+| `Rebe` | *branch · sarmiento · sarment · tralcio* (5×, **alle Joh 15**) | 5,2 ist die Pflanze, nicht der Trieb → *vines · vides · ceps · viti* |
+| `beschneiden` | *circumcised* (23×) | 5,6 ist Rebschnitt → *pruned · podada · taillée · potata* |
+| `Joch` | *yoke · yugo · joug · giogo* (27×) | 5,10 ist ein **Flaechenmass** → *acres · yugadas · arpents · iugeri* |
+| `sperren` | *locked · encerraron* (2×) | 5,14 ist `aufsperren`, die Gegenbewegung |
+| `halten` | *keep · guardar · garder · osservare* (69×) | 7,21 ist **Vieh** halten → *criar · entretenir · nutrire* |
+| `bestellen` | *appointed · designó* | 7,25 ist **Boden** bestellen → *cultivated · cultivaba* |
+| `Fall` | *cases* (2Mo 18,22) | 6,13 `Fällen` ist das nominalisierte **Baumfaellen** |
+
+### Der `Teich` in 7,3 — Kapitelkonsistenz schlaegt die Ausgabe
+
+Der Bestand fuehrt zwei Zeilen 1:1: *estanque · **étang · stagno*** (2Sam 2,13)
+gegen *estanque · **piscine · piscina*** (2Koen 18,17). **LSG und RIV schreiben
+in Jes 7,3 selbst *étang* / *stagno*.** Genommen ist trotzdem die
+2-Koenige-Zeile, weil **7,3 wortgleich mit Jes 36,2** ist und 36,2 in Paket 14
+aus 2Koen 18,17 uebernommen wird. Mit der Ausgabenform spaltete sich Jesaja
+gegen sich selbst. Dasselbe gilt fuer `Wasserleitung`, `ober`, `Straße` und
+`Walkerfeld` in diesem Vers.
+
+### `Immanuel` — die Auftragspraemisse traf nicht zu
+
+Ich hatte einen Konflikt konstruiert: der Bestand trage den Namen bei Matthaeus
+**gedeutet**, Jesaja duerfe ihn nicht deuten. **Der Bestand traegt ihn
+undeutet** (*Immanuel · Emanuel · Emmanuel · Emmanuele*). Die Deutung sitzt in
+Mt 1,23 auf **eigenen deutschen Tokens** („Das heisst uebersetzt: Gott mit
+uns"), weil der Matthaeustext sie selbst ausspricht — sie ist Teil des Verses,
+nicht der Glosse. Es gab nichts aufzuloesen.
+
+**Und Mt 1,23 ist kein woertliches Zitat von Jes 7,14.** Gemeinsam sind sieben
+Tokens (`Jungfrau wird schwanger werden und einen Sohn`); ab `gebaeren` laeuft
+der Text auseinander (Mt: „zur Welt bringen … man wird ihm den Namen geben",
+Jes: „gebaeren … sie wird ihn Immanuel nennen").
+
+Ebenso **kein einziges der fuenf NT-Zitate von 6,9–10 ist woertlich** (Mt 13,14
+· Mk 4,12 · Lk 8,10 · Joh 12,40 · Apg 28,26). Die Uebereinstimmung besteht auf
+**Lemma**-Ebene; der einzige echte Block ist `das Herz dieses Volkes`. Bei
+`umkehren` ist dennoch die **Zitatlesart** *repent · arrepentirse · se repentir ·
+ravvedersi* genommen, weil genau diese Stellen genau diesen Vers zitieren.
+
+### `Seraph` und `Dickmilch` — zwei echte Neuschoepfungen
+
+- **`Seraph` C1 = *seraphim · serafines · séraphins · serafini*** (6,2 · 6,6).
+  Der Quelltext schreibt **`Seraphim` mit ph**. Alle vier Ausgaben einstimmig
+  das Lehnwort. `hints.py` schlug als „verwandt" `Serah`/`Seraja` vor — das sind
+  Personennamen aus Juda-Genealogien.
+- **`Dickmilch` C1 = *curds · cuajada · crème · crema*** (7,15 · 7,22 zweimal —
+  alle drei Vorkommen des Buches stehen in Kapitel 7). **Nur WEB weicht mit
+  *butter* ab**, und das uebersetzt das Hebraeische, nicht das deutsche Wort.
+
+### Bestandsbefunde: das Korpus fuehrt Sachdubletten unter getrennten Lemmata
+
+Nach `Ohrring`/`Ohrgehänge` und `Armreif`/`Armring` aus Paket 2 bestaetigt sich
+das Muster:
+
+- **`Trommel`, `Tamburin` und `Pauke`** stehen jetzt alle drei auf
+  *tambourine · pandero · tambourin · tamburello*.
+- **`Assyrien` (67 Belege) und `Assur` (7)** sind in **allen vier Sprachen**
+  identisch (*Assyria · Asiria · Assyrie · Assiria*). In 7,17/7,20 gegen 7,18
+  stehen sie in **benachbarten** Versen — sobald einer beide fuehrt, ist es eine
+  Vier-Sprachen-Kollision.
+- **`Getöse` und `Brausen`** teilen sich spanisch *estruendo*.
+
+### Ausgabenbefunde
+
+- **RIV: vier neue Fehler**, keiner in `RIV_SETZFEHLER_JESAJA.md` — 5,27
+  „de' **ianchi**" (*fianchi*), 5,4 „mentr'io **'aspettavo**" (*m'aspettavo*),
+  7,20 „un **rasoi**" (*rasoio*), 7,25 „**i** si lasceran" (*vi*). Die Liste
+  zaehlt nur **Eigennamen** aus; ihre Grenzen stehen jetzt in der Datei.
+  **Kapitel 6 hat null.**
+- **Zwei Fehlalarme in meinen eigenen Auftraegen**: ich hatte 6,1 „anno" und
+  7,2/7,18 „alla"/„alle" aus der **ungefilterten Rohliste** zitiert. Das sind
+  gewoehnliche italienische Woerter. Beide Agenten haben es gemeldet statt
+  uebernommen.
+- **LSG 5,30 hat einen Zusatz ohne deutsche Entsprechung** („Avec des
+  alternatives d'angoisse et d'espérance").
+- **RV 5,10 rechnet die Masse um** („treinta medidas" statt Homer/Efa).
+- **6,4**: drei von vier Ausgaben uebersetzen `Türschwellen` nicht (LSG/RIV
+  „Tueren", RV „Tuerangeln"); nur WEB *thresholds*.
+- **6,13 `Eiche`: RV schreibt *olmo* (Ulme)** — dieselbe Abweichung wie in
+  1,29/1,30. Bestand genommen.
