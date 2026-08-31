@@ -98,16 +98,33 @@ def extract(nr, kap, von=None, bis=None):
         if len(lemma) >= MIN_STAMM:
             stamm[lemma[:MIN_STAMM].lower()].add(lemma)
 
-    belegt, verwandt, offen = [], [], []
+    # Der Formindex ist gross-/kleinschreibungsempfindlich. Das ist richtig, wo
+    # die Schreibung zwei Woerter trennt (`Spross` das Substantiv gegen `spross`
+    # von `sprießen`) — aber es hat `Juble` (Jes 12,6) unter UNBELEGT gestellt,
+    # obwohl `juble` siebenmal im Psalter steht. Die Ueberschrift dort behauptet
+    # „im ganzen Bestand keine Form dieses Wortes"; das war schlicht falsch.
+    # Gefunden vom Agenten fuer Jesaja 12, der es ueber `belegt.py` gegenpruefte.
+    #
+    # Deshalb: schlaegt die exakte Form fehl, wird die andere Schreibung
+    # nachgeschlagen und als eigene Klasse ausgewiesen — belegt, aber mit
+    # sichtbarer Warnung, weil die Schreibung eben manchmal doch trennt.
+    def andere_schreibung(w):
+        return w[0].lower() + w[1:] if w[:1].isupper() else w[:1].upper() + w[1:]
+
+    belegt, verwandt, offen, schreibung = [], [], [], []
     for f, n in sorted(formen.items(), key=lambda x: (-x[1], x[0])):
         if f in idx:
             belegt.append((f, n, idx[f]))
+            continue
+        g = andere_schreibung(f)
+        if g and g in idx:
+            schreibung.append((f, n, g, idx[g]))
+            continue
+        kand = stamm.get(f[:MIN_STAMM].lower(), set()) if len(f) >= MIN_STAMM else set()
+        if kand:
+            verwandt.append((f, n, sorted(kand)))
         else:
-            kand = stamm.get(f[:MIN_STAMM].lower(), set()) if len(f) >= MIN_STAMM else set()
-            if kand:
-                verwandt.append((f, n, sorted(kand)))
-            else:
-                offen.append((f, n))
+            offen.append((f, n))
 
     L = []
     name = C.load_source(nr)['name']
@@ -116,7 +133,8 @@ def extract(nr, kap, von=None, bis=None):
     L.append('')
     ges = len(formen)
     L.append(f'{ges} verschiedene Wortformen · {len(belegt)} im Bestand belegt '
-             f'({100*len(belegt)//max(ges,1)} %) · {len(verwandt)} nur über den Stamm · '
+             f'({100*len(belegt)//max(ges,1)} %) · {len(schreibung)} nur in der '
+             f'anderen Schreibung · {len(verwandt)} nur über den Stamm · '
              f'{len(offen)} unbelegt')
     L.append('')
     L.append('**Belegte Lesarten sind bindend, solange die Bedeutung dieselbe ist.** '
@@ -138,6 +156,24 @@ def extract(nr, kap, von=None, bis=None):
                      f'Numerusvarianten; im Zweifel nach dem Kontext bilden)')
         L.append('')
 
+    if schreibung:
+        L.append('## ANDERE SCHREIBUNG (die Form steht da, nur gross/klein anders)')
+        L.append('')
+        L.append('**Das ist ein Beleg, kein Hinweis** — aber nachsehen: die '
+                 'Gross-/Kleinschreibung')
+        L.append('trennt manchmal zwei Woerter (`Spross` das Substantiv gegen '
+                 '`spross` von `sprießen`,')
+        L.append('`Reihen` gegen `reihen`, `Brausen` gegen `brausen`). Am Vers '
+                 'entscheiden.')
+        L.append('')
+        for f, n, g, lesarten in schreibung:
+            L.append(f'### {f} ({n}× im Abschnitt) — im Bestand als `{g}`')
+            for key, (anz, ort) in sorted(lesarten.items(),
+                                          key=lambda x: -x[1][0])[:4]:
+                lemma, lvl, en, es, fr, it = key
+                L.append(f'- {anz}× · `{lemma}` · {lvl} · *{en}* · *{es}* · '
+                         f'*{fr}* · *{it}* — {ort}')
+            L.append('')
     if verwandt:
         L.append('## VERWANDT (Stamm belegt, Form nicht — Hinweis, keine Vorgabe)')
         L.append('')
