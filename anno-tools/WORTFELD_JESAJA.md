@@ -189,3 +189,112 @@ Dreierwellen in Kapitelreihenfolge, mit drei Ausnahmen:
 
 Nach jeder Welle: Kreuzvergleich aller fertigen Kapitel, dann bauen, dann
 committen. Nach dem Buch: `BINDUNGEN_AT.md` neu erzeugen.
+
+## 7. Kapitel 1 — der Massstab
+
+31 Verse, 667 Einzelwort- und 32 Mehrwort-Eintraege. Alle sechs Pruefungen
+sauber, `glosskollision.py` 0 inhaltliche Paare.
+
+### `Rest` in 1,9 — die Ueberrest-Lesart
+
+**`Rest` B1 = *remnant · remanente · reste · resto***, nicht die Mehrheitslesart
+*rest · resto · reste · resto*. Die acht Belege der Ueberrest-Lesart sind
+5Mo 4,27 · 28,62 · **2Koen 19,4 · 19,30 · 19,31** · Esra 9,8 · Roem 9,27 ·
+11,5 — durchweg der theologische Ueberrest.
+
+Zwei Gruende fuer die **Bestandsform** statt der Ausgabenform in es/it
+(RV *resto*, RIV *residuo*):
+
+- **2Koen 19,30/31 = Jes 37,31/32.** Diese Verse kommen in Paket 14 unveraendert
+  nach Jesaja. Mit der Ausgabenform spaltete sich Jesaja gegen sich selbst.
+- **Roem 9,29 zitiert Jes 1,9 woertlich** und ist bereits annotiert.
+
+### `Recht` darf in Jesaja nie *justicia · justice · giustizia* sein
+
+Der Bestand fuehrt fuer `Recht` eine Nebenlesart *justice · justicia · justice ·
+giustizia* (18 Belege). Sie ist in diesem Buch **unbrauchbar**, solange
+`Gerechtigkeit` danebensteht — das ist mit 200 Belegen fest an genau diese Reihe
+gebunden. In **1,21 und 1,27** stehen beide im selben Vers; die Nebenlesart
+haette in **es/fr/it dreifach** kollidiert.
+
+**Gesetzt ist die Bestandsmehrheit `Recht` B1 = *justice · derecho · droit ·
+diritto*** (89 Belege). Gilt fuer das ganze Buch. Kein Skript hat diese
+Kollision gemeldet — der Agent hat sie durch eigenes Nachzaehlen gefunden und
+**vor** dem Schreiben entschaerft.
+
+### Ausgabenkonventionen fuer alle 66 Kapitel
+
+- **RV1909mod: `ustedes` durchgehend.** Ueber das ganze Buch gezaehlt:
+  **74× `ustedes`, 0× `vosotros`.** Der Bestand bindet `ihr` an *vosotros*
+  (2358 Belege). **Dem Bestand folgen.** Jeder Agent wird die Ausgabe in der
+  2. Person Plural anders lesen als seine Glosse — das ist kein Befund und darf
+  nicht „korrigiert" werden.
+- **RIV1927: verschluckter Anlaut.** Vier Setzfehler **allein in Kapitel 1** —
+  eine hoehere Dichte als die sechs im ganzen Hohelied: „ai giorni di **zzia**"
+  (1,1, *Uzzia*), „il cuore è **anguente**" (1,5, *languente*), „calcare **i
+  mie** cortili" (1,12, *i miei*), „**e vostre** mani" (1,15, *le vostre*).
+  Auch ausserhalb Jesajas: 1Koen 18,15 „ad **chab**" statt *Achab*.
+  **Wer eine RIV-Form nicht wiedererkennt, pruefe zuerst auf einen fehlenden
+  ersten Buchstaben**, bevor er einen Uebersetzungsbefund meldet.
+- **WEB: Anfuehrungszeichen als Redemarkierung im Vers**, in Kapitel 1 in neun
+  Versen, teils mitten im Vers und ueber Versgrenzen unbalanciert (1,2 oeffnet,
+  1,3 schliesst). Verschiebt die Wortgrenzen beim Abzaehlen.
+
+### Lexikonfallen fuer die 65 folgenden Kapitel
+
+| Wort | Bestandslesart | warum sie in Jesaja nicht passt |
+|---|---|---|
+| `Schlacke` | *écume · schiuma* (2 Belege, Ps 119,119) | dort Schaum-Metapher; Jes 1,22.25 ist metallurgisch → *scories · scoria* |
+| `matt` | *weak · apagados · ternes · smorti* (1Mo 29,17) | dort Leas truebe Augen; Jes 1,5 „das Herz ist matt" → *faint · doliente · souffrant · languente* |
+| `ausscheiden` | *eliminated · expulsado* (Mt 15,17 / Mk 7,19) | dort Verdauung; Jes 1,25 Metallabscheidung → *remove · quitar · enlever · togliere* |
+| `loeschen` | *quench · calman* (Ps 104,11, Durst) | Jes 1,31 ist Feuer → *extinguish · apagar · éteindre · spegnere* |
+| `Beule` | *tumors* (7×, Philisterplage) | Jes 1,6 ist Hautbefund → *swellings* (3Mo 14,56) |
+| `Huette` | Zelt (21×) | in Jesaja regelmaessig die **Laubhuetten**-Lesart (5×) |
+| `Tun` | zweigeteilt | *ways · conduite* (Verhalten, 12×) gegen *doing · agir* (Werk, 3×) — 1,16 das erste, 1,31 das zweite |
+
+**Faustregel, die sich hier bestaetigt hat:** bei Lemmata mit ein bis drei
+Belegen zaehlt die **Bedeutung**, nicht die Zahl. Die duenn belegten Woerter
+sind die gefaehrlichen, nicht die haeufigen.
+
+### Wo Bestand und Quelltext gegen die Ausgaben stehen
+
+- **`Eiche` (1,29 · 1,30)**: **drei von vier Ausgaben weichen ab** — RV
+  *olmos* (Ulme), LSG *térébinthes*, RIV *terebinti*. Nur WEB folgt dem
+  Deutschen. Bestand *oak · encina · chêne · quercia* genommen.
+- **`Blei` (1,25)**: WEB *tin*, RV *estaño* (Zinn) gegen LSG *plomb*, RIV
+  *piombo* und den deutschen Text. Bestand genommen.
+- **`Nachtwache` (1,8)**: **alle vier** Ausgaben schreiben „Huette" — sie
+  uebersetzen das Hebraeische, nicht das Deutsche. Der Quelltext sagt
+  `Nachtwache`, und die App glossiert das deutsche Wort.
+- **`spricht`**: die Formel „spricht der HERR" (1,11 · 1,18 · 1,24) nimmt die
+  Nebenlesart *says · dice · **dit** · dice* (LSG schreibt dort *dit*); in
+  **1,2** („Denn der HERR spricht") dagegen *speaks · habla · parle · parla*.
+  Zwei Lesarten, am Vers entschieden.
+
+### Neues Vokabular (14 Lemmata, alle mit `belegt.py` und `fixgloss.py` geprueft)
+
+`emporbringen` C1 · `eiternd` C1 · `Gurkenfeld` C1 · `Mastkalb` C1 ·
+`Festfeier` C1 · `blutrot` B2 · `schneeweiss` B2 · `verwaessern` C1 ·
+`Diebesgeselle` C1 · `ausschmelzen` C1 · `Umkehrender` C1 · `erroeten` C1 ·
+`welk` B2 · `Werg` C1.
+
+Mehrwort neu: `gleich wie` B1 · `genug haben` B2 · `aus tiefster Seele` C1 ·
+`zu Anfang` B1.
+
+`hints.py` meldete 23 unbelegte Formen, **14 waren wirklich neu** — eine
+deutlich hoehere Quote als im Hohelied (dort 3 von 20 bis 12 von 18). Jesaja hat
+tatsaechlich viel eigenes Vokabular.
+
+### Fuer das ganze Buch gesetzt
+
+`Heiliger (Israels)` B1 *Holy One · Santo · Saint · Santo* ·
+`Maechtiger (Israels)` B2 *Mighty One · Poderoso · Puissant · Potente* ·
+`Fuerst` B2 *princes · príncipes · princes · principi* ·
+`Uebertreter` C1 / `Suender` B2 · `Waise` B2 / `Witwe` B1 ·
+`wehe` B2 *Woe · Ay · Malheur · Guai* (die Weheruf-Kapitel) ·
+Mehrwort `Recht verschaffen` B2 · `die Sache fuehren` B2.
+
+**`HERR` / `Herr` ist korpusweite Konvention und nicht anzutasten:** der Bestand
+hat **72 Verse** mit beiden Lemmata nebeneinander (die Adonai-JHWH-Formel, hier
+1,24) und trennt immer ueber Gross-/Kleinschreibung. `glosskollision.py` fuehrt
+das in einer eigenen, nicht mitgezaehlten Rubrik.
