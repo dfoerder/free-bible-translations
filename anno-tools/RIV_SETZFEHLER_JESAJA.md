@@ -28,3 +28,46 @@ ersten Buchstaben** — es ist kein Uebersetzungsbefund und nicht zu melden.
 | Santo | anto | 5,19 |
 | Signore | ignore | 61,11 |
 | Uzzia | zzia | 1,1 |
+
+## Was diese Liste NICHT erfasst
+
+Die Auszaehlung sucht **nur Eigennamen** — Woerter, die mitten im Satz
+grossgeschrieben stehen. Zwei Fehlerklassen fallen deshalb durch:
+
+**1. Verschluckte Anlaute an Funktionswoertern.** Der Agent fuer Kapitel 7 fand
+**7,25 „**i** si lasceran andare i buoi"** — richtig waere *vi*. Maschinell ist
+das kaum zu finden: `i` steht in Jesaja 389-mal als regulaerer Artikel. Der
+einzige Aufhaenger ist, dass „Artikel + Klitikon" ungrammatisch ist — und selbst
+diese Regel greift nur fuer `i si`, weil `lo si` und `gli si` korrektes
+Italienisch sind („lo si puo", „lo si trebbia"). Ueber alle sieben geprueften
+Buecher ergibt das genau **diesen einen** Treffer.
+
+**2. Tipp- und Numerusfehler ohne verschluckten Anlaut.** Ebenfalls aus
+Kapitel 7: **7,20 „con un **rasoi** preso a nolo"** — richtig *rasoio*. Dazu aus
+Kapitel 3: **3,16 „le **figliuolo** di Sion"** (*figliuole*) und **3,14 „nelle
+**nostre** case"**, wo es *vostre* heissen muss (es ist Gottes Anklage gegen die
+Aeltesten; deutsch „in **euren** Haeusern", WEB *your*, RV *sus*, LSG *vos*).
+
+**Die Liste ist also eine Untergrenze.** Sie nimmt den Agenten die haeufigste
+Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
+
+## Nachtraege aus den Kapitelberichten
+
+| Vers | RIV | richtig | Klasse |
+|---|---|---|---|
+| 3,14 | nelle **nostre** case | *vostre* | Person |
+| 3,16 | le **figliuolo** di Sion | *figliuole* | Numerus |
+| 7,20 | un **rasoi** | *rasoio* | Tippfehler |
+| 7,25 | **i** si lasceran | *vi* | Anlaut, Funktionswort |
+
+## Ein Fehlalarm, den ich selbst gemacht habe
+
+In den Auftraegen fuer Kapitel 6 und 7 stand, die Liste melde **6,1 „anno"**
+bzw. **7,2 „alla" und 7,18 „alle"**. **Das ist falsch** — diese Stellen stehen
+nicht in der Tabelle. Ich hatte sie aus der **ungefilterten Rohliste** des
+Detektors zitiert, in der `alla`, `alle`, `anno`, `ella`, `sole` als
+vermeintliche Stuempfe von *Dalla*, *Valle*, *Hanno*, *Nella*, *Isole*
+auftauchen. Es sind gewoehnliche italienische Woerter.
+
+**Nur die gefilterte Tabelle oben gilt.** Beide Agenten haben den Fehler
+gemeldet, statt ihn zu uebernehmen.
