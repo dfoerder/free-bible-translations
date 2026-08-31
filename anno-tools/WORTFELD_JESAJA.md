@@ -707,3 +707,268 @@ nourriture* und trennen nur italienisch (*pasto* / *cibo*).
   Vers zitiert.
 - **WEB 9,4 loest `Stiefel` ganz auf** („the armor of the armed man").
 - **LSG und RIV setzen 9,14/9,15 in Klammern**, WEB und RV nicht.
+
+## 11. Paket 5 (Kap. 10 · 11 · 12)
+
+Drei Kapitel gleichzeitig, 1149 Einzelwort- und 42 Mehrwort-Eintraege. Alle
+sechs Pruefungen je Kapitel sauber; `validate.py 23` und `qa.py 23` melden
+ueber das ganze gebaute Buch **0 Befunde**.
+
+### `Stock` traegt im selben Kapitel zwei Zeilen — und das ist richtig so
+
+Kapitel 10 hat das Wort dreimal neben einem zweiten Stab-Wort:
+
+| Stelle | Paar | `Stock` | Gegenwort |
+|---|---|---|---|
+| **10,5** | Stock + `Rute` | *staff · bastón · bâton · bastone* | `Rute` B2 *rod · vara · verge · verga* |
+| **10,15** | Stock + `Stab` | *rod · palo · verge · verga* (= Jes 9,3) | `Stab` B1 *staff · bastón · bâton · bastone* |
+| **10,24** | Stock + `Stab` | *rod · palo · verge · verga* | `Stab` wie oben |
+
+Beide Zeilen sind **Bestandszeilen**, keine Erfindung. `Rute` ist 13/13
+einheitlich, `Stock` im Bestand sechsfach gespalten — also weicht `Stock` aus.
+Die Jes-9,3-Zeile kollidierte in 10,5 gleich dreifach (en/fr/it), die
+4-Beleg-Zeile *rod · palo · bâton · bastone* einfach; nur die staff-Zeile ist
+dort kollisionsfrei. **Die Auflosung sitzt an der Kollisionsstelle, nicht am
+Lemma** — genau die Regel aus `AUFTRAG_BUCH.md`.
+
+Gegenprobe an den Ausgaben: WEB trennt in 10,5 spiegelbildlich (rod/staff),
+**LSG schreibt zweimal `verge` und trennt gar nicht**, RV vertauscht in 10,15
+und 10,24 (bastón/vara). In 10,15/24 deckt sich die Wahl Wort fuer Wort mit
+WEB, LSG und RIV.
+
+### Vom Koordinator angeglichen — dreimal
+
+**1. `Völker` in 8,23 und 10,7.** Beide Kapitel hatten dort die Zeile
+*nations · naciones · nations · nazioni* gesetzt, **weil ihre Ausgaben es so
+schreiben** (RIV 10,7 „sterminare **nazioni**", RIV 8,23 „la Galilea de'
+**Gentili**"). In den uebrigen sieben Belegen des Buches (2,2 · 2,3 · 2,4 ·
+3,13 · 5,26 · 8,9 · 10,13 · 10,14 · 11,10 · 11,12 · 11,14) steht
+*peoples · pueblos · peuples · popoli* — und **`Nationen` ist ein eigenes
+deutsches Wort mit genau der nations-Zeile** (2,4 · 11,10, in 11,10 sogar im
+selben Vers wie `Völker`). Nach der Faustregel „die Ausgabe liefert den Namen,
+der Bestand die Bedeutung" gewinnt bei einem gewoehnlichen Wort mit 199 von 252
+Belegen die Bindung. Beide Stellen auf *peoples* gezogen.
+
+**Und die Genusfalle aus 5. Mose ist prompt wieder aufgetreten**: *naciones ·
+nations · nazioni* sind feminin, *pueblos · peuples · popoli* maskulin. Mit dem
+Wort zusammen mussten
+
+- **10,7 pos 21 `wenige`** von *pocas · poche* auf *pocos · pochi* und
+- **8,23 pos 41 `der`** von *de las · delle* auf *de los · dei*
+
+Damals blieben 28 solcher Nachbarn stehen. **Nach jeder Glossenaenderung die
+Nachbarpositionen mitpruefen.**
+
+**2. `Seht,` in 8,18.** Der Bestand traegt die Form 48-mal als
+*See · Ved · Voyez · Vedete* und **genau einmal** als
+*Behold · Mirad · Voici · Ecco* — und dieser eine Beleg war Jes 8,18 aus
+Paket 4. Kapitel 12 hat in 12,2 die Korpusmehrheit genommen (wie schon 7,14),
+obwohl WEB *Behold*, LSG *Voici* und RIV *Ecco* schreiben und RV das Wort
+auslaesst. 8,18 auf die Mehrheit gezogen.
+
+**3. `ausrotten` in 10,7.** Kapitel 10 hatte italienisch *sterminare* nach RIV;
+der Bestand fuehrt das Lemma in **allen 34 Eintraegen** auf dem Stamm
+*eliminare* (dazu 6× *estirpò*), und Kapitel 11 hat in 11,13 *eliminati*
+gesetzt. en/es/fr trafen die Bestandszeile ohnehin exakt; nur `it` wich ab. Auf
+*eliminare* gezogen.
+
+### Was der Kreuzabgleich sonst gefunden hat
+
+`kreuz.py 23 10 11 12` meldet 48 gemeinsame Inhaltswortformen, 11 mit
+abweichenden Lesarten. Nach Pruefung sind **acht davon legitime
+Kontextvarianten** (Possessiva im Genus des Bezugsworts, `schlagen` in drei
+Personen, `richten` = *judge* gegen *direct*, `Macht` = Substantiv gegen
+Imperativ von `machen`) und drei die oben behandelten Faelle.
+
+**Ein Verdacht hat sich als Ausgabentreue erwiesen:** `unter` traegt in 10,4
+italienisch *fra*, in 10,16 *tra*. RIV schreibt an beiden Stellen genau das
+(„curvarsi **fra** i prigionieri" / „la consunzione **tra** i suoi"), beides ist
+korrektes Italienisch, und der Bestand fuehrt beide Zeilen (480× *tra*, 16×
+*fra*). **Kein Befund** — anders als beim `orecchi`/`orecchie`-Fall.
+
+### Zwei Kollisionen, die kein Skript gemeldet hat
+
+Der Agent von Kapitel 11 hat sie selbst gefunden, beide im eigenen Vers:
+
+- **11,7 `gemeinsam` / `zusammen`** fielen in **allen vier Sprachen** zusammen
+  (*together · juntos · ensemble · insieme*). `zusammen` A2 (274 Belege) behaelt
+  die Reihe, `gemeinsam` weicht auf seine **zweite Bestandslesart**
+  *in common · en común · en commun · in comune* aus — die LSG dort selbst
+  nahelegt („auront un même pâturage"). In 11,14 steht `gemeinsam` ohne Partner
+  und behaelt die Hauptzeile.
+- **11,12 `sammeln` / `zusammenbringen`** fielen es/fr/it zusammen.
+  `zusammenbringen` (5 Belege) weicht auf *bring together · juntar · recueillir ·
+  riunire*, `sammeln` nimmt seine Zweitzeile.
+
+Dazu ein vierter `glosskollision.py`-Treffer, aufgeloest: in **11,11 und 11,16**
+fielen das Relativpronomen `der` und `jenem` englisch auf *that* zusammen; das
+Relativum nimmt jetzt in beiden Versen die Bestandszeile *which · que · qui · che*.
+
+**Bewusst stehen geblieben** sind drei: `Neid`/`beneiden` in 11,13 (figura
+etymologica — **WEB wiederholt „envy … envy" selbst**, und `Neid` ist mit 15
+Belegen an *envy* gebunden), sowie zweimal die romanische Artikel/Klitikon-
+Verschmelzung (11,15 fr *le*, 11,10 es/fr/it *la*).
+
+### Neue Lemmata
+
+**Kapitel 10:** `Erhabener` C1 *lofty ones · elevados · élevés · elevati* ·
+`Fetter` B2 *fat ones · gordos · gras · grassi* · `unheilvoll` C1 ·
+`Heimsuchung` C1 · `Straßendreck` C1 · `Thronender` C1 · `zwitschern` C1 ·
+`fluten` B2 · `Nachtlager` C1 · `aufragen` C1 · `Brand` C1
+*burning · incendio · embrasement · incendio* (**ausgewichen**: die
+Mehrheitszeile *fire · fuego · feu · fuoco* fiel vierfach mit `Feuer` zusammen;
+`lodern` nahm *blaze*, damit auch die Brand/lodern-Grenze haelt — LSG schreibt
+selbst *embrasement*).
+Mehrwort: `als ob` B1 · `aus der Ferne` B2 · `um Hilfe fliehen` B2 ·
+`mit Leib und Seele` C1.
+
+**Kapitel 11:** `Reis` C1 *shoot · vara · rameau · ramo* (unbelegt bestaetigt,
+= alle vier Ausgaben) · `Gurt` C1 *sash · ceñidor · ceinturon · cinturone* ·
+`Meereszunge` C1 · `sengend` C1 · `grasen` B2 (bewusst gegen `weiden`
+abgesetzt) · `Patros` A1. Mehrwort neu: `ein Urteil geben` B2
+*pass judgment · dictar sentencia · rendre un jugement · emettere una sentenza*.
+
+**Kapitel 12:** `Bewohnerin` B2 *inhabitant · habitante · habitante ·
+abitatrice* — Femininum Singular neben dem Plural-Maskulinum `Bewohner`;
+RIV schreibt selbst *abitatrice*, WEB Singular *inhabitant*, nur LSG maskulin.
+Praezedenz im Bestand: `Prophetin`, `Dienerin`, `Königin`.
+
+**Der Tierfriede 11,6–8** (65,25 greift 11,7b und 11,9 auf): `Wolf` B1 ·
+`Lamm` B1 · `Leopard` B2 · `Böckchen` B2 · `Kalb` A2 · `Mastvieh` C1
+*fattened cattle · ganado cebado · bétail engraissé · bestiame ingrassato*
+(die 1Sam-15,9-Zeile, **nicht** *veaux gras*, das franzoesisch mit `Kalb`
+zusammengefallen waere) · `Kuh` A2 · `Bärin` A2 · `Stroh` B1 · `Rind` B1 ·
+`Säugling` C1 · `entwöhnen` C1 · `Natter` C1 *cobra · áspid · aspic · aspide* ·
+`Giftschlange` B2 *viper · víbora · vipère · vipera* · `Loch` B1 gegen
+`Höhle` B1.
+
+**Der Homograph des Kapitels:** `Junges` B2 *young · crías · petits · piccoli*
+(11,7, Tierjunge) gegen `Junge` A1 *boy · muchacho · garçon · ragazzo* (11,6,
+das Kind) — positionsgebunden geloest. **Kein Mehrwort `junger Löwe`** im
+Bestand, geprueft.
+
+### Zwei neue Lesarten fuer alte Lemmata
+
+- **`verderben` B2** hat im ganzen Bestand ausschliesslich die **moralische**
+  Lesart (*corrupt*, 5Mo 31,29 u. oe.). Jes 11,9 ist physisch („nichts Boeses tun
+  und nichts verderben"), alle vier Ausgaben schreiben *destroy · dañar ·
+  dommage · guasto*. Neue Lesart *destroy · destruir · détruire · distruggere*
+  gesetzt — **wichtig, weil 65,25 den Vers woertlich aufgreift.**
+- **`schlagen` A2** nimmt in **11,15 allein** *split · dividir · partager ·
+  spartire* („den Strom in sieben Baeche schlagen"); 11,4 und 10,29 bleiben auf
+  *strike*.
+- **`Mächtiger` B2** traegt in Kapitel 10 **zwei** Lesarten, am Vers
+  entschieden: 10,13 *mighty man · poderoso · puissant · potente* (Ps 52,3, der
+  Kriegerheld) gegen 10,34 *Mighty One · Poderoso · Puissant · Potente*
+  (Jes 1,24, der Gottestitel).
+- **`Rat` B1** nimmt in 11,2 die counsel-Zeile (4 Belege), **nicht** die
+  council-Zeile, die der formbasierte Extrakt fuer `Rates` als einzige zeigt:
+  **Hiob 12,13 traegt dieselbe Trias** „Weisheit … Rat und Einsicht". Die
+  Lexikonfalle in Reinform — es/fr/it sind in allen drei Zeilen identisch, nur
+  en unterscheidet.
+
+### Prompt-Hinweise: neun widerlegt
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Recht` und `Gerechtigkeit` seien in 11,3–5 zu trennen | **`Recht` kommt in Kapitel 11 gar nicht vor** — nur `gerecht` (adverbial), `gerechtes` (attributiv), `Urteil`, `Gerechtigkeit` |
+| `Geist` stehe sechsmal in 11,2 | **viermal**; die erste Stelle ist *Spirit* (des HERRN), die drei folgenden *spirit* |
+| trennbare Verben in 11,11 · 11,13 · 11,16 | **alle drei sind kompakte Einwortformen** (`ausstrecken`, `aufhören`, `heraufzog`) — das Kapitel hat **keinen einzigen** getrennten Verbzusatz |
+| `sammelt … auf` in 10,14 | `aufsammelt` und `eingesammelt`, je ein Token |
+| `Macht` in 12,4 sei ein Substantiv | **Imperativ von `machen`** — die angekuendigte Kollision mit `Stärke`/`Kraft` entsteht gar nicht |
+| `Rind`/`Kuh` in 11,7 sei eine Kollisionsstelle | *ox · buey · bœuf · bue* gegen *cow · vaca · vache · mucca* — in allen vier Sprachen getrennt |
+| `Furcht des HERRN` sei vielleicht ein Mehrwort | **der Bestand fuehrt sie nicht als Mehrwort** — 14 Belege allein in Sprueche, alle Wort fuer Wort |
+| `Säugling` und `zusammenbringen` seien unbelegt (`hints.py`) | **beide belegt**, ueber `Säuglinge` und ueber fuenf flektierte Formen. `belegt.py` hat es aufgedeckt |
+| `Lascha` folge der Bestandsreihe von `Lasa` | **zwei verschiedene Orte** — s. `NAMENSSCHREIBUNG_JESAJA.md` |
+
+Dazu **vier veraltete Belegzahlen** in meinem Auftrag: der Bestand ist seit dem
+Buchbeginn gewachsen (`Heerschar` 34 → 50, `Grimm` 17 → 18, `Stab` 46 → 48,
+Ueberrest-`Rest` 8 → 9). Und `hints.py` meldete in Kapitel 10 **32 unbelegte
+Formen, von denen nur 10 wirklich neu waren** — `belegt.py` fand `Fetten`,
+`Erhabenen`, `Sauls`, `Midians`, `Kranker`, `Säge`, `ducken`, `lodern` laengst
+im Bestand.
+
+### Der Kehrvers zum sechsten Mal
+
+10,4 ab Position 16 ist Token fuer Token identisch mit 5,25 · 9,11 · 9,16 ·
+9,20. Der Agent hat die zwoelf Eintraege plus `sich abwenden` Feld fuer Feld aus
+`ch9.json` uebernommen **und maschinell gegengeprueft** (0 Abweichungen), statt
+sie neu zu praegen.
+
+### Kapitel 12: die Parallelen liegen ausserhalb des Buches
+
+| Block | Partner | Versatz | Ergebnis |
+|---|---|---|---|
+| 12,2 pos 17–28 | **Ps 118,14** | +16 | **12 von 12 Tokens gleich** — Reihe komplett uebernommen |
+| 12,2 pos 16–27 | **2Mo 15,2** | +16 | **11 von 12** — **nicht** uebernommen: 2Mo hat `Lobgesang` C1 *hymn*, Jesaja `Lied` A2 *song*; 2Mo endet ohne `geworden`, sein `ist` ist Praesens, Jesajas das Perfekt-Hilfsverb |
+| 12,4 pos 5–18 | **1Chr 16,8 = Ps 105,1** | +5 | 14 Tokens durchgehend, inklusive beider Mehrwort-Eintraege `anrufen` und `bekannt machen` |
+| 12,5 pos 11–14 | 1Chr 16,14 | +3 | 4 Tokens, uebernommen |
+| 12,6 pos 7–10 | 41,14 | +11 | dort noch nicht annotiert — **12,6 ist die Vorlage** |
+
+Das ist der Fall, vor dem die Koenigsbuecher warnen, in beiden Richtungen an
+einem Vers: **Ps 118,14 ist der wortgleiche Partner, 2Mo 15,2 nur der
+fast-gleiche.** Wer beide als Vorlage nimmt, glossiert `Lobgesang` an einer
+Stelle, an der `Lied` steht.
+
+### Bestandsbefunde
+
+- **`Bewohner` B2 und `Einwohner` B2 tragen restlos dieselbe Reihe**
+  *inhabitants · habitantes · habitants · abitanti* unter zwei Lemmata — die
+  sechste Sachdublette nach `Ohrring`/`Ohrgehänge`, `Armreif`/`Armring`,
+  `Hoheit`/`Majestät`, `Trommel`/`Tamburin`/`Pauke`,
+  `Finsternis`/`Dunkel`/`Finster`, `Assyrien`/`Assur`.
+- **`Lenden` C1 (6 Belege) und `Hüfte` B2 (28) fallen franzoesisch auf *reins*
+  zusammen.** In 11,5 loesbar, weil `Hüfte` eine eigene Zweitzeile *hips ·
+  caderas · hanches · fianchi* hat; wo `Lenden` allein steht, ist nichts zu tun.
+- **`Assur` (10,5 · 10,24) und `Assyrien` (10,12) im selben Kapitel**, aber nie
+  im selben Vers — **nicht aufgeloest**, nur gemeldet.
+- **`überfluten`** hat im Bestand nur *floods · inunda · inonde · inonda*
+  (Hiob 12,15 · Ps 124,4). In 10,22 heisst es „ueberfliessen", nicht
+  „ueberschwemmen" — *overflows · desborda · déborde · trabocca* nach allen vier
+  Ausgaben. Gemeldet, nicht korpusweit angefasst.
+- **`Aja` ist ein Homograph, der hier nicht antwortet:** 1Mo 36,24 / 1Chr 1,40
+  ist die **Person** Aja (*Aiah*), Neh 11,31 die Ortschaft. Jes 10,28 ist die
+  Station Aiath, alle vier Ausgaben schreiben Aiath / Ajad / Ajjath / Aiath.
+  Dritte Zeile am selben Lemma, wie beim `Sethar`-Praezedenzfall.
+- **`mehr` ist im Bestand und im Buch unsettled** — 10,20 traegt
+  *any longer · ya*, 11,13 *anymore · ya*, 2,4/2,22 *any longer · ya*,
+  7,8/7,25 *anymore · más*, 1,13 *any more · más*. Korpusweit stehen 87 · 51 ·
+  39 · 37 Belege nebeneinander. **Kein Paket-Befund**, sondern eine alte Lage;
+  wenn sie einmal angefasst wird, dann buchuebergreifend.
+
+### Ausgabenbefunde
+
+- **RIV, drei neue Setzfehler** (in `RIV_SETZFEHLER_JESAJA.md` nachgetragen):
+  **10,26 „la frustra"** (*frusta*), **10,27 „il giogo sarò scosso"** (*sarà*)
+  und **11,16 „il iorno che uscì"** (*giorno*) — der dritte verschluckte Anlaut
+  an einem **Gemeinwort** nach 7,25 und 9,5, also genau die Klasse, die die
+  Eigennamen-Auszaehlung nicht sehen kann.
+- **WEB 11,5 verliert beide Synonympaare**: „the belt of his waist, and
+  faithfulness **the belt of his waist**" — `Gürtel`/`Gurt` und `Hüften`/`Lenden`
+  auf **eine** Wendung eingeebnet. Fuer diese vier Glossen gab es faktisch nur
+  drei Ausgaben.
+- **RV 11,11 deutet drei Ortsnamen um**: `Patros` → *Partia*, `Elam` →
+  *Persia*, `Schinar` → *Caldea*. **RV 10,34 laesst `den Mächtigen` ganz aus**
+  („caerá con estrépito"). **RV 10,6/10,7 setzen Assur feminin**, das Deutsche
+  maskulin.
+- **`Zeichen` (11,10 · 11,12): alle vier Ausgaben schreiben „Banner"**
+  (*banner · bandera · bannière · vessillo*). Der Bestand fuehrt fuer `Zeichen`
+  **keine** Banner-Lesart (86× *sign*, 68× *signs*). Bestand genommen — dieselbe
+  Lage wie `Nachtwache` in 1,8.
+- **11,6: keine der vier Ausgaben uebersetzt `weiden`** — alle schreiben
+  „(werden) zusammen sein". Bestand `weiden` C1 gehalten.
+- **Person wechselt in 10,12**: Deutsch und RV 3. Person, WEB/LSG/RIV 1. Person.
+  Glossiert ist der deutsche Text.
+- **WEB 10,18** liest „as when a standard bearer faints" statt „wie ein Kranker
+  dahinschwindet"; **WEB 10,19** „write their number" fuer `zählen`.
+- **LSG und RIV lesen 11,3 `Wohlgefallen` als „riechen"** („Il respirera la
+  crainte"), WEB/RV *delight/deleite*. Bestand genommen.
+- **LSG 12,2 uebersetzt `Rettung` zweimal verschieden** („ma délivrance",
+  dann verbal „m'a sauvé") und macht aus `Lied` „le sujet de mes louanges".
+  **RIV 12,6 verschmilzt `Juble und jauchze`** zu „de' gridi, de' gridi di
+  gioia"; **RV 12,6 setzt fuer `jauchze` „canta"**, was mit `Singt`/*Cantad* in
+  12,5 zusammenfiele. Die Bestandsreihen halten beide auseinander.
+- **12,2 · die Verdopplung `der HERR, der HERR`**: WEB „Yah, Yahweh" (zwei
+  verschiedene Woerter), LSG und RIV doppeln, **RV loest auf** und stellt den
+  Satz um. Das Eintragspaar traegt beide Male dieselbe Reihe; die RV-Aufloesung
+  ist ein Ausgabenbefund.

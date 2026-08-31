@@ -59,6 +59,11 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 3,16 | le **figliuolo** di Sion | *figliuole* | Numerus |
 | 7,20 | un **rasoi** | *rasoio* | Tippfehler |
 | 7,25 | **i** si lasceran | *vi* | Anlaut, Funktionswort |
+| 9,5 | **arà** chiamato | *sarà* | Anlaut, Funktionswort |
+| 9,5 | un **fanciullo** ci è nato / … ci è stato dato | *figliuolo* fuer `Sohn` | lexikalische Dublette |
+| 10,26 | leverà … la **frustra** | *frusta* | Tippfehler |
+| 10,27 | il giogo **sarò** scosso | *sarà* | Person |
+| 11,16 | il **iorno** che uscì | *giorno* | Anlaut, Gemeinwort |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -71,3 +76,16 @@ auftauchen. Es sind gewoehnliche italienische Woerter.
 
 **Nur die gefilterte Tabelle oben gilt.** Beide Agenten haben den Fehler
 gemeldet, statt ihn zu uebernehmen.
+
+## Zwei Klassen, die keine Setzfehler sind
+
+**Grossschreibung schwankt.** RIV schreibt in 10,33 „degli **Eserciti**" gegen
+„eserciti" klein in 10,16 · 23 · 24 · 26. Das ist eine Inkonsistenz der Ausgabe,
+kein verschluckter Anlaut — und kein Grund, die Glossenreihe zu aendern.
+
+**`fra` und `tra` wechseln zu Recht.** RIV schreibt in 10,4 „curvarsi **fra** i
+prigionieri" und in 10,16 „la consunzione **tra** i suoi". Beides ist korrektes
+Italienisch (die Ausgabe waehlt euphonisch), und der Bestand fuehrt beide Zeilen
+fuer `unter` (480× *tra*, 16× *fra*). **Kein Befund** — anders als beim
+`orecchi`/`orecchie`-Fall, wo dieselbe Ausgabe zwei Formen desselben Wortes
+setzt, ohne dass ein Lautgrund vorliegt.
