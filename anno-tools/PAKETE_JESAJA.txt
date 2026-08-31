@@ -1,0 +1,54 @@
+# Pakete Jesaja (Buch 23)
+
+# 66 Kapitel, 1291 Verse. Die Reihenfolge folgt der Kapitelzahl — es gibt nur
+# fuenf buchinterne Dubletten, und jede Vorlage steht ohnehin vor ihrer
+# Wiederholung (35 vor 51, 2 vor 13, 48 vor 57).
+
+# Drei Ausnahmen von der Dreierwelle:
+#   8+9   ZUSAMMEN — die Kapitelgrenze verschiebt sich zwischen ihnen
+#   36-39 EIGENES Paket gegen JES_36_39_PARALLELEN.md (aus 2. Koenige 18-20)
+#   63+64 ZUSAMMEN — de 64,1 verschmilzt zwei Verse der Ausgaben
+
+ 1. Paket: Jes 1 (31 V.)
+    MASSSTAB: `Heerscharen` (60 Verse im Buch, im Bestand unbelegt),
+              `Rest` — Ueberrest oder Ueberbleibsel? 1,9 entscheidet
+ 2. Paket: Jes 2 (22 V.) | Jes 3 (26 V.) | Jes 4 (6 V.)
+    Kap. 2: Dubletten 2,11<->2,17 und 2,19<->2,21 im selben Kapitel;
+            2,1 ist VORLAGE fuer 13,1
+ 3. Paket: Jes 5 (30 V.) | Jes 6 (13 V.) | Jes 7 (25 V.)
+ 4. Paket: Jes 8 (23 V.) | Jes 9 (20 V.)
+    VERSZAEHLUNG: de 8,1-22 = deren 8,1-22 (ausgaben.py meldet hier
+    FAELSCHLICH -1 und warnt selbst); de 8,23 = deren 9,1;
+    de 9,n = deren 9,n+1. fr folgt durchgehend dem Deutschen.
+ 5. Paket: Jes 10 (34 V.) | Jes 11 (16 V.) | Jes 12 (6 V.)
+ 6. Paket: Jes 13 (22 V.) | Jes 14 (32 V.) | Jes 15 (9 V.)
+    KOLLISION: 13,4 hat `Heerscharen` UND `Heer` — der einzige Vers
+    im ganzen Buch, an dem die Formel entschieden werden muss
+ 7. Paket: Jes 16 (14 V.) | Jes 17 (14 V.) | Jes 18 (7 V.)
+ 8. Paket: Jes 19 (25 V.) | Jes 20 (6 V.) | Jes 21 (17 V.)
+ 9. Paket: Jes 22 (25 V.) | Jes 23 (18 V.) | Jes 24 (23 V.)
+10. Paket: Jes 25 (12 V.) | Jes 26 (21 V.) | Jes 27 (13 V.)
+11. Paket: Jes 28 (29 V.) | Jes 29 (24 V.) | Jes 30 (33 V.)
+12. Paket: Jes 31 (9 V.) | Jes 32 (20 V.) | Jes 33 (24 V.)
+13. Paket: Jes 34 (17 V.) | Jes 35 (10 V.)
+    Kap. 35: VORLAGE fuer 51,11 (Aehnlichkeit 0,92)
+14. Paket: Jes 36 (22 V.) | Jes 37 (38 V.) | Jes 38 (22 V.) | Jes 39 (8 V.)
+    PARALLELE zu 2. Koenige 18-20: 22 Verse woertlich, 28 nah,
+    19 teilweise, 21 eigenstaendig. Uebernehmen, nicht neu entscheiden.
+    Vier Kapitel statt drei, weil sie zusammengehoeren.
+15. Paket: Jes 40 (31 V.) | Jes 41 (29 V.) | Jes 42 (25 V.)
+16. Paket: Jes 43 (28 V.) | Jes 44 (28 V.) | Jes 45 (25 V.)
+17. Paket: Jes 46 (13 V.) | Jes 47 (15 V.) | Jes 48 (22 V.)
+    Kap. 48: VORLAGE fuer 57,21 (0,35 — nur der gemeinsame Block)
+18. Paket: Jes 49 (26 V.) | Jes 50 (11 V.) | Jes 51 (23 V.)
+19. Paket: Jes 52 (15 V.) | Jes 53 (12 V.) | Jes 54 (17 V.)
+20. Paket: Jes 55 (13 V.) | Jes 56 (12 V.) | Jes 57 (21 V.)
+21. Paket: Jes 58 (14 V.) | Jes 59 (21 V.) | Jes 60 (22 V.)
+22. Paket: Jes 61 (11 V.) | Jes 62 (12 V.)
+23. Paket: Jes 63 (19 V.) | Jes 64 (11 V.)
+    VERSZAEHLUNG: de 64,1 verschmilzt deren 64,1 UND 64,2;
+    de 64,n = deren 64,n+1 ab n>=2. Franzoesisch hat die erste
+    Haelfte von de 64,1 am Ende von fr 63,19.
+24. Paket: Jes 65 (25 V.) | Jes 66 (24 V.)
+
+Summe: 1291 Verse in 66 Kapiteln, 24 Pakete
