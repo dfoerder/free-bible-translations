@@ -560,3 +560,150 @@ das Muster:
   „Tueren", RV „Tuerangeln"); nur WEB *thresholds*.
 - **6,13 `Eiche`: RV schreibt *olmo* (Ulme)** — dieselbe Abweichung wie in
   1,29/1,30. Bestand genommen.
+
+## 10. Paket 4 (Kap. 8 · 9) — die verschobene Kapitelgrenze
+
+### Verszaehlung, von beiden Agenten unabhaengig nachgemessen
+
+Beide haben die Kapiteldateien direkt aufgeschlagen statt `ausgaben.py` zu
+glauben. Ergebnis deckt sich mit §1:
+
+| | Kap. 8 | Kap. 9 |
+|---|---|---|
+| de | 23 | 20 |
+| fr | 23 (Versatz 0) | 20 (Versatz 0) |
+| en/es/it | 22 — **de 8,1–22 = deren 8,1–22 (Versatz 0)**, de 8,23 = **deren 9,1** | 21 — **de 9,n = deren 9,n+1** |
+
+**Der staerkste unabhaengige Beleg kommt von RIV selbst**: die Ausgabe traegt in
+Kapitel 9 durchgehend Klammernummern, und die laufen von `(8:23)` in ihrem 9,1
+bis `(9:20)` in ihrem 9,21 — **exakt die deutsche Zaehlung**.
+
+`ausgaben.py` wendet fuer Kapitel 8 weiterhin den falschen Versatz −1 an und
+warnt selbst darueber. **Die Warnung hat recht, die angewandte Zahl nicht.**
+
+### Der vierfache Kehrvers — nachgeprueft identisch
+
+„Bei alledem wendet sich sein Zorn nicht ab, seine Hand bleibt erhoben" steht in
+**5,25 · 9,11 · 9,16 · 9,20**. Alle vier sind ueber zwei Kapitel hinweg
+**Eintrag fuer Eintrag, Lemma fuer Lemma, Level fuer Level identisch**
+(12 Eintraege ab `Bei`, maschinell verglichen).
+
+**Der Wortlaut im Auftrag war falsch**: es heisst „seine Hand bleibt
+**erhoben**", nicht „und seine Hand bleibt ausgestreckt". `ausgestreckt` kommt
+im Kapitel nicht vor.
+
+**`parallelen.py` weist denselben Zwoelf-Token-Block in 10,4 aus** — dort noch
+unannotiert. Kapitel 10 uebernimmt die Reihe aus `ch9.json`.
+
+### Wenn der l1912mod einen Namen selbst uebersetzt
+
+**Der Name in 8,1 und 8,3 ist nicht `Maher-Schalal-Hasch-Bas`**, sondern
+**`Schnell-Raub-Eilige-Beute`** — vier deutsche Woerter. Der Text deutet selbst.
+
+Der Agent hat Praezedenz im Bestand gefunden: Luther macht das gelegentlich, und
+das Korpus folgt ihm bei **`Doppelhöhle`** C1 fuer Machpela (3 Belege) und
+**`Warte`** C1 fuer Mizpa. Beide sind nach der **deutschen Bedeutung**
+glossiert. Gegengeprueft: alle uebrigen rund achtzig Bindestrich-Lemmata des
+Bestands (`Baal-Hamon`, `Adoni-Zedek`, `Abel-Mehola` …) sind Transliterationen
+und bleiben es. **Die Regel steht jetzt in `AUFTRAG_BUCH.md`.**
+
+Die Ausgaben helfen hier nicht: **LSG und RIV uebersetzen in 8,1 und
+transliterieren in 8,3**, WEB und RV transliterieren beide Male.
+
+### Die vier Thronnamen in 9,5
+
+**Auch hier war mein Wortlaut falsch.** Der Text hat nicht vier
+Bindestrich-Komposita, sondern **drei Adjektiv-Substantiv-Paare und ein
+Kompositum**: „Wunderbarer Ratgeber, starker Gott, ewiger Vater, Friedefürst" —
+sieben Tokens.
+
+**WEB, RV und LSG lesen fuenf Namen**, weil sie „Wunderbarer" und „Ratgeber"
+trennen. **Nur RIV liest vier wie das Deutsche.**
+
+Zwei Entscheidungen gegen die Ausgaben:
+
+- **`wunderbar` B1** *wonderful · maravilloso · merveilleux · meraviglioso* —
+  attributives Adjektiv, nicht das Substantiv. RV/LSG/RIV schreiben
+  *Admirable/ammirabile*; der Bestand ist mit ~17 Belegen restlos gebunden, und
+  das Wort kehrt in **25,1 · 28,29 · 29,14** wieder.
+- **`stark` A1** *strong · fuerte · fort · forte* — **alle vier Ausgaben sagen
+  etwas anderes** (*Mighty · puissant · potente*). Mit deren Reihe waere die
+  Trennung zu **`Mächtiger (Israels)`** verloren, das im Buch fest an
+  *Mighty One · Poderoso · Puissant · Potente* gebunden ist (§7).
+
+**`Friedefürst` C1** *Prince of Peace · Príncipe de paz · Prince de la paix ·
+Principe della Pace* ist wirklich neu; dort entscheidet die Ausgabe, weil der
+Bestand fuer das Kompositum schweigt und alle vier einstimmig sind.
+
+### 9,6 — die zweite Recht/Gerechtigkeit-Stelle
+
+Wie in 5,7 in **allen vier Sprachen getrennt**: `Recht` *justice · derecho ·
+droit · diritto* gegen `Gerechtigkeit` *righteousness · justicia · justice ·
+giustizia*. **RV schreibt hier *juicio*** — das ist die Reihe von `Gericht`.
+Bestand genommen.
+
+Dazu eine Dreier-Nachbarschaft, die der Auftrag nicht nannte: **`Herrschaft` ·
+`Thron` · `Königreich`** im selben Vers. `Herrschaft` nimmt die
+**Zweitzeile** *dominion · dominio · **domination** · dominio* (12 Belege, LSG
+schreibt selbst *domination*) — die Mehrheitszeile *reign · reinado · règne ·
+**regno*** waere italienisch mit `Königreich` zusammengefallen.
+
+### Und wieder: kein NT-Zitat ist woertlich
+
+**Mt 4,16 ↔ Jes 9,1** — 21 gegen 23 Tokens, drei Bloecke (4+3+6), und **jedes
+finite Verb ist verschieden** (`wandelt`/`lebte`, `sieht`/`hat gesehen`,
+`wohnen`/`saßen`, `strahlt auf`/`ist aufgegangen`). Matthaeus schreibt
+**`Dunkeln`**, Jesaja **`Finstern`** — zwei verschiedene deutsche Woerter.
+
+Das ist der dritte Befund dieser Art: Mt 1,23 ↔ Jes 7,14 (sieben Tokens), die
+fuenf Zitate von 6,9–10 (keines woertlich), jetzt Mt 4,16. **Uebereinstimmung
+besteht auf Lemma-Ebene, nicht im Wortlaut.**
+
+### Vom Koordinator angeglichen
+
+**`zerschmettert`** — 1,28 und 8,9 stehen beide im Plural Passiv. Der Bestand
+ist selbst gespalten (*destrozados* 3 Belege Plural, *quebrantado* 4 Belege
+Singular); Kapitel 8 hatte die Singularzeile pluralisiert. Auf die Plural-Zeile
+aus Kapitel 1 angeglichen.
+
+### Die fuenfte Sachdublette des Bestands
+
+Nach `Ohrring`/`Ohrgehänge`, `Armreif`/`Armring`, `Hoheit`/`Majestät` und
+`Trommel`/`Tamburin`/`Pauke` jetzt:
+
+**`Finsternis` C1 (82×), `Dunkel` B1 (26×) und das neue `Finster` C1 tragen alle
+drei *darkness · tinieblas · ténèbres · tenebre*** — mit Levelspreizung B1↔C1.
+`Dunkel` steht in Mt 4,16, `Finstern` in Jes 9,1: **derselbe Satz in zwei
+Buechern, zwei verschiedene deutsche Woerter.**
+
+Kapitel 8 hat `Dunkel` an seiner eigenen Stelle (8,22, neben `Finsternis`) auf
+die Zweitzeile *gloom · penumbra · obscurité · buio* ausweichen lassen.
+
+Dazu neu: **`Fraß` C1 und `Nahrung` B1** teilen sich *food · comida ·
+nourriture* und trennen nur italienisch (*pasto* / *cibo*).
+
+### Duenn belegte Lemmata, bei denen die Bedeutung schlug
+
+| Wort | einziger Beleg | warum er nicht traegt |
+|---|---|---|
+| `abhauen` B2 | 5Mo 25,12, *amputar · amputare* (eine Hand) | 9,13 ist „Kopf und Schwanz" metaphorisch → *cut off · cortar · trancher · recidere* |
+| `stampfen` C1 | Ri 5,22, *piaffèrent · scalpitarono* (Pferdehufe) | 9,4 stampft ein **Stiefel**; beide Woerter sind ausschliesslich equin → fr *piétine*, it *pesta* |
+| `Treiber` B2 | Hiob 39,7, *arriero · conducente* | 9,3 ist ein menschlicher Fronvogt; **alle vier Ausgaben schreiben „Unterdrücker"**. Bestand trotzdem gehalten, gemeldet |
+
+### Ausgabenbefunde
+
+- **RIV: sieben neue Fehler in dieser Welle**, nur einer in der Liste. Neue
+  Klassen: **9,5 „arà chiamato"** (*sarà* — Anlaut an einem Nicht-Eigennamen,
+  nach 7,25 der zweite Fund) und **9,5 „un fanciullo ci è nato, un fanciullo ci
+  è stato dato"** — RIV wiederholt *fanciullo* fuer `Kind` **und** `Sohn`, wo
+  *figliuolo* stehen muesste. Das ist eine **lexikalische Dublette**, eine
+  dritte Fehlerklasse. Dazu 8,2 `eberekia`, 8,14 `Ed gli` und `n laccio`,
+  8,1 „carattere leggibili".
+- **RV 9,2 ist negiert**: „Multiplicaste el pueblo, **pero no** aumentaste la
+  alegría" — gegen Deutsch, WEB, LSG und RIV. RV folgt der Ketiv-Lesart.
+- **WEB 8,14 laesst einen halben Vers aus** („ein Stein des Anstoßes und ein
+  Fels des Straucheln" fehlt ganz). Fuer diese beiden Glossen gab es nur drei
+  Ausgaben; entschieden hat der Bestand ueber **Roem 9,33**, das genau diesen
+  Vers zitiert.
+- **WEB 9,4 loest `Stiefel` ganz auf** („the armor of the armed man").
+- **LSG und RIV setzen 9,14/9,15 in Klammern**, WEB und RV nicht.
