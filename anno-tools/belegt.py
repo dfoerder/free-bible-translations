@@ -88,15 +88,42 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None):
         print()
         return True
     if not c:
-        # Kein Treffer — aber vielleicht ueber den Stamm?
-        nah = sorted(x for x in formen
-                     if len(x) >= 4 and (x.startswith(f[:5]) or f.startswith(x[:5])))
+        # Kein Treffer — aber vielleicht ueber den Stamm? Der starre
+        # Praefixvergleich der ersten Fassung fand `sauer` zu `saure` nicht
+        # (Vokalwechsel) und `hacken` zu `gehackt` nicht (ge-Praefix), beide
+        # gemeldet vom Agenten fuer Jesaja 5. Deshalb zusaetzlich: Partizip- und
+        # Endungsabbau, Umlautaufloesung, und ein Aehnlichkeitsmass.
+        import difflib
+        def stamm(w):
+            w = (w.replace('ä', 'a').replace('ö', 'o')
+                  .replace('ü', 'u').replace('ß', 'ss'))
+            if w.startswith('ge') and len(w) > 5:
+                w = w[2:]
+            for e in ('esten', 'sten', 'ende', 'end', 'ten', 'ung',
+                      'est', 'en', 'er', 'es', 'em', 'et', 'te', 'st',
+                      'e', 't', 'n', 's'):
+                if w.endswith(e) and len(w) - len(e) >= 3:
+                    return w[:-len(e)]
+            return w
+        sf = stamm(f)
+        kandidaten = set()
+        for x in list(formen) + list(lemmata or ()):
+            if len(x) < 4:
+                continue
+            sx = stamm(x)
+            if sf == sx or sx.startswith(sf) or sf.startswith(sx) \
+               or difflib.SequenceMatcher(None, sf, sx).ratio() >= 0.8:
+                kandidaten.add(x)
         print('   im Bestand NICHT belegt.')
-        if nah:
-            print('   stammverwandte Formen, die es gibt: '
-                  + ', '.join(nah[:12]))
-            print('   -> `lexicon.py` und `fixgloss.py show <Lemma>` fragen,'
-                  ' bevor etwas Neues erfunden wird.')
+        if kandidaten:
+            als_lemma = sorted(x for x in kandidaten if lemmata and x in lemmata)
+            als_form = sorted(x for x in kandidaten if x not in set(als_lemma))
+            if als_lemma:
+                print('   Es gibt aber diese LEMMATA mit demselben Stamm — erst')
+                print('   `fixgloss.py show <Lemma>` fragen, bevor etwas Neues')
+                print('   erfunden wird: ' + ', '.join(f'`{x}`' for x in als_lemma[:10]))
+            if als_form:
+                print('   stammverwandte Formen: ' + ', '.join(als_form[:10]))
         print()
         return False
     ges = sum(c.values())
