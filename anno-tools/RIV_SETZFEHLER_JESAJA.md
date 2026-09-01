@@ -64,6 +64,10 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 10,26 | leverà … la **frustra** | *frusta* | Tippfehler |
 | 10,27 | il giogo **sarò** scosso | *sarà* | Person |
 | 11,16 | il **iorno** che uscì | *giorno* | Anlaut, Gemeinwort |
+| 13,10 | non **far** più brillare | *faran* | verschluckte Endung |
+| 13,11 | de' **uperbi** | *superbi* | Anlaut, Gemeinwort |
+| 13,15 | sarà trovato **sarò** trafitto | *sarà* | Person |
+| 13,20 | la sua **enda** | *tenda* | Anlaut, Gemeinwort |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 

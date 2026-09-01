@@ -972,3 +972,273 @@ Stelle, an der `Lied` steht.
   verschiedene Woerter), LSG und RIV doppeln, **RV loest auf** und stellt den
   Satz um. Das Eintragspaar traegt beide Male dieselbe Reihe; die RV-Aufloesung
   ist ein Ausgabenbefund.
+
+## 12. Paket 6 (Kap. 13 · 14 · 15)
+
+Drei Kapitel gleichzeitig, 1326 Einzelwort- und 68 Mehrwort-Eintraege. Alle
+sechs Pruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23` und
+`hilfsverb.py 23` melden ueber das gebaute Buch **0 Befunde**.
+
+### 13,4 — die einzige Kollisionsstelle des Buches ist entschaerft
+
+„Der HERR der **Heerscharen** mustert ein **Heer** zum Kampf." Die in §2
+vorgerechnete Probe traegt: `Heerschar` C1 *hosts · ejércitos · armées ·
+eserciti* gegen `Heer` B2 *army · ejército · armée · esercito* — englisch
+lexikalisch getrennt, romanisch ueber den Numerus. **Keine Sonderloesung.**
+Die Falle daneben ist umgangen: `Heer` hat im Bestand auch eine Plurallesart
+*armies · ejércitos · armées · eserciti*, die in allen vier Sprachen mit
+`Heerschar` zusammengefallen waere; im Text steht „ein Heer", Singular.
+`Heerschar` steht inzwischen bei **55 Belegen**.
+
+### Was ein Wort in drei gleichzeitigen Kapiteln kostet — und diesmal nichts kostete
+
+`Ausspruch` steht in **13,1 · 14,28 · 15,1**, also je einmal in jedem der drei
+parallel laufenden Kapitel, und hat im ganzen Bestand **einen** Beleg
+(Spr 30,1). Genau an solchen Woertern sind in 3. Mose und den Koenigsbuechern
+die Wellen auseinandergelaufen. Die Reihe C1 *oracle · oráculo · oracle ·
+oracolo* stand deshalb wortgleich in allen drei Auftraegen — **alle drei Agenten
+haben sie unabhaengig am Vers bestaetigt** (LSG *oracle*, RIV *oracolo*
+woertlich; WEB liest *burden*, RV *profecía*, beide nicht gefolgt).
+
+**Die Gegenprobe zur Methode:** wo ein Wort nur in einem Kapitel steht, ist
+nichts abzustimmen; wo es in mehreren steht, muss die Reihe **vor** dem Start im
+Auftrag stehen. `vorab.py` findet diese Woerter, und `kreuz.py` prueft
+hinterher, ob es gereicht hat.
+
+### Vom Koordinator angeglichen — dreimal, alle klein
+
+`kreuz.py 23 13 14 15` meldet 57 gemeinsame Inhaltswortformen, 19 mit
+abweichenden Lesarten. **Sechzehn sind legitime Flexions- und
+Kontextvarianten** (Person, Numerus, Tempus, Kontraktionen vor verschiedenen
+Substantiven). Drei nicht:
+
+| Stelle | war | ist | Grund |
+|---|---|---|---|
+| 13,2 `damit` fr | *pour que* | *afin que* | LSG schreibt an der Stelle einen blossen Konjunktiv („qu'ils franchissent"), gibt also **keine** Form vor; der Bestand hat 1309 Belege *afin que* und **null** *pour que* |
+| 13,17 `nichts` it | *niente* | *nulla* | RIV umschreibt („non faranno alcun caso"), gibt also keine Form vor; der Bestand hat 479 Belege *nulla* und **null** *niente* |
+| 14,19 `durchs` es | *por la* | *a* | **RV schreibt an beiden Stellen „a espada"** (13,15 und 14,19) — Kapitel 13 hatte es richtig, Kapitel 14 nicht |
+
+Die Regel dahinter, zweimal in derselben Welle: **wo die Ausgabe die Form gar
+nicht setzt, entscheidet der Bestand.** Die Ausgabe kann nur widersprechen, wo
+sie ueberhaupt etwas sagt.
+
+**Kein Befund war dagegen `jeder` in 13,14** (it *ognuno* statt der
+Bestandszeile *ciascuno*): **RIV schreibt dort selbst zweimal „ognuno"**. Und
+`durchs` italienisch bleibt in 13,15 *di* gegen 14,19 *con la*, weil RIV genau
+so wechselt („cadrà di spada" / „trafitti colla spada").
+
+### Drei Ortsnamen, deren Bestandsreihe ihrer Ausgabe widersprach
+
+**Der wichtigste Befund der Welle**, gefunden vom Agenten fuer Kapitel 15 und
+korpusweit nachgezaehlt: `Zoar` trug italienisch *Zoar*, waehrend RIV an
+**allen acht** Belegstellen *Tsoar* schreibt; `Medeba` trug *Madaba* gegen
+**vier von vier** *Medeba*; `Eleale` trug spanisch *Elealé* und italienisch
+*Eleale* gegen **zwei von zwei** *Eleale* (RV) und *Elealeh* (RIV).
+
+Mit `remap.py` in 1. Mose, 4. Mose, 5. Mose, Josua, 1. Chronik und Jesaja
+korrigiert; alle sechs Buecher laufen danach durch `validate.py`. Einzelheiten
+in `NAMENSSCHREIBUNG_JESAJA.md`.
+
+**Die Abgrenzung, die dabei entstanden ist:** eine abweichende Sprache ist nur
+dann ein Befund, wenn sich die Abweichung **an jeder Belegstelle** an der
+Ausgabe widerlegen laesst. Weicht die Ausgabe selbst ab oder wechselt sie
+(RIVs `fra`/`tra`, WEBs *Shushan*), ist nichts zu tun.
+
+### `Elale` — die Gegenprobe zu `Lascha` faellt anders aus
+
+Nach dem Irrtum des letzten Pakets war ausdruecklich verlangt, die
+Namenstabelle **an allen vier Ausgaben zu pruefen statt sie zu glauben**. Hier
+haelt sie: alle vier schreiben in 4Mo 32,3/32,37 und in Jes 15,4 identisch, und
+**4Mo 32,3 nennt `Dibon`, `Hesbon`, `Eleale` und `Nebo` in einer Zeile** — vier
+der sechzehn Ortsnamen von Jesaja 15. Derselbe Ort.
+
+### Kollisionen, die kein Skript gemeldet hat — vier in einer Welle
+
+- **13,10 `leuchten` / `scheinen` fielen in allen vier Sprachen zusammen**
+  (*shine · brillar · briller · risplendere*). `leuchten` nimmt seine **zweite
+  Bestandszeile** *give light · alumbrar · éclairer · illuminare* (4Mo 8,2, dort
+  Lampen — derselbe Sachverhalt). **`glosskollision.py` hat das nicht gesehen.**
+- **15,4 `zittern` / `bebt`** fielen bis auf den Numerus in allen vier zusammen.
+  `zittern` ist 8/8 einheitlich, `beben` dreifach gespalten — `beben` weicht auf
+  die Ps-99,1-Zeile *shakes · se estremece · chancelle · è scossa*.
+- **15,6 `welken` / `verdorrt`** fielen englisch zusammen; `welken` nimmt die
+  Hiob-18,16-Zeile *wilt*, womit es/fr sich zusaetzlich Wort fuer Wort mit RV
+  und LSG decken.
+- **14,31 `vor Angst`** ist ein Bestands-Mehrwort (4 Belege), das **weder
+  `konvention.py` noch `sweep.py` gemeldet** haben — die Klasse, die fuer
+  `selfcheck.py` und `qa.py` prinzipiell unsichtbar ist.
+
+Dazu, vom Skript gemeldet und am Vers geloest: 13,4 `Getöse`/`Tosen` (it),
+13,13 `erschüttern`/`beben` (en), 13,14 `zu`/`in`, 13,5+13,6 `des`/`vom` (es),
+14,25 `auf`/`in` (es).
+
+### Wo der Bestand gegen alle vier Ausgaben gehalten wurde
+
+Das Muster von `Nachtwache` (1,8) und `Zeichen` (11,10) hat sich in dieser Welle
+**fuenfmal** wiederholt. Jedes Mal gilt: die Ausgabe liefert den Namen, der
+Bestand die Bedeutung.
+
+| Stelle | alle vier Ausgaben | genommen | Belege |
+|---|---|---|---|
+| 13,21 `Dämonen` | *wild goats · sátiros · boucs · satiri* | `Dämon` B2 *demons · demonios · démons · demoni* | 48 |
+| 13,14 `Reh` | „Gazelle" | `Reh` B2 *roe deer · corzo · chevreuil · capriolo* | 4 |
+| 13,16 `geschändet` | „vergewaltigt" | `schänden` C1 *dishonored · deshonradas · déshonorées · disonorate* | 2Sam 13,22, derselbe Tatbestand |
+| 15,2 `Höhen` | „high places" | `Höhe` B1 *heights · alturas · hauteurs · alture* | 13/13 — und **1Kön 22,44 fuehrt `Höhe` und `Opferhöhe` im selben Vers** und trennt genauso |
+| 15,2 `Tempel` | WEB/RV transliterieren („Bayith") | `Tempel` *temple · templo · temple · tempio* | 212 |
+
+### Die beiden schaerfsten Einzelstellen
+
+**14,29 `Schlange` · `Natter` · `Drache` in einem Vers.** Drei der vier Ausgaben
+schreiben fuer `Drache` ein Schlangenwort (WEB *fiery flying serpent*, RV
+*serpiente voladora*, RIV *serpente ardente e volante*); nur LSG *dragon
+volant*. **Wer den Ausgaben folgt, laesst `Drache` in allen vier Sprachen mit
+`Schlange` zusammenfallen.** Der Bestand trennt alle drei: `Schlange` A2
+*serpent · serpiente · serpent · serpente* · `Natter` C1 *cobra · áspid · aspic ·
+aspide* (aus 11,8 uebernommen) · `Drache` B1 *dragon · dragón · dragon · drago*.
+Dass die neun `Drache`-Belege saemtlich aus Offenbarung 12 stammen, ist **kein**
+Hinderungsgrund — die Bedeutung (Fabeltier) ist dieselbe. **RV setzt fuer
+`Natter` *víbora*, und das ist im Buch die Reihe von `Giftschlange` (11,8)** —
+gefolgt waere 11,8 gegen 14,29 gespalten.
+
+**14,11 `Maden` / `Würmer`.** RV, LSG und RIV setzen fuer beide **dasselbe
+Wort**; nur WEB trennt. Der Bestand trennt in allen vier, und zwar aus
+**Hiob 25,6, wo beide Woerter im selben Vers stehen**: `Made` B2 *maggot · larva
+· vermisseau · vermicciuolo* gegen `Wurm` B1 *worm · gusano · ver · verme*.
+
+### `Last`: die Spaltung im Buch ist bedeutungsgetragen — 10,27 bleibt
+
+Der Auftrag hatte gefragt, ob 10,27 auf die Bestandsmehrheit nachzuziehen sei.
+**Nein.** Die vier Ausgaben schreiben in **10,27 und 14,25 wortgleich dasselbe**
+(*his burden · su carga · son fardeau · il suo carico*), waehrend 1,14 etwas
+anderes meint — dort sind die Feste Gott „eine Last", und LSG schreibt *à
+charge*. Beide Zeilen sind Bestandszeilen. 10,27 und 14,25 sind damit Feld fuer
+Feld deckungsgleich in `Joch` C1 *yoke · yugo · joug · giogo*, `Last` B1
+*burden · carga · fardeau · carico* und `Schulter` A2 *shoulder · hombro ·
+épaule · spalla* — die Beinah-Dublette, die `DUBLETTEN_JESAJA.md` unterschreitet.
+
+### Neue Lemmata
+
+**Kapitel 13 — das Bestiarium 13,21–22** (kehrt in 34,11–15 wieder):
+`Wüstentier` C1 · `Eule` B2 *owls · búhos · chats-huants · gufi* · `Strauß` B2 ·
+`Dämon` B2 · `Hund` A1 · `Schakal` C1 · `Schloss` B1 *castles · castillos ·
+châteaux · castelli* (**neue Lesart**, Bestand = *locks*) · `heulen` B2 *howl*
+(**neue Lesart**, Bestand *wail* fuer Menschen) · `hausen` C1.
+Dazu `Geweihter` C1 · `Menschenherz` B2 · `schlaff` B2 · `Feingold` C1 ·
+`Zierde` C1 · `anstarren` B2. Mehrwort neu: `sich nichts machen aus` B2 ·
+`sich hinziehen` B2 · `lagern lassen` B2.
+
+**Kapitel 14 — das Unterwelt-Feld:** `Totengeist` C1 · `Made` B2 · `Wurm` B1 ·
+`Grube` B2 · `Grab` B1 · `Aas` C1 · `Sprössling` C1 *shoot · retoño · rejeton ·
+rampollo* (**bewusst abgesetzt** von `Spross` und `Reis` aus 4,2/11,1) ·
+`Morgenröte` C1. Dazu `Philisterland` B2 · `Terror` C1 · `Todesjahr` C1 ·
+`Wolkenhöhe` C1 · `Wassersumpf` C1 · `Besen` B2 · `Bösewicht` C1 · `schmettern`
+C1 · `drunten` B2 · `einstig` B2. Mehrwort neu: `erzittern lassen` C1 ·
+`sich niedersetzen` C1.
+
+**Kapitel 15 — dreizehn der sechzehn Ortsnamen sind neu:** `Ar-Moab` ·
+`Kir-Moab` · `Elale` · `Eglat-Schelischija` · `Luhit` · `Horonajim` · `Nimrim` ·
+`Eglajim` · `Dimon` (alle A1). Dazu `Klagegeschrei` C1 *cry of anguish · grito
+de angustia · cri de détresse · grido d'angoscia* · `Wehklagen` C1 *wailing ·
+alarido · lamentation · urlo* · `Weidenbach` C1 · `Bewaffneter` C1 ·
+`Entronnener` C1. Mehrwort neu: `in Tränen aufgelöst` C1.
+
+**`Weidenbach` (15,7) wird uebersetzt, nicht transliteriert** — die Regel aus
+`AUFTRAG_BUCH.md` („steht im deutschen Text ein deutsches Wort, wird es
+uebersetzt"). Alle vier Ausgaben uebersetzen, und **der Bestand deckt beide
+Haelften**: `Bach` *brook · arroyo · torrent · torrente* (61 Belege) und eine
+eigene Weiden-Lesart von `Weide` *willows · sauces · saules · salici*
+(Hiob 40,22 · Ps 137,2). **`Eglat-Schelischija` bleibt Name** — Lautfolge ohne
+deutsche Bedeutung.
+
+### `Rest` in 15,9: Ueberrest, und der Grund ist nicht die Theologie
+
+Genommen ist die Ueberrest-Zeile B1 *remnant · remanente · reste · resto*
+(inzwischen 15 Belege gegen 20 der Mehrheitslesart). Entschieden haben zwei
+Dinge, **nicht** dass es eine Restformel waere:
+
+1. **WEB ist die einzige der vier Sprachen, die beide Lesarten lexikalisch
+   trennt** — und sie schreibt „on the remnant of the land". es/fr/it (*el resto
+   · le reste · quel che resta*) sind mit beiden vertraeglich und tragen nichts
+   bei.
+2. **Der Parallelismus im Vers**: „einen Loewen ueber die **Entronnenen** Moabs
+   und ueber den **Rest** des Landes" — beide Glieder sind Ueberlebende.
+
+Dass es Moabs Rest ist und nicht Israels, aendert die Lesart nicht: die Bindung
+gilt fuer dieselbe Bedeutung.
+
+### Prompt-Hinweise: dreizehn widerlegt
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Feldzeichen` sei gegen `Zeichen` abzugrenzen | **`Zeichen` kommt in 13,2 gar nicht vor**, und `Feldzeichen` ist mit 13 Belegen belegt (4Mo 1,52) |
+| `Grab` stehe in 14,19 und 14,20 | 14,20 hat kein `Grab`, sondern das Verb `begraben` — es ist **14,18 und 14,19** |
+| die Ausgaben lesen `Igel` (14,23) teils „Rohrdommel" | **keine der vier** — WEB *porcupine*, RV *erizos*, LSG *hérisson*, RIV *porcospino* |
+| WEB schreibe fuer `Morgenstern` *day star* | **WEB schreibt selbst „morning star"** — nur RV, LSG, RIV weichen ab |
+| `Klage` stehe in 15,3 | **kommt im Kapitel nicht vor**; 15,3 hat `jammert`, `Tränen`, `aufgelöst` |
+| `Klage laut, Tor!` (14,31) sei das Substantiv | **Imperativ von `klagen`** — alle vier Ausgaben haben dort einen Imperativ; der Lexikon-Extrakt zeigt nur das Substantiv |
+| `Bedrängte` (14,32) sei dasselbe Lemma wie `Bedränger` | zwei getrennte Lemmata, beide C1 |
+| `Fremde` (14,1) | `Fremder` B1 — Personen im Plural, nicht das fremde Land |
+| `13,11 ein Ende machen` sei ein trennbares Verb | Bestands-Mehrwort, zusammenhaengend |
+| `13,20 aufschlagen` sei getrennt | kompaktes Einwort-Token |
+| `Rind`/`Kuh`-Klasse: `Gras`/`Pflanzen`/`Grünes` (15,6) kollidierten | in allen vier Sprachen getrennt |
+| vier Belegzahlen | veraltet: `Heerschar` → **55**, `Stab` → **50**, `Totenreich` → **29**, `Last` → **41**, `Rest` → **20:15** |
+| Partikel-Hinweise | in Kap. 13 wieder **die Haelfte falsch**, und **zwei echte fehlten** (13,17 `hetze … auf`, 13,8 `starrt … an`); in Kap. 14 und 15 dagegen **alle richtig** und fuenf bzw. null zusaetzliche gefunden |
+
+### Ausgabenbefunde
+
+- **RIV: vier neue Setzfehler in Kapitel 13**, nachgetragen — 13,10 „non **far**
+  più brillare" (*faran*), **13,11 „de' uperbi"** (*superbi*), 13,15 „**sarò**
+  trafitto" (*sarà*, wie 10,27), **13,20 „la sua enda"** (*tenda*). Die beiden
+  fettgedruckten sind der fuenfte und sechste verschluckte Anlaut an einem
+  **Gemeinwort** nach 7,25 · 9,5 · 11,16. **Kapitel 14 und 15 haben null** —
+  in Kapitel 14 wurden alle 686 Wortformen maschinell durchgesehen.
+- **RIV verschiebt die Versgrenze 14,3/14,4**: der erste Halbvers von de 14,4
+  steht bei RIV am Ende von 14,3. Verszahl bleibt 32 — wer RIV 14,4 als Vorlage
+  nimmt, hat fuer die halbe Zeile keinen Text.
+- **RV 13,21 ist um einen Slot verschoben** (*criaturas siniestras* an der
+  `Eulen`-Stelle, *búhos* an der `Strauße`-Stelle). **RV 15,3 vertauscht
+  `Straßen` und `Plätze`.** Beide nach der deutschen Bedeutung glossiert, wie
+  schon die Schmuckliste 3,18–23.
+- **LSG und RIV vertauschen 13,22 die beiden Tiere** (`Wilde Hunde` /
+  `Schakale`); WEB und RV halten die deutsche Reihenfolge.
+- **RIV 15,8 laesst `Eglajim` ganz aus**; **RV 15,5 uebersetzt
+  `Eglat-Schelischija`** („como novilla de tres años") statt zu transliterieren.
+- **RV 13,17 laesst „Denn siehe" weg**; **WEB setzt in 13,9 ein „Behold", das
+  der deutsche Text nicht hat**; **WEB 14,18** liest „in his own house" statt
+  `Grab`; **WEB 14,30** „The firstborn of the poor" gegen „Die Ärmsten der
+  Armen"; **LSG 14,21** „remplir le monde d'ennemis" statt „mit Städten füllen".
+- **14,4 `Terror`: alle vier Ausgaben lesen etwas anderes, und alle vier
+  verschieden** — WEB „The golden city has ceased", RV „su furia insaciable",
+  LSG „L'oppression a cessé", RIV „l'esattrice d'oro". Nach dem deutschen Wort
+  glossiert.
+- **RV1909mod setzt in 13,2 `ustedes`-Imperative.** Die Buchkonvention ist
+  `vosotros`, und der Bestand traegt ueber **3700** `vosotros`-Imperative
+  (Endungen *-ad* und *-ed*). Kein Befund, nur zur Erinnerung.
+
+### Bestandsbefunde
+
+- **`nahe` A2 (13,6) und `nah` A2 (13,22) tragen restlos dieselbe Reihe**
+  *near · cerca · proche · vicino* unter **zwei Lemmata** — die siebte
+  Sachdublette. Ebenso **`Unruhe` und `Aufruhr`** (es/fr/it *tumulto ·
+  tumulte · tumulto*, 14,3 gegen 14,9) und **`hausen` / `wohnen`** (fr/it,
+  13,20 gegen 13,21). Alle drei stehen in **verschiedenen** Versen — nicht
+  aufgeloest.
+- **`niederstrecken` (13,18) und `umstürzen` (13,19)** laufen es/it auf denselben
+  Stamm (*derribar* / *abbattere*) — benachbarte Verse, nicht derselbe.
+- **Duenn belegte Lemmata, bei denen die Bedeutung die Zahl schlug:** `still` B1
+  (Bestand nur die Personen-Lesart *zitto*, „Sei still!" — in 14,7 ist die
+  **Erde** still) · `niederwerfen` C1 (Bestand nur die Proskynese-Lesart, 14,12
+  ist transitiv) · `fliegend` B1 (ein Beleg, Offb 4,7, als Relativsatz; 14,29 ist
+  attributiv) · `sich niederlassen` B2 (die 1Mo-24,11-Zeile statt der Vogel-Zeile
+  aus 7,19 — 13,21 sind Wuestentiere, die sich hinlegen) · `heimkehren` B1 ·
+  `klagen` B2 · `sich krümmen` B2 · `lagern` B2.
+- **`gedenken` als Verb war unbelegt** — der Bestand kennt nur das
+  grossgeschriebene Substantiv `Gedenken` B2, und `belegt.py` warnt korrekt vor
+  der Verwechslung.
+- **`Assur` A1 fuehrt zwei Zeilen** (9× *Assyria · Asiria · Assyrie · Assiria*,
+  2× *Asshur · Asur · Assur · Assur*). 14,25 ist das Land, also die erste —
+  deckungsgleich mit 10,5 und 10,24.
+- **`Elim` ist ein Homograph**: der Bestand kennt nur das Elim der
+  Wuestenwanderung (2Mo 15,27), 15,8 ist Beer-Elim in Moab. Die Reihe ist in
+  beiden Faellen dieselbe, also kein Konflikt — der Fall gehoert aber neben
+  `Sethar` und `Aja` in die Homographenliste.

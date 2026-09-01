@@ -17,6 +17,7 @@ eine Vorlage existiert.
 |---|---|---|---|---|
 | `Schinar` | 11,11 | `Sinear` | 4 | *Shinar · Sinar · Schinear · Scinear* |
 | `Anatot` | 10,30 | `Anathoth` | 8 | *Anathoth · Anatot · Anathoth · Anatoth* |
+| `Elale` | 15,4 | `Eleale` | 2 | *Elealeh · Eleale · Élealé · Elealeh* |
 | `Jeschurun` | 44,2 | `Jesurun` | 2 | *Jeshurun · Jesurún · Yeschurun · Iesurun* |
 | `Nebajots` | 60,7 | `Nebajoth` | 2 | *Nebaioth · Nebaiot · Nebajoth · Nebaiot* |
 | `Tubal` | 66,19 | `Thubal` | 2 | *Tubal · Tubal · Tubal · Tubal* |
@@ -47,6 +48,47 @@ deutscher Schreibungen. Lautaehnlichkeit ist ein Grund nachzusehen, kein Beweis
 fuer denselben Traeger — dieselbe Warnung, die `vorab.py` fuer
 grossgeschriebene Formen ausgibt. **Vor jeder Uebernahme aus dieser Tabelle die
 Belegstelle und die vier Ausgaben aufschlagen.**
+
+## `Elale` — die Gegenprobe zu `Lascha`, und sie faellt anders aus
+
+`belegt.py Elale` schweigt; der Bestand fuehrt `Eleale` zweimal (4Mo 32,3 ·
+32,37). Nach dem `Lascha`-Irrtum wurde diesmal **vor** der Uebernahme an allen
+vier Ausgaben geprueft — und hier ist es wirklich derselbe Ort:
+
+| | 4Mo 32,3 / 32,37 | Jes 15,4 |
+|---|---|---|
+| WEB | Elealeh | Elealeh |
+| RV | Eleale | Eleale |
+| LSG | Élealé | Élealé |
+| RIV | Elealeh | Elealeh |
+
+Dazu die Reihenprobe: **4Mo 32,3 nennt `Dibon`, `Hesbon`, `Eleale` und `Nebo`
+in einer Zeile** — vier der sechzehn Ortsnamen von Jesaja 15. Verfahren
+angewandt, Lemma `Elale`, Glossenreihe aus dem Bestand.
+
+**Die Bestandsreihe war allerdings in zwei Sprachen falsch** und ist mit diesem
+Paket korpusweit korrigiert worden (s. unten).
+
+## Drei Bestandsreihen, die ihrer eigenen Ausgabe widersprachen
+
+Gefunden vom Agenten fuer Kapitel 15, ueber den gesamten Bestand nachgezaehlt
+und mit `remap.py` korrigiert. **Das ist nicht der Fall „eine Ausgabe wirkt
+altertuemlich"** — da gilt die Ausgabe und es ist kein Befund. Hier stand die
+Bestandsglosse an **keiner einzigen** Belegstelle in ihrer Ausgabe:
+
+| Lemma | Bestand hatte | die Ausgabe schreibt | Stellen |
+|---|---|---|---|
+| `Zoar` | it *Zoar* | RIV **Tsoar** | 8 von 8 |
+| `Medeba` | it *Madaba* | RIV **Medeba** | 4 von 4 |
+| `Eleale` / `Elale` | es *Elealé*, it *Eleale* | RV **Eleale**, RIV **Elealeh** | 2 von 2 |
+
+Korrigiert in 1. Mose, 4. Mose, 5. Mose, Josua, 1. Chronik und Jesaja;
+`validate.py` laeuft fuer alle sechs Buecher ohne Befund.
+
+**Woran man diese Klasse erkennt:** eine Sprache weicht ab, und die Abweichung
+laesst sich an der Ausgabe **an jeder Belegstelle** widerlegen. Dann liegt der
+Fehler im Bestand. Weicht die Ausgabe dagegen selbst ab (RIVs `fra`/`tra`, WEBs
+*Shushan* fuer Susa), ist nichts zu tun.
 
 **`Scharon` gehoert NICHT hierher**: das Hohelied hat es in 2,1 bereits als
 eigenes Lemma gesetzt (A1, *Sharon · Sarón · Saron · Saron*) — dieselbe Reihe
