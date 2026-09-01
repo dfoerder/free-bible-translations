@@ -68,6 +68,9 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 13,11 | de' **uperbi** | *superbi* | Anlaut, Gemeinwort |
 | 13,15 | sarà trovato **sarò** trafitto | *sarà* | Person |
 | 13,20 | la sua **enda** | *tenda* | Anlaut, Gemeinwort |
+| 16,7 | le schiacciate d'uva di **ir**-Hareseth | *Kir-Hareseth* | **Anlaut, Eigenname — von der Auszaehlung uebersehen** |
+| 16,8 | le cui viti scelte, che **nebriavano** | *inebriavano* | Anlaut, Gemeinwort |
+| 17,8 | le sue **dite** han fatto | *dita* | Tippfehler |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -93,3 +96,15 @@ Italienisch (die Ausgabe waehlt euphonisch), und der Bestand fuehrt beide Zeilen
 fuer `unter` (480× *tra*, 16× *fra*). **Kein Befund** — anders als beim
 `orecchi`/`orecchie`-Fall, wo dieselbe Ausgabe zwei Formen desselben Wortes
 setzt, ohne dass ein Lautgrund vorliegt.
+
+## Warum die Auszaehlung 16,7 uebersehen hat
+
+Die Tabelle oben entstand maschinell ueber **grossgeschriebene Woerter mitten im
+Satz**. Genau daran scheitert sie bei `Kir-Hareseth` in 16,7: RIV verschluckt
+dort das **K**, und der Stumpf `ir` ist **kleingeschrieben**. Ein verschluckter
+Anlaut kann den Grossbuchstaben selbst wegnehmen — dann faellt der Eigenname aus
+dem Suchmuster heraus und landet in derselben blinden Klasse wie die
+Gemeinwoerter.
+
+**Die Liste ist also auch bei Eigennamen eine Untergrenze**, nicht nur bei
+Gemeinwoertern. Gefunden hat es der Agent fuer Kapitel 16, nicht das Skript.

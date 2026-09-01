@@ -1242,3 +1242,338 @@ gilt fuer dieselbe Bedeutung.
   Wuestenwanderung (2Mo 15,27), 15,8 ist Beer-Elim in Moab. Die Reihe ist in
   beiden Faellen dieselbe, also kein Konflikt — der Fall gehoert aber neben
   `Sethar` und `Aja` in die Homographenliste.
+
+## 13. Paket 7 (Kap. 16 · 17 · 18)
+
+Drei Kapitel gleichzeitig, 891 Einzelwort- und 42 Mehrwort-Eintraege. Alle sechs
+Pruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23` und `hilfsverb.py 23`
+melden ueber das gebaute Buch **0 Befunde**. Damit sind **18 von 66 Kapiteln**
+fertig: 350 Verse, 8110 Eintraege.
+
+### Der groesste Fund der Welle: 52 falsche italienische Artikel vor `HERR`
+
+Gemeldet vom Agenten fuer Kapitel 18, ueber den ganzen Bestand nachgezaehlt und
+korrigiert. **Der Bestand steht 1420 : 25 fuer `il` — und alle 25 Ausreisser
+waren Jesaja.** Mit den uebrigen Artikelformen zusammen 52 Eintraege, verteilt
+ueber die Kapitel 1, 3, 4, 5, 6, 7, 8, 10, 11, 13, 14 und 17.
+
+| Form | war | ist | Vorkommen |
+|---|---|---|---|
+| `der` | *l'* | *il* | 27 |
+| `Der` | *L'* | *Il* | 12 |
+| `den` | *l'* | *il* | 6 |
+| `des` | *dell'* | *del* | 5 |
+| `Den` | *L'* | *Il* | 1 |
+| `vom` | *da parte dell'* | *da parte del* | 1 |
+
+**Die Diagnose ist sprachspezifisch, und nur eine Sprache ist betroffen.** Die
+franzoesische Elision ist **richtig**: `HERR` heisst franzoesisch `ÉTERNEL`,
+vokalisch anlautend, also ist „l' ÉTERNEL" korrekt. Spanisch „el SEÑOR"
+ebenfalls. **Nur italienisch ist es falsch**, weil die Glosse `SIGNORE`
+konsonantisch anlautet — im Lesefluss stand dort „l' SIGNORE".
+
+**Die Ursache ist die Nachbarfalle**, dieselbe wie bei `Völker` in 5. Mose und in
+Paket 5: RIV schreibt *l'Eterno*, die Elision ist beim Uebertragen mitgewandert,
+und **das Nachbarwort wurde nicht angepasst**. Der Fehler steht seit Kapitel 1
+im Buch, also seit dem Massstabskapitel, und **Kapitel 17 hat ihn in dieser
+Welle prompt mitgeerbt** — beim Planen waren es 50 Stellen, beim Ausfuehren 52.
+Deshalb gehoert eine solche Korrektur **hinter** das Einsammeln, nicht davor.
+
+**Woran man die Klasse erkennt:** die Glosse eines Funktionsworts richtet sich
+nach dem **Anlaut der Nachbarglosse**, nicht nach dem Anlaut des Ausgabenworts.
+Wo die Ausgabe elidiert und die Bestandsglosse einen anderen Anlaut hat, ist die
+Elision zu loesen.
+
+### Vom Koordinator angeglichen — zweimal
+
+**1. `über` in 13,1** von *concerning · acerca de · sur · riguardo a* auf
+***about · sobre · sur · su***. Die Formel „Der Ausspruch **über** X" steht
+dreimal im Buch (13,1 · 15,1 · 17,1); **Kapitel 15 und 17 haben unabhaengig
+dieselbe Zeile gewaehlt**, 13,1 war der Ausreisser — und zwar, weil **mein
+Auftrag es angewiesen hatte**, `über` woertlich aus 2,1 zu uebernehmen. 2,1 ist
+aber eine andere Konstruktion („Dies **sah** Jesaja … über Juda"), und die dort
+verwendete Reihe steht im Bestand nicht einmal unter den sechs haeufigsten,
+waehrend *about · sobre · sur · su* 98 Belege hat. **2,1 bleibt unangetastet.**
+
+**2. `Rebe` in 18,5** von *vines · vides · ceps · viti* auf ***branches ·
+sarmientos · sarments · tralci***. Siehe unten — die Vorgabe war mein Fehler.
+
+### `Rebe`: die Vorgabe war falsch, und der Text traegt wirklich zwei Lesarten
+
+Ich hatte beiden Kapiteln die Zeile aus **5,2** mitgegeben. Sie **faellt in 16,8
+in allen vier Sprachen mit `Weinstock` zusammen** — die beiden stehen dort im
+selben Vers („die **Weinstöcke** von Sibma … ihre edlen **Reben**"), und
+`Weinstock` ist mit 26 Belegen gebunden und steht in 7,23 bereits auf genau
+dieser Reihe. **Ich hatte eine Reihe aus einem Vers verordnet, ohne den Nachbarn
+im Zielvers zu pruefen** — derselbe Fehler wie bei der `Völker`-Genusfalle, nur
+eine Ebene frueher.
+
+Der Agent ist auf die **eigene Korpusmehrheit** ausgewichen: 5 von 6
+`Rebe`-Belegen tragen den *sarmiento*-Stamm, und WEB („its choice branches") wie
+RV („sus mejores sarmientos") schreiben in 16,8 selbst genau das.
+
+**Nach dem Einsammeln steht `Rebe` im Buch auf zwei Zeilen, und das ist richtig
+so** — der Text unterscheidet:
+
+| Stelle | Wortlaut | Zeile |
+|---|---|---|
+| 5,2 · 17,10 | „pflanzte edle Reben" · „setzt fremde Reben hinein" | *vines · vides · ceps · viti* — die **gepflanzte Pflanze** |
+| 16,8 · 18,5 | „ihre edlen Reben zerschlagen" · „die Reben wegnehmen" | *branches · sarmientos · sarments · tralci* — der **abgeschnittene Trieb** |
+
+Die Ausgaben helfen hier nicht: in 16,8 stehen WEB und RV auf der Trieb-Lesart,
+**LSG und RIV auf der Pflanzen-Lesart** (*ceps* / *viti scelte*), und **LSG
+verschmilzt `Weinstöcke` und `Reben` sogar zu einer Wendung**. In 18,5 dreht LSG
+die beiden Woerter gegenueber dem Deutschen um. **Entschieden hat die
+Bedeutung** — und in 16,8 zusaetzlich die Kollision im eigenen Vers.
+`Ranke` bleibt in beiden Kapiteln *shoots · brotes · rameaux · rami* und ist
+gegen die neue `Rebe`-Zeile in allen vier Sprachen frei.
+
+### `Kir-`: die dritte Art, wie eine Namensfrage ausgehen kann
+
+Nach `Lascha` (zwei verschiedene Orte) und `Elale` (ein Ort, eine Reihe) jetzt
+der dritte Fall: **derselbe Ort, aber die Ausgaben schreiben ihn an der zweiten
+Stelle anders.**
+
+| | 15,1 `Kir-Moab` | 16,7 `Kir-Hareset` | 16,11 `Kir-Heres` | 2Kön 3,25 |
+|---|---|---|---|---|
+| WEB | Kir of Moab | Kir Hareseth | **Kir Heres** | Kir Hareseth |
+| RV | Kir-Moab | Kir-hareset | **Kir-hareset** | Kir-hareset |
+| LSG | Kir-Moab | Kir-Haréseth | **Kir-Harès** | Kir-Haréseth |
+| RIV | Kir-Moab | *ir*-Hareseth | **Kir-Heres** | Kir-Hareseth |
+
+**Der Identitaetsbeweis ist RV**: sie schreibt in 16,7 und 16,11 dasselbe Wort.
+LSGs *Kir-Harès* ist die Kurzform von *Kir-Haréseth*. Genau die Gegenlage zu
+`Lascha`, wo alle vier zwei verschiedene Namen setzten.
+
+**Verfahren:** jede Stelle behaelt ihre Schreibung als Lemma **und folgt in jeder
+Sprache ihrer eigenen Ausgabe**, mit der spanischen Spalte als Identitaetsanker.
+`Kir-Heres` A1 ist damit neu (*Kir Heres · Kir-Hareset · Kir-Harès · Kir-Heres*),
+`Kir-Hareset` behaelt die Bestandsreihe, `Kir-Moab` bleibt eigenes Lemma.
+
+### `Sela` in 16,1 — die schaerfste Lexikonfalle des Buches
+
+`belegt.py Sela` meldet **81 Belege**, und die Mehrheit ist keine Ortsangabe:
+
+| Lesart | Belege | was es ist |
+|---|---|---|
+| *Selah · Selah · Pause · Sela* | **72** | die **Psalmen-Pause** |
+| *Shelah · Sela · Schéla · Sela* | 8 | **Schela**, eine Person (1Chr 2,3) |
+| *Sela · Sela · Séla · Sela* | **1** | **die Stadt** (2Kön 14,7) |
+
+Die Ein-Beleg-Zeile ist die richtige. **Und WEB schreibt in Jes 16,1 selbst
+„Selah"** — also genau die Zeichenfolge, mit der der Bestand 72-mal eine
+Musikpause glossiert. Das ist die Lesefluss-Ausnahme aus `AUFTRAG_AT.md` (der
+Fall „Carcass"): die Ausgabenform faellt mit einem anderen Begriff zusammen und
+setzt einen falschen Sinn, also gilt die Bestandsform. Gemeldet.
+
+### 16,6 — fuenf Hochmutswoerter in einem Vers, und die Loesung stand schon im Buch
+
+| Wort | Lvl | en · es · fr · it | Herkunft |
+|---|---|---|---|
+| `Hochmut` | C1 | arrogance · soberbia · orgueil · superbia | = 2,17 · 9,8 · 10,12 · 13,11 |
+| `Überheblichkeit` | C1 | **haughtiness** · arrogancia · arrogance · arroganza | **= 9,8**, die Zweitlesart |
+| `Übermut` | C1 | insolence · insolencia · insolence · insolenza | = 13,11 |
+| `Wut` | B2 | rage · furor · fureur · furore | = 8,21 |
+| `stolz` | B1 | proud · orgulloso · fier · orgoglioso | = 4,2 · 13,19 |
+
+**Zwei meiner Annahmen widerlegt:** die englische Kollision zwischen `Hochmut`
+und `Überheblichkeit` (*arrogance*/*arrogance*) war **in 9,8 laengst geloest** —
+dort steht *haughtiness*, ein Bestandsbeleg **aus diesem Buch**. Und
+`Übermut`/`Überheblichkeit` kollidieren franzoesisch **nicht**. Es war nichts zu
+erfinden; der Agent musste nur nachschlagen.
+
+**16,5 geht ebenso dreifach auf:** `Recht` B1 *justice · derecho · droit ·
+diritto* / `Gerechtigkeit` B2 *righteousness · justicia · justice · giustizia* /
+`Rechtschaffenheit` C1 *integrity · integridad · intégrité · integrità*.
+
+### `Rest`: das Kriterium aus Kapitel 15 traegt dreimal
+
+16,14 und 17,3 haben unabhaengig voneinander die **Ueberrest-Lesart** B1
+*remnant · remanente · reste · resto* gewaehlt, und beide mit derselben
+Begruendung wie 15,9: **WEB ist die einzige der vier Sprachen, die beide
+Lesarten lexikalisch trennt**, und sie schreibt an beiden Stellen *remnant*
+(„the remnant will be very small and feeble" · „the remnant of Syria"). es/fr/it
+(*el remanente · lo que quede · ce qui restera · del residuo*) sind mit beiden
+vertraeglich und tragen nichts bei. Das Kriterium ist damit dreimal unabhaengig
+bestaetigt und gehoert zur Buchpraxis.
+
+### Kollisionen, die kein Skript gemeldet hat — sieben in einer Welle
+
+- **17,7 + 17,8 `blicken` / `schauen`** fielen in **allen vier** Sprachen
+  zusammen (`hints.py` meldete nur englisch). `schauen` weicht auf *gaze ·
+  contemplar · contempler · contemplare* — RV schreibt in 17,7 selbst
+  *contemplarán*, LSG in 17,8 *contemplera*. Gilt auch fuer die beiden
+  Mehrwoerter `blicken auf` / `schauen auf`, die in 17,8 zusammenstehen.
+- **16,8 `Weinstock` / `Rebe`** — vier Sprachen, s. o.
+- **16,4 `vor` / `aus`** — vier Sprachen. `vor` → *against · contra · contre ·
+  contro*, was LSG („contre le dévastateur") und RIV selbst schreiben; gilt
+  **nur an dieser Stelle**.
+- **17,14 `Los` / `Schicksal`** (es/fr/it): `Los` haelt mit 68 Belegen,
+  `Schicksal` weicht auf *destino · destin · destino* — **RV schreibt dort
+  selbst „el destino"**.
+- **18,5 `wegnehmen` / `entfernen`** (es): `entfernen` → *retirar*. **Alle vier
+  Ausgaben ziehen die drei deutschen Verben des Verses auf zwei zusammen** und
+  geben fuer das dritte keine Form vor — also entscheidet der Bestand.
+- **18,2/18,7 `Macht` / `Gewalt`**: `Gewalt` hat eine *power*-Zeile (7 Belege),
+  die in beiden Versen **vierfach** mit `Macht` zusammengefallen waere. Genommen
+  ist die Mehrheitszeile *violence · violencia · violence · violenza* (32).
+- **17,9 `verlassen` (Partizip) / `verließen`** (en/fr/it).
+
+Dazu vom Skript gemeldet und geloest: 16,7 `ganz`/`ganz und gar`, 16,3
+`macht`/`trefft`, 16,5 `Ein`/`einer`, 16,12 `geht`/`wird`, 16,8
+`sich erstrecken`/`sich ausbreiten`, 17,7 `den`/`ihn`, 17,3 `der`/`von`, 17,13
+`weit`/`weg`, 18,5 `Blüte`/`Blütezeit`.
+
+**Bewusst stehen geblieben:** `Getöse`/`tosen` in 17,12 (Stammsubstantiv zum
+Verb — der Bestand bildet die Wiederholung italienisch selbst ab,
+*rumore*/*rumoreggiano*, und WEB, RV und LSG wiederholen das Wort ebenfalls) und
+drei romanische Artikel/Klitikon-Verschmelzungen in Kapitel 18.
+
+### Die vier Laermwoerter von 17,12–13
+
+| Wort | Lvl | en · es · fr · it | Herkunft |
+|---|---|---|---|
+| `Getöse` | C1 | roar · estruendo · fracas · rumore | **aus 13,4 uebernommen** |
+| `Tosen` | C1 | roaring · rugido · mugissement · fragore | **aus 13,4 uebernommen** |
+| `tosen` (Verb) | C1 | roar · rugen · mugissent · rumoreggiano | Ps 46,4 |
+| `brausen` | C1 | **rush** · resuenan · retentissent · risuonano | Jes 5,30, **en ausgewichen** |
+
+`brausen` waere englisch als dritter *roar* eingelaufen; ausgewichen ist nur en,
+auf WEBs eigenes Wort an der Stelle („that rush like the rushing of mighty
+waters").
+
+### 18,2 ↔ 18,7 — vermessen, nicht abgeschrieben
+
+`DUBLETTEN_JESAJA.md` fuehrt das Paar nicht (unter der 60-%-Schwelle). Der Agent
+hat es mit einem eigenen Skript vermessen: 41 gegen 48 Tokens, **und nur zwei
+Bloecke sind woertlich gleich** — `nah und fern` (Versatz −7) und der
+Neun-Token-Schluss `Macht und Gewalt, deren Land von Strömen durchzogen wird`
+(Versatz −5). Beide Feld fuer Feld uebernommen und maschinell auf Gleichheit
+geprueft.
+
+Alles davor formuliert um: die Praeposition wechselt (`zu` → `von`), unbestimmt
+wird bestimmt (`einem` → `dem`), **praedikativ wird attributiv**
+(`hochgewachsen` → `hochgewachsenen`), **18,7 verschmilzt die beiden
+`Volk`-Glieder zu einem**, `gefürchtet` wandert hinter „nah und fern", und aus
+`von Macht` wird der Genitiv `der Macht`.
+
+**Und die Genusfalle war auch hier zu bedienen:** `Nation` ist romanisch
+feminin, `Volk` maskulin — mitgewandert sind `einer` → *una · une · una* und
+`der` (vor `Nation`) → *la · la · la*, waehrend `der` vor `Macht` maskulin
+bleibt (*del · du · del*).
+
+**Alle vier Ausgaben vertauschen in 18,2 und 18,7 `Volk` und `Nation`**: deutsch
+steht *Volk – Volk – Nation*, alle vier lesen *nation – people – nation*. Genau
+deshalb haelt die Trennung nur, wenn man das deutsche Wort glossiert.
+
+### Neue Lemmata
+
+**Kapitel 16:** `Zertreter` C1 · `Obstgarten` B2 · `Sommerfrucht` C1 ·
+`flatternd` C1 · `quer` B2 · `winzig` B2 · `kümmerlich` C1 · `verächtlich` C1 ·
+`Kir-Heres` A1. Mehrwort: `eine Entscheidung treffen` B2 · `ein Ende finden` B1.
+
+**Kapitel 17:** `Ährenlesen` C1 *gleaning grain · espigueo · glanage ·
+spigolatura* (gegen `Nachlese` C1 abgesetzt) · `abmagern` C1 · `heillos` C1
+(gegen `unheilbar` abgesetzt) · `sorgsam` C1. Mehrwort: `blühen lassen` B2.
+Neue Lesarten: `hegen` C1 *tend* (Bestand kennt nur „Groll hegen" = *harbor*) ·
+`lieblich` B2 *lovely* (Bestand nur *sweet*).
+
+**Kapitel 18:** `Flügelrauschen` C1 · `Papyrusboot` C1 · `Sonnenschein` B2 ·
+`Taugewölk` C1 · `Erntehitze` C1. Neue Lesarten: `durchziehen` B1 *crossed*
+(Bestand nur die Wander-Lesart fuer Menschen; hier durchziehen **Stroeme das
+Land**) · `Blütezeit` C1 *flowering* · `Traube` B1 *grape* (der einzige Beleg
+Hld 1,14 ist eine Bluetentraube).
+
+**`still` in 18,4** setzt fort, was 14,7 begonnen hat: die 12 Bestandsbelege
+tragen saemtlich die **Personen-Lesart** *quiet · callado · tranquille · zitto*
+(„Sei still!" = schweig). In 18,4 sagt der HERR „Ich will still bleiben und
+**zusehen**" — er schweigt nicht, er verhaelt sich ruhig. Genommen ist die Zeile
+aus 14,7 im Maskulinum: *quiet · tranquilo · tranquille · tranquillo*, von allen
+vier Ausgaben gestuetzt.
+
+### Prompt-Hinweise: dreiundzwanzig widerlegt
+
+Die hoechste Quote bisher. Die lehrreichsten:
+
+| ich schrieb | der Befund |
+|---|---|
+| `Rebe` = *vines · vides · ceps · viti* (Vorgabe) | **kollidiert in 16,8 vierfach mit `Weinstock`** |
+| `über` in 13,1 aus 2,1 uebernehmen | **falsche Konstruktion** — 15,1 und 17,1 haben unabhaengig die richtige Zeile |
+| `Hochmut`/`Überheblichkeit` englisch aufloesen | **in 9,8 laengst geloest** (*haughtiness*) |
+| `Übermut`/`Überheblichkeit` kollidieren franzoesisch | nein — *insolence* / *arrogance* |
+| `Sonnensäulen` steht nicht im Bestand | **die Form ist 4× belegt**; nur `fixgloss.py show` schweigt |
+| `Ascherapfahl` 2 Belege, Singularreihe | **5 Belege**, davon 3 Plural |
+| `Refaim` sei ein Homograph wie `Aja` | **nein** — alle 3 Belege sind dasselbe Tal |
+| `hochgewachsen` sei unbelegt | **Bestandslemma**, 5Mo 9,2 in **genau demselben Kontext** („ein großes und hochgewachsenes Volk") |
+| WEB schreibe in 18,1 wieder *Cush* | **WEB schreibt selbst *Ethiopia*** — es gab nichts zu entscheiden |
+| `Rosinenkuchen`/`Keltern`/`Tagelöhner` seien duenn belegt oder neu | alle drei belegt (6 · **15** · 2) |
+| `Kelter` sei neu | **15 Belege** |
+| `siehe` (17,14) sei dieselbe Lemmaform wie `Seht` | **eigenes Lemma** (32 Belege) |
+| `Ranke`/`Rebe` je nur zwei Belege | `Ranke` 2, **`Rebe` 6** |
+| 18,6 vier Tierwoerter, Kollisionsgefahr | in allen vier Sprachen getrennt |
+| 16,4 vier „Substantivierungen" | drei sind belegt, nur `Zertreter` neu |
+| `erstreckten` unbelegt (`hints.py`) | belegt, ueber `erstrecken` und `sich erstrecken` |
+| Belegzahlen | wieder veraltet: `Seht` 48 → **50**, Ueberrest-`Rest` 15 → **16**, `Hochmut` 12 → 14, `stolz` 3 → 9 |
+
+Von `hints.py` als unbelegt gemeldet: Kapitel 16 **14 Formen, 8 wirklich neu** ·
+Kapitel 17 **11 Formen, 4 wirklich neu** · Kapitel 18 **9 Formen, 5 wirklich
+neu**. `belegt.py` bleibt das Werkzeug, das die Differenz aufdeckt.
+
+### Bestandsbefunde
+
+- **`Hiwiter` (2 Belege) und `Heviter` (21) tragen restlos dieselbe Reihe**
+  *Hivites · heveos · Héviens · Hivvei* unter zwei Lemmata — dieselbe Sache,
+  zwei deutsche Schreibungen (5Mo 7,1 gegen 2Mo 3,8 u. oe.). Ebenso **`welken`
+  und `verwelken`** (es/it) und **`von … aus` / `von aus` / `von ... aus`**, drei
+  Lemma-Schreibungen derselben Wendung mit zwei Levels. Alle stehen nie im
+  selben Vers → nicht aufgeloest.
+- **„spricht der HERR" ist im Bestand zweigeteilt, und das ist richtig:** die
+  **nachgestellte** Prophetenformel (17,3 · 17,6) traegt *says · dice · dit ·
+  dice*, die **einleitende** („so spricht der HERR:", 16,14 · 18,4) *speaks ·
+  habla · parle · parla* — **und die Ausgaben schreiben es genauso** (LSG 16,14
+  „l'Éternel **parle**, et dit", RIV „l'Eterno **parla** e dice"). Kein Befund.
+  Was **doch** einer ist: der Bestand fuehrt die nachgestellte Formel 58-mal mit
+  franzoesisch *parle* neben 12-mal *dit*, obwohl englisch beide Male *says*
+  steht. Buchuebergreifend zu klaeren, nicht hier.
+- **`Kir-Hareset` italienisch** widerspricht seiner Ausgabe an 1 von 1
+  Belegstelle (RIV 2Kön 3,25 „Kir-**Hareseth**"). Aeusserlich die
+  `Zoar`/`Medeba`-Klasse, aber mit **einem** Beleg zu duenn fuer `remap.py`.
+  Gemeldet, Bestand gehalten.
+- **`Jaser` und `Sibma` gehoeren *nicht* dieser Klasse an**: RIV schwankt selbst
+  (*Iazer* 3× / *Jaezer* 2× / *Jazer* 1×; *Sibma* / *Sibmah*). Wie `fra`/`tra`
+  kein Befund.
+- **`Sonnensäule` sieht aus wie die `Zoar`-Klasse und ist es nicht:** WEB und RV
+  widersprechen der Bestandsreihe an jeder Belegstelle („incense altars" /
+  „altares de incienso"), aber **sie uebersetzen das Hebraeische**, waehrend das
+  deutsche Wort `Sonnensäule` heisst. LSG und RIV stuetzen den Bestand.
+- **`übers` in 16,8** heisst „bis übers Meer" **jenseits**, nicht „ueber … hinweg"
+  wie in den beiden Bestandsbelegen (2Chr 2,15 · 9,21, Seeweg). Eigene Glosse
+  *beyond the · más allá del · au-delà de la · oltre il*.
+
+### Ausgabenbefunde
+
+- **RIV: drei neue Setzfehler**, nachgetragen — **16,7 „di *ir*-Hareseth"**
+  (*Kir-Hareseth*), 16,8 „che **nebriavano**" (*inebriavano*), 17,8 „le sue
+  **dite**" (*dita*). **Kapitel 18 hat null.**
+- **16,7 hat eine Luecke im Verfahren aufgedeckt.** Die maschinelle Auszaehlung
+  sucht **grossgeschriebene** Woerter mitten im Satz — hier hat RIV das **K**
+  verschluckt, und der Stumpf `ir` ist kleingeschrieben. **Ein verschluckter
+  Anlaut kann den Grossbuchstaben selbst wegnehmen**, dann faellt der Eigenname
+  aus dem Suchmuster. Die Liste ist also auch bei Eigennamen eine Untergrenze;
+  das steht jetzt in `RIV_SETZFEHLER_JESAJA.md`.
+- **RIV verschiebt die Versgrenze 17,12/17,13** — die zweite Haelfte von de 17,12
+  steht am Anfang von RIV 17,13. Nach 14,3/14,4 der zweite Fall dieser Art.
+- **17,9: keine der vier Ausgaben liest `Hiwiter und Amoriter`** — alle
+  uebersetzen das Hebraeische („woods and mountain top"). **16,8 `Völker`: alle
+  vier schreiben „nations".** **`Obstgärten` (16,10): keine der vier uebersetzt
+  es.** **`Beeren` (17,6): alle vier schreiben „Oliven".** **`Schutz` (16,4):
+  alle vier schreiben „refugio/refuge/rifugio".** Fuenfmal derselbe Fall wie
+  `Nachtwache` 1,8 — der deutsche Quelltext gewinnt.
+- **LSG 18,1 liest etwas voellig anderes**: „le cliquetis des armes"
+  (Waffengeklirr) statt `Flügelrauschen`; WEB, RV und RIV folgen dem Deutschen.
+  Fuer das franzoesische Glied gab es faktisch nur drei Ausgaben.
+- **RIV 18,6 fuegt ein Subjekt ein, das der deutsche Text nicht hat** („**Gli
+  Assiri** saran … abbandonati"); **RV 18,3 macht aus den Imperativen
+  Indikative**; **RV 16,7 und LSG 16,7 lesen `Rosinenkuchen` als „Fundamente"
+  bzw. „Ruinen"**; **LSG 17,11 laesst `Krankheit` weg**; **RV 17,2 und LSG 17,2
+  fuegen je einen Halbsatz hinzu**, der im Deutschen fehlt.
