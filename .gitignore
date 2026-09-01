@@ -14,3 +14,8 @@ tools/.modernize_state.json
 
 # Teildateien der Annotations-Agenten (werden nach dem Zusammenfassen geloescht)
 anno-quellen/**/ch*.part*.json
+
+# Arbeitsordner der Annotations-Agenten (Wegwerf-Skripte, Teilstaende)
+scratchpad/
+!scratchpad/abacuc35/
+!scratchpad/job42/

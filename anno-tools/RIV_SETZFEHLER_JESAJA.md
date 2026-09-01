@@ -71,6 +71,12 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 16,7 | le schiacciate d'uva di **ir**-Hareseth | *Kir-Hareseth* | **Anlaut, Eigenname — von der Auszaehlung uebersehen** |
 | 16,8 | le cui viti scelte, che **nebriavano** | *inebriavano* | Anlaut, Gemeinwort |
 | 17,8 | le sue **dite** han fatto | *dita* | Tippfehler |
+| 19,22 | che **’arrenderà** alle loro supplicazioni | *s’arrenderà* | Anlaut, Funktionswort |
+| 20,4 | con **la** natiche scoperte | *le natiche* | Numerus |
+| 21,3 | i miei fianchi son pieni **si** dolori | *di* | Tippfehler |
+| 21,3 | **o** mi contorco, per quel che sento | *io* | Anlaut, Funktionswort |
+| 21,8 | di **giorni** io sto del continuo | *giorno* (dt. „bei Tag", Sg.) | Numerus |
+| 21,12 | interrogate pure; **ornate** un’altra volta | *tornate* | Anlaut, Gemeinwort |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 

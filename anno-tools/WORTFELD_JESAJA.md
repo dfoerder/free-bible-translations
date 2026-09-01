@@ -1577,3 +1577,228 @@ neu**. `belegt.py` bleibt das Werkzeug, das die Differenz aufdeckt.
   Indikative**; **RV 16,7 und LSG 16,7 lesen `Rosinenkuchen` als „Fundamente"
   bzw. „Ruinen"**; **LSG 17,11 laesst `Krankheit` weg**; **RV 17,2 und LSG 17,2
   fuegen je einen Halbsatz hinzu**, der im Deutschen fehlt.
+
+## 14. Paket 8 (Kap. 19 · 20 · 21)
+
+Drei Kapitel gleichzeitig, 1089 Einzelwort- und 41 Mehrwort-Eintraege. Alle
+Pruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23`, `hilfsverb.py 23`
+und `mehrwort.py 23` melden ueber das gebaute Buch **0 Befunde** (die zwei
+`mehrwort`-Treffer sind der bekannte richtige Fall aus 8,7). Damit sind
+**21 von 66 Kapiteln** fertig: 398 Verse, 9240 Eintraege.
+
+### Die Welle hat den Artikelfehler aus Paket 7 nicht geerbt
+
+Die 21 Stellen dieser Welle mit Artikel vor `HERR` sind **alle richtig**:
+italienisch nicht elidiert (`il` · `Il` · `del` · `al` · `dal`), franzoesisch
+elidiert (`l'` · `L'` · `de l'` · `à l'`). Das war die offene Frage nach Paket 7,
+wo Kapitel 17 den Fehler von Kapitel 1 prompt mitgeerbt hatte. **Die Korrektur
+hinter dem Einsammeln hat gehalten** — das Verfahren ist damit einmal bestaetigt.
+
+### Vom Koordinator angeglichen — einmal, und die Ausgabe entscheidet
+
+**`Hüfte` in 21,3** von *hips · caderas · hanches · fianchi* auf ***waist ·
+cintura · reins · fianchi***. Beide Kapitel der Welle haben das Wort (20,2 · 21,3),
+beide haben **unabhaengig eine andere Bestandsreihe** gewaehlt — der Bestand
+fuehrt fuer `Hüfte` sieben Reihen, und keine ist falsch.
+
+Entschieden hat nicht die Mehrheit, sondern die Ausgabe **am Vers**: **LSG
+schreibt an beiden Stellen *reins*, RIV an beiden *fianchi*.** Die von Kapitel 21
+gewaehlte Reihe stammt aus 11,5 und traegt fr *hanches* — was LSG in 21,3
+widerspricht. WEB (*thighs*) und RV (*mi cuerpo*) stuetzen an dieser Stelle
+keine der beiden Reihen, sind also frei; die Reihe mit 11 Belegen und dem
+buchinternen Praezedenzfall **5,27** gewinnt.
+
+**Die Lehre:** wo zwei Kapitel derselben Welle zwei Bestandsreihen desselben
+Lemmas waehlen, entscheidet nicht die Belegzahl, sondern **welche Reihe die
+Ausgaben an den beiden Versen selbst schreiben**. Kein Werkzeug meldet diesen
+Fall — `konsistenz.py` sieht zwei belegte Reihen und schweigt.
+
+Die uebrigen 27 kapiteluebergreifenden Divergenzen der Welle waren durchweg
+Tempus, Numerus, Genus oder echte Bedeutungsunterschiede: `grausam` fr
+*cruel*/*cruelle* (Koenig gegen Vision), `ablegen` *take off* (Sack, 20,2) gegen
+*make* (Geluebde, 19,21), `ziehen` *ôte* (Schuhe) gegen *Va'* (heraufziehen).
+
+### `Rest` = Ueberrest, viertes Mal — und diesmal traegt WEB nicht
+
+Das Kriterium aus Kapitel 15 lautete, WEB sei die einzige Sprache, die beide
+Lesarten lexikalisch trennt. In **21,17 schreibt WEB *residue***, also nicht das
+Kriteriumswort. Getragen hat stattdessen **RV: „el remanente del numero de los
+valientes arqueros"** — die spanische Ausgabe setzt das Ueberrest-Wort selbst.
+
+**Ergebnis gleich, Begruendungsweg neu.** Das Kriterium ist damit nicht
+widerlegt, aber es ist **nicht an WEB gebunden**: es genuegt, dass *irgendeine*
+Ausgabe die beiden Lesarten am Vers trennt.
+
+### Die zwei Dubletten wurden vermessen, nicht abgeschrieben
+
+- **21,16 ↔ 16,14** (Versatz −3, 8 Tokens): 7 von 8 Feldern gleich. Die
+  Abweichung sitzt bei `gerechnet` — 16,14 hat „In **drei Jahren**" (Plural:
+  *contados · comptés · contati*), 21,16 „In **einem Jahr**" (Singular:
+  *contado · compté · contato*). **Genau die Stelle, an der Abschreiben falsch
+  glossiert haette.**
+- **21,17 ↔ 5Mo 28,62** (Versatz +7, 7 Tokens): 5 identisch. Bei `übrig` und
+  `bleiben` ist bewusst **16,14 statt 5. Mose** gefolgt — derselbe Vers-Bauplan
+  im selben Buch, und 5Mo 28,62 fuehrt dort keinen `übrig bleiben`-Mehrwort-
+  Eintrag, 16,14 schon.
+- **19,15 ↔ 9,13**: die Viererreihe `Kopf` A1 · `Schwanz` B1 · `Palmzweig` B2 ·
+  `Binse` C1 Feld fuer Feld uebernommen.
+
+### Kollisionen, die kein Skript gemeldet hat — vier in einer Welle
+
+`hints.py` blendet Funktionswoerter aus und prueft nur exakte Formen; diese vier
+fielen durch und waren alle echt:
+
+- **19,6 `Schilf` ↔ `Binse`** fallen es/it vollstaendig zusammen (*juncos* /
+  *giunchi* fuer beide). `Binse` haelt seine Reihe aus 9,13 (derselbe
+  Vers-Partner wie 19,15), `Schilf` weicht auf **RVs und RIVs eigene Woerter an
+  der Stelle** aus: es *cañas*, it *canne*.
+- **19,6 `Kanal` ↔ `Flussarm`** waeren fr/it identisch geworden — LSG und RIV
+  schreiben *canaux* / *canali* fuer **beide**. `Kanal` haelt die Jes-8,7-Reihe,
+  `Flussarm` ist neu abgesetzt.
+- **19,20 `Retter` ↔ `befreien`** laufen es/fr/it auf denselben Stamm. Nur
+  teilweise geloest (fr *délivre*, en *sets free*); es *libra* / it *libera*
+  bleiben stammverwandt zu *libertador* / *liberatore*. Gemeldet, nicht gebogen.
+- **20,2 `ablegen` ↔ `ziehen`** tragen fr beide *ôte*, it beide *togli(ti)*.
+  Aufgeloest nach LSG und RIV, die selbst trennen: `ablegen` *détache* /
+  *sciogliti* gegen `ziehen` *ôte* / *togli*.
+
+Dazu drei **gemeldete** Kollisionen, die weiter reichten als der Bericht:
+`austrocknen ↔ versiegen` (19,5) betrifft auch es, `Narr ↔ töricht` (19,11) auch
+es, `ablegen ↔ geben` (19,21) auch fr/it.
+
+### Und zwei gemeldete Kollisionen, die es nicht gab
+
+- **`dieser` ↔ `jener` in 20,6** — `Küste` ist romanisch feminin, `Zeit`
+  maskulin; alle vier Ausgaben trennen von selbst.
+- **`gehen` ↔ `ziehen` in 20,2** kollidiert nicht, sobald man den Vers liest
+  (`Geh` · „ab**ziehen**" · „**ging** umher" sind drei Formen). Die echte
+  Kollision des Verses stand oben und war nicht gemeldet.
+
+### Neue Lemmata
+
+**Kapitel 19** (12 + 1 Mehrwort): `Baumwolle` B1 · `Leinenweber` C1 ·
+`Lohnarbeiter` C1 (es *asalariados*, bewusst gegen `Tagelöhner` *jornaleros*
+abgesetzt) · `Eckpfeiler` C1 (gegen `Eckstein` abgesetzt) · `Gedenksäule` C1 ·
+`Sonnenstadt` C1 · `Flussarm` C1 · `Saatfeld` B2 · `Memphis` A1 · `verdunsten`
+C1 · `durcheinanderbringen` C1 · `irreführen` C1. Mehrwort: `die Treue schwören`
+B2.
+
+**Kapitel 20** (2): `Sargon` A1 · `Verbannter` C1 *exiles · desterrados ·
+exilés · deportati*. **`Verbanntes` in 1Chr 2,7 ist NICHT dasselbe Wort** — das
+ist der Bann-Gegenstand (cherem), nicht der Deportierte. Eigenes Lemma.
+
+**Kapitel 21** (5 + 1 Mehrwort): `dahinfegen` C1 · `ölen` B2 · `achtgeben` B2 ·
+`Wucht` C1 (gegen `Wut` und `Gewalt` abgesetzt) · `Dedaniter` A1. Mehrwort:
+`zunichte machen` B2 (der Bestand kennt nur `zunichte werden`).
+
+### `Sonnenstadt` (19,18): die Ausgaben stehen 2:2, das Deutsche entscheidet
+
+RV *Ciudad del Sol* und RIV *la città del sole* lesen die Sonne, **WEB *The city
+of destruction* und LSG *ville de la destruction* das andere hebraeische
+Textzeugnis**. Der l1912mod schreibt `Sonnenstadt` und setzt es selbst in
+Anfuehrungszeichen — also uebersetzt, nicht transliteriert, und zwar nach dem
+deutschen Wort. Dieselbe Entscheidung wie `Nachtwache` 1,8, nur mit einer
+gespaltenen statt einer einhelligen Ausgabenlage.
+
+### `Dedaniter` (21,13): jede Sprache folgt ihrer eigenen Ausgabe
+
+WEB *Dedanites* und RIV *Dedaniti* setzen den Volksnamen, **RV *Dedán* und LSG
+*Dedan* den Stammvater**. Nach dem `Kir-Heres`-Verfahren folgt jede Sprache
+ihrer Ausgabe: `Dedaniter` A1 = *Dedanites · Dedán · Dedan · Dedaniti*. **Der
+Artikel davor musste mitziehen** (`der` = *of · de · de · dei*), sonst stuende
+im Lesefluss „de los Dedán". Der Bestandseintrag `Dedan` (5×) bleibt unangetastet.
+
+### Prompt-Hinweise: neunzehn widerlegt
+
+Kapitel 19 zehn, Kapitel 20 sechs, Kapitel 21 drei. Die lehrreichsten:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Heerscharen` stehe sechsmal in Kap. 19 | **siebenmal** (19,4.12.16.17.18.20.25) |
+| `Wächter` stehe in 21,6 · 8 · 11 · 12 | **21,8 hat keinen** — dort stehen `Wachturm` und `Posten`; das vierte ist 21,12 |
+| `An jenem Tag` sei ein Mehrwort-Kandidat | das Buch annotiert die Formel an **20 Stellen** Wort fuer Wort |
+| `um … zu` und `nicht mehr` seien Kandidaten in Kap. 21 | **weder `um` noch `nicht` steht in Jesaja 21** |
+| alle drei `nackt und barfuß` traegen dieselbe Zeile | 20,2/20,3 Singular, **20,4 Plural** |
+| Jes 8,4 liefere `vor dem König von Assyrien` | dort ist `vor` **raeumlich**, in 20,6 heisst es „gerettet **vor**" — alle vier Ausgaben *from/del/du/dal* |
+| `weisesten` gehoere zu `Weiser` | in 19,11 **attributiv** → Lemma `weise` |
+
+**Von 40 als „unbelegt" gemeldeten Formen waren 19 wirklich neu.** `belegt.py`
+und `fixgloss.py show <Lemma>` bleiben das Werkzeug, das die Differenz aufdeckt —
+`aufhetzen` hat sogar einen Beleg **aus diesem Buch** (13,17), und `rasen` steht
+im Bestand, obwohl `belegt.py` nur das Substantiv `Rast` zeigt.
+
+### Bestandsbefunde
+
+- **`von Assyrien` ist italienisch gespalten:** Jes 8,4 *di*, Jes 10,12 und
+  2Kön 18,17 *d'*. **RIV schreibt an allen Stellen „d'Assiria"** — dieselbe
+  Klasse wie der `l'`/`il SIGNORE`-Fund aus Paket 7 (die Funktionswortglosse
+  richtet sich nach dem Anlaut der **Nachbarglosse**). 8,4 sieht falsch aus.
+  Dasselbe Muster bei `von Kusch` (Jes 18,1 *de*/*di* vor *Éthiopie*/*Etiopia*).
+  **Zu duenn fuer `remap.py`, buchuebergreifend zu klaeren.**
+- **`Zoan` italienisch hat eine dritte, von keiner Ausgabe gedeckte Form:** der
+  Bestand fuehrt fuer 4Mo 13,22 it *Soan*, was RIV nirgends schreibt (RIV hat
+  *Zoan* in Ps 78,12/43, *Tsoan* in 4Mo 13,22 und Jes 19,11/13). Weil RIV selbst
+  schwankt, ist es **nicht** die `Zoar`/`Medeba`-Klasse — die *Soan*-Zeile ist
+  trotzdem ein Ausreisser.
+- **`Kedar` italienisch: RIV widerspricht der Bestandsreihe an 3 von 4 Stellen**
+  (*Kedar* in 1Chr 1,29 · Ps 120,5 · Jes 21,16/17, aber *Chedar* in Hld 1,5).
+  **Nicht** die `Zoar`-Klasse, die Widerlegung an *jeder* Stelle verlangt,
+  sondern der `fra`/`tra`-Fall: die Ausgabe schwankt selbst. Bestand gehalten.
+- **`um zu` gegen `um ... zu`:** korpusweit 388 : 6, und **alle sechs Ausreisser
+  sind Jesaja 13**. Zu bereinigen.
+- **`acht geben` gegen `achtgeben`** und **`schämen` gegen `sich schämen`** —
+  je zwei Lemmaschreibungen derselben Sache. Nach dem `Schinar`-Verfahren
+  behandelt (Lemma aus dem Text, Reihe aus dem Bestand), nicht angefasst.
+- **`Schilf` B2 und `Binse` C1 sind es/it eine Sachdublette** (beide *juncos* /
+  *giunchi*) unter zwei Lemmata — die achte dieser Art. Hier **musste** sie
+  aufgeloest werden, weil beide in 19,6 im selben Vers stehen.
+
+### Ausgabenbefunde
+
+- **RIV: sechs neue Setzfehler**, nachgetragen in `RIV_SETZFEHLER_JESAJA.md` —
+  **19,22 „che ’arrenderà"** (*s’arrenderà*, zweiter Anlautfall an einem
+  Klitikon nach 7,25), **20,4 „con la natiche"** (*le*), **21,3 „pieni si
+  dolori"** (*di*), **21,3 „o mi contorco"** (*io*), **21,8 „di giorni"**
+  (*giorno*), **21,12 „ornate un’altra volta"** (*tornate* — siebter Fall der
+  Klasse „Anlaut, Gemeinwort"). 21,9 „abilonia" und 19,23 „in ssiria" standen
+  bereits in der Tabelle.
+- **RIV 19,1 setzt zweimal daneben**: „**l’**idoli d’Egitto" (richtig *gl’idoli*
+  — dieselbe Ausgabe schreibt es in 19,3 korrekt) und „che **cavalcava**"
+  (Imperfekt, wo Deutsch, WEB, RV und LSG Praesens haben).
+- **Die `Nachtwache`-Klasse noch einmal viermal** — der deutsche Quelltext
+  gewinnt gegen alle vier Ausgaben: **19,10 `Weber`** (alle vier lesen
+  Saeulen/Stuetzen), **20,3 `Warnung`** (alle vier „Vorzeichen"), **20,4
+  `wegtreiben`** (alle vier „wegfuehren"), **21,5 „breitet Decken aus"** (alle
+  vier lesen Wachdienst). Dazu **21,2 `grausam`**, wo alle vier *terrible* /
+  *grievous* schreiben und die Bindung *cruel · cruel · cruelle · crudele* gilt —
+  gestuetzt durch **13,9 im selben Buch**.
+- **19,23: alle vier lesen „der HERR", wo das Deutsche `Gott` hat**; WEB laesst
+  das Objekt ganz weg. **21,16: RV schreibt „Jehová", wo das Deutsche `Herr`
+  (Adonai) hat** — die drei anderen folgen dem Deutschen.
+- **RV setzt in 20,6 · 21,5 · 21,12 · 21,14 `ustedes`-Imperative** gegen die
+  Buchkonvention `vosotros`. Glossiert ist die Konvention, wie seit 13,2.
+- **LSG 20,1 zieht zusammen** („vint assiéger Asdod") — `Aschdod` steht
+  franzoesisch nur **einmal**, und fuer `kämpfte` gibt LSG keine Form vor; RIV
+  baut dieselbe Stelle dreigliedrig um und liefert fuer `kam` nichts.
+- **19,7 LSG liest „nudité" statt `Wiesen`**; **19,9 nur RIV stuetzt
+  `Baumwolle`** (*cotone*), RV liest „tejedores de redes" (Netze); **21,1 LSG
+  setzt Singular** („l’ouragan du midi") gegen `Wirbelstürme`; **21,12 LSG fuegt
+  „Convertissez-vous" hinzu**, das im Deutschen fehlt; **21,3 WEB liest den
+  ganzen Vers anders**; **21,4 RIV liest „la sera"** statt `Dämmerung`.
+- **Versgrenzen: keine Verschiebung in allen drei Kapiteln** — `ausgaben.py`
+  meldet Versatz +0 fuer alle vier Ausgaben. Anders als 14,3/14,4 und 17,12/17,13.
+
+### Ein spanischer Konjunktiv statt einer Notloesung
+
+**`gehen` ↔ `sehen` in 21,6** („**Geh**, stell einen Wächter auf, der berichtet,
+was er **sieht**") fallen spanisch auf *ve* zusammen. Ausgewichen ist nicht das
+haeufige `Geh` (118 Belege, und RV schreibt selbst „Ve, pon un centinela"),
+sondern `sieht` → **es *vea***. Das ist keine Notloesung: nach unbestimmtem
+Antezedens verlangt das Spanische den Konjunktiv, und **RV schreibt an der
+Stelle woertlich „lo que vea"**. Mitgezogen ist `berichtet` → *informe*; fr und
+it bleiben indikativisch, weil sie den Konjunktiv nicht fordern.
+
+**Die Gegenprobe dazu, wo bewusst nichts geloest wurde:** 21,8 `stehe` und `bin`
+fallen spanisch auf *estoy* zusammen — **RV schreibt in genau diesem Vers
+zweimal „estoy"**, und `estar` ist fuer beide deutschen Verben die richtige
+Wahl. Dasselbe Muster wie `Getöse`/`tosen` in 17,12.
