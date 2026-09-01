@@ -1802,3 +1802,214 @@ it bleiben indikativisch, weil sie den Konjunktiv nicht fordern.
 fallen spanisch auf *estoy* zusammen — **RV schreibt in genau diesem Vers
 zweimal „estoy"**, und `estar` ist fuer beide deutschen Verben die richtige
 Wahl. Dasselbe Muster wie `Getöse`/`tosen` in 17,12.
+
+## 15. Paket 9 (Kap. 22 · 23 · 24)
+
+Drei Kapitel gleichzeitig, 1381 Einzelwort- und 51 Mehrwort-Eintraege. Alle
+Pruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23` und `hilfsverb.py 23`
+melden ueber das gebaute Buch **0 Befunde**. Damit sind **24 von 66 Kapiteln**
+fertig: 464 Verse, 10 672 Eintraege.
+
+### Die erste Welle ohne eine einzige Angleichung
+
+Paket 8 musste `Hüfte` angleichen, Paket 7 zweimal eingreifen. **Paket 9 gar
+nicht** — und die zwei Faelle, die auf den ersten Blick danach aussahen, sind
+beim Nachsehen genau richtig gewesen:
+
+- **`in der Höhe`** traegt in 22,16 *en las alturas · sur les hauteurs · sulle
+  alture* und in 24,21 *en lo alto · dans le ciel · nei luoghi eccelsi*. Zwei
+  Reihen fuer dasselbe Mehrwort-Lemma in einer Welle — aber **die drei
+  romanischen Ausgaben schreiben in 24,21 wortwoertlich, was dort steht** (RV
+  „en lo alto", LSG „dans le ciel", RIV „nei luoghi eccelsi"). Dazu meinen die
+  Stellen Verschiedenes: 22,16 ist die **Felsgruft**, 24,21 der
+  **Himmelsbereich** — und der Bestand spaltet selbst so (Hiob 39,27 physisch
+  gegen die sechs Himmelsbelege).
+- **`es ergehen`** traegt in 23,15 die Futurzeile und in 24,2 die Praesenszeile
+  desselben Bestandslemmas. LSG schreibt „il en **sera** de Tyr" gegen „il en
+  **est** du sacrificateur" — die Ausgabe macht den Tempusunterschied selbst.
+
+**Das Kriterium aus Paket 8 traegt also in beide Richtungen:** es sagt nicht nur,
+wann anzugleichen ist, sondern auch, wann eine Divergenz **stehen bleiben muss**.
+Massgeblich ist, was die Ausgaben **am jeweiligen Vers** schreiben — nicht die
+Gleichfoermigkeit der Welle.
+
+### Der Fund der Welle: `dei eserciti` ist ungrammatisch
+
+Gemeldet vom Agenten fuer Kapitel 22, nachgezaehlt und korrigiert. Der Bestand
+stand **70 : 5** fuer `degli` vor `Heerscharen`, und **alle fuenf Ausreisser
+waren Jesaja** (9,6 · 9,12 · 9,18 · 18,7 zweimal).
+
+Es ist nicht bloss eine Minderheit, sondern **falsches Italienisch**: vor
+vokalisch anlautendem *eserciti* verlangt die Sprache `degli`, im Lesefluss
+stand dort „dei eserciti". **RIV schreibt an der einzigen Stelle, an der die
+Wendung in der Ausgabe ueberhaupt vorkommt (18,7), selbst *degli eserciti*.**
+
+Das ist die **zweite Auflage der Nachbarfalle** nach dem `l'`/`il SIGNORE`-Fund
+aus Paket 7: die italienische Funktionswortglosse richtet sich nach dem Anlaut
+der **Nachbarglosse**. Nach der Korrektur zaehlt der Bestand 75 : 0.
+
+### Ein Befund, der bewusst NICHT angefasst wurde
+
+Derselbe Bericht meldete `der` vor `Heerscharen` auch englisch als gespalten.
+Das Nachzaehlen ergibt ein anderes Bild als der Bericht:
+
+| Buch | `of` | `of the` |
+|---|---|---|
+| Jesaja | 21 | 17 |
+| Psalmen | 2 | 13 |
+| 2. Samuel | — | 6 |
+| 1. Chronik | — | 3 |
+| uebrige | 3 | 2 |
+
+**Beide Lesarten sind grammatisch**, ueber sieben Buecher verteilt, und Jesaja
+ist in sich fast haelftig gespalten. Das ist **keine Nachbarfalle und kein
+Ausreisser**, sondern eine offene Entscheidung ueber 62 Eintraege in sieben
+Buechern. Sie gehoert in einen eigenen Durchgang, nicht als Nebenwirkung eines
+Kapitelpakets — sonst entsteht wieder der Zustand, den Paket 7 geheilt hat.
+
+**Die Lehre:** ein gemeldeter „Bestandsbefund" ist erst dann ein Auftrag, wenn
+die Auszaehlung zeigt, dass eine Seite **falsch** ist — nicht nur seltener.
+
+### Kollisionen: acht in einem Kapitel, keine davon gemeldet
+
+Kapitel 24 hat mit einem **eigenen Skript, das auch Funktionswoerter prueft**,
+acht echte Kollisionen gefunden, die `hints.py` prinzipiell nicht sieht. Die
+lehrreichsten:
+
+- **24,23 `beschämt` ↔ `zuschanden`** — en beide *put to shame*, es beide
+  *avergonzado*. Die **neunte restlose Sachdublette** unter zwei Lemmata.
+  Aufgeloest, weil alle drei romanischen Ausgaben selbst trennen (RV „se
+  avergonzará … se confundirá", LSG „de honte … de confusion", RIV „di rossore …
+  di vergogna").
+- **24,8 `verstummt` ↔ `vorbei` ↔ `vergangen`** — hier hat der Agent den
+  Ausgaben **widersprochen**, und zu Recht: alle vier schreiben dreimal dasselbe
+  Wort, der Bestand trennt die drei Lemmata bereits. Waere er den Ausgaben
+  gefolgt, stuende im Lesefluss dreimal dasselbe.
+- **24,10 `in` ↔ `hinein`**, **24,13 `bei` ↔ `zu` ↔ `auf`**, **24,18 `vor` ↔
+  `aus`**, **24,23 `auf` ↔ `in`** — vier reine Praepositionsfaelle. Genau die
+  Klasse, die `hints.py` ausblendet und die `AUFTRAG_AT.md` deshalb zum
+  Selbstnachzaehlen aufgibt.
+
+Dazu in Kapitel 22 drei nicht gemeldete (`aus ↔ von` 22,19 · `anziehen ↔ legen`
+22,21 · `sprechen ↔ sagen` 22,25) und in Kapitel 23 drei (`Aber ↔ sondern` ·
+`man ↔ sich` · `des ↔ vom`).
+
+**Die Gegenprobe zaehlt auch:** Kapitel 24 hat sechs vermutete Kollisionen
+**widerlegt** (`Falle ↔ fällt`, `Grube ↔ Kerker`, `jubeln ↔ jauchzen`,
+`taumeln ↔ schwanken`, `Freude ↔ Jubel`, und `Nachlese ↔ Ährenlesen` steht gar
+nicht im Kapitel). Eine Auflösung ohne Kollisionsstelle macht den Bestand nur
+inkonsistent.
+
+### Die Trockenwoerter, zum zweiten Mal — und die Regel dahinter
+
+Nach den sieben Austrocknungswoertern von 19,5–7 hat 24,4 fuenf weitere:
+`trauern` · `verwelken` · `verdorren` · `welken` · `verkuemmern`, dazu
+`schwinden` in 24,6 und `welken` noch einmal in 24,7.
+
+Die Auflösung folgte einer Regel, die vorher nicht ausgesprochen war: **je
+Sprache weicht das Wort aus, das seltener im Kapitel steht** — `welken` steht
+zweimal, `verwelken` einmal, also weicht `verwelken` in en und it. Und es weicht
+**auf das Wort, das die Ausgabe an der Stelle selbst schreibt** (en *fades away*
+nach WEB, it *è spossata* nach RIV). Spanisch lag umgekehrt, weil **RV an beiden
+`welken`-Stellen *decayó* schreibt** — dort weicht `welken`. Franzoesisch
+kollidierte gar nichts.
+
+`verdorren` bleibt bei *withers*; die Entscheidung aus 15,6 wird nicht
+umgestossen.
+
+### Neue Lemmata
+
+**Kapitel 22** (9): `Trubel` B2 · `Ausgelassenheit` C1 (gegen `Freude`
+abgesetzt) · `Zertretung` C1 · `hallen` C1 · `Waldhaus` C1 (it *foresta* nach
+RIV, nicht `Wald`-*bosco*) · `Sammelbecken` B2 · `fortschleudern` C1 (bewusst
+**ohne** *lejos/loin*, sonst Kollision mit `weit` im selben Vers) · `Ball` A1 ·
+`Ehrenthron` C1.
+
+**Kapitel 23** (4): `Kronenstadt` C1 · `Belagerungsturm` C1 · `horten` C1 ·
+`Angesehenster` B2 (Reihe aus dem Bestand, eigenes Lemma weil substantiviert —
+2Kön 10,6 ist attributiv).
+
+**Kapitel 24** (7): `Chaos` B2 (nur RV stuetzt es) · `Entleiher` B2 (gegen
+`Schuldner` abgesetzt) · `Abschlagen` C1 (Substantiv, gegen `abschlagen` = *cut
+off* abgesetzt) · `bersten` C1 · `verkuemmern` C1 · `schamlos` C1 ·
+`zusammentreiben` C1.
+
+### Prompt-Hinweise: einundvierzig widerlegt
+
+Kapitel 22 elf, Kapitel 23 neunzehn, Kapitel 24 elf — die hoechste Quote des
+Buches. Die lehrreichsten:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| die Adonai-Jahwe-Formel stehe in Kap. 22 **fuenfmal** | **viermal** — 22,25 hat sie gar nicht |
+| `durchziehen` 23,10 nehme die *crossed*-Lesart aus 18,2 | **falsch** — 18,2 ist finit mit Stroemen als Subjekt; 23,10 ist der Imperativ und deckt sich Feld fuer Feld mit **1Mo 13,17** (LSG *Parcours*, RIV *Percorri*) |
+| `nicht mehr` stehe in 23,1 · 23,10 · 24,20 | **an keiner der drei Stellen** — zweimal ist es `kein … mehr`, einmal „steht **nicht wieder** auf" |
+| 24,4 habe drei Trockenwoerter | **fuenf**, und `welken` steht auch in 24,7 — die Auflösung musste kapitelweit tragen |
+| `Grube` stehe in 24,17 · 18 zweimal | **viermal** (24,17 · 18 · 18 · **22**) |
+| 24,19 vier Bruchwoerter, Kollisionsgefahr | **keine** — drei sind in allen vier Sprachen schon getrennt |
+| `aushauen`, `verjagen`, `abschiessen` seien neu | alle **belegt** — `aushauen` aus **Jes 5,2**, `verjagen` aus **Jes 17,13** |
+| `Abschlagen` sei `abschlagen` = *cut off* | **andere Bedeutung** — alle vier Ausgaben lesen „schuetteln" |
+
+**Von 46 als unbelegt gemeldeten Formen waren 17 wirklich neu.** Und die
+schaerfste Falle des Pakets stand in keinem Hinweis: **`Spiel` in 23,16 ist kein
+Substantiv**, sondern der Imperativ von `spielen` A1 — der Lexikon-Extrakt zeigt
+dort nur `Spiel` = *game · juego · jeu · gioco*.
+
+### Ein Mehrwort, das nur beim Lesen auffaellt
+
+`dahinschwinden` C1 liegt in **24,6 getrennt** („schwinden die Bewohner … dahin")
+und steht drei Belege stark im Bestand, darunter **Jes 17,3 im selben Buch**.
+`konvention.py` prueft diese Wendung nicht, und fuer `selfcheck.py` und `qa.py`
+ist ein fehlender Mehrwort-Eintrag **prinzipiell unsichtbar**. Der Agent hat ihn
+und elf weitere Bestands-Mehrwoerter beim Lesen gefunden — dazu meldet
+`sweep.py --kapitel` in Kapitel 23 das ebenfalls ungelistete `es geben` (150+
+Belege). **`konvention.py` allein reicht nicht.**
+
+### Bestandsbefunde
+
+- **`beschämen`/`zuschanden` sind en/es eine Sachdublette** unter zwei Lemmata —
+  erstmals in 24,23 im selben Vers, deshalb dort aufgeloest.
+- **`kein mehr` (22) gegen `kein … mehr` (2)** und **`sich kümmern` gegen `sich
+  kümmern um`** — zwei weitere Lemmaschreibungen derselben Sache, wie `um zu` /
+  `um ... zu`. Zu bereinigen.
+- **`Trank` C1 *drink* kollidiert korpusweit mit `trinken` A1 *drink*** im
+  Englischen; nur in 24,9 aufgeloest.
+- **Die Lexikonfalle hat dreimal gegriffen:** `Herr` in 24,2 (Bestandsmehrheit
+  612:153 fuer den goettlichen *Lord*, hier der Menschenherr — LSG *maître*,
+  RIV *padrone* stuetzen), `Gefangener` in 24,22 (Extrakt zeigt die NT-Lesart
+  *prisoners*, gesetzt ist die AT-Bindung *captives*), und **das ganze
+  Handelsfeld von Kapitel 23** ist fast rein neutestamentlich belegt (`Gewerbe`
+  1 Beleg, `Markt` 4, `Verdienst` 4, `Zypern` 8 — **alle NT**).
+- **`Riss` B2** fuehrt fuer den Mauerdurchbruch *cracks · grietas · brèches ·
+  rotture*, waehrend alle vier Ausgaben in 22,9 „breaches/brechas/brèches/brecce"
+  schreiben. es/it sehen schwach aus — zu duenn fuer `remap.py`.
+
+### Ausgabenbefunde
+
+- **Sieben neue RIV-Setzfehler** (22,3 · 22,8 · 23,11 · 23,13 · 23,15 · 24,19 ·
+  24,20), nachgetragen. **23,13 ist eine dritte blinde Klasse:** „i palazzi di
+  **tiro**" — der Eigenname ist nicht verstuemmelt, nur kleingeschrieben, und
+  faellt dadurch mit dem italienischen Gemeinwort *tiro* (Wurf, Zug) zusammen.
+  Er ist damit weder fuer die Eigennamensuche noch fuer die Anlautsuche
+  sichtbar.
+- **Der erste Setzfehler in WEB:** 24,17 „you who **inhabitant** the earth"
+  (*inhabit*). Die Setzfehlerliste ist nach RIV benannt, weil dort die Haeufung
+  liegt — **die anderen drei Ausgaben sind nie systematisch durchgesehen
+  worden**.
+- **Die `Nachtwache`-Klasse noch sechsmal** — der deutsche Quelltext gewinnt
+  gegen alle vier Ausgaben: `Zypern` 23,1/12 (**alle vier transliterieren
+  Kittim/Quitim**), `Fesseln` 23,10, `Wüstentiere` 23,13, `Gewerbe`/`Handel
+  treiben` 23,17, `Sturm` 24,20, `schamlos` 24,16.
+- **24,2 vertauschen zwei Ausgaben die Listenglieder:** WEB dreht die Paare 5
+  und 6, RV die Paare 1–4; LSG und RIV folgen der deutschen Reihenfolge. Weil
+  wortweise glossiert wird, hat das keine Folge — **aber es ist genau die
+  Stelle, an der ein Abschreiben nach der Ausgabe um eine Position verrutscht
+  waere.** Das Listenskript hat jede Position aus dem Quelltext neu abgeleitet.
+- **RIV 22,14 schreibt „l'Iddio degli eserciti"**, wo dieselbe Ausgabe an fuenf
+  anderen Stellen des Kapitels *l'Eterno* setzt; **RIV 22,18 schreibt `Signore`
+  gross an einem menschlichen Herrn**. Beides Schwanken der Ausgabe, keine
+  Glossenaenderung — dieselbe Klasse wie „degli Eserciti" in 10,33.
+- **RV setzt in 22,4 · 23,1 · 23,2 · 23,6 wieder `ustedes`-Imperative** gegen die
+  Buchkonvention `vosotros`, und **wechselt in 22,9–11 in die 3. Person Plural**,
+  wo die vier anderen die 2. Person haben.
+- **Versgrenzen: kein Versatz in allen drei Kapiteln.**

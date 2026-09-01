@@ -77,6 +77,13 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 21,3 | **o** mi contorco, per quel che sento | *io* | Anlaut, Funktionswort |
 | 21,8 | di **giorni** io sto del continuo | *giorno* (dt. „bei Tag", Sg.) | Numerus |
 | 21,12 | interrogate pure; **ornate** un’altra volta | *tornate* | Anlaut, Gemeinwort |
+| 22,3 | tutti quelli de’ **uoi** che sono trovati | *tuoi* | Anlaut, Funktionswort |
+| 22,8 | all’arsenale del palazzo della **oresta** | *foresta* | Anlaut, Gemeinwort |
+| 23,11 | ha fatto **tramare** i regni | *tremare* | Tippfehler |
+| 23,13 | distruggono i palazzi di **tiro** | *Tiro* | **Eigenname kleingeschrieben** — s. u. |
+| 23,15 | in capo a settant’anni, **avverrò** di Tiro | *avverrà* | Person |
+| 24,19 | la **terrà** tremerà, traballerà | *terra* | Tippfehler (falscher Akzent) |
+| 24,20 | essa cade, e non si **rialzerò** mai più | *rialzerà* | Person |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -114,3 +121,24 @@ Gemeinwoerter.
 
 **Die Liste ist also auch bei Eigennamen eine Untergrenze**, nicht nur bei
 Gemeinwoertern. Gefunden hat es der Agent fuer Kapitel 16, nicht das Skript.
+
+## Eine dritte blinde Klasse: der kleingeschriebene Eigenname
+
+`Kir-Hareseth` in 16,7 hat gezeigt, dass ein verschluckter Anlaut den
+Grossbuchstaben mitnehmen kann. **23,13 ist der naechste Schritt und schlimmer:**
+RIV schreibt „i palazzi di **tiro**" — der Anlaut ist *da*, nur die
+Grossschreibung fehlt, und der Stumpf `tiro` ist ein **gewoehnliches
+italienisches Wort** (Wurf, Zug, Gespann).
+
+Damit faellt der Fall durch **beide** maschinellen Muster: er ist nicht
+grossgeschrieben (also kein Eigenname fuer die Auszaehlung) und kein
+Wortstumpf (also kein Anlautverdacht). Gefunden hat ihn der Agent fuer
+Kapitel 23 beim Lesen der Ausgabe.
+
+## Nicht nur RIV: der erste Setzfehler in WEB
+
+**24,17 „Fear, the pit, and the snare, are on you who *inhabitant* the earth"**
+— richtig *inhabit*. Der erste englische Fall in diesem Buch. Die Liste oben ist
+nach RIV benannt, weil dort die Haeufung liegt; **sie ist damit auch in dieser
+Hinsicht eine Untergrenze** — die anderen drei Ausgaben sind nie systematisch
+durchgesehen worden.
