@@ -3182,3 +3182,137 @@ Neue **Lesarten** auf belegten Lemmata, alle an den Ausgaben geprueft: `Stamm`
 `Vergeltung` (positiv, parallel zu `Lohn`), `froh` (von einer Nachricht),
 `abheben` (auffliegen), `Lehm` (*mortar*, gegen `Ton` im selben Vers),
 `ansagen`, `treten`/`stampfen`.
+
+## 22. Paket 16 (Kap. 43 · 44 · 45) — die Vorabsprache haelt
+
+81 Verse, 2133 Eintraege. Versatz +0 in allen vier Ausgaben und allen drei
+Kapiteln. Das erste Paket, das mit **drei** gleichzeitigen Agenten gebaut wurde,
+nachdem Paket 15 gezeigt hatte, was das kostet — und das erste, bei dem die
+Formelwoerter **vor** dem Start festgelegt und allen drei Agenten wortgleich
+mitgegeben wurden.
+
+### Das Ergebnis der Vorabsprache
+
+`paketcheck.py` meldet fuer die drei Kapitel in **Abschnitt A null Faelle**:
+kein neu gepraegtes Lemma steht in zwei Kapiteln mit verschiedener Reihe. Bei
+112 gemeinsamen Inhaltslemmata und elf neuen Lemmata allein im Goetzenbaufeld
+ist das kein Zufall, sondern das Ergebnis der drei Zeilen, die im Prompt
+standen:
+
+| Wort | Reihe | Herkunft |
+|---|---|---|
+| `ausser` (Monotheismusformel) | B1 *besides · fuera de · hors · fuori di* | alle vier Ausgaben an allen Formelstellen |
+| `es geben` (Mehrwort) | A2 *there is · hay · il y a · c'è* | Bestand, 53 Belege |
+| `Erloeser` · `erloesen` · `Heiliger` | B2 / B2 / B1 | 41,14 |
+
+**Alle drei Agenten haben denselben Vorbehalt gemeldet**, unabhaengig
+voneinander: der von mir genannte Bestandsbeleg 2Sam 7,22 traegt fr *hors de*
+und it *all'infuori di*, waehrend LSG und RIV an den Jesaja-Zeilen selbst
+*hors moi* und *fuori di me* schreiben. Alle drei sind der Paketreihe gefolgt
+und haben es aufgeschrieben — das ist genau das erwuenschte Verhalten.
+
+Und `Kyrus` haben 44 und 45 unabhaengig **identisch** gepraegt
+(*Cyrus · Ciro · Cyrus · Ciro*, zugleich die Bestandsreihe von `Kores` aus
+Esra und 2. Chronik). Das ist die Gegenprobe zu `wackeln`: wo die Ausgaben
+einig sind und `NAMENSSCHREIBUNG_JESAJA.md` das Verfahren vorgibt, laufen zwei
+Agenten nicht auseinander.
+
+### Ein gemeldeter Konflikt, der keiner war
+
+Kapitel 43 hat gewarnt, 44 habe dreimal `gebildet` und muesse deshalb Lemma und
+Level von `bilden` (A2) uebernehmen. **Der Quelltext sagt etwas anderes:**
+43,1 · 43,7 · 43,10 schreiben `gebildet`, 43,21 und alle Stellen in 44 und 45
+schreiben `geformt`. Zwei verschiedene deutsche Woerter, zwei Lemmata
+(`bilden` A2, `formen` B2) — richtig getrennt, obwohl beide dieselbe
+Glossenreihe *formed · formado · formé · formato* tragen. Sie stehen nie im
+selben Vers, also greift die Kollisionsregel nicht. Der Warnhinweis kam aus der
+Bibelkenntnis, nicht aus dem Text; der Grundsatz „der Quelltext hat immer
+recht" gilt auch fuer Meldungen **zwischen** Agenten.
+
+### `Stift`: das Level haengt am gewoehnlichen Sinn, nicht am seltenen
+
+44,13 hat den Schnitzer, der „die Form mit dem `Stift`" zeichnet. Der Bestand
+kannte `Stift` bisher nur aus **`Hütte des Stifts`** (Jos 18,1 · 19,51), dem
+alten Lutherwort fuer das Zelt der Begegnung — zwei Eintraege, beide **C2**.
+`buildbook.py` haette den Schreibstift stillschweigend auf C2 gezogen.
+
+Entschieden nach dem `Fuss`/`Kopf`-Praezedenzfall aus `AUFTRAG_AT.md` — das
+Level bleibt am Lemma und wird von einer Sonderbedeutung **nicht** verschoben.
+Dort haelt die Koerperteil-Lesart das Level unten, obwohl der
+Stiftshuettenblock `Fuss` als Sockel liest; hier haelt der Schreibstift es
+unten, obwohl Josua `Stifts` als Begegnungszelt liest. Beide Josua-Eintraege
+stehen jetzt auf **A2**, die Glossenreihe (*meeting · reunión · assignation ·
+convegno*) ist unangetastet. Dieselbe Bauform wie `Lot` (A1 fuer den Namen,
+den Schekel und das Senkblei) und `Mal` (A2 fuer das Zeichen und das Mal).
+
+### Was die drei Agenten an Kollisionen gefunden haben, die kein Skript meldet
+
+Zwoelf Faelle in drei Kapiteln, alle im Schreiben entdeckt:
+
+* **45,5 f. `ist` ↔ `gibt`, vier von vier Sprachen.** Zwei verschiedene
+  deutsche Verben, beide existenziell, beide *is · hay · y a · è*. `hints.py`
+  sieht das nicht, weil es ueber Wortformen prueft. Aufgeloest ueber `sein` =
+  ***exists · existe · existe · esiste*** (Bestandslesart aus 1Kor 8,6), und
+  zwar in der ganzen Formel `und sonst ist keiner` — auch an den Stellen ohne
+  Kollision, aus Formelkonsistenz.
+* **44,25 `Wahrsager` ↔ `Weissager`** (fr/it fielen auf *devins*/*indovini*
+  zusammen) und **44,27 `versiegen` ↔ `austrocknen`** (en beide *dry up*) —
+  beide nicht gemeldet, beide echt.
+* **44,28 `Wille` ↔ `werden`**: `werden` = *will* ist unverrueckbar, also weicht
+  `Wille` **nur im Englischen** aus — auf *pleasure*, genau das Wort, das WEB an
+  dieser Zeile schreibt. Eine Auflösung in einer einzigen Sprache ist die
+  sparsamste Form und hier die richtige.
+* **43,6 `her` ↔ `herbei`**: beide Bestandsreihen tragen italienisch *qua*.
+  `herbei` steht jetzt auf it *qui*. Der Bestand hat fuer `herbei` 19 Belege,
+  alle *qua* — die Trennung ist also buchlokal und **gemeldet**: wenn sie
+  korpusweit gelten soll, ist das eine eigene Entscheidung.
+* Dazu die Klasse aus 40,12 (`Mass`/`misst`), die **stehen bleiben muss**, jetzt
+  dreifach belegt: 44,16 `waermen`/`warm`, 44,16 `braten`/`Braten`, 44,20
+  `betruegen`/`Trug`. Alle vier Zielsprachen bilden dasselbe Kognatenpaar ab
+  wie das Deutsche; jede Ausweichglosse waere falsch.
+
+### 45,23 ↔ Roemer 14,11 — das NT zitiert, und der Block endet frueher als er aussieht
+
+Sieben Tokens sind woertlich gleich (`Vor mir wird sich jedes Knie beugen`) und
+Position fuer Position uebernommen, **einschliesslich der Bauform**: Roem 14,11
+setzt `sich beugen` als `parts`-Eintrag und benutzt das Bestands-Mehrwort
+`die Knie beugen` (Ps 22,30) ausdruecklich **nicht**. Danach laeuft der Vers
+auseinander, weil das NT ueber die Septuaginta zitiert: Roem `jede Zunge wird
+Gott bekennen`, Jes `mir wird jede Zunge schwoeren`. Dort wurde **nichts**
+uebernommen.
+
+### Meine Prompt-Hinweise: 28 widerlegt
+
+43: neun · 44: neun · 45: zehn. Der Loewenanteil ist wieder derselbe Typ —
+**Woerter behauptet, die im Quelltext nicht stehen**:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Kalmus` in der Opferliste 43,23 f. | `Gewuerzrohr` |
+| `Goldschmied`, `Hammer`, `Amboss`, `Nagel`, `wackeln`, `ueberziehen`, `anfertigen`, `schmieden` in 44,9–20 | **keines davon**; der Schmied arbeitet mit `Werkzeug` und `haemmert` |
+| `Holz` und `Bild` in 44 | `Brennholz`, `Holzklotz`, `Standbild` |
+| `Zimmermann` in 44,13 | `Schnitzer` — und drei Ausgaben schreiben trotzdem *carpenter/carpintero/charpentier* |
+| die Baumliste aus 41,19 kehre in 44,14 wieder | von sechs Baeumen wiederholt sich **einer** (`Zeder`); neu sind `Steineiche` und `Fichte` |
+| `Toepfer` und `bilden` im Toepfergleichnis 45,9 f. | `Schoepfer`, `hadert`, `Scherbe`, `irden`, `Ton`, `formt` |
+| die Sabaeer in 45,14 | `die hochgewachsenen Maenner von Seba` — ein **Ortsname**, obwohl alle vier Ausgaben das Gentiliz setzen |
+| drei Formulierungen der Monotheismusformel | **vier**, und die haeufigste (`und sonst ist keiner`, 4×) hatte ich gar nicht genannt |
+| die Opferliste liege in 43,22–24 | 43,22 enthaelt kein Opferwort |
+
+Und zweimal hat ein Agent dem Deutschen gegen alle vier Ausgaben recht gegeben,
+nach der `Nachtwache`-Regel: `Schnitzer` (nicht *carpenter*) und `Fichte`
+(nicht *fir/pino/pin/pino*).
+
+### Neue Lemmata (34)
+
+Kap. 43 (5): `Gewuerzrohr` C2 · `Sprecher` C1 · `verglimmen` C2 · `rueckgaengig`
+B2 · `sprossen` B2, dazu die Mehrwoerter `rueckgaengig machen`,
+`ausziehen lassen`, `hinabziehen lassen`, `Last machen`, `vor Gericht gehen`.
+
+Kap. 44 (22): das Goetzenbaufeld — `Goetzenmacher` · `Lieblingsstueck` ·
+`Schnitzer` · `Schnitzmesser` · `zirkeln`/`abzirkeln` · `Menschengestalt` ·
+`Steineiche` · `Fichte` · `haemmern` · `heizen` · `Holzklotz` — dazu
+`Jeschurun` · `Kyrus` · `duerstend` · `Trockenes` · `aufspriessen` · `gehoerig` ·
+`wegwischen` · `Morgennebel` · `Weissager` · `betrogen` · `Ah`.
+
+Kap. 45 (7): `Kyrus` (identisch mit 44) · `Ehrenname` · `hadern` · `traeufeln` ·
+`hervorspriessen` · `umhertragen` · Mehrwort `herbeitreten`.
