@@ -3673,3 +3673,119 @@ Bauform derselben Wendung neben `vor Gericht treten` (41,1 · 50,8) und
 
 Die Steinliste von 54,11 f. ist mit einem eigenen Positionsskript geprueft:
 **11 Positionen, 0 Befunde.**
+
+## 26. Paket 20 (Kap. 55 · 56 · 57) — `Voelker` ist entschieden
+
+46 Verse, 1215 Eintraege. Versatz +0 ueberall. `paketcheck.py` Abschnitt A und C
+leer, das fuenfte Mal in Folge. Artikel vor `HERR`: **null Korrekturen**, zum
+zweiten Mal — Kapitel 56 meldet sieben gepruefte Stellen, Kapitel 57 eine.
+
+### Der offene Befund aus Paket 19 hat seine Kollisionsstelle bekommen
+
+Paket 19 hatte `Voelker` dreimal auf *nations* gesetzt (52,10 · 52,15 · 54,3),
+gegen die Buchbindung *peoples* (47 : 6). Stehen gelassen wurde es nach der
+Regel aus Paket 9: seltener ist nicht falsch, und die Kollisionsregel greift
+nur im Vers.
+
+**55,4 liefert den Vers.** Dort stehen `Voelker` und `Nationen` nebeneinander,
+und der Agent hat sie getrennt: `Voelker` *peoples · pueblos · peuples ·
+popoli*, `Nationen` *nations · naciones · nations · nazioni*. Kapitel 56 hat
+unabhaengig dasselbe entschieden und dafuer **Markus 11,17 widersprochen** — die
+Vorlage traegt dort eine in sich uneinheitliche Reihe (*nations · los pueblos ·
+les nations · i popoli*).
+
+Damit ist die Auszaehlung kein blosser Mehrheitsentscheid mehr: das Buch
+unterscheidet die beiden deutschen Woerter selbst. **Alle neun Ausreisser sind
+angeglichen** (23,3 · 29,7 · 29,8 · 30,28 · 45,1 · 45,20 · 52,10 · 52,15 ·
+54,3); Jesaja liest `Voelker` jetzt an **57 von 57** Stellen als *peoples*.
+
+Der Bestand bleibt buchweise gespalten, und das ist kein Fehler: 1. Mose steht
+22 : 0 auf *nations*, Hiob und der Psalter 0 : n. Angeglichen wurde **innerhalb
+des Buches**, weil `konsistenz.py` genau das prueft und der Leser ein Buch am
+Stueck liest.
+
+### Zwei Fehler in einer fertigen Vorlage, gefunden von dem Kapitel, das sie uebernahm
+
+57,21 ist die buchinterne Dublette zu **48,22**, und beim Vergleich Feld fuer
+Feld fielen zwei Stellen auf, die im Bestand falsch stehen:
+
+* **`die` vor `Gottlosen` trug italienisch `i` statt `gli`** — RIV schreibt
+  „Non v'è pace per **gli** empi". Korrigiert.
+* **`spricht` trug franzoesisch `parle`, obwohl LSG dort „**dit** l'Éternel"
+  schreibt.** Das Buch entscheidet diese Lesart sonst Vers fuer Vers nach der
+  Ausgabe (25 × *parle* gegen 23 × *dit*); 48,22 stand gegen seine eigene.
+  Korrigiert.
+
+Der Agent hat als dritten Fall Hiob 38,13 gemeldet (dort steht ebenfalls `i`).
+**Das ist keiner** — RIV schreibt an dieser Zeile „i malvagi", ein anderes Nomen
+mit anderem Artikel. Die Auszaehlung sagt, wo nachzusehen ist; nachgesehen wird
+in der Ausgabe.
+
+### Die dritte Luecke der Klasse „Mehrwort fehlt im fertigen Bestand"
+
+Nach 41,1 (`vor Gericht treten`) und 42,6 (`machen zu`) in Paket 18 jetzt
+**Hebraeer 3,18: `zur Ruhe kommen` fehlte**, obwohl das Lemma viermal im
+Bestand steht (4Mo 10,36 · Neh 9,28 · Hiob 30,17 · Pred 8,10). Gefunden hat es
+wieder das Kapitel, das die Stelle als Vorlage benutzte. Ergaenzt und Hebraeer
+neu gebaut.
+
+### Die Reflexivum-Regel aus Paket 19 zahlt sich sofort aus
+
+Alle drei Agenten haben `fixgloss.py show "sich <verb>"` fuer jedes Reflexivum
+abgefragt. Bilanz: **elf Wendungen gefunden, die sonst neu gepraegt worden
+waeren** — `sich laben`, `sich erbarmen`, `sich finden lassen` (55) ·
+`sich betrinken`, `sich anschliessen`, `sich offenbaren` (56) ·
+`sich lustig machen`, `sich troesten lassen`, `sich abwenden`,
+`sich erinnern an`, `sich verbergen` (57). Neu war genau eine
+(`sich entzuenden`).
+
+Kapitel 56 hat dabei zwei weitere Bestandslemmata aufgedeckt, die kein Skript
+gemeldet haette: **`daliegen`** (Jes 14,8 · 17,9 · Lk 24,12) und
+**`aus sein auf`** (1Sam 8,3 · Joh 5,41) — letzteres liefert 56,11 die Reihe
+Feld fuer Feld.
+
+### Eine Homographenfalle im Formextrakt
+
+**`wahren`** (56,1 „Wahrt das Recht") — `belegt.py` zeigt die Form sechsmal
+belegt und verschweigt, dass alle sechs Flexionen des **Adjektivs `wahr`** sind.
+Das Verb ist wirklich neu. Dieselbe Klasse wie `Stift` (Paket 16) und `Ton`
+(Paket 16), nur eine Stufe frueher: hier taeuscht schon die Form, nicht erst
+die Bedeutung.
+
+### Was 57,15 fuer Paket 24 bedeutet
+
+`par57.txt` misst den Block nach 66,12 mit **Laenge 4** (`Denn so spricht der`).
+Er traegt **drei**: 66,12 hat an Position 3–4 `der HERR`, 57,15 `der Hohe`, und
+damit italienisch `l'` (vor *l'Alto*) gegen `il` (vor *SIGNORE*). Die Vorlage
+bricht genau an der Artikelfrage — derselbe Fall wie 48,17 gegen 44,24 in
+Paket 17, und der zweite, bei dem der Bruch **innerhalb** eines Verses liegt.
+
+### Meine Prompt-Hinweise: 13 widerlegt, sieben vorab gestrichen
+
+`promptcheck.py` hat vor dem Start sieben Woerter aus der Vorbereitungsdatei
+entfernt, darunter zwei bemerkenswerte: **`Zion` kommt in keinem der drei
+Kapitel vor**, obwohl es im Buch 34-mal steht, und in Kapitel 57 gibt es
+**keinen Goetzennamen** — 57,9 sagt schlicht `zum Koenig`, und alle vier
+Ausgaben lesen *king · rey · roi · re*.
+
+Was uebrig blieb:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Gewinn` in 56,11 | `Vorteil` |
+| `Erbarmen` (Substantiv) in 55 | nur das Verb `erbarmen` |
+| `Bund` in 57 | `Vertrag` — `promptcheck.py` konnte es nicht streichen, weil `Bund` in 55/56 steht |
+| `demuetig` in 57,15 | `Gedemuetigten`, das Partizip |
+| `ewig` attributiv | in 57 zweimal **adverbial** (*eternally*) |
+| die Baumreihe aus 44,14 helfe in 55,13 | von vier Pflanzennamen sind zwei keine Baeume; die beiden anderen stammen aus **41,19** |
+| `Hirte`, `Waechter`, `Fremder`, `Sabbat` im Singular | in 56 teils Plural, teils Singular — sechs Numerusfehler in einer Tabelle |
+
+### Neue Lemmata (19)
+
+Kap. 55 (7): `Gebieter` · `Koestliches` · `Brennnessel` · `Dornbusch` (Plural) ·
+`gereichen` C2, dazu `zum Ruhm gereichen` · `herrlich machen` · `fruchtbar
+machen`.
+Kap. 56 (5): `bellen` · `ausnahmslos` · `Verschnittener` · `Gesammelter` ·
+`wahren`.
+Kap. 57 (7): `Zerschlagener` · `Gedemuetigter` · `Goetzenhaufen` ·
+`hoffnungslos`, dazu `herausstrecken` · `sich entzuenden` · `Trost schenken`.
