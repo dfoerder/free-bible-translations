@@ -3903,3 +3903,99 @@ Kap. 59 (11): `Schlangenei` · `Viper` · `brummen` · `saeumen` · `Abkehr` ·
 `an … entlang`.
 Kap. 60 (5): `Nebajot` · `Zusammenbruch`, dazu `allen voran` · `an der Spitze` ·
 `ein Ende haben`.
+
+## 28. Paket 22 (Kap. 61 · 62) — die Kette aus Paket 15 schliesst sich
+
+23 Verse, 673 Eintraege. Versatz +0 in beiden Kapiteln. `paketcheck.py`
+Abschnitt A und C leer (siebtes Mal), Artikel vor `HERR` null Korrekturen
+(viertes Mal, 19 Stellen geprueft).
+
+### 62,11 ← 40,10: zwoelf von zwoelf identisch
+
+Der Zwoelferblock ist in **Paket 15** entschieden worden — sieben Pakete und
+etwa dreissig Kapitel zuvor. Er kommt vollstaendig an:
+
+| | |
+|---|---|
+| `Lohn` | *reward · recompensa · récompense · ricompensa* — nicht die Tabellenzeile *wages* |
+| `bei` | *beside · junto a · auprès de · presso* — nicht die Mehrheitszeile *with* |
+| `vorhergehen` | Mehrwort mit `parts [28,29,31]`, `ihm` ausgeschlossen, nach Ps 85,14 |
+
+Die `bei`-Zeile ist der Pruefstein: sie war in 40,10 nur deshalb gewaehlt
+worden, **weil dort `mit` im selben Vers steht**. 62,11 hat kein `mit` — die
+Zeile ist trotzdem mitgenommen worden, genau wie es Paket 15 festgehalten hat.
+Eine Entscheidung, die aus einer Kollision entstand, gilt im ganzen Block, sonst
+liest derselbe Satz zweimal verschieden.
+
+Derselbe Vers traegt eine **zweite** Vorlage: `bis ans Ende der Erde` aus 48,20
+und 49,6, fuenf von fuenf identisch samt Mehrwort.
+
+### 61,1 ← Lukas 4,18: der Blockmesser misst 21, woertlich gleich sind 32
+
+Der hoechste NT-Aehnlichkeitswert des Buches (0,75), und das Ergebnis geht ueber
+die Messung hinaus: **32 Positionen sind woertlich gleich, 30 davon Feld fuer
+Feld identisch uebernommen** — elf mehr, als der Messer sieht. Damit ist der
+Befund aus Paket 19 zum zweiten Mal bestaetigt: **der Blockmesser findet nur
+zusammenhaengende Folgen, und Zitate sind zerstreut.**
+
+Die zwei Abweichungen an woertlich gleichen Positionen sind beide begruendet:
+
+* **`den` vor `Elenden`** — italienisch *agli* statt Lukas' *ai*, rein lautlich
+  vom Folgewort erzwungen.
+* **`Gefangener`** — Lukas traegt *prisoners*, Jesaja die AT-Bindung *captives ·
+  cautivos · captifs · prigionieri*. `BINDUNGEN_AT.md` fuehrt die NT-Mehrheit
+  *prisoner* ausdruecklich als Lexikonfalle.
+
+### Zwei Vorgaben von mir, vom Agenten widerlegt
+
+Beide Male hatte ich eine Zeile aus dem falschen Zusammenhang genommen:
+
+* **`Priester`** hatte ich mit B2 und LSGs *sacrificateurs* angesetzt. Der
+  Bestand steht **616 : 0 auf B1 und *prêtres***, Jesaja selbst viermal so.
+  Eine Ausgabenschreibung gegen eine 616-fache Bindung bei gleicher Bedeutung —
+  die Bindung gewinnt.
+* **`Vergeltung`** hatte ich mit der 40,10-Zeile (*recompense · retribución ·
+  rétribution · retribuzione*) vorgegeben. Die gehoert zu 62,11; **61,2 ist der
+  `Tag der Vergeltung`**, eine andere Bedeutung, und dort steht die
+  Bestandsmehrheit *retribution · venganza · vengeance · vendetta*. Zwei
+  Lesarten desselben Lemmas, im selben Paket, korrekt getrennt.
+
+### Die Namen von 62,4 und 62,12 werden uebersetzt
+
+`Verlassene`, `Verwuestete`, `Vermaehlte`, `Gesuchte` — **der Text deutet sie
+selbst**, also greift die Regel „keine Namensdeutung ohne hoerbare Ableitung" in
+ihrer positiven Richtung, wie bei `Lustgraeber` und `Haderwasser` in 4. Mose.
+WEB und RV transliterieren an 62,4 (*Beulah*/*Beula*); gefolgt ist dem
+deutschen Text, und die Wortwahl kommt aus der **Bestandsfamilie des jeweiligen
+Stamms**, damit der Leser das deutsche Wort wiedererkennt.
+
+Ein Genusbruch ist dabei bewusst gesetzt und gemeldet: `Land` traegt die
+Bindung *land · país · pays · paese* (1163 Belege, romanisch maskulin), waehrend
+alle vier Ausgaben *tierra/terre/terra* schreiben und die Namen deshalb feminin
+setzen. Der **Name** `Vermaehlte` bleibt feminin (dort liefert die Ausgabe die
+Form), das praedikative `vermaehlt` wird maskulin, damit es mit `Land`
+kongruiert.
+
+### Was `fixgloss.py show` diesmal gerettet hat
+
+Fuenf Wendungen, die `konvention.py` und `sweep.py` **prinzipiell** nicht finden
+konnten: `um willen` C1 (12 Belege) · `innehalten` B2 · `verkuenden lassen` B2
+(genau die Konstruktion von 62,11) · `hindurchziehen` B2 (8 Belege, darunter
+51,10 im selben Buch) · `heimholen` B2. Dazu in Kapitel 61 `sprießen lassen`
+(55,10), das im Prompt nicht stand.
+
+### Eine Aufloesung, die bewusst unterblieben ist
+
+62,7 sagt „lasst ihm keine Ruhe". Der Bestand fuehrt `Ruhe geben` (13 Belege)
+und `Ruhe haben`, aber kein `Ruhe lassen`. Ein neu gepraegtes `Ruhe lassen`
+haette in allen vier Sprachen **dieselbe Glosse** getragen wie `Ruhe geben` —
+und die beiden stuenden in 62,6 und 62,7 unmittelbar nebeneinander. Deshalb nur
+Einzelwoerter. Der Fall ist gemeldet, falls der Bestand das Lemma je aufnimmt.
+
+### Neue Lemmata (14)
+
+Kap. 61 (6): `Freudenoel` · `Kopfschmuck` (als *garland*, weil alle sechs
+`turban`-Belege im Priestergewand-Block stehen) · `Gebundener` · `Auslaender` ·
+`sich zieren`, dazu `Gnadenjahr`.
+Kap. 62 (8): `Morgenglanz` · `Verlassene` · `Verwuestete` · `Vermaehlte` ·
+`vermaehlen` · `Gesuchte`, dazu `sich goennen` · `wegraeumen`.
