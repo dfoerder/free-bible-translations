@@ -3037,10 +3037,13 @@ gleichzeitig laufende Agenten haben dasselbe neue Wort verschieden gepraegt:
 und `levelcheck.py` laufen ueber **beide** Kapitel ohne Befund — strukturell ist
 nichts falsch, und im Bestand gibt es keine Zeile, gegen die zu pruefen waere.
 Gefunden wurde es erst beim Einsammeln, durch einen Vergleich aller Lemmata,
-die in mindestens zwei Kapiteln des Pakets vorkommen. **Dieser Vergleich gehoert
-in jedes Einsammeln**, solange mehrere Kapitel gleichzeitig laufen; er hat 571
-gemeinsame Inhaltslemmata geprueft und genau einen echten Fall gefunden (dazu
-eine Level-Divergenz, dieselbe Stelle).
+die in mindestens zwei Kapiteln des Pakets vorkommen: 573 Inhaltslemmata, 112
+davon in mehr als einem Kapitel, genau ein echter Fall (dazu eine
+Level-Divergenz, dieselbe Stelle). **Der Vergleich ist seither ein Werkzeug** —
+`paketcheck.py <buchNr> <kapitel …>`, zu laufen **vor** `buildbook.py`. Sein
+Abschnitt A nennt die Lemmata, die im Bestand **unbelegt** sind und in zwei
+Kapiteln des Pakets verschieden entschieden wurden; genau dort hatte kein Agent
+eine Bindung, die ihn haette korrigieren koennen.
 
 Die Aufloesung: **eine Reihe fuer beide Verse**, *totter(s) · se tambalea/
 se tambalee · branle · si smuove/si smuova*, B1. Der Grund liegt in den
