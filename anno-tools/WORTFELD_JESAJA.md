@@ -2013,3 +2013,211 @@ Belege). **`konvention.py` allein reicht nicht.**
   Buchkonvention `vosotros`, und **wechselt in 22,9–11 in die 3. Person Plural**,
   wo die vier anderen die 2. Person haben.
 - **Versgrenzen: kein Versatz in allen drei Kapiteln.**
+
+## 16. Paket 10 (Kap. 25 · 26 · 27)
+
+Drei Kapitel gleichzeitig, 1056 Einzelwort- und 42 Mehrwort-Eintraege. Alle
+Pruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23` und `hilfsverb.py 23`
+melden ueber das gebaute Buch **0 Befunde**. Damit sind **27 von 66 Kapiteln**
+fertig: 510 Verse, 11 771 Eintraege.
+
+### Zwei Kapitel derselben Welle haben sich ohne Absprache getroffen
+
+25,9 und 26,1 beginnen beide mit `An jenem Tag wird man`, und beide Agenten
+haben **dieselbe Zeile Feld fuer Feld** gesetzt — *On · En · En · In* / *that ·
+aquel · ce · quel* / *day · día · jour · giorno*, kein Mehrwort. Die Gegenprobe
+ueber den ganzen Bestand zeigt, warum das funktioniert hat: die Formel ist an
+**allen 33 Buchstellen einhellig**.
+
+**Die Lehre fuer den Wellenschnitt:** wo eine Formel im Bestand einhellig ist,
+genuegt die Auflage „halte dich an die Buchpraxis" — die Kapitel treffen sich
+von selbst. Absprachebedarf entsteht nur, wo der Bestand **mehrere gueltige
+Reihen** fuehrt (der `Hüfte`-Fall aus Paket 8).
+
+### Angeglichen: einmal, und der Agent hatte sich auf eine falsche Tatsache gestuetzt
+
+**`seht` in 26,21** trug en *behold* statt *see*. Begruendet war das damit, dass
+WEB an dieser Stelle „For, **behold**" schreibe, waehrend 25,9 *See* trage.
+
+**Beide Haelften der Begruendung sind falsch.** WEB schreibt auch in **25,9**
+„Behold" — die Ausgaben unterscheiden die beiden Verse also gar nicht. Und der
+Bestand traegt fuer `seht` (Lemma `sehen`, Imperativ) an **107 Stellen**
+*see/See · ved/Ved · voyez/Voyez · vedete/Vedete* und an **keiner einzigen**
+*behold*.
+
+Das ist der `Zahl`/*número*-Fall aus `AUFTRAG_AT.md` im Reinformat: eine Glosse
+ist ein Leseassistent, und wer ein Wort hundertmal gleich gelesen hat, soll es
+nicht einmal anders sehen, bloss weil eine Ausgabe an einer Zeile anders
+formuliert. Gesetzt ist *see*.
+
+### Was ein gleichzeitig laufendes Kapitel am anderen findet
+
+Kapitel 26 hat **zwei Befunde an Kapitel 25 gemeldet**, ohne sie anzufassen —
+genau das erwuenschte Verhalten:
+
+1. **25,12 fehlte der Mehrwort-Eintrag `zu Boden werfen`** (B1, 4 Belege,
+   Ps 17,11 liefert die Infinitivzeile). Der Agent fuer Kapitel 25 hatte nur das
+   **reflexive** `sich zu Boden werfen` B2 gesehen („warf sich zu Boden" =
+   niederwerfen) und daraus geschlossen, es gebe kein transitives Lemma. Es gibt
+   eins. **Vom Koordinator ergaenzt.**
+2. Zwei Divergenzen 25↔26, die **stehen bleiben muessen**, gemeldet damit sie
+   nicht spaeter „geglaettet" werden: `unser` it *il nostro* (25,9) gegen
+   *nostro* (26,13) — **RIV schreibt „il nostro Dio" bzw. „Dio nostro"** — und
+   `werfen` es *echar* (25,12) gegen *tira* (26,5), wobei **RV in 25,12 selbst
+   „las echará" schreibt**. Beide nachgeprueft und bestaetigt.
+
+**Ein fehlender Mehrwort-Eintrag ist fuer `selfcheck.py` und `qa.py`
+prinzipiell unsichtbar** — die Einzelwoerter sind vollstaendig und richtig.
+Gefunden hat ihn kein Skript, sondern das Nachbarkapitel.
+
+### Die formbasierte Suche laesst Mehrwoerter durch — drittes Paket in Folge
+
+`konvention.py` und `sweep.py` suchen beide **Wortformen**. Beide Kapitel dieser
+Welle haben deshalb **eigene lemmabasierte Skripte** gebaut und damit gefunden,
+was keins von beiden meldet:
+
+- **Kapitel 25:** `hoffen auf` (37 Belege) **zweimal in 25,9**, `machen zu`
+  (36 Belege) in 25,2, `nie wieder` in 25,2.
+- **Kapitel 26:** `hoffen auf` in 26,8 — dasselbe Lemma, dieselbe Welle —
+  und `geboren werden` (31 Belege) in 26,18.
+- **Kapitel 27:** vier Bestands-Mehrwoerter, darunter **`in den Kampf ziehen`
+  mit 20 Belegen**, dazu `abbrechen`, `Erbarmen haben` (Vorlage Jes 9,16) und
+  `anbeten` (Vorlage Jes 2,8).
+
+Zusammen mit dem getrennten `dahinschwinden` aus Paket 9 sind das **elf
+Mehrwort-Luecken in zwei Paketen**, die die formbasierte Suche nicht sieht.
+Der lemmabasierte Sweep gehoert in den Werkzeugordner, nicht in jedes Kapitel neu.
+
+### `abbrechen` in 27,11: die `Hüfte`-Regel wurde falsch herum angewandt
+
+Der Agent fuer Kapitel 27 hat die Zeile aus **22,25** genommen (*break off ·
+se arrancan · s'arrachent · si staccano*) und dafuer ausdruecklich die
+`Hüfte`-Lehre angefuehrt: die buchinterne Vorlage wiege schwerer als die
+Ausgaben. **Er hat die Entscheidung dem Koordinator anheimgestellt — richtig,
+denn die Regel sagt das Gegenteil.**
+
+Drei Gruende tragen in dieselbe Richtung:
+
+1. **Es gibt keine Bindung zu schuetzen.** `abbrechen` hat **sieben Belege auf
+   fuenf Lesarten**; die physische ruht auf zweien.
+2. **Die Bedeutung ist eine andere.** Beide Belege heissen *arrancar · arracher ·
+   staccare* — herausreissen. In 22,25 wird ein **Nagel aus seiner Stelle
+   gerissen**; in 27,11 **knacken duerre Zweige ab**. Ein Zweig wird nicht
+   „arrancado".
+3. **Alle vier Ausgaben schreiben in 27,11 die Bruch-Familie** (*broken off ·
+   quebradas · brise · rotti*), keine die Reiss-Familie.
+
+Gesetzt ist die neue Lesart *break off · se quiebran · se brisent · si rompono*.
+**Die `Hüfte`-Regel greift nur, wo der Bestand mehrere gueltige Reihen fuehrt** —
+sie ist kein Vorrang der Naehe.
+
+### Die Wortreihen gleicher Bedeutung, zum dritten Mal
+
+Nach 19,5–7 (sieben Austrocknungswoerter) und 24,4 (fuenf Trockenwoerter) hat
+**25,4 drei Schutzwoerter** in einem Vers: `Zuflucht`, `Schutz`, `Unterschlupf`.
+
+Das Ergebnis ist diesmal lehrreich, weil **nur eines weichen musste**:
+`Zuflucht` und `Schutz` sind im Bestand laengst getrennt und stehen in **Jes 4,6
+im selben Buch schon nebeneinander**. Nur `Unterschlupf` mit seinem **einzigen**
+Beleg (Hiob 24,8) kollidierte — en mit `Schutz`, es/fr/it mit `Zuflucht`.
+
+Und das Ausweichen folgte einer besseren Quelle als der freien Wahl: die
+Ausgaben schreiben in 25,4 selbst das schon vergebene Wort, also ist auf die
+Woerter ausgewichen, die **dieselben Ausgaben in den Parallelversen desselben
+Buches** setzen — WEB 32,2 *covert*, RV/LSG/RIV 4,6 *amparo · asile · asilo*.
+
+### Kollisionen: `hints.py` meldete vier, sechs, null — gefunden wurden dreizehn
+
+| Kapitel | von `hints.py` | selbst gefunden | widerlegt |
+|---|---|---|---|
+| 25 | 4 | 5 (alle Funktionswoerter, keine aufgeloest) | 3 |
+| 26 | **1** | 4 (drei aufgeloest) | 7 |
+| 27 | **0** | 4 (alle aufgeloest) | 11 |
+
+Die lehrreichsten:
+
+- **26,3 `fest` ↔ `beständig`** waere in **drei Sprachen stammgleich** geworden
+  (*firmemente/firme*, *fermement/ferme*, *saldamente/saldo*).
+- **26,5 `niedergeworfen` ↔ `gestürzt`** waere es/it **restlos identisch**
+  geworden. Und die erste Auflösung des Agenten haette mit dem **gleichzeitig
+  laufenden Kapitel 25** kollidiert (*humillado/umiliato* gegen `erniedrigen` in
+  25,12) — er hat sie deshalb verworfen. **Ein Agent, der die Nachbarkapitel
+  mitprueft, faengt die Wellenkollision selbst ab.**
+- **27,5 `bei` ↔ `mit`** in allen vier Sprachen; **27,9 `zerstoßen` ↔
+  `zermahlen`** es/fr stammgleich (*moler*/*broyer*) — die elfte Sachdublette.
+- **26,1 `jenem` ↔ `dieses`** ist franzoesisch **echt** und bleibt stehen: `ce`
+  hat attributiv keine zweite Form, und **LSG schreibt selbst „En ce jour, on
+  chantera ce cantique"**. Die Gegenprobe ueber 12 Bestandsverse mit beiden
+  Lemmata zeigt: Franzoesisch trennt sonst immer, aber ueber Genus, Numerus oder
+  die pronominale Form — **keiner hat zwei maskuline Singulare**.
+- **27,10 drei Leere-Woerter** (`einsam`, `verlassen`, `öde`) sind in allen vier
+  Sprachen schon getrennt. Haette man `einsam` auf seine Zweitlesart *deserted*
+  gesetzt, waere es mit `Wüste` im selben Vers kollidiert. **Widerlegen ist
+  genauso viel wert wie aufloesen.**
+
+### Zwei Lexikonfallen, die den Lesefluss verdorben haetten
+
+- **`Wegnahme` (27,9)** hat als einzigen Beleg **Hebr 11,5**, Henochs
+  Entrueckung (es *arrebatamiento*, it *rapimento*). Die Zeile haette „die
+  **Entrueckung** seiner Suende" ergeben. Neu gesetzt.
+- **`gestritten` (27,8)**: der Extrakt zeigt nur die Alltagslesart *argued ·
+  discutido · disputé · discusso* (4 Belege). Der Bestand fuehrt daneben **13
+  Belege der Rechtsstreit-Lesart** *contend* — und WEB schreibt selbst „you
+  contend with them". Der Extrakt zeigt die Mehrheit, nicht die richtige Lesart.
+- Dazu in **26,9 `dürr`**: der Extrakt zeigte unter VERWANDT nur *gaunt*
+  (1Mo 41,19), waehrend der Bestand **drei Belege der Trocken-Lesart** fuehrt.
+  **Dreimal in einem Paket war der Extrakt selbst die Fehlerquelle.**
+
+### Neue Lemmata
+
+**Kapitel 25** (8): `Tyrann` C1 · `Wolkenschatten` C1 · `dämpfen` C1 (gegen
+`bezwingen` abgesetzt, beide in 25,5) · `Siegesgesang` C1 · `Mistloch` C1 ·
+`Schwimmer` B2 · `Kunstgriff` C1 · `Festungsmauer` C1.
+
+**Kapitel 26** (2): `Züchtigung` C1 · `hinausschieben` C1 (`Nachtwache`-Klasse —
+keine Ausgabe liest „schieben").
+
+**Kapitel 27** (3 + 1 Mehrwort): `Altarstein` C1 · `gewunden` C1 · `knospen` B2
+(fr eigen, weil LSG beide Verben verschmilzt) · Mehrwort `einer nach dem andern`
+B1.
+
+### Prompt-Hinweise: einundvierzig widerlegt
+
+Kapitel 25 elf, Kapitel 26 neunzehn, Kapitel 27 elf. Die lehrreichsten:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Schwangere` (26,17) sei neu | **belegt** als eigenes Lemma B2 — `belegt.py` schweigt, weil im Bestand nur `schwangere` klein steht; `fixgloss.py show Schwangere` findet es |
+| aus 13,8 · 21,3 `Gebärende` und `sich krümmen` uebernehmen | 26,17 hat **weder das eine noch das andere Wort** — der Text schreibt `Schwangere` und `sich winden` |
+| `nicht länger` (26,21) sei Mehrwort-Kandidat | **kein Bestandslemma** — steht 18-mal im Korpus und traegt nirgends einen Eintrag |
+| `um zu` in 26,21 | **es gibt kein `zu`-Token** — „um … heimzu­suchen" hat das zu eingebaut |
+| sieben „Wiederholungen" in Kap. 26 seien Kollisionsgefahr | **keine davon** — es ist jeweils **dasselbe** deutsche Wort; die Regel greift nur bei *verschiedenen* Woertern |
+| `Bach Ägyptens` stehe evtl. als feste Grenzbezeichnung | **kein Mehrwort im ganzen Bestand** |
+| `fortgehen` sei die belegte Nachbarform zu 27,8 | falsches Lemma — `fortgetrieben` → **`forttreiben`**, Beleg **Jes 6,12** |
+| bei den vier Verbformen von 27,7 auf Aktiv/Passiv achten | die **beiden `geschlagen` sind beide aktiv**; Aktiv/Passiv trennt nur die beiden `getötet` |
+
+**Von 35 als unbelegt gemeldeten Formen waren 13 wirklich neu.**
+
+### Ausgabenbefunde
+
+- **Drei neue RIV-Setzfehler** (25,12 · 26,9 · 26,19), nachgetragen. **26,19
+  „la terrà ridarà" ist der zweite Beleg desselben Fehlers nach 24,19** („la
+  terrà tremerà") — dieselbe Verwechslung von *terra* mit *terrà* zweimal im
+  selben Buch.
+- **Kapitel 27 hat null Setzfehler** — maschinelle Grossschreibungssuche und
+  Handlesung ohne Treffer.
+- **Die `Nachtwache`-Klasse fuenfzehnmal in einem Paket** (25: sechs, 26: sechs,
+  27: drei). Die schaerfsten: **26,19 `Tau des Lichts`** — WEB *herbs*, RV
+  *amanecer*, LSG *vivifiante*, RIV *aurora*, **keine liest „Licht"**; und
+  **27,12 `dreschen`**, wo LSG und RIV *schuetteln* lesen.
+- **`Sonnensäulen` in 27,9 bestaetigt den Befund aus Paket 7:** WEB „the incense
+  altars" und RV „los altares de incienso" widersprechen der Bestandsreihe,
+  **LSG „les statues du soleil" und RIV „le colonne solari" stuetzen sie**. Kein
+  Befund, die Reihe gilt.
+- **LSG 27,13 vertauscht die Attribute der beiden Gruppen** (*exilés* landet auf
+  der Assur-Gruppe, die deutsch `Verlorenen` heisst); **RIV deckt sich Feld fuer
+  Feld mit dem Deutschen**. Glossiert ist das deutsche Wort.
+- **26,16 steht in allen vier Ausgaben in der 3. Person Plural**, wo das Deutsche
+  die 1. Person Plural hat. **26,19 lesen drei Ausgaben „meine Leichen"**, nur RV
+  folgt dem deutschen „ihre".
+- **Versgrenzen: kein Versatz in allen drei Kapiteln.**

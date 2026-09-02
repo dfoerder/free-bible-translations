@@ -84,6 +84,9 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 23,15 | in capo a settant’anni, **avverrò** di Tiro | *avverrà* | Person |
 | 24,19 | la **terrà** tremerà, traballerà | *terra* | Tippfehler (falscher Akzent) |
 | 24,20 | essa cade, e non si **rialzerò** mai più | *rialzerà* | Person |
+| 25,12 | l'alta fortezza delle **tua** mura | *tue* | Kongruenz |
+| 26,9 | ti desidero, durante **al** notte | *la notte* | falsche Praeposition |
+| 26,19 | e la **terrà** ridarà alla vita | *terra* | Tippfehler — **zweiter Beleg** nach 24,19 |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
