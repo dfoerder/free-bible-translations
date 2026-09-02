@@ -2221,3 +2221,223 @@ Kapitel 25 elf, Kapitel 26 neunzehn, Kapitel 27 elf. Die lehrreichsten:
   die 1. Person Plural hat. **26,19 lesen drei Ausgaben „meine Leichen"**, nur RV
   folgt dem deutschen „ihre".
 - **Versgrenzen: kein Versatz in allen drei Kapiteln.**
+
+## 17. Paket 11 (Kap. 28 · 29 · 30)
+
+Drei Kapitel gleichzeitig, 2112 Einzelwort- und 83 Mehrwort-Eintraege — das
+groesste Paket des Buches. Alle Pruefungen je Kapitel sauber; `validate.py 23`,
+`qa.py 23` und `hilfsverb.py 23` melden ueber das gebaute Buch **0 Befunde**.
+Damit sind **30 von 66 Kapiteln** fertig: 596 Verse, 13 967 Eintraege.
+
+### Zwei Kapitel widersprachen sich bei `taumeln` — und beide hatten recht
+
+Kapitel 29 hat Kapitel 28 als fehlerhaft gemeldet: dort stehe `taumeln`
+franzoesisch als *vacillent*, waehrend der Bestand an allen vier Belegen die
+*chanceler*-Familie fuehre. Die Meldung war richtig recherchiert und die
+Schlussfolgerung trotzdem falsch.
+
+**LSG schreibt in 28,7 dreimal *chancellent* und einmal *vacillent*** — die
+Ausgabe weicht an genau diesem Vers selbst aus, weil dort vier Taumelwoerter
+zusammenstehen. In 29,9 steht `taumeln` allein, und LSG schreibt *chancellent*.
+
+Beide Kapitel folgen also derselben Regel: **am Kollisionsvers ausweichen, sonst
+die Bindung halten.** Dass das Ergebnis verschieden aussieht, ist kein Fehler,
+sondern die Regel bei der Arbeit.
+
+**Die Lehre fuer den Wellenabgleich:** eine Divergenzmeldung des Nachbarkapitels
+ist ein Hinweis, kein Urteil. Zu pruefen ist nicht, ob die Reihen gleich sind,
+sondern **ob jede fuer sich an ihrem Vers gedeckt ist**.
+
+### Sechs Woerter fuer dasselbe Wanken
+
+28,7 ist die dichteste Stelle dieser Art im Buch: `torkeln` (2×), `wanken` (2×),
+`taumeln`, `straucheln`, dazu `benommen`. `hints.py` meldete **ein** Paar,
+tatsaechlich kollidierten drei — franzoesisch dreifach und italienisch ueber die
+Jes-5,27-Zeile von `straucheln` (*vacilla*) gegen `wanken` (*vacillare*).
+
+Geloest nach dem eingefuehrten Verfahren, mit einem neuen Element: `straucheln`
+nimmt **nicht** seine buchinterne Zeile aus 5,27, sondern die Bestandsmehrheit
+(3:1 *trébucher · inciampare*) — und loest damit die italienische Kollision
+gleich mit. **Wo eine buchinterne Vorlage selbst der Ausreisser ihres Lemmas
+ist, ist sie keine Vorlage.**
+
+### Die zweite Welle in Folge ohne Angleichung
+
+Wie Paket 9 brauchte auch dieses keine einzige Korrektur durch den Koordinator.
+Zwei Faelle sahen danach aus:
+
+- **`taumeln`** (oben) — beide richtig.
+- **`Boden`** traegt in 28,2 *terre · terra* und in 30,23 *sol · terreno*, zwei
+  gueltige Bestandsreihen in einer Welle, also aeusserlich der `Hüfte`-Fall. Die
+  Ausgaben entscheiden ihn glatt: 28,2 ist „zu Boden werfen" und **LSG schreibt
+  *en terre*, RIV *a terra***; 30,23 ist der bebaute Boden und **RIV schreibt
+  *il suolo***. Der Bestand spaltet die beiden Bedeutungen selbst.
+
+### `sweeplemma.py` im ersten Einsatz
+
+Das in diesem Paket gebaute Werkzeug lief erstmals als Pflichtpruefung. Ergebnis
+ueber die drei fertigen Kapitel: **0 · 1 · 1**, und beide Treffer sind
+**Fehlalarme, die sich am Vers in einem Satz erledigen**:
+
+- **29,4 `dringen ein`** — das Skript hat den Artikel `eines` („die **eines**
+  Totengeistes") als Verbpartikel gelesen.
+- **30,5 `bringen Schande`** — `bringt` regiert dort eine vierteilige Objektreihe
+  (`Hilfe`, `Vorteil`, `Schande`, `Spott`), nicht die Wendung. Der Agent hatte
+  denselben Fall schon selbst geprueft und verworfen.
+
+**Das ist die erwuenschte Fehlalarmrate.** Alle drei Agenten hatten daneben noch
+ihre eigenen lemmabasierten Sweeps gebaut und damit zusammen **zehn** echte
+Bestands-Mehrwoerter gefunden, die `konvention.py` und `sweep.py` nicht melden —
+darunter `wert sein` (29,16), `jemanden in Ruhe lassen` (30,11), `weder ... noch`
+(61 Belege), `nur noch` (16 Belege).
+
+**Der lehrreichste Fund ist 30,11:** der Agent hatte `in Ruhe lassen` als *neues*
+Lemma gesetzt; der Bestand fuehrt es laengst als `jemanden in Ruhe lassen`
+(5Mo 9,14). Ohne den Sweep waere eine fuenfte Lemmaschreibung derselben Sache
+entstanden.
+
+**Die Grenze des Werkzeugs, vom Agenten fuer Kapitel 28 benannt:** es findet nur
+mehrwortige Lemmata. Getrennte Verbzusaetze, deren Lemma **einwortig** ist
+(`zuhören`, `standhalten`, `ausschlagen`, `vorüberziehen`), sieht es
+prinzipiell nicht — die fand er beim Lesen. `sweep.py` bleibt dafuer zustaendig.
+
+### `Ariel`: ein Lemma, zwei verschiedene Namen
+
+29,1 nennt Jerusalem fuenfmal `Ariel`. `belegt.py` meldet zwei Belege — und
+**einer davon ist gar nicht dasselbe Wort**: in 4Mo 26,17 schreibt das Deutsche
+„Ariel", aber alle vier Ausgaben schreiben *Areli · Areli · Areéli · Areli* (der
+Gad-Sohn). Esra 8,16 ist ein Mann namens Ariel, alle vier *Ariel*.
+
+An Jes 29,1.2.7 schreiben alle vier *Ariel*, die Reihe faellt also mit Esra 8,16
+zusammen und es braucht kein eigenes Lemma. **Der Bestand fuehrt aber zwei
+verschiedene Namen unter einem Lemma** — `fixgloss.py show Ariel` mischt sie.
+Gemeldet.
+
+### Die Lexikonfalle, neunmal in einem Paket
+
+Der Extrakt zeigt die Korpusmehrheit, und die war neunmal die falsche Lesart:
+
+| Wort | der Extrakt zeigt | am Vers gebraucht wird |
+|---|---|---|
+| `Menge` (29) | *crowd* (81×, **78 davon NT**) | *multitude* |
+| `erklären` (28,9) | *declare* (AT-Bindung) | *explain* — alle vier Ausgaben |
+| `Schlachten` (30,32) | *slaughter · matadero* (das Substantiv) | Plural von `Schlacht` = *battles* |
+| `Riss` (30,13) | *tear · rotura* (Stoffriss, 2 NT-Belege) | *breach · grieta* (Mauerdurchbruch) |
+| `reißend` (30,28) | *ravenous* (vom Wolf, 1Mo 49,27) | *overflowing* (vom Strom) |
+| `Trümmer` (30,14) | *ruins* (Gebaeuderuinen) | *fragments* (Tonscherben) |
+| `fein` (29,5) | *elegante* (feine Kleidung, Mt 11,8) | *fine · minuta* (feiner Staub) |
+| `haltlos` (29,21) | *unprincipled* (von Menschen) | *baseless* (von Gruenden) |
+| `Rücken` (30,6) | *back · espalda* (12/13 vom Menschen) | der Eselsruecken |
+
+**Sieben der neun ruhen auf einem oder zwei Belegen.** Eine Bestandsmehrheit ist
+nur dann ein Argument, wenn die Belege aus vergleichbaren Kontexten stammen —
+und bei einem Einzelbeleg gibt es gar keine Mehrheit, nur einen Zufall.
+
+### Kollisionen: gemeldet 9, gefunden 48
+
+| Kapitel | `hints.py` | selbst gefunden | aufgeloest | widerlegt |
+|---|---|---|---|---|
+| 28 | 5 | 4 | 7 | 3 |
+| 29 | **1** | 9 | 5 | 13 |
+| 30 | 4 | **35** | 21 | 14 |
+
+Kapitel 30 hat damit die hoechste Zahl des Buches, und **fast alles sind
+Praepositionen und Funktionswoerter** — die Klasse, die `hints.py` ausdruecklich
+ausblendet. Die lehrreichsten:
+
+- **30,6/30,20 `Not` ↔ `Bedrängnis`** sind en/es/it **restlos identisch**. `Not`
+  hat die harte AT-Bindung (68/76), also weicht `Bedrängnis` auf seine zweite
+  belegte Zeile *tribulation* aus — **und RV schreibt in 30,6 selbst „tierra de
+  tribulación"**.
+- **28,27 `Stock` ↔ `Rute`** en beide *rod*; **WEB trennt selbst** („with a
+  stick" / „with a rod").
+- **29,16 `wie` ↔ `als` ↔ `so`** — drei Vergleichspartikeln in einem Vers, in
+  allen vier Sprachen zusammenfallend. Geloest ueber die Bestandslesart „als ob"
+  (Mk 12,40) und die 202-Beleg-Reihe von `so`.
+- **28,25 `in` ↔ `an`**: en/it aufgeloest, **spanisch bewusst nicht** — RV
+  schreibt an dieser Stelle selbst zweimal *en*. Dasselbe Muster wie `stehe`/`bin`
+  in 21,8 und `am`/`im` in 28,21.
+
+### Neue Lemmata
+
+**Kapitel 28** (17): `Hagelsturm` C1 · `verheerend` C1 · `Frühfeige` C1 ·
+`torkeln` C1 · `benommen` B2 · `Kleinkind` A2 · `stammelnd` C1 · `Müder` A2 ·
+`Pakt` B2 · `Perazim` A1 · `befremdlich` C1 · `fremdartig` C1 · `eggen` C1 ·
+`Dinkel` C1 · Mehrwort `umbrechen` B2 · `morgens um morgens` A2 ·
+`sich einwickeln` B1.
+
+**Kapitel 29** (13): `Kreislauf` B2 · `aufwerfen` C1 · `wispern` C1 ·
+`Nachtgesicht` C1 · `sich blenden` B2 · `angelernt` C1 · `Gebilde` C1 ·
+`Former` C1 · `Fruchtgarten` B2 · `erbleichen` C1 · `Verwirrter` B2 ·
+`Murrender` C1 · Mehrwort `sich belehren lassen` B2.
+
+**Kapitel 30** (20): `Hanes` A1 · `Feuerschlange` C1 · `Höcker` C1 ·
+`stillsitzen` C1 · `Schmeichelhaftes` C1 · `prophezeien` B2 · `auswölben` C1 ·
+`Fahnenstange` C1 · `Lappen` B2 · `Überzug` B2 · `nahrhaft` B2 · `Wurfgabel` C1 ·
+`Blutbad` C1 · `Bruch` B2 · `Sieb` B2 · `irreführend` C1 · `Niederschlag` C1 ·
+`Gewitter` B2 · `Strafrute` C1 · `Scheiterhaufen` C1.
+
+`befremdlich` und `fremdartig` mussten **spanisch** getrennt werden — RV schreibt
+in 28,21 zweimal „extraña".
+
+### Vorlagen, die hier entstanden sind
+
+Drei Kapitel dieses Pakets liefern Zeilen fuer noch nicht annotierte Kapitel, und
+alle drei Agenten haben sie ausdruecklich gemeldet:
+
+- **29,17 `Fruchtgarten` B2 → 32,15.** Die Ausgaben stehen 2:2 (WEB *fruitful
+  field*, RV *campo fértil* gegen LSG *verger*, RIV *frutteto*); nach dem
+  `Sonnenstadt`-Verfahren entscheidet das deutsche Wort — ein Garten, kein Feld.
+- **30,15 → 52,4**, die Formel „Denn so spricht der Herr, der HERR" (7 Tokens).
+- **30,29 → 66,14**, „euer Herz wird sich freuen" (5 Tokens).
+
+### Prompt-Hinweise: einundvierzig widerlegt
+
+Kapitel 28 vierzehn, Kapitel 29 vierzehn, Kapitel 30 dreizehn. Die lehrreichsten:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `starkes Getränk` sei evtl. ein Bestands-Mehrwort | **fuehrt keins** — alle vier Belege Wort fuer Wort |
+| `mit Füßen zertreten` (28,3) sei ein Kandidat | Bestandslemma ist `mit Füßen **treten**`; hier steht `zertreten`, und ein Mehrwort haette es/it dieselbe Glosse **doppelt** gesetzt |
+| `um zu` sei Kandidat in 28,20 und 29 | **28,20 hat kein freies `zu`** („um sich **auszu**strecken"); **29 hat gar kein `um … zu`** |
+| 30,16 `fliehen` stehe dreimal | **zweimal** |
+| „30,2 ↔ 30,3 sind eine Dublette" | 30,2 hat `Macht des Pharao`, 30,3 `Schutz des Pharao` — **verschiedene Woerter** |
+| `werden ↔ ziehen` (30,29) sei eine Kollision | **keine** — verschiedene Person und Numerus |
+| 29,13 aus Mt 15,8 uebernehmen | **`sich nahen` (Mt) ≠ `sich nähern` (Jes)** — anderes Lemma |
+| 29,22 ← 1Sam 2,30, „5 Tokens" | **nur 4 tragen** — 1Sam setzt „der **Gott** Israels" fort, Jes „der Abraham erlöst hat"; genau die Position, an der Abschreiben falsch glossiert haette |
+| `für immer` sei Mehrwort-Kandidat in 30,8 | der Bestand **schachtelt nicht**: in `für immer und ewig` steht kein `für immer` darin |
+| zwoelf Formen seien unbelegt | **alle belegt** — darunter `einstürzen`, `zertrümmern`, `Schaufel`, `worfeln`, `herrichten` |
+
+**Von 101 als unbelegt gemeldeten Formen waren 39 wirklich neu.**
+
+### Ausgabenbefunde
+
+- **Sieben neue RIV-Setzfehler** (28,5 · 28,16 · 28,18 · 29,12 · 30,8 · 30,22 ·
+  30,30), nachgetragen. **29,12 ist besonders klar:** „**l** quale" gegen „il
+  quale" in 29,11 — dieselbe Ausgabe, ein Vers weiter, richtig.
+- **Der zweite Setzfehler in WEB:** 30,14 „among the **broken piece** a piece
+  good enough" (*pieces*), nach 24,17.
+- **Eine neue Klasse, die gar kein Setzfehler ist:** RIV 29,9 enthaelt zweimal
+  das **rohe Byte 0x85** — das Windows-1252-Zeichen fuer „…", beim Import nicht
+  dekodiert. Nachgezaehlt: **46 Vorkommen in 13 italienischen Buechern**. Das
+  betrifft den Bibeltext, den die App anzeigt, nicht die Annotation; als eigene
+  Aufgabe abgelegt.
+- **Die `Nachtwache`-Klasse dreizehnmal.** Die schaerfsten: **28,16 „gerät nicht
+  in Panik"** (alle vier lesen „wird nicht eilen/wanken"), **30,33
+  `Scheiterhaufen`** (alle vier lesen „Tofet"), **30,9 `Weisung`** (alle vier
+  „Gesetz"), **30,28 `Maul`** (alle vier „Kiefer").
+- **28,18 `gelöst` folgt den Ausgaben, nicht dem Bestand** — nach dem
+  `abbrechen`-Praezedenzfall aus Paket 10: der Bestand fuehrt fuer `lösen` nur
+  „losbinden" (4+4 Belege, **keine Bindung**), alle vier Ausgaben lesen
+  „annulliert". Dasselbe bei **28,27/28 `Wagenrad`**, wo die einzige
+  Bestandsreihe den Streitwagen nennt und alle vier den Bauernwagen lesen.
+- **`Dreschschlitten` nennt fr/it das falsche Geraet** (*herse* / *erpice* =
+  Egge). Beide Belegverse sind ungedeckt, und **Hiob 41,22 ist ein
+  Versgrenzen-Versatz** — dort steht in allen vier Ausgaben anderer Text. Zu
+  duenn fuer `remap.py`; in 28,27 den Ausgaben gefolgt.
+- **`Ohr` italienisch weiter gespalten** (42 *orecchi* : 8 *orecchie*), jetzt mit
+  einer Gegenstelle in der Ausgabe: **RIV 30,21 schreibt „le tue orecchie"**.
+  Der bekannte offene Befund.
+- **Versgrenzen: kein Versatz in allen drei Kapiteln.** RIV verschiebt allerdings
+  die **Satzgrenze 28,12/13**: „Doch sie wollten nicht hören" steht dort am
+  Anfang von v13.

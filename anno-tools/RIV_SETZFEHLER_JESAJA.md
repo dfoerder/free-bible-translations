@@ -87,6 +87,13 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 25,12 | l'alta fortezza delle **tua** mura | *tue* | Kongruenz |
 | 26,9 | ti desidero, durante **al** notte | *la notte* | falsche Praeposition |
 | 26,19 | e la **terrà** ridarà alla vita | *terra* | Tippfehler — **zweiter Beleg** nach 24,19 |
+| 28,5 | l'Eterno degli eserciti **sarò** una splendida corona | *sarà* | Person |
+| 28,16 | una **ietra** provata | *pietra* | Anlaut, Gemeinwort |
+| 28,18 | **uando** l'inondante flagello passerà | *quando* | Anlaut, Funktionswort |
+| 29,12 | **l** quale risponderebbe | *il quale* (29,11 schreibt es richtig) | Anlaut, Funktionswort |
+| 30,8 | perché **rimangono** per i dì a venire | *rimangano* (Konjunktiv nach finalem *perché*) | Modus |
+| 30,22 | le getterete **vie** come una cosa impura | *via* | Tippfehler |
+| 30,30 | **nel suo furore della sua ira** | doppeltes Possessiv | Doppelung |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -141,7 +148,25 @@ Kapitel 23 beim Lesen der Ausgabe.
 ## Nicht nur RIV: der erste Setzfehler in WEB
 
 **24,17 „Fear, the pit, and the snare, are on you who *inhabitant* the earth"**
-— richtig *inhabit*. Der erste englische Fall in diesem Buch. Die Liste oben ist
+— richtig *inhabit*. Der erste englische Fall in diesem Buch. **30,14 „among the
+*broken piece* a piece good enough"** — richtig *pieces*; der zweite. Die Liste oben ist
 nach RIV benannt, weil dort die Haeufung liegt; **sie ist damit auch in dieser
 Hinsicht eine Untergrenze** — die anderen drei Ausgaben sind nie systematisch
 durchgesehen worden.
+
+## Kein Setzfehler der Ausgabe, sondern der Datei: das Rohbyte 0x85
+
+Gefunden vom Agenten fuer Kapitel 29. **RIV 29,9 enthaelt zweimal das rohe Byte
+0x85** („Stupitevi pure\x85 sarete stupiti!"). Das ist **kein Fehler der Ausgabe
+von 1927**, sondern ein Importartefakt: 0x85 ist das Windows-1252-Byte fuer das
+Auslassungszeichen „…", das beim Einlesen nicht dekodiert wurde.
+
+Nachgezaehlt ueber alle italienischen Dateien: **46 Vorkommen in 13 Buechern**
+(Hiob 11, Jesaja 11, Sprueche 6, Prediger 3, Hosea 3, Psalmen 2, Klagelieder 2,
+Hesekiel 2 und weitere).
+
+**Das gehoert in die Datenpflege, nicht in die Glossen** — der Bibeltext, den die
+App anzeigt, ist betroffen, die Annotation nicht. Als eigene Aufgabe abgelegt;
+dabei ist auch zu pruefen, ob dieselbe Klasse in den anderen drei Ausgaben
+vorkommt und ob weitere Windows-1252-Bytes undekodiert stehen (0x91–0x94 fuer
+Anfuehrungszeichen, 0x96/0x97 fuer Gedankenstriche).
