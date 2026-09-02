@@ -46,7 +46,15 @@ export ANNO_OUT=<dein out-Ordner>
 python3 konvention.py <buchNr> <kapitel>
 ```
 
-Es produziert **richtigerweise Fehlalarme** — bei `den König um eine Eskorte zu
+**`konvention.py` und `sweep.py` reichen beide nicht**, und zwar aus demselben
+Grund: sie suchen die **Wortform**. Eine Flexion, die der Bestand noch nie
+gesehen hat, finden sie nicht — in zwei Jesaja-Paketen sind so **elf**
+Bestands-Mehrwoerter liegengeblieben (`hoffen auf` in „auf den wir **gehofft**
+haben", `dahinschwinden` getrennt als „schwinden … dahin", `es geben` als
+„**Gäbe** es"). Deshalb gehoert **`sweeplemma.py` in die Pflichtpruefung**: es
+arbeitet auf den Lemmata, die du selbst vergeben hast, und trifft jede Flexion.
+
+`konvention.py` produziert **richtigerweise Fehlalarme** — bei `den König um eine Eskorte zu
 bitten` ist `um` die Rektion von `bitten`, bei `so wertvoll wie Gold` ist es die
 Vergleichsklammer. Jeden Treffer am Vers ansehen, dann entscheiden.
 
@@ -61,6 +69,7 @@ verrutschte Zuordnung, und strukturell fällt das nicht auf.
 ```
 python3 selfcheck.py <buchNr> <kapitel> <deine_datei.json>
 python3 qa.py --kapitel <buchNr> <kapitel> <deine_datei.json>
+python3 sweeplemma.py <buchNr> <kapitel> <deine_datei.json>
 ```
 
 Beide müssen sauber durchlaufen. `selfcheck.py` prüft Vollständigkeit, Formen,
