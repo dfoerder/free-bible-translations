@@ -3789,3 +3789,117 @@ Kap. 56 (5): `bellen` · `ausnahmslos` · `Verschnittener` · `Gesammelter` ·
 `wahren`.
 Kap. 57 (7): `Zerschlagener` · `Gedemuetigter` · `Goetzenhaufen` ·
 `hoffnungslos`, dazu `herausstrecken` · `sich entzuenden` · `Trost schenken`.
+
+## 27. Paket 21 (Kap. 58 · 59 · 60) — die Ernte der eingesammelten Vorlagen
+
+57 Verse, 1621 Eintraege. Versatz +0 ueberall. `paketcheck.py` Abschnitt A und C
+leer (sechstes Mal in Folge), Artikel vor `HERR` null Korrekturen (drittes Mal;
+25 Stellen ueber die drei Kapitel geprueft).
+
+### Kapitel 60 ist der Beweis, dass das Einsammeln funktioniert
+
+Drei der vier grossen Bloecke sind in frueheren Paketen eigens fuer diesen
+Moment aufgeschrieben worden. Die maschinelle Gegenprobe:
+
+| Block | Herkunft | Ergebnis |
+|---|---|---|
+| **60,16 ← 49,26** | Paket 18 | **13 von 13 identisch, 0 abweichend** |
+| **60,9 ← 55,5** | Paket 20 | **10 von 10 identisch**, samt Mehrwort `herrlich machen` |
+| **60,4 ← 49,18** | Paket 18 | 13 identisch, **1 abweichend** |
+| **60,10 ← 54,8** | Paket 19 | **5 von 5 identisch**, samt `sich erbarmen` und `ueber` = *on · de · de · di* |
+
+Die eine Abweichung ist die interessante: 49,18 schreibt `schau`, 60,4 `sieh` —
+**zwei verschiedene deutsche Woerter** (`schauen` A2 gegen `sehen` A1). Der
+Block bricht dort, wo der Text ein anderes Wort waehlt, und nirgends sonst.
+
+Dasselbe in 59: eine Gegenprobe ueber **alle zehn** Vorlagenbloecke des Kapitels
+(51 Positionen) ergab 50 identisch und **einen bewussten Bruch** — 59,11 `keines`
+bezieht sich auf `Recht` (maskulin), in der Vorlage 41,17 auf `Wasser`
+(feminin). **Der Block bricht am Genus.**
+
+Nach Paket 14 (`von sieben woertlichen Versen ist genau einer identisch`) und
+Paket 18 (`22 Formen identisch, null abweichend`) ist damit die Regel
+vollstaendig: **eine gemessene Aehnlichkeit sagt nichts, aber ein Block, der
+aus einer eigens eingesammelten Reihe kommt, traegt bis zu der Stelle, an der
+der deutsche Text ein anderes Wort schreibt.**
+
+### `Dunkel`: zwei Ausweichreihen, buchweit vereinheitlicht
+
+`Dunkel` steht in Jesaja fuenfmal, und **jedes Mal neben `Finsternis` oder
+`finster`** (8,22 · 29,18 · 58,10 · 59,9 · 60,2). Die Kollisionsregel greift
+also jedes Mal, und `Finsternis` haelt die Bindung *darkness · tinieblas ·
+ténèbres · tenebre*. Aber die Ausweichreihe war gespalten:
+
+| | Reihe | Stellen |
+|---|---|---|
+| Hiob-Familie | *gloom · penumbra · obscurité · buio* | 8,22 · 60,2 |
+| Jesaja 29,18 | *obscurity · oscuridad · obscurité · oscurità* | 29,18 · 58,10 · 59,9 |
+
+Entschieden haben die Ausgaben: **es, fr und it schreiben an allen fuenf
+Stellen dasselbe** (*oscuridad · obscurité · oscurità*), nur das Englische
+schwankt (gloom / obscurity / gross darkness). Die 29,18-Reihe trifft drei von
+vier Sprachen an jeder Stelle, die Hiob-Reihe nur eine. **8,22 und 60,2 sind
+angeglichen**; Jesaja liest `Dunkel` jetzt fuenfmal gleich, Hiob behaelt seine
+eigene Reihe.
+
+### Was `promptcheck.py` nicht kann, und wofuer es `fixgloss.py show` gibt
+
+Ich hatte im Prompt behauptet, `Fasten` sei **im Bestand unbelegt** und aus den
+Ausgaben zu praegen. Es hat **17 Belege**, und die passende Zeile ist zugleich
+das, was alle vier Ausgaben schreiben. `promptcheck.py` prueft den **Quelltext**
+— ob ein Wort dasteht. Ob es im **Bestand** belegt ist, prueft `fixgloss.py
+show`, und das gehoert vor jede solche Behauptung.
+
+Kapitel 58 hat noch vier weitere Formen aus derselben Klasse gerettet
+(`zuschlagen`, `nachgehen` — mit Beleg **im selben Buch**, 23,17 —, `sich
+betten`, `bewaessern`); von zwoelf als unbelegt gemeldeten Formen waren fuenf
+wirklich neu. Kapitel 60 fand `dahinfliegen` (Hiob 7,6, im Bestand **getrennt**
+geschrieben, deshalb fuer `belegt.py` unsichtbar), Kapitel 59 fuenf Reflexiva.
+
+### Drei Listenpruefskripte, null Befunde
+
+* **58,6 f.** — die Reihe der geforderten Taten: 13 Teilsaetze, 16 Positionen,
+  Objektkopf und Infinitiv je Glied, zusaetzlich die Reihenfolge. 0 Befunde.
+* **59,17** — die Ruestung Gottes: 9 Glieder, 4 Verbklammern, vier Sprachen,
+  dazu eine Kollisionsprobe ueber die ganze Reihe. 0 Befunde.
+* **60,17** — die Tauschliste: 4 Paare, 8 Materialglieder, jedes `statt` als
+  Trenner aus dem Quelltext abgeleitet. 0 Befunde. Nebenbei bestaetigt: der
+  Text schreibt **`Bronze`**, nicht `Erz` — wie es `promptcheck.py` vorab
+  gemeldet hatte.
+
+### Meine Prompt-Hinweise: 14 widerlegt
+
+`promptcheck.py` hatte vorab `Jerusalem`, `Erz`, `Zeder` und `Heerscharen`
+gestrichen — alle vier bestaetigt. Was uebrig blieb:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Fasten` sei unbelegt | 17 Belege |
+| 59,5 habe das `Otternei` | `Schlangeneier` — und `Viper` steht drei Tokens weiter im selben Vers, also war die Trennung zwingend |
+| 59,17 habe `Kleid` und `Mantel` | `Gewaender` und `Mantel`, neun Glieder statt fuenf |
+| 59,5 f. sei im Bestand kaum belegt | `Spinnennetz`, `brueten`, `ausbrueten`, `Ei`, `zerdruecken`, `weben`, `Gewebe`, `Netz` stehen alle |
+| 58,12 habe die Kollision `machen`/`schliessen` | der Text sagt „die Luecken **schliesst**" — die Schliessen-Lesart aus 22,22, keine Kollision |
+| `Zypresse` im Plural (60,13) | Singular |
+| 60 habe `Schaf`, `Blut`, `Recht`, `Wahrheit`, `Geist`, `Bund`, `Rache` | keines davon steht in Kapitel 60 |
+
+### Zwei Namensbefunde aus Kapitel 60
+
+* **`Efa` (60,6) ist der Stammvater, nicht das Hohlmass.** Der Formextrakt
+  zeigt unter `Efa` nur *ephah · efa · épha · efa* (5 Belege, das Getreidemass);
+  der Personenname steht im Bestand als **`Epha`** (1Mo 25,4). Genommen ist die
+  Jesaja-Schreibung mit der Personenreihe — damit traegt das Lemma `Efa`
+  korpusweit zwei Lesarten, Name und Mass. Gemeldet.
+* **`Nebajot`, `Saba`, `Kedar`** — an allen dreien weicht mindestens eine
+  Ausgabe von der Bestandsreihe ab (RV `Nebayot`, RIV `Nebaioth`/`Sceba`/
+  `Kedar`). Bestand genommen, nach `NAMENSSCHREIBUNG_JESAJA.md`.
+
+### Neue Lemmata (25)
+
+Kap. 58 (9): `Fastentag` · `Fingerzeigen` · `Obdachloser` · `bewohnbar` ·
+`kasteien` · `zanken`, dazu `sich kasteien` · `Gehoer verschaffen` ·
+`aus voller Kehle`.
+Kap. 59 (11): `Schlangenei` · `Viper` · `brummen` · `saeumen` · `Abkehr` ·
+`Verleugnung` · `Ersinnen` · `Aussprechen` · `Kraeftiger`, dazu `umhertasten` ·
+`an … entlang`.
+Kap. 60 (5): `Nebajot` · `Zusammenbruch`, dazu `allen voran` · `an der Spitze` ·
+`ein Ende haben`.
