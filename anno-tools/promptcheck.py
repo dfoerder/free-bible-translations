@@ -71,7 +71,7 @@ MIN = 5
 # laenger. Ohne das meldete das Skript `Bote` als fehlend, obwohl 52,7 `Boten`
 # schreibt — ein Fehlalarm der schaedlichen Sorte, weil er ein Wort abstreitet,
 # das dasteht. Mit `an` gegen `ansag` (Abstand 3, aber Laenge 2) greift es nicht.
-KURZ = 4
+KURZ = 3
 ABSTAND = 3
 
 
@@ -162,9 +162,11 @@ def main():
         # Praefixprobe: `Goetzenbild` steht als `Goetzenbilder`, `Handbreite`
         # als `Handbreit`. Nur in dieser Richtung, sonst trifft jedes kurze
         # Wort auf jedes lange.
+        # Je kuerzer der Stamm, desto enger der erlaubte Abstand: `Tor` gegen
+        # `Tore` ist ein Treffer, `an` gegen `ansag` bleibt keiner.
         nah = [k for k in vorhanden
                if min(len(s), len(k)) >= KURZ
-               and abs(len(s) - len(k)) <= ABSTAND
+               and abs(len(s) - len(k)) <= (ABSTAND if min(len(s), len(k)) >= 4 else 1)
                and (k.startswith(s) or s.startswith(k))]
         fehlt.append((w, nah))
 
