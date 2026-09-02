@@ -2824,3 +2824,192 @@ in Kapitel 35 von den gemeldeten fuenf alle fuenf.
   ihre Wiedergabe von `das dürre Land` im selben Vers. **Die spanische Ausgabe
   verschmilzt selbst, was das Deutsche trennt.**
 - **Versgrenzen: kein Versatz in beiden Kapiteln.**
+
+## 20. Paket 14 (Kap. 36 · 37 · 38 · 39) — der Parallelblock zu 2. Koenige 18–20
+
+Vier Kapitel statt drei, weil das Zerlegen bedeutet haette, dieselbe Quelle
+zweimal zu entscheiden. 90 Verse, 2421 Eintraege. Versatz +0 in allen vier
+Ausgaben und allen vier Kapiteln; die Kapitellaenge stimmt ueberall (22 · 38 ·
+22 · 8 Verse).
+
+### Was der Block wirklich war: Uebernahme, aber nicht Abschreiben
+
+`JES_36_39_PARALLELEN.md` stuft jeden Vers einzeln ein. Die Bilanz ueber alle
+vier Kapitel, aus den vier Pflicht-Vergleichsskripten zusammengezaehlt:
+
+| Kapitel | Positionen aus 2Kön | abweichend | eigenstaendig |
+|---|---|---|---|
+| 36 | 445 (72 %) | 13 | 156 |
+| 37 | 706 | 26 | — |
+| 38 (nur 38,1–8) | 135 | 3 | 38 |
+| 39 | 172 | 6 | 67 |
+
+**Die zentrale Erfahrung des Pakets steht in Kapitel 36:** von den sieben als
+„woertlich" (≥0,90) eingestuften Versen ist **genau einer** — 36,14 — Feld fuer
+Feld restlos identisch. Jeder andere hat mindestens eine Position, an der das
+Deutsche ein anderes Wort schreibt. Die Einstufung sagt, wo man **nachsehen**
+muss, nicht wo man kopieren darf.
+
+Auch die drei Verse mit Aehnlichkeit 1,00 halten nicht ganz, was die Zahl
+verspricht: 37,32 hat gegenueber 2Kön 19,31 ein Komma weniger. Die
+Tokenpositionen bleiben gleich, „restlos identisch" ist der Text nicht.
+
+### Die Abweichungen sortieren sich in vier Gruppen
+
+1. **Gross-/Kleinschreibung** — die Perikope zerlegt die Saetze anders. In
+   Kapitel 37 allein 17 der 26 Faelle.
+2. **Genus- und Numeruskongruenz** — 2Kön `Brunnen` (m.) gegen Jes `Zisterne`
+   (f.), 2Kön `Gewand` gegen Jes `Kleid`, 2Kön `Tempel` gegen Jes `Haus`.
+3. **Andere Rektion oder Syntax** — `vertroesten auf` gegen `vertrauen auf`,
+   „Werk **von** Menschenhaenden" (*of*) gegen „**von** Menschenhand gemacht"
+   (*by*), „**ehe** es reif wird" (frz. Konjunktiv) gegen „bevor".
+4. **Ein anderes deutsches Wort** — die groesste und gefaehrlichste Gruppe,
+   weil sie ohne Vergleichsskript unsichtbar bleibt: `Schatzkammern` →
+   `Vorratskammern`, `beste` → `feine`, `Nachkommen` → `Soehnen`, `Geschenke` →
+   `ein Geschenk`, `bis heute` → `bis zum heutigen Tag`, `Opferhoehen` →
+   `Hoehen`, `Feigenbrei` → `Feigenkuchen`, `Vorfahren` → `Vaters`.
+
+**Drei Mehrwoerter konnten nicht mit uebernommen werden, weil Jesaja das
+tragende Wort nicht hat:** `heraufziehen` (36,1 hat kein `herauf`), `so wie`
+(36,12 hat kein `so`), `die Augen erheben` (37,23 schreibt `emporgehoben`,
+und dabei steckt das „hinauf" schon im Verb — SPEC verbietet dann den
+Mehrwort-Eintrag).
+
+### Die Ausrichtung: `uebrig` in 37,4 und 37,31 gegen den Bestand gesetzt
+
+Der einzige echte Eingriff des Pakets, und er geht gegen die Uebernahmeregel.
+
+Kapitel 37 hatte `uebrig` pflichtgemaess aus 2Kön 19,4/19,30 uebernommen:
+*left over · de sobra · de reste · d'avanzo*. Kapitel 39 hatte aus 2Kön 20,17
+die 33fach belegte Mehrheitsreihe genommen: *left · restante · de reste ·
+rimasto*. Damit trug dasselbe Wort in derselben Fuegung innerhalb eines Buches
+zwei Reihen.
+
+Entschieden hat nicht die Mehrheit, sondern das Kriterium **was die Ausgaben an
+der Stelle schreiben**:
+
+| Stelle | WEB | RV | LSG | RIV |
+|---|---|---|---|---|
+| 2Kön 19,4 | that is left | que todavia **queda** | qui **subsiste** | che **sussiste** |
+| 2Kön 19,30 | that has escaped | lo que **quede** | qui sera **reste** | che **restera** |
+| Jes 37,31 | that is escaped | que haya **quedado** | qui sera **reste** | che sara scampato |
+| Jes 39,6 | Nothing will be left | no **quedara** nada | il n'en **restera** rien | nulla ne **rimarra** |
+
+**Keine Ausgabe liest an irgendeiner der vier Stellen *sobra* oder *avanzo*.**
+Die Woerter heissen *Ueberschuss*, nicht *Ueberrest*; fuer uebriggebliebenes
+Essen (2Mo 16,20, der einzige saubere Beleg dieser Reihe) stimmen sie, fuer
+einen ueberlebenden Rest eines Volkes sind sie falsches Spanisch und
+Italienisch. Kapitel 37 widersprach sich damit zusaetzlich selbst: sein
+Mehrwort `uebrig bleiben` trug bereits *quedado · reste · rimasto*, nur der
+Bestandteil `uebrig` nicht.
+
+Gesetzt ist deshalb in 37,4 und 37,31 die Mehrheitsreihe. **2Kön 19,4 und
+19,30 bleiben unangetastet und sind fuer eine korpusweite Korrektur gemeldet.**
+
+### Was der Vierer-Abgleich gefunden hat — und was nicht
+
+105 Lexeme tragen ueber die vier Kapitel bei **gleicher Wortform** mehr als eine
+Reihe. Nachgesehen wurde jede; bis auf `uebrig` war keine ein Fehler. Zwei
+sahen am staerksten danach aus und erwiesen sich als richtig:
+
+* **38,13 `zum` = *to the · la · au · al*** — das spanische Feld traegt nur den
+  Artikel, weil *hasta* am getrennten `bis` haengt. RV schreibt „hasta **la**
+  mañana".
+* **38,13 `alle` = *all · todos · tous · tutte*** — spanisch maskulin, italienisch
+  feminin, weil *huesos* und *ossa* verschiedenes Geschlecht haben. RIV
+  schreibt woertlich „tutte l'ossa".
+
+Der Abgleich hat hier also bestaetigt statt gefunden. Das ist sein normaler
+Ausgang und kein Grund, ihn zu sparen — er hat `uebrig` gefunden.
+
+### Kapitel 38 ist das Gegenstueck zum Rest des Pakets
+
+Nur 38,1–8 stammen aus 2. Koenige; **38,9–22 ist das Danklied Hiskias, das in
+2. Koenige gar nicht steht** und als Dichtung neu zu annotieren war. Acht der
+sechzehn neuen Lemmata des ganzen Pakets stehen in diesen vierzehn Versen.
+
+Der lehrreichste Fall dort ist **`girren` (38,14)**. Keine der vier Ausgaben
+hat ein Taubenlautverb — alle lesen „stoehnen/klagen". Gesetzt ist trotzdem
+*cooed · arrullaba · roucoulais · tubavo*, nach dem `Hyaene`/`Weideplatz`/
+`Krokusblume`-Verfahren: das deutsche Wort ist eindeutig, und `zwitschern` im
+**selben Vers** traegt im selben Buch (10,14) bereits sein eigenes Lautverb.
+Der Praezedenzfall steht also unmittelbar daneben.
+
+Zwei Einstufungen der Parallelentabelle waren dort falsch und sind korrigiert:
+**38,4 gehoert zu 2Kön 20,4, nicht 20,16** (20,16 teilt nur „das Wort des
+HERRN"; die 0,56 sind ein Laengenartefakt von difflib), und **38,6 ist nicht
+eigenstaendig** — 15 von 19 Feldern stehen in 2Kön 20,6, das ausserdem den
+Schluss von 38,5 liefert.
+
+### Neue Lemmata (16)
+
+Kap. 36: `sich dazu bringen lassen` B2. — Kap. 37: `trockenlegen` B2 ·
+`Sitzen` B1 · `Ausgehen` B1 · `Eingehen` B1 · `nach unten` A2 (Spiegel des
+belegten `nach oben`). — Kap. 38: `Niederschrift` C1 · `genesen` B2 ·
+`Hirtenzelt` B2 · `Webstuhl` C1 · `Kranich` B2 · `girren` C1 ·
+`Aufwaertsblicken` C1 · `zurueckgehen lassen` B2. — Kap. 39:
+`Herrschaftsbereich` C1 · `immerhin` B2.
+
+`Herrschaftsbereich` ist der Musterfall der Regel „das deutsche Wort
+entscheidet, nicht die Sache": es uebernimmt die Reihe von 2Köns
+`Herrschaftsgebiet`, weil es dieselbe Sache an derselben Stelle ist, bekommt
+aber ein eigenes Lemma, weil das deutsche Wort ein anderes ist.
+
+### Bestandsbefunde, gemeldet und nicht angefasst
+
+* **`Hoehe` trennt nach Numerus, nicht nach Bedeutung.** Die Form `Hoehen`
+  steht **16:0** als *heights* — einschliesslich aller Kultkontexte (1Kön 22,44 ·
+  2Kön 16,4 · 2Kön 17,11). Der Singular `Hoehe` im selben Kontext ist dagegen
+  *high place* (4Mo 22,41 · 1Chr 16,39 · 1Chr 21,29 · 2Chr 1,3 · 2Chr 1,13).
+  **1Kön 22,44 stellt `Opferhoehen` und `Hoehen` in einen Vers und glossiert sie
+  verschieden** — die Trennung der beiden deutschen Woerter ist also Absicht,
+  die Trennung nach Numerus wohl nicht. In 36,7 steht der Plural; *heights*
+  ist innerhalb der Form konsistent, **obwohl alle vier Ausgaben „high places"
+  lesen**.
+* **`ganz` widerspricht sich in 2Kön 20,13 selbst**: pos 10 traegt *toda · toute ·
+  tutta*, pos 37 *entero · entier · intero* — im selben Vers. Jesaja 39,2 nimmt
+  fuer beide Stellen die zweite Reihe, weil die erste mit `alles` kollidieren
+  wuerde.
+* **`Wand`: der Bestand hat recht an der falschen Stelle.** Der Eintrag zu
+  2Kön 20,2 traegt it *parete*, aber **RIV schreibt dort „verso il muro"**;
+  „la parete" steht bei RIV in **Jesaja** 38,2. Die Zeile ist an der
+  Jesaja-Stelle richtig und an der 2Kön-Stelle falsch.
+* **Sieben Namensreihen widersprechen ihrer Ausgabe an jeder Belegstelle** —
+  dieselbe Klasse wie `Zoar`/`Medeba`/`Eleale` in Paket 6: `Awa` (WEB *Ivvah*,
+  RV *Iva*) · `Haran` (LSG *Charan*, RIV in 2Kön *Haran*, in Jes *Charan*) ·
+  `Rezef` (RIV *Retsef*) · `Tirhaka` (RIV *Tirhaka*) · `Sarezer` (RIV
+  *Saretser*) · `Asarhaddon` (RV *Esarhadón* ohne Bindestrich). `Haran` fr/it
+  riecht nach Lexikonfalle: *Charran/Carran* ist die neutestamentliche Form
+  (Apg 7,2.4).
+* **`Vertrauen` steht in `BINDUNGEN_AT.md` als Lexikonfalle** (AT bindend
+  *trust*), **aber 2Kön 18,19 — ein AT-Buch — hat *confidence* gesetzt**, und WEB
+  liest an beiden Stellen „What confidence is this".
+* **`Hamat` (2Kön 19,13) und `Hamath` (11 Belege) sind zwei Lemmata fuer
+  denselben Ort**, weil der Quelltext zweierlei schreibt. Gleiche Reihe, kein
+  Schaden — ein Fall fuer `NAMENSSCHREIBUNG_JESAJA.md`.
+* **`Sonnenuhr` ruht auf einem einzigen Beleg** (2Kön 20,11), und **LSG und RIV
+  lesen an beiden Stellen „degrés"/„gradini"**, also gar keine Uhr.
+* Zwei Kollisionen sind aus 2Kön mitgeerbt und in Versen mit Aehnlichkeit 1,00
+  bzw. 0,92 (39,3 `haben`/`sind` en *have*, es *han*; 39,4 `Was`/`das` fr
+  *que*). Der Uebernahmeauftrag hat Vorrang; wenn sie aufgeloest werden, dann
+  **an beiden Stellen zugleich**.
+* **`einzig` ↔ `nur` kollidiert in 2Kön 18,24 unaufgeloest.** Jesaja 36,9 loest
+  es: `nur` haelt die Bindung, `einzig` weicht auf *único · unico* aus.
+
+### Meine Prompt-Hinweise: 46 widerlegt
+
+36: 7 · 37: 14 · 38: 16 · 39: 9. Die groben darunter, alle vom selben Typ —
+**ich habe Woerter behauptet, die im Quelltext nicht stehen**: `judaeisch`
+(es heisst `Hebraeisch`), `Hena` und `Iwa` in Kap. 36 (stehen nur in 2Kön
+18,34), `Balsam` (`Gewuerze`), `Waffenkammer` (`Waffenlager`), `Schaetze`
+(`Vorratskammern`), `Karmel` in Kap. 37 (steht nur in **RVs 2Kön 19,23**),
+`Bitternis`, `Zeltschnur`, `danken` und `beenden` in Kap. 38 (keins davon
+kommt vor), `Assur` (durchgehend `Assyrien`), `Jerusalem` in Kap. 38
+(kommt nicht vor). Dazu vier Namensschreibungen (`Sepharwajim`, `Iwa`,
+`Rezeph`, `Esarhaddon`) und zwei falsche Parallel-Zuordnungen.
+
+Bestaetigt hat sich dagegen wieder `Seht` = *See · Ved · Voyez · Vedete* —
+in Kap. 39 mit der Praezisierung, dass es **einen** *behold*-Beleg gibt
+(145 Belege: 127× *see*, 13× *look*, 4× *will see*, 1× *behold*), die
+Mehrheitszeile aber trotzdem gilt. Und `Siehe` in 38,17 ist ein **anderes**
+deutsches Wort und traegt korrekt *Behold* — das ist keine Inkonsistenz.

@@ -190,3 +190,46 @@ App anzeigt, ist betroffen, die Annotation nicht. Als eigene Aufgabe abgelegt;
 dabei ist auch zu pruefen, ob dieselbe Klasse in den anderen drei Ausgaben
 vorkommt und ob weitere Windows-1252-Bytes undekodiert stehen (0x91–0x94 fuer
 Anfuehrungszeichen, 0x96/0x97 fuer Gedankenstriche).
+
+## Paket 14 (Kap. 36–39): acht neue RIV-Stellen, eine neue Klasse, der erste LSG-Fehler
+
+Alle elf hier genannten Stellen sind an den Ausgabedateien nachgeprueft, keine
+stammt aus einem Agentenbericht allein.
+
+| Vers | RIV schreibt | richtig | Klasse |
+|---|---|---|---|
+| 36,3 | „Joah, figliuolo d'Asaf, **’archivista**" | *l'archivista* | verschluckter Anlaut — **36,22 und 2Kön 18,18 schreiben es richtig** |
+| 36,20 | „E **’Eterno** avrebbe a liberare" | *l'Eterno* | verschluckter Anlaut — 36,10 · 36,15 · 36,18 richtig |
+| 37,14 | „presa la lettera **dalla mani**" | *dalle mani* | Kongruenz |
+| 37,25 | „con la pianta **dei mie piedi**" | *dei miei piedi* | Tippfehler — **2Kön 19,24 „de' miei piedi"** |
+| 37,29 | „e fra le **lebbra** il mio freno" | *labbra* | **Tippfehler mit falschem Sinn**: `lebbra` heisst Lepra, der Vers meint die Lippen |
+| 37,32 | „Lo zelo **ell'Eterno** degli eserciti" | *dell'Eterno* | verschluckter Anlaut an einem Funktionswort |
+| 39,6 | „e non **né** rimarrà nulla" | *ne* | falscher Akzent — **2Kön 20,17 „e nulla ne rimarrà"** |
+| 38,9 | „della sua malattia e **della sua guarigione del suo male**" | doppeltes Possessiv | Verdacht, nicht bewiesen: WEB/RV/LSG lesen einfach „von seiner Krankheit genesen" |
+
+### Eine vierte blinde Klasse: das fehlende Wort
+
+**36,2 „sulla strada del campo gualchieraio"** — hier fehlt kein Buchstabe,
+sondern der Artikel *del*. Dieselbe Ausgabe schreibt in **7,3 „del campo del
+gualchieraio"**. Beide bisherigen maschinellen Muster greifen nicht: das Wort ist
+vollstaendig, kleingeschrieben und korrekt buchstabiert — es steht nur eines
+zu wenig da. Diese Klasse ist mit Wortlisten grundsaetzlich nicht zu finden;
+sie faellt nur beim Lesen auf oder beim Vergleich mit einer Parallelstelle.
+
+### Der erste Setzfehler in LSG
+
+**LSG 37,27 „Leurs habitants sont impuissants, *Epouvantés* et confus"** —
+richtig *Épouvantés*. Die Gegenprobe ist so sauber wie sie sein kann: **LSG
+2Kön 19,26 ist Buchstabe fuer Buchstabe derselbe Satz und setzt den Akut**.
+Ueber ganz Jesaja kommt die Form genau einmal vor, und zwar ohne Akzent.
+
+Damit haben drei der vier Ausgaben je einen belegten Setzfehler (RIV viele,
+WEB drei, LSG einen); nur RV ist bisher ohne Befund. Der Name dieser Datei ist
+also endgueltig zu eng — sie ist eine Untergrenze fuer alle vier Ausgaben.
+
+### Randbefund ausserhalb des Buches
+
+**RIV 2Kön 19,12 „dei figliuoli di *den* ch'erano a Telassar"** — verschluckter
+Anlaut, richtig *Eden*, und ein kleingeschriebener Stumpf: genau die dritte
+blinde Klasse. **RIV Jes 37,12 schreibt „di Eden" korrekt.** Gehoert in eine
+Setzfehlerliste zu 2. Koenige, sobald es eine gibt.
