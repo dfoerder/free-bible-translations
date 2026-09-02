@@ -3316,3 +3316,125 @@ Kap. 44 (22): das Goetzenbaufeld — `Goetzenmacher` · `Lieblingsstueck` ·
 
 Kap. 45 (7): `Kyrus` (identisch mit 44) · `Ehrenname` · `hadern` · `traeufeln` ·
 `hervorspriessen` · `umhertragen` · Mehrwort `herbeitreten`.
+
+## 23. Paket 17 (Kap. 46 · 47 · 48) — der Prompt erfindet die Formelstelle
+
+50 Verse, 1330 Eintraege. Versatz +0 in allen vier Ausgaben und allen drei
+Kapiteln. `paketcheck.py` meldet in Abschnitt A wieder **null Faelle** — die
+Vorabsprache ist damit zweimal in Folge aufgegangen.
+
+### Der Befund des Pakets: die gemeinsame Formelstelle gab es nicht
+
+Ich hatte `verkuenden` ↔ `ansagen` als „die Formelstelle des Pakets"
+ausgeschrieben, mit der Auflösung aus 41,26, und sie allen drei Agenten in den
+Prompt gelegt. **`ansagen` steht in keinem der drei Kapitel.** Alle drei haben
+es unabhaengig gemeldet:
+
+* 46 hat einmal `verkuende` und kein Gegenwort.
+* 47 hat `verkuenden` nur als das Monatsorakel der Sterngucker.
+* 48 hat viermal `verkuenden` — und als Gegenwort **`bekanntmachen`**, das im
+  Prompt nirgends vorkam.
+
+Dazu kamen zehn weitere Woerter der Vorgabetabelle, die in keinem der drei
+Kapitel stehen: `Standbild`, `giessen`, `ausser`, `es geben`, `Sterndeuter`,
+`Sternseher`, `Monatsdeuter`, `Wahrsager`, `Weissager`. Die drei Agenten haben
+zusammen **29 Prompt-Hinweise widerlegt** (11 · 9 · 9).
+
+Damit steht die Zaehlung ueber vier Pakete: **46 · 12 · 28 · 29.** Der
+haeufigste echte Befund des ganzen Verfahrens ist derselbe geblieben, seit es
+das Verfahren gibt, und er kommt immer vom Agenten.
+
+**Das ist maschinell zu pruefen, und seit diesem Paket wird es das:**
+`promptcheck.py <buchNr> <kapitel …> --datei <prompt.md>` nimmt die in
+Backticks gesetzten deutschen Woerter des Prompts und haelt sie ueber einen
+Stammvergleich gegen die Tokens der Kapitel. Auf die Vorbereitungsdatei dieses
+Pakets angesetzt meldet es **zehn Woerter, die es im Quelltext nicht gibt** —
+darunter `ansagen`. Der Lauf gehoert vor das Abschicken jedes Prompts.
+
+### Was der Bestand schon selbst geloest hatte
+
+Ich hatte Kapitel 47 gewarnt, sein Zauberei-Wortfeld sei „im Bestand fast
+unbelegt". Das Gegenteil stimmt: `Zauberei` steht zwoelfmal und restlos
+einheitlich, `Beschwoerung` einmal — **und 2Chr 33,6 traegt beide in einem
+Vers und hat die Kollision dort schon aufgeloest** (*sorceries · hechicerías ·
+magies · magie* gegen *incantations · encantamientos · incantations ·
+incantesimi*). In 47,9 und 47,12 stehen sie ebenfalls zusammen; es war nichts
+zu entscheiden und nichts neu zu praegen. Neu waren nur `Himmelsdeuter` und
+`Sterngucker`, und die liegen im Astronomie-, nicht im Wahrsagerfeld.
+
+Die Lehre daneben: `Wahrsager`/`Weissager` aus 44,25 kommen in 47 gar nicht
+vor. **Ein Wortfeld wandert nicht mit dem Thema mit.**
+
+### 48,17 ↔ 44,24 ↔ 43,14 — ein Siebenerblock mit zwei Vorlagen
+
+Die Aehnlichkeitstabelle misst zwischen 48,17 und 44,24 sieben gemeinsame
+Tokens. Feld fuer Feld gleich sind aber nur **sechs**, denn Position 6 traegt
+zwei verschiedene Lesarten desselben Wortes:
+
+| pos | 48,17 | 44,24 | 43,14 |
+|---|---|---|---|
+| 0–5 | `So spricht der HERR dein Erloeser` | **identisch** | identisch ausser `euer` statt `dein` |
+| 6 `der` | **Artikel** vor `Heilige` | **Relativpronomen** (*who · que · qui · che*) | **Artikel** — identisch |
+| 7–8 | `Heilige Israels` | steht dort nicht | **identisch** |
+
+Uebernommen ist deshalb **44,24 fuer 0–5 und 43,14 fuer 6–8**. Das ist genau
+der Fall, vor dem Paket 14 warnt, und zum ersten Mal einer, bei dem die
+richtige Vorlage **innerhalb eines Verses wechselt**.
+
+### Zwei Eingriffe beim Einsammeln
+
+* **48,15 `lasse`** trug en *make*, 46,11 an derselben Stelle *have*. Der
+  Bestand hat den Praezedenzfall in **15,9** (`lasse kommen` als Mehrwort,
+  `lasse` einzeln als *have · hago · fais · faccio*); 48,15 folgt ihm jetzt.
+  Der Mehrworteintrag selbst war in beiden Kapiteln identisch — nur das
+  Resttoken lief auseinander. `paketcheck.py` hat es gemeldet.
+* **48,8 `wirst`** stand auf *will be · serás · seras · sarai*. Der deutsche
+  Satz ist Praesens („dass du … ein Abtruenniger genannt wirst"), und **keine
+  der vier Ausgaben schreibt dort Futur**. Der Agent hatte die Futurreihe
+  gewaehlt, um die Kollision mit `bist` in fr/it aufzuloesen, und den
+  Tempuswechsel selbst gemeldet. Zurueckgenommen auf die Praesens-Passivreihe
+  *are · eres · es · sei*: `sein` und `werden` sind **geschlossene Wortart**,
+  und `glosskollision.py` fuehrt genau diese Klasse in seinem unterdrueckten
+  Abschnitt — eine Kollision zwischen zwei Hilfsverben ist der Preis, den die
+  Zielsprachen ohnehin verlangen. Ein verschobenes Tempus ist teurer.
+
+### Was `sweeplemma.py` gefunden hat, wo `konvention.py` schweigt
+
+**48,20 `bis ans Ende der Erde`** hatte keinen Mehrwort-Eintrag. `bis an` steht
+im Bestand 33-mal, aber `konvention.py` kennt nur seine fuenf festen Wendungen
+und `sweep.py` sucht die Wortform — die Form `bis ans` stand dort nicht.
+`sweeplemma.py` arbeitet auf den Lemmata des Agenten und hat es getroffen.
+Zweite Bestaetigung seiner Pflichtstellung nach Paket 15.
+
+### Drei Kollisionen, die kein Skript meldet, und eine Klasse mehr
+
+* **48,7 `schon` ↔ `bereits`** — beide *already · ya · déjà · già*, in einem
+  Vers, in allen vier Sprachen. `bereits` bindet 24:0, also weicht `schon` auf
+  die belegte Reihe *even · incluso · même · perfino* aus.
+* **48,19 `waeren` ↔ `wuerde`** — aufgeloest ueber Numerus **und** Wortart, und
+  das korrigiert nebenbei die Kongruenz: die vier Ausgaben stehen dort im
+  Singular, weil ihr Subjekt singularisch ist, das Deutsche nicht.
+* **46,7 und 46,11 `von` ↔ `aus`** — die Partikelklasse aus `AUFTRAG_AT.md`,
+  von keinem Skript gemeldet und vom Agenten selbst nachgezaehlt. **Die vier
+  Ausgaben trennen an keiner der beiden Stellen** (LSG zweimal *de*, RIV
+  zweimal *da*); aufgeloest ueber `aus`.
+* **Neue Unterklasse zu 40,12 (`Mass`/`misst`):** 47,2 `Muehle` ↔ `mahlen`
+  faellt **nur in einer** der vier Ausgaben zusammen (RIV *macina … macina*).
+  Wo drei Sprachen trennen und eine nicht, ist es keine Kognatenfalle, sondern
+  eine Aufloesung in einer einzigen Sprache — wie 44,28 `Wille` ↔ `werden`, das
+  nur englisch ausweicht. Genommen ist `Muehle` it *mulino*, eine belegte
+  Zweitlesart (Offb 18,22).
+
+### Neue Lemmata (16)
+
+Kap. 46 (5): `Tragtier` C1 · `dingen` C1 · `Hartherziger` C1 · `Bel` A1, dazu
+die Mehrwoerter `herbeirufen` C1 und `vor alters her` C1 (neben dem belegten
+`von alters her`, weil der Quelltext beides schreibt).
+Kap. 47 (9): `Zarte` B2 · `Verwoehnte` C1 · `Vergnuegungssuechtige` C1 ·
+`Witwenschaft` C1 · `Ausmass` B2 · `Himmelsdeuter` C1 · `Sterngucker` C1 ·
+`wegzaubern` C1 · `vorhersehen` B2, dazu `von Jugend auf` B1 (der Bestand hat
+nur `von Jugend an`), `sich helfen` B1, `in die Irre wandern` B2.
+Kap. 48 (1): `bezaehmen` C1 mit dem reflexiven `sich bezaehmen`.
+
+Kapitel 48 ist damit das erste Kapitel des Buches, das mit **einem** neuen
+Lemma auskommt — nach acht Kapiteln Deuterojesaja ist sein Wortschatz gebaut.

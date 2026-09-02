@@ -1,0 +1,171 @@
+"""Steht im Quelltext ueberhaupt, was der Prompt behauptet?
+
+    promptcheck.py <buchNr> <kapitel …> --datei <prompt.md>
+    promptcheck.py <buchNr> <kapitel …> --woerter <wort> <wort> …
+
+## Der Anlass
+
+Der haeufigste echte Befund jedes Pakets ist seit Beginn derselbe, und er
+kommt immer vom Agenten, nie vom Koordinator:
+
+    Paket 14   46 Prompt-Hinweise widerlegt
+    Paket 15   12
+    Paket 16   28
+    Paket 17   29
+
+Der Loewenanteil ist jedes Mal dieselbe Sorte Fehler — **im Prompt stehen
+Woerter, die im Kapitel gar nicht vorkommen.** In Paket 17 war sogar die
+gemeinsame „Formelstelle des Pakets" erfunden: `verkuenden` ↔ `ansagen` sollte
+durch alle drei Kapitel laufen, und `ansagen` steht in **keinem** von ihnen.
+Drei Agenten haben unabhaengig voneinander gemeldet, dass es den Fall nicht
+gibt.
+
+Das ist maschinell zu pruefen, bevor der Prompt abgeschickt wird. Genau das
+macht dieses Skript: es nimmt die in Backticks gesetzten deutschen Woerter aus
+dem Prompt und haelt sie gegen die Tokens der genannten Kapitel.
+
+## Warum ein Stammvergleich und kein exakter
+
+Der Prompt nennt das Lemma (`giessen`, `Goetze`, `wackeln`), der Quelltext
+traegt die Flexion (`giesst`, `Goetzen`, `wackelt`). Verglichen wird deshalb
+ueber einen gekuerzten Stamm, und der muss mindestens fuenf Zeichen behalten —
+mit vier ging `ansagen` ueber den Stamm `an` als "stammverwandt" durch,
+obwohl das Wort in keinem der drei Kapitel steht.
+
+**Ein Treffer ist ein Verdacht, kein Fehler.** Umlautwechsel (`Baum`/`Baeume`),
+starke Verben (`giessen`/`goss`) und Suppletion findet der Stammvergleich
+nicht. Umgekehrt meldet er auch nichts, wo ein Wort zwar vorkommt, aber in
+anderer Bedeutung — das bleibt die Sache des Agenten.
+
+Was er zuverlaessig findet, ist die Klasse, um die es geht: ein Wort, das im
+Kapitel **ueberhaupt nicht vorkommt**.
+"""
+import re
+import sys
+import unicodedata
+
+import common as C
+
+# Woerter, die in einem Prompt in Backticks stehen, ohne deutscher Kapiteltext
+# zu sein: Dateinamen, Werkzeuge, Feldnamen, Sprachkuerzel.
+KEIN_TEXT = re.compile(
+    r'\.(py|md|json|txt)$|^[a-z_]+\.py|^(pos|form|lemma|level|parts|en|es|fr|it)$'
+    r'|^(ANNO_OUT|SPEC|A1|A2|B1|B2|C1|C2)$|/|^--')
+
+ENDUNGEN = ('ungen', 'chen', 'lein', 'ern', 'end', 'est', 'ete', 'ten', 'ung',
+            'en', 'er', 'es', 'em', 'et', 'st', 'te', 'e', 'n', 's', 't', 'r')
+
+# Kuerzer als das raet der Stammvergleich nur noch. Gilt fuer die Endungsprobe
+# **und** fuer den Praefixvergleich: mit vier Zeichen war `ansagen` ueber den
+# Stamm `an` (aus `ans`) als "stammverwandt" durchgegangen.
+MIN = 5
+
+
+def stamm(w):
+    """Kleingeschrieben, ohne Umlaute, ohne haeufige Endung.
+
+    Die Umschrift wird mitgezogen: die Vorbereitungsdateien schreiben
+    `Goetze` und `giessen`, der Quelltext `Götze` und `gießt`. Ohne diese
+    Zeile meldet das Skript jedes umgelautete Wort des Prompts als fehlend.
+    """
+    w = unicodedata.normalize('NFD', w.lower())
+    w = ''.join(c for c in w if unicodedata.category(c) != 'Mn')
+    w = w.replace('ß', 's')
+    w = re.sub(r'[^a-z]', '', w)
+    for a, b in (('oe', 'o'), ('ue', 'u'), ('ae', 'a'), ('ss', 's')):
+        w = w.replace(a, b)
+    for e in ENDUNGEN:
+        if len(w) - len(e) >= MIN and w.endswith(e):
+            return w[:-len(e)]
+    return w
+
+
+def kapiteltokens(nr, kaps):
+    """{stamm: [erste Fundstellen]} ueber alle genannten Kapitel."""
+    quelle = C.load_source(nr)['chapters']
+    treffer = {}
+    for kap in kaps:
+        for vers, text in quelle[str(int(kap))].items():
+            for tok in C.tokens(text):
+                s = stamm(C.strip_punct(tok))
+                if s:
+                    treffer.setdefault(s, []).append(f'{kap},{vers}')
+    return treffer
+
+
+def promptwoerter(pfad):
+    """Deutsche Woerter in Backticks, in Reihenfolge des ersten Auftretens."""
+    with open(pfad, encoding='utf-8') as f:
+        text = f.read()
+    raus, gesehen = [], set()
+    for roh in re.findall(r'`([^`\n]{2,60})`', text):
+        roh = roh.strip()
+        if KEIN_TEXT.search(roh) or ' ' in roh.strip() and len(roh.split()) > 4:
+            continue
+        for wort in roh.split():
+            wort = wort.strip('.,;:!?()[]„“"\'…—–-')
+            if len(wort) < 4 or not re.fullmatch(r'[A-Za-zÄÖÜäöüß]+', wort):
+                continue
+            if wort.lower() in gesehen:
+                continue
+            gesehen.add(wort.lower())
+            raus.append(wort)
+    return raus
+
+
+def main():
+    argv = sys.argv[1:]
+    if '--datei' in argv:
+        i = argv.index('--datei')
+        woerter = promptwoerter(argv[i + 1])
+        kopf, quelle = argv[:i], argv[i + 1]
+    elif '--woerter' in argv:
+        i = argv.index('--woerter')
+        woerter, kopf, quelle = argv[i + 1:], argv[:i], 'Argumentliste'
+    else:
+        print(__doc__)
+        return 2
+    if len(kopf) < 2:
+        print(__doc__)
+        return 2
+
+    nr, kaps = int(kopf[0]), kopf[1:]
+    vorhanden = kapiteltokens(nr, kaps)
+    name = C.book_name(nr)
+
+    print(f'# Promptprobe: {name} {", ".join(kaps)} gegen {quelle}')
+    print(f'\n{len(woerter)} geprueft, {len(vorhanden)} verschiedene Stämme '
+          f'im Quelltext.\n')
+
+    fehlt = []
+    for w in woerter:
+        s = stamm(w)
+        if s in vorhanden:
+            continue
+        # Praefixprobe: `Goetzenbild` steht als `Goetzenbilder`, `Handbreite`
+        # als `Handbreit`. Nur in dieser Richtung, sonst trifft jedes kurze
+        # Wort auf jedes lange.
+        nah = [k for k in vorhanden
+               if len(s) >= MIN and len(k) >= MIN
+               and (k.startswith(s) or s.startswith(k))]
+        fehlt.append((w, nah))
+
+    if not fehlt:
+        print('Jedes Wort des Prompts kommt im Quelltext vor.')
+    for w, nah in fehlt:
+        if nah:
+            bsp = ', '.join(f'{k} ({vorhanden[k][0]})' for k in sorted(nah)[:3])
+            print(f'  `{w}`  — nicht als eigene Form, aber stammverwandt: {bsp}')
+        else:
+            print(f'  `{w}`  — **kommt im Quelltext nicht vor**')
+
+    hart = sum(1 for _, nah in fehlt if not nah)
+    print(f'\n{hart} Woerter kommen gar nicht vor, '
+          f'{len(fehlt) - hart} nur stammverwandt. '
+          'Jeden Treffer am Quelltext ansehen, bevor der Prompt rausgeht — '
+          'ein Stammvergleich findet weder Umlautwechsel noch starke Verben.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
