@@ -3013,3 +3013,169 @@ in Kap. 39 mit der Praezisierung, dass es **einen** *behold*-Beleg gibt
 (145 Belege: 127× *see*, 13× *look*, 4× *will see*, 1× *behold*), die
 Mehrheitszeile aber trotzdem gilt. Und `Siehe` in 38,17 ist ein **anderes**
 deutsches Wort und traegt korrekt *Behold* — das ist keine Inkonsistenz.
+
+## 21. Paket 15 (Kap. 40 · 41 · 42) — was zwei gleichzeitige Agenten kosten
+
+85 Verse, 2030 Eintraege. Versatz +0 in allen vier Ausgaben und allen drei
+Kapiteln. Das Paket ist in zwei Anlaeufen entstanden: der erste Lauf brach nach
+Kap. 42 und den Versen 40,1–8 und 41,1–10 ab, der zweite hat auf diesen
+Teildateien aufgesetzt. Dass davon nichts verloren ging, ist allein der Regel
+„nach jedem Abschnitt wegschreiben" zu verdanken.
+
+### Der teuerste Befund des Pakets ist der, den kein Skript meldet
+
+**`wackeln` steht in 40,20 und 41,7 im selben Sachfeld** — beide Male der
+Goetzenbauer, der sein Standbild befestigt, „damit es nicht wackelt". Zwei
+gleichzeitig laufende Agenten haben dasselbe neue Wort verschieden gepraegt:
+
+| | en | es | fr | it | Level |
+|---|---|---|---|---|---|
+| 40,20 | *wobbles* | *se tambalea* | *branle* | *vacilla* | B1 |
+| 41,7 | *totter* | *mueva* | *branle* | *smuova* | B2 |
+
+`selfcheck.py`, `qa.py`, `konvention.py`, `sweeplemma.py`, `glosskollision.py`
+und `levelcheck.py` laufen ueber **beide** Kapitel ohne Befund — strukturell ist
+nichts falsch, und im Bestand gibt es keine Zeile, gegen die zu pruefen waere.
+Gefunden wurde es erst beim Einsammeln, durch einen Vergleich aller Lemmata,
+die in mindestens zwei Kapiteln des Pakets vorkommen. **Dieser Vergleich gehoert
+in jedes Einsammeln**, solange mehrere Kapitel gleichzeitig laufen; er hat 571
+gemeinsame Inhaltslemmata geprueft und genau einen echten Fall gefunden (dazu
+eine Level-Divergenz, dieselbe Stelle).
+
+Die Aufloesung: **eine Reihe fuer beide Verse**, *totter(s) · se tambalea/
+se tambalee · branle · si smuove/si smuova*, B1. Der Grund liegt in den
+Ausgaben — sie widersprechen an dieser Stelle **sich selbst**:
+
+| | 40,20 | 41,7 |
+|---|---|---|
+| WEB | „will not be moved" | „might not totter" |
+| RV | „no se tambalee" | „no se moviera" |
+| LSG | „ne branle pas" | „ne branle pas" |
+| RIV | „non si smova" | „non si smova" |
+
+Zwei Ausgaben trennen die beiden Verse, zwei nicht. Das Deutsche schreibt
+beide Male dasselbe Wort im selben Sinn — **also traegt es dieselbe Reihe**.
+Die Wahl nimmt in jeder Sprache die Familie, die die eigene Ausgabe an
+mindestens einer der beiden Stellen selbst schreibt.
+
+### Eine Aufloesung ohne Kollisionsstelle, zurueckgenommen
+
+41,24 sagt „euer Tun ist **wertlos**", 41,29 fuenf Verse spaeter „ihr Tun ist
+**nichtig**". Weil `nichtig` in Jesaja seit 30,7 die Bestandsreihe *worthless ·
+vano · vain · vano* traegt, ist der Agent bei `wertlos` auf *of no value ·
+sin valor · sans valeur · senza valore* ausgewichen — und hat den Zug selbst
+zur Pruefung gemeldet. **Er ist zurueckgenommen.** Zwei Gruende, beide aus
+`AUFTRAG_AT.md`:
+
+* Die Kollisionsregel loest **nur auf, wo zwei Woerter in einem Vers
+  zusammenstehen**. 24 und 29 sind zwei Verse; eine Aufloesung ohne
+  Kollisionsstelle macht den Bestand nur inkonsistent.
+* Die ausgewichene Reihe steht **in keiner der vier Ausgaben** (WEB *of
+  nothing*, RV *vanidad*, LSG *le néant*, RIV *da nulla*), waehrend alle vier
+  Bestandsbelege von `wertlos` *worthless* lesen.
+
+Der Gegenfall im selben Kapitel zeigt, wo die Regel dagegen greift: 41,11 hat
+`beschaemt` **und** `zuschanden` in einem Vers, und dort weicht `beschaemt` in
+fr/it aus — **genau wie in Jes 24,23**, wo derselbe Vers dieselbe Aufloesung
+schon traegt. Zwei Stellen, dieselbe Kollision, dieselbe Antwort.
+
+### Die Bindungstabelle ist zweimal an derselben Stelle blind
+
+Beide Faelle stehen im Bestand **fast genau auf Kante**, und die Tabelle nennt
+trotzdem nur eine Seite:
+
+* **`Lohn` 32:32** zwischen *reward · recompensa · récompense · ricompensa* und
+  *wages · salario · salaire · salario*; `BINDUNGEN_AT.md` fuehrt nur *wages*.
+  Die *reward*-Belege sind die theologischen (1Mo 15,1, Gott zu Abram) — 40,10
+  ist einer davon.
+* **`Rest` 20:20** zwischen *rest* und *remnant*; die Tabellenzeile ist durch
+  die Reihenfolge entschieden, nicht durch das Korpus. In Jesaja ist die Frage
+  mit 16 Belegen laengst zugunsten von *remnant* beantwortet, 41,14 folgt dem.
+
+Das ist die dritte und vierte Auflage des Satzes aus der Praeambel: **eine
+Bindung gilt fuer dieselbe Bedeutung, nicht fuer dieselbe Buchstabenfolge.**
+
+### Die Nachbarfalle, dritte Auflage — und diesmal in der Gegenrichtung
+
+**`Huegel` in 40,4 trug it *colle*.** RIV schreibt an dieser Zeile tatsaechlich
+„ogni colle", aber der Bestand bindet 25:0 auf *collina* (Plural *colline*
+17×). Das ist der `Zahl`/`Pracht`-Fall aus Ester: **die Ausgabe liefert den
+Namen, der Bestand die Bedeutung** — bei einem gewoehnlichen Wort gewinnt die
+Bindung. Korrigiert. Die Gegenprobe ueber den Bestand hat dabei einen zweiten
+Ausreisser derselben Klasse gefunden: **Ps 72,3 traegt `colli` gegen `colline`
+(17 Belege)** — gemeldet, nicht angefasst.
+
+Dazu ein Levelrutscher derselben Art: **`ueber` in 42,25 stand auf A1**, der
+Bestand bindet 1711:0 auf A2. `buildbook.py` haette das stillschweigend
+geheilt — dann behauptet aber die Quelle etwas anderes als das Ergebnis.
+`levelcheck.py --fix` hat sieben solche Stellen in den drei Kapiteln bereinigt
+(`so` 5×, `Zeit`, `gegenueberstellen`).
+
+### Der Zwoelferblock 40,10 → 62,11
+
+Das laengste Vorlagenpaar des Buches. Die Reihe steht ab jetzt fest:
+
+`Seht` *See · Ved · Voyez · Vedete* · `sein Lohn` *his reward · su recompensa ·
+sa récompense · la sua ricompensa* · `ist bei ihm` — **`bei` = *beside · junto
+a · auprès de · presso*** (belegte Zeile, 7×) statt der Mehrheitszeile *with ·
+con · avec · con*, weil `mit` im selben Vers steht und sonst in **allen vier**
+Sprachen dieselbe Glosse truege · `seine Vergeltung` *his recompense · su
+retribución · sa rétribution · la sua retribuzione* · `geht … vor … her` als
+Mehrwort `vorhergehen` mit `parts` [18,19,21] nach dem Vorbild **Ps 85,14**,
+`ihm` bleibt ausgeschlossen.
+
+62,11 hat kein `mit` — die `bei`-Zeile wird dort trotzdem aus Blockkonsistenz
+mitgenommen.
+
+### Zwei Kollisionen, die kein Skript sieht, und eine, die stehen bleiben muss
+
+* **41,20 stellt vier Wahrnehmungsverben in einen Vers** (`sieht`, `erkennt`,
+  `beachtet`, `begreift`). `hints.py` meldet nichts, weil es ueber exakte
+  Wortformen prueft und keine zwei davon dieselbe Form haben. Getrennt als
+  *sees · recognizes · notices · understands*; `erkennen` bleibt durchgehend
+  *recognize*, damit es nicht mit `wissen` (41,23.26) zusammenfaellt.
+* **40,12 `Mass` ↔ `misst` bleibt stehen.** Das ist ein deutsches Kognatenpaar
+  aus einer Wurzel, und **alle vier Ausgaben bilden es mit demselben
+  Kognatenpaar ab** (measured/measure · midió/medida · mesuré/mesure ·
+  misurato/misura). Jede Ausweichglosse waere falsches Franzoesisch oder
+  Italienisch. Der Leser trennt die beiden ueber die Wortart. Neu ist damit
+  eine eigene Klasse: **wo die Kollision in allen vier Zielsprachen genauso
+  besteht wie im Deutschen, ist sie keine.**
+* **`erheben` bleibt im Buch gespalten** — 40,9/26 *lift up · levanta(d) ·
+  lève(z) · leva(te)*, 42,2/11 *raise · alzar · élever · alzare*, beide Male
+  mit `Stimme`. Der Bestand kennt fuer diese Verbindung **17 verschiedene
+  Reihen** und bindet nichts; gemeldet, nicht angeglichen.
+
+### Meine Prompt-Hinweise: zwoelf widerlegt
+
+Kapitel 40 sieben, Kapitel 41 fuenf. Die groben, alle wieder vom selben Typ —
+**Woerter behauptet, die im Quelltext nicht stehen**:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Bote` und `Kraft` seien in 40,1–8 gebunden | beide kommen dort nicht vor; `Kraft` erstmals in 40,26 |
+| `Ulme` in 41,19 | `Zypressen, Platanen und Buchsbaum` |
+| `Goetze`, `Standbild`, `Wuestheit` in 41,21–29 | keins davon; nur `Bild` und die Nichts-Woerter |
+| die Nichts-Woerter seien drei | es sind **sechs**: `zunichte`, `nichts`, `Nichts`, `wertlos`, `nichtig`, `Leere` — jedes mit eigener Reihe |
+| 41,4 ↔ 41,27 sei dieselbe Formel | gemeinsam ist nur das Lemma `Erster`; eine „Ich bin der HERR"-Formel steht im Kapitel gar nicht |
+| `herausfuehren`, `gegenueberstellen` seien getrennt | beide stehen als ein Token; getrennt sind `traegt … fort`, `blaest … an`, `spannt … aus`, `breitet … aus`, `macht … zunichte`, `reicht … aus`, `Wurzeln … geschlagen` |
+| die Masswoerter seien unbelegt | unbelegt ist nur `Staeubchen`; `Sandkorn` steht als Lemma in Hebr 11,12, `Handbreite` und `hohl` ueber den Stamm |
+
+Und 40,18 ↔ 40,25 hat sich als das bestaetigt, was die Dublettenregel sagt:
+gemeinsam sind fuenf Tokens („Mit wem also wollt ihr"), danach formuliert der
+Text neu.
+
+### Neue Lemmata (19)
+
+Kap. 40: `Botin` · `Handbreite` · `Waagschale` · `Staeubchen` · `Brennen` ·
+`faulen` · `wackeln` · `gegenueberstellen` · `Kraftloser`, dazu die Mehrwoerter
+`frohe Kunde`, `hohle Hand`, `zur Hoehe`, `anblasen`.
+Kap. 41: `Akazie` · `Myrte` · `Platane` · `Buchsbaum` · `Wuermlein` ·
+`Freudenbote` · `Eintreffen`.
+
+Neue **Lesarten** auf belegten Lemmata, alle an den Ausgaben geprueft: `Stamm`
+(Pflanzenstamm statt Stammesverband), `giessen` (Metallguss), `schmieden`
+(woertlich), `fassen`, `blasen` (Wind statt Trompete), `umspannen`, `matt`,
+`Vergeltung` (positiv, parallel zu `Lohn`), `froh` (von einer Nachricht),
+`abheben` (auffliegen), `Lehm` (*mortar*, gegen `Ton` im selben Vers),
+`ansagen`, `treten`/`stampfen`.
