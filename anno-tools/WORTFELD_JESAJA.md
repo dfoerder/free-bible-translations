@@ -2633,3 +2633,194 @@ Die lehrreichsten:
   `wohnen`, *habitar* fuer `bestehen`). Ohne Folge, weil wortweise glossiert wird
   — aber die Stelle, an der ein Abschreiben nach der Ausgabe verrutscht waere.
 - **Versgrenzen: kein Versatz in allen drei Kapiteln.**
+
+## 19. Paket 13 (Kap. 34 · 35)
+
+Zwei Kapitel, 624 Einzelwort- und 39 Mehrwort-Eintraege. Alle sechs
+Pflichtpruefungen je Kapitel sauber; `validate.py 23`, `qa.py 23` und
+`hilfsverb.py 23` melden ueber das gebaute Buch **0 Befunde**. Damit sind
+**35 von 66 Kapiteln** fertig: 676 Verse, 15 816 Eintraege.
+
+### Die Warnung aus Paket 12 war ein Fehlalarm — und warum das lehrreich ist
+
+Der Agent fuer Kapitel 33 hatte gewarnt: `Wüste` und `Steppe` stuenden in 35,1
+und 35,6 zusammen und kollidierten, weil `Steppe` englisch *wilderness* traegt.
+Ich habe die Warnung in den Prompt uebernommen. **Sie ist falsch:**
+
+| Lemma | Belege | en · es · fr · it |
+|---|---|---|
+| `Wüste` | 243 | **desert** · desierto · désert · deserto |
+| `Steppe` | 4 | **wilderness** · estepa · steppe · steppa |
+
+Null Ueberschneidung in allen vier Sprachen. **Die Quelle des Verdachts ist WEB:**
+die Ausgabe vertauscht die beiden („The **wilderness** and the dry land … The
+**desert** will rejoice"). Wer die Ausgabe liest statt den Bestand, sieht eine
+Kollision, die es nicht gibt.
+
+**Was aber wirklich gefaehrlich war**, hat erst Kapitel 35 gefunden: `Steppe` hat
+**fuenf** Belege, und der einzige neutestamentliche (Lk 15,4) traegt
+*desierto · désert · deserto* — genau die `Wüste`-Reihe. **Wer diesen Einzelbeleg
+genommen haette, haette die Kollision erst erzeugt.**
+
+**Die Lehre:** eine Warnung des Vorgaengerkapitels ist ein Hinweis, kein Urteil —
+genau wie eine Divergenzmeldung des Nachbarkapitels (Paket 11, `taumeln`). Beide
+Male hat der pruefende Agent recht behalten, nicht der meldende.
+
+### 35,10 → 51,11: neunzehn Tokens, und der Block endet genau vor der Bruchstelle
+
+Die staerkste Uebereinstimmung des Buches (Aehnlichkeit 0,89). `parallelen.py`
+misst den gemeinsamen Block **A-pos 5 bis A-pos 23** — er endet **auf `sie` und
+bricht vor `erfüllen` ab**, dazu ein zweiter Block 25–29.
+
+Denn die Dublette formuliert an genau einer Stelle um:
+
+```
+35,10  … Freude und Jubel werden sie erfüllen, Kummer und Seufzen werden fliehen.
+51,11  … Freude und Jubel werden sie erfassen, Kummer und Seufzen werden fliehen.
+```
+
+**Der Messwert selbst warnt also vor der Falle** — der Block hoert dort auf, wo
+das Abschreiben falsch geworden waere. Das ist neu: bisher musste die Abweichung
+am Rand (16,14 ↔ 21,16) oder mitten im Block (2,20 ↔ 31,7) von Hand gesucht
+werden.
+
+`erfüllen` traegt in 35,10 *fill · llenar · remplir · riempire*, und zwar gegen
+**alle vier Ausgaben**, die „they will obtain joy" lesen: der deutsche Satz ist
+umgekehrt gebaut, `Freude und Jubel` ist Subjekt und `sie` Akkusativobjekt.
+Zugleich eine Lexikonfalle — die Korpusmehrheit von `erfüllen` ist *fulfill ·
+cumplir* (29 Belege), an dieser Stelle flach falsch; die *fill*-Lesart hat drei.
+
+**Fuer 51,11 gilt: Positionen 5–23 und 25–29 uebernehmen, `erfassen` neu
+entscheiden** — der Bestand fuehrt dafuer die Greif-Familie (*seizes · se apodera
+de · saisit · afferra*), nicht die Fuell-Familie.
+
+### Vierte Welle in Folge ohne Angleichung
+
+Acht Lexem-Divergenzen, alle legitim. Die einzige, die danach aussah, ist die
+geplante: **`Vergeltung`** traegt in 34,8 *retribution · retribución ·
+représailles · retribuzione* und in 35,4 *retribution · venganza · vengeance ·
+vendetta*.
+
+Das ist Absicht und funktioniert genau wie vorgesehen: **34,8 stellt `Rache` und
+`Vergeltung` in einen Vers**, und der Bestand fuehrt beide es/fr/it auf
+*venganza · vengeance · vendetta*. Also weicht `Vergeltung` dort aus — von allen
+vier Ausgaben gedeckt. **35,4 hat kein `Rache`**, dort gilt die Bindung.
+
+Der Agent fuer Kapitel 34 hat das ausdruecklich an Kapitel 35 gemeldet, mit dem
+Zusatz „**nicht meine Zeile abschreiben**". Drittes Vorkommen des Musters nach
+`taumeln` (Paket 11) und `verschließen` (Paket 12).
+
+### Die Tierliste von 34,11–15
+
+Vierzehn Tiere, vier davon im Bestand unbelegt. Eigenes Pruefskript, das jede
+Position aus dem Quelltext ableitet — 0 Befunde, dazu eine Gegenprobe „gleiche
+Wortform = gleiche Reihe im Kapitel".
+
+**Zwei Entscheidungen gegen die Ausgaben:** `Hyäne` (nur RV liest *hienas*; WEB
+*wolves*, LSG *chiens sauvages*, RIV *cani selvatici*) und `Weideplatz` (keine
+Ausgabe liest „Weide"). Nach dem `Ruderboot`-Verfahren aus Paket 12: **das
+deutsche Wort ist eindeutig, also entscheidet es.**
+
+**`Eule` steht in 34,11 und 34,15** — und **zwei Ausgaben lesen an der zweiten
+Stelle eine Schlange** (WEB *arrow snake*, LSG *le serpent*, RIV *il serpente*).
+Der Quelltext schreibt beide Male dasselbe Wort, die App glossiert das deutsche
+Wort, also traegt es beide Male dieselbe Reihe.
+
+### Die schaerfste Kollision des Pakets hat kein Skript gemeldet
+
+**34,4 `verwelkt` ↔ `fällt`.** `hints.py` meldet nichts, und die Warnung aus
+Kapitel 33 zeigte auf `verwelkt` ↔ `verdorrte` (englisch, richtig).
+
+Die eigentliche Falle ist eine andere: **RV, LSG und RIV lesen `verwelkt` alle
+drei als *cae · tombe · cade*** — also genau das Wort, das im selben Vers an
+`fällt` steht. Wer der Ausgabe gefolgt waere, haette in drei Sprachen zweimal
+dieselbe Glosse gesetzt. Gehalten ist die Bestandszeile.
+
+**Und 34,1 ist der Gegenfall:** dort vertauschen **alle vier** Ausgaben `Völker`
+und `Nationen` gegenueber dem Deutschen. Wer positionsweise abschreibt, dreht
+zwei Reihen um, die der Bestand gerade trennt.
+
+### Der Artikel als Zeuge: die vierte Auflage der blinden Setzfehlerklasse
+
+**RIV 34,5 „ho votato *allo* *terminio*"** — richtig *sterminio*. Der Beweis
+steckt im Nachbarwort: **`allo` ist die italienische Artikelform vor s +
+Konsonant.** Die Ausgabe hat also *sterminio* gesetzt und beim Import den Anlaut
+verloren; der Artikel hat die Aenderung nicht mitgemacht und verraet sie.
+
+Damit gibt es fuer die blinde Klasse (verschluckter Anlaut an einem
+**kleingeschriebenen Gemeinwort**) jetzt vier Auflagen — 16,7 `ir`-Hareseth,
+23,13 `tiro`, 31,2 `alvagi`, 34,5 `terminio` — und **erstmals einen
+maschinell pruefbaren Aufhaenger**: eine Artikelform, die nicht zum folgenden
+Anlaut passt.
+
+### Neue Lemmata
+
+**Kapitel 34** (11): `Pelikan` C1 · `Hyäne` C1 · `Bocksdämon` C2 ·
+`Nachtgespenst` C2 · `Behausung` C1 · `Nierenfett` C1 · `Schlachtfest` C1 ·
+`brüten` B2 · `trunken` C1 (Adjektiv — der Bestand kennt nur `Trunkener`) ·
+Mehrwort `sich zusammenrollen` B2 · `der Vernichtung weihen` C1.
+
+**Kapitel 35** (5): `Krokusblume` B2 · `Verzagter` C1 · `Törichter` B2 ·
+`Erlöster` B2 · `Befreiter` B2. Alle vier Substantivierungen folgen der
+Bestandskonvention (`Sehender`/`Hörender` aus 32,3).
+
+### Prompt-Hinweise: neunundzwanzig widerlegt
+
+Kapitel 34 siebzehn, Kapitel 35 zwoelf. Die lehrreichsten:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Wüste` und `Steppe` kollidierten in 35 | **keine Ueberschneidung** — die Warnung aus Kap. 33 war ein Fehlalarm |
+| `Krokusblume` sei unbelegt, „die Ausgaben entscheiden" | die Ausgaben entscheiden hier gerade **nicht**: drei lesen „Rose", eine „narcisse", **keine** den Krokus |
+| `hervorgehen`, `aufsteigen`, `herabfahren`, `sich zusammenrollen`, `auftun`, `zurückkehren` seien getrennte Verbzusaetze | **alle stehen zusammenhaengend** — `pos_end`, nicht `parts`. Nur `emporsteigen` und `hervorbrechen` sind wirklich getrennt |
+| `nachsuchen` (34,16) | **dieses Lemma gibt es im Bestand nicht** — gesetzt ist `suchen nach` |
+| `kein … mehr` heisse `kein mehr` | 34,12 hat `keiner`, und dafuer fuehrt der Bestand ein **eigenes Lemma `keiner mehr`** |
+| Kollision `kein ↔ keiner` in 34,16 | **widerlegt** — der Vers hat zweimal **dasselbe** deutsche Wort `keines` |
+| `Freude` stehe dreimal in 35,10 | **zweimal** |
+| die Abweichung sitze mitten im Block (Paket-12-Lehre) | bei beiden Vorlagen dieses Pakets **randabweichend**, Feld fuer Feld identisch bis zum Blockende |
+
+**Von 14 als unbelegt gemeldeten Formen in Kapitel 34 waren 9 wirklich neu**,
+in Kapitel 35 von den gemeldeten fuenf alle fuenf.
+
+### Bestandsbefunde
+
+- **`Lot` fuehrt vier Bedeutungen unter einem Lemma** (Person Lot, Schekel,
+  Senkblei, Senklinie) — der **vierte** Fall nach `Ariel` (Paket 11), `Tor` und
+  `Nahen` (Paket 12). `SPEC.md` verlangt bei anderer Bedeutung ein eigenes
+  Lemma; der Bestand haelt sich an mehreren Stellen nicht daran. **Gesammelt.**
+- **`Vergeltung` und `Rache` tragen es/fr/it dieselbe Reihe** bei 7 gegen 9
+  Belegen. Keine Seite ist falsch — beide Woerter heissen das. Buchlokal am
+  Kollisionsvers getrennt.
+- **`Unreiner` mischt drei Lesarten**, und der Extrakt zeigte nur den
+  NT-Einzelbeleg (Eph 5,5). Der Extrakt war hier selbst die Fehlerquelle —
+  dritter Fall dieser Art nach Paket 10.
+- **`erschlafft` ruht auf einem einzigen Beleg (Hebr 12,12)** — aber dieser Beleg
+  ist das **neutestamentliche Zitat genau dieses Verses**. Ausnahmsweise
+  uebernommen, weil der Kontext identisch ist. Der Einzelbeleg ist nicht immer
+  ein Zufall; er ist nur nie eine Mehrheit.
+- Lexikonfallen: `kräftigen` (Verb statt Adjektiv), `hegen` (*harbors*, „Hass
+  hegen"), `zerfließen` (Imperativ statt 3. Pl.), `erfüllen` (*fulfill* statt
+  *fill*), `Steppe` (Lk 15,4).
+
+### Ausgabenbefunde
+
+- **Zwei neue RIV-Setzfehler** (34,5 · 34,15), nachgetragen. **Kapitel 35 hat
+  keinen einzigen.**
+- **Der dritte WEB-Setzfehler: 35,10 „The Yahweh's ransomed ones"** — doppelter
+  Determinierer, mit der Gegenprobe in derselben Ausgabe (51,11 „The ransomed of
+  Yahweh"). Nach 24,17 und 30,14.
+- **Die `Nachtwache`-Klasse zwanzigmal** in zwei Kapiteln. Die schaerfsten:
+  **34,4 `Frucht`** (keine Ausgabe liest sie), **34,14 `ruht`** (alle vier
+  „sich niederlassen", obwohl `Ruhe` im selben Satz steht), **35,8** — dort liest
+  **WEB den Satz gegenteilig** („Wicked fools will not go there" gegen „selbst
+  Törichte werden nicht in die Irre gehen").
+- **WEB 34,16 wechselt mitten im Vers die Person** („**my** mouth … **his**
+  Spirit"), wo das Deutsche zweimal „sein" hat — die Ausgabe widerspricht sich
+  selbst.
+- **RV 34,14 setzt einen Eigennamen, wo das Deutsche ein Gemeinwort hat:**
+  *Lilit* fuer `Nachtgespenst`. Die drei anderen bleiben beim Gespenst.
+- **RV gibt `Steppe` innerhalb von Kapitel 35 zweimal verschieden wieder**
+  (35,1 „el yermo", 35,6 „la tierra seca") — und „la tierra seca" ist zugleich
+  ihre Wiedergabe von `das dürre Land` im selben Vers. **Die spanische Ausgabe
+  verschmilzt selbst, was das Deutsche trennt.**
+- **Versgrenzen: kein Versatz in beiden Kapiteln.**

@@ -99,6 +99,8 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 32,8 | forma **nobile** disegni … a pro di **nobile** cose | *nobili* (zweimal) | Numerus |
 | 32,10 | Fra **una** anno e qualche giorno | *un anno* | Kongruenz |
 | 33,23 | prenderanno parte **la** saccheggio | *al saccheggio* | falsche Praeposition |
+| 34,5 | ho votato **allo** **terminio** | *sterminio* — **der Artikel `allo` ist der Zeuge**: er steht nur vor s+Konsonant | Anlaut, Gemeinwort |
+| 34,15 | sé; **uivi** si raccoglieranno | *quivi* (im selben Vers zwei Saetze vorher richtig) | Anlaut, Funktionswort |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -154,7 +156,9 @@ Kapitel 23 beim Lesen der Ausgabe.
 
 **24,17 „Fear, the pit, and the snare, are on you who *inhabitant* the earth"**
 — richtig *inhabit*. Der erste englische Fall in diesem Buch. **30,14 „among the
-*broken piece* a piece good enough"** — richtig *pieces*; der zweite. Die Liste oben ist
+*broken piece* a piece good enough"** — richtig *pieces*; der zweite. **35,10 „*The Yahweh's* ransomed ones will return"** — doppelter
+Determinierer; die Gegenprobe steht in derselben Ausgabe, **51,11 schreibt „The
+ransomed of Yahweh"**. Der dritte. Die Liste oben ist
 nach RIV benannt, weil dort die Haeufung liegt; **sie ist damit auch in dieser
 Hinsicht eine Untergrenze** — die anderen drei Ausgaben sind nie systematisch
 durchgesehen worden.
