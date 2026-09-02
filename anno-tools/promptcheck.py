@@ -32,9 +32,15 @@ ueber einen gekuerzten Stamm, und der muss mindestens fuenf Zeichen behalten —
 mit vier ging `ansagen` ueber den Stamm `an` als "stammverwandt" durch,
 obwohl das Wort in keinem der drei Kapitel steht.
 
+Das **Partizip-`ge-`** wird abgeschnitten, wenn genug uebrig bleibt: sonst
+findet `troesten` sein eigenes `getroestet` nicht — in Paket 19 haette das
+Skript deshalb beinahe ein Wort als fehlend gemeldet, das viermal dasteht.
+
 **Ein Treffer ist ein Verdacht, kein Fehler.** Umlautwechsel (`Baum`/`Baeume`),
 starke Verben (`giessen`/`goss`) und Suppletion findet der Stammvergleich
-nicht. Umgekehrt meldet er auch nichts, wo ein Wort zwar vorkommt, aber in
+nicht — und **ein Wort als zweites Glied eines Kompositums** auch nicht
+(`Bund` steht in 54,10 als `Friedensbund`), weil der Praefixvergleich nur
+vorne vergleicht. Umgekehrt meldet er auch nichts, wo ein Wort zwar vorkommt, aber in
 anderer Bedeutung — das bleibt die Sache des Agenten.
 
 Was er zuverlaessig findet, ist die Klasse, um die es geht: ein Wort, das im
@@ -55,10 +61,18 @@ KEIN_TEXT = re.compile(
 ENDUNGEN = ('ungen', 'chen', 'lein', 'ern', 'end', 'est', 'ete', 'ten', 'ung',
             'en', 'er', 'es', 'em', 'et', 'st', 'te', 'e', 'n', 's', 't', 'r')
 
-# Kuerzer als das raet der Stammvergleich nur noch. Gilt fuer die Endungsprobe
-# **und** fuer den Praefixvergleich: mit vier Zeichen war `ansagen` ueber den
-# Stamm `an` (aus `ans`) als "stammverwandt" durchgegangen.
+# Kuerzer als das raet der Stammvergleich nur noch. Gilt fuer die Endungsprobe:
+# mit vier Zeichen war `ansagen` ueber den Stamm `an` (aus `ans`) als
+# "stammverwandt" durchgegangen.
 MIN = 5
+
+# Der Praefixvergleich darf kuerzer sein, muss dafuer aber eng sein: beide
+# Staemme mindestens KURZ Zeichen, und der laengere hoechstens ABSTAND Zeichen
+# laenger. Ohne das meldete das Skript `Bote` als fehlend, obwohl 52,7 `Boten`
+# schreibt — ein Fehlalarm der schaedlichen Sorte, weil er ein Wort abstreitet,
+# das dasteht. Mit `an` gegen `ansag` (Abstand 3, aber Laenge 2) greift es nicht.
+KURZ = 4
+ABSTAND = 3
 
 
 def stamm(w):
@@ -76,7 +90,10 @@ def stamm(w):
         w = w.replace(a, b)
     for e in ENDUNGEN:
         if len(w) - len(e) >= MIN and w.endswith(e):
-            return w[:-len(e)]
+            w = w[:-len(e)]
+            break
+    if w.startswith('ge') and len(w) - 2 >= MIN - 1:
+        w = w[2:]
     return w
 
 
@@ -146,7 +163,8 @@ def main():
         # als `Handbreit`. Nur in dieser Richtung, sonst trifft jedes kurze
         # Wort auf jedes lange.
         nah = [k for k in vorhanden
-               if len(s) >= MIN and len(k) >= MIN
+               if min(len(s), len(k)) >= KURZ
+               and abs(len(s) - len(k)) <= ABSTAND
                and (k.startswith(s) or s.startswith(k))]
         fehlt.append((w, nah))
 
