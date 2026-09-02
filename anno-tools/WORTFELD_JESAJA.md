@@ -3554,3 +3554,122 @@ Kap. 50 (7): `Drohruf` · `Wassermangel` · `Schwarz` (Substantiv) · Mehrwoerte
 `darbieten` · `hertreten` · `vor Gericht treten` · `sich ruesten`.
 Kap. 51 (7): `Vorzeit` · `Urzeit` · `zerhauen` · `Taumelbecher` · `zweifach` ·
 `Antilope` · `Gebeugter`.
+
+## 25. Paket 19 (Kap. 52 · 53 · 54) — das vierte Gottesknechtslied
+
+44 Verse, 1197 Eintraege. Versatz +0 ueberall. `paketcheck.py` Abschnitt A:
+**null Faelle**, das vierte Mal in Folge, und Abschnitt C ebenfalls leer.
+
+### Die Nachbarfalle: einmal in den Prompt geschrieben, null Korrekturen
+
+Nach den sechs Nachkorrekturen in Paket 18 stand in allen drei Prompts ein
+Satz: vor `HERR` traegt die italienische Glosse **immer `il`/`Il`**, nie `l'`,
+auch wo RIV *l'Eterno* schreibt — Bestand 2881 : 0. **Ergebnis: null Stellen zu
+korrigieren.** Kapitel 52 meldet neun gepruefte Stellen, Kapitel 54 acht, beide
+ausnahmslos richtig. Ein Fehler, der viermal im Buch aufgetreten ist, kostet
+zwei Zeilen Prompt.
+
+### Das NT zitiert, und der Block traegt trotzdem
+
+Jesaja 53 ist der meistzitierte Abschnitt des Alten Testaments, und die
+gemessenen Bloecke sind klein — fuenf, fuenf, fuenf, vier, vier Tokens. Die
+Erwartung aus Paket 15 war, dass sie **wenig** tragen, weil das NT ueber die
+Septuaginta zitiert. Das Gegenteil ist eingetreten: **alle 23 gemessenen
+Blockpositionen sind Feld fuer Feld identisch**, und in 53,7 traegt derselbe
+Vers **sieben weitere** Positionen woertlich gleich, die der Blockmesser gar
+nicht sieht (`Lamm`, `Schaf`, `zur`, `Schlachtung`, `gefuehrt`, `vor`, `ein`).
+
+Der Grund ist der Umkehrschluss zur Septuaginta-Warnung: **wo der deutsche
+Wortlaut gleich ist, ist er gleich, egal ueber welchen Umweg er dorthin kam.**
+Der Blockmesser misst zu wenig, nicht zu viel — er findet nur zusammenhaengende
+Folgen, und die NT-Zitate sind zerstreut.
+
+### Zwei Faelle, in denen die Bindung gegen alle vier Ausgaben steht
+
+Nach `Becher` (Paket 18) jetzt `Fessel` und `Friedensbund`:
+
+* **52,2 `Fessel`** — der Bestand bindet 16 : 0 auf *shackles · grillos ·
+  entraves · ceppi*, **alle vier Ausgaben** schreiben bonds/ataduras/liens/
+  catene. Bestand genommen.
+* **54,10 `Friedensbund`** — neu gepraegt nach der Bauform von `Friedensbote`:
+  Kopfnomen aus der Bindung (`Bund` *covenant · pacto · alliance · alleanza*)
+  plus „des Friedens". RIV schreibt an der Zeile *patto di pace*.
+
+Beide sind gemeldet: wenn eine dieser Bindungen je faellt, sind das die
+Stellen, an denen es auffaellt.
+
+### `Voelker` = *nations* oder *peoples*? Beide Seiten sind richtig
+
+Alle drei Agenten haben unabhaengig **dieselbe** Entscheidung getroffen:
+`Volk` im Singular *people*, `Voelker` im Plural *nations* (52,10 · 52,15 ·
+54,3). Die Bindung sagt etwas anderes — `Voelker` steht im Bestand 311 : 83 und
+in Jesaja **47 : 6** auf *peoples · pueblos · peuples · popoli*.
+
+Stehen gelassen, und zwar nach der Regel aus Paket 9: **ein Bestandsbefund ist
+erst dann ein Auftrag, wenn die Auszaehlung zeigt, dass eine Seite falsch ist —
+nicht nur seltener.** Hier ist keine falsch: die Kollisionsregel greift nicht
+(`Nation` steht in keinem der drei Verse), alle vier Ausgaben schreiben an
+diesen Zeilen *nations*, und die sechs aelteren Jesaja-Stellen mit *nations*
+(23,3 · 29,7 · 29,8 · 30,28 · 45,1 · 45,20) sind ebenfalls keine
+Kollisionsaufloesungen. Damit stehen im Buch neun Stellen gegen 47 — ein
+offener Befund, kein Fehler.
+
+### Was ein Reflexivum im Bestand versteckt
+
+**`sich zusammenrotten` waere fast neu gepraegt worden**, obwohl es viermal im
+Psalter steht (35,15 · 56,7 · 59,4 · 94,21). Weder `hints.py` noch der
+VERWANDT-Abschnitt von `lexicon.py` noch `fixgloss.py show zusammenrotten`
+finden es — **das Korpuslemma traegt das `sich `**, und alle Belege stehen als
+getrenntes „rotten sich zusammen". Gefunden hat es allein `levelcheck.py`, ueber
+die Leveldifferenz.
+
+Daraus die Regel: **bei jedem neuen Reflexivum zusaetzlich
+`fixgloss.py show "sich <verb>"` fragen.** Das ist dieselbe Klasse wie
+`Heerscharen`/`Heerschar` in Abschnitt 2 — der Formextrakt sucht die Form, das
+Lemma steht anders da.
+
+### Der gemeldete Befund, der ein Fehlalarm war
+
+Kapitel 53 hat gemeldet, `Bedraengnis` trage in 30,6 und 30,20 die
+*tribulation*-Reihe aus der NT-Lexikonfalle, obwohl `BINDUNGEN_AT.md` fuer das
+AT *distress · angustia · détresse · angoscia* nennt. **Beide Verse stellen
+`Not` und `Bedraengnis` nebeneinander**, `Not` haelt die *distress*-Reihe, und
+`Bedraengnis` weicht deshalb aus. Eine korrekte Kollisionsaufloesung sieht von
+aussen aus wie genau der Fehler, vor dem sie schuetzt — nachgesehen wird am
+Vers, nicht an der Tabelle.
+
+### Meine Prompt-Hinweise: 15 widerlegt, sieben davon schon vor dem Start
+
+`promptcheck.py` hat vor dem Abschicken elf Woerter aus der Vorbereitungsdatei
+gestrichen, die in keinem der drei Kapitel stehen (`Knecht`, `Gnade`,
+`Barmherzigkeit`, `Herrlichkeit`, `Missetat`, `Frevel`, `Edelstein` und vier
+weitere), und dabei zwei eigene Fehlalarme offengelegt, die repariert sind:
+das Partizip-`ge-` (`getroestet` gegen `troesten`) und die Kurzwortschwelle
+(`Bote` gegen `Boten`, `Zelt` gegen `Zelte`).
+
+Was uebrig blieb, ist wieder die Klasse, die kein Skript findet:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| `Bote` ↔ `Botschaft` in 52,7 sei ein Kollisionskandidat | in allen vier Sprachen verschiedene Woerter — nichts aufzuloesen |
+| „Ruehrt nichts Unreines an" | `beruehrt nichts Unreines` — kein trennbares Verb, kein Mehrwort |
+| `rein` stehe in Kap. 52 | nur `Unreiner`, `Unreines` und `sich reinigen` |
+| `Heiliger` fuer 52,10 | dort steht das Adjektiv `heilig` („seinen heiligen Arm") |
+| `Huegel` fuer 52,7 | nur `Bergen` |
+| `Suende` trage die Pluralreihe | 53,5 Plural, **53,8 und 53,12 Singular** |
+| `Scherer` sei unbelegt | steht als Lemma in Apg 8,32 — demselben Parallelvers |
+
+### Neue Lemmata (23)
+
+Kap. 52 (3): `Prachtgewand` C1 · `Hast` B2 · Mehrwort `in Staunen versetzen` B2.
+Kap. 53 (4): `Geschlagener` B2 · `Gepeinigter` C1 · Mehrwoerter
+`sich zaehlen lassen` B2 · `Fuerbitte tun` C1.
+Kap. 54 (16): `Zeltstrick` · `beerben` · `zurueckrufen` · `aufwallend` ·
+`Friedensbund` · `Gepeitschter` · `Ungetroesteter` · `Antimonmoertel` C2 ·
+`Zinne` · `funkelnd` · `Umgrenzung` · `Kohlenglut` · `zusammenrotten`, dazu
+`weit machen` · `in Schande fallen` · `vor Gericht auftreten` — die dritte
+Bauform derselben Wendung neben `vor Gericht treten` (41,1 · 50,8) und
+`vor Gericht gehen` (43,26), weil der Quelltext dreierlei schreibt.
+
+Die Steinliste von 54,11 f. ist mit einem eigenen Positionsskript geprueft:
+**11 Positionen, 0 Befunde.**
