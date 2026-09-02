@@ -9,6 +9,13 @@ Ergebnis, sonst wandert die Abweichung durch jeden Neubau mit.
 
 Gemeldet wird nur, wo der Bestand **einheitlich** ist (eine einzige Lesart);
 wo er selbst schwankt, entscheidet der Vers.
+
+`--fix` **behält die Schreibweise der Datei bei**. Die Kapitelquellen stehen im
+Bestand in zwei Formaten nebeneinander — eingerückt (`indent=1`, so schreiben
+die Agenten) und einzeilig (so schreibt `C.write_compact`). Eine frühere
+Fassung dieses Skripts hat immer einzeilig geschrieben; ein Lauf über alle
+Bücher hat dadurch 615 Dateien umformatiert und einen Diff von 2,7 Millionen
+Zeilen erzeugt, obwohl nur 396 Level-Felder zu ändern waren.
 """
 import sys, json, glob, os, collections
 sys.path.insert(0,'/Users/dfoerd/Documents/projekte/bibel/bibles-translations/anno-tools')
@@ -34,7 +41,10 @@ for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,'*_multi.json'))):
 n=0
 for kap in kaps:
     p=f'{OUT}{nr}/ch{kap}.json'
-    d=json.load(open(p,encoding='utf-8'))
+    roh=open(p,encoding='utf-8').read()
+    eingerueckt=roh.count('\n')>1
+    d=json.loads(roh)
+    geaendert=0
     for v in sorted(d, key=int):
         for e in d[v]:
             l=e.get('lemma')
@@ -44,6 +54,11 @@ for kap in kaps:
                 n+=1
                 print(f"  {nr} {kap},{v} {e['form']:<20} lemma={l:<18} {e['level']} "
                       f"{'->' if fix else 'gegen'} {soll}  ({sum(lv[l].values())} Belege)")
-                if fix: e['level']=soll
-    if fix: json.dump(d, open(p,'w',encoding='utf-8'), ensure_ascii=False)
+                if fix: e['level']=soll; geaendert+=1
+    # nur schreiben, wo wirklich etwas zu aendern war — sonst formatiert der
+    # Lauf Dateien um, die er gar nicht anfassen muss
+    if fix and geaendert:
+        with open(p,'w',encoding='utf-8') as f:
+            if eingerueckt: json.dump(d, f, ensure_ascii=False, indent=1)
+            else: json.dump(d, f, ensure_ascii=False, separators=(',',':'))
 print(f'\n{n} Abweichungen' + (' — korrigiert' if fix else ''))
