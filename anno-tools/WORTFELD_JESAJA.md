@@ -3438,3 +3438,119 @@ Kap. 48 (1): `bezaehmen` C1 mit dem reflexiven `sich bezaehmen`.
 
 Kapitel 48 ist damit das erste Kapitel des Buches, das mit **einem** neuen
 Lemma auskommt — nach acht Kapiteln Deuterojesaja ist sein Wortschatz gebaut.
+
+## 24. Paket 18 (Kap. 49 · 50 · 51) — die groesste Dublette des Buches
+
+60 Verse, 1781 Eintraege. Versatz +0 ueberall. `paketcheck.py` Abschnitt A:
+**null Faelle**, das dritte Mal in Folge.
+
+### 51,11 ← 35,10: 22 Formen identisch, null abweichend
+
+Das groesste Vorlagenpaar des Buches (19 gemessene Tokens, Aehnlichkeit 0,89)
+ist zugleich das erste, das die Uebernahme **restlos** traegt. Die maschinelle
+Gegenprobe ueber alle Einzelwortformen des Verses: 22 Formen stehen in beiden
+Versen und tragen in **allen vier Sprachen dieselbe Reihe**, keine einzige
+weicht ab. Drei Formen stehen nur in 51,11:
+
+* `So` — der Vorlagenvers hat kein Gegenstueck (Bestandsreihe `so` A1).
+* `die` — dieselbe Form kleingeschrieben, weil 51,11 den Satz umstellt
+  (`So werden die Befreiten` gegen `Die Befreiten … werden`). Die Umstellung
+  verschiebt neunzehn Positionen um eins und aendert keine Glosse.
+* **`erfassen` — hier endet der Block.** 35,10 hat `erfuellen` *fill · llenar ·
+  remplir · riempire*, 51,11 die Greif-Familie *seize · apoderarse de · saisir ·
+  afferrare*. Der Bestand liest `erfassen` fr *saisir* und it *afferrare*
+  (Pred 3,11); **spanisch steht dort *comprender*** — die Begreifen-Lesart, die
+  hier nicht passt, also weicht es auf *apoderarse de* aus.
+
+Das ist der Gegenfall zu Paket 14, wo von sieben als „woertlich" eingestuften
+Versen genau einer Feld fuer Feld identisch war. **Eine hohe Aehnlichkeit sagt
+weiterhin nichts** — aber wo die Probe aufgeht, geht sie ganz auf.
+
+### Die Nachbarfalle, vierte Auflage — und diesmal in der Meldung selbst
+
+Sechs Eintraege des Pakets trugen vor `HERR` das italienische `l'`, weil RIV an
+diesen Zeilen *l'Eterno* schreibt (49,14 und fuenf Stellen in 51). Die Glosse
+heisst aber `SIGNORE` und verlangt `il`; der Bestand steht **2881 : 0**.
+Korrigiert.
+
+Bemerkenswert ist, wie der Fall gemeldet wurde: der Agent von Kapitel 49 hat
+ihn **genau andersherum** aufgeschrieben — er hielt Ps 118,18 mit `Il` fuer den
+Fehler und seine eigene Zeile mit `L'` fuer richtig. Die Auszaehlung entscheidet,
+nicht die Zeile der Ausgabe, und die Auszaehlung dauert zehn Sekunden.
+
+### Zwei Luecken im schon gebauten Bestand, beide von Agenten gefunden
+
+Beide sind die Klasse, die `selfcheck.py` und `qa.py` **prinzipiell** nicht
+sehen koennen — die Einzelwoerter sind vollstaendig und richtig, strukturell
+fehlt nichts:
+
+* **41,1 `vor Gericht treten`** hatte keinen Mehrwort-Eintrag, waehrend das
+  strukturgleiche 43,26 `vor Gericht gehen` einen fuehrt. Ergaenzt nach der
+  Reihe, die Kapitel 50 fuer dieselbe Wendung gesetzt hat (*appear in court ·
+  comparecer en juicio · comparaître en justice · comparire in giudizio*).
+* **42,6 `machen zu`** fehlte bei „mache dich zum Bund", obwohl 25,2 und 28,17
+  im selben Buch den Eintrag fuehren und der Bestand 36 Belege hat. Ergaenzt
+  nach **49,8** — demselben Zehnerblock, den 42,6 als Vorlage geliefert hat.
+  Der Agent, der den Block uebernahm, hat die Luecke dabei gefunden.
+
+### `Becher` gegen alle vier Ausgaben
+
+Der Taumelbecher von 51,17.22 ist der bisher schaerfste Fall der
+`Zahl`/`Pracht`-Regel. Der Bestand bindet `Becher` **40 : 0** auf *goblet ·
+vaso · gobelet · bicchiere* (darunter Ps 75,9, derselbe Zornbecher) und fuehrt
+`Kelch` getrennt auf *cup · copa · coupe · calice*. **Alle vier Ausgaben
+schreiben in 51,17 und 51,22 cup/copa/coupe/coppa.** Genommen ist der Bestand,
+und das neue Kompositum `Taumelbecher` C1 ist in derselben Familie gepraegt —
+parallel zum belegten `Taumelwein`. Gemeldet ist es trotzdem: wenn die Bindung
+je faellt, ist dies die Stelle, an der es auffaellt.
+
+### Was `sweeplemma.py` diesmal fand
+
+**49,18 `die Augen erheben`** (Mehrwort aus 40,26, `parts`) fehlte. Die
+Wortform „Erhebe … Augen" stand im Bestand nicht, das Lemmapaar schon —
+`konvention.py` und `sweep.py` konnten es prinzipiell nicht finden. Dritte
+Bestaetigung seiner Pflichtstellung nach den Paketen 15 und 17.
+
+### Zwei Aufloesungen in genau einer Sprache
+
+Die sparsamste Form, zum dritten Mal (nach 44,28 `Wille`↔`werden` und 47,2
+`Muehle`↔`mahlen`):
+
+* **51,5 `hoffen` ↔ `warten`** fallen nur im Spanischen zusammen (*esperar*);
+  `warten` weicht auf *aguardar* aus, die drei anderen Sprachen trennen selbst.
+* **49,8 `wieder` ↔ `neu`** — von keinem Skript gemeldet, Funktionswortklasse.
+  `wieder` bindet 491 : 0, also weicht `neu` aus, und zwar auf *newly ·
+  nuevamente · à neuf · nuovamente*: die naeherliegende Zeile haette in es und
+  it weiter kollidiert. **Keine der vier Ausgaben uebersetzt das `neu` an
+  dieser Zeile ueberhaupt.**
+
+### Meine Prompt-Hinweise: 15 widerlegt, und drei davon hatte die Maschine schon
+
+`promptcheck.py` lief zum ersten Mal **vor** dem Abschicken ueber die
+Vorbereitungsdatei und hat drei erfundene Woerter gefunden, bevor ein Agent sie
+zu sehen bekam: `Grimm` und `Knecht` standen in der Vorgabetabelle und kommen
+in keinem der drei Kapitel vor, und der Becher heisst `Taumelbecher`, ein
+Kompositum, nicht `Becher des Taumels`. Gestrichen und korrigiert.
+
+Was uebrig blieb, ist die Klasse, die das Skript **nicht** finden kann — falsche
+Behauptungen ueber Woerter, die es gibt:
+
+| ich schrieb | der Text sagt |
+|---|---|
+| 50,10 f. habe den Gegensatz `Licht`/`Finsternis` | `Finsternis` steht nicht in Kap. 50, sondern in 49,9; 50 schreibt `im Dunkeln` |
+| die selbst entzuendeten `Fackeln` | `Brandpfeile` und `Flammen` — drei Ausgaben schreiben zwar *torches* |
+| 50,1 habe `Missetat` | `Suenden` und `Vergehen` |
+| 49,23 habe `Fuersten` | `Fuerstinnen` — `Fuerst` steht nur in 49,7 |
+| 49,7 und 49,23 haetten `sich niederwerfen` **und** `anbeten` | `anbeten` kommt im ganzen Kapitel nicht vor |
+| 51,9 habe die `Urflut` | `die grosse Tiefe` und `die Tiefen des Meeres` — ein Lemma, zwei belegte Lesarten |
+| 50,8 folge 41,1, „dort mit dem Mehrwort" | 41,1 hatte gar keins — siehe oben |
+
+### Neue Lemmata (25)
+
+Kap. 49 (11): `Erbauer` · `Verachteter` · `Verabscheuter` · `Kindlein` ·
+`Handflaeche` · `Pflegevater` · `Erbarmer` · `einzeichnen` · `herbeitragen` ·
+`Sinim` · Mehrwort `zusammenruecken`.
+Kap. 50 (7): `Drohruf` · `Wassermangel` · `Schwarz` (Substantiv) · Mehrwoerter
+`darbieten` · `hertreten` · `vor Gericht treten` · `sich ruesten`.
+Kap. 51 (7): `Vorzeit` · `Urzeit` · `zerhauen` · `Taumelbecher` · `zweifach` ·
+`Antilope` · `Gebeugter`.
