@@ -2441,3 +2441,195 @@ Kapitel 28 vierzehn, Kapitel 29 vierzehn, Kapitel 30 dreizehn. Die lehrreichsten
 - **Versgrenzen: kein Versatz in allen drei Kapiteln.** RIV verschiebt allerdings
   die **Satzgrenze 28,12/13**: „Doch sie wollten nicht hören" steht dort am
   Anfang von v13.
+
+## 18. Paket 12 (Kap. 31 · 32 · 33)
+
+Drei Kapitel gleichzeitig, 1132 Einzelwort- und 54 Mehrwort-Eintraege. Alle sechs
+Pflichtpruefungen je Kapitel sauber (erstmals einschliesslich `sweeplemma.py`:
+**0 · 0 · 0**); `validate.py 23`, `qa.py 23` und `hilfsverb.py 23` melden ueber
+das gebaute Buch **0 Befunde**. Damit sind **33 von 66 Kapiteln** fertig — die
+Haelfte —, 649 Verse, 15 153 Eintraege.
+
+### Die erste geplante Vorlagenuebergabe hat funktioniert
+
+Der Agent fuer 29,17 hatte `Fruchtgarten` B2 = *orchard · huerto · verger ·
+frutteto* gesetzt und **ausdruecklich als Vorlage fuer 32,15 gemeldet**, samt
+Begruendung (die Ausgaben stehen 2:2, nach dem `Sonnenstadt`-Verfahren
+entscheidet das deutsche Wort — ein Garten, kein Feld).
+
+Ein Paket spaeter hat Kapitel 32 sie unveraendert uebernommen. Die Gegenprobe
+ueber beide Kapitel: **alle fuenf Vorkommen tragen dieselbe Reihe.**
+
+**Das ist der erste Fall im Buch, in dem eine Entscheidung bewusst fuer ein
+kuenftiges Kapitel dokumentiert und dort abgeholt wurde.** Kapitel 33 hat das
+Verfahren sofort weitergefuehrt und **drei Warnungen fuer Paket 13** hinterlassen
+(s. unten).
+
+### Dritte Welle in Folge ohne Angleichung
+
+32 Lexem-Divergenzen ueber die drei Kapitel, alle kontextmotiviert. Der
+lehrreichste ist **`verschließen`**: 32,3 traegt *shut · cerrados · fermés ·
+chiusi* (Augen), 33,15 *stops · tapa · bouche · tura* (Ohren). Kapitel 33 ist
+ausgewichen, weil `verschließen` und `schließen` dort **im selben Vers** stehen
+und in allen vier Sprachen dieselbe Reihe tragen — und weil drei Ausgaben genau
+das Ohren-Verb schreiben (WEB „stops his ears", RV „tapa sus oídos", RIV „si tura
+gli orecchi"). Kapitel 32 hat keine Kollisionsstelle und haelt die Bindung.
+
+**Genau dasselbe Muster wie `taumeln` in Paket 11.** Es ist inzwischen die
+Regel, nicht die Ausnahme: am Kollisionsvers ausweichen, sonst die Bindung
+halten — und das Ergebnis sieht dann verschieden aus, ohne dass etwas falsch ist.
+
+### Zwei Vorlagen, die ohne Vermessung falsch geworden waeren
+
+- **31,7 ← 2,20 teilt neun Tokens**, die staerkste buchinterne Vorlage bisher.
+  Die Falle ist aber **lexikalisch, nicht positionell**: an derselben Satzstelle
+  steht in 2,20 `hinwerfen` (*throw away · arrojar · jeter · gettare*), in 31,7
+  `verwerfen` (*reject · rechazar · rejeter · rigettare*). Wer die neun Felder
+  abgeschrieben haette, haette genau dort gefehlt.
+- **33,17 ← 1Mo 13,17 teilt fuenf Tokens** — und Position sechs trennt sie:
+  1Mo setzt „Länge und Breite" fort, Jes 33,17 „Weite".
+
+**Bisher sass die Abweichung immer an einer Position (16,14 ↔ 21,16). Dass sie
+auch mitten im gemeinsamen Block sitzen kann, ist neu.**
+
+### 31,5: die schwierigste Stelle loeste der Bestand selbst
+
+Sechs Schutzverben in einem Vers — `schützend`, `schweben`, `beschirmen`,
+`beschützen`, `erretten`, `verschonen`, `befreien`. `hints.py` meldete ein Paar.
+
+**Der Bestand hatte es laengst entschieden: 2. Mose 6,6 traegt `erretten` und
+`befreien` im selben Vers**, franzoesisch *délivrer* gegen *libérer*. Nichts zu
+erfinden — die Zeile abschreiben genuegte.
+
+Die eigentliche Arbeit lag woanders: `beschirmen` **nicht** auf *protect* zu
+setzen. Sonst haette „protect" zweimal im Vers gestanden — und **alle vier
+Ausgaben tun genau das** (WEB protect/protect, RV protegerá/protegerá, RIV
+proteggerà/proteggerà). Gesetzt ist die belegte Zeile *cover · cubrir · couvrir ·
+coprire* aus Ps 140,8.
+
+### 33,1: acht Tokens aus zwei Wurzeln, vier Formen je Wurzel
+
+Substantiv, finites Verb, **substantivierter Infinitiv** und Passiv — je zweimal.
+21,2 und 24,16 lieferten Substantiv und Verb; die beiden substantivierten
+Infinitive sind neu.
+
+**`Verraten` musste weichen, `Verwüsten` nicht.** Mit der Infinitivreihe waere
+`Verraten` es/fr/it **restlos identisch** mit dem `verraten` an pos 38 desselben
+Verses geworden; es traegt deshalb *betrayal · traición · trahison · tradimento*.
+`Verwüsten` steht nur neben der Partizipform und konnte die Infinitivreihe
+behalten.
+
+### Ein Lemma, zwei Woerter — der dritte Fall
+
+Nach `Ariel` (Paket 11) jetzt zweimal dasselbe:
+
+- **`Tor`** fuehrt die Pforte (152 Belege) und den Narren (8) unter einem Lemma.
+- **`Nahen`** fuehrt das **nominalisierte Verb** „das Nahen" (Hiob 36,33,
+  *approach · llegada · approche · avvicinarsi*) und, seit 33,13, das
+  **substantivierte Adjektiv** „ihr Nahen". Wer den Extrakt uebernimmt, schreibt
+  „ihr Annaehern". Hier ist ein eigenes Lemma `Naher` gesetzt worden.
+
+`SPEC.md` verlangt bei anderer Bedeutung ein eigenes Lemma; der Bestand haelt
+sich an mehreren Stellen nicht daran. **Gesammelt, nicht mitten im Kapitelpaket
+angefasst.**
+
+### Die Lexikonfalle: der Einzelbeleg ist keine Mehrheit
+
+Fuenfzehn Faelle in diesem Paket, und das Muster aus Paket 11 verschaerft sich:
+**die gefaehrlichsten Lemmata sind die mit ein oder zwei Belegen.** Dort gibt es
+gar keine Mehrheit, nur einen Zufall.
+
+| Wort | der Extrakt zeigt | am Vers gebraucht wird |
+|---|---|---|
+| `schrecken` (31,4) | *shrink* — **ein** Beleg, und der ist der abgetrennte Stamm von `zurückschrecken` (2Petr 2,10) | *frighten · atemorizar · effrayer · spaventare* |
+| `schlaff` (33,23) | *feeble* — **ein** Beleg, von **Haenden** (Jes 13,7) | *slack · flojos · lâches · allentati*, von Schiffstauen |
+| `Nahen` (33,13) | *approach* — **ein** Beleg, ein anderes Wort | *near ones · cercanos · proches · vicini* |
+| `Glut` (33,14) | *embers · brasas* — das Raeucherkohlebecken (3Mo 16,12) | *heat · calor · chaleur · calore* |
+| `Ruheplatz` (32,18) | beide Belege **NT** (Mt 12,43 · Lk 11,24) | uebernommen, aber geprueft |
+| `Tor` (32,5) | *gate* (74:8) | *fool* |
+| `Betrüger` (32,5) | *swindlers* — **rein NT** (Lk 18,11 · 1Kor 5 · 1Kor 6) | *deceiver* (Hiob 12,16) |
+| `Menge` (31,1) | *crowd* (81×, **78 davon NT**) | *multitude* |
+| `Fleisch` (31,3) | Bindung *meat · viande* | „Fleisch und nicht Geist" = *flesh · chair* |
+
+`BINDUNGEN_AT.md` sagt es selbst: die Tabelle ist **bedeutungsblind**. Bei
+`Fleisch` faellt Bindung und Bedeutung auseinander, und dann entscheidet die
+Bedeutung.
+
+### Neue Lemmata
+
+**Kapitel 31** (3): `angesichts` C1 (Praeposition — der Bestand kennt nur
+`Angesichts`, den Genitiv des **Substantivs**; zwei verschiedene Woerter) ·
+Mehrwort `die Flucht ergreifen` B2 · `sich schrecken lassen` B2.
+
+**Kapitel 32** (12): `Edles` B2 · `Hörender` B1 · `Irriges` C1 · `Jahresfrist`
+C1 · `Stotternder` C1 · `Unbesonnener` C1 · `selbstsicher` B2 · `wuchern` C1 ·
+Mehrwort `Wohl euch` B1 · `sich ausziehen` B1 · `umherlaufen lassen` B2 ·
+`herabsinken` B2.
+
+**Kapitel 33** (10): `Verwüsten` C1 · `Verraten` C1 · `Ferner` B1 · `Naher` B1 ·
+`donnernd` B2 · `Wanderer` B2 · `Friedensbote` C1 · `Felsenfestung` C1 ·
+`unverständlich` C1 · `Ruderboot` B2.
+
+**`Ruderboot` ist der einzige Fall des Pakets, in dem gegen die Ausgaben
+entschieden wurde** — LSG *navires à rames*, RIV *nave da remi*, aber im selben
+Vers steht `Schiff` mit seiner Bindung *navire · nave*. **Das neue Lemma weicht,
+die Bindung bleibt.**
+
+Kein neues Lemma fuer **`Wachtturm`** (32,14): der Bestand fuehrt `Wachturm`
+(21,8), die Doppelschreibung stammt aus dem **deutschen Quelltext**. Nach der
+30,11-Lehre (`jemanden in Ruhe lassen`) keine fuenfte Lemmaschreibung erfunden.
+
+### Kollisionen: gemeldet 6, gefunden 70
+
+| Kapitel | `hints.py` | selbst gefunden | aufgeloest | widerlegt |
+|---|---|---|---|---|
+| 31 | 1 | 15 | 3 | 12 |
+| 32 | 1 | 40 | 9 | 31 |
+| 33 | 4 | 15 | 11 | 4 |
+
+Die lehrreichsten:
+
+- **31,1 `verlassen` ↔ `vertrauen`** — spanisch beide *confiar en*. `sich
+  verlassen auf` weicht auf seine eigene zweite belegte Zeile *apoyarse en*, und
+  **LSG schreibt „s'appuient sur", RIV „s'appoggian su"** — genau dieses Bild.
+- **31,1 `nach` ↔ `auf`** darf franzoesisch **nicht** aufgeloest werden: `auf`
+  auf *à* zu setzen liesse `vertrauen auf` mit `sich verlassen auf` = *se fier à*
+  im selben Vers kollidieren. **Eine Auflösung kann eine zweite Kollision
+  erzeugen** — dasselbe erlebte Kapitel 33 mit `man` (*uno* kollidierte prompt
+  mit `ein`).
+- **33,10 hat sechs Aufsteh-Verben** in einem Vers (drei Mehrwoerter, drei
+  Einzelverben) — in allen vier Sprachen bereits getrennt.
+- **31,3 `ist` ↔ `wird`** ist in **allen vier** Sprachen identisch und bleibt
+  stehen: beides sind harte Bindungen (Kopula 2617×, Passiv-`wird` 85×), und die
+  Identitaet ist eine Eigenschaft der Zielsprachen, kein Glossenfehler.
+
+### Drei Warnungen fuer Paket 13, vom Agenten fuer Kapitel 33 hinterlassen
+
+- **34,4 hat `verwelkt` und `verdorrte` im selben Vers** — das Paar aus 33,9; die
+  englische Auflösung traegt unveraendert.
+- **35,1 und 35,6 stellen `Wüste` und `Steppe` zusammen.** `Steppe` traegt
+  englisch *wilderness* und kollidiert dort mit `Wüste`. In 33,9 gab es keine
+  Kollisionsstelle, deshalb unangetastet — **in 35 muss entschieden werden.**
+- **35,2** nimmt `Libanon`, `Karmels` und `Scharons` in eine Zeile; die Reihen
+  stehen in 33,9.
+
+### Ausgabenbefunde
+
+- **Fuenf neue RIV-Setzfehler** (31,2 · 31,3 · 32,8 · 32,10 · 33,23), nachgetragen.
+  **31,2 „de' alvagi" ist die dritte Auflage der blinden Klasse:** verschluckter
+  Anlaut an einem **kleingeschriebenen Gemeinwort** — weder fuer die
+  Eigennamensuche noch fuer die Grossschreibungsheuristik sichtbar.
+- **Das Rohbyte 0x85 ist erledigt** — 46 Stellen in 13 Buechern, in beiden Kopien
+  ersetzt. Gegenprobe ueber alle fuenf Editionen: null verbleibende Steuerbytes,
+  keine weiteren Mojibake-Folgen. Zwei der 46 fielen mit einem verschluckten
+  Anlaut zusammen (Hiob 11,8, Hes 23,43); die uebrigen 44 Folgewoerter sind
+  einwandfrei, die Defekte haengen also nicht zusammen.
+- **Die `Nachtwache`-Klasse dreiundzwanzigmal** in einem Paket. Die schaerfste:
+  **33,8 `Zeugen`** — **alle vier Ausgaben lesen „Staedte"**.
+- **RV setzt in allen drei Kapiteln `ustedes`-Formen** gegen die Buchkonvention
+  `vosotros` (31,6 · 32,9–12 · 32,20 · 33,11 · 33,13) — und **macht in 31,6 aus
+  dem Vokativ „ihr Kinder Israel" ein Subjekt**.
+- **RV 33,14 vertauscht die beiden Verben** gegenueber dem Deutschen (*vivir* fuer
+  `wohnen`, *habitar* fuer `bestehen`). Ohne Folge, weil wortweise glossiert wird
+  — aber die Stelle, an der ein Abschreiben nach der Ausgabe verrutscht waere.
+- **Versgrenzen: kein Versatz in allen drei Kapiteln.**

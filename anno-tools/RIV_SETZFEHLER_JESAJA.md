@@ -94,6 +94,11 @@ Klasse ab; die uebrigen findet nur, wer die Ausgabe liest.
 | 30,8 | perché **rimangono** per i dì a venire | *rimangano* (Konjunktiv nach finalem *perché*) | Modus |
 | 30,22 | le getterete **vie** come una cosa impura | *via* | Tippfehler |
 | 30,30 | **nel suo furore della sua ira** | doppeltes Possessiv | Doppelung |
+| 31,2 | la casa de' **alvagi** | *malvagi* | **Anlaut, kleingeschriebenes Gemeinwort** |
+| 31,3 | l'Eterno stenderà **a** sua mano | *la sua mano* | Anlaut, Funktionswort |
+| 32,8 | forma **nobile** disegni … a pro di **nobile** cose | *nobili* (zweimal) | Numerus |
+| 32,10 | Fra **una** anno e qualche giorno | *un anno* | Kongruenz |
+| 33,23 | prenderanno parte **la** saccheggio | *al saccheggio* | falsche Praeposition |
 
 ## Ein Fehlalarm, den ich selbst gemacht habe
 
@@ -165,7 +170,18 @@ Nachgezaehlt ueber alle italienischen Dateien: **46 Vorkommen in 13 Buechern**
 (Hiob 11, Jesaja 11, Sprueche 6, Prediger 3, Hosea 3, Psalmen 2, Klagelieder 2,
 Hesekiel 2 und weitere).
 
-**Das gehoert in die Datenpflege, nicht in die Glossen** — der Bibeltext, den die
+**Erledigt am 02.09.2026.** Alle 46 Stellen sind in beiden Kopien (App und
+Quellbestand) durch „…" ersetzt; die Gegenprobe ueber alle fuenf Editionen und
+den ganzen Steuerbereich 0x80–0x9F ergibt **null** verbleibende Vorkommen, und
+es gibt in keiner Edition weitere Mojibake-Folgen (`â€`, `Ã`, `Â`, U+FFFD).
+
+**Zwei der 46 Stellen fielen mit einem verschluckten Anlaut zusammen** — Hiob
+11,8 „**ome** le conosceresti" (*come*) und Hes 23,43 „**roprio** con lei"
+(*proprio*). Die uebrigen 44 Folgewoerter sind einwandfrei, die beiden Defekte
+haengen also nicht zusammen. **Nicht angefasst:** verschluckte Anlaute sind die
+Klasse, die dieses Dokument katalogisiert statt korrigiert.
+
+Der urspruengliche Befund lautete: das gehoert in die Datenpflege, nicht in die Glossen — der Bibeltext, den die
 App anzeigt, ist betroffen, die Annotation nicht. Als eigene Aufgabe abgelegt;
 dabei ist auch zu pruefen, ob dieselbe Klasse in den anderen drei Ausgaben
 vorkommt und ob weitere Windows-1252-Bytes undekodiert stehen (0x91–0x94 fuer
