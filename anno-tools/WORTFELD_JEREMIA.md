@@ -2888,3 +2888,130 @@ ciambellano* · Mehrwoerter `herabwälzen` B2 · `heranziehen lassen` B2 ·
 
 `Schreck` B2 ist bewusst gegen `Schrecken`, `Entsetzen` und `Grauen` abgesetzt
 — vier deutsche Woerter desselben Feldes, vier Reihen.
+
+## 19. Paket 18 (Kap. 52) — der geschichtliche Anhang, und das Buch ist fertig
+
+**34 Verse, 817 Einzelwort- und 35 Mehrwort-Eintraege.**
+
+**Jeremia ist vollstaendig: 52 Kapitel, 1364 Verse, 36 972 Eintraege,
+3123 verschiedene Lemmata, 1452 Mehrwoerter.** `validate.py` rechnet die
+35 638 Tokens der Paketplanung Zeichen fuer Zeichen nach: 35 520 Einzeleintraege
+plus 118 alleinstehende Satzzeichen, **0 Befunde**.
+
+### Die Warnung, die diesmal in die andere Richtung ging
+
+`vorbereitung.py` meldet fuer Kap. 52 Aehnlichkeiten bis **0.96** (52,1 ←
+2Koen 24,18) und **0.95** (52,32 ← 2Koen 25,28). Ich habe **alle fuenfzehn
+Paare vor dem Prompt Zeichen fuer Zeichen verglichen: kein einziges ist
+identisch.** Der l1912mod hat Jeremia und 2. Koenige unabhaengig voneinander
+modernisiert — `Streitmacht` gegen `Heer`, `Tempel` gegen `Haus des HERRN`,
+`fahrbare Kesselwagen` gegen `Gestelle`, `Befehlshaber` gegen `der Oberste der
+Leibwache`. **52,7 weicht sogar im Inhalt ab**: dort fliehen die Soldaten „in
+Richtung der Araba", in 2Koen 25,4 flieht der Koenig „in Richtung der Ebene".
+
+Nach zwei Paketen, in denen die Vorbereitung fremde Vorlagen zu Unrecht
+**ausgeschlossen** hatte (Paket 13) oder zu weit gefasst hatte (Paket 15/16),
+war das der umgekehrte Fehler, den es zu vermeiden galt. Der Agent hat
+bestaetigt: die *wortgleichen Spannen* sind Feld fuer Feld identisch, die
+Verse als ganze nicht.
+
+**Jeremia 39 gewinnt gegen 2. Koenige 25**, wo beide auseinandergehen —
+94 verglichene Felder gegen Kap. 39, **null Abweichungen**. `der Oberste der
+Leibwache` steht achtmal und ist maschinell auf Feldgleichheit geprueft.
+
+### Die neunte Zweitschreibung
+
+**`Ewil-Merodach` ist keine Neupraegung.** Der Bestand fuehrt
+**`Evil-Merodach` A1** (2Koen 25,27) — derselbe Koenig, nur mit `v` statt `w`.
+Mein Prompt hatte `Merodach-Baladan` und das in Paket 17 gepraegte `Merodach`
+als Modell genannt und den eigentlichen Vorlaeufer uebersehen.
+
+Damit steht die Reihe bei **neun**: `Paschhur`/`Pashur` · `Betlehem`/`Bethlehem`
+· `Hananel`/`Hananeel` · `Kaftor`/`Kaphthor` · `Anakiter`/`Enakiter` ·
+`Teman`/`Theman` · `Ben-Hadad`/`Benhadad` · `Aschkenas`/`Askenas` ·
+`Ewil-Merodach`/`Evil-Merodach`. **Der l1912mod modernisiert Eigennamen in
+Jeremia systematisch anders als in den aelteren Buechern.** Das gehoert in die
+Vorbereitung jedes weiteren Buches.
+
+### Die zwoelf Geraetenamen
+
+52,18 und 52,19 haeufen `Kessel` · `Schaufel` · `Messer` · `Sprengschale` ·
+`Pfanne` · `Becher` · `Feuerpfanne` · `Leuchter` · `Schale` · `Opferschale`,
+dazu `Gestell` und `Meer`. **Alle zwoelf tragen paarweise verschiedene Reihen
+in allen vier Sprachen**; `glosskollision.py` meldet null inhaltliche Paare.
+Neu waren nur `Feuerpfanne` C1 (nach `Kohlenpfanne`, 2Mo 27,3) und
+`Opferschale` C1.
+
+### Der Abschluss-Durchgang ueber das fertige Buch
+
+Nach dem letzten Bau sind alle Laeufe ueber alle 52 Kapitel wiederholt worden:
+
+    validate        0 Befunde, Gegenrechnung stimmt
+    qa              0 Verdachtsfaelle
+    hilfsverb       0 Treffer
+    levelcheck      0 Abweichungen  (mit Kapitelnummern 1…52)
+    mehrwort        1 Verdachtsfall — der dokumentierte `al sicuro` in 32,37
+    sweep           9 Verdachtsfaelle, alle in ihren Kapiteln als Fehlalarm geprueft
+    glosskollision  16 inhaltliche Paare
+
+Die 16 Kollisionspaare sind einzeln am Vers angesehen worden. **Fuenfzehn sind
+echte Verschmelzungen der Zielsprachen und nicht aufloesbar:**
+
+* **romanisch deckt `tun` und `machen` mit einem Verb ab** (32,20 — *hecho ·
+  fait · fatto*), und **`Sünde`/`gesündigt` fallen in allen drei romanischen
+  Sprachen zusammen**, weil das Partizip mit dem Substantiv homograph ist
+  (16,10 — *pecado · péché · peccato*);
+* `all`/`ganz` in drei Sprachen (7,15 · 26,8 · 26,12);
+* franzoesisch *été* fuer `Sommer` und `worden` (8,20), *Va* fuer `Geh` und
+  das Futurhilfsverb (34,2), *étrangers* fuer Substantiv und Adjektiv (5,19);
+* englisch *rain* fuer `Regen` und `regnen` (14,22);
+* italienisch `di'` neben `di` an vier Stellen (14,17 · 22,2 · 25,28 · 43,10)
+  — nach der Korrektur aus Paket 15 buchweit einheitlich und vom Bestand
+  toleriert.
+
+**Einer war aufloesbar und ist aufgeloest:** **4,22** trug `töricht` und
+`unverständige` englisch beide auf *foolish*. `unverständig` ist mit 7 Belegen
+das schwaecher gebundene Wort (`töricht` 18) und **fuehrt *senseless* bereits
+als zweite Bestandslesart** — genau, was die Regel verlangt. Geaendert nur an
+der Kollisionsstelle, nur im Englischen. Der Vers stammt aus Paket 2 und hat
+alle sechzehn folgenden Einsammlungen ueberstanden.
+
+### `spricht der HERR`: der Endstand
+
+**188 `dit` zu 149 `parle`** ueber das ganze Buch. Kapitel 52 enthaelt die Form
+`spricht` kein einziges Mal — der Stand nach 51 Kapiteln ist der Endstand.
+
+Das Muster, das Kapitel 49 zuerst rein gezeigt hat, traegt durch: **`parle`
+steht dort, wo LSG „Ainsi parle l'Éternel" schreibt** (die einleitende
+Botenformel), **`dit` bei der nachgestellten Formel „dit l'Éternel"**. Die
+Voelkersprueche kehren das Mengenverhaeltnis um — Kapitel 46 steht 6 : 0 fuer
+`dit`, das einzige Kapitel des Buches, in dem LSG ausschliesslich `dit`
+schreibt.
+
+### Die Levelverteilung des fertigen Buches
+
+    A1  24 713      B1   3 380      C1   1 582
+    A2   3 936      B2   3 319      C2      42
+
+### Neue Lemmata des letzten Pakets (9)
+
+`Ewil-Merodach` A1 · `Feuerpfanne` C1 · `Opferschale` C1 · `Handwerkervolk` C1
+*artisan people · pueblo de artesanos · peuple d'artisans · popolo di
+artigiani* (**keine der vier Ausgaben uebersetzt „Handwerker-"** — alle vier
+schreiben nur „Rest der Menge"; entschieden hat allein das Deutsche) ·
+`Verschleppung` C1 (vom Prompt nicht genannt; sauber getrennt von
+`Gefangenschaft` C1 *captivity* und `Verbannung` C1 *exile*, die beide im
+selben Kapitel stehen) · drei Zahlwoerter · Mehrwort `in Flammen aufgehen
+lassen` C1.
+
+### Was zum Schluss offen bleibt
+
+`konsistenz.py 24` meldet **53 Abweichungen von der Bestandsmehrheit** — das
+sind durchweg Numerus- und Tempusunterschiede gegenueber anderen Buechern, die
+in diesem Buch richtig sind. Die eigentliche Nacharbeit steht in den
+Kandidatenlisten der Abschnitte 13 bis 18: die Wortpaare mit identischen
+Reihen (`Bewohner`/`Einwohner`/`Einwohnerin`, `Rache`/`Vergeltung`,
+`Gericht`/`Urteil`, `zerschlagen`/`zerschmettern`, `wüst`/`öde`,
+`Ödnis`/`Verwüstung`, `Kornspeicher`/`Kornhaus`, `fortschleppen`/`fortschleifen`,
+`Weingärtner`/`Weinbauer`, `Ackerbauer`/`Ackermann`), die neun
+Zweitschreibungen, und die korpusweite Artikelfrage in `in die Hand geben`.
