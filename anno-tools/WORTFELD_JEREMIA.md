@@ -525,3 +525,155 @@ altars · altares vergonzosos · autels de honte · altari dell'infamia* ·
 alle vier Ausgaben schreiben *Amen*) · `Fußgänger` B2 · `mithalten` B2 ·
 `anbrüllen` B2 · `gesprenkelt` C1 · `Zornglut` C1 *fierce anger · ardiente ira ·
 colère ardente · ardente ira* — **die `Zornglut`-Formel kehrt in 25,37 wieder.**
+
+
+## 6. Paket 5 (Kap. 13 · 14 · 15) — die Schwert-Hunger-Pest-Formel
+
+70 Verse, 1894 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, 52 Zeilen in B ohne Befund.
+
+### Die Formel, die das halbe Buch traegt
+
+Kapitel 14 hat sie fuenfmal (14,12 · 14,13 · 14,15 zweimal · 14,16 · 14,18),
+maschinell nachgerechnet **Feld fuer Feld identisch**:
+
+| Wort | Level | en · es · fr · it |
+|---|---|---|
+| `Schwert` | B1 | sword · espada · épée · spada |
+| `Hunger` | A2 | hunger · hambre · faim · fame |
+| `Pest` | B2 | pestilence · pestilencia · peste · pestilenza |
+
+Dazu einheitlich `durch` A2 *by · por · par · per* · `umkommen` B2 *perish ·
+perecer · périr · perire* · `vernichten` B2 *destroy · destruir · détruire ·
+distruggere*. **15,2 hat die erweiterte Fassung** mit `Tod` A2 *death · muerte ·
+mort · morte* und `Gefangenschaft` **C1** *captivity · cautividad · captivité ·
+cattività* (der Auftrag hatte B2 behauptet, der Bestand hat 33 Belege unter C1).
+Der Rahmen: `wer` A1 *whoever · el que · celui qui · chi* · `bestimmen` B2
+*destined · destinado · destiné · destinato* — `bestimmt ist` ist eine
+Passivklammer, **kein Mehrwort**. Gilt fuer 21,7 · 21,9 · 24,10 · 27,8 ·
+29,17 · 32,24 · 43,11.
+
+### Die Botenformel in dritter Wortstellung
+
+Das Buch hat jetzt drei Fassungen mit denselben Feldern:
+
+| Stelle | Wortlaut |
+|---|---|
+| 1,4 = 2,1 | `Das Wort des HERRN erging an mich` |
+| 7,1 = 11,1 | `Das/Dies ist das Wort, das vom HERRN an Jeremia erging` |
+| **13,8** | `Da erging das Wort des HERRN an mich` |
+
+13,8 ist **woertlich gleich mit 18,5 und 24,4**; 13,3 ist dieselbe Reihe plus
+`zum zweiten Mal` A2 *for the second time · por segunda vez · pour la deuxième
+fois · per la seconda volta* (aus Jer 1,13) und Vorlage fuer neun weitere
+Stellen. Beide stehen vollstaendig in `ch13.json`; pos 0-5 sind maschinell als
+identisch nachgerechnet. `Da` traegt *Then · Entonces · Alors · Allora*.
+
+**14,1 ist trotz gleichem Anfang keine `ergehen`-Formel** — dort steht `sagte`.
+Der Agent hat das am Quelltext bestaetigt und die 7,1-Reihe nicht angewandt.
+
+### Zwei Dubletten, die maschinell nachgerechnet sind
+
+* **14,19 gegen 8,15**: alle **14 gemeinsamen Felder identisch** (8,15 pos 0-7 →
+  14,19 pos 19-26, 8,15 pos 12-17 → 14,19 pos 30-35). Die Mitte ist **nicht**
+  abgeschrieben: 14,19 hat `wir hofften auf Heilung` statt `auf eine Zeit der
+  Heilung`, und traegt damit den `hoffen auf`-Mehrworteintrag **zweimal**.
+* **15,20 gegen 1,19**: **18 von 20 gemeinsamen Positionen identisch**, genau
+  die zwei erwarteten Abweichungen — pos 11 `sie` (satzinitial gegen
+  satzintern, nur Grossschreibung) und pos 19 **`überwältigen` C1 *overpower ·
+  vencer · vaincre · vincere*** statt `besiegen` B2. Die Bestandsreihe von
+  `überwältigen` (1Mo 32,26) deckt sich Wort fuer Wort mit RV/LSG/RIV.
+
+### 15,13-14 → 17,3-4: die naechste Vorlage steht bereit
+
+Beide Verse vollstaendig in `ch15.json`. Tragend: `preisgeben` C1 *give over ·
+entrego · livre · consegno* (Mehrwort mit `parts`, Einzel-`preis` C1 *over · a
+merced · en proie · in preda*) · `Reichtum` B2 · `Schatz` B1 · `Bezahlung` B1 ·
+`Gebiet` B1 *region · región · région · regione* (101 Belege, gegen die
+Ausgaben durchgehalten) · `ausliefern` C1 · `entfachen` B2.
+
+### Ein Fehler, den kein Pflichtlauf sehen kann: dasselbe Wort zweimal im Kapitel
+
+**`Gürtel` stand in 13,1 spanisch als *cinto*, in den sieben uebrigen
+Vorkommen derselben Szene als *cinturón*.** `glosskollision.py` sieht nur
+innerhalb eines Verses, `paketcheck.py` nur zwischen Kapiteln — eine
+Uneinheitlichkeit **innerhalb** eines Kapitels faellt durch beide Netze und ist
+beim Einsammeln von Hand gefunden worden. Vereinheitlicht auf *cinturón*: das
+schreiben alle vier Ausgaben, und die 24 *cinto*-Belege des Bestands sind der
+gewebte Priestergürtel aus 2. Mose 28, ein anderes Sachfeld. **Beim Einsammeln
+jedes Pakets kuenftig ein Lemma, das im Kapitel oft vorkommt, gegen sich selbst
+pruefen.**
+
+### Die Form-gegen-Lemma-Falle: sechs weitere Faelle in einem Paket
+
+Von den als „unbelegt" gemeldeten Formen waren **die meisten laengst als Lemma
+da**: `Felsspalte` C1 (6 Belege, nur im Plural flektiert — 13,4 hat den
+Singular und bekommt *rock crevice · hendidura de la roca · fente d'un rocher ·
+fenditura d'una roccia*), `Königinmutter` B2 (1Kön 15,13; der Quelltext
+schreibt den Bindestrich, der Bestand nicht), `Junges` B2 (24 Belege),
+`wertvoll` B1, `wahrlich` B2, `unterscheiden` B2, dazu in Kapitel 14 acht von
+elf gemeldeten Formen. **Wirklich neu waren nur fuenf Woerter im ganzen
+Paket.**
+
+### Vier Woerter, bei denen der Vers gegen die Korpusmehrheit entschieden hat
+
+* **`Retter` (14,8)**: `BINDUNGEN_AT` bindet auf *deliverer · libertador ·
+  libérateur · liberatore* — das sind die Richter-Belege, der menschliche
+  Befreier. 14,8 meint Gott, alle vier Ausgaben schreiben *Savior*, und der
+  Bestand hat diese Reihe 17-mal (Jes 49,26). **Die Bindung gilt fuer dieselbe
+  Bedeutung, nicht fuer dieselbe Buchstabenfolge.**
+* **`heißen` (13,6)** heisst hier „befehlen"; der Bestand hat 96× *was called*
+  und keine Befehls-Lesart, alle vier Ausgaben schreiben *commanded*.
+* **`sitzen` (13,11)** ist das Sitzen eines Kleidungsstuecks → *fits · se
+  ajusta · s'ajuste · aderisce*; drei Verse spaeter (13,13, Thron) traegt
+  dasselbe Lemma die gewoehnliche Lesart.
+* **`Verlangen` (13,27)**: alle vier Ausgaben lesen dort *neighing*, der
+  l1912mod schreibt `Verlangen`. Nach dem deutschen Text glossiert — das in
+  Paket 3 gepraegte `Wiehern` C1 kommt hier **nicht** vor.
+
+### Befunde im Bestand
+
+* **`Gürtel` B1 hat zwei spanische Reihen** (*cinto* 24 gegen *cinturón* 4) bei
+  gleicher Bedeutung — s. o., Kandidat fuer eine korpusweite Angleichung.
+* **`ach` traegt im Buch zwei Reihen**: 1,6 *Oh · Ay · Ah · Ah* (Korpusmehrheit,
+  25 Belege) gegen 4,10 *Ah · Ay · Ah · Ahi*. 14,7 und 14,13 folgen 4,10, weil
+  14,13 dessen woertlicher Zwilling ist. Kandidat fuer eine Angleichung.
+* **`Verfolger` C1 steht 14 : 2 auf *pursuers***, die zwei *persecutor*-Belege
+  sind NT. In 15,15 schreiben **alle vier Ausgaben** die Verfolgungs-Lesart;
+  genommen ist die AT-Bindung, weil Ps 7,2 / 31,16 / 35,3 dieselbe Sache
+  meinen. Zur Pruefung gemeldet.
+* **`Gefallen haben` und `Gefallen haben an`** sind zwei Lemmata fuer dieselbe
+  Wendung, **`kein mehr` laeuft unter vier Lemmaschreibungen**, und
+  **`Bewohner`/`Einwohner`**, **`Erbarmen`/`Mitleid`**, **`Scham`/`Schande`**,
+  **`hadern`/`streiten`** fallen paarweise zusammen. Die vier letzten stehen je
+  in **einem** Vers zusammen (13,13 · 13,14 · 15,9 · 15,10) und sind dort ueber
+  eine zweite Bestandslesart aufgeloest — nie korpusweit.
+
+### Befunde in den Ausgaben
+
+* Vier RIV-Anlautfehler (13,9 · 15,2 · 15,4 und in 14,4 ein fehlender Akzent
+  „e" statt „è"). **Kapitel 14 ist das erste Kapitel des Buches ohne einen
+  echten Anlautfehler.**
+* **RIV traegt in 15,21 den Versmarker „(15:20)"** — es zaehlt 21 als
+  Fortsetzung von 20. Der Text ist vollstaendig und am richtigen Platz, **kein
+  Versatz**, nur ein Zaehlartefakt des Imports.
+* **RV1909mod siezt auch in 13,15-17** (*Escuchen*, *ustedes esperarán*),
+  waehrend der Bestand im ganzen Buch *vosotros* fuehrt — dieselbe Beobachtung
+  wie fuer Kapitel 10. Gefolgt ist dem Bestand.
+* LSG liest in 14,2 `Tore` als *villes*, in 14,6 `Schakale` als *serpents*, und
+  steht in 13,20 im Singular, wo alle anderen den Plural haben.
+
+### `spricht der HERR`: Stand nach 15 Kapiteln
+
+**54 `dit` zu 37 `parle`**. Kapitel 13 steht 3 : 4, Kapitel 15 4 : 2, Kapitel 14
+1 : 1 — die Schwankung der Ausgabe setzt sich fort.
+
+### Neue Lemmata des Pakets (11)
+
+`verrottet` C1 *rotted · podrido · pourrie · marcita* (keine Ausgabe trifft das
+deutsche Wort ausser RV) · `Wüstenwind` C1 · `hochheben` B1 · `Kuschit` B2
+(Reihe vom Bestandslemma `Kuschiter`) · `umherschweifen` C1 *to wander · andar
+errantes · courir çà et là · andar vagando* (bewusst gegen `umherirren` C1
+abgesetzt) · `umherliegen` C1 · `Geschwächter` B2 · `fürs` A1 (nach dem Muster
+`zum`/`vom`/`im`/`zur`/`am`) · dazu die Mehrwoerter `zum zweiten Mal` A2 und
+`hereinbrechen lassen` B2.
