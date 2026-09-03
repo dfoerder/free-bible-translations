@@ -1633,3 +1633,178 @@ venta · contrat d'acquisition · atto di compra* · `Vorkaufsrecht` C1 ·
 C1 · `ausmessen` C1 · `ungezähmt` C1 · `Lieblingskind` C1 *darling child · niño
 querido · enfant de mes délices · figlio prediletto* · `Wohnstatt` C1 ·
 `Reigen` C1 · `sich wehren` B2 · `aufrechterhalten` B2 · `erwachsen lassen` B2.
+
+## 13. Paket 12 (Kap. 34 · 35 · 36) — das Paket, in dem `paketcheck.py` Abschnitt A leer blieb
+
+**73 Verse, 2158 Einzelwort- und 72 Mehrwort-Eintraege.** Buchstand: 36 von 52
+Kapiteln, 928 Verse, 25 248 Eintraege.
+
+`paketcheck.py` meldete **0 + 39 + 0** — **Abschnitt A war zum ersten Mal in
+diesem Buch vollstaendig leer**: jedes neu gepraegte Lemma des Pakets traegt in
+allen drei Kapiteln dieselbe Reihe, ohne dass die Agenten voneinander wussten.
+Die 39 Faelle aus Abschnitt B waren bis auf einen Numerus, Tempus oder Genus.
+
+### Die Formelketten — alle maschinell nachgerechnet
+
+Das Paket schliesst die Botenformel des Buches ab. Sieben Ketten, jede Feld
+fuer Feld verglichen, **null Abweichungen**:
+
+    34,12  = 35,12 = 29,30 = 32,26          8 von 8 Feldern
+    34,1   pos 0-9   = 30,1 = 11,1
+    35,1   pos 0-9   = 30,1 = 11,1
+    35,1   pos 10-20 = 1,3 pos 2-12         die Datierung, woertlich
+    36,1   pos 1-10  = 25,1 pos 14-23       die Datierung
+    36,1   pos 11-17 = 27,1 pos 13-19       `erging dieses Wort vom HERRN an`
+    35,1   pos 13-20 = 36,1 pos 3-10        die beiden Datierungen gegeneinander
+
+`34,12` und `35,12` sind bei **zwei Agenten ohne Absprache** identisch
+zurueckgekommen. Damit stehen die Vorlagen fuer **37,6 · 42,7 · 43,8** fest;
+**36,27** traegt zusaetzlich dieselbe Reihe **ohne** einleitendes `Da`.
+
+Ein Befund an der Datierung: die engste Vorlage fuer `in der Zeit Jojakims, des
+Sohnes Josias, des Koenigs von Juda` ist **nicht 25,1 oder 32,1, sondern 1,3** —
+dort steht sie woertlich. Die Vorbereitungstabelle nannte sie nicht;
+`parallelen.py` meldet den Elf-Token-Block.
+
+### `Buchrolle` gegen `Rolle` — die Kollision steht im selben Vers
+
+Beide Woerter stehen in **36,28 und 36,32 nebeneinander** („eine andere
+Buchrolle … alle Worte der Rolle"), also musste getrennt werden:
+
+    Buchrolle  C1  book scroll · rollo de libro · rouleau de livre · rotolo di libro
+    Rolle      B1  scroll · rollo · rouleau · rotolo
+
+Entschieden hat wieder das deutsche Kompositum — dieselbe Regel wie bei
+`Volkstor` (Paket 6), `Scherbentor` (Paket 7) und `Wachhof` (Paket 11). WEB
+schreibt in 36,2 und 36,4 selbst *a scroll of a book*, RIV *un rotolo da
+scrivere*. `Buchrolle` steht elfmal, `Rolle` neunmal — die Auftragsangabe von
+acht traf keines der beiden.
+
+### `Hand` in `in die Hand geben` — eine buchweite Angleichung
+
+`mehrwort.py` meldete nach dem Bau **13 Verdachtsfaelle**, zwoelf davon
+`Hand` franzoesisch *mains*. Der Bestand ausserhalb Jeremias steht in genau
+dieser Wendung **68 : 11 auf *main*** — das deutsche Wort ist Singular, nur die
+franzoesische Wendung (*livrer entre les mains*) traegt den Plural. Das Buch war
+darauf abgedriftet, weil die Vorgabe im Prompt seit Paket 7 *mains* verlangte.
+
+Angeglichen sind **16 Eintraege** in acht Kapiteln — zwoelf innerhalb der
+Wendungsspanne (20,4 · 20,5 · 29,21 · 32,3 · 32,25 · 32,28 · 32,36 · 32,43 ·
+34,2 · 34,3 · 34,20 · 34,21) und vier deutsche Singulare ausserhalb jeder
+Wendung (32,24 · 32,28 · 34,3 · 34,21). Die Wendung selbst behaelt *entre les
+mains*. **`mehrwort.py` faellt damit von 13 auf 1**; der Rest (`Sicherheit` it
+*sicuro* in *al sicuro*) ist richtig, das italienische Idiom enthaelt das Wort.
+
+### Die Form-gegen-Lemma-Falle, dritter vorab gemeldeter Fall — bestaetigt
+
+`Spalte` in 36,23 liefert bei `belegt.py` das Verb `spalten` B2 mit 13 Belegen
+(*split · dividió · fendit · spaccò*) — plausibel und falsch, wie `wachst`
+(29,26) und `Erbrecht` (32,8). Der Vers meint die Kolumnen der Schriftrolle; die
+vier Ausgaben stehen 2 : 2 (RV *columnas*, RIV *colonne* gegen WEB *leaves*,
+LSG *feuilles*), entschieden hat das deutsche Wort:
+
+    Spalte  B2  columns · columnas · colonnes · colonne
+
+**Kapitel 34 hat die Falle fuenfmal am Stueck ausgeloest**: alle vier
+„unbelegten" Formen der Hinweisdatei waren falsch (`Bedingungen`→`Bedingung`,
+`Kalbes`→`Kalb`, `beigetreten`→`beitreten`, `hindurchgegangen`→`hindurchgehen`),
+dazu `Hofbeamter`. In Kapitel 35 waren **5 von 10** Meldungen falsch, in
+Kapitel 36 **sechs von zwanzig** reine Formfallen. Zusammen der bisher
+deutlichste Beleg, dass `hints.py` ohne `belegt.py` nicht zu gebrauchen ist.
+
+### Was die Eigenpruefung fand, die kein Pflichtlauf sieht
+
+Die Agenten haben ihre haeufigen Lemmata gegen sich selbst geprueft und vier
+echte Uneinheitlichkeiten behoben, die alle sieben Laeufe passiert haetten:
+`als` fr *lorsque*/*quand* (34,1 gegen 34,13) · `machen` es *hacer*/*convertir*
+(34,17 gegen 34,22) · `zu` fr *à redevenir* mit doppeltem „re-" (34,11) ·
+`seine` es *sus* vor einem Singular-Substantiv (36,31).
+
+Beim Einsammeln kam **`Jahr` in 34,14** dazu, der einzige echte Fall aus
+Abschnitt B: zwei Plurale **im selben Vers**, einer auf *ans*, einer auf
+*années*. Das Buch trennt sauber nach Numerus — Singular *année* (14×), Plural
+*ans* (6×) —, also ist *années* der Ausreisser. Korrigiert.
+
+### Befunde im Bestand
+
+* **`machen zu` B1 fehlt in 24,9 und 29,18**, steht aber in 25,9 und 25,18 bei
+  identischer Bauform. Der belastbarste Nachtragskandidat des Pakets.
+* **`der` vor `Gott Israels` traegt im Buch zwei italienische Reihen** — *il* an
+  20 Stellen, ***l'*** an sieben (9,14 · 13,12 · 16,9 · 21,4 · 23,2 · 25,15 ·
+  25,27). „l' Dio" ist falsches Italienisch; dieselbe Bauform wie der Fall 32,27
+  aus Paket 11. **Angleichungskandidat fuer die sieben Stellen.**
+* **`dem Land` steht 11 : 2** auf `the · el · le · il`; die zwei Ausreisser
+  (24,10 · 25,5) haben spanisch *la* vor dem maskulinen *país*.
+* **`Jaasanja`**: der Bestand fuehrt italienisch *Iaazania*, RIV schreibt an der
+  Bestandsstelle (2Koen 25,23) selbst *Jaazania* — dasselbe *Ie-/Ia-*-Muster wie
+  bei `Jechonja`/`Ieconia` aus Paket 8. Bestandsreihe genommen, Korrekturkandidat.
+* **`Vorhof` C1 und `Hof` B1 tragen dieselbe Reihe** *courtyard · patio · cour ·
+  cortile* und stehen in 36,10 und 36,20 — verschiedene Verse, nach der Regel
+  also nicht aufgeloest, nur gemeldet.
+* **`Fastentag` B2 (Jes 58,3) und `Fasttag`** sind zwei deutsche Woerter fuer
+  dieselbe Sache. Zusammenfuehrungskandidat.
+* **`ziehen` in `zur Rechenschaft ziehen` hat spanisch *traer*** gegen en
+  *draw* / fr *tirer* / it *trarre* (29,32) — in sich schief.
+  **Korrekturkandidat fuer 29,32**; in 36,31 kollidierte es und wich auf
+  *tirar* aus.
+* `weilen` C1, `Freilassung` B2 (ein einziger, neutestamentlicher Beleg),
+  `zerschneiden` B2 (ein Beleg), `aehnlich` B1 (ein Beleg), `vorsetzen` B2 und
+  `Raum` B1 sind sechs Kandidaten fuer zweite Bestandslesarten.
+* **`Schreiber` B2 traegt en *scribe* neben romanisch *secretario · secrétaire ·
+  segretario*.** Sieht uneinheitlich aus, ist gegen die Ausgaben aber richtig.
+* **Level:** `neunt` ist A2 (nicht A1), `ganz` A2, `entzuenden` C1, `ab` als
+  Verbpartikel A2 — alle vier von `levelcheck.py` gefunden.
+
+### Befunde in den Ausgaben
+
+* **RIV 36,1 hat einen echten Praepositionsfehler** — „questa parola fu rivolta
+  **all'Eterno** a Geremia", richtig waere *dall'Eterno*. Anderer Bautyp als die
+  bekannten Anlautfehler, und der erste seiner Art im Buch.
+* **Kapitel 34 und 35 haben keinen einzigen RIV-Anlautfehler**, Kapitel 36
+  gleich vier (`eremia` · `bdeel` · `oiakim` · `avide`). Damit sind acht der
+  36 Kapitel anlautfehlerfrei.
+* **RV 36,26 macht aus `dem Koenigssohn` einen Eigennamen** — „Jerameel hijo de
+  **Hamelec**". Nach dem Deutschen glossiert.
+* **RIV 36,26 schreibt „Sesaia" fuer `Seraja`**, wo die drei anderen Ausgaben
+  den Namen richtig fuehren. RIV 34,22 hat „contro **i lei**" statt *di lei*.
+* **34,3 lesen alle vier Ausgaben ganz anders als der l1912mod** („von Mund zu
+  Mund reden" gegen `von Angesicht zu Angesicht gegenueberstehen`), **34,5**
+  brennen sie Raeucherwerk, wo der deutsche Text nur `ein Feuer` hat, und
+  **34,17** lesen sie den Schluss in vier verschiedene Richtungen.
+* **RIV 36,8 laesst den Schlussteil aus** („nella casa dell'Eterno").
+* **LSG 36,7 dreht das Subjekt um** — „l'Éternel écoutera-t-il leurs
+  supplications", waehrend die drei anderen das Volk sein Flehen bringen lassen.
+* **RV1909mod siezt in Kapitel 34 und 35** (zwoelfte Meldung), **in Kapitel 36
+  erstmals seit langem nicht** — dort durchgehend *tú*.
+
+### `spricht der HERR`: Stand nach 36 Kapiteln
+
+Maschinell nachgezaehlt ueber alle 36 Kapitel: **138 `dit` zu 118 `parle`**.
+Die bisher handgefuehrte Summe (121 : 96 nach 33 Kapiteln) war abgedriftet —
+die Zaehlweise stimmt (Kap. 32 und 33 kommen exakt auf die notierten 3 : 6 und
+3 : 7), nur die Fortschreibung hatte `parle` untergezaehlt. Kapitel 34 steht
+4 : 5, Kapitel 35 1 : 4, Kapitel 36 0 : 2.
+
+### Neue Lemmata des Pakets (18)
+
+`Buchrolle` C1 · `Rolle` B1 · `Spalte` B2 · `Diktat` B2 *dictation · dictado ·
+dictée · dettatura* · `diktieren` B2 · `Schreibermesser` C1 *penknife ·
+cortaplumas · canif · temperino* · `Kohlenbecken` C1 *brazier · brasero ·
+brasier · braciere* · `Winterhaus` C1 · `Fasttag` B2 · `eingeschraenkt` C1 ·
+`Rechabiter` B2 *Rechabites · recabitas · Récabites · Recabiti* (nach der
+Gentiliz-Bauform `Ammoniter`/`Moabiter`/`Chaldaeer`) · `Gottesmann` B2 *man of
+God · hombre de Dios · homme de Dieu · uomo di Dio* · `Jehudi` A1 · `Kuschi` A1
+· `Jirmeja` A1 (zweite deutsche Form neben `Jeremia`) · `Habazzinja` A1 ·
+`Jigdalja` A1 · `Schelemja` A1 und `Jerachmeel` A1 (Reihen von `Selemja` bzw.
+`Jerahmeel` uebernommen, wie `Paschhur`/`Pashur` und `Hananel`/`Hananeel`).
+
+**Kapitel 34 hat kein einziges neues Lemma gebraucht** — jedes Wort hatte eine
+Bestandsvorlage.
+
+### Trennungen, die im Kapitel gehalten werden mussten
+
+`Freiheit` B1 gegen `Freilassung` B2 (34,8 gegen 34,15/17) · `Sklave` gegen
+`Sklavin`, das franzoesisch auf *servante* ausweicht (LSG schreibt es selbst so)
+· `Becher` gegen `Schale` in **35,5 im selben Vers**, in allen vier Sprachen
+getrennt, waehrend LSG die Zuordnung vertauscht · `sagen` it *parla* in 34,2
+gegen `von` *di* · `damit` auf *in order that* gegen `sodass` in 34,9.
