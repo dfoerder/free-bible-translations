@@ -2681,3 +2681,210 @@ Zu **`Madmen`**: alle vier Ausgaben schreiben den Namen, die
 „Carcass"-Ausnahme greift nicht — genommen ist *Madmen · Madmén · Madmen ·
 Madmen*, **obwohl die englische Schreibung mit dem Gemeinwort
 „madmen" zusammenfaellt.** Zur Kenntnis fuer eine spaetere Durchsicht.
+
+### Nachtrag: zwei weitere Aufrufe, die nicht so heissen, wie ich sie schreibe
+
+Nach `levelcheck.py` hat der Agent fuer Kap. 50 einen zweiten gefunden:
+
+    glosskollision.py --datei <buchNr> <kapitel> <datei.json>
+
+**`--datei` verlangt die Datei zwingend als dritten Positionsparameter.** In
+meiner Prompt-Kette stand `glosskollision.py --datei 24 50` ohne Datei. Der
+Unterschied zu `levelcheck.py` ist wichtig: dieser Aufruf **stuerzt laut ab**
+(`IndexError: list index out of range`) und kann deshalb nichts verstecken —
+`levelcheck.py 24` dagegen meldete still „0 Abweichungen".
+
+**Und die `Hand`-Regel war zu kurz formuliert.** Ich habe seit Paket 12
+geschrieben: „`Hand` traegt franzoesisch Singular *main*". Richtig ist:
+
+> **Das deutsche Singular `Hand` traegt fr *main*, auch innerhalb einer
+> Wendung, deren franzoesische Fassung den Plural fuehrt.
+> Der deutsche Plural `Hände`/`Händen` traegt *mains*** — im Korpus an
+> **allen 322 Stellen**, ohne eine einzige Ausnahme.
+
+Zwei Agenten haben die Verkuerzung unabhaengig gemeldet (Kap. 40 in Paket 14,
+Kap. 50 in Paket 17). In den Daten ist dadurch nichts falsch geworden; beide
+haben richtig entschieden und die Regel berichtigt statt sie zu befolgen.
+
+## 18. Paket 17 (Kap. 49 · 50 · 51) — das dublettendichteste Paket, und was die Kapitelnummer wert ist
+
+**149 Verse, 3673 Einzelwort- und 155 Mehrwort-Eintraege.** Buchstand: 51 von
+52 Kapiteln, 1330 Verse, 36 120 Eintraege. Nur Kapitel 52 fehlt noch.
+
+`paketcheck.py` meldete **0 + 111 + 0** — **Abschnitt A und C beide leer**, bei
+149 Versen und sieben paketinternen Paaren. Abschnitt B ist mit 111 der
+groesste des Buches, was bei drei langen Kapiteln zu erwarten war.
+
+### Was der richtige `levelcheck`-Aufruf sofort einbrachte
+
+Nach dem Befund aus Paket 16 trug jeder Prompt die Kapitelnummer. Das Ergebnis
+ist der beste Beleg dafuer, wie teuer der stille Fehlaufruf war:
+
+    Kap. 49   0 Levelfehler
+    Kap. 50   6 Levelfehler   (`fangen` A2 · `darum` B1 · `stark` A1 · `fest` A2 …)
+    Kap. 51  17 Levelfehler   (`ganz` A2 · `fallen` A1 · `sondern` B1 · `winden` C1 ·
+                               `erfüllen` B2 · `denken` A1 …)
+
+**Dreiundzwanzig echte Fehler in einem Paket**, alle von einem Lauf gefunden,
+der vorher immer „0 Abweichungen" gemeldet hatte. Der nachgeholte Lauf ueber
+alle 51 Kapitel meldet weiterhin null — die frueheren Pakete sind sauber, weil
+die Agenten den Aufruf ueberwiegend selbst richtig geschrieben haben.
+
+### Der groesste woertliche Block des Buches: 51,15–19 ← 10,12–16
+
+Maschinell Position fuer Position nachgerechnet: **10,13 = 51,16 (32
+Eintraege) · 10,14 = 51,17 (27) · 10,15 = 51,18 (17) · 10,16 = 51,19 (29)**,
+alle vier `identisch = True`. **51,15 ← 10,12** ist bis auf das eine Wort
+`aber` gleich (21 Eintraege, ab pos 1 Versatz −1). Kapitel 10 ist seit Paket 4
+fertig; nichts davon wurde neu entschieden.
+
+`51,52 ← 48,12` reicht **bis pos 11**, nicht nur bis pos 10 wie im Prompt
+angegeben — 48,12 pos 11 ist ebenfalls `ich`.
+
+### Die sieben paketinternen Paare — alle feldgleich
+
+Der Agent fuer Kap. 49 hat die Nachbardatei selbst gelesen und drei Felder
+angeglichen; vier Fragen blieben offen und sind beim Einsammeln am Bestand
+entschieden worden:
+
+    49,19 pos 4  `der` en   → *who*        (Korpus 1562 : 305 : 71)
+    49,19 pos 24 `den` es   → *a aquel*    (Korpus `aquel` 68 : `al` 23)
+    49,19 pos 28 `darüber`  → *dessus* / *sopra di essa*  (16 bzw. 7 gegen je 3)
+    49,20/30 `fassen`       → *taken · tomado · prise · preso*  (Korpus 15 : 0 fuer *formed*)
+    50,45 `über`            → die Kollisionsaufloesung aus 49,20
+
+Danach im Schlussteil von 49,20/50,45 noch fuenf Felder, alle an den
+Bestandszahlen entschieden (`wahrhaftig` es *ciertamente*, `selbst` es
+*incluso* 41:15, `klein` en *least* 6:1) — bis auf eines, das umgekehrt lief:
+**`über` nach `entsetzen` traegt fr *de* und it *di*** (Korpus 2:1), und
+*s'épouvanter **sur*** waere ohnehin kein Franzoesisch.
+
+**Ergebnis: 49,19 = 50,44 null Abweichungen ueber alle 45 Eintraege**,
+49,20/50,45 null im gemeinsamen Teil, 49,26 ↔ 50,30 feldgleich,
+49,18 ↔ 50,40 feldgleich.
+
+Der letzte Zwilling, **50,23 ↔ 51,41**, hatte vier Abweichungen und einen
+strukturellen Unterschied. Zwei der vier waren echte Fehler in 51,41:
+**`den Völkern` stand spanisch als *las* und italienisch als *le***, obwohl
+*pueblos* und *popoli* maskulin sind. Und **das Einzelwort `geworden` hatte die
+Glosse seiner Wendung aufgesogen** (*convertido* statt *vuelto*, Korpus 136) —
+derselbe Fall wie `setzen` in 39,8 aus Paket 13. Der strukturelle Unterschied:
+51,41 fuehrte das Bestands-Mehrwort **`werden zu`** (33 Korpusverse), 50,23
+nicht; es ist mit `parts` [11,13,15] nachgetragen.
+
+### Die Kollisionsregel, zweimal richtig angewandt und einmal begruendet ausgesetzt
+
+Der Agent fuer Kap. 49 hat **`fern` in 49,39 bewusst auf *lontano*
+zurueckgesetzt**, obwohl 48,47 dort *remoto* traegt — weil das *remoto* eine
+**kollisionslokale** Ausweichung gegen `weit` im selben Vers war und 49,39
+kein `weit` enthaelt. Dieselbe Regel auf `Hochmut` (49,16, zurueck auf
+*orgueil* statt des 48,29-*hauteur*) und auf `ewig` (49,33) angewandt.
+
+Bei **`höhnen` in 49,17 hat er sie ausdruecklich nicht angewandt** und
+begruendet, warum: der Bestand steht dort **1 : 1** (Ps 73,8 gegen Jer 19,8),
+und **alle vier Ausgaben lesen an beiden Stellen etwas Drittes** („zischen"),
+helfen also nicht. **Bei einem Patt entscheidet der buchinterne Zwilling.**
+Das ist die praeziseste Formulierung der Regel, die das Buch bisher hat.
+
+### Zwei weitere Zweitschreibungen — die Reihe wird laenger
+
+* **`Teman` ist unbelegt**, der Bestand fuehrt `Theman` A1 (11 Belege).
+* **`Ben-Hadad` (49,27) ist unbelegt**, der Bestand fuehrt `Benhadad` A1
+  (27 Belege) — **vom Prompt nicht genannt, vom Agenten gefunden.**
+* **`Aschkenas` (51,27) ist keine Neupraegung**: der Bestand fuehrt
+  **`Askenas` A1** (1Mo 10,3 · 1Chr 1,6). Auch das gegen den Prompt.
+
+Damit steht die Reihe bei sieben: `Paschhur`/`Pashur` · `Betlehem`/`Bethlehem`
+· `Hananel`/`Hananeel` · `Kaftor`/`Kaphthor` · `Anakiter`/`Enakiter` ·
+`Teman`/`Theman` · `Ben-Hadad`/`Benhadad` · `Aschkenas`/`Askenas`. **Der
+l1912mod modernisiert Eigennamen in Jeremia systematisch anders als in den
+aelteren Buechern** — das ist kein Einzelfall mehr, sondern eine Eigenschaft
+der Ausgabe.
+
+### Die Form-gegen-Lemma-Falle erreicht ihren Hoechststand
+
+    Kap. 49   11 von 17 „unbelegten" Formen hatten ein belegtes Lemma
+    Kap. 50   12 von 27
+    Kap. 51   23 von 40   ← ueber die Haelfte
+
+In Kapitel 51 waren von vierzig Meldungen **dreiundzwanzig** falsch, darunter
+`Chaldäa`, `Heiligtum`, `Getöse`, `verschonen`, `schärfen`, `vorlesen`.
+`hints.py` ist in diesem Register nicht mehr als ein Anfangsverdacht.
+
+Ein Fund, den **kein** Werkzeug meldet: **`wie von Sinnen` C1 ist ein
+Bestands-Mehrwort** (2Koen 9,20) samt der Zerlegung `von` = *out of* und
+`Sinn` B1 = *his senses*. Der Agent hat es nur gefunden, weil er die
+Belegstelle von `Sinn` aufgeschlagen hat.
+
+### Befunde im Bestand
+
+* **`Rache` B2 und `Vergeltung` C1 fallen in es/fr/it vollstaendig zusammen**
+  (*venganza · vengeance · vendetta*) — von zwei Agenten unabhaengig gemeldet.
+  Vierter Fall der Bauart aus Paket 16.
+* **`wüst` B2 und `öde` C1 tragen dieselbe Reihe**, zusammen mit
+  `Ödnis`/`Verwüstung` aus Paket 15 ein **Viererfeld mit Level-Widerspruch**.
+* **`Kornspeicher` (neu) und `Kornhaus` C1**, **`fortschleppen` (neu) und
+  `fortschleifen` C1**, **`herunterstürzen` (neu) und `hinunterstürzen` B2**,
+  **`Übergang` (neu) und `Furt` C1** — vier neue Wortpaare derselben Art.
+  Sie stehen nirgends im selben Vers, sind also nicht aufzuloesen, aber die
+  Liste der Zusammenfuehrungskandidaten waechst mit jedem Paket.
+* **`Über` als Spruchueberschrift laeuft auseinander**: 46,2 *Concerning ·
+  Acerca de · Sur*, 48,1 *About · Sobre · Au sujet de*. Kap. 49 hat die
+  Ueberschrift viermal und folgt 48,1. **Angleichungskandidat fuer 46,2.**
+* **46,13 pos 4 `das` traegt fr *qui* in einem Objektrelativsatz**, wo LSG
+  selbst *que* schreibt. Korrekturkandidat; 37,2 und 50,1 machen es richtig.
+* **46,10 glossiert `Herrn` klein**, waehrend die Korpusmehrheit (646 Belege)
+  gross fuehrt. Angleichungskandidat innerhalb des Buches.
+* **`Trinkgelage` ist nur scheinbar belegt**: ein einziger Beleg (Gal 5,21) in
+  der NT-Lasterlisten-Lesart. Ein Beleg ist keine Bindung — der Agent hat eine
+  zweite Lesart gepraegt statt die Lasterliste zu uebernehmen.
+
+### Befunde in den Ausgaben
+
+* **RIV1927 hat in Kapitel 51 sieben Fehler**, darunter einen neuen Bautyp:
+  **51,7 „han bevuto ***el*** suo vino" — ein spanischer Artikel im
+  italienischen Text.** `RIV_ANLAUTFEHLER.md` fuehrt diese Klasse noch nicht.
+  In Kap. 49 genau einer, in Kap. 50 keiner.
+* **RV1909mod siezt in allen drei Kapiteln durchgehend in den Imperativversen**
+  — Kap. 49 sieben Verse, Kap. 50 alle, Kap. 51 mindestens dreizehn.
+  Zwanzigste Meldung; gefolgt ist ueberall dem Bestand.
+* **51,1 `Leb-Kamai`: nur WEB transliteriert**, LSG liest „la Chaldée", RV und
+  RIV paraphrasieren. Nach dem deutschen Text als Name gepraegt.
+* **51,2 `Worfler` steht 2 : 2** — RV *aventadores* und LSG *vanneurs* gegen
+  WEB *strangers* und RIV *stranieri*.
+* **49,19/50,44 `wer fordert mich heraus`: vier Ausgaben, vier Bilder**, keine
+  liest „herausfordern". Entschieden hat die Bestandsbindung.
+* **49,25 kehrt LSG die Aussage um** („Elle **n'est pas** abandonnée").
+* **50,21 uebersetzt LSG beide Eigennamen** („le pays doublement rebelle"),
+  die drei anderen transliterieren — franzoesisch musste fuer `Meratajim` und
+  `Pekod` in eine Luecke hinein gepraegt werden.
+
+### `spricht der HERR`: Stand nach 51 Kapiteln
+
+**188 `dit` zu 149 `parle`.** Kapitel 49 ist das erste des Buches, in dem die
+Verteilung **rein syntaktisch** ist: alle fuenf `parle` stehen an
+`So spricht`-Stellen, alle vierzehn `dit` an der eingeschobenen Formel. Kapitel
+50 (8 : 2) und 51 (8 : 4) folgen demselben Muster.
+
+### Neue Lemmata des Pakets (35)
+
+**Kap. 49 (5):** `Tochterstadt` C1 · `Nachlesen` C1 · `herunterstürzen` B2 ·
+`Nachbarstadt` C1 · `fortschleppen` C1. Dazu die Zweitschreibungen `Teman` und
+`Ben-Hadad` und zwei zweite Lesarten (`besetzen` *occupy*, `was` *Why*).
+
+**Kap. 50 (10):** `Merodach` A1 · `Leitbock` C1 *he-goats · machos cabríos ·
+boucs · capri* (**alle vier Ausgaben glossieren nur „Bock"** — das „Leit-" hat
+keine) · `herumspringen` B2 · `dreschend` C1 · `aufscheuchen` C1 ·
+`Meratajim` A1 · `Pekod` A1 · `Kornspeicher` C1 · `Nachbarstadt` C1 ·
+`fortschleppen` C1.
+
+**Kap. 51 (20):** `Leb-Kamai` A1 · `Minni` A1 · `Aschkenas` A1 ·
+`zerstörerisch` C1 · `Worfler` C2 · `Durchbohrter` C1 · `verwitwet` C1 ·
+`Siegeslied` C1 · `Fahrer` B2 · `Zugtier` B2 · `Übergang` B2 · `Schreck` B2 ·
+`festtreten` B2 · `Köstlichkeit` B2 · `Löwenjunges` B2 · `zottig` C1 ·
+`Reisemarschall` C1 *quartermaster · jefe de intendencia · chambellan ·
+ciambellano* · Mehrwoerter `herabwälzen` B2 · `heranziehen lassen` B2 ·
+`sich auf die Lauer legen` C1. Dazu **neun zweite Lesarten**.
+
+`Schreck` B2 ist bewusst gegen `Schrecken`, `Entsetzen` und `Grauen` abgesetzt
+— vier deutsche Woerter desselben Feldes, vier Reihen.
