@@ -4080,3 +4080,93 @@ Kap. 63 (6): `Keltertreter` C2 · `spritzen` B2 · `ruhmreich` C1 · `Regung` C1
 dazu `im Sinn liegen` B2 · `versagt bleiben` C1.
 Kap. 64 (5): `siedend` C1 · `verharren` C1 · `sich aufraffen` C1 ·
 `rechnen mit` B2 · `kund werden` B2.
+
+## 30. Paket 24 (Kap. 65 · 66) — das letzte Paket, und `paketcheck.py` schlaegt zu
+
+49 Verse, 1477 Eintraege. **Damit ist Jesaja vollstaendig: 66 Kapitel, 1291
+Verse, 32 487 Eintraege.**
+
+### Abschnitt A war neun Pakete lang leer — und im zehnten nicht
+
+`paketcheck.py` hat in den Paketen 16 bis 23 keinen einzigen Fall gemeldet.
+Im letzten Paket meldet es einen, und es ist der `wackeln`-Fall in Reinform:
+
+| | en | es | fr | it |
+|---|---|---|---|---|
+| 65,4 `Schweinefleisch` | *pig meat* | carne de cerdo | *viande de porc* | carne di porco |
+| 66,17 `Schweinefleisch` | *pig's flesh* | carne de cerdo | *chair de porc* | carne di porco |
+
+Ein Kompositum, das der Bestand nicht kennt, von zwei Agenten gleichzeitig neu
+gepraegt — und keine Pflichtpruefung konnte es sehen. Entschieden haben die
+Ausgaben: **WEB schreibt an beiden Stellen „pig's flesh", LSG „chair de porc"**,
+also ist 65,4 angeglichen. Das Werkzeug, das aus Paket 15 entstanden ist, hat
+im letzten Paket des Buches genau das gefunden, wofuer es gebaut wurde.
+
+### Der Blockmesser misst zum vierten Mal zu wenig — und diesmal am staerksten
+
+**65,25 ← 11,9**, die einzige Vorlage des Pakets aus dem **ersten** Buchteil.
+Gemessen elf Positionen, alle elf identisch. Aber die Tierreihe aus **11,6–8**
+liefert **vierzehn weitere**, davon dreizehn Feld fuer Feld gleich —
+`Wolf`, `Lamm`, `weiden`, `Loewe`, `Stroh`, `fressen`, `Rind` samt der
+Nebenentscheidungen (`Rind` = *ox*, nicht *cattle*; `fressen` = *eat*, nicht
+*devour*). **Gemessen 11, woertlich gleich 24.**
+
+Und die eine bewusste Abweichung ist die schoenste Bestaetigung der
+Kollisionsregel im ganzen Buch: **`gemeinsam` steht in Jesaja 14-mal, und
+genau in den vier Versen, die zugleich `zusammen` tragen** (11,7 · 22,3 ·
+44,11 · 46,2), weicht es aus. 65,25 hat kein `zusammen` — also die Bindung. Der
+Agent hat das Buch dafuer ausgezaehlt.
+
+Dasselbe bei **66,1 ← Apg 7,49**: gemessen zwei Bloecke (10 + 9), getragen
+haben **19 von 20 Positionen**. Der Messer sieht zwei Bloecke nur, weil an
+Position 14 ein Wort abweicht (`meiner` gegen `fuer meine`).
+
+### Vier eingesammelte Vorlagen kommen an
+
+* **66,12 ← 52,3** (Paket 19) — Positionen 0–4 vollstaendig.
+* **66,12 ← 57,15** (Paket 20) — und die Warnung von damals war richtig: der
+  Messer gibt vier Tokens an, **drei tragen**. Position 3 ist neu gesetzt, weil
+  57,15 `der Hohe` hat (it `l'`) und 66,12 `der HERR` (it `il`).
+* **66,4 ← 50,2** (Paket 18) — vier Positionen, und `rief` faellt mit der
+  Reihe zusammen, die 65,12 unabhaengig gewaehlt hat. Beide Wege fuehren zum
+  selben Ergebnis.
+* **65,11 ← 51,1** (Paket 18) — vier Positionen, mit Josua 24,20 als zweiter
+  Vorlage fuenf von fuenf.
+
+### Drei Bestandsfehler, gefunden von den Kapiteln, die sie benutzten
+
+* **Hiob 36,9** trug `ihre` vor `Taten` als it `le loro`, waehrend das
+  Substantiv daneben als *atti* (maskulin) glossiert ist. RIV schreibt „la lor
+  condotta". Korrigiert.
+* **Jesaja 45,17** und **Sprueche 15,11** trugen vor `HERR` das italienische
+  `l'` — die letzten beiden Verletzungen der 2881 : 0-Regel im gesamten
+  Bestand. Beide korrigiert; eine Auszaehlung ueber alle Kapitelquellen findet
+  jetzt **null** Stellen.
+
+### Zwei meiner Vorgaben, wieder aus der falschen Quelle
+
+* **`Neumond`** hatte ich mit it *novilunio* angesetzt (RIVs Schreibung). Der
+  Bestand steht **18 : 0 auf *luna nuova***. Dieselbe Klasse wie `Priester`
+  in Paket 22.
+* **Sechs Levelangaben** meiner Vorgabetabelle waren falsch (`Lamm`, `Stroh`,
+  `Schlange`, `Rind`, `Traube` und `Himmel` im Numerus) — jedes Mal hat der
+  Bestand widersprochen, jedes Mal hat der Agent ihn genommen.
+
+### Die Bilanz der Prompt-Hinweise ueber zehn Pakete
+
+| Paket | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| widerlegt | 46 | 12 | 28 | 29 | 15 | 15 | 13 | 14 | 8 | 8 | 17 |
+
+Der Knick liegt bei Paket 18 — dort lief `promptcheck.py` zum ersten Mal
+**vor** dem Abschicken. Seither streicht die Maschine die Klasse „Wort steht
+gar nicht im Text" vorab, und was uebrig bleibt, sind Behauptungen ueber
+Woerter, die es gibt: Level, Numerus, Bedeutung. Die findet nur der Agent am
+Vers.
+
+### Neue Lemmata (13)
+
+Kap. 65 (6): `Ziegelaltar` · `Schweinefleisch` · `Fluchwort` · `Herzeleid`,
+dazu `sich suchen lassen` · `in den Sinn kommen`.
+Kap. 66 (7): `Schweineblut` · `liebkosen` · `Dromedar` · `Tubal` · `Jawan`,
+dazu `gebaeren lassen` · `dies alles`.
