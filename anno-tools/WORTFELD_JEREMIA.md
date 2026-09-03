@@ -1808,3 +1808,228 @@ Bestandsvorlage.
 · `Becher` gegen `Schale` in **35,5 im selben Vers**, in allen vier Sprachen
 getrennt, waehrend LSG die Zuordnung vertauscht · `sagen` it *parla* in 34,2
 gegen `von` *di* · `damit` auf *in order that* gegen `sodass` in 34,9.
+
+## 14. Paket 13 (Kap. 37 · 38 · 39) — das Paket, in dem die Vorbereitung widerlegt wurde
+
+**67 Verse, 1721 Einzelwort- und 76 Mehrwort-Eintraege.** Buchstand: 39 von 52
+Kapiteln, 995 Verse, 27 045 Eintraege.
+
+`paketcheck.py` meldete **2 + 48 + 0**. Beide Faelle aus Abschnitt A liessen
+sich an den Ausgaben entscheiden (s. u.), aus Abschnitt B war einer echt.
+
+### Der Befund des Pakets: 2. Koenige 25 ist die Vorlage von Jeremia 39
+
+**Die Vorbereitung hat das Gegenteil behauptet, und sie war falsch.** Ich hatte
+in `prep13.md` geschrieben, 2Koen 25 sei „keine brauchbare Vorlage" — gestuetzt
+auf **eine einzige** Aehnlichkeitszahl (0.35 fuer 39,5). Der Agent hat das
+Kapitel trotzdem aufgeschlagen und **fuenf Verse woertlich** vorgefunden. Alle
+fuenf sind nachgeprueft, jede Reihe steht dort:
+
+    2Koen 25,6  → 39,5    `Urteil sprechen` B2  passed sentence · dictó sentencia ·
+                          prononça la sentence · pronunciò la sentenza
+                          dazu `Urteil` B1 es *sentencia* (nicht *juicio*)
+    2Koen 25,7  → 39,6/7  `blenden` B2 · `Kette` B1 · die ganze Kausativklammer
+    2Koen 25,11 → 39,9    `Rest` B1 · `Überläufer` C1 · `übrig` B1, und das
+                          Vorbild `in die Verbannung führen` C1
+    2Koen 25,12 → 39,10   `arm` A2 *poorest* · `zurücklassen` B2
+    2Koen 25,21 → 39,6    `hinrichten lassen` B2 · `Hamat` A1
+
+**Fuer Paket 18 (Kap. 52) heisst das: 2Koen 25 zuerst aufschlagen.** Kap. 52 hat
+seine Dubletten in Jer 39 *und* in 2Koen 25; beide sind jetzt entschieden.
+
+Die Lehre fuer die Vorbereitung: eine einzelne Aehnlichkeitszahl aus
+`parallelen.py` traegt keine Negativaussage. Wo `PAKETE_JEREMIA.txt` eine
+fremde Parallele nennt, gehoert sie in den Prompt, auch wenn das Werkzeug
+schweigt.
+
+### Abschnitt A — zwei Neupraegungen, beide an den Ausgaben entschieden
+
+* **`Juchal`** — ch37 praegte *Jehucal · Jucal · Jucal · Jehucal*, ch38
+  *Jucal* viermal. Die Ausgaben widersprechen **sich selbst**: WEB und RIV
+  schreiben in 37,3 *Jehucal*, in 38,1 *Jucal*; RV und LSG beide Male *Jucal*.
+  Das deutsche Wort ist an beiden Stellen `Juchal`, also **eine Reihe**.
+  Genommen ist die an sechs der acht Ausgabenstellen belegte:
+  `Juchal` A1 *Jucal · Jucal · Jucal · Jucal*.
+* **`Benjamintor`** — ch37 *Benjamin Gate · Puerta de Benjamín*, ch38
+  *gate of Benjamin · puerta de Benjamín*. **WEB schreibt an beiden Stellen
+  „the gate of Benjamin"**, und die Bauform ist die von `Volkstor` C1
+  (*gate of the people · puerta del pueblo*), nicht die von `Ecktor`/`Rosstor`
+  (*Corner Gate*/*Horse Gate*). Genommen:
+  `Benjamintor` C1 *gate of Benjamin · puerta de Benjamín · porte de Benjamin ·
+  porta di Beniamino*.
+
+### Abschnitt B — die aufgesogene Glosse in 39,8
+
+Das Buch ist bei `in Brand setzen` an allen vier bisherigen Stellen (21,10 ·
+32,29 · 34,2 · 34,22) **doppelt einheitlich**: die Wendung traegt
+*prender fuego a · mettre le feu à · dare fuoco a*, und das Einzelwort `setzen`
+traegt daneben *set · poner · mettre · mettere*. In **39,8** hatte das
+Einzelwort die Glosse der Wendung aufgesogen (*prendieron · diedero*) — es
+und it standen damit fuer sich genommen auf „nahmen"/„gaben". Auf die
+Buchbindung angeglichen: *set · pusieron · mirent · misero*.
+
+Dieselbe Fehlerklasse wie die `Hand`/*mains*-Angleichung aus Paket 12, nur
+andersherum: dort sog das Einzelwort den **Numerus** der Wendung auf, hier ihr
+**Lexem**.
+
+**Die erste Passivfassung der Wendung** steht in 38,17 und 38,23 (`in Brand
+gesetzt`) und weicht bewusst auf ein anderes Lexem aus — *set on fire ·
+incendiada · brûlée · incendiata* —, weil das Passiv von *mettre le feu à*
+im Franzoesischen und Spanischen unbrauchbar ist. Beide Stellen tragen
+dieselbe Reihe; das Einzelwort `setzen` bleibt daneben *puesta · mise · messa*
+und damit beim Buchlexem.
+
+### Vier deutsche Woerter fuer die Haft, eines davon im selben Vers
+
+Kapitel 37 stellt vier Woerter desselben Sachfelds nebeneinander, und zwei
+davon **in 37,15 im selben Vers**:
+
+    Gefängnis      B1  prison · cárcel · prison · prigione      37,4 · 37,15 · 37,18
+    Kerker         C1  dungeon · calabozo · cachot · segreta    37,15
+    Kellerverlies  C1  basement cell · celda del sótano ·
+                       cellule souterraine · cella sotterranea  37,16
+    Wachhof        C1  court of the guard · patio de la guardia ·
+                       cour de la garde · cortile della guardia 37,21 (2×)
+
+Die Kollision `Gefängnis` ↔ `Kerker` ist ueber die **vorhandene zweite
+Bestandslesart** (Jes 42,7, *dungeon*) aufgeloest, nicht ueber eine
+Neupraegung — der sauberste Fall dieser Art im Buch. `Kellerverlies` musste
+dagegen gepraegt werden, weil **alle vier Ausgaben in 37,16 zwei Orte nennen**
+(„the dungeon house, and into the cells"), wo der l1912mod ein Wort setzt.
+
+### 38,18 und 38,23 — die paketinterne Dublette
+
+Feld fuer Feld identisch zurueckgekommen, ohne Abgleich:
+`du` · `selbst` B1 · `wirst` · `ihrer` (fr *leur*) · `Hand` (fr **Singular
+*main***, nach der Paket-12-Regel) · `nicht` · `entkommen` B2 (= 34,3).
+
+### Die Form-gegen-Lemma-Falle — drei von drei vorab gemeldet, alle bestaetigt
+
+* **`Vertrauten` (38,22)** — `belegt.py` fuehrt an erster Stelle das Verb
+  `vertrauen` (5× + 4× *trusted*); richtig ist das Substantiv `Vertrauter` C1
+  (5 Belege, Ps 55/88, Jes 42,19, **Jer 13,21**).
+* **`Aufstellung` (39,3)** — der einzige Beleg ist 2Mo 38,21 mit *inventory ·
+  inventario · inventaire · inventario*, die Bestandsliste. Gemeint ist das
+  Sich-Aufstellen; gepraegt als **zweite Lesart am selben Lemma**,
+  `Aufstellung` B2 *position · posición · position · posizione*, dazu das
+  Mehrwort `Aufstellung nehmen` B2.
+* **`Stich` (38,22)** — nicht das Stechen. Der Bestand fuehrt das Wort nur als
+  Teil dieser Redewendung, franzoesisch aber **in zwei Lesarten, die mit dem
+  Verb korrelieren**: *plan* zu `im Stich lassen` = *abandonner* (3 Belege),
+  *embarras* zu *laisser tomber* (2). Genommen ist die Mehrheitsseite.
+
+**Die Trefferquote von `hints.py` ist weiter zu schlecht, um ihr zu glauben:**
+Kapitel 37 **1 von 8** falsch, Kapitel 38 **9 von 16**, Kapitel 39 **3 von 12**.
+
+### Zwei Namen, die einander aehneln — die Trennung hat gehalten
+
+Der Bestand fuehrt **drei** Lemmata mit demselben Stamm: `Kuschi` A1
+*of Cushi · de Cusi · de Cuschi · di Cusci* (der Personenname aus 36,14),
+`Kuschit` **B2** *Cushite · cusita · Éthiopien · etiope* (die
+Volkszugehoerigkeit, **in Jer 13,23 im selben Buch belegt**) und `Kuschiter`
+B2 mit identischer Reihe (7 Belege, 2Sam 18). Beide Agenten haben unabhaengig
+`Kuschit` genommen, Feld fuer Feld gleich mit 13,23. `Gedalja` steht in 38,1
+und 39,14 fuer **zwei verschiedene Personen** und traegt in beiden Kapiteln
+dieselbe Bestandsreihe.
+
+### Befunde im Bestand
+
+* **Der Artikel innerhalb von `in die Hand geben` ist korpusweit gespalten.**
+  Nach der Paket-12-Angleichung steht in Jeremia 14× *les* + *main* („les
+  main") und 1× *la* + *main* (21,7). Der uebrige Bestand steht **18× „les
+  main", 10× „la main", 1× „les mains"** — die Paarung, die fuer sich genommen
+  falsch aussieht, ist die Mehrheitsform des Korpus, und Jeremia stimmt in
+  beiden Feldern mit ihr ueberein. **Der Widerspruch ist aelter und
+  korpusweit, nicht von Paket 12 erzeugt**; ihn ueber 29 Stellen in vielen
+  Buechern aufzuloesen ist eine eigene Entscheidung. Hier nur festgehalten.
+* **`ergehen` hat im Bestand keine Perfektreihe** fuer die Botenformel. Fuer
+  „war … ergangen" (39,15) ist sie stammtreu gebildet: `ergangen` C1
+  *come · venido · venue · giunta*. **Vorlage fuer Kap. 52 und jede weitere
+  Perfektfassung.**
+* **`niederreissen` hat zwei italienische Reihen** — *demolirono* (2Chr 31,1,
+  Jes 23,13) gegen *abbatterono* (2Chr 36,19). Angleichungskandidat.
+* **`befehlen` hat zwei italienische Lexeme** — *ordinò* (79 Belege) gegen
+  *comandato* (105); beide stehen jetzt im selben Kapitel (38,10 gegen 38,27),
+  beide von RIV gestuetzt. Angleichungskandidat.
+* **`durchs Schwert fallen` (Jes 3,25, einziger Beleg) traegt fr *sous le
+  glaive***, waehrend `Schwert` im ganzen Bestand *épée* ist.
+  **Korrekturkandidat fuer Jes 3,25.**
+* **`So spricht …` am Versanfang steht im Buch 44× auf *Thus* und 4× auf *So*
+  ** — 19,15 gehoert zu den vier Ausreissern. Angleichungskandidat.
+* **`es geht jemandem gut` und `gut gehen` sind zwei Lemmata fuer dieselbe
+  Sache** (Jer 5,28 gegen Jer 7,23 / 2Koen 25,24). Zusammenfuehrungskandidat,
+  ebenso `Fastentag`/`Fasttag` aus Paket 12.
+* **`Vornehmer` hat 12 Belege, nicht 2** — die Bindung ist viel fester, als die
+  Vorbereitung angab. Ebenso `Zisterne` (6 Singular- + 4 Pluralbelege, nicht
+  „einmal als Plural"), `Strick` (13 statt 2), `Kerker` (4 statt 3),
+  `ueberlaufen` (6 statt 2).
+* `festhalten`, `ausrichten`, `heraufziehen` und `bei` sind vier weitere
+  Kandidaten fuer zweite Bestandslesarten.
+
+### Befunde in den Ausgaben
+
+* **RIV-Anlautfehler: neun im Paket** (37,11 `araone` · 37,14 `rrestò` ·
+  37,20 `on` · 38,10 `eremia` · 38,25 `on` · 38,26 `ionathan` · 39,3 zweimal
+  `amgar-nebu`/`abilonia` · 39,7 `abilonia`), dazu in 39,3 der Binnenfehler
+  `capo de' agi` statt *magi* und in 39,16 `ed n quel giorno`.
+* **WEB, LSG und RIV setzen 39,1 einen Satzteil voran** („When Jerusalem was
+  taken"), den der deutsche Text und RV nicht haben — drei Ausgaben klammern
+  39,1–2 dadurch als Einschub. Kein Versatz.
+* **39,3 · 39,13: WEB und RV transliterieren die beiden Aemter als Eigennamen**
+  („Rabsaris", „Rabmag"), LSG und RIV uebersetzen. Der deutsche Text hat zwei
+  Komposita — nach ihm entschieden.
+* **RV 38,28 hat einen Satzteil doppelt**, den keine andere Ausgabe und nicht
+  der deutsche Text hat.
+* **RIV 38,8 fehlt nichts, aber RV1909mod schreibt in 38,1 „Pasur"**, wo
+  dieselbe Ausgabe in 20,1 · 20,3 · 20,6 · 21,1 „Pashur" hat — der Befund aus
+  Paket 7, jetzt auch **buchintern**.
+* **38,22: alle vier Ausgaben lesen „deine Fuesse sind im Schlamm versunken"**,
+  der l1912mod schreibt `sie haben dich in den Schlamm geführt`; **LSG liest
+  als einzige „par ceux qui t'annonçaient la paix"** statt `Deine engsten
+  Vertrauten`.
+* **37,12 stehen die Ausgaben 2 : 2 zum Sinn** — WEB und RIV lesen den
+  Erbanteil, **RV und LSG die Flucht**; LSG laesst `Erbanteil` ganz weg.
+* **RV1909mod siezt in Kapitel 37 viermal** (dreizehnte Meldung), in Kapitel 38
+  genau **einmal** (38,5), in Kapitel 39 **gar nicht**.
+
+### `spricht der HERR`: Stand nach 39 Kapiteln
+
+Maschinell nachgezaehlt: **140 `dit` zu 124 `parle`**. Kapitel 37 steht 0 : 2,
+Kapitel 38 0 : 3, Kapitel 39 2 : 1.
+
+### Neue Lemmata des Pakets (26)
+
+`Juchal` A1 · `Jirija` A1 · `Ebed-Melech` A1 · `Nergal-Sarezer` A1 ·
+`Samgar-Nebo` A1 · `Sarsechim` A1 · `Nebuschasban` A1 · `Benjamintor` C1 ·
+`Mitteltor` C1 *Middle Gate · puerta del Medio · porte du Milieu · porta di
+Mezzo* · `Königsgarten` C1 *king's garden · huerto del rey · jardin du roi ·
+giardino del re* · `Bäckergasse` C1 *bakers' street · calle de los panaderos ·
+rue des boulangers · via dei panettieri* · `Kellerverlies` C1 · `Wachhabender`
+C1 *captain of the guard · capitán de la guardia · commandant de la garde ·
+capitano della guardia* · `Erbanteil` C1 (eigenes Lemma neben `Erbteil` C1,
+Modell `Buchrolle`/`Rolle`) · `Oberkämmerer` C1 *chief chamberlain · jefe de
+los chambelanes · chef des chambellans · capo dei ciambellani* · `Achsel` B2
+*armpits · axilas · aisselles · ascelle* · `Gespräch` B1 · `Kampfeswille` C1
+*will to fight · voluntad de combate · volonté de combattre · volontà di
+combattere* · `mitspielen` B2 · `zuleide` B2 · `ergangen` C1 · Mehrwoerter:
+`übel mitspielen` C1 · `Aufstellung nehmen` B2 · `zuleide tun` B2 ·
+`blenden lassen` B2 · `in die Gefangenschaft führen` C1 · `in die Hand fallen`
+B2.
+
+Dazu **zwei zweite Bestandslesarten**: `Aufstellung` B2 (Position statt
+Inventar) und `einbrechen` B2 (Mauerdurchbruch statt Einbruchsdiebstahl).
+
+`Kampfeswille` ist der reinste Fall der Kompositum-Regel im Buch: **keine der
+vier Ausgaben uebersetzt das Wort**, alle vier umschreiben es verschieden
+(„weakens the hands of the men of war" · *desalienta a los soldados* · *il
+décourage les hommes de guerre*). Entschieden hat allein das Deutsche.
+
+### Ungenannte Vorlagen, die die Agenten selbst gefunden haben
+
+**38,28 ist woertlich Josua 6,10 pos 17–22** (`bis zu dem Tag, an dem …`) und
+**38,16 pos 29–34 woertlich Jeremia 11,21 pos 9–14** (`die dir nach dem Leben
+trachten`) — beide von `vorbereitung.py` nicht gemeldet, beide Feld fuer Feld
+uebernommen. Umgekehrt traegt **1Mo 37,24 fuer 38,6 nichts bei**: dort steht
+`Grube`, nicht `Zisterne`, und `leer und ohne Wasser` statt `kein Wasser, nur
+Schlamm`. Der Vorbereitungseintrag `39,3 ← 38,17` (Aehnlichkeit 0.19) ist ein
+Rauschtreffer.
