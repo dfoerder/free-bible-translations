@@ -2033,3 +2033,203 @@ uebernommen. Umgekehrt traegt **1Mo 37,24 fuer 38,6 nichts bei**: dort steht
 `Grube`, nicht `Zisterne`, und `leer und ohne Wasser` statt `kein Wasser, nur
 Schlamm`. Der Vorbereitungseintrag `39,3 ← 38,17` (Aehnlichkeit 0.19) ist ein
 Rauschtreffer.
+
+## 15. Paket 14 (Kap. 40 · 41 · 42) — die Gedalja-Erzaehlung, und wie oft die Vorbereitung irrt
+
+**56 Verse, 1725 Einzelwort- und 60 Mehrwort-Eintraege.** Buchstand: 42 von 52
+Kapiteln, 1051 Verse, 28 830 Eintraege.
+
+`paketcheck.py` meldete nach vier Angleichungen **0 + 34 + 0**. Abschnitt A war
+zum zweiten Mal im Buch von vornherein leer; Abschnitt C hatte zum ersten Mal
+im Buch einen Treffer.
+
+### 2. Koenige 25 hat diesmal von Anfang an im Prompt gestanden
+
+Die Lehre aus Paket 13 ist umgesetzt worden, und sie hat getragen:
+**2Koen 25,22–26 deckt die ganze Gedalja-Erzaehlung ab.** `vorbereitung.py`
+meldet die Quelle von selbst (40,9 mit Aehnlichkeit **0.75**) — der Fehler in
+Paket 13 lag nicht am Werkzeug, sondern an meiner Negativaussage aus einer
+Einzelzahl.
+
+Aus **2Koen 25,23** kommt die vollstaendige Namenreihe der Erzaehlung
+(`Truppenführer` B2 *troop commanders · jefes de las tropas · chefs des troupes
+· capi delle truppe`, `Mizpa`, `Jischmael`, `Netanja`, `Johanan`, `Kareach`,
+`Seraja`, `Tanhumet`, `Netofa`, `Maachatiter`), aus **25,24** `gut gehen` A2,
+aus **25,26** `sich fuerchten vor` B1. **`Truppenführer` und `Elischama` haben
+im ganzen Bestand je einen einzigen Beleg, und beide stehen in diesem Kapitel**
+— die Reihe des ganzen Wortfelds haengt an 2Koen 25,23.
+
+Ein Agent hat den Umfang noch erweitert: **25,22 liefert 41,2 woertlich**, und
+**25,25 deckt 41,1 + 41,2 + 41,3 zusammen ab**.
+
+### Was die Agenten an meiner Vorbereitung berichtigt haben
+
+Das Paket hat den bisher hoechsten Stand an widerlegten Prompt-Angaben, und
+zwei davon waren echte Sachfehler:
+
+* **`geritzt` (41,5) ist nicht neu.** Ich hatte es unter „wirklich neu"
+  gefuehrt. Das Lemma heisst **`ritzen` C1** und steht **in Jer 16,6, im selben
+  Buch**, fuer genau denselben Trauerritus. Wirklich neu war nur `abrasieren`.
+* **Bei `Königstöchter` (41,10) habe ich auf die falsche Bestandsreihe
+  gezeigt.** `belegt.py` fuehrt an erster Stelle Ps 45,10 *Kings' daughters ·
+  Hijas de reyes* — das heisst „Toechter von Koenigen", nicht „die Toechter des
+  Koenigs". Richtig ist die zweite Lesart (2Chr 22,11): `Königstochter` B2
+  *king's daughters · hijas del rey · filles du roi · figlie del re*; alle vier
+  Ausgaben bestaetigen sie.
+* **Die Vorgabetabelle nannte fuer `Rest` die Minderheitslesart** (s. u.).
+* **`Hand` fr Singular gilt nicht in 40,4** — dort steht der deutsche **Plural**
+  `Händen`. Die Paket-12-Regel greift beim Singular in einer Wendung.
+* **2Koen 25,24 ist nur in der Schlussklammer Vorlage von 40,9**; das
+  Vorderstueck ist ein anderer Satz (`Habt keine Angst … untertan zu sein`
+  gegen `Fürchtet euch nicht … zu dienen`).
+* **`als` (zeitlich) kommt in Kap. 42 gar nicht vor** — die drei `als` dort sind
+  das Rollen-`als` von `als Fremde`.
+* **`Grimm` ist C2, nicht C1.** **`entschließen` (2 Belege), `ergießen`
+  (3 + 5, darunter Jer 7,20 im selben Buch) und `bange sein` C1 sind belegt**,
+  wo `hints.py` „unbelegt" meldete. Vier Zaehlangaben von mir waren zu niedrig:
+  `restlich` 9 statt 4, `Erschlagener` 20 statt 13, `Vorrat` 26 statt 10,
+  `Wunde` 34 statt 16.
+
+Umgekehrt hat ein Agent **sieben Vorlagen benutzt, die `vorbereitung.py` nicht
+meldet** (Jer 16,6 · 2Sam 19,1 · 1Mo 13,14 · 1Mo 19,1 · 1Mo 45,24 · 2Chr 16,14
+· 2Koen 4,8), waehrend vier der gemeldeten reines Rauschen waren (41,6 ← Lk
+22,40 · 41,7 ← 1Mo 24,54 · 41,13 ← 1Koen 18,39 · 41,14 ← Lk 18,43).
+
+### `Rest` — eine Bedeutung, dreizehn Stellen, jetzt eine Reihe
+
+Alle dreizehn `Rest`-Stellen des Buches meinen dasselbe: den ueberlebenden
+Ueberrest eines Volkes. `Rest des Volkes` (39,9 · 41,10 · 41,16) ist derselbe
+Gegenstand wie `dieser ganze Rest` (42,2) und `Rest aus Juda` (42,15 · 42,19).
+Das Buch stand 10 : 3 auf *remnant · remanente · reste · resto*; die drei
+Ausreisser trugen *rest · resto*, weil 39,9 der Reihe von **2Koen 25,11** folgt
+und meine Vorgabetabelle diese dann fuer das ganze Paket wiederholt hat.
+
+Angeglichen sind **39,9 · 41,10 · 41,16** auf die Buchreihe. Der Korpus fuehrt
+beide Lesarten (31 *remnant* : 23 *rest*), sie sind also nicht falsch — aber
+innerhalb eines Buches traegt eine Bedeutung eine Reihe. **2Koen 25,11 ist der
+Angleichungskandidat.**
+
+### Drei weitere Angleichungen beim Einsammeln
+
+* **`wo` stand in ch42 auf B1**, im Korpus an allen **400** Stellen auf A1 —
+  der erste Treffer in `paketcheck.py` Abschnitt C in diesem Buch. Korrigiert.
+* **`samt`**: 42,1 trug fr *avec*, 41,7 *ainsi que*. Der Korpus steht 33 : 15
+  fuer *ainsi que*. Angeglichen.
+* **`zurück`**: 41,14 trug es *de vuelta*, 40,5 und 40,12 *atrás*. Der Korpus
+  steht 316 : 53 fuer *atrás*. Angeglichen.
+
+### Die Zwillingsstellen — vier Paare ueber die Kapitelgrenze
+
+40,6 ↔ 41,1 · 40,11 ↔ 41,2 · 40,13 ↔ 41,11 · 40,16 ↔ 41,14, dazu 41,13 ↔ 42,8.
+Drei Paare kamen Feld fuer Feld identisch zurueck. Zwei Punkte waren offen:
+
+* **`einsetzen`** — 2Koen 25,22/23 fuehrt *designó · incaricò*, Jeremia selbst
+  in 20,1 und 23,4 *puesto · posto*, franzoesisch beide *établi*. Die
+  Buchbindung gewinnt; beide Agenten sind unabhaengig darauf gekommen.
+  **Der Korpus fuehrt drei konkurrierende Reihen fuer denselben Satztyp** —
+  Zusammenfuehrungskandidat.
+* **`zu` vor dem Personennamen** — in 40,6 standen `zu` und `nach` **beide** auf
+  fr *à*, eine unaufgeloeste Kollision im selben Vers. Der Agent fuer 41,1
+  hatte sie gesehen und mit *auprès de* behoben. Die Ausgaben schreiben an den
+  beiden Stellen verschieden (LSG *vers* in 40,6, *auprès de* in 41,1), aber
+  der deutsche Satz ist identisch — 40,6 traegt jetzt die Reihe des Zwillings.
+
+### Die Formelketten
+
+**42,7** traegt die Botenformel **ohne** einleitendes `Da` und ist gegen
+**36,27 pos 17–23** maschinell geprueft: **7 von 7 Feldern identisch**. Damit
+ist auch **43,8** vorbereitet. **42,17 und 42,22** sind untereinander und gegen
+**21,9 = 38,2** Feld fuer Feld gleich (`durch Schwert, Hunger und Pest
+sterben`), ebenso `als Fremde wohnen` an drei Stellen. **40,1 pos 0–9** ist die
+Reihe aus 30,1 = 11,1 = 35,1, zum vierten Mal unveraendert.
+
+**42,18 zeigt, warum nach dem Deutschen entschieden wird**: der l1912mod hat
+`Fluch · Entsetzen · Schwur · Schmach`, und **alle vier Ausgaben ordnen die
+Glieder anders** — das erste Ausgabenglied (*execration*) entspricht dem
+deutschen dritten, das dritte (*curse*) dem deutschen ersten. Die Bauform kommt
+aus 24,9, die Glieder aus ihren eigenen Bestandsreihen.
+
+### Kollisionen, die ohne Neupraegung aufgeloest wurden
+
+* **40,12 `sehr` ↔ `viel`** (it *molto*): statt einer Erfindung hat der Agent
+  **4Mo 32,1** aufgeschlagen, wo „sehr viel" woertlich steht, und beide
+  Bestandsreihen uebernommen.
+* **41,9 `Erschlagener` ↔ `erschlagen` im selben Vers**: das Verb ist mit ~135
+  Belegen weit fester gebunden als das Substantiv (20), also weicht das
+  Substantiv auf seine **vorhandene zweite Bestandslesart** aus (*slain
+  persons*, 5Mo 21,1 ff.). Zusaetzlich steht `Leiche` B2 im selben Vers —
+  drei Woerter desselben Feldes, drei Reihen.
+* **41,10 `restlichen Rest` … `geblieben`**: drei Woerter derselben Familie in
+  einem Vers, in allen vier Sprachen getrennt.
+* **41,2 `bei` ↔ `mit`**: `bei` weicht auf **genau die Reihe aus, die 2Koen
+  25,25 — die Vorlage dieses Verses — schon fuehrt**.
+* **42,18 `werden` ↔ `ziehen`** (nur fr *allez*): `ziehen` weicht **in nur der
+  einen Sprache** auf *partez* aus.
+
+### Befunde im Bestand
+
+* **`auch` hat im ganzen Bestand keine Modalpartikel-Lesart**, obwohl die
+  Konstruktion „Weisst du auch …?" vorkommt (40,14). Kandidat fuer eine
+  korpusweite zweite Lesart.
+* **`Böse` hat im Buch zwoelf verschiedene Glossenreihen bei 25 Belegen**, B1
+  und B2 gemischt. Aufraeumkandidat.
+* **Jer 7,23 gibt dem Dummy-`es` italienisch *ci***, dasselbe Wort wie dem
+  Dativ `euch`; in 42,6 waere daraus `es` = `uns` geworden. Dort steht deshalb
+  die 1050-fach belegte Dummy-Reihe *it · ello · il · esso*. **7,23 ist der
+  Angleichungskandidat.**
+* **`einkehren` hat genau einen Beleg** (2Koen 4,8), **`nämlich` ist im Buch
+  unbelegt** (korpusweit 61 : 45 zwischen *in fact* und *namely*),
+  **`Erbarmen erweisen` gibt es nicht** als Mehrwort (`Gnade erweisen` B2 waere
+  das Modell, aber fr *faire grâce* passt hier nicht).
+* **`bringen` traegt in Kap. 42 zwei fr-Lexeme** — *apporter* (Korpusmehrheit,
+  93 Belege) gegen *amener* (Jer 32,42, die einzige Buchstelle mit `über`).
+  Verschiedene Verse, also nicht aufgeloest; Angleichungskandidat.
+* **`Hoschaja` weicht franzoesisch vom Bestand ab**: `Hosaja` A1 fuehrt fr
+  *Hoschaeja* (Neh 12,32), **LSG schreibt in Jer 42,1 und 43,2 beide Male
+  „d'Hosée"**. Eigenes Lemma nach dem `Betlehem`-Modell; **gilt auch fuer
+  43,2** im naechsten Paket.
+
+### Befunde in den Ausgaben
+
+* **RIV1927 hat in Kapitel 42 keinen einzigen Anlautfehler** — das erste
+  Kapitel des Buches ohne einen, nachdem Paket 13 neun hatte. In Kap. 40 steht
+  einer (`hedalia`), in Kap. 41 drei plus ein Binnenfehler (**`Shafam` statt
+  `Shafan`** in 41,2).
+* **RV1909mod siezt in Kapitel 42 in zwoelf von 22 Versen** — mit Abstand der
+  hoechste Stand des Buches (Kap. 37 viermal, Kap. 38 einmal, Kap. 39 gar
+  nicht, Kap. 40 dreimal, Kap. 41 einmal). Die tú-Anreden an Jeremia selbst
+  sind korrekt Singular. Fuenfzehnte Meldung dieser Art.
+* **WEB 41,9 ist verstuemmelt**: „(the same was who which Asa the king had
+  made …)" — zwei Relativpronomen hintereinander.
+* **LSG 42,13 verschiebt einen Hauptsatz ueber die Versgrenze**, RIV 42,8 und
+  42,13 verschieben Redeeinleitungen in die Gegenrichtung. Kein Versatz.
+* **RV1909mod 40,10 liest „el pan"** statt der Sommerfruechte, **41,12 „el gran
+  estanque"** (Teich) statt der Wasser, **41,9 „a causa de Gedalías"** statt
+  „zusammen mit".
+* **41,17 stehen die Ausgaben 3 : 1** — WEB, RV und RIV transliterieren
+  „Geruth Chimham" als Ortsnamen, **LSG uebersetzt „l'hôtellerie de Kimham"**,
+  und der l1912mod schreibt `in der Herberge Kimhams`. Nach dem Deutschen
+  entschieden.
+
+### `spricht der HERR`: Stand nach 42 Kapiteln
+
+**141 `dit` zu 127 `parle`**. **Kapitel 40 und 41 enthalten die Formel
+ueberhaupt nicht** — die einzigen zwei Kapitel des Buches ohne sie. Kapitel 42
+steht 1 : 3.
+
+### Neue Lemmata des Pakets (10)
+
+`Baalis` A1 · `Efai` A1 *of Ephai · de Efai · d'Éphaï · di Efai* · `Jesanja` A1
+*Jezaniah · Jezanías · Jezania · Jezania* · `Hoschaja` A1 *of Hoshaiah · de
+Osaías · d'Hosée · di Hosaia* · `Bascha` A1 *Baasha · Baasa · Baescha · Baasa*
+· `Betlehem` A1 (eigenes Lemma neben `Bethlehem` A1, Reihe unveraendert —
+Modell `Paschhur`/`Pashur`) · `abrasieren` B2 *shaved off · afeitado · rasé ·
+raso* · `Posaunenklang` C1 *sound of the trumpet · sonido de trompeta · son de
+la trompette · suono di tromba* · Mehrwoerter `hingehen lassen` B1 ·
+`fortführen` B2.
+
+Dazu **sieben zweite Lesarten an vorhandenen Lemmata**: `richtig` A2 *fitting*
+· `auch` A1 *indeed* (Modalpartikel) · `ziehen` A2 *depart* · `liegen` A2
+*lies* · `Erschlagener` B2 *slain persons* · `zurückholen` B2 *recovered* ·
+`Schmach` C1 *reproach · oprobio* (die Minderheitslesart, weil der einzige
+Jeremia-Beleg 23,40 sie traegt).
