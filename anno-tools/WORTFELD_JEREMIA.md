@@ -985,3 +985,168 @@ officer · jefe supervisor · inspecteur en chef · capo-soprintendente* ·
 (**keine der vier Ausgaben** uebersetzt das Verb — alle formulieren um) ·
 `Urteil üben` B2 (Mehrwort, nach `Vergeltung üben` in Ps 149,7) ·
 `Kriegslärm` C1.
+
+
+## 9. Paket 8 (Kap. 22 · 23 · 24) — drei Agenten sterben, ein Abschnitt ueberlebt
+
+80 Verse, 2169 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, 43 Zeilen in B ohne Befund; `qa`, `konvention`, `levelcheck` und
+`sweep` ueber alle drei Kapitel ohne Treffer, `glosskollision.py` ein einziges
+inhaltliches Paar in einer Sprache.
+
+### Der Abbruch, und was das Wegschreiben gerettet hat
+
+**Alle drei Agenten sind gleichzeitig an einem Serverfehler (HTTP 529)
+gestorben**, kurz nach dem Einlesen der Unterlagen. Kapitel 22 und 24 hatten
+nichts geschrieben; von Kapitel 23 lagen **die Verse 1-8 als Teildatei** da und
+liefen ueber `selfcheck.py 24 23 <datei> 1 8` sauber durch — einschliesslich
+der Dublette 23,7/23,8, der schwierigsten Stelle des Kapitels.
+
+Der Nachfolger hat das Fragment als Vorlage gelesen, die Verse 9-40 ergaenzt und
+**ueber das ganze Kapitel** geprueft. Dabei hat er im uebernommenen Teil genau
+einen echten Fehler gefunden: **`König` stand in 23,5 auf A1, der Bestand fuehrt
+es mit 614 Belegen einstimmig auf A2.** Sonst war nichts zu korrigieren.
+
+**Zweite Bestaetigung der Lehre aus dem Nutzungslimit-Abbruch:** das
+abschnittsweise Wegschreiben ist der einzige Schutz, und die Selbstpruefung des
+Nachfolgers ueber das **ganze** Kapitel ist die zweite Haelfte davon.
+
+### Die woertlichen Uebernahmen, maschinell nachgerechnet
+
+| Vers | Vorlage | Ergebnis |
+|---|---|---|
+| 23,7 | 16,14 | **31 von 31 Eintraegen identisch** (29 Einzelwoerter + `nicht mehr` + `so wahr`) |
+| 24,4 | 13,8 = 18,5 | **8 von 8 Feldern identisch** |
+| 23,8 | 16,15 | Block bei Versatz +2 gleich mit **genau einer** Abweichung (pos 26 `ich` gegen `er`) |
+| 23,35 | 23,37 | alle 13 gemeinsamen Felder identisch |
+
+### Das `Last`-Wortspiel steht
+
+`Last` steht in 23,33-38 **siebenmal** (nicht achtmal, wie die Vorbereitung
+behauptet hatte — das achte entsteht nur, wenn man den Mehrwort-Eintrag
+mitzaehlt) und traegt **ausnahmslos** `Last` B1 *burden · carga · charge ·
+peso*, dieselbe Reihe wie viermal in 17,21-27. Damit bleibt das Wortspiel in
+allen vier Sprachen erhalten — **LSG liest den Vers als *menace*, RIV als
+*oracolo***, und wer ihnen folgte, haette es schon im ersten Vers zerlegt.
+Dazu in 23,36 zusaetzlich das Bestands-Mehrwort `zur Last werden` B2 ueber den
+Einzelwoertern.
+
+### `Konja` gegen `Jechonja` — und ein Befund ueber den Bestand
+
+Der l1912mod schreibt beide Formen desselben Namens im selben Buch: `Konja`
+(22,24 · 22,28) und `Jechonja` (24,1). Zwei deutsche Formen, **zwei Lemmata**:
+
+    Konja      A1   Coniah · Conías · Jeconia · Conia
+    Jechonja   A1   Jechoniah · Jeconías · Jéchonias · Ieconia   (Bestand)
+
+**Die Ausgaben trennen die beiden Formen nur zu dritt** — LSG schreibt an allen
+drei Stellen *Jeconia*. Und der Bestandseintrag fuer `Jechonja` passt an seinen
+**eigenen** AT-Belegstellen nicht zur Ausgabe: in 1Chr 3,16 und Est 2,6
+schreiben WEB *Jeconiah*, LSG *Jeconia* und RIV *Jeconia*, waehrend die
+Bestandsreihe *Jechoniah · Jéchonias · Ieconia* fuehrt — sie stammt aus den
+Matthaeus-Belegen. **Korrekturkandidat fuer die AT-Stellen**; genommen ist
+vorerst die Bestandsreihe, weil der Name dort bereits belegt ist.
+
+### Drei Level-Angaben der Vorbereitung waren falsch
+
+`Thron` ist **B2**, nicht B1. `Tor` ist **B1**, nicht A2. `denn` ist **A2**,
+nicht A1. Alle drei von Agenten am Bestand widerlegt und von `levelcheck.py`
+bestaetigt. Dazu die Fragment-Korrektur `König` A2. **Vier Level-Befunde in
+einem Paket** — die Vorgabetabellen dieser Vorbereitung waren an dieser Stelle
+schlechter als der Bestand.
+
+### `Rat` traegt im Buch zwei englische Lesarten, und beide sind richtig
+
+    18,18   advice · consejo · conseil · consiglio    (der Rat, den der Weise gibt)
+    23,18   council · consejo · conseil · consiglio   (der Gottesrat als Versammlung)
+    23,22   council · consejo · conseil · consiglio
+
+Nur Englisch kann die beiden Bedeutungen trennen, und es tut es; es, fr und it
+decken beide mit einem Wort. **Kein Ausreisser** — `konsistenz.py` wird das Paar
+melden, es ist keiner.
+
+### Zwei Kollisionen, die im selben Vers auseinandergehalten werden mussten
+
+* **22,23 `Wehen` und `Geburtsschmerzen` stehen nebeneinander.** `Wehen` C1
+  *birth pains · dolores de parto · douleurs de l'enfantement · doglie* aus
+  13,21; `Geburtsschmerzen` C1 ist abgesetzt auf *labor · parto · travail ·
+  parto* — genau das, was die vier Ausgaben dort schreiben.
+* **24,1 `Schmiede` und `Schlosser` stehen nebeneinander.** `Schmied` B2 traegt
+  die Bestandsreihe *smiths · herreros · forgerons · fabbri*; das neu gepraegte
+  `Schlosser` B2 weicht italienisch auf ***magnani*** aus statt auf das
+  naheliegende *fabbri*. Entschieden ueber LSG (*serruriers*, die einzige
+  Ausgabe, die das deutsche Wort trifft). **29,2 ist die einzige weitere Stelle
+  im Bestand und muss dieselbe Reihe bekommen.** Nebenbefund: drei der vier
+  Ausgaben haben an erster Stelle den **Zimmermann**, der l1912mod den Schmied.
+
+### „Im Bestand unbelegt": von sechs Meldungen war eine richtig
+
+In Kapitel 23 hat `belegt.py` fuenf von sechs widerlegt (`abwerfen`,
+`nachlassen`, `Entweihung`/`entweihen`, `Grauenhaftes`/`Grauen`,
+`künftig`) — **nur `ruchlos` ist wirklich unbelegt**. In Kapitel 22 dasselbe
+Bild: `stöhnen` (3 Belege, Ps 55) und `Trümmerstätte` (2Chr 34,6) standen
+laengst da, `einschreiben` ebenfalls. **Siebte und achte Bestaetigung der
+Form-gegen-Lemma-Falle.**
+
+### Die Eigenpruefung der Agenten faengt jetzt mehr als die Pflichtlaeufe
+
+Der Agent von Kapitel 22 hat beim maschinellen Abgleich seiner haeufigen
+Lemmata **vier** Uneinheitlichkeiten gefunden, die durch alle sieben Netze
+gefallen waeren: `hören` stand in 22,2 spanisch als *Oye*, in 22,29 als
+*escucha* — **dieselbe Formel `Hör das Wort des HERRN`**; dazu `mit`, `nur` und
+das Paar `geben`/`Hand` in 22,25. Der Agent von Kapitel 24 hat sechs Lemmata
+gegengeprueft und keines beanstandet.
+
+### Befunde im Bestand
+
+* **`Ungerechtigkeit` und `Unrecht` fallen in es/fr/it vollstaendig zusammen**
+  und stehen in 22,13 im selben Vers; ausgewichen ist das schwaechere
+  (18 gegen 99 Belege) auf *iniquidad · iniquité · iniquità*, was LSG dort
+  selbst schreibt.
+* **`Schmach` und `Schande` fallen in en/es zusammen** und stehen in 23,40 im
+  selben Vers; `Schmach` weicht auf *reproach · oprobio · outrage · oltraggio*.
+* **`vernehmen` und `hören` fallen in allen vier Sprachen zusammen** und stehen
+  in 23,18 im selben Vers; `vernehmen` weicht auf *perceived · percibido ·
+  perçu · colto* (Hi 26,14).
+* **`Hohn` traegt franzoesisch zwei Reihen** (*dérision* in den Psalmen,
+  *opprobre* in Jes 51,7 und Jer 20,8) — Angleichungskandidat.
+* **`weihen` gegen alle vier Ausgaben durchgehalten**: 22,7 schreiben sie
+  einstimmig *prepare*, das deutsche Wort ist `weihen`, und die Bestandsreihe
+  hat 86 Belege.
+* `heißen` (22,16, „Heißt das nicht"), `halten` (22,21, „so hast du es
+  gehalten"), `zurückziehen` (22,27), `wegschicken` (24,5, in die Verbannung),
+  `wahrhaftig` (23,28), `künftig` (23,20), `glatt` (23,12) und `enthalten`
+  (24,2) haben im Bestand **keine passende Lesart** und sind nach den Ausgaben
+  vergeben — acht Kandidaten fuer zweite Bestandslesarten in einem Paket.
+
+### Befunde in den Ausgaben
+
+* Drei RIV-Anlautfehler, alle in Kapitel 22 (22,2 „opolo" · 22,11 „iosia" ·
+  22,25 „ebucadnetsar"). **Kapitel 23 und 24 sind ohne einen** — damit sind es
+  vier solche Kapitel im Buch (14 · 19 · 23 · 24).
+* **RIV verschiebt die Satzgrenze in 22,1/22,2 und in 23,26/23,27** — dieselbe
+  Bauform wie in 7,10/7,11, 19,10/19,11 und 24,5/24,6. Kein Versatz.
+* **WEB 22,27 hat einen Setzfehler**: „to the land **t** which their soul
+  longs".
+* **RV1909mod siezt in allen drei Kapiteln** (22,3 · 22,30 · 23,2 · 23,16 ·
+  23,17 · 23,39) — **siebte Meldung derselben Sache**; jedes Mal ist dem
+  Bestand (*vosotros*) gefolgt.
+* **`wirbelnder Sturm` (23,19) hat nur WEB** — RV *una tempestad ya preparada*,
+  LSG *L'orage se précipite*, RIV *la tempesta scroscia*: vier Ausgaben, drei
+  Bilder. `wirbelnd` C1 ist nach dem deutschen Wort gepraegt.
+
+### `spricht der HERR`: Stand nach 24 Kapiteln
+
+**86 `dit` zu 60 `parle`**. Kapitel 23 allein hat die Formel **22-mal**
+(18 : 4), Kapitel 22 neunmal (3 : 6). **In 23,31 hat LSG keine Entsprechung**
+(sie formuliert um) — dort ist der Vorgabewert *dit* gesetzt.
+
+### Neue Lemmata des Pakets (16)
+
+`Konja` A1 · `erpressen` C1 · `bemalen` B2 · `fortschleifen` C1 ·
+`Geburtsschmerzen` C1 · `einbauen` B2 + `einbauen lassen` B2 · `übermannen` C1
+· `ruchlos` C1 *profane · impíos · corrompus · empi* · `Grauenhaftes` C1 ·
+`Entweihung` C1 *profanation · profanación · profanation · profanazione* ·
+`wirbelnd` C1 · `niederfahren` B2 · `Leichtsinn` B2 · `gar nichts` A2
+(Mehrwort) · `Schlosser` B2 *locksmiths · cerrajeros · serruriers · magnani* ·
+`Verschleppter` C1 *deportees · deportados · déportés · deportati*.
