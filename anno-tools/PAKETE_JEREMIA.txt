@@ -1,0 +1,72 @@
+# Pakete Jeremia (Buch 24)
+
+# 52 Kapitel, 1364 Verse, 35 638 Tokens — das groesste noch offene Buch und
+# nach dem Psalter (2528 Verse) und Jesaja (1291) das drittgroesste des
+# Bestands. Achtzehn Pakete zu drei Kapiteln, das letzte allein.
+
+# Die Reihenfolge folgt der Kapitelzahl. Der Grund ist bei diesem Buch
+# zwingender als bei Jesaja: `dubletten.py` findet **261 Verspaare** mit
+# mindestens 60 % gemeinsamen Wortformen, und die Vorlage steht fast immer im
+# frueheren Kapitel.
+
+## Die Verszaehlung: nur Kapitel 8 und 9
+
+Gemessen ueber die Verszahlen aller vier Ausgaben — 50 der 52 Kapitel stimmen
+ueberein. Die Ausnahme ist dieselbe Bauform wie in Jesaja 8/9:
+
+    de 8,1-22  = deren 8,1-22   (ausgaben.py meldet hier FAELSCHLICH -1
+                                 und warnt selbst, dass +0 besser liegt)
+    de 8,23    = deren 9,1
+    de 9,n     = deren 9,n+1    (Versatz +1, alle vier Ausgaben)
+
+Deshalb liegen **8 und 9 im selben Paket** (Paket 3).
+
+## Die Botenformeln sind das Rueckgrat des Buches
+
+Sie wiederholen sich dutzendfach und muessen in Paket 1 entschieden und danach
+unveraendert gehalten werden:
+
+    `Das Wort des HERRN erging an mich`        1,4 · 2,1 · 16,1 woertlich gleich,
+                                              dazu 13,3 · 13,8 · 18,5 · 24,4 ·
+                                              29,30 · 32,6 · 32,26 · 33,19 ·
+                                              33,23 · 34,12 und weitere
+    `Das ist das Wort, das vom HERRN an
+     Jeremia erging`                          7,1 · 11,1 · 18,1 · 30,1 · 35,1 …
+    `So spricht der HERR`                     ueber achtzig Stellen
+    `spricht der HERR` (eingeschoben)         ueber zweihundert Stellen
+    `Sollte ich das nicht ahnden, spricht
+     der HERR, sollte ich mich an einem
+     solchen Volk nicht raechen?`             5,9 = 5,29 = 9,8 woertlich gleich
+
+## Die Pakete
+
+ 1. Paket: Jer 1 (19 V.) | Jer 2 (37 V.) | Jer 3 (25 V.)
+    MASSSTAB: die Botenformeln (s. o.), `HERR`/`Herr`, `Wort`, `Volk`,
+    `Israel`/`Juda`, `Prophet`, `weissagen`, `Goetze`, `abtruennig`
+ 2. Paket: Jer 4 (31 V.) | Jer 5 (31 V.) | Jer 6 (30 V.)
+    5,9 = 5,29 woertlich gleich (im selben Kapitel!)
+ 3. Paket: Jer 7 (34 V.) | Jer 8 (23 V.) | Jer 9 (25 V.)
+    VERSZAEHLUNG: de 8,23 = deren 9,1; de 9,n = deren 9,n+1
+    6,15 = 8,12 woertlich gleich (Vorlage in Paket 2)
+ 4. Paket: Jer 10 (25 V.) | Jer 11 (23 V.) | Jer 12 (17 V.)
+ 5. Paket: Jer 13 (27 V.) | Jer 14 (22 V.) | Jer 15 (21 V.)
+ 6. Paket: Jer 16 (21 V.) | Jer 17 (27 V.) | Jer 18 (23 V.)
+ 7. Paket: Jer 19 (15 V.) | Jer 20 (18 V.) | Jer 21 (14 V.)
+ 8. Paket: Jer 22 (30 V.) | Jer 23 (40 V.) | Jer 24 (10 V.)
+ 9. Paket: Jer 25 (38 V.) | Jer 26 (24 V.) | Jer 27 (22 V.)
+10. Paket: Jer 28 (17 V.) | Jer 29 (32 V.) | Jer 30 (24 V.)
+11. Paket: Jer 31 (40 V.) | Jer 32 (44 V.) | Jer 33 (26 V.)
+12. Paket: Jer 34 (22 V.) | Jer 35 (19 V.) | Jer 36 (32 V.)
+13. Paket: Jer 37 (21 V.) | Jer 38 (28 V.) | Jer 39 (18 V.)
+    38,18 <-> 38,23 im selben Kapitel
+14. Paket: Jer 40 (16 V.) | Jer 41 (18 V.) | Jer 42 (22 V.)
+15. Paket: Jer 43 (13 V.) | Jer 44 (30 V.) | Jer 45 (5 V.)
+16. Paket: Jer 46 (28 V.) | Jer 47 (7 V.) | Jer 48 (47 V.)
+17. Paket: Jer 49 (39 V.) | Jer 50 (46 V.) | Jer 51 (64 V.)
+    Das schwerste Paket: 149 Verse. Kap. 51 ist das laengste Kapitel des
+    Buches; 50 und 51 wiederholen einander und die Voelkersprueche 46-49.
+18. Paket: Jer 52 (34 V.)
+    Der geschichtliche Anhang, Parallele zu 2. Koenige 24-25 und zu Jer 39.
+    Allein, weil er eine fremde Vorlage hat und nichts mit 51 gemein.
+
+Summe: 1364 Verse in 52 Kapiteln, 18 Pakete
