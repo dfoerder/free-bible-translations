@@ -211,3 +211,168 @@ aussieht.**
 das Verb) und `recht` B1 *right · debido* (5,24 „zur rechten Zeit"). Der
 Build-Hinweis „1 Wortform mit verschiedenen Leveln" ist genau das und kein
 Befund — dieselbe Bauform wie `Spross`/`spross`.
+
+
+## 4. Paket 3 (Kap. 7 · 8 · 9) — die Verszaehlung und die zweite Botenformel
+
+82 Verse, 2141 Eintraege. Das Paket mit der **einzigen Verszaehlungsfalle des
+Buches** und mit vier fertigen Dubletten aus Paket 2.
+
+### Die Verszaehlung: `ausgaben.py` irrt, und es sagt das selbst
+
+Fuer Kapitel 8 meldet das Werkzeug **Versatz −1** und schreibt daneben, dass
++0 besser liegt (Abstand 0.14 gegen 0.32 in allen vier Ausgaben). Die Warnung
+hat recht:
+
+    de 8,1-22  = Ausgaben 8,1-22       (+0)
+    de 8,23    = Ausgaben 9,1          (in Kapitel 8 gibt es dort nichts)
+    de 9,n     = Ausgaben 9,n+1        (+1, alle vier)
+
+Die Rohausgabe des Werkzeugs ist **um einen Vers verschoben und liest sich
+plausibel** — genau der Fehler, gegen den `ausgaben.py` gebaut wurde, hier vom
+Werkzeug selbst erzeugt. Fuer Kapitel 8 ist die Datei deshalb **von Hand
+gebaut** worden (1-22 aus Kapitel 8 der Ausgabe, 23 aus deren 9,1) und die
+Rohfassung im Prompt ausdruecklich verboten worden. Beide Agenten haben die
+Ausrichtung am Vers bestaetigt.
+
+### `Starrsinn` — der zweite `wackeln`-Fall, und `paketcheck.py` hat ihn gefunden
+
+7,24 und 9,13 tragen dieselbe Buchformel (`dem Starrsinn ihres Herzens
+folgten`), das Lemma ist im Bestand **unbelegt**, und die beiden Agenten haben
+es verschieden gepraegt:
+
+    7,24   stubbornness · obstinación · obstination · ostinazione
+    9,13   stubbornness · terquedad   · obstination · caparbietà
+
+`selfcheck`, `qa`, `konvention`, `sweep`, `sweeplemma`, `glosskollision` und
+`levelcheck` laufen ueber beide Kapitel ohne Befund — es gibt keine Zeile im
+Bestand, gegen die zu pruefen waere. **Abschnitt A von `paketcheck.py` hat das
+Paar gemeldet.** Entschieden ist es nicht ueber die Ausgaben (die schwanken:
+*dureza*/*terquedad*, *penchants*/*caparbietà*), sondern ueber den Bestand:
+`Halsstarrigkeit` C1 steht in 5Mo 31,27 mit **genau der Reihe von 7,24**
+(*stubbornness · obstinación · obstination · ostinazione*), und `starrsinnig`
+C1 traegt *stubborn · obstinado · obstiné · ostinato*. 9,13 ist angeglichen.
+Die Formel kommt in 11,8 · 13,10 · 16,12 · 18,12 · 23,17 wieder.
+
+### `Geschlecht` in 8,3 — die Lexikonfalle mit umgekehrtem Vorzeichen
+
+Der Bestand fuehrt 198 Belege *lineage · linaje · lignée · stirpe* und nur
+**sieben** *generation · generación · génération · generazione*. Die 198 sind
+die Sippenlisten von 4. Mose; die sieben sind „dieses Geschlecht" — darunter
+**Jeremia 2,31**, also dieses Buch. 8,3 (`dieses boesen Geschlechts`) gehoert
+zur zweiten Gruppe, und RV schreibt dort selbst *generación*. Der Agent hatte
+die Korpusmehrheit genommen; angeglichen an 7,29, das alle vier Ausgaben
+einstimmig als *generation* haben. **Die Bindung gilt fuer dieselbe Bedeutung,
+nicht fuer dieselbe Buchstabenfolge.**
+
+### Die vier fertigen Dubletten — maschinell nachgerechnet
+
+| Vers | Vorlage | Ergebnis |
+|---|---|---|
+| 8,12 | 6,15 | alle 38 Eintraege identisch |
+| 8,11 | 6,14 | pos 0-3 identisch, pos 4-5 neu (`der Tochter`), ab pos 6 identisch mit Versatz +2 |
+| 8,10 | 6,13 | erster Satz neu, ab pos 11 identisch mit Versatz +11 |
+| 9,8 | 5,9 = 5,29 | alle 18 Eintraege identisch, einschliesslich `sich rächen` `parts` |
+
+### `Das ist das Wort, das vom HERRN an Jeremia erging` (7,1)
+
+Die zweite Buchformel, Vorlage fuer **siebzehn** spaetere Stellen (11,1 · 13,8
+· 16,1 · 18,1 · 18,5 · 24,4 · 29,30 · 30,1 · 32,6 · 32,26 · 33,19 · 33,23 ·
+34,12 · 35,12 · 37,6 · 42,7 · 43,8; 18,1 woertlich gleich).
+
+| pos | Form | Lemma · Level | en · es · fr · it |
+|---|---|---|---|
+| 0 | Das | `der` A1 | This · Esta · Ceci · Questa |
+| 1 | ist | `sein` A1 | is · es · est · è |
+| 2 | das | `der` A1 | the · la · la · la |
+| 3 | Wort | `Wort` A1 | word · palabra · parole · parola |
+| 4 | das | `der` A1 | that · que · qui · che |
+| 5 | vom | `vom` A1 | from the · del · de l' · dal |
+| 6 | HERRN | `HERR` A1 | LORD · SEÑOR · ÉTERNEL · SIGNORE |
+| 7 | an | `an` A1 | to · a · à · a |
+| 8 | Jeremia | `Jeremia` A1 | Jeremiah · Jeremías · Jérémie · Geremia |
+| 9 | erging | `ergehen` C1 | came · vino · vint · giunse |
+
+`vom` ist die Bestandsmehrheit vor `HERRN` (45 von 56). Die vier Kernfelder
+sind dieselben wie in 1,4 / 2,1 — die beiden Formeln des Buches beruehren
+einander an `Wort`, `HERR`, `an` und `ergehen`.
+
+**`das nach meinem Namen genannt ist`** steht viermal in Kapitel 7 (7,10 ·
+7,11 · 7,14 · 7,30) und ist Vorlage fuer 32,34 und 34,15: `nach` A1 *by · por ·
+par · **con*** · `Name` A1 · `nennen` A2 *called · llamado · appelé ·
+chiamato*. Das italienische *con* statt *per* ist eine Kollisionsaufloesung —
+mit *per* fiel `nach` in 7,10 mit `um` und in 7,11 mit `für` zusammen; die drei
+Ausgaben ausser WEB formulieren die Wendung ohnehin passiv um und liefern gar
+keine Praeposition.
+
+### `spricht der HERR`: die LSG-Verteilung schwankt weiter
+
+Kapitel 7 steht 5 : 3 fuer *dit*, Kapitel 8 5 : 1, Kapitel 9 **5 : 5**. Ueber
+die sechs Kapitel der Pakete 2 und 3 sind es 28 *dit* zu 15 *parle*. en, es und
+it stehen an allen 43 Stellen auf *says · dice · dice*.
+
+### Vier Befunde im Bestand, einer davon eine Korrektur wert
+
+* **`Griffel` C1 traegt eine Meissel-Reihe, die an einer ihrer zwei
+  Belegstellen falsch ist.** Der Bestand hat *stylus · cincel · burin ·
+  scalpello* aus Hiob 19,24, wo sie richtig ist (WEB „iron pen", RIV
+  „scalpello di ferro"). **Ps 45,2 ist aber der Schreibgriffel**, und dort
+  schreiben alle vier Ausgaben *pen · pluma · plume · penna*; die Meisselreihe
+  ist trotzdem mituebernommen worden. In 8,8 (`der lügnerische Griffel der
+  Schriftgelehrten`) schreiben die Ausgaben ebenfalls *pen*, und *cincel* waere
+  am Vers falsch. Genommen ist *pen · pluma · plume · penna*; **Ps 45,2 ist ein
+  Kandidat fuer eine korpusweite Korrektur.**
+* **`Salbe` und `Balsam` tragen jetzt dieselbe Reihe.** Der Bestand fuehrt
+  `Salbe` C1 viermal als *ointments · ungüentos · onguents · unguenti*, alle
+  vier Koerperoel (Hohelied, Lukas) — 8,22 meint den Wundbalsam, alle vier
+  Ausgaben schreiben ihn, genommen ist *balm · bálsamo · baume · balsamo*. Der
+  Bestand hat dafuer aber **ein eigenes Lemma `Balsam` C1 mit genau dieser
+  Reihe**. Beide stehen nirgends im selben Vers, also nicht aufgeloest.
+* **`Lid` ist die dritte Bestaetigung der Form-gegen-Lemma-Falle.** `Lider`
+  (9,17) stand als unbelegt im Extrakt; `belegt.py` zeigt das Lemma `Lid` C1
+  mit zwei Belegen (Ps 132,4 · Spr 6,4), dort nur als `Lidern` flektiert.
+* **`herbeiholen` und `herholen`** sind zwei Lemmata fuer dieselbe Sache (je
+  ein Beleg) — Kandidat fuer eine Zusammenfuehrung. Ebenso fallen `Entsetzen`
+  C1 und `Schrecken` B2 in en und es zusammen, `Einwohner` und `Bewohner` in
+  allen vier; alle drei Paare stehen nie im selben Vers, also nur gemeldet.
+
+### `hören auf` fehlte viermal, und zwei davon hat kein Werkzeug gefunden
+
+`sweep.py` meldete 7,23 und 7,28. Der Agent hat am Vers nachgezaehlt und das
+Bestands-Mehrwort (185 Belege, B1) auch in **7,26 und 7,27** ergaenzt, die
+kein Lauf gemeldet hatte. Die x-te Bestaetigung, dass die Mehrwort-Sucher
+Pflicht sind **und** nicht ausreichen.
+
+`sweeplemma.py` meldet dafuer drei Fehlalarme derselben Bauart wie in Paket 2:
+7,1 `vom an` (zwei getrennte Praepositionen), 7,30 `stellen nach` (das `nach`
+gehoert zu `nach meinem Namen`), 9,9 `Klagelied anstimmen`. Der letzte ist der
+interessante: der Bestand fuehrt die Wendung nur im **Plural**
+(`Klagelieder anstimmen`, Mt 11,17 · Lk 7,32, *sung dirges*) als Kinderreim,
+waehrend 7,29 und 9,9 den Singular haben und Wort fuer Wort glossiert bleiben —
+in beiden Kapiteln gleich.
+
+### Befunde in den Ausgaben
+
+* **Vier RIV-Anlautfehler in einem Paket**: 7,23 „amminate" (camminate), 7,32
+  „di innom" (Hinnom), 8,9 „he sapienza" (Che), 8,16 „oiché vengono" (Poiché).
+  Das Muster aus `RIV_ANLAUTFEHLER.md`, nicht repariert.
+* **RIV setzt die Satzgrenze zwischen 7,10 und 7,11 anders.** Der
+  Raeuberhoehlen-Satz steht dort am Ende von 7,10, und 7,11 beginnt mitten im
+  Satz. Kein Versatz, eine Klauselverschiebung — wer fuer 7,11 die italienische
+  Vorlage sucht, muss 7,10 mitlesen.
+* **RV vertauscht in 8,7 Kranich und Schwalbe**; RIV laesst in 8,11 `der
+  Tochter` aus und hat in 8,13 einen anderen Schluss als die drei anderen. In
+  allen Faellen ist nach dem deutschen Text glossiert.
+
+### Neue Lemmata des Pakets (14)
+
+`Himmelskönigin` C1 *queen of the sky · reina del cielo · reine du ciel ·
+regina del cielo* (WEB schreibt *sky*, nicht *heaven*) · `Würgetal` C1 *Valley
+of Slaughter · Valle de la Matanza · vallée du carnage · valle del massacro* ·
+`Starrsinn` C1 · `morden` B2 · `verstummen lassen` C1 · `verbissen` C1
+*doggedly · con obstinación · avec acharnement · con accanimento* ·
+`Tränenbrunnen` C1 *spring of tears · fuente de lágrimas · source de larmes ·
+fonte di lacrime* · `Wiehern` C1 (Substantiv neben dem vorhandenen Verb, nach
+dem Muster `Schnauben`) · `wohin immer` B1 (Mehrwort) · `Klageweib` C1
+*mourning women · plañideras · pleureuses · piagnone* · `Trauerlied` C1 ·
+`Giftwasser` B2 · `trainieren` B1 · `stutzen` B2.
