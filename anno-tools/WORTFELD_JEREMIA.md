@@ -252,7 +252,12 @@ Paar gemeldet.** Entschieden ist es nicht ueber die Ausgaben (die schwanken:
 `Halsstarrigkeit` C1 steht in 5Mo 31,27 mit **genau der Reihe von 7,24**
 (*stubbornness · obstinación · obstination · ostinazione*), und `starrsinnig`
 C1 traegt *stubborn · obstinado · obstiné · ostinato*. 9,13 ist angeglichen.
-Die Formel kommt in 11,8 · 13,10 · 16,12 · 18,12 · 23,17 wieder.
+Die Formel kommt in 11,8 · 13,10 · 16,12 · 23,17 wieder — **und nicht in
+18,12**, wie hier zunaechst stand: der Quelltext schreibt dort `was ihm sein
+böses Herz eingibt`, obwohl alle vier Ausgaben *stubbornness · terquedad ·
+penchants · caparbietà* lesen. Der Agent von Kapitel 18 hat es am Vers
+widerlegt. **17,23 traegt das Adjektiv `starrsinnig` C1, nicht das
+Substantiv** — zwei Lemmata.
 
 ### `Geschlecht` in 8,3 — die Lexikonfalle mit umgekehrtem Vorzeichen
 
@@ -677,3 +682,136 @@ errantes · courir çà et là · andar vagando* (bewusst gegen `umherirren` C1
 abgesetzt) · `umherliegen` C1 · `Geschwächter` B2 · `fürs` A1 (nach dem Muster
 `zum`/`vom`/`im`/`zur`/`am`) · dazu die Mehrwoerter `zum zweiten Mal` A2 und
 `hereinbrechen lassen` B2.
+
+
+## 7. Paket 6 (Kap. 16 · 17 · 18) — das Botenformel-Paket
+
+71 Verse, 1903 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, 44 Zeilen in B ohne Befund. `sweep`, `sweeplemma`, `konvention`,
+`levelcheck` und `qa` melden ueber alle drei Kapitel **nichts** ausser zwei
+Fehlalarmen; `glosskollision.py` findet ein einziges inhaltliches Paar
+(16,10 `Sünde`/`gesündigt` — Verb und Stammsubstantiv, die benannte Ausnahme).
+
+### Drei woertliche Uebernahmen, alle drei maschinell nachgerechnet
+
+| Vers | Vorlage | Ergebnis |
+|---|---|---|
+| 16,1 | 1,4 = 2,1 | **7 von 7 Feldern identisch** |
+| 18,1 | 7,1 | **10 von 10 Feldern identisch** |
+| 18,5 | 13,8 | **8 von 8 Feldern identisch** |
+
+Damit sind rund vierzig spaetere Stellen des Buches abgedeckt. **18,7 und 18,9**
+sind ausserdem untereinander in **allen elf gemeinsamen Positionen** gleich und
+tragen die Berufungsformel aus 1,10 (`ausreißen` · `niederreißen` ·
+`vernichten` · `aufbauen` · `pflanzen`), hier im **Singular** von `Volk` und
+`Königreich`. Die `um zu`-Eintraege enden vor dem freien `zu` — der Quelltext
+hat `auszureißen`/`aufzubauen` mit **inkorporiertem `zu`**, die in
+`konvention.py` dokumentierte Fehlalarmklasse.
+
+### Was wie eine Dublette aussah und keine ist
+
+* **7,34 hat `das Jubeln`, 16,9 hat `des Jubels`** — substantivierter Infinitiv
+  gegen Substantiv, **zwei Lemmata**. `Jubel` C1 *jubilation · júbilo ·
+  allégresse · giubilo* (36 Belege, Ps 27,6) gegen `Jubeln` C1 *cheering*.
+  Ausserdem steht die Klammer in 7,34 zusammen (`verstummen lassen`), in 16,9
+  getrennt (`ich lasse … verstummen`, `parts` [11,30]).
+* **`Starrsinn` steht nicht in 18,12**, obwohl dieses Wortfeld es behauptet
+  hatte und **alle vier Ausgaben** dort *stubbornness · terquedad · penchants ·
+  caparbietà* lesen. Der l1912mod schreibt `was ihm sein böses Herz eingibt` —
+  `eingeben` C1 *prompts · inspira · inspire · ispira*. Die Formelliste ist
+  korrigiert.
+* **17,23 traegt das Adjektiv `starrsinnig` C1** (*stubborn · obstinados ·
+  obstinés · ostinati*, Plural nach Neh 9,16), nicht das Substantiv. pos 0-9
+  sind Feld fuer Feld aus 7,24 = 11,8.
+* **17,3-4 gegen 15,13-14**: nur `preisgeben`, `Schatz`, `Gebiet`, `entfachen`,
+  `brennen`, `Feind`, `Land` und die Futurperiphrase sind gleich. 17,3 hat
+  `Vermögen` B2 und `als Beute` statt `Reichtum` und `ohne Bezahlung`; 17,4 hat
+  das neu gepraegte Kausativ **`dienen lassen` B2** statt `ausliefern`.
+
+### `Griffel` traegt im Buch zwei Reihen — und das ist richtig
+
+| Stelle | Reihe | Grund |
+|---|---|---|
+| **8,8** | pen · pluma · plume · penna | der luegnerische Griffel der **Schriftgelehrten**; alle vier Ausgaben schreiben die Feder |
+| **17,1** | stylus · cincel · burin · scalpello | hier wird **eingeritzt und gegraben**, mit `diamantener Spitze`; RV *cincel*, LSG *burin*, RIV *stilo* — drei von vier auf dem Gravierwerkzeug |
+
+Nur WEB schreibt an beiden Stellen *pen* — und WEB schreibt auch in Hiob 19,24
+„iron pen", wo der Bestand *stylus* gesetzt hat. `eisern` B2 hat seinen
+einzigen Bestandsbeleg ebenfalls in Hiob 19,24: **derselbe Vers, dasselbe
+Werkzeug.** Der in Paket 3 gemeldete Befund zu **Ps 45,2** (dort ist es der
+Schreibgriffel und traegt faelschlich die Meisselreihe) bleibt bestehen.
+
+### `konsistenz.py` gehoert ab jetzt in die Einsammelkette
+
+Nach der `Gürtel`-Lehre aus Paket 5 laeuft `konsistenz.py 24` seit diesem Paket
+nach jedem Build mit. Es hat sofort etwas gefunden, das zwischen allen anderen
+Netzen liegt:
+
+**`Angst` stand in 6,24 als *fear · miedo · peur · paura*, in 4,31 · 13,21 ·
+15,8 als *anguish · angustia · angoisse · angoscia*** — und zwar in derselben
+Bedeutung: alle vier Verse vergleichen die Angst mit den Wehen einer
+Gebaerenden. In 6,24 schreiben **alle vier Ausgaben** *anguish · angustia ·
+angoisse · angoscia*. Angeglichen; 6,24 war der Ausreisser, drei gegen einen.
+
+`paketcheck.py` konnte es nicht sehen (die Kapitel lagen in verschiedenen
+Paketen), `glosskollision.py` auch nicht (verschiedene Verse), und im Bestand
+gibt es keine Bindung dagegen (`Angst` steht dort 97-mal auf *fear*).
+**Abschnitt B von `konsistenz.py` ist das einzige Netz fuer diesen Fall.**
+
+### Zwei Entscheidungen, die spaetere Pakete binden
+
+* **`Schefela` (17,26) ist Name geblieben**: A1 *Shephelah · Sefela ·
+  Schéphéla · Scefela*. **Keine der vier Ausgaben transliteriert** (WEB
+  *lowland*, RV *llanura*, LSG *vallée*, RIV *piano*), und der Bestand
+  uebersetzt dieselbe Landschaft anderswo als `Hügelland` C1 / `Niederung` C1.
+  Entschieden hat der deutsche Text: eine Lautfolge ohne deutsche Bedeutung
+  bleibt Name. **`Schefela` steht noch in 32,44 und 33,13** — dort dieselbe
+  Reihe, oder die Entscheidung wird zentral umgedreht.
+* **`Volkstor` (17,19)** C1 *gate of the people · puerta del pueblo · porte du
+  peuple · porta del popolo* — deutsches Kompositum, alle vier Ausgaben
+  umschreiben, also uebersetzt statt transliteriert. Die Gegenprobe zur
+  `Schefela`-Regel im selben Kapitel.
+
+### Befunde im Bestand
+
+* **`preisgeben` und `ausliefern` sind im ganzen Bestand nicht unterscheidbar**
+  (es/fr/it fallen vollstaendig zusammen) und stehen in **18,21 im selben
+  Vers**. Dort ist `ausliefern` auf *hand over · abandona · abandonne ·
+  abbandona* ausgewichen (RIV schreibt genau das). Korpusweit nicht angefasst.
+* **`Verfolger` C1**: zum zweiten Mal in diesem Buch (15,15 und 17,18) schreiben
+  **alle vier Ausgaben** die Verfolgungslesart, waehrend die AT-Bindung 14 : 2
+  auf *pursuers* steht. Zwei Kapitel stuetzen jetzt eine Korrektur.
+* **`Land` traegt in 17,3 die Feldlesart** *country · campo · champ ·
+  campagna* („im offenen Land"), in 17,4 · 17,6 · 17,26 die Bindung *land ·
+  país · pays · paese*. Der Vers entscheidet.
+* `reichen` (16,7, den Becher **reichen**) und `treiben` (16,12, es schlimmer
+  **treiben**) haben im Bestand keine passende Lesart; beide sind nach den
+  Ausgaben vergeben und als Kandidaten fuer eine zweite Bestandslesart
+  gemeldet. `ritzen` C1 traegt eine Gravur-Reihe, die an allen drei Belegen
+  (3Mo 21,5 · 5Mo 14,1 · hier 16,6) gleich schief aussieht.
+
+### Befunde in den Ausgaben
+
+* Vier RIV-Anlautfehler (16,5 „ompiangerli" · 17,8 „essa" statt *cessa* ·
+  17,18 „enir" · 18,22 „oiché").
+* **WEB, RV, LSG und RIV setzen die Satzgrenze zwischen 18,14 und 18,15
+  anders** als der l1912mod („Aber mein Volk hat mich vergessen" steht deutsch
+  am Ende von 18,14, dort am Anfang von 18,15). Kein Versatz, eine
+  Klauselverschiebung — dieselbe Bauform wie RIV in 7,10/7,11 und 17,19/17,20.
+* **RV1909mod siezt auch in den Kapiteln 13, 16 und 17** (*ustedes*), waehrend
+  der Bestand im ganzen Buch *vosotros* fuehrt. Dritte Meldung derselben Sache;
+  gefolgt ist jedes Mal dem Bestand.
+* **LSG 17,6 hat kein Gewaechs**: „Il est comme **un misérable** dans le
+  désert", wo WEB *heath*, RV *retama* und RIV *tamerice* stehen — vier
+  Ausgaben, drei Pflanzen und ein Mensch. `Wacholderstrauch` C1 ist nach dem
+  deutschen Wort gepraegt.
+
+### Neue Lemmata des Pakets (16)
+
+`Trauerhaus` C1 · `Trostbecher` C1 *cup of consolation · copa de consuelo ·
+coupe de consolation · coppa della consolazione* · `unbeklagt` C1 ·
+`unbegraben` C1 · `anfüllen` B2 · `Wacholderstrauch` C1 · `diamanten` C1 ·
+`Volkstor` C1 · `Unglückstag` C1 · `Schefela` A1 · `sich drücken` C1 ·
+`dienen lassen` B2 · `Töpferscheibe` C1 *potter's wheel · rueda de alfarero ·
+tour de potier · ruota da vasaio* · `Bergwasser` B2 · `misslingen` B2 ·
+`zudenken` C1 · `erwürgen` C1 · `straucheln lassen` C1.
