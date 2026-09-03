@@ -1319,3 +1319,154 @@ Verb, nach dem Muster `Jubel`/`Jubeln`) · `Volksversammlung` C1 · `Tempelberg`
 C1 · `Moreschet` A1 · `Schemaja` A1 (Reihe vom Bestandslemma `Semaja`) ·
 `Friedhof` B1 · `Jochstange` C1 *yoke bars · barras de yugo · barres de joug ·
 stanghe di giogo* · `erwirken` C1 · `zurückbringen lassen` B2.
+
+
+## 11. Paket 10 (Kap. 28 · 29 · 30) — das Paket mit den meisten fertigen Vorlagen
+
+73 Verse, 1969 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, 42 Zeilen in B ohne Befund; `qa`, `konvention`, `levelcheck` und
+`sweep` ueber alle drei Kapitel ohne Treffer. `glosskollision.py` meldet in 29
+und 30 **null** inhaltliche Paare, in 28 eines in einer Sprache.
+
+**Achtzehn Dubletten hatten eine fertige Vorlage** — so viele wie in keinem
+Paket zuvor. Alle sind maschinell nachgerechnet:
+
+| Vers | Vorlage | Ergebnis |
+|---|---|---|
+| **30,1** | 11,1 | **10 von 10 Feldern identisch** |
+| **29,30** | 13,8 = 18,5 = 24,4 | **7 von 8 identisch**, die eine Abweichung ist `an Jeremia` statt `an mich` |
+| **30,23** | 23,19 | Position fuer Position gleich, **nur pos 10 weicht ab** (`wütender` statt `wirbelnder`) |
+| **30,24** | 23,20 | ab pos 2 gleich bei Versatz −1; `glühende` ist neu, `klar` entfaellt |
+| **29,9** | 27,15 | alle 13 gemeinsamen Felder identisch |
+| **29,18** | 24,9 | 22 von 24 gemeinsamen Feldern |
+| **29,19** | 26,5 | einschliesslich der invertierten `hören auf`-Klammer |
+| **30,22** | 11,4 | Bundesformel, pos 2-10 feldgleich |
+| **28,1** | 27,1 | alle gemeinsamen Positionen; die vierte Fassung der Datierungsformel laesst die Apposition `des Sohnes X` weg |
+
+Damit sind **29,30 und 30,1 zusammen Vorlage fuer achtzehn spaetere Stellen**
+(32,6 · 32,26 · 33,19 · 33,23 · 34,12 · 35,12 · 37,6 · 42,7 · 43,8, je in
+beiden Fassungen). Die beiden Agenten haben ohne Absprache dieselben Werte
+gesetzt — kein Eingriff noetig.
+
+### Die Kollision, die Paket 3 vorhergesagt hat
+
+**29,18 stellt `Schrecken` und `Entsetzen` zum ersten Mal im Buch in einen
+Vers.** Paket 3 hatte das Paar gemeldet und mit „stehen nie im selben Vers"
+nicht aufgeloest — hier ist die Kollisionsstelle. Ausgewichen ist das
+schwaechere `Entsetzen` (8 Belege gegen 46), und nur in den zwei betroffenen
+Sprachen:
+
+    Schrecken  B2  terror · espanto · terreur · terrore        (unveraendert)
+    Entsetzen  C1  astonishment · asombro · effroi · spavento   (nur en/es)
+
+WEB schreibt dort *astonishment*, RIV *stupore* — die Ausweichung ist gestuetzt.
+**Die Auflösung gilt nur an der Kollisionsstelle**; an den uebrigen Stellen des
+Buches behaelt `Entsetzen` seine Reihe.
+
+### Die Form-gegen-Lemma-Falle mit gefaehrlicherem Vorzeichen
+
+**`wachst` (29,26) fuehrt `belegt.py` ausschliesslich unter `wachsen` A2
+(„grow").** Im Vers ist es aber das **Wachehalten** des Aufsehers, und alle
+vier Ausgaben schreiben es so. Bisher hat die Falle immer **geschwiegen** (ein
+Lemma nicht gefunden); hier hat sie eine **plausible falsche Auskunft**
+geliefert. Vergeben ist `wachen` B1 *keep watch · veles · veilles · vegli*.
+
+In Kapitel 29 waren ausserdem **sechs von zehn** „unbelegt"-Meldungen falsch, in
+Kapitel 28 drei von vier, in Kapitel 30 eine von drei — die Quote bleibt bei
+etwa zwei Dritteln.
+
+### Zwei Ausreisser im schon gebauten Bestand
+
+Beide von Agenten gemeldet, beide beim Einsammeln behoben:
+
+* **`Priester` stand in 27,16 franzoesisch als *sacrificateurs***, an den 22
+  uebrigen Stellen des Buches und 640 im Gesamtbestand als *prêtres*. Genau ein
+  Ausreisser, und genau in der Formulierung, die LSG an dieser Stelle waehlt.
+* **`zur` trug in 16,3 die Reihe *a la · à la · alla*, obwohl `Welt` dort
+  maskulin glossiert ist** (*mundo · monde · mondo*) — grammatisch falsch in
+  drei Sprachen. 20,14 und 29,6 haben korrekt *al · au · al*.
+
+### `Land`: der vierte Fund von `konsistenz.py`
+
+Das Wort steht 98-mal im Buch mit der Glosse *land* und trug **zwei spanische
+Reihen**: *país* (87 Belege) und *tierra* (11). Die elf verteilen sich auf
+4,16 · 5,19 · 13,13 und acht Stellen in Kapitel 25 — sie folgen RV, das
+durchgehend *tierra* schreibt. **Der Bestand und das Buch stehen auf *país***,
+und `Erde` traegt *tierra*; die Doppelung war eine latente Kollision fuer jeden
+Vers, in dem beide Woerter stehen. Alle elf sind angeglichen, dazu ein
+franzoesisches *terre* in 4,16.
+
+### Ein Homograph, den der Build meldet, und er ist richtig
+
+**`hört auf` traegt zwei Lemmata**: `aufhören` A2 *ceases · cesa · cesse ·
+cessa* (15,18 · 17,8) und `hören auf` B1 *listen to · escuchad · écoutez ·
+ascoltate* (18,10 · 26,13 · 27,9 · 29,8). Dieselbe Bauform wie `rechten`/`recht`
+und `meinen`/`mein` — kein Befund.
+
+### Die Eigenpruefung: fuenf Befunde, und einmal null
+
+Der Agent von Kapitel 29 hat **vier** Uneinheitlichkeiten gefunden, darunter
+**`allen` vor `Völkern` in 29,14 und 29,18 mit zwei verschiedenen und in beiden
+Faellen falschen Genera**; der von Kapitel 28 eine (`vor` spanisch einmal *ante*,
+einmal *delante de*, in derselben Wendung `in Gegenwart von`). **Der Agent von
+Kapitel 30 hat 63 mehrfach vorkommende Lemmata geprueft und nichts gefunden** —
+das erste Mal seit Paket 4, dass die Eigenpruefung leer ausgeht.
+
+### Befunde im Bestand
+
+* **`nahekommen` und `nähern` fallen in allen vier Sprachen zusammen** und
+  stehen in **30,21 dreimal im selben Vers**. Der Bestand hat fuer `nahekommen`
+  **keine zweite Lesart**; die Ausweichung (*draw near · aproximarse ·
+  s'avancer · accostarsi*) ist gepraegt, nicht entlehnt. Kandidat fuer eine
+  korpusweite Trennung.
+* **`zerbrechen` und `zerreißen` fallen franzoesisch zusammen** (*briser*) und
+  stehen in 30,8 im selben Vers; `zerreißen` weicht auf *burst · romper ·
+  rompre · rompere* aus. **Zweiter Fall nach 10,20**, in dem die Kleider-Lesart
+  von `zerreißen` nicht passt (dort Zeltstricke, hier Fesseln).
+* **`Wohl` (29,7) hat keine brauchbare zweite Bestandslesart** — die vorhandene
+  ist *Blessed*. Neu gepraegt als *welfare · bienestar · bien-être · benessere*,
+  weil `Wohl` und `gut` im selben Vers stehen.
+* **`Abfall` (28,16) traegt die Jer-2,19-Lesart *apostasy***, obwohl **alle vier
+  Ausgaben** die Rebellions-Lesart schreiben.
+* **`seit alters her` ist ein eigenes Lemma neben `von alters her`** (7 Belege)
+  — der Quelltext schreibt `seit`. Zusammenfuehrungskandidat, dieselbe Bauform
+  wie `herbeiholen`/`herholen`.
+* `führen` („eine Sache führen", 30,13), `pressen` (30,6), `berauben` (30,16),
+  `voll` (29,10), `auftreten` (29,27), `legen` (29,26) und `schaffen` (28,13)
+  haben im Bestand keine passende Lesart und sind nach den Ausgaben vergeben.
+
+### Befunde in den Ausgaben
+
+* **WEB liest `Joch` in 28,10 · 28,12 · 28,13 als *bar(s)*, in 28,2 · 28,4 ·
+  28,11 · 28,14 als *yoke*** — dieselbe Ausgabe, zwei Woerter fuer dasselbe
+  deutsche Wort. Durchgehend *yoke*, sonst zerfaellt das Zeichen aus Kapitel 27.
+* **In 30,8 stehen die Possessiva der Ausgaben quer** („his yoke from off your
+  neck"), der l1912mod hat durchgehend die 2. Person.
+* **30,18 lesen die vier Ausgaben den zweiten Halbvers in vier Richtungen** —
+  Numerus, Sachbegriff und Adverbial gehen auseinander; `angestammt` C1 ist
+  deshalb frei gepraegt.
+* **`Nehelam`**: alle vier Ausgaben schreiben das Gentiliz (*Nehelamite*), der
+  deutsche Text macht daraus einen Ortsnamen („Schemaja **aus** Nehelam").
+  Nach dem Deutschen als Ortsname gepraegt.
+* **RIV schreibt `Hananja` durchgehend *Anania***, der Bestand *Hanania*
+  (1Chr 3,19) — dem Bestand gefolgt.
+* Sechs RIV-Anlautfehler im Paket (28,4 · 28,11 · 28,14 · 29,3 · 29,20 ·
+  29,28), dazu zwei in Kapitel 30 mitten im Vers („per iacobbe", „egli ultimi
+  giorni"). **Kapitel 30 ist nach dem strengen Muster fehlerfrei** — das sechste
+  solche Kapitel.
+* **RV1909mod siezt in 29 und 30, aber nicht in 28** — das erste Kapitel seit
+  langem ohne die inzwischen zehnmal gemeldete *ustedes*-Beobachtung.
+
+### `spricht der HERR`: Stand nach 30 Kapiteln
+
+**105 `dit` zu 80 `parle`**. Kapitel 28 steht 1 : 5, Kapitel 29 10 : 7,
+Kapitel 30 7 : 4.
+
+### Neue Lemmata des Pakets (13)
+
+`Asur` A1 · `seit alters her` C1 · `Elasa` A1 · `Gemarja` A1 · `Nehelam` A1 ·
+`Halseisen` C1 *neck iron · argolla · carcan · collare di ferro* (vier Ausgaben,
+drei Sachen) · `sich finden lassen` B2 · `braten lassen` B2 · `Wohl` B1
+(zweite Lesart) · `kreidebleich` C1 *pale as chalk · pálidos como la tiza ·
+pâles comme la craie · pallidi come il gesso* · `angestammt` C1 ·
+`nahekommen lassen` B2 · `wütend` B2 (feminine Form nach `Sturm`).
