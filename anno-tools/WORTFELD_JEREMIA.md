@@ -815,3 +815,173 @@ coupe de consolation · coppa della consolazione* · `unbeklagt` C1 ·
 `dienen lassen` B2 · `Töpferscheibe` C1 *potter's wheel · rueda de alfarero ·
 tour de potier · ruota da vasaio* · `Bergwasser` B2 · `misslingen` B2 ·
 `zudenken` C1 · `erwürgen` C1 · `straucheln lassen` C1.
+
+
+## 8. Paket 7 (Kap. 19 · 20 · 21) — das sauberste Paket des Buches
+
+47 Verse, 1433 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, und **`glosskollision.py` meldet in allen drei Kapiteln null inhaltliche
+Paare** — zum ersten Mal im Buch. `qa`, `konvention`, `sweeplemma` und
+`levelcheck` laufen ueber alle drei Kapitel ohne einen Treffer; `sweep` hat
+einen Fehlalarm.
+
+### Zwei Vorlagen, die die Vorbereitung nicht kannte
+
+* **19,3 ist fast woertlich 2. Koenige 21,12** („dass jedem, der davon hört, die
+  Ohren gellen werden"). 16 von 16 gemeinsamen Feldern uebernommen; abgewichen
+  ist nur das Genus (`Unglück` fem. dort, `Unheil` mask. hier — **zwei
+  Lemmata**, und der l1912mod waehlt in Jeremia durchgehend `Unheil`).
+* **19,6 hat in 16,14 einen laengeren Block als in 7,32** — zwoelf Tokens bei
+  Versatz +0, gefunden von `parallelen.py` im Agentenlauf. pos 0-11 stammen von
+  dort, nicht aus 7,32.
+
+Zweite Bestaetigung derselben Lehre wie in Paket 4 (Ps 135,7 zu 10,13): **der
+Befund der Vorbereitung ist eine untere Schranke.**
+
+### Der Name, den der Text selbst uebersetzt — der zweite Fall des Bestands
+
+**20,3 nennt Paschhurs neuen Namen `Grauen-ringsum`**, ein deutsches
+Kompositum. Alle vier Ausgaben transliterieren (*Magor-Missabib*), aber nach
+der Regel aus `AUFTRAG_BUCH.md` entscheidet der deutsche Text — wie bei
+`Doppelhöhle` (Machpela), `Warte` (Mizpa) und `Schnell-Raub-Eilige-Beute`
+(Jes 8,1). Gebaut in der Bindestrichform des Jesaja-Vorbilds:
+
+    Grauen-ringsum  C1  Horror-all-around · Horror-alrededor ·
+                        Effroi-tout-autour · Orrore-tutt'intorno
+
+**20,10 hat dieselben zwei Woerter als freie Wendung** (`Grauen ringsum!`) und
+traegt sie einzeln: `Grauen` C1 *horror · horror · effroi · orrore* +
+`ringsum` B2. Der Name ist Bestandteil fuer Bestandteil die Summe der Wendung.
+
+### `starrköpfig` — das vierte Wort eines Feldes, das jetzt viergliedrig ist
+
+19,15 bringt ein drittes deutsches Wort fuer dieselbe Sache, und es ist im
+Bestand unbelegt. Gepraegt als `starrköpfig` C1 ***headstrong · tercos · têtus ·
+caparbi*** — und zwar bewusst mit den spanischen und italienischen Lesarten,
+die in **Paket 3 fuer `Starrsinn` verworfen** worden sind. Damit steht das Feld
+in allen vier Sprachen kollisionsfrei:
+
+| Wort | Level | en · es · fr · it |
+|---|---|---|
+| `Starrsinn` | C1 | stubbornness · obstinación · obstination · ostinazione |
+| `starrsinnig` | C1 | stubborn · obstinado · obstiné · ostinato |
+| `starrköpfig` | C1 | headstrong · tercos · têtus · caparbi |
+| `halsstarrig` | C1 | stiff-necked · de dura cerviz · au cou raide · di collo duro |
+
+**Alle vier Ausgaben schreiben in 19,15 das Nackenbild** („made their neck
+stiff", „endurecido su cerviz") — das waere `halsstarrig` gewesen. Der deutsche
+Text sagt `starrköpfig`, und nach ihm ist gepraegt.
+
+### `Scherbentor` (19,2) — die Gegenprobe zur `Schefela`-Regel
+
+Deutsches Kompositum mit deutscher Bedeutung, also **uebersetzt**:
+`Scherbentor` C1 *Potsherd Gate · Puerta de los Tiestos · porte des Tessons ·
+porta dei Cocci*, gebaut auf `Scherbe` C1. Die Ausgaben helfen nicht und
+widersprechen einander in drei Richtungen: **WEB transliteriert** (*the gate
+Harsith*), **RV liest eine Himmelsrichtung** (*la puerta oriental*), LSG und
+RIV die Toepferei. Zusammen mit `Volkstor` (Paket 6) und `Schefela` (Paket 6)
+ist die Regel jetzt dreimal angewandt.
+
+### `Verfolger`: drei Kapitel, zwoelf Ausgabenbelege gegen null
+
+15,15 · 17,18 · 20,11 — an **allen drei Stellen** schreiben **alle vier
+Ausgaben** die Verfolgungslesart (*persecutors · perseguidores · persécuteurs ·
+persecutori*), waehrend die AT-Bindung 16 : 2 auf *pursuers · perseguidores ·
+poursuivants · inseguitori* steht (die zwei Ausnahmen sind NT). Jedes Mal ist
+der Bindung gefolgt worden. **Das ist der best belegte Korrekturkandidat des
+Buches** — zwoelf Ausgabenbelege gegen keinen einzigen dagegen.
+
+### Zwei Namen, die der Bestand anders schreibt
+
+* **`Paschhur`** (20,1 · 21,1) steht im Bestand als Lemma **`Pashur`** A1
+  (6 Belege) — dort schreibt der l1912mod `Pashur`, in Jeremia `Paschhur`. Zwei
+  deutsche Formen, deshalb ein eigenes Lemma; die Reihe *Pashhur · Pashur ·
+  Paschhur · Pashur* folgt den Ausgaben **an dieser Stelle**. Nebenbefund:
+  **RV1909mod schreibt in Esra 2,38 *Pasur*, in Jeremia *Pashur*** — dieselbe
+  Ausgabe, zwei Schreibungen. Kandidat fuer eine korpusweite Vereinheitlichung.
+  Beide Agenten haben unabhaengig dieselbe Reihe gesetzt; `paketcheck.py`
+  Abschnitt A bestaetigt es.
+* **`Malkija`** (21,1) fuehrt der Bestand als **`Malchia`** A1 mit 13 Belegen —
+  `belegt.py` schweigt zur Form, `fixgloss.py show` findet es. **Sechste
+  Bestaetigung der Form-gegen-Lemma-Falle.**
+* **`Immers`** (20,1) ist der Vatersname, kein Adverb: `Immer` A1 *of Immer ·
+  de Imer · d'Immer · di Immer* (4 Belege) gegen `immer` A1 mit 418 Belegen.
+
+### Ein widerlegter Hinweis und ein angeglichener Ausreisser
+
+**Der Hinweis „21,8 hat eine Vorlage in 5. Mose 30,15" ist falsch.** Dort steht
+`das Leben und das Gute … den Tod und das Böse` — **kein `Weg`**, keine
+Wegformel. Gemeinsam ist allein das Mehrwort `vorlegen` B2. `den Weg zum Leben
+und den Weg zum Tod` ist neu entschieden, mit `zum` = *of · de la · de la ·
+della*, weil alle vier Ausgaben „way of life / camino de vida" lesen.
+
+**`der Gott Israels` stand in 13,12 italienisch als *Iddio*, an allen 27
+uebrigen Stellen des Buches als *Dio*.** RIV schreibt zwar an allen sechs
+Formelstellen *Iddio*, der Bestand aber steht mit ueber 750 Belegen auf *Dio*.
+13,12 ist angeglichen — der zweite Fund von `konsistenz.py` in zwei Paketen.
+
+### Die `Gürtel`-Lehre wirkt jetzt im Agentenlauf
+
+Der Agent von Kapitel 20 hat seine haeufigen Lemmata am Ende **selbst gegen
+sich geprueft** und dabei zwei Uneinheitlichkeiten gefunden und bereinigt, die
+durch alle sieben Netze gefallen waeren: `ganz` stand in 20,5 als
+*toda/toute/tutta* gegen 20,8 *entero/entier/intero*, und `kommen` in 20,18 als
+*salido/sorti/uscito* gegen 20,6 *venir/venir/venire*. **Die Auflage im Prompt
+hat gehalten.**
+
+### Befunde im Bestand
+
+* **`Stock` hat keine Block-Lesart, `Block` hat sie.** Der Bestand fuehrt
+  `Stock` B1 sechsmal als Stab/Knueppel/Rohr; fuer die Fussfessel gibt es das
+  eigene Lemma `Block` C1 *stocks · cepo · ceps · ceppo* (Hi 13,27 · 33,11 ·
+  Apg 16,24). In 20,2 · 20,3 schreibt der l1912mod `Stock` und meint dasselbe.
+  Genommen ist die **Block-Reihe am Lemma `Stock`**; **LSG paraphrasiert als
+  einzige mit *prison***, deshalb ist fr aus dem Bestand (*ceps*, das LSG in
+  Hi 13,27 selbst schreibt).
+* **`Tat` laeuft mit zwei Reihen bei gleicher Bedeutung**: *deeds · hechos ·
+  actes · atti* (131 Belege, u. a. 17,10) gegen *deeds · obras · actions ·
+  azioni* (4,4). Beide Verse von Kapitel 21 enthalten `Taten`; nach der
+  `Gürtel`-Regel ist im Kapitel **eine** Reihe genommen (die von 4,4, die die
+  Ausgaben an beiden Stellen stuetzen). Kandidat fuer eine Angleichung.
+* **`höhnen` C1 (1 Beleg) faellt spanisch mit `Spott` B2 (24 Belege) zusammen**
+  und beide stehen in **19,8 im selben Vers**; ausgewichen ist das schwaechere
+  auf *mofarse*. Nebenbefund: **alle vier Ausgaben lesen `höhnen` dort als
+  *hiss/silbar/siffler/fischiare*** (Zischen), der deutsche Text sagt „höhnen".
+* **`Bedrängnis`** weicht in 19,9 auf seine NT-Mehrheit *tribulation* aus, weil
+  `Not` im selben Vers die AT-Lesart *distress* traegt — hier ist die
+  NT-Lesart die kollisionsaufloesende, nicht die falsche.
+* `rauben` (3 Belege, „Menschen berauben"), `anzeigen` (1 Beleg, *indicates*),
+  `anstellen` (3 Belege) und `irden` (zwei unvereinbare Reihen) liegen alle
+  unter der Bindungsschwelle und sind nach den Ausgaben vergeben — vier
+  Kandidaten fuer zweite Bestandslesarten.
+
+### Befunde in den Ausgaben
+
+* Vier RIV-Anlautfehler (20,2 „eniamino" · 21,7 zweimal „ano"/„on" · 21,14
+  „erusalemme"). **Kapitel 19 ist nach Kapitel 14 das zweite des Buches ohne
+  einen einzigen.**
+* **RIV verschiebt die Satzgrenze zwischen 19,10 und 19,11** („e dirai loro"
+  steht dort am Ende von 19,10) — dieselbe Bauform wie in 7,10/7,11 und
+  18,14/18,15. Kein Versatz.
+* **RV1909mod siezt in 19,3, 20,10 und 21,12** (*ustedes*, „Oigan",
+  „Denúncienlo", „Hagan justicia") — **fuenfte Meldung derselben Sache**. Der
+  Bestand fuehrt im ganzen Buch *vosotros*, und ihm ist jedes Mal gefolgt.
+* **RIV 21,14 hat ein Wort mehr als alle anderen** („questa selva **di
+  Gerusalemme**"), und **LSG liest dort `votre forêt`** (2. Person) gegen den
+  Possessivbezug der drei anderen — vier Ausgaben, drei Bezuege.
+
+### `spricht der HERR`: Stand nach 21 Kapiteln
+
+**64 `dit` zu 49 `parle`**, dazu ein *adresse* (10,1, keine Botenformel). Die
+Schwankung der Ausgabe bleibt kapitelweise: Kapitel 19 steht 2 : 4, Kapitel 20
+hat die Formel nur einmal (*parle*), Kapitel 21 steht 4 : 3.
+
+### Neue Lemmata des Pakets (12)
+
+`starrköpfig` C1 · `Scherbentor` C1 · `höhnen`-Ausweichung (kein neues Lemma) ·
+`Paschhur` A1 · `Malkija` A1 · `Grauen-ringsum` C1 · `Oberaufseher` C1 *chief
+officer · jefe supervisor · inspecteur en chef · capo-soprintendente* ·
+`Erwerb` B2 · `sich überlisten lassen` C1 · `Beraubter` C1 · `davontragen` B2
+(**keine der vier Ausgaben** uebersetzt das Verb — alle formulieren um) ·
+`Urteil üben` B2 (Mehrwort, nach `Vergeltung üben` in Ps 149,7) ·
+`Kriegslärm` C1.
