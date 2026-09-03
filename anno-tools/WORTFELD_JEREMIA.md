@@ -376,3 +376,152 @@ fonte di lacrime* · `Wiehern` C1 (Substantiv neben dem vorhandenen Verb, nach
 dem Muster `Schnauben`) · `wohin immer` B1 (Mehrwort) · `Klageweib` C1
 *mourning women · plañideras · pleureuses · piagnone* · `Trauerlied` C1 ·
 `Giftwasser` B2 · `trainieren` B1 · `stutzen` B2.
+
+
+## 5. Paket 4 (Kap. 10 · 11 · 12) — der Goetzenbauer und der grosse Vorlagenblock
+
+65 Verse, 1711 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer; von 45 Zeilen in Abschnitt B ist keine ein Befund. `glosskollision.py`
+meldet in **allen drei Kapiteln null inhaltliche Paare** — das erste Paket des
+Buches, in dem das gelingt.
+
+### 10,12-16 → 51,15-19: der groesste Vorlagenblock des Buches
+
+Vier Verse sind woertlich gleich (10,13-16 = 51,16-19), der fuenfte fast:
+**51,15 ist 10,12 ohne das `aber`** — pos 0 gleich, pos 1 entfaellt, ab pos 2
+identisch mit Versatz −1. Die Reihen stehen vollstaendig in
+`anno-quellen/deu/l1912mod/24/ch10.json`. Paket 17 schlaegt dort nach und
+entscheidet die Schoepfungshymne nicht noch einmal.
+
+Zwei Entscheidungen tragen den Block: `Kraft` A2 traegt die **AT-Bindung**
+*strength · fuerza · force · forza* und nicht die Ausgabenlesart *power* —
+sonst fiele es mit `Macht` B1 (10,6 · 10,23) zusammen. Und `Abrechnung` B2
+(10,15) traegt die einzige Bestandsreihe *accounting · cuentas · comptes ·
+conti*, obwohl die Ausgaben dort *visitation · castigo · châtiment · castigo*
+schreiben. **Wenn der Bestand hier je angeglichen wird, muessen 10,15 und
+51,18 zusammen wandern.**
+
+### Was `parallelen.py` nicht gemeldet hat
+
+Die zweite Haelfte von **10,13 steht fertig in Psalmen 135,7** („Er lässt
+Wolken aufsteigen vom Ende der Erde, macht Blitze zum Regen, lässt den Wind aus
+seinen Vorratskammern hervorkommen"). Der Agent hat sie selbst gefunden und pos
+8-29 Feld fuer Feld uebernommen, einschliesslich der beiden Kausativ-Mehrwoerter
+`aufsteigen lassen` B2 und `hervorkommen lassen` B2. Abgewichen ist der
+Quelltext nur in `für den Regen` (Ps: `zum Regen`) und `Kammern` (Ps:
+`Vorratskammern`, ein eigenes Lemma). **Der Werkzeugbefund ist eine untere
+Schranke, keine Liste.**
+
+### Der Goetzenbauer stand schon in Jesaja
+
+10,3-5 · 10,9 · 10,14 sind dieselbe Szene wie Jes 40,19-20 · 41,7 · 46,6-7, und
+der Bestand war dort fertig. `wackeln` B1 — das Wort, an dem in Jesaja zwei
+Agenten auseinandergelaufen sind und das `paketcheck.py` ueberhaupt erst
+hervorgebracht hat — steht in 10,4 mit der inzwischen festen Reihe; genommen
+ist die Form von Jes 41,7 (Zwecksatz), nicht die von 40,20 (Indikativ). Ebenso
+`Goldschmied` B2 *goldsmith · platero · orfèvre · orefice* (drei der sechs
+Belege sind genau diese Szene, und RV schreibt hier gegen die Bindung
+*fundidor*) und `Gurkenfeld` C1 aus Jes 1,8.
+
+**Die `Vogelscheuche` in 10,5 hat nur der deutsche Text.** WEB liest *a palm
+tree, of turned work*, RV *un poste de palmera*, LSG *une colonne massive*, RIV
+*pali*; das Gurkenfeld hat allein RIV. `Vogelscheuche` C1 *scarecrow ·
+espantapájaros · épouvantail · spaventapasseri* ist deshalb frei gepraegt —
+der seltene Fall, in dem keine Ausgabe hilft.
+
+### `Volk` im Plural: buchweit vereinheitlicht
+
+Der Bestand des Buches stand **16 : 2** auf *peoples · pueblos · peuples ·
+popoli*, obwohl die vier Ausgaben an vielen dieser Stellen einstimmig
+*nations* schreiben (1,5 · 4,7 · 6,18 · 10,2 · 10,7 · 10,10 · 10,25). Die
+beiden Ausreisser standen in **9,15 und 9,25**; sie sind auf die Buchreihe
+angeglichen. Kapitel 10 hat `Völker` siebenmal und ist durchgehend auf
+*peoples* gesetzt — gestuetzt von den beiden Parallelversen Ps 96,5 (→ 10,3)
+und Ps 79,6 (→ 10,25), die beide *peoples* tragen.
+
+### Zwei Homographen, die der Build meldet, und beide sind richtig
+
+12,1 hat **`rechten` C1 (Verb) und `Recht` B1 (Substantiv) im selben Vers**,
+dazu `recht behalten` B2 — drei Glieder derselben Familie, alle drei getrennt
+gefuehrt. 11,15 hat **`meinen` B1** („und meinen, das heilige Fleisch nehme
+ihnen die Schuld ab") gegen das Possessivum `mein` A1. Der Build-Hinweis
+„Wortformen mit verschiedenen Leveln (verschiedene Lemmata)" nennt beide; das
+ist kein Befund, sondern die Bauform, die schon `Spross`/`spross` hatte.
+
+**Ein Prompt-Hinweis dieser Vorbereitung war falsch:** die Vorgabetabelle nannte
+`rechten` italienisch *ragionare*. Der Bestand hat an allen vier Belegstellen
+(Hiob 23,7 · Ps 103,9 · Jer 2,9 · Jer 2,29) ***discutere***. Der Agent hat es am
+Bestand widerlegt — die uebliche Quote, die uebliche Ursache.
+
+### Die Form-gegen-Lemma-Falle, viertes und fuenftes Mal
+
+* **`Nichtse` (10,8)** stand als unbelegt im Extrakt. Der Bestand fuehrt das
+  Lemma **`Nichts` B2** (*nothingness · nada · néant · nulla*, 3 Belege) —
+  vergeben ist dessen Plural, kein neues Lemma.
+* **`Hämmern` (10,4) ist kein Verb.** Der Extrakt verweist auf `hämmern` B2
+  (Jes 44,12); im Vers steht der Dativ Plural von `Hammer`, und alle vier
+  Ausgaben schreiben das Substantiv. Vergeben ist `Hammer` B2 *hammers ·
+  martillos · marteaux · martelli* — die Reihe von Jes 41,7, derselben Szene.
+* In Kapitel 12 fuehrte `hints.py` fuenf weitere Formen als unbelegt
+  (`antasten`, `vertrocknen`, `Sterblicher`, `Reiße`, `Nah`), die saemtlich als
+  **Lemma** im Bestand stehen.
+
+### `Treuloser` ist nicht `treulos`
+
+12,1 hat das substantivierte `alle Treulosen`. Der Bestand fuehrt dafuer
+`Treuloser` C1 *faithless · desleales · déloyaux · sleali* (7 Belege); das
+Adjektiv `treulos` B2 aus Kapitel 3 ist ein anderes Lemma. Dieselbe Bauform wie
+`Abtrünniger`/`abtrünnig` im selben Wortfeld.
+
+### Befunde im Bestand
+
+* **`Beil`: die einzige Belegstelle traegt die falsche Groesse.** Der Bestand
+  hat *hatchet · hachuela · hachette · accetta* aus Ps 74,6. In 10,3 wird damit
+  im Wald ein Baum gefaellt, und alle vier Ausgaben schreiben *ax · hacha ·
+  hache · ascia*. **Ein Beleg ist keine Bindung** (`BINDUNGEN_AT` setzt die
+  Schwelle bei acht); genommen ist die Ausgabenreihe. Ps 74,6 bleibt sachlich
+  richtig — es sind zwei Werkzeuge.
+* **`ausgießen` C1 traegt italienisch zwei Reihen bei gleicher Bedeutung**:
+  *Effondi* (Jer 6,11) gegen *Spandi* (Ps 79,6). 10,25 ist die Ps-79,6-Dublette
+  und nimmt *Spandi*. Kandidat fuer eine korpusweite Angleichung.
+* **`zerreißen` B2 hat nur die Kleider-Lesart** (34 Belege *rasgar · déchirer ·
+  stracciare*). In 10,20 reissen **Zeltstricke**, und alle vier Ausgaben
+  schreiben *broken · rotas · rompus · rotti*. So vergeben, Lemma unveraendert.
+* **`Vergeltung` C1 hat drei Reihen** (*retribution · venganza · vengeance ·
+  vendetta* 10× und zwei Varianten zu je zwei Belegen), **`Schlachtung` C1 und
+  `Schlachten` B2** sind dieselbe Sache mit identischer Reihe und
+  verschiedenem Level, **`herausreißen` B2 und `ausreißen` B2** ebenso. Drei
+  Kandidaten fuer eine Zusammenfuehrung, keiner angefasst.
+
+### Befunde in den Ausgaben
+
+* **Sechs RIV-Anlautfehler in einem Paket** — 10,16 „e sraele" · 10,20 „non
+  ono" · 10,25 „oiché" · 12,6 „on li credere" · 12,8 „erciò". Dazu ein
+  **neuer Bautyp in 11,19: „ffinché" statt *affinché***, also ein *doppelter*
+  statt eines fehlenden Anlauts.
+* **LSG 12,9 hat ein Tier mehr** als alle anderen („un oiseau de proie, **une
+  hyène**"), LSG und RIV paraphrasieren 12,5b (`Dickicht am Jordan`), und
+  **alle vier lesen 12,4a als „trauern"**, wo der l1912mod `vertrocknen`
+  schreibt. Jedes Mal ist nach dem deutschen Text glossiert.
+* **RV1909mod siezt in Kapitel 10 durchgehend** (*ustedes*: „Oigan", „No
+  aprendan"), waehrend der Bestand im ganzen Buch *vosotros* fuehrt. Gefolgt
+  ist dem Bestand.
+
+### `spricht der HERR`: die Zwischenbilanz nach zwoelf Kapiteln
+
+**44 `dit` zu 27 `parle`**, jede Stelle einzeln nach LSG. Die Verteilung
+schwankt kapitelweise vollstaendig durch: Kapitel 3 hat achtmal *dit* und kein
+*parle*, **Kapitel 11 viermal *parle* und kein *dit***, Kapitel 9 steht 5 : 6.
+Dazu ein Beleg, der keine Botenformel ist: **10,1** („das der HERR zu euch
+spricht") traegt *speaks · habla · **adresse** · rivolge*.
+
+### Neue Lemmata des Pakets (14)
+
+`Vogelscheuche` C1 · `Kunsthandwerker` C1 *skilled craftsmen · artesanos
+expertos · habiles artisans · abili artefici* · `aufspannen` B2 · `gehämmert`
+B2 · `Ufas` A1 *Uphaz · Ufaz · Uphaz · Ufaz* · `Schandaltar` C1 *shameful
+altars · altares vergonzosos · autels de honte · altari dell'infamia* ·
+`verhungern` B2 · `zu suchen haben` B2 (Mehrwort) · `so sei es` B1 (Mehrwort,
+alle vier Ausgaben schreiben *Amen*) · `Fußgänger` B2 · `mithalten` B2 ·
+`anbrüllen` B2 · `gesprenkelt` C1 · `Zornglut` C1 *fierce anger · ardiente ira ·
+colère ardente · ardente ira* — **die `Zornglut`-Formel kehrt in 25,37 wieder.**
