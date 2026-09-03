@@ -110,3 +110,104 @@ Grundrauschen. Einzelheiten und Stellenliste in `RIV_ANLAUTFEHLER.md`.
 **Nicht repariert** — es waeren ueber vierhundert Aenderungen am Bibeltext
 selbst. Fuer die Annotation gilt: sieht eine RIV-Schreibung um genau einen
 fehlenden Anlaut falsch aus, an einer zweiten Belegstelle nachschlagen.
+
+## 3. Paket 2 (Kap. 4 · 5 · 6) — der Feind aus dem Norden
+
+92 Verse, 2242 Eintraege. Versatz +0 in allen vier Ausgaben und allen drei
+Kapiteln. `paketcheck.py` Abschnitt A und C leer; von den 75 Zeilen in
+Abschnitt B ist keine ein Befund — es sind Numerus, Tempus und echte
+Bedeutungsunterschiede desselben Lemmas.
+
+### `Sollte ich das nicht ahnden` — die zweite Buchdublette, fertig entschieden
+
+5,9 und 5,29 sind **woertlich gleich** und lagen bei **einem** Agenten, anders
+als 1,4 / 2,1 in Paket 1. Beide Verse tragen Feld fuer Feld dieselbe Reihe
+(18 Eintraege, maschinell verglichen). Sie gilt unveraendert fuer **9,8** —
+das ist Paket 3.
+
+| pos | Form | Lemma · Level | en · es · fr · it |
+|---|---|---|---|
+| 0 | Sollte | `sollen` A2 | Should · Debería · Devrais-je · Dovrei |
+| 4 | ahnden | `ahnden` C1 | punish · castigar · punir · punire |
+| 10 | mich rächen | `sich rächen` B2 | take revenge · vengarme · me venger · vendicarmi |
+| 13 | solchen | `solch` B2 | such · tal · tel · tale |
+| 16 | rächen | `rächen` B2 | avenge · vengar · venger · vendicare |
+
+**6,15 ist die Vorlage fuer 8,12** (ebenfalls Paket 3) und steht vollstaendig
+in `anno-quellen/deu/l1912mod/24/ch6.json`. Die tragenden Felder:
+`sich schämen` B2 *be ashamed · avergonzarse · avoir honte · vergognarsi* ·
+`Gräueltat` C1 *atrocities · atrocidades · atrocités · atrocità* ·
+`Scham` B2 *shame · vergüenza · honte · vergogna* ·
+`erröten` C1 *blushing · ruborizarse · rougir · arrossire* ·
+`Fallender` B2 *who fall · que caen · qui tombent · che cadono* ·
+`heimsuchen` C1 *punish · castigue · punirai · punirò* ·
+`stürzen` B2 *be cast down · ser derribados · être renversés · essere rovesciati*.
+
+### `spricht der HERR` — LSG bleibt der Massstab, und sie schwankt
+
+19 Stellen in den drei Kapiteln, **13 `dit` zu 6 `parle`**, jede einzeln nach
+LSG entschieden — Kapitel 4: `parle` in 4,3 und 4,27; Kapitel 5: `parle` nur in
+5,14; Kapitel 6: `parle` in 6,6 · 6,9 · 6,16 · 6,21 · 6,22, also die Mehrheit.
+en/es/it stehen an allen 19 Stellen auf *says · dice · dice*. Damit setzt sich
+fort, was Jesaja mit 25 : 23 gezeigt hat: **die Verteilung ist kein Merkmal des
+Buches, sondern der Ausgabe** — Kapitel 6 kippt sie um.
+
+### Das Kriegs-Wortfeld laeuft durch das ganze Buch
+
+`Kriegsbanner` C1 *war banner · bandera de guerra · bannière de guerre ·
+bandiera di guerra* · `Feldhüter` C1 *field watchmen · guardianes de un campo ·
+gardiens d'un champ · guardie d'un campo* · `der Mut sinken` B2 *lose courage ·
+perder el ánimo · perdre courage · perdere il coraggio* · `heranwehen` B2 ·
+`belauern` C1 · `zerfleischen` C1 · `niedermachen` C1 *make an end · acabéis ·
+détruisez · finite* · `Abendschatten` B2 · `fallen an` B2 *pass to* (6,12, die
+Haeuser, die an andere fallen).
+
+Das Hurerei-Feld aus Kapitel 3 waechst weiter: `Dirnenhaus` C1 · `brünstig` C1
+*in heat · en celo · en chaleur · in calore* · `Hengst` B2 · `Liebhaber` B2 ·
+`sich behängen` C1 · `Goldschmuck` C1 · `Schminke` C1 (alle 4,30 und 5,7-8) und
+`die Treue brechen` B2 *broken faith · quebrantado la fidelidad · rompu la
+fidélité · rotto la fedeltà* (5,11).
+
+Das Schmelzofenbild aus 6,27-30 steht zum ersten Mal: `Prüfer` B2 *tester* und
+`Prober` C1 *assayer* im **selben Vers** — beide bleiben getrennt, weil die vier
+Ausgaben sie trennen; dazu `Blasebalg` C1.
+
+36 Lemmata des Pakets sind im Bestand neu, und **keines steht in zwei Kapiteln
+zugleich** — deshalb ist Abschnitt A von `paketcheck.py` leer, nicht weil nichts
+zu vergleichen war.
+
+### Zwei Glossenkollisionen, beide bewusst stehen gelassen
+
+* **4,22 `töricht` / `unverständige`** — beide *foolish*, aber **nur en**.
+  WEB selbst schreibt „my people are foolish … They are foolish children";
+  es, fr und it trennen (*necio/ignorantes* · *fou/insensés* ·
+  *stolto/insensati*), und die Annotation trennt dort mit.
+* **5,19 `Fremden` / `fremden`** — beide *étrangers*, und **nur fr**. LSG
+  wiederholt das Wort selbst („des dieux étrangers … des étrangers"), genau wie
+  der deutsche Text.
+
+### `Ranke` steht zweimal und traegt zwei verschiedene Reihen — richtig so
+
+5,10 hat *boughs · ramas · rameaux · tralci*, 6,9 *shoots · brotes · rameaux ·
+rami*. Beide Reihen fuehrt der Bestand unter demselben Lemma `Ranke` C1 (drei
+Belege fuer die zweite, einer — Ps 80,11 — fuer die erste), und beide Agenten
+haben die genommen, die **ihre** Ausgaben stuetzen: in 5,10 schreibt RV *ramas*
+und RIV *tralci*, in 6,9 RV *sarmientos*. Der Fall sieht in `paketcheck.py`
+Abschnitt B wie eine Abweichung aus und ist keine.
+
+### Drei Fehlalarme der Mehrwort-Sucher, alle derselben Bauart
+
+`sweep.py` meldet 6,25 `geht auf` („geht nicht auf die Straße"),
+`sweeplemma.py` 4,6 `bringen her` („Unheil von Norden her") und zweimal
+`setzen ein` (5,22 „eine Grenze … gesetzt habe", 6,1 „setzt ein Zeichen"). In
+allen vier Faellen gehoert das vermeintliche Partikel zum Nachbarn: `auf die
+Straße`, `von Norden her`, `eine Grenze`, `ein Zeichen`. **Der Verdacht faellt
+immer dort an, wo ein Artikel oder eine Praeposition wie ein Verbzusatz
+aussieht.**
+
+### Ein Homograph, den der Build meldet
+
+`rechten` traegt zwei Lemmata: `rechten` C1 *reason · razonar* (2,9 und 2,29,
+das Verb) und `recht` B1 *right · debido* (5,24 „zur rechten Zeit"). Der
+Build-Hinweis „1 Wortform mit verschiedenen Leveln" ist genau das und kein
+Befund — dieselbe Bauform wie `Spross`/`spross`.
