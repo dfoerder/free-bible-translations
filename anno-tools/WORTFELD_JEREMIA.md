@@ -1779,11 +1779,11 @@ Abschnitt B: zwei Plurale **im selben Vers**, einer auf *ans*, einer auf
 
 ### `spricht der HERR`: Stand nach 36 Kapiteln
 
-Maschinell nachgezaehlt ueber alle 36 Kapitel: **138 `dit` zu 118 `parle`**.
+Maschinell nachgezaehlt ueber alle 36 Kapitel: **137 `dit` zu 118 `parle`**.
 Die bisher handgefuehrte Summe (121 : 96 nach 33 Kapiteln) war abgedriftet —
 die Zaehlweise stimmt (Kap. 32 und 33 kommen exakt auf die notierten 3 : 6 und
 3 : 7), nur die Fortschreibung hatte `parle` untergezaehlt. Kapitel 34 steht
-4 : 5, Kapitel 35 1 : 4, Kapitel 36 0 : 2.
+3 : 5, Kapitel 35 1 : 4, Kapitel 36 0 : 2.
 
 ### Neue Lemmata des Pakets (18)
 
@@ -1994,7 +1994,7 @@ dieselbe Bestandsreihe.
 
 ### `spricht der HERR`: Stand nach 39 Kapiteln
 
-Maschinell nachgezaehlt: **140 `dit` zu 124 `parle`**. Kapitel 37 steht 0 : 2,
+Maschinell nachgezaehlt: **139 `dit` zu 124 `parle`**. Kapitel 37 steht 0 : 2,
 Kapitel 38 0 : 3, Kapitel 39 2 : 1.
 
 ### Neue Lemmata des Pakets (26)
@@ -2055,9 +2055,11 @@ Aus **2Koen 25,23** kommt die vollstaendige Namenreihe der Erzaehlung
 (`Truppenführer` B2 *troop commanders · jefes de las tropas · chefs des troupes
 · capi delle truppe`, `Mizpa`, `Jischmael`, `Netanja`, `Johanan`, `Kareach`,
 `Seraja`, `Tanhumet`, `Netofa`, `Maachatiter`), aus **25,24** `gut gehen` A2,
-aus **25,26** `sich fuerchten vor` B1. **`Truppenführer` und `Elischama` haben
-im ganzen Bestand je einen einzigen Beleg, und beide stehen in diesem Kapitel**
-— die Reihe des ganzen Wortfelds haengt an 2Koen 25,23.
+aus **25,26** `sich fuerchten vor` B1. 2Koen 25,23 ist auch die Stelle, an der
+`Truppenführer` zum ersten Mal steht — das Wortfeld dieser Erzaehlung haengt
+an diesem einen Vers. (Die Angabe „je ein einziger Beleg" aus dem
+Agentenbericht ist falsch: `Truppenführer` hat 8, `Elischama` 4. Siehe den
+Nachtrag zur Belegzaehlung am Ende dieser Datei.)
 
 Ein Agent hat den Umfang noch erweitert: **25,22 liefert 41,2 woertlich**, und
 **25,25 deckt 41,1 + 41,2 + 41,3 zusammen ab**.
@@ -2213,7 +2215,7 @@ aus 24,9, die Glieder aus ihren eigenen Bestandsreihen.
 
 ### `spricht der HERR`: Stand nach 42 Kapiteln
 
-**141 `dit` zu 127 `parle`**. **Kapitel 40 und 41 enthalten die Formel
+**140 `dit` zu 127 `parle`**. **Kapitel 40 und 41 enthalten die Formel
 ueberhaupt nicht** — die einzigen zwei Kapitel des Buches ohne sie. Kapitel 42
 steht 1 : 3.
 
@@ -2233,3 +2235,207 @@ Dazu **sieben zweite Lesarten an vorhandenen Lemmata**: `richtig` A2 *fitting*
 *lies* · `Erschlagener` B2 *slain persons* · `zurückholen` B2 *recovered* ·
 `Schmach` C1 *reproach · oprobio* (die Minderheitslesart, weil der einzige
 Jeremia-Beleg 23,40 sie traegt).
+
+### Nachtrag zur `dit`/`parle`-Zaehlung
+
+Der Agent fuer Kap. 45 hat eine Differenz von eins zu meinem Zaehler gemeldet
+und damit einen Fehler im **Kriterium** aufgedeckt, nicht in den Daten. Ich
+hatte alle Eintraege mit Lemma `sprechen` und fr *dit*/*parle* gezaehlt; das
+fasst **34,6** mit ein, wo `sprach` steht — das schlichte Verb („und sprach
+alle diese Worte zu Zedekia"), nicht die Botenformel.
+
+Das richtige Kriterium ist die **Form `spricht`**. Damit lauten die Staende:
+**133 : 107** nach 33 Kapiteln · **137 : 118** nach 36 · **139 : 124** nach 39
+· **140 : 127** nach 42. Kapitel 34 steht 3 : 5, nicht 4 : 5. Die Abschnitte
+13 bis 15 sind entsprechend korrigiert; die Zahlen bis Kapitel 33 waren nicht
+betroffen, weil `sprach` erst in 34,6 vorkommt.
+
+### Nachtrag: `belegt.py` zaehlt die Wortform, nicht das Lemma
+
+Der Agent fuer Kap. 43 hat gemeldet, `Steinsäule` habe **6** Belege und nicht
+den einen, den meine Vorgabetabelle nannte. Er hat recht, und der Fehler ist
+systematisch: **`belegt.py <Wort>` zaehlt die uebergebene Wortform.**
+`Steinsäule` (Singular) steht einmal, `Steinsäulen` fuenfmal — zusammen sechs.
+Ich habe die Formzahl als Lemmazahl in die Vorgabetabellen geschrieben, seit
+mehreren Paketen.
+
+Nachgezaehlt, welche „duenn gebunden"-Angaben davon betroffen waren:
+
+    Steinsäule       1 → 6      (Plural `Steinsäulen` 5×)
+    Flüchtling       1 → 5      (Plural `Flüchtlinge` 4×)
+    Truppenführer    1 → 8      (aus einem Agentenbericht uebernommen)
+    Elischama        1 → 4      (ebenso)
+
+Wirklich an einem einzigen Beleg haengen von den genannten nur
+**`Tachpanhes`** (Jer 2,16), **`Himmelskönigin`** (Jer 7,18), **`Noph`**,
+**`Patros`** und **`Lehmboden`** (2Chr 4,17) — bei diesen fuenf ist die
+Formzahl zufaellig auch die Lemmazahl.
+
+**Fuer die restlichen Pakete:** in der Vorgabetabelle nur Zahlen nennen, die
+ueber alle Flexionsformen geprueft sind, oder gar keine. Eine zu niedrige
+Belegzahl im Prompt laedt den Agenten dazu ein, eine feste Bindung fuer
+verhandelbar zu halten.
+
+## 16. Paket 15 (Kap. 43 · 44 · 45) — das Paket, das die Vorbereitung gepruefte
+
+**48 Verse, 1474 Einzelwort- und 59 Mehrwort-Eintraege.** Buchstand: 45 von 52
+Kapiteln, 1099 Verse, 30 363 Eintraege.
+
+`paketcheck.py` meldete **0 + 18 + 0** — Abschnitt A und C beide leer, und
+Abschnitt B war mit 18 der kleinste des Buches. Das lag an der Lage des
+Pakets: `vorbereitung.py` fand **19 fertige Vorlagen und keine einzige
+paketinterne Dublette**, Kapitel 44 allein vierzehn Vorlagen aus Jeremia
+selbst. Es wurde weniger gepraegt als nachgeschlagen.
+
+### 43,8 schliesst die Botenformel des Buches ab
+
+Vorlage ist **33,19** (Aehnlichkeit 0.88), die Fassung mit **Subjekt voran** —
+nicht die Verb-Zweit-Fassung von 42,7. pos 0–6 Feld fuer Feld identisch;
+43,8 haengt `in Tachpanhes` an. Damit sind alle Fassungen der Formel im Buch
+entschieden: mit `Da` (29,30 = 32,26 = 34,12 = 35,12 = 37,6), ohne `Da` und
+verb-zweit (36,27 = 42,7), und mit Subjekt voran (33,19 = 43,8).
+
+### Zwei Fehler in der Vorbereitung, die Lemmata und Level gekostet haetten
+
+* **„45,4 ← 1,10 = 24,6 = 42,10" stimmt fuer den Sinn, nicht fuer zwei der
+  vier Woerter.** Der l1912mod schreibt `gebaut` und `gepflanzt` — die drei
+  genannten Vorlagen fuehren dort `aufbauen` B1 und `einpflanzen` B2. Richtig
+  ist **31,28** (`bauen` A2, `pflanzen` B1), fuer die 1.-Sg.-Formen
+  **Jes 5,5**. Waere die Angabe befolgt worden, staenden dort **zwei falsche
+  Lemmata und zwei falsche Level**.
+* **`Seufzen` (45,3) war im Prompt nur als Formfalle angekuendigt.**
+  Tatsaechlich ist **Ps 6,7 die woertliche Vorlage des halben Verses** — fuenf
+  von fuenf Positionen uebernommen. `vorbereitung.py` hatte die Stelle
+  gemeldet; ich hatte sie im Prompt zur blossen Lemma-Warnung verkleinert.
+
+Dazu die ueblichen Zahlkorrekturen: `Tachpanhes` steht **drei**mal, nicht vier;
+`ergießen` ist belegt (5, darunter **Jer 7,20 und 42,18 im selben Buch**);
+`überheblich` hat 20 Belege, und sein einziger franzoesischer Ausreisser ist
+**Jes 10,12** (*orgueilleux* gegen 19× *arrogant*); `als` (zeitlich) kommt in
+Kap. 44 **gar nicht** vor; die fuenf Verben aus 43,3, die ich als moeglicherweise
+neu gefuehrt hatte, sind alle belegt.
+
+### `dì` gegen `di'` — die Ausgabe widerspricht der Bestandsreihe
+
+Der Agent fuer 43,10 loeste die Kollision `sag` ↔ `von` (it *di*) ueber die
+vorhandene Bestandslesart **`dì`** aus Jer 25,28 auf. Beim Einsammeln zeigte
+sich, dass diese Lesart selbst der Fehler ist:
+
+* Das Buch steht **23 : 2** auf `di'`; die zwei Ausreisser sind 25,27 und 25,28.
+* **`dì` heisst im Italienischen „Tag"**; der Imperativ von *dire* ist `di'`.
+* **RIV1927 schreibt an beiden Stellen selbst `di'`** — in 43,10 („E di’ loro")
+  und in 25,28 („di’ loro"). Die Ausgabe widerspricht der Reihe an ihrem
+  eigenen Ort.
+* Die Kollision, die vermieden werden sollte, toleriert das Buch ohnehin
+  zweimal (14,17 · 22,2), und `di'` und `di` sind verschiedene Zeichenfolgen.
+
+Korrigiert sind **43,10 und die beiden Altstellen 25,27 · 25,28**.
+
+### `belegt.py` zaehlt die Wortform — der Fehler war meiner
+
+Der Agent fuer Kap. 43 meldete, `Steinsäule` habe **6** Belege statt des einen
+aus meiner Vorgabetabelle. Der Agent fuer Kap. 44 meldete dasselbe fuer
+`Flüchtling` (**5** statt 1). Beide haben recht, und die Ursache ist
+systematisch — sie steht im **Nachtrag zur Belegzaehlung** am Ende dieser
+Datei. Kurz: `belegt.py <Wort>` zaehlt die uebergebene **Form**, nicht das
+Lemma, und ich habe die Formzahl als Lemmazahl in die Prompts geschrieben.
+Betroffen waren `Steinsäule` (1→6), `Flüchtling` (1→5), `Truppenführer` (1→8)
+und `Elischama` (1→4).
+
+### Zwei Vorlagen, die kein Werkzeug nannte
+
+**Jer 6,13** liefert `vom Kleinsten bis zum Größten` fuer 44,12 einschliesslich
+des Bestands-Mehrworts `bis zu` A2 — ohne sie waere der Eintrag liegengeblieben.
+**Ps 6,7** siehe oben. Umgekehrt hat `sweep.py` in 44,22 das Bestands-Mehrwort
+**`werden zu` A2** gefunden, das der Prompt nicht kannte; der Agent hat es auch
+auf 44,6 angewandt. Folge: das `zur` dieser beiden Stellen traegt **nicht** die
+Fluchreihe *as*, sondern *into · en · en · in* (Reihe aus 4,26) — die
+Fluchglieder in 44,22 bleiben davon unberuehrt.
+
+### Die Fluchglieder halten ueber vier Stellen
+
+42,18 (Paket 14) · 44,8 · 44,12 · 44,22, maschinell gegeneinander geprueft,
+jedes wiederkehrende Glied mit **einer** Reihe. `Schmach` C1 traegt weiter die
+**Minderheitslesart** des Bestands (*reproach · oprobio*, 8 gegen 22), weil der
+einzige Jeremia-Beleg (23,40) sie fuehrt.
+
+Ebenso gehalten: die **zwei `in die Hand geben` in 44,30** (Hophra und Zedekia
+im selben Vers), beide mit `Hand` fr **Singular *main*** nach der
+Paket-12-Regel und den Reihen aus 22,25.
+
+### `gut gehen` — die Regel hat sich bewaehrt
+
+In Paket 14 galt `gut gehen` A2 fuer 40,9 und 42,6, weil beides **Nebensaetze**
+sind. Fuer **44,17**, einen **Hauptsatz**, war `es geht jemandem gut` B1
+vorgegeben — der Agent hat es bestaetigt und mit der Bauform von Jer 5,28
+umgesetzt (`parts` Verb + Dummy-`es` + `gut`, Dativpronomen aussen). Die
+Dreiteilung des Bestands bleibt Zusammenfuehrungskandidat, aber die
+Verteilungsregel steht.
+
+### Befunde im Bestand
+
+* **`Einwohner` (18 Belege) und `Bewohner` (12) tragen im Buch die identische
+  Reihe** *inhabitants · habitantes · habitants · abitanti*. In Kap. 44 stehen
+  sie in verschiedenen Versen. Trennungs- oder Zusammenfuehrungskandidat.
+* **`Feuer` A1 und `Brand` C1 tragen dieselbe Reihe** *fire · fuego · feu ·
+  fuoco* (43,12 gegen 43,13). Im Jeremia-Text stehen die beiden staendig
+  nebeneinander — buchweiter Aufraeumkandidat.
+* **`Ödnis` C1 (neu) deckt sich mit `Verwüstung` C1.** Die beiden stehen
+  nirgends zusammen; Zusammenfuehrungskandidat. `Öde` C1 schied aus, weil
+  seine Reihe im selben Vers mit `Wüste` kollidiert.
+* **`in` (in den Städten) ↔ `auf` (auf den Straßen) kollidiert 4 von 4 in
+  44,17 und 44,21** — aber **die Vorlage Jer 7,17 traegt dieselbe Doppelung**.
+  Eine Aufloesung haette drei Verse von ihrer Vorlage getrennt. Buchweiter
+  Angleichungskandidat.
+* **`Jojakim` traegt it *di Ioiakim*, waehrend RIV1927 in allen 35 Belegen
+  „Joiakim" schreibt.** Betrifft 14 Stellen. Angleichungskandidat.
+* **`alles Fleisch` hat im Bestand zwei Lemmata bei identischen Glossen** —
+  `alles` (u. a. Jer 25,31) gegen `all` (Jes 49,26 u. a.). Aufraeumkandidat.
+* **Die `niederreißen`-Reihe von Jes 5,5 ist in sich zeitinkonsistent**:
+  en *tear down* (Praesens) gegen es/fr/it Futur.
+* `herbeiholen` B2 (zwei Reihen), `Entsetzen` (6:1, Ausreisser 29,18) und
+  `Ordnung` (zwei Reihen im Buch) sind drei weitere Kandidaten.
+
+### Befunde in den Ausgaben
+
+* **RIV1927 hat in Kap. 42, 43 und 45 keinen einzigen Anlautfehler** — drei
+  von vier Kapiteln in Folge sauber, nachdem Paket 13 neun hatte. Kap. 44 hat
+  zwei (`erusalemme`, `iuda`).
+* **RV1909mod siezt in Kap. 44 in 12 von 30 Versen** — gleichauf mit dem
+  Hoechststand aus Kap. 42 —, in **Kap. 43 dagegen in genau einem von 13** und
+  in **Kap. 45 in keinem einzigen**. Sechzehnte bis achtzehnte Meldung.
+* **RIV 43,13 uebersetzt `Bet-Schemesch`** als „le statue del tempio del sole",
+  3 : 1 gegen die drei anderen. Derselbe Fall wie „Geruth Chimham" in 41,17,
+  nur mit umgekehrten Rollen — dort uebersetzte LSG allein.
+* **WEB 44,19 weicht inhaltlich ab** („to worship her" statt „die ihr Bild
+  darstellen"); **nur RIV stuetzt den deutschen Text** („focacce a sua
+  immagine"). Danach entschieden → `darstellen` B2 *depict*, eine zweite
+  Lesart, weil der einzige Bestandsbeleg (Mk 4,30) *describe* ist.
+* **LSG weicht dreimal ab**: 43,9/43,10 ersetzt es die Adressaten durch „les
+  Juifs", 44,25/44,26 verschiebt es die Satzgrenze, und in **45,4 schreibt es
+  „son tapis"** (Teppich) fuer `Prunkzelt`, wo die drei anderen das Zelt haben.
+* **RV 45,4 laesst `Sieh` aus** und ersetzt beide finiten Verben durch
+  *voy a* + Infinitiv.
+
+### `spricht der HERR`: Stand nach 45 Kapiteln
+
+**143 `dit` zu 135 `parle`** (Kriterium: Form `spricht`, siehe den Nachtrag zur
+Zaehlung). Kapitel 43 steht 0 : 1, Kapitel 44 2 : 5, Kapitel 45 1 : 2.
+Nachgerechnet wurde ausserdem: **„So spricht" steht im Buch 75-mal auf
+*Thus · Así · Ainsi · Così* gegen 8-mal *So*.**
+
+### Neue Lemmata des Pakets (7)
+
+`Prunkzelt` C1 *royal pavilion · pabellón real · pavillon royal · padiglione
+reale* · `Hophra` A1 *Hophra · Hofra · Hophra · Hofra* · `Ödnis` C1
+*desolation · desolación · désolation · desolazione* · `Opfern` B2
+(nominalisierter Infinitiv, Modell `Tun`/`Handeln`/`Wissen`) · `erstreben` C1
+*seek · buscar · rechercher · cercare* · Mehrwoerter `sich überziehen` C1 und
+`aufhetzen` C1.
+
+Dazu **drei zweite Lesarten**: `überziehen` C1 *wrap in* (dritte Lesart neben
+*overlay* und *overran*) · `darstellen` B2 *depict* · `vollbringen` *done*.
+
+`erstreben` steht in 45,5 zweimal, einmal als verneinter Imperativ. Das Muster
+es-Subjunktiv / it-Infinitiv dafuer ist nicht erfunden, sondern das des
+Bestands (**Spr 30,6** fuehrt `hinzufügen` genau so).
