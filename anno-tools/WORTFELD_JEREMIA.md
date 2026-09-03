@@ -2439,3 +2439,245 @@ Dazu **drei zweite Lesarten**: `überziehen` C1 *wrap in* (dritte Lesart neben
 `erstreben` steht in 45,5 zweimal, einmal als verneinter Imperativ. Das Muster
 es-Subjunktiv / it-Infinitiv dafuer ist nicht erfunden, sondern das des
 Bestands (**Spr 30,6** fuehrt `hinzufügen` genau so).
+
+### Nachtrag: `levelcheck.py 24` ohne Kapitelnummer prueft nichts
+
+Der Agent fuer Kap. 46 hat es gemeldet, und der Quelltext bestaetigt es:
+
+    nr, kaps = int(argv[0]), argv[1:]
+    ...
+    for kap in kaps:
+
+**`levelcheck.py 24` setzt `kaps = []`** — die Schleife laeuft null Mal und das
+Skript meldet unweigerlich „0 Abweichungen". Genau so stand der Aufruf in
+meiner Sammelkette und in mehreren Agentenprompts.
+
+Nachgeprueft: der Lauf ueber **alle 47 Kapitel** (`levelcheck.py 24 1 2 … 47`)
+meldet ebenfalls **0 Abweichungen** — es ist also **kein Schaden entstanden**.
+Die Agenten haben das Skript in ihren eigenen Laeufen ueberwiegend mit
+Kapitelnummer aufgerufen und die Faelle dort gefunden; in Kap. 46 war
+`levelcheck.py 24 46` sogar der einzige Lauf, der den `türmen`-Fehler sah.
+
+**Fuer die restlichen Pakete:** in der Sammelkette und in jedem Prompt
+`levelcheck.py 24 <kapitel>` schreiben. Ein Pflichtlauf, der bei falschem
+Aufruf still „sauber" meldet, ist schlimmer als keiner.
+
+## 17. Paket 16 (Kap. 46 · 47 · 48) — die Voelkersprueche, und ein Pflichtlauf, der nichts prueft
+
+**82 Verse, 1831 Einzelwort- und 97 Mehrwort-Eintraege.** Buchstand: 48 von 52
+Kapiteln, 1181 Verse, 32 291 Eintraege.
+
+`paketcheck.py` meldete nach zwei Angleichungen **1 + 36 + 0**. Der eine Fall
+in Abschnitt A ist kein Fehler, sondern die Kollisionsregel (s. u.).
+
+### Der Werkzeugbefund: `levelcheck.py 24` prueft nichts
+
+Der Agent fuer Kap. 46 hat es gefunden, der Quelltext bestaetigt es —
+Einzelheiten im **Nachtrag zu `levelcheck.py`** am Ende dieser Datei. Kurz:
+ohne Kapitelnummer laeuft die Schleife null Mal und das Skript meldet
+unweigerlich „0 Abweichungen". Genau so stand der Aufruf in meiner
+Sammelkette.
+
+Der Lauf ueber **alle 48 Kapitel** meldet ebenfalls 0 — **es ist kein Schaden
+entstanden**. Aber der erste richtige Aufruf im Einsammeln dieses Pakets fand
+sofort einen echten Fall: **48,44 `gefangen` stand als `fangen` B2, waehrend
+der Korpus `fangen` mit 61 Belegen auf A2 fuehrt.** Korrigiert.
+
+### Jeremia 48 arbeitet Jesaja 15–16 um — die Vorbereitung hatte recht
+
+Der Nachweis, den ich vor dem Prompt gefuehrt hatte, traegt: die seltensten
+Ortsnamen des Kapitels haben je **einen** Bestandsbeleg, und er steht in
+Jesaja (`Luhit` · `Horonajim` · `Eglat-Schelischija` → Jes 15,5, `Nimrim` →
+15,6, `Kir-Heres` → 16,11). Der Agent hat **Jes 15,4–7 · 16,6 · 16,8 · 16,10 ·
+16,11 · 24,17 · 24,18 · 47,1** und **4Mo 21,28** benutzt und Feld fuer Feld
+uebernommen.
+
+Vier meiner Zuordnungen trugen aber weniger weit, als ich geschrieben hatte:
+
+* **„48,31 · 36 ← Jes 16,7 · 16,11" gilt nur fuer den Namen.** Jes 16,7 hat
+  `jammern` und `Rosinenkuchen`, Jer 48,31 `wehklagen`/`aufschreien`/`seufzen`;
+  Jes 16,11 hat `Innerstes`+`Harfe`, Jer 48,36 `Herz`+`Flöte`.
+* **„48,18 ← Jes 47,1" traegt nur pos 0–1 und 8–12** — `Einwohnerin` steht in
+  Jes 47,1 gar nicht (dort `Jungfrau`, `Tochter`).
+* **„48,37 ← Jes 15,2–3" traegt nur `Bart` und `Trauergewand`.** Die naehere
+  Vorlage fuer `stutzen` ist **Jer 9,25, im selben Buch**.
+* **Eine Vorlage fehlte: 4Mo 21,29 ist die Vorlage von 48,46.** Wichtig fuer
+  spaeter — **dort fuehrt der l1912mod das Lemma `Kamos`, in Jeremia
+  `Kemosch`**. Zwei deutsche Formen, zwei Lemmata.
+
+### Sechs Stolz-Woerter in einem Vers — geloest
+
+48,29/30 haeuft `Stolz` · `stolz` · `Hochmut` · `Überheblichkeit` ·
+`Anmaßung` · `Arroganz` · `Übermut` · `Prahlen`, und die Bestandsreihen
+ueberschnitten einander bereits untereinander. Ergebnis: **acht Woerter, acht
+Reihen in allen vier Sprachen**, und nur **zwei** Bestandsreihen mussten
+bewegt werden — beide nur im Kollisionsvers:
+
+    Stolz            B1  pride · orgullo · orgueil · orgoglio          (Bestand)
+    stolz            B1  proud · orgulloso · fier · orgoglioso         (Bestand)
+    Hochmut          C1  arrogance · soberbia · **hauteur** · superbia
+    Überheblichkeit  C1  **haughtiness** · arrogancia · arrogance · arroganza
+    Anmaßung         C1  presumption · altivez · présomption · presunzione   (neu)
+    Arroganz         C1  conceit · altanería · suffisance · alterigia        (neu)
+    Übermut          C1  insolence · insolencia · insolence · insolenza (Bestand)
+    Prahlen          C1  boasting · jactancia · vantardise · vanteria   (Bestand)
+
+`Hochmut` fr weicht auf **LSGs eigenes Wort an dieser Zeile** aus („Sa
+hauteur") — nicht auf die Bestandsvariante *arrogance*, die mit
+`Überheblichkeit` kollidiert haette. `Überheblichkeit` en weicht auf seine
+**zweite Bestandslesart** aus (*haughtiness*, Jes 9,8). Die beiden
+Neupraegungen nehmen, was die Ausgaben an dieser Stelle liefern (RV
+*altivez*/*altanería*, RIV *alterigia*) und fuellen den Rest in die Luecken.
+
+### Die `Grauen`-Falle, und wie ich mir selbst widersprochen habe
+
+Fuer 48,43/44 hatte ich sauber getrennt: **Jes 24,17 schreibt `Schrecken`,
+Jer 48,43 aber `Grauen`** — die Reihe darf nicht uebertragen werden. Der Agent
+hat es eingehalten (`Grauen` C1 *horror · horror · effroi · orrore* aus
+Jer 20,4; `Grube` und `Falle` woertlich aus Jesaja).
+
+**Im selben Prompt habe ich dann fuer 46,5 behauptet, `Schrecken ringsum`
+stehe im Buch schon in 6,25 · 20,3 · 20,10** — und an zwei der drei Stellen
+steht **`Grauen`** (20,3 `Grauen-ringsum`, 20,10 `Grauen ringsum`), also genau
+das Wort, das ich zwei Absaetze weiter oben davon getrennt hatte. Der Agent
+fuer Kap. 46 hat es gemeldet und `Schrecken` B2 aus 6,25 mit `ringsum` B2 aus
+20,10 zusammengesetzt.
+
+### 50,1 haengt an 46,13, nicht an 46,1
+
+Meine Handnotiz sagte „46,1 ist die Vorlage fuer 50,1". Beide Agenten haben
+den Quelltext aufgeschlagen und widersprochen; `vorbereitung.py` hatte es
+selbst richtig gemeldet (prep16: „46,13 ← Jeremia 50,1"):
+
+    46,1   Dies ist das Wort **des HERRN, das an** den Propheten Jeremia … **erging**
+    46,13  Dies ist das Wort, **das der HERR zum** Propheten Jeremia … **sprach**
+    50,1   Dies ist das Wort, **das der HERR durch** den Propheten Jeremia … **sprach**
+
+Mit 46,1 teilt 50,1 nur die vier Anfangswoerter. Die vollstaendige
+46,13-Reihe liegt in `scratchpad/jeremia/NOTIZ_PAKET17.md`.
+
+**49,34 dagegen traegt die 46,1-Bauform** und ist bis pos 12 woertlich gleich
+mit **47,1** — vom Agenten fuer Kap. 47 am Quelltext geprueft.
+
+### `Einwohnerin` — Abschnitt A meldet die Regel, nicht ihren Bruch
+
+Das neue Lemma traegt in 48,18/19 *inhabitant · habitante · habitante ·
+abitante* und in **46,19** *resident · residente · résidente · residente*.
+Das ist kein Widerspruch: **46,19 traegt `Einwohnerin` und `Bewohner` im
+selben Vers**, 48,18/19 nicht. Die Abweichung ist die kollisionslokale
+Aufloesung. Angeglichen wurde nur das Level (C1 → **B2**, wie `Einwohner` und
+`Bewohner`).
+
+Damit ist der Befund aus Paket 15 zu einem **Dreierfeld** gewachsen:
+`Bewohner` (98 Belege), `Einwohner` (44) und jetzt `Einwohnerin` tragen
+dieselbe Reihe. In Kap. 47,2 hat `Einwohner` seinerseits auf *residents*
+ausweichen muessen. Der Aufraeumbedarf ist damit dringlicher als vorher.
+
+### Zwei Zweitschreibungen, die neu gepraegt werden mussten
+
+**`Kaftor` und `Anakiter` sind im Bestand unbelegt** — meine Vorgabetabelle
+fuehrte beide als „alle im Bestand". Der Bestand schreibt `Kaphthor`
+(5Mo 2,23) und `Enakiter` (8 Belege); der l1912mod schreibt in Jeremia und
+Amos anders als in den aelteren Buechern. Neue Lemmata mit der jeweiligen
+Bestandsreihe — Modell `Paschhur`/`Pashur`, `Betlehem`/`Bethlehem`.
+Angleichungskandidaten.
+
+### Die Form-gegen-Lemma-Falle: acht Faelle in einem Kapitel
+
+In Kap. 48 hatten **acht der 28 „unbelegten" Formen aus `hints48.txt` ein
+belegtes Lemma** (`Schlucht` C1 · `stutzen` B2 (Jer 9,25) · `hereinbrechen`
+B2 (vier Jeremia-Belege) · `leeren` B2 · `kahlscheren` C1 · `lärmend` C1 ·
+`schütteln` B1 · `hinabsinken` B2). In Kap. 47 kam `kahlscheren` dazu, in
+Kap. 46 der schwerste Fall:
+
+**`türmen` (46,7/46,8) ist belegt, aber `belegt.py türmen` findet es nicht** —
+es meldet `Türmen` → Lemma `Turm`. Das **Verb** `türmen` B2 hat einen Beleg,
+**2Mo 15,8**, in genau demselben Bild („durch deinen Atem tuermten sich die
+Wasser auf"). Der Agent hatte zuerst nach den Ausgaben gepraegt; **nur
+`levelcheck.py 24 46` hat den Fehler gesehen** — der Lauf, den mein
+Standardaufruf entwertet hatte.
+
+### Befunde im Bestand
+
+* **`zerschlagen` C1 und `zerschmettern` C1 tragen die identische Reihe**
+  *shattered · destrozado · brisé · frantumato*; ebenso **`Gericht` B2 und
+  `Urteil` B1** (*judgment · juicio · jugement · giudizio*) und **`Grauen` C1
+  und `Entsetzen` C1** franzoesisch beide *effroi*. Drei Trennungskandidaten.
+* **`Aufstieg` (neu, B2) deckt sich vollstaendig mit `Steige` C1** (Jes 15,5)
+  — zwei deutsche Woerter, dieselbe Sache, **und ein Level-Widerspruch**.
+* **`des Königs von Babel` laeuft im Buch 50 : 3 auseinander** — drei Stellen
+  (22,25 · 26,18 · 44,30) glossieren das `des` als *the · el · le · il* statt
+  *of the · del · du · del*. Angleichungskandidat.
+* **`Kir-Heres`, `Kirjatajim`, `Bozra`, `Jaser` und `Eglat-Schelischija`
+  weichen in der Bestandsreihe von der Schreibung der Ausgaben ab** — fuenf
+  Angleichungskandidaten derselben Bauform wie `Jechonja`.
+* **`Winzer` B2**: der einzige Bestandsbeleg (Jer 6,9) ist der Traubenleser,
+  in 48,12 lesen alle vier Ausgaben „Umschuetter". Dem Bestand gefolgt, weil
+  das deutsche Wort dasselbe ist.
+* **`in seiner Mitte` (46,21) fand nur `sweeplemma.py`** — `konvention.py` und
+  `sweep.py` suchen die Wortform, und die steht im Bestand nur einmal
+  (Jes 29,23). Neunter Beleg fuer die Pflichtstellung dieses Laufs.
+
+### Befunde in den Ausgaben
+
+* **RIV1927: ein Anlautfehler in Kap. 46, einer in Kap. 47, vier in Kap. 48.**
+  Dazu zwei fehlende Satzgrenzen (46,19 · 47,7) und in 48,44 `ai laccio`.
+* **RV1909mod siezt in Kap. 48 in 10 von 47 Versen — und zwar in jedem
+  einzelnen Imperativvers.** In Kap. 46 vier von 28, in Kap. 47 einer von
+  sieben. Neunzehnte Meldung.
+* **46,20 `Bremse` — nur RIV stuetzt den deutschen Text** („viene un tafano");
+  die drei anderen lesen den Zerstoerer. **46,22 `Zischen` — keine Ausgabe
+  hat es**, alle vier schreiben „Stimme". **48,1 `die Festung` — alle vier
+  transliterieren „Misgab"**, der l1912mod uebersetzt. Jedes Mal nach dem
+  deutschen Text glossiert.
+* **RV 48,41 laesst `Kerijot` aus**, **LSG 48,29 hat fuer `Arroganz` kein
+  Substantiv** („et son cœur altier"), **WEB 48,30 liest `Übermut` als
+  „his wrath"** — alle drei allein gegen die uebrigen.
+* **47,5 ist 3 : 1 gespalten**: WEB, RV und LSG lesen *Tal*, nur **RIV** hat
+  den Volksnamen — und der l1912mod folgt RIV. Der deutsche Text hat also nur
+  eine Ausgabe hinter sich.
+* **47,7 wechseln LSG und RIV in die 3. Person**, wo Deutsch, WEB und RV das
+  Schwert durchgehend anreden.
+
+### `spricht der HERR`: Stand nach 48 Kapiteln
+
+**158 `dit` zu 138 `parle`**. Die Voelkersprueche kehren das Muster um:
+**Kapitel 46 steht 6 : 0** — das erste Kapitel des Buches, in dem LSG
+ausschliesslich `dit` schreibt — und Kapitel 48 steht 9 : 2. Kapitel 47 hat
+die Formel einmal, auf `parle`.
+
+### Neue Lemmata des Pakets (44)
+
+**Kap. 46 (21):** `Tartsche` C1 *buckler · broquel · **targe** · targa* ·
+`Schneller` B1 · `kopflos` C1 · `Heilmittel` B2 · `Wehr` C1 · `entscheidend`
+B2 · `Einwohnerin` **B2** · `Bremse` C1 *gadfly · tábano · taon · tafano* ·
+`Söldner` B2 · `Zischen` C1 · `fliehend` B1 · `undurchdringlich` C1 · `Puter`
+B2 · `Theben` A1 · Mehrwoerter `anschirren` C1 · `sich türmen` B2 · `sich satt
+fressen` C1 · `sich voll trinken` C1 · `sich zur Wehr stellen` C1 ·
+`stolpern lassen` B2.
+
+Bei **`Tartsche`** liefern drei Ausgaben ein eigenes Lexem, LSG paraphrasiert.
+Weil `Schild` fest an *bouclier* gebunden ist, ist fuer Franzoesisch **`targe`**
+genommen — das echte Wort fuer diesen Schildtyp und der Kognat zu it *targa*.
+**Die einzige Stelle des Pakets, an der gegen keine Ausgabe, sondern in eine
+Luecke hinein entschieden wurde.**
+
+**Kap. 47 (5):** `Rasseln` C1 *rattling · estrépito · cliquetis · strepito* ·
+`Dröhnen` C1 *rumbling · fragor · grondement · fragore* · `Kaftor` A1 ·
+`Anakiter` B2 · Mehrwort `zurückfahren` B2. — Die drei Geraeuschwoerter in
+47,3 (`Getöse` · `Rasseln` · `Dröhnen`) sind in allen vier Sprachen getrennt,
+**obwohl RIV und LSG dieselben Woerter in umgekehrter Zuordnung verwenden**;
+der Agent ist der Bestandsbindung von `Getöse` gefolgt und hat das als
+bewussten Zug gemeldet.
+
+**Kap. 48 (25):** `Anmaßung` C1 · `Arroganz` C1 · `Aufstieg` B2 · `bekunden`
+C1 · `Fliehender` B2 · `Entkommene` C1 · `Flüchtender` B2 · `erstürmen` C1 ·
+`umschütten` C1 · `zerritzen` C1 · `wehklagen` C1 · `Obsternte` B2 ·
+`Madmen` A1 · `Mefaat` A1 · `Kerijot` A1 · `Bet-Diblatajim` A1 · `Bet-Gamul`
+A1 · `Bet-Meon` A1 · Mehrwoerter `Mitleid bekunden` C1 · `heraneilen` C1 ·
+`heranschweben` C1 · `versiegen lassen` C1 · `über … hinaus` B2 · `so weit` B2.
+
+Zu **`Madmen`**: alle vier Ausgaben schreiben den Namen, die
+„Carcass"-Ausnahme greift nicht — genommen ist *Madmen · Madmén · Madmen ·
+Madmen*, **obwohl die englische Schreibung mit dem Gemeinwort
+„madmen" zusammenfaellt.** Zur Kenntnis fuer eine spaetere Durchsicht.
