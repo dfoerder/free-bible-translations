@@ -1,0 +1,112 @@
+# Wortfeld Jeremia (Buch 24)
+
+Ein Abschnitt je Paket, wie `WORTFELD_JESAJA.md`. Der Prompt des naechsten
+Pakets bekommt daraus, was ueber die Kapitelgrenze laeuft.
+
+## 1. Was das Buch von Jesaja unterscheidet
+
+**261 buchinterne Dublettenpaare** (`dubletten.py`), gegen rund fuenf in
+Jesaja. Der groesste Teil sind Botenformeln, und sie sind in Paket 1
+entschieden. Deshalb steht am Anfang dieses Buches nicht ein Massstabskapitel,
+sondern eine **Formelentscheidung**.
+
+Dazu ein Werkzeug, das es fuer Jesaja noch nicht gab: `vorbereitung.py` baut
+die Vorbereitungsdatei jedes Pakets maschinell und teilt die Dubletten in die
+drei Richtungen auf, die etwas voellig Verschiedenes bedeuten — Vorlage steht
+in einem fertigen Kapitel, beide Verse im selben Paket, oder der eigene Vers
+ist die Vorlage fuer spaeter. **Die dritte Sorte sieht der Agent, der sie
+erzeugt, ueberhaupt nicht.**
+
+## 2. Paket 1 (Kap. 1 · 2 · 3) — die Botenformel des Buches
+
+81 Verse, 2128 Eintraege. Versatz +0 in allen vier Ausgaben und allen drei
+Kapiteln. `paketcheck.py` Abschnitt A und C leer, Artikel vor `HERR` null
+Korrekturen.
+
+### `Das Wort des HERRN erging an mich` — sieben Felder, siebzehn Kapitel
+
+1,4 und 2,1 sind **woertlich gleich** und lagen in **einem Paket**, also im
+toten Winkel: die beiden Agenten konnten einander nicht sehen. Beide haben
+`fixgloss.py show ergehen` gefragt, beide dieselbe Vorlage gefunden (1Kön 16,1
+und 1Sam 15,10) — und beide dieselbe Reihe gesetzt. **Sieben von sieben
+Feldern identisch, ohne Absprache.**
+
+| pos | Form | Lemma · Level | en · es · fr · it |
+|---|---|---|---|
+| 0 | Das | `der` A1 | The · La · La · La |
+| 1 | Wort | `Wort` A1 | word · palabra · parole · parola |
+| 2 | des | `der` A1 | of the · **del** · de l' · **del** |
+| 3 | HERRN | `HERR` A1 | LORD · SEÑOR · ÉTERNEL · SIGNORE |
+| 4 | erging | `ergehen` C1 | came · vino · vint · giunse |
+| 5 | an | `an` A1 | to · a · à · a |
+| 6 | mich | `ich` A1 | me · mí · moi · me |
+
+Die Reihe gilt fuer **16,1** (woertlich gleich) und als Vorlage fuer 7,1 ·
+13,3 · 13,8 · 18,1 · 18,5 · 24,4 · 29,30 · 32,6 · 32,26 · 33,19 · 33,23 ·
+34,12 · 35,12 · 37,6 · 42,7 · 43,8.
+
+**`ergehen an` ist kein Mehrwort** — `fixgloss.py show "ergehen an"` findet
+nichts, und die Vorlagen glossieren Wort fuer Wort. Alle 20 Bestandsbelege der
+Lesart *came · vino · vint · giunse* stammen aus derselben Formel.
+
+### `spricht der HERR` — Vers fuer Vers nach LSG
+
+Die zweite Buchformel, ueber zweihundert Stellen. Franzoesisch wechselt
+zwischen *dit* und *parle*, und Jesaja hat das Vers fuer Vers nach der Ausgabe
+entschieden (25 : 23). Jeremia macht es genauso: Kapitel 2 hat **parle** in
+2,2 und 2,5 („Ainsi parle"), **dit** in den sechs uebrigen; Kapitel 1 und 3
+haben durchgehend *dit*, weil LSG dort nichts anderes schreibt.
+
+### Das Untreue-Wortfeld (Kap. 3) gilt fuer den ganzen ersten Buchteil
+
+`Abtruenniger` C1 *renegade* (Substantiv) gegen `abtruennig` C1 *rebellious*
+(Adjektiv) · `treulos` B2 · `untreu` B2 · `Untreue` C1 · `Hurerei` C1 ·
+`Hure` C1 · `Ehebruch` C1 · `Scheidebrief` C1 (= Jes 50,1) · `entweihen` C1 ·
+`zurueckkehren` B1.
+
+**`abtruennig` und `treulos` stehen in 3,8 und 3,11 nebeneinander** und bleiben
+in allen vier Sprachen getrennt. `treulos` und `untreu` tragen dieselbe Reihe,
+stehen aber nirgends im selben Vers — nach der Kollisionsregel **nicht**
+aufgeloest. **Die vier Ausgaben vertauschen die Zuordnung** (WEB
+*backsliding*/*treacherous*, LSG *infidèle*/*perfide*); genommen ist der
+Bestand.
+
+### Der Quelltext hat einen mutmasslichen Setzfehler
+
+**1,7 schreibt `aufträgt`** (3. Person) mit dem Subjekt `ich` — „und verkünden,
+was ich dir aufträgt." 1,17 schreibt an derselben Stelle korrekt `auftrage`,
+und alle vier Ausgaben haben die 1. Person. Kontextuell in der 1. Person
+glossiert und als Befund am l1912mod gemeldet.
+
+### Was `sweeplemma.py` in einem einzigen Kapitel fand
+
+Sechs Bestands-Mehrwoerter fehlten in Kapitel 2: `nicht einmal` · `was nuetzt
+es` (zweimal) · `auch wenn` · `zur rechten Zeit` · `Tag fuer Tag`. Alle sechs
+sind mit 20 bis 39 Belegen im Bestand, und **keines haette `selfcheck`, `qa`
+oder `konvention` gesehen.** Achte Bestaetigung seiner Pflichtstellung.
+
+### Bestandsbefunde
+
+* **`dich` traegt in Josua 10,8 das Lemma `sich`** — korpusweit steht `du`
+  1527-mal, `sich` 15-mal, `dich` einmal. Die 15 Stellen sind ein Kandidat
+  fuer eine korpusweite Angleichung.
+* **`rings um` fehlt als Mehrwort in Josua 6,3 und 3Mo 16,18**, obwohl der
+  Bestand die Wendung 18-mal fuehrt.
+* **`Urteil sprechen` steht unter zwei Lemmata** — `Urteil sprechen` (AT) und
+  `das Urteil sprechen` (NT, 3 Belege). Eine der beiden gehoert
+  zusammengefuehrt.
+* **`besser` laeuft unter zwei Lemmata** (53 Belege unter `gut`, 27 unter
+  `besser`) bei gleicher Bedeutung.
+* **`erschauern` und `erbeben` fallen korpusweit in es und fr zusammen.** In
+  2,12 stehen beide in einem Vers; dort weicht `erbeben` aus. Keine
+  korpusweite Aenderung.
+
+### Und der Befund, der das ganze Buch betrifft
+
+**RIV1927 hat rund 440 Woerter ohne Anfangsbuchstaben** — „nel paese di
+eniamino", „re di iuda", „dice il ignore". Gemessen gegen die vier anderen
+Ausgaben (32 · 22 · 25 · 30 Rauschtreffer) ist das vierzehnfach ueber dem
+Grundrauschen. Einzelheiten und Stellenliste in `RIV_ANLAUTFEHLER.md`.
+**Nicht repariert** — es waeren ueber vierhundert Aenderungen am Bibeltext
+selbst. Fuer die Annotation gilt: sieht eine RIV-Schreibung um genau einen
+fehlenden Anlaut falsch aus, an einer zweiten Belegstelle nachschlagen.
