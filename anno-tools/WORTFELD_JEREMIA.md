@@ -1150,3 +1150,172 @@ gegengeprueft und keines beanstandet.
 `wirbelnd` C1 · `niederfahren` B2 · `Leichtsinn` B2 · `gar nichts` A2
 (Mehrwort) · `Schlosser` B2 *locksmiths · cerrajeros · serruriers · magnani* ·
 `Verschleppter` C1 *deportees · deportados · déportés · deportati*.
+
+
+## 10. Paket 9 (Kap. 25 · 26 · 27) — die Datierungsformel und der Voelkerbecher
+
+84 Verse, 2312 Eintraege, Versatz +0 ueberall. `paketcheck.py` Abschnitt A und
+C leer, 44 Zeilen in B ohne Befund; `qa`, `konvention`, `levelcheck` und
+`sweep` ueber alle drei Kapitel ohne Treffer. `glosskollision.py` meldet in 25
+und 27 **null** inhaltliche Paare, in 26 zwei — beide `alles`/`ganz`, die
+benannte Verschmelzung der Zielsprachen (*todo · tout · tutto* deckt beide
+deutschen Woerter), wie schon 7,15 in Paket 3.
+
+### Die Datierungsformel — drei Fassungen, und zwei mussten von Hand zusammen
+
+Das Buch beginnt hier, Sprueche zu datieren. **26,1 und 27,1 sind bis auf den
+Koenigsnamen derselbe Satz** und lagen bei **verschiedenen Agenten**; sie sind
+verschieden gebaut zurueckgekommen und beim Einsammeln angeglichen worden:
+
+* **`am Anfang`** ist ein Bestands-Mehrwort (3 Belege, Spr 20,21 · Pred 10,13 ·
+  2Petr 2,20). 27,1 hatte es gesetzt, 26,1 nicht — **kein Pflichtlauf meldet
+  das**, weil beide Verse fuer sich strukturell vollstaendig sind. Nachgetragen.
+* **Die Genitiv-Apposition `des Sohnes … des Königs`**: 25,1 und 27,1 hatten
+  *of the · del · du · del*, 26,1 *the · el · le · il*. Entschieden ueber den
+  Bestand — die Wortfolge `des Sohnes` steht dort **288-mal** mit *of the* und
+  55-mal mit *the*. 26,1 ist angeglichen.
+
+Danach sind **26,1 und 27,1 in allen dreizehn gemeinsamen Feldern identisch**,
+die einzige Abweichung ist der Koenigsname. Beide sind Vorlage fuer 35,1 und
+36,1, 27,1 zusaetzlich fuer 49,34.
+
+**25,1 ist die dritte Fassung** (`im vierten Jahr Jojakims`), Vorlage fuer
+32,1 · 35,1 · 36,1. Der Anfang ist Feld fuer Feld 11,1 = 21,1; **`vom HERRN`
+fehlt dort**, an seiner Stelle steht `über das ganze Volk Juda` mit `über`
+*concerning · acerca de · sur · riguardo a*.
+
+### Der Voelkerbecher: die dichteste Namensliste des Buches
+
+25,18-26 nennt neunzehn Voelker und Staedte, und **alle bis auf einen stehen im
+Bestand** — `Uz` · `Askalon` · `Gaza` · `Ekron` · `Aschdod` · `Dedan` · `Tema` ·
+`Bus` · `Elam` · `Medien` · `Tyrus` · `Sidon` · `Edom` · `Moab` · `Ammoniter` ·
+`Philister` · `Pharao` · `Ägypten` · `Arabien`, jeder einzeln mit `belegt.py`
+geprueft. Zwei Sonderfaelle:
+
+* **`Simri` (25,25) hat zwei Bestandslesarten** — *Zimri* (12 Belege) und
+  *Shimri* (2). Hier ist der Voelkername gemeint, und alle vier Ausgaben
+  schreiben *Zimri*.
+* **`Scheschach` (25,26) ist wirklich unbelegt** und nach den Ausgaben gepraegt:
+  A1 *Sheshach · Sesac · Schéschac · Sceshac*.
+
+### `sich gereuen lassen` in drei Konstruktionen
+
+Kapitel 26 hat das Verb dreimal, und nur eine der drei ist die Konstruktion aus
+18,8:
+
+    26,3    dann lasse ich mich das Unheil gereuen     → Mehrwort, Feld fuer Feld aus 18,8
+    26,13   dann wird der HERR das Unheil gereuen      → kein `sich`, also kein Mehrwort
+    26,19   sodass der HERR das Unheil gereute         → Praeteritum, dieselbe Reihe
+
+`gereuen` C2 traegt an allen drei Stellen dieselbe Reihe, nur konjugiert.
+**Eine Futurklammer (`wird … gereuen`) ist nach SPEC kein Mehrwort** — die
+Unterscheidung haette kein Lauf erzwungen.
+
+### Die vier Wahrsage-Berufe in einem Vers
+
+27,9 stellt `Wahrsager`, `Traumdeuter`, `Zeichendeuter` und `Zauberer`
+nebeneinander. `Zauberer` C1 traegt *sorcerers · hechiceros · **magiciens ·
+maghi***, und `Wahrsager` hat im Bestand eine Reihe, die Wort fuer Wort
+dieselbe waere. Genommen ist dessen 10-Beleg-Mehrheit *soothsayers · adivinos ·
+devins · indovini*; danach ist der Vers in allen vier Sprachen kollisionsfrei.
+**Der Auftrag hatte die kollidierende Reihe mit zwei Belegen angegeben — sie hat
+einen.**
+
+### Was `parallelen.py` wieder nicht gemeldet hat
+
+* **25,33 deckt sich enger mit 8,2 als mit dem gemeldeten 9,21** — dort stehen
+  `einsammeln`, `begraben`, `Dung` und `liegen` bereits nebeneinander.
+  Uebernommen ist 8,2. **Dritte Bestaetigung**, dass der Werkzeugbefund eine
+  untere Schranke ist (nach Ps 135,7 in Paket 4 und 2Kön 21,12 in Paket 7).
+* **26,18 ist die Vorlage fuer Micha 3,12**, aber `parallelen.py` konnte das
+  nicht sehen, weil Buch 33 im Bestand fehlt. Der Agent hat es am Quelltext
+  gefunden: `Tempelberg`, `bewaldet` und `umpflügen` gelten dort unveraendert,
+  **`Steinhaufen` ≠ `Trümmerhaufen`** — zwei Lemmata.
+
+### Elf fehlende Bestands-Mehrwoerter in einem Kapitel
+
+`sweep.py` und `sweeplemma.py` haben in Kapitel 25 elf Wendungen
+hervorgeholt, darunter `bis zum heutigen Tag` B1, `für immer und ewig` B2,
+`zu trinken geben` B1 und dreimal `machen zu` B1. **Gemeldet war nur ein Teil
+davon** — der Agent hat die uebrigen an derselben Konstruktion selbst gefunden,
+wie in Paket 3 bei `hören auf`.
+
+### `Micha` ist im Bestand belegt, aber es ist ein anderer Mensch
+
+Der Bestand fuehrt `Micha` A1 *Micah · **Micaías · Mica · Mica*** (Ri 17 ·
+1Kön 22 · 2Sam 9). 26,18 ist Micha von Moreschet, und alle vier Ausgaben
+schreiben ihn anders: *Micah · Miqueas · Michée · Michea*. Genommen ist die
+zweite Lesart am selben Lemma — dieselbe Bauform wie `Griffel` in Paket 6.
+
+### `Reichtum`: ein Ausreisser, den `konsistenz.py` gefunden hat
+
+Das Wort steht viermal im Buch und trug **zwei englische Lesarten bei gleicher
+Bedeutung**: *riches* in 9,22 und 20,5, *wealth* in 15,13 und 17,11. Der
+Bestand steht 62 : 15 auf *riches*, und **WEB schreibt in 9,22, 17,11 und 20,5
+selbst *riches***. 15,13 und 17,11 sind angeglichen — der dritte Fund von
+`konsistenz.py` seit Paket 6.
+
+### Befunde im Bestand
+
+* **`ewig` weicht in 25,9 und 25,12 franzoesisch aus**, weil `HERR` dort
+  *ÉTERNEL* traegt und `ewig` *éternel* getragen haette — genommen ist die
+  vorhandene zweite Bestandsreihe *perpétuel*.
+* **`Klang` und `Geräusch` tragen beide *sound*** und stehen in 25,10 im selben
+  Vers; `Geräusch` weicht auf *noise* aus und faellt damit mit `Lärm`
+  zusammen — die beiden stehen nirgends im selben Vers. Kandidat fuer eine
+  korpusweite Trennung.
+* **`Ende` hat zwei romanische Reihen bei gleicher Bedeutung** (*fin* aus
+  Spr 17,24 gegen *extremo/extrémité/estremità* aus Jes 48,20). Im Kapitel ist
+  nach der `Gürtel`-Regel **eine** genommen.
+* **`Höhe` hat fuer die Gelaendebedeutung nur eine Pluralreihe** — 26,18
+  braucht den Singular und bekommt *height · altura · hauteur · altura*, nicht
+  die Maß-Reihe *altezza*.
+* `dringen` (25,30 · 25,31), `erwirken` (27,18), `laden` (26,15), `holen`
+  (26,23), `weglassen` (26,2) haben im Bestand keine passende Lesart und sind
+  nach den Ausgaben vergeben — fuenf weitere Kandidaten fuer zweite
+  Bestandslesarten.
+* **`Hals` A2 und `Nacken` C1 tragen dieselbe Reihe** und stehen in Kapitel 27
+  in verschiedenen Versen — nach der Regel **nicht** aufgeloest.
+
+### Befunde in den Ausgaben
+
+* **RIV laesst Medien in 25,25 aus und holt es in 25,26 nach** — eine
+  Klauselverschiebung ueber die Versgrenze, kein Versatz. **RIV 25,20 schreibt
+  „del paese di Ur" statt *Uz***, ein Buchstabenfehler derselben Bauart wie die
+  Anlautfehler.
+* **In 27,1 lesen alle vier Ausgaben „Jojakim", der deutsche Text sagt
+  `Zedekias`.** Nach dem Deutschen glossiert — der auffaelligste Textbefund des
+  Pakets.
+* **RV 25,23 liest die Schläfen-Wendung ganz anders** („los confines del
+  mundo"); genommen ist die fertige Reihe aus 9,25.
+* **LSG 25,20 schreibt „toute l'Arabie" statt der Fremdvoelker** und 25,24 „les
+  Arabes", wo im Deutschen `Arabiens` **und** `Fremdvölker` nebeneinanderstehen.
+* **Kapitel 25 hat keinen einzigen RIV-Anlautfehler**, Kapitel 26 einen, Kapitel
+  27 zwei. Damit sind es fuenf anlautfehlerfreie Kapitel im Buch (14 · 19 · 23 ·
+  24 · 25).
+* **RV1909mod siezt in allen drei Kapiteln** — neunte Meldung derselben Sache.
+
+### Die Eigenpruefung: sieben Befunde in einem Kapitel
+
+Der Agent von Kapitel 26 hat beim maschinellen Abgleich seiner haeufigen
+Lemmata **sieben** Uneinheitlichkeiten gefunden und bereinigt, darunter `Wort`
+einmal franzoesisch als *mot* statt *parole* und **`töten` franzoesisch als
+*mourir* („sterben") statt *tuer***. Der Agent von Kapitel 25 hat eine gefunden:
+`alle` stand in **einem Vers zweimal vor demselben Substantiv**, einmal
+maskulin und einmal feminin. Alle acht waeren durch alle sieben Netze gefallen.
+
+### `spricht der HERR`: Stand nach 27 Kapiteln
+
+**91 `dit` zu 64 `parle`** (ohne Kapitel 26 und 27 gezaehlt: die drei Kapitel
+bringen 9 : 4, 0 : 3 und 4 : 4). In **23,31 und 26,x** hat LSG teils keine
+Entsprechung; dort ist der Vorgabewert *dit* gesetzt.
+
+### Neue Lemmata des Pakets (13)
+
+`Scheschach` A1 · `Zornwein` C1 *wine of wrath · vino de ira · vin de colère ·
+vino d'ira* · `Fremdvolk` C1 · `Kelterer` C1 *grape treaders · pisadores de uva
+· fouleurs au pressoir · pigiatori d'uva* · `Heulen` C1 (Substantiv neben dem
+Verb, nach dem Muster `Jubel`/`Jubeln`) · `Volksversammlung` C1 · `Tempelberg`
+C1 · `Moreschet` A1 · `Schemaja` A1 (Reihe vom Bestandslemma `Semaja`) ·
+`Friedhof` B1 · `Jochstange` C1 *yoke bars · barras de yugo · barres de joug ·
+stanghe di giogo* · `erwirken` C1 · `zurückbringen lassen` B2.
