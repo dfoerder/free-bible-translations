@@ -1470,3 +1470,166 @@ drei Sachen) · `sich finden lassen` B2 · `braten lassen` B2 · `Wohl` B1
 (zweite Lesart) · `kreidebleich` C1 *pale as chalk · pálidos como la tiza ·
 pâles comme la craie · pallidi come il gesso* · `angestammt` C1 ·
 `nahekommen lassen` B2 · `wütend` B2 (feminine Form nach `Sturm`).
+
+
+## 12. Paket 11 (Kap. 31 · 32 · 33) — das Formel-Paket, und das groesste des Buches
+
+110 Verse, 3116 Eintraege, Versatz +0 ueberall. **49 Dubletten hatten eine
+fertige Vorlage** — mehr als in jedem anderen Paket. `paketcheck.py` Abschnitt
+A und C leer, 65 Zeilen in B ohne Befund; `qa`, `konvention` und `levelcheck`
+ueber alle drei Kapitel ohne Treffer, `sweep` drei Fehlalarme,
+`glosskollision.py` ein einziges inhaltliches Paar im ganzen Paket.
+
+### Fuenf Fassungen der Botenformel, alle maschinell nachgerechnet
+
+| Vers | Wortlaut | Vorlage | Ergebnis |
+|---|---|---|---|
+| **32,6** | `Das Wort des HERRN erging an mich` | 1,4 = 2,1 = 16,1 | **7 von 7 identisch** |
+| **32,26** | `Da erging das Wort des HERRN an Jeremia` | 29,30 | **8 von 8 identisch** |
+| **33,19 = 33,23** | `Das Wort des HERRN erging an Jeremia` | 1,4 | **7 von 7 untereinander**, pos 0-5 gleich mit 1,4 |
+| **33,1** | `… erging zum zweiten Mal an Jeremia` | 13,3 | acht Felder gleich, einschliesslich `zum zweiten Mal` A2 |
+| **32,1** | `Dies ist das Wort … im zehnten Jahr` | 30,1 = 11,1 + 25,1 | pos 0-9 gleich, Datierung nach 25,1 |
+
+Damit sind die neun offenen Formelstellen des Buches (34,12 · 35,12 · 37,6 ·
+42,7 · 43,8 und die Datierungen 35,1 · 36,1 · 49,34) vollstaendig vorbereitet.
+
+### `Sieh, es kommt die Zeit`: vier Stellen, zwei Agenten, null Abweichungen
+
+Die Formel steht dreimal in Kapitel 31 (27 · 31 · 38) und einmal in 33,14 —
+also bei **zwei verschiedenen Agenten**. Beide haben 23,5 als Vorlage genommen
+(die einzige Bestandsstelle ohne `Darum` davor), und die zehn Positionen sind
+**ueber alle vier Stellen Feld fuer Feld identisch**. LSG schreibt an allen vier
+Stellen `dit`.
+
+### `Wachhof` — der Fall, fuer den Abschnitt A gebaut ist
+
+Das Wort ist im Bestand unbelegt und steht in **32,2 · 32,8 · 32,12 und 33,1**,
+also bei zwei Agenten. Sie haben es verschieden gepraegt:
+
+    Kapitel 32   court of the guard · patio de la guardia · cour de la garde · cortile della guardia
+    Kapitel 33   court of the guard · patio de la guardia · cour de la prison · cortile della prigione
+
+**Die Ausgaben stehen zwei zu zwei**: WEB und RV schreiben die Wache, **LSG und
+RIV schreiben das Gefaengnis**. Entschieden hat das deutsche Kompositum
+(`Wache` + `Hof`, beide im Bestand) — dieselbe Regel wie bei `Volkstor`
+(Paket 6) und `Scherbentor` (Paket 7). 33,1 ist angeglichen. Gefunden beim
+Vergleich der beiden Berichte; `paketcheck.py` haette es ebenso gemeldet.
+
+### Die Form-gegen-Lemma-Falle luegt zum zweiten Mal
+
+Nach `wachst` (29,26, unter `wachsen` statt `wachen`) liefert `belegt.py` in
+**32,8 fuer `Erbrecht` das Lemma `erbrechen`** — *vomit*, aus Jer 25,27.
+Beide Male ist die Auskunft **plausibel und falsch**, nicht bloss leer.
+
+Die Quote der falschen „unbelegt"-Meldungen bleibt hoch: **zehn von fuenfzehn**
+in Kapitel 31, fuenf von acht in Kapitel 32. Darunter `Messschnur` (7 Belege),
+`Ecktor`, `Rosstor`, `Kidron`, `Gareb`, `Urkunde`, `Abschrift`, `Vetter`.
+
+**Neu ist die Falle an einem Mehrwort**: `fixgloss.py show "Bund brechen"` und
+`"einen Bund brechen"` schweigen beide — das Bestandslemma heisst **`den Bund
+brechen`** (11 Belege). Gefunden hat es `sweeplemma.py`; ohne den Lauf waere
+31,32 ohne den Eintrag geblieben.
+
+### `Hananel`: mein Hinweis war falsch, und beide Agenten haben es gemerkt
+
+Die Vorbereitung fuehrte den Namen als unbelegt. Der Bestand hat **`Hananeel`
+A1 *Hananel · Hananeel · Hananeel · Hananeel*** (Neh 3,1 · 12,39) mit genau der
+Reihe, die die vier Ausgaben hier schreiben. Der l1912mod schreibt `Hananel` —
+zwei deutsche Formen, also ein eigenes Lemma mit uebernommener Reihe, wie
+`Paschhur`/`Pashur` in Paket 7. Der Agent von Kapitel 32 hat ausserdem
+festgestellt, dass **`Hananel` in Kapitel 32 gar nicht vorkommt** (dort heisst
+der Vetter `Hanamel`) — auch das stand falsch im Auftrag.
+
+### Drei Vorlagen ausserhalb des Buches, die die Werkzeuge nicht nannten
+
+* **31,21 ist wortgleich mit Sprüche 23,19** (`richte dein Herz auf`) — das
+  Bestands-Mehrwort `richten auf` B2 hat dort zehn Belege. `sweep.py` und
+  `sweeplemma.py` haben es gemeldet, die Vorbereitung nicht.
+* **31,15 hat die Parallele in Matthaeus 2,18**, nicht in dem von
+  `parallelen.py` als laengstem Block genannten Ps 77,3 — mit dem fertigen
+  Mehrwort `sich trösten lassen` B2.
+* **31,31-34 hat in Hebraeer 8,8-11 eine fast woertliche Vorlage.**
+
+**Fuenfte Bestaetigung, dass der Werkzeugbefund eine untere Schranke ist.**
+
+### Ein Befund ueber den Bestand, den nur diese Dublette zeigt
+
+**Hebraeer 8 und Jeremia glossieren `das Haus Israel` verschieden**: dort steht
+der blosse Name (*Israel*), hier durchgehend der Genitiv (*of Israel · de
+Israel · d'Israël · d'Israele*, im Buch 12 : 0). Genommen ist die Buchmehrheit;
+korpusweiter Angleichungskandidat.
+
+### 31,29-30 ist die Vorlage fuer Hesekiel 18,2
+
+Das Sprichwort von den `sauren Trauben` und den `stumpfen Zähnen` steht
+vollstaendig in `ch31.json`. `sauer` und `Traube` sind Feld fuer Feld aus
+Jes 5,2; **`stumpf` B2 ist eine zweite Lesart** — der Bestand hat nur die
+Klingen-Lesart *blunt · desafilado · émoussé · smussato* (Ps 89,44), hier steht
+*set on edge · con dentera · agacées · allegati*.
+
+### Die Eigenpruefung faengt jetzt Fehlerklassen, die kein Lauf kennt
+
+Der Agent von Kapitel 32 hat **fuenfzehn** Uneinheitlichkeiten gefunden,
+darunter drei echte Fehler:
+
+* **`ich` stand in 32,40 spanisch als *je*** — ein **franzoesisches Wort in der
+  spanischen Spalte**. `qa.py` sieht das nicht, `glosskollision.py` auch nicht.
+* `der` vor `Gott` stand in 32,27 italienisch als *l'* („l' Dio") statt *il*.
+* `ein` vor `Herz` stand in 32,39 italienisch als *uno* statt *un*.
+
+Kapitel 31 und 33 haben je drei weitere gefunden. **Die Wortklasse „falsche
+Zielsprache" ist neu** und von keinem der sieben Pflichtlaeufe abgedeckt.
+
+### Befunde im Bestand
+
+* **`Dankopfer` (33,11)**: der Bestand steht 79 : 5 auf *peace offerings*, aber
+  das sind die Opferordnungen von 3. Mose. Hier ist es das Dankopfer, und alle
+  vier Ausgaben schreiben die Danksagung — genommen ist die vorhandene zweite
+  Lesart *thank offerings*.
+* **`gefangen` (32,2)**: die AT-Mehrheit ist *captive* (Kriegsgefangene), hier
+  ist es die Haft. Genommen ist die einzige *imprisoned*-Reihe des Bestands, und
+  die stammt aus **drei NT-Belegen** — wieder ein Fall, in dem im AT die
+  NT-Lesart die richtige ist.
+* **`am` in „der Sand am Meer" (33,22) traegt im Bestand drei unvereinbare
+  Reihen** — Angleichungskandidat.
+* **`Herr` weicht in 31,32 auf *master · dueño · maître · padrone* aus**, weil
+  `HERR` im selben Vers steht; die Mehrheitsreihe waere spanisch und
+  italienisch mit `SEÑOR`/`SIGNORE` kollidiert.
+* `Bestimmung` (32,11), `teuer` (31,20), `umherziehen` (31,24), `Rat` (32,19),
+  `aufrechterhalten` (33,25), `gesund machen` (33,6) und `stumpf` (31,29) sind
+  sieben weitere Kandidaten fuer zweite Bestandslesarten.
+* **`Machseja` faellt spanisch mit `Maaseja` zusammen** — RV schreibt beide
+  Namen *Maasías*, WEB, LSG und RIV trennen sie. Der Ausgabe gefolgt; im Kapitel
+  steht `Maaseja` nicht, also keine Kollisionsstelle.
+
+### Befunde in den Ausgaben
+
+* **RV1909mod liest in 31,31 „la casa de Jacob"**, wo der deutsche Text, WEB,
+  LSG und RIV `Haus Israel` haben — der auffaelligste Textbefund des Pakets.
+* **32,24: vier Ausgaben, vier Bilder fuer `Belagerungswälle`** — WEB *mounds*,
+  **RV *arietes* (Rammboecke)**, LSG *terrasses*, RIV *opere d'assedio*.
+* **32,20: die beiden deutschen Verben lesen alle vier Ausgaben verschieden, und
+  keine zwei gleich.**
+* **33,7 · 33,11 · 33,26: alle vier Ausgaben lesen „die Gefangenen
+  zurückbringen"**, der l1912mod schreibt `das Schicksal wenden` — dem Bestand
+  gefolgt, die Reihe steht seit 29,14 fest.
+* Neun RIV-Anlautfehler im Paket, darunter zweimal `Anatot`/`abilonia` im selben
+  Kapitel; **RIV schreibt in 32,7 „ad natoth" und in 32,8 korrekt „ad Anatoth"**.
+* **RV1909mod siezt in allen drei Kapiteln** — elfte Meldung.
+
+### `spricht der HERR`: Stand nach 33 Kapiteln
+
+**121 `dit` zu 96 `parle`**. Kapitel 33 steht 3 : 7, Kapitel 32 3 : 6,
+Kapitel 31 hat die Formel elfmal.
+
+### Neue Lemmata des Pakets (27)
+
+`Wachhof` C1 · `Hanamel` A1 · `Nerija` A1 (**gilt fuer 36,4 · 43,3 · 45,1 ·
+51,59**) · `Machseja` A1 · `Kaufurkunde` C1 *deed of purchase · contrato de
+venta · contrat d'acquisition · atto di compra* · `Vorkaufsrecht` C1 ·
+`Erbrecht` C1 · `Lösungsrecht` C1 · `unterschreiben` B2 · `dazunehmen` B2 ·
+`zukehren` B2 · `Gründung` B2 · `einsperren lassen` B2 · `Hananel` A1 ·
+`Goa` A1 · `Wegzeichen` C1 · `Markierung` C1 · `betend` B2 · `entlangleiten`
+C1 · `ausmessen` C1 · `ungezähmt` C1 · `Lieblingskind` C1 *darling child · niño
+querido · enfant de mes délices · figlio prediletto* · `Wohnstatt` C1 ·
+`Reigen` C1 · `sich wehren` B2 · `aufrechterhalten` B2 · `erwachsen lassen` B2.
