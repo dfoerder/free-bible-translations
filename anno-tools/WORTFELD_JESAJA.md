@@ -3999,3 +3999,84 @@ Kap. 61 (6): `Freudenoel` · `Kopfschmuck` (als *garland*, weil alle sechs
 `sich zieren`, dazu `Gnadenjahr`.
 Kap. 62 (8): `Morgenglanz` · `Verlassene` · `Verwuestete` · `Vermaehlte` ·
 `vermaehlen` · `Gesuchte`, dazu `sich goennen` · `wegraeumen`.
+
+## 29. Paket 23 (Kap. 63 · 64) — die verschobene Verszaehlung
+
+30 Verse, 791 Eintraege. `paketcheck.py` Abschnitt A und C leer (achtes Mal),
+Artikel vor `HERR` null Korrekturen (fuenftes Mal).
+
+### Die Zaehlung, Vers fuer Vers nachgewiesen
+
+`PAKETE_JESAJA.txt` sagt seit dem ersten Tag, dass de 64,1 zwei Verse der
+Ausgaben verschmilzt. `ausgaben.py` misst es (**+1** in en/es/it, **+0** in fr),
+und der Agent hat die Zuordnung fuer alle elf Verse und alle vier Ausgaben
+aufgeschrieben:
+
+| de | en · es · it | fr |
+|---|---|---|
+| **64,1** | **64,1 + 64,2** | **63,19 (zweite Haelfte) + 64,1** |
+| 64,n (n ≥ 2) | 64,n+1 | 64,n |
+
+**Die Falle liegt im Werkzeug selbst:** `ausgaben64.txt` stellt neben de 64,1
+nur deren **64,2**, weil es je einen Vers ausrichtet. Wer nur die
+Vorbereitungsdatei liest, verliert die erste Haelfte (`Ach, dass du den Himmel
+zerrissest`) — sie steht in deren 64,1. Beide Agenten haben es geprueft, und
+der 63er hat unabhaengig bestaetigt, was LSG am Ende von 63,19 zusaetzlich
+traegt, und **nur bis zum deutschen Versende genommen**.
+
+Das ist der Fall aus `VERSZAEHLUNG_38_41.md` in seiner gefaehrlichsten Form:
+die verschobene Zeile stammt aus derselben Bildreihe und liest sich plausibel.
+
+### Der Blockmesser misst zu wenig — zum dritten Mal
+
+63,13 gegen Ps 106,9: gemessen vier Positionen, **acht tragen**. Der Block
+laeuft ueber `sie durch die Tiefen fuehrte` hinaus bis `wie … durch die Wueste`,
+samt `durch` = *through · por · à travers · attraverso* (nicht die
+Mehrheitszeile) an beiden Stellen.
+
+Und wo er bricht, bricht er sauber: 63,17 gegen 54,14 — **54,14 hat `sich
+fuerchten` reflexiv, 63,17 „sodass wir dich fuerchten" transitiv.** Kein
+Mehrwort uebernommen, und der Gegenbeleg steht in der zweiten Vorlage desselben
+Verses (1Kön 8,43 glossiert „und dich fuerchten" ebenfalls ohne).
+
+### `Gewand` gegen `Kleid`: die Aufloesung gilt nur, wo die Kollision steht
+
+63,1, 63,2 **und** 63,3 stellen `Gewand` und `Kleid` nebeneinander, und beide
+Bestandsbindungen laufen in fr und it auf dasselbe Wort. `Gewand` weicht
+deshalb auf seine belegte Zweitzeile aus (*robe · manto · manteau · mantello*,
+Ps 102,27 · Hebr 1,12; RIV schreibt an 63,2 selbst „il tuo manto").
+
+**64,5 hat kein `Kleid` im Vers** und behaelt die 84er-Bindung *garment ·
+vestidura · vêtement · veste*. Der 63er-Agent hat um Angleichung gebeten; sie
+unterbleibt — das ist dieselbe Lage wie `beschaemt` in 41,11 gegenueber 42,17
+(Paket 15): **eine Aufloesung gilt im Kollisionsvers, nicht im Wortfeld.**
+
+### Was die Agenten diesmal in meinen Vorgaben gefunden haben
+
+* **`Heiligtum` steht in 63,18, nicht in 64.** Ich hatte es beiden Kapiteln
+  zugeschrieben.
+* **`Geist` gross oder klein?** Ich hatte die Kleinschreibung vorgegeben; die
+  Vorlage 1Kön 22,24 liefert fuer „der Geist des HERRN" ausdruecklich die
+  Grossschreibung, Jesaja selbst tut es in 11,2 und 61,1, und der Bestand steht
+  286 : 175. Alle drei Stellen in 63 stehen jetzt gleich.
+* **`Retter` in 63,8 ist *Savior*, nicht die AT-Tabellenzeile *deliverer*.**
+  Jesaja ist buchintern gespalten (45,21 *deliverer* gegen 49,26 und 60,16
+  *Savior*), und alle vier Ausgaben schreiben hier Savior. Dieselbe Klasse wie
+  `Lohn` und `Rest` aus Paket 15 — die Bindung gilt der Bedeutung.
+* **Fuenf von neun als unbelegt gemeldeten Formen waren gedeckt**, darunter
+  `einherschreiten` (Ri 5,4), das **nicht einmal im VERWANDT-Abschnitt** des
+  Extrakts auftauchte.
+
+### Ein Bestandsbefund im Italienischen
+
+**Ps 106,9 traegt `die Tiefen` als it `gli` + `profondità`** — der Artikel ist
+auf RIVs „gli abissi" gezogen, das Substantiv auf die Bestandszeile. Zusammen
+ist das falsches Italienisch. 63,13 setzt `le profondità` (Bindung 19 : 2);
+Ps 106,9 ist gemeldet und nicht angefasst.
+
+### Neue Lemmata (11)
+
+Kap. 63 (6): `Keltertreter` C2 · `spritzen` B2 · `ruhmreich` C1 · `Regung` C1,
+dazu `im Sinn liegen` B2 · `versagt bleiben` C1.
+Kap. 64 (5): `siedend` C1 · `verharren` C1 · `sich aufraffen` C1 ·
+`rechnen mit` B2 · `kund werden` B2.
