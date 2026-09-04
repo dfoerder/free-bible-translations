@@ -597,3 +597,133 @@ wird, nicht um einen Sturm.
   Psalter), bei identischen Glossen. Hesekiel bleibt in sich einheitlich.
 - **`zu sehen sein`** hat den Mehrworteintrag in Hohelied 2,12, in Nehemia 3,25
   nicht.
+
+---
+
+## 5. Paket 5 (Kap. 13 · 14 · 15) — 1408 Tokens
+
+54 Verse, 1458 Einträge, 59 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum fünften Mal in Folge leer**; Abschnitt B 20 Fälle, sämtlich Flexion oder
+dokumentierte Kollisionsauflösungen.
+
+### Die Erkenntnisformel hat 61 Vorkommen, nicht 54
+
+`PAKETE_HESEKIEL.txt` nannte 54, und alle meine Vorgabetabellen haben die Zahl
+übernommen. **Der Agent für Kapitel 13 hat beim Lesen eine Variante gefunden,
+die kein Suchmuster erfasst hatte:** 13,9 liest „dass ich **Gott, der HERR,**
+bin". Die Nachzählung mit einem Muster, das eingeschobene Gottesbezeichnungen
+zulässt, ergibt:
+
+    54×  dass ich der HERR bin
+     5×  dass ich Gott, der HERR, bin        13,9 · 23,49 · 24,24 · 28,24 · 29,16
+     1×  dass ich der HERR, euer Gott, bin   20,20
+     1×  dass ich der HERR, ihr Gott, bin    28,26
+
+Alle sieben tragen denselben Kern und `erkennen` auf der *recognize*-Familie;
+13,9 ist so annotiert. Die sechs übrigen liegen in späteren Paketen —
+`PAKETE_HESEKIEL.txt` ist korrigiert.
+
+> **Das ist dieselbe Falle wie bei der Wortereignisformel in Paket 3, in
+> anderer Verkleidung.** Dort verdeckte die Wortstellung die Formel, hier ein
+> eingeschobener Zusatz. **Ein Formelmuster muss an beiden Enden lose sein** —
+> Verbstellung *und* eingeschobene Apposition. Im Zweifel den kürzesten festen
+> Kern suchen (`dass ich` … `bin`) und die Treffer von Hand durchsehen.
+
+### Die Wortereignisformel steht jetzt dreizehnmal gleich
+
+    3,16 · 6,1 · 7,1 · 11,14 · 12,1 · 12,8 · 12,17 · 12,21 · 12,26 · 13,1 · 14,2 · 14,12 · 15,1
+
+Maschinell nachgerechnet. **14,2 ist die letzte `Da`-Fassung vor 20,2** und
+Feld für Feld aus 11,14 übernommen — alle acht Positionen zeichengleich.
+
+### Die Dublette 14,14 ↔ 14,20 — und wie der Agent meine Angabe korrigierte
+
+**19 gemeinsame Form/Lemma-Paare, alle 19 identisch.** Meine Vorbereitung
+behauptete, beide Verse endeten auf „… nur ihr eigenes Leben durch ihre
+Gerechtigkeit retten, spricht Gott, der HERR". **Das stimmt für keinen von
+beiden:** in 14,14 sind die beiden Präpositionalgruppen umgekehrt angeordnet,
+und 14,20 endet ohne Botenformel — die steht dort mitten im Vers in „so wahr
+ich lebe, spricht Gott, der HERR". Der Agent hat zusätzlich **14,16 ↔ 14,18**
+gefunden und gegengerechnet: 27 gemeinsame Formen, alle gleich.
+
+### Die Kollisionsregel, dreimal sauber angewandt
+
+- **`Mensch` 13,19 gegen 13,20.** In 13,19 steht `Volk` im selben Vers, also
+  weicht `Mensch` auf *men · hombres · hommes · uomini* (51 Belege). **In
+  13,20 steht kein `Volk`** — dort geht `Mensch` zurück auf die
+  Bestandsmehrheit *people · hombres · hommes · uomini* (314). Genau die
+  10,5-Regel.
+- **`richten … Gesicht gegen` (15,7)** folgt 4,7 mit `gegen` = *against ·
+  contra · contre · contro* und **nicht** der Ausweichlesart *toward · hacia ·
+  vers · verso* aus 6,2 — weil in 15,7 kein zweites `gegen` steht. Der Agent
+  hat daraus die Merkregel für die neun späteren Stellen abgeleitet.
+- **14,6 brauchte zwei Runden im selben Vers.** Erst weicht `kehren` vor
+  `wenden` auf seine eigene *return*-Familie; dann stellte sich heraus, dass
+  die beiden Mehrwörter `sich abwenden` und `abwenden` englisch **beide**
+  *turn away* wären — das zweite weicht auf *avert · apartad · détournez ·
+  stornate*.
+
+### Beim Einsammeln angeglichen (1)
+
+**`Land` 13,9 es *tierra* → *país*.** 28 der 29 Singular-Vorkommen im Buch
+tragen *país*, darunter dieselbe Wendung „Land Israel" in 7,2 · 11,17 ·
+12,19 (dreimal) · 12,22.
+
+### Die Lexikonfalle — ein neuer Fehlertyp
+
+**`Anstoß` (14,3 · 14,4 · 14,7):** von 21 Bestandsbelegen tragen 16
+*offense · escándalo · scandale · scandalo* — und **alle 16 sind
+neutestamentlich**. Die einzigen alttestamentlichen Belege (Jesaja 8,14 ·
+Jeremia 6,21) tragen *stumbling · tropiezo · achoppement · inciampo*, und
+genau das lesen hier auch alle vier Ausgaben. Der Agent hat die AT-Lesart
+genommen.
+
+> Dieselbe Bauform wie `Menschensohn` in Paket 1: **eine erdrückende
+> Bestandsmehrheit kann vollständig aus einem anderen Testament stammen.**
+> Bei jedem Wort mit theologischem Klang die Belegstellen ansehen, nicht nur
+> die Zahl.
+
+### Widerlegte Angaben der Vorbereitung
+
+- **`losbrechen` ist belegt** (Psalm 78,26 · Jeremia 1,14), ebenso
+  **`losbrechen lassen`** — ich hatte es als „zu prägen" geführt.
+- **`Nagel` steht in Kapitel 15 nicht** (nur `Pflock`), **`Prophetin` nicht in
+  13** (der Text liest „die Frauen deines Volkes"), **`Ärgernis` nicht in 14**
+  (der Text liest `Anstoß`), **`Gericht` nicht in 14,21** — es wird also nichts
+  aufgelöst.
+- **Die Botenformel steht in 15,6 und 15,8 ohne `So`** („Darum spricht …" und
+  die bloße Schlussformel), in 13,8 **zweimal** im selben Vers.
+- **`sich entfernen` ist B1, nicht B2**, und `sich trösten` ist ein
+  Bestandslemma — beides von `levelcheck.py` bzw. dem Agenten gefangen.
+- **`tünchen` hat zwei Belege, nicht einen** (Matthäus 23,27 · Apostelgeschichte 23,3).
+- **`abirren`** trägt im einzigen Bestandsbeleg (Sprüche 21,16) *strays ·
+  se desvía · s'écarte · si smarrisce*, nicht die von mir genannte Pluralreihe.
+
+### Zwei Mehrwörter, die kein Vorbereitungswerkzeug findet
+
+- **`aus eigenem Antrieb` B2** (13,2 · 13,17) — von `sweeplemma.py` gefunden,
+  von `hints.py`, `konvention.py` und `sweep.py` nicht.
+- **`wehe jemandem` B2** — in 13,18 von `sweeplemma.py` gemeldet, **in 13,3
+  von keinem Werkzeug**, weil das Adjektiv `törichten` zwischen `den` und
+  `Propheten` steht. Von Hand nach Matthäus 24,19 gesetzt, mit Lücke in den
+  `parts`. **Die Lemma-Signatur einer diskontinuierlichen Wendung findet
+  `sweeplemma.py` prinzipiell nicht.**
+
+### Neu geprägt (10)
+
+Kap. 13: `Tüncher` C2 · `Anstrich` B2 · `brüchig` C1 (4× im Kapitel) ·
+`bloßliegen` C1 · `Zauberband` C1 · `Handgelenk` B1 · `Kopfgröße` B2.
+Kap. 14: `entvölkern` C1 · `Fragender` B2 · `sich befragen lassen` B2.
+Kap. 15: **keine** — beide `hints.py`-Meldungen waren Formfallen
+(`fertigen` hat 18 Belege, `aufhängen` elf).
+
+Dazu drei **neue Lesarten an belegten Lemmata**, gemeldet statt korpusweit
+angefasst: `auftragen` (13,12, „einen Anstrich auftragen"), `vernichtend`
+(13,13, attributiv statt adverbial), `ziehen lassen` (14,15, kausativ).
+
+### Gegen alle vier Ausgaben, für den Bestand
+
+`Zauberband` (WEB *pillows*, RV *amuletos*, LSG *coussinets*, RIV *cuscini* —
+vier verschiedene Dinge), `Kreis` 13,9 (alle vier lesen *council*),
+`Mauer` (RV liest durchgehend *pared*, der Bestand bindet *muro* mit 87
+Belegen), `Weinstock` fr *cep* (LSG liest *vigne*).
