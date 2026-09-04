@@ -2859,3 +2859,146 @@ und 43,5 haben korrekt *la*. Drei zu eins, korrigiert.
 Gefunden hat ihn der Kapitel-43-Agent beim Gegenrechnen seiner eigenen Stelle
 gegen die Vorlagen. **Das ist der fünfte Bestandsfehler, den ein Agent in
 einem fremden, abgenommenen Kapitel gefunden hat.**
+
+---
+
+## 17. Paket 17 (Kap. 45 · 46 · 47 · 48) — das Buch ist fertig
+
+107 Verse, 2746 Einträge. **48 von 48 Kapiteln: 1273 Verse, 32 783 Einträge,
+1240 Mehrwörter.** `paketcheck.py` Abschnitt A und C leer, `validate` sauber.
+
+### Die Agenten haben sich untereinander abgeglichen
+
+Vier Kapitel liefen parallel und teilten sich sechs Eigennamen und drei
+Sachwörter. Das Ergebnis, ohne dass ich eingreifen musste:
+
+    Stadtgebiet     45 und 48 unabhängig ZEICHENGLEICH geprägt
+    betragen        46 und 48 unabhängig ZEICHENGLEICH geprägt
+    Stammesanteil   48 hat auf die Fassung von 45 umgestellt
+    Hetlon · Lebo-Hamat        47 und 48 unabhängig zeichengleich
+    Hazar-Enon · Meribat-Kadesch   48 hat auf 47 umgestellt
+    „Das ist die …"-Formel     47 hat auf die Josua-Reihe umgestellt,
+                               48 unabhängig auf dieselbe
+
+Der `Hazar-Enon`-Fall ist der schönste: **WEB schreibt den Namen in 47,17 und
+48,1 verschieden** („Hazar Enon" / „Hazar Enan"), das Deutsche beide Male
+gleich. Der Agent hat daraus gefolgert, dass die Ausgabe mit sich selbst uneins
+ist und die eine deutsche Schreibung eine Reihe verlangt.
+
+### Zwei Divergenzen blieben — und beide löste die Grammatik
+
+**45,19 gegen 43,20:** vor „die vier Ecken" steht italienisch *i* (43,20) gegen
+*gli* (45,19). Der Kapitel-45-Agent hielt *gli* für richtig, weil `angoli`
+vokalisch anlautet. **Falsch:** der italienische Artikel richtet sich nach dem
+**unmittelbar folgenden** Wort, und das ist `quattro`. *i quattro angoli* ist
+richtig — 43,20 hatte recht.
+
+**45,7 gegen 48,21:** das Einzelwort `bis` trug französisch *jusqu'à* gegen
+*jusqu'*. Da `zur` daneben *à la* trägt, ergäbe die erste Fassung „jusqu'à à
+la". **48,21 hatte recht.**
+
+> In beiden Fällen hat der Agent, der die Divergenz meldete, selbst danebengelegen
+> — und der stille Nachbar recht behalten. Die Meldung war trotzdem wertvoll:
+> ohne sie wäre keiner der beiden Fehler aufgefallen.
+
+### Ein neuer Prüfer: `artikel.py`
+
+Der Kapitel-48-Agent hat ihn ausdrücklich als „den ertragreichsten noch
+fehlenden Lauf" benannt und mitgezählt, wie viele Treffer er gehabt hätte.
+Beide Fehler, die er selbst fand, sitzen im **Artikel**, nicht im Possessiv:
+`le limite` an vierzehn Stellen, `dei operai` statt `degli operai`.
+
+Das Genus steht nirgends im Bestand — aber es lässt sich **ermitteln**: wo
+dieselbe fremdsprachliche Nomenform überwiegend mit *la* steht, ist sie
+feminin. `artikel.py` sammelt die Artikelverteilung über alle 66 Bücher und
+meldet die Ausreißer, ab fünf Belegen und achtzig Prozent Mehrheit.
+
+Zwei Nachschärfungen waren nötig, beide aus früheren Läufen bekannt:
+
+- **Adjektive zwischen Artikel und Nomen überspringen** — dieselbe
+  Großschreibungs-Heuristik wie in `kongruenz.py` seit Paket 11.
+- **Nur echte deutsche Artikelformen prüfen.** Ohne diesen Filter las der Lauf
+  jede Glosse, die mit einem Artikelwort beginnt, als Artikel — `entlang` =
+  *le long de* etwa — und meldete das Genus des falschen Nomens. Die
+  Trefferzahl stieg dabei von 83 auf 249; mit dem Filter sank sie auf 77.
+
+**Erster echter Fund: `Neumond`.** Der Bestand führt ihn einundzwanzigmal
+feminin (*la luna nueva · la nouvelle lune · la luna nuova*); 46,1 und 46,6
+trugen maskuline Artikel. Sechs Felder korrigiert.
+
+### Bestandsfehler, die dieses Paket aufgedeckt hat
+
+    11,10 · 11,11   `der` vor `Grenze` es *la* / it *la* — límite und
+                    confine sind maskulin (3 andere Stellen richtig)
+    10,4 · 10,5 · 44,19 · 44,21 · 44,27
+                    `den` vor `Vorhof` fr *le* — cour ist feminin
+                    (23 andere Stellen richtig)
+    46,1 · 46,6     `am` vor `Neumond` in allen drei romanischen Sprachen
+                    maskulin — der Bestand führt ihn 21× feminin
+
+Alle behoben. **Zusammen mit den früheren Paketen sind damit elf
+Bestandsfehler in abgenommenen Kapiteln von Agenten gefunden worden**, die an
+ganz anderen Kapiteln arbeiteten.
+
+### Die Lexikonfalle, Fall elf: `Lachen`
+
+Der Bestand führt `Lachen` neunmal — als **das Lachen** (B1 *laughter · risa ·
+rire · riso*, 1. Mose 21,6). In 47,11 steht der Plural von **die Lache**,
+Tümpel. Eigenes Lemma `Lache` B2 angelegt.
+
+Dazu in diesem Paket: `Mine` (Gewicht, nicht Miene — im Bestand gar nicht
+belegt), `auslegen` (Netze ausbreiten, nicht Schrift auslegen), `sprudeln`
+(belegt, entgegen meiner Vorgabe, samt Mehrwort `hervorsprudeln`).
+
+### Die Richtungspartikel-Lage 47,1–4
+
+Die dichteste des Buches: `heraus`, `hervor`, `hinaus`, `ab`, `durch`,
+`hindurch` in vier Versen, teils zu zweit. Der Agent hat jeden Zug einzeln
+begründet, und zwei Entscheidungen sind lehrreich:
+
+- **`hervor` weicht in 47,1 und 47,2 auf dieselbe Reihe** — die Alternative
+  hätte dasselbe Wort im Abstand eines Verses zweimal verschieden geglost.
+  Er hat den 39,2-Test ausdrücklich mitgeprüft: dort stand kein
+  Kollisionspartner, hier steht in **beiden** Versen einer.
+- **`durch` ↔ `hindurch` entscheidet der Bestand:** **Hesekiel 5,17 führt
+  beide Wörter im selben Vers** und trennt sie dort schon.
+
+Das ist der dritte Fall im Tempelteil, in dem eine Kollision **nicht nach
+Ermessen, sondern durch Bestandslektüre** entschieden wurde — nach `Tor`/`Tür`
+(Paket 15) und `Gewand`/`Kleid` (Paket 16).
+
+### Der neunte Eigennamen-Zwilling
+
+**`Hamat` ↔ `Hamath`** — der Bestand führt beide Schreibungen als eigene
+Lemmata mit identischer Reihe. Dazu ein Doppelträger: **`En-Eglajim` ↔
+`Eglajim`**, wobei das moabitische Eglaim (Jesaja 15,8) **nicht** der Ort am
+Toten Meer ist — eigenes Lemma, Reihe am Bestandsvorbild ausgerichtet.
+
+Und ein negativer Befund, der die Regel bestätigt: `Berota` hat mit `Berotai`
+(2. Samuel 8,8) nichts zu tun — **andere Stadt**. Der Agent hat es geprüft und
+verworfen.
+
+### Bilanz der Formfalle über das ganze Buch
+
+Meine Vorgabetabellen haben in siebzehn Paketen ungefähr 180 Wörter als „neu
+zu prägen" oder „zu prüfen" genannt. **Etwa zwei Drittel davon waren belegt.**
+Die Quote schwankt stark mit dem Texttyp: technische Kapitel schöpfen fast
+vollständig aus dem Bestand, Ordnungs- und Heilsrede prägt neu.
+
+### Was offen bleibt
+
+1. **Die Elisionsfrage** (Paket 13): 194 nicht elidierte Stellen in Hesekiel,
+   im Gesamtbestand 2828 elidiert gegen 2091 nicht. Eine Bestandsfrage, keine
+   Hesekielfrage.
+2. **Ein Lemma kann nur ein Level tragen** — `Regel` (36,17, Menstruation
+   statt Vorschrift) und `Kanne` (27,23, Stadt statt Gefäß) stehen deshalb auf
+   einem sachlich falschen Level.
+3. **`artikel.py` ist ein Anfang**, kein fertiger Prüfer: 77 Verdachtsfälle,
+   die meisten Numerus-Artefakte. Der Ansatz trägt, die Schwellen brauchen
+   Arbeit.
+4. **`glosskollision.py` sieht drei Kollisionstypen nicht** — Mehrwort gegen
+   Mehrwort, Mehrwort gegen Einzelwort, Homographen mit zwei Trägern. Die
+   Agenten haben sie durchweg von Hand gesucht; im Buch sind rund fünfzehn
+   solche Fälle aufgetreten.
+5. **Die eine bewusst offene Kollision:** 39,7 `Heilige` ↔ `heiligen`, mit
+   Bestandspräzedenz aus Lukas 1,35.

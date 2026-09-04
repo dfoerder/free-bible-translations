@@ -67,7 +67,7 @@ AUSNAHMEN = {
     'pelle':'fs', 'pelli':'fp', 'valle':'fs', 'valli':'fp',
     'prole':'fs', 'proli':'fp', 'febbre':'fs', 'febbri':'fp',
     'arma':'fs', 'armi':'fp', 'legge':'fs', 'leggi':'fp',
-    'parete':'fs', 'pareti':'fp', 'porta':'fs', 'porte':'fp',
+    'parete':'fs', 'pareti':'fp', 'palude':'fs', 'paludi':'fp', 'porta':'fs', 'porte':'fp',
     'soglia':'fs', 'soglie':'fp', 'camera':'fs', 'camere':'fp',
     'greggi':'fp', 'gregge':'ms', 'carne':'fs', 'carni':'fp',
 }
