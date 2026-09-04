@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Italienische Possessiv-Kongruenz gegen das folgende Nomen.
+"""Possessiv-Kongruenz gegen das folgende Nomen — italienisch und franzoesisch.
 
     kongruenz.py <buchNr> [<kapitel> ...]
 
@@ -13,6 +13,14 @@ eigenen Kapitel korrigiert hatte; der buchweite Lauf fand acht weitere,
 vier davon in laengst committeten Kapiteln. Ursache ist durchweg, dass
 das deutsche Genus durchschlaegt, wo das italienische abweicht:
 `Hand`/`mano`, `Kopf`/`testa`, `Bund`/`alleanza`.
+
+Franzoesisch kam in Paket 9 dazu: ein Agent fand `sa règles` in 18,6 —
+`règles` ist im Sinn der Monatsblutung immer Plural, also `ses`. Der
+italienische Lauf sieht das nicht, weil `mestruazione` dort Singular
+ist. Geprueft wird franzoesisch nur der Numerus (sa/son gegen ses),
+nicht das Genus: `sa`/`son` haengt im Franzoesischen am Genus des
+Nomens, das die Glosse selbst schon traegt, und vor Vokal steht `son`
+auch bei Femininum (`son épée`) — daraus wird zu leicht ein Fehlalarm.
 
 Das Sieb ist bewusst grob — die Endung eines italienischen Nomens sagt
 sein Genus nicht zuverlaessig (`ali`, `mano`, `abominazioni`, `ossa`,
@@ -79,6 +87,36 @@ def genus(nomen):
     return None            # -e ist mehrdeutig, lieber schweigen
 
 
+FR_SG = {'mon','ma','ton','ta','son','sa','notre','votre','leur'}
+# `leur` ist franzoesisch zugleich Dativpronomen ("ich gab ihnen"). Diese
+# deutschen Formen schliessen den Possessiv-Fall aus.
+DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','ihnen.'}
+FR_PL = {'mes','tes','ses','nos','vos','leurs'}
+# Franzoesische Nomen, deren Plural-s fehlt oder deren Numerus die
+# Endung nicht verraet. `règles` ist der Fund, der den Lauf ausgeloest hat.
+FR_STUMM = {
+    'fois', 'temps', 'corps', 'bras', 'pays', 'fils', 'prix', 'choix',
+    'croix', 'voix', 'nez', 'os', 'cours', 'discours', 'univers', 'nord',
+    'sud', 'est', 'ouest', 'repas', 'pas', 'cas', 'gens', 'moeurs',
+    'encens', 'palais', 'dos', 'poids', 'succes', 'succès', 'progres',
+    'progrès', 'jamais', 'plusieurs', 'divers', 'frais', 'mois',
+}
+
+
+def fr_numerus(nomen):
+    """Nur Numerus, nicht Genus — siehe Modulkopf."""
+    n = nomen.strip().split()[0].lower().strip("'’")
+    if not n or n in FR_STUMM:
+        return None
+    if len(n) < 4:
+        return None
+    if n.endswith('aux') or n.endswith('eaux'):
+        return 'p'
+    if n.endswith('s') or n.endswith('x'):
+        return 'p'
+    return 's'
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
@@ -103,7 +141,9 @@ def main():
                 nx = einzel.get(pos + 1)
                 if not nx:
                     continue
+                n2 = einzel.get(pos + 2)
                 g = genus(nx.get('it') or '')
+                g2 = genus(n2.get('it') or '') if n2 else None
                 if not g:
                     continue
                 soll = None
@@ -111,13 +151,23 @@ def main():
                 elif it in FEM_SG: soll = 'fs'
                 elif it in MASC_PL: soll = 'mp'
                 elif it in FEM_PL: soll = 'fp'
-                if soll and soll != g:
-                    treffer.append((k, v, e['form'], e['it'],
+                if soll and soll != g and (g2 is None or soll != g2):
+                    treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx['it'], g))
-    for k, v, f1, i1, f2, i2, g in sorted(
-            treffer, key=lambda t: (int(t[0]), int(t[1]))):
-        print('%s,%s,%-3s  %-10s it %-12s | %-14s it %-16s (%s)'
-              % (buch, k, v, f1, i1, f2, i2, g))
+                fr = (e.get('fr') or '').strip().lower()
+                if ((fr in FR_SG or fr in FR_PL)
+                        and e.get('form', '').lower() not in DATIV):
+                    fn = fr_numerus(nx.get('fr') or '')
+                    fn2 = fr_numerus(n2.get('fr') or '') if n2 else None
+                    if fn:
+                        sollfr = 's' if fr in FR_SG else 'p'
+                        if sollfr != fn and (fn2 is None or sollfr != fn2):
+                            treffer.append(('fr', k, v, e['form'], e['fr'],
+                                            nx['form'], nx['fr'], fn))
+    for sp, k, v, f1, i1, f2, i2, g in sorted(
+            treffer, key=lambda t: (int(t[1]), int(t[2]), t[0])):
+        print('%s,%s,%-3s  %-10s %s %-12s | %-14s %s %-16s (%s)'
+              % (buch, k, v, f1, sp, i1, f2, sp, i2, g))
     print()
     print('%d Verdachtsfaelle. Jeder ist am Vers zu pruefen — die Endung'
           % len(treffer))

@@ -1260,3 +1260,230 @@ Erstlingstier), ohne gemeldet zu werden.
 - `geschliffen` (21,20) fällt spanisch und italienisch mit `schärfen` zusammen
   (*afilada*, *affilata*), steht aber in keinem Vers daneben. Nach der
   Kollisionsregel nicht aufzulösen.
+
+---
+
+## 9. Paket 9 (Kap. 22 · 23) — 2128 Tokens
+
+80 Verse, 1896 Einträge, 80 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum neunten Mal in Folge leer**; Abschnitt B 25 Fälle, davon einer echt.
+
+### Meine Vorgabetabelle gab beide Signaturformeln falsch wieder
+
+Das ist der schwerste Vorbereitungsfehler des Buches, und **beide Agenten
+haben ihn unabhängig gefunden und richtig entschieden**:
+
+    Wortereignisformel — falsch in vier Feldern
+        `erging`  Level B2   → richtig C1
+        `erging`  fr  fut adressée → richtig vint
+        `erging`  it  fu rivolta   → richtig giunse
+        `HERRN`   fr  Éternel      → richtig ÉTERNEL
+        `HERRN`   it  Eterno       → richtig SIGNORE
+        `des`     es  de / it de l' → richtig del / del
+
+    Botenformel — falsch in drei Feldern
+        `spricht` fr  dit     → richtig parle
+        `HERR`    fr/it wie oben
+        `der`     it  l'      → richtig il
+
+Die fertigen Kapitel sind durchweg richtig; **ich hatte die Tabelle von Hand
+geschrieben, statt sie aus einer Kapiteldatei zu ziehen.** Beide Agenten sind
+dem Bestand gefolgt und haben es gemeldet.
+
+> **Eine Reihe, die im Bestand schon zwanzigmal steht, wird nie abgeschrieben
+> — sie wird aus der Datei gezogen.** Für den Rest des Buches gilt: die
+> Vorgabetabelle nennt bei jeder Signaturformel die Kapiteldatei und den Vers,
+> aus dem sie stammt, damit der Agent sie selbst nachschlagen kann.
+
+Die Formel steht damit **neunzehnmal zeichengleich**; für 22,1 · 22,17 ·
+22,23 · 23,1 maschinell gegen 18,1 gerechnet, alle vier gleich.
+
+### Der Fehlertyp „zu loses Suchmuster" trifft jetzt auch mich selbst
+
+Ich habe die Vorgabetabelle diesmal gegen den Quelltext geprüft, um genau die
+Fehler aus Paket 5 und 6 zu vermeiden — und dabei denselben Fehler in neuer
+Gestalt gemacht. Mein Muster war ein blosses `re.findall('Bestechung', text)`:
+
+    „Bestechung"  matcht in  „Bestechungsgeld"   → Lemma heißt Bestechungsgeld
+    „Wucher"      matcht in  „Wucherzinsen"      → Lemma heißt Wucherzins
+    „Jungfrau"    matcht in  „jungfräulichen"    → kein `Jungfrau` im Kapitel
+    „Truppe"      matcht in  „Truppenmassen"     → kein `Truppe` im Kapitel
+    „Ägypt"       matcht in  „Ägypten"           → kein `Ägypter` im Kapitel
+
+Fünf Zeilen der Tabelle liefen deshalb ins Leere. `Schmelzofen` habe ich mit
+demselben Lauf richtig als abwesend erkannt — das Muster war dort zufällig
+lang genug.
+
+> **Ein Suchmuster für die Prüfung einer Vorgabetabelle muss an beiden Enden
+> gebunden sein.** Dieselbe Lehre wie bei der Anerkennungsformel, nur in die
+> andere Richtung: dort war das Muster zu eng und übersah Vorkommen, hier ist
+> es zu weit und behauptet welche.
+
+### Altlast im Arbeitsverzeichnis — mit falschen Daten
+
+Der Kapitel-22-Agent hat gemeldet, dass neben den fertigen Kapiteldateien noch
+`ch2.part1/part2.json` und `ch6.part1/part2.json` aus den Paketen 2 und 6
+lagen. **`ch6.part2.json` führte die Anerkennungsformel noch mit *know ·
+conocer* — dem Stand vor der Korrektur aus Paket 2.**
+
+Die Werkzeugkette liest sie nicht mit (`belegt.py` und `fixgloss.py` lesen die
+gebauten Anno-Dateien, `levelcheck.py` und `konvention.py` greifen gezielt auf
+`ch<N>.json`, und `kongruenz.py` filtert `.part` heraus). Aber ein **Agent**
+kann sie lesen, und genau das ist passiert.
+
+> **Teildateien werden gelöscht, sobald das Kapitel zusammengefügt ist.** Eine
+> veraltete Datei im Arbeitsverzeichnis ist gefährlicher als keine.
+
+### `kongruenz.py` kann jetzt auch Französisch
+
+Derselbe Agent fand einen **französischen** Kongruenzfehler in 18,6: `ihrer` =
+*sa* vor `Regel` = *règles*. Der italienische Lauf konnte ihn nicht sehen,
+weil `mestruazione` dort Singular ist.
+
+Die französische Erweiterung prüft **nur den Numerus** (`sa`/`son` gegen
+`ses`). Das Genus bleibt außen vor: es hängt am Nomen, das die Glosse selbst
+schon trägt, und vor Vokal steht `son` auch bei Femininum (*son épée*) — daraus
+würden zu viele Fehlalarme. Der Lauf fand **drei weitere echte Fehler**:
+
+    3,18   seinem  sa    → son     (Weg = chemin, m)
+    16,39  ihre    leurs → leur    (Hand = main, Sg.)
+    16,47  ihren   leurs → leur    (Weg = voie, Sg.)
+    18,6   ihrer   sa    → ses     (Regel = règles, immer Pl.)
+
+Zwei Dinge sind beim Bauen schiefgegangen und lehrreich:
+
+- **Ein Adjektiv zwischen Possessiv und Nomen verfälscht die Messung.** „sa
+  mauvais chemin" liest sich für ein Endungssieb als Singular-vor-Plural.
+  Gelöst, indem das übernächste Wort mitgeprüft und nur gemeldet wird, wenn
+  **beide** widersprechen. Der Preis: der Genusfehler in 3,18 fällt seitdem
+  durch — er ist von Hand behoben, aber das Sieb fände ihn nicht wieder.
+- **Ein Klammerungsfehler in meinem eigenen Filter**: `fr in FR_SG or fr in
+  FR_PL and form not in DATIV` — `and` bindet stärker als `or`, der
+  Dativpronomen-Ausschluss war wirkungslos. Französisch fällt `leur`
+  (Possessiv) mit `leur` (Dativpronomen) zusammen, und ohne die Klammer meldete
+  jedes „gab **ihnen**" einen Verdacht.
+
+Über alle 23 fertigen Kapitel meldet der Lauf jetzt in beiden Sprachen null.
+
+### Die Formfalle, in Kapitel 22 auf dem Höchststand
+
+    Kapitel 22:  14 `hints.py`-Meldungen,  3 wirklich neu
+    Kapitel 23:  29 `hints.py`-Meldungen, 15 wirklich neu
+
+**Dreizehn von vierzehn Meldungen in Kapitel 22 waren Formen belegter
+Lemmata** — `schmelzen`, `schänden`, `vergewaltigen`, `verleihen`, `verüben`,
+`zusammenbringen`, `abrechnen`, `geringschätzen`, `blutbefleckt`, `Schandtat`
+und weitere. Meine Vorbereitung hatte daraus geschlossen, `Silberschlacke` sei
+die einzige Neuprägung; der Agent hat mit `lexicon.py` nachgewiesen, dass
+**`beregnen` und `geringschätzig` ebenfalls im ganzen Bestand unbelegt** sind.
+Die Formfalle schlägt eben in beide Richtungen.
+
+Dazu ein **Werkzeug-Artefakt**: `lexicon.py` meldet `Rufs` (22,5) als
+unbelegt, weil sein Stammschlüssel vier Zeichen lang ist — `Ruf` steht 13× als
+B2 *reputation*. Und `fallenden` (23,15) ist die Falle mit Großschreibung: der
+Bestand kennt `Fallender` als Substantiv, hier ist es das Partizip von
+`fallen` A1.
+
+### `Schlacke` — zwei Lesarten, und die Vorgabe nahm die falsche
+
+    2×  dross · escoria · écume  · schiuma   Psalm 119,119 · Sprüche 25,4
+    2×  dross · escoria · scorie · scoria    Jesaja 1,22 · Jesaja 1,25
+
+Jesaja 1,22/1,25 ist derselbe Vorgang wie Hesekiel 22 (Silber wird zu
+Schlacke); lsg1910 und riv1927 lesen an beiden Stellen gleich. Der Agent hat
+die metallurgische Reihe genommen. **Dieselbe Lehre wie bei `schärfen` in
+Paket 8, nur eine Ebene tiefer: nicht die erste Zeile nehmen, sondern die,
+deren Belegstelle vom selben Vorgang handelt.**
+
+### Kapitel 23 gegen Kapitel 16 — die dichteste Vorlagenarbeit seit Paket 4
+
+| Vergleich | Ergebnis |
+|---|---|
+| 23,26 ↔ 16,39 | 11 gemeinsame Formen, **11 gleich** — der Halbvers ist wörtlich identisch |
+| 23,45 ↔ 16,38 | 6 Formen, **alle gleich** |
+| 23,1 ↔ 16,1 / 21,1 | je 7 Formen, **alle gleich** |
+| 23,29 ↔ 16,39 | 10 gleich, 1 Abweichung — Kongruenz (`Besitz` m Pl. gegen `Schmuck` m Sg.) |
+| 23,49 ↔ 13,9 | 11 Formen, 2 Abweichungen — beide Artikel mit anderem Bezugswort |
+| 23,36 ↔ 20,4 | 7 Formen, 2 Abweichungen — beide nur Großschreibung am Satzanfang |
+
+### Die schwerste Kollision: `begehen` ↔ `treiben` in 23,37
+
+Vier von vier Sprachen. `begehen` ist mit 49 von rund 65 Belegen praktisch
+vollständig an *committed · cometido · commis · commesso* gebunden; `treiben`
+trägt diese Lesart nur in 11 von rund 90. **`treiben` weicht** — und zwar auf
+eine Zweitlesart, die der Bestand **im selben Buch** schon führt: *practiced ·
+practicado · pratiqué · praticato* (16,47 · 16,50 · 5. Mose 22,21).
+
+Bemerkenswert ist, was der Agent **nicht** getan hat: kein Mehrwort
+`Ehebruch treiben` geprägt. Jeremia 3,9 führt „beging Ehebruch" als zwei
+Einzelwörter, und ein neues Mehrwort hätte den Bestand gespalten.
+
+Zwei weitere gemeldete Paare **lösen sich ohne Ausweichen** — dieselbe Bauform
+wie `unter`/`zwischen` in 6,13: `her`/`herbei` (23,42), weil `her` zum
+Bestandsmehrwort `um jemanden her` gehört und dort gar nicht *here* trägt; und
+`entweihen`/`verunreinigen` (23,38), weil die Buchreihe aus Kapitel 20 sie
+längst trennt.
+
+**Ein neuer Kollisionstyp im Buch, bewusst nicht aufgelöst:** 23,30 `hast` /
+`bist` — die deutsche Wahl zwischen den Perfekt-Hilfsverben *haben* und *sein*
+hat in allen vier Zielsprachen nur **ein** Auxiliar. Eine echte Verschmelzung
+der Zielsprachen, kein Fehler.
+
+### `wegen` in 22,5 — der eine echte Fund in Abschnitt B
+
+`paketcheck` meldete 25 Fälle, 24 davon Flexion und Kontext. Der eine echte:
+`wegen` stand in 22,5 spanisch auf *por*, im übrigen Buch achtzehnmal auf
+*a causa de*. Angeglichen. (Beide Lesarten sind im Bestand belegt — 291 gegen
+10 —, aber innerhalb eines Buches gewinnt die Buchreihe.)
+
+### Neu geprägt (20)
+
+    Kapitel 22 (3)
+    Silberschlacke  C1  silver dross · escoria de plata · scorie d'argent · scoria d'argento
+    beregnen        C1  rained on · regado por la lluvia · arrosé de pluie · bagnato dalla pioggia
+    geringschätzig  C1  with contempt · con desprecio · avec mépris · con disprezzo
+
+    Kapitel 23 (17)
+    Ohola · Oholiba · Koa · Schoa          A1   Eigennamen, in 23,4 selbst gedeutet
+    Babylonier          B2  Babylonians · babilonios · Babyloniens · Babilonesi
+    Götzenverehrung     C1  idolatry · idolatría · idolâtrie · idolatria
+    Erguss              C1  emission · flujo · écoulement · flusso
+    betasten            C1  fondle · manosear · palper · palpare
+    betasten lassen     C1  Kausativ, nach `verbrennen lassen`
+    jungfräulich        C1  virgin · virginal · virginal · vergine
+    Farbe               A2  color · color · couleur · colore
+    attraktiv           B1  attractive · atractivos · séduisants · attraenti
+    Liebeslager         C1  bed of love · lecho de amores · lit d'amour · letto d'amore
+    Truppenmasse        B2  masses of troops · masas de tropas · …
+    niederhauen         B2  cut down · abatir · abattre · abbattere
+    Neige               C1  dregs · heces · lie · feccia
+    sich zurücksehnen   B2  longed back · añoraste · regrettas · rimpiangesti
+
+Bei `Schoa` und `Koa` ist die Entscheidung lehrreich: **WEB transliteriert,
+RV, LSG und RIV übersetzen sie als Gemeinwörter.** Der Agent ist dem
+Hausmuster für Eigennamen gefolgt (`Schemaja` → es *Semaías*, it *Semaia*),
+nicht den Ausgaben — sonst stünde in drei von vier Sprachen kein Name.
+
+### Neue Lesarten an belegten Lemmata
+
+- **`entbrennen`** bekommt das erotische Entbrennen (23,5 · 7 · 9 · 12 · 16 ·
+  20): *was inflamed · se inflamó · s'enflamma · s'infiammò*, nach Römer 1,27.
+  Der Bestand kannte nur die Zorn-Lesart. Im **Französischen fallen beide
+  zusammen** (*s'enflamma*) — LSG liest an allen sechs Stellen selbst so.
+- **`Menge`** folgt in Hesekiel der Buchreihe *multitude* (7,12 · 7,13 · 7,14 ·
+  14,4), nicht der korpusweiten Mehrheit *crowd · foule*; `Volksmenge` behält
+  jene. Die beiden stehen in 23,46/23,47 in getrennten Versen.
+- **`Vorbild`** *pattern* (23,15) neben *example* (20,30); **`zerreißen`**
+  *tear · squarciare* für die Brust (23,34) neben *rasgar* für Kleider.
+
+### Befunde, nicht angefasst
+
+- Der Kapitel-22-Agent weist darauf hin, dass `Regel` in 18,6 die Lesart
+  *period · menstruación · règles · mestruazione* trägt, während das Lemma
+  korpusweit 20× *rule · regla* führt — **genau die Lexikonfalle**, und der
+  eine passende Beleg steht im selben Buch. Richtig so, hier nur als Beispiel
+  festgehalten.
+- `dokumentation.md` im App-Repo ist außerhalb dieser Arbeit geändert worden
+  (Kopfleiste, überspringbarer Einstufungstest). **Beide Agenten haben es
+  gemeldet, obwohl sie dort nur gelesen haben.** Nicht angefasst; die Commits
+  ins App-Repo laufen ab jetzt gezielt statt über `git add -A`.
