@@ -2698,3 +2698,164 @@ massue · mazza* (Hiob 41,21, die Waffe). Meine Vorgabe nannte nur „belegt".
 tragen in es/fr/it **dieselbe Reihe** und trennen nur im Englischen. Sie stehen
 bisher in keinem gemeinsamen Vers. **Falls beide in einem der Kapitel 42–48
 zusammentreffen, muss dort aufgelöst werden.**
+
+---
+
+## 16. Paket 16 (Kap. 42 · 43 · 44) — Kammern, Altar, Priesterordnung
+
+78 Verse, 2023 Einträge, 59 Mehrwörter. **44 von 48 Kapiteln fertig.**
+`paketcheck.py` Abschnitt A und C leer.
+
+### Die n-Gramm-Gegenrechnung, jetzt gegen das ganze Buch
+
+Der Kapitel-43-Agent hat die Technik weiterentwickelt: statt nur das eigene
+Kapitel zu prüfen, hat er **alle 3- bis 7-Gramme gegen sämtliche fertigen
+Kapitel** gerechnet — Kapitel 42 und 44 eingeschlossen, die parallel entstanden.
+232 Rohabweichungen, davon **neun echte Fehler**:
+
+    43,7   `nicht mehr entweihen`  fr „ne pas plus" → ne · en desecrate → profane
+    43,8   `in meinem Zorn`        it nach 13,13 auf nella + mia
+    43,11  zwei Infinitive statt finiter Formen, nach 11,20 korrigiert
+    43,11  fehlendes Mehrwort `danach handeln` (19 Bestandsbelege)
+    43,11  `vor ihren Augen`       es ante → delante de (9:4 im Buch)
+    43,3   `auf mein Gesicht`      es sobre → en, nach 11,13
+    43,2   eigenes Mehrwort geprägt, das 42,9 schon führte
+    43,14  `von einer Elle`        en a → one, nach 40,12
+    43,7   `Haus Israel`           Apposition → Genitiv (62:6 im Buch)
+
+Der siebte Fall ist der bemerkenswerteste: der Agent hatte ein Mehrwort `von
+Osten her` neu geprägt — und beim Vergleich gefunden, dass **das
+Schwesterkapitel 42 dieselbe Wortfolge bereits führt**. Er hat auf dessen
+Fassung umgestellt.
+
+Dazu sechs Elisionsfehler („il ordinario", „la altezza", „gli quattro angoli"),
+die kein Lauf sieht. Sie sind die Kehrseite des in Paket 13 offengelassenen
+Elisionsbefunds: **innerhalb eines Kapitels ist die Elision unstrittig**,
+strittig ist nur, ob sie über den ganzen Bestand vereinheitlicht werden soll.
+
+### `Handbreit` ↔ `Spanne` — beide ohne Zweitlesart
+
+Der seltene Fall, in dem **keines** der beiden Wörter eine Ausweichlesart hat:
+
+    Handbreit  C1  handbreadth · palmo · palme · palmo   8 Belege, zwei davon in Hes 40
+    Spanne     C1  span · palmo · empan · spanna         4 Belege, alle in 2. Mose 28/39
+
+Die Kollision betrifft nur Spanisch. `Handbreit` ist stärker gebunden **und**
+steht in 40,5/40,43 im Tempelwortschatz desselben Buches, in genau derselben
+Formel. Also weicht `Spanne` — auf **`cuarta`**, das traditionelle spanische
+Maß für die Spanne. Ein echtes Wort der Zielsprache, keine Ersatzkonstruktion.
+
+### `Gewand` ↔ `Kleid` — die Auflösung stand schon im Bestand
+
+Der Kapitel-44-Agent hat sie nicht erfunden, sondern gefunden: **3. Mose 21,10
+führt genau dieses Paar im selben Vers** und trennt es genau so —
+`Gewänder` → *habits · abiti*, `Kleider` → *vêtements · vesti*. In 44,17, wo
+keine Kollision steht, bleibt die Defaultreihe.
+
+> Nach `Tor`/`Tür` in Paket 15 ist das der zweite Fall, in dem eine
+> Tempelkollision **nicht nach Ermessen, sondern durch Bestandslektüre**
+> entschieden wurde. Beide Male hat ein Agent die Belegverse aufgeschlagen
+> statt eine Reihe zu wählen.
+
+### `Dienstkleid` — der erste Fall, in dem keine Agentenlösung übernehmbar war
+
+Beide Agenten haben das Wort neu geprägt, und **beide Lösungen scheitern im
+jeweils anderen Kapitel**:
+
+    Kap. 42:  service garments · vestimentas · habits de service · paramenti
+              → `habits` kollidiert in 44,19 mit `Gewand`, das dorthin auswich
+    Kap. 44:  service garments · ropas · vêtements de service · vesti di servizio
+              → `vêtements` überlappt mit `Kleid`
+
+Vereinheitlicht auf eine dritte Reihe, die in beiden Versen frei ist:
+*service garments · ropas de servicio · **tenues de service** · paramenti di
+servizio*.
+
+**Und dabei ist mir selbst ein Fehler unterlaufen:** *paramenti* ist maskulin,
+das vorangehende `ihre` trug *le loro*. `kongruenz.py` hat es im buchweiten
+Lauf gefunden — mitsamt dem dazwischenstehenden `eigenen` = *proprie*, das
+ebenfalls falsch war.
+
+> Der Lauf, den ich in Paket 8 gegen die Fehler der Agenten gebaut habe, hat
+> jetzt zum ersten Mal einen Fehler **des Koordinators** gefunden.
+
+### Zwei Zählfehler in meiner Vorgabe — und ein Werkzeug dagegen
+
+    Kap. 42:  `Tempel` kommt nicht vor — der Text liest `Tempelraum`
+              `Vorhof` steht 9× — die Pluralform `Vorhöfe` fehlte
+    Kap. 43:  `Tür` kommt nicht vor — gezählt waren die zwei `Türpfosten`
+              `Cherub` kommt nicht vor
+
+Der `Vorhöfe`-Fall ist derselbe wie `Elle`/`Ellen` in Paket 15, der
+`Türpfosten`-Fall die Gegenrichtung: eine Präfixsuche zählt Komposita mit.
+
+Daraus **`anno-tools/wortzahl.py`**: zählt mit Stammpräfix und **gibt die
+Fundformen aus**, sodass beide Fehlerrichtungen sichtbar werden.
+
+    26,40 — Elle 37   Ellen:33 · Elle:4
+            Tor  33   Tor:14 · Tors:14 · Tore:3 · Torgang:1 · Toreingangs:1
+    26,43 — Tür   2   Türpfosten:2      ← sofort als Kompositum erkennbar
+
+Beim Bauen ist mir prompt derselbe Fehler eine Ebene tiefer unterlaufen: die
+Umlautvariante ersetzte **alle** Vokale zugleich und machte aus `Vorhof` ein
+`Vörhöf`. Behoben — jetzt wird jede Position einzeln probiert.
+
+### Die Formfalle, kapitelweise verschieden
+
+    Kap. 42:  drei von drei „zu prüfenden" Wörtern belegt
+    Kap. 43:  sieben von acht belegt — darunter `Grabstätte`, mit Beleg in 39,11
+    Kap. 44:  nur vier von acht belegt — sechs Neuprägungen statt vier
+
+Meine Erwartung, es seien „meistens sieben von zehn", trägt also nicht. **Die
+Quote schwankt mit dem Texttyp**: technische Kapitel schöpfen aus dem
+Bestandswortschatz, Ordnungsrede prägt neu.
+
+### Kollisionen, die keine Vorgabe nannte
+
+- **43,13 `Rand` ↔ `Kante`** — kein Werkzeug meldet es, weil `Kante` im ganzen
+  Bestand unbelegt ist. `Rand` behält *edge · borde · bord · bordo* (36
+  Belege), `Kante` wird neu auf *rim · canto · rebord · orlo* geprägt.
+- **43,20 `entsündigen` ↔ `reinigen`** — im Lesefluss nicht zu trennen.
+  `reinigen` weicht **nur dort** auf *clean · limpiar · nettoyer · pulire*; in
+  43,26 bleibt die Hauptreihe.
+- **44,4 `Dann` ↔ `Da`** — beide tragen *Then · Entonces · Alors · Allora*.
+  Nach dem Muster aus 1. Könige 19,5 weicht `Dann` auf *Next · Luego · Puis ·
+  Poi*.
+- **44,28 `Erbteil` ↔ `Grundbesitz` ↔ `Besitz`** — drei Besitzwörter in einem
+  Vers.
+
+Und einer, der sich **am Vers von selbst löst**: 43,10 `dessen` ↔ `ihr`.
+`ihrer Vergehen` ist Plural, `dessen Bauplan` Singular — die Glossen sind
+ohnehin verschieden. Der vierte Fall dieser Art im Buch.
+
+### Vier liegengebliebene Mehrwörter
+
+    am Anfang      gesetzt in 42,12                  FEHLTE in 21,24 · 21,26
+    Schuld tragen  gesetzt in 4,4 · 4,5 · 4,6 · 14,10 · 18,19 · 18,20 (2×)
+                                                     FEHLTE in 44,10 · 44,12
+
+`am Anfang` ist wieder ein Fund, der erst durch das neue Kapitel möglich wurde:
+Kapitel 42 hat das Mehrwort gesetzt, und dadurch wurden die beiden Stellen in
+Kapitel 21 sichtbar.
+
+### Neu geprägt (15)
+
+    Kapitel 42 (4)  Front B2 · Dienstkleid C1 · Messrute C1 · unheilig B2
+    Kapitel 43 (5)  Feuerherd C1 · Kante B2 · Entsündigung C1 ·
+                    Bauplan C1 · Aufbau B2
+    Kapitel 44 (6)  Getreidemehl B2 · Rechtsstreitigkeit C1 · Wollstoff B2 ·
+                    Grundbesitz C1 · Schwitzen B1 · (Dienstkleid gemeinsam)
+
+**`Messrute` bekommt bewusst die belegte `Messstab`-Reihe** — es ist dasselbe
+Instrument wie in 40,3 und 41,8, die beiden treffen nirgends zusammen, und
+alle vier Ausgaben lesen dasselbe Wort. Das danebenstehende Längenmaß `Rute`
+bleibt getrennt.
+
+### Ein Bestandsfehler in einem längst abgenommenen Kapitel
+
+**10,3 trägt vor `Vorhof` französisch *le*** — `cour` ist feminin. 8,16, 40,28
+und 43,5 haben korrekt *la*. Drei zu eins, korrigiert.
+
+Gefunden hat ihn der Kapitel-43-Agent beim Gegenrechnen seiner eigenen Stelle
+gegen die Vorlagen. **Das ist der fünfte Bestandsfehler, den ein Agent in
+einem fremden, abgenommenen Kapitel gefunden hat.**
