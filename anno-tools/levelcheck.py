@@ -30,6 +30,15 @@ fix = '--fix' in sys.argv
 argv = [a for a in sys.argv[1:] if a != '--fix']
 nr, kaps = int(argv[0]), argv[1:]
 
+# Ohne Kapitelnummern lief die Schleife ueber eine leere Liste und meldete
+# "0" — ein Leerlauf, der wie ein sauberer Lauf aussieht. In Jeremia hat das
+# `levelcheck.py` paketlang verdeckt (23 echte Levelfehler in Paket 17), in
+# Hesekiel `konvention.py` vier Pakete lang. Deshalb: lieber laut abbrechen.
+if not kaps:
+    raise SystemExit(
+        'Kapitelnummern fehlen — ohne sie prueft dieses Skript NICHTS.\n'
+        'Aufruf: %s <buchNr> <kapitel> [<kapitel> ...]' % sys.argv[0])
+
 lv=collections.defaultdict(collections.Counter)
 for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,'*_multi.json'))):
     d=json.load(open(p,encoding='utf-8'))

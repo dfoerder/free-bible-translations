@@ -36,6 +36,15 @@ for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,'*_multi.json'))):
                 if C.is_multi(e): bestand[e.get('lemma')]+=1
 
 nr=int(sys.argv[1]); kaps=sys.argv[2:]
+
+# Ohne Kapitelnummern lief die Schleife ueber eine leere Liste und meldete
+# "0" — ein Leerlauf, der wie ein sauberer Lauf aussieht. In Jeremia hat das
+# `levelcheck.py` paketlang verdeckt (23 echte Levelfehler in Paket 17), in
+# Hesekiel `konvention.py` vier Pakete lang. Deshalb: lieber laut abbrechen.
+if not kaps:
+    raise SystemExit(
+        'Kapitelnummern fehlen — ohne sie prueft dieses Skript NICHTS.\n'
+        'Aufruf: %s <buchNr> <kapitel> [<kapitel> ...]' % sys.argv[0])
 src=json.load(open(f'{C.SRC_DIR}/{nr}_l1912mod.json',encoding='utf-8'))['chapters']
 offen=0
 for kap in kaps:
