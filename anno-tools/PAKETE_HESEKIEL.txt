@@ -1,0 +1,123 @@
+# Pakete Hesekiel (Buch 26)
+
+# 48 Kapitel, 1273 Verse, 31 662 Tokens — nach Jeremia (35 638) und dem
+# Psalter das drittgroesste Buch des Bestands, praktisch gleichauf mit
+# Jesaja (31 193).
+
+## Das Buch ist auf Formeln gebaut — mehr als jedes bisherige
+
+`dubletten.py` findet **979 Verspaare**, fast das Vierfache von Jeremia (261).
+Der Grund ist eine einzige Wendung:
+
+    `Das Wort des HERRN erging an mich:`     34× WOERTLICH IDENTISCH
+    `Da erging das Wort des HERRN an mich:`   3× (11,14 · 14,2 · 20,2)
+
+**Die 34 Stellen sind bereits entschieden.** Jeremia 1,4 = 2,1 = 16,1 ist
+Zeichen fuer Zeichen derselbe Vers, und die Reihe steht im gebauten Buch:
+
+    0 Das      `der`     A1  The · La · La · La
+    1 Wort     `Wort`    A1  word · palabra · parole · parola
+    2 des      `der`     A1  of the · del · de l' · del
+    3 HERRN    `HERR`    A1  LORD · SEÑOR · ÉTERNEL · SIGNORE
+    4 erging   `ergehen` C1  came · vino · vint · giunse
+    5 an       `an`      A1  to · a · à · a
+    6 mich     `ich`     A1  me · mí · moi · me
+
+`ergehen an` ist **nie** ein Mehrwort. Die `Da`-Fassung nimmt zusaetzlich
+`da` A2 *Then · Entonces · Alors · Allora* (aus Jer 29,30).
+
+## Die drei weiteren Signaturformeln
+
+    `spricht Gott, der HERR`        202×, in 39 von 48 Kapiteln
+    `So spricht Gott, der HERR`      80× davon
+    `Menschensohn`                   93×, in 38 von 48 Kapiteln
+    `… dass ich der HERR bin`        54×  (Erkenntnisformel)
+    `spricht der HERR` (ohne Gott)    7×  — die Ausnahme, nicht die Regel
+
+**`Gott, der HERR` ist im Bestand fertig**: 29 Stellen glossieren `Gott`
+*God · Dios · Dieu · Dio* neben `HERR` *LORD · SEÑOR · ÉTERNEL · SIGNORE*.
+Anders als das `Herr HERR` aus Jeremia entsteht hier **keine Kollision** —
+es sind zwei verschiedene deutsche Woerter.
+
+## `Menschensohn` — die groesste Einzelentscheidung des Buches
+
+93 Vorkommen, und der Bestand hilft nur halb: **84 der 85 Belege sind
+neutestamentlich** und tragen den messianischen Titel *Son of Man · Hijo del
+Hombre · Fils de l'homme · Figlio dell'uomo*. In Hesekiel ist es die **Anrede
+an den Propheten**, etwas anderes.
+
+**Die Ausgaben trennen die beiden selbst, in drei von vier Sprachen:**
+
+    Hesekiel 2,1     WEB *Son of man*      RV *Hijo de hombre*
+                     LSG *Fils de l'homme* RIV *Figliuol d'uomo*
+    Neues Testament  WEB *Son of Man*      RV *Hijo del Hombre*
+                     LSG *Fils de l'homme* RIV *Figlio dell'uomo*
+
+Der Bestand hat **einen** kleingeschriebenen Beleg (Ps 80,18). Paket 1
+entscheidet die Reihe und haelt sie ueber alle 93 Stellen; **im Bericht
+vollstaendig**.
+
+## Die Verszaehlung: genau zwei Kapitel, und Franzoesisch schert aus
+
+Ueber alle 48 Kapitel gemessen weichen **nur 20 und 21** ab — und dort folgt
+**LSG dem Deutschen**, waehrend WEB, RV und RIV der englischen Zaehlung
+folgen:
+
+    Kap. 20   de 44   en 49   es 49   fr 44   it 49
+    Kap. 21   de 37   en 32   es 32   fr 37   it 32
+
+    de 21,1-5   = en/es/it **20,45-49**   (fr 21,1-5)
+    de 21,6-37  = en/es/it 21,1-32        → Versatz -5
+    de 20,1-44  = en/es/it 20,1-44        → Versatz +0
+
+`ausgaben.py` schlaegt fuer Kap. 20 selbst **+5 vor und warnt daneben, dass
++0 besser liegt** (Abstand 0.09 gegen 0.38) — dieselbe Bauform wie die
+Warnung in Jeremia 8. **Der Warnung folgen, nicht dem Vorschlag.**
+
+Deshalb liegen **20 und 21 im selben Paket**.
+
+Kapitel 1 meldet fuer Englisch Abstand 0.34 UNSICHER, hat aber in allen fuenf
+Ausgaben 28 Verse — das ist die Visionssprache, kein Zaehlproblem.
+
+## Die Pakete
+
+Geschnitten nach Tokengewicht, nicht nach Kapitelzahl: die Kapitel reichen von
+170 (Kap. 15) bis 1565 Tokens (Kap. 16), Median 635.
+
+ 1. Paket: Hes 1 (28 V.) | Hes 2 (10 V.) | Hes 3 (27 V.)          1447 Tokens
+    MASSSTAB: **die Wortereignisformel** (aus Jer 1,4), **`Menschensohn`**,
+              **`Gott, der HERR`**, `Geist`, `Herrlichkeit`, `Gestalt`,
+              `Wächter`, `Rolle`
+    Kap. 1 ist die Thronwagenvision — die dichteste Bildsprache des Buches.
+ 2. Paket: Hes 4 (17 V.) | Hes 5 (17 V.) | Hes 6 (14 V.)          1233
+ 3. Paket: Hes 7 (27 V.) | Hes 8 (18 V.) | Hes 9 (11 V.)          1407
+    7,3 ↔ 7,8 (0.56) und 7,4 ↔ 7,9 (0.92) im selben Kapitel
+ 4. Paket: Hes 10 (22 V.) | Hes 11 (25 V.) | Hes 12 (28 V.)       1699
+    Kap. 10 wiederholt die Thronwagenvision aus Kap. 1 — Vorlage dort
+ 5. Paket: Hes 13 (23 V.) | Hes 14 (23 V.) | Hes 15 (8 V.)        1408
+    14,14 ↔ 14,20 (0.37) im selben Kapitel
+ 6. Paket: Hes 16 (63 V.)                                        1565
+    Das laengste Kapitel des Buches, allein.
+ 7. Paket: Hes 17 (24 V.) | Hes 18 (32 V.) | Hes 19 (14 V.)       1735
+ 8. Paket: Hes 20 (44 V.) | Hes 21 (37 V.)                       2155
+    **VERSZAEHLUNG** — siehe oben. Das schwerste Paket des Buches.
+ 9. Paket: Hes 22 (31 V.) | Hes 23 (49 V.)                        1823
+10. Paket: Hes 24 (27 V.) | Hes 25 (17 V.) | Hes 26 (21 V.)       1624
+    Ab 25 beginnen die Voelkersprueche.
+11. Paket: Hes 27 (36 V.) | Hes 28 (26 V.) | Hes 29 (21 V.)       1988
+12. Paket: Hes 30 (26 V.) | Hes 31 (18 V.) | Hes 32 (32 V.)       2016
+    12,15 ↔ 30,26 (0.38)
+13. Paket: Hes 33 (33 V.) | Hes 34 (31 V.) | Hes 35 (15 V.)       2042
+    Kap. 33 nimmt die Waechterrede aus Kap. 3 wieder auf — Vorlage dort
+14. Paket: Hes 36 (38 V.) | Hes 37 (28 V.)                        1745
+15. Paket: Hes 38 (23 V.) | Hes 39 (29 V.)                        1392
+16. Paket: Hes 40 (49 V.) | Hes 41 (26 V.)                        1722
+    **Ab hier die Tempelvision (40-48)** mit eigenem Fachwortschatz:
+    `Elle`, `Vorhalle`, `Wachraum`, `Pfeiler`, `Palmschmuck`, `Vorhof`.
+    40,26 ↔ 40,34 ↔ 40,37 und 40,29 ↔ 40,33 (woertlich) im selben Kapitel
+17. Paket: Hes 42 (20 V.) | Hes 43 (27 V.) | Hes 44 (31 V.)       1972
+18. Paket: Hes 45 (25 V.) | Hes 46 (24 V.) | Hes 47 (23 V.) |
+           Hes 48 (35 V.)                                         2689
+    47,13 ↔ 48,29 (0.16)
+
+Summe: 1273 Verse in 48 Kapiteln, 18 Pakete
