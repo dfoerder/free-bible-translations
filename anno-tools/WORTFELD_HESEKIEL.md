@@ -2519,3 +2519,182 @@ sachlich kein A2-Wort ist.
 
 Dasselbe Problem wie `Kanne` (Stadt/Gefäß) in Paket 11: **der Bestand kennt
 kein Lemma mit zwei Leveln.** Für den Buchabschluss vorgemerkt.
+
+---
+
+## 15. Paket 15 (Kap. 39 · 40 · 41) — die Tempelvision beginnt
+
+104 Verse, 2508 Einträge, 67 Mehrwörter. **41 von 48 Kapiteln fertig.**
+`paketcheck.py` Abschnitt A und C leer — der `Pfeiler`-Abgleich zwischen den
+beiden Tempelkapiteln hat gehalten.
+
+### Zwei Agenten stimmen sich ohne Koordinator ab
+
+Der Kapitel-41-Agent hat `Pfeiler` zunächst auf *pillars · pilares · piliers ·
+pilastri* gelegt, dann **von sich aus in `ch40.json` nachgesehen** und seine
+Entscheidung revidiert: der Nachbar führt 18 Belege auf *posts · pilares ·
+poteaux · pilastri*, und englisch *pillars* ist durch `Säule` schon vergeben.
+
+> Das ist die zweite Stufe dessen, was in Paket 14 mit `besiedeln` begann.
+> Dort haben zwei Agenten unabhängig dieselbe Lösung gefunden; hier hat einer
+> die Lösung des anderen **gesucht und übernommen**. Beide Male war der
+> gemeinsame `out/`-Ordner die Voraussetzung.
+
+### Die `Tor`/`Tür`-Frage — und wie der Agent sie beantwortet hat
+
+Ich hatte sie als „zentrale Kollision des ganzen Tempelteils" angekündigt und
+auf die Bestands-Zweitreihe *gates · portones · portails · portoni* (5 Belege)
+als „naheliegenden Ausweg" hingewiesen.
+
+Der Kapitel-40-Agent hat **alle neun Belegverse dieser Zweitreihe gelesen** —
+Nehemia 6,1 · 7,3 · 13,19 (zweimal), Sprüche 8,3, Esther 2,21, Apostelgeschichte
+12,13 (zweimal), 12,14 — und festgestellt:
+
+> **In jedem einzelnen dieser Verse steht `Tür` im selben Vers.** Die
+> Zweitreihe ist im Bestand keine Sachvariante, sondern exakt der
+> Kollisionsmechanismus Tor/Tür — und sie legt fest, welches Wort ausweicht:
+> `Tor`, nie `Tür`. (`Tür` führt mit 118 Belegen nur eine einzige Reihe.)
+
+Damit war die Entscheidung nicht mehr Ermessen, sondern Bestandslektüre.
+Angewandt **nur in 40,13 und 40,38**, den zwei tatsächlichen Kollisionsversen.
+
+Er hat auch begründet, was er **nicht** getan hat: eine kapitelweite
+Umstellung hätte 182 Bestandsbelege gebrochen, die Komposita `Nordtor`,
+`Osttor` und `Südtor` im selben Vers auseinanderlaufen lassen, 40,23 („von Tor
+zu Tor") gegen alle vier Ausgaben gestellt und an rund vierzig Stellen ohne
+Kollision aufgelöst.
+
+**Und Kapitel 41 enthält gar kein `Tor`** (13× `Tür`, null `Tor`) — die als
+zentral angekündigte Frage stellt sich dort überhaupt nicht.
+
+### Meine Vorgabe war an acht Stellen sachlich falsch
+
+Alle acht betreffen **Wortvorkommen, die ich nicht am Text geprüft hatte**:
+
+    `Messrute`      steht nirgends — der Text liest `Messstab`, im Bestand belegt
+    `Palmschmuck`   nur in Kap. 40 — Kap. 41 liest `Palmzweig`, belegt
+    `Vordach`       nur in Kap. 41, nicht in beiden
+    `Torgang`       nur in Kap. 40, nicht in beiden
+    `Wachraum`      nur in Kap. 40
+    `Stockwerk`     nur in Kap. 41 — ich hatte es für Kap. 40 gelistet
+    `Tor`           kommt in Kap. 41 nicht vor
+    `Elle`          37× in Kap. 40 und 26× in Kap. 41, nicht 21 und 14
+
+Die Zählung war falsch, weil mein Muster `Elle` suchte und `Ellen` nicht traf
+— **derselbe Fehlertyp wie bei der Wortereignisformel in Paket 10.** Von den
+sechs als „gemeinsam" angekündigten Neuprägungen war tatsächlich **nur
+`Pfeiler`** gemeinsam.
+
+Dazu eine Wiederholungsgruppe, die es nicht gibt: der Paketplan nennt
+„40,26 ↔ 40,34 ↔ 40,37"; wörtlich gleich sind nur **40,34 ↔ 40,37**. 40,26 hat
+anderen Satzbau und 17 statt 20 Tokens.
+
+### Die n-Gramm-Gegenrechnung findet, was Verspaare nicht zeigen
+
+Der Kapitel-40-Agent hat nicht der Vorgabe vertraut, sondern die textgleichen
+Verspaare **selbst ermittelt** und darüber hinaus alle 3- bis 7-Gramme des
+Kapitels erhoben: 37 Wortfolgen mit abweichender Glossenfolge, jede einzeln
+geprüft.
+
+**Zwei echte Fehler kamen dabei heraus:** in 40,46 trug der Artikel vor
+`Dienst` französisch *l'* statt *le* (Genus vom Nachbarwort `Altar`
+verschleppt), und `bis`/`zum` lief in fünf Versen in vier verschiedenen
+Fassungen auseinander.
+
+Dieselbe Technik hatte in Kapitel 32 vier fehlende Mehrwörter gefunden. **Sie
+ist der schärfste Einzelprüfer des Buches** und findet, was Verspaar-Vergleiche
+nicht sehen: Uneinheitlichkeit innerhalb eines Kapitels.
+
+### `Herrlichkeit` ↔ `Ruhm` — die Auszählung entscheidet
+
+Der Kapitel-39-Agent hat beide Lemmata vollständig ausgezählt:
+
+    Herrlichkeit  184× glory — EINE Lesart, keine Zweitlesart
+    Ruhm           30× glory, dazu VIER echte Zweitlesarten
+                   (fame · splendor · boasting · boast)
+
+`Ruhm` ist damit sowohl das schwächer gebundene Wort **als auch** das einzige
+mit ausweichbarer Lesart. Gewählt wurde *fame · fama · renommée · fama*, weil
+die Belegverse dieser Reihe (1. Chronik 14,17 · 22,5 · 2. Chronik 26,8 · 26,15)
+genau den Sinn von 39,13 tragen — und weil alle vier Ausgaben dort Ruf lesen,
+nicht Herrlichkeit.
+
+**Das mitgeführte Mehrwort `zum Ruhm gereichen` wurde nachgezogen** — sonst
+hätte es die Kollision als Mehrwort gegen Einzelwort wieder eingeschleppt.
+
+### Die erste bewusst stehengelassene inhaltliche Kollision des Buches
+
+**39,7 `Heilige` ↔ `heiligen`**, drei von vier Sprachen. Der Agent hat sie
+geprüft und **nicht** aufgelöst, mit drei Gründen:
+
+- `Heiliger` hat keine brauchbare Zweitlesart (die einzige ist *saints*,
+  falscher Sinn);
+- „meinen heiligen Namen" ist eine **buchweite Formel** (36,20–23 · 39,7
+  zweimal · 39,25 · 43,7–8) — sie in einem Vers umzustellen und drei Verse
+  später nicht, wäre schlimmer als die Kollision;
+- **der Bestand führt genau dieses Paar unaufgelöst in Lukas 1,35** (`heilige`
+  *Holy · Santo · Saint · Santo* neben `Heilige` *Holy One · Santo · Saint ·
+  Santo*).
+
+Nachgeprüft und bestätigt. `glosskollision.py --nurinhalt` steht für das Buch
+damit erstmals auf **1 statt 0** — bewusst, mit Bestandspräzedenz.
+
+### `hervor` in 39,2 — die Regel richtig *nicht* angewandt
+
+In 38,4 war `hervor` auf die Zweitlesart aus 1,13 ausgewichen, weil `heraus`
+im selben Vers stand. **39,2 enthält kein `heraus`** — nur `herauf`, das mit
+keiner `hervor`-Reihe zusammenfällt. Also die Hauptlesart.
+
+> „Aufgelöst wird nur im Kollisionsvers" heißt auch: **in einem Vers ohne
+> Kollision wird die Auflösung nicht mitgeschleppt.** Der Agent hat das von
+> selbst geprüft.
+
+### Sieben liegengebliebene Mehrwörter — darunter eine Paket-interne Divergenz
+
+    bis zu        gesetzt in 21,3 · 31,7 · 41,8 · 41,16   FEHLTE in 40,13·14·15·19·27
+    zusammen mit  gesetzt in 21,17 · 25,10                FEHLTE in 39,14
+    bis in        gesetzt in 41,17                        FEHLTE in 16,29
+
+Der `bis zu`-Fall ist neu in seiner Art: **Kapitel 41 hat das Mehrwort gesetzt,
+Kapitel 40 nicht** — zwei Agenten desselben Pakets, verschieden entschieden,
+und `paketcheck` sieht das nicht, weil es nur Lemma-Reihen vergleicht, keine
+Mehrwortsetzung. Nachgetragen.
+
+Der Fund in 16,29 verdankt sich der Form **`bis ins`**, die der
+Kapitel-41-Agent in 41,17 gesetzt hat.
+
+### Neu geprägt (18)
+
+    Kapitel 39 (4)
+    Totengräber  C1 · Ziehender B2 · eifern C1 · Hamona A1
+    dazu das Mehrwort `entweihen lassen` C1
+
+    Kapitel 40 (11)
+    Pfeiler B2 · Wachraum B2 · Palmschmuck B2 · Torgang B2 ·
+    Toreingang B2 · Südtor B2 · Eroberung C1 · beiderseits C1 ·
+    Opferfleisch C1 · Quadrat B2 · gepflastert B2
+
+    Kapitel 41 (11, davon Pfeiler gemeinsam)
+    Seitenkammer B2 · Priesterkammer B2 · Galerie B2 · Vorsprung B2 ·
+    Vordach B2 · Holztäfelung C1 · Tempelraum B2 · Grundfläche B2 ·
+    Maßsystem B2 · abgegrenzt B2 · eingreifen B2
+
+`Hamona` ist **keine** Zwillingsfalle: der Bestand führt nur `Baal-Hamon`
+(Hoheslied 8,11) — anderer Name, anderer Träger.
+
+### Die Formfalle, dreimal in Folge
+
+    Kapitel 39:  sieben von zehn „zu prüfenden" Wörtern waren belegt
+    Kapitel 40:  28 hints-Meldungen, 11 wirklich neu
+    Kapitel 41:  sechzehn belegte Lemmata, die ich als offen geführt hatte
+
+Der lehrreichste Einzelfall ist **`Keule`** (39,9): belegt, aber mit **zwei**
+Lesarten — *thigh* (Hesekiel 24,4, das Fleischstück) und *club · maza ·
+massue · mazza* (Hiob 41,21, die Waffe). Meine Vorgabe nannte nur „belegt".
+
+### Befund für die Kapitel 42–48
+
+`Seitenkammer` (neu, Kapitel 41) und `Seitenraum` (Bestand, 1. Könige 6,5)
+tragen in es/fr/it **dieselbe Reihe** und trennen nur im Englischen. Sie stehen
+bisher in keinem gemeinsamen Vers. **Falls beide in einem der Kapitel 42–48
+zusammentreffen, muss dort aufgelöst werden.**
