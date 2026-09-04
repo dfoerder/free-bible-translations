@@ -727,3 +727,115 @@ angefasst: `auftragen` (13,12, „einen Anstrich auftragen"), `vernichtend`
 vier verschiedene Dinge), `Kreis` 13,9 (alle vier lesen *council*),
 `Mauer` (RV liest durchgehend *pared*, der Bestand bindet *muro* mit 87
 Belegen), `Weinstock` fr *cep* (LSG liest *vigne*).
+
+---
+
+## 6. Paket 6 (Kap. 16) — 1565 Tokens, das längste Kapitel des Buches
+
+63 Verse, 1631 Einträge, 75 Mehrwörter.
+
+### Zum ersten Mal ein Kapitel auf zwei Agenten geteilt
+
+Kapitel 16 ist mehr als doppelt so groß wie alles, was bisher ein Agent
+bearbeitet hat. Geteilt bei **16,35**, wo der Text selbst neu ansetzt
+(„Darum, du Hure, höre das Wort des HERRN"): 812 gegen 753 Tokens. Alles, was
+über die Grenze läuft, stand in einer gemeinsamen Vorgabetabelle.
+
+**Das Verfahren trägt.** Der maschinelle Abgleich beider Hälften fand 30
+Lemmata mit verschiedenen Reihen — **28 davon sind Flexion, Kongruenz oder
+echte Bedeutungsspaltung.** Nur zwei mussten angeglichen werden:
+`Kultplattform` französisch (*plates-formes cultuelles* gegen *plateformes de
+culte*) und `überall` in 16,37.
+
+**Und beide Agenten haben unabhängig dieselbe Kollision gefunden, die meine
+Tabelle selbst erzeugt hatte, und sie identisch aufgelöst:** `nackt` B1
+*naked · desnudo · nu · nudo* und `bloß` B2 *bare · desnudas · nues · nude*
+fallen im Femininum Singular in es/fr/it zusammen, und die beiden stehen in
+**allen drei** Vorkommen wörtlich nebeneinander („nackt und bloß", 16,7 ·
+16,22 · 16,39). Beide haben `nackt` gehalten (27 Belege, 100 % auf einer
+Reihe) und `bloß` ausweichen lassen auf *bare · descubierta · découverte ·
+scoperta* — was RV und RIV dort selbst lesen. `hints.py` meldet das nicht,
+weil die Bestandsformen sich im Numerus unterscheiden.
+
+### Was die Teilung gekostet hat — und wie es aufgefallen ist
+
+`selfcheck.py` und `qa.py` laufen nur auf einem **vollständigen** Kapitel; ich
+hatte den Agenten deshalb eine Handprüfung vorgeschrieben und `konvention.py`
+in ihren Prüfläufen weggelassen. Genau dort lag der Fehler: **`konvention.py`
+meldete auf dem zusammengefügten Kapitel drei fehlende `um zu`-Mehrwörter**
+(16,4 · 16,15 · 16,26, alle in der ersten Hälfte; der Bestand führt die
+Wendung 553-mal). Nachgetragen.
+
+> **Wer ein Kapitel teilt, muss die Prüfläufe, die nur ganze Kapitel sehen,
+> beim Zusammenfügen nachholen** — `selfcheck`, `qa --kapitel`, `konvention`
+> und `levelcheck` über die vereinigte Datei, bevor gebaut wird.
+
+Beim Nachtragen noch eine Formregel bestätigt: die `form` eines
+`parts`-Mehrworts enthält **nur die Tokens der genannten Positionen**
+(„um zu"), nicht den dazwischenliegenden Text.
+
+### Widerlegte Angaben der Vorbereitung
+
+- **`huren` kommt im ganzen Kapitel nicht vor** — der Agent hat alle 63 Verse
+  durchsucht: nur `Hurerei` (18×), `Hure` (4×) und das Mehrwort `Hurerei
+  treiben`. Meine Vorgabe „durchgehend im Kapitel, neu zu prägen" war leer.
+- **16,5 ist nicht die Schonungsformel** — schon vor dem Abschicken
+  korrigiert; beide Agenten haben es bestätigt. `schonen` und `Auge` fehlen.
+- **`Ehebruch`, `Hetiter` (als eigenes Wort) und `Rebe` stehen nicht im
+  Kapitel**; `Straßenecke`, `Ehebrecherin` und `schamlos` stehen im Singular
+  bzw. attributiv, nicht wie in meiner Tabelle.
+- **`von überall her` ist belegt** (Jeremia 50,26 · Markus 1,45, B1) — der
+  einzige Levelfehler des ganzen Laufs, vom Agenten selbst gefunden.
+- **16,58 trägt „spricht **der** HERR" ohne `Gott`** — die Ausnahmefassung, die
+  `PAKETE_HESEKIEL.txt` mit sieben Stellen im Buch nennt.
+
+### Die Lexikonfalle, zum zweiten Mal
+
+**`aufnehmen` (16,61):** 24 von 40 Bestandsbelegen tragen *receives · recibe ·
+reçoit · accoglie* — **alle 24 neutestamentlich**. Die alttestamentlichen
+(3. Mose 25,35 · Josua 20,4 · Jeremia 3,19) tragen *take in · acoger ·
+accueillir · accogliere*; genommen ist die AT-Lesart. Derselbe Fall wie
+`Anstoß` in Paket 5 und `Menschensohn` in Paket 1.
+
+### Kollisionen
+
+`hints.py` meldet fünf Paare für das ganze Kapitel; die beiden Agenten haben
+**über zwanzig** aufgelöst. Die inhaltlich schwersten:
+
+    16,7 · 16,22 · 16,39  `nackt` / `bloß`      4 von 4 — s. o.
+    16,37  `Blöße` / `Nacktheit`  4 von 4 — `Nacktheit` (1 Beleg) weicht auf
+           *bare body · cuerpo desnudo · corps nu · corpo nudo*
+    16,39  `abreißen` / `niederreißen` — `abreißen` weicht auf
+           *throw down · destruir · détruire · abbattere*; `niederreißen`
+           behält die Buchreihe aus 13,14
+    16,39  `ausziehen` / `wegnehmen` — von keinem Werkzeug gemeldet
+    16,52  `Schande` / `schämen` — it *vergogna* **und** fr *honte*;
+           `schämen` weicht auf *rougir · arrossire*
+    16,5   `Mitleid` / `erbarmen` — vier Einträge desselben Feldes im Vers
+           (`Mitleid`, `Mitleid haben`, `erbarmen`, `sich erbarmen`),
+           alle vier in allen vier Sprachen getrennt
+
+**16,45 `dein` / `euer` bleibt stehen** — Englisch kennt keinen Numerus im
+Possessivum. es/fr/it trennen.
+
+### Neu geprägt (23)
+
+Erste Hälfte: `Nabelschnur` B2 · `einreiben` B2 · `wunderschön` B2 ·
+`entwickeln` B2 · `sich entwickeln` B2 · `Leder` B1 · `dank` B2 (Präposition) ·
+`Figur` B1 · `Kultplattform` C1 · `kürzen` B2 · `Handelsland` C1 ·
+`normalerweise` B2 · `umgekehrt` B2 · `andersherum` B2 · `Hetiterin` B2 ·
+`sich anbieten` B1 · **`vor Augen halten` B2** (kehrt in 20,4 und 22,2 wieder
+— festschreiben).
+
+Zweite Hälfte: `Mörderin` B2 · `Schamlosigkeit` C1 · `freigiebig` C1 ·
+`nachahmen` B2 · `vergießen lassen` C1 · `zum Trost werden` B2 ·
+`in Stücke hacken` B2.
+
+**`hints.py` meldet in der ersten Hälfte 36 unbelegte Formen — wirklich neu
+sind 14.** Und umgekehrt hat es `umgekehrt` (16,34) **nicht** gesehen, weil
+`umkehren` belegt ist — dieselbe Bauform wie `einsehen` in Paket 4.
+
+### Vorlage für Kapitel 23
+
+Kapitel 16 ist die große Schwesterallegorie; 23 nimmt sie wieder auf. Beide
+Agenten haben ihre Reihen vollständig im Bericht aufgeführt.
