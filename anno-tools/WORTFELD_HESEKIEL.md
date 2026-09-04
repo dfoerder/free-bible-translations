@@ -2316,3 +2316,206 @@ schon einmal aufgelöst worden (`sag` → *parla*). Angeglichen.
 > Die beiden Fälle sehen gleich aus und sind verschieden: beim Gottesnamen
 > trennt die **Versalienschreibung**, beim Imperativ nur ein **Apostroph**.
 > Das Werkzeug zieht die Grenze richtig.
+
+---
+
+## 14. Paket 14 (Kap. 36 · 37 · 38) — die Heilsworte und der erste Gog-Spruch
+
+89 Verse, 2493 Einträge, 93 Mehrwörter. **38 von 48 Kapiteln fertig.**
+
+`paketcheck.py` Abschnitt C zum vierzehnten Mal leer — **Abschnitt A hat zum
+ersten Mal einen Treffer, und er ist ein Erfolg.**
+
+### Der erste Abschnitt-A-Treffer des Buches ist keine Divergenz
+
+    `besiedeln`  (im Bestand unbelegt)
+        Hesekiel 36,33   settle · poblar · peupler · popolare
+        Hesekiel 38,12   settled · pobladas · peuplées · popolate
+
+**Zwei Agenten haben dasselbe Wort unabhängig voneinander neu geprägt und
+dieselbe Reihe gewählt** — der Unterschied ist reine Flexion (Infinitiv gegen
+Partizip Femininum Plural). Auch das Level stimmt überein, sonst hätte
+Abschnitt C angeschlagen.
+
+> Nach dreizehn leeren Abschnitten A ist der erste Treffer der Beweis, dass
+> das Verfahren trägt: wo zwei Agenten ohne Absprache dasselbe Wort erfinden
+> müssen, kommen sie auf dieselbe Lösung. Beide sind vom selben Weg dorthin
+> gekommen — Level von `bebauen`/`bepflanzen` bzw. `siedeln`, romanische
+> Felder nach den Ausgaben, und beide haben `bewohnen` und `wohnen` im selben
+> Vers freigehalten.
+
+### Meine `Mensch`/`Volk`-Vorgabe war verkehrt herum
+
+Ich hatte geschrieben, `Volk` trage die Plural-Bindung und `Mensch` stehe „im
+Singular kollektiv", und dem Agenten geraten zu prüfen, ob die
+Numerusunterscheidung schon trennt — mit Verweis auf 33,13, wo genau das der
+Fall war.
+
+Am Vers ist es umgekehrt: **`Menschen` ist Plural, `Volk` Singular**, und
+beide sind englisch *people*. Die Kollision ist echt. Aufgelöst hat `Mensch`
+(319× *people* gegen 59× *men*) auf *men · hombres · hommes · uomini* — eine
+Bestandslesart mit identischen romanischen Feldern, im ganzen Kapitel
+durchgehalten.
+
+> Die Lehre aus 33,13 war richtig, meine Anwendung falsch. **Die Frage „trennt
+> der Numerus schon?" muss am Vers beantwortet werden, nicht aus dem
+> Gedächtnis.**
+
+Ebenso falsch: „in 36,6 stehen alle drei Wörter zusammen". Der Vers hat
+`sprich` · `spricht` · `rede` — **zwei** Lemmata, nicht drei. Ein Vers mit
+`sagen`, `sprechen` und `reden` existiert im Kapitel nicht.
+
+### Die Dreierlage `sagen` / `sprechen` / `reden`, mit allen drei Buchauflösungen
+
+Der Kapitel-36-Agent hat die drei bisherigen Auflösungen (12,25/20,27 · 27,3 ·
+29,3) **zusammen** angewandt, je nachdem, was im Vers steht:
+
+    spricht  (Botenformel, unbeweglich)   says · dice · parle · dice
+    rede     → 12,25-Lesart, nur fr        speak · hablo · déclare · parlo
+    sprich   → 6,3-Lesart                  say · di · dis · di'
+    sagt     → 29,3-Lesart (36,13)         states · afirma · dit · afferma
+
+Ergebnis in 36,6: **in jeder der vier Sprachen drei verschiedene Wörter.** Und
+in 36,3, wo `redete` neben `spricht` steht, kollidiert nichts (*parla* gegen
+*parle*) — dort bleibt die Bestandsreihe.
+
+> Bemerkenswert ist die Beobachtung des Agenten, dass dies **die Umkehrung
+> von 27,3** ist: dort wich `sprechen` auf *Speak · Parle*, weil `sagen`
+> danebenstand; hier geht es in die andere Richtung, weil die Botenformel
+> danebensteht. Dieselbe Regel, entgegengesetzte Bewegung.
+
+### Ein Fehlalarm, den die Zielsprachen-Kongruenz auflöst
+
+`hints.py` meldete `böse` ↔ `schlecht` in 36,31 (fr). Am Vers löst sich das
+von selbst: `Verhalten` ist französisch *conduite* (feminin), `Taten` sind
+*actes* (maskulin Plural) — also *mauvaise* gegen *mauvais*. **Die Reihen
+treffen sich nie.** Genau die 20,44-Lösung des Buches.
+
+Dritter Fall in Folge, in dem eine `hints.py`-Meldung am Vers zerfällt (nach
+33,13 und dem `Gerechter`-Fall). Die Ursache ist immer dieselbe:
+**Defaultformen statt Versformen.**
+
+### Ein Adjektiv-Kongruenzfehler, den kein Werkzeug sieht
+
+`glühend` C1 trägt im Bestand französisch ***ardente*** — die **feminine**
+Form, elfmal. In 36,5 steht es an `Eifer` = fr *zèle* (maskulin), also musste
+*ardent* gesetzt werden.
+
+Das ist derselbe Typ wie die 18,24-Beobachtung aus Paket 13: **ein
+Kongruenzfehler kann im Adjektiv sitzen, nicht nur im Possessiv.**
+`kongruenz.py` prüft nur Possessiva. Der Agent hat daraufhin **alle 60
+Modifikator/Nomen-Paare des Kapitels von Hand** gegen das Zielsprachen-Genus
+durchgesehen und sonst nichts gefunden.
+
+**Für den Buchabschluss vorgemerkt:** eine Adjektiv-Variante von
+`kongruenz.py`. Sie ist schwerer zu bauen als die Possessiv-Prüfung, weil
+romanische Adjektive vielfältiger flektieren und viele im Wörterbuchformat
+stehen — aber die Bestandsreihen tragen ihr Genus mit, und genau daran ist
+der Fehler zu erkennen.
+
+### Drei liegengebliebene Mehrwörter, wieder vom Buchlauf gefunden
+
+    in der Mitte      gesetzt in 1,4 · 37,28 · 38,12   FEHLTE in 22,3 · 29,21
+    zum Spott werden  gesetzt in 16,57                 FEHLTE in 36,4
+
+Der Fund in 22,3 und 29,21 verdankt sich der Form **`in ihrer Mitte`**, die
+der Kapitel-37-Agent in 37,28 gesetzt hat — vorher kannte der Lauf nur `in
+der Mitte` und konnte die beiden Stellen nicht sehen. **Der Buchlauf wird mit
+jedem Paket schärfer, weil jede neue Mehrwortform neue Fundstellen
+erschließt.**
+
+Ein vierter Kandidat war ein Fehlalarm: `setzte mich` in 37,1 ist **transitiv**
+(„er setzte mich mitten in ein Tal"), nicht reflexiv wie in 3,15.
+
+### Die Formfalle, in diesem Paket besonders deutlich
+
+    Kapitel 37:  vier von sechs angekündigten Neuprägungen waren belegt
+    Kapitel 38:  fünf von sieben belegt — es blieb eine von zwei übrig
+    Kapitel 36:  fünf von sechs „zu prüfenden" Formen belegt
+
+Die deutlichsten Fälle: **`Gebein` mit 29 Belegen** (C1, genau die passende
+Reihe — `hints.py` meldete nur die unbelegte Singularform), **`überziehen`**
+mit 24 Belegen für die Form `überzog`, und **`Wolkenbruch` mit zwei Belegen
+im eigenen Buch** (13,11 · 13,13).
+
+Umgekehrt stand `besiedeln` in beiden Kapiteln nur unter „zu prüfen" — und
+war in beiden wirklich neu.
+
+### Achter Fall der Lexikonfalle: `Gomer`
+
+Die häufigste Lesart des Lemmas ist das **Hohlmaß** aus 2. Mose 16 (*omer*),
+fünfmal. In 38,6 ist das Volk aus 1. Mose 10,2 gemeint.
+
+Dazu im selben Kapitel: `richten` ist in 38,2 *direct* (die Gesichts-Formel
+aus 6,2 · 25,2 · 29,2 · 35,2), in 38,22 *judge*; `stürzen` in 38,20 ist
+*plunge*, nicht *fall*, sonst kollidierte es mit `fallen` im selben Vers.
+
+### Die Zwillingsprüfung, zehnmal durchgeführt
+
+Der Kapitel-38-Agent hat **jeden Eigennamen einzeln geprüft und auch die
+negativen Befunde berichtet**, wie erbeten:
+
+    Meschech  ↔ Mesech    Zwilling bestätigt, identische Reihe
+    Tubal     ↔ Thubal    Zwilling bestätigt, identische Reihe
+    Togarma   ↔ Thogarma  neues Lemma neben Bet-Togarma (27,14)
+    Gog                   zwei Träger (1. Chronik / Offenbarung), gleiche
+                          Reihe → KEIN zweites Lemma (der `On`-Fall)
+    Magog · Perser · Kuschiter · Puter · Saba · Dedan · Tarsis
+                          belegt, kein Zwilling
+
+### Der `Di'`/`di`-Fall, achtmal im Buch — einmal anders entschieden
+
+Der Kapitel-38-Agent hat den italienischen Zusammenfall von Imperativ `Di'`
+und Präposition `di` in 38,3 stehen lassen und sich auf **29,3** berufen.
+Dort gibt es den Fall nicht. Die Auszählung über alle 37 fertigen Kapitel:
+
+    aufgelöst (→ parla/Parla):  3,11 · 17,12 · 27,3 · 28,2 · 28,12 · 33,27
+    nicht aufgelöst:            38,3
+
+Angeglichen. **Der Agent hat sorgfältig nach einem Präzedenzfall gesucht und
+den falschen gefunden** — sichtbar wird das nur, wenn man alle Kapitel
+zugleich befragt. Das ist der Wert des Koordinator-Durchlaufs.
+
+### Neu geprägt (7)
+
+    Kapitel 36 (4)
+    Gesamtheit    B2  entirety · totalidad · totalité · totalità
+    Nachbarvolk   B2  neighboring peoples · pueblos vecinos · …
+    Menschenherde B2  flocks of men · rebaños de hombres · …
+    besiedeln     B2  settle · poblar · peupler · popolare
+
+    Kapitel 37 (2)
+    Holzstück     B2  piece of wood · trozo de madera · pièce de bois · pezzo di legno
+    ringsherum    B2  all around · alrededor · tout autour · tutt'intorno
+
+    Kapitel 38 (2, davon eine doppelt mit 36)
+    Felsklippe    C1  cliffs · peñascos · parois rocheuses · balze
+    hervorlocken  B2  lure out · atraigo fuera · attire au-dehors · attiro fuori
+
+`Nachbarvolk` geht bewusst **gegen alle vier Ausgaben** (die *nations* lesen),
+um die Buchbindung von `Volk` = *peoples · pueblos · peuples · popoli* nicht
+aufzureißen. `ringsherum` nimmt die Reihe von `ringsum` (90 Belege), nicht die
+von `rings` (C1, andere Reihe).
+
+### Zwei Bestandsinkonsistenzen, gemeldet und bewusst gefolgt
+
+**17,24 glossiert `gesagt` als *spoken · hablado · parlé · parlato***,
+abweichend von der Korpusbindung `sagen` = *say/dire*. Da 36,36 den Schlusssatz
+von 17,24 **wörtlich** wiederholt, ist der Agent 17,24 gefolgt — die
+Abweichung bleibt, aber die beiden Verse stehen gleich.
+
+**17,24 setzt `der` vor `HERR` italienisch *l'***, während die Formel überall
+sonst *il* führt (6,10 · 33,29 · 35,12). Hier hat der Agent **nicht** die
+Vorlage genommen, sondern die Formel — richtig, denn die Formel ist die
+stärkere Bindung.
+
+### `Regel` (36,17) — der Fall aus 18,6, zum zweiten Mal
+
+Das Lemma ist im Bestand A2 *rule · regla · règle · regola*; in 36,17
+bedeutet es die Menstruation. Der Agent hat eine eigene Lesart vergeben und
+**das Level A2 beibehalten**, weil `levelcheck.py` Eindeutigkeit je Lemma
+verlangt — mit der ausdrücklichen Anmerkung, dass das Wort in dieser Bedeutung
+sachlich kein A2-Wort ist.
+
+Dasselbe Problem wie `Kanne` (Stadt/Gefäß) in Paket 11: **der Bestand kennt
+kein Lemma mit zwei Leveln.** Für den Buchabschluss vorgemerkt.
