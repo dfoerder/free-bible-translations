@@ -977,3 +977,286 @@ NT-Bußlesarten aus Lukas 15,7 und Matthäus 18,3. Die Buchreihe aus 3,18 ·
 **`Fangnetz` ist gespalten:** Psalm 69,23 trägt *net · red · filet · rete* —
 genau die Reihe von `Netz`. Nur Hesekiel 12,13 und 17,20 tragen die
 Ausweichreihe. Betrifft ein fertiges Buch.
+
+---
+
+## 8. Paket 8 (Kap. 20 · 21) — 2155 Tokens, das schwerste des Buches
+
+81 Verse, 2242 Einträge, 95 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum achten Mal in Folge leer**; Abschnitt B 30 Fälle, sämtlich Flexion und
+Kontext.
+
+### Die einzige Verszählungsfalle Hesekiels — und was `ausgaben.py` dazu sagt
+
+    de 20,1–44  =  en/es/it 20,1–44          Versatz +0
+    de 21,1–5   =  en/es/it 20,45–49         ← in Kapitel ZWANZIG der Ausgaben
+    de 21,6–37  =  en/es/it 21,1–32          Versatz −5
+    fr folgt in beiden Kapiteln dem Deutschen
+
+`ausgaben.py` **schlägt für Kapitel 20 den Versatz +5 vor und warnt daneben,
+dass +0 besser liegt** (0.09 gegen 0.38). Der Warnung ist zu folgen, nicht dem
+Vorschlag — dieselbe Bauform wie die Falle in Jeremia 8.
+
+> **Der Vorschlag von `ausgaben.py` ist eine Vermutung, die Warnung daneben
+> ist eine Messung.** Wo beide sich widersprechen, gewinnt die Messung.
+
+Für Kapitel 21 kann `ausgaben.py` die Zuordnung überhaupt nicht ausdrücken,
+weil die ersten fünf Verse in einem anderen Kapitel der Ausgaben stehen.
+Deshalb ist `scratchpad/hesekiel/ausgaben21.md` von Hand gebaut worden — die
+Schleife steht dort im Abschnitt zu Paket 8. Beide Agenten haben die Zuordnung
+unabhängig an **jedem** Vers gegengeprüft (Kap. 20 alle 44, Kap. 21 über neun
+Eigennamen-Marker an allen 37): **null Abweichungen**. Ich habe Kapitel 20
+zusätzlich selbst nachgerechnet, ebenfalls null.
+
+### Die Lexikonfalle in umgekehrter Richtung — `schärfen`
+
+Meine Vorgabe erklärte `schärfen` für faktisch neu: der Bestand zeige nur
+*impressed · inculcó · inculqua · inculcò*, also **ein**schärfen, nicht das
+Schleifen einer Klinge. Der Kapitel-21-Agent hat das widerlegt. Vollständig:
+
+    4× impressed · inculcó   — Markus 5,43 · 8,30 · Lukas 8,56 · 9,21   (alle NT)
+    8× sharpen  · afilar     — 5. Mose 32,41 · 1. Samuel 13,20 · Jeremia 46,4 ·
+                               Jeremia 51,11 · Psalm 64,4 · 140,4 ·
+                               Sprüche 27,17 · Prediger 10,10           (alle AT)
+
+> **Die Lexikonfalle hat zwei Richtungen.** Bisher kannte ich nur die eine:
+> eine erdrückende Mehrheit stammt aus dem Neuen Testament und passt für ein
+> Prophetenbuch nicht (`Menschensohn`, `Anstoß`, `aufnehmen`, `umkehren`).
+> Hier ist es umgekehrt — **die häufigste Lesart verdeckt die passende**, und
+> zwar obwohl die passende doppelt so viele Belege hat und verteilter steht.
+> `fixgloss.py show` zeigt beide untereinander; ich hatte nur die erste Zeile
+> gelesen.
+
+Daraus die Prüfregel: **Bei einem Lemma mit mehreren Lesarten nie die erste
+Zeile allein nehmen — die Liste ist nach Häufigkeit sortiert, nicht nach
+Passung.** Für ein Prophetenbuch ist die Verteilung über AT und NT zu prüfen,
+bevor ein Wort für neu erklärt wird.
+
+**Ein Bestandsfehler ist dabei aufgefallen**: Matthäus 9,30 trägt `schärfen`
+mit *sharpened · afiló · aiguisa · affilò*, obwohl der Text „schärfte ihnen
+streng **ein**" liest. Dort gehört die *impressed*-Reihe hin. Notiert, nicht
+angefasst — Altlast außerhalb des Pakets.
+
+### `polieren` zurückgenommen — der Bestand führt Partizipien als Adjektive
+
+Der Agent hat `polieren` als Verb-Lemma neu geprägt, damit es zu `schärfen`
+im selben Satz passt. Beim Einsammeln zurückgenommen: **`poliert` ist ein
+Lemma mit drei Belegen** (1. Könige 7,45 · 2. Chronika 4,16 · **Hesekiel
+1,7**), und `geschliffen` C1 (Psalm 52,4) zeigt, dass der Bestand solche
+Partizipien als eigene Adjektiv-Lemmata führt — nicht unter dem Verb.
+
+> Die Symmetrie innerhalb eines Verses ist kein Grund, ein belegtes Lemma zu
+> übergehen. **Der Bestand entscheidet, nicht der Satzbau.**
+
+Der substantivierte Infinitiv `Polieren` (21,16) bleibt eine Neuprägung, nach
+dem Muster `Töten`/`töten` aus Prediger 3,3. Die Reihe steht in 21,14 · 21,15 ·
+21,16 · 21,33 zeichengleich und ist in allen vier Sprachen von `schärfen`
+getrennt.
+
+### Die achte Botenformel — die Angabe war richtig, die Übertragung falsch
+
+Der Kapitel-21-Agent hat in **21,14** eine achte Botenformel gefunden; mein
+Prompt nannte sieben. Sie steht dort in der Ausnahmefassung **„So spricht der
+HERR" ohne `Gott`**.
+
+Das ist die vierte Formel-Fehlmessung des Buches, aber die erste mit einer
+anderen Ursache als die drei Anerkennungsformel-Fälle: **`PAKETE_HESEKIEL.txt`
+hatte es richtig** (Zeile „`spricht der HERR` (ohne Gott) 7× — die Ausnahme").
+Ich habe beim Bauen der Vorbereitung die `Gott`-Formeln gezählt und die
+sieben Ausnahmen nicht dazugenommen.
+
+> **Wo eine Formel eine dokumentierte Ausnahmefassung hat, muss die Zählung
+> für ein Paket beide Fassungen zusammenzählen.** Die Paketdatei nennt die
+> sieben Stellen jetzt namentlich (5,7 · 13,6 · 13,7 · 16,58 · 21,14 · 30,6 ·
+> 37,14), damit die Übertragung prüfbar wird.
+
+Gegengerechnet: acht `spricht`-Vorkommen in Kapitel 21, acht `Menschensohn`
+(auch hier nannte der Prompt sieben, die Vorgabetabelle acht).
+
+### Italienische Possessiv-Kongruenz — ein Fehlertyp, den kein Werkzeug sieht
+
+Der Kapitel-20-Agent hat bei einer eigenen Blockgegenrechnung **eine** echte
+Abweichung gefunden (`meinen` italienisch *le mie* statt *i miei*), daraufhin
+alle Possessiva seines Kapitels geprüft und **zehn Stellen** korrigiert.
+
+Das ist ein Fehlertyp, der durch **jedes** Werkzeug rutscht: `qa`,
+`glosskollision`, `levelcheck`, `konvention` und `selfcheck` sehen ihn nicht,
+weil er weder Struktur noch Bindung noch Level verletzt. `ausreisser.py`
+meldet ihn nur, wenn die Mehrheit zufällig anders liegt — und meldet dann
+ebenso viele richtige Formen.
+
+Beim Einsammeln habe ich deshalb **buchweit** gerechnet: jedes Possessiv gegen
+das folgende Nomen. Das Sieb ist grob (es hält `ali`, `mano`, `abominazioni`,
+`ossa`, `radici`, `vesti` fälschlich für maskulin), aber die 59 Verdachtsfälle
+lassen sich in einem Durchgang lesen. Echt waren sechs, verteilt über vier
+Kapitel — **davon vier in längst committeten**:
+
+    9,10   ihren       il loro  → la loro     (Kopf = testa, f)
+    16,37  deine       la tua   → il tuo      (Nacktheit = corpo nudo, m)
+    16,47  ihren       le loro  → la loro     (Weg = via, Singular)
+    17,14  sein        il suo   → la sua      (Bund = alleanza, f)
+    17,19  meinen      il mio   → la mia      (Bund = alleanza, f)
+    17,19  seinen      il suo   → la sua      (Kopf = testa, f)
+    21,26  seine       i suoi   → le sue      (Götterbilder = immagini, f)
+    21,33  ihren       il loro  → la loro     (Spott = beffa, f)
+
+In allen acht Fällen ist die **Nomen-Glosse die Bestandsreihe** und das
+Possessiv der Fehler. Die Ursache ist durchweg dieselbe: das deutsche Genus
+schlägt durch, wo das italienische abweicht (`Hand`/`mano`, `Kopf`/`testa`,
+`Bund`/`alleanza` sind alle drei im Deutschen anders als im Italienischen).
+
+> **Dieser Lauf gehört ab jetzt in die Einsammel-Routine.** Er ist billig, und
+> er ist der einzige Zugriff auf einen Fehlertyp, den die Werkzeugkette nicht
+> abdeckt.
+
+Aus dem Einzelfall ist deshalb ein Werkzeug geworden: **`anno-tools/kongruenz.py
+<buchNr> [<kapitel> …]`**. Der erste Entwurf meldete 59 Verdachtsfälle, davon
+sechs echte — die Endung eines italienischen Nomens sagt sein Genus schlicht
+nicht (`ali`, `mano`, `abominazioni`, `ossa`, `radici`, `vesti` sind alle
+feminin). Mit einer Ausnahmeliste, einer Regel für `-zione`/`-zioni` und einer
+Stummliste für numerusgleiche Nomen (`città`) und dazwischenstehende Zahlwörter
+(„meine **vier** Gerichte") meldet er über die 21 fertigen Kapitel **null**.
+
+**Offen:** `kongruenz.py` liest aus `ANNO_OUT`. Ein Modus, der die gebauten
+Anno-Dateien der 51 fertigen Bücher liest, wäre der nächste sinnvolle Schritt —
+der Fehlertyp ist nicht hesekielspezifisch, und niemand hat je danach gesucht.
+
+### `Schlacht` 21,20 — gegen den Bestand, für alle vier Ausgaben
+
+Der Agent hat dem Bestand den Vorzug gegeben (`Schlacht` = *battle*, 31
+Belege) und die Abweichung ausdrücklich gemeldet. Beim Einsammeln umgestellt:
+alle vier Ausgaben lesen dort *slaughter · degollar · massacrer · macello*,
+und im Schwertlied ist das Schlachten gemeint, nicht der Kampf. Gesetzt ist
+eine **zweite Lesart am belegten Lemma**, keine Neuprägung.
+
+Die Meldung war trotzdem richtig — sie hat die Entscheidung erst möglich
+gemacht.
+
+### Die Schwurformel 20,5 · 20,6 · 20,15 · 20,23
+
+`erheben` B2 *raised · alcé · levai · alzai* · `Hand` A1 · `schwören` B2
+*swore · juré · jurai · giurai*; `erheben` und `schwören` kollidieren in
+keiner der vier Sprachen.
+
+Die feinste Entscheidung des Kapitels: **`die Hand erheben` ist ein
+Bestandsmehrwort** C1 *swore · juré · ai juré · ho giurato* (4. Mose 14,30) —
+meine Vorbereitung hatte nur das lemmalose `Hand erheben` geprüft und es für
+unbelegt erklärt. Der Agent hat das Mehrwort **nur in 20,5 gesetzt**, wo die
+Geste allein die Schwurbedeutung trägt, und **nicht in 20,6 · 20,15 · 20,23**,
+wo `schwor` danebensteht und ein Mehrwort *swore* eine 4-von-4-Kollision
+ergäbe. Drei der vier Ausgaben lesen dort ohnehin wörtlich.
+
+### Zwei falsche Formel-Zuweisungen meiner Vorbereitung
+
+- **20,17 ist nicht die Schonungsformel.** Der Text liest „Doch mein Auge
+  hatte Mitleid mit ihnen" — `schonen` kommt im Kapitel nicht vor, und der
+  Sinn ist umgekehrt (Verschonung statt Verweigerung). Gesetzt ist das
+  Bestandsmehrwort `Mitleid haben` B1, wörtlich wie 16,5 — **dieselbe
+  Bauform wie der schon in Paket 6 gemeldete 16,5-Fall.**
+- **`vor Augen halten` kehrt in 20,4 nicht wieder**: der Text liest „halte
+  ihnen die Gräuel ihrer Väter **vor**", ohne `Augen`. Gesetzt ist das
+  Bestandslemma `vorhalten` B2 mit der 16,2-Reihe. `vor Augen haben` steht
+  dagegen sehr wohl im Kapitel (20,7 · 20,8).
+
+Von der Wortfeldtabelle fehlen im Kapitel außerdem `Satzung` (der Text kennt
+nur `Ordnung` und `Recht`), `Heiligtum` und `Rauchopfer` („wohlriechende
+Opfer").
+
+### Die parallelen Geschichtsblöcke — elf Reihen, null Abweichungen
+
+Kapitel 20 erzählt dieselbe Geschichte dreimal (Ägypten, erste Wüstengeneration,
+zweite). Der Agent hat elf wiederkehrende Blöcke Feld für Feld gegengerechnet:
+
+| Block | Verse | Abweichungen |
+|---|---|---|
+| „handelte um meines Namens willen" | 9 · 14 · 22 | 0 |
+| „Da wollte ich meinen Grimm ausgießen" | 8 · 13 · 21 | 0 |
+| „durch die der Mensch lebt, der sie befolgt" | 11 · 13 · 21 | 0 |
+| „lebten nicht nach meinen Ordnungen" | 13 · 16 · 21 | 0 |
+| „meine Rechte" / „meine Sabbate" | je 6 Verse | 0 |
+| Milch-und-Honig-Land | 6 · 15 | 0 |
+| Schwurformel | 15 · 23 | 0 |
+| „starke Hand, ausgestreckter Arm" | 33 · 34 | 0 |
+| „So wahr ich lebe" / „nicht befragen lassen" | 3 · 31 · 33 | 0 |
+| Boten- und Schlussformel | je 4 Verse | 0 |
+| Anerkennungsformel | 26 · 38 / 42 · 44 | 0 |
+
+**20,2 ist zeichengleich mit 14,2** in allen acht Positionen — und die letzte
+`Da`-Fassung der Wortereignisformel im Buch. Damit steht die Formel
+**achtzehnmal** gleich.
+
+### Kollisionen, die keine Liste nannte
+
+Beide Agenten haben wieder mehr gefunden als `hints.py`. Die lehrreichsten:
+
+- **20,28 `Schlachtopfer` / `Opfer` / `opfern`** — drei Wörter desselben
+  Feldes in einem Vers. `Opfer` weicht **nur in 20,28** auf *offerings ·
+  ofrendas · offrandes · offerte*; in 20,26 · 20,40 · 20,41 steht es auf der
+  Bestandsreihe. Musterhafte Anwendung der Kollisionsregel.
+- **20,5 `sagen` / `geben`** — spanisch fallen der Imperativ *di* (decir) und
+  die 1. Sg. Prät. *di* (dar) zusammen. Gelöst mit **RVs eigener Wortwahl für
+  genau diesen Vers, *Diles***; en/fr/it bleiben unverändert.
+- **20,40 `all` / `ganz`** löst sich **ohne Ausweichen**, weil `ganz` sich auf
+  `Haus` = *casa/maison/casa* bezieht und romanisch feminin flektiert —
+  dieselbe Bauform wie `unter`/`zwischen` in 6,13.
+- **21,27 `aufstellen` / `einsetzen`** und **21,3 `sein` / `werden`** hat kein
+  Werkzeug gemeldet; der Agent hat beide selbst gefunden. Das periphrastische
+  `sein` („wird nicht zu löschen sein") trägt den Modalpassiv-Sinn *can be ·
+  poder ser · pouvoir être · poter essere*.
+
+**21,32 „In Trümmer, Trümmer, Trümmer"** ist der erste Fall im Buch, in dem
+dieselbe Glosse an drei aufeinanderfolgenden Positionen richtig ist: der
+Quelltext wiederholt das Wort dreimal, WEB und RIV ebenso. Jede
+Differenzierung wäre falsch.
+
+### Neu geprägt (14)
+
+    Kapitel 20 (3)
+    Bindung          C1  bond · vínculo · lien · vincolo               20,37
+    Aufständischer   C1  insurgents · insurgentes · insurgés · insorti 20,38
+    kränkend         C1  offensive · ofensivos · offensants · offensivi 20,28
+
+    Kapitel 21 (11)
+    Polieren         C1  polishing · pulir · polir · lucidare          21,16
+    Schlächter       C1  killer · matador · tueur · uccisore           21,16
+    Götterbild       C1  idol images · imágenes de dioses · …          21,26
+    Genüge           C1  satisfaction · satisfacción · … · soddisfazione 21,22
+    Genüge tun       C1  satisfy · saciar · assouvir · sfogare         21,22
+    einstecken       B2  put away · guardada · rentrée · rimessa       21,10
+    verworfen        C1  despicable · vil · méprisable · spregevole    21,30
+    verurteilt       C1  condemned · condenado · condamné · condannato 21,30
+    verachtend       C1  despising · despreciativo · … · sprezzante    21,18
+    verdoppeln       C1  double · doblar · doubler · raddoppiare       21,19
+    verdreifachen    C1  triple · triplicar · tripler · triplicare     21,19
+    vorgaukeln       C1  conjures up · inventa · invente · inventa     21,34
+
+`Aufständischer` ist bewusst **nicht** *rebels/rebeldes*: es steht in 20,38
+neben `Abtrünniger`, das im Bestand *renegades · rebeldes · rebelles ·
+ribelli* trägt — spanisch und französisch wären sie sonst identisch.
+
+`verworfen` und `verurteilt` schließen an die substantivierten Bestandslemmata
+`Verworfener` (Psalm 15,4) und `Verurteilter` (Psalm 102,21) an, Glosse für
+Glosse. Sie sind **nicht** unter `verwerfen`/`verurteilen` geführt, weil die
+Bedeutung dort eine andere ist (*rejected*, nicht *despicable*).
+
+### Die Formfalle, weiter unverändert
+
+    Kapitel 20:  10 `hints.py`-Meldungen,  3 wirklich neu
+    Kapitel 21:  27 `hints.py`-Meldungen, 13 wirklich neu
+
+Rund die Hälfte bis ein Drittel — wie in jedem Paket des Buches. Umgekehrt hat
+kein Werkzeug `Polieren` als eigenes Lemma neben `polieren` gesehen, und
+`Erstling` bekommt in 20,40 eine neue Lesart (Erstlingsfrucht statt
+Erstlingstier), ohne gemeldet zu werden.
+
+### Befunde im Bestand, nicht angefasst
+
+- **Matthäus 9,30** `schärfen` = *sharpened · afiló · aiguisa · affilò*, wo
+  *impressed · inculcó · inculqua · inculcò* hingehört (der Text liest
+  „schärfte ihnen streng **ein**").
+- `mitten` steht in Hesekiel fünfmal auf *in the midst* und fünfmal auf *in
+  the middle*. **Beide Lesarten sind belegt** (19 gegen 106) und keine Bindung
+  ist verletzt; WEB selbst wechselt. Nicht angeglichen.
+- `geschliffen` (21,20) fällt spanisch und italienisch mit `schärfen` zusammen
+  (*afilada*, *affilata*), steht aber in keinem Vers daneben. Nach der
+  Kollisionsregel nicht aufzulösen.
