@@ -3015,3 +3015,61 @@ Reihen (`Bewohner`/`Einwohner`/`Einwohnerin`, `Rache`/`Vergeltung`,
 `Ödnis`/`Verwüstung`, `Kornspeicher`/`Kornhaus`, `fortschleppen`/`fortschleifen`,
 `Weingärtner`/`Weinbauer`, `Ackerbauer`/`Ackermann`), die neun
 Zweitschreibungen, und die korpusweite Artikelfrage in `in die Hand geben`.
+
+### Nachtrag: die Nacharbeit, geprueft und auf drei Korrekturen zusammengeschrumpft
+
+Die Kandidatenlisten der Abschnitte 13 bis 19 sind nach Abschluss des Buches
+gegen den Korpus geprueft worden. **Der groesste Teil war kein Defekt.**
+
+**Die „Wortpaare mit identischer Reihe" gibt es korpusweit 299-mal**, nicht
+zehnmal. Die verdaechtigsten sind einzeln am Vers nachgesehen worden und alle
+richtig: `Kleinod` = *hymn* ist Luthers Wiedergabe von *miktam* in
+Psalmenueberschriften; `ablegen` = *made* steht in „ein Gelübde ablegen";
+`Rahmen` = *field* in 2Kor 10,13 („im Rahmen des Wirkungskreises") neben der
+woertlichen Lesart *frames*; `Leitung` = *direction* in „unter der Leitung".
+Die uebrigen sind echte Synonympaare, bei denen die Zielsprachen **ein** Wort
+fuer **zwei** deutsche haben — eine erzwungene Trennung wuerde einen
+Unterschied erfinden, den es nicht gibt.
+
+**Die „neun Zweitschreibungen" sind ein korpusweites Normalverhalten.** Es gibt
+rund **sechzig** solcher Namenspaare (`Joseph`/`Josef`, `Hesbon`/`Heschbon`,
+`Beth-El`/`Bethel`/`Bet-El`, `Basan`/`Baschan`, `Ophir`/`Ofir` …). Der deutsche
+Text schreibt den Namen verschieden, jede Schreibung ist ein eigenes Lemma mit
+derselben Reihe. Das ist die richtige Behandlung; der Jeremia-Befund war eine
+lokale Auspraegung, keine Besonderheit.
+
+**Die italienischen Namensanlaute sind eine Konvention**, kein Fehler: **152
+Reihen mit 560 Belegen** setzen italienisch `I-`, wo Deutsch und Englisch `J-`
+haben (`Iehu` · `Iohanan` · `Ioiakim` · `Ieconia` · `Iazer` …). RIV1927 ist an
+einzelnen Stellen inkonsequent, der Bestand nicht. Die Meldungen aus den
+Paketen 12, 15 und 18 (`Jojakim`, `Jaasanja`, `Hamutal`) sind damit erledigt.
+
+**`ziehen` in `zur Rechenschaft ziehen` ist ebenfalls kein Einzelfehler.** Die
+Reihe *draw · traer · tirer · trarre* steht an **allen vier** Korpusstellen der
+Wendung (2Mo 32,34 · 2Koen 7,9 · Jer 25,12 · Jer 29,32). Spanisch *traer* ist
+fuer sich genommen schief, aber 4 von 4 sind konsistent — eine Stelle zu
+aendern haette die Inkonsistenz erst erzeugt. Der Befund aus Paket 12 ist
+zurueckgezogen; wenn, dann alle vier auf einmal.
+
+**Was wirklich zu korrigieren war (drei Punkte, sechs Eintraege):**
+
+    46,13 pos 4   `das` fr *qui* → *que*
+                  Objektrelativsatz („das Wort, das der HERR … sprach");
+                  37,2 und 50,1 haben *que*, LSG schreibt es selbst so.
+    22,25 pos 22  `des` in `des Königs von Babel` → *of the · del · du · del*
+    44,30 pos 39  ebenso — die 28 uebrigen Stellen des Buches haben *of the*
+    24,9  [3,5]   Mehrwort `machen zu` B1 *make into · convertir en ·
+    29,18 [11,13] faire de · fare di* nachgetragen; 25,9 und 34,17 fuehren es
+                  bei identischer Bauform (`zum X machen`), die Einzelwort-
+                  glossen stimmten bereits.
+
+Danach: `validate` 0 Befunde, `qa` 0, `hilfsverb` 0, `levelcheck` ueber alle 52
+Kapitel 0. Das Buch steht bei **36 974 Eintraegen und 1454 Mehrwoertern**.
+
+**Offen bleibt genau eine Frage**, und sie ist buchuebergreifend: der
+franzoesische Artikel in `in die Hand geben`. Korpusweit **37× „les main"**,
+**12× „la main"**, **1× „les mains"** — die Mehrheitsform paart einen
+Plural-Artikel mit einem Singular-Substantiv. Das betrifft 50 Stellen in
+mehreren Buechern und haengt daran, was ein Einzelwort in der App zeigen soll,
+das in einer Wendung steckt. **Nicht ohne Entscheidung des Projektinhabers
+anfassen.**
