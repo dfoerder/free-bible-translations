@@ -2112,3 +2112,207 @@ gelassen.**
   obwohl im selben Vers das Mehrwort `durchs Schwert fallen` mit *by the
   sword* steht. Angeglichen. (20,26 und 20,31 behalten *through the*: dort
   ist es „durchs Feuer gehen".)
+
+---
+
+## 13. Paket 13 (Kap. 33 · 34 · 35) — 2406 Tokens, die Wächterrede kehrt wieder
+
+79 Verse, 2120 Einträge, 94 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum dreizehnten Mal in Folge leer**; Abschnitt B 34 Fälle, alle Flexion.
+
+**35 von 48 Kapiteln fertig.**
+
+### Die gemeldete Kollision war keine — und der Nachweis ist lehrreich
+
+`hints.py` meldete für 33,13 `Gerechter` ↔ `gerecht` in **allen vier
+Sprachen**. Der Agent hat beide Lemmata vollständig ausgezählt (176 und 172
+Belege) und dann gezeigt, dass die Meldung auf einem Artefakt beruht:
+
+> `hints.py` vergleicht die **Bestands-Defaultformen** — hier die Pluralreihen
+> beider Lemmata. Im Vers stehen sie aber in **verschiedenem Numerus**:
+> `zum Gerechten` (Singular, substantivisch) gegen `seiner gerechten Taten`
+> (attributiv, Plural). Die kontextrichtigen Glossen sind damit von sich aus
+> in allen vier Sprachen verschieden.
+
+`glosskollision.py` über das fertige Kapitel bestätigt es: kein Paar, in
+keiner Sprache.
+
+Das ist **dieselbe Artefaktquelle wie bei `Erschlagener` ↔ `erschlagen` in
+32,25, nur in die andere Richtung**: dort hat `hints.py` die Kollision
+*unter*meldet (nur Englisch statt vier Sprachen), hier meldet es eine, die es
+nicht gibt. Beide Male, weil es Defaultformen vergleicht statt der Formen im
+Vers.
+
+Bemerkenswert ist die Sorgfalt der Herleitung: der Agent hat die Analogie zu
+32,25 durchgerechnet und festgestellt, dass sie **das Gegenteil** ergeben
+hätte — `Gerechter` führt echte Zweitlesarten (darunter den messianischen
+Titel *Righteous One* aus Apg 3,14), `gerecht` nur Flexions- und
+Adverbvarianten. Nach dem 32,25-Kriterium hätte also das Substantiv weichen
+müssen. Er hat die Analogie trotzdem nicht angewandt, weil im Vers gar keine
+Kollision steht.
+
+### Die Wächterrede gegen 3,16–21 — drei begründete Abweichungen
+
+Maschinell über difflib aligniert. **33,7 gegen 3,17: null Feldabweichungen.**
+Die drei Unterschiede sind alle grammatisch geboten:
+
+    33,8  `ihm`    him · él · lui · lui   gegen 3,18 to him · le · lui · gli
+          → 3,18 „sagst ihm nichts" (Dativobjekt), 33,8 „sprichst mit ihm"
+    33,8  `seiner` … de sa · della sua   gegen 3,18 … de son · del suo
+          → dort „seiner Sünde" (m), hier „seiner Schuld" (f)
+    33,7  `Dich`   You · A ti · Toi · Te  gegen 3,17 you · te · t' · ti
+          → hier vorangestelltes Topik, dort Objektklitikon
+
+Ebenso **33,18 gegen 18,26 und 33,1/33,23 gegen 18,1: je null Abweichungen.**
+
+### Eine Kongruenz, die der Agent gegen die Vorlage richtiggestellt hat
+
+18,24 kongruiert `seiner` und `gerechten` nach dem **deutschen** Genus
+(*delle sue … giuste*), obwohl `Taten` in allen drei romanischen Sprachen
+maskulin ist (*hechos · actes · atti*). Der Agent hat in 33,13/33,16
+zielsprachlich kongruiert und die Abweichung gemeldet.
+
+> `kongruenz.py` sieht das nicht — zwischen Possessiv und Nomen steht ein
+> Adjektiv. Seit Paket 11 sucht der Lauf zwar das erste großgeschriebene
+> Folgewort, aber hier ist auch das Adjektiv Teil der Kette, und das Nomen
+> steht richtig. **Ein Kongruenzfehler kann im Adjektiv sitzen, nicht nur im
+> Possessiv.**
+
+### Vier liegengebliebene Mehrwörter, gefunden mit dem Buchlauf
+
+Der Lauf aus Paket 10 (jede Wortfolge, für die im Buch irgendwo ein Mehrwort
+gesetzt ist) hat nach diesem Paket vier neue Lücken gezeigt — alle drei
+Lemmata sind belegte Bestandsmehrwörter und im Buch schon gesetzt:
+
+    niemand mehr  20 Belege   gesetzt in 14,15 · 26,19   FEHLTE in 33,28
+    bis zu        40 Belege   gesetzt in 31,7            FEHLTE in 21,3
+    zur Zeit       8 Belege   gesetzt in 35,5            FEHLTE in 21,30 · 21,34
+
+Nachgetragen. Bemerkenswert ist die Richtung: **die Vorbilder stammen zum Teil
+aus den neuen Kapiteln.** `zur Zeit` hat der Kapitel-35-Agent gesetzt, und
+erst dadurch wurden die beiden Lücken in Kapitel 21 sichtbar. Der Lauf wird
+also mit jedem Paket schärfer.
+
+Zwei weitere Mehrwörter hat `sweeplemma.py` dem Kapitel-33-Agenten gemeldet,
+während `konvention.py` und `sweep.py` schwiegen: **`die Augen erheben`**
+(33,25) und **`herkommen`** (33,30).
+
+### Die Partizip-Frage in Kapitel 34 — der Bestand entscheidet je Wort
+
+Ich hatte gewarnt, dass `Verirrte`, `Verletzte`, `Verlorene` und `Schwache`
+substantivierte Partizipien sind, und behauptet, die ersten drei seien
+unbelegt. **Das stimmt nur für die Substantivlemmata.** Der Bestand legt die
+Substantivierung dieser Wörter unter das **Partizip**:
+
+    Schwacher  B1  echtes Substantivlemma, 5 Belege
+    Kranker    B1  echtes Substantivlemma, 30 Belege
+    Starker    B1  echtes Substantivlemma
+    verirrt    B2  Mt 18,12 „sucht das verirrte" — wörtlich der Fall von 34,16
+    verloren   B1  Jes 27,13 „die Verlorenen" · 5. Mose 22,3
+    verletzt   B2  nur attributive Belege
+
+Es war also nichts neu zu prägen; die Lesarten standen mit Level fertig da.
+
+Die Gegenprobe des Agenten ist die eigentliche Erkenntnis: **`Vertriebener`
+gibt es als Substantivlemma — und zwar in Jesaja 27,13, demselben Vers wie
+`verloren`.** Der Bestand ist hier bewusst uneinheitlich **je Wort**, nicht
+je Konstruktion. Eine allgemeine Regel („substantivierte Partizipien bekommen
+ein Substantivlemma") wäre falsch gewesen.
+
+**Dritter Fall des `verlassener`-Typs:** `getrübt` ist ein eigenes
+Bestandslemma (Sprüche 25,26, „eine getrübte Quelle"), und `belegt.py` rät
+bei 34,19 wieder ausdrücklich „Level und Lesart von dort uebernehmen" — im
+Vers steht das verbale Perfektpartizip von `trüben`.
+
+### Eine Kollision, die kein Werkzeug melden kann
+
+**34,12 `verstreuen` ↔ `zerstreuen`** stehen im selben Vers („seine
+verstreute Herde" / „wohin sie zerstreut wurden") und tragen im Bestand
+**exakt dieselbe Reihe**. `hints.py` schweigt, weil `verstreute` formseitig
+unbelegt ist. Aufgelöst zugunsten von `zerstreuen` (Hesekiel-Standard, 14
+Belege); `verstreuen` weicht auf *dispersed · esparcido · éparpillé ·
+sparpagliato* (1. Mose 11,4).
+
+### Die Elisionsfrage — ein Befund, der größer ist als das Buch
+
+Der Kapitel-33-Agent hat gemeldet, dass die Artikel vor `Gottloser` gespalten
+sind: 18,21 · 18,23 · 18,24 schreiben fr *le* / it *il* vor *impie*/*empio*,
+Kapitel 33 schreibt *l'*. Ich habe die drei Stellen zunächst angeglichen und
+dann **buchweit gemessen**:
+
+    Hesekiel:        194 Stellen, an denen ein fr/it Artikel vor einem
+                     vokalisch anlautenden Folgewort NICHT elidiert ist
+    Gesamtbestand:   2828 elidiert  gegen  2091 nicht elidiert
+
+**Korrektur zurückgenommen.** Das ist keine Mehrheit, die eine Entscheidung
+trägt, und die Frage ist grundsätzlicher Natur: Wort-für-Wort-Glossen sind
+kein Fließtext, und die Elision ist eine Sandhi-Erscheinung des
+zusammenhängenden Textes. *le* ist als Glosse für `der` korrekt; dass vier
+Glossen hintereinandergelesen kein grammatisches Französisch ergeben, ist
+eine andere Ebene.
+
+> **Für den Buchabschluss vorgemerkt, als Frage an den Bestand, nicht an
+> Hesekiel.** Eine Entscheidung mitten im Buch hätte 194 Stellen hier gegen
+> 4919 dort gestellt.
+
+### Neu geprägt (8)
+
+    Kapitel 33 (3)
+    siechen       C1  languish · languidecemos · languissons · languiamo
+    Trompetenton  B2  sound of the trumpet · sonido de la trompeta · …
+    Liebeslied    B2  love song · canción de amor · chant d'amour · canzone d'amore
+
+    Kapitel 34 (3)
+    Hirtenamt     C1  shepherd's office · oficio de pastor · charge de berger · …
+    düster        B2  overcast · nublado · nuageux · nuvoloso
+    abgrasen      C1  to graze off · pastar · brouter · brucare
+
+    Kapitel 35 (2)
+    hin- und herziehen  B2  goes back and forth · va de un lado a otro · …
+    Worte führen        B2  uttered words · proferido palabras · …
+
+`siechen` ist nur **halb** neu: `dahinsiechen` C1 steht längst im Bestand
+(Hesekiel 4,17, dort ungetrennt); in 33,10 ist das Verb getrennt, also ein
+`parts`-Mehrwort. `düster` und `abgrasen` weichen bewusst von den
+Nachbarwörtern ab (`dunkel` A2 steht im selben Vers; `weiden` hat in allen
+vier Sprachen ein eigenes Wort).
+
+### Beide Neuprägungen von Kapitel 35 waren meine — und beide falsch
+
+Ich hatte `aufspielen` und `herziehen` als neu angekündigt. **Beide sind
+belegt**, und für die reflexive Konstruktion in 35,13 führt der Bestand sogar
+ein eigenes Mehrwortlemma **`sich aufspielen`** C1, das exakt passt. Die
+tatsächlichen Neuprägungen sind zwei andere.
+
+### Die Lexikonfalle, Fall sechs und sieben
+
+- **`überliefern` (35,5):** der Bestand führt nur *handed down · transmitido*
+  (Lukas 1,2, Überlieferung im Sinn von Tradition). Im Vers heißt es „sie dem
+  Schwert überliefert". Eigene Lesart, an `ausliefern` aus 21,17 angelehnt.
+- **`hegen` (35,5):** die **Form**-Ansicht des Extrakts liefert *tend ·
+  cuidas* (Jesaja 17,11, einen Weinberg hegen), die **Lemma**-Ansicht sofort
+  *harbor · albergar* (3. Mose 19,18, „keinen Zorn hegen"). **Wer nur die Form
+  abfragt, sieht die falsche Reihe.**
+- **`stoßen` (34,21):** im Vers stoßen Schafe mit **Hörnern**; der Bestand hat
+  dafür eine eigene Reihe (2. Mose 21,28 ff. *gores · acornea*). Die erste
+  Zeile ist *pushed · empujó*.
+- Dazu `Weide` (zweite Lesart ist ausgerechnet *willow* aus 17,5!), `weiden`
+  (drei Familien), `Beute` (*spoil* gegen *prey*).
+
+### Der `HERR`/`ewig`-Fall, begründet nicht aufgelöst
+
+35,9 stellt `HERR` = fr *ÉTERNEL* neben `ewig` = *éternel*. Der Agent hat die
+naheliegende Ausweichlesart geprüft (fr *perpétuel*, Jeremia 25,9) und
+**verworfen**: `glosskollision.py` zählt das Paar selbst nicht mit, die
+Versalienschreibung des Gottesnamens trennt im ganzen Bestand zuverlässig, und
+eine buchlokale Sonderlösung für ein Paar, das das Werkzeug nicht als
+Kollision führt, macht den Bestand nur inkonsistent.
+
+**Der Gegenfall im selben Paket:** 33,27 `Sag` = it *Di'* neben `an` = *di*
+wird von `glosskollision.py` **als inhaltliches Paar gezählt** — der
+Apostroph reicht dem Werkzeug nicht als Trennung. In 28,2 war derselbe Fall
+schon einmal aufgelöst worden (`sag` → *parla*). Angeglichen.
+
+> Die beiden Fälle sehen gleich aus und sind verschieden: beim Gottesnamen
+> trennt die **Versalienschreibung**, beim Imperativ nur ein **Apostroph**.
+> Das Werkzeug zieht die Grenze richtig.
