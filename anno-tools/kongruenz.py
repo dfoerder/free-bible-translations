@@ -66,6 +66,8 @@ AUSNAHMEN = {
     'lode':'fs', 'lodi':'fp', 'veste':'fs', 'vesti':'fp',
     'pelle':'fs', 'pelli':'fp', 'valle':'fs', 'valli':'fp',
     'prole':'fs', 'proli':'fp', 'febbre':'fs', 'febbri':'fp',
+    'arma':'fs', 'armi':'fp', 'legge':'fs', 'leggi':'fp',
+    'greggi':'fp', 'gregge':'ms', 'carne':'fs', 'carni':'fp',
 }
 # Nomen, deren Singular und Plural gleich lauten — das Possessiv ist die
 # einzige Numerus-Angabe, also nie ein Fehler. Ebenso Zahlwoerter, die

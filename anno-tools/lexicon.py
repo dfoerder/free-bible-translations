@@ -200,10 +200,17 @@ def extract(nr, kap, von=None, bis=None):
         L.append('')
 
     # Mehrwort-Einträge, deren Bestandteile alle im Abschnitt vorkommen
+    # Case-INSENSITIV vergleichen. Der exakte Vergleich uebersah jedes
+    # Mehrwort, dessen Bestandsbeleg am Satzanfang steht: `alle moeglichen`
+    # (Hesekiel 30,5) blieb unsichtbar, weil der Bestand nur `Alle moeglichen`
+    # (Lukas 15,1) und `allen moeglichen` (Epheser 6,18) fuehrt. Gemeldet vom
+    # Agenten fuer Kapitel 30, nachdem `levelcheck.py` seine Neupraegung als
+    # A2-gegen-B1 zurueckgewiesen hatte — dieselbe Formfalle wie bei
+    # Einzelwoertern, nur eine Ebene hoeher.
     treffer = []
-    fs = set(formen)
+    fs = {f.lower() for f in formen}
     for form, lesarten in mw.items():
-        teile = form.split()
+        teile = form.lower().split()
         if len(teile) >= 2 and all(t in fs for t in teile):
             treffer.append((form, lesarten))
     if treffer:

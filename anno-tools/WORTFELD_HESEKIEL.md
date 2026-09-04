@@ -1895,3 +1895,220 @@ zusätzlich fatal gewesen.
   `rauben` steht dort nicht, die Auflösung gilt nur im Kollisionsvers.
 - `wegen` trug in Kapitel 28 italienisch *a motivo di* gegen 22× *a causa di*
   im übrigen Buch. Angeglichen.
+
+---
+
+## 12. Paket 12 (Kap. 30 · 31 · 32) — 2338 Tokens, Abschluss der Ägypten-Sprüche
+
+76 Verse, 2080 Einträge, 74 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum zwölften Mal in Folge leer**; Abschnitt B 38 Fälle, alle Flexion.
+
+Damit sind **32 von 48 Kapiteln fertig — zwei Drittel des Buches.**
+
+### `Ast` — die vierte Auflösung in einem Feld, das dreimal aufgelöst war
+
+Die schwerste Einzelentscheidung des Pakets. `Ast` und `Zweig` tragen im
+Bestand dieselbe Reihe und stehen in 31,5 · 6 · 8 · 12 zusammen. Der Agent
+hat zuerst nachgesehen, was die Ausgaben tun — und gefunden, dass **alle vier
+die beiden Wörter lexikalisch trennen**, gleichgerichtet:
+
+    „Zweige wurden zahlreich"   „Äste wurden lang"
+    WEB  its boughs             its branches
+    RV   sus ramas              los ramos
+    LSG  ses branches           ses rameaux
+    RIV  i suoi rami            i suoi ramoscelli
+
+Die Zielspalte war damit vorgegeben. Neue Reihe: **`Ast` B2 *boughs · ramos ·
+rameaux · ramoscelli***. Das ganze Feld ist danach maschinell gegen `ch17.json`
+gerechnet worden — **kein identisches Sprachfeld über zwei Lemmata**:
+
+    Zweig  B2  branches · ramas · branches · rami        16× im Buch
+    Ast    B2  boughs · ramos · rameaux · ramoscelli      5× (NEU)
+    Ranke  C1  tendrils · sarmientos · sarments · tralci  5×
+    Trieb  B2  shoot(s) · brote/renuevos · …              3×
+    Rebe   C1  branch · sarmiento · sarment · tralcio     1×
+
+> Der Agent hat zugleich Restüberlappungen **außerhalb** des Buches gemeldet
+> (en *boughs* trägt auch `Ranke` in Psalm 80,11; fr *rameaux* fünfmal) und
+> sie **nicht** angefasst: keine Kollisionsverse. Innerhalb Hesekiels ist
+> `Ranke` ausnahmslos *sarments/tralci*. Genau die Regel, richtig angewandt.
+
+### Meine Vorgabe hat fünf Bestandsreihen unterschlagen
+
+Und zwar an derselben Stelle, vor der ich die Agenten warne:
+
+    Ranke  hat DREI Reihen, nicht eine  (tendrils / shoots / boughs)
+    Trieb  hat DREI, nicht eine
+    Rebe   hat DREI, nicht eine
+    Ast    hat ZWEI, nicht eine  (Plural- und Singularreihe)
+
+Die Ursache war mein Extraktionsskript: es zog `most_common(2)` und schrieb
+davon nur die erste Zeile in die Tabelle. **Ich habe also genau den Fehler
+automatisiert, vor dem der Prompt warnt** („nie die erste Zeile von
+`fixgloss.py show` allein nehmen"). Die Konsequenz für künftige Pakete: die
+Vorgabetabelle nennt bei mehrdeutigen Lemmata **alle** Reihen oder gar keine.
+
+### Ein Agent hat in die Datei des Nachbarn geschaut
+
+Der Kapitel-31-Agent hat gemeldet, dass der Kapitel-32-Agent in 32,19
+`steigen` als *Descend · Baja · Descends · Scendi* geglost hat — womit
+Einzelwort und Mehrwort `hinabsteigen` **französisch und italienisch
+dieselbe Glosse** tragen. Nachgeprüft und bestätigt:
+
+    32,19  Steig hinab  hinabsteigen  Go down · Desciende · Descends · Scendi
+           Steig        steigen       Descend · Baja · Descends · Scendi   ← doppelt
+
+    31,17  stiegen hinab hinabsteigen went down · descendieron · …
+           stiegen       steigen      went · fueron · allèrent · andarono  ← sauber
+
+Angeglichen auf das 31,17-Muster, das seinerseits 26,20 folgt: das Einzelwort
+trägt die neutrale Bewegungslesart, das Mehrwort die Richtung.
+
+> **Das ist der erste Fall, in dem ein Agent einen Fehler im Kapitel eines
+> parallel laufenden Agenten gefunden hat.** Möglich wurde es, weil beide
+> in denselben `out/`-Ordner schreiben. Der Hinweis, die Nachbarkapitel als
+> Vorlage zu lesen, zahlt sich damit doppelt aus.
+
+### Mehrwort gegen Einzelwort — ein Kollisionstyp mit eigener Bauform
+
+Der 32,19-Fall ist nicht der einzige. Der Kapitel-30-Agent hat in 30,9 und
+30,11 dasselbe gefunden: das Mehrwort `um zu` und das Einzelwort `um` waren
+in allen vier Sprachen gleich. `glosskollision.py` meldet das nicht, weil es
+Mehrwörter gar nicht in den Vergleich nimmt.
+
+Damit stehen im Buch inzwischen **drei** Bauformen, die das Werkzeug nicht
+sieht:
+
+    Mehrwort gegen Mehrwort     26,20 · 29,10 · 27,10
+    Mehrwort gegen Einzelwort   30,9 · 30,11 · 32,19
+    Homograph mit zwei Trägern  Kanne (Stadt/Gefäß) · Assur (Nation/Person)
+
+**Für den Buchabschluss vorgemerkt:** `glosskollision.py` um beide
+Mehrwort-Vergleiche erweitern.
+
+### Zwei Werkzeugmeldungen, die in die Irre führen
+
+Der Kapitel-30-Agent hat zwei Fälle gefunden, in denen die Werkzeuge nicht
+schweigen, sondern **falsch** raten:
+
+- **`Stützen` (30,6):** `belegt.py` und `lexicon.py` melden übereinstimmend
+  das Verb `stützen` und raten „am Vers entscheiden". Im Vers steht der
+  **Nominalplural** von `Stütze` — und dieses Lemma taucht im ganzen Extrakt
+  nicht auf.
+- **`verlassener` (30,7):** `belegt.py` meldet ein Lemma `verlassener` mit
+  zwei Belegen und rät ausdrücklich „Level und Lesart von dort uebernehmen,
+  nichts Neues erfinden". Das ist aber das substantivierte „die Verlassenen"
+  (Psalm 102,18, C1); im Vers steht das Partizipialadjektiv `verlassen` B1 zu
+  „Städte". **Die Meldung führt in die falsche Wortart und das falsche Level.**
+
+> Die Werkzeuge sind formbasiert und kennen keine Wortarten. Wo eine Meldung
+> überzeugt klingt, muss die **Belegstelle** gelesen werden, nicht nur die
+> Reihe.
+
+### Eine echte Lücke in `lexicon.py`, gefunden über `levelcheck.py`
+
+`alle möglichen` ist ein Bestandsmehrwort (B1), stand aber nicht im
+Mehrwortblock des Extrakts — der Agent hat es erst gemerkt, als
+`levelcheck.py` seine Neuprägung als A2-gegen-B1 zurückwies.
+
+Die Ursache ist die Formfalle eine Ebene höher: der Bestand führt nur
+**`Alle möglichen`** (Satzanfang, Lukas 15,1) und **`allen möglichen`**
+(Dativ, Epheser 6,18) — die kleingeschriebene Nominativform gibt es nicht,
+und der Vergleich lief exakt. Jetzt case-insensitiv; der Block findet
+dadurch rund ein Drittel mehr Kandidaten.
+
+### Eigennamen: zwei Doppelschreibungen und ein zweiter `Elisa`-Fall
+
+Die Zwillingsprüfung hat im Bestand gefunden:
+
+    Meschech (2×) ↔ Mesech (3×)    dieselbe Reihe, zwei Lemmata
+    Tubal    (2×) ↔ Thubal (2×)    dieselbe Reihe, zwei Lemmata
+
+Und einen Doppelträger wie `Elisa`: **`Assur` ist 17× die Nation und 2× die
+Person** (1. Mose 10,22). In 32,22 ist die Nation gemeint — WEB liest dort
+„Asshur", die drei romanischen Ausgaben die Nation. Der Agent ist der
+Buchbindung aus 27,23 gefolgt, also gegen WEB.
+
+Ein dritter Doppelträger wurde **bewusst nicht** getrennt: `On` (30,17) ist
+sowohl die ägyptische Stadt (drei Belege) als auch ein Mann (4. Mose 16,1) —
+aber die Glossenreihe ist ohnehin identisch, ein eigenes Lemma hätte nichts
+gebracht. Der Unterschied zu `Elisa`: dort **unterscheiden** sich die Reihen.
+
+### Zwei Namen gegen alle vier Ausgaben
+
+`Theben` (die Ausgaben lesen viermal „No") und `Memphis` (Bestand *Memphis ·
+Menfis · Noph · Nof*) folgen dem Bestand. `Pelusium` dagegen folgt den
+Ausgaben (*Sin* ×4) — nach dem `Assuan`-Präzedenzfall aus 29,10, wo der
+Bestand ebenfalls die Ausgabenform trägt.
+
+> Die Regel dahinter: **ist der Name im Bestand belegt, gilt der Bestand;
+> ist er neu, gelten die Ausgaben.**
+
+### Die Gegenrechnung des Unterweltteils
+
+Der Kapitel-32-Agent hat die formelhaften Bausteine als **Funktionen**
+gebaut, sodass identische Wendungen zwangsläufig identisch glossiert sind,
+und danach **alle 5670 n-Gramme (n = 3…12) des Kapitels erhoben und die 223
+mehrfach vorkommenden Wendungen Position für Position gegeneinander
+gerechnet.**
+
+Ergebnis: alle wiederholten Wendungen tragen dieselbe Reihe. Genau ein
+Treffer blieb stehen und ist grammatisch geboten (finit gegen Infinitiv).
+Die Gegenrechnung hat dabei **vier fehlende `mitten unter`-Mehrwörter**
+gefunden (32,25 zweimal · 32,28 · 32,32).
+
+### `Erschlagener` ↔ `erschlagen` — die Kollision war größer als gemeldet
+
+`hints.py` meldete nur Englisch. Der Grund: es vergleicht die
+**Bestands-Defaultformen** (`Erschlagener` Plural gegen `erschlagen`
+Singular). Im Vers stehen beide im Plural und kollidieren **in allen vier
+Sprachen**.
+
+Aufgelöst wurde beim Substantiv — gegen die naheliegende Vermutung, aber
+richtig begründet: `erschlagen` hat korpusweit rund 175 Belege gegen 32,
+und seine „zweiten Lesarten" sind bloße Tempus- und Numerusvarianten
+desselben *slay*, während `Erschlagener` eine echte zweite Lesart führt
+(*slain persons*, Jeremia 41,9). Nur in 32,25; die sechs anderen Verse
+behalten die Buchreihe.
+
+### Neu geprägt (16)
+
+    Kapitel 30 (4)
+    Kub · Pelusium · Pi-Beset      A1  Eigennamen
+    Schienenverband  C1  splint · tablilla · attelle · stecca
+
+    Kapitel 31 (6)
+    Blätterdach      C1  leafy canopy · fronda · frondaison · chioma
+    Bachlauf         C1  brook courses · cursos de arroyo · …
+    Bundesgenosse    C1  confederates · confederados · confédérés · confederati
+    hinausragen      C1  towered out · sobresalía · s'élançait · sporgeva
+    hinausstrecken   C1  thrusts out · saque fuera · élance · distenda
+    trauern lassen   B2  made mourn · hice guardar luto · …
+
+    Kapitel 32 (6)
+    Flussbett        B2  watercourses · cauces · ravins · canali
+    Himmelslicht     C1  lights of heaven · astros del cielo · …
+    Menschenfuß      B2  human foot · pie humano · pied humain · piede umano
+    Tierklaue        B2  animal's hoof · pezuña de animal · …
+    Verbündeter      B2  allies · aliados · alliés · alleati
+    Überrest         B2  remains · restos · débris · avanzi
+
+Drei Trennungsentscheidungen sind bemerkenswert, weil sie **gegen die
+Ausgaben** gehen, um Kollisionen zu vermeiden: `Schienenverband` weicht auf
+„Schiene" aus, weil `verbinden` im selben Vers steht; `Bachlauf` meidet es
+*arroyos* (= `Bach`, steht in 31,4) und fr *ravins* (= `Schlucht`);
+`Bundesgenosse` meidet *allies*, damit `Verbündeter` in Kapitel 32 diese
+Reihe bekommen kann — **ein Agent hat also für den Nachbarn Platz
+gelassen.**
+
+### Befunde im Bestand, nicht angefasst
+
+- **`Stumpf` (4×) und `Rumpf` (1×) tragen dieselbe Reihe wie `Stamm`**
+  (*tronco · tronc · tronco*); ein Stumpf wäre *tocón · souche · ceppo*.
+- **`hinabstoßen` und `hinabstürzen`** teilen sich die spanische
+  *derribar*-Familie.
+- **`erzittern` C1 und `zittern` B1** tragen dieselbe Reihe.
+- `durchs` trug in 23,25 englisch *through the* gegen 13× *by the* — und das,
+  obwohl im selben Vers das Mehrwort `durchs Schwert fallen` mit *by the
+  sword* steht. Angeglichen. (20,26 und 20,31 behalten *through the*: dort
+  ist es „durchs Feuer gehen".)
