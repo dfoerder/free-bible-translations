@@ -168,3 +168,159 @@ Archaismen. **Die Liste immer lesen, nie nur die Zahl.** Ein hoher Wert ohne
 Archaismen ist ein Arbeitsmengensignal — viele neu zu prägende Lemmata —, kein
 Modernisierungsauftrag. Dasselbe gilt für Kap. 4–6 (87 · 50 · 41 pro 1000:
 `Rammböcke`, `Dinkel`, `Hirse`, `Gerstenfladen`, `Räucheraltäre`, `Kuhmist`).
+
+---
+
+## 2. Paket 2 (Kap. 4 · 5 · 6) — 1233 Tokens geplant, 1233 gebaut
+
+48 Verse, 1284 Einträge, 54 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+wieder beide leer**; Abschnitt B 26 Fälle, ganz überwiegend Kongruenz.
+
+### Der teuerste Fehler des Buches — und wie er gefunden wurde
+
+**Die Erkenntnisformel „dass ich der HERR bin" (54× im Buch) stand in meiner
+Vorgabetabelle falsch.** Ich hatte `erkennen` auf die *know*-Familie gelegt und
+mich auf Jeremia 9,23 und 24,7 gestützt.
+
+Der Weg zur Korrektur ist der eigentliche Befund:
+
+1. Der Kapitel-6-Agent meldete, meine **Nebenbegründung** trage nicht — ich
+   hatte behauptet, alle vier Ausgaben läsen know/conocer/connaître/conoscere;
+   tatsächlich liest nur RIV so, RV schreibt *sabrán*, LSG *vous saurez*.
+2. Er meldete zusätzlich, die von der Vorbereitung selbst genannten Vorlagen
+   **2. Mose 14,4 und 14,18 tragen die *recognize*-Familie**, und schrieb dazu,
+   Hesekiel weiche damit „bewusst von seinen eigenen Parallelversen ab".
+3. Der Kapitel-5-Agent meldete unabhängig dasselbe für 2. Mose 14,18 und
+   verlangte ausdrücklich eine Bestätigung, „bevor 54 Vorkommen darauf
+   aufbauen".
+4. Beide sind meiner Vorgabe **gefolgt** und haben den Preis sichtbar
+   hingeschrieben, statt eigenmächtig abzuweichen.
+
+Die Nachzählung im Bestand: **die Erkenntnisformel steht achtmal, und alle acht
+tragen *recognize***
+
+    2. Mose 7,5 · 7,17 · 8,18 · 14,4 · 14,18 · 1. Könige 20,13 · 20,28 · Jesaja 49,23
+
+Meine beiden Jeremia-Belege sind ein **anderer Satzbau**: dort steht „dass sie
+**mich** erkennen" mit persönlichem Objekt, und „dass ich der HERR bin" hängt
+an einem zweiten Verb. Ich hatte zwei Belege eines anderen Musters gegen acht
+Belege des richtigen gestellt.
+
+**Verbindlich ist jetzt:**
+
+    erkennen `erkennen` B1  recognize · reconocer · reconnaître · riconoscere
+    nach *damit*, 2. Pl.:   recognize · reconozcáis · reconnaissiez · riconosciate
+                            (wortgleich 1. Könige 20,28)
+
+Korrigiert in 5,13 · 6,7 · 6,10 · 6,13 · 6,14.
+
+> **Die Lehre für jede Formelentscheidung: die Formel im Bestand auszählen,
+> nicht das Lemma.** `fixgloss.py show <lemma>` zeigt die Lesarten des Wortes;
+> es sagt nicht, welche davon in *dieser Wendung* steht. Ein Beleg, in dem
+> dasselbe Verb eine andere Rektion hat, ist kein Beleg für die Formel.
+
+### Die sechs Zerstörungsverben in 6,6
+
+Ein Vers, sechs Verben desselben Feldes — maschinell nachgerechnet, je Sprache
+sechs verschiedene Glossen:
+
+    verwüsten    C1  laid waste · asolados · dévastés · devastati
+    zerstören    B1  destroyed · destruidos · détruits · distrutti
+    zerschlagen  C1  shattered · destrozados · brisés · frantumati
+    vernichten   B2  wiped out · aniquilados · anéantis · annientati
+    zertrümmern  C1  broken in pieces · hechos pedazos · mis en pièces · fatti a pezzi
+    auslöschen   B2  blotted out · borrados · effacés · cancellati
+
+`vernichten` weicht aus, nicht `zerstören` — beide sind zu 100 % an die
+*destroy*-Familie gebunden, und `vernichten` ist mit 153 Belegen das Wort, das
+schon in **Klagelieder 2,8** gewichen ist; es geht dorthin zurück.
+`auslöschen` nimmt die *blot out*-Reihe, damit englisch kein zweites
+*wiped out* entsteht. **In 5,16 bleibt `vernichten` auf der Bestandsreihe** —
+die Auflösung gilt nur im Kollisionsvers.
+
+### Kollisionen, die `hints.py` nicht meldet (7 von 12)
+
+Die Agenten haben mehr gefunden als das Werkzeug:
+
+| Vers | Paar | Auflösung |
+|---|---|---|
+| 4,2 | `Belagerungswall` / `Rampe` (es *rampa*) | `Rampe` (1 Beleg) weicht auf RVs eigenes *terraplén* |
+| 4,6 | `für` / `lang` (en/it) | `lang` auf seine zweite Bestandslesart *long · enteros · entiers · interi* |
+| 4,13 | `die` / `sie` (es/fr) | `sie` auf *them · ellos · eux · loro* |
+| 4,16 | `in` / `zu` (fr/it) | `in` auf die Hauptlesart |
+| 5,16 | `auf` / `über` (3 von 4) | `auf` auf *at · contra · contre · contro* — folgt RIVs *contro di loro* |
+| 5,10·13·15 | `an` / `in` (es *en*) | `an` auf *on · sobre · sur · su* |
+| 5,12 | `an` / `von` (4 von 4) | `an` auf *from* — englisch getrennt, romanisch *de* unvermeidlich |
+| 6,3 | `Sprich` / `spricht` (fr *parle*) | die Botenformel ist fest → `Sprich` auf *Say · Di · Dis · Di'* |
+| 6,12 | `ist` / `wird` (en/fr) | `wird` auf Futur *will be · sea · sera · sarà* |
+
+`4,14 Herr / HERR` ist **nicht angefasst** — `glosskollision.py` ordnet es
+selbst als „nur Groß-/Kleinschreibung" ein und zählt es nicht mit.
+`6,13 unter / zwischen` löst sich **ohne Ausweichen**: `hints.py` unterstellt
+`unter` = *among*, im Vers steht aber „unter jedem üppigen Baum" = *under*.
+
+### Beim Einsammeln angeglichen (5)
+
+| Stelle | vorher | nachher | Grund |
+|---|---|---|---|
+| `erkennen` 5,13 · 6,7 · 6,10 · 6,13 · 6,14 | *know* | *recognize* | Erkenntnisformel, s. o. |
+| `Volk` 4,13 | *nations* | *peoples* | dieselbe Zerstreuungsformel wie 6,8 · 6,9; Bestand 295 : 53 und Hes 3,6 |
+| `schlagen` 6,11 | it *Colpisci* | *Percuoti* | Bestand 250 : 2 auf die percuotere-Familie, wie 5,2 |
+| `weil` 5,7 · 5,11 | it *Poiché* | *Perché* | Bestand 583 : 120, und trennt zugleich von `denn` (3200 Belege *poiché*) |
+
+### Fünf Levelfehler meiner Vorgabetabelle
+
+Alle drei Agenten haben unabhängig den Bestand genommen statt meine Zahl:
+
+    Pest B2 (nicht C1) · Gräuel C2 (nicht C1) · zerstören B1 (nicht B2)
+    auslöschen B2 (nicht C1) · Belagerung B2 (nicht C1)
+
+`levelcheck.py` hätte jeden einzelnen angeschlagen. **Vor dem Abschicken jedes
+Level der Vorgabetabelle gegen `fixgloss.py show` prüfen.**
+
+### Weitere widerlegte Angaben
+
+- **`vollstrecken`, `gezückt`, `Genugtuung`, `erschöpfen` sind belegt** — ich
+  hatte sie als „selten, erst fragen" geführt; `vollstrecken` allein hat sieben
+  Belege mit genau der vorgegebenen Reihe. Von sechs genannten Wörtern waren
+  nur `Gewandsaum` und `austoben` wirklich unbelegt.
+- **`Wüste` führt im Bestand *nicht* beide Lesarten.** Meine Tabelle sagt
+  „wilderness/desert — am Vers"; es gibt 300× *desert* und **kein einziges**
+  *wilderness*.
+- **`Rampe` ist nicht unbelegt** (Hiob 19,12) — Formfalle.
+- **`Ribla` (6,14) gegen alle vier Ausgaben**, die *Diblah/Diblat/Dibla* lesen.
+  Das ist eine Textvariante, keine Schreibvariante; der Bestand führt `Ribla`
+  11×.
+- **`Ziegel` und `Fessel` (Kap. 4) gegen alle vier Ausgaben** — Bestandsbindung
+  *brick · ladrillo · brique · mattone* und *shackles · grillos · entraves ·
+  ceppi*.
+- Von 18 gemeldeten unbelegten Formen in Kap. 4 waren 11 wirklich neu, in
+  Kap. 6 von zehn nur drei.
+
+### Neu geprägt (22)
+
+Kap. 4: `Rammbock` · `Truppenlager` · `Platte` · `Hirse` · `Sechstel` ·
+`Zeitraum` · `Gerstenfladen` · `Kuhmist` · `Menschenkot` · `dahinsiechen` ·
+`dreihundertneunzig`.
+Kap. 5: `Gewandsaum` · `Scheusal` · `austoben` · `sich austoben` ·
+`sich erschöpfen` · `abteilen`.
+Kap. 6: `Machwerk` · `Bergeshöhe` · `nachschielen` · `in Trümmern liegen`.
+
+`Scheusal` C1 *detestable things · cosas detestables · choses détestables ·
+cose detestabili* steht in 5,11 direkt neben `Gräuel` C2 und ist in allen vier
+Sprachen von ihm getrennt.
+
+### Reihe, die für ein späteres Paket festgeschrieben ist
+
+**5,8 → 26,3** ist eine Dublette; die vollständige Reihe steht im Bericht zu
+Kapitel 5 und ist Wort für Wort zu übernehmen.
+
+### Befunde im Bestand, nicht angefasst
+
+- **`Räucheraltar` hat nur einen Beleg** (2. Chronika 30,14) und bekommt hier
+  vier weitere. Die Reihe ist damit faktisch in Hesekiel gesetzt.
+- **`laden` hat im Bestand nur die NT-Bedeutung „einladen"** (2 Belege,
+  Lukas 14). In 4,4 steht „lade die Schuld auf dich" = beladen. Der Agent hat
+  dem Lemma die Ladebedeutung gegeben und den Fall gemeldet.
+- **`Gefäß` ist gespalten** (*recipiente* 23× gegen *vasija/vase/vaso* 1×);
+  alle vier Ausgaben lesen in 4,9 die zweite Reihe, gefolgt wurde der Mehrheit.
