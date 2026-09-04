@@ -464,3 +464,136 @@ Kap. 9: `Schreibzeug` C1 · `Nordtor` B2 (gleich Kap. 8) ·
 - **`Reichtum` 7,11 en *wealth*** gegen die Bestandsmehrheit *riches*: der
   deutsche Singular verlangt den englischen Singular; *riches* gehört zum
   Plural `Reichtümer`.
+
+---
+
+## 4. Paket 4 (Kap. 10 · 11 · 12) — 1699 Tokens
+
+75 Verse, 1757 Einträge, 63 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum vierten Mal in Folge leer**; Abschnitt B 45 Fälle, ganz überwiegend
+Kongruenz und Flexion.
+
+### Ein zweiter Leerlauf im Werkzeugkasten — gefunden vom Kapitel-10-Agenten
+
+**`konvention.py <buchNr>` ohne Kapitelnummern prüft nichts.** `kaps =
+sys.argv[2:]` bleibt leer, die Schleife läuft nicht, und das Skript meldet
+„0 Stellen ohne Eintrag" — ein Leerlauf, der wie ein sauberer Lauf aussieht.
+Der Aufruf stand so in **allen vier Hesekiel-Prompts** und in der
+Klagelieder-Sammlung.
+
+Das ist Zeichen für Zeichen dieselbe Bauform wie der `levelcheck.py`-Fehler aus
+Jeremia Paket 17. Nachgeholt mit korrektem Aufruf: **Klagelieder 1–5 und
+Hesekiel 1–10, beide null Befunde** — kein Schaden.
+
+**Beide Skripte brechen jetzt laut ab**, wenn die Kapitelnummern fehlen
+(Commit „Werkzeuge: Leerlauf ohne Kapitelnummern bricht jetzt ab").
+
+> **Ein Werkzeug, das bei falschem Aufruf „0" meldet statt abzustürzen, ist
+> gefährlicher als eines, das gar nicht läuft.** Beide Fälle waren dieselbe
+> Zeile: `argv[2:]` ohne Prüfung. Wo ein Skript über eine Liste aus der
+> Kommandozeile läuft, gehört eine Wache davor.
+
+### Kapitel 10 gegen Kapitel 1 — die dichteste Vorlagenarbeit des Buches
+
+    10,10 ← 1,16    12 von 13 Feldern zeichengleich
+    10,17 ← 1,21    23 von 26 Feldern zeichengleich
+
+Die Abweichungen sind alle erklärt: Großschreibung am Satzanfang (`Alle` in
+10,10, `Standen` in 10,17) und **ein echter Textunterschied** — 10,17 liest
+„war in **ihnen**", wo 1,20 und 1,21 „war in den Rädern" lesen; alle vier
+Ausgaben femininisieren dort (RV *en ellas*, LSG *en elles*, RIV *in esse*).
+
+### Die Wortereignisformel steht jetzt neunmal gleich
+
+    3,16 · 6,1 · 7,1 · 11,14 · 12,1 · 12,8 · 12,17 · 12,21 · 12,26
+
+Maschinell nachgerechnet: **alle sieben Formelfelder identisch**, unabhängig
+von der Wortstellung. 11,14 ist die `Da`-Fassung (mit 14,2 und 20,2 eine von
+drei im Buch) und nimmt zusätzlich `da` A2 *Then · Entonces · Alors · Allora*;
+der Agent hat sie zusätzlich gegen **Jeremia 13,8** gegengerechnet, die einzige
+fertige `Da`-Fassung im Bestand — zeichengleich in allen acht Positionen.
+3,16 und 12,8 haben eine Zeitangabe im Vorfeld, das Verb rückt an die vierte
+Stelle, die Glossen bleiben.
+
+**11,13 gegen 9,8:** 18 gemeinsame Formen, **alle 18 identisch**. Die einzige
+Feldabweichung ist funktional: 9,8 „den **ganzen** Rest" (attributiv, *whole ·
+todo · tout · tutto*) gegen 11,13 „den Rest … **ganz** vernichten" (adverbial,
+*completely · del todo · entièrement · del tutto*).
+
+### Beim Einsammeln angeglichen (2)
+
+Beide sind Widersprüche **zwischen** Kapiteln, die kein einzelner Agent sehen
+konnte:
+
+| Stelle | vorher | nachher | Grund |
+|---|---|---|---|
+| `Land` Pl. 11,16 · 11,17 | es *tierras* | *países* | fünf Stellen des Buches (5,5 · 5,6 · 6,8 · 12,15) tragen *países*, und **11,16 trug beide im selben Vers**; Bestand 46 : 48 |
+| `ausbreiten`/`breiten` 11,22 | Zuordnung vertauscht, es doppelt | wie 10,19 | 11,22 ↔ 10,19 ist eine Dublette; das Mehrwort trug spanisch dieselbe Glosse wie sein eigener Teil |
+
+### Kollisionen — die Agenten finden weiterhin mehr als `hints.py`
+
+`hints.py` meldete für das Paket **6** Paare; die drei Agenten haben **21**
+aufgelöst. Die lehrreichsten:
+
+- **12,25 `reden` / `sprechen` — und zusätzlich `sagen`.** Die 3,27-Vorgabe
+  (`reden` → *speak · hablo · dis · parlo*) trägt hier **nicht**, weil `sagen`
+  im selben Vers steht und französisch ebenfalls *dis* ist. `reden` weicht ein
+  **zweites Mal** aus, nur im Französischen: *déclare*.
+  → **Die 3,27-Reihe gilt nur, wo `sagen` nicht im selben Vers steht.**
+- **12,18 `Zittern` / `Beben` / `Sorge`** — drei Wörter desselben Feldes in
+  einem Vers, von keinem Werkzeug gemeldet, weil `Beben` unbelegt ist.
+- **10,4 `füllen` / `erfüllen`** und **10,6 `dieser` / `er`** — beide nur im
+  Englischen, beide selbst gefunden.
+- **10,2 `unter` / `zwischen` löst sich ohne Ausweichen**, genau wie 6,13: im
+  Vers heißt `unter` *under*, nicht *among*.
+
+### Eine Auflösung, die bewusst nicht übernommen wurde
+
+**`Rauschen` 10,5 nimmt *nicht* die Reihe aus 3,13.** Dort war
+*rustling · crujido · bruissement · fruscio* eine erzwungene Auflösung gegen
+`Dröhnen`; in 10,5 steht kein zweites Geräuschwort, und alle vier Ausgaben
+lesen laut. Genommen ist die Bestandsmehrheit *roar · estruendo · grondement ·
+fragore*. **Die Kollisionsauflösung gilt im Kollisionsvers, nicht im Wortfeld.**
+
+Ebenso: **`erkennen` 10,20 ist nicht die Erkenntnisformel.** „Ich erkannte,
+dass es Cherubim waren" hat den Satzbau von Nehemia 6,12 und trägt
+*realized · comprendí · compris · capii*, nicht *recognize*.
+
+### Widerlegte Angaben der Vorbereitung
+
+- **`Türkis` ist B2, nicht C1.** Mein Levelfehler — ich hatte die Level
+  diesmal einzeln geprüft, `Türkis` aber nicht in die Prüfliste genommen.
+- **`Löwengesicht` und `Menschengesicht` sind belegt** (1. Chronika 12,8 ·
+  Offenbarung 9,7), ebenso `Osttor`, `Räucherpfanne`, `Assur`, `Scheusale`.
+  Von den `hints.py`-Meldungen des Pakets waren **10 von 27 wirklich neu** —
+  und in Kapitel 12 hat das Werkzeug umgekehrt ein echtes neues Lemma
+  (`einsehen`) **nicht** gesehen, weil beide Teilformen belegt sind.
+- **`Assur` (11,1) ist der Homograph `Azzur`** — Nehemia 10,18, und alle vier
+  Ausgaben lesen so. Nicht das assyrische Assur.
+- Von den 24 Wortfeldzeilen meiner Tabelle stehen in Kapitel 12 nur neun, in
+  Kapitel 11 fehlen `Fürst`, `Satzung`, `Gefangenschaft`, `Stein`; `Felge`,
+  `Wölbung` und `Gestalt` stehen in Kapitel 10 nicht.
+- **`Sitte` weicht in fr/it von meiner Tabelle ab**: der Bestand (3. Mose
+  20,23) führt *customs · costumbres · mœurs · costumi*.
+- **`Fleisch` ist im Buch gespalten**, am Vers zu entscheiden: *meat · carne ·
+  viande · carne* (das Fleisch im Topf, 11,3 · 11,7 · 11,11) gegen *flesh ·
+  carne · chair · carne* (Herz aus Fleisch, 11,19).
+
+### Neu geprägt (9)
+
+Kap. 10: `Wirbel` C1 · `Cherubsgesicht` B2 · `Adlergesicht` B2.
+Kap. 11: `einheitlich` B2.
+Kap. 12: `Beben` C1 · `Gefolgschaft` C1 · `leergefegt` C1 · `fernliegend` C1 ·
+`einsehen` B2 (Mehrwort).
+
+`Wirbel` bleibt englisch **whirl**, nicht *whirlwind*, damit es nicht mit
+`Wirbelwind` C1 zusammenfällt — es geht um den Namen, der den Rädern gegeben
+wird, nicht um einen Sturm.
+
+### Befunde im Bestand, nicht angefasst
+
+- **`um … her` wird unter zwei Lemmata geführt** — `um jemanden her`
+  (3. Mose 25,44 · Hiob 37,22 · Hesekiel 5,7) gegen `um ... her` (sechsmal im
+  Psalter), bei identischen Glossen. Hesekiel bleibt in sich einheitlich.
+- **`zu sehen sein`** hat den Mehrworteintrag in Hohelied 2,12, in Nehemia 3,25
+  nicht.
