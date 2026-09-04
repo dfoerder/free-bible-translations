@@ -68,7 +68,8 @@ def bestand():
     return formen, stellen, lemmata, lstellen
 
 
-def zeige(wort, formen, stellen, lemmata=None, lstellen=None):
+def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
+          lemmata_alle=None):
     f = C.strip_punct(wort).lower()
     c = formen.get(f)
     print(f'## Wortform `{wort}`')
@@ -140,6 +141,18 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None):
         print(f'   ACHTUNG: das Lemma heisst `{list(lemmata)[0]}`, nicht `{wort}` —')
         print(f'   `fixgloss.py show {wort}` schweigt deshalb. Genau die Falle,')
         print('   fuer die dieses Werkzeug gebaut ist.')
+    # Die Form kann unter einem fremden Lemma stehen UND das gesuchte Wort
+    # zugleich selbst ein Lemma sein. `morden` ist der Fall, der das ans Licht
+    # brachte (Hesekiel 26,15): die Form `Morden` steht unter dem Substantiv
+    # `Mord`, das Verb-Lemma `morden` ist ueber die Form `mordet` belegt
+    # (Jeremia 7,9) — und blieb hier unsichtbar, weil der Lemma-Hinweis bisher
+    # nur im Zweig "gar nicht belegt" stand. Der Agent fand es nur, weil er
+    # zusaetzlich `fixgloss.py show` fragte.
+    if lemmata_alle and f in lemmata_alle and f not in {l.lower() for l in lemmata}:
+        print()
+        print(f'   ABER: `{wort}` ist AUSSERDEM ein eigenes Lemma im Bestand,')
+        print(f'   ueber andere Formen belegt. `fixgloss.py show {wort}`')
+        print('   fragen — die Reihe dort ist womoeglich die gesuchte.')
     for (form, lemma, lvl, en, es, fr, it), n in c.most_common():
         print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
               f'*{en}* · *{es}* · *{fr}* · *{it}*')
@@ -176,7 +189,8 @@ def main():
         p.error('Wortform angeben oder -d <buchnr>')
     fehlt = 0
     for w in a.woerter:
-        if not zeige(w, formen, stellen, lemmata, lstellen):
+        if not zeige(w, formen, stellen, lemmata, lstellen,
+                     {l.lower() for l in (lemmata or ())}):
             fehlt += 1
     return 0 if fehlt == 0 else 1
 

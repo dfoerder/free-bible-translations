@@ -1487,3 +1487,212 @@ nicht den Ausgaben — sonst stünde in drei von vier Sprachen kein Name.
   (Kopfleiste, überspringbarer Einstufungstest). **Beide Agenten haben es
   gemeldet, obwohl sie dort nur gelesen haben.** Nicht angefasst; die Commits
   ins App-Repo laufen ab jetzt gezielt statt über `git add -A`.
+
+---
+
+## 10. Paket 10 (Kap. 24 · 25 · 26) — 1930 Tokens, Beginn der Völkersprüche
+
+65 Verse, 1706 Einträge, 73 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum zehnten Mal in Folge leer**; Abschnitt B 29 Fälle, davon einer echt.
+
+### Die Wortereignisformel steht 50×, nicht 36× — gefunden beim Vorbereiten
+
+Beim Bauen dieser Vorbereitung ist mir aufgefallen, dass mein Suchmuster
+`Wort des HERRN erging` in Kapitel 26 **nichts** findet, obwohl 26,1 die
+Formel trägt. Der Grund:
+
+    Regelstellung:  „Das Wort des HERRN erging an mich"
+    Umgestellt:     „Im elften Jahr, am ersten Tag des Monats, erging
+                     das Wort des HERRN an mich"
+
+Die umgestellte Fassung steht **vierzehnmal** im Buch, fast immer nach einer
+Datumsangabe oder nach `Da`: 1,3 · 3,16 · 11,14 · 12,8 · 14,2 · 20,2 · 24,1 ·
+26,1 · 29,1 · 29,17 · 30,20 · 31,1 · 32,1 · 32,17.
+
+Sechs davon liegen in fertigen Kapiteln. Einzeln gegen 18,1 gerechnet: **alle
+sechs zeichengleich.** Die Agenten haben die Formel jedes Mal erkannt, obwohl
+mein Muster sie nie zeigte — wie schon bei der Anerkennungsformel.
+
+> **Fünfter Formelfund dieser Art, dritter ohne Schaden.** Die Muster in
+> meinen Vorbereitungen sind mehrfach falsch gewesen; die Arbeit der Agenten
+> war jedes Mal richtig. Der praktische Schluss ist nicht, bessere Muster zu
+> schreiben, sondern **den Agenten die Prüfung zuzutrauen und ihnen die
+> Quelle zu nennen statt der Zahl.**
+
+### Die Konsequenz aus Paket 9, ins Werkzeug gelegt
+
+Die Glossenreihen der Signaturformeln sind für dieses Paket **maschinell aus
+den Kapiteldateien gezogen** worden — `scratchpad/hesekiel/formeln10.txt`, mit
+Quelldatei und Vers —, und die Prompts nennen diese Datei als verbindlich.
+Abschreiben ist damit nicht mehr möglich. Alle vier Wortereignisformeln des
+Pakets sind zeichengleich mit 18,1, einschließlich der umgestellten in 24,1.
+
+Ebenso ist die Wortfeldprüfung umgestellt: **gegen tatsächliche Wortformen
+statt gegen Teilstrings.** Genau das war der Fehler aus Paket 9, der
+`Bestechungsgeld` zu „Bestechung" verkürzt hatte.
+
+### Meine Vorgabetabelle war trotzdem an dreizehn Stellen falsch
+
+Und zwar in beide Richtungen zugleich, was neu ist:
+
+    Kapitel 24 — ich sagte „nur `gargekocht` ist neu", es sind acht
+        Holzstoß · Trauerbrot · zustöhnen · würzen · Knochenstück ·
+        Rache üben · sich umstimmen lassen  sind alle unbelegt
+        `Kessel` kommt im Kapitel GAR NICHT vor (der Text sagt `Topf`)
+
+    Kapitel 25 — ich kündigte sieben Neuprägungen an, es sind drei
+        stampfen · klatschen · rachsüchtig · vollziehen  sind alle belegt
+        `in die Hände klatschen` ist sogar ein Mehrwort-Lemma (6 Belege)
+
+    Kapitel 26 — beide Seiten falsch
+        `Belagerungswall` kommt nicht vor (der Text sagt `Wall`)
+        `heraufschicken` und `einjagen` sind NICHT belegt (ich sagte, sie seien
+        Formen belegter Lemmata)
+
+### Ein neuer Fallentyp: der Zwilling unter anderer Schreibung
+
+**`Kereter` ist nicht neu — der Bestand führt `Kreter`**, A1, acht
+alttestamentliche Belege, mit genau den Glossen, die alle vier Ausgaben in
+25,16 schreiben (*Cherethites · cereteos · Kéréthiens · Kerethei*).
+
+> Kein Werkzeug kann das finden. `belegt.py` und `hints.py` suchen über
+> Wortformen und Stämme; zwei deutsche Schreibungen desselben Namens haben
+> weder gemeinsame Form noch gemeinsamen Stamm. **Bei Eigennamen lohnt der
+> Blick auf die Ausgaben: wenn alle vier dasselbe schreiben, steht der Name
+> im Bestand womöglich schon — unter anderem deutschen Schriftbild.**
+
+Der Agent hat B2 gesetzt statt A1, weil alle Gentilizia B2 tragen.
+
+### Eine echte Lücke im Werkzeug — und ihre Behebung
+
+`belegt.py morden` meldet die Form `Morden` unter dem Substantiv-Lemma
+`Mord` — und schweigt darüber, dass **`morden` zugleich ein eigenes
+Verb-Lemma ist**, belegt über die Form `mordet` (Jeremia 7,9). Der Hinweis
+„es gibt ein Lemma dieses Namens" stand bisher nur im Zweig *gar nicht
+belegt*; wo die Form unter einem fremden Lemma gefunden wurde, fiel er aus.
+Der Agent fand das Lemma nur, weil er zusätzlich `fixgloss.py show` fragte.
+
+Behoben: `belegt.py` prüft jetzt in **beiden** Zweigen, ob das gesuchte Wort
+selbst ein Lemma ist. Über acht Kontrollwörter null Fehlalarme.
+
+Der Gegenfall dazu ist lehrreich: **`schichten` ist belegt** (1. Könige
+18,33), und `belegt.py schichte` nennt das Lemma auch — der Kapitel-24-Agent
+hat den Hinweis nur nicht verfolgt und das Wort für neu erklärt. Bemerkenswert
+ist, was dabei herauskam: sein Eintrag trifft die Bestandsreihe Wort für Wort,
+nur im Imperativ statt Präteritum. **Falsche Herleitung, richtiges Ergebnis** —
+nichts zu korrigieren.
+
+### Drei liegengebliebene Mehrwörter, gefunden mit einem neuen Lauf
+
+`sweeplemma.py` meldete dem Kapitel-24-Agenten, dass **`Mitleid haben` in
+24,14 fehlt**, obwohl der Bestand es führt und 7,9 und 8,18 dieselbe
+Wortfolge tragen. Der Kapitel-25-Agent meldete unabhängig, dass **`durchs
+Schwert fallen` in 11,10 fehlt**, obwohl 17,21 es setzt.
+
+Daraufhin habe ich buchweit gesucht: für jedes Mehrwort-Lemma, das im Buch
+irgendwo gesetzt ist, jede weitere Stelle mit derselben Wortfolge ohne
+Eintrag. Ergebnis: **`durchs Schwert fallen` fehlte an drei Stellen** —
+11,10 · 23,25 · 24,21. Alle nachgetragen.
+
+Das Sieb brauchte zwei Anläufe: der erste zählte `parts`-Mehrwörter als
+fehlend (21 Kandidaten statt 15), weil er nur `pos_end` gegen `pos_end` hielt.
+
+**Offen, bewusst nicht angefasst:** `mitten in` ist ein Bestandsmehrwort mit 16
+Belegen, steht im Buch aber nur zweimal als Mehrwort (5,2 · 26,5) und viermal
+als zwei Einzelwörter (20,8 · 21,37 · 22,19 · 23,39), deren Glossen zusammen
+genau die Mehrwortglosse ergeben. `konvention.py` prüft nur fünf
+Pflichtwendungen (`um zu`, `so wie`, `genau wie`, `nicht mehr`, `wie wenn`);
+`mitten in` gehört nicht dazu. Kein Regelverstoß, sondern Uneinheitlichkeit —
+für den Buchabschluss vorgemerkt.
+
+### `nackt` — zwei Agenten, derselbe Sachverhalt, zwei Lösungen
+
+Der zweite Fall dieser Art im Buch nach `Ranke` in Paket 7:
+
+    24,7 · 24,8   nackter Fels   en *bare*    (Kapitel-24-Agent)
+    26,4 · 26,14  nackter Fels   en *naked*   (Kapitel-26-Agent)
+
+Beide haben ihre Wahl begründet — der eine mit dem Sachverhalt und WEB (das an
+allen vier Stellen „bare rock" liest), der andere mit der Bestandsbindung (30
+Belege, praktisch alle *naked*). Angeglichen auf ***bare***: der Bestand führt
+diese Lesart selbst (2. Könige 7,7), sie ist im Englischen die idiomatische
+Wendung, und die 30 *naked*-Belege meinen durchweg den nackten **Menschen** —
+also eine andere Bedeutung, keine verletzte Bindung.
+
+### Drei Entscheidungen, die die Lexikonfalle-Regel richtig anwenden
+
+- **`Rost` (24,11)** bleibt auf *rust · orín · rouille · ruggine*, obwohl RV
+  „herrumbre" und RIV „verderame" lesen — Matthäus 6,19 meint denselben
+  Metallfraß. Die Alternative im Bestand ist *griddle* (3. Mose), ein
+  Küchengerät.
+- **`Holzstoß` (24,9)** bekommt **nicht** die `Scheiterhaufen`-Reihe (*pyre ·
+  hoguera · bûcher · rogo*, Jesaja 30,33), obwohl LSG genau *bûcher* liest —
+  sonst wären die beiden Wörter verschmolzen.
+- **`Flut` (26,19)** nimmt nicht die Bestandsmehrheit *flood · diluvio*
+  (die Sintflut), sondern die Urflut-Lesart *deep · abismo · abîme · abisso*
+  (Psalm 42,8), die alle vier Ausgaben stützen.
+
+### Die schwerste Kollision: 26,8, drei Wörter eines Feldes
+
+`aufstellen`, `aufschütten` und `errichten` stehen in einem Vers, und **jede**
+Lesart von `errichten` kollidiert mit einem der beiden anderen: *erigir ·
+ériger* mit `aufstellen`, *levantar · élever · innalzare* mit `aufschütten`.
+Der Agent hat das Feld zuerst maschinell gegen **21,27** gerechnet, wo es in
+Paket 8 schon einmal aufgelöst wurde, die beiden dortigen Reihen unangetastet
+gelassen und **`errichten` in allen vier Sprachen** auf seine eigene
+Bestandslesart *build · construir · bâtir · costruire* gelegt — die einzige
+freie. Er hat ausdrücklich gemeldet, dass diese Reihe nur zwei Belege hat,
+beide neutestamentlich.
+
+Zwei weitere Kollisionen, die **kein Werkzeug melden kann**:
+`nicht mehr` ↔ `kein mehr` (26,20) — zwei **Mehrwörter** mit identischem *ya
+no · non più*; `glosskollision.py` vergleicht Mehrwort nicht gegen Mehrwort.
+Und `Darum` ↔ `darum` im selben Vers (24,6): dieselbe Buchstabenfolge, zwei
+Bedeutungen (Kopfstellung *Therefore* gegen „ohne darum zu losen" *for it*).
+
+### Neu geprägt (16)
+
+    Kapitel 24 (8)
+    garkochen        B2  cooked through · cocidos · cuits · cotte
+    Holzstoß         C1  woodpile · pila de leña · tas de bois · catasta di legna
+    Trauerbrot       C1  mourners' bread · pan de duelo · pain de deuil · pane del lutto
+    Knochenstück     C1  pieces of bone · trozos de hueso · morceaux d'os · pezzi d'osso
+    würzen           B2  season · sazona · assaisonne · condisci
+    zustöhnen        C1  moan · gemir · gémir · gemere
+    Rache üben       B2  take vengeance · tomar venganza · tirer vengeance · far vendetta
+    sich umstimmen lassen B2  let myself be swayed · me dejo persuadir · …
+
+    Kapitel 25 (3)
+    Flanke           B2  flank · flanco · flanc · fianco
+    Grenzstadt       B2  border cities · ciudades fronterizas · villes frontières · …
+    Bet-Jesimot      A1  Beth Jeshimoth · Bet-jesimot · Beth-Jeschimoth · Beth-Ieschimoth
+
+    Kapitel 26 (5)
+    Festland         B2  mainland · tierra firme · terre ferme · terraferma
+    Fischernetz      B2  fishing nets · redes de pesca · filets de pêche · reti da pesca
+    Seefahrer        B2  seafarers · navegantes · navigateurs · naviganti
+    heraufschicken   B2  sends up · hace subir · fait monter · fa salire
+    einjagen         C1  struck · infundía · inspirait · incuteva
+
+`zustöhnen` nimmt die *moan*-Lesart von `stöhnen`, damit `seufzen` im selben
+Kapitel die *groan*-Reihe behalten kann. `Bet-Jesimot` folgt dem Hausmuster
+der `Bet-`-Namen (en mit Leerzeichen, es klein nach Bindestrich, fr/it
+`Beth-X`) — hier fallen Hausmuster und alle vier Ausgaben zusammen.
+
+### Befunde im Bestand, nicht angefasst
+
+- **`morden` steht gegen `ermorden` und `Mörder`**: das eine auf *matar ·
+  tuer · uccidere*, die anderen beiden (12 und 22 Belege) auf *asesinar ·
+  assassiner · assassinare*.
+- **`Kirjatajim` italienisch**: der Bestand führt *Chiriataim* (3 Belege),
+  RIV1927 schreibt an allen drei Stellen **Kiriathaim**. Der Agent hat in
+  25,9 der Ausgabe folgen müssen; die drei Bestandsbelege laufen jetzt gegen
+  Hesekiel.
+- **26,20 weicht im zweiten Teil von allen vier Ausgaben ab.** Der l1912mod
+  liest „…und keinen Platz mehr im Land der Lebenden hast", die Ausgaben
+  „ich werde Herrlichkeit im Land der Lebenden setzen". Annotiert ist das
+  Deutsche.
+- **LSG zieht in Kapitel 24 einen Halbsatz über die Versgrenze** („Ézéchiel
+  sera pour vous un signe", deutsch 24,24a, steht dort am Ende von Vers 23).
+  Keine Verszählungsdifferenz — aber bei einem `parallelen.py`-Lauf über
+  Kapitel 24 leicht als Versatz misszuverstehen.
