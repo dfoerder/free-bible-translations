@@ -148,7 +148,13 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
     # (Jeremia 7,9) — und blieb hier unsichtbar, weil der Lemma-Hinweis bisher
     # nur im Zweig "gar nicht belegt" stand. Der Agent fand es nur, weil er
     # zusaetzlich `fixgloss.py show` fragte.
-    if lemmata_alle and f in lemmata_alle and f not in {l.lower() for l in lemmata}:
+    # Case-SENSITIV vergleichen. Die erste Fassung dieser Pruefung verglich
+    # kleingeschrieben und uebersah deshalb genau die haeufigste Bauform:
+    # `flicken` (Verb, B2) neben `Flicken` (Substantiv, C1) — kleingeschrieben
+    # sind beide gleich, also griff der Ausschluss und die Meldung fiel aus.
+    # Gefunden vom Agenten fuer Hesekiel 27, ein Paket nachdem der Fall
+    # `morden`/`Mord` die Pruefung ueberhaupt erst ausgeloest hatte.
+    if lemmata_alle and wort in lemmata_alle and wort not in lemmata:
         print()
         print(f'   ABER: `{wort}` ist AUSSERDEM ein eigenes Lemma im Bestand,')
         print(f'   ueber andere Formen belegt. `fixgloss.py show {wort}`')
@@ -190,7 +196,7 @@ def main():
     fehlt = 0
     for w in a.woerter:
         if not zeige(w, formen, stellen, lemmata, lstellen,
-                     {l.lower() for l in (lemmata or ())}):
+                     set(lemmata or ())):
             fehlt += 1
     return 0 if fehlt == 0 else 1
 

@@ -55,6 +55,17 @@ AUSNAHMEN = {
     'voce':'fs', 'voci':'fp', 'carne':'fs', 'carni':'fp', 'sangue':'ms',
     'nave':'fs', 'navi':'fp',
     'immagine':'fs', 'immagini':'fp',
+    # Feminina auf -i im Plural: die Endung sagt hier Maskulinum, das Genus
+    # ist feminin. `merci` und `torri` machten allein 12 der 12 Fehlalarme im
+    # Tyrus-Kapitel aus (`le tue merci`, `le tue torri`).
+    'merce':'fs', 'merci':'fp', 'torre':'fs', 'torri':'fp',
+    'nave':'fs', 'navi':'fp', 'chiave':'fs', 'chiavi':'fp',
+    'notte':'fs', 'notti':'fp', 'arte':'fs', 'arti':'fp',
+    'corte':'fs', 'corti':'fp', 'fonte':'fs', 'fonti':'fp',
+    'mente':'fs', 'menti':'fp', 'sorte':'fs', 'sorti':'fp',
+    'lode':'fs', 'lodi':'fp', 'veste':'fs', 'vesti':'fp',
+    'pelle':'fs', 'pelli':'fp', 'valle':'fs', 'valli':'fp',
+    'prole':'fs', 'proli':'fp', 'febbre':'fs', 'febbri':'fp',
 }
 # Nomen, deren Singular und Plural gleich lauten — das Possessiv ist die
 # einzige Numerus-Angabe, also nie ein Fehler. Ebenso Zahlwoerter, die
@@ -90,7 +101,7 @@ def genus(nomen):
 FR_SG = {'mon','ma','ton','ta','son','sa','notre','votre','leur'}
 # `leur` ist franzoesisch zugleich Dativpronomen ("ich gab ihnen"). Diese
 # deutschen Formen schliessen den Possessiv-Fall aus.
-DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','ihnen.'}
+DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','sie','ihn'}
 FR_PL = {'mes','tes','ses','nos','vos','leurs'}
 # Franzoesische Nomen, deren Plural-s fehlt oder deren Numerus die
 # Endung nicht verraet. `règles` ist der Fund, der den Lauf ausgeloest hat.
@@ -100,6 +111,7 @@ FR_STUMM = {
     'sud', 'est', 'ouest', 'repas', 'pas', 'cas', 'gens', 'moeurs',
     'encens', 'palais', 'dos', 'poids', 'succes', 'succès', 'progres',
     'progrès', 'jamais', 'plusieurs', 'divers', 'frais', 'mois',
+    'bois', 'bras', 'temps', 'velours', 'univers', 'rubis', 'tapis',
 }
 
 
@@ -138,12 +150,18 @@ def main():
                       if 'pos_end' not in e and 'parts' not in e}
             for pos, e in einzel.items():
                 it = (e.get('it') or '').strip().lower()
-                nx = einzel.get(pos + 1)
-                if not nx:
+                nx = None
+                for d in (1, 2, 3):
+                    kand = einzel.get(pos + d)
+                    if kand is None:
+                        break
+                    form = kand.get('form') or ''
+                    if form[:1].isupper():
+                        nx = kand
+                        break
+                if nx is None:
                     continue
-                n2 = einzel.get(pos + 2)
                 g = genus(nx.get('it') or '')
-                g2 = genus(n2.get('it') or '') if n2 else None
                 if not g:
                     continue
                 soll = None
@@ -151,17 +169,16 @@ def main():
                 elif it in FEM_SG: soll = 'fs'
                 elif it in MASC_PL: soll = 'mp'
                 elif it in FEM_PL: soll = 'fp'
-                if soll and soll != g and (g2 is None or soll != g2):
+                if soll and soll != g:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx['it'], g))
                 fr = (e.get('fr') or '').strip().lower()
                 if ((fr in FR_SG or fr in FR_PL)
                         and e.get('form', '').lower() not in DATIV):
                     fn = fr_numerus(nx.get('fr') or '')
-                    fn2 = fr_numerus(n2.get('fr') or '') if n2 else None
                     if fn:
                         sollfr = 's' if fr in FR_SG else 'p'
-                        if sollfr != fn and (fn2 is None or sollfr != fn2):
+                        if sollfr != fn:
                             treffer.append(('fr', k, v, e['form'], e['fr'],
                                             nx['form'], nx['fr'], fn))
     for sp, k, v, f1, i1, f2, i2, g in sorted(

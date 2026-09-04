@@ -1696,3 +1696,202 @@ der `Bet-`-Namen (en mit Leerzeichen, es klein nach Bindestrich, fr/it
   sera pour vous un signe", deutsch 24,24a, steht dort am Ende von Vers 23).
   Keine Verszählungsdifferenz — aber bei einem `parallelen.py`-Lauf über
   Kapitel 24 leicht als Versatz misszuverstehen.
+
+---
+
+## 11. Paket 11 (Kap. 27 · 28 · 29) — 2326 Tokens, Tyrus und Ägypten
+
+83 Verse, 2064 Einträge, 82 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum elften Mal in Folge leer**; Abschnitt B 37 Fälle, davon einer echt.
+
+### Die Eigennamen-Prüfung aus Paket 10 hat dreimal getroffen
+
+Der Kapitel-27-Agent hat die `Kereter`/`Kreter`-Regel angewandt — jeden Namen
+zusätzlich über die Ausgaben geprüft und dann mit `grep -o` über die gebauten
+Anno-Dateien gesucht. **Drei Zwillinge unter anderer deutscher Schreibung:**
+
+    Minnit      (27,17)  = Bestand `Minnith`     Richter 11,33
+    Elischa     (27,7)   = Bestand `Elisa`       1. Chronika 1,7
+    Bet-Togarma (27,14)  = Bestand `Thogarma`
+
+Der `Elischa`-Fall ist der lehrreichste: **`Elisa` trägt im Bestand zugleich
+79× den Propheten** (*Elisha · Eliseo · Élisée · Eliseo*). Ein bloßes
+Übernehmen hätte die Insel Elischa mit dem Propheten Elisa verschmolzen. Der
+Agent hat deshalb ein eigenes Lemma `Elischa` mit der Javan-Reihe angelegt.
+
+Bei `Assuan` (29,10) hat der Kapitel-29-Agent dieselbe Prüfung durchgeführt
+und **kein** Ergebnis gefunden — der Name ist wirklich neu. Genau so soll die
+Prüfung laufen: sie muss auch negativ ausgehen dürfen.
+
+> Zwei weitere Namen fehlten in meiner Vorgabetabelle ganz, weil ich sie aus
+> dem Bestand statt aus dem Vers gezogen hatte: **der Text liest `Tarsis` und
+> `Saba`, nicht `Tarschisch` und `Scheba`.** Beide sind belegt.
+
+### Mein `belegt.py`-Fix aus Paket 10 hat nicht funktioniert
+
+Der Kapitel-27-Agent hat gemeldet, dass `belegt.py flicken` **nur das
+Substantiv `Flicken`** zeigt und darüber schweigt, dass `flicken` zugleich
+ein Verb-Lemma ist (Matthäus 9,16). Also genau der `morden`/`Mord`-Fall, für
+den ich in Paket 10 die Prüfung eingebaut hatte.
+
+Der Grund war ein Fehler in meiner eigenen Bedingung:
+
+    if lemmata_alle and f in lemmata_alle and f not in {l.lower() for l in lemmata}:
+
+Ich habe **kleingeschrieben verglichen** — und `Flicken` kleingeschrieben ist
+`flicken`, also griff der Ausschluss und die Meldung fiel aus. Bei
+`morden`/`Mord` fiel das nicht auf, weil die beiden sich auch
+kleingeschrieben unterscheiden.
+
+> **Die häufigste Bauform dieses Falltyps ist gerade die, bei der sich Verb
+> und Substantiv nur in der Großschreibung unterscheiden** — `flicken`/`Flicken`,
+> `morden`/`Morden`, `schichten`/`Schichten`. Ein Fix, der
+> kleingeschrieben vergleicht, verfehlt genau diese Fälle.
+
+Jetzt case-sensitiv. Beide Fälle greifen, über zehn Kontrollwörter null
+Fehlalarme.
+
+### Die Edelsteinliste — eine Ausgabe kann eine ganze Liste anders zuordnen
+
+Der Kapitel-28-Agent hat jeden der zehn Posten von 28,13 einzeln gegen
+2. Mose 28 und 39 geprüft, wo derselbe Katalog steht. Acht waren belegt.
+Der Befund ist neu für dieses Buch:
+
+    dt. Position 3  Jaspis    → alle vier Ausgaben lesen emerald/diamante/…
+    dt. Position 6  Nephrit   → alle vier lesen jasper/jaspe/jaspe/diaspro
+    dt. Position 8  Karfunkel → en/es lesen turquoise/turquesa
+
+**Den Ausgaben zu folgen hätte zwei Kollisionen im selben Vers erzeugt** —
+`Nephrit` wäre Wort für Wort `Jaspis` geworden, `Karfunkel` teilweise
+`Türkis`, und beide stehen wenige Wörter vorher. Der Agent ist dem Bestand
+gefolgt.
+
+> Bisher galt die Regel „Bestandsbindung schlägt Ausgabe" für **einzelne
+> Wörter**. Hier weicht eine ganze **Liste** in ihrer Zuordnung ab. Der Test
+> bleibt derselbe, aber er muss über den Vers laufen, nicht über das Wort:
+> **erzeugt die Ausgabenlesart eine Kollision im selben Vers, ist sie falsch.**
+
+Meine Vorgabe war wieder am Vers vorbei: ich hatte `Rubin` und `Diamant`
+mit voller Reihe genannt — **die stehen in 2. Mose, nicht in Hesekiel 28.**
+Dafür fehlten `Karneol`, `Jaspis`, `Türkis`, `Onyx` und `Fassung`, alle fünf
+belegt. Derselbe Fehler wie `Kessel` in Paket 10: Wörter aus dem Bestand
+statt aus dem Vers.
+
+### Ein Bestandsfehler in einem Kapitel, das ich selbst abgenommen hatte
+
+Der Kapitel-29-Agent hat 29,1 gegen 24,1 gerechnet und gefunden, dass
+**`am` in 24,1 spanisch *el* trägt**, während 1,1 · 8,1 · 20,1 · 26,1 und
+beide Formeln in Kapitel 29 *al* haben. Vier zu eins — korrigiert.
+
+24,1 ist ein Vers, den ich in Paket 10 selbst eingesammelt und dessen
+Formelfelder ich gegengerechnet habe. Der Fehler saß im **Datumsteil**, den
+ich nicht mitgeprüft hatte, weil er nicht zur Formel gehört.
+
+### `kongruenz.py`: die Doppelprüfung war ein Rückschritt
+
+In Paket 9 hatte ich gegen Adjektive zwischen Possessiv und Nomen eine
+Doppelprüfung eingebaut — melden nur, wenn Folgewort **und** übernächstes
+Wort widersprechen. Die Fehlalarme gingen zurück, aber der Preis war zu hoch:
+sie hätte auch echte Treffer verschluckt (17,14 `sein Bund` wäre
+durchgefallen, weil das übernächste Wort zufällig zum Possessiv passt).
+
+Ersetzt durch etwas, das im Deutschen umsonst zu haben ist: **die
+Großschreibung.** Der Lauf sucht jetzt das erste großgeschriebene deutsche
+Folgewort — Nomen sind groß, Adjektive klein — und prüft dessen Glosse.
+
+Das Ergebnis war sofort messbar: die zwölf Fehlalarme des Tyrus-Kapitels
+(*le tue merci*, *le tue torri* — beide feminin trotz `-i`) sind weg, und
+**zwei bis dahin verdeckte Treffer** kamen ans Licht, davon einer echt:
+23,17 trug `ihrer` = *leurs* vor `Hurerei` = *débauche* (Singular).
+
+Dazu die Ausnahmeliste um vierzehn italienische Feminina auf `-i` erweitert
+und `sie`/`ihn` in die Dativ-Ausschlussliste aufgenommen (französisch fällt
+das Objektpronomen *leur* mit dem Possessiv zusammen).
+
+### Zwei Kollisionstypen, die kein Werkzeug meldet — jetzt viermal belegt
+
+**Mehrwort gegen Mehrwort.** `glosskollision.py` vergleicht nur
+Einzeleinträge. Im Buch stehen inzwischen vier solche Paare:
+
+    26,20  `nicht mehr` ↔ `kein mehr`      identisch ya no · non più
+    29,10  `bis nach`   ↔ `bis an`         identische Bestandsreihe
+    27,10  `aufhängen`  ↔ `hängen`         identisch in es/fr/it
+    28,19  `in Ewigkeit` ↔ `nie mehr`      geprüft, berühren sich nicht
+
+**Für den Buchabschluss vorgemerkt:** `glosskollision.py` um einen
+Mehrwort-gegen-Mehrwort-Vergleich erweitern.
+
+**Homograph Name gegen Gemeinwort.** `Kanne` (27,23) ist die Stadt Canneh —
+der Bestand führt `Kanne` C1 als Gefäß (*pitchers · jarras*). Der Agent hat
+die Glossen auf den Namen gesetzt, **das Level aber bei C1 belassen**, weil
+`buildbook.py` es ohnehin auf die Korpusmehrheit zöge und `levelcheck.py`
+sonst rauscht. Der Bestand kennt bisher kein Lemma mit zwei Leveln und keine
+Klammer-Disambiguierung. Ebenfalls für den Buchabschluss vorgemerkt.
+
+### Die schwerste Kollision: 27,32, drei Wörter eines Feldes
+
+`Klage`, `Trauerlied` und `beklagen` stehen in einem Vers. Aufgelöst **ohne
+eine einzige Neuprägung**, durch Aufteilen auf drei belegte Lesarten:
+
+    Klage        lamenting · lamento · lamentations · lamento   (Matthäus 2,18)
+    Trauerlied   lamentation · canto fúnebre · complainte · canto funebre
+    beklagen     lament · lamentan · déplorent · compiangono
+
+Die Klagelied-Lesart *lament · lamento · complainte · elegia* aus 19,1 und
+26,17 bleibt für 27,2 reserviert, wo dieselbe Wendung „eine Klage anstimmen"
+steht — **dasselbe Lemma trägt im selben Kapitel zwei Lesarten, jede an ihrem
+Ort.**
+
+Ebenso sauber ist 27,3: `Sprich` kollidierte mit `sagst` in en und fr, und
+italienisch fiel `Di'` zusätzlich mit `von` = *di* zusammen. Der Agent hat
+**beide Paare mit einem Zug** gelöst, indem `sprechen` auf die zweite
+Buchlesart *Speak · Habla · Parle · Parla* (11,5 · 17,12) auswich.
+
+### `Maul` — die Lexikonfalle, zum vierten Mal und am klarsten
+
+Alle vier Ausgaben lesen in 29,4 „jaws/mandíbulas/mâchoires/mascelle", und
+der Bestand führt diese Reihe. **Aber beide Belege sind neutestamentlich**
+(Offenbarung 13,2). Die siebzehn alttestamentlichen tragen *mouth · boca ·
+bouche · bocca* — darunter Hiob 40,23 und 41,13, **die Krokodilstelle
+selbst**, und 2. Könige 19,28 („meinen Haken in dein Maul").
+
+Der Agent ist der AT-Lesart gefolgt, gegen alle vier Ausgaben. Dieselbe
+Bauform hat in diesem Buch schon `Menschensohn`, `Anstoß` und `schärfen`
+getroffen.
+
+Der Gegenfall im selben Kapitel: **`trostlos`** zeigt im Lexikon-Extrakt nur
+*miserable* (Prediger 4,8, „eine trostlose Sache"). `fixgloss.py show` hat
+eine zweite Lesart aus **Hiob 30,3 — „in der Öde des trostlosen Landes"**,
+demselben Sachverhalt. Genommen.
+
+### Neu geprägt (44)
+
+Kapitel 27 allein bringt 33, davon zehn Eigennamen (`Arwad`, `Elischa`,
+`Lyder`, `Gammad`, `Bet-Togarma`, `Minnit`, `Helbon`, `Zahar`, `Wedan`,
+`Kilmad`), sechs aus der Seefahrt (`Ruder`, `Ruderer`, `Deck`, `Flagge`,
+`Sonnendach`, `Leck`), fünf aus dem Handel (`Handelsware`, `Handelsgut`,
+`Handelspartner`, `Erzeugnis`, `Küstenland`) und sieben Waren
+(`Buchsbaumholz`, `Ebenholz`, `Zugpferd`, `Reitpferd`, `Satteldecke`,
+`Backware`, `violett`).
+
+Kapitel 28 bringt sechs (`Götterthron`, `Handelsgeschick`, `Nephrit`,
+`Karfunkel`, `Öse`, `schmerzend`), Kapitel 29 fünf plus ein Mehrwort
+(`Assuan`, `Nilarm`, `Entschädigung`, `tierisch`, `wund`, `wund scheuern`).
+
+Bemerkenswert sind zwei Trennungsentscheidungen: **`Flagge`** bekommt nicht
+die `Banner`-Reihe (*estandarte · bannière · vessillo*), und **`Nilarm`**
+nicht *rivers/ríos/fleuves/fiumi*, obwohl alle vier Ausgaben so lesen —
+sonst verschmölze es mit `Fluss` (63 Belege). Für den Baumspruch in Kapitel
+31, wo `Ranke`/`Trieb`/`Zweig` schon aufgelöst sind, wäre *branches*
+zusätzlich fatal gewesen.
+
+### Befunde im Bestand, nicht angefasst
+
+- **`siebenundzwanzigste`** steht im Bestand als Lemma **mit -e**, während
+  sämtliche Datums-Ordinale Hesekiels (`elft`, `neunt`, `zwölft`, `dreißigst`
+  …) auf den Stamm normalisiert sind. Der Agent hat `siebenundzwanzigst`
+  vergeben und die Anomalie gemeldet.
+- **`ausrauben` und `rauben` fallen nach der 29,19-Auflösung zusammen** —
+  `rauben` steht dort nicht, die Auflösung gilt nur im Kollisionsvers.
+- `wegen` trug in Kapitel 28 italienisch *a motivo di* gegen 22× *a causa di*
+  im übrigen Buch. Angeglichen.
