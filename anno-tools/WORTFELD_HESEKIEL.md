@@ -324,3 +324,143 @@ Kapitel 5 und ist Wort für Wort zu übernehmen.
   dem Lemma die Ladebedeutung gegeben und den Fall gemeldet.
 - **`Gefäß` ist gespalten** (*recipiente* 23× gegen *vasija/vase/vaso* 1×);
   alle vier Ausgaben lesen in 4,9 die zweite Reihe, gefolgt wurde der Mehrheit.
+
+---
+
+## 3. Paket 3 (Kap. 7 · 8 · 9) — 1407 Tokens
+
+56 Verse, 1460 Einträge, 52 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum dritten Mal in Folge leer**; Abschnitt B 32 Fälle, ganz überwiegend
+Kongruenz.
+
+### Mein Fehler in der Vorbereitung — und wie der Agent ihn überging
+
+Ich hatte den drei Agenten geschrieben: **„Die Wortereignisformel kommt in
+diesem Paket nicht vor — maschinell geprüft."** Sie steht in **7,1**, wörtlich.
+
+Ursache: mein Suchmuster war `'erging das Wort'`, also die Wortstellung der
+`Da`-Fassung. Die kanonische Fassung, die 34× im Buch steht, lautet aber
+**„Das Wort des HERRN erging an mich"** — Verb an vierter Stelle. `promptcheck.py`
+hat den Fehler nicht gefangen, weil `ergehen`/`erging` ein starkes Verb ist und
+der Stammvergleich dort ohnehin blind ist. Ich habe die Vorbereitung daraufhin
+sogar noch **in die falsche Richtung „berichtigt"**.
+
+Der Agent hat die Formel trotzdem erkannt und Feld für Feld aus 6,1 übernommen
+— maschinell gegengerechnet: **7,1 ist mit 6,1 in allen sieben Positionen
+identisch**, Lemma, Level und alle vier Glossen.
+
+> **Lehre: ein Suchmuster für eine Formel muss jede Wortstellung abdecken, in
+> der sie vorkommt.** Deutsche Verbzweitstellung verschiebt das Verb je nach
+> Vorfeld; ein Muster, das nur eine Stellung kennt, meldet Abwesenheit, wo die
+> Formel steht. Bei Zweifel den Kern ohne Verb suchen (`Wort des HERRN`).
+
+**7,1 ist die Vorlage für 38 spätere Verse** — der Agent hat sie aufgelistet:
+11,14 · 12,1 · 12,8 · 12,17 · 12,21 · 12,26 · 13,1 · 14,2 · 14,12 · 15,1 ·
+16,1 · 17,1 · 17,11 · 18,1 · 20,2 · 21,1 · 21,6 · 21,13 · 21,23 · 22,1 ·
+22,17 · 22,23 · 23,1 · 24,15 · 24,20 · 25,1 · 27,1 · 28,1 · 28,11 · 28,20 ·
+30,1 · 33,1 · 33,23 · 34,1 · 35,1 · 36,16 · 37,15 · 38,1.
+
+### Die Schonungsformel steht jetzt vollständig
+
+„Mein Auge wird dich nicht schonen, ich werde kein Mitleid haben" —
+**5,11 · 7,4 · 7,9 · 8,18 · 9,10**, `Mitleid` allein in **9,5**. Alle sechs
+tragen dieselbe Reihe:
+
+    Auge    `Auge`    A1  eye · ojo · œil · occhio
+    schonen `schonen` B2  spare · perdonar · épargner · risparmiare
+    Mitleid `Mitleid` B2  compassion · compasión · compassion · compassione
+
+`Mitleid` nimmt **nicht** die häufigste Bestandsreihe (12× fr *pitié*), sondern
+die zweite (6×) — weil genau diese in der alttestamentlichen Vorlage der
+Formel steht, **5. Mose 13,9 · 19,13 · 19,21**. Der Kapitel-5-Agent hat das in
+Paket 2 ohne Vorgabe getroffen; nachgeprüft und für 16,5 · 20,17 · 24,14
+festgeschrieben.
+
+### Zwei unabhängige Agenten, dieselbe Dublette
+
+**8,12 ↔ 9,9** („Der HERR sieht uns nicht, der HERR hat das Land verlassen",
+in 9,9 mit vertauschten Hälften). Beide Agenten haben die Parallele selbst
+erkannt und gemeldet. **Neun von zehn Feldern kamen identisch zurück.** Der
+einzige Unterschied war en *abandoned* (8,12) gegen *forsaken* (9,9) — und der
+Bestand ist dort mit 28 : 24 selbst gespalten, keiner lag falsch. Auf die
+Mehrheit angeglichen.
+
+Ebenso zeichengleich gegengerechnet: **7,4 ↔ 7,9** (21 Positionen, nur die drei
+Stellen verschieden, an denen der Quelltext selbst abweicht) und **7,3 ↔ 7,8**.
+
+### 9,6 `Alte` / `alt` — die schwerste Auflösung des Pakets
+
+Meine Vorgabe nannte es eine 4-von-4-Kollision. Der Agent hat gemeldet: das ist
+die **Bestandslage**, nicht die Ausgabenlage. **Drei der vier Ausgaben trennen
+die beiden Wörter im Vers selbst** (RV *viejos*/*ancianos*, LSG
+*vieillards*/*anciens*, RIV *vecchi*/*anziani*); nur WEB liest zweimal *old
+men*. Und der Vers meint sie verschieden — die Altersklasse in der Tötungsliste
+gegen die Ältesten vor dem Tempel aus 8,11.
+
+    Alte `alt`  A1  old people · viejos · vieux · vecchi     (9,6a, Zweitlesart aus 2. Chronika 36,17)
+    Alten `Alte` B1  old men · ancianos · vieillards · anziani  (9,6b)
+
+Belegzahlen: `Alte` 11 von 13 auf der kollidierenden Reihe, `alt` nur 3 von
+~280 — also weicht `alt`. `Ältester` (182 Belege) steht **nicht** im Vers;
+`Alten` wurde bewusst nicht auf dessen Reihe gelegt.
+
+### Kollisionen, die `hints.py` gar nicht meldet
+
+In Kapitel 7 meldet `hints.py` **null** Kollisionen; der Agent hat **sieben**
+gefunden, sechs davon selbst. Darunter **7,10 mit drei Blühverben in einem
+Vers** (`anbrechen` · `aufblühen` · `austreiben`), in allen vier Sprachen
+getrennt — `austreiben` auf die Hiob-14,7-Lesart *sprouts · retoña · repousse ·
+rigermoglia*, die einzige der 26 Bestandslesarten, die nicht „Dämonen
+austreiben" meint.
+
+> **`hints.py` findet nur Paare, die im Bestand schon dieselbe Glosse tragen.**
+> Wo eines der Wörter unbelegt ist oder wo drei Wörter desselben Feldes
+> zusammenstehen, schweigt es. Die Agenten finden hier durchgehend mehr als das
+> Werkzeug.
+
+### Weitere widerlegte Angaben der Vorbereitung
+
+- **`Räucherpfanne` und `Jaasanja` sind belegt** (3. Mose 10,1 · 2. Könige
+  25,23) — ich hatte beide als „zu prägen" geführt. Von zwölf gemeldeten
+  unbelegten Formen in Kap. 8 waren fünf neu, in Kap. 7 von neun nur eine.
+- **`Eifer` kommt in Kapitel 8 nicht vor** (der Text liest `eifersüchtige Wut`
+  und `eifersuchtserregend`), **`Bild`/`Abbild` kollidieren in 8,10 nicht**
+  (dort steht nur `Abbilder`), und von den 20 Wortfeldzeilen meiner Tabelle
+  steht in Kapitel 7 nur ein Drittel.
+- **`Schmiede` (7,23) ist ein Verb**, nicht das Substantiv `Schmied`;
+  **`Ihren` (7,20)** ist das Possessivum, nicht `der Ihre`.
+- Dreimal Bestand gegen alle vier Ausgaben: **7,25 `Schrecken`** (alle vier
+  lesen *Destruction*), **7,22 `Schatz`** (alle vier lesen *secret place /
+  sanctuaire*), **7,15 `wütet`** (alle vier lesen eine Kopula).
+
+### Ein Befund über den Bestand hinaus
+
+Der Bestand **italianisiert Eigennamen systematisch J→I** — `Iaazania`,
+`Ioiachin` —, auch dort, wo RIV selbst „Jaazania"/„Joiakin" schreibt. Das ist
+die Hausschreibung, kein Fehler; ihr ist gefolgt worden.
+
+### Im Buch behoben
+
+**`auf das Gesicht fallen` war innerhalb Hesekiels uneinheitlich:** 1,28 setzte
+den Mehrworteintrag, **3,23 nicht**. Vom Kapitel-9-Agenten gemeldet,
+nachgetragen — 1,28 · 3,23 · 9,8 tragen ihn jetzt gleich. (Derselbe Befund
+steht für **Matthäus 26,39** gegen 17,6 weiter offen; anderes Buch, nicht
+angefasst.)
+
+### Neu geprägt (12)
+
+Kap. 7: `Stolperstein` C1.
+Kap. 8: `Nordtor` B2 · `hervorrufen` B2 · `eifersuchtserregend` C1 ·
+`Kreatur` B2 · `einmeißeln` C1 · `Rauchwolke` B2 · `Bilderkammer` C1 ·
+`Tammus` A1 · `aufgehend` B2.
+Kap. 9: `Schreibzeug` C1 · `Nordtor` B2 (gleich Kap. 8) ·
+`herankommen lassen` B2.
+
+### Gemeldet, nicht angefasst
+
+- **`nahe` steht im Buch gespalten**: 6,12 fr *près* (räumlich, „wer nahe ist"),
+  7,7 fr *proche* (zeitlich, „der Tag ist nahe"). Zwei Bedeutungen, beide
+  Bestandslesarten — deshalb belassen.
+- **`Reichtum` 7,11 en *wealth*** gegen die Bestandsmehrheit *riches*: der
+  deutsche Singular verlangt den englischen Singular; *riches* gehört zum
+  Plural `Reichtümer`.
