@@ -3066,10 +3066,34 @@ zurueckgezogen; wenn, dann alle vier auf einmal.
 Danach: `validate` 0 Befunde, `qa` 0, `hilfsverb` 0, `levelcheck` ueber alle 52
 Kapitel 0. Das Buch steht bei **36 974 Eintraegen und 1454 Mehrwoertern**.
 
-**Offen bleibt genau eine Frage**, und sie ist buchuebergreifend: der
-franzoesische Artikel in `in die Hand geben`. Korpusweit **37× „les main"**,
-**12× „la main"**, **1× „les mains"** — die Mehrheitsform paart einen
-Plural-Artikel mit einem Singular-Substantiv. Das betrifft 50 Stellen in
-mehreren Buechern und haengt daran, was ein Einzelwort in der App zeigen soll,
-das in einer Wendung steckt. **Nicht ohne Entscheidung des Projektinhabers
-anfassen.**
+### Der franzoesische Begleiter in `in die Hand geben` — entschieden
+
+Die letzte offene Frage ist vom Projektinhaber entschieden worden: **`la
+main`.** Der franzoesische Begleiter folgt dem **deutschen** Numerus, nicht dem
+franzoesischen Idiom der Wendung.
+
+Beim Anwenden zeigte sich, dass die Frage weiter reicht als nur den Artikel:
+im selben Muster stehen Possessive. Massgeblich ist die Form von `Hand` in
+derselben Spanne:
+
+    deutscher Singular `Hand`  (85 Stellen)  →  la · ta · sa · ma · votre · leur  + main
+    deutscher Plural `Hände`   ( 9 Stellen)  →  les · tes · leurs · vos · nos     + mains
+
+**Die neun deutschen Plurale waren samt Begleitern bereits richtig** und sind
+unberuehrt geblieben — darunter Ri 1,4 und 1Chr 5,20 („gab in ihre **Hände**"),
+wo *leurs mains* korrekt ist. Geaendert wurden **52 Felder in 51 Versen** aus
+neun Buechern, alle nur bei deutschem Singular:
+
+    les  → la      36×        ses  → sa       7×
+    tes  → ta       5×        vos  → votre    4×
+
+    Buch  6 Josua 7 · 7 Richter 13 · 11 1.Koenige 3 · 12 2.Koenige 2
+         14 2.Chronika 4 · 15 Esra 1 · 16 Nehemia 2 · 23 Jesaja 1 · 24 Jeremia 19
+
+Die Wendung selbst behaelt *livrer entre les mains* — nur die Einzelwoerter
+folgen dem Deutschen. `Hand` stand an allen 85 Singularstellen bereits auf
+*main*; dort war nichts zu tun.
+
+Alle neun Buecher sind neu gebaut, `validate` meldet fuer jedes **0 Befunde**.
+Damit ist auch die Paket-12-Angleichung zu Ende gefuehrt: sie hatte das
+Substantiv auf den Singular gebracht und den Begleiter stehen lassen.
