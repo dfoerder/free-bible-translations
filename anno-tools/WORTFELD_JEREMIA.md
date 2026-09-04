@@ -3097,3 +3097,68 @@ folgen dem Deutschen. `Hand` stand an allen 85 Singularstellen bereits auf
 Alle neun Buecher sind neu gebaut, `validate` meldet fuer jedes **0 Befunde**.
 Damit ist auch die Paket-12-Angleichung zu Ende gefuehrt: sie hatte das
 Substantiv auf den Singular gebracht und den Begleiter stehen lassen.
+
+### Nachtrag: `ausreisser.py` — der Abschlusslauf, den ich uebersprungen hatte
+
+`ausreisser.py` ist laut eigener Doku **fuer den Abschluss eines Buches**
+gedacht und prueft etwas, das `konsistenz.py` prinzipiell nicht sehen kann:
+**drei Sprachen sind sich einig, die vierte weicht ab.** Ich hatte ihn beim
+Abschluss von Jeremia nicht laufen lassen; nachgeholt meldet er **977
+Verdachtsfaelle**.
+
+Die Durchsicht hat 977 auf **drei Korrekturen mit 16 Eintraegen** eingedampft.
+Der Weg dahin ist die eigentliche Erkenntnis:
+
+**Vier Filter, die nacheinander nichts uebrig liessen:**
+
+    386  der Bestand ist an der Stelle selbst uneinheitlich (< 55 % Mehrheit)
+    190  `spricht` fr *dit*/*parle* — die dokumentierte Entscheidung nach LSG
+     71  Genus- und Numerusendungen (*tout*/*toute*, *il mio*/*la mia*)
+      2  Gross-/Kleinschreibung
+
+Von den verbleibenden 328 (171 verschiedene Entscheidungen) war praktisch
+alles richtig — und mehrfach **feiner**, als die Korpusmehrheit verlangt:
+
+* **`durch` en *by* (33×)** steht zwoelfmal vor `Schwert` („durch das Schwert
+  sterben" = *die by the sword*) und achtmal vor Possessiven. Das ist der
+  instrumentale Sinn; die Korpusmehrheit *through* deckt das agentische
+  „durch Jesus" ab. Zwei Bedeutungen, zwei Reihen.
+* **`Weg` fr *voie* (11×)** steht durchweg beim uebertragenen Weg (`den Weg der
+  Völker`, `nach seinem Weg`), *chemin* beim physischen.
+* **`Himmel(s)` en *sky* (11×)** steht bei Voegeln, Storch und Regen — *heaven*
+  waere dort falsch.
+* **`machen` fr *rendre*** steht bei „zu etwas machen", *faire* beim schlichten
+  Machen. **`bringen` fr *apporter*** bei Sachen, *amener* bei Personen.
+  **`bis` it *finché*** vor Nebensatz, *fino a* vor Substantiv.
+* **`Ende`** teilt in **allen drei** romanischen Sprachen an denselben fuenf
+  Versen zwischen „Ende" (*fin*) und „Rand der Erde" (*extrémité*) — ein
+  Zeichen bewusster, konsistenter Behandlung.
+* **`wo` es *dónde*** (6,16 · 36,19) traegt den Akzent zu Recht: beides sind
+  indirekte Fragen. Ich hatte es zuerst als Fehler verdaechtigt.
+* **`zurück` es *de vuelta*** steht bei „zurueckbringen"; *atrás* hiesse dort
+  rueckwaerts.
+
+**Der Filter, der die drei echten Faelle fand:** gleiche deutsche **Form**,
+gleiche **englische** Glosse — und trotzdem zwei verschiedene romanische
+**Lexeme** (keine Flexion, kein Genus). Wo Englisch nicht unterscheidet, ist
+die Bedeutung dieselbe, und zwei Lexeme sind dann ein Fehler:
+
+    Weil  it  *Perché* → *Poiché*   6 Stellen   5,14 · 14,4 · 16,11 · 22,9 · 29,31 · 35,18
+              (satzinitial; Korpus 100 : 18)
+    unter it  *fra*    → *tra*      6 Stellen   9,15 · 10,7 · 24,10 · 25,16 · 25,27 · 51,27
+              (Bedeutung „unter/zwischen"; Korpus 550 : 27 — die 11 *sotto*
+               im Buch sind die andere Bedeutung und bleiben)
+    samt  fr  *avec* → *ainsi que*  4 Stellen   17,3 · 46,8 · 46,25 · 48,7
+              (Korpus 38 : 18; das Buch stand intern 17 : 4, teils weil
+               Paket 14 nur 42,1 angeglichen hatte)
+
+Nicht angefasst: **`Gürtel` es** — Jeremia fuehrt an allen acht Stellen
+*cinturón*, der uebrige Korpus 30× *cinto*. Das Buch ist in sich einheitlich;
+die Abweichung ist eine **buchuebergreifende** Entscheidung ueber 38 Stellen,
+kein Fehler in Jeremia. Ebenso **`mehr` es *ya*/*más*** — 133 : 76 im Korpus
+ist keine Bindung.
+
+**Fuer die kommenden Buecher:** `ausreisser.py` gehoert in die
+Abschlusspruefung jedes Buches, aber mit dieser Triage. Die Rohzahl ist
+unbrauchbar; der Test „gleiche Form + gleiche englische Glosse + zwei
+romanische Lexeme" ist der, der traegt.
