@@ -839,3 +839,141 @@ sind 14.** Und umgekehrt hat es `umgekehrt` (16,34) **nicht** gesehen, weil
 
 Kapitel 16 ist die große Schwesterallegorie; 23 nimmt sie wieder auf. Beide
 Agenten haben ihre Reihen vollständig im Bericht aufgeführt.
+
+---
+
+## 7. Paket 7 (Kap. 17 · 18 · 19) — 1735 Tokens
+
+70 Verse, 1802 Einträge, 73 Mehrwörter. `paketcheck.py` **Abschnitt A und C
+zum siebten Mal in Folge leer**; Abschnitt B 42 Fälle, sämtlich Flexion.
+
+### Die Anerkennungsformel hat 71 Vorkommen, nicht 61 und nicht 54
+
+Zum **dritten Mal** hat ein Agent eine Variante gefunden, die mein Suchmuster
+nicht erfasste. Diesmal der Agent für Kapitel 17:
+
+    17,21  „…dass ich, der HERR, es gesagt habe"
+    17,24  „…dass ich, der HERR, den hohen Baum erniedrigt … habe"
+
+Mein Muster endete auf `bin`. Die Nachzählung nach `erkennen` + `dass ich`
+ergibt **71 Stellen, davon elf mit einem anderen Prädikat**: 5,13 · 14,23 ·
+17,21 · 17,24 · 21,10 · 22,22 · 34,30 · 35,12 · 36,36 · 37,14 · 39,22 · 39,28.
+
+> **Die Konstante der Formel ist nicht `der HERR bin`, sondern `erkennen` +
+> `dass ich`.** Alle drei Fehlmessungen hatten dieselbe Ursache: ich habe das
+> Muster am *Ende* festgemacht statt am Kern. Paket 3 verdeckte die
+> Wortstellung die Formel, Paket 5 eine eingeschobene Apposition, Paket 7 ein
+> anderes Prädikat.
+
+Maschinell über alle neunzehn fertigen Kapitel geprüft: **`erkennen` trägt an
+jeder dieser Stellen die *recognize*-Familie, 0 Abweichungen.** Kein Schaden.
+`PAKETE_HESEKIEL.txt` ist ein zweites Mal korrigiert.
+
+### Die Wortereignisformel steht jetzt siebzehnmal gleich
+
+3,16 · 6,1 · 7,1 · 11,14 · 12,1 · 12,8 · 12,17 · 12,21 · 12,26 · 13,1 · 14,2 ·
+14,12 · 15,1 · 16,1 · 17,1 · 17,11 · 18,1 — jedes Mal maschinell gegen 15,1
+gerechnet.
+
+### 17,20 ← 12,13: zwanzig Felder, null Abweichungen
+
+Die gemeinsame Wendung („Ich breite mein Netz über ihn aus, und er wird in
+meinem Fangnetz gefangen") ist Feld für Feld übernommen, einschließlich der in
+Paket 4 gelösten 4-von-4-Kollision `Fangnetz` ↔ `Netz`.
+
+### `Ranke` — zwei Agenten, zwei verschiedene Lösungen
+
+Das ist der erste Fall im Buch, in dem zwei Agenten **dieselbe Kollision
+verschieden** aufgelöst haben. Beide Lösungen funktionieren; angeglichen wurde
+auf die von Kapitel 17, weil dort alle drei Wörter zusammenstehen:
+
+    Ranke  C1  tendrils · sarmientos · sarments · tralci   ← weicht
+    Trieb  B2  shoots · renuevos · rejetons · rampolli
+    Zweig  B2  branches · ramas · branches · rami
+
+Die Herleitung ist lehrreich: `Ranke` hat im Bestand **zwei** Reihen, und
+**beide kollidieren** — die eine italienisch mit `Zweig` (*rami*), die andere
+spanisch (*ramas*). Und ein bloßes Übernehmen von `Rebe` C1 (*branch ·
+sarmiento · sarment · tralcio*) hätte englisch *branches* ergeben und die
+Kollision nur verschoben. Genommen ist die es/fr/it-Reihe von `Rebe` plus
+englisch *tendrils* — sachlich richtig (es sind die Ranken eines Weinstocks)
+und in allen vier Sprachen frei.
+
+Der Kapitel-17-Agent hat die Reihe auch in **17,7** gesetzt, wo kein
+Kollisionspartner steht, und das ausdrücklich als Regelabweichung gemeldet:
+17,6 und 17,7 sind ein durchlaufendes Bild, und die Mehrheitslesart hätte in
+17,7 genau die Glosse ergeben, die in 17,6 `Trieb` trägt.
+
+### Kapitel 18: die parallelen Kataloge
+
+Der Tugend- und Lasterkatalog läuft dreimal (18,5–9 · 18,10–13 · 18,14–18),
+die Umkehrrede zweimal (18,21–24 · 18,26–28). Maschinell gegengerechnet:
+**kein einziges Inhaltswort läuft auseinander.** Jede Abweichung ist ein
+Funktionswort mit anderem Bezugswort oder eine echte Textdifferenz — etwa
+`Frau` in 18,6, das dort ein zusätzliches Vorkommen hat, das 18,15 nicht kennt.
+
+### Beim Einsammeln angeglichen (2)
+
+| Stelle | vorher | nachher | Grund |
+|---|---|---|---|
+| `Ranke` 19,10 · 19,11 · 19,14 | *boughs · brotes · rameaux · tralci* | *tendrils · sarmientos · sarments · tralci* | Angleichung an 17,6/17,7, wo alle drei Wörter zusammenstehen |
+| `weil` 3,20 it | *Poiché* | *Perché* | letzte Stelle des Buches auf der alten Reihe; der Rest steht seit Paket 2 auf *Perché* |
+
+### Ein Fehler in meiner Einsammel-Routine
+
+Der Kapitel-19-Agent meldete, `Land` trage in 13,9 noch *tierra*, obwohl ich
+das in Paket 5 angeglichen hatte. **Meine Koordinator-Korrekturen gingen nur
+nach `anno-quellen/`, nicht in den `out/`-Ordner, aus dem die Agenten lesen.**
+Sieben Kapitel waren dort veraltet. Die gebaute Buchdatei war immer richtig —
+aber ein Agent, der ein Nachbarkapitel aufschlägt, sah alte Reihen. Derselbe
+Nebeneffekt hat den Kapitel-18-Agenten eine `wegen`-Inkonsistenz melden lassen,
+die es nicht gab.
+
+> **Jede Korrektur beim Einsammeln gehört in beide Ordner.** Seit Paket 7 wird
+> `out/` nach jedem Paket gegen `anno-quellen/` abgeglichen.
+
+### Widerlegte Angaben der Vorbereitung
+
+- **`schließen` steht sehr wohl in 17,13** („schloss einen Bund mit ihm") —
+  ich hatte es nach `promptcheck.py` als abwesend gemeldet, weil der
+  Stammvergleich `schloss` nicht auf `schließen` zurückführt. **Ein starkes
+  Verb ist für `promptcheck.py` blind**, und ich habe die Meldung diesmal
+  nicht am Quelltext gegengeprüft.
+- **`Seele` steht in Kapitel 18 nicht** — der l1912mod liest `Menschenleben`
+  und `Leben`, wo alle vier Ausgaben *souls* lesen.
+- **`Vergehen` steht nicht in Kapitel 18** (der Text liest `Übertretungen`),
+  **`Klagelied` nicht in 19,1** (dort `Klage` in der Wendung *eine Klage
+  anstimmen*), **`Zepter` und `Dürre` nicht in Kapitel 19**.
+- **Keine der fünf Botenformel-Stellen in Kapitel 18 hat `So spricht`** — alle
+  fünf sind die bloße Schlussformel.
+- **`hints.py`-Formfalle wieder:** Kap. 17 zwölf Meldungen, drei neu; Kap. 18
+  sieben Meldungen, drei neu; Kap. 19 zehn Meldungen, drei neu. Und dreimal
+  hat das Werkzeug ein echtes neues Lemma **nicht** gesehen (`zur Last kommen`,
+  `ausladend`, `Blattwerk`).
+
+### Neu geprägt (12)
+
+Kap. 17: `Gefieder` C1 · `Kaufmannsstadt` C1 · `ausladend` C1 ·
+`zum Blühen bringen` B2.
+Kap. 18: `Wucherzins` C1 · `Gewalttäter` C1 · `einbehalten` B2 ·
+`zur Last kommen` B2 · `Regel` (zweite Lesart, A2).
+Kap. 19: `Herrscherzepter` C1 · `Blattwerk` B2 · `auffällig` B2.
+
+Dazu **elf neue Lesarten an belegten Lemmata**, alle gemeldet statt korpusweit
+angefasst — darunter `Weide` (17,5 ist der **Baum**, nicht die Wiese),
+`oberst` (räumlich statt als Amtsbezeichnung) und `Raub` (die Tat statt die
+Beute).
+
+### Die Lexikonfalle, geprüft und einmal gefunden
+
+Der Kapitel-18-Agent hat `Seele`, `Gerechtigkeit`, `Sünde`, `leben` und
+`umkehren` einzeln auf neutestamentliche Schlagseite geprüft. **Bei `umkehren`
+greift sie**: die beiden häufigsten der acht Bestandslesarten sind die
+NT-Bußlesarten aus Lukas 15,7 und Matthäus 18,3. Die Buchreihe aus 3,18 ·
+13,22 · 14,6 hat Vorrang und ist gehalten.
+
+### Befund im Bestand, nicht angefasst
+
+**`Fangnetz` ist gespalten:** Psalm 69,23 trägt *net · red · filet · rete* —
+genau die Reihe von `Netz`. Nur Hesekiel 12,13 und 17,20 tragen die
+Ausweichreihe. Betrifft ein fertiges Buch.
