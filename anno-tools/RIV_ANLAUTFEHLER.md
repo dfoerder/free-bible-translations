@@ -270,3 +270,49 @@ korpusweit zaehlen, nicht nur im eigenen Buch.
 `Ioel` gehoert in die I/J-Liste (`BEFUNDE_RIV_ANLAUT_J.md`), `edaia`
 (→ *Pedaia*) in diese hier. Der Vers zeigt, dass die beiden Defekte
 dieselbe Ursache haben duerften.
+
+---
+
+## Der Mechanismus: Anlautverlust **nach einem kurzen Vorwort**
+
+Bis hierher war der Defekt als Menge vermessen (672 Vorkommen in 201
+Formen). Der Agent fuer **Amos 6** hat aus einem Einzelfall — RIV 6,6
+liest „la ruina di **iuseppe**" — die Frage gemacht, *wo* im Satz der
+Anlaut verlorengeht. Die Messung ueber zwoelf haeufige G-Namen:
+
+**145 Vorkommen mit verlorenem `G`**, gegen zehntausende korrekte:
+
+```
+    61× Gerusalemme  → erusalemme   (korrekt 762×)
+    30× Giuda        → iuda         (korrekt 842×)
+    16× Gesù         → esù          (korrekt 1043×)
+    12× Giacobbe     → iacobbe      (korrekt 378×)
+     8× Giuseppe     → iuseppe      (korrekt 249×)
+     7× Giordano     → iordano      (korrekt 196×)
+     3× Gerico · 3× Giona · …
+```
+
+**Und sie stehen fast alle an derselben Stelle** — unmittelbar hinter
+einem kurzen Wort:
+
+```
+    49× nach `di`        30× nach `a`         13× nach `in`
+     7× nach `e`          5× nach `cristo`     3× nach `contro`
+```
+
+> 1. Mose 31,24 „…a **iacobbe**…" · 45,4 „son **iuseppe**" ·
+> 49,7 „in **iacobbe**" · Amos 6,6 „la ruina di **iuseppe**"
+
+Das ist kein Zufallsmuster, sondern eine Regel: **der erste Buchstabe
+eines Wortes faellt weg, wenn ein kurzes Wort davorsteht.** Vermutlich
+ein Zeilen- oder Trennungsartefakt des Imports.
+
+Der Defekt trifft nicht nur `G`: 1. Samuel 17,23 hat „quel Filisteo di
+**ath**" (→ *Gath*), und dieselbe Messung ueber andere Anlaute findet
+`ontro` fuer *contro*, `ecchi` fuer *secchi* (Joel 1,12 · Josua 9,4),
+`alirà` fuer *salirà* (Joel 2,20).
+
+**Was daraus folgt:** wer eine RIV-Zeile abzaehlt, muss besonders auf
+das Wort **nach `di`, `a`, `in`, `e`** achten. Dort steht der Defekt.
+Und ein verstuemmeltes Wort, das zufaellig ein echtes ergibt (`oro`
+statt `loro`, Hosea 11,6), faellt keiner maschinellen Probe auf.

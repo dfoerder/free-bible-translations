@@ -44,7 +44,7 @@ bedeutungstragend: Heuschrecken **fressen** (1,4 · 2,3 · 2,25), Feuer
 2,25**. Beide Verse gingen deshalb auf die consumir-Reihe:
 
 ```
-fressen    C1  devoured · devoró · dévora · divorò        (1,4)
+fressen    B2  devoured · devoró · dévora · divorò        (1,4)
 verzehren  C1  consumed · consumido · consumé · consumato (1,19 · 1,20)
 verzehren  C1  consumes · consume · consume · consuma     (2,5)
 ```
@@ -69,7 +69,7 @@ Gemeldet vom Kapitel-1-Agenten, am Quelltext bestaetigt.
 
 **Nicht uebernommen: 2,2 ← Hiob 10,21.** Joel hat `Finsternis` und `Dunkel`
 im selben Vers; die Vorlage haette beide gleich geglosst. `Finsternis` bleibt
-*darkness*, `Dunkel` weicht auf *gloom · penumbra · obscurité · caligine*.
+*darkness*, `Dunkel` B1 weicht auf *gloom · oscuridad · obscurité · oscurità*.
 
 **Joel 3,1–5 ist in Apg 2,17–21 zitiert** — der Abgleich lief Token fuer
 Token. Er bestaetigt `Himmel` 3,3 (*heaven*), `anrufen` 3,5 und die
@@ -207,7 +207,7 @@ Kult und Klage:
   Priester B1 · Ältester B2 elders·ancianos·anciens·anziani · Altar B1
   Speisopfer C1 · Trankopfer C1 · Fasten B2 fast·ayuno·jeûne·digiuno
   Versammlung B1 assembly·asamblea·assemblée·assemblea
-  einberufen C1 summon·convocad·convoquez·convocate (Mehrwort)
+  einberufen B2 summon·convocad·convoquez·convocate (Mehrwort)
   Trauergewand C1 sackcloth·telas de saco·sacs de deuil·sacchi
   Trauersack C1 sackcloth·tela de cilicio·sac de deuil·sacco
 
@@ -218,9 +218,9 @@ Himmel und Gestirne:
 
 Dürre und Feuer:
   Steppe B2 wilderness·estepa·steppe·steppa  (Artikel: de la · de la · della)
-  Weide B1 pasture(s)·pasto(s)·pâturage(s)·pascolo/i
+  Weide B1 pastures·pastos·pâturages·pascoli  (Sg.: pasture·pasto·pâturage·pascolo)
   verdorren C1 · verwelken C1 · vertrocknen B2 · austrocknen B2 · versiegen C1
-  verzehren C1 consum-Reihe · fressen C1 devor-Reihe — nie vermischen
+  verzehren C1 consum-Reihe · fressen B2 devor-Reihe — nie vermischen
 
 Neu geprägt in Joel:
   Nagerheuschrecke · Wanderheuschrecke (s. Abschnitt 0)
@@ -230,7 +230,7 @@ Neu geprägt in Joel:
   Kornspeicher C1 granaries·depósitos de grano·dépôts de grain·depositi di grano
   Pethuel A1 · Joel A1 Joel·Joel·Joël·Gioele   (it Gioele — Bestand Apg 2,16 + RIV)
   Schar B2 Multitudes·Multitudes·Multitudes·Moltitudini (4,14 — zufällige Kognaten)
-  Entscheidung B1 decision·decisión·décision·decisione
+  Entscheidung B2 decision·decisión·décision·decisione
   Winzermesser C1 pruning knives·podaderas·serpes·roncole
 ```
 

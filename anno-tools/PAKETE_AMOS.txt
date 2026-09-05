@@ -85,12 +85,24 @@ oben ist neu gepraegt und gilt fuer das ganze Buch.
     verzehren   C1  consume · consumir · consumer · consumare
     Mauern      B1  walls · muros · murailles · mura
 
-**`verzehren` MUSS die consum-Reihe tragen.** Joel (29) hat die
-Trennung festgelegt und das Buch durchgehalten: Heuschrecken *fressen*
-(devor-Reihe), Feuer *verzehrt* (consum-Reihe). Amos hat `verzehren`
-7× und `fressen` gar nicht — aber die Trennung gilt korpusweit.
-Der Bestand fuehrt fuer `verzehren` auch devor-Reihen; **die sind hier
-falsch.**
+**`verzehren` MUSS die consum-Reihe tragen, `fressen` die devor-Reihe.**
+Joel (29) hat die Trennung festgelegt und durchgehalten: Heuschrecken
+*fressen*, Feuer *verzehrt*. Der Bestand fuehrt fuer `verzehren` auch
+devor-Reihen; **die sind hier falsch.**
+
+    verzehren  C1  consume · consumir · consumer · consumare   (9× im Buch)
+    fressen    B2  devour  · devorar  · dévorer  · divorare    (3× im Buch)
+
+    verzehren: 1,4 · 1,7 · 1,10 · 1,12 · 1,14 · 2,2 · 2,5 · 5,6 · 7,4
+    fressen:   4,9 · 7,2 · 7,4
+
+**In 7,4 stehen beide im selben Vers:** „Er rief das Feuer zur Strafe
+herbei, das die grosse Flut **verzehrte** und das Ackerland zu **fressen**
+begann." Das ist die einzige echte Kollisionsstelle der beiden Reihen im
+ganzen Buch — und der Grund, warum die Trennung nicht verhandelbar ist.
+
+(Eine fruehere Fassung dieser Datei behauptete „`verzehren` 7×, `fressen`
+gar nicht". Beides war falsch, gefunden vom Agenten fuer Kapitel 4.)
 
 
 ================================================================
@@ -198,7 +210,7 @@ hier falsch. Eine Lexikonfalle.
                      (97 Belege der Form; `fixgloss.py show Heerscharen`
                       schweigt deshalb — mit `belegt.py` nachsehen)
     Israel       A1  Israel · Israel · Israël · Israele          (27×)
-    Palast       B2  palace(s) · palacio(s) · palais · palazzo/i (10×)
+    Palast       B2  palaces · palacios · palais · palazzi  (Pl., 10× im Buch)
     Verbannung   C1  exile · exilio · exil · esilio               (5×)
     Amoriter     B2  Amorites · amorreos · Amoréens · Amorei
     Nasiraeer    C1  Nazirite · nazareo · naziréen · nazireo      (5 Belege, alle 4Mo 6)
@@ -228,7 +240,7 @@ Bet-Eden · Aram · Kir · Gaza · Aschdod · Aschkelon · Ekron · Philister ·
 Tyrus · Edom · Teman · Bozra · Ammoniter · Rabba · Moab · Kerijot ·
 Juda · Israel · Jerusalem · Amoriter · Aegypten · Bethel · Gilgal ·
 Beerscheba · Samaria · Karmel · Baschan · Zion · Kalne · Hamat · Gat ·
-Dan · Kusch · Kaftor · Sikkut · Kewan · Damaskus · Jerobeam · Amazja ·
+Dan · Kusch · Kaftor · Sikkuth · Chiun · Damaskus · Jerobeam · Amazja ·
 Isaak · Josef · David · Sodom · Gomorra
 
 **RIV schreibt Namen mit `J` haeufig als `I`** (672 Vorkommen in 201
