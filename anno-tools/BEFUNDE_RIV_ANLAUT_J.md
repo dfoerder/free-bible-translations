@@ -86,13 +86,21 @@ Gefunden beim Annotieren von **Daniel 12**. Der Bestand fuehrt `Michael`
 franzoesisch als *Michel* und italienisch als *Michele* — an **allen
 zwoelf** Belegen. Die Ausgaben tun das nicht:
 
-| Ausgabe | im Alten Testament | im Neuen Testament |
-|---|---|---|
-| LSG1910 | **`Micaël`** 13× | `Michel` 2× (Judas 1,9 · Offb 12,7) |
-| RIV1927 | **`Micael`** 12× | `Michele` 2× (dieselben Stellen) |
+| Ausgabe | im Alten Testament | im Neuen Testament | in **Daniel** |
+|---|---|---|---|
+| LSG1910 | **`Micaël`** 13× | `Michel` 2× (Judas 1,9 · Offb 12,7) | `Micaël` |
+| RIV1927 | **`Micael`** 12× | `Michele` 2× (dieselben Stellen) | `Micael` |
+| RV1909mod | **`Micael`** 10× | `Miguel` 2× | **`Miguel`** 3× |
 
-**Beide Ausgaben trennen Altes und Neues Testament**, der Bestand nicht:
-er traegt die NT-Form an allen zehn AT-Stellen (4. Mose 13,13 · 1. Chr
+**Spanisch faellt aus der Reihe, und zwar genau in Daniel.** RV schreibt
+im ganzen uebrigen AT `Micael` (4. Mose 13,14 · 1. Chr 5,13 · 5,14 ·
+6,40 · 7,3 · 8,16 · 12,20 · 27,18 · 2. Chr 21,2 · Esra 8,8) und in
+Daniel 10,13 · 10,21 · 12,1 **`Miguel`** — dieselbe Form wie im NT. Die
+Bestandsreihe ist damit fuer Daniel spanisch **richtig** und fuer die
+zehn uebrigen AT-Stellen falsch.
+
+**Alle drei Ausgaben trennen Altes und Neues Testament**, der Bestand
+nicht: er traegt fr/it die NT-Form an allen zehn AT-Stellen (4. Mose 13,13 · 1. Chr
 5,13 · 5,14 · 6,25 · 7,3 · 8,16 · 12,20 · 27,18 · 2. Chr 21,2 · Esra
 8,8). Die zwei NT-Eintraege sind richtig.
 
@@ -101,8 +109,10 @@ belegt: kein Uebertragungsfehler im Anlaut, sondern eine Reihe, die aus
 dem Neuen Testament ins Alte gezogen wurde — die Namens-Variante der
 Lexikonfalle.
 
-**Daniel schreibt `Micaël` / `Micael`** (10,13 · 10,21 · 12,1), also die
-AT-Form seiner eigenen Ausgaben. Auch hier gilt: eine bekannte
+**Daniel schreibt en `Michael` · es `Miguel` · fr `Micaël` · it
+`Micael`** (10,13 · 10,21 · 12,1) — jede Sprache in der Form, die ihre
+eigene Ausgabe an diesen Versen verwendet. Zwei Agenten haben das
+unabhaengig voneinander so entschieden. Auch hier gilt: eine bekannte
 Falschschreibung wird nicht fortgesetzt, und der spaetere korpusweite
 Lauf hat einen Bezugspunkt.
 

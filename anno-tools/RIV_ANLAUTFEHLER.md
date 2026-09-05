@@ -69,3 +69,43 @@ zweiten Belegstelle nachschlagen**.
 
 Das ist der zweite Defekt dieser Datei nach dem Rohbyte 0x85, das als
 Auslassungszeichen fehldekodiert war (46 Stellen in 13 Buechern).
+
+## Nachtrag: derselbe Defekt am Wortende — aber nur in einer Form
+
+Gefunden beim Annotieren von **Daniel 10**: RIV schreibt in 10,3
+`entraron` statt `entrarono`. Der Agent hielt es fuer eine spanische
+Form im italienischen Text.
+
+Nachgemessen ueber alle 66 Buecher: es sind **20 Vorkommen in elf
+Formen**, alle nach demselben Muster — die 3. Person Plural des Perfekts
+ohne ihr Schluss-`o`:
+
+    4×  levaron       → levarono      (32× korrekt)   4Mo 16,2 · Ri 9,34 · Mt 15,37
+    3×  entraron      → entrarono     (36×)           Jos 8,19 · Dan 10,3 · Mt 25,10
+    3×  alzaron       → alzarono      (13×)           1Sam 30,4 · Joh 17,13 · Apg 4,24
+    2×  cavaron       → cavarono                      Ri 16,21 · 2Kön 25,7
+    2×  presentaron   → presentarono  (34×)           Mt 14,35 · Apg 1,10
+    je 1×: odiaron · mostraron · montaron · invocaron · prepararon · prestaron
+
+Jede dieser Formen hat im selben Korpus die richtige Fassung, meist
+dutzendfach. Ob der Setzer ein `o` verloren oder aus einer spanischen
+Vorlage abgeschrieben hat, ist von aussen nicht zu entscheiden — die
+Zeichenfolgen sind dieselben.
+
+**Ein allgemeiner Defekt am Wortende ist es nicht.** Dieselbe Heuristik
+wie oben, nur umgedreht (seltene Form, die durch **einen angehaengten**
+Buchstaben zu einer mindestens zwanzigmal haeufigeren Form wird):
+
+| Ausgabe | Vorkommen | Formen |
+|---|---|---|
+| WEB (en) | 9 | 7 |
+| RV1909mod (es) | 22 | 13 |
+| LSG1910 (fr) | 39 | 22 |
+| l1912mod (de) | 78 | 53 |
+| **RIV1927 (it)** | **97** | **72** |
+
+Der italienische Wert liegt nur knapp ueber dem deutschen, nicht
+vierzehnfach darueber wie beim Anlaut. Die Treffer sind zum
+allergroessten Teil echte Woerter (`territori` gegen `territorio`,
+`simil` gegen `simile`). **Der Defekt sitzt am Wortanfang; am Wortende
+gibt es nur diese eine, eng umrissene Gruppe.**
