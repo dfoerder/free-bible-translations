@@ -85,6 +85,23 @@ def reihen_index():
     return lv, reihen, form2lem
 
 
+def ascii_um(s):
+    """Beide Seiten auf dieselbe Umschrift bringen: ue/oe/ae/ss.
+
+    `umlaut()` bildet Varianten, indem es **alle** Vorkommen eines
+    Digraphen zugleich ersetzt — und scheitert, sobald ein Wort im
+    selben Satz ein echtes `ue` traegt: aus „die bauern sind bestuerzt"
+    wurde „die ba**ü**rn sind bestürzt", und das Zitat aus
+    WORTFELD_JOEL.md galt als nicht im Text stehend, obwohl Joel 1,11
+    genau so lautet. Fuer alle Teilmengen waeren es 2^n Varianten.
+
+    Andersherum ist es eindeutig: beide Seiten auf ASCII normalisieren.
+    """
+    for a, b in (('ä', 'ae'), ('ö', 'oe'), ('ü', 'ue'), ('ß', 'ss')):
+        s = s.replace(a, b)
+    return s
+
+
 def umlaut(w):
     """Alle Ruecknahmen der ASCII-Umschrift, nicht nur die volle.
 
@@ -112,8 +129,11 @@ NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV)\b')
 # kein Backtick, kein Punkt. Eine erste Fassung nahm alles zwischen zwei
 # Sternchen und las dabei den Text ZWISCHEN zwei Auszeichnungen als
 # Zitat („. In 5,3, wo `Kraft` allein steht, gilt wieder die AT-Bindung ").
+# Fettdruck ist KEIN Kursivzitat: `**seine**` wurde als `*seine*`
+# gelesen und als Ausgabenzitat gemeldet. Vor und hinter dem Sternchen
+# darf deshalb kein weiteres stehen.
 EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]'
-                      r'|\*([^*`,.;:\n]{3,40})\*')
+                      r'|(?<!\*)\*(?!\*)([^*`,.;:\n]{3,40})\*(?!\*)')
 
 
 def zitate(zeile):
@@ -277,12 +297,11 @@ def pruefe_deutsch(pfad, nr):
                     # Die Vorgabedateien sind in ASCII geschrieben, der
                     # Quelltext nicht: `gegenueberstandest`, `grosse`.
                     # Jede Ruecknahme der Umschrift zaehlt als Treffer.
-                    if any(' '.join(v.split()) in deutsch
-                           for v in umlaut(' '.join(such))):
+                    if ascii_um(' '.join(such)) in ascii_um(deutsch):
                         continue
                     # Ein Zitat, das in einer Ausgabe steht, ist ein
                     # Ausgabenzitat, dem die Nennung fehlt — nicht falsch.
-                    if any(any(v in x for v in umlaut(' '.join(such)))
+                    if any(ascii_um(' '.join(such)) in ascii_um(x)
                            for x in fremd):
                         continue
                     befunde += 1

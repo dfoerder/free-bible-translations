@@ -469,3 +469,19 @@ RIV liest „tutto il paese sarà **ivorato** dal fuoco". Korpusweit:
 
 Auf die Glossen wirkt er sich nicht aus: der deutsche Text sagt
 `verzehrt`, und die consum-Reihe kommt aus dem Bestand.
+
+
+### Haggai: drei Faelle, einer davon neu gefunden
+
+- **2,1** „per mezzo del profeta **ggeo**" statt *Aggeo* — nach
+  `profeta`, also nach einem laengeren Wort. Nicht die uebliche
+  Position.
+- **2,2** „figliuolo di **ehotsadak**" statt *Jehotsadak* — nach `di`,
+  der haeufigsten Position ueberhaupt (49 der 145 Faelle).
+- **2,16** „**uand**'uno" statt *quand'uno* — vom Agenten fuer Kapitel 2
+  gefunden, im Prompt nicht genannt. Haeufigkeitsprobe: `uand` steht
+  **2×** im ganzen RIV (hier und Psalm 4,1 „uand'ero"), `quand` 241×,
+  `quando` 1354×. Derselbe Vers traegt die richtige Form unmittelbar
+  davor — dieselbe Signatur wie die bekannten Faelle.
+
+Keiner der drei wirkt sich auf eine Glosse aus.

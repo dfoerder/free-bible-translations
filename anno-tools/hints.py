@@ -170,6 +170,47 @@ def analyse(nr, kap=None):
     return unbelegt, kollisionen, mehrdeutig
 
 
+def kompositum_im_vers(nr, kap=None):
+    """Unbelegtes Kompositum neben einem belegten Wort, das darin steckt.
+
+    Der Anlass: Haggai 2,12 traegt `Gewandzipfel` (im Bestand gar nicht
+    belegt) und `Zipfel` (5 Belege, fest gebunden auf *skirt · orla ·
+    pan · lembo*) im **selben Vers**. `hints.py` meldete dort **0
+    Kollisionen** — und konnte gar nicht anders: die Kollisionsprobe
+    vergleicht die Glossen des Bestands, und ein unbelegtes Wort hat
+    keine. Der Agent hat es selbst gesehen und beide auseinandergehalten.
+
+    Diese Probe braucht keine Glossen. Sie meldet, wo ein unbelegtes
+    Wort ein belegtes als Bestandteil enthaelt und beide im selben Vers
+    stehen — dann ist die Gefahr gross, dass die neu gepraegte Reihe
+    genau die des Bestandteils wird.
+    """
+    src = C.load_source(nr)
+    ch = src['chapters'] if 'chapters' in src else src
+    # Das eigene Buch zaehlt NICHT zum Bestand. Ist es schon einmal
+    # gebaut worden, weist es sonst seine eigenen neuen Woerter als
+    # belegt aus und die Probe meldet nichts — genau der Fall, den
+    # paketcheck.py fuer die Lemmata beschreibt.
+    belegt = {C.strip_punct(e['form']).lower()
+              for b, _, _, e in C.iter_corpus() if int(b) != int(nr)}
+    out = []
+    for k, vv in ch.items():
+        if kap is not None and int(k) != int(kap):
+            continue
+        for v, txt in vv.items():
+            formen = [C.strip_punct(x) for x in txt.split()]
+            formen = [f for f in formen if f]
+            klein = {f.lower(): f for f in formen}
+            frei = [f for f in klein if f not in belegt and len(f) > 6]
+            for f in frei:
+                for g in klein:
+                    if g == f or len(g) < 4 or g not in belegt:
+                        continue
+                    if g in f:
+                        out.append((f'{k},{v}', klein[f], klein[g]))
+    return out
+
+
 def bericht(nr, kap=None):
     src = C.load_source(nr)
     unbelegt, kollisionen, mehrdeutig = analyse(nr, kap)
@@ -204,6 +245,20 @@ def bericht(nr, kap=None):
         orte = ', '.join(f'{wo} ({lang} *{g}*)' for wo, lang, g in stellen[:4])
         mehr = f' … +{len(stellen)-4}' if len(stellen) > 4 else ''
         L.append(f'- `{"` ↔ `".join(lemmata)}` — {orte}{mehr}')
+    L.append('')
+
+    komp = kompositum_im_vers(nr, kap)
+    L.append(f'## Unbelegtes Wort neben belegtem Bestandteil ({len(komp)})')
+    L.append('')
+    L.append('Ein Wort, das der Bestand **nicht** kennt, steht im selben Vers '
+             'wie ein Wort, das darin steckt und fest gebunden ist. Die '
+             'Kollisionsprobe oben sieht das nicht — sie vergleicht '
+             'Bestandsglossen, und das neue Wort hat keine. Praeg seine Reihe '
+             'so, dass sie **nicht** mit der des Bestandteils zusammenfaellt. '
+             'Anlass: Haggai 2,12 `Gewandzipfel` neben `Zipfel`.')
+    L.append('')
+    for wo, lang_wort, kurz in komp:
+        L.append(f'- **{lang_wort}** ({wo}) enthaelt `{kurz}` — im Bestand gebunden')
     L.append('')
 
     L.append(f'## Mehrdeutige Formen im Bestand ({len(mehrdeutig)})')

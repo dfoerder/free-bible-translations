@@ -234,3 +234,44 @@ ihrer Zahl, die Belegstellen der seltenen dazu, und die Vorkommen mit
 einem Mehrwort an einer Position eigens gezaehlt — die fehlten in meiner
 Messung stillschweigend und erklaeren, warum ich 184 zaehlte und der
 Agent 229.
+
+
+### 15. `Jozadak` — franzoesisch und italienisch sehen vertauscht aus
+
+Der Bestand fuehrt den Namen als `Jehozadak · Josadac · Jehotsadak ·
+Iozadak` (5 Belege, Esra/Nehemia). Gegen die Ausgaben gehalten:
+
+- **LSG** schreibt **Jotsadak 11× gegen Jehotsadak 2×** — der Bestand
+  hat die Minderheitsform.
+- **RIV** schreibt Jehotsadak 7 : Jotsadak 5 und **„Iozadak" nirgends**.
+
+Die franzoesische und die italienische Spalte sehen aus, als waeren sie
+vertauscht. Gefunden vom Agenten fuer Haggai 2, der die Bestandsreihe
+trotzdem gesetzt hat — richtig so: **korpusweit zu entscheiden, nicht
+in einem Kapitel.** Betrifft Haggai 1,1 · 1,12 · 1,14 · 2,2 · 2,4 und
+die Belege in Esra und Nehemia.
+
+### 16. Zwei Ausreisser der `spricht`-Stellungsregel
+
+Die Regel (vorangestellt `parle`, nachgestellt `dit`) traegt im Bestand
+223:4 und 264:46. Zwei nachgestellte Stellen lesen `parle`, und beide
+sind Vorlagen, die ein Agent uebernehmen wuerde:
+
+- **Jesaja 22,25** „An jenem Tag, spricht der HERR der Heerscharen" —
+  derselbe 8-Token-Block wie Haggai 2,23. Der Haggai-Agent hat die
+  Stellungsregel ueber die Parallelenregel gestellt und `dit` gesetzt,
+  gestuetzt darauf, dass LSG in Haggai 2,23 selbst „dit l'Éternel des
+  armées" schreibt.
+- **Zephanja 2,9** — dort ist es kein Ausreisser, sondern der
+  Appositionsfall („der Gott Israels", siehe Eintrag zur Regel).
+
+Jesaja 22,25 bleibt der einzige echte. Nicht angefasst.
+
+### 17. `sagte` ↔ `spricht` steht im Bestand zweimal unaufgeloest
+
+4. Mose 14,28 und 2. Koenige 22,19 tragen beide Woerter im selben Vers
+mit derselben franzoesischen Glosse `dit`. Beide Haggai-Agenten haben
+die Stelle in ihren Versen (1,13 und 2,14) aufgeloest — unabhaengig
+voneinander mit derselben Bestandszeile `spoke · habló · parla ·
+parlò`. Die zwei alten Stellen bleiben, wie sie sind; die Regel
+„aufgeloest wird nur im Kollisionsvers" gilt in beide Richtungen.
