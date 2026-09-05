@@ -220,6 +220,13 @@ def main():
         n = 0
         with open(pfad, encoding='utf-8') as f:
             for zeile in f:
+                # Eine Zeile mit Pfeil ist eine KORREKTURNOTIZ, keine
+                # Vorgabe: `Feuer A2 → A1  (336 Belege einstimmig)` haelt
+                # fest, was falsch WAR. WORTFELD_AMOS.md fuehrt so seine
+                # Fehlerliste, und ohne diese Zeile meldete das Skript
+                # genau die drei Fehler noch einmal, die dort abgehakt sind.
+                if '→' in zeile or '->' in zeile:
+                    continue
                 m = ZEILE.match(zeile.rstrip())
                 if not m:
                     continue
@@ -227,8 +234,12 @@ def main():
                 # Kommentar hinter der Reihe abschneiden: „(142×)", „  ← s. u."
                 rest = re.split(r'\s{2,}|\s+\(|\s+←|\s+—', rest)[0].strip()
                 teile = [t.strip() for t in rest.split('·')]
-                if len(teile) != 4 or any(not t for t in teile):
-                    continue
+                # Eine Zeile ohne vollstaendige Vierer-Reihe wird trotzdem
+                # auf das LEVEL geprueft. Der Anlass: `WORTFELD_NAHUM.md`
+                # schrieb `schlottern B2`, der einzige Bestandsbeleg steht
+                # auf C1 — und weil die Zeile keine vier Glossen trug, sah
+                # das Skript sie gar nicht an.
+                nur_level = len(teile) != 4 or any(not t for t in teile)
                 n += 1
                 gesamt += 1
                 kand = []
@@ -256,6 +267,8 @@ def main():
                     befunde += 1
                     print(f'  LEVEL  `{lem}` steht hier auf {level}, '
                           f'der Bestand auf {mehr} ({anz}/{ges})')
+                if nur_level:
+                    continue
                 if tuple(teile) not in reihen[lem]:
                     befunde += 1
                     nah = [r for r in reihen[lem] if sum(a == b for a, b in zip(r, teile)) >= 2]

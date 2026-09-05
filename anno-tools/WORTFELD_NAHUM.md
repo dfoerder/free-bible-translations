@@ -138,7 +138,8 @@ niedermähen C1  (Partizip in 1,12, Infinitiv in 3,15 — der Formunterschied
                  ist kein Widerspruch, paketcheck meldet ihn trotzdem)
 sich häuten B2 · fortfliegen C1 · Gerissenes C1 · Lager B1 (Loewenbau)
 Vorrücken   B2  aus dem Verb-Bestand, NICHT aus `Vorrat`/`Vorrang`
-schlottern  B2 · wegfließen B2   (die einzigen zwei ohne Stammverwandten)
+schlottern  C1  knock together · se estremecen · chancellent · vacillano
+wegfließen  B2  (die einzigen zwei Formen ohne Stammverwandten im Bestand)
 ```
 
 ## 6 · Fuer die Nachbarbuecher
