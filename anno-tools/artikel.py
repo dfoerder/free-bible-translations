@@ -20,13 +20,25 @@ mindestens 80 Prozent Mehrheit. Alles darunter schweigt.
 """
 import collections, glob, json, os, re, sys
 
+# Die zweiwortigen Formen (`a la`, `de la`, `à la`) standen anfangs nicht
+# in der Tabelle. Der Agent fuer Nahum 2 fand deshalb einen Fehler, den
+# das Skript nicht gemeldet hatte: `zur Stadtmauer` trug es `alla` (das
+# Skript sah es) UND es `a la` (das Skript sah es nicht), beide vor dem
+# maskulinen `muro`. Wer nur eine Spalte prueft, findet nur die halbe
+# Kongruenz.
 ART = {
     'es': {'el': 'm', 'la': 'f', 'los': 'mp', 'las': 'fp',
-           'del': 'm', 'al': 'm'},
-    'fr': {'le': 'm', 'la': 'f', 'les': 'p', 'du': 'm', 'au': 'm'},
+           'del': 'm', 'al': 'm',
+           'a la': 'f', 'de la': 'f', 'a los': 'mp', 'a las': 'fp',
+           'de los': 'mp', 'de las': 'fp'},
+    'fr': {'le': 'm', 'la': 'f', 'les': 'p', 'du': 'm', 'au': 'm',
+           'à la': 'f', 'de la': 'f', 'aux': 'p', 'des': 'p'},
     'it': {'il': 'm', 'la': 'f', 'lo': 'm', 'i': 'mp', 'gli': 'mp',
            'le': 'fp', 'del': 'm', 'della': 'f', 'dei': 'mp',
-           'degli': 'mp', 'delle': 'fp', 'al': 'm', 'alla': 'f'},
+           'degli': 'mp', 'delle': 'fp', 'al': 'm', 'alla': 'f',
+           'ai': 'mp', 'alle': 'fp', 'agli': 'mp',
+           'nel': 'm', 'nella': 'f', 'nei': 'mp', 'nelle': 'fp',
+           'sul': 'm', 'sulla': 'f'},
 }
 # Nur diese deutschen Formen werden geprueft. Ohne den Filter las der Lauf
 # jede Glosse, die mit einem Artikelwort beginnt, als Artikel — `entlang`
