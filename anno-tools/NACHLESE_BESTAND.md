@@ -73,6 +73,18 @@ mit franzoesischen Sonderzeichen (à â è ê ë î ï ô û ù ç œ) ergab
 **0 Treffer** — der Fall ist ein Einzelstueck, kein Muster. Die Messung
 lohnt die Wiederholung nicht.
 
+### 8a. Jeremia 26,18 — italienischer Artikel im falschen Genus
+
+`der` vor `Tempelberg` steht italienisch als **`la`**, waehrend derselbe
+Vers `Tempelberg` als *monte del tempio* fuehrt — maskulin. Franzoesisch
+ist `la montagne du temple` dagegen **richtig**; nur die italienische
+Spalte ist falsch.
+
+Der Vers ist die woertliche Parallele zu **Micha 3,12**, wo es richtig
+steht (*il*). Gefunden vom Agenten fuer Micha 3 beim Uebernehmen der
+Vorlage — er hat den Block genommen und den Fehler **nicht**
+mituebernommen.
+
 ### 8. `Rechtsstreit` in Jeremia 25,31 · `kein`/`ningún` in Jeremia 14,10
 
 Einzelstellen aus der Jeremia-Arbeit.
@@ -157,3 +169,32 @@ aber notiert, damit sie nicht jedes Buch neu verhandelt wird.
 
 **Wer sie umdrehen will, muss alle 100 Stellen zugleich ziehen** — eine
 halbe Aenderung waere schlechter als beide ganzen.
+
+
+### 12. Micha 2,11 — `Bier` steht einmal im ganzen Korpus
+
+> „Ich predige euch Wein und **Bier**!"
+
+Dasselbe hebraeische Wort ist im l1912mod sonst **durchgehend anders
+modernisiert**:
+
+```
+    starkes Getränk   8×   (3Mo 10,9 · 5Mo 29,5 · Ri 13,4 · 13,7 · 13,14 …)
+    starkem Getränk   2×   (4Mo 6,3 · Spr 31,4)
+    starken Getränk   2×   (Jes 28,7 · 29,9)
+    Rauschtrank       2×   (Jes 5,11 · 5,22)
+    Bier              1×   — nur Micha 2,11
+```
+
+Vierzehn Stellen gegen eine. **Nicht geaendert** — eine Vereinheitlichung
+des Quelltextes ist eine andere Entscheidung als eine Glossenkorrektur,
+und `Bier` ist als deutsches Wort nicht falsch, nur allein.
+
+Die Glosse folgt dem Wort, das dasteht: `Bier` A2
+*beer · cerveza · bière · birra*. **Die App glossiert Deutsch — wer
+„Bier" liest, muss „Bier" lernen.** Alle vier Ausgaben lesen an der
+Stelle uebrigens dasselbe (*strong drink · bebida fuerte · boissons
+fortes · bevande forti*); die Abweichung besteht nicht zwischen den
+Ausgaben, sondern zwischen dem deutschen Text und allen vieren.
+
+Gefunden vom Agenten fuer Micha 2.
