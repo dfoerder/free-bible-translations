@@ -1,0 +1,249 @@
+PAKETE AMOS (Buch 30) — 9 Kapitel, 146 Verse
+
+Drei Pakete, je drei Kapitel, ein Agent je Kapitel:
+
+  Paket 1  Kapitel 1 · 2 · 3     (15 + 16 + 15 = 46 Verse)
+  Paket 2  Kapitel 4 · 5 · 6     (13 + 27 + 14 = 54 Verse)
+  Paket 3  Kapitel 7 · 8 · 9     (17 + 14 + 15 = 46 Verse)
+
+
+================================================================
+0 · VERSZAEHLUNG — keine Abweichung
+================================================================
+
+Alle vier Ausgaben decken sich Vers fuer Vers mit dem l1912mod, in
+allen neun Kapiteln. Versatz +0 durchgehend. Kein Sonderfall.
+(`kapitelgrenzen.py`, bestaetigt in KAPITELGRENZEN_27_39.md.)
+
+**LSG 9,15 endet mit einem freistehenden `~`.** Das ist eine
+Buchende-Marke aus dem Import, kein Textzeichen — alle sechzehn Tilden
+des Korpus stehen im letzten Vers ihres Buches. Nicht glossieren, nicht
+mitzaehlen. (BEFUND_LSG_TILDE.md.) Betrifft nur den Agenten fuer Kap. 9.
+
+
+================================================================
+1 · DIE GERICHTSFORMEL — achtmal, ZEICHENGLEICH zu halten
+================================================================
+
+Das strukturelle Merkmal des Buches. `dubletten.py` findet 17 Paare,
+sechzehn davon in Kapitel 1 und 2. Die Formel steht in
+
+    1,3 · 1,6 · 1,9 · 1,11 · 1,13 · 2,1 · 2,4 · 2,6
+
+und lautet jedesmal:
+
+    So spricht der HERR: Wegen der vielfachen Verbrechen [X]
+    mache ich das Urteil nicht rueckgaengig, weil ...
+
+**ACHTUNG — die vier Ausgaben helfen hier NICHT.** Sie alle lesen die
+hebraeische Zahlenformel woertlich („For three transgressions ... and
+for four" / „Por tres pecados ... y por el cuarto" / „A cause de trois
+crimes ... Meme de quatre" / „Per tre misfatti ... anzi per quattro").
+Der deutsche Text fasst sie zu **„die vielfachen Verbrechen"** zusammen.
+Eine positionsweise Uebernahme aus einer Ausgabe ist unmoeglich — es
+gibt in keiner Ausgabe ein Wort, das `vielfachen` entspraeche.
+
+Diese Reihen sind verbindlich, in allen acht Versen zeichengleich:
+
+    So          A1  Thus · Así · Ainsi · Così
+    spricht     A2  says · dice · dit · dice
+    Wegen       B1  Because of · A causa de · A cause des · A causa dei
+    vielfachen  B2  repeated · repetidos · répétés · ripetuti
+    Verbrechen  B2  crimes · crímenes · crimes · crimini
+    Urteil      B1  judgment · juicio · jugement · giudizio
+    weil        A1  because · porque · parce que · perché
+
+    Mehrwort `rueckgaengig machen` (getrennte Positionen, also `parts`
+    auf `mache` und `rueckgaengig`):
+                C1  revoke · revocar · révoquer · revocare
+    Die Bestandteile einzeln:
+    mache       A2  make · hago · fais · faccio
+    rueckgaengig B2 reversed · revocado · révoqué · revocato
+
+`vielfach` hat im Bestand **einen einzigen Beleg** (Lk 18,30,
+*many times over* — „vielfach mehr"), der hier nicht passt. Die Reihe
+oben ist neu gepraegt und gilt fuer das ganze Buch.
+
+`rueckgaengig` hat ebenfalls nur einen Beleg (Jes 43,13,
+*reversed · revocado · révoqué · revocato*) — die Reihe ist von dort.
+
+
+================================================================
+2 · DIE FEUERFORMEL — siebenmal, ZEICHENGLEICH zu halten
+================================================================
+
+    1,4 · 1,7 · 1,10 · 1,12 · 2,2 · 2,5   „Ich sende Feuer ..."
+    1,14                                   „Ich zünde ein Feuer an ..."
+
+    Ich sende Feuer in/nach [X], das die/seine Palaeste verzehren wird.
+
+    sende       B1  send · envío · envoie · mando
+    Feuer       A2  fire · fuego · feu · fuoco
+    Palaeste    B2  palaces · palacios · palais · palazzi
+    verzehren   C1  consume · consumir · consumer · consumare
+    Mauern      B1  walls · muros · murailles · mura
+
+**`verzehren` MUSS die consum-Reihe tragen.** Joel (29) hat die
+Trennung festgelegt und das Buch durchgehalten: Heuschrecken *fressen*
+(devor-Reihe), Feuer *verzehrt* (consum-Reihe). Amos hat `verzehren`
+7× und `fressen` gar nicht — aber die Trennung gilt korpusweit.
+Der Bestand fuehrt fuer `verzehren` auch devor-Reihen; **die sind hier
+falsch.**
+
+
+================================================================
+3 · ZWEI VORLAGEN, DIE WORT FUER WORT UEBERNOMMEN WERDEN
+================================================================
+
+**Amos 1,2 ← Joel 4,16 — dreizehn Tokens.** Joel ist seit 05.09.2026
+fertig; die Reihe steht so:
+
+    Der HERR bruellt vom Zion her und laesst seine Stimme aus
+    Jerusalem erschallen
+
+    bruellt     B2  roars · ruge · rugit · rugge
+    vom         A1  from the · del · du · dal
+    Zion        A1  Zion · Sión · Sion · Sion
+    her         B2  here · acá · ici · qua
+    Stimme      A2  voice · voz · voix · voce
+    aus         A1  from · desde · de · da
+    Jerusalem   A1  Jerusalem · Jerusalén · Jérusalem · Gerusalemme
+    Mehrwort `erschallen lassen` B2
+                    makes resound · hace resonar · fait retentir · fa risuonare
+    laesst      A2  makes · hace · fait · fa
+    erschallen  C1  resound · resonar · retentir · risuonare
+
+Der Rest von Amos 1,2 („Da verdorren die Weiden der Hirten, und der
+Gipfel des Karmel welkt") hat **keine** Vorlage — dort selbst
+entscheiden. `Weide` und `verdorren` sind aus Joel gebunden:
+
+    Weide       B1  pastures · pastos · pâturages · pascoli
+    verdorren   C1  (Joel 1,10 · 1,12 — dort nachsehen)
+
+**Amos 1,1 ← Hosea 1,1 — neun Tokens.** `Jerobeams des Sohnes des Joas
+des Koenigs von Israel`:
+
+    Jerobeams   A1  of Jeroboam · de Jeroboam · de Jéroboam · di Geroboamo
+    Joas        A1  Joash · Joás · Joas · Joas
+    Koenigs     A2  king · rey · roi · re
+    Israel      A1  Israel · Israel · Israël · Israele
+    Usias       A1  Uzziah · Uzías · Ozias · Uzzia
+    Juda        A1  Judah · Judá · Juda · Giuda
+    Mehrwort `zur Zeit` A2  in the time of · en tiempos de · au temps de · ai tempi di
+
+Kleinere Bloecke, ebenfalls aus dem Bestand:
+    1,4  ← Jer 49,27  `das die Palaeste Ben-Hadads`
+    1,10 ← Hes 26,4   `die Mauern von Tyrus`
+
+`parallelen.py <buch> <kapitel>` selbst laufen lassen — es findet mehr,
+als hier steht, und meldet den Versatz mit.
+
+
+================================================================
+4 · DIE FALLE `spricht`
+================================================================
+
+`spricht` steht 44× im Buch, in zwei verschiedenen Wendungen:
+
+    „spricht der HERR"        → fr **dit**    (Amos hat sie oft)
+    „spricht Gott, der HERR"  → fr **parle**  (204× einstimmig im Bestand)
+
+Der Bestand ist in der zweiten Wendung eindeutig:
+    spricht  A2  says · dice · **parle** · dice
+    Gott     A1  God · Dios · Dieu · Dio
+
+Am Vers pruefen, welche der beiden Wendungen dasteht. In 1,8 · 3,13 ·
+4,5 und weiteren steht „spricht Gott, der HERR".
+
+
+================================================================
+5 · WORTFELD RECHT — die Kollision, die Amos 5,24 baut
+================================================================
+
+    „Vielmehr fliesse das Recht wie Wasser und die Gerechtigkeit wie
+     ein nie versiegender Strom."  (5,24)
+
+Beide Woerter stehen im selben Vers. Die Bestandsreihen halten sie
+auseinander, wenn man die richtigen nimmt:
+
+    Recht          B1  justice · derecho · droit · diritto        (142×)
+    Gerechtigkeit  B2  righteousness · justicia · justice · giustizia  (287×)
+
+Keine Sprache traegt dasselbe Wort zweimal. **Die zweite Bestandslesart
+von `Recht` (*justice · justicia · justice · giustizia*, 20×) wuerde in
+5,24 in drei Sprachen mit `Gerechtigkeit` zusammenfallen** — sie ist
+hier falsch. Eine Lexikonfalle.
+
+
+================================================================
+6 · BESTANDSREIHEN, DIE DAS BUCH TRAGEN
+================================================================
+
+    HERR         A1  LORD · SEÑOR · ÉTERNEL · SIGNORE            (69×)
+    Heerschar    —   Lemma heisst `Heerschar`, NICHT `Heerscharen`
+                     (97 Belege der Form; `fixgloss.py show Heerscharen`
+                      schweigt deshalb — mit `belegt.py` nachsehen)
+    Israel       A1  Israel · Israel · Israël · Israele          (27×)
+    Palast       B2  palace(s) · palacio(s) · palais · palazzo/i (10×)
+    Verbannung   C1  exile · exilio · exil · esilio               (5×)
+    Amoriter     B2  Amorites · amorreos · Amoréens · Amorei
+    Nasiraeer    C1  Nazirite · nazareo · naziréen · nazireo      (5 Belege, alle 4Mo 6)
+    ausrotten    C1  cut off · eliminar · retrancher · eliminare
+    ausliefern   C1  hand over · entregar · livrer · consegnare
+    Riegel       B2  bars · barras · barres · sbarre
+    Zepter       C1  scepter · cetro · sceptre · scettro
+    Grimm        C2  fury · furor · fureur · furore              (66× einstimmig)
+    Erbarmen     C1  mercy · compasión · pitié · pietà
+    Dreschschlitten B2 threshing sledge · trillo · traîneau · trebbia
+    Loewe        A2  lion · león · lion · leone
+
+`Frevel` (3 Belege, *outrage · infamia · infamie · infamia*) steht in
+Amos **nicht** — der Text hat durchgehend `Verbrechen`. Nicht verwechseln.
+
+
+================================================================
+7 · ORTS- UND VOELKERNAMEN
+================================================================
+
+Vor jedem Namen `belegt.py <Name>` laufen lassen. Die Zwillingsregel gilt:
+derselbe Ort kann unter zwei deutschen Schreibungen im Bestand stehen.
+
+Im Buch: Tekoa · Damaskus · Gilead · Hasael · Ben-Hadad · Awen ·
+Bet-Eden · Aram · Kir · Gaza · Aschdod · Aschkelon · Ekron · Philister ·
+Tyrus · Edom · Teman · Bozra · Ammoniter · Rabba · Moab · Kerijot ·
+Juda · Israel · Jerusalem · Amoriter · Aegypten · Bethel · Gilgal ·
+Beerscheba · Samaria · Karmel · Baschan · Zion · Kalne · Hamat · Gat ·
+Dan · Kusch · Kaftor · Sikkut · Kewan · Damaskus · Jerobeam · Amazja ·
+Isaak · Josef · David · Sodom · Gomorra
+
+**RIV schreibt Namen mit `J` haeufig als `I`** (672 Vorkommen in 201
+Formen, gegen LSG 3 · RV 13 · WEB 19 · de 20). Wer eine italienische
+Namensglosse aus der RIV-Zeile nimmt, muss sie gegen den Bestand und
+gegen die anderen drei Ausgaben pruefen. BEFUNDE_RIV_ANLAUT_J.md.
+
+**RIV verliert Anlaute.** In Joel fanden sich drei Faelle, jeder
+korpusweit einmalig (`ecchi` → *secchi*, `alirà` → *salirà*, und ein
+Imperativ als Infinitiv: `Radunare` → *Radunate*). Wer eine seltene
+RIV-Form sieht, zaehlt sie **korpusweit**, nicht nur im eigenen Buch.
+RIV_ANLAUTFEHLER.md.
+
+
+================================================================
+8 · WAS JEDER AGENT LAEUFT, BEVOR ER ABGIBT
+================================================================
+
+    export ANNO_OUT=<pfad>/out            (Pflicht, sonst laeuft nichts)
+    cd anno-tools
+
+    python3 selfcheck.py 30 <kap> $ANNO_OUT/30/ch<kap>.json
+    python3 konvention.py 30 <kap>
+    python3 levelcheck.py 30 <kap>
+    python3 sweep.py 30
+    python3 sweeplemma.py 30 <kap> $ANNO_OUT/30/ch<kap>.json
+    python3 glosskollision.py --datei 30 <kap> $ANNO_OUT/30/ch<kap>.json
+    python3 kongruenz.py 30
+    python3 artikel.py 30
+
+**Kein Kapitel gilt als fertig, das `selfcheck.py` nicht sauber
+durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am
+Vers geprueft und im Bericht begruendet — verworfen oder aufgeloest.
