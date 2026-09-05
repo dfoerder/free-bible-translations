@@ -57,6 +57,9 @@ AUSNAHMEN = {
     'immagine':'fs', 'immagini':'fp',
     # Aus Hosea: `viti` (Weinstoecke) ist feminin, die Endung sagt maskulin.
     'vite':'fs', 'viti':'fp', 'sentiero':'ms', 'sentieri':'mp',
+    # Franzoesische Unveraenderliche auf -s: die Endung sagt Plural,
+    # das Wort ist im Singular gleich (`puits`, `corps`, `pays`, `bois`).
+    'puits':'ms', 'corps':'ms', 'pays':'ms', 'bois':'ms', 'temps':'ms',
     'mezzo':'ms', 'greggi':'fp', 'gregge':'ms', 'fonti':'fp', 'fonte':'fs',
     # Feminina auf -i im Plural: die Endung sagt hier Maskulinum, das Genus
     # ist feminin. `merci` und `torri` machten allein 12 der 12 Fehlalarme im
@@ -122,10 +125,19 @@ FR_STUMM = {
 }
 
 
+# Franzoesische Unveraenderliche: die Endung sagt Plural, das Wort ist im
+# Singular gleich. `puits` machte den letzten Fehlalarm in Hosea aus.
+FR_INVARIANT = {'puits', 'corps', 'pays', 'bois', 'temps', 'fois', 'mois',
+                'bras', 'poids', 'repas', 'palais', 'prix', 'choix',
+                'discours', 'cours', 'concours', 'univers', 'progrès',
+                'succès', 'procès', 'dos', 'nez', 'voix', 'croix', 'noix',
+                'paix', 'toux', 'faux', 'roux'}
+
+
 def fr_numerus(nomen):
     """Nur Numerus, nicht Genus — siehe Modulkopf."""
     n = nomen.strip().split()[0].lower().strip("'’")
-    if not n or n in FR_STUMM:
+    if not n or n in FR_STUMM or n in FR_INVARIANT:
         return None
     if len(n) < 4:
         return None

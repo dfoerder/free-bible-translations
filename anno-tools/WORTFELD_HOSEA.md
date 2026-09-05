@@ -424,3 +424,172 @@ der deutsche Text glossiert worden.
 **Jeremia 14,10**: `kein` steht dort spanisch als *ningún*, waehrend
 `Gefallen` *complacencia* (feminin) ist. Gefunden vom Agenten fuer
 Hosea 8, der die Stelle als Vorlage haette uebernehmen sollen.
+
+## 4 · Paket 4 — Kapitel 12 · 13 · 14: das Buch ist fertig
+
+**Hosea: 14 Kapitel, 197 Verse, 4731 Eintraege, 231 Mehrwoerter.**
+`validate.py` ohne Befund, `qa.py` 0, `hilfsverb.py` 0, `kongruenz.py` 0.
+`paketcheck` Abschnitt **A war in allen vier Paketen leer**.
+
+### Die Verszaehlung — und was `ausgaben.py` daraus macht
+
+Das Buch hat drei Zaehlbrueche, und **die vier Ausgaben sind sich
+untereinander uneinig**. Am Text nachgemessen und von den Agenten
+bestaetigt:
+
+| deutsch | en · it | es | fr |
+|---|---|---|---|
+| 1,1–9 | 1,1–9 | 1,1–9 | 1,1–9 |
+| **2,1–25** | **1,10 – 2,23** | **1,10 – 2,23** | 2,1–25 |
+| 3,1 – 11,11 | gleich | gleich | gleich |
+| **12,1–15** | **11,12 – 12,14** | **12,1–14** (Merge) | 12,1–15 |
+| 13,1–15 | 13,1–15 | 13,1–15 | 13,1–15 |
+| **14,1** | **13,16** | **13,16** | **13,16** |
+| **14,2–10** | **14,1–9** | **14,1–9** | **14,1–9** |
+
+**Franzoesisch folgt der deutschen Zaehlung durch Kapitel 1 bis 12** und
+schert erst in 13/14 aus. **Spanisch zieht 12,14 und 12,15 zu einem Vers
+zusammen** — 196 gegen 197 im ganzen Buch; fuer 12,15 gibt es keine
+spanische Zeile, der Vers ist aus drei Ausgaben glossiert.
+
+**`ausgaben.py` waehlt in vier Kapiteln den falschen Versatz** und warnt
+jedes Mal selbst, dass +0 besser liegt: **1 · 11 · 12 (spanisch) · 13**.
+In allen vier Faellen ist die Warnung richtig. Die Agenten haben es
+jedes Mal am Text nachgemessen.
+
+### Die drei Vorlagen ohne Dublettenmeldung
+
+`dubletten.py` findet in Hosea **null Paare** — es misst ab 60 %
+gemeinsamer Wortformen und fuenf Tokens. Drei Ueberschneidungen liegen
+darunter und waren trotzdem wichtig:
+
+    5,3  ↔ 6,10   beim Einsammeln angeglichen (Paket 3)
+    6,4  ↔ 13,3   `Morgenwolke` · `Tau` · `früh` — in ch6.json nachgeschlagen
+    12,2 ↔ 13,15  `Ostwind` — von Kapitel 12 in den Bericht geschrieben,
+                  von Kapitel 13 uebernommen; die beiden Agenten liefen
+                  gleichzeitig
+
+**In 13,3 fehlt das Mehrwort.** Die Vorlage 6,4 traegt `früh am Morgen`
+A2; 13,3 schreibt nur `früh`. Der Agent hat es gesehen und keinen
+Mehrwort-Eintrag gesetzt.
+
+### `parallelen.py` — dreimal gefragt, einmal getroffen
+
+    Kap. 6   Matthaeus 9,13 / 12,7    **nicht gemeldet, zu Recht**
+    Kap. 11  Matthaeus 2,15            **nicht gemeldet, zu Recht**
+    Kap. 13  1. Korinther 15,55        **gemeldet — 5 Tokens woertlich**
+
+Die ersten beiden lesen im Deutschen ganz andere Woerter
+(„Barmherzigkeit will ich und nicht Opfer" gegen „Liebe ist mir lieber
+als Opfer"; „habe ich meinen Sohn gerufen" gegen „rief ich meinen
+Sohn"). Der laengste gemeinsame Block liegt unter der Schwelle.
+
+**13,14 ist der lehrreichste Fall des Buches.** Der Block „Tod, wo ist
+dein Stachel" steht woertlich in 1. Korinther 15,55 — und **keine der
+vier Ausgaben liest hier „Stachel"**: WEB *your plagues*, LSG *ta peste*,
+RIV *sarei la tua peste*, RV *yo seré tu muerte*. Der deutsche Text folgt
+dem neutestamentlichen Zitat, also folgt die Glosse ihm auch. Der
+Bestand entscheidet gegen alle vier Ausgaben, weil der deutsche Text es
+tut.
+
+Zwei weitere Bestandsvorlagen hat `parallelen.py` in Kapitel 13
+geliefert und der Agent uebernommen: **13,8 = 2. Samuel 17,8** (9 Tokens,
+die Baerin) und **13,4 = Jesaja 43,11** (7 Tokens, „ausser mir gibt es
+keinen Retter") — letzteres entschaerft zugleich eine Lexikonfalle,
+denn `Retter` steht im Bestand fast gleichauf (21× *deliverer* gegen 18×
+*Savior*).
+
+### Wo der l1912mod von allen vier Ausgaben zugleich abweicht
+
+Dritter und vierter Fall im Buch, nach 7,6 und 7,14:
+
+    12,5   „dort redete er **mit ihm**"    alle vier: *with us · con nosotros ·
+                                            nous a parlé · con noi*
+    13,14  „dein **Stachel**"              alle vier: *plagues · peste · muerte*
+
+### Neu gepraegt
+
+    Ostwind      B2  east wind · viento del este · vent d'est · vento dell'est
+    Totenreich   C1  realm of the dead · reino de los muertos · séjour des morts · regno dei morti
+    Stachel      C1  sting · aguijón · aiguillon · pungiglione   (aus 1. Kor 15,55)
+    anbauen      B1  grow · cultivar · cultiver · coltivare
+    anfallen     B2  ·  rechtzeitig B1  ·  hinterherlaufen B2
+    einen Rechtsstreit führen  C1  Mehrwort
+
+### Was die Agenten am Auftrag widerlegt haben
+
+| Vorgabe | tatsaechlich |
+|---|---|
+| `Handel` in 12,8 | steht **in ganz Hosea nirgends** |
+| `Waage` sei zu praegen | die Pluralform `Waagen` ist **direkt belegt** (3. Mose 19,36) |
+| `Zypresse` in 14,6–8 | in **14,9** |
+| `Libanon` und `Zypresse` „zu pruefen" | beide **fest gebunden**, nichts zu entscheiden |
+| 14,3 sei durchgehend 2. Person Plural | traegt **beide Anreden**: `Nehmt`/`Sagt`/`kehrt` an Israel, `Vergib`/`nimm an` an Gott |
+| `sweeplemma.py` sei der ergiebige Lauf | in Kapitel 14 fand **`sweep.py`** die einzige Luecke |
+| 13,3 uebernimmt `früh am Morgen` | 13,3 schreibt nur `früh` — **kein Mehrwort** |
+
+### Vier Werkzeugverbesserungen aus diesem Buch
+
+**1. `promptcheck.py` liest deutsche Anfuehrungszeichen.** Zwei falsche
+Woerter standen in einem Verszitat statt in Backticks (`umkehren` statt
+`zurückkehren`, `Morgenrot` statt `Morgenröte`).
+
+**2. `belegt.py` sagt, ob es die FORM oder das LEMMA zaehlt** und meldet
+die Lesarten des Lemmas mit. Der Fehler war mir viermal unterlaufen
+(`Klauen` · `Priestergewand` · `Motte` · `Großkönig`).
+
+**3. `kongruenz.py` prueft das Hilfsverb beim reflexiven Perfekt.**
+Vier Stellen im Buch: 1,2 · 6,10 · 7,13 · 8,1. Die ersten drei waren
+falsch, die vierte ist es nicht — dort traegt das `haben` zugleich ein
+nicht reflexives Partizip („weil sie den Bund gebrochen **und** sich
+aufgelehnt haben"). Der Lauf sucht seit Kapitel 14 auch **hinter** dem
+Partizip, weil im Nebensatz dort das Hilfsverb steht.
+
+**4. Zwei Ausnahmelisten ergaenzt**: italienische Feminina auf `-i`
+(`viti`) und franzoesische Unveraenderliche auf `-s` (`puits`, `corps`,
+`pays`). Danach meldet `kongruenz.py` fuer Hosea **null**.
+
+### Die Ausgaben
+
+**RIV1927 — sechzehn Defekte in vierzehn Kapiteln**, elf davon fehlende
+Anfangsbuchstaben:
+
+    1,1 `zechia`→Ezechia · 1,1 `Acaz`→Achaz · 1,6 `erché`→perché
+    4,14 `h'è`→ch'è · 5,5 `iuda`→Giuda · 5,8 `eniamino`→Beniamino
+    5,15 `uando`→Quando · 6,9 `ichem`→Sichem · 7,1 `oiché`→poiché
+    7,2 `sse`→esse · 8,6 `amaria`→Samaria · 8,7 `aranno`→faranno
+    11,6 `de' oro`→de' loro · 12,12 `uardiano`→guardiano
+    13,15 `ggetti`→oggetti · 14,7 `aranno`→saranno
+
+Dazu vier Setzfehler ohne Anlautverlust: `capelli bianche` (7,9),
+`i giorno` (9,7), `hai profeti` und `le menzogna` (12,10 · 12,2).
+
+**Zwei dieser Faelle bemessen die Grenzen des Detektors**, und beide sind
+in `RIV_ANLAUTFEHLER.md` nachgetragen:
+
+- **`de' oro`** findet er nicht, weil `oro` selbst ein haeufiges Wort ist
+  (Gold). Wo das verstuemmelte Wort zufaellig ein echtes Wort ergibt,
+  hilft nur Lesen.
+- **`uardiano`** faellt durch die Haeufigkeitsschwelle: der Lauf verlangt
+  ein mindestens zwanzigmal haeufigeres Gegenstueck, `guardiano` hat 15.
+
+**Die dokumentierten 440 verdaechtigen Vorkommen sind damit doppelt eine
+Untergrenze.**
+
+**WEB, RV1909mod und LSG1910** waren in vierzehn Kapiteln zusammen
+**fuenfmal** auffaellig. RV siezt in vierzehn Versen — jedes Mal auf
+`vosotros` umgestellt.
+
+### Ein Bestandsbefund, der die Lexikonfalle in neuer Form zeigt
+
+**`gerade`**: `lexicon.py` zeigt fuer die Wortform nur die temporalen
+Lesarten (*just then · precisely*, zusammen 82 Belege). Unter demselben
+Lemma stehen rund zwanzig Belege der Adjektiv-Lesart *straight · recto ·
+droit · diritto*, die 14,10 braucht — **sie stehen aber unter anderen
+Wortformen**. Wer nur den Extrakt liest, haelt sie fuer neu und erfindet
+sie. Genau die Luecke, die `belegt.py` seit Daniel schliesst.
+
+Dazu drei Bestandsfehler ausserhalb Hoseas: **Jeremia 25,31**
+(`Rechtsstreit` italienisch maskulin, Artikel feminin), **Jeremia 14,10**
+(`kein` spanisch *ningún* vor femininem `complacencia`) und die
+korpusweite `Zeboim`-Reihe (*Seboim* statt *Tseboim*).
