@@ -105,20 +105,31 @@ EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]')
 
 
 def zitate(zeile):
-    """Jedes Zitat der Ausgabe zuordnen, die zuletzt genannt wurde.
+    """Jedes Zitat den Ausgaben zuordnen, die unmittelbar davor stehen.
 
     `WEB „Sakkuth"/„Kaiwan"` nennt WEB einmal und zitiert zweimal — beide
     Zitate gehoeren zu WEB. Ein Muster, das nur bis zum ersten Zitat
     reicht, laesst die Haelfte durch.
+
+    `WEB/RV „temple", LSG/RIV „palais"` nennt ZWEI Ausgaben vor einem
+    Zitat, und das Zitat steht nur in einer davon. Deshalb wird gegen
+    die ganze Gruppe geprueft und nur gemeldet, was in KEINER steht.
     """
-    treffer, aktuell, pos = [], None, 0
-    marken = [(m.start(), m.group(1)) for m in NENNUNG.finditer(zeile)]
+    treffer = []
+    marken = [(m.start(), m.end(), m.group(1)) for m in NENNUNG.finditer(zeile)]
     for m in EINZITAT.finditer(zeile):
-        for start, kuerzel in marken:
-            if start < m.start():
-                aktuell = kuerzel
-        if aktuell:
-            treffer.append((aktuell, m.group(1)))
+        gruppe, ende = [], None
+        for start, stop, kuerzel in marken:
+            if start >= m.start():
+                break
+            # Eine neue Gruppe beginnt, wo zwischen zwei Nennungen mehr
+            # steht als ein Trennzeichen.
+            if ende is not None and zeile[ende:start].strip(' /,+&').replace('und', ''):
+                gruppe = []
+            gruppe.append(kuerzel)
+            ende = stop
+        if gruppe:
+            treffer.append((tuple(gruppe), m.group(1)))
     return treffer
 
 
@@ -127,7 +138,7 @@ def ausgabentext(nr):
     import glob, json, os
     basis = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out = {}
-    for kuerzel, pfad in set(AUSGABEN.items()):
+    for kuerzel, pfad in list(AUSGABEN.items()) + [('__de__', 'deu/l1912mod')]:
         g = glob.glob(os.path.join(basis, pfad, f'{nr}_*.json'))
         if not g:
             continue
@@ -142,16 +153,20 @@ def ausgabentext(nr):
 
 def pruefe_zitate(pfad, nr):
     texte = ausgabentext(nr)
+    # Der deutsche Text zaehlt mit: ein Zitat, das dort steht, ist ein
+    # Zitat des Quelltextes, keine Behauptung ueber eine Ausgabe.
+    deutsch = texte.pop('__de__', '')
     if not texte:
         print(f'  (keine Ausgabendateien fuer Buch {nr} gefunden)')
         return 0
     befunde = 0
     with open(pfad, encoding='utf-8') as f:
         for zeile in f:
-            for kuerzel, zitat in zitate(zeile):
-                txt = texte.get(kuerzel)
-                if txt is None:
+            for gruppe, zitat in zitate(zeile):
+                kandidaten = [texte[k] for k in gruppe if k in texte]
+                if not kandidaten:
                     continue
+                kuerzel = '/'.join(dict.fromkeys(gruppe))
                 such = re.sub(r'[^a-z0-9äöüàâèéêëîïôûùç ]', ' ',
                               zitat.lower().replace('\u2019', "'")
                               .replace("'", ' ')).split()
@@ -160,14 +175,17 @@ def pruefe_zitate(pfad, nr):
                 # Das laengste Wort des Zitats muss vorkommen, und bei
                 # mehreren Woertern auch die Folge.
                 lang = max(such, key=len)
-                if len(lang) >= 4 and lang not in txt.split():
-                    befunde += 1
-                    print(f'  AUSGABE {kuerzel} liest „{zitat}" — '
-                          f'`{lang}` steht nirgends im Buch')
-                elif len(such) > 1 and ' '.join(such) not in txt:
-                    befunde += 1
-                    print(f'  AUSGABE {kuerzel} liest „{zitat}" — '
-                          f'die Wortfolge steht nirgends im Buch')
+                def steht(txt):
+                    if len(lang) >= 4 and lang not in txt.split():
+                        return False
+                    if len(such) > 1 and ' '.join(such) not in txt:
+                        return False
+                    return True
+                if any(steht(x) for x in kandidaten) or steht(deutsch):
+                    continue
+                befunde += 1
+                print(f'  AUSGABE {kuerzel} liest „{zitat}" — '
+                      f'steht in keiner der genannten Ausgaben')
     return befunde
 
 

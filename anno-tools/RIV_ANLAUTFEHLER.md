@@ -312,6 +312,11 @@ Der Defekt trifft nicht nur `G`: 1. Samuel 17,23 hat „quel Filisteo di
 `ontro` fuer *contro*, `ecchi` fuer *secchi* (Joel 1,12 · Josua 9,4),
 `alirà` fuer *salirà* (Joel 2,20).
 
+**Amos 8,3 ist der bisher sauberste Beleg fuer die Regel:** „grande sarà
+il **umero** dei cadaveri" — `umero` steht **1×** im ganzen RIV-Korpus,
+`numero` **209×**. Und es steht, wie die Regel es verlangt, unmittelbar
+hinter dem kurzen `il`. Gefunden vom Agenten fuer Amos 8.
+
 **Was daraus folgt:** wer eine RIV-Zeile abzaehlt, muss besonders auf
 das Wort **nach `di`, `a`, `in`, `e`** achten. Dort steht der Defekt.
 Und ein verstuemmeltes Wort, das zufaellig ein echtes ergibt (`oro`

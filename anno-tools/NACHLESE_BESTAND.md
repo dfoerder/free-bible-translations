@@ -98,3 +98,62 @@ Trauergewand ↔ Trauersack   en gleich (sackcloth)
 - **1. Chronika 27,20 traegt beide Typen im selben Vers**: `Ioel` und
   `edaia` (→ *Pedaia*)
 - **LSG-Tilden**: 16 Verse, alle Buchschluesse — `BEFUND_LSG_TILDE.md`
+
+---
+
+## D · Befunde im deutschen Quelltext selbst
+
+Nicht im Bestand und nicht in den Ausgaben, sondern im modernisierten
+`l1912mod` — der Grundlage aller Glossen. **Hier wurde nichts geaendert;
+eine Textkorrektur ist eine andere Entscheidung als eine Glossenkorrektur.**
+
+### 10. Amos 9,3 — `Verbuergen` statt `Verbaergen`
+
+> „**Verbuergen** sie sich vor meinen Augen auf dem Grund des Meeres,
+> ich wuerde der Schlange befehlen, sie dort zu beissen."
+
+Gemeint ist der Konjunktiv II von **`verbergen`** (`verbaergen`), nicht
+`verbuergen` (= garantieren). Der Parallelsatz im selben Vers hat
+`Versteckten sie sich`, und alle vier Ausgaben lesen einstimmig
+„verbergen/verstecken":
+
+    WEB  „though they be hidden from my sight"
+    RV   „si se ocultan de mi vista"
+    LSG  „S'ils se dérobent à mes regards"
+    RIV  „quand'anche s'occultassero al mio sguardo"
+
+Im ganzen deutschen Korpus steht die Form **einmal** — hier. Die
+uebrigen Belege des Stammes sind `verbarg` (8×) und `verbargst` (1×).
+
+Die Glosse in Amos 9,3 folgt dem Sinn (*hide*), nicht der verschriebenen
+Form; das Lemma steht auf `verbergen`.
+
+
+---
+
+## E · Eine Bestandskonvention, die von LSG abweicht
+
+### 11. „…, spricht Gott, der HERR" steht 100× auf `parle`, LSG liest dort `dit`
+
+Kein Fehler, aber eine Entscheidung, die niemand aufgeschrieben hatte.
+Gemessen ueber den ganzen Korpus, nach der Stellung im deutschen Satz:
+
+```
+                          LSG liest            Bestand glossiert
+    vorangestellt         parle 78 : dit  1    parle 110  (einstimmig)
+    nachgestellt          dit   80 : parle 37  parle 100  (einstimmig)
+```
+
+Vorangestellt sind sich Ausgabe und Bestand einig. **Nachgestellt nicht:**
+LSG schreibt dort mehrheitlich „Dit le Seigneur, l'Éternel", der Bestand
+glossiert durchgehend *parle*. Die 100 Faelle stammen fast alle aus
+Hesekiel, wo die Wendung 198× steht.
+
+Der Agent fuer **Amos 8** hat den Widerspruch am Vers bemerkt (LSG liest
+in 8,3 · 8,9 · 8,11 dreimal „dit") und ist **bewusst beim Bestand
+geblieben** — richtig, denn die Konsistenz ueber 100 Stellen wiegt
+schwerer als die Treue zu einer Ausgabe an drei. Die Entscheidung gehoert
+aber notiert, damit sie nicht jedes Buch neu verhandelt wird.
+
+**Wer sie umdrehen will, muss alle 100 Stellen zugleich ziehen** — eine
+halbe Aenderung waere schlechter als beide ganzen.
