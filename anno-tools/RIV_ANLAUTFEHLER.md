@@ -137,3 +137,32 @@ Glossen des Bestands: **null** enthalten eine Klammerziffer.
 gegen den deutschen Vers haelt, hat zwei Tokens Vorsprung — dieselbe Falle wie
 die Sprecherangaben, die WEB im Hohelied als Fliesstext fuehrt. Jede
 Buchvorbereitung eines betroffenen Buches nennt die Stellen.
+
+## Nachtrag 3: die Frequenzheuristik hat eine blinde Stelle
+
+Gefunden beim Annotieren von **Hosea 11**: RIV schreibt in 11,6
+`de' oro disegni` statt `de' loro disegni`. Korpusweit steht `de' oro` an
+genau **zwei** Stellen — 4. Mose 26,2 und Hosea 11,6 — gegen **51×**
+`de' loro`.
+
+**Der uebliche Detektor findet das nicht.** Er sucht seltene Formen, die
+durch einen vorangestellten Buchstaben zu einer viel haeufigeren werden.
+`oro` ist aber selbst ein haeufiges italienisches Wort (Gold, 118
+Vorkommen) — also faellt es durch kein Sieb.
+
+Betroffen ist jeder Fall, in dem das verstuemmelte Wort **zufaellig ein
+echtes Wort** ergibt:
+
+    loro  → oro     (Gold)
+    lira  → ira     (Zorn)
+    corte → orte
+    cera  → era
+    palo  → alo
+
+**Die oben gemessenen 440 verdaechtigen Vorkommen sind damit eine
+Untergrenze, keine Zahl.** Wie weit darueber, ist von aussen nur mit
+Kontextmodellen zu bestimmen — ein eigener Arbeitsgang.
+
+**Fuer die Kapitelarbeit heisst das:** der Frequenzlauf bleibt der erste
+Schritt, aber er ersetzt das Lesen nicht. Zwei der bisher gefundenen
+RIV-Defekte in Daniel und Hosea waren nur durch Lesen zu finden.

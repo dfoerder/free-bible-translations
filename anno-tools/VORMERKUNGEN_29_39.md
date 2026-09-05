@@ -62,6 +62,19 @@ Umfang des Defekts:
     `eniamino` statt `Beniamino` — 5 Stellen (157× korrekt)
     `uando`   statt `Quando`   —  8 Stellen (1354× korrekt)
     `oiché`   statt `poiché`   —  21 Stellen (977× korrekt)
+    `sse`     statt `esse`     —  3 Stellen (179× korrekt)
+    `de' oro` statt `de' loro` —  4. Mose 26,2  ·  Hosea 11,6
+                                  (51× korrekt) — der Frequenzdetektor
+                                  findet das nicht, weil `oro` selbst ein
+                                  haeufiges Wort ist
+
+## Bestandsbefunde an italienischen Namen — dieselbe Familie wie `Iehu`
+
+    `Zeboim`  it  Bestand *Seboim* (4 von 6 Belegen)  —  RIV schreibt
+                  **7× `Tseboim`** und kein einziges `Seboim`.
+                  Die zweite Bestandslesart (1. Samuel 13,18 ·
+                  Nehemia 11,34) hat es bereits richtig.
+                  Gefunden vom Agenten fuer Hosea 11.
 
 ## Korpusweit offen, in jedem Buch zu beachten
 
