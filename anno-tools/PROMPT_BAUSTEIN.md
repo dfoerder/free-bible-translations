@@ -18,6 +18,11 @@ Fehler durchgegangen.
 
 Ein Baustein mit Platzhaltern kann diesen Fehler nicht tragen.
 
+**Der zweite Anlass** kam aus Micha Paket 2: das Scratchpad ist nicht pro
+Agent getrennt, und zwei Agenten haben einander Hilfsskripte
+ueberschrieben. Deshalb steht jetzt oben ein eigenes Arbeitsverzeichnis
+je Kapitel.
+
 ---
 
 Du annotierst **<BUCH> (Buch <NR>), Kapitel <KAP>** des modernisierten
@@ -34,6 +39,15 @@ Das ist Pflicht — ohne die Variable laeuft kein Werkzeug. Alle Werkzeuge
 werden **aus `anno-tools/` heraus** aufgerufen.
 
 Deine Abgabe: `$ANNO_OUT/<NR>/ch<KAP>.json`
+
+**Dein Arbeitsverzeichnis fuer alles andere:** `$ANNO_OUT/../work/<KAP>/`
+— lege es an und schreibe **jede** Zwischendatei und **jedes** Hilfsskript
+dorthin. Mehrere Agenten arbeiten gleichzeitig im selben Scratchpad; in
+Micha Paket 2 haben zwei Agenten einander `build1.py` und `build2.py`
+ueberschrieben, und einer hat versehentlich das Skript des anderen
+ausgefuehrt. Es ging gut aus, weil beide es gemerkt haben — verlass dich
+nicht darauf. Auch Teildateien (`ch<KAP>.partN.json`) gehoeren in dein
+Arbeitsverzeichnis, nicht neben die Abgabe.
 
 ## Eintragsformat
 
