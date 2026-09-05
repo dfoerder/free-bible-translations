@@ -459,3 +459,13 @@ der Verlust trifft offenbar den Wortanfang nach jeder kurzen
 Unterbrechung, nicht nur nach `di`, `a`, `in`, `e`.
 
 Gefunden vom Agenten fuer Habakuk 1.
+
+
+### Zefanja 1,18: `ivorato` fuer *divorato*
+
+RIV liest „tutto il paese sarà **ivorato** dal fuoco". Korpusweit:
+`ivorato` **1×** (nur hier), `divorato` **28×**. Der Verlust steht hinter
+`sarà` — ein kurzes Wort auf Vokal, also Klasse 1.
+
+Auf die Glossen wirkt er sich nicht aus: der deutsche Text sagt
+`verzehrt`, und die consum-Reihe kommt aus dem Bestand.

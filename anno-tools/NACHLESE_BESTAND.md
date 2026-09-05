@@ -198,3 +198,17 @@ fortes · bevande forti*); die Abweichung besteht nicht zwischen den
 Ausgaben, sondern zwischen dem deutschen Text und allen vieren.
 
 Gefunden vom Agenten fuer Micha 2.
+
+
+### 13. Jeremia 33,22 — franzoesischer Artikel im falschen Genus
+
+`des` vor `Himmels` steht franzoesisch als **`des`** (Plural), waehrend
+derselbe Vers `Himmel` als *ciel* fuehrt — maskulin **Singular**. Der
+Bestand setzt vor `ciel` 106× `du` und nur 2× `des`; Jeremia 19,13
+schreibt dieselbe Wendung richtig als *armée du ciel*.
+
+Gefunden vom Agenten fuer Zefanja 1, der den Block „das Heer des
+Himmels" aus Jeremia 33,22 uebernehmen wollte, den Fehler bemerkte und
+in seinem eigenen Vers `du` setzte — **die Vorlage also benutzte, ohne
+ihren Fehler mitzunehmen**. Derselbe Vorgang wie bei Micha 3,12 gegen
+Jeremia 26,18.
