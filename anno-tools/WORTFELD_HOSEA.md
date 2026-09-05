@@ -296,3 +296,131 @@ entschieden.
 **Jeremia 25,31**: `Rechtsstreit` ist dort italienisch *contenzioso*
 (maskulin), der Artikel `einen` aber *una*. Gefunden vom Agenten fuer
 Hosea 4 an der Parallelstelle zu 4,1.
+
+## 3 · Paket 3 — Kapitel 8 · 9 · 10 · 11
+
+57 Verse. Zusammen: **157 von 197 Versen, 3801 Eintraege**, `validate.py`
+ohne Befund. `paketcheck` Abschnitt **A leer**, `kongruenz.py` **0**.
+
+### Ein Werkzeug ist aus diesem Paket entstanden
+
+Der Agent fuer Kapitel 8 meldete, dass **Hosea 7,13** das falsche
+Hilfsverb traegt: „sie **haben** sich gegen mich aufgelehnt" stand
+franzoesisch mit *ont* und italienisch mit *hanno*, waehrend das
+reflexive Perfekt in beiden Sprachen *être* und *essere* nimmt — und im
+Mehrwort-Eintrag desselben Verses stand die richtige Form. Das war die
+**zweite** Stelle; die erste hatte Paket 2 in 6,10 gefunden.
+
+`kongruenz.py` prueft es jetzt: Mehrwoerter mit Lemma `sich …`, deren
+romanische Glosse mit *être*/*essere* gebildet ist, und davor ein
+Einzelwort `haben`. **Der Lauf fand sofort eine dritte Stelle** — 1,2
+„das Land hat sich vom HERRN abgewandt" —, die kein Agent gemeldet hatte.
+
+Derselbe Lauf fand zwei Genusfehler: **2,8 „ihren Pfad"** stand in allen
+drei romanischen Sprachen im Plural, obwohl der deutsche Singular ist;
+**11,9 „in deiner Mitte"** trug *ta* und *la tua* vor den maskulinen
+`milieu` und `mezzo`. Dazu **9,15 „ihrer Taten"** *le loro* vor `atti` —
+die hat der Agent fuer Kapitel 9 selbst gefunden und behoben.
+
+### Namen — der dritte Fall der `Iehu`-Familie
+
+**`Zeboim` italienisch ist `Tseboim`, nicht `Seboim`.** Die haeufigere
+Bestandslesart (4 von 6) fuehrt *Seboim*; **RIV schreibt korpusweit 7×
+`Tseboim` und kein einziges `Seboim`.** Die zweite Bestandslesart
+(1. Samuel 13,18 · Nehemia 11,34) hat es bereits richtig.
+
+**`Moph` (9,6) ist ein eigenes Lemma.** Der Bestand fuehrt dieselbe Stadt
+als `Memphis` mit fr *Noph* und it *Nof*; in Hosea schreibt der deutsche
+Text `Moph`, LSG „Moph" und RIV „Memfi". Damit laeuft Memphis im Bestand
+unter drei franzoesisch-italienischen Schreibungen — melden, nicht
+vereinheitlichen.
+
+**`Awen` (10,8) ist neu und nicht `Beth-Aven`.** Beide stehen im selben
+Kapitel (10,5 und 10,8), und **LSG schreibt an beiden Stellen
+`Beth-Aven`** — dort ist die Namensform `Aven` genommen, die LSG sonst
+fuehrt (Amos 1,5), sonst waeren zwei Orte nicht unterscheidbar.
+
+Weiter neu: `Schalman` A1 · `Beth-Arbel` A1 (beide 10,14) ·
+`Adama` A1 *Admah · Adma · Adma · Adma* (die Lesart aus 1. Mose 10,19).
+
+### Zwei Woerter, die der Bestand unter fremdem Lemma fuehrt
+
+**`Dreschplatz`** (9,1 · 9,2) sieht unbelegt aus. Die **Sache** steht
+aber 26× im Bestand — unter **`Tenne`** C2 *threshing floor · era · aire
+· aia*. Das neue Lemma hat genau diese Reihe bekommen.
+
+**`Distel`**: der Prompt fuehrte es als „nur flektiert belegt". Die Form
+im Kapitel ist `Disteln`, und die ist **19× direkt belegt**.
+
+### `Festtag` gegen `Feiertag` — eine im Bestand angelegte Kollision
+
+Beide tragen dort *feast day · día de fiesta · jour de fête · giorno di
+festa*, und `Feiertag` hat dafuer **einen einzigen Beleg** (Johannes
+19,31), `Festtag` zehn. In **9,5** stehen sie im selben Vers. `Feiertag`
+behaelt die Reihe (sie steht schon in 2,13), `Festtag` weicht auf die
+Lesart aus, die **alle vier Ausgaben** dort setzen: B2 *solemn feast ·
+solemnidad · jour solennel · solennità*.
+
+### `Vergeltung` — eine Bestandsreihe, die in sich uneinheitlich ist
+
+Die Mehrheitslesart (15 von 19) lautet *retribution · **venganza** ·
+**vengeance** · **vendetta*** — englisch „Vergeltung", romanisch „Rache".
+In 9,7 schreiben alle vier Ausgaben die Zweitlesart (*retribution ·
+retribución · rétribution · retribuzione*, Jesaja 40,10), und die ist
+genommen. Der Bruch in der Mehrheitsreihe ist ein Bestandsbefund.
+
+### Neu gepraegt
+
+    Awen A1 · Schalman A1 · Beth-Arbel A1 · Moph A1
+    Dreschplatz  C1  threshing floor · era · aire · aia
+    Geistesmann  C1  inspired man · hombre de espíritu · homme inspiré · uomo ispirato
+    Schwangerschaft B1 · Neuland C1 · Giftkraft B2 · fortlaufen B1 · zurückmüssen B1
+    Hass fassen  B2  Mehrwort, `parts:[7,9]`
+
+### Was die Agenten am Auftrag widerlegt haben
+
+| Vorgabe | tatsaechlich |
+|---|---|
+| `Kalb` 8,5 zweimal · 8,6 | umgekehrt: **8,5 einmal, 8,6 zweimal** |
+| `Kalb` „zweimal (10,5)" | je einmal in **10,5 und 10,6** |
+| 10,1 hat dreimal Je-desto | **zweimal** |
+| `Distel` nur flektiert belegt | die Form `Disteln` ist **19× belegt** |
+| `Dreschplatz` unbelegt | die **Sache** steht 26× unter `Tenne` |
+| `Baal` steht in Kapitel 9 | nur als Teil von **`Baal-Peor`** — ein Praefixtreffer von `wortzahl.py` |
+| „vier parallele Fragen `Wie könnte ich`" (11,8) | **drei**; die vierte ist elliptisch |
+| „In Hosea 1–7 acht RIV-Anlautfehler" | **neun** — 6,9 `ichem` war in der Zaehlung nicht mit |
+| Der Klammerziffern-Hinweis fuer Kapitel 11 | stand als Kopierrest in **allen vier** Prompts; zwei Agenten haben es unabhaengig gemeldet |
+
+### Was `ausgaben.py` in Kapitel 11 falsch macht
+
+Es waehlt fuer en und it **Versatz +1** und warnt selbst, dass +0 besser
+liegt. **+0 ist richtig.** Der Grund liegt hinter dem Kapitel: en und it
+haben zwoelf Verse, ihr 11,12 ist der deutsche 12,1.
+
+### Die Ausgaben
+
+**RIV — vier Anlautfehler und zwei Setzfehler in diesem Paket:**
+
+    8,6   `amaria`   → Samaria    (21× gegen 117×)
+    8,7   `aranno`   → faranno    (6×; in 14,7 steht dieselbe Form fuer `saranno`
+                                   — der Detektor allein entscheidet den Buchstaben nicht)
+    11,6  `de' oro`  → de' loro   (2× gegen 51×) — **findet der Detektor nicht**
+    9,7   `i giorno` → i giorni   (1× gegen 105×), Numeruskongruenz
+    7,9   `capelli bianche` → bianchi                (aus Paket 2)
+
+**`de' oro` ist der methodisch wichtigste Fund des Buches.** Der
+Frequenzdetektor sucht seltene Formen; `oro` ist selbst ein haeufiges
+Wort (Gold). **Die in `RIV_ANLAUTFEHLER.md` gemessenen 440 verdaechtigen
+Vorkommen sind damit eine Untergrenze, keine Zahl.** Betroffen ist jeder
+Fall, in dem das verstuemmelte Wort zufaellig ein echtes Wort ergibt.
+
+**RV1909mod** siezt in 9,5 · 9,10 · 10,12 · 10,13 · 10,15 und weicht in
+9,6 (Pflanzen und Zelte), 8,14 (`Paläste` → *templos paganos*) und 11,2
+(ergaenztes Subjekt) inhaltlich ab. **WEB** baut 9,7 um. Jedes Mal ist
+der deutsche Text glossiert worden.
+
+### Ein Bestandsfehler ausserhalb Hoseas
+
+**Jeremia 14,10**: `kein` steht dort spanisch als *ningún*, waehrend
+`Gefallen` *complacencia* (feminin) ist. Gefunden vom Agenten fuer
+Hosea 8, der die Stelle als Vorlage haette uebernehmen sollen.
