@@ -247,3 +247,105 @@ RIV_ANLAUTFEHLER.md.
 **Kein Kapitel gilt als fertig, das `selfcheck.py` nicht sauber
 durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am
 Vers geprueft und im Bericht begruendet — verworfen oder aufgeloest.
+
+================================================================
+9 · WIEDERHOLTE WORTFOLGEN — was ueber die Kapitelgrenze bindet
+================================================================
+
+Gerechnet mit `wiederholungen.py 30 --ab 2` auf dem **Quelltext**, vor der
+Arbeit. Das Werkzeug findet, was `dubletten.py` nicht findet: Wortfolgen,
+die mitten im Vers stehen und deren Verse ringsum verschieden sind.
+
+**Der frueheste Ort legt die Reihe fest, alle weiteren uebernehmen sie
+zeichengleich.** Wo ein spaeteres Kapitel an die Reihe kommt und die frueheren
+Kapitel schon in `$ANNO_OUT/30/` liegen: dort nachsehen, nicht neu entscheiden.
+
+Die Folgen, die ueber eine Kapitelgrenze gehen:
+
+  8× (4 Tokens)  ← ueber Kapitelgrenzen
+      „spricht Gott der HERR"
+      1,8, 3,11, 3,13, 4,5, 5,3, 8,3, 8,9, 8,11
+  3× (7 Tokens)  ← ueber Kapitelgrenzen
+      „spricht der HERR der Gott der Heerscharen"
+      5,16, 6,8, 6,14
+  3× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Ich sende Feuer nach"
+      1,12, 2,2, 2,5
+  2× (6 Tokens)  ← ueber Kapitelgrenzen
+      „Was siehst du Amos Ich antwortete"
+      7,8, 8,2
+  2× (5 Tokens)  ← ueber Kapitelgrenzen
+      „Armen für ein Paar Schuhe"
+      2,6, 8,6
+  2× (5 Tokens)  ← ueber Kapitelgrenzen
+      „Gott der HERR hat bei"
+      4,2, 6,8
+  2× (5 Tokens)  ← ueber Kapitelgrenzen
+      „Siehe es kommen Tage spricht"
+      8,11, 9,13
+  2× (5 Tokens)  ← ueber Kapitelgrenzen
+      „in die Verbannung gehen und"
+      5,5, 6,7
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Da sagte der HERR"
+      7,8, 8,2
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Darum spricht der HERR"
+      5,16, 7,17
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Feuer in das Haus"
+      1,4, 5,6
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Gott der Heerscharen ist"
+      4,13, 5,27
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „HERR ist sein Name"
+      5,8, 9,6
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Hört dieses Wort das"
+      3,1, 5,1
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „Israel spricht der HERR"
+      2,11, 6,14
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „das Wort des HERRN"
+      7,16, 8,11
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „das die Paläste von"
+      1,12, 2,2
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „dem Wasser des Meeres"
+      5,8, 9,6
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „der HERR an denen"
+      8,11, 9,13
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „es über die Erde"
+      5,8, 9,6
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „ihr Kinder Israel spricht"
+      2,11, 4,5
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „ist spricht der HERR"
+      3,10, 9,12
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „nicht rückgängig weil es"
+      1,11, 2,1
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „wie der Fluss Ägyptens"
+      8,8, 9,5
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „wie der Nil und"
+      8,8, 9,5
+  2× (4 Tokens)  ← ueber Kapitelgrenzen
+      „wird in die Verbannung"
+      1,15, 5,5
+
+Dazu die groesste Wiederholung des Buches, ganz in Kapitel 4:
+
+    5× (10 Tokens)  „Doch ihr seid nicht zu mir umgekehrt spricht der HERR"
+        4,6 · 4,8 · 4,9 · 4,10 · 4,11
+
+`dubletten.py` meldet diesen Refrain **nicht** — die fuenf Verse sind ringsum
+zu verschieden fuer die 60-Prozent-Schwelle. Er ist trotzdem die laengste
+woertliche Wiederholung im ganzen Buch.
