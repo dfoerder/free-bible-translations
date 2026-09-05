@@ -32,15 +32,17 @@ def main():
         raise SystemExit(__doc__)
     nr, kap = sys.argv[1], sys.argv[2]
     woerter = sys.argv[3:]
-    import glob
-    tref = glob.glob('deu/l1912mod/%s_l1912mod.json' % nr)
-    if not tref:
-        raise SystemExit('Quelltext fuer Buch %s nicht gefunden.' % nr)
-    d = json.load(open(tref[0]))
-    ch = d.get('chapters', d)[kap]
-    text = ' '.join(ch[v] for v in sorted(ch, key=int))
+    import common as C
+    quelle = C.load_source(nr)['chapters']
+    if kap in ('alle', 'all', '*'):
+        ch = {'%s,%s' % (k, v): t
+              for k in sorted(quelle, key=int)
+              for v, t in sorted(quelle[k].items(), key=lambda x: int(x[0]))}
+    else:
+        ch = quelle[kap]
+    text = ' '.join(ch[v] for v in ch)
     print('%s,%s — %d Verse, %d Woerter'
-          % (nr, kap, len(ch), len(re.findall(r"[\w'aeoeueaeoeuess-]+", text))))
+          % (nr, kap, len(ch), len(re.findall(r"[\w'-]+", text))))
     for w in woerter:
         treffer = []
         for var in varianten(w):

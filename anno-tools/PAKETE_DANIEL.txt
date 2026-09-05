@@ -1,0 +1,288 @@
+# Pakete Daniel (Buch 27)
+
+12 Kapitel, 357 Verse, 9752 Tokens. Nach den vier Grossbuechern
+(Psalter, Jeremia, Hesekiel, Jesaja) ein mittelgrosses Buch — etwa
+so gross wie Prediger und Klagelieder zusammen.
+
+Vier Pakete zu je drei Kapiteln:
+
+    Paket 1   Kap. 1 · 2 · 3    103 Verse   Namen, Weisenwortschatz, Kap. 3
+    Paket 2   Kap. 4 · 5 · 6     93 Verse   Hoechster, Loewengrube, Wandschrift
+    Paket 3   Kap. 7 · 8 · 9     82 Verse   Visionen, Hoerner, Menschensohn
+    Paket 4   Kap. 10 · 11 · 12  79 Verse   Koenig des Nordens/Suedens, Ende
+
+
+## Die Verszaehlung ist der wichtigste Einzelbefund des Buches
+
+Daniel hat den groessten Zaehlversatz aller bisherigen Buecher, und er
+laeuft **ueber Kapitelgrenzen**. `ausgaben.py` kann das nicht abbilden:
+es sucht einen Versatz je Kapitel und findet an zwei Stellen keinen.
+
+**Alle vier Ausgaben zaehlen gleich.** Gemessen, nicht vermutet:
+
+| deutsch | en · es · fr · it | wie `ausgaben.py` sich verhaelt |
+|---|---|---|
+| 3,1–30  | 3,1–30   | meldet Versatz **-3 UNSICHER**, nennt +0 als besser — **+0 ist richtig** |
+| 3,31–33 | **4,1–3**  | keine Vorlage in Kap. 3 — im **Kapitel 4** der Ausgaben nachsehen |
+| 4,1–34  | **4,4–37** | Versatz +3, sicher erkannt |
+| 5,1–30  | 5,1–30   | meldet Versatz **+1 UNSICHER**, nennt +0 als besser — **+0 ist richtig** |
+| 6,1     | **5,31**   | keine Vorlage in Kap. 6 — im **Kapitel 5** der Ausgaben nachsehen |
+| 6,2–29  | **6,1–28** | Versatz -1, sicher erkannt |
+
+Kapitel 1, 2, 7–12 stehen ueberall auf Versatz +0.
+
+Die vier betroffenen Kapitel liegen in **Paket 1 und 2**. Wer Kapitel 3
+oder 6 bearbeitet, bekommt den Hinweis wortwoertlich in den Prompt.
+
+
+## Die zwei Namen, die einander zum Verwechseln aehnlich sehen
+
+Das ist die groesste Fehlerquelle des Buches. **Zwei verschiedene
+Personen**, deren deutsche Schreibung sich um zwei Buchstaben
+unterscheidet:
+
+    Daniels babylonischer Name   Beltschazar  /  Beltschazzar
+    der letzte Koenig von Babel  Belschazzar
+
+Und die Quelle schreibt Daniels Namen **uneinheitlich**:
+
+    `Beltschazar`    8 Vorkommen in 6 Versen   1,7 · 2,26 · 4,5 · 4,6 · 4,15 · 4,16
+    `Beltschazzar`   2                          5,12 · 10,1
+    `Belschazzar`    7                          5,1 · 5,2 · 5,9 · 5,22 · 5,29 · 5,30 · 8,1
+    `Belschazzars`   1                          7,1
+
+Alle Zahlen dieser Datei sind mit `wortzahl.py 27 alle <wort>` gezaehlt,
+nicht von Hand. Sie zaehlen **Vorkommen**, nicht Verse.
+
+Das ist ein Befund am l1912mod, keine Reparaturaufgabe. Annotiert wird,
+was dasteht: **zwei Wortformen, ein Lemma**.
+
+    Form `Beltschazar` / `Beltschazzar`  →  Lemma `Beltschazar`   A1
+        Belteshazzar · Beltsasar · Beltschatsar · Beltsatsar
+    Form `Belschazzar` / `Belschazzars`  →  Lemma `Belschazzar`   A1
+        Belshazzar · Belsasar · Belschatsar · Belsatsar
+
+In 7,1 stehen beide Formen desselben Koenigsnamens im selben Vers
+(`Belschazzar` und `Belschazzars`).
+
+
+## Die uebrigen Namen — was der Bestand schon fuehrt
+
+**Belegt, unveraendert uebernehmen:**
+
+    Daniel        8×   Daniel · Daniel · Daniel · Daniele          A1
+    Nebukadnezar 44×   Nebuchadnezzar · Nabucodonosor · Nebucadnetsar · Nabucodonosor  A1
+    Hananja      19×   Hananiah · Hananías · Hanania · Hanania     A1
+    Asarja       33×   Azariah · Azarías · Azaria · Azaria         A1
+    Darius       11×   Darius · Darío · Darius · Dario             A1
+    Michael       7×   ·  Gabriel 2×  ·  Ahasveros 27×  ·  Susa 18×  ·  Elam 23×
+
+**Neu zu praegen** (`belegt.py` gefragt, wirklich unbelegt):
+
+    Schadrach    15×   Shadrach · Sadrac · Schadrac · Shadrac      A1
+    Meschach     15×   Meshach · Mesac · Méschac · Meshac          A1
+    Abed-Nego    15×   Abednego · Abed-nego · Abed-Nego · Abed-nego A1
+    Satrap        9×   satraps · sátrapas · satrapes · satrapi     C1
+    Sterndeuter   2×   ·  Tigris 1×  ·  Aschpenas 1×
+
+Die drei Gefaehrten stehen je **zweimal im Genitiv** (`Schadrachs`,
+`Meschachs`, `Abed-Negos` — 3,12 und 3,14). Dieselbe Reihe, `pos`-Eintrag
+wie sonst; der Genitiv wird in den Ausgaben durch `of` / `de` / `di`
+ausgedrueckt und gehoert damit **in die Glosse**, nicht ans Lemma.
+
+### `Kyrus` und `Mischael` — die Zwillingsregel, zweimal
+
+`Kyrus` (1,21 · 6,29 · 10,1) ist im Bestand **belegt** — Jesaja 44,28 und
+45,1, *Cyrus · Ciro · Cyrus · Ciro*. Derselbe Perserkoenig steht dort aber
+noch ein zweites Mal, unter der Schreibung **`Kores`** (18×, Chronik/Esra),
+und traegt **dieselbe Glossenreihe**. Zwei deutsche Schreibungen, zwei
+Lemmata, eine Reihe. Daniel schreibt `Kyrus` und nimmt Lemma `Kyrus`.
+
+**Das ist der Praezedenzfall fuer `Mischael`.** Der Bestand fuehrt den Namen
+als **`Misael`** (3×: 2. Mose 6,22 · 3. Mose 10,4 · Nehemia 8,4) mit
+*Mishael · Misael · Mischaël · Misael*. Daniel schreibt `Mischael` (5×:
+1,6 · 1,7 · 1,11 · 1,19 · 2,17) — **eigenes Lemma**, wie `Kyrus` neben
+`Kores`.
+
+Die Reihe weicht in **einer** Sprache ab, und zwar aus dem Vers heraus:
+RIV schreibt in Daniel 1,6 `Mishael`, nicht `Misael`. Die Glosse folgt der
+Ausgabe des Verses.
+
+    Lemma `Mischael`  A1   Mishael · Misael · Mischaël · Mishael
+
+(Zu `Misael` gibt es keine Aenderung. Der Bestand bleibt, wie er ist.)
+
+
+## `Menschensohn` — zweimal, beide klein
+
+Der Bestand fuehrt drei Lesarten. Massgeblich fuer Daniel ist die
+**kleingeschriebene**, weil das Wort an beiden Stellen mitten im Satz steht:
+
+    7,13  „kam einer wie ein Menschensohn"      alle vier Ausgaben klein
+    8,17  „Verstehe, Menschensohn"              alle vier Ausgaben klein
+
+    Lemma `Menschensohn`  B2
+        son of man · hijo de hombre · fils de l'homme · figlio d'uomo
+
+Das ist die Reihe aus Hesekiel 20,4 · 20,27 · 36,1. Die **grosse**
+Hesekiel-Reihe (*Son of man*, 90×) steht dort nur, weil das Wort die Anrede
+eroeffnet; die messianische NT-Reihe (*Son of Man · Hijo del Hombre ·
+Figlio dell'uomo*, 88×) gilt in Daniel **nicht** — keine der vier Ausgaben
+schreibt hier gross.
+
+Italienisch bleibt `figlio d'uomo`, obwohl RIV an beiden Stellen
+*figliuol d'uomo* schreibt: das ist die Normalisierung, die der Bestand
+ueber alle 182 Menschensohn-Stellen durchhaelt.
+
+
+## `Geheimnis` — die Lexikonfalle des Buches
+
+`Geheimnis` steht in Kapitel 2 achtmal und meint jedes Mal das **Raetsel
+des Traums**. Der Lexikon-Extrakt zeigt aber die Korpusmehrheit, und die
+ist neutestamentlich:
+
+    22 von 25 Belegen   *mystery · misterio · mystère · mistero*   — alle NT
+     2 AT-Belege        *secret · secreto · secret · segreto*
+                        Sprueche 25,9 · Hesekiel 28,3
+
+**Daniel folgt den zwei AT-Belegen**, und die vier Ausgaben bestaetigen es
+(WEB *secret*, RV *secreto*, LSG *secret*, RIV *segreto*).
+
+    Lemma `Geheimnis`  B2   secret · secreto · secret · segreto
+
+
+## Der Weisenwortschaft — sechs Woerter, vier Kapitel, eine Entscheidung
+
+Die Berufsbezeichnungen der babylonischen Gelehrten stehen in **2 · 4 · 5**
+durcheinander und in wechselnder Reihenfolge. Sie muessen ueber alle
+Kapitel gleich sein; **Paket 1 entscheidet, Paket 2 uebernimmt.**
+
+Belegt und bindend:
+
+    Weiser       15×  `Weiser`       B2  wise men · sabios · sages · saggi
+    Chaldaeer    12×  `Chaldäer`     B2  Chaldeans · caldeos · Chaldéens · Caldei  (49× belegt)
+    Wahrsager     8×  `Wahrsager`    B2  soothsayers · adivinos · devins · indovini (18×)
+    Zauberer      2×  `Zauberer`     C1  sorcerers · hechiceros · magiciens · maghi (16×)
+    Beschwoerer   6×  `Beschwörer`   C1  — Bestand hat vier Lesarten bei vier
+                                          Belegen, also **keine Bindung**
+    Sterndeuter   2×  `Sterndeuter`  C1  — **unbelegt**, neu zu praegen (2,27 · 4,4)
+
+`Beschwörer` steht 6× (2,2 · 2,10 · 2,27 · 5,7 · 5,11 · 5,15) und ist der
+einzige der sechs, bei dem der Bestand nicht traegt: seine vier Belege
+verteilen sich auf *charmers* (Ps 58,6 — Schlangenbeschwoerer) und
+*exorcists* (Apg 19,13). Beides passt hier nicht. **Die Ausgaben
+entscheiden**, und die Reihe gilt dann fuer alle sechs Stellen.
+
+`Zauberer` traegt im Bestand franzoesisch *magiciens* — dieselbe Glosse,
+die `Wahrsager` in einem seiner 18 Belege hat. Wo beide im selben Vers
+stehen (2,2), ist das eine echte Kollision und muss aufgeloest werden.
+
+
+## Die drei Listen in Kapitel 3
+
+Sie kehren woertlich wieder und sind der Grund, warum Kapitel 3 als
+Ganzes an **einen** Agenten geht.
+
+**Die Musikinstrumente** — 3,5 · 3,7 · 3,10 · 3,15, viermal dieselbe Kette:
+
+    Horn · Pfeife · Zither · Harfe · Laute · Dudelsack
+    (in 3,7 ohne `Dudelsack`)
+
+    Horn      4×  `Horn`      B1  horn · cuerno · corne · corno    (6× belegt)
+    Pfeife    4×  —           **unbelegt**
+    Zither    4×  `Zither`    C1  lyre · cítara · cithare · cetra  (3× belegt)
+    Harfe     4×  `Harfe`     B2  harp · arpa · harpe · arpa       (27× belegt)
+    Laute     4×  `Laute`     C1  lute · laúd · luth · liuto       (9× belegt)
+    Dudelsack 3×  —           **unbelegt**
+
+**`Horn` steht im Buch 24×, nur 4× davon ist es das Instrument.**
+Die anderen 20 (`Horn` 10× · `Hörner` 8× · `Hörnern` 2×) sind die Hoerner
+der Tiere in Kap. 7 und 8 — dieselbe Glossenfamilie, aber Numerus nach dem
+Vers: *horns · cuernos · cornes · corna* im Plural. Italienisch ist
+`corno`/`corna` unregelmaessig.
+
+**`Laute` ist ein Homograph.** Der Bestand fuehrt daneben `laut` (Adjektiv,
+11 Belege, *loud · fuerte · fort · forte*). Kleingeschrieben sind beide
+gleich. In Kapitel 3 ist es immer das Instrument; in 5,7 („Der Koenig rief
+laut") ist es das Adjektiv.
+
+**Die Beamtenliste** — 3,2 · 3,3 · 3,27, dreimal:
+
+    Satrapen · Statthalter · Provinzverwalter · Berater · Schatzmeister ·
+    Richter · Beamte  (+ „alle Amtstraeger der Provinzen")
+
+    Statthalter    4×  `Statthalter`   C1  governors · gobernadores · gouverneurs · governatori
+    Berater        5×  `Berater`       B2  advisers · consejeros · conseillers · consiglieri
+    Schatzmeister  2×  `Schatzmeister` C1  treasurer · tesorero · trésorier · tesoriere (1× Esra 1,8)
+    Beamter        7×  `Beamter`       B2  officials · funcionarios · fonctionnaires · funzionari
+    Satrap · Provinzverwalter · Amtstraeger  — **unbelegt**
+
+Achtung: der Bestand fuehrt das Lemma **`Beamter`**, nicht `Beamten`.
+`fixgloss.py show Beamten` schweigt deshalb — `belegt.py` fragen.
+
+Die Ausgaben kuerzen die Liste: WEB hat in 3,2 acht Glieder, in 3,27 vier.
+**Nicht die Nachbarzeile nehmen**, wo ein Glied fehlt.
+
+**Die Voelkerformel** — `Völker, Nationen und Sprachen`, 6× (3,4 · 3,7 ·
+3,29 · 3,31 · 5,19 · 7,14), davon 5× mit vorangehendem `alle`.
+
+
+## Die Wiederholungsverse
+
+`dubletten.py` findet **9 Paare**. Sie liegen fast alle innerhalb eines
+Kapitels und damit bei einem Agenten. Die zwei, die es nicht tun:
+
+    3,31 ↔ 6,26   Aehnlichkeit 0.89 — **Paket 1 gegen Paket 2**
+                  „an alle Voelker, Nationen und Sprachen auf der ganzen
+                  Erde: Friede sei mit euch in Fuelle!"
+                  Paket 1 legt die Reihe fest, Paket 2 uebernimmt sie.
+
+    4,22 ↔ 4,29   0.87 — beide bei einem Agenten (Kap. 4)
+
+Die uebrigen sieben: 3,2↔3,3 · 3,5↔3,10 · 3,5↔3,7 · 3,6↔3,11 · 4,9↔4,18 ·
+und die Hoechster-Formel 4,22 ↔ 4,29 ↔ 4,31.
+
+
+## `Höchster` gegen `hoch` — sauber durch Grossschreibung getrennt
+
+    `Höchste` gross   9×   4,14 · 4,21 · 4,22 · 4,29 · 4,31 ·
+                           7,18 · 7,22 · 7,25 · 7,27
+                      Lemma `Höchster`  B2
+                      Most High · Altísimo · Très-Haut · Altissimo   (12× belegt)
+
+    `höchste` klein   4×   3,26 · 3,32 · 5,18 · 5,21  („der hoechste Gott")
+                      Lemma `hoch`  A1
+                      highest · más alto · plus haut · più alto
+
+Die Trennung ist im Quelltext eindeutig. **Nicht vereinheitlichen.**
+
+
+## Was ueber Paketgrenzen laeuft und in Paket 3 entschieden wird
+
+    `tägliche Opfer`   3×   8,11 (Paket 3) · 11,31 · 12,11 (Paket 4)
+        Die Ausgaben haben eine feste Wendung — WEB *continual burnt
+        offering*, RV *sacrificio continuo*, LSG *sacrifice perpétuel*,
+        RIV *sacrifizio perpetuo*. Glossiert wird trotzdem **Wort fuer
+        Wort**: `täglich` A2 *daily · diario · quotidien · quotidiano*
+        (11× belegt, Numerus nach dem Nomen) und `Opfer` nach Bestand.
+        **Kein Mehrwort** — die deutsche Fuegung ist durchsichtig.
+
+    `Gräuel`   3×   9,27 (Paket 3) · 11,31 · 12,11 (Paket 4)
+        Lemma `Gräuel` C2, Singular
+        abomination · abominación · abomination · abominazione   (38× belegt)
+
+    `König des Nordens` / `König des Südens`   je 6×, alle in Kap. 11
+        Ein Agent, keine Abstimmung noetig.
+
+    `Zeit des Endes`   6×   8,17 · 8,19 · 11,35 · 11,40 · 12,4 · 12,9
+        Paket 3 legt fest, Paket 4 uebernimmt.
+
+
+## Was NICHT gemacht wird
+
+- Keinen Namen deuten, den der Text nicht selbst deutet. In 5,25 steht
+  `Mene mene tekel u-parsin` — das ist eine Lautfolge, und der Text deutet
+  sie in 5,26–28 **selbst**. Die Deutungsverse werden uebersetzt, der
+  Spruch in 5,25 bleibt Lautfolge.
+- Keine Grammatik-Tags in Klammern als Glosse.
+- Ins Repository `bible-reader` wird nur gelesen.
