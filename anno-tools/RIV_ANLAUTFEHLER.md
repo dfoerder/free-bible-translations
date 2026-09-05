@@ -350,3 +350,25 @@ Die Gegenprobe fuehrt zu einem noch **offenen** Buch:
 und Micha 7,17 — und **keine** davon ist eine echte Form von *errare*.
 In Obadja fehlt das `b` von *berranno*, in Micha das `v` von *verranno*
 (79×). Wer den Micha-Prompt schreibt, sollte es wissen.
+
+
+---
+
+## Nachtrag Jona (32): `iona` — und der dritte Fall steht im Neuen Testament
+
+| Stelle | steht | muss | Gegenprobe |
+|---|---|---|---|
+| Jona 4,6 | „montò su di sopra **a iona**" | *Giona* | `iona` **3×** im ganzen Korpus · `Giona` **26×** |
+| Jona 4,8 | „il sole picchiò sul capo **di iona**" | *Giona* | derselbe Vers hat „Giona" nicht, der Nachbarvers 4,6 schon |
+| **Matthäus 16,4** | „segno non le sarà dato se non quello **di iona**" | *Giona* | ein **fertiges** Buch |
+
+Alle drei stehen unmittelbar hinter einem kurzen Wort (`a`, `di`, `di`) —
+die Regel aus dem Amos-Nachtrag. **Jona 4,6 traegt beide Formen im selben
+Vers:** „a iona, per fargli ombra al capo; e **Giona** provò…".
+
+### Ein Untertyp: das kurze Wort selbst faellt aus
+
+**RIV Jona 1,1** liest „La parola dell'Eterno fu rivolta ∅ Giona" — hier
+fehlt nicht der Anlaut des Namens, sondern die **Praeposition davor**
+(*rivolta **a** Giona*). Derselbe Ort im Satz, die entgegengesetzte
+Richtung des Verlusts. Gefunden vom Agenten fuer Jona 1.
