@@ -29,16 +29,34 @@ Tokens Vorsprung.
 16 / 11 / 10 / 11, Vers fuer Vers wie das l1912mod. Wo eine Ausgabe als
 Zeuge fuer die Versgrenze gebraucht wird, ist LSG hier die verlaessliche.
 
-## 3. RV1909mod fehlt der Vers 2,11
+## 3. RV1909mod zieht 2,10 und 2,11 ZUSAMMEN — der Vers fehlt nicht
 
-> deutsch **2,11**: „Da befahl der HERR dem Fisch, und er spie Jona ans
-> Land."
+RV hat 47 Verse gegen 48 deutsche, und **RV 2,10 traegt beide deutschen
+Verse**:
 
-RV 2,10 entspricht dem deutschen 2,10 („Yo, en cambio, te ofreceré
-sacrificio…" = „Ich aber will dir mit Dank opfern…"), und RV 3,1
-entspricht dem deutschen 3,1. **Dazwischen fehlt der Vers ganz** — nicht
-zusammengezogen, sondern ausgelassen. Das erklaert die 47 gegen 48.
+> RV 2,10: „Yo, en cambio, te ofreceré sacrificio con voz de alabanza;
+> cumpliré lo que prometí. La salvación viene de Jehová. **Entonces
+> Jehová le ordenó al pez, y este vomitó a Jonás en tierra firme.**"
 
-Fuer die Arbeit heisst das: **fuer den deutschen Vers 2,11 gibt es keine
-spanische Vorlage.** Die es-Glossen dieses Verses muessen aus dem Bestand
-kommen, nicht aus der Ausgabe.
+Der fettgesetzte Teil ist der deutsche Vers **2,11** („Da befahl der HERR
+dem Fisch, und er spie Jona ans Land"). Zusammengezogen, nicht
+ausgelassen — **es gibt sehr wohl eine spanische Vorlage.**
+
+RV zaehlt ausserdem **Versatz +0** ueber das ganze Kapitel: RV 2,1 ist
+der deutsche 2,1 (der Fischvers), nicht wie WEB und RIV ins erste Kapitel
+gezogen.
+
+### Wie der Fehler entstand — und was daraus folgt
+
+Eine fruehere Fassung dieser Datei behauptete, RV fehle der Vers. Der
+Grund: die Messung schnitt den RV-Vers bei 95 Zeichen ab und las den
+Schluss nicht. **`ausgaben.py` hatte es gewusst** und von selbst gewarnt:
+
+    es: angewandt −1 (Abstand 0.34), besser waere +0 (Abstand 0.10)
+
+Widerlegt vom Agenten fuer Kapitel 2, der den Vers vollstaendig gelesen
+hat.
+
+**Nie ein Verszitat abschneiden, wenn daraus ein Befund abgeleitet wird.**
+Eine Zusammenziehung sieht am Anfang genauso aus wie eine Auslassung —
+der Unterschied steht am Ende.
