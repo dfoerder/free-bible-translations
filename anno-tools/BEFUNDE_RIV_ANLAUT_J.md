@@ -1,4 +1,13 @@
-# RIV1927: italienische Namen mit `I` statt `J` — ein Bestandsbefund
+# Namensglossen, die von den Ausgaben abweichen — Bestandsbefunde
+
+Drei Befunde derselben Familie, alle beim Annotieren von Daniel gefunden,
+alle **korpusweit** und deshalb hier gesammelt statt behoben:
+
+1. **`I` statt `J` im Italienischen** — 521 Vorkommen, 124 Namen
+2. **`Michael` traegt im AT die NT-Form** — 10 Vorkommen
+3. **`Hananja` in Jeremia 36,12** — ein Einzelfehler
+
+## 1 · RIV1927: italienische Namen mit `I` statt `J`
 
 Gefunden beim Annotieren von **Daniel 1**: der Agent meldete, der Bestand
 glossiere `Jojakim` italienisch als *Ioiakim*, waehrend RIV1927 im ganzen
@@ -71,7 +80,33 @@ ist Absicht: eine bekannte Falschschreibung wird nicht fortgesetzt.
 
 Damit hat der spaetere korpusweite Lauf einen Bezugspunkt.
 
-## Nachbar-Befund aus demselben Kapitel
+## 2 · `Michael` traegt im Alten Testament die NT-Form
+
+Gefunden beim Annotieren von **Daniel 12**. Der Bestand fuehrt `Michael`
+franzoesisch als *Michel* und italienisch als *Michele* — an **allen
+zwoelf** Belegen. Die Ausgaben tun das nicht:
+
+| Ausgabe | im Alten Testament | im Neuen Testament |
+|---|---|---|
+| LSG1910 | **`Micaël`** 13× | `Michel` 2× (Judas 1,9 · Offb 12,7) |
+| RIV1927 | **`Micael`** 12× | `Michele` 2× (dieselben Stellen) |
+
+**Beide Ausgaben trennen Altes und Neues Testament**, der Bestand nicht:
+er traegt die NT-Form an allen zehn AT-Stellen (4. Mose 13,13 · 1. Chr
+5,13 · 5,14 · 6,25 · 7,3 · 8,16 · 12,20 · 27,18 · 2. Chr 21,2 · Esra
+8,8). Die zwei NT-Eintraege sind richtig.
+
+Das ist derselbe Fehlertyp wie `Ioiakim`, nur kleiner und schaerfer
+belegt: kein Uebertragungsfehler im Anlaut, sondern eine Reihe, die aus
+dem Neuen Testament ins Alte gezogen wurde — die Namens-Variante der
+Lexikonfalle.
+
+**Daniel schreibt `Micaël` / `Micael`** (10,13 · 10,21 · 12,1), also die
+AT-Form seiner eigenen Ausgaben. Auch hier gilt: eine bekannte
+Falschschreibung wird nicht fortgesetzt, und der spaetere korpusweite
+Lauf hat einen Bezugspunkt.
+
+## 3 · `Hananja` in Jeremia 36,12 — ein Einzelfehler
 
 `Hananja` spanisch. RV1909mod schreibt **23× `Hananías`** und **19×
 `Ananías`**, und der Bestand folgt der Ausgabe fast ueberall richtig —
