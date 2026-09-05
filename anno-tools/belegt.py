@@ -137,7 +137,15 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
               + f' — nicht als `{C.strip_punct(wort)}`.')
         print('   Gross-/Kleinschreibung trennt hier womoeglich zwei Woerter')
         print('   (`Spross` das Substantiv gegen `spross` von `sprießen`).')
-    print(f'   **{ges}× belegt**, Lemma: ' + ', '.join(f'`{l}`' for l in sorted(lemmata)))
+    # „belegt" ohne Zusatz ist dreimal missverstanden worden — in den
+    # Vorbereitungen zu Daniel 7, Hosea 3 und Hosea 5 stand die Zahl der
+    # FORM als Zahl des Lemmas im Prompt (`Klauen` 11 statt `Klaue` 13,
+    # `Priestergewand` 10 statt 13, `Motte` 2 statt 8). Deshalb steht jetzt
+    # dabei, was gezaehlt wurde.
+    lsum = sum(sum(lemma_index.get(l.lower(), {}).values()) for l in lemmata) if lemma_index else 0
+    zusatz = f' — das LEMMA hat {lsum}' if lsum > ges else ''
+    print(f'   die FORM `{C.strip_punct(wort)}` ist **{ges}× belegt**{zusatz}, '
+          'Lemma: ' + ', '.join(f'`{l}`' for l in sorted(lemmata)))
     if len(lemmata) == 1 and list(lemmata)[0].lower() != f:
         print(f'   ACHTUNG: das Lemma heisst `{list(lemmata)[0]}`, nicht `{wort}` —')
         print(f'   `fixgloss.py show {wort}` schweigt deshalb. Genau die Falle,')
