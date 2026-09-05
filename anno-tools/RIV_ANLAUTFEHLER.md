@@ -419,3 +419,28 @@ Jona 1,1 ist das der zweite Beleg dafuer, dass der Defekt nicht nur
 Anlaute frisst, sondern **kurze Woerter ganz**.
 
 Gefunden vom Agenten fuer Micha 4.
+
+
+### Micha 6,10: ein Fehlertyp, den keine Haeufigkeitsprobe findet
+
+RIV liest „e l'efa scarso, **c'è** cosa abominevole?" — richtig waere
+***ch'è*** („was eine abscheuliche Sache ist"). Verloren ist nicht ein
+Anlaut, sondern ein **`h` in der Wortmitte**.
+
+**Die Zahlen tragen hier nicht:** `c'è` steht 118× im RIV-Korpus und ist
+ueberall eine echte Form („es gibt"), `ch'è` 557×. Der Fehler faellt nur
+im Kontext auf — `c'è` verlangt einen folgenden Determinierer, hier steht
+ein blosses Nomen. Und **derselbe Vers 6,8 hat `ciò ch'è` zweimal
+richtig**.
+
+Damit sind es drei Klassen, die zusammengehoeren und verschiedene Proben
+brauchen:
+
+```
+    Anlautverlust           `erusalemme`, `zechia`, `onti`   → Haeufigkeit
+    ganzes Wort fehlt       Jona 1,1 `a`, Micha 4,11 `occhi`  → Ausgabenvergleich
+    falsches echtes Wort    Micha 1,10 `Gad` statt Gath        → Ausgabenvergleich
+                            Micha 6,10 `c'è` statt ch'è        → Kontext
+```
+
+Die letzten drei findet **keine** maschinelle Probe von selbst.
