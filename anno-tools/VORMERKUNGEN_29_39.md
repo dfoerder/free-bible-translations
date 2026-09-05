@@ -76,6 +76,20 @@ Umfang des Defekts:
                   Nehemia 11,34) hat es bereits richtig.
                   Gefunden vom Agenten fuer Hosea 11.
 
+## LSG traegt im letzten Vers eine Tilde
+
+**Zehn der elf noch offenen Buecher** enden in der franzoesischen Ausgabe
+mit einem freistehenden `~`: Joel 3,21 · Amos 9,15 · Obadja 1,21 ·
+Micha 7,20 · Nahum 3,19 · Habakuk 3,19 · Zefanja 3,20 · Haggai 2,23 ·
+Sacharja 14,21 · Maleachi 4,6. **Nur Jona (32) fehlt.**
+
+Es ist eine Buchende-Marke aus dem Import, kein Textzeichen — alle
+sechzehn Tilden des Korpus stehen im letzten Vers ihres Buches, und
+keine andere Ausgabe hat eine. Vollstaendig in `BEFUND_LSG_TILDE.md`.
+
+**Der Agent des jeweils letzten Kapitels bekommt den Hinweis in den
+Prompt.**
+
 ## Korpusweit offen, in jedem Buch zu beachten
 
 - **`Iehu` und die 520 anderen italienischen `I`-Namen**: der Bestand
