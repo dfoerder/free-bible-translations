@@ -402,3 +402,20 @@ schlaegt an, das Wort ist ja echt. Nur der Vergleich mit den drei anderen
 Ausgaben findet es.
 
 Gefunden vom Agenten fuer Micha 1.
+
+
+### Micha 4: zwei weitere, und ein ganz fehlendes Wort
+
+| Stelle | steht | muss | korpusweit |
+|---|---|---|---|
+| Mi 4,1 | „sommità **de' onti**" | *monti* | `onti` **1×** — nur hier, hinter `de'` |
+| Mi 4,6 | „e **uelle** ch'io avevo" | *quelle* | `uelle` **1×**; die Schwesterform `uella` steht 4× |
+
+**Mi 4,11 ist ein anderer Fall:** „E i nostri si pascan della vista di
+Sion" — hier fehlt ein **ganzes Wort**, nicht nur ein Anlaut (*i nostri
+**occhi***). Die drei anderen Ausgaben haben das Nomen (WEB „our eye",
+RV „nuestros ojos", LSG „nos yeux"). Zusammen mit dem fehlenden `a` in
+Jona 1,1 ist das der zweite Beleg dafuer, dass der Defekt nicht nur
+Anlaute frisst, sondern **kurze Woerter ganz**.
+
+Gefunden vom Agenten fuer Micha 4.
