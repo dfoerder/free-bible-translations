@@ -28,6 +28,26 @@ Gemeldet wird die **laengste** Folge; kuerzere, die ganz in einer schon
 gemeldeten stecken, werden unterdrueckt. Sortiert nach Haeufigkeit, dann
 nach Laenge. Wo die Orte in verschiedenen Paketen liegen, ist die Folge
 eine Bindung ueber die Paketgrenze — der frueheste Ort legt fest.
+
+## Was die Gegenprobe am fertigen Bestand ergab
+
+Dieselbe Rechnung, angewandt auf Daniel, Hosea und Joel und mit den
+fertigen Glossen verglichen, meldet 13 Folgen mit abweichenden Reihen —
+und **keine einzige davon ist ein Fehler**:
+
+- **Joel** (2): beide waren beim Einsammeln schon geprueft. `ist` in
+  1,15 gegen 2,11 ist es *está cerca* gegen *es grande*; `aus` in 4,18
+  weicht aus, weil `von` im selben Vers *de · de* traegt.
+- **Hosea** (1): 5,6 „**er** hat sich abgewandt" gegen 14,5 „**mein
+  Zorn** hat sich abgewandt" — fr *détourné/détournée*, it
+  *allontanato/allontanata*. Genuskongruenz mit dem Subjekt.
+- **Daniel** (10): Kasus- und Personenwechsel. In 12,6 („fragte den
+  Mann") steht fr *à l'*, in 12,7 („hoerte den Mann") *l'* — LSG liest
+  an der ersten Stelle „dit **à** l'homme". Verbrektion, kein Fehler.
+
+Das Werkzeug meldet also Verdachtsfaelle, keine Fehler — wie jedes andere
+hier. Sein Wert liegt darin, sie **vor** der Arbeit zu zeigen statt nach
+ihr: in Joel waeren beide Treffer ohne das Einsammeln stehen geblieben.
 """
 import sys, re, collections
 import common as C
