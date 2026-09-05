@@ -456,3 +456,199 @@ zusammenfaellt:
 Der letzte war **mein eigener**: ich hatte `Hand` vom Plural der
 franzoesischen Ausgabe auf den deutschen Singular zurueckgesetzt und den
 Artikel stehen lassen.
+
+## 3 · Paket 3 — Kapitel 7 · 8 · 9
+
+82 Verse. Zusammen: **278 von 357 Versen, 7824 Eintraege**, `validate.py`
+ohne Befund.
+
+**Das erste Paket mit maschinell gepruefen Prompts.** Jeder der drei
+Prompts lief vor dem Abschicken durch `promptcheck.py`; alle Zahlen waren
+mit `wortzahl.py` gezaehlt. Ergebnis: **kein einziges erfundenes Wort**
+mehr, und alle drei Agenten haben die Zahlen nachgezaehlt und bestaetigt.
+Was sie stattdessen fanden, ist eine feinere Sorte Fehler — Verteilungen,
+Numerus, Formen:
+
+| Vorgabe | tatsaechlich |
+|---|---|
+| `Hochbetagter` in 7,9 (2×) · 7,13 | **7,9 · 7,13 · 7,22** — die Zahl 3 stimmte, die Stellen nicht |
+| `Jahrwoche` in 9,24 · 9,25 · 9,27 | auch in **9,26**. 9,24 (1×) · 9,25 (2×) · 9,26 (1×) · 9,27 (1×) |
+| `Gräuel` in 9,27 Singular | **Plural** — „auf dem Fluegel **der** Graeuel"; alle vier Ausgaben schreiben Plural |
+| in 7,1 stehen beide Namensformen | nur **`Belschazzars`**, ein Vorkommen |
+| `Gesalbter` hat einen Beleg | der **Form** nach ja, dem **Lemma** nach 24 |
+| in 9,25/9,26 steht `Fürst` | die Form ist **`Fürsten`** (Sg.); `Fürsten` steht 4× — Pl. in 9,6 · 9,8 |
+| `unser` und Formen 15× | **19×** |
+| `Klaue` traegt im Bestand ausnahmslos *hooves* | siehe unten — der ergiebigste Befund des Pakets |
+
+### `Klaue` — der Befund, der ein Werkzeug verbessert hat
+
+Der Prompt behauptete, der Bestand fuehre `Klaue` mit **elf Belegen,
+alle** *hooves · pezuñas · sabots · zoccoli* aus den Reinheitsgesetzen
+(3. Mose 11). Das stimmte fuer die **Pluralform** `Klauen`. Der
+**Singular** `Klaue` hat zwei weitere Belege, darunter
+
+    1. Samuel 17,37   paw · garra · griffe · zampa
+
+— „aus der Klaue des Loewen", genau das Sachfeld von 7,19 („eiserne
+Zaehne und bronzene Klauen"). Genommen: *claws · garras · griffes ·
+artigli*.
+
+Die Ursache liegt im Werkzeug: **`belegt.py` beantwortete die Frage „was
+traegt diese FORM" und liess offen, was das Lemma sonst noch traegt.**
+Es sagt jetzt beides; ein Flexionsfilter haelt das Rauschen heraus (bei
+`Wort` waere sonst die Reihe von `Worte` erschienen). Der zweite Fall
+kam prompt aus Kapitel 9: `Gesalbter` hat der Form nach einen Beleg, dem
+Lemma nach vierundzwanzig.
+
+### `Heiliger` — drei Lesarten, und alle drei richtig
+
+    holy one   · santo  · saint  · santo    4,10 · 4,20 · 8,13 (2×)
+    holy ones  · santos · saints · santi    4,14
+    saints     · santos · saints · santi    7,18 · 7,21 · 7,22 (2×) · 7,25 · 7,27
+
+Der Unterschied liegt nur im Englischen und folgt den Ausgaben: WEB
+schreibt in 4,17 (= de 4,14) *holy ones* fuer den Engelrat und in 7,18
+*saints* fuer das Gottesvolk. **Zwei Sachfelder, zwei Reihen** — die
+Zwillingsregel in ihrer sanftesten Form.
+
+### Neu gepraegt
+
+    Hochbetagter   C1  ancient of days · Anciano de días · ancien des jours · vegliardo
+    Jahrwoche      C1  weeks of years · semanas de años · semaines d'années · settimane di anni
+    Ulai           A1  Ulai · Ulai · Ulaï · Ulai
+    Feuerstrom     B2  stream of fire · río de fuego · fleuve de feu · fiume di fuoco
+    Vogelflügel    C1  birds' wings · alas de ave · ailes d'oiseau · ali d'uccello
+    Menschenauge   B2  human eyes · ojos humanos · yeux humains · occhi umani
+    Höhepunkt      B2  height · colmo · comble · colmo
+    Verheerung     C1  devastation · devastación · dévastation · devastazione
+    besiegeln      C1  seal up · sellar · sceller · suggellare
+    Wassergraben   C1  moats · fosos · fossés · fossati
+    struppig       C1  shaggy · peludo · velu · peloso
+    zweitausenddreihundert  A2  two thousand three hundred · dos mil trescientas · …
+    dazu: `betäubt` · `vermeintlich` · `sich anmaßen` · `zurennen` ·
+          `herauswachsen` · `sich behaupten` · `verwüstend` · `Flug` ·
+          `hervorwachsen` · `tagen` · `Verlängerung` · `wesentlich`
+
+**`außerordentlich` war der einzige Treffer in `paketcheck` Abschnitt A**
+— und der erste echte des Buches. Zwei Agenten haben es unabhaengig
+gepraegt und **verschieden entschieden**, weil ihre Ausgaben verschieden
+uebersetzen:
+
+    7,7   es *extraordinariamente* · fr *extraordinairement* · it *straordinariamente*
+    8,8   es *muchísimo*           · fr *très*               · it *sommamente*
+
+Beide sind ausgabentreu. Vereinheitlicht auf die Reihe von 7,7 — sie ist
+die etymologische Entsprechung und in drei Sprachen belegt.
+
+### Die zwei Formeln, die ins letzte Paket laufen
+
+    `das tägliche Opfer`   8,11 · 8,12 · 8,13  →  11,31 · 12,11
+        täglich  A2  daily · diario · quotidien · quotidiano
+        Opfer    B2  sacrifice · sacrificio · sacrifice · sacrificio
+        **Kein Mehrwort.** Die Ausgaben haben eine feste Wendung
+        (*continual burnt offering* · *sacrificio continuo*), die deutsche
+        Fuegung ist aber durchsichtig.
+
+    `Zeit des Endes`   8,17 · 8,19  →  11,35 · 11,40 · 12,4 · 12,9
+        Zeit  A1  time · tiempo · temps · tempo
+        des   A1  of the · del · de la · della
+        Ende  A2  end · fin · fin · fine
+
+Dazu die Zeitangabe aus **7,25**, die in **12,7** wiederkehrt:
+
+    für eine Zeit, zwei Zeiten und eine halbe Zeit
+    for · a · time · two · times · and · a · half · time
+    por · un · tiempo · dos · tiempos · y · un · medio · tiempo
+    pendant · un · temps · deux · temps · et · un · demi · temps
+    per · un · tempo · due · tempi · e · un · mezzo · tempo
+
+Der l1912mod schreibt `zwei Zeiten`; die vier Ausgaben haben dort nur
+*times · tiempos · des temps · dei tempi* **ohne Zahl**. Die Glosse folgt
+dem Deutschen.
+
+### `Gräuel` ist im Numerus nicht einheitlich
+
+    9,27   „auf dem Flügel **der** Gräuel"     — Genitiv **Plural**
+    11,31  „den entsetzlichen Gräuel"          — Singular
+    12,11  „der entsetzliche Gräuel"           — Singular
+
+Das ist kein Fehler, sondern der deutsche Text. Paket 4 setzt Singular.
+
+### Neue Lesarten unter vorhandenen Lemmata — jetzt zweiundzwanzig
+
+Der `Hof`-Praezedenzfall aus Paket 1 ist in diesem Paket **dreizehnmal**
+wieder aufgetreten. Die auffaelligsten:
+
+| Lemma | Bestand fuehrt | Daniel braucht |
+|---|---|---|
+| `Gericht` | judgment (73×) | **court · tribunal · tribunal · tribunale** (7,10 · 7,26 — die Institution, die „sich setzt") |
+| `äußerst` | farthest / outermost (9×, raeumlich) | **extremely · sumamente · extrêmement · estremamente** |
+| `erklären` | declare · declarar (Bindung) | **explain · explica · explique · spiega** (8,16) |
+| `Weise` | tune · melodía (Lexikonfalle in `BINDUNGEN_AT`) | **way · manera · manière · modo** (8,24) |
+| `Klugheit` | prudence · prudencia | **craftiness · astucia · ruse · astuzia** (8,25) |
+| `versetzen` | moves / put / transferred | **restored · restablecido · rétabli · ristabilito** (8,14) |
+| `behaupten` | claim · afirmar (18 von 18) | **hold its ground · resistir · résister · tener fronte** (8,7) |
+| `Flut` | keine Bindung (max. 9 von 19) | **flood · inundación · inondation · inondazione** (9,26) — nicht die Noah-Reihe |
+| `über` | about / upon | **against · contra · contre · contro** (9,12) |
+| `beim` | — | **To the · De · Auprès du · Al** (9,9) |
+
+### `Heer` und `Susa` — zwei Entscheidungen gegen den Bestand
+
+**`Heer`** ist in 8,10–13 das **Himmelsheer**. Alle vier Ausgaben
+schreiben trotzdem schlicht *army · ejército · armée · esercito*, und
+dabei bleibt es — kein eigenes Sachfeld.
+
+**`Susa`** fuehrt der Bestand englisch als *Shushan* (18 Belege). **WEB
+schreibt in Daniel 8,2 aber „the citadel of Susa"** und ist auch in Ester
+selbst uneinheitlich (10× Shushan gegen 9× Susa). Nach der
+Eigennamenregel liefert die Ausgabe des Verses den Namen: **en *Susa***.
+Zweite Lesart unter demselben Lemma, wie bei `Hananja` in Paket 1.
+
+### Ein Vers, in dem der l1912mod von allen vier Ausgaben abweicht
+
+**8,14**: der deutsche Text hat „wird das Heiligtum wieder in seinen
+rechten **Zustand versetzt**", WEB/RV/LSG/RIV haben *cleansed ·
+purificado · purifié · purificato*. Glossiert wurde der deutsche Text.
+
+### Die Ausgaben
+
+**RIV1927 in Kapitel 7–9: sechs Defekte**, davon zwei fehlende Anlaute.
+In Kapitel 8 fand der systematische Scan (jede seltene Form gegen alle
+22 moeglichen vorangestellten Buchstaben) **null** Treffer.
+
+    7,7    `nelle visione notturne`  → visioni   (RIV selbst 4,13 · 7,13 richtig)
+    7,20   `una bocca proferenti`    → proferente
+    8,17   `a egli mi disse`         → ed egli
+    8,2    `Susan`                   → Susa      (RIV in Ester 18× Susa)
+    9,1    `dei aldei`               → dei Caldei  (`Caldei` steht 10× im Buch)
+    9,15   `ti acesti il nome`       → ti facesti  (nur durch Lesen zu finden —
+                                       `facesti` kommt in Daniel sonst nicht vor)
+
+**LSG1910 7,25 `les saints du Très Haut`** ohne Bindestrich, waehrend
+dieselbe Ausgabe im selben Vers zwei Woerter vorher `Très-Haut` schreibt
+und den Titel im Buch **9×** mit Bindestrich setzt.
+
+**RV1909mod 8,2 setzt `Persia` statt `Elam`**, wo der l1912mod, WEB, LSG
+und RIV `Elam` haben.
+
+**WEB in Kapitel 7–9: ohne Befund.**
+
+### Was die eigene Gegenrechnung gefunden hat
+
+Die n-Gramm-Gegenrechnung ueber alle neun Kapitel (alle 4- bis 9-Gramme
+gegen alle fertigen Kapitel) meldete vier kapiteluebergreifende
+Divergenzen; **zwei davon waren echte Fehler:**
+
+    5,15  it `l` statt `l'`  — dem Artikel fehlte der Apostroph
+    9,12  `Himmel` als *heaven*, waehrend 7,27 dieselbe Wendung
+          („unter dem ganzen Himmel") als *sky* fuehrt und WEB an
+          **beiden** Stellen *sky* schreibt
+
+`Himmel` traegt in Daniel jetzt 16× *heaven* und 12× *sky*, und die
+Trennung ist durchgehend sachlich: *heaven* fuer „Gott des Himmels" und
+„vom Himmel", *sky* fuer „Voegel des Himmels", „Tau des Himmels",
+„Wolken des Himmels", „Winde des Himmels", „unter dem ganzen Himmel".
+
+Dazu ein dritter Fehler aus derselben Rechnung: **3,33 `ein` = *a* vor
+*eternal*** — „a eternal kingdom". In 7,27 steht dieselbe Wendung
+richtig mit *an*.
