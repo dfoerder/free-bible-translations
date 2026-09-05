@@ -152,7 +152,7 @@ alle vier Ausgaben haben dort Imperative. Glossiert wurde nach dem deutschen
 Text.
 
 **4,20 `bewohnt`:** die Ausgaben gehen auseinander — WEB *inhabited*,
-RV *será habitada* (f), LSG *sera habité* (m), und **RIV liest gar nicht
+RV *será habitada* (f), LSG *sera toujours habité* (m), und **RIV liest gar nicht
 „bewohnt", sondern *sussisterà* („wird bestehen")**. Die Glosse folgt dem
 deutschen Text (*inhabited · habitada · habité · abitata*); die
 italienische Spalte ist aus dem Bestand, nicht aus RIV.
