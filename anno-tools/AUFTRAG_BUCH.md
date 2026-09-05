@@ -36,6 +36,26 @@ buchspezifisch war, steht jetzt in `WORTFELD_<BUCH>.md`.
    `bible-reader/bibles/deu/l1912mod/<buchNr>_l1912mod.json` →
    `chapters["<kapitel>"]`. Nicht aus der Bibelkenntnis arbeiten.
 
+## Der Prompt ist geprüfte Ware — und trotzdem nur ein Hinweis
+
+Seit Daniel Paket 3 läuft **jeder** Agentenprompt vor dem Abschicken durch
+`promptcheck.py`. Es nimmt die in Backticks gesetzten deutschen Wörter und hält
+sie gegen die Tokens der genannten Kapitel.
+
+Der Anlass: in Daniel Paket 2 haben drei Agenten **neun** Vorgaben widerlegt,
+und acht davon waren derselbe Fehler — der Koordinator hatte Kapitelwortschatz
+aus der Bibelkenntnis geschrieben statt aus dem Quelltext. `Kalk`, `Gelenke`,
+`Fasten`, `Siegelring`, `Verklagten` und `Wildesel` stehen in den genannten
+Kapiteln nicht; `Löwe` galt als unbelegt und hat 105 Belege. Das Werkzeug lag
+seit Jesaja bereit und war nur auf die Buchvorbereitung angewandt worden, nicht
+auf die Prompts.
+
+**Für dich ändert das nichts an der Regel:** ein Hinweis lenkt die
+Aufmerksamkeit, er hat nicht recht. `promptcheck.py` findet Wörter, die gar
+nicht vorkommen — es findet nicht, ob eine Zahl stimmt, ob eine Stelle richtig
+genannt ist oder ob ein Wort im Vers etwas anderes bedeutet als angesagt. Das
+bleibt deine Arbeit, und sie ist in jedem Paket der ertragreichste Befund.
+
 ## Die Werkzeuge, die du je Kapitel laufen lässt
 
 ```

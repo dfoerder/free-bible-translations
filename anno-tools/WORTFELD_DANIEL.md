@@ -252,3 +252,207 @@ aufschlaegt, findet den ersten Halbsatz nicht.
 Deutschen (WEB 3,2 vertauscht Richter/Schatzmeister/Berater; RV stellt
 *prefectos* vor *gobernadores* und in 3,27 wieder zurueck). Es wurde
 durchweg lemmabasiert glossiert, nie nach Nachbarzeile.
+
+## 2 · Paket 2 — Kapitel 4 · 5 · 6
+
+93 Verse. Zusammen mit Paket 1: **196 von 357 Versen, 5418 Eintraege**,
+`validate.py` ohne Befund.
+
+`paketcheck` Abschnitt A meldet **einen** Treffer, und der ist keiner:
+`fressen lassen` steht in 4,29 im Futur („man wird dich Gras fressen
+lassen") und in 5,21 im Praeteritum („man liess ihn Gras fressen"). Die
+Reihen unterscheiden sich genau um das Tempus.
+
+### Die Vertreibungsformel — der Kern des Pakets
+
+Sie steht **viermal**: 4,14 (Variante) · 4,22 · 4,29 · 5,21. Die ersten
+drei liegen bei einem Agenten, die vierte beim naechsten; beide liefen
+gleichzeitig. Der Agent fuer Kapitel 4 hat die fertige Datei des
+Nachbarn gelesen und **fuenf Divergenzen selbst gemeldet** — das ist die
+dritte Stufe der Selbstabstimmung, die schon in Hesekiel zu beobachten
+war.
+
+Aufgeloest wurde jede am Vers der vier Ausgaben:
+
+| Wort | entschieden | Grund |
+|---|---|---|
+| `benetzen` | wet · **bañado** · trempé · bagnato | RV schreibt in **beiden** Versen *bañado*; Kapitel 4 hatte *mojado* |
+| `vom` (Tau) | **with the** · **por el** · de la · dalla | WEB *wet with the dew*, RV *bañado por el rocío* — jede Sprache aus ihrer eigenen Ausgabe |
+| `bei` (den Tieren) | with · **entre** · avec · con | RV *vivirás entre los animales*; Kapitel 4 hatte *con* |
+| `Herr` (Praedikat) | **lord** · señor · seigneur · signore | klein. Die Ausgaben haben hier gar kein Nomen (*the Most High rules*) — `Herr` ist Praedikatsnomen, kein Gottestitel |
+| `Verstand` | **understanding · entendimiento · intelligence · intelletto** | die Bindung (39 von 56 Belegen); Kapitel 5 hatte die Zweitlesart *mind · mente · pensée · mente* |
+
+**Die `Verstand`-Entscheidung hat eine Kaskade ausgeloest**, und die ist
+lehrreich. In 5,21 steht „sein Verstand wurde **dem** eines Tieres
+gleich". Mit *mente* (feminin) hiess das italienisch *la sua mente …
+a quella*; mit *intelletto* (maskulin) muss es *il suo … a quello*
+heissen. Drei Felder haengen am Genus des Nomens, das ich geaendert
+habe. **`kongruenz.py` hat es gefunden** — zum zweiten Mal ein Fehler
+des Koordinators, nicht eines Agenten.
+
+Das ist der Preis der Entscheidung: in 5,21 schreiben **alle vier**
+Ausgaben *heart · mente · cœur · cuore*. Die Bindung schlaegt sie, weil
+dasselbe deutsche Wort in 4,31 und 4,33 („mein Verstand kehrte zurueck")
+dieselbe Sache meint und dort *understanding · razón · raison · ragione*
+traegt.
+
+### Spanisch: `vosotros` — die Stellen sind andere als angesagt
+
+Die Regel aus Paket 1 gilt weiter, aber **keine** der drei Stellen, die
+die Vorbereitung nannte, stimmte:
+
+    angesagt 4,6   → tatsaechlich **4,11 und 4,20** (Imperative an die Waechter:
+                     `Fällt` · `haut ab` · `streift ab` · `streut umher` ·
+                     `lasst` · `vernichtet` → *Talad · cortad · sacudid ·
+                     esparcid · dejad · destruid*)
+    angesagt 5,16  → tatsaechlich **5,23** (`habt` → *habéis*). 5,16 redet
+                     durchgehend einen Einzelnen an.
+    angesagt 6,26  → bestaetigt
+
+RV1909mod schreibt an allen diesen Stellen die *ustedes*-Formen
+(*Corten · desmochen · derriben · esparzan · dejen · destrúyanlo*).
+
+### Der Vers, der aus Paket 1 uebernommen wurde
+
+**6,26 wiederholt 3,31.** Der Agent hat die Reihe in `ch3.json`
+nachgeschlagen: **Positionen 4–19 zeichengleich**, einschliesslich der
+beiden Entscheidungen, die nicht zu erraten waren (`auf` als *sobre ·
+sur · su* wegen der Kollision mit `in` im selben Vers; `euch` als
+*vosotros*). Genau eine Abweichung, und sie ist richtig: `König` steht
+englisch **klein**, weil das Wort hier satzintern hinter „Da schrieb"
+steht, waehrend es in 3,31 den Vers eroeffnet.
+
+### Neue Lesarten unter vorhandenen Lemmata
+
+Der `Hof`-Praezedenzfall aus Paket 1 hat in diesem Paket **neunmal**
+getragen. Jedes Mal fuehrt der Bestand das Lemma, aber keine Lesart fuer
+das Sachfeld des Verses:
+
+| Lemma | Bestand fuehrt | Daniel braucht |
+|---|---|---|
+| `Wächter` | watchman · centinela (38×, der Wachposten) | **watcher · vigilante · veilleur · vegliante** (der Engel) |
+| `Beschluss` | decision · decisión (2×, Lk 23,51) | **decree · decreto · décret · decreto** |
+| `Gemeinschaft` | fellowship · comunión (18×, „mit Gott wandeln") | **community · comunidad · communauté · comunità** |
+| `Rind` | cattle | **oxen · bueyes · bœufs · buoi** |
+| `Rat` | advice (54×) · council (35×) | **counselors · consejeros · conseillers · consiglieri** (die Personen) |
+| `Recht` | justice · derecho (140/262) | **law · ley · loi · legge** („das unabaenderliche Recht der Meder") |
+| `Gewalt` | violence · violencia | **power** (2. Bestandslesart, 7×) |
+| `befinden` | is located · encuentra | **found · hallado · trouvé · trovato** („zu leicht befunden") |
+| `fressen` | devour · devorar (alle Belege) | **eat · comer · manger · mangiare** (ein Mensch frisst Gras) |
+
+### Neu gepraegt
+
+    Löwengrube    C1  lions' den · foso de los leones · fosse aux lions · fossa dei leoni
+    Verbot        B2  prohibition · prohibición · défense · divieto
+    unabänderlich C1  unalterable · inalterable · immuable · immutabile
+    unterzeichnen B2  sign · firmar · signer · firmare
+    Wurzelstock   C1  stump · tocón · tronc · ceppo
+    Residenz      C1  residence · residencia · résidence · residenza
+    behaglich     C1  at ease · tranquilo · tranquille · tranquillo
+    Adlerfeder    C1  eagles' feathers · plumas de águila · plumes des aigles · penne delle aquile
+    Vogelkralle   C1  birds' claws · garras de ave · griffes des oiseaux · artigli degli uccelli
+    Erleuchtung   B2  light · luz · lumière · luce
+    Gesichtsfarbe C1  complexion · semblante · teint · colorito
+    erblassen     C1  turned pale · palideció · pâlit · impallidì
+    Festsaal      C1  banquet hall · sala del banquete · salle du festin · sala del convito
+    Belschazzar   A1  Belshazzar · Belsasar · Belschatsar · Belsatsar
+    Mene · Tekel · Peres · u-parsin   A1, Lautfolge
+
+**`Löwengrube` musste von `Grube` abweichen**, weil beide in **6,25** im
+selben Vers stehen. `Grube` behaelt die Bestandsreihe *pit · fosa ·
+fosse · fossa* (59×, einstimmig); `Löwengrube` nimmt die Zusammensetzung
+der Ausgaben. Dass Spanisch dabei *foso* (m) neben *fosa* (f) fuehrt, ist
+die Folge — RV schreibt an beiden Stellen *foso*.
+
+**`Pfeife` und `Flöte`** aus Paket 1 teilen sich eine Reihe, ohne je
+zusammenzutreffen. Dasselbe gilt hier fuer **`Räte` und `Berater`**:
+`Rat` ist im Bestand als Personenbezeichnung unbelegt und bekommt
+dieselbe Reihe wie `Berater`. Korpusweit eine latente Kollision, in
+Daniel nirgends in einem Vers.
+
+### Die Wandschrift in 5,25
+
+    Mene, mene, tekel u-parsin.
+
+Vier Tokens, drei Stichwoerter in der Deutung (5,26–28), und die Deutung
+setzt **`Peres`**, nicht `Parsin`. Die Lautfolge bleibt Name — der Text
+deutet sie selbst, also werden die **Deutungsverse** uebersetzt und die
+Formel nicht.
+
+**LSG uebersetzt sie als einzige** („Compté, compté, pesé, et divisé"),
+WEB, RV und RIV transliterieren. Weil LSG keine franzoesische
+Transliteration anbietet, folgt die franzoesische Glosse den drei
+uebrigen Ausgaben. Bei `u-parsin` weichen alle vier voneinander ab
+(*Upharsin · Uparsin · Upharsin · Ufarsin*) — das ist die Schreibung der
+jeweiligen Ausgabe, keine Inkonsistenz.
+
+### Vier Kollisionen, die `hints.py` nicht sah
+
+- **4,11 `Ast` ↔ `Zweig`** — `Ast` weicht auf *boughs · ramos ·
+  rameaux · ramoscelli* (Hesekiel 31,5, dasselbe Baumbild).
+- **4,11 · 4,20 `Fällt` ↔ `haut`** — der Bestand hat fuer `fällen` nur
+  *Cut down · Cortad · Coupez · Tagliate*, identisch mit `hauen`.
+  `fällen` weicht auf *Talad · Abattez · Abbattete*, gedeckt von
+  `abhauen` (Lk 13,7) und von LSG/RIV im Vers.
+- **4,31 `loben` ↔ `preisen`** — `preisen` nimmt *blessed · bendije ·
+  bénis · benedissi* (26 Belege); alle vier Ausgaben schreiben genau das.
+- **6,23 `gegenüber` ↔ `vor`** — `gegenüber` (3 Belege) weicht auf
+  *toward · hacia · envers · verso* (27×).
+
+### Was die Agenten am Auftrag widerlegt haben — und die Lehre daraus
+
+| Vorgabe | tatsaechlich |
+|---|---|
+| `Wildesel` steht in Kapitel 4 | steht im ganzen Buch **nur in 5,21** |
+| Die Hoechster-Formel steht in 4,31 | 4,31 hat nur „Ich pries den Hoechsten"; die Formel steht in 4,14 · 4,22 · 4,29 |
+| `Kalk` und `Gelenke` in Kapitel 5 | stehen **nicht im deutschen Text** — der l1912mod hat `getünchte Wand` und `Hüften`; beide Woerter stammen aus den Ausgaben |
+| `Belschazzar` 7× in Kapitel 5 | **6×**; das siebte Buchvorkommen ist 8,1 |
+| `Fasten`, `Verklagten`, `Siegelring` in Kapitel 6 | **keines steht im Text** — der l1912mod hat „ohne zu essen", „angeklagt", `Siegel` |
+| `Löwe` unbelegt | **105× belegt**; nur `Löwengrube` war neu |
+| `Wand`, `Kette`, `Herrscher`, `Leuchter` „zu pruefen" | alle belegt; nur `Festsaal` war neu |
+| `vosotros` betrifft 4,6 · 5,16 | betrifft **4,11 · 4,20 · 5,23** |
+
+**Acht von neun dieser Fehler sind derselbe Fehler**, und er ist meiner:
+ich habe Kapitelwortschatz aus der Bibelkenntnis in den Prompt
+geschrieben, statt ihn aus dem Quelltext zu ziehen. Genau davor warnt
+`AUFTRAG_BUCH.md` die Agenten seit Buch 20 — und genau dafuer gibt es
+`promptcheck.py`.
+
+**Ich hatte `promptcheck.py` ueber die Buchvorbereitung laufen lassen,
+aber nicht ueber die Agentenprompts.** Ab Paket 3 wird jeder Prompt
+erst in eine Datei geschrieben, dann geprueft, dann abgeschickt. Die
+Regel steht jetzt in `AUFTRAG_BUCH.md`.
+
+### RIV1927 — zwanzig Defekte in sechs Kapiteln
+
+Die Agenten haben in diesem Paket **systematisch** nachgezaehlt, nicht
+beilaeufig gelesen. Kapitel 5 hat dafuer einen eigenen Anlaut-Scan ueber
+das ganze Buch gebaut.
+
+| Kapitel | fehlender Anlaut | anderer Setzfehler |
+|---|---|---|
+| 1–3 | 4 (1,1 · 1,7 · 3,12 · 3,20) | 3 (2,25 · 2,38 · 2,39) |
+| 4 | **0** | 4 (4,11 `al terra` · 4,16 `si di lui` · 4,33 `come ai buoi` · 4,37 Komma) |
+| 5 | 3 (5,3 · 5,12 · 5,17) | 3 (5,14 `Io ha` · 5,25 fehlender Akzent · 5,13 Wortumstellung) |
+| 6 | 2 (6,6 `u` → `tu` · 6,8 `edi` → `Medi`) | 1 (6,4 `il lui` → `in lui`) |
+
+`Io ha` statt `Io ho` steht **zweimal** (2,25 und 5,14) — dieselbe Hand,
+derselbe Fehler.
+
+**WEB, RV1909mod und LSG1910 sind fast fehlerfrei**: ein einziger
+Artikelfehler in WEB 6,13 („an decree").
+
+### Was `artikel.py` gefunden hat
+
+Vier echte Genusfehler, die kein Agent gemeldet hat und die
+`glosskollision.py` nicht sieht, weil kein Wort mit einem anderen
+zusammenfaellt:
+
+    2,38  `das goldene Haupt`   it *la* vor `capo` (m)      → *il*
+    6,18  `der Grube`           es *del* vor `fosa` (f)     → *de la*
+    6,21  `der Grube`           es *al* vor `fosa` (f)      → *a la*
+    2,38  `in die Hand`         fr *les* vor `main` (Sg.)   → *la*
+
+Der letzte war **mein eigener**: ich hatte `Hand` vom Plural der
+franzoesischen Ausgabe auf den deutschen Singular zurueckgesetzt und den
+Artikel stehen lassen.
