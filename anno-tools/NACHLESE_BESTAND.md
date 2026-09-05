@@ -212,3 +212,25 @@ Himmels" aus Jeremia 33,22 uebernehmen wollte, den Fehler bemerkte und
 in seinem eigenen Vers `du` setzte — **die Vorlage also benutzte, ohne
 ihren Fehler mitzunehmen**. Derselbe Vorgang wie bei Micha 3,12 gegen
 Jeremia 26,18.
+
+
+### 14. Meine eigene Messung: aus zwei von sechs Varianten „alle" gemacht
+
+Fuer den Haggai-Prompt habe ich „So spricht der HERR" im Bestand
+gemessen, mir mit `most_common(2)` die **zwei haeufigsten** von
+**sechs** Varianten ausgeben lassen und geschrieben: „184 Vorkommen,
+**alle** mit `parle`". Der Agent fuer Kapitel 1 hat nachgemessen: es
+tragen zwei Vorkommen `dit` und zwei italienisch `parla` statt `dice`.
+Die Stellungsregel selbst stimmt — die Behauptung „alle" nicht.
+
+Derselbe Fehler wie in Jona, wo ich ein RV-Verszitat bei 95 Zeichen
+abgeschnitten und aus dem Rest einen Verszaehlungsbefund abgeleitet
+hatte. Die Regel daraus gilt weiter und jetzt auch fuer Zaehlungen:
+**nie aus einer abgeschnittenen Liste auf Vollstaendigkeit schliessen.**
+
+Dagegen steht seit Haggai `folgenreihe.py`. Es misst die Glossen einer
+Wortfolge im Bestand und schneidet **nichts** ab: jede Variante mit
+ihrer Zahl, die Belegstellen der seltenen dazu, und die Vorkommen mit
+einem Mehrwort an einer Position eigens gezaehlt — die fehlten in meiner
+Messung stillschweigend und erklaeren, warum ich 184 zaehlte und der
+Agent 229.
