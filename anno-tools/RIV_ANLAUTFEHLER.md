@@ -183,3 +183,57 @@ Buchstabe **zuviel**, und `hai` ist selbst ein sehr haeufiges Wort.
 **Fuer die Kapitelarbeit heisst das:** der Frequenzlauf bleibt der erste
 Schritt, aber er ersetzt das Lesen nicht. Zwei der bisher gefundenen
 RIV-Defekte in Daniel und Hosea waren nur durch Lesen zu finden.
+
+## Nachtrag 4: eine dritte Untergrenze — und eine belastbare Zahl
+
+Gefunden beim Annotieren von **Joel 3**: RIV schreibt in 2,32 „sul monte
+Sion ed in **erusalemme**". Der Detektor findet das **nicht** — nicht
+wegen der Wortblindstelle und nicht wegen der Haeufigkeitsschwelle,
+sondern weil er **seltene** Formen sucht: `erusalemme` steht korpusweit
+**61×**. Eine oft genug wiederholte Verstuemmelung faellt aus dem Sieb.
+
+Damit sind drei Untergrenzen bekannt:
+
+1. das verstuemmelte Wort ist zufaellig ein echtes Wort (`loro` → `oro`)
+2. das richtige Wort ist selbst selten (`guardiano`, 15 Belege)
+3. **die Verstuemmelung ist haeufig** (`erusalemme`, 61 Belege)
+
+### Die Namensverstuemmelungen, ohne Seltenheitsdeckel gezaehlt
+
+Der oben beschriebene Lauf hatte einen Deckel („hoechstens dreimal").
+Ohne ihn, und beschraenkt auf den **eindeutigen** Fall — eine
+kleingeschriebene Form, die durch **einen vorangestellten Grossbuchstaben**
+zu einer mindestens zehnmal haeufigeren Form wird, und die selbst
+nirgends grossgeschrieben vorkommt:
+
+| Ausgabe | Vorkommen | Formen |
+|---|---|---|
+| LSG1910 (fr) | 3 | 3 |
+| RV1909mod (es) | 13 | 6 |
+| WEB (en) | 19 | 3 |
+| l1912mod (de) | 20 | 8 |
+| **RIV1927 (it)** | **672** | **201** |
+
+**Vierunddreissigmal so viel wie die naechsthoehere Ausgabe.** Eine
+Stichprobe ueber die 25 seltensten Treffer enthaelt **keinen einzigen
+Fehlalarm** — jeder ist ein verstuemmelter Name oder ein
+satzeroeffnendes Wort.
+
+Die haeufigsten:
+
+     61× erusalemme  → Gerusalemme      33× ignore   → Signore
+     30× iuda        → Giuda            24× risto    → Cristo
+     21× oiché       → Poiché           21× avide    → Davide
+     19× sraele      → Israele          17× erché    → Perché
+     14× abilonia    → Babilonia        12× iacobbe  → Giacobbe
+      9× adre        → Padre             9× pirito   → Spirito
+      8× araone      → Faraone           8× iuseppe  → Giuseppe
+      8× uando       → Quando            8× ddio     → Iddio
+
+**Das ist die belastbarste Zahl, die dieser Defekt bisher hat** — und
+sie ist immer noch eine Untergrenze, weil sie nur den Namensfall zaehlt.
+Die 440 aus dem ersten Lauf sind damit ueberholt.
+
+**Fuer die Kapitelarbeit aendert sich nichts**: der Bestand ist
+unbeschaedigt, weil der deutsche Text glossiert wird. Gefaehrlich ist der
+Defekt nur, wenn eine RIV-Zeile als Vorlage abgezaehlt wird.

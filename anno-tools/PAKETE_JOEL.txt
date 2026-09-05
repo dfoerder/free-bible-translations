@@ -1,0 +1,113 @@
+# Pakete Joel (Buch 29)
+
+4 Kapitel, 73 Verse, 1666 Tokens — das kleinste Buch seit Obadja.
+**Ein Paket, vier Agenten, das ganze Buch auf einmal.**
+
+    Kap. 1   20 Verse   Heuschreckenplage, Klage
+    Kap. 2   27 Verse   Der Tag des HERRN, Umkehrruf, Verheissung
+    Kap. 3    5 Verse   Geistausgiessung — **jeder Vers hat eine Vorlage**
+    Kap. 4   21 Verse   Voelkergericht im Tal Joschafat
+
+`dubletten.py` findet **0 Paare** — wie in Hosea. Es gibt keine
+buchinterne Vorlagenkette.
+
+
+## Die Verszaehlung: der deutsche Text hat vier Kapitel, die Ausgaben drei
+
+Das ist der groesste Strukturunterschied, den ein Buch dieser Reihe hat,
+und er betrifft **alle vier Ausgaben gleich**:
+
+| deutsch | en · es · fr · it |
+|---|---|---|
+| 1,1–20 | 1,1–20 |
+| 2,1–27 | 2,1–27 |
+| **3,1–5** | **2,28–32** |
+| **4,1–21** | **3,1–21** |
+
+Die Ausgaben haben in **Kapitel 2 zweiunddreissig** Verse: ihre 2,28–32
+sind das deutsche Kapitel 3. Ein Kapitel 4 gibt es dort nicht.
+
+`ausgaben.py` findet fuer die Kapitel 3 und 4 **keine Vorlage** — die
+Agenten dieser beiden Kapitel muessen `ausgaben.py 29 2` beziehungsweise
+`ausgaben.py 29 3` aufrufen. Die Hinweise stehen wortwoertlich in ihren
+Prompts.
+
+
+## Die Vorlagendecke ist die dichteste dieser Buchreihe
+
+`parallelen.py` meldet in **allen vier Kapiteln** Bloecke aus dem
+fertigen Bestand. Das ist der Gegensatz zu Hosea, wo es fast nichts gab:
+
+    Kap. 1   10 von 20 Versen mit mindestens 4 gemeinsamen Tokens
+    Kap. 2   12 von 27
+    Kap. 3   **5 von 5** — Bloecke bis zu **10 Tokens**
+    Kap. 4   12 von 21
+
+**Kapitel 3 ist der Sonderfall.** Der ganze Abschnitt wird in
+**Apostelgeschichte 2,17–21** zitiert, und der ist fertig annotiert:
+
+    3,1 ← Apg 2,17   Block 7  „Eure Söhne und Töchter werden weissagen eure"
+    3,4 ← Apg 2,20   Block 10 „verwandeln und der Mond in Blut bevor der große und"
+    3,5 ← Röm 10,13  Block 8  „den Namen des HERRN anruft wird gerettet werden"
+
+**Nachschlagen, nicht abschreiben** — der deutsche Wortlaut ist nicht
+ueberall derselbe, und `parallelen.py` nennt die Blockgrenzen genau.
+
+Dreimal meldet es **Jesaja 13,6** (1,15 · 2,1 · 4,14) — die Formel
+„Wehe, der Tag des HERRN ist nahe". Sie steht dort fertig.
+
+
+## Die vier Heuschrecken — die Entscheidung des Buches
+
+**1,4 und 2,25 nennen dieselben vier Tiere in verschiedener Reihenfolge:**
+
+    1,4    Nagerheuschrecke → Wanderheuschrecke → Larve → Fresser
+    2,25   Wanderheuschrecke · Larve · Fresser · Nagerheuschrecke
+
+Zwei Agenten arbeiten daran gleichzeitig. **Beide schreiben ihre vier
+Reihen vollstaendig in den Bericht**; der Koordinator gleicht ab.
+
+Gezaehlt mit `wortzahl.py 29 alle`:
+
+    Wanderheuschrecke  3×   **unbelegt**, neu zu praegen
+    Larve              3×   die Form unbelegt, das **Lemma `Larve` belegt**
+    Nagerheuschrecke   2×   **unbelegt**, neu zu praegen
+    Fresser            2×   die Form 3× belegt, Lemma `Fresser`
+
+**Das einfache Wort `Heuschrecke` steht in Joel nirgends** — nur die vier
+Zusammensetzungen. Im Bestand ist es gut belegt (die Form 3×, das Lemma
+26×), aber die Zusammensetzungen sind etwas anderes: die Ausgaben setzen dort
+vier verschiedene Tiernamen, und die muessen in beiden Versen gleich und
+untereinander unterscheidbar sein.
+
+
+## Die uebrigen Namen
+
+    Joschafat   2×  4,2 · 4,12 — **belegt**, die Form 72×, das Lemma 82×.
+                    Achtung: im Bestand ist es der **Koenig** von Juda,
+                    hier das **Tal**. Derselbe Name, dieselbe Reihe.
+    Zion        7×  ·  Jerusalem 6×  ·  Juda 6×  ·  je 1×: Tyrus · Sidon ·
+                    Philister · Ägypten · Edom
+    Bottich     1×  4,13 — **unbelegt**, neu zu praegen
+
+## Das Wortfeld
+
+    Tag des HERRN   5×   — die Formel des Buches; in Jesaja 13,6 fertig
+    Getreide 4× · Most 3× · Öl 3× · Wein 3× · Weinstock 2× · Feigenbaum 3×
+    Kelter 2× · Sichel 1× · Tenne — pruefen, `wortzahl.py` findet sie nicht
+    Priester 3× · Ältesten 2× · Fasten 3× · heilig 6×
+    Trauersack · Trauergewand — beide belegt, `Trauergewand` Lemma 18×
+    Sonne 3× · Mond 3× · Sterne 2× · Geist 2×
+
+**`Most`, `Öl`, `Getreide`, `Weinstock`, `Feigenbaum`, `Kelter` sind aus
+Hosea entschieden** (Buch 28, `WORTFELD_HOSEA.md`) und stehen im Bestand.
+
+
+## Was NICHT gemacht wird
+
+- Keinen Namen deuten, den der Text nicht selbst deutet. `Joschafat` ist
+  in 4,2 und 4,12 ein Talname und bleibt Name, auch wo eine Ausgabe ihn
+  uebersetzt.
+- Keine Grammatik-Tags in Klammern als Glosse.
+- Spanisch bleibt beim **`vosotros`**-System.
+- Ins Repository `bible-reader` wird nur gelesen.
