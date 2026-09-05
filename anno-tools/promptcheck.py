@@ -88,6 +88,29 @@ TRENNBAR = ('zusammen', 'entgegen', 'zurueck', 'hinaus', 'hinein', 'heraus',
             'an', 'bei', 'zu', 'um', 'her', 'hin', 'los', 'weg')
 
 
+def namensliste(text):
+    """Namen aus den `A · B · C`-Zeilen der Prompts.
+
+    Der Anlass: die Namenslisten stehen als Fliesstext ohne Backticks,
+    und deshalb pruefte das Skript sie gar nicht. In Zefanja 2 gingen so
+    zwei falsche Namen durch — der Prompt schrieb `Kereter` und
+    `Aschdod`, der Text hat `Kreter` und `Asdod`. Beide sind im Bestand
+    gebunden; der Agent hat es am Vers gemerkt.
+
+    Erkannt wird eine Zeile, die ueberwiegend aus grossgeschriebenen
+    Woertern besteht, die mit `·` getrennt sind.
+    """
+    out = []
+    for zeile in text.split('\n'):
+        if zeile.count('·') < 2:
+            continue
+        teile = [x.strip(' *`') for x in zeile.split('·')]
+        gross = [x for x in teile if x[:1].isupper() and x.isalpha()]
+        if len(gross) >= 3 and len(gross) >= len(teile) - 2:
+            out += gross
+    return out
+
+
 def stamm(w):
     """Kleingeschrieben, ohne Umlaute, ohne haeufige Endung.
 
@@ -149,7 +172,8 @@ def promptwoerter(pfad):
         text = f.read()
     raus, gesehen = [], set()
     quellen = (re.findall(r'`([^`\n]{2,60})`', text)
-               + re.findall(r'„([^„“"\n]{2,200})[“"]', text))
+               + re.findall(r'„([^„“"\n]{2,200})[“"]', text)
+               + namensliste(text))
     for roh in quellen:
         roh = roh.strip()
         if KEIN_TEXT.search(roh):
