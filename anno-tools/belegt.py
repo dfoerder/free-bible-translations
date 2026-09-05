@@ -128,6 +128,7 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         print()
         return False
     ges = sum(c.values())
+    lemma_index = lemmata            # {lemma_klein: Counter} — vor dem Ueberschreiben retten
     lemmata = {k[1] for k in c}
     schreibungen = {k[0] for k in c}
     if C.strip_punct(wort) not in schreibungen:
@@ -163,6 +164,46 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
               f'*{en}* · *{es}* · *{fr}* · *{it}*')
     print('   ' + ', '.join(stellen[f][:6]))
+    # Das Lemma kann Lesarten fuehren, die diese FORM nicht hat. Gefunden am
+    # Klauen/Klaue-Fall (Daniel 7,19): die Pluralform `Klauen` steht 11x und
+    # ausnahmslos als *hooves* — der Singular `Klaue` aber zweimal, einmal als
+    # *hoof* und einmal als *paw* (1. Samuel 17,37), und genau die zweite Lesart
+    # war die gesuchte. Wer nur die Form abfragt, sieht sie nicht und haelt das
+    # Lemma fuer einstimmig.
+    if lemma_index:
+        def _blosse_beugung(a, b):
+            """Unterscheiden sich zwei Reihen nur in der Flexion?
+
+            Ohne diese Sperre meldete der Lauf bei `Wort` die Reihe von
+            `Worte` und bei `König` die von `Könige` als "weitere Lesart" —
+            das ist derselbe Sinn im Plural und reines Rauschen. Gesucht sind
+            Reihen wie *paw* neben *hooves*, die inhaltlich auseinandergehen.
+            """
+            for x, y in zip(a[3:], b[3:]):          # en · es · fr · it
+                                                    # (0 Form, 1 Lemma, 2 Level)
+                x, y = x.lower(), y.lower()
+                if x == y:
+                    continue                        # `re`/`re` — kurze Woerter
+                k = min(len(x), len(y), 4)
+                if k < 3 or x[:k] != y[:k]:
+                    return False
+            return True
+        eigene = {k[1:] for k in c}
+        andere = collections.Counter()
+        for l in lemmata:
+            for k, n in lemma_index.get(l.lower(), {}).items():
+                if k[1:] in eigene:
+                    continue
+                if any(_blosse_beugung(k, e) for e in c):
+                    continue
+                andere[k] += n
+        if andere:
+            print()
+            print(f'   Das LEMMA fuehrt {len(andere)} weitere Lesart(en), die diese')
+            print('   Form nicht hat — am Vers pruefen, ob eine davon passt:')
+            for (form, lemma, lvl, en, es, fr, it), n in andere.most_common(6):
+                print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
+                      f'*{en}* · *{es}* · *{fr}* · *{it}*')
     print()
     return True
 
