@@ -159,9 +159,26 @@ echtes Wort** ergibt:
     cera  → era
     palo  → alo
 
-**Die oben gemessenen 440 verdaechtigen Vorkommen sind damit eine
-Untergrenze, keine Zahl.** Wie weit darueber, ist von aussen nur mit
+### Und eine zweite Untergrenze: die Haeufigkeitsschwelle
+
+Gefunden beim Annotieren von **Hosea 12**: RIV schreibt in 12,12
+`si fe' uardiano di greggi` statt `guardiano`. Der Lauf sucht Formen,
+die durch einen vorangestellten Buchstaben zu einer **mindestens
+zwanzigmal haeufigeren** werden — `guardiano` hat aber nur **15**
+Belege. Der Fall faellt durch, obwohl er eindeutig ist.
+
+Dieselbe Schwelle traf `aranno` → `faranno` (Hosea 8,7, 6 Belege) nur
+knapp nicht. Wer sie senkt, bekommt mehr Fehlalarme; wer sie laesst,
+verliert die seltenen Woerter.
+
+**Beides zusammen — die Wortblindstelle und die Haeufigkeitsschwelle —
+macht die oben gemessenen 440 verdaechtigen Vorkommen zu einer
+Untergrenze, keiner Zahl.** Wie weit darueber, ist von aussen nur mit
 Kontextmodellen zu bestimmen — ein eigener Arbeitsgang.
+
+Dazu kommt eine dritte Sorte, die gar kein Anlautfall ist:
+**`hai profeti` statt `ai profeti`** (Hosea 12,10). Hier ist ein
+Buchstabe **zuviel**, und `hai` ist selbst ein sehr haeufiges Wort.
 
 **Fuer die Kapitelarbeit heisst das:** der Frequenzlauf bleibt der erste
 Schritt, aber er ersetzt das Lesen nicht. Zwei der bisher gefundenen
