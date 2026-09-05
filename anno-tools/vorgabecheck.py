@@ -107,8 +107,12 @@ NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV)\b')
 # Anfuehrungszeichen kannte. RIV liest dort „Habacuc".
 # Eine Glossenreihe (`*burden · carga · charge · peso*`) ist KEIN Zitat;
 # sie traegt das Trennzeichen `·` und wird deshalb uebersprungen.
+# Das Kursivmuster ist bewusst ENG: hoechstens 40 Zeichen, kein Komma,
+# kein Backtick, kein Punkt. Eine erste Fassung nahm alles zwischen zwei
+# Sternchen und las dabei den Text ZWISCHEN zwei Auszeichnungen als
+# Zitat („. In 5,3, wo `Kraft` allein steht, gilt wieder die AT-Bindung ").
 EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]'
-                      r'|\*([^*\n]{3,90})\*')
+                      r'|\*([^*`,.;:\n]{3,40})\*')
 
 
 def zitate(zeile):

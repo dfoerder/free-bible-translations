@@ -151,9 +151,18 @@ vino*), sonst waeren `Wein` und `Most` im selben Kapitel ununterscheidbar.
 alle vier Ausgaben haben dort Imperative. Glossiert wurde nach dem deutschen
 Text.
 
-**4,20 `bewohnt`:** die Ausgaben gehen im Genus auseinander — RV *habitada*
-(f), LSG *habité* (m), RIV *abitata* (f). Die Glossen folgen jeder ihrer
-eigenen Ausgabe; das ist kein Kongruenzfehler.
+**4,20 `bewohnt`:** die Ausgaben gehen auseinander — WEB *inhabited*,
+RV *será habitada* (f), LSG *sera habité* (m), und **RIV liest gar nicht
+„bewohnt", sondern *sussisterà* („wird bestehen")**. Die Glosse folgt dem
+deutschen Text (*inhabited · habitada · habité · abitata*); die
+italienische Spalte ist aus dem Bestand, nicht aus RIV.
+
+Der Genusunterschied zwischen RV (f) und LSG (m) ist kein
+Kongruenzfehler, sondern die Entscheidung der jeweiligen Ausgabe.
+
+*(Eine fruehere Fassung dieser Zeile behauptete, RIV lese `abitata`.
+Gefunden hat es `vorgabecheck.py`, nachdem es um kursive Zitate erweitert
+worden war — an einem Buch, das laengst abgenommen ist.)*
 
 ## 5 · Was beim Einsammeln zusaetzlich angeglichen wurde
 
