@@ -729,7 +729,7 @@ häufigste Grund, warum ein AT-Kapitel neben dem Bestand herläuft.
 | `Balak` | Balak | Balac | Balak | Balak | 32/37 |
 | `Gilgal` | Gilgal | Gilgal | Guilgal | Ghilgal | 32/32 |
 | `Schicksal` | fate | suerte | sort | sorte | 32/35 |
-| `Micha` | Micah | Micaías | Mica | Mica | 32/60 |
+| `Micha` | Micah | Micaías | Mica | Mica | 32/60 | **ACHTUNG: zwei Traeger.** Das ist der Micha aus Richter 17 und der Michaja aus 1. Koenige 22. Der **Prophet** Micha steht im Bestand nur einmal — Jeremia 26,18 — als *Micah · Miqueas · Michée · Michea*, und alle vier Ausgaben lesen ihn in Micha 1,1 genau so. Die Mehrheit ist hier die falsche Reihe. |
 | `Schritt` | steps | pasos | pas | passi | 32/40 |
 | `Amazja` | Amaziah | Amasías | Amatsia | Amazia | 32/36 |
 | `Haman` | Haman | Amán | Haman | Haman | 32/47 |

@@ -372,3 +372,33 @@ Vers:** „a iona, per fargli ombra al capo; e **Giona** provò…".
 fehlt nicht der Anlaut des Namens, sondern die **Praeposition davor**
 (*rivolta **a** Giona*). Derselbe Ort im Satz, die entgegengesetzte
 Richtung des Verlusts. Gefunden vom Agenten fuer Jona 1.
+
+
+---
+
+## Nachtrag Micha (33), Kapitel 1: drei Anlautfehler in sechzehn Versen
+
+| Stelle | steht | muss | korpusweit |
+|---|---|---|---|
+| Mi 1,1 | „ai giorni di Jotham, di Achaz e **di zechia**" | *Ezechia* | `zechia` **3×** — und **alle drei hinter `di`** |
+| Mi 1,9 | „giunge fino alla porta del mio popolo, **fino a erusalemme**" | *Gerusalemme* | `erusalemme` **61×** |
+| Mi 1,13 | „il principio del peccato per la **figliuola di ion**" | *Sion* | `ion` **2×** — beide hinter `di` |
+
+**`zechia` steht in zwei fertigen Buechern:** Jesaja 39,1 und Hosea 1,1.
+**`ion` ebenso:** Klagelieder 2,7. Beide Male dieselbe Stellung.
+
+Damit sind es fuenf Namen, deren Anlaut ausschliesslich hinter einem
+kurzen Wort verlorengeht — die Regel aus dem Amos-Nachtrag haelt an jedem
+neuen Buch.
+
+### Ein anderer Fehlertyp im selben Kapitel: die falsche Stadt
+
+**RIV Mi 1,10** liest „Non l'annunziate **in Gad**!" — der deutsche Text
+(und WEB, RV, LSG) haben **Gat**, die Philisterstadt. RIV schreibt sie
+sonst `Gath` (45×), waehrend `Gad` korpusweit 80× der **Stammesname**
+ist. Das ist kein Anlautverlust, sondern eine Verwechslung zweier
+existierender Namen — und deshalb gefaehrlicher: keine Haeufigkeitsprobe
+schlaegt an, das Wort ist ja echt. Nur der Vergleich mit den drei anderen
+Ausgaben findet es.
+
+Gefunden vom Agenten fuer Micha 1.
