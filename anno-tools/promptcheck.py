@@ -36,6 +36,13 @@ Das **Partizip-`ge-`** wird abgeschnitten, wenn genug uebrig bleibt: sonst
 findet `troesten` sein eigenes `getroestet` nicht — in Paket 19 haette das
 Skript deshalb beinahe ein Wort als fehlend gemeldet, das viermal dasteht.
 
+Bei **trennbaren Verben steht das `ge-` in der Mitte** (`umgekehrt` zu
+`umkehren`, `angefangen` zu `anfangen`). Auch das wird abgeschnitten, nach
+einer Liste der gaengigen Praefixe. Der Anlass: bei der Vorbereitung von
+Amos, Paket 2 meldete das Skript `umkehren` als fehlend — waehrend der
+laengste Refrain des Buches („Doch ihr seid nicht zu mir umgekehrt") ihn
+fuenfmal traegt.
+
 **Ein Treffer ist ein Verdacht, kein Fehler.** Umlautwechsel (`Baum`/`Baeume`),
 starke Verben (`giessen`/`goss`) und Suppletion findet der Stammvergleich
 nicht — und **ein Wort als zweites Glied eines Kompositums** auch nicht
@@ -75,6 +82,12 @@ KURZ = 3
 ABSTAND = 3
 
 
+TRENNBAR = ('zusammen', 'entgegen', 'zurueck', 'hinaus', 'hinein', 'heraus',
+            'herein', 'nieder', 'wieder', 'ueber', 'unter', 'durch', 'empor',
+            'nach', 'fort', 'weit', 'auf', 'aus', 'ein', 'mit', 'vor', 'ab',
+            'an', 'bei', 'zu', 'um', 'her', 'hin', 'los', 'weg')
+
+
 def stamm(w):
     """Kleingeschrieben, ohne Umlaute, ohne haeufige Endung.
 
@@ -94,6 +107,16 @@ def stamm(w):
             break
     if w.startswith('ge') and len(w) - 2 >= MIN - 1:
         w = w[2:]
+    else:
+        # Trennbare Verben tragen das Partizip-`ge-` in der MITTE:
+        # `umgekehrt` gehoert zu `umkehren`, `angefangen` zu `anfangen`.
+        # Ohne diesen Zweig meldete das Skript den Amos-4-Refrain
+        # („Doch ihr seid nicht zu mir umgekehrt") als fehlend, obwohl
+        # er fuenfmal dasteht.
+        for pfx in TRENNBAR:
+            if w.startswith(pfx + 'ge') and len(w) - 2 >= MIN:
+                w = pfx + w[len(pfx) + 2:]
+                break
     return w
 
 
