@@ -1,0 +1,143 @@
+# Pakete Hosea (Buch 28)
+
+14 Kapitel, 197 Verse, 4519 Tokens. Ein kleines Buch — etwa so gross wie
+Klagelieder und Hohelied zusammen.
+
+    Paket 1   Kap. 1 · 2 · 3          39 Verse   Namen, Ehe- und Hurereibild
+    Paket 2   Kap. 4 · 5 · 6 · 7      61 Verse   Anklage, Priester, Umkehr
+    Paket 3   Kap. 8 · 9 · 10 · 11    57 Verse   Kalb, Assyrien, Vaterliebe
+    Paket 4   Kap. 12 · 13 · 14       40 Verse   Jakob, Gericht, Heilung
+
+**`dubletten.py` findet 0 Paare.** Das Buch hat keine Wiederholungsverse —
+anders als Hesekiel (979) oder Jeremia (261). Es gibt deshalb keine
+Vorlagenkette und keine Formelentscheidung am Anfang; was zusammengehalten
+werden muss, ist der **Wortschatz**, nicht der Vers.
+
+
+## Die Verszaehlung — vier Ausgaben, drei verschiedene Zaehlungen
+
+Das ist der schwierigste Punkt des Buches, und er ist ungewoehnlich:
+**die vier Ausgaben sind sich untereinander uneinig.** Gemessen mit
+`kapitelgrenzen.py`, die Grenzverse am Text nachgelesen.
+
+| deutsch | en · it | es | fr |
+|---|---|---|---|
+| 1,1–9   | 1,1–9   | 1,1–9 | 1,1–9 |
+| **2,1–25** | **1,10 – 2,23** | **1,10 – 2,23** | **2,1–25** |
+| 3,1 – 11,11 | gleich | gleich | gleich |
+| **12,1–15** | **11,12 – 12,14** | **12,1–14** (s. u.) | **12,1–15** |
+| 13,1–15 | 13,1–15 | 13,1–15 | 13,1–15 |
+| **14,1**   | **13,16** | **13,16** | **13,16** |
+| **14,2–10** | **14,1–9** | **14,1–9** | **14,1–9** |
+
+**Franzoesisch folgt der deutschen Zaehlung durch die Kapitel 1 bis 12.**
+Nur in 13/14 zaehlt es wie die anderen. Wer in Kapitel 2 oder 12 arbeitet,
+hat also **drei Ausgaben im Versatz und eine nicht**.
+
+**Spanisch hat im ganzen Buch 196 Verse gegen 197.** Der Grund steht in
+Kapitel 12: RV zieht **de 12,14 und 12,15 zu einem Vers zusammen**
+(es 12,14 hat 39 Woerter, die beiden deutschen zusammen 42). Fuer de 12,15
+gibt es also keine eigene spanische Zeile — der Inhalt steht am Ende von
+es 12,14. Das ist keine Verschiebung: es 12,1 = de 12,1.
+
+`ausgaben.py` richtet Kapitel 2 und 12 deshalb **nicht** zuverlaessig aus.
+Die betroffenen Kapitel liegen in Paket 1 und 4; beide Agenten bekommen den
+Hinweis wortwoertlich.
+
+
+## RIV traegt in Kapitel 11 und 12 eine zweite Verszaehlung IM TEXT
+
+**Fuenfzehn RIV-Verse beginnen mit einer Klammerziffer** — `(12:1)`,
+`(12:2)`, … Es sind RIV 11,12 bis RIV 12,14, also genau der Block, in dem
+die Ausgabe anders zaehlt als das Deutsche.
+
+    RIV 11,12  „(12:1) Efraim mi circonda di menzogne …"
+    RIV 12,1   „(12:2) Efraim si pasce di vento …"
+
+Das ist **kein Defekt, sondern ein Fliesstext-Artefakt** der italienischen
+Ausgabe: sie fuehrt die hebraeische Zaehlung mit. Ueber alle 66 Buecher
+sind es 222 Verse in 20 Buechern, und **nur** im Italienischen (WEB, RV und
+LSG haben null). Der Bestand ist unbeschaedigt — annotiert wird der
+deutsche Text, und keine einzige Glosse enthaelt eine Klammerziffer.
+
+**Gefaehrlich ist es nur beim Abzaehlen.** Wer die RIV-Zeile Wort fuer Wort
+gegen den deutschen Vers haelt, hat zwei Tokens Vorsprung. Dieselbe Falle
+wie die Sprecherangaben, die WEB im Hohelied als Fliesstext fuehrt.
+Vollstaendig in `RIV_ANLAUTFEHLER.md`.
+
+
+## Die Namen
+
+Alle Zahlen mit `wortzahl.py 28 alle` gezaehlt.
+
+**Belegt, unveraendert uebernehmen:**
+
+    Ephraim     37×  `Ephraim`   A1  Ephraim · Efraín · Éphraïm · Efraim   (103× belegt)
+                     Genitiv `Ephraims` 3×: of Ephraim · de Efraín · d'Éphraïm · di Efraim
+    Jesreel      5×  `Jesreel`   A1  Jezreel · Jezreel · Jizreel · Izreel  (42×)
+    Assyrien     9×  ·  Samaria 6×  ·  Baal 7×  ·  Gibea 4×  ·  Gilgal 3×
+    Bethel       2×  ·  Gilead 2×  ·  Zeboim 1×  ·  Rama 1×
+    Hosea        2×  `Hosea`     A1  Hosea · Oseas · Osée · Osea          (5×)
+    Usia · Jotam · Ahas · Hiskia · Jerobeam — die Koenigsnamen aus 1,1
+
+**Zwei Sonderfaelle:**
+
+`Gomer` (1,3) ist im Bestand ein **Doppeltraeger**, und die haeufigere
+Lesart ist die falsche: fuenf Belege fuehren das **Hohlmass** (*omer ·
+gomer · omer · omer*, 2. Mose 16), vier den **Namen** (*Gomer* viermal
+gleich, 1. Mose 10,2 · 10,3 · 1. Chr 1,5 · Hesekiel 38,6). In Hosea ist es
+die Frau — also der Name. Derselbe Fall hat in Hesekiel schon einmal
+zugeschlagen.
+
+`Beeri` (1,1, als `Beeris`) sieht unbelegt aus und ist es nicht: die
+**Form** `Beeris` steht in 1. Mose 26,34, das Lemma hat genau diesen einen
+Beleg. `belegt.py Beeri` meldet es seit der Erweiterung aus Daniel 7 von
+selbst.
+
+**Neu zu praegen** — und beide bleiben **Namen**, weil der deutsche Text
+sie an der Namensstelle nicht uebersetzt:
+
+    Lo-Ruhama   3×  1,6 · 1,8 · 2,25
+                    Lo-Ruhamah · Lo-ruhama · Lo-Ruchama · Lo-ruhama
+    Lo-Ammi     2×  1,9 · 2,25
+                    (Schreibung der Ausgaben am Vers pruefen)
+
+In **2,25** setzt der deutsche Text selbst eine Deutung daneben
+(„Lo-Ruhama, **die Unbegnadigte**", „Lo-Ammi, **der nicht mein Volk
+war**"). Die Deutung ist deutscher Text und wird uebersetzt; der Name
+bleibt Name. Auch **1,3 `Diblaims`** ist ein Name — der Text schreibt
+`Diblaims`, nicht `Diblajim`.
+
+
+## Das Wortfeld, das das Buch traegt
+
+`Hurerei` und seine Familie stehen zwanzigmal und sind das Bild des ganzen
+Buches. Der Bestand ist hier ungewoehnlich einstimmig:
+
+    Hurerei     16×  `Hurerei`   C1  sexual immorality · fornicación · débauche · fornicazione
+                                     **46 Belege, alle eine Lesart**
+    Huren        2×  ·  Hure 1×  ·  Hurenlohn 1×   — Formen pruefen
+    Liebhaber    7×  `Liebhaber` B2  lovers · amantes · amants · amanti   (10×)
+    Ehebruch     3×  `Ehebruch`  C1  adultery · adulterio · adultère · adulterio  (16×)
+
+Weiter, alle belegt und gebunden:
+
+    Erkenntnis   4×  B2  knowledge · conocimiento · connaissance · conoscenza  (84×, einstimmig)
+    Kalb         6×  A2  calf · becerro · veau · vitello  (27×) · Pl. calves · becerros · veaux · vitelli
+    Most         5×  B2  new wine · mosto · moût · mosto  (4×)
+    Götze        5×  ·  Priester 6×  ·  Prophet 6×  ·  Altar 6×  ·  Bund 4×
+
+**`Ephraim` ist das Leitwort** — 37 Vorkommen, in fast jedem Kapitel. Es
+steht fuer das Nordreich, nicht fuer den Stamm; die Glosse ist dieselbe.
+
+
+## Was NICHT gemacht wird
+
+- Keinen Namen deuten, den der Text nicht selbst deutet. `Lo-Ruhama` und
+  `Lo-Ammi` bleiben Namen, auch wo die Ausgaben uebersetzen.
+- Keine Grammatik-Tags in Klammern als Glosse.
+- Spanisch bleibt beim **`vosotros`**-System, nicht bei RV1909mods
+  *ustedes*. Der Bestand fuehrt die Wortform `ihr` 3261× als *vosotros*
+  gegen 23× *ustedes*; die Entscheidung ist im Hohelied gefallen und in
+  Daniel bestaetigt worden.
+- Ins Repository `bible-reader` wird nur gelesen.
