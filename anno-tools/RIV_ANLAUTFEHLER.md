@@ -237,3 +237,36 @@ Die 440 aus dem ersten Lauf sind damit ueberholt.
 **Fuer die Kapitelarbeit aendert sich nichts**: der Bestand ist
 unbeschaedigt, weil der deutsche Text glossiert wird. Gefaehrlich ist der
 Defekt nur, wenn eine RIV-Zeile als Vorlage abgezaehlt wird.
+
+---
+
+## Nachtrag Joel (Buch 29): drei Treffer, jeder korpusweit einmalig
+
+Der systematische Lauf ueber Joel — jede im RIV-Korpus seltene Form gegen
+jeden moeglichen vorangestellten Buchstaben — liefert genau drei Stellen.
+Alle drei sind, jede fuer sich, im ganzen Korpus einmalig:
+
+| Stelle | steht | muss | Gegenprobe im Korpus |
+|---|---|---|---|
+| Joel 1,12 | „tutti gli alberi della campagna son **ecchi**" | *secchi* | `ecchi` 2×: hier und **Jos 9,4** („de' **ecchi** otri" → *vecchi*) |
+| Joel 2,20 | „**alirà**" | *salirà* | `salirà` 18× · `alirà` 1× |
+| Joel 2,16 | „**Radunare** il popolo" | *Radunate* | der **einzige** Vers im RIV-Korpus, der mit dieser Form beginnt — und derselbe Vers traegt die richtige Form zweimal |
+
+Joel 2,16 ist ein neuer Untertyp: kein verlorener Anlaut, sondern ein
+Imperativ, der zum Infinitiv verlesen wurde (`Radunate` → `Radunare`).
+Er faellt demselben Test auf — die Form ist an dieser Stelle einmalig,
+waehrend die richtige Form ringsum steht.
+
+**Jos 9,4 war bis hierher unbemerkt.** Der Joel-Lauf hat ihn als
+Gegenprobe mitgefunden: wer eine seltene Form pruefen will, muss sie
+korpusweit zaehlen, nicht nur im eigenen Buch.
+
+### Ein Vers mit zwei Defekten
+
+**1. Chronika 27,20** traegt beide Typen nebeneinander:
+
+> „Della mezza tribù di Manasse: **Ioel**, figliuolo di **edaia**."
+
+`Ioel` gehoert in die I/J-Liste (`BEFUNDE_RIV_ANLAUT_J.md`), `edaia`
+(→ *Pedaia*) in diese hier. Der Vers zeigt, dass die beiden Defekte
+dieselbe Ursache haben duerften.

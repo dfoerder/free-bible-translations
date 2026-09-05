@@ -131,3 +131,16 @@ In Daniel schreibt RV an allen fuenf Stellen (1,6 · 1,7 · 1,11 · 1,19 ·
 2,17) `Ananías`. Daniel nimmt deshalb `Ananías`, unter demselben Lemma
 `Hananja` — genau wie der Bestand es bei `Haran` haelt, das
 franzoesisch *Charran* und *Haran* nebeneinander fuehrt.
+
+## Nachtrag: ein weiterer Beleg aus der Joel-Arbeit
+
+**1. Chronika 27,20** schreibt den Namen `Joel` als **`Ioel`** — derselbe
+I-statt-J-Fall. Der Vers traegt zugleich einen Anlautverlust (`edaia` statt
+*Pedaia*, s. `RIV_ANLAUTFEHLER.md`); beide Defekte stehen unmittelbar
+nebeneinander.
+
+Gegenprobe fuer den Propheten selbst: RIV schreibt ihn in **Joel 1,1**
+korrekt `Gioele`, und der Bestand fuehrt das Lemma dort ebenso — die
+italienische Glosse `Gioele` stuetzt sich auf Apg 2,16 **und** auf RIV.
+Die 13 uebrigen Bestandsbelege mit it `Joel` betreffen andere Traeger des
+Namens, wo RIV ebenfalls `Joel` schreibt. Der Bestand ist hier also richtig.
