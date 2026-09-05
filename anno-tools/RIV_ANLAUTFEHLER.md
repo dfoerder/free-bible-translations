@@ -109,3 +109,31 @@ vierzehnfach darueber wie beim Anlaut. Die Treffer sind zum
 allergroessten Teil echte Woerter (`territori` gegen `territorio`,
 `simil` gegen `simile`). **Der Defekt sitzt am Wortanfang; am Wortende
 gibt es nur diese eine, eng umrissene Gruppe.**
+
+## Nachtrag 2: RIV traegt die alternative Verszaehlung im Text
+
+Gefunden bei der Vorbereitung von **Hosea**: RIV beginnt dort fuenfzehn Verse
+(11,12 bis 12,14) mit einer Klammerziffer — `(12:1)`, `(12:2)`, … Das ist die
+**hebraeische Zaehlung**, die die Ausgabe als Fliesstext mitfuehrt, weil sie
+selbst nach der griechischen zaehlt.
+
+Ueber alle 66 Buecher und alle vier Ausgaben gemessen:
+
+| Ausgabe | Verse mit Klammerziffer am Anfang |
+|---|---|
+| WEB (en) | 0 |
+| RV1909mod (es) | 0 |
+| LSG1910 (fr) | 0 |
+| **RIV1927 (it)** | **222 Verse in 20 Buechern** |
+
+Betroffen sind die Buecher 1 · 9 · 10 · 11 · 12 · 13 · 14 · 18 · 19 · 21 · 22 ·
+23 · 24 · 26 · 28 · 30 · 32 · 33 · 47 · 66 — darunter **elf bereits fertige**.
+
+**Es ist kein Defekt und kein Schaden im Bestand.** Annotiert wird der deutsche
+Text; die Klammerziffern erzeugen keine Eintraege. Gegenprobe ueber alle
+Glossen des Bestands: **null** enthalten eine Klammerziffer.
+
+**Gefaehrlich ist es nur beim Abzaehlen.** Wer eine RIV-Zeile Wort fuer Wort
+gegen den deutschen Vers haelt, hat zwei Tokens Vorsprung — dieselbe Falle wie
+die Sprecherangaben, die WEB im Hohelied als Fliesstext fuehrt. Jede
+Buchvorbereitung eines betroffenen Buches nennt die Stellen.
