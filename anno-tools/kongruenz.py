@@ -55,6 +55,9 @@ AUSNAHMEN = {
     'voce':'fs', 'voci':'fp', 'carne':'fs', 'carni':'fp', 'sangue':'ms',
     'nave':'fs', 'navi':'fp',
     'immagine':'fs', 'immagini':'fp',
+    # Aus Hosea: `viti` (Weinstoecke) ist feminin, die Endung sagt maskulin.
+    'vite':'fs', 'viti':'fp', 'sentiero':'ms', 'sentieri':'mp',
+    'mezzo':'ms', 'greggi':'fp', 'gregge':'ms', 'fonti':'fp', 'fonte':'fs',
     # Feminina auf -i im Plural: die Endung sagt hier Maskulinum, das Genus
     # ist feminin. `merci` und `torri` machten allein 12 der 12 Fehlalarme im
     # Tyrus-Kapitel aus (`le tue merci`, `le tue torri`).
@@ -133,6 +136,53 @@ def fr_numerus(nomen):
     return 's'
 
 
+HABEN_FR = {'ont', 'a', 'ai', 'as', 'avez', 'avons'}
+HABEN_IT = {'hanno', 'ha', 'ho', 'hai', 'avete', 'abbiamo'}
+SEIN_FR = {'ont': 'sont', 'a': 'est', 'ai': 'suis', 'as': 'es',
+           'avez': 'êtes', 'avons': 'sommes'}
+SEIN_IT = {'hanno': 'sono', 'ha': 'è', 'ho': 'sono', 'hai': 'sei',
+           'avete': 'siete', 'abbiamo': 'siamo'}
+
+
+def hilfsverb_reflexiv(d, kap):
+    """Reflexives Perfekt nimmt franzoesisch être und italienisch essere.
+
+    Zweimal in einem Buch aufgefallen: Hosea 6,10 („hat sich verunreinigt")
+    trug fr *a* / it *ha*, waehrend derselbe Satz in 5,3 richtig *est* / *è*
+    hatte; Hosea 7,13 („haben sich aufgelehnt") ebenso. Beide Male stand im
+    Mehrwort-Eintrag die richtige Form (*s'est souillé*, *se sont révoltés*)
+    und im gedeckten Einzelwort die falsche — der Fehler ist also allein am
+    Hilfsverb, und er ist mechanisch zu finden.
+
+    Gesucht wird ein Mehrwort mit Lemma `sich …`, dessen romanische Glosse
+    mit être/essere gebildet ist, und davor ein Einzelwort `haben`.
+    """
+    raus = []
+    for v, ents in d.items():
+        einzel = {e['pos']: e for e in ents
+                  if 'pos_end' not in e and 'parts' not in e}
+        for mw in ents:
+            if 'pos_end' not in mw and 'parts' not in mw:
+                continue
+            if not (mw.get('lemma') or '').startswith('sich '):
+                continue
+            fr, it = (mw.get('fr') or ''), (mw.get('it') or '')
+            if not (re.search(r"\b(s'est|se sont|me suis|nous sommes|vous êtes|s'était)\b", fr)
+                    or re.search(r'\b(si è|si sono|mi sono|ci siamo|vi siete)\b', it)):
+                continue
+            for p in range(mw['pos'] - 1, mw['pos'] - 4, -1):
+                h = einzel.get(p)
+                if not h or h.get('lemma') not in ('haben', 'sein'):
+                    continue
+                hf, hi = (h.get('fr') or '').lower(), (h.get('it') or '').lower()
+                if hf in HABEN_FR or hi in HABEN_IT:
+                    raus.append((kap, v, p, h.get('form'), hf, hi,
+                                 SEIN_FR.get(hf, '?'), SEIN_IT.get(hi, '?'),
+                                 mw.get('lemma')))
+                break
+    return raus
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
@@ -142,6 +192,7 @@ def main():
     if not out:
         raise SystemExit('ANNO_OUT ist nicht gesetzt.')
     treffer = []
+    refl = []
     for f in sorted(glob.glob(os.path.join(out, buch, 'ch*.json'))):
         if '.part' in f:
             continue
@@ -149,6 +200,7 @@ def main():
         if kaps and k not in kaps:
             continue
         d = json.load(open(f))
+        refl += hilfsverb_reflexiv(d, k)
         for v, ents in d.items():
             einzel = {e['pos']: e for e in ents
                       if 'pos_end' not in e and 'parts' not in e}
@@ -189,6 +241,13 @@ def main():
             treffer, key=lambda t: (int(t[1]), int(t[2]), t[0])):
         print('%s,%s,%-3s  %-10s %s %-12s | %-14s %s %-16s (%s)'
               % (buch, k, v, f1, sp, i1, f2, sp, i2, g))
+    if refl:
+        print()
+        print('## Reflexives Perfekt mit falschem Hilfsverb')
+        print()
+        for kap, v, p, form, hf, hi, sf, si, lem in refl:
+            print(f'  {buch},{kap},{v}  pos{p} {form:8} fr {hf} -> {sf} · '
+                  f'it {hi} -> {si}   (Mehrwort `{lem}`)')
     print()
     print('%d Verdachtsfaelle. Jeder ist am Vers zu pruefen — die Endung'
           % len(treffer))
