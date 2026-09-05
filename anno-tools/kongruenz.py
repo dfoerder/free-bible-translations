@@ -170,7 +170,14 @@ def hilfsverb_reflexiv(d, kap):
             if not (re.search(r"\b(s'est|se sont|me suis|nous sommes|vous êtes|s'était)\b", fr)
                     or re.search(r'\b(si è|si sono|mi sono|ci siamo|vi siete)\b', it)):
                 continue
-            for p in range(mw['pos'] - 1, mw['pos'] - 4, -1):
+            # Das Hilfsverb kann VOR dem Partizip stehen („hat sich
+            # verunreinigt") oder dahinter — im Nebensatz ist die zweite
+            # Stellung die Regel („weil sie sich aufgelehnt haben"). Die
+            # erste Fassung sah nur nach vorn und uebersah deshalb
+            # Hosea 8,1; gefunden vom Agenten fuer Kapitel 14.
+            nachbarn = ([mw['pos'] - d for d in (1, 2, 3)]
+                        + [mw['pos'] + d for d in range(1, 9)])
+            for p in nachbarn:
                 h = einzel.get(p)
                 if not h or h.get('lemma') not in ('haben', 'sein'):
                     continue
@@ -248,6 +255,11 @@ def main():
         for kap, v, p, form, hf, hi, sf, si, lem in refl:
             print(f'  {buch},{kap},{v}  pos{p} {form:8} fr {hf} -> {sf} · '
                   f'it {hi} -> {si}   (Mehrwort `{lem}`)')
+        print()
+        print('  Verdacht, kein Fehler: steht das Hilfsverb im Nebensatz')
+        print('  hinter dem Partizip, kann es zugleich ein zweites, NICHT')
+        print('  reflexives Partizip tragen („weil sie den Bund gebrochen')
+        print('  und sich aufgelehnt haben"). Dann ist avoir/avere richtig.')
     print()
     print('%d Verdachtsfaelle. Jeder ist am Vers zu pruefen — die Endung'
           % len(treffer))
