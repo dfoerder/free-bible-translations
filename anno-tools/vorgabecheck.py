@@ -31,6 +31,7 @@ Reihe gegen die belegten Lesarten. Gemeldet wird:
     REIHE   die genannte Vierer-Reihe steht im Bestand nirgends
     LEER    das Lemma ist im Bestand unbelegt (dann ist beides frei)
     AUSGABE ein Zitat, das einer Ausgabe zugeschrieben wird, steht dort nicht
+    QUELLTEXT ein Verszitat ohne Ausgabennennung steht so nicht im deutschen Text
 
 Fuer die AUSGABE-Probe muss die Buchnummer mitgegeben werden:
 
@@ -159,7 +160,7 @@ def ausgabentext(nr):
         x = json.load(open(g[0], encoding='utf-8'))
         x = x.get('chapters', x)
         roh = ' '.join(v for kap in x.values() for v in kap.values())
-        out[kuerzel] = re.sub(r'[^a-z0-9äöüàâèéêëîïôûùç ]', ' ',
+        out[kuerzel] = re.sub(r'[^a-z0-9äöüßàâèéêëîïôûùç ]', ' ',
                               roh.lower().replace('\u2019', "'")
                               .replace("'", ' ')).replace('  ', ' ')
     return out
@@ -181,7 +182,7 @@ def pruefe_zitate(pfad, nr):
                 if not kandidaten:
                     continue
                 kuerzel = '/'.join(dict.fromkeys(gruppe))
-                such = re.sub(r'[^a-z0-9äöüàâèéêëîïôûùç ]', ' ',
+                such = re.sub(r'[^a-z0-9äöüßàâèéêëîïôûùç ]', ' ',
                               zitat.lower().replace('\u2019', "'")
                               .replace("'", ' ')).split()
                 if not such:
@@ -200,6 +201,93 @@ def pruefe_zitate(pfad, nr):
                 befunde += 1
                 print(f'  AUSGABE {kuerzel} liest „{zitat}" — '
                       f'steht in keiner der genannten Ausgaben')
+    return befunde
+
+
+def fremdbuch_regex(nr):
+    namen = []
+    for i in range(1, 67):
+        if i == nr:
+            continue
+        try:
+            namen.append(re.escape(C.book_name(i)))
+        except Exception:
+            pass
+    return re.compile(r'\b(?:' + '|'.join(namen) + r')\s+\d', re.I)
+
+
+def pruefe_deutsch(pfad, nr):
+    """Verszitate ohne Ausgabennennung gegen den deutschen Quelltext.
+
+    Der Anlass: in Zefanja 3 stand im Prompt „Ihre Fuersten sind
+    bruellende Loewen … die bis zum Morgen nichts uebriglassen." Der Text
+    liest „sind **in ihrer Mitte** bruellende Loewen" und „die nichts
+    **fuer den Morgen** uebriglassen" — zwei zusaetzliche Tokens und eine
+    andere Praeposition, und aus dem Einschub wird ein Mehrwort, das die
+    Vorgabe nicht nennt. Im selben Prompt stand 3,17 als „Er wird sich
+    ueber dich freuen mit Jubel"; der Text hat „und ueber dich jubeln mit
+    lautem Gesang". Beide Male hatte ich aus dem Gedaechtnis zitiert.
+
+    Geprueft wird nur, was in Anfuehrungszeichen steht, mindestens drei
+    Woerter hat und KEINE Ausgabe vor sich nennt — ein Zitat mit
+    Ausgabennennung gehoert `pruefe_zitate`. An `…` und `...` wird
+    geteilt: jedes Segment muss fuer sich im Buchtext stehen.
+    """
+    texte = ausgabentext(nr)
+    deutsch = texte.get('__de__', '')
+    if not deutsch:
+        print(f'  (kein deutscher Text fuer Buch {nr} gefunden)')
+        return 0
+    fremd = [v for k, v in texte.items() if k != '__de__']
+    FREMDBUCH = fremdbuch_regex(nr)
+    befunde = 0
+    with open(pfad, encoding='utf-8') as f:
+        for zeile in f:
+            if '→' in zeile or '->' in zeile:
+                continue
+            vergeben = {z for _, z in zitate(zeile)}
+            # Ein Zitat, dem ein FREMDER Buchname vorausgeht, gehoert
+            # nicht hierher: `Roemer 1,17 „Der Gerechte wird durch
+            # seinen GLAUBEN leben."` in WORTFELD_HABAKUK.md ist das
+            # NT-Zitat, gegen das der Vers dort abgegrenzt wird.
+            # Wortfelder zitieren staendig Parallelstellen so.
+            if FREMDBUCH.search(zeile):
+                continue
+            for m in EINZITAT.finditer(zeile):
+                text = m.group(1)
+                if text is None or text in vergeben:
+                    continue
+                # Eine Glossenreihe ist kein Verszitat — sie trennt mit
+                # `·` ODER, in den Wortfeldern, mit Schraegstrichen
+                # (`mountain/monte/montagne/monte`).
+                if '·' in text or '/' in text:
+                    continue
+                text = text.replace('**', '')
+                for teil in re.split(r'…|\.\.\.', text):
+                    such = re.sub(r'[^a-z0-9äöüß ]', ' ',
+                                  teil.lower()).split()
+                    # Vier Woerter, nicht drei: bei drei meldete die
+                    # Regressionsprobe an den sieben abgenommenen
+                    # Wortfeldern fast nur Wendungen in Grundform
+                    # (`die Haut abziehen`, `sich richten gegen`) und
+                    # Zitate aus Werkzeugausgaben. Die beiden echten
+                    # Zefanja-Fehler haben fuenf und sieben Woerter.
+                    if len(such) < 4:
+                        continue
+                    # Die Vorgabedateien sind in ASCII geschrieben, der
+                    # Quelltext nicht: `gegenueberstandest`, `grosse`.
+                    # Jede Ruecknahme der Umschrift zaehlt als Treffer.
+                    if any(' '.join(v.split()) in deutsch
+                           for v in umlaut(' '.join(such))):
+                        continue
+                    # Ein Zitat, das in einer Ausgabe steht, ist ein
+                    # Ausgabenzitat, dem die Nennung fehlt — nicht falsch.
+                    if any(any(v in x for v in umlaut(' '.join(such)))
+                           for x in fremd):
+                        continue
+                    befunde += 1
+                    print(f'  QUELLTEXT „{teil.strip()}" steht so nicht '
+                          f'im deutschen Text von Buch {nr}')
     return befunde
 
 
@@ -280,6 +368,7 @@ def main():
                               f'{len(reihen[lem])} andere Lesarten)')
         if buch:
             befunde += pruefe_zitate(pfad, buch)
+            befunde += pruefe_deutsch(pfad, buch)
         print(f'  — {n} Vorgabezeilen gelesen')
     print(f'\n{befunde} Befunde aus {gesamt} Vorgabezeilen. Jeder ist eine '
           'Absicht oder ein Fehler —\nwo er Absicht ist, gehoert die Begruendung daneben.')
