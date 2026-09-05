@@ -444,3 +444,18 @@ brauchen:
 ```
 
 Die letzten drei findet **keine** maschinelle Probe von selbst.
+
+
+### Habakuk 1,10: ein Anlautverlust OHNE kurzes Wort davor
+
+RIV liest „si ridono di tutte le fortezze; **mmontano** un po' di terra"
+— richtig waere *ammontano*. Korpusweit: `mmontano` **1×**, `ammontano`
+**1×**. Hier traegt die Haeufigkeitsprobe also **nicht**; der Fall faellt
+nur im Kontext auf („sie haeufen etwas Erde auf" verlangt ein Verb).
+
+**Und die Stellungsregel greift auch nicht:** vor dem Wort steht kein
+kurzes Vorwort, sondern ein **Semikolon**. Das erweitert das Muster —
+der Verlust trifft offenbar den Wortanfang nach jeder kurzen
+Unterbrechung, nicht nur nach `di`, `a`, `in`, `e`.
+
+Gefunden vom Agenten fuer Habakuk 1.

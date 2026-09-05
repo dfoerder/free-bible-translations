@@ -101,7 +101,14 @@ AUSGABEN = {'WEB': 'eng/web', 'RV': 'spa/rv1909mod', 'RV1909': 'spa/rv1909mod',
             'RV1909mod': 'spa/rv1909mod', 'LSG': 'fra/lsg1910mod',
             'RIV': 'ita/riv1927', 'RIV1927': 'ita/riv1927'}
 NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV)\b')
-EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]')
+# Zitate stehen in Anfuehrungszeichen ODER kursiv. Der zweite Fall fehlte:
+# in Habakuk 1 stand im Prompt „RIV *Abacuc*" — eine Vermutung, als
+# Tatsache formuliert, und das Skript sah sie nicht, weil es nur
+# Anfuehrungszeichen kannte. RIV liest dort „Habacuc".
+# Eine Glossenreihe (`*burden · carga · charge · peso*`) ist KEIN Zitat;
+# sie traegt das Trennzeichen `·` und wird deshalb uebersprungen.
+EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]'
+                      r'|\*([^*\n]{3,90})\*')
 
 
 def zitate(zeile):
@@ -118,6 +125,9 @@ def zitate(zeile):
     treffer = []
     marken = [(m.start(), m.end(), m.group(1)) for m in NENNUNG.finditer(zeile)]
     for m in EINZITAT.finditer(zeile):
+        text = m.group(1) if m.group(1) is not None else m.group(2)
+        if '·' in text:          # eine Glossenreihe, kein Ausgabenzitat
+            continue
         gruppe, ende = [], None
         for start, stop, kuerzel in marken:
             if start >= m.start():
@@ -129,7 +139,7 @@ def zitate(zeile):
             gruppe.append(kuerzel)
             ende = stop
         if gruppe:
-            treffer.append((tuple(gruppe), m.group(1)))
+            treffer.append((tuple(gruppe), text))
     return treffer
 
 
