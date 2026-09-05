@@ -86,7 +86,8 @@ In 7,1 stehen beide Formen desselben Koenigsnamens im selben Vers
     Sterndeuter   2×   ·  Tigris 1×  ·  Aschpenas 1×
 
 Die drei Gefaehrten stehen je **zweimal im Genitiv** (`Schadrachs`,
-`Meschachs`, `Abed-Negos` — 3,12 und 3,14). Dieselbe Reihe, `pos`-Eintrag
+`Meschachs`, `Abed-Negos` — **3,28 und 3,29**; hier stand zuerst 3,12/3,14,
+vom Agenten fuer Kapitel 3 am Quelltext widerlegt). Dieselbe Reihe, `pos`-Eintrag
 wie sonst; der Genitiv wird in den Ausgaben durch `of` / `de` / `di`
 ausgedrueckt und gehoert damit **in die Glosse**, nicht ans Lemma.
 
@@ -142,7 +143,8 @@ des Traums**. Der Lexikon-Extrakt zeigt aber die Korpusmehrheit, und die
 ist neutestamentlich:
 
     22 von 25 Belegen   *mystery · misterio · mystère · mistero*   — alle NT
-     2 AT-Belege        *secret · secreto · secret · segreto*
+     2 AT-Belege        *secret · secreto · secret · segreto*   Richter 16,9 u. a.
+     5 AT-Belege Plural  *secrets · secretos · secrets · segreti*
                         Sprueche 25,9 · Hesekiel 28,3
 
 **Daniel folgt den zwei AT-Belegen**, und die vier Ausgaben bestaetigen es
@@ -175,7 +177,27 @@ entscheiden**, und die Reihe gilt dann fuer alle sechs Stellen.
 
 `Zauberer` traegt im Bestand franzoesisch *magiciens* — dieselbe Glosse,
 die `Wahrsager` in einem seiner 18 Belege hat. Wo beide im selben Vers
-stehen (2,2), ist das eine echte Kollision und muss aufgeloest werden.
+stehen (2,2 und 5,11), ist das eine echte Kollision.
+
+**Paket 1 hat sie entschieden, und zwar gegen alle vier Ausgaben.** Die
+Begruendung und die sechs endgueltigen Reihen stehen in
+`WORTFELD_DANIEL.md`, Abschnitt 1. Kurz: die Ausgaben schreiben
+`Wahrsager` in **allen neun** Belegversen als *magicians · magos ·
+magiciens · magi* — genau die Minderheitslesart, die in allen vier
+Sprachen mit `Zauberer` zusammenfaellt. Deshalb gilt die
+17-von-18-Mehrheit des Bestands.
+
+## Spanisch: `vosotros`, nicht `ustedes`
+
+RV1909mod ist eine **modernisierte** Ausgabe und schreibt die Anrede an
+mehrere durchweg mit *ustedes*. Der Bestand nicht: die Wortform `ihr`
+steht dort **3261×** als *vosotros* und **23×** als *ustedes*.
+
+Es gilt der Bestand — samt der Verbformen, die daran haengen: `hört`
+*oigáis* · `sollt` *debéis* · `dient` *servís* · `anbetet` *adoráis* ·
+`seid` *estáis* · `werdet` *seréis* · `euch` *os* · `eures` *vuestra*.
+
+Betroffen sind ausser Kapitel 2 und 3 noch **4,6 · 5,16 · 6,26**.
 
 
 ## Die drei Listen in Kapitel 3
@@ -215,7 +237,10 @@ laut") ist es das Adjektiv.
     Berater        5×  `Berater`       B2  advisers · consejeros · conseillers · consiglieri
     Schatzmeister  2×  `Schatzmeister` C1  treasurer · tesorero · trésorier · tesoriere (1× Esra 1,8)
     Beamter        7×  `Beamter`       B2  officials · funcionarios · fonctionnaires · funzionari
-    Satrap · Provinzverwalter · Amtstraeger  — **unbelegt**
+    Amtsträger     2×  `Amtsträger`    C1  officers · oficiales · officiers · ufficiali
+                                          (belegt, 4. Mose 11,16 — hier stand
+                                          zuerst faelschlich „unbelegt")
+    Satrap · Provinzverwalter  — **unbelegt**
 
 Achtung: der Bestand fuehrt das Lemma **`Beamter`**, nicht `Beamten`.
 `fixgloss.py show Beamten` schweigt deshalb — `belegt.py` fragen.
@@ -252,9 +277,15 @@ und die Hoechster-Formel 4,22 ↔ 4,29 ↔ 4,31.
 
     `höchste` klein   4×   3,26 · 3,32 · 5,18 · 5,21  („der hoechste Gott")
                       Lemma `hoch`  A1
-                      highest · más alto · plus haut · più alto
+                      Most High · Altísimo · suprême · altissimo
 
-Die Trennung ist im Quelltext eindeutig. **Nicht vereinheitlichen.**
+Die **Lemmatrennung** ist im Quelltext eindeutig. **Nicht vereinheitlichen.**
+Die **Glosse** war es nicht: hier stand zuerst *highest · más alto · plus
+haut · più alto*. Der Agent fuer Kapitel 3 hat gemeldet, dass alle vier
+Ausgaben an beiden Stellen den Gottesnamen schreiben (WEB *Most High God*,
+RV *Dios Altísimo*, LSG *Dieu suprême*, RIV *Iddio altissimo*).
+Franzoesisch bleibt `hoch` (*suprême*) von `Höchster` (*Très-Haut*)
+unterscheidbar.
 
 
 ## Was ueber Paketgrenzen laeuft und in Paket 3 entschieden wird
