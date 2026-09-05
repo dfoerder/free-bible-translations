@@ -321,3 +321,32 @@ hinter dem kurzen `il`. Gefunden vom Agenten fuer Amos 8.
 das Wort **nach `di`, `a`, `in`, `e`** achten. Dort steht der Defekt.
 Und ein verstuemmeltes Wort, das zufaellig ein echtes ergibt (`oro`
 statt `loro`, Hosea 11,6), faellt keiner maschinellen Probe auf.
+
+
+---
+
+## Nachtrag Obadja (31): drei Treffer in einem Kapitel von 21 Versen
+
+Alle drei folgen der Regel — Anlautverlust hinter einem kurzen Wort —
+und alle drei sind korpusweit gezaehlt:
+
+| Stelle | steht | muss | Gegenprobe |
+|---|---|---|---|
+| Obadja 1,12 | „de' **igliuoli** di Giuda" | *figliuoli* | `igliuoli` **7×** · `figliuoli` **2574×** — hinter `de'` |
+| Obadja 1,16 | „del continuo; **erranno**, inghiottiranno" | *berranno* | `erranno` **2 Stellen** · `berranno` **12×** — derselbe Vers hat „berranno" einen Halbsatz vorher richtig |
+| Obadja 1,19 | „**ossederanno** i campi d'Efraim" | *possederanno* | `ossederanno` **1×** (nur hier) · `possederanno` **15×** — derselbe Vers hat „possederanno" und „possederà" richtig |
+
+Zwei der drei stehen **im selben Vers wie die richtige Form** — das ist
+der sauberste Beweis, dass es ein Satzfehler ist und keine Variante.
+
+### `erranno` ist an beiden Stellen des Korpus ein Defekt — aus zwei verschiedenen Woertern
+
+Die Gegenprobe fuehrt zu einem noch **offenen** Buch:
+
+> **Micha 7,17** „…usciranno spaventate dai loro ripari; **erranno**
+> tremanti all'Eterno" → *verranno* („sie werden zitternd kommen")
+
+`erranno` steht im ganzen RIV-Korpus an genau zwei Stellen, Obadja 1,16
+und Micha 7,17 — und **keine** davon ist eine echte Form von *errare*.
+In Obadja fehlt das `b` von *berranno*, in Micha das `v` von *verranno*
+(79×). Wer den Micha-Prompt schreibt, sollte es wissen.
