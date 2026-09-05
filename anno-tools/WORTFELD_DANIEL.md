@@ -652,3 +652,143 @@ Trennung ist durchgehend sachlich: *heaven* fuer „Gott des Himmels" und
 Dazu ein dritter Fehler aus derselben Rechnung: **3,33 `ein` = *a* vor
 *eternal*** — „a eternal kingdom". In 7,27 steht dieselbe Wendung
 richtig mit *an*.
+
+## 4 · Paket 4 — Kapitel 10 · 11 · 12: das Buch ist fertig
+
+**Daniel: 12 Kapitel, 357 Verse, 10 084 Eintraege, 356 Mehrwoerter.**
+`validate.py` ohne Befund, `qa.py` 0, `hilfsverb.py` 0.
+
+### Vier Vorlagen ueber Paketgrenzen — alle vier haben getragen
+
+| Vorlage | steht in | uebernommen in | Ergebnis |
+|---|---|---|---|
+| `Zeit des Endes` | 8,17 · 8,19 | 11,35 · 11,40 · 12,4 · 12,9 | zeichengleich |
+| `das tägliche Opfer` | 8,11 · 8,12 · 8,13 | 11,31 · 12,11 | zeichengleich |
+| „eine Zeit, zwei Zeiten und eine halbe Zeit" | 7,25 | 12,7 | zeichengleich, ohne das `für`, das im deutschen 12,7 fehlt |
+| `Mann in Leinen` | 10,5 | 12,6 · 12,7 | zeichengleich — **ohne Vorlage**, die Agenten liefen gleichzeitig |
+
+Die letzte Zeile ist die bemerkenswerteste: `Mann` A1 · `in` A1 *in · de ·
+de · di* · `Leinen` C1 — zwei Agenten, keine gemeinsame Quelle, dieselbe
+Reihe bis auf das Zeichen.
+
+### `Michael` — zwei Agenten, dieselbe Entscheidung, dazu meine
+
+Der Agent fuer Kapitel 12 meldete, die Bestandsreihe *Michael · Miguel ·
+Michel · Michele* passe nicht: die Ausgaben schreiben im Alten Testament
+`Micaël` (LSG) und `Micael` (RIV). Er blieb beim Bestand und legte die
+Entscheidung vor. Der Agent fuer Kapitel 10 erhob **denselben Befund**
+und aenderte die Reihe gleich. Ich hatte inzwischen Kapitel 12 korrigiert
+— alle drei Fassungen sind zeichengleich:
+
+    Michael  A1   Michael · Miguel · Micaël · Micael
+
+Kapitel 10 hat den Befund noch geschaerft: **RV schreibt im ganzen
+uebrigen AT `Micael` und ausgerechnet in Daniel `Miguel`.** Die
+Bestandsreihe ist damit spanisch fuer Daniel richtig und fuer die zehn
+uebrigen AT-Stellen falsch. Vollstaendig in
+`BEFUNDE_RIV_ANLAUT_J.md`, Abschnitt 2.
+
+### `Tigris` — die Zwillingsregel zum dritten Mal
+
+Der l1912mod schreibt in 1. Mose 2,14 `Hiddekel`, in Daniel 10,4 aber
+`Tigris`. Zwei deutsche Schreibungen, zwei Lemmata — wie `Kyrus`/`Kores`
+und `Mischael`/`Misael` aus Paket 1. Die Glosse folgt der Ausgabe des
+Verses:
+
+    Tigris  A1   Hiddekel · Tigris · Hiddékel · Hiddekel
+
+**RV weicht dabei von sich selbst ab** (Gen 2,14 *Hidekel* gegen Dan 10,4
+*Tigris*) — und RIV verliert im selben Vers den Anlaut (`lo iddekel`).
+
+### `entsetzlich` — der zweite Treffer in Abschnitt A
+
+Wie `außerordentlich` in Paket 3 haben zwei Agenten dasselbe neue Wort
+verschieden gepraegt, und wie dort waren beide vertretbar. Diesmal half
+die Ausgabe nicht: **weder WEB noch LSG haben an den beiden Stellen ein
+Adjektiv** — „the abomination that makes desolate" / „l'abomination du
+dévastateur". Der deutsche Uebersetzer hat `entsetzlich` frei gesetzt.
+
+Genommen ist die Reihe von 11,31:
+
+    entsetzlich  C1   dreadful · espantosa · effroyable · spaventosa
+
+Der Grund ist franzoesisch: die Alternative *épouvantable* traegt in
+Daniel bereits `schrecklich` (7,7 · 7,19).
+
+### Was die letzte Gegenrechnung noch gefunden hat
+
+Die n-Gramm-Rechnung ueber alle zwoelf Kapitel meldete drei
+kapiteluebergreifende Divergenzen; **zwei waren echte Fehler**, und beide
+sassen in der Elision:
+
+    „bis zur Zeit des Endes"   11,35 gegen 12,4 · 12,9
+        Die Ausgaben teilen einheitlich: en *until the time* ·
+        es *hasta el tiempo* · fr *jusqu'au temps* · it *fino al tempo*.
+        Richtig ist also `bis` = *until · hasta · jusqu' · fino* und
+        `zur` = *the · el · au · al*. Kapitel 11 hatte es englisch
+        falsch (*up to* + *to the*), Kapitel 12 franzoesisch und
+        italienisch (*jusqu'à* + *au* = „jusqu'à au"; *fino a* + *al*).
+
+    „des Königs Kyrus"   1,21 gegen 10,1
+        RV schreibt in 1,21 „del rey Ciro"; die Glosse stand auf *de*.
+
+Der dritte Fall war keiner: `des Darius` traegt in 9,1 und 11,1 dieselbe
+Reihe, die Divergenz sass am **zweiten** `des` („des Sohnes des
+Ahasveros" gegen „des Meders") und ist am Vers richtig.
+
+### Ein Prozessfehler, der ein Werkzeug bekommen hat
+
+Der Abschlusslauf von `konsistenz.py` zeigte `Tier` in **4,13** noch als
+*beast*, obwohl das ganze Buch *animal* fuehrt und ich die Stelle
+korrigiert hatte. Die Korrektur lag in `$ANNO_OUT`, gebaut wurde aus
+`anno-quellen` — **drei Korrekturen in zwei Kapiteln waren so
+verlorengegangen**, weil ich nach dem Kopieren noch weitergearbeitet
+hatte. Das passiert bei jedem Kreuzvergleich.
+
+`buildbook.py` vergleicht jetzt vor dem Bauen `$ANNO_OUT/<nr>/chN.json`
+gegen die Quellen und warnt bei Abweichung. Der Bau selbst aendert sich
+nicht — die Quelle bleibt massgeblich.
+
+### Was `konsistenz.py` ueber das fertige Buch sagt
+
+Abschnitt B meldet **38 Abweichungen von der Bestandsmehrheit**, und
+jede einzelne ist eine dokumentierte Entscheidung: die Lexikonfalle
+`Geheimnis` = *secret*, die zweiundzwanzig neuen Lesarten unter
+vorhandenen Lemmata (`Hof`, `Gericht`, `Gewalt`, `Klaue`, `Rat`,
+`Recht`, `Rind`, `Erscheinung`, `Bedrängnis`, `Lager`, `Menge`,
+`Mangel`, `Niedriger`, `Susa`, `Schrift`, `Gemeinschaft` …) und der Rest
+Numerus. **Keine unerklaerte Abweichung.**
+
+### Die Ausgaben ueber das ganze Buch
+
+**RIV1927: 31 Defekte in zwoelf Kapiteln**, dreizehn davon fehlende
+Anfangsbuchstaben. Sie verteilen sich sehr ungleich — Kapitel 4, 8 und 12
+haben **null**, Kapitel 5 hat sechs. Zwei Faelle waren nur durch Lesen zu
+finden, weil die richtige Form im Buch gar nicht vorkommt.
+
+Ein neuer Defekttyp kam aus Kapitel 10: `entraron` statt `entrarono`.
+Ueber alle 66 Buecher sind es **20 Vorkommen in elf Formen** — dieselbe
+Verbform ohne ihr Schluss-`o`. Die Vermutung, RIV verliere Zeichen an
+beiden Wortenden, ist **widerlegt**: die umgedrehte Anlaut-Heuristik
+findet in RIV 97 Vorkommen gegen 78 im Deutschen, also keinen
+Ueberschuss, waehrend RIV beim Anlaut vierzehnfach ueber den anderen
+liegt. Beides in `RIV_ANLAUTFEHLER.md`.
+
+**LSG1910: zwei** (7,25 `Très Haut` ohne Bindestrich, 11,45 fehlender
+Punkt). **RV1909mod: zwei** (8,2 `Persia` statt `Elam`, 10,5 laesst
+`Ufas` aus). **WEB: zwei** (6,13 „an decree", 10,11 Wortstellung).
+
+### Drei Kollisionen bleiben bewusst stehen
+
+    10,6   `Klang` / `Sein`         fr *son* — Nomen und Possessiv sind
+                                    im Franzoesischen homograph; LSG
+                                    schreibt selbst „le son de sa voix"
+    11,4   `geht` / `wird`          fr *va* — Bewegungsverb und
+                                    Futurhilfsverb
+     8,5   `Bock` / `Ziegenbock`    es/fr/it — die Ausgaben tun dasselbe;
+                                    Franzoesisch hat nur *bouc*
+
+Dazu meldet `glosskollision.py` **9,4 `HERRN`/`Herr`**, weil es
+kleingeschrieben vergleicht. Der Bestand fuehrt genau diese Trennung in
+**126 Versen ausserhalb Daniels** (*SEÑOR* gegen *Señor*, *SIGNORE*
+gegen *Signore*) — Konvention, kein Fund.

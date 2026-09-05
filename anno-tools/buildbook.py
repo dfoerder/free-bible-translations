@@ -14,6 +14,10 @@ Der Level-Abgleich gehört in den Build und nicht dahinter — die Datei entsteh
 bei jedem Build neu, eine nachträgliche Korrektur wäre sofort wieder weg.
 """
 import collections
+import glob
+import json
+import os
+import re
 import sys
 
 import common as C
@@ -112,8 +116,44 @@ def level_abgleich(chapters, nr, verbose=True):
             print('    ', f, sorted(s))
 
 
+def scratch_abgleich(nr):
+    """Warnt, wenn $ANNO_OUT neuere Kapitel haelt als die Quellen.
+
+    Der Koordinator arbeitet in `$ANNO_OUT/<nr>/chN.json` und kopiert von dort
+    nach `anno-quellen/`. Wer nach dem Kopieren noch etwas korrigiert — und das
+    passiert bei jedem Kreuzvergleich —, hat den Stand in zwei Dateien und baut
+    aus der aelteren. In Daniel sind drei Korrekturen so verlorengegangen und
+    erst dem Abschlusslauf von `konsistenz.py` aufgefallen (`Tier` in 4,13
+    stand noch als *beast*, waehrend das ganze Buch *animal* fuehrt).
+    """
+    out = os.environ.get('ANNO_OUT')
+    if not out:
+        return
+    verz = os.path.join(out, str(nr))
+    if not os.path.isdir(verz):
+        return
+    abweichend = []
+    for datei in sorted(glob.glob(os.path.join(verz, 'ch*.json'))):
+        name = os.path.basename(datei)
+        if not re.fullmatch(r'ch\d+\.json', name):
+            continue                      # Teildateien (ch11.part2.json) ueberspringen
+        kap = name[2:-5]
+        try:
+            a = json.load(open(datei, encoding='utf-8'))
+            b = C.load_quelle(nr, kap)
+        except Exception:
+            continue
+        if b is not None and a != b:
+            abweichend.append(kap)
+    if abweichend:
+        print(f'  !! ACHTUNG: $ANNO_OUT weicht in Kapitel '
+              f'{", ".join(abweichend)} von den Quellen ab.')
+        print(f'     Gebaut wird aus anno-quellen. Erst kopieren, dann bauen.')
+
+
 def build(nr, trocken=False):
     nr = int(nr)
+    scratch_abgleich(nr)
     src = C.load_source(nr)
     kapitel = C.quellen_kapitel(nr)
     if not kapitel:
