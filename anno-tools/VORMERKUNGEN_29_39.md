@@ -55,6 +55,13 @@ Umfang des Defekts:
     `ichem`   statt `Sichem`   —  1. Mose 34,13 · Josua 24,25 · Richter 9,41
                                   ·  Hosea 6,9
     `Acaz`    statt `Achaz`    —  Hosea 1,1 (einmal im ganzen Korpus)
+    `h'è`     statt `ch'è`     —  2. Mose 10,5 · 5. Mose 28,45 ·
+                                  2. Koenige 17,27  ·  Hosea 4,14
+                                  (korpusweit genau vier Stellen)
+    `iuda`    statt `Giuda`    —  30 Stellen ueber ~20 Buecher (841× korrekt)
+    `eniamino` statt `Beniamino` — 5 Stellen (157× korrekt)
+    `uando`   statt `Quando`   —  8 Stellen (1354× korrekt)
+    `oiché`   statt `poiché`   —  21 Stellen (977× korrekt)
 
 ## Korpusweit offen, in jedem Buch zu beachten
 

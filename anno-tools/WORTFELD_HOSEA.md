@@ -157,3 +157,142 @@ Ausgaben. Beide Agenten haben ihren Detektor an 1,6 verifiziert.
 
 **RV1909mod siezt** in 1,10 · 2,1 · 2,3 — auf `vosotros` umgestellt, wie
 seit dem Hohelied festgelegt.
+
+## 2 · Paket 2 — Kapitel 4 · 5 · 6 · 7
+
+61 Verse. Zusammen: **100 von 197 Versen, 2444 Eintraege**, `validate.py`
+ohne Befund. `paketcheck` Abschnitt **A leer**.
+
+### Zwei Bindungen, vor denen die Tabelle in die Irre fuehrt
+
+**`Netz`** steht in `BINDUNGEN_AT.md` als Warnbeispiel und hat in 5,1 und
+7,12 wieder zugeschlagen: der Bestand fuehrt 33× das **Fischernetz** und
+11× das *caul*, das Fettnetz des Opfertiers. Beide Agenten haben das
+Fangnetz genommen — B1 *net · red · filet · rete*.
+
+**`Ofen`** ist im Korpus zweierlei: **18× Schmelzofen** (*furnace ·
+fournaise · fornace*) gegen **5× Backofen**. In Hosea 7,4 · 7,6 · 7,7 ist
+es dreimal der Backofen, und alle vier Ausgaben bestaetigen es —
+B1 *oven · horno · four · forno*. Die Mehrheit haette in den Schmelzofen
+gefuehrt.
+
+### Wo der l1912mod von allen vier Ausgaben zugleich abweicht
+
+Das ist selten und deshalb festzuhalten. Zweimal in Kapitel 7:
+
+| Stelle | deutsch | alle vier Ausgaben |
+|---|---|---|
+| 7,6 | „ihr **Zorn**" | *their baker sleeps · su panadero · leur boulanger · il loro fornaio* |
+| 7,14 | „Sie **ritzen** sich" | *they assemble · se reúnen · se rassemblent · si radunano* |
+
+Dazu **5,15**, wo der deutsche Vers offen mit „und sagen:" endet und
+**keine** der vier Ausgaben eine Entsprechung hat. Glossiert wird jedes
+Mal der deutsche Text.
+
+### Zwei Verse, die `dubletten.py` nicht sieht
+
+`dubletten.py` findet in Hosea null Paare — es misst ab 60 % gemeinsamer
+Wortformen und 5 Tokens. Zwei Ueberschneidungen liegen darunter und sind
+trotzdem wichtig:
+
+    5,3 ↔ 6,10   „treibt Ephraim Hurerei, und Israel hat sich verunreinigt"
+    6,4 ↔ 13,3   „wie die Morgenwolke, wie der Tau, der frueh vergeht"
+
+**Die erste ist beim Einsammeln angeglichen worden.** 6,10 trug fuer das
+Hilfsverb von „hat sich verunreinigt" franzoesisch *a* und italienisch
+*ha*; das reflexive Perfekt nimmt in beiden Sprachen *être*/*essere*, wie
+5,3 es richtig hat. Dazu *itself* → *himself*, nach der Bestandsmehrheit
+(*defile himself*, 7 von 18).
+
+**Die zweite ist eine Vorlage fuer Paket 4**: `Morgenwolke` B2 *morning
+cloud · nube matutina · nuée du matin · nuvola mattutina* (neu),
+`Tau` B2, `frueh am Morgen` A2.
+
+### Was `sweeplemma.py` allein gefunden hat — jetzt in drei von vier Kapiteln
+
+    Kap. 2  `es geht jemandem gut` · `zu jener Zeit` (2×)
+    Kap. 4  `Schande bringen`      (durch „zu" getrennt)
+    Kap. 5  `daran hindern`        (`parts:[2,4]`)
+
+`sweep.py` und `konvention.py` haben **keinen** dieser fuenf gesehen. Der
+Lauf gehoert fest in die Kapitelpruefung, auch wenn `AUFTRAG_BUCH.md` ihn
+nicht unter den sechs Pflichtlaeufen fuehrt.
+
+### Neu gepraegt
+
+    Tücke              C1  treachery · perfidia · perfidie · perfidia   (im Bestand null Belege)
+    Bluttat            C1  bloodshed · derramamiento de sangre · effusion de sang · spargimento di sangue
+    Tempeldirne        C1  shrine prostitutes · prostitutas del templo · prostituées du temple · prostitute del tempio
+    störrisch          C1  stubborn · terco · rétif · restio
+    Morgenwolke        B2  morning cloud · nube matutina · nuée du matin · nuvola mattutina
+    dreinschlagen      C1  struck down · golpeado · frappé · colpito
+    Alarm schreien     B2  Mehrwort, in Analogie zu `Alarm blasen` (4. Mose 10,5)
+    Auskunft geben     B2  ·  sich zuschanden machen C1  ·  es geht jemandem schlecht B1
+    Lügen · Morden · Stehlen · Ehebrechen — substantivierte Infinitive aus 4,2
+
+**`Hure` und `Dirne` tragen im Bestand dieselbe Reihe.** In **4,14**
+stehen `Huren` und `Tempeldirnen` im selben Vers — deshalb hat
+`Tempeldirne` eine eigene, unterscheidbare Reihe bekommen.
+
+**In 4,2 fuehrt der Bestand die fuenf substantivierten Infinitive
+uneinheitlich**: `Fluchen` hat ein eigenes Substantivlemma, `Morden` und
+`Lügen` laufen unter `Mord`/`Lüge`, `Stehlen` und `Ehebrechen` nur als
+Verben. Im Kapitel sind alle fuenf einheitlich als substantivierte
+Infinitive gefuehrt.
+
+### Was die Agenten am Auftrag widerlegt haben
+
+| Vorgabe | tatsaechlich |
+|---|---|
+| `Terebinthen` unbelegt | **Lemma `Terebinthe` belegt** (Jesaja 6,13) — nur die Pluralform fehlt |
+| `huren` 2× in Kap. 4 | **0×**; die zwei Treffer sind `Huren`, der Plural des Substantivs |
+| `Hurerei treiben` an sechs Stellen | an **vier** (4,10 · 4,12 · 4,14 · 4,15) |
+| `stürzen` 2× | **3×** — das Lemma, nicht die Form |
+| `Treue` in 6,4 · 6,6 | **6,4 · 6,7** |
+| „Kommt, wir wollen zum HERRN **umkehren**" | der Quelltext sagt **`zurückkehren`** |
+| `Morgenrot` | **`Morgenröte`** |
+| `Tau` in 6,1–3 | in **6,4** |
+| `Großkönig` 1× belegt | **2×** — die Form einmal, das Lemma zweimal |
+| `Motte` 2× belegt | **8×** — die Singularlesart zweimal |
+| `parallelen.py` sollte Mt 9,13/12,7 melden | tut es **zu Recht nicht**: die Zitate lesen „Barmherzigkeit will ich und nicht Opfer" — kein `Liebe`, kein `lieber`, kein `Erkenntnis`, kein `Brandopfer` |
+
+**Zwei Werkzeuge sind daraus verbessert worden.** `promptcheck.py` liest
+jetzt auch deutsche Anfuehrungszeichen — `umkehren` und `Morgenrot`
+standen in einem Zitat und nicht in Backticks und rutschten deshalb
+durch. Und `belegt.py` sagt jetzt ausdruecklich, dass es die **Form**
+zaehlt: „die FORM `Motte` ist 2× belegt — das LEMMA hat 8".
+
+### Die Ausgaben
+
+**RIV1927 — sechs Anlautfehler in vier Kapiteln.** Jeder Agent hat seinen
+Detektor an Hosea 1,6 verifiziert, bevor er ihn laufen liess:
+
+    4,14  `h'è`       → ch'è        (korpusweit genau 4 Stellen, s. u.)
+    5,5   `iuda`      → Giuda       (30× gegen 841×)
+    5,8   `eniamino`  → Beniamino   (5× gegen 157×)
+    5,15  `uando`     → Quando      (8× gegen 1354×)
+    7,1   `oiché`     → poiché      (21× gegen 977×)
+    7,2   `sse`       → esse        (3× gegen 179×)
+
+`iuda`, `eniamino` und `uando` streuen ueber zwanzig weitere Buecher —
+buchuebergreifend, nicht Hosea-lokal. `h'è` steht korpusweit an genau
+vier Stellen: 2. Mose 10,5 · 5. Mose 28,45 · 2. Koenige 17,27 · Hosea
+4,14.
+
+Dazu **RIV 7,9 `dei capelli bianche`** — `capelli` ist maskulin, RIV
+schreibt sonst nie `capelli bianche`. Ein Kongruenzfehler, kein
+Anlautverlust.
+
+**WEB 4,3 ist gestoert**: „…will waste away. all living things in her…"
+— Kleinschreibung nach Punkt, eingeschobener Satzteil ohne Anschluss.
+
+**RV1909mod siezt in 4,1 · 4,13 · 4,14 · 4,15 · 5,1 · 6,1 · 6,4** und
+**vertauscht in 5,8 die Instrumente** (deutsch `Horn` in Gibea und
+`Trompete` in Rama, RV umgekehrt). Beides nach dem deutschen Text
+entschieden.
+
+### Ein Bestandsfehler ausserhalb Hoseas
+
+**Jeremia 25,31**: `Rechtsstreit` ist dort italienisch *contenzioso*
+(maskulin), der Artikel `einen` aber *una*. Gefunden vom Agenten fuer
+Hosea 4 an der Parallelstelle zu 4,1.
