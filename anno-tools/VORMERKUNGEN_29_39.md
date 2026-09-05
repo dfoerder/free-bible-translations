@@ -45,6 +45,17 @@ die Vorbereitung eines spaeteren gehoeren.
 Amos (30) · Obadja (31) · Habakuk (35) · Zefanja (36) · Haggai (37) —
 alle vier Ausgaben decken sich Vers fuer Vers mit dem l1912mod.
 
+## RIV-Anlautfehler in bereits fertigen Buechern
+
+Beim Annotieren gefunden, dort nicht mehr zu beheben — die Glossen stehen
+richtig, weil der deutsche Text glossiert wird. Nur als Beleg fuer den
+Umfang des Defekts:
+
+    `zechia`  statt `Ezechia`  —  Jesaja 39,1  ·  Hosea 1,1  ·  **Micha 1,1**
+    `ichem`   statt `Sichem`   —  1. Mose 34,13 · Josua 24,25 · Richter 9,41
+                                  ·  Hosea 6,9
+    `Acaz`    statt `Achaz`    —  Hosea 1,1 (einmal im ganzen Korpus)
+
 ## Korpusweit offen, in jedem Buch zu beachten
 
 - **`Iehu` und die 520 anderen italienischen `I`-Namen**: der Bestand

@@ -111,13 +111,25 @@ def kapiteltokens(nr, kaps):
 
 
 def promptwoerter(pfad):
-    """Deutsche Woerter in Backticks, in Reihenfolge des ersten Auftretens."""
+    """Deutsche Woerter in Backticks UND in deutschen Anfuehrungszeichen.
+
+    Die erste Fassung sah nur Backticks. In Hosea 6 hat der Prompt den Vers
+    als Zitat wiedergegeben — „Kommt, wir wollen zum HERRN umkehren" — und
+    zwei Woerter daraus waren falsch: der Quelltext sagt `zurueckkehren`,
+    und `Morgenrot` heisst dort `Morgenroete`. Beide standen ausserhalb der
+    Backticks und rutschten durch; der Agent hat sie am Vers gefunden.
+
+    Ein Zitat aus dem Quelltext ist genau die Sorte Behauptung, die dieses
+    Werkzeug pruefen soll — also werden „…"-Abschnitte mitgelesen.
+    """
     with open(pfad, encoding='utf-8') as f:
         text = f.read()
     raus, gesehen = [], set()
-    for roh in re.findall(r'`([^`\n]{2,60})`', text):
+    quellen = (re.findall(r'`([^`\n]{2,60})`', text)
+               + re.findall(r'„([^„“"\n]{2,200})[“"]', text))
+    for roh in quellen:
         roh = roh.strip()
-        if KEIN_TEXT.search(roh) or ' ' in roh.strip() and len(roh.split()) > 4:
+        if KEIN_TEXT.search(roh):
             continue
         for wort in roh.split():
             wort = wort.strip('.,;:!?()[]„“"\'…—–-')
