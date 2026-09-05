@@ -25,13 +25,26 @@ Uebersetzung haelt die Laengenverhaeltnisse ihrer Vorlage ueber ein ganzes
 Kapitel hinweg gut genug, um den Versatz eindeutig zu machen. Der Abstand
 steht dabei; ueber 0.25 ist die Auskunft nicht zu trauen.
 """
-import glob
+import glob, os
 import json
 import sys
 
 
+BASIS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
 def flach(nr, dirname):
-    treffer = glob.glob(f'{dirname}/{nr}_*.json')
+    """Die Verslaengen eines Buches, flach ueber alle Kapitel.
+
+    Der Pfad wird vom Ort DIESER Datei aus gebildet, nicht vom
+    Arbeitsverzeichnis. Vorher stand hier ein relativer glob — und weil
+    jedes Werkzeug laut Prompt-Baustein **aus `anno-tools/` heraus**
+    aufgerufen wird, fand er den Quelltext nie und das Skript meldete
+    fuer jedes Buch „kein deutscher Quelltext". Aufgefallen an Sacharja,
+    also am ersten Buch seit Daniel, das eine echte Kapitelgrenzen-
+    verschiebung traegt.
+    """
+    treffer = glob.glob(os.path.join(BASIS, dirname, f'{nr}_*.json'))
     if not treffer:
         return None
     d = json.load(open(treffer[0], encoding='utf-8'))
