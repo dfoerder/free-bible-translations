@@ -29,11 +29,19 @@ die Kapitel 1 und 3 (mit Judas) die Woerterbuchform.
 
 ## `ne … pas`
 
-Die Negation sitzt am `pas`; das `n’`-Token traegt nur sein Verb. Das
-Paar bekommt zusaetzlich einen Mehrwort-Eintrag mit Lemma `ne pas`.
+Beide Tokens tragen die Verneinung; das Mehrwort mit dem Lemma `ne pas`
+traegt die Einheit. **Der Span umfasst das Verb mit** — `ne vivra pas`,
+`Ne vous inquiétez pas`, nicht nur die beiden Randtokens.
 
-**Das Paar ist zusammenhaengend — also `pos_end`, nicht `parts`.**
-`selfcheck.py` weist `parts` dort zurueck.
+Damit ist er in aller Regel zusammenhaengend und bekommt `pos_end`.
+`parts` nur, wo etwas Nicht-Verbales dazwischensteht: `n’es … pas`
+(2,6, mit `certes` dazwischen). Ueber den Bestand gemessen sind es
+**52 mal `pos_end` und dreimal `parts`**.
+
+Eine fruehere Fassung dieses Abschnitts behauptete, `selfcheck.py` weise
+`parts` dort zurueck. **Das stimmt nicht** — es nimmt beides. Gemeldet
+vom Agenten fuer Matthaeus 7, der den Widerspruch zum Bestand gemessen
+hat.
 
 ## Relativpronomen
 
@@ -43,16 +51,30 @@ Artikel, und `glosskollision.py` meldet in jedem Kapitel dasselbe Paar.
 
 ## Reflexiva
 
-Ein Mehrwort **nur dort**, wo die Zielsprachen das Reflexiv nicht
-spiegeln:
+Ein Mehrwort dort, wo die **woertlichen Einzelglossen nicht aufgehen**.
+Das ist der Massstab — nicht die Frage, ob die Zielsprache ein Reflexiv
+hat.
 
-    se sont perdus  → sind umgekommen     Mehrwort
-    se sont jetés                         Mehrwort
-    s’est glissé                          Mehrwort
-    se corrompent · se plaignent · se repaissant   kein Mehrwort
+    se sont jetés    se=sich · sont=sind · jetés=geworfen
+                     woertlich „sich sind geworfen"        → Mehrwort
+    se sont perdus   → „sind umgekommen", gar nicht reflexiv → Mehrwort
+    s’est glissé     zusammengesetzte Zeit, dt. mit „haben" → Mehrwort
+    se leva          → „stand auf", dt. nicht reflexiv       → Mehrwort
 
-Wo Deutsch, Spanisch und Italienisch selbst reflexiv sind, tragen die
-Einzelwoerter alles.
+    se prosterna · se retira · se trouvait · se corrompent
+    se plaignent · se repaissant · se nourrissait
+                     einfache Zeit, dt./es./it. selbst reflexiv
+                                                            → kein Mehrwort
+
+Die zusammengesetzten Zeiten mit `être` brauchen fast immer eins: das
+franzoesische `sont` steht dort, wo das Deutsche `haben` setzt, und die
+Einzelglossen addieren sich zu Unsinn.
+
+Eine fruehere Fassung sagte „nur wo die Zielsprachen das Reflexiv nicht
+spiegeln" — und widersprach damit ihrer eigenen Beispielliste, in der
+`se sont jetés` (dt. *haben sich gestuerzt*, es. *se lanzaron*, it. *si
+sono gettati*) sehr wohl gespiegelt wird. Gefunden vom Agenten fuer
+Matthaeus 7, dem `sweeplemma.py` den fehlenden Eintrag in 7,25 meldete.
 
 ## Praepositionen und Artikel
 

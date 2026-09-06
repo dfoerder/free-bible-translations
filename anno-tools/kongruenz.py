@@ -119,6 +119,21 @@ FR_SG = {'mon','ma','ton','ta','son','sa','notre','votre','leur'}
 DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','sie','ihn'}
 DE_POSSESSIV = {'ihr','ihre','ihren','ihrem','ihrer','ihres',
                 'Ihr','Ihre','ihr'}
+# Alle deutschen Possessivformen — Anker fuer die Artikelprobe unten.
+DE_POSSESSIV_ALLE = DE_POSSESSIV | {
+    'mein','meine','meinen','meinem','meiner','meines',
+    'dein','deine','deinen','deinem','deiner','deines',
+    'sein','seine','seinen','seinem','seiner','seines',
+    'unser','unsere','unseren','unserem','unserer','unseres',
+    'euer','eure','euren','eurem','eurer','eures'}
+# Italienische Possessive OHNE Artikel — genau die sind verdaechtig.
+IT_POSSESSIV = {'mio','mia','miei','mie','tuo','tua','tuoi','tue',
+                'suo','sua','suoi','sue','nostro','nostra','nostri',
+                'nostre','vostro','vostra','vostri','vostre'}
+# Verwandtschaftsnomen im Singular stehen ohne Artikel: `mio padre`.
+IT_VERWANDT = {'padre','madre','figlio','figlia','fratello','sorella',
+               'marito','moglie','zio','zia','nonno','nonna','cugino',
+               'cugina','nipote','genero','nuora','suocero','suocera'}
 FR_PL = {'mes','tes','ses','nos','vos','leurs'}
 # Franzoesische Nomen, deren Plural-s fehlt oder deren Numerus die
 # Endung nicht verraet. `règles` ist der Fund, der den Lauf ausgeloest hat.
@@ -271,6 +286,23 @@ def main():
                         break
                 if nx is None:
                     continue
+                # Die Artikelproben brauchen das Genus NICHT — sie muessen
+                # deshalb vor den `continue` stehen, sonst fallen sie bei
+                # jedem Nomen aus, dessen Endung das Genus verschweigt.
+                # Genau daran haben sie beim ersten Einbau geschwiegen.
+                itw = (e.get('it') or '').strip().lower()
+                dew = C.de_wort(e).lower()
+                folge = (nx.get('it') or '').strip().lower().split()
+                if itw in IT_POSSESSIV and dew in DE_POSSESSIV_ALLE \
+                        and folge and folge[0] not in IT_VERWANDT:
+                    treffer.append(('it', k, v, e['form'], e['it'],
+                                    nx['form'], nx.get('it') or '',
+                                    'Artikel fehlt vor dem Possessiv'))
+                if (itw == 'loro' or itw.startswith('loro ')) \
+                        and dew in DE_POSSESSIV:
+                    treffer.append(('it', k, v, e['form'], e['it'],
+                                    nx['form'], nx.get('it') or '',
+                                    'Artikel fehlt vor loro'))
                 g = genus(nx.get('it') or '')
                 if not g:
                     continue
@@ -282,22 +314,6 @@ def main():
                 if soll and soll != g:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx['it'], g))
-                # Italienisch verlangt vor `loro` IMMER den Artikel — auch
-                # bei Verwandtschaftsnomen, wo `mio padre` ihn weglaesst:
-                # `il loro padre`, nie `loro padre`. Der Fehler verletzt
-                # weder Genus noch Numerus, also sah ihn kein Teil dieses
-                # Werkzeugs; gefunden hat ihn der Agent fuer Matthaeus 4
-                # beim Durchlesen (`leur père` it *loro*).
-                # Anker ist die deutsche Spalte: nur wo dort ein Possessiv
-                # steht, ist `loro` das Possessivum und nicht das Dativ-
-                # oder Subjektpronomen.
-                itw = (e.get('it') or '').strip().lower()
-                dew = C.de_wort(e).lower()
-                if (itw == 'loro' or itw.startswith('loro ')) \
-                        and dew in DE_POSSESSIV:
-                    treffer.append(('it', k, v, e['form'], e['it'],
-                                    nx['form'], nx.get('it') or '',
-                                    'Artikel fehlt vor loro'))
                 es = (e.get('es') or '').strip().lower()
                 if es in ES_SG or es in ES_PL:
                     en_ = es_numerus(nx.get('es') or '')

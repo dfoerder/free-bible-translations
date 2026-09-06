@@ -583,11 +583,37 @@ und Numerus des Nomens, also ist es keine mechanische Ersetzung.
 
 ---
 
+## 32 · Italienisch: fehlender Artikel vor dem Possessiv — 886 Stellen
+
+Die Erweiterung von Eintrag 31. Was fuer `loro` immer gilt, gilt fuer
+**jedes** italienische Possessiv mit einer Ausnahme: der Artikel ist
+Pflicht, ausser vor dem unmodifizierten Verwandtschaftsnomen im
+Singular (`mio padre`, aber `i miei fratelli`).
+
+Der Bestand macht es ueberwiegend richtig — **15 878 Possessive mit
+Artikel gegen 1 846 ohne**. Die Regel meldet davon die 886, bei denen
+ein Nomen folgt und es kein Verwandtschaftswort ist:
+
+    Mt 1,21  sein Volk    it `suo popolo`   → `il suo popolo`
+    Mt 6,13  dein Reich   it `tuo regno`    → `il tuo regno`
+    Mt 7,3   deinem Auge  it `tuo occhio`   → `il tuo occhio`
+
+**Sechs Stellen sind bereits erledigt** — die franzoesischen
+(Matthaeus 5,12 · 5,16 · 5,20 · 5,37 · 6,1 und Judas 1,20, alle
+`vostra` ohne Artikel).
+
+**Offen:** die 886 im deutschen Bestand. Der Artikel richtet sich nach
+Genus und Numerus des Nomens, also keine mechanische Ersetzung — aber
+`kongruenz.py` nennt jede Stelle mit ihrem Nomen, und die Verteilung
+im Bestand (90 Prozent mit Artikel) gibt die Richtung vor.
+
+---
+
 ## Stand nach der Nachlese
 
 | erledigt | geprueft und bewusst belassen | offen |
 |---|---|---|
-| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 · **30** · **31** |
+| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 · **30** · **31** · **32** |
 
 **Was offen bleibt und warum:**
 
