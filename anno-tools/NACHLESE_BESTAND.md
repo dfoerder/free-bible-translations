@@ -61,9 +61,13 @@ Daniel-Arbeit gesetzt) und die beiden NT-Stellen Judas 1,9 · Offb 12,7
 Einzelstelle, 28 Belege des Lemmas insgesamt. Gefunden waehrend der
 Jeremia-Arbeit.
 
-### 4. Die `Zeboim`-Reihe
+### 4. ERLEDIGT — die `Zeboim`-Reihe
 
-Gefunden waehrend der Hosea-Arbeit, s. `WORTFELD_HOSEA.md`.
+Der Bestand fuehrte den Namen italienisch viermal als `Seboim`
+(1. Mose 10,19 · 14,2 · 14,8 · 5. Mose 29,22), waehrend **RIV korpusweit
+`Tseboim` schreibt und kein einziges `Seboim`**. Die drei uebrigen
+Belege (1. Samuel 13,18 · Nehemia 11,34 · Hosea 11,8) hatten es bereits
+richtig. Korrigiert.
 
 ---
 
@@ -169,7 +173,7 @@ Form; das Lemma steht auf `verbergen`.
 
 ## E · Eine Bestandskonvention, die von LSG abweicht
 
-### 11. „…, spricht Gott, der HERR" steht 100× auf `parle`, LSG liest dort `dit`
+### 11. ERLEDIGT — „…, spricht Gott, der HERR" nachgestellt auf `dit` gezogen
 
 Kein Fehler, aber eine Entscheidung, die niemand aufgeschrieben hatte.
 Gemessen ueber den ganzen Korpus, nach der Stellung im deutschen Satz:
@@ -193,6 +197,26 @@ aber notiert, damit sie nicht jedes Buch neu verhandelt wird.
 
 **Wer sie umdrehen will, muss alle 100 Stellen zugleich ziehen** — eine
 halbe Aenderung waere schlechter als beide ganzen.
+
+**Umgedreht, alle zugleich.** Die Grundlage hat sich geaendert: die
+Appositionsregel, die diese Ausnahme rechtfertigte, ist widerlegt
+(Eintrag 16). Neu gemessen, nach Stellung **und** LSG-Lesart:
+
+```
+                    Bestand    LSG      Anzahl
+vorangestellt       parle      parle      115     einig
+vorangestellt       parle      dit         11     Regel gewinnt, unveraendert
+NACHGESTELLT        parle      dit         86     korrigiert -> dit
+NACHGESTELLT        parle      parle        1     korrigiert -> dit (Hesekiel 34,17)
+```
+
+87 Stellen in Hesekiel und Amos auf `dit` gezogen, beide Buecher neu
+gebaut. Danach steht die Formel korpusweit regelkonform: **87
+nachgestellt `dit`, 126 vorangestellt `parle`.**
+
+Der eine Fall, in dem auch LSG nachgestellt `parle` liest
+(Hesekiel 34,17), ist mitgezogen — die Regel entscheidet, nicht die
+einzelne Ausgabenstelle.
 
 
 ### 12. Micha 2,11 — `Bier` steht einmal im ganzen Korpus
@@ -411,7 +435,7 @@ durchgehend **„Jedaia"**, „Iedaia" nirgends; LSG schreibt viermal von
 fuenf **„Jedaeja"**. Der Sacharja-6-Agent hat nach den Ausgaben gesetzt.
 Die zehn Altbelege sind noch nicht nachgezogen.
 
-### 25. `Tobija` und `Tobia` — zwei Lemmata fuer einen Namen
+### 25. GEPRUEFT, bleibt — `Tobija` und `Tobia`
 
 `l1912mod` schreibt in Sacharja 6,10/6,14 `Tobija`, der Bestand fuehrt
 15 Belege unter `Tobia`. Der Agent hat formtreu `Tobija` als eigenes
