@@ -133,7 +133,10 @@ IT_POSSESSIV = {'mio','mia','miei','mie','tuo','tua','tuoi','tue',
 # Verwandtschaftsnomen im Singular stehen ohne Artikel: `mio padre`.
 IT_VERWANDT = {'padre','madre','figlio','figlia','fratello','sorella',
                'marito','moglie','zio','zia','nonno','nonna','cugino',
-               'cugina','nipote','genero','nuora','suocero','suocera'}
+               'cugina','nipote','genero','nuora','suocero','suocera',
+               # Feste Wendungen ohne Artikel. `a tuo riguardo`
+               # (Matthaeus 4,6) war der erste Fehlalarm dieser Art.
+               'riguardo','casa','vita','avviso','parere','favore'}
 FR_PL = {'mes','tes','ses','nos','vos','leurs'}
 # Franzoesische Nomen, deren Plural-s fehlt oder deren Numerus die
 # Endung nicht verraet. `règles` ist der Fund, der den Lauf ausgeloest hat.
