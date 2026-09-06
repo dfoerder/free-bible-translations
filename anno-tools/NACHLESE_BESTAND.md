@@ -388,3 +388,21 @@ germe · germoglio*). In 6,12 ist es noch schaerfer: **LSG schreibt
 liest die Stelle also rein appellativisch. Beide Kapitel haben
 zeichengleich `Zemach` gesetzt; die Frage gehoert buchweit entschieden,
 nicht kapitelweise.
+
+
+### 27. `Sarezer` — RIV liest an allen drei Stellen „Saretser"
+
+Der Bestand fuehrt it *Sarezer* (2. Koenige 19,37, Jesaja 37,38).
+**RIV1927 schreibt an beiden Altstellen und in Sacharja 7,2
+„Saretser".** Der Sacharja-7-Agent hat im Kapitel `Saretser` gesetzt
+(Textbefund vor Bindung) und die zwei Altbelege gemeldet. Dieselbe
+Klasse wie `Jozadak` und `Jedaja`.
+
+### 28. `Kislev` — die italienische Glosse passt zum falschen Vers
+
+Der Bestand setzt fuer `Kislev` (Nehemia 1,1) it *Chisleu*. **RIV liest
+in Nehemia 1,1 selbst „Kisleu"** — der Wert passt dort also nicht, wohl
+aber zufaellig auf Sacharja 7,1, wo RIV „Chisleu" schreibt. Der Agent
+hat die Sacharja-Form `Kislew` auf das Lemma `Kislev` gebunden und die
+Reihe unveraendert uebernommen; **kein Zwillingsfall**, der Unterschied
+ist rein deutsch.

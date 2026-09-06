@@ -497,3 +497,28 @@ sondern der Wortanfang nach einem kurzen Vorwort ueberhaupt.
 RIV 6,10 schreibt ausserdem „in casa di **iosia**" klein, wo es sonst
 durchgehend „Giosia" setzt (2. Koenige 23,30, 2. Chronik 35,1,
 Jeremia 1,2 geprueft) — ein Setzfehler, kein Anlautverlust.
+
+
+### Sacharja 8: sechs Artefakte in einem Kapitel — und drei neue Klassen
+
+Der Agent fuer Kapitel 8 fand in **einem** Kapitel sechs Stellen, mehr
+als in manchem ganzen Buch:
+
+```
+8,3   „la ittà della fedeltà"        città     Anlautverlust (c)
+8,17  „erché tutte queste cose"      perché    Anlautverlust (p)
+8,4   „della grava età"              grave     falscher Vokal am Wortende
+8,15  „casa di Guida"                Giuda     zwei Buchstaben vertauscht
+8,8   „sarò loro io con fedeltà"     Dio       falsches, aber echtes Wort
+8,18  „mi vi rivolta"                fu        falsches, aber echtes Wort
+```
+
+Die ersten beiden sind die bekannte Klasse 1. Die uebrigen vier sind
+**keine Anlautverluste**: eine Vokalverwechslung, eine Buchstaben-
+umstellung und zweimal ein anderes, fuer sich richtiges Wort. Das
+bestaetigt, was schon Sacharja 6,7 (`erra` fuer *terra*) zeigte — die
+RIV-Datei traegt nicht einen Fehlertyp, sondern das uebliche Spektrum
+einer schlecht erfassten Vorlage. **Maschinell findbar bleibt nur die
+erste Klasse** ueber die Haeufigkeitsprobe.
+
+Keine der sechs Stellen wirkt sich auf eine Glosse aus.
