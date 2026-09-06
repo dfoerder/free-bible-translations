@@ -98,6 +98,27 @@ keine eigene Bedeutung hat, traegt es dieselbe Reihe wie die Wendung
 durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am
 Vers geprueft und im Bericht begruendet — aufgeloest oder verworfen.
 
+## Wie dieser Prompt geprueft wurde — und was das nicht heisst
+
+Jeder Kapitelprompt laeuft vor dem Start durch **zwei** Werkzeuge, und
+sie pruefen Verschiedenes:
+
+- **`vorgabecheck.py <datei> --buch <NR>`** haelt Level und Reihen
+  gegen den Bestand und jedes Verszitat gegen den Quelltext.
+- **`promptcheck.py <NR> <KAP> --datei <datei>`** prueft, ob die
+  genannten Woerter im Kapitel **ueberhaupt vorkommen**.
+
+Fuer Sacharja Paket 4 lief nur das erste. Ergebnis: die Reihen `Bock`
+B2 und `Pflock` B2 standen im Prompt, waren als Bestandsreihen auch
+voellig richtig — nur liest der Text `Leitböcke` und `Zeltpflock`,
+zwei **eigene Lemmata auf C1**. Der Agent hat es gefunden; das Werkzeug
+haette es vorher gesagt.
+
+**Auch wenn beide sauber durchlaufen, ist der Prompt nicht fehlerfrei.**
+Die Reihentabelle gibt die **haeufigste** Form eines Lemmas; welche
+Form dein Vers braucht, entscheidest du am Vers. In Sacharja 12 waren
+sechs Reihen im falschen Numerus oder Modus.
+
 ## Feste Regeln
 
 - **Ins Repo `/Users/dfoerd/Documents/projekte/bibel/bible-reader` wird NUR

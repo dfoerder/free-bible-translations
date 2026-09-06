@@ -116,7 +116,15 @@ def kollisionen_im_vers(entries):
     """
     treffer = collections.defaultdict(set)   # (lemA, lemB) -> {sprachen}
     nurschreibung = collections.defaultdict(set)
-    formen = {}                              # lemma -> die kollidierende Form
+    # (lemma, sprache) -> die Form, die IN DIESER SPRACHE kollidiert.
+    # Frueher stand hier `lemma -> form`, und das wurde beim Durchlaufen
+    # der vier Sprachen ueberschrieben: in Sacharja 11,13 kollidiert das
+    # Lemma `der` italienisch ueber die Form `den` und in einer anderen
+    # Sprache ueber `die` — gemeldet wurde `die`/`Was`, richtig ist
+    # `den`/`Was`. Der Agent hat es am Vers gefunden. Dieselbe Klasse wie
+    # der im Docstring beschriebene Ps-78,37-Fall, nur eine Ebene tiefer:
+    # dort war die Lemma-Wahl falsch, hier die Form je Sprache.
+    formen = {}
     glossen = collections.defaultdict(dict)  # (lemma, sprache) -> glosse
     for sprache in SPRACHEN:
         # Wert ist {lemma: (form, glosse)} — **nicht** nur die Lemma-Menge.
@@ -142,7 +150,8 @@ def kollisionen_im_vers(entries):
                 for j in range(i + 1, len(ls)):
                     a, b = ls[i], ls[j]
                     (fa, ga), (fb, gb) = treffer_lem[a], treffer_lem[b]
-                    formen[a], formen[b] = fa, fb
+                    formen[(a, sprache)] = fa
+                    formen[(b, sprache)] = fb
                     glossen[(a, sprache)] = ga
                     glossen[(b, sprache)] = gb
                     if ga != gb and _ist_konvention(ga, gb):
@@ -177,6 +186,21 @@ def _ist_funktionspaar(a, b):
     return a.lower() in FUNKTION and b.lower() in FUNKTION
 
 
+def _form(formen, lemma, sprachen):
+    """Die Form, die in der ERSTEN gemeldeten Sprache kollidiert.
+
+    Kollidiert dasselbe Lemma in verschiedenen Sprachen ueber
+    verschiedene Formen, ist die Angabe zwangslaeufig unvollstaendig —
+    dann werden alle genannt, getrennt durch `/`.
+    """
+    gefunden = []
+    for s in sorted(sprachen, key=SPRACHEN.index):
+        f = formen.get((lemma, s))
+        if f and f not in gefunden:
+            gefunden.append(f)
+    return '/'.join(gefunden) if gefunden else lemma
+
+
 def pruefe(kapitel_daten, nr, kap):
     """kapitel_daten: {vers: [eintraege]} -> Liste von Befunden."""
     out = []
@@ -188,7 +212,7 @@ def pruefe(kapitel_daten, nr, kap):
             out.append({
                 'nr': nr, 'kap': str(kap), 'vers': vers,
                 'a': a, 'b': b,
-                'forma': formen.get(a, a), 'formb': formen.get(b, b),
+                'forma': _form(formen, a, sprachen), 'formb': _form(formen, b, sprachen),
                 'sprachen': sorted(sprachen, key=SPRACHEN.index),
                 'glossen': {s: glossen.get((a, s)) for s in sorted(sprachen, key=SPRACHEN.index)},
                 'funktion': _ist_funktionspaar(a, b),

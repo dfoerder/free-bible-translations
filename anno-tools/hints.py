@@ -130,6 +130,13 @@ def analyse(nr, kap=None):
         (lemma, en, es, fr, it), _ = c.most_common(1)[0]
         haupt[f] = (lemma, en, es, fr, it)
 
+    # Gross-/Kleinschreibung: `form_lesarten` ist schreibungsgenau
+    # indexiert, und substantivierte Adjektive wechseln staendig die
+    # Schreibung. In Sacharja 11 galten `Prächtigen`, `elenden` und
+    # `Gesunde` als unbelegt, obwohl `prächtigen` (15×), `Elenden` (21×)
+    # und `gesunde` im Bestand stehen. Solche Formen gehoeren nicht in
+    # die Unbelegt-Liste, sondern in eine eigene Zeile.
+    schreibvariante = {}
     unbelegt, kollisionen, mehrdeutig = {}, [], {}
     for k in kapitel:
         for v, txt in src['chapters'][k].items():
@@ -137,7 +144,15 @@ def analyse(nr, kap=None):
             formen = [f for f in formen if f]
 
             for f in formen:
-                if f not in form_lesarten and f not in unbelegt:
+                if f not in form_lesarten and f not in unbelegt \
+                        and f not in schreibvariante:
+                    andere = next((g for g in (f.lower(), f.capitalize(),
+                                               f.upper())
+                                   if g != f and g in form_lesarten), None)
+                    if andere:
+                        schreibvariante[f] = (f'{k},{v}', andere,
+                                              haupt[andere][0])
+                        continue
                     verwandt = _verwandt(f, stamm)
                     unbelegt[f] = (f'{k},{v}', verwandt)
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
@@ -167,7 +182,7 @@ def analyse(nr, kap=None):
                 if len({lm for _, lm in paare}) > 1:
                     kollisionen.append((f'{k},{v}', lang, g, sorted(paare)))
 
-    return unbelegt, kollisionen, mehrdeutig
+    return unbelegt, kollisionen, mehrdeutig, schreibvariante
 
 
 def kompositum_im_vers(nr, kap=None):
@@ -213,7 +228,7 @@ def kompositum_im_vers(nr, kap=None):
 
 def bericht(nr, kap=None):
     src = C.load_source(nr)
-    unbelegt, kollisionen, mehrdeutig = analyse(nr, kap)
+    unbelegt, kollisionen, mehrdeutig, schreibvariante = analyse(nr, kap)
     L = [f'# Hinweise aus dem Quelltext: {src["name"]}'
          + (f' {kap}' if kap else '') , '']
 
@@ -263,6 +278,19 @@ def bericht(nr, kap=None):
         mehr = f' … +{len(stellen)-4}' if len(stellen) > 4 else ''
         L.append(f'- `{"` ↔ `".join(lemmata)}` — {orte}{mehr}')
     L.append('')
+
+    if schreibvariante:
+        L.append(f'## Nur die Schreibung ist neu ({len(schreibvariante)})')
+        L.append('')
+        L.append('Diese Formen stehen im Bestand, nur mit anderer Gross- '
+                 'oder Kleinschreibung — meist substantivierte Adjektive. '
+                 '**Nimm die Reihe der belegten Form**, sie ist keine '
+                 'Neupraegung.')
+        L.append('')
+        for f, (wo, andere, lemma) in sorted(schreibvariante.items()):
+            L.append(f'- **{f}** ({wo}) — belegt als `{andere}`, '
+                     f'Lemma `{lemma}`')
+        L.append('')
 
     komp = kompositum_im_vers(nr, kap)
     L.append(f'## Unbelegtes Wort neben belegtem Bestandteil ({len(komp)})')
