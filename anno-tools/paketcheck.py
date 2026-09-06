@@ -76,13 +76,27 @@ def lade(args):
         out, eigene = [], set()
         for kap in args[1:]:
             eigene.add((nr, str(int(kap))))
-            data = C.load_quelle(nr, int(kap))
+            # Waehrend ein Paket laeuft, liegen die Kapitel nur in
+            # $ANNO_OUT — dort zuerst nachsehen. Ohne das war
+            # paketcheck.py genau in der Phase unbrauchbar, fuer die es
+            # gebaut ist: drei Kapitel gleichzeitig, keins davon
+            # eingesammelt. Gemeldet vom Agenten fuer Matthaeus 13.
+            data = None
+            out_dir = os.environ.get('ANNO_OUT')
+            if out_dir:
+                pfad = os.path.join(out_dir, str(nr), f'ch{int(kap)}.json')
+                if os.path.exists(pfad):
+                    with open(pfad, encoding='utf-8') as f:
+                        data = json.load(f)
             if data is None:
+                data = C.load_quelle(nr, int(kap))
+            if data is None and C.has_anno(nr):
                 anno = C.load_anno(nr)['chapters']
                 data = anno.get(str(int(kap)))
             if data is None:
-                raise SystemExit(f'Kapitel {kap} nicht gefunden — '
-                                 f'weder in anno-quellen noch in der Anno-Datei')
+                raise SystemExit(
+                    f'Kapitel {kap} nicht gefunden — weder in $ANNO_OUT '
+                    'noch in anno-quellen noch in der Anno-Datei')
             out.append((f'{C.book_name(nr)} {int(kap)}', data))
         return out, eigene
     out = []

@@ -150,6 +150,12 @@ die das Pilotbuch gepraegt hat.
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
 
+**`paketcheck.py <NR> <KAP> <KAP> <KAP>` haelt die drei Kapitel des
+Pakets gegeneinander** — es liest sie aus `$ANNO_OUT`, also auch, solange
+keins eingesammelt ist. Das ist das einzige Werkzeug, das sieht, was die
+Nachbaragenten gerade praegen; `folgencheck` kennt nur den fertigen
+Bestand. Lauf es, wenn die Nachbarn abgegeben haben.
+
 **Der zweite `folgencheck`-Lauf mit `--min 3` ist kein Luxus.** Der
 Standardlauf sieht erst Folgen ab vier Tokens; in Matthaeus 15 meldete er
 zwei Abweichungen, mit `--min 3` waren es zwanzig — **sechs davon echte

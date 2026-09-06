@@ -39,6 +39,12 @@ ueber den Bestand:
     ne  (eigenes Token)   → *nicht*                    66×
     n’a · n’est · n’ont   → nur das Verb (*hat*, *ist*, *haben*)
 
+**Das gilt nur, solange ein `pas` da ist.** Wo die Verneinung ohne `pas`
+auskommt — `ils n’entendent ni ne comprennent` (13,13), `n’amassent
+rien`, `Nul ne peut` — gibt es kein `ne pas`-Mehrwort, und das elidierte
+Token muss die Verneinung selbst tragen: `n’entendent` = *hören nicht*.
+Gemeldet vom Agenten fuer Matthaeus 13.
+
 Das ist kein Widerspruch, sondern die Folge daraus, dass die Positionen
 ueber `text.split()` zaehlen: wo `n’` mit dem Verb ein Token bildet, hat
 die Verneinung dort keinen eigenen Platz — sie steht am `pas` und im
@@ -88,6 +94,11 @@ sono gettati*) sehr wohl gespiegelt wird. Gefunden vom Agenten fuer
 Matthaeus 7, dem `sweeplemma.py` den fehlenden Eintrag in 7,25 meldete.
 
 ## Praepositionen und Artikel
+
+**Vor `loro` steht der Artikel IMMER** — auch beim Verwandtschafts-
+nomen, wo `mio padre` ihn weglaesst: `il loro padre`, nie `loro padre`.
+`loro` ist die einzige Ausnahme von der Ausnahme. (Matthaeus 13,43
+stand zuerst als `loro Padre`.)
 
 **Die Praeposition bleibt bar, der Artikel sitzt am Folgetoken.** Das
 gilt fuer den Artikel wie fuer das Possessiv:
