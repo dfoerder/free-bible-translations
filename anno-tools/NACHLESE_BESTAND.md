@@ -406,3 +406,16 @@ aber zufaellig auf Sacharja 7,1, wo RIV „Chisleu" schreibt. Der Agent
 hat die Sacharja-Form `Kislew` auf das Lemma `Kislev` gebunden und die
 Reihe unveraendert uebernommen; **kein Zwillingsfall**, der Unterschied
 ist rein deutsch.
+
+
+### 29. `beschirmen` — eine Ein-Beleg-Bindung gegen vier Ausgaben
+
+`beschirmen` hat im Bestand **genau einen** Beleg: Jesaja 31,5 („So
+wird der HERR der Heerscharen Jerusalem beschirmen"), gesetzt als
+*cover · cubrir · couvrir · coprire*. Sacharja 12,8 ist die direkte
+Parallele — und **alle vier Ausgaben schreiben dort
+defend/protegerá/protégera/proteggerà**.
+
+Der Agent ist der Bindung gefolgt, weil die Bedeutung dieselbe ist, und
+meldet: eine Bindung aus einem einzigen Beleg, die viermal gegen die
+Ausgabe steht, ist ein Kandidat fuer eine korpusweite Pruefung.

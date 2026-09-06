@@ -522,3 +522,17 @@ einer schlecht erfassten Vorlage. **Maschinell findbar bleibt nur die
 erste Klasse** ueber die Haeufigkeitsprobe.
 
 Keine der sechs Stellen wirkt sich auf eine Glosse aus.
+
+
+### Sacharja 12: drei weitere, alle derselbe Namensanlaut
+
+```
+12,6   „e erusalemme sarà ancora abitata"   Gerusalemme
+12,9   „contro erusalemme"                  Gerusalemme
+12,11  „nella valle di eghiddon"            Meghiddon
+```
+
+Zweimal `G`, einmal `M` — und alle drei an einem **Eigennamen**. Damit
+liegt in Sacharja allein bei elf Stellen (6,7 · 6,10 · 8,3 · 8,4 · 8,8 ·
+8,15 · 8,17 · 8,18 · 12,6 · 12,9 · 12,11) der Schwerpunkt deutlich auf
+den Namen. Ohne Wirkung auf die Glossen.
