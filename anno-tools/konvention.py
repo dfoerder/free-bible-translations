@@ -117,7 +117,17 @@ for kap in kaps:
                                 or toks[j + 1].lower() not in danach):
                             break
                         lem=f'{a} {b}'
-                        if (i,j) not in belegt and (i,lem) not in beginnt:
+                        # Eine Bestandswendung wird auch von ihrer LAENGEREN
+                        # Form gedeckt: in `au sujet du` steckt das kontrahierte
+                        # `de`, der Eintrag traegt deshalb das Lemma
+                        # `au sujet de` und begann fuer die Probe mit dem
+                        # falschen Namen. Im Franzoesischen trifft das jede
+                        # Wendung, die auf `de` oder `à` endet — gemeldet vom
+                        # Agenten fuer Matthaeus 6.
+                        laenger = any(p == i and (lm or '').split()[:2] == [a, b]
+                                      for p, lm in beginnt)
+                        if (i,j) not in belegt and (i,lem) not in beginnt \
+                                and not laenger:
                             offen+=1
                             hinweis = ''
                             anderes = deckung.get(i)

@@ -21,6 +21,12 @@ Lemma ist der Kopf, nicht die Zeichenkette:
 
 `au`/`aux` folgen `du`/`des` — dieselbe Verschmelzung, dieselbe Regel.
 
+**Die Regel greift nur, wo zwei verschiedene Woerter zusammenstossen.**
+Eine **zusammengesetzte Praeposition** behaelt ihre Woerterbuchform:
+`jusqu'à` bleibt `jusqu'à` und wird nicht zu `jusque`. Entschieden in
+Matthaeus Paket 1, wo Kapitel 2 die Elisionsregel angewandt hatte und
+die Kapitel 1 und 3 (mit Judas) die Woerterbuchform.
+
 ## `ne … pas`
 
 Die Negation sitzt am `pas`; das `n’`-Token traegt nur sein Verb. Das
@@ -112,3 +118,39 @@ nicht die Mehrheit der Zeugen; so stimmt es auch mit `contestait` in
 
 **1,7 `que`** ist die Fortsetzung von 1,5 („Je veux vous rappeler … que"),
 nicht „So auch" wie bei de/en/es. Glossiert als *dass · that · que · che*.
+
+
+## `te` — Dativ und Akkusativ
+
+Englisch hat fuer beides `you`, Franzoesisch nicht. Wo `te` **Dativ**
+ist, traegt es en *to you*; wo es Akkusativ ist, *you*. Ohne diese
+Unterscheidung meldet `glosskollision.py` in jedem Kapitel dasselbe Paar
+`te`/`tu` als staerksten Verdacht — gemessen an Matthaeus 6, wo es
+viermal auftrat.
+
+Dasselbe fuer das tonische `toi` neben `tu`: `toi` wird *du selbst · you
+yourself · tú mismo · tu stesso*.
+
+## `règne` und `royaume` teilen sich eine Reihe
+
+Beide tragen *Reich · kingdom · reino · regno*. Das ist eine
+Kollision — und sie bleibt stehen. **Gemessen: kein Vers in ganz
+Matthaeus enthaelt beide Woerter.** „Dein Reich komme" (6,10) ist der
+meistgelesene Satz des Buches; eine buchlokale Ausweichuebersetzung
+haette den Bestand nur inkonsistent gemacht.
+
+**Wenn ein spaeteres Kapitel beide in einem Vers hat, wird DORT
+aufgeloest** — nach der Regel „aufgeloest wird nur im Kollisionsvers".
+
+## `ne` ohne Verneinung
+
+Zwei Faelle, in denen `ne` nicht *nicht* heisst:
+
+- **Das `ne` explétif** nach `de peur que`, `avant que`, `à moins que`:
+  `de peur que ton pied ne heurte` (4,6). Traegt es die Verneinung,
+  steht sie im Deutschen doppelt und der Sinn kippt. Gesetzt wird ein
+  echtes Wort — *etwa · perhaps · acaso · talora* — plus das Mehrwort
+  `de peur que` = *damit nicht*.
+- **`ne … rien` / `ne … ni` / `nul ne`**: dort gibt es kein `pas`, also
+  auch kein `ne pas`-Mehrwort. Fuer `ne … rien` ist `ne rien` das
+  Mehrwort — Spanisch und Italienisch brauchen die doppelte Verneinung.
