@@ -239,7 +239,8 @@ def extract(nr, kap, von=None, bis=None):
     vz = verszeilen(nr, kap)
 
     L = [f'# Rueckwaerts-Lexikon: {name} {kap}'
-         + (f',{von}–{bis}' if von else ''), '', '']
+         + (f',{von}–{bis}' if von else ''), '',
+         f'*{C.bestandsstand()}*', '']
     L.append('Was `eng/web` und `deu/l1912mod` in ihrer **fr-Spalte** zu den '
              'Woertern dieses Abschnitts fuehren.')
     L.append('')

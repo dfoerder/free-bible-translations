@@ -335,3 +335,27 @@ def ohne_elision(w):
             if kopf.lower() in ELIDIERT and rest:
                 return rest
     return w
+
+
+def bestandsstand():
+    """Woran gemessen wurde: Commit und Zeitpunkt des Bestands.
+
+    Mehrere Agenten messen gleichzeitig, und der Koordinator korrigiert
+    zwischen den Paketen. In Matthaeus Paket 5 hat ein Agent an eine
+    Reihe gebunden, die waehrend seines Laufs geaendert wurde — seine
+    Messung war Minuten alt und schon falsch. Nur `folgencheck.py` hat
+    es hinterher gemerkt.
+
+    Jede Messung traegt jetzt ihren Stand im Kopf. Stimmt er nicht mehr
+    mit `git -C bibles-translations rev-parse --short HEAD` ueberein,
+    ist die Messung zu wiederholen.
+    """
+    import subprocess
+    try:
+        r = subprocess.run(['git', '-C', TRANS, 'log', '-1',
+                            '--format=%h %cd', '--date=format:%d.%m. %H:%M'],
+                           capture_output=True, text=True, timeout=5)
+        stand = r.stdout.strip()
+    except Exception:
+        stand = ''
+    return f'Bestand: {EDITION} · {stand}' if stand else f'Bestand: {EDITION}'

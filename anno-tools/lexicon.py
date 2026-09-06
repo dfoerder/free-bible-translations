@@ -142,6 +142,8 @@ def extract(nr, kap, von=None, bis=None):
     bereich = f'{kap}' + (f',{von}–{bis}' if von is not None else '')
     L.append(f'# Lexikon-Extrakt: {name} {bereich}')
     L.append('')
+    L.append(f'*{C.bestandsstand()}*')
+    L.append('')
     ges = len(formen)
     L.append(f'{ges} verschiedene Wortformen · {len(belegt)} im Bestand belegt '
              f'({100*len(belegt)//max(ges,1)} %) · {len(schreibung)} nur in der '

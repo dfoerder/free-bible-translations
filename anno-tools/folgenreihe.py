@@ -102,6 +102,7 @@ def main():
     if not args:
         print(__doc__)
         return 2
+    print(f'*{C.bestandsstand()}*')
     for phr in args:
         w, voll, orte, unv, mehrwort = stellen(phr, bis)
         ges = sum(voll.values())

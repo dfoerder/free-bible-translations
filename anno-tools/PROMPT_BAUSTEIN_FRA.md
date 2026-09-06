@@ -144,10 +144,17 @@ die das Pilotbuch gepraegt hat.
     python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 folgencheck.py <NR> --min 3 --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
+
+**Der zweite `folgencheck`-Lauf mit `--min 3` ist kein Luxus.** Der
+Standardlauf sieht erst Folgen ab vier Tokens; in Matthaeus 15 meldete er
+zwei Abweichungen, mit `--min 3` waren es zwanzig — **sechs davon echte
+Anschlussfehler**, darunter eine dreiwortige Folge, die das Paket selbst
+praegt (`qui souille l'homme`).
 
 `kongruenz.py` und `artikel.py` leiten ihre Referenz aus dem **Bestand**
 ab — solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel
@@ -172,6 +179,13 @@ der Bestand laengst *announced*.
 Der Bestand ist, was `belegt.py`, `lexicon.py`, `folgenreihe.py` und
 `parallelen.py` sagen. Auch `bindungen_*.md` ist eine Momentaufnahme —
 was es unter UEBERNIMMT nennt, mit `folgenreihe.py` nachmessen.
+
+**Und der Bestand kann sich waehrend deines Laufs aendern.** Der
+Koordinator gleicht zwischen den Paketen an; in Matthaeus Paket 5 hat ein
+Agent an eine Reihe gebunden, die Minuten spaeter korrigiert wurde. Jede
+Messung traegt deshalb ihren Stand im Kopf (`Bestand: … · <commit>`).
+Wenn dein Lauf lange dauert, **miss die Reihen vor der Abgabe noch einmal
+nach** — `folgencheck.py` findet den Rest.
 
 **Erklaere kein Kapitel fuer fertig, das `selfcheck.py` nicht sauber
 durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am
