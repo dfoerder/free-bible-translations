@@ -123,6 +123,14 @@ def extract(nr, kap, von=None, bis=None):
         if g and g in idx:
             schreibung.append((f, n, g, idx[g]))
             continue
+        # Elidierte Form: `l’ouvrier` stand unter UNBELEGT, obwohl
+        # `ouvrier` seit 9,37 im Bestand steht — die Suche ist formbasiert
+        # und die Elision klebt am Wort. Gemeldet vom Agenten fuer
+        # Matthaeus 10.
+        kern = C.ohne_elision(f)
+        if kern != f and kern in idx:
+            schreibung.append((f, n, kern, idx[kern]))
+            continue
         kand = stamm.get(f[:MIN_STAMM].lower(), set()) if len(f) >= MIN_STAMM else set()
         if kand:
             verwandt.append((f, n, sorted(kand)))

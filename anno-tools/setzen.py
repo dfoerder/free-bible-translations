@@ -35,10 +35,30 @@ import sys
 import common as C
 
 
-def setze(nr, kap, vers, pos, form, felder, grund=None, trocken=False):
-    p = os.path.join(C.QUELLEN, str(nr), f'ch{kap}.json')
+def setze(nr, kap, vers, pos, form, felder, grund=None, trocken=False,
+          aus_out=False):
+    """`aus_out` schreibt in $ANNO_OUT statt in die Kapitelquellen.
+
+    Ein Agent arbeitet in `$ANNO_OUT`, der Koordinator in
+    `anno-quellen/`. Die erste Fassung kannte nur den zweiten Ort und
+    meldete dem Agenten fuer Matthaeus 10 „gibt es nicht" — wer das fuer
+    erledigt haelt, korrigiert nichts.
+    """
+    if aus_out:
+        out = os.environ.get('ANNO_OUT')
+        if not out:
+            raise SystemExit('ANNO_OUT ist nicht gesetzt.')
+        p = os.path.join(out, str(nr), f'ch{kap}.json')
+    else:
+        p = os.path.join(C.QUELLEN, str(nr), f'ch{kap}.json')
     if not os.path.exists(p):
-        raise SystemExit(f'{p} gibt es nicht.')
+        andere = (os.path.join(C.QUELLEN, str(nr), f'ch{kap}.json') if aus_out
+                  else os.path.join(os.environ.get('ANNO_OUT', '?'),
+                                    str(nr), f'ch{kap}.json'))
+        hinweis = (f'\nSie liegt aber in {andere} — dann '
+                   + ('ohne' if aus_out else 'mit') + ' --out arbeiten.'
+                   ) if os.path.exists(andere) else ''
+        raise SystemExit(f'{p} gibt es nicht.{hinweis}')
     d = json.load(open(p, encoding='utf-8'))
     if str(vers) not in d:
         raise SystemExit(f'Vers {vers} steht nicht in ch{kap}.json.')
@@ -85,6 +105,9 @@ def main():
     p.add_argument('felder', nargs='+', help='feld=wert, z. B. en="to you"')
     p.add_argument('--grund')
     p.add_argument('--trocken', action='store_true')
+    p.add_argument('--out', action='store_true',
+                   help='in $ANNO_OUT arbeiten statt in den Kapitelquellen '
+                        '— das ist der Ort, an dem ein Agent seine Abgabe hat')
     a = p.parse_args()
 
     felder = {}
@@ -94,7 +117,7 @@ def main():
         f, w = x.split('=', 1)
         felder[f] = w
     sys.exit(0 if setze(a.buch, a.kapitel, a.vers, a.pos, a.form, felder,
-                        a.grund, a.trocken) >= 0 else 1)
+                        a.grund, a.trocken, a.out) >= 0 else 1)
 
 
 if __name__ == '__main__':

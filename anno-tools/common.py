@@ -321,3 +321,17 @@ def elision_zurueck(woerter):
             out.append(w)
             i += 1
     return out
+
+
+def ohne_elision(w):
+    """`l’ouvrier` → `ouvrier`, `qu’il` → `il`, `d’Égypte` → `Égypte`.
+
+    Nur wo vor dem Apostroph eine bekannte Elisionsvorsilbe steht; `aujourd’hui`
+    bleibt also unangetastet.
+    """
+    for zeichen in ('\u2019', "'"):
+        if zeichen in w:
+            kopf, _, rest = w.partition(zeichen)
+            if kopf.lower() in ELIDIERT and rest:
+                return rest
+    return w

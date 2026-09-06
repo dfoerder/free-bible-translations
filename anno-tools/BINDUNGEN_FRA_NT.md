@@ -29,9 +29,20 @@ die Kapitel 1 und 3 (mit Judas) die Woerterbuchform.
 
 ## `ne … pas`
 
-Beide Tokens tragen die Verneinung; das Mehrwort mit dem Lemma `ne pas`
-traegt die Einheit. **Der Span umfasst das Verb mit** — `ne vivra pas`,
-`Ne vous inquiétez pas`, nicht nur die beiden Randtokens.
+Das Mehrwort mit dem Lemma `ne pas` traegt die Einheit, und **der Span
+umfasst das Verb mit** — `ne vivra pas`, `Ne vous inquiétez pas`, nicht
+nur die beiden Randtokens.
+
+Die Einzelwoerter haengen davon ab, ob das `ne` elidiert ist. Gemessen
+ueber den Bestand:
+
+    ne  (eigenes Token)   → *nicht*                    66×
+    n’a · n’est · n’ont   → nur das Verb (*hat*, *ist*, *haben*)
+
+Das ist kein Widerspruch, sondern die Folge daraus, dass die Positionen
+ueber `text.split()` zaehlen: wo `n’` mit dem Verb ein Token bildet, hat
+die Verneinung dort keinen eigenen Platz — sie steht am `pas` und im
+Mehrwort. Gemessen vom Agenten fuer Matthaeus 10.
 
 Damit ist er in aller Regel zusammenhaengend und bekommt `pos_end`.
 `parts` nur, wo etwas Nicht-Verbales dazwischensteht: `n’es … pas`
@@ -209,3 +220,17 @@ Infinitiv keinen eigenen Lemmanamen hat. Das ist der Preis dafuer, keine
 Lemmanamen zu erfinden, die kein Werkzeug versteht — und er ist es wert:
 ein `pouvoir¹` wuerde `belegt.py`, `lexicon.py` und `levelcheck.py`
 gleichzeitig blind machen.
+
+
+## `Père` — mit oder ohne italienischen Artikel
+
+Der Bestand schwankte: `votre Père` = *vostro Padre* (5,45 · 6,1),
+`mon Père` = *il mio Padre* (7,21). **Ohne Artikel ist richtig** — das
+unmodifizierte Verwandtschaftsnomen im Singular ist genau die Ausnahme
+der Artikelregel.
+
+RIV1927 hilft hier nicht weiter, weil es die Wortstellung dreht
+(`del Padre vostro`, `al Padre mio`): das Possessiv steht dort hinter
+dem Nomen, im Franzoesischen davor. Eine Token-fuer-Token-Spiegelung
+gibt es also nicht; beide Fassungen waeren grammatisch. Entschieden
+wird nach der eigenen Regel, nicht nach dem Zeugen.
