@@ -170,15 +170,27 @@ def main():
     namen = eigennamen()
     befunde = []
     if a.kapitel:
+        if len(a.args) != 3:
+            p.error('--kapitel braucht <buchNr> <kapitel> <datei.json> '
+                    'in dieser Reihenfolge')
         nr, kap, pfad = int(a.args[0]), int(a.args[1]), a.args[2]
         with open(pfad, encoding='utf-8') as f:
             data = json.load(f)
         if 'chapters' in data:
             data = data['chapters'][str(kap)]
         src = C.load_source(nr)['chapters'][str(kap)]
+        geprueft = 0
         for vers, entries in data.items():
             if vers in src:
                 pruefe_verse(nr, kap, vers, src[vers], entries, namen, befunde)
+                geprueft += 1
+        # Ohne diese Zeile war eine Datei, deren Versschluessel nicht zum
+        # Kapitel passen, von einer sauberen Datei nicht zu unterscheiden:
+        # beide meldeten '0 Verdachtsfaelle'. Gemeldet vom Agenten fuer
+        # Matthaeus 4.
+        if geprueft != len(src):
+            print(f'!! {geprueft} von {len(src)} Versen des Kapitels geprueft '
+                  '— die Datei deckt das Kapitel nicht ab.')
     else:
         nrs = C.anno_books() if (not a.args or a.args[0] == 'alle') \
             else [int(x) for x in a.args]
@@ -188,6 +200,10 @@ def main():
     for b in befunde:
         print(b)
     print(f'\n{len(befunde)} Verdachtsfälle · Kanarienvogel kennt {len(namen)} Eigennamen')
+    if len(namen) < 50:
+        print('!! Der Eigennamen-Kanarienvogel wird aus dem BESTAND abgeleitet '
+              'und kennt bei so wenig Bestand fast nichts — diese Probe sagt '
+              'hier noch nichts aus.')
     return 1 if befunde else 0
 
 

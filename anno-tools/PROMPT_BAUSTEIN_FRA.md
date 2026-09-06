@@ -140,10 +140,28 @@ die das Pilotbuch gepraegt hat.
     python3 artikel.py <NR>
     python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 folgencheck.py <NR> --datei $ANNO_OUT/<NR>/ch<KAP>.json
 
 `kongruenz.py` und `artikel.py` lesen den **Bestand**, nicht deine Datei —
 solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel wenig.
-Die beiden letzten lesen mit `--datei` deine Abgabe.
+Die drei letzten lesen mit `--datei` deine Abgabe. `folgencheck.py` ist
+das einzige, das den **Anschluss an die Nachbarkapitel** prueft; in
+Matthaeus Paket 2 hat es als einziges die zwei echten Anschlussfehler
+gefunden.
+
+## Woher du den Bestand nimmst — und woher nicht
+
+**Frag die Werkzeuge, nie die Teildateien der Vorgaenger.** In
+`$ANNO_OUT/<NR>/ch*.json` stehen die Abgaben frueherer Agenten, aber
+beim Einsammeln werden sie **korrigiert** — angeglichene Reihen,
+vereinheitlichte Level. Wer sie als Referenz liest, setzt einen Stand,
+den es nicht mehr gibt. Der Agent fuer Matthaeus 4 hat daran einen
+ganzen Messdurchgang verloren: `out/ch3.json` las `annoncé` = *spoken*,
+der Bestand laengst *announced*.
+
+Der Bestand ist, was `belegt.py`, `lexicon.py`, `folgenreihe.py` und
+`parallelen.py` sagen. Auch `bindungen_*.md` ist eine Momentaufnahme —
+was es unter UEBERNIMMT nennt, mit `folgenreihe.py` nachmessen.
 
 **Erklaere kein Kapitel fuer fertig, das `selfcheck.py` nicht sauber
 durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am

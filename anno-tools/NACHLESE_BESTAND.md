@@ -554,11 +554,40 @@ italienischen Teil.
 
 ---
 
+## 31 · Italienisch: fehlender Artikel vor `loro` — 50 Stellen
+
+**Herkunft:** der Agent fuer Matthaeus 4, beim Durchlesen. Er hatte
+`leur père` italienisch als `loro padre` gesetzt und selbst gemerkt,
+dass das falsch ist: **vor `loro` steht im Italienischen immer der
+Artikel** — `il loro padre`. Die Ausnahme, die `mio padre` ohne Artikel
+erlaubt, gilt fuer `loro` gerade nicht.
+
+Kein Werkzeug sah das: der Fehler verletzt weder Genus noch Numerus,
+also schwiegen alle Teile von `kongruenz.py`. Die Regel ist jetzt drin,
+mit der deutschen Spalte als Anker — nur wo dort ein Possessiv steht,
+ist `loro` das Possessivum und nicht das Dativ- oder Subjektpronomen.
+
+Ueber alle 66 Buecher des deutschen Bestands: **50 Stellen**.
+
+    1. Mose 4,4    ihrem Fett      it `loro grasso`   → `il loro grasso`
+    1. Mose 19,33  ihrem Vater     it `loro padre`    → `il loro padre`
+    Matthaeus 2,11 ihre Schätze    it `loro tesori`   → `i loro tesori`
+
+**Ein Teil ist Fehlalarm** und zeigt etwas anderes an: 2. Mose 7,5
+`in ihrer Mitte` traegt it `loro` auf `ihrer` und `mezzo` auf `Mitte`,
+weil das Idiom `in mezzo a loro` die Wortstellung dreht. Dort fehlt kein
+Artikel, dort sitzen die Glossen ueber Kreuz.
+
+**Offen:** die 50 einzeln ansehen. Der Artikel richtet sich nach Genus
+und Numerus des Nomens, also ist es keine mechanische Ersetzung.
+
+---
+
 ## Stand nach der Nachlese
 
 | erledigt | geprueft und bewusst belassen | offen |
 |---|---|---|
-| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 · **30** |
+| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 · **30** · **31** |
 
 **Was offen bleibt und warum:**
 

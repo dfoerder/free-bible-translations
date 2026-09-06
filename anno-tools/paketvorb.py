@@ -51,7 +51,7 @@ def folgen(nr, minlen=4, ab=2):
 
 def _reihe(phr):
     """Die gemessenen Glossenreihen einer Folge im fertigen Bestand."""
-    voll, orte, unvoll, mehrwort = F.stellen(phr)
+    _w, voll, orte, unvoll, mehrwort = F.stellen(phr)
     return voll, orte, unvoll, mehrwort
 
 

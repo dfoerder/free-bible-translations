@@ -117,6 +117,8 @@ FR_SG = {'mon','ma','ton','ta','son','sa','notre','votre','leur'}
 # `leur` ist franzoesisch zugleich Dativpronomen ("ich gab ihnen"). Diese
 # deutschen Formen schliessen den Possessiv-Fall aus.
 DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','sie','ihn'}
+DE_POSSESSIV = {'ihr','ihre','ihren','ihrem','ihrer','ihres',
+                'Ihr','Ihre','ihr'}
 FR_PL = {'mes','tes','ses','nos','vos','leurs'}
 # Franzoesische Nomen, deren Plural-s fehlt oder deren Numerus die
 # Endung nicht verraet. `règles` ist der Fund, der den Lauf ausgeloest hat.
@@ -280,6 +282,22 @@ def main():
                 if soll and soll != g:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx['it'], g))
+                # Italienisch verlangt vor `loro` IMMER den Artikel — auch
+                # bei Verwandtschaftsnomen, wo `mio padre` ihn weglaesst:
+                # `il loro padre`, nie `loro padre`. Der Fehler verletzt
+                # weder Genus noch Numerus, also sah ihn kein Teil dieses
+                # Werkzeugs; gefunden hat ihn der Agent fuer Matthaeus 4
+                # beim Durchlesen (`leur père` it *loro*).
+                # Anker ist die deutsche Spalte: nur wo dort ein Possessiv
+                # steht, ist `loro` das Possessivum und nicht das Dativ-
+                # oder Subjektpronomen.
+                itw = (e.get('it') or '').strip().lower()
+                dew = C.de_wort(e).lower()
+                if (itw == 'loro' or itw.startswith('loro ')) \
+                        and dew in DE_POSSESSIV:
+                    treffer.append(('it', k, v, e['form'], e['it'],
+                                    nx['form'], nx.get('it') or '',
+                                    'Artikel fehlt vor loro'))
                 es = (e.get('es') or '').strip().lower()
                 if es in ES_SG or es in ES_PL:
                     en_ = es_numerus(nx.get('es') or '')
