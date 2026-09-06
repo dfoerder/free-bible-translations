@@ -119,6 +119,22 @@ Die Reihentabelle gibt die **haeufigste** Form eines Lemmas; welche
 Form dein Vers braucht, entscheidest du am Vers. In Sacharja 12 waren
 sechs Reihen im falschen Numerus oder Modus.
 
+## Wenn du Mehrwoerter aus einem Skript setzt
+
+**Gib die erwartete Oberflaechenform hart mit und asserte sie gegen den
+Quelltext.** Der Agent fuer Maleachi 1 hat `form` aus den Positionen
+abgeleitet — und weil `parts` falsch war, war `form` konsistent falsch
+mit dazu (`[7,9,10]` statt `[8,10,11]`, „und darueber die" statt „die
+Nase ruempft"). `selfcheck.py` prueft die Form **gegen** die Positionen
+und schwieg deshalb. Gefunden hat er es erst beim Nachlesen der
+fertigen JSON.
+
+Eine maschinelle Gegenprobe dafuer gibt es nicht: die naheliegende
+Regel „mindestens ein Token muss mit dem Lemma stammverwandt sein"
+schlaegt im Bestand bei **20 Prozent** aller Mehrwoerter an, weil
+trennbare Verben mit Ablaut (`ansehen` → „sah an") sie regelmaessig
+brechen. Die Vorsichtsmassnahme bleibt beim Schreibenden.
+
 ## Feste Regeln
 
 - **Ins Repo `/Users/dfoerd/Documents/projekte/bibel/bible-reader` wird NUR
