@@ -36,12 +36,18 @@ import common as C
 
 
 def folgen(quelle, minlen=4, maxlen=14):
-    """Alle Wortfolgen, die im Buch mehr als einmal stehen."""
+    """Alle Wortfolgen, die im Buch mehr als einmal stehen.
+
+    Jeder Treffer traegt die **Originalpositionen** seiner Tokens, nicht
+    einen Startindex: zwischen zwei Woertern kann ein alleinstehendes
+    Satzzeichen liegen, das keinen Eintrag bekommt. Im Franzoesischen ist
+    das die Regel — LSG setzt vor `?`, `;`, `!` und `:` ein Leerzeichen.
+    """
     idx = collections.defaultdict(list)
-    for ort, toks in quelle:
+    for ort, toks, pos in quelle:
         for n in range(maxlen, minlen - 1, -1):
             for i in range(len(toks) - n + 1):
-                idx[tuple(toks[i:i + n])].append((ort, i))
+                idx[tuple(toks[i:i + n])].append((ort, tuple(pos[i:i + n])))
     gemeldet, out = set(), []
     for g in sorted(idx, key=lambda x: (-len(x), x)):
         orte = idx[g]
@@ -56,17 +62,24 @@ def folgen(quelle, minlen=4, maxlen=14):
     return out
 
 
-def signatur(eintraege, i, n):
+def signatur(eintraege, pp):
+    """Die Glossen an den Positionen `pp` — als vergleichbare Signatur.
+
+    `pp` sind die Originalpositionen der Folge, nicht ein Bereich: ein
+    alleinstehendes Satzzeichen dazwischen bekommt keinen Eintrag und
+    verschiebt alles danach.
+    """
     E = {e['pos']: e for e in eintraege
          if 'pos_end' not in e and 'parts' not in e}
     ein = tuple(((E[j]['lemma'],) + C.reihe(E[j])) if j in E else None
-                for j in range(i, i + n))
+                for j in pp)
+    von, bis = pp[0], pp[-1]
     mw = []
     for m in eintraege:
         sp = m.get('parts', list(range(m['pos'],
                                        m.get('pos_end', m['pos']) + 1)))
-        if len(sp) > 1 and min(sp) >= i and max(sp) < i + n:
-            mw.append((tuple(x - i for x in sp), m['lemma']) + C.reihe(m))
+        if len(sp) > 1 and min(sp) >= von and max(sp) <= bis:
+            mw.append((tuple(x - von for x in sp), m['lemma']) + C.reihe(m))
     return ein, tuple(sorted(mw))
 
 
@@ -100,17 +113,23 @@ def main():
     quelle = []
     for k in sorted(ch, key=int):
         for v in sorted(ch[k], key=int):
-            toks = [x.strip('.,;:!?„“"’') for x in ch[k][v].split()]
-            quelle.append(((k, v), [t for t in toks if t]))
+            roh = ch[k][v].split()
+            toks, pos = [], []
+            for i, x in enumerate(roh):
+                t = x.strip('.,;:!?„“"’')
+                if t:
+                    toks.append(t)
+                    pos.append(i)          # die Originalposition merken
+            quelle.append(((k, v), toks, pos))
 
     print(f'# Zeichengleichheit: {C.book_name(nr)}\n')
     gleich = abweichend = ohne = 0
     for g, orte in folgen(quelle, minlen):
         gruppen = {}
-        for (k, v), i in orte:
+        for (k, v), pp in orte:
             if k not in anno or v not in anno[k]:
                 continue
-            gruppen.setdefault(signatur(anno[k][v], i, len(g)),
+            gruppen.setdefault(signatur(anno[k][v], pp),
                                []).append(f'{k},{v}')
         stellen = sum(len(x) for x in gruppen.values())
         if stellen < 2:

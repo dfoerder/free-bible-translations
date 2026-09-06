@@ -293,3 +293,31 @@ def anno_wie_datei(nr, kap, pfad):
         d = json.load(f)
     d = d.get('chapters', {}).get(str(kap), d)
     return {'name': book_name(nr), 'chapters': {str(kap): d}}
+
+
+# Die Vorsilben, die im Franzoesischen elidieren. `wiederholungen.py`
+# tokenisiert ueber `\w+` und macht aus `C’est pourquoi` drei Woerter
+# (`C est pourquoi`); wer diese Zeile aus einer Bindungsdatei kopiert und
+# `folgenreihe.py` fragt, bekommt „unbelegt" gemeldet, obwohl der Bestand
+# einstimmig ist. Gemeldet vom Agenten fuer Matthaeus 11.
+ELIDIERT = {'c', 'd', 'j', 'l', 'm', 'n', 's', 't',
+            'qu', 'lorsqu', 'jusqu', 'puisqu', 'quelqu', 'quoiqu'}
+
+
+def elision_zurueck(woerter):
+    """Getrennte Elisionen wieder zusammensetzen: [C, est] → [C’est].
+
+    Nur wo das erste Stueck eine bekannte Elisionsvorsilbe ist und ein
+    weiteres Wort folgt. Aus `l homme` wird `l’homme`, aus `le homme`
+    nichts — `le` steht nicht in der Liste.
+    """
+    out, i = [], 0
+    while i < len(woerter):
+        w = woerter[i]
+        if w.lower() in ELIDIERT and i + 1 < len(woerter):
+            out.append(w + '\u2019' + woerter[i + 1])
+            i += 2
+        else:
+            out.append(w)
+            i += 1
+    return out

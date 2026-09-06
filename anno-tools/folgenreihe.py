@@ -33,7 +33,14 @@ import common as C
 
 
 def stellen(phr, bis=None):
-    w = [x.strip('.,;:!?„“"’') for x in phr.split()]
+    w = [x.strip('.,;:!?„“"') for x in phr.split()]
+    w = [x for x in w if x]
+    # Eine Folge aus einer Bindungsdatei steht ohne Apostroph da
+    # (`C est pourquoi`), der Quelltext hat ein Token (`C’est`). Ohne
+    # diese Zeile meldet das Werkzeug „unbelegt", wo der Bestand
+    # einstimmig ist.
+    if not any('\u2019' in x for x in w):
+        w = C.elision_zurueck(w)
     voll = collections.Counter()
     orte = collections.defaultdict(list)
     unvollstaendig = []
