@@ -223,10 +223,27 @@ def bericht(nr, kap=None):
              'Bestand stehen. Wo eine stammverwandte Form existiert, steht sie '
              'dabei; dann erst `lexicon.py` fragen, bevor etwas Neues erfunden wird.')
     L.append('')
+    # Zu jedem stammverwandten Wort die LEMMA-Belegzahl. Ohne sie liest
+    # sich die Liste als „das Wort gibt es nicht", und genau so ist sie
+    # in jedes Paket-Prompt gewandert: in Sacharja 9 waren sieben der
+    # zwoelf gemeldeten Formen laengst im Bestand, `wecken` mit 24
+    # Belegen. Die Zahl daneben macht den Unterschied sofort sichtbar.
+    lemmazahl = collections.Counter()
+    lemmalevel = {}
+    for b, _, _, e in C.iter_corpus():
+        if int(b) == int(nr):
+            continue
+        lemmazahl[e['lemma']] += 1
+        lemmalevel.setdefault(e['lemma'], e['level'])
     for f, (wo, verwandt) in sorted(unbelegt.items()):
         z = f'- **{f}** ({wo})'
         if verwandt:
-            z += '  — verwandt: ' + ', '.join(f'`{x}`' for x in verwandt)
+            teile = []
+            for x in verwandt:
+                n = lemmazahl.get(x, 0)
+                teile.append(f'`{x}`' + (f' ({n} Belege, {lemmalevel[x]})'
+                                         if n else ''))
+            z += '  — verwandt: ' + ', '.join(teile)
         L.append(z)
     L.append('')
 
