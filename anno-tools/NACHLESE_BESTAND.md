@@ -267,6 +267,39 @@ sind Vorlagen, die ein Agent uebernehmen wuerde:
 
 Jesaja 22,25 bleibt der einzige echte. Nicht angefasst.
 
+**Nachtrag aus Sacharja 3:** Der Agent hat die Ausgabe selbst
+nachgelesen — **LSG schreibt in Jesaja 22,25 „dit l'Éternel des
+armées"**. Der Bestandseintrag `parle` steht dort also nicht nur gegen
+die Stellungsregel, sondern gegen seinen eigenen Zeugen. Damit ist er
+kein Regelausreisser mehr, sondern ein Fehler — aber ein **einzelner**:
+wenn er gezogen wird, ist es ein Einzeleintrag, kein Reihenwechsel.
+
+### 18. `der HERR der Heerscharen` — buchweise gespalten, nicht mehrheitlich
+
+Die englische Spalte des zweiten `der` steht **26 zu 25**, also
+praktisch unentschieden. Die Spaltung verlaeuft aber nicht zufaellig,
+sondern **nach Buechern**:
+
+```
+Jesaja                          of      25 von 25
+Amos, Nahum, Zephanja, Haggai   of the  26 von 26
+```
+
+Fuer einen Prompt taugt „Bestandsmehrheit" hier also **nicht** als
+Begruendung — nur der Buchanschluss. Sacharja schliesst an Haggai an
+und liest `of the`; das haben die Agenten fuer Kapitel 1 und 3
+unabhaengig voneinander so gesetzt.
+
+### 19. `Weinstock` in „unter Weinstock und Feigenbaum"
+
+Korpusweit ist `Weinstock` auf `cep` gebunden (30:11). In **dieser
+Formel** steht es 2:2 — 1. Koenige 5,5 und Micha 4,4 lesen `cep`,
+2. Koenige 18,31 und Jesaja 36,16 lesen `vigne` —, waehrend **LSG an
+allen diesen Stellen einschliesslich Sacharja 3,10 „vigne" liest**.
+Der Sacharja-Agent ist bei der korpusweiten Bindung geblieben und hat
+die Spaltung gemeldet. Sie gehoert einmal ganz entschieden, nicht
+buchlokal.
+
 ### 17. `sagte` ↔ `spricht` steht im Bestand zweimal unaufgeloest
 
 4. Mose 14,28 und 2. Koenige 22,19 tragen beide Woerter im selben Vers
