@@ -37,6 +37,7 @@ def stellen(phr, bis=None):
     voll = collections.Counter()
     orte = collections.defaultdict(list)
     unvollstaendig = []
+    mehrwort = collections.defaultdict(list)
     for nr in range(1, bis or 67):
         try:
             s = C.load_source(nr)
@@ -56,6 +57,25 @@ def stellen(phr, bis=None):
                 for i in range(len(toks) - len(w) + 1):
                     if toks[i:i + len(w)] != w:
                         continue
+                    # Ein Mehrwort, das die Folge umspannt, wird
+                    # IMMER erfasst — auch wenn alle Positionen
+                    # zusaetzlich Einzeleintraege tragen, denn das
+                    # Kopfwort behaelt seinen. Dessen Reihe ist oft die
+                    # eigentliche Antwort: bei „Kehrt um" zerfaellt der
+                    # Bestand als Einzelwort in sechs Varianten, als
+                    # Mehrwort in genau drei — und die drei trennen sich
+                    # nach Bedeutung (Richtung, Umkehrruf, Busse). Der
+                    # Agent fuer Sacharja 1 musste das selbst
+                    # herausfinden, weil hier frueher nur Einzelwoerter
+                    # standen.
+                    for m in anno[k][v]:
+                        sp = m.get('parts', list(range(
+                            m['pos'], m.get('pos_end', m['pos']) + 1)))
+                        if len(sp) > 1 and min(sp) >= i \
+                                and max(sp) < i + len(w):
+                            mehrwort[(m['lemma'], m['en'], m['es'],
+                                      m['fr'], m['it'])].append(
+                                f'{C.book_name(nr)} {k},{v}')
                     if not all(i + j in E for j in range(len(w))):
                         unvollstaendig.append(f'{C.book_name(nr)} {k},{v}')
                         continue
@@ -64,7 +84,7 @@ def stellen(phr, bis=None):
                                 for j in range(len(w)))
                     voll[key] += 1
                     orte[key].append(f'{C.book_name(nr)} {k},{v}')
-    return w, voll, orte, unvollstaendig
+    return w, voll, orte, unvollstaendig, mehrwort
 
 
 def main():
@@ -78,7 +98,7 @@ def main():
         print(__doc__)
         return 2
     for phr in args:
-        w, voll, orte, unv = stellen(phr, bis)
+        w, voll, orte, unv, mehrwort = stellen(phr, bis)
         ges = sum(voll.values())
         print(f'\n# „{phr}"\n')
         print(f'{ges} vollstaendig glossierte Vorkommen, '
@@ -96,7 +116,18 @@ def main():
             if n <= 3:
                 print(f'      → {", ".join(orte[r][:5])}')
             print()
-        if unv:
+        if mehrwort:
+            ges_mw = sum(len(v) for v in mehrwort.values())
+            print(f'  Als MEHRWORT gefasst: {ges_mw} Vorkommen, '
+                  f'{len(mehrwort)} Reihen')
+            print()
+            for (lemma, en, es, fr, it), wo in sorted(
+                    mehrwort.items(), key=lambda x: -len(x[1])):
+                print(f'  {len(wo):5}  [{lemma}]  {en} · {es} · {fr} · {it}')
+                print(f'      → {", ".join(wo[:6])}'
+                      + (' …' if len(wo) > 6 else ''))
+            print()
+        elif unv:
             print(f'  Mehrwort an einer Position: {", ".join(unv[:8])}'
                   + (' …' if len(unv) > 8 else ''))
     return 0

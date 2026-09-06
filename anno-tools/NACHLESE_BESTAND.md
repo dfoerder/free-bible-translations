@@ -308,3 +308,27 @@ die Stelle in ihren Versen (1,13 und 2,14) aufgeloest — unabhaengig
 voneinander mit derselben Bestandszeile `spoke · habló · parla ·
 parlò`. Die zwei alten Stellen bleiben, wie sie sind; die Regel
 „aufgeloest wird nur im Kollisionsvers" gilt in beide Richtungen.
+
+
+### 20. `Berechja` — die italienische Glosse widerspricht RIV
+
+Der Bestand fuehrt den Namen als *di **Berechia*** (5 Belege), **RIV
+schreibt an jeder Stelle „Berekia"** — 1. Chronik 15,17, Nehemia 3,4
+und Sacharja 1,1/1,7 nachgeprueft. Der Sacharja-1-Agent hat die
+Bestandsreihe genommen (Konsistenz mit fuenf bestehenden Eintraegen)
+und den Widerspruch gemeldet. Dieselbe Klasse wie `Jozadak` aus Haggai.
+
+### 21. `Eifer`: die Bindung steht gegen alle vier Ausgaben
+
+In Sacharja 1,14 („Ich eifere fuer Jerusalem und Zion mit grossem
+Eifer") lesen **alle vier Ausgaben** *jealousy · celo · jalousie ·
+gelosia*. Der Bestand bindet `Eifer` aber **33:0** an *zeal · celo ·
+zèle · zelo* — darunter 2. Koenige 19,31, dasselbe goettliche Qin'ah.
+Der Agent ist nach „bei gewoehnlichen Woertern gewinnt die Bindung"
+beim Bestand geblieben.
+
+Nebeneffekt: die Figura etymologica `eifere`/`Eifer` bricht in drei
+Sprachen auf (*am jealous* neben *zeal*), weil der Bestand fuer Verb
+und Substantiv zwei verschiedene Felder fuehrt. **Wenn das umgekehrt
+entschieden werden soll, dann korpusweit** — Sacharja 8,2 traegt
+dieselbe Stelle noch einmal.
