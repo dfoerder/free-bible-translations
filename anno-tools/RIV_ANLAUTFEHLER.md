@@ -485,3 +485,15 @@ Auf die Glossen wirkt er sich nicht aus: der deutsche Text sagt
   davor — dieselbe Signatur wie die bekannten Faelle.
 
 Keiner der drei wirkt sich auf eine Glosse aus.
+
+
+### Sacharja 6,7: `erra` fuer *terra*
+
+„percorrete la **erra**!" — der Verlust trifft hier ein **t**, nicht
+einen Vokal oder ein G, und steht nach dem Artikel `la`. Damit ist die
+Klasse breiter als bisher beschrieben: es ist nicht der G-Anlaut,
+sondern der Wortanfang nach einem kurzen Vorwort ueberhaupt.
+
+RIV 6,10 schreibt ausserdem „in casa di **iosia**" klein, wo es sonst
+durchgehend „Giosia" setzt (2. Koenige 23,30, 2. Chronik 35,1,
+Jeremia 1,2 geprueft) — ein Setzfehler, kein Anlautverlust.

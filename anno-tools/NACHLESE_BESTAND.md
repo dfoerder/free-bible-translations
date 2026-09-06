@@ -332,3 +332,59 @@ Sprachen auf (*am jealous* neben *zeal*), weil der Bestand fuer Verb
 und Substantiv zwei verschiedene Felder fuehrt. **Wenn das umgekehrt
 entschieden werden soll, dann korpusweit** — Sacharja 8,2 traegt
 dieselbe Stelle noch einmal.
+
+
+### 22. ERLEDIGT — `Jozadak`: beide Spalten waren vertauscht
+
+Der Bestand fuehrte den Namen als *… de **Jehotsadak** · di **Iozadak***.
+An allen zwoelf Belegstellen gegen die Ausgaben geprueft:
+
+```
+LSG   schreibt Jotsadak    10 von 10   —  „Jehotsadak" nie
+RIV   schreibt Jotsadak (Esra/Nehemia) oder Jehotsadak (Haggai/Sacharja)
+      —  „Iozadak" nirgends
+```
+
+Die franzoesische Spalte trug also RIVs Form, die italienische eine,
+die keine Ausgabe kennt. Der Haggai-Agent hatte den Verdacht gemeldet
+und die Bestandsreihe stehen lassen; der Sacharja-6-Agent hat gegen den
+Bestand entschieden — und damit liefen zwei Buecher derselben Sitzung
+auseinander. **Korpusweit korrigiert** auf *de Jotsadak · di
+Jehotsadak*: 24 Aenderungen in sieben Kapitelquellen der Buecher 13,
+15, 16 und 37, danach neu gebaut, alle vier `validate` sauber.
+
+### 23. ERLEDIGT — Offenbarung 11,4: `gli due ulivi`
+
+Der Vers widerlegt sich selbst. „die zwei Ölbäume und **die zwei**
+Leuchter" traegt an der ersten Stelle it `gli`, an der zweiten `i` —
+beide vor demselben Wort `due`. Der italienische Artikel richtet sich
+nach dem unmittelbar folgenden Wort, also ist `i` richtig. Gefunden vom
+Agenten fuer Sacharja 4, der die Zeile fuer 4,11 uebernehmen wollte und
+dabei zusaetzlich eine Kollision mit `ihn` → *gli* bekam. Korrigiert.
+
+### 24. `Jedaja` — dieselbe Klasse, noch offen
+
+Bestand: *Jedaiah · Jedaías · Jedaja · **Iedaia*** (10 Belege). RIV
+schreibt an fuenf geprueften Stellen und in Sacharja 6,10/6,14
+durchgehend **„Jedaia"**, „Iedaia" nirgends; LSG schreibt viermal von
+fuenf **„Jedaeja"**. Der Sacharja-6-Agent hat nach den Ausgaben gesetzt.
+Die zehn Altbelege sind noch nicht nachgezogen.
+
+### 25. `Tobija` und `Tobia` — zwei Lemmata fuer einen Namen
+
+`l1912mod` schreibt in Sacharja 6,10/6,14 `Tobija`, der Bestand fuehrt
+15 Belege unter `Tobia`. Der Agent hat formtreu `Tobija` als eigenes
+Lemma angelegt und die Glossen der `Tobia`-Reihe uebernommen — dieselbe
+Zwillingslage wie `Marescha`/`Maresa` und `Zefanja`/`Zephanja`. Zu
+entscheiden, ob zusammengefuehrt wird.
+
+### 26. `Zemach` steht in beiden Stellen gegen alle vier Ausgaben
+
+Sacharja 3,8 und 6,12 fuehren ihn als **Namen**, weil `l1912mod` ihn
+nicht deutet. Alle vier Ausgaben uebersetzen ihn dagegen, und zwar
+zeichengenau mit der Bestandsreihe von `Spross` C1 (*branch · renuevo ·
+germe · germoglio*). In 6,12 ist es noch schaerfer: **LSG schreibt
+`germe` klein** und setzt im selben Vers „**germera** dans son lieu" —
+liest die Stelle also rein appellativisch. Beide Kapitel haben
+zeichengleich `Zemach` gesetzt; die Frage gehoert buchweit entschieden,
+nicht kapitelweise.

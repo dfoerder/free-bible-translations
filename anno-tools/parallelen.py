@@ -85,7 +85,7 @@ for v in sorted(quelle, key=int):
     a = norm(quelle[v])
     if len(a) < minblock:
         continue
-    top_block = (0, 0.0, None)
+    top_block = (0, False, 0.0, None)
     top_ratio = (0.0, 0, None)
     for b in buecher:
         src = C.load_source(b)['chapters']
@@ -98,14 +98,25 @@ for v in sorted(quelle, key=int):
                 if blk < minblock and not alle:
                     continue
                 r = difflib.SequenceMatcher(None, a, bb).ratio()
-                if (blk, r) > (top_block[0], top_block[1]):
-                    top_block = (blk, r, (b, k, w))
+                # Bei gleicher Blocklaenge gewinnt der Vers, der
+                # **Glossen traegt**. Vorher entschied allein die
+                # Aehnlichkeit, und in Sacharja 4 fuehrte das dreimal
+                # auf einen noch leeren Vers desselben Buches: 4,1 zeigte
+                # auf 5,5 statt auf das fertige 1,14, 4,9 auf 6,15 statt
+                # auf 2,13. Der Agent hat es gemerkt, weil die richtigen
+                # Vorlagen im Prompt standen — ohne den Prompt haette er
+                # drei leere Vorlagen bekommen. Je weiter ein Buch
+                # gefuellt ist, desto haeufiger tritt der Fall auf.
+                hat_glossen = k in annotiert.get(b, ())
+                if (blk, hat_glossen, r) > (top_block[0], top_block[1],
+                                            top_block[2]):
+                    top_block = (blk, hat_glossen, r, (b, k, w))
                 if (r, blk) > (top_ratio[0], top_ratio[1]):
                     top_ratio = (r, blk, (b, k, w))
-    if top_block[2] is None:
+    if top_block[3] is None:
         continue
     gefunden += 1
-    blk, r, (b, k, w) = top_block
+    blk, _hat, r, (b, k, w) = top_block
     leer = '' if k in annotiert.get(b, ()) else '   ⚠ NOCH NICHT ANNOTIERT — dort stehen keine Glossen'
     print(f'## {kap},{v} ← {C.book_name(b)} {k},{w}   Block {blk}, Ähnlichkeit {r:.2f}{leer}')
     sm = difflib.SequenceMatcher(None, a, norm(C.load_source(b)['chapters'][k][w]))
