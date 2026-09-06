@@ -35,9 +35,14 @@ WENDUNGEN_JE_SPRACHE = {
     'de': [('um','zu',18),('so','wie',1),('genau','wie',1),
            ('nicht','mehr',1),('wie','wenn',1)],
     'fr': [('afin','de',1),('au','contraire',1),('contre','nature',1),
-           ('depuis','longtemps',1),('il','y',1),('à','cause',1),
+           ('depuis','longtemps',1),('à','cause',1),
            ('ne','pas',6),('une','fois',1),('au','sujet',1),
-           ('c','est',1),('parce','que',1)],
+           ('c','est',1),('parce','que',1),
+           # `il y` allein ist keine Wendung: `Il y resta` heisst „er blieb
+           # dort", das `y` ist das Ortsadverb. Existenziell wird es erst
+           # mit einer Form von `avoir` dahinter. Gemeldet vom Agenten fuer
+           # Matthaeus 2, nachdem die Regel dort zweimal falsch anschlug.
+           ('il','y',1,{'a','avait','aura','ait','eut','aurait','aient'})],
 }
 WENDUNGEN=WENDUNGEN_JE_SPRACHE.get(C.LANG, [])
 if not WENDUNGEN:
@@ -90,7 +95,11 @@ for kap in kaps:
             for pp in C.covered(e):
                 deckung.setdefault(pp, e.get('lemma'))
         roh=src[kap][v].split()
-        for a,b,maxd in WENDUNGEN:
+        for regel in WENDUNGEN:
+            a, b, maxd = regel[0], regel[1], regel[2]
+            # Optional: welches Token unmittelbar hinter `b` stehen muss,
+            # damit die Wendung ueberhaupt vorliegt.
+            danach = regel[3] if len(regel) > 3 else None
             for i,t in enumerate(toks):
                 if t.lower()!=a: continue
                 for j in range(i+1, min(i+maxd+1, len(toks))):
@@ -103,6 +112,10 @@ for kap in kaps:
                     if toks[j].lower()==a or C.is_punct_only(roh[j]):
                         break
                     if toks[j].lower()==b:
+                        if danach is not None and (
+                                j + 1 >= len(toks)
+                                or toks[j + 1].lower() not in danach):
+                            break
                         lem=f'{a} {b}'
                         if (i,j) not in belegt and (i,lem) not in beginnt:
                             offen+=1
