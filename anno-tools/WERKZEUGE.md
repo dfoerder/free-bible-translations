@@ -70,6 +70,15 @@ selben Vers der Zeugen) · GLOSSE · TEIL · ELISION.
 **`vorlage.py`** — Parallelkapitel als gemessene Vorlage — Vers für Vers, mit Versatz.
     vorlage.py <nrA> <kapA> <nrB> <kapB> [minratio]
 
+## Beim Einsammeln — eine einzelne Glosse aendern
+
+**`setzen.py`** — Eine Glosse in einer Kapitelquelle aendern, an **einer**
+Position, mit der erwarteten Oberflaechenform als Pflichtargument. Beim
+Einsammeln von Matthaeus habe ich zweimal nach Wortform ersetzt und
+jedesmal ein zweites, gleichlautendes Token mitgetroffen (`que` in 1,22,
+`le` und `vous` in 6,2/6,5/6,16). Dieses Werkzeug kann das nicht.
+    setzen.py <nr> <kap> <vers> <pos> <form> feld=wert […] [--grund …] [--trocken]
+
 ## Waehrend der Arbeit — Einzelfragen
 
 **`mehrwort.py`** — Einzelwörter, die die Glosse ihres Mehrwort-Eintrags übernommen haben.

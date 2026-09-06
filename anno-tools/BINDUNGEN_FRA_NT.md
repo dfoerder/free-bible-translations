@@ -154,3 +154,27 @@ Zwei Faelle, in denen `ne` nicht *nicht* heisst:
 - **`ne … rien` / `ne … ni` / `nul ne`**: dort gibt es kein `pas`, also
   auch kein `ne pas`-Mehrwort. Fuer `ne … rien` ist `ne rien` das
   Mehrwort — Spanisch und Italienisch brauchen die doppelte Verneinung.
+
+
+## Ein Wort, zwei Bedeutungen — ein Lemma
+
+Franzoesisch haeuft die Homographen: `or` (Gold / nun), `droit`
+(gerecht / rechts), `lettre` (Buchstabe / Brief), `justice`
+(Gerechtigkeit / Justiz), `terre` (Erde / Land), `porte` (Tuer / traegt),
+`entre` (zwischen / tritt ein).
+
+**Der Bestand kennt keine Konvention fuer disambiguierte Lemmata** —
+ueber 20 deutsche Buecher gemessen: kein einziges Lemma mit Klammer oder
+Schraegstrich. Ein erfundener zweiter Name (`or¹`) waere eine Setzung,
+die kein anderes Werkzeug versteht.
+
+Deshalb:
+
+- **Die Glossen folgen der Bedeutung**, Vers fuer Vers. Zwei Lesarten
+  desselben Lemmas sind erlaubt und richtig.
+- **Das Level folgt dem Lemma**, also der Korpusmehrheit. `buildbook.py`
+  zieht es beim Bau ohnehin dorthin; eine Quelle, die etwas anderes
+  behauptet, waere nur eine Notiz, die das Ergebnis nicht erreicht.
+- Wo Wortart **und** Bedeutung auseinandergehen (`porte` Substantiv
+  gegen `porter` Verb, `entre` Praeposition gegen `entrer` Verb), sind
+  es zwei verschiedene Lemmata und der Fall entfaellt.

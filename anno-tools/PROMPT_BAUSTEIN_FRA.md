@@ -122,7 +122,10 @@ Beim ersten Buch ist die franzoesische Anno noch leer. Das heisst:
 
 ## Was Judas festgelegt hat
 
-**`BINDUNGEN_FRA_NT.md` ist Pflichtlektuere vor der Arbeit.** Dort steht,
+**`BINDUNGEN_FRA_NT.md` ist Pflichtlektuere vor der Arbeit — und noch
+einmal vor der Abgabe.** Waehrend eines Pakets kommen Bindungen dazu, die
+die Nachbaragenten praegen; der Agent fuer Matthaeus 5 hat drei davon
+mitten im Lauf nachgezogen, weil er noch einmal hineingesehen hat. Dort steht,
 wie Elisionen lemmatisiert werden, wie `ne … pas` gesetzt wird, warum
 Relativ-`qui`/`que` deutsch *welche(r)* wird und nicht *der/die/das*, wann
 ein Reflexiv ein Mehrwort bekommt und wann nicht — dazu die elf Reihen,
@@ -141,6 +144,10 @@ die das Pilotbuch gepraegt hat.
     python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
+
+`qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
+anders aufgerufen bricht es ab.
 
 `kongruenz.py` und `artikel.py` lesen den **Bestand**, nicht deine Datei —
 solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel wenig.

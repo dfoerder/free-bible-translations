@@ -21,9 +21,8 @@ def _zeig(idx, titel):
         return
     print(f'## {titel}')
     for key, stellen in sorted(idx.items(), key=lambda x: -len(x[1])):
-        lemma, level, en, es, fr, it = key
-        print(f'{len(stellen):>4}× · lemma `{lemma}` · {level} · en *{en}* · '
-              f'es *{es}* · fr *{fr}* · it *{it}*')
+        lemma, level, glossen = key[0], key[1], key[2:]
+        print(f'{len(stellen):>4}× · lemma `{lemma}` · {level} · {C.zeige(glossen)}')
         print('       ' + ', '.join(stellen[:8]) + (' …' if len(stellen) > 8 else ''))
     print()
 
@@ -36,7 +35,7 @@ def show(lemmata, per_form=False):
             for _, kap, vers, e in C.iter_corpus([nr]):
                 treffer = (e['form'] == ziel) if per_form else (e['lemma'] == ziel)
                 if treffer:
-                    key = (e['lemma'], e['level'], e['en'], e['es'], e['fr'], e['it'])
+                    key = (e['lemma'], e['level']) + C.reihe(e)
                     idx[key].append(f'{name} {kap},{vers}')
         _zeig(idx, ('Form ' if per_form else 'Lemma ') + ziel)
 
