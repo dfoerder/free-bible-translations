@@ -262,10 +262,27 @@ sind Vorlagen, die ein Agent uebernehmen wuerde:
   Stellungsregel ueber die Parallelenregel gestellt und `dit` gesetzt,
   gestuetzt darauf, dass LSG in Haggai 2,23 selbst „dit l'Éternel des
   armées" schreibt.
-- **Zephanja 2,9** — dort ist es kein Ausreisser, sondern der
-  Appositionsfall („der Gott Israels", siehe Eintrag zur Regel).
+- **Zephanja 2,9** — ich hatte es als „Appositionsfall" gefuehrt.
 
-Jesaja 22,25 bleibt der einzige echte. Nicht angefasst.
+**ERLEDIGT, und die Appositionsregel ist widerlegt.** Der Agent fuer
+Maleachi 2 hat alle Vorkommen von „spricht der HERR … der Gott …" mit
+ihrem **Vorfeld** gemessen — das hatte ich nie getan. Ergebnis:
+
+```
+vorangestellt   parle   72×
+nachgestellt    dit      4×   Jesaja 17,6 · Jeremia 31,1 · Amos 6,8 · Amos 6,14
+nachgestellt    parle    2×   Jeremia 32,36 · Zephanja 2,9
+```
+
+Von den zwei Gegenfaellen ist **Jeremia 32,36 in Wahrheit
+vorangestellt** („ainsi parle l'Éternel") — meine Messheuristik hatte
+ihn falsch einsortiert, weil „Et maintenant" davorsteht. Und
+**Zephanja 2,9 war mein eigener Fehler**: LSG liest dort „**Dit**
+l'Éternel des armées, le Dieu d'Israël". Auf `dit` korrigiert.
+
+**Es gibt keine Appositionsausnahme.** Die Stellung allein entscheidet.
+Jesaja 22,25 bleibt der einzige echte Ausreisser des Korpus — und auch
+er widerspricht seiner eigenen Ausgabe.
 
 **Nachtrag aus Sacharja 3:** Der Agent hat die Ausgabe selbst
 nachgelesen — **LSG schreibt in Jesaja 22,25 „dit l'Éternel des
