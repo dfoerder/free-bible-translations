@@ -383,7 +383,7 @@ und Sacharja 1,1/1,7 nachgeprueft. Der Sacharja-1-Agent hat die
 Bestandsreihe genommen (Konsistenz mit fuenf bestehenden Eintraegen)
 und den Widerspruch gemeldet. Dieselbe Klasse wie `Jozadak` aus Haggai.
 
-### 21. `Eifer`: die Bindung steht gegen alle vier Ausgaben
+### 21. GEPRUEFT, bleibt — `Eifer`: die Bindung steht gegen alle vier Ausgaben
 
 In Sacharja 1,14 („Ich eifere fuer Jerusalem und Zion mit grossem
 Eifer") lesen **alle vier Ausgaben** *jealousy · celo · jalousie ·
@@ -394,9 +394,15 @@ beim Bestand geblieben.
 
 Nebeneffekt: die Figura etymologica `eifere`/`Eifer` bricht in drei
 Sprachen auf (*am jealous* neben *zeal*), weil der Bestand fuer Verb
-und Substantiv zwei verschiedene Felder fuehrt. **Wenn das umgekehrt
-entschieden werden soll, dann korpusweit** — Sacharja 8,2 traegt
-dieselbe Stelle noch einmal.
+und Substantiv zwei verschiedene Felder fuehrt.
+
+**Bleibt.** Anders als bei `Weinstock` ist der Bestand hier nicht in
+sich gespalten, sondern **einstimmig** (33:0). Eine Bindung dieser
+Staerke gegen die Ausgaben zu drehen, hiesse 33 Stellen zu aendern, um
+eine einzige Figur zu retten — und `zeal` ist als Uebersetzung nicht
+falsch, nur weniger woertlich als das, was die Ausgaben an dieser einen
+Stelle waehlen. Die Regel „bei gewoehnlichen Woertern gewinnt die
+Bindung" gilt.
 
 
 ### 22. ERLEDIGT — `Jozadak`: beide Spalten waren vertauscht
@@ -443,7 +449,7 @@ Lemma angelegt und die Glossen der `Tobia`-Reihe uebernommen — dieselbe
 Zwillingslage wie `Marescha`/`Maresa` und `Zefanja`/`Zephanja`. Zu
 entscheiden, ob zusammengefuehrt wird.
 
-### 26. `Zemach` steht in beiden Stellen gegen alle vier Ausgaben
+### 26. GEPRUEFT, bleibt — `Zemach` steht gegen alle vier Ausgaben
 
 Sacharja 3,8 und 6,12 fuehren ihn als **Namen**, weil `l1912mod` ihn
 nicht deutet. Alle vier Ausgaben uebersetzen ihn dagegen, und zwar
@@ -451,8 +457,15 @@ zeichengenau mit der Bestandsreihe von `Spross` C1 (*branch · renuevo ·
 germe · germoglio*). In 6,12 ist es noch schaerfer: **LSG schreibt
 `germe` klein** und setzt im selben Vers „**germera** dans son lieu" —
 liest die Stelle also rein appellativisch. Beide Kapitel haben
-zeichengleich `Zemach` gesetzt; die Frage gehoert buchweit entschieden,
-nicht kapitelweise.
+zeichengleich `Zemach` gesetzt.
+
+**Bleibt.** Die Regel „keinen Namen deuten, den der Text nicht selbst
+deutet" ist aelter und traegt weiter als die Ausgabentreue: `l1912mod`
+fuehrt Zemach als Namen („meinen Knecht Zemach", „ein Mann namens
+Zemach"), und **die App glossiert Deutsch**. Wer „Zemach" liest, lernt
+„Zemach" — so wie er bei `Bier` in Micha 2,11 „Bier" lernt. Dass alle
+vier Ausgaben uebersetzen, ist ein Befund ueber die Ausgaben, kein
+Fehler des Bestands.
 
 
 ### 27. `Sarezer` — RIV liest an allen drei Stellen „Saretser"
@@ -473,7 +486,7 @@ Reihe unveraendert uebernommen; **kein Zwillingsfall**, der Unterschied
 ist rein deutsch.
 
 
-### 29. `beschirmen` — eine Ein-Beleg-Bindung gegen vier Ausgaben
+### 29. GEPRUEFT, bleibt — `beschirmen`, eine Ein-Beleg-Bindung
 
 `beschirmen` hat im Bestand **genau einen** Beleg: Jesaja 31,5 („So
 wird der HERR der Heerscharen Jerusalem beschirmen"), gesetzt als
@@ -484,3 +497,36 @@ defend/protegerá/protégera/proteggerà**.
 Der Agent ist der Bindung gefolgt, weil die Bedeutung dieselbe ist, und
 meldet: eine Bindung aus einem einzigen Beleg, die viermal gegen die
 Ausgabe steht, ist ein Kandidat fuer eine korpusweite Pruefung.
+
+**Bleibt.** Die Pruefung ergibt: es sind jetzt zwei Belege (Jesaja 31,5
+und Sacharja 12,8), beide tragen dieselbe Reihe, und `cover` ist die
+woertlichere Wiedergabe des hebraeischen Bildes — die Ausgaben deuten
+mit „defend" bereits. Zwei uebereinstimmende Stellen sind keine
+Fehlerlage, sondern eine kleine, in sich stimmige Bindung.
+
+
+---
+
+## Stand nach der Nachlese
+
+| erledigt | geprueft und bewusst belassen | offen |
+|---|---|---|
+| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · 11 · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 10 · 12 · 24 (Rest) · 27 · 28 |
+
+**Was offen bleibt und warum:**
+
+- **8 · `Rechtsstreit` (Jeremia 25,31)** — die Reihe ist mit acht
+  Belegen in sich konsistent; ein Fehler ist nicht erkennbar. Der
+  Eintrag nannte nie einen.
+- **9 · Wortpaare mit gemeinsamer Reihe** — kein Fehler, sondern eine
+  Warnung fuer kuenftige Kapitel.
+- **10 · Amos 9,3 `Verbuergen`** und **12 · Micha 2,11 `Bier`** —
+  Befunde im **deutschen Quelltext**. Eine Textkorrektur ist eine
+  andere Entscheidung als eine Glossenkorrektur und gehoert dem
+  Herausgeber des `l1912mod`.
+- **24 (Rest) · 27 · 28** — `Jedaja` ist erledigt; was bleibt, sind die
+  107 italienischen Namen, bei denen RIV **selbst schwankt** oder ganz
+  anders schreibt, sowie `Kislev`, wo RIV die beiden Belegstellen
+  verschieden setzt (`Kisleu` in Nehemia 1,1, `Chisleu` in Sacharja
+  7,1). Ohne Mehrheitsentscheid der Ausgabe gibt es nichts anzugleichen;
+  eine Vereinheitlichung waere eine eigene Setzung, keine Korrektur.
