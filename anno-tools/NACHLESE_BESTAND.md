@@ -525,11 +525,40 @@ Fehlerlage, sondern eine kleine, in sich stimmige Bindung.
 
 ---
 
+## 30 · Spanische Possessivkongruenz — 60 Verdachtsfaelle, neu messbar
+
+**Herkunft:** die franzoesische Arbeit. `kongruenz.py` prueft die
+Possessive gegen das folgende Nomen, hatte dafuer aber nur einen
+italienischen (Genus) und einen franzoesischen Teil (Numerus). **Die
+spanische Spalte wurde in keiner der beiden Richtungen geprueft** —
+gemeldet vom Agenten fuer Matthaeus 1, dem auffiel, dass der
+franzoesische Teil beim franzoesischen Quelltext ohnehin ins Leere
+laeuft, weil es dort keine `fr`-Spalte gibt.
+
+`su`/`sus` richtet sich im Spanischen wie `sa`/`ses` im Franzoesischen
+nach dem **Besitz**, nicht nach dem Besitzer. Der neue Teil misst das.
+Ueber alle 66 Buecher: **60 Verdachtsfaelle**.
+
+Stichprobe aus 1. Mose — die ersten drei sind Fehlalarme, die beiden
+letzten sehen nach echten Fehlern aus:
+
+    1,9,13   Mi arcoíris        arcoíris ist unveraenderlich  → Fehlalarm
+    1,40,20  su cumpleaños      dito                          → Fehlalarm
+    1,24,59  sus gente          `gente` ist Singular          → `su gente`
+    1,34,29  su bienes          `bienes` ist Plural           → `sus bienes`
+
+Die unveraenderlichen Formen sind seither in `ES_INVARIANT`
+eingetragen. **Offen:** die 60 einzeln am Vers ansehen. Jeder Treffer
+ist ein Verdacht, kein Urteil — dieselbe Vorsicht wie beim
+italienischen Teil.
+
+---
+
 ## Stand nach der Nachlese
 
 | erledigt | geprueft und bewusst belassen | offen |
 |---|---|---|
-| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 |
+| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 · **30** |
 
 **Was offen bleibt und warum:**
 

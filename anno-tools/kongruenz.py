@@ -139,6 +139,34 @@ FR_INVARIANT = {'puits', 'corps', 'pays', 'bois', 'temps', 'fois', 'mois',
                 'paix', 'toux', 'faux', 'roux'}
 
 
+# Spanisch: `su`/`sus` richtet sich wie das franzoesische `sa`/`ses` nach
+# dem BESITZ, nicht nach dem Besitzer. Geprueft wurde es in keiner der
+# beiden Richtungen — der franzoesische Teil lief nur ueber die
+# `fr`-Spalte, und die gibt es beim franzoesischen Quelltext nicht mehr.
+# Gemeldet vom Agenten fuer Matthaeus 1.
+ES_SG = {'mi', 'tu', 'su', 'nuestro', 'nuestra', 'vuestro', 'vuestra'}
+ES_PL = {'mis', 'tus', 'sus', 'nuestros', 'nuestras', 'vuestros', 'vuestras'}
+# Spanische Woerter, deren End-s kein Plural ist.
+# Spanische Woerter, deren End-s kein Plural ist. Die ersten Laeufe ueber
+# den deutschen Bestand haben die Liste gefuellt; `arcoíris` und
+# `cumpleaños` machten allein drei der ersten sieben Treffer aus.
+ES_INVARIANT = {'crisis', 'analisis', 'análisis', 'lunes', 'martes',
+                'miercoles', 'miércoles', 'jueves', 'viernes', 'dios',
+                'mes', 'pais', 'país', 'interes', 'interés',
+                'arcoiris', 'arcoíris', 'cumpleanos', 'cumpleaños',
+                'paraguas', 'ciempies', 'ciempiés', 'tos', 'mies',
+                'res', 'vez', 'atlas', 'caos', 'oasis', 'exodo', 'éxodo',
+                'genesis', 'génesis'}
+
+
+def es_numerus(nomen):
+    """Nur Numerus. Wie fr_numerus bewusst grob — jeder Treffer ist Verdacht."""
+    n = nomen.strip().split()[0].lower().strip("'’")
+    if not n or n in ES_INVARIANT or len(n) < 4:
+        return None
+    return 'p' if n.endswith('s') else 's'
+
+
 def fr_numerus(nomen):
     """Nur Numerus, nicht Genus — siehe Modulkopf."""
     n = nomen.strip().split()[0].lower().strip("'’")
@@ -252,9 +280,19 @@ def main():
                 if soll and soll != g:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx['it'], g))
+                es = (e.get('es') or '').strip().lower()
+                if es in ES_SG or es in ES_PL:
+                    en_ = es_numerus(nx.get('es') or '')
+                    if en_:
+                        solles = 's' if es in ES_SG else 'p'
+                        if solles != en_:
+                            treffer.append(('es', k, v, e['form'], e['es'],
+                                            nx['form'], nx['es'], en_))
                 fr = (e.get('fr') or '').strip().lower()
+                # Der Dativ-Ausschluss haengt am DEUTSCHEN Wort — das ist in
+                # der einen Richtung die Form, in der anderen die de-Spalte.
                 if ((fr in FR_SG or fr in FR_PL)
-                        and e.get('form', '').lower() not in DATIV):
+                        and C.de_wort(e).lower() not in DATIV):
                     fn = fr_numerus(nx.get('fr') or '')
                     if fn:
                         sollfr = 's' if fr in FR_SG else 'p'

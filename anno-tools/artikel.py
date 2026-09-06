@@ -113,6 +113,12 @@ def main():
     if not out:
         raise SystemExit('ANNO_OUT ist nicht gesetzt.')
     zaehl = sammle()
+    # Das Genus kommt aus der Artikelverteilung des BESTANDS. Ist der
+    # klein, erreicht keine Nomenform die Meldeschwelle, und '0
+    # Verdachtsfaelle' heisst dann nicht 'sauber', sondern 'nichts
+    # gemessen'. Beim ersten Buch einer Ausgabe ist genau das der Fall.
+    # Gemeldet vom Agenten fuer Matthaeus 1.
+    tragfaehig = sum(1 for c in zaehl.values() if sum(c.values()) >= 5)
     treffer = []
     for f in sorted(glob.glob(os.path.join(out, buch, 'ch*.json'))):
         if '.part' in f:
@@ -148,6 +154,11 @@ def main():
         print('  %s,%s,%-3s %s  %-10s %-8s | %-14s %-14s  Bestand: %s (%d/%d)'
               % (buch, k, v, sp, f1, g1, f2, g2, soll, anz, ges))
     print()
+    if tragfaehig < 200:
+        print(f'!! Der Bestand traegt erst {tragfaehig} Nomenformen mit '
+              'mindestens 5 Belegen. Bei so wenig Referenz erreicht kaum '
+              'etwas die Meldeschwelle — eine Null hier heisst NICHT '
+              '"sauber", sondern "noch nichts gemessen".')
     print('%d Verdachtsfaelle. Das Genus ist aus der Artikelverteilung des'
           % len(set(treffer)))
     print('Bestands abgeleitet, nicht aus einem Woerterbuch — jeden Treffer')

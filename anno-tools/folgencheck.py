@@ -59,15 +59,14 @@ def folgen(quelle, minlen=4, maxlen=14):
 def signatur(eintraege, i, n):
     E = {e['pos']: e for e in eintraege
          if 'pos_end' not in e and 'parts' not in e}
-    ein = tuple((E[j]['lemma'], E[j]['en'], E[j]['es'], E[j]['fr'],
-                 E[j]['it']) if j in E else None for j in range(i, i + n))
+    ein = tuple(((E[j]['lemma'],) + C.reihe(E[j])) if j in E else None
+                for j in range(i, i + n))
     mw = []
     for m in eintraege:
         sp = m.get('parts', list(range(m['pos'],
                                        m.get('pos_end', m['pos']) + 1)))
         if len(sp) > 1 and min(sp) >= i and max(sp) < i + n:
-            mw.append((tuple(x - i for x in sp), m['lemma'], m['en'],
-                       m['es'], m['fr'], m['it']))
+            mw.append((tuple(x - i for x in sp), m['lemma']) + C.reihe(m))
     return ein, tuple(sorted(mw))
 
 
