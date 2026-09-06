@@ -139,8 +139,8 @@ die das Pilotbuch gepraegt hat.
     python3 levelcheck.py <NR> <KAP>
     python3 sweeplemma.py <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 glosskollision.py --datei <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
-    python3 kongruenz.py <NR>
-    python3 artikel.py <NR>
+    python3 kongruenz.py <NR> <KAP>
+    python3 artikel.py <NR> <KAP>
     python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --datei $ANNO_OUT/<NR>/ch<KAP>.json
@@ -149,8 +149,11 @@ die das Pilotbuch gepraegt hat.
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
 
-`kongruenz.py` und `artikel.py` lesen den **Bestand**, nicht deine Datei —
-solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel wenig.
+`kongruenz.py` und `artikel.py` leiten ihre Referenz aus dem **Bestand**
+ab — solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel
+wenig; `artikel.py` schreibt das inzwischen selbst dazu. **Eine Null ist
+dort keine Freigabe.** Die Kapitelnummer dahinter haelt fremde Treffer
+aus deinem Bericht heraus.
 Die drei letzten lesen mit `--datei` deine Abgabe. `folgencheck.py` ist
 das einzige, das den **Anschluss an die Nachbarkapitel** prueft; in
 Matthaeus Paket 2 hat es als einziges die zwei echten Anschlussfehler

@@ -178,3 +178,12 @@ Deshalb:
 - Wo Wortart **und** Bedeutung auseinandergehen (`porte` Substantiv
   gegen `porter` Verb, `entre` Praeposition gegen `entrer` Verb), sind
   es zwei verschiedene Lemmata und der Fall entfaellt.
+
+**Was die Regel kostet**, an einem gemessenen Beispiel: `pouvoir` ist im
+Bestand ein Verb auf A1 (`peut`, 5,36). In 9,6 und 9,8 steht dasselbe
+Wort als **Substantiv** — „le pouvoir de pardonner". Fuer
+Franzoesischlernende waere das B1; es bekommt A1, weil der nominalisierte
+Infinitiv keinen eigenen Lemmanamen hat. Das ist der Preis dafuer, keine
+Lemmanamen zu erfinden, die kein Werkzeug versteht — und er ist es wert:
+ein `pouvoir¹` wuerde `belegt.py`, `lexicon.py` und `levelcheck.py`
+gleichzeitig blind machen.

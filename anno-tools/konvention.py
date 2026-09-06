@@ -71,7 +71,15 @@ if not kaps:
 src=json.load(open(f'{C.SRC_DIR}/{nr}{C.TEXT_SUFFIX}',encoding='utf-8'))['chapters']
 offen=0
 for kap in kaps:
-    d=json.load(open(f'{OUT}{nr}/ch{kap}.json',encoding='utf-8'))
+    pfad=os.path.join(OUT, str(nr), f'ch{kap}.json')
+    if not os.path.exists(pfad):
+        # Dieses Skript liest die eigene ABGABE, nicht den Bestand. Vor der
+        # ersten Fassung gibt es sie nicht — das war bisher ein nackter
+        # FileNotFoundError. Gemeldet vom Agenten fuer Matthaeus 9.
+        raise SystemExit(f'{pfad} gibt es noch nicht. Dieses Skript prueft '
+                         'deine Abgabe, nicht den Bestand — erst schreiben, '
+                         'dann pruefen.')
+    d=json.load(open(pfad,encoding='utf-8'))
     for v in sorted(d, key=int):
         toks=[C.strip_punct(t) for t in src[kap][v].split()]
         belegt={(e['pos'], (e.get('parts') or [e['pos'],e.get('pos_end')])[-1])
