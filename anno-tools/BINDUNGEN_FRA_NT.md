@@ -89,9 +89,22 @@ Matthaeus 7, dem `sweeplemma.py` den fehlenden Eintrag in 7,25 meldete.
 
 ## Praepositionen und Artikel
 
-- **Italienisch `par` = `da`**, und der Artikel bleibt am
-  Artikeltoken: `da` + `le tenebre`, nicht `dalle` + `le tenebre`.
-  Sonst steht der Artikel doppelt.
+**Die Praeposition bleibt bar, der Artikel sitzt am Folgetoken.** Das
+gilt fuer den Artikel wie fuer das Possessiv:
+
+    par les ténèbres   →  `da` + `le tenebre`      nicht `dalle` + `le`
+    sur la terre       →  `su` + `la terra`        nicht `sulla` + `la`
+    de son cœur        →  `di` + `il suo cuore`    nicht `del` + `suo`
+    de mon Père        →  `di` + `mio Padre`
+
+Die Regel erzeugt bewusst Folgen wie „di il suo cuore", die als Satz
+niemand schriebe — aber die App zeigt **Wort unter Wort**, nicht den
+Satz, und jede Position muss fuer sich stimmen. Wo der Artikel in die
+Praeposition wandert, steht er entweder doppelt oder gar nicht.
+
+Gemessen an 57 Praeposition-plus-Possessiv-Paaren des Bestands vom
+Agenten fuer Matthaeus 12; die Altlast in 9,6 (`sulla` + `la`) ist
+danach korrigiert.
 - **Unbestimmtes Plural-`des`** = *einige · some · unos · dei|degli|delle*,
   mit Genus und Numerus nach dem **Nomen der Zielsprache**
   (`degli empi`, `delle nuvole`).
