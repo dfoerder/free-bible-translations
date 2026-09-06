@@ -82,8 +82,8 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         # (Jes 6,12): die Form fehlt, das Lemma hat drei Belege.
         c2 = lemmata[f]
         ges = sum(c2.values())
-        print(f'   Die FORM steht nicht im Bestand — aber `{wort}` ist ein')
-        print(f'   **LEMMA mit {ges} Belegen**, dort nur flektiert:')
+        print(f'   **`{wort}` IST im Bestand — als LEMMA mit {ges} Belegen**,')
+        print('   nur unter anderen Wortformen:')
         for k, n in c2.most_common():
             form, lemma, lvl, glossen = k[0], k[1], k[2], k[3:]
             print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
