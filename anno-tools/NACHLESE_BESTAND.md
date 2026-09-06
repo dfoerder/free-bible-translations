@@ -11,12 +11,36 @@ der Zahl belegt, die eine Korrektur kosten wuerde.
 
 ## A · Namen, mechanisch pruefbar
 
-### 1. Die italienischen `I`-statt-`J`-Namensglossen — 672 Vorkommen in 201 Formen
+### 1. ERLEDIGT (zu vier Fuenfteln) — die italienischen `I`-statt-`J`-Namensglossen
 
-Der Defekt liegt in der RIV-Ausgabe, nicht im Bestand; gefaehrlich wird er,
-wo eine Glosse die RIV-Zeile uebernommen hat. Vergleichszahlen: LSG 3 ·
-RV 13 · WEB 19 · de 20. Vollstaendig in `BEFUNDE_RIV_ANLAUT_J.md`;
-die Messung ohne Seltenheitsdeckel in `RIV_ANLAUTFEHLER.md`.
+Gemessen wurde jede italienische Glosse, die mit `Ia Ie Io Iu` beginnt,
+gegen den **gesamten RIV-Wortschatz** (31 834 Formen):
+
+```
+687 Vorkommen in 161 Formen insgesamt
+  184  die I-Form steht in RIV selbst   -> unangetastet, kein Fehler
+  310  I fehlt in RIV, J steht dort     -> korrigiert (72 Formen)
+   86  RIV schreibt den Namen anders    -> korrigiert, wo der DEUTSCHE
+       (Jethro, Jeshua, Jahath …)          Name die Zuordnung eindeutig
+                                           macht (13 Formen)
+  107  bleibt offen                     -> siehe unten
+```
+
+**396 Vorkommen korrigiert**, in 23 Buechern, alle neu gebaut und
+validiert. Die Gegenprobe „I-Form ohne J-Gegenstueck" steht auf null.
+
+Die verbleibenden **107** sind keine Anlautfehler:
+
+- **`Ioacaz` (23×)** — RIV schreibt `Jehoachaz`, eine andere Namensbasis.
+- **`Iedutun` (12×)** — RIV hat an der Belegstelle selbst einen
+  Anlautverlust („figliuolo di **eduthun**").
+- **`Ieus`, `Iachin`, `Ioctan`, `Ietet`, `Ialeel`, `Iochebed`,
+  `Iotbata`** — **RIV schwankt selbst** zwischen I- und J-Schreibung
+  (`Ieush`/`Jeush`, `Iakin`/`Jakin`, `Jokthan`/`Joktan`). Ohne
+  Mehrheitsentscheid der Ausgabe gibt es nichts anzugleichen.
+
+Damit ist der Befund von 521 auf 107 Vorkommen geschrumpft, und der Rest
+ist begruendet.
 
 ### 2. `Michael` traegt an zehn AT-Stellen die NT-Form — belegt, abgeschlossen zaehlbar
 
