@@ -74,12 +74,19 @@ def signatur(eintraege, pp):
     ein = tuple(((E[j]['lemma'],) + C.reihe(E[j])) if j in E else None
                 for j in pp)
     von, bis = pp[0], pp[-1]
+    # Die Mehrwort-Spanne wird ueber den INDEX innerhalb der Folge
+    # ausgedrueckt, nicht ueber den Rohabstand: `toi;` ist ein Token,
+    # `toi ;` sind zwei, und dann verschiebt sich jede Rohdistanz
+    # dahinter. In Matthaeus 18,8 gegen 18,9 meldete das eine Abweichung,
+    # obwohl die Glossen zeichengleich waren.
+    stelle = {p: i for i, p in enumerate(pp)}
     mw = []
     for m in eintraege:
         sp = m.get('parts', list(range(m['pos'],
                                        m.get('pos_end', m['pos']) + 1)))
         if len(sp) > 1 and min(sp) >= von and max(sp) <= bis:
-            mw.append((tuple(x - von for x in sp), m['lemma']) + C.reihe(m))
+            idx = tuple(stelle.get(x, -1) for x in sp)
+            mw.append((idx, m['lemma']) + C.reihe(m))
     return ein, tuple(sorted(mw))
 
 

@@ -47,7 +47,7 @@ def verse(nr, kap, vers):
         span = (f'{e["pos"]}-{e["pos_end"]}' if 'pos_end' in e
                 else (str(e['parts']) if 'parts' in e else str(e['pos'])))
         print(f'  {span:>8}  {e["form"]:<22} {e["lemma"]:<20} {e["level"]}  '
-              f'en {e["en"]} · es {e["es"]} · fr {e["fr"]} · it {e["it"]}')
+              + ' · '.join(f'{l} {e[l]}' for l in C.LANGS))
 
 
 if __name__ == '__main__':

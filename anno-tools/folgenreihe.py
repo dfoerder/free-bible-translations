@@ -33,6 +33,11 @@ import common as C
 
 
 def stellen(phr, bis=None):
+    # Der gerade Apostroph muss treffen wie der typografische: die
+    # Vorbereitungsdateien und jede von Hand getippte Folge benutzen ihn.
+    # Vorher fand `n'est pas` nichts und `n’est pas` alles — der Agent
+    # fuer Matthaeus 18 hat einen Durchgang daran verloren.
+    phr = phr.replace("'", '\u2019')
     w = [x.strip('.,;:!?„“"') for x in phr.split()]
     w = [x for x in w if x]
     # Eine Folge aus einer Bindungsdatei steht ohne Apostroph da

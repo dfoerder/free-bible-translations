@@ -162,6 +162,11 @@ zwei Abweichungen, mit `--min 3` waren es zwanzig — **sechs davon echte
 Anschlussfehler**, darunter eine dreiwortige Folge, die das Paket selbst
 praegt (`qui souille l'homme`).
 
+**`levelcheck.py` und `konvention.py` lesen den Bestand mit** und sagen
+mit einer Null nichts ueber deine Datei allein — anders als die
+`--datei`-Werkzeuge. `artikel.py` schreibt seinen Vorbehalt selbst dazu,
+diese beiden nicht.
+
 `kongruenz.py` und `artikel.py` leiten ihre Referenz aus dem **Bestand**
 ab — solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel
 wenig; `artikel.py` schreibt das inzwischen selbst dazu. **Eine Null ist
