@@ -27,6 +27,14 @@ ERLAUBT = {
     'it': set("abcdefghijklmnopqrstuvwxyz0123456789 '-.,…!?àèéìíîòóùú"),
 }
 ZEICHEN_AUSNAHMEN = {'fiancée'}
+# Der typografische Apostroph stand in keiner Zeichenliste — eine
+# italienische Glosse `l’immoralità` waere als fremdes Zeichen
+# gemeldet worden, die gerade Form `l'immoralità` nicht. Beide sind
+# richtig geschrieben; die Pruefung soll die Rechtschreibung meinen,
+# nicht die Anfuehrungszeichenwahl. Gemeldet vom Agenten des
+# franzoesischen Pilotbuchs.
+for _l in ERLAUBT:
+    ERLAUBT[_l].add('\u2019')
 
 # Die Funktionswoerter des QUELLTEXTES, nicht der Glossen. Welche Liste
 # gilt, haengt daran, welche Ausgabe annotiert wird — die deutsche Liste

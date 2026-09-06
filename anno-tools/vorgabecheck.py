@@ -140,6 +140,23 @@ NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV|L1912|LUT|Luth
 EINZITAT = re.compile(r'[„"\u201c]([^„"\u201c\u201d\n]{3,90})[""\u201d]'
                       r'|(?<!\*)\*(?!\*)([^*`,.;:\n]{3,40})\*(?!\*)')
 
+# Ein Verszitat steht nicht immer in Anfuehrungszeichen. Im ersten
+# franzoesischen Prompt standen beide falschen Zitate in **Backticks** —
+# `changent en dérèglement la grâce` (der Text liest „qui changent la
+# grâce de notre Dieu en débauche") und `se repaissant eux-mêmes sans
+# crainte` (das „sans crainte" gibt es dort nicht). Der Agent hat beide
+# gefunden, das Werkzeug schwieg, weil es Backticks nicht las.
+BACKTICK = re.compile(r'(?<!`)`([^`\n]{1,120})`(?!`)')
+# Was in Backticks steht, ist oft ein Aufruf oder ein Pfad und kein
+# Zitat. Diese Zeichen kommen in keinem Bibelvers vor.
+KEIN_ZITAT = re.compile(r'\.py|[/$=<>{}\[\]|]|--|\.\w+\b(?<!\.py)')
+# Die Wortfelder zitieren Wendungen in ihrer GRUNDFORM, ebenfalls in
+# Backticks: `sich zu Boden werfen`, `jemanden in Ruhe lassen`,
+# `Der Ausspruch über X`. Die stehen zu Recht nicht im Text. An diesen
+# Platzhaltern sind sie zu erkennen — ohne sie meldete der Lauf ueber die
+# 21 Wortfelder 36 solche Zitierformen zusaetzlich.
+GRUNDFORM = re.compile(r'\b(sich|jemand\w*|etwas|X)\b')
+
 
 def zitate(zeile):
     """Jedes Zitat den Ausgaben zuordnen, die unmittelbar davor stehen.
@@ -328,9 +345,13 @@ def pruefe_deutsch(pfad, nr):
             # Wortfelder zitieren staendig Parallelstellen so.
             if FREMDBUCH.search(zeile):
                 continue
-            for m in EINZITAT.finditer(zeile):
-                text = m.group(1)
-                if text is None or text in vergeben:
+            gefunden = [m.group(1) for m in EINZITAT.finditer(zeile)
+                        if m.group(1) is not None]
+            gefunden += [m.group(1) for m in BACKTICK.finditer(zeile)
+                         if not KEIN_ZITAT.search(m.group(1))
+                         and not GRUNDFORM.search(m.group(1))]
+            for text in gefunden:
+                if text in vergeben:
                     continue
                 # Eine Glossenreihe ist kein Verszitat — sie trennt mit
                 # `·` ODER, in den Wortfeldern, mit Schraegstrichen

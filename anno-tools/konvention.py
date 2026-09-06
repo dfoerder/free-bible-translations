@@ -25,10 +25,28 @@ if not OUT.endswith('/'): OUT += '/'
 
 # Wendungen aus zwei Tokens, die im Bestand oft genug als Mehrwort geführt sind,
 # dass ein Fehlen erklärungsbedürftig ist. Erstes Token, letztes Token, Höchstabstand.
-WENDUNGEN=[('um','zu',18),('so','wie',1),('genau','wie',1),('nicht','mehr',1),('wie','wenn',1)]
+# Feste Wendungen je Quelltextsprache. Die deutsche Liste traf im
+# franzoesischen Text nichts, und der Lauf meldete „0 Stellen ohne
+# Eintrag" — ein Leerlauf, der wie ein sauberer Lauf aussieht. Genau der
+# Fehlertyp, gegen den der Abbruch bei fehlenden Kapitelnummern unten
+# gebaut ist, nur eine Ebene tiefer. Gemeldet vom Agenten des
+# franzoesischen Pilotbuchs.
+WENDUNGEN_JE_SPRACHE = {
+    'de': [('um','zu',18),('so','wie',1),('genau','wie',1),
+           ('nicht','mehr',1),('wie','wenn',1)],
+    'fr': [('afin','de',1),('au','contraire',1),('contre','nature',1),
+           ('depuis','longtemps',1),('il','y',1),('à','cause',1),
+           ('ne','pas',6),('une','fois',1),('au','sujet',1),
+           ('c','est',1),('parce','que',1)],
+}
+WENDUNGEN=WENDUNGEN_JE_SPRACHE.get(C.LANG, [])
+if not WENDUNGEN:
+    raise SystemExit(f'Fuer die Quelltextsprache {C.LANG!r} sind keine '
+                     'Wendungen hinterlegt — dieser Lauf wuerde NICHTS '
+                     'pruefen und trotzdem "0" melden.')
 
 bestand=collections.Counter()
-for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,'*_multi.json'))):
+for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,f'*{C.ANNO_SUFFIX}'))):
     d=json.load(open(p,encoding='utf-8'))
     for kap,verse in d['chapters'].items():
         for v,ee in verse.items():

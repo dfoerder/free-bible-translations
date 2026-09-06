@@ -52,6 +52,11 @@ def bester_block(a, b):
     return difflib.SequenceMatcher(None, a, b).find_longest_match(0, len(a), 0, len(b)).size
 
 
+if len(sys.argv) < 3:
+    raise SystemExit('Aufruf: parallelen.py <buchNr> <kapitel> '
+                     '[minblock] [--alle]\n'
+                     'Ohne Kapitelnummer brach der Lauf mit einem '
+                     'IndexError ab statt dies zu sagen.')
 nr, kap = int(sys.argv[1]), sys.argv[2]
 minblock = int(sys.argv[3]) if len(sys.argv) > 3 and sys.argv[3].isdigit() else 4
 alle = '--alle' in sys.argv

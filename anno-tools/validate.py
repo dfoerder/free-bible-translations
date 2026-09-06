@@ -172,6 +172,14 @@ if __name__ == '__main__':
     nrs = C.anno_books() if sys.argv[1] == 'alle' else [int(a) for a in sys.argv[1:]]
     schlimm = 0
     for nr in nrs:
+        if not C.has_anno(nr):
+            # Vor dem ersten buildbook gibt es die Anno-Datei nicht.
+            # Das ist kein Absturz wert — selfcheck.py prueft dieselbe
+            # Ebene auf den Kapitelquellen.
+            print(f'{nr:>2} — noch keine Anno-Datei '
+                  f'({C.anno_path(nr)}). Erst `buildbook.py {nr}`; '
+                  'bis dahin prueft `selfcheck.py` die Kapitelquellen.')
+            continue
         errs, fehlend = validate_book(nr, quiet=True)
         tok, einzel, mehr, zeichen = gegenrechnung(nr)
         name = C.load_source(nr)['name']

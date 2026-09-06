@@ -110,12 +110,23 @@ Beim ersten Buch ist die franzoesische Anno noch leer. Das heisst:
 
 - **`hints.py` meldet alles als unbelegt** — das ist richtig und kein
   Befund. Ab dem zweiten Buch wird es nuetzlich.
-- **`belegt.py`, `lexicon.py`, `parallelen.py`, `levelcheck.py`,
-  `konvention.py`, `sweeplemma.py`** antworten leer, solange nichts
+- **`lexicon.py`, `parallelen.py <NR> <KAP>`, `levelcheck.py`,
+  `konvention.py`, `sweeplemma.py`** antworten leer, solange wenig
   fertig ist. Trotzdem laufen lassen: ein leerer Lauf ist eine Aussage,
   ein nicht gelaufener nicht.
+- **`belegt.py` nimmt ein WORT, keine Buchnummer** — `belegt.py seigneur`.
+  Mit einer Zahl antwortet es „Wortform `65` nicht belegt", und das sieht
+  wie ein sauberer Lauf aus.
 - **`rueckwaerts.py` tritt an ihre Stelle**, bis der eigene Bestand
   traegt.
+
+## Was Judas festgelegt hat
+
+**`BINDUNGEN_FRA_NT.md` ist Pflichtlektuere vor der Arbeit.** Dort steht,
+wie Elisionen lemmatisiert werden, wie `ne … pas` gesetzt wird, warum
+Relativ-`qui`/`que` deutsch *welche(r)* wird und nicht *der/die/das*, wann
+ein Reflexiv ein Mehrwort bekommt und wann nicht — dazu die elf Reihen,
+die das Pilotbuch gepraegt hat.
 
 ## Vor der Abgabe — jeder Lauf, jedesmal, mit DEINER Buchnummer
 

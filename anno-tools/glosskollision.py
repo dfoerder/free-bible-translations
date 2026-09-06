@@ -61,9 +61,17 @@ import sys
 
 import common as C
 
-# Geschlossene Wortarten. Bewusst knapp gehalten — je länger die Liste, desto
-# mehr echte Fälle verschwinden im unterdrückten Abschnitt.
-FUNKTION = {
+# Geschlossene Wortarten des QUELLTEXTES. Bewusst knapp gehalten — je länger
+# die Liste, desto mehr echte Fälle verschwinden im unterdrückten Abschnitt.
+#
+# Sie wird gegen die **Lemmata des Quelltextes** gehalten, hing aber bis
+# Judas fest am Deutschen. Bei `ANNO_EDITION=fra/lsg1910mod` traf sie
+# deshalb nie: jeder Lauf endete auf „0 aus geschlossenen Wortarten", und
+# sämtliche Artikel-, Präpositions- und Pronomenpaare landeten unter
+# „inhaltliche Paare" — genau dem Abschnitt, der sie unterdrücken soll.
+# Gemeldet vom Agenten des französischen Pilotbuchs.
+FUNKTION_JE_SPRACHE = {}
+FUNKTION_JE_SPRACHE['de'] = {
     'der', 'ein', 'dieser', 'jener', 'welcher', 'all', 'kein',
     'ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr', 'man', 'sich', 'wer', 'was',
     'mein', 'dein', 'sein', 'unser', 'euer', 'ihrer',
@@ -91,6 +99,57 @@ FUNKTION = {
     'empor', 'dahin', 'davon', 'daran', 'darauf', 'darin', 'dazu', 'dagegen',
     'weg', 'fort', 'zurück', 'vorbei', 'nieder', 'umher',
 }
+
+# Franzoesisch. Die Lemmata stehen so, wie die Agenten sie setzen: Artikel
+# auf `le`, Teilungs- und Verschmelzungsformen auf `de` bzw. `à`, Elisionen
+# auf ihren semantischen Kopf (`qu'il` → `que`).
+FUNKTION_JE_SPRACHE['fr'] = {
+    'le', 'un', 'ce', 'cet', 'celui', 'celle', 'ceux', 'tout', 'aucun',
+    'je', 'tu', 'il', 'elle', 'nous', 'vous', 'ils', 'on', 'se', 'soi',
+    'moi', 'toi', 'lui', 'eux', 'y', 'en', 'qui', 'que', 'quoi', 'dont',
+    'où', 'lequel', 'mon', 'ton', 'son', 'notre', 'votre', 'leur',
+    'de', 'à', 'dans', 'sur', 'sous', 'par', 'pour', 'avec', 'sans',
+    'chez', 'vers', 'entre', 'contre', 'depuis', 'pendant', 'selon',
+    'devant', 'derrière', 'après', 'avant', 'jusque', 'malgré', 'parmi',
+    'et', 'ou', 'mais', 'donc', 'car', 'ni', 'que', 'si', 'comme',
+    'quand', 'lorsque', 'puisque', 'afin', 'parce',
+    'ne', 'pas', 'plus', 'point', 'jamais', 'rien', 'personne',
+    'aussi', 'ainsi', 'alors', 'encore', 'déjà', 'très', 'bien', 'ici',
+    'là', 'oui', 'non', 'même',
+    'être', 'avoir', 'faire', 'aller', 'pouvoir', 'devoir', 'vouloir',
+    'laisser',
+}
+
+# Englisch und Spanisch sind noch nicht gebraucht worden; die Listen stehen
+# da, damit ein Lauf in diesen Richtungen nicht stillschweigend leer ist.
+FUNKTION_JE_SPRACHE['en'] = {
+    'the', 'a', 'this', 'that', 'these', 'those', 'all', 'no', 'any',
+    'i', 'you', 'he', 'she', 'it', 'we', 'they', 'who', 'what', 'which',
+    'my', 'your', 'his', 'her', 'its', 'our', 'their', 'self',
+    'in', 'on', 'at', 'to', 'of', 'with', 'by', 'from', 'for', 'about',
+    'over', 'under', 'before', 'after', 'against', 'without', 'until',
+    'and', 'or', 'but', 'so', 'if', 'when', 'because', 'as', 'than',
+    'not', 'only', 'also', 'still', 'yet', 'there', 'here', 'yes',
+    'be', 'have', 'do', 'will', 'shall', 'can', 'may', 'must', 'let',
+}
+FUNKTION_JE_SPRACHE['es'] = {
+    'el', 'un', 'este', 'ese', 'aquel', 'todo', 'ninguno', 'alguno',
+    'yo', 'tú', 'él', 'ella', 'nosotros', 'vosotros', 'ellos', 'se',
+    'quien', 'que', 'cual', 'mi', 'tu', 'su', 'nuestro', 'vuestro',
+    'de', 'a', 'en', 'con', 'sin', 'por', 'para', 'sobre', 'bajo',
+    'entre', 'contra', 'desde', 'hasta', 'según', 'ante', 'tras',
+    'y', 'o', 'pero', 'sino', 'si', 'cuando', 'porque', 'como',
+    'no', 'ni', 'sólo', 'también', 'aún', 'ya', 'aquí', 'allí', 'sí',
+    'ser', 'estar', 'haber', 'tener', 'hacer', 'poder', 'deber', 'querer',
+    'dejar', 'mismo',
+}
+
+FUNKTION = FUNKTION_JE_SPRACHE.get(C.LANG, set())
+if not FUNKTION:
+    print(f'!! Fuer die Quelltextsprache {C.LANG!r} gibt es keine Liste '
+          'geschlossener Wortarten — der Abschnitt "aus geschlossenen '
+          'Wortarten" bleibt leer, und alles landet unter "inhaltlich".',
+          file=sys.stderr)
 
 SPRACHEN = tuple(C.LANGS)
 

@@ -41,6 +41,10 @@ FEM_PL  = {'le mie','le tue','le sue','le nostre','le vostre','le loro'}
 # Verdachtsfaelle in Hesekiel aus.
 AUSNAHMEN = {
     'mano':'fs', 'mani':'fp', 'ala':'fs', 'ali':'fp', 'ossa':'fp',
+    # `le sue sante miriadi` (Judas 1,14) galt als Fehler, weil die
+    # `-i`-Endung maskulin aussieht. `miriade` ist feminin, RIV liest
+    # genau so. Gemeldet vom Agenten des franzoesischen Pilotbuchs.
+    'miriade':'fs', 'miriadi':'fp',
     'braccia':'fp', 'labbra':'fp', 'dita':'fp', 'ginocchia':'fp',
     'corna':'fp', 'uova':'fp', 'mura':'fp', 'lenzuola':'fp',
     'radici':'fp', 'vesti':'fp', 'veste':'fs', 'capo':'ms', 'capi':'mp',
