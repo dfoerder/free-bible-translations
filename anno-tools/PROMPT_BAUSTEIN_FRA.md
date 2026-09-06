@@ -138,6 +138,12 @@ die das Pilotbuch gepraegt hat.
     python3 glosskollision.py --datei <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 kongruenz.py <NR>
     python3 artikel.py <NR>
+    python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
+    python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+
+`kongruenz.py` und `artikel.py` lesen den **Bestand**, nicht deine Datei —
+solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel wenig.
+Die beiden letzten lesen mit `--datei` deine Abgabe.
 
 **Erklaere kein Kapitel fuer fertig, das `selfcheck.py` nicht sauber
 durchlaeuft.** Jeder Rest aus `glosskollision` und `sweeplemma` wird am

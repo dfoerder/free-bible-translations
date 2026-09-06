@@ -37,8 +37,20 @@ import argparse
 
 import common as C
 
-HILFSVERBEN = {'werden', 'sollen', 'wollen', 'können', 'müssen', 'dürfen',
-               'mögen', 'lassen', 'haben', 'sein'}
+# Die Hilfsverben des QUELLTEXTES. Die deutsche Liste traf im
+# franzoesischen Text kein einziges Lemma — der Lauf meldete '0 Treffer'
+# und hatte nichts geprueft. Dieselbe Falle wie bei qa.py und hints.py.
+HILFSVERBEN_JE_SPRACHE = {
+    'de': {'werden', 'sollen', 'wollen', 'können', 'müssen', 'dürfen',
+           'mögen', 'lassen', 'haben', 'sein'},
+    'fr': {'être', 'avoir', 'aller', 'pouvoir', 'devoir', 'vouloir',
+           'faire', 'laisser', 'venir'},
+    'en': {'be', 'have', 'do', 'will', 'shall', 'can', 'may', 'must',
+           'let', 'go'},
+    'es': {'ser', 'estar', 'haber', 'tener', 'poder', 'deber', 'querer',
+           'hacer', 'dejar', 'ir'},
+}
+HILFSVERBEN = HILFSVERBEN_JE_SPRACHE.get(C.LANG, set())
 MIN_STAMM = 5
 ABSTAND = 12   # war 8; 1Mo 42,38 hat elf Tokens Abstand und fiel durch
 
@@ -48,11 +60,18 @@ def _stamm(g):
     return w[-1][:MIN_STAMM] if w else ''
 
 
-def pruefe(nrs, abstand=ABSTAND):
+def pruefe(nrs, abstand=ABSTAND, datei=None, kapitel=None):
+    if not HILFSVERBEN:
+        print(f'!! Fuer die Quelltextsprache {C.LANG!r} sind keine '
+              'Hilfsverben hinterlegt — dieser Lauf prueft NICHTS.')
+        return []
     treffer = []
     for nr in nrs:
         name = C.load_source(nr)['name']
-        d = C.load_anno(nr)['chapters']
+        if datei:
+            d = C.anno_wie_datei(nr, kapitel, datei)['chapters']
+        else:
+            d = C.load_anno(nr)['chapters']
         for kap, verses in d.items():
             for vers, entries in verses.items():
                 einzel = [e for e in entries if not C.is_multi(e)]
@@ -96,6 +115,14 @@ if __name__ == '__main__':
     p.add_argument('args', nargs='+')
     p.add_argument('--abstand', type=int, default=ABSTAND,
                    help='groesster Positionsabstand zwischen Hilfs- und Vollverb')
+    p.add_argument('--datei', help='eine Kapitel-Lieferdatei statt der '
+                                   'gebauten Anno-Datei pruefen: '
+                                   '--datei <pfad> <nr> <kap>')
     a = p.parse_args()
-    nrs = C.anno_books() if a.args[0] == 'alle' else [int(x) for x in a.args]
-    pruefe(nrs, a.abstand)
+    if a.datei:
+        if len(a.args) != 2:
+            p.error('mit --datei: <buchNr> <kapitel>')
+        pruefe([int(a.args[0])], a.abstand, a.datei, a.args[1])
+    else:
+        nrs = C.anno_books() if a.args[0] == 'alle' else [int(x) for x in a.args]
+        pruefe(nrs, a.abstand)

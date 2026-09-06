@@ -278,3 +278,18 @@ def de_wort(e):
     nichts geprueft haben.
     """
     return e['form'] if LANG == 'de' else (e.get('de') or '')
+
+
+def anno_wie_datei(nr, kap, pfad):
+    """Eine Kapitelquelle in der Form einer Anno-Datei.
+
+    Mehrere Pruefungen lesen die **gebaute** Anno-Datei und sind damit
+    fuer ein Kapitel, das noch beim Agenten liegt, nicht benutzbar —
+    beim ersten Buch einer Ausgabe fuer gar nichts. `glosskollision.py`
+    und `qa.py` hatten dafuer schon eigene Schalter; das hier ist der
+    gemeinsame Weg. Gemeldet vom Agenten fuer Matthaeus 3.
+    """
+    with open(pfad, encoding='utf-8') as f:
+        d = json.load(f)
+    d = d.get('chapters', {}).get(str(kap), d)
+    return {'name': book_name(nr), 'chapters': {str(kap): d}}

@@ -78,9 +78,17 @@ def flexionsvariante(a, b):
 
 fix = '--fix' in sys.argv
 nur = None
+datei = kapitel = None
 argv = []
+_it = iter(range(len(sys.argv[1:])))
 for a in sys.argv[1:]:
     if a == '--fix':
+        continue
+    if a.startswith('--datei='):
+        datei = a[8:]
+        continue
+    if a.startswith('--kapitel='):
+        kapitel = a[10:]
         continue
     if a.startswith('--nur='):
         nur = {x.strip() for x in a[6:].split(',')}
@@ -97,8 +105,12 @@ for nr, kap, v, e in C.iter_corpus():
         korpus[(e['form'], f)][e[f]] += 1
 
 treffer = 0
+if datei and (len(buecher) != 1 or not kapitel):
+    raise SystemExit('mit --datei= sind genau eine Buchnummer und '
+                     '--kapitel=<nr> noetig.')
 for nr in buecher:
-    d = C.load_anno(nr, cache=False)
+    d = (C.anno_wie_datei(nr, kapitel, datei) if datei
+         else C.load_anno(nr, cache=False))
     geaendert = set()
     for kap, verse in d['chapters'].items():
         for v, ee in verse.items():
@@ -114,7 +126,9 @@ for nr in buecher:
                     # Nur Substantive: bei Verben und Adjektiven ist die Form
                     # der Wendung meist die richtige (reflexive Verben, Numerus
                     # aus dem Kontext), und die echten Fälle ersaufen im Rauschen.
-                    if not e['form'][:1].isupper():
+                    # Der Nomenanker ist die DEUTSCHE Seite: in
+                    # deu/l1912mod die Form, sonst die de-Spalte.
+                    if not C.de_wort(e)[:1].isupper():
                         continue
                     if nur is not None and e['form'] not in nur:
                         continue
