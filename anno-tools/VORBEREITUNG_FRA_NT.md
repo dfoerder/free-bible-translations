@@ -5,7 +5,7 @@ in **Englisch, Deutsch, Italienisch und Spanisch**. Die Gegenrichtung zur
 bisherigen Arbeit: dort war Deutsch der annotierte Text und Franzoesisch
 eine Glossenspalte.
 
-**Stand: noch nicht begonnen.** Dies ist die Bestandsaufnahme.
+**Stand: Werkzeugkette umgestellt, Judas als Pilot in Arbeit.**
 
 ## Was da ist
 
@@ -81,40 +81,53 @@ Die verbleibenden 21 Prozent der Wortformen (rund 2 000) sind die
 eigentliche Arbeit — plus die Entscheidung, welcher der oft mehreren
 Kandidaten je Stelle der richtige ist.
 
-## Was an der Werkzeugkette zu tun ist
+## Was an der Werkzeugkette zu tun war — erledigt
 
-`common.py` ist an sechs Stellen fest verdrahtet:
+`common.py` fuehrt jetzt eine Ausgabentabelle, und **`ANNO_EDITION`**
+(Default `deu/l1912mod`) entscheidet, welche Zeile gilt. Daraus leiten
+sich Quelltextverzeichnis, beide Dateinamensmuster, `LANGS` und die
+Liste der Referenzausgaben ab. Die deutsche Kette laeuft unveraendert
+weiter; das ist an `validate`, `hints`, `lexicon`, `qa`, `artikel` und
+`vorgabecheck` nachgemessen.
 
-```
-SRC_DIR   bibles/deu/l1912mod
-QUELLEN   anno-quellen/deu/l1912mod
-Dateinamen  <nr>_l1912mod.json  und  <nr>_l1912mod_multi.json  (3 Stellen)
-LANGS     ['en','es','fr','it']
-```
+Dreizehn Werkzeuge hatten `en/es/fr/it` ausgeschrieben und liefen mit
+`C.reihe()` / `C.zeige()` nach. Drei Fehler kamen dabei ans Licht, die
+in der deutschen Richtung nie aufgefallen waeren:
 
-Vorschlag: eine Umgebungsvariable **`ANNO_EDITION`** (Default
-`deu/l1912mod`), aus der sich Verzeichnis, Dateisuffix und Sprachliste
-ableiten. Dann laufen alle 43 Werkzeuge ohne weitere Aenderung mit —
-`WERKZEUGE.md` listet sie.
+- **`artikel.py` und `kongruenz.py` finden das Nomen einer Attributkette
+  ueber die deutsche Grossschreibung.** Sie lasen dafuer `form` — im
+  franzoesischen Text sind das franzoesische Woerter, alle klein. Beide
+  Pruefungen waeren **lautlos ausgefallen**: kein Treffer, keine
+  Meldung, kein Hinweis darauf, dass nichts geprueft wurde. Sie lesen
+  jetzt `C.de_wort()`, also die deutsche Spalte, gleich welche Ausgabe.
+- **`qa.py` und `hints.py` fuehrten deutsche Funktionswortlisten.**
+  Dieselbe Falle eine Ebene tiefer. Jetzt eine Liste je
+  Quelltextsprache.
+- **`vorgabecheck.py` normalisierte Such- und Textseite verschieden.**
+  Die Suchseite liess nur deutsche Buchstaben stehen, also wurde
+  `jésus` zu `j sus`, und „de notre Seigneur Jésus-Christ" galt als
+  nicht im Text stehend, obwohl Judas 1,17 genau so lautet. Gefunden am
+  allerersten franzoesischen Prompt.
 
-**Eigene Pfade ausserhalb von `common.py`** haben mindestens
-`vorgabecheck.ausgabentext()` und `kapitelgrenzen.flach()`; beide bauen
-ihre Ausgabenliste selbst und muessen mitgezogen werden.
+**Bekannte Grenze:** `promptcheck.py` haelt jedes zitierte Wort gegen den
+Quelltext. In einem franzoesischen Prompt sind die zitierten Woerter aber
+oft **Glossen** (deutsch, englisch) — die stehen dort zu Recht nicht. Der
+Lauf meldet sie trotzdem. Fuer die deutsche Richtung war das kein
+Problem, weil Prompt und Text dieselbe Sprache hatten.
 
-Die **Level** bedeuten dann CEFR aus Sicht von *Franzoesisch*lernenden,
-nicht von Deutschlernenden — `SPEC.md` sagt das an einer Stelle
-ausdruecklich und muss dort verallgemeinert werden.
+## Das Rueckwaerts-Lexikon — gebaut und gemessen
 
-## Vorgeschlagene Reihenfolge
+`rueckwaerts.py` wertet die `fr`-Spalte beider vierspaltigen Zeugen aus.
+Vier Schichten, absteigend belastbar:
 
-1. `common.py` parametrisieren, die zwei Werkzeuge mit eigenen Pfaden
-   nachziehen.
-2. **Ein kurzes Buch als Pilot** — Judas (25 Verse, ein Kapitel) oder
-   Philemon (25). Die Kette einmal ganz durchlaufen lassen: hints,
-   lexicon, ausgaben, selfcheck, glosskollision, buildbook, validate.
-   Erst dann steht fest, was noch klemmt.
-3. Danach **Matthaeus** — das erste grosse Buch legt die Bindungen fuer
-   das ganze NT fest, so wie 1. Mose es fuer das AT getan hat.
+    VERS       das Wort steht als fr-Glosse in GENAU DIESEM Vers
+    GLOSSE     es steht anderswo im NT als fr-Glosse
+    TEIL       nur innerhalb einer mehrwortigen Glosse (`des` in `de les`)
+    ELISION    nur die Haelften (`qu'ils` = `qu'` + `ils`)
+
+An Judas gemessen: 612 Tokens, 98 Prozent belegt, davon rund die Haelfte
+aus dem eigenen Vers. **Elf Woerter bleiben** — das ist die eigentliche
+Arbeit eines Kapitels.
 
 ## Was aus der deutschen Arbeit uebertragbar ist
 

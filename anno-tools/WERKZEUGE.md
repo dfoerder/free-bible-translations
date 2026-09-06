@@ -7,6 +7,15 @@ auch festgehalten, an welchem Fehler das Werkzeug entstanden ist.
 **`export ANNO_OUT=<scratchpad>/out` ist Pflicht**, und alle Werkzeuge
 werden **aus `anno-tools/` heraus** aufgerufen.
 
+**Welche Ausgabe annotiert wird, sagt `ANNO_EDITION`** — Default
+`deu/l1912mod`, fuer das franzoesische NT `fra/lsg1910mod`. Daraus leiten
+sich Quelltextpfad, beide Dateinamensmuster und die vier Glossensprachen
+ab; `common.py` fuehrt die Tabelle. Ohne die Variable arbeitet die ganze
+Kette auf dem deutschen Text weiter, **ohne abzubrechen** — sie antwortet
+dann nur zum falschen Buch. Einmal pruefen:
+
+    python3 -c "import common as C; print(C.EDITION, C.LANGS)"
+
 ## Vor der Arbeit — was das Kapitel mitbringt
 
 **`vorbereitung.py`** — Die Vorbereitungsdatei eines Pakets, maschinell.
@@ -18,12 +27,21 @@ werden **aus `anno-tools/` heraus** aufgerufen.
 **`lexicon.py`** — Gefilterter Lexikon-Extrakt für einen Versbereich.
     lexicon.py <buchNr> <kapitel> [<vonVers> <bisVers>] [-o datei]
 
+**`rueckwaerts.py`** — Was der vorhandene Bestand ueber ein **franzoesisches**
+Wort schon weiss. Die Gegenrichtung zu `lexicon.py`: `eng/web` und
+`deu/l1912mod` tragen beide eine `fr`-Spalte und decken zusammen genau
+de·en·es·it ab, also liegt fuer 98 Prozent der franzoesischen Tokens schon
+eine Viererzeile vor. Vier Schichten, absteigend belastbar: VERS (im
+selben Vers der Zeugen) · GLOSSE · TEIL · ELISION.
+    rueckwaerts.py <buchNr> <kapitel> [<von> [<bis>]] [-o datei]
+    rueckwaerts.py --wort <wort> …
+
 **`belegt.py`** — belegt.py — ist dieses Wort im Bestand belegt, und unter welchem Lemma?
 
 **`fixgloss.py`** — Alle Lesarten eines Lemmas oder einer Wortform mit Belegstellen.
     fixgloss.py show <lemma> [<lemma> …]
 
-**`ausgaben.py`** — Die vier Referenzausgaben neben dem deutschen Vers — inhaltlich ausgerichtet.
+**`ausgaben.py`** — Die vier Referenzausgaben neben dem Vers des Quelltextes — ausgerichtet.
     ausgaben.py <buchNr> <kapitel> [<vonVers> [<bisVers>]]
 
 **`parallelen.py`** — Parallelstellen eines Kapitels im **ganzen** annotierten Bestand.
