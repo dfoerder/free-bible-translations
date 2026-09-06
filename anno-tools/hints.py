@@ -253,9 +253,19 @@ def bericht(nr, kap=None):
     L.append('Ein Wort, das der Bestand **nicht** kennt, steht im selben Vers '
              'wie ein Wort, das darin steckt und fest gebunden ist. Die '
              'Kollisionsprobe oben sieht das nicht — sie vergleicht '
-             'Bestandsglossen, und das neue Wort hat keine. Praeg seine Reihe '
-             'so, dass sie **nicht** mit der des Bestandteils zusammenfaellt. '
+             'Bestandsglossen, und das neue Wort hat keine. '
              'Anlass: Haggai 2,12 `Gewandzipfel` neben `Zipfel`.')
+    L.append('')
+    L.append('**Erst pruefen, was der Fall ist — es gibt drei.** (1) Zwei '
+             'verschiedene Woerter: dann praeg die Reihe des neuen so, dass '
+             'sie **nicht** mit der des Bestandteils zusammenfaellt '
+             '(`Gewandzipfel` gegen `Zipfel`). (2) **Die getrennte '
+             'Satzklammer desselben Verbs**: „Wer euch **antastet**, der '
+             '**tastet** seinen Augapfel **an**" — hier ist `tastet … an` '
+             'dasselbe Verb wie `antastet`, und beide tragen dieselbe '
+             'Glosse; der Bestand macht es in Hiob 1,11 und 2,5 genau so. '
+             '(3) Ein Zufall der Zeichenkette (`Verherrlichung` enthaelt '
+             '`HERR`). Nur der erste Fall verlangt eine Auflösung.')
     L.append('')
     for wo, lang_wort, kurz in komp:
         L.append(f'- **{lang_wort}** ({wo}) enthaelt `{kurz}` — im Bestand gebunden')
