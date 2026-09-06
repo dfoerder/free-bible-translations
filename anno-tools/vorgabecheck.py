@@ -48,7 +48,7 @@ Ebene weiter: nicht mehr ueber den Quelltext, sondern ueber die Zeugen.
 Bestand abweichen — aber dann absichtlich, mit Begruendung daneben.
 Neu gepraegte Reihen melden sich als LEER und sind genau richtig so.
 """
-import sys, re, collections, unicodedata
+import io, sys, re, collections, unicodedata
 import common as C
 
 LEVELS = ('A1', 'A2', 'B1', 'B2', 'C1', 'C2')
@@ -186,6 +186,42 @@ def ausgabentext(nr):
     return out
 
 
+def absaetze(pfad):
+    """Die Datei als ABSAETZE, nicht als Zeilen.
+
+    Zitate in einem Prompt laufen fast immer ueber einen Zeilenumbruch —
+    die Dateien sind auf 72 Zeichen gebrochen. Das Zitatmuster erlaubt
+    kein `\n`, also wurde jedes umgebrochene Zitat stillschweigend
+    uebersprungen. Aufgefallen an Sacharja 13: „Schlagt den Hirten,
+    damit die Schafe sich zerstreuen" stand so im Prompt, der Text liest
+    „Schlage den Hirten, dann wird sich die Herde zerstreuen" — und die
+    Probe schwieg, weil das Zitat auf zwei Zeilen stand.
+
+    Codebloecke bleiben zeilenweise: dort stehen Glossenreihen, keine
+    Zitate.
+    """
+    aus, puffer, im_block = [], [], False
+    for zeile in io.open(pfad, encoding='utf-8'):
+        if zeile.startswith('```'):
+            im_block = not im_block
+            if puffer:
+                aus.append(' '.join(puffer))
+                puffer = []
+            aus.append(zeile.rstrip('\n'))
+            continue
+        if im_block:
+            aus.append(zeile.rstrip('\n'))
+            continue
+        if zeile.strip():
+            puffer.append(zeile.strip())
+        elif puffer:
+            aus.append(' '.join(puffer))
+            puffer = []
+    if puffer:
+        aus.append(' '.join(puffer))
+    return aus
+
+
 def pruefe_zitate(pfad, nr):
     texte = ausgabentext(nr)
     # Der deutsche Text zaehlt mit: ein Zitat, das dort steht, ist ein
@@ -194,6 +230,11 @@ def pruefe_zitate(pfad, nr):
     if not texte:
         print(f'  (keine Ausgabendateien fuer Buch {nr} gefunden)')
         return 0
+    # Die Ausgabenprobe liest ZEILENWEISE. Absatzweise wuerde sie eine
+    # Ausgabennennung aus einer Zeile mit einem Zitat aus der naechsten
+    # verbinden und lauter Phantomtreffer melden — in den Wortfeldern
+    # stieg die Zahl dadurch von 0-2 auf bis zu 4. Nur die
+    # Quelltextprobe braucht Absaetze, weil Verszitate umbrochen sind.
     befunde = 0
     with open(pfad, encoding='utf-8') as f:
         for zeile in f:
@@ -261,8 +302,8 @@ def pruefe_deutsch(pfad, nr):
     fremd = [v for k, v in texte.items() if k != '__de__']
     FREMDBUCH = fremdbuch_regex(nr)
     befunde = 0
-    with open(pfad, encoding='utf-8') as f:
-        for zeile in f:
+    if True:
+        for zeile in absaetze(pfad):
             if '→' in zeile or '->' in zeile:
                 continue
             vergeben = {z for _, z in zitate(zeile)}

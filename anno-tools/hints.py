@@ -284,8 +284,15 @@ def bericht(nr, kap=None):
         L.append('')
         L.append('Diese Formen stehen im Bestand, nur mit anderer Gross- '
                  'oder Kleinschreibung — meist substantivierte Adjektive. '
-                 '**Nimm die Reihe der belegten Form**, sie ist keine '
-                 'Neupraegung.')
+                 'Meist ist die Reihe der belegten Form die richtige und '
+                 'nichts neu zu praegen.')
+        L.append('')
+        L.append('**Aber pruef die Wortart.** Die Schreibung wechselt im '
+                 'Deutschen auch zwischen Verb und Substantiv: `wogen` ist '
+                 'in Sacharja 11,12 das Verb *wiegen*, waehrend der Bestand '
+                 '`Wogen` als Substantiv `Woge` (*billows*) fuehrt. Wer '
+                 'hier blind uebernimmt, setzt „Wellen" in den '
+                 'Silberstueck-Vers.')
         L.append('')
         for f, (wo, andere, lemma) in sorted(schreibvariante.items()):
             L.append(f'- **{f}** ({wo}) — belegt als `{andere}`, '
