@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Stehen die wiederkehrenden Wortfolgen eines Buches zeichengleich?
 
-    folgencheck.py <buchNr> [--min 4] [--datei <ch.json> ...]
+    folgencheck.py <buchNr> [--min 4] [--kapitel 16,17] [--datei <ch.json> ...]
 
 ## Der Anlass
 
@@ -90,6 +90,16 @@ def main():
         k = args.index('--min')
         minlen = int(args[k + 1])
         del args[k:k + 2]
+    # Ein Agent will die Bloecke sehen, die SEIN Kapitel betreffen. Ohne
+    # Filter sind es fuer Matthaeus 304 — der Agent fuer Kapitel 16 musste
+    # sich die vierzehn eigenen mit einem Skript herausziehen, und wer
+    # stattdessen `head -40` nimmt, sieht ausschliesslich fremde Kapitel.
+    nurkap = None
+    while '--kapitel' in args:
+        k = args.index('--kapitel')
+        nurkap = set((nurkap or set())) | {str(int(x)) for x in
+                                           args[k + 1].split(',')}
+        del args[k:k + 2]
     extra = {}
     while '--datei' in args:
         k = args.index('--datei')
@@ -131,6 +141,10 @@ def main():
                 continue
             gruppen.setdefault(signatur(anno[k][v], pp),
                                []).append(f'{k},{v}')
+        if nurkap is not None and not any(
+                w.split(',')[0] in nurkap
+                for x in gruppen.values() for w in x):
+            continue
         stellen = sum(len(x) for x in gruppen.values())
         if stellen < 2:
             ohne += 1

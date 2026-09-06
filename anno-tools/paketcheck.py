@@ -94,9 +94,14 @@ def lade(args):
                 anno = C.load_anno(nr)['chapters']
                 data = anno.get(str(int(kap)))
             if data is None:
-                raise SystemExit(
-                    f'Kapitel {kap} nicht gefunden — weder in $ANNO_OUT '
-                    'noch in anno-quellen noch in der Anno-Datei')
+                # Nicht abbrechen: waehrend eines Pakets hat der eine
+                # Agent laengst abgegeben und der andere noch nicht.
+                # Vorher war der Lauf dann gar nicht moeglich, und der
+                # Behelf `paketcheck 40 16 17 17` stand nirgends.
+                print(f'   (Kapitel {kap} liegt noch nicht vor — '
+                      'uebersprungen)', file=sys.stderr)
+                eigene.discard((nr, str(int(kap))))
+                continue
             out.append((f'{C.book_name(nr)} {int(kap)}', data))
         return out, eigene
     out = []

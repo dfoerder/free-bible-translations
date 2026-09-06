@@ -252,8 +252,19 @@ def kompositum_im_vers(nr, kap=None):
                 for g in klein:
                     if g == f or len(g) < 4 or g not in belegt:
                         continue
-                    if g in f:
-                        out.append((f'{k},{v}', klein[f], klein[g]))
+                    if g not in f:
+                        continue
+                    # Im Franzoesischen haengt an jedem invertierten Verb
+                    # ein Klitikon (`Êtes-vous`, `raisonnez-vous`,
+                    # `dit-il`) und an jeder Elision ein Artikel
+                    # (`l’homme`). Das ist immer Fall (3) der Anleitung
+                    # unten — Zufall der Zeichenkette — und nie eine
+                    # Bindungsgefahr. Ohne diesen Filter rauscht die
+                    # Probe in jedem franzoesischen Kapitel.
+                    i = f.index(g)
+                    if i and f[i - 1] in '-\u2019\'':
+                        continue
+                    out.append((f'{k},{v}', klein[f], klein[g]))
     return out
 
 
