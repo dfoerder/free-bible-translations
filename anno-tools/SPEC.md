@@ -126,6 +126,40 @@ nirgends; wo Luther transliterierte, übersetzt er selbst (`Machpela` →
 in der Schreibung der Zielsprache (`Mose` → *Moses/Moisés/Moïse/Mosè`),
 vorangestellte Kasuspräpositionen inklusive (`Moses` → *of Moses*).
 
+## Die Werkzeuge
+
+**`WERKZEUGE.md`** ist das Register: welches Skript wozu, wann und wie
+aufgerufen — nach Arbeitsschritt geordnet. Die Begruendung, an welchem
+Fehler ein Werkzeug entstanden ist, steht im Docstring der Datei selbst.
+
+Vier davon pruefen **vor der Abgabe** und sind Pflicht: `selfcheck.py`,
+`glosskollision.py`, `levelcheck.py`, `qa.py`.
+
+Zwei pruefen **den Prompt**, bevor er an einen Agenten geht, und sie
+pruefen Verschiedenes: `vorgabecheck.py` haelt Level, Reihen und
+Verszitate gegen Bestand und Quelltext, `promptcheck.py` prueft, ob die
+genannten Woerter im Kapitel **ueberhaupt vorkommen**. Beide laufen zu
+lassen ist nicht optional — in Sacharja Paket 4 lief nur das erste, und
+zwei Reihen im Prompt gehoerten zu Woertern, die der Text gar nicht hat.
+
+## Drei Arten, sich selbst zu taeuschen
+
+Alle drei sind in einer einzigen Sitzung passiert, jede von einem
+Agenten gefunden, und alle drei haben dieselbe Form: **aus einer
+abgeschnittenen Ausgabe auf Vollstaendigkeit geschlossen.**
+
+1. Ein Verszitat bei 95 Zeichen abgeschnitten und daraus einen
+   Verszaehlungsbefund abgeleitet (Jona).
+2. Mit `most_common(2)` zwei von **sechs** Glossenvarianten angesehen
+   und „alle" geschrieben (Haggai).
+3. Eine Werkzeugausgabe mit `tail -40` gelesen; die Gesamtzahl stand im
+   **Kopf** der Ausgabe, und vier von vierzehn Wortfolgen fehlten
+   (Maleachi).
+
+Dagegen hilft kein Werkzeug, sondern eine Gewohnheit: **erst die
+Gesamtzahl lesen, dann kuerzen.** `folgenreihe.py` schneidet aus
+demselben Grund nichts ab.
+
 ## Arbeitsweise
 
 1. Diese Datei und `AUFTRAG_AT.md` lesen
