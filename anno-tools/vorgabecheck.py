@@ -80,7 +80,7 @@ def reihen_index():
                     if not isinstance(e, dict):
                         continue
                     lv[e['lemma']][e['level']] += 1
-                    reihen[e['lemma']].add((e['en'], e['es'], e['fr'], e['it']))
+                    reihen[e['lemma']].add(C.reihe(e))
                     form2lem[C.strip_punct(e['form']).lower()][e['lemma']] += 1
     return lv, reihen, form2lem
 

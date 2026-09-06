@@ -115,7 +115,7 @@ Beim ersten Buch ist die franzoesische Anno noch leer. Das heisst:
   fertig ist. Trotzdem laufen lassen: ein leerer Lauf ist eine Aussage,
   ein nicht gelaufener nicht.
 - **`belegt.py` nimmt ein WORT, keine Buchnummer** — `belegt.py seigneur`.
-  Mit einer Zahl antwortet es „Wortform `65` nicht belegt", und das sieht
+  Mit einer Zahl meldet es die Zahl als unbelegte Wortform, und das sieht
   wie ein sauberer Lauf aus.
 - **`rueckwaerts.py` tritt an ihre Stelle**, bis der eigene Bestand
   traegt.
