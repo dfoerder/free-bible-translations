@@ -1,4 +1,4 @@
-"""Die vier Referenzausgaben neben dem deutschen Vers — inhaltlich ausgerichtet.
+"""Die vier Referenzausgaben neben dem Vers des Quelltextes — ausgerichtet.
 
     ausgaben.py <buchNr> <kapitel> [<vonVers> [<bisVers>]]
 
@@ -68,8 +68,9 @@ import os
 
 import common as C
 
-AUSGABEN = [('en', 'eng', 'web'), ('es', 'spa', 'rv1909mod'),
-            ('fr', 'fra', 'lsg1910'), ('it', 'ita', 'riv1927')]
+# Die Referenzausgaben neben dem Quelltext — welche das sind, haengt
+# davon ab, WELCHE Ausgabe annotiert wird (ANNO_EDITION).
+AUSGABEN = [(kurz, *ed.split('/')) for kurz, ed in C.zeugen()]
 
 # Wo der Versatz aus dem letzten Vers falsch ist, weil die Ausgabe nicht vorn
 # etwas weglaesst, sondern hinten zwei Verse zusammenzieht. Nur eintragen, was
@@ -91,7 +92,7 @@ SCHWACH = 0.30      # ab hier gilt die Ausrichtung als unsicher
 
 
 def _pfad(sprache, edition, nr):
-    return os.path.join(C.REPO, 'bibles', sprache, edition, f'{int(nr)}_{edition}.json')
+    return C.text_pfad(f'{sprache}/{edition}', nr)
 
 
 def lade(nr):
@@ -229,7 +230,7 @@ def main():
                           + ', '.join(str(x) for x in luecke[:6]))
             kopf.append(f'{kurz} ({edition}): Versatz {v[0]:+d}, Abstand {v[1]:.2f}{marke}')
     print('Ausrichtung ueber die Verslaengen — die Versnummer jeder Ausgabe steht')
-    print('bei jeder Zeile. Wo sie nicht zum deutschen Vers passt, ist der Versatz')
+    print(f'bei jeder Zeile. Wo sie nicht zum {C.LANG}-Vers passt, ist der Versatz')
     print('sichtbar und nachpruefbar.\n')
     for z in kopf:
         print('   ' + z)
@@ -279,7 +280,7 @@ def main():
 
     for v in verse:
         print(f'## {kap},{v}')
-        print(f'   de {v:>3}  {dkap[v]}')
+        print(f'   {C.LANG} {v:>3}  {dkap[v]}')
         for kurz, _, _ in AUSGABEN:
             vs = versaetze.get(kurz)
             if vs is None:

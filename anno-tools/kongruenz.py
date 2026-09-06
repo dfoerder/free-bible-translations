@@ -29,6 +29,7 @@ bekannten Ausnahmen stehen unten und wachsen mit dem Gebrauch. Jeder
 Treffer ist ein Verdacht, kein Urteil: am Vers ansehen.
 """
 import json, sys, os, glob, re
+import common as C
 
 MASC_SG = {'il mio','il tuo','il suo','il nostro','il vostro','il loro'}
 FEM_SG  = {'la mia','la tua','la sua','la nostra','la vostra','la loro'}
@@ -230,7 +231,7 @@ def main():
                     kand = einzel.get(pos + d)
                     if kand is None:
                         break
-                    form = kand.get('form') or ''
+                    form = C.de_wort(kand)
                     if form[:1].isupper():
                         nx = kand
                         break

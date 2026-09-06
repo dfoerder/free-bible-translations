@@ -55,11 +55,11 @@ def level_abgleich(chapters, nr, verbose=True):
     # 1. gleiche Bedeutung im Buch
     counter = collections.defaultdict(collections.Counter)
     for e in alle:
-        counter[(e['lemma'], e['en'], e['es'], e['fr'], e['it'])][e['level']] += 1
+        counter[(e['lemma'],) + C.reihe(e)][e['level']] += 1
     ziel = {k: _mehrheit(c) for k, c in counter.items() if len(c) > 1}
     n = 0
     for e in alle:
-        k = (e['lemma'], e['en'], e['es'], e['fr'], e['it'])
+        k = (e['lemma'],) + C.reihe(e)
         if k in ziel and e['level'] != ziel[k]:
             e['level'] = ziel[k]
             n += 1

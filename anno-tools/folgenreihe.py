@@ -73,14 +73,12 @@ def stellen(phr, bis=None):
                             m['pos'], m.get('pos_end', m['pos']) + 1)))
                         if len(sp) > 1 and min(sp) >= i \
                                 and max(sp) < i + len(w):
-                            mehrwort[(m['lemma'], m['en'], m['es'],
-                                      m['fr'], m['it'])].append(
+                            mehrwort[(m['lemma'],) + C.reihe(m)].append(
                                 f'{C.book_name(nr)} {k},{v}')
                     if not all(i + j in E for j in range(len(w))):
                         unvollstaendig.append(f'{C.book_name(nr)} {k},{v}')
                         continue
-                    key = tuple((E[i + j]['en'], E[i + j]['es'],
-                                 E[i + j]['fr'], E[i + j]['it'])
+                    key = tuple(C.reihe(E[i + j])
                                 for j in range(len(w)))
                     voll[key] += 1
                     orte[key].append(f'{C.book_name(nr)} {k},{v}')
@@ -121,9 +119,10 @@ def main():
             print(f'  Als MEHRWORT gefasst: {ges_mw} Vorkommen, '
                   f'{len(mehrwort)} Reihen')
             print()
-            for (lemma, en, es, fr, it), wo in sorted(
+            for mkey, wo in sorted(
                     mehrwort.items(), key=lambda x: -len(x[1])):
-                print(f'  {len(wo):5}  [{lemma}]  {en} · {es} · {fr} · {it}')
+                lemma, glossen = mkey[0], mkey[1:]
+                print(f'  {len(wo):5}  [{lemma}]  ' + ' · '.join(glossen))
                 print(f'      → {", ".join(wo[:6])}'
                       + (' …' if len(wo) > 6 else ''))
             print()

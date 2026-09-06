@@ -92,7 +92,7 @@ FUNKTION = {
     'weg', 'fort', 'zurück', 'vorbei', 'nieder', 'umher',
 }
 
-SPRACHEN = ('en', 'es', 'fr', 'it')
+SPRACHEN = tuple(C.LANGS)
 
 
 def _norm(g):

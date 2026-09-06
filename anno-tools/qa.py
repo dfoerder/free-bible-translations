@@ -20,6 +20,7 @@ import common as C
 
 # ---------------------------------------------------------------- Zeichenvorrat
 ERLAUBT = {
+    'de': set("abcdefghijklmnopqrstuvwxyz0123456789 '-.,…!?äöüß"),
     'en': set("abcdefghijklmnopqrstuvwxyz0123456789 '-.,…!?"),
     'es': set("abcdefghijklmnopqrstuvwxyz0123456789 '-.,…!?áéíóúüñ¿¡"),
     'fr': set("abcdefghijklmnopqrstuvwxyz0123456789 '-.,…!?àâçéèêëîïôùûüÿœæ"),
@@ -27,11 +28,35 @@ ERLAUBT = {
 }
 ZEICHEN_AUSNAHMEN = {'fiancée'}
 
-FUNKTIONSWOERTER = {
-    'der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einen', 'einem',
-    'eines', 'einer', 'und', 'oder', 'aber', 'von', 'zu', 'in', 'an', 'auf',
-    'mit', 'bei', 'nach', 'aus', 'für', 'ist', 'sind', 'war', 'waren',
+# Die Funktionswoerter des QUELLTEXTES, nicht der Glossen. Welche Liste
+# gilt, haengt daran, welche Ausgabe annotiert wird — die deutsche Liste
+# trifft im franzoesischen Text nichts, und die Pruefung faellt dann
+# lautlos aus statt zu melden, dass sie nichts geprueft hat.
+FUNKTION_JE_SPRACHE = {
+    'de': {
+        'der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einen', 'einem',
+        'eines', 'einer', 'und', 'oder', 'aber', 'von', 'zu', 'in', 'an', 'auf',
+        'mit', 'bei', 'nach', 'aus', 'für', 'ist', 'sind', 'war', 'waren',
+    },
+    'fr': {
+        'le', 'la', 'les', "l'", 'un', 'une', 'des', 'du', 'de', "d'",
+        'et', 'ou', 'mais', 'donc', 'car', 'ni', 'à', 'au', 'aux', 'en',
+        'dans', 'sur', 'sous', 'pour', 'par', 'avec', 'sans', 'ce', 'cet',
+        'cette', 'ces', 'qui', 'que', "qu'", 'dont', 'où', 'ne', 'pas',
+        'est', 'sont', 'était', 'étaient', 'se', 'y',
+    },
+    'en': {
+        'the', 'a', 'an', 'and', 'or', 'but', 'of', 'to', 'in', 'on', 'at',
+        'by', 'for', 'with', 'from', 'is', 'are', 'was', 'were', 'that',
+        'which', 'who', 'not',
+    },
+    'es': {
+        'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del',
+        'y', 'o', 'pero', 'a', 'al', 'en', 'con', 'sin', 'por', 'para',
+        'que', 'quien', 'no', 'es', 'son', 'era', 'eran',
+    },
 }
+FUNKTIONSWOERTER = FUNKTION_JE_SPRACHE.get(C.LANG, set())
 # echte periphrastische Entsprechungen, die lang sein dürfen. Alle sechs sind
 # im geprüften Bestand belegt und richtig — der Kanarienvogel soll auf Neues
 # anschlagen, nicht auf diese.

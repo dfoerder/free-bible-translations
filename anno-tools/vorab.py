@@ -23,7 +23,7 @@ import hints, qa, common as C
 
 FUNK = hints.FUNKTION | qa.FUNKTIONSWOERTER
 nr=int(sys.argv[1]); kaps=sys.argv[2:]
-src=json.load(open(f'{C.SRC_DIR}/{nr}_l1912mod.json',encoding='utf-8'))['chapters']
+src=json.load(open(f'{C.SRC_DIR}/{nr}{C.TEXT_SUFFIX}',encoding='utf-8'))['chapters']
 
 vorkommen=collections.defaultdict(set)
 for k in kaps:

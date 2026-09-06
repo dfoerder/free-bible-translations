@@ -45,7 +45,7 @@ if not kaps:
     raise SystemExit(
         'Kapitelnummern fehlen — ohne sie prueft dieses Skript NICHTS.\n'
         'Aufruf: %s <buchNr> <kapitel> [<kapitel> ...]' % sys.argv[0])
-src=json.load(open(f'{C.SRC_DIR}/{nr}_l1912mod.json',encoding='utf-8'))['chapters']
+src=json.load(open(f'{C.SRC_DIR}/{nr}{C.TEXT_SUFFIX}',encoding='utf-8'))['chapters']
 offen=0
 for kap in kaps:
     d=json.load(open(f'{OUT}{nr}/ch{kap}.json',encoding='utf-8'))

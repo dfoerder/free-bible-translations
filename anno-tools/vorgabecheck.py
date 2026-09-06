@@ -31,7 +31,7 @@ Reihe gegen die belegten Lesarten. Gemeldet wird:
     REIHE   die genannte Vierer-Reihe steht im Bestand nirgends
     LEER    das Lemma ist im Bestand unbelegt (dann ist beides frei)
     AUSGABE ein Zitat, das einer Ausgabe zugeschrieben wird, steht dort nicht
-    QUELLTEXT ein Verszitat ohne Ausgabennennung steht so nicht im deutschen Text
+    QUELLTEXT ein Verszitat ohne Ausgabennennung steht so nicht im Quelltext
 
 Fuer die AUSGABE-Probe muss die Buchnummer mitgegeben werden:
 
@@ -117,8 +117,13 @@ def umlaut(w):
 
 AUSGABEN = {'WEB': 'eng/web', 'RV': 'spa/rv1909mod', 'RV1909': 'spa/rv1909mod',
             'RV1909mod': 'spa/rv1909mod', 'LSG': 'fra/lsg1910mod',
-            'RIV': 'ita/riv1927', 'RIV1927': 'ita/riv1927'}
-NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV)\b')
+            'RIV': 'ita/riv1927', 'RIV1927': 'ita/riv1927',
+            'LUT': 'deu/l1912mod', 'L1912': 'deu/l1912mod',
+            'Luther': 'deu/l1912mod'}
+# Die eigene Ausgabe ist kein Zeuge — sie wird unten als __quelle__
+# gefuehrt und traegt die QUELLTEXT-Probe.
+AUSGABEN = {k: v for k, v in AUSGABEN.items() if v != C.EDITION}
+NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV|L1912|LUT|Luther)\b')
 # Zitate stehen in Anfuehrungszeichen ODER kursiv. Der zweite Fall fehlte:
 # in Habakuk 1 stand im Prompt „RIV *Abacuc*" — eine Vermutung, als
 # Tatsache formuliert, und das Skript sah sie nicht, weil es nur
@@ -168,19 +173,28 @@ def zitate(zeile):
     return treffer
 
 
+# Beide Seiten der Textprobe muessen DENSELBEN Zeichenvorrat behalten.
+# Die Suchseite liess nur deutsche Buchstaben stehen, die Textseite auch
+# franzoesische — und damit meldete die Probe „de notre Seigneur
+# Jésus-Christ" als nicht im Text stehend, obwohl Judas 1,17 genau so
+# lautet: aus `jésus` wurde suchseitig `j sus`. Aufgefallen am ersten
+# franzoesischen Prompt ueberhaupt.
+ZEICHEN = r'[^a-z0-9äöüßàâçèéêëîïôùûÿœæáíóúñìò ]'
+
+
 def ausgabentext(nr):
     """Der ganze Buchtext je Ausgabe, klein und ohne Sonderzeichen."""
     import glob, json, os
     basis = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out = {}
-    for kuerzel, pfad in list(AUSGABEN.items()) + [('__de__', 'deu/l1912mod')]:
+    for kuerzel, pfad in list(AUSGABEN.items()) + [('__quelle__', C.EDITION)]:
         g = glob.glob(os.path.join(basis, pfad, f'{nr}_*.json'))
         if not g:
             continue
         x = json.load(open(g[0], encoding='utf-8'))
         x = x.get('chapters', x)
         roh = ' '.join(v for kap in x.values() for v in kap.values())
-        out[kuerzel] = re.sub(r'[^a-z0-9äöüßàâèéêëîïôûùç ]', ' ',
+        out[kuerzel] = re.sub(ZEICHEN, ' ',
                               roh.lower().replace('\u2019', "'")
                               .replace("'", ' ')).replace('  ', ' ')
     return out
@@ -226,7 +240,7 @@ def pruefe_zitate(pfad, nr):
     texte = ausgabentext(nr)
     # Der deutsche Text zaehlt mit: ein Zitat, das dort steht, ist ein
     # Zitat des Quelltextes, keine Behauptung ueber eine Ausgabe.
-    deutsch = texte.pop('__de__', '')
+    deutsch = texte.pop('__quelle__', '')
     if not texte:
         print(f'  (keine Ausgabendateien fuer Buch {nr} gefunden)')
         return 0
@@ -243,7 +257,7 @@ def pruefe_zitate(pfad, nr):
                 if not kandidaten:
                     continue
                 kuerzel = '/'.join(dict.fromkeys(gruppe))
-                such = re.sub(r'[^a-z0-9äöüßàâèéêëîïôûùç ]', ' ',
+                such = re.sub(ZEICHEN, ' ',
                               zitat.lower().replace('\u2019', "'")
                               .replace("'", ' ')).split()
                 if not such:
@@ -295,11 +309,11 @@ def pruefe_deutsch(pfad, nr):
     geteilt: jedes Segment muss fuer sich im Buchtext stehen.
     """
     texte = ausgabentext(nr)
-    deutsch = texte.get('__de__', '')
+    deutsch = texte.get('__quelle__', '')
     if not deutsch:
         print(f'  (kein deutscher Text fuer Buch {nr} gefunden)')
         return 0
-    fremd = [v for k, v in texte.items() if k != '__de__']
+    fremd = [v for k, v in texte.items() if k != '__quelle__']
     FREMDBUCH = fremdbuch_regex(nr)
     befunde = 0
     if True:
@@ -325,8 +339,9 @@ def pruefe_deutsch(pfad, nr):
                     continue
                 text = text.replace('**', '')
                 for teil in re.split(r'…|\.\.\.', text):
-                    such = re.sub(r'[^a-z0-9äöüß ]', ' ',
-                                  teil.lower()).split()
+                    such = re.sub(ZEICHEN, ' ',
+                                  teil.lower().replace('\u2019', "'")
+                                  .replace("'", ' ')).split()
                     # Vier Woerter, nicht drei: bei drei meldete die
                     # Regressionsprobe an den sieben abgenommenen
                     # Wortfeldern fast nur Wendungen in Grundform
@@ -347,7 +362,7 @@ def pruefe_deutsch(pfad, nr):
                         continue
                     befunde += 1
                     print(f'  QUELLTEXT „{teil.strip()}" steht so nicht '
-                          f'im deutschen Text von Buch {nr}')
+                          f'im Quelltext ({C.EDITION}) von Buch {nr}')
     return befunde
 
 

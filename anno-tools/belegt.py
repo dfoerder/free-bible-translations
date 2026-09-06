@@ -37,16 +37,19 @@ ob das gesuchte Wort selbst ein Lemma des Bestands ist.
 import argparse, collections, glob, json, os, sys
 import common as C
 
-ANNO = os.path.join(C.REPO, 'bibles', 'deu', 'l1912mod', 'anno')
+ANNO = C.ANNO_DIR
 
 
 def bestand():
-    """{wortform_klein: Counter{(lemma, level, en, es, fr, it): n}}, plus Belegstellen."""
+    """{wortform_klein: Counter{(lemma, level, *glossen): n}}, plus Belegstellen.
+
+    Die Glossen stehen in LANGS-Reihenfolge.
+    """
     formen = collections.defaultdict(collections.Counter)
     lemmata = collections.defaultdict(collections.Counter)
     stellen = collections.defaultdict(list)
     lstellen = collections.defaultdict(list)
-    for pfad in sorted(glob.glob(os.path.join(ANNO, '*_l1912mod_multi.json'))):
+    for pfad in sorted(glob.glob(os.path.join(ANNO, f'*{C.ANNO_SUFFIX}'))):
         d = json.load(open(pfad))
         name = d.get('name') or os.path.basename(pfad).split('_')[0]
         ch = d.get('chapters', d)
@@ -56,8 +59,8 @@ def bestand():
                     f = C.strip_punct(e['form']).lower()
                     if not f:
                         continue
-                    schluessel = (C.strip_punct(e['form']), e['lemma'], e['level'],
-                                  e['en'], e['es'], e['fr'], e['it'])
+                    schluessel = ((C.strip_punct(e['form']), e['lemma'],
+                                   e['level']) + C.reihe(e))
                     formen[f][schluessel] += 1
                     if len(stellen[f]) < 8:
                         stellen[f].append(f'{name} {k},{v}')
@@ -81,9 +84,10 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         ges = sum(c2.values())
         print(f'   Die FORM steht nicht im Bestand — aber `{wort}` ist ein')
         print(f'   **LEMMA mit {ges} Belegen**, dort nur flektiert:')
-        for (form, lemma, lvl, en, es, fr, it), n in c2.most_common():
+        for k, n in c2.most_common():
+            form, lemma, lvl, glossen = k[0], k[1], k[2], k[3:]
             print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
-                  f'*{en}* · *{es}* · *{fr}* · *{it}*')
+                  f'{C.zeige(glossen, kurz=True)}')
         print('   ' + ', '.join(lstellen[f][:6]))
         print('   Level und Lesart von dort uebernehmen, nichts Neues erfinden.')
         print()
@@ -168,9 +172,10 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         print(f'   ABER: `{wort}` ist AUSSERDEM ein eigenes Lemma im Bestand,')
         print(f'   ueber andere Formen belegt. `fixgloss.py show {wort}`')
         print('   fragen — die Reihe dort ist womoeglich die gesuchte.')
-    for (form, lemma, lvl, en, es, fr, it), n in c.most_common():
+    for k, n in c.most_common():
+        form, lemma, lvl, glossen = k[0], k[1], k[2], k[3:]
         print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
-              f'*{en}* · *{es}* · *{fr}* · *{it}*')
+              f'{C.zeige(glossen, kurz=True)}')
     print('   ' + ', '.join(stellen[f][:6]))
     # Das Lemma kann Lesarten fuehren, die diese FORM nicht hat. Gefunden am
     # Klauen/Klaue-Fall (Daniel 7,19): die Pluralform `Klauen` steht 11x und
@@ -209,9 +214,10 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
             print()
             print(f'   Das LEMMA fuehrt {len(andere)} weitere Lesart(en), die diese')
             print('   Form nicht hat — am Vers pruefen, ob eine davon passt:')
-            for (form, lemma, lvl, en, es, fr, it), n in andere.most_common(6):
+            for k, n in andere.most_common(6):
+                form, lemma, lvl, glossen = k[0], k[1], k[2], k[3:]
                 print(f'   {n:4}× · {form} → `{lemma}` · {lvl} · '
-                      f'*{en}* · *{es}* · *{fr}* · *{it}*')
+                      f'{C.zeige(glossen, kurz=True)}')
     print()
     return True
 

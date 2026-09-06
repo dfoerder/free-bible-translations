@@ -19,6 +19,7 @@ Gemeldet wird nur, was klar ist: mindestens fuenf Belege und
 mindestens 80 Prozent Mehrheit. Alles darunter schweigt.
 """
 import collections, glob, json, os, re, sys
+import common as C
 
 # Die zweiwortigen Formen (`a la`, `de la`, `à la`) standen anfangs nicht
 # in der Tabelle. Der Agent fuer Nahum 2 fand deshalb einen Fehler, den
@@ -50,8 +51,7 @@ DE_ARTIKEL = {
     'ein', 'eine', 'einen', 'einem', 'einer', 'eines',
 }
 
-ANNO = os.path.join('/Users/dfoerd/Documents/projekte/bibel/bible-reader',
-                    'bibles', 'deu', 'l1912mod', 'anno')
+ANNO = C.ANNO_DIR
 
 
 def erstes_wort(s):
@@ -72,7 +72,7 @@ def nomen_danach(einzel, pos):
         kand = einzel.get(pos + d)
         if kand is None:
             return None
-        if (kand.get('form') or '')[:1].isupper():
+        if C.de_wort(kand)[:1].isupper():
             return kand
     return None
 
@@ -80,7 +80,7 @@ def nomen_danach(einzel, pos):
 def sammle():
     """Artikelverteilung je (Sprache, Nomenform) aus dem ganzen Bestand."""
     zaehl = collections.defaultdict(collections.Counter)
-    for pfad in sorted(glob.glob(os.path.join(ANNO, '*_l1912mod_multi.json'))):
+    for pfad in sorted(glob.glob(os.path.join(ANNO, f'*{C.ANNO_SUFFIX}'))):
         d = json.load(open(pfad))
         ch = d.get('chapters', d)
         for k, vv in ch.items():
@@ -94,7 +94,7 @@ def sammle():
                     nx = nomen_danach(ein, pos)
                     if not nx:
                         continue
-                    if (e.get('form') or '').lower() not in DE_ARTIKEL:
+                    if C.de_wort(e).lower() not in DE_ARTIKEL:
                         continue
                     for sp, tab in ART.items():
                         a = erstes_wort(e.get(sp))

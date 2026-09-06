@@ -11,7 +11,7 @@ sys.path.insert(0,'/Users/dfoerd/Documents/projekte/bibel/bibles-translations/an
 import common as C
 
 def toks(nr,kap,v):
-    return json.load(open(f'{C.SRC_DIR}/{nr}_l1912mod.json',encoding='utf-8'))['chapters'][kap][v].split()
+    return json.load(open(f'{C.SRC_DIR}/{nr}{C.TEXT_SUFFIX}',encoding='utf-8'))['chapters'][kap][v].split()
 
 n1,k1,v1,n2,k2,v2 = sys.argv[1:7]
 minlen = int(sys.argv[7]) if len(sys.argv)>7 else 2

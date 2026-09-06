@@ -55,7 +55,10 @@ def formen_des_abschnitts(nr, kap, von=None, bis=None):
 
 
 def bestand_index(ausser=None):
-    """form -> {(lemma, level, en, es, fr, it): [anzahl, erste_stelle]}"""
+    """form -> {(lemma, level, *glossen): [anzahl, erste_stelle]}
+
+    Die Glossen stehen in LANGS-Reihenfolge, nicht fest en/es/fr/it.
+    """
     idx = collections.defaultdict(dict)
     lemma_formen = collections.defaultdict(set)
     for nr in C.anno_books():
@@ -65,7 +68,7 @@ def bestand_index(ausser=None):
         for _, kap, vers, e in C.iter_corpus([nr]):
             if C.is_multi(e):
                 continue
-            key = (e['lemma'], e['level'], e['en'], e['es'], e['fr'], e['it'])
+            key = (e['lemma'], e['level']) + C.reihe(e)
             rec = idx[e['form']].setdefault(key, [0, f'{name} {kap},{vers}'])
             rec[0] += 1
             lemma_formen[e['lemma']].add(e['form'])
@@ -81,7 +84,7 @@ def mehrwort_index(ausser=None):
         for _, kap, vers, e in C.iter_corpus([nr]):
             if not C.is_multi(e):
                 continue
-            key = (e['lemma'], e['level'], e['en'], e['es'], e['fr'], e['it'])
+            key = (e['lemma'], e['level']) + C.reihe(e)
             art = 'parts' if 'parts' in e else 'span'
             rec = idx[e['form']].setdefault((art,) + key, [0, f'{name} {kap},{vers}'])
             rec[0] += 1
@@ -148,9 +151,10 @@ def extract(nr, kap, von=None, bis=None):
         L.append(f'### {f}  ({n}× im Abschnitt)')
         sortiert = sorted(lesarten.items(), key=lambda x: -x[1][0])
         zeigen, rest = _kuerzen(sortiert)
-        for (lemma, level, en, es, fr, it), (cnt, wo) in zeigen:
+        for key0, (cnt, wo) in zeigen:
+            lemma, level, glossen = key0[0], key0[1], key0[2:]
             L.append(f'- {cnt}× · lemma `{lemma}` · {level} · '
-                     f'en *{en}* · es *{es}* · fr *{fr}* · it *{it}*   ({wo})')
+                     f'{C.zeige(glossen)}   ({wo})')
         if rest:
             L.append(f'- (+ {rest} seltenere Lesarten — Tempus-, Person- und '
                      f'Numerusvarianten; im Zweifel nach dem Kontext bilden)')
@@ -170,9 +174,9 @@ def extract(nr, kap, von=None, bis=None):
             L.append(f'### {f} ({n}× im Abschnitt) — im Bestand als `{g}`')
             for key, (anz, ort) in sorted(lesarten.items(),
                                           key=lambda x: -x[1][0])[:4]:
-                lemma, lvl, en, es, fr, it = key
-                L.append(f'- {anz}× · `{lemma}` · {lvl} · *{en}* · *{es}* · '
-                         f'*{fr}* · *{it}* — {ort}')
+                lemma, lvl, glossen = key[0], key[1], key[2:]
+                L.append(f'- {anz}× · `{lemma}` · {lvl} · '
+                         f'{C.zeige(glossen, kurz=True)} — {ort}')
             L.append('')
     if verwandt:
         L.append('## VERWANDT (Stamm belegt, Form nicht — Hinweis, keine Vorgabe)')
@@ -182,9 +186,10 @@ def extract(nr, kap, von=None, bis=None):
             for lemma in kand[:4]:
                 bsp = None
                 for form in sorted(lemma_formen[lemma]):
-                    for (lm, lv, en, es, fr, it), (cnt, wo) in idx[form].items():
+                    for k2, (cnt, wo) in idx[form].items():
+                        lm, lv, glossen = k2[0], k2[1], k2[2:]
                         if lm == lemma:
-                            bsp = f'`{lemma}` ({form}) {lv} · en *{en}* · es *{es}* · fr *{fr}* · it *{it}*'
+                            bsp = f'`{lemma}` ({form}) {lv} · {C.zeige(glossen)}'
                             break
                     if bsp:
                         break
@@ -217,10 +222,11 @@ def extract(nr, kap, von=None, bis=None):
         L.append('## MEHRWORT-EINTRÄGE aus dem Bestand, deren Teile hier vorkommen')
         L.append('')
         for form, lesarten in sorted(treffer):
-            for (art, lemma, level, en, es, fr, it), (cnt, wo) in sorted(
+            for k3, (cnt, wo) in sorted(
                     lesarten.items(), key=lambda x: -x[1][0]):
+                art, lemma, level, glossen = k3[0], k3[1], k3[2], k3[3:]
                 L.append(f'- **{form}** [{art}] {cnt}× · lemma `{lemma}` · {level} · '
-                         f'en *{en}* · es *{es}* · fr *{fr}* · it *{it}*   ({wo})')
+                         f'{C.zeige(glossen)}   ({wo})')
         L.append('')
 
     return '\n'.join(L)

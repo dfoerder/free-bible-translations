@@ -94,17 +94,46 @@ def _verwandt(form, stamm, wieviel=3):
                                        0 if x[:1].isupper() == gross else 1,
                                        len(x), x))[:wieviel]
 
-FUNKTION = {'der', 'die', 'das', 'den', 'dem', 'des', 'und', 'oder', 'ein', 'eine',
-            'einen', 'einem', 'eines', 'einer', 'zu', 'in', 'an', 'auf', 'mit',
-            'von', 'für', 'ist', 'sind', 'war', 'waren', 'nicht', 'er', 'sie',
-            'es', 'ich', 'du', 'wir', 'ihr', 'sich', 'als', 'wie', 'so', 'auch',
-            'aber', 'dann', 'da', 'wenn', 'dass', 'im', 'am', 'zum', 'zur', 'aus',
-            'bei', 'nach', 'über', 'vor', 'um', 'noch', 'nur', 'schon', 'sein',
-            'seine', 'seinen', 'seinem', 'seiner', 'ihre', 'ihren', 'ihrem', 'ihm',
-            'ihn', 'ihnen', 'euch', 'uns', 'mich', 'dich', 'mir', 'dir', 'wer',
-            'was', 'alle', 'alles', 'allen', 'aller', 'man', 'hat', 'habe',
-            'haben', 'hatte', 'hatten', 'wird', 'werden', 'wurde', 'wurden',
-            'soll', 'sollen', 'kann', 'können', 'will', 'wollen'}
+# Funktionswoerter des QUELLTEXTES. Sie werden aus den Meldungen
+# herausgehalten — bei ihnen ist die Mehrdeutigkeit der Normalfall und
+# keine Warnung wert. Welche Liste gilt, haengt an der Ausgabe.
+FUNKTION_JE_SPRACHE = {
+    'de': {'der', 'die', 'das', 'den', 'dem', 'des', 'und', 'oder', 'ein', 'eine',
+           'einen', 'einem', 'eines', 'einer', 'zu', 'in', 'an', 'auf', 'mit',
+           'von', 'für', 'ist', 'sind', 'war', 'waren', 'nicht', 'er', 'sie',
+           'es', 'ich', 'du', 'wir', 'ihr', 'sich', 'als', 'wie', 'so', 'auch',
+           'aber', 'dann', 'da', 'wenn', 'dass', 'im', 'am', 'zum', 'zur', 'aus',
+           'bei', 'nach', 'über', 'vor', 'um', 'noch', 'nur', 'schon', 'sein',
+           'seine', 'seinen', 'seinem', 'seiner', 'ihre', 'ihren', 'ihrem', 'ihm',
+           'ihn', 'ihnen', 'euch', 'uns', 'mich', 'dich', 'mir', 'dir', 'wer',
+           'was', 'alle', 'alles', 'allen', 'aller', 'man', 'hat', 'habe',
+           'haben', 'hatte', 'hatten', 'wird', 'werden', 'wurde', 'wurden',
+           'soll', 'sollen', 'kann', 'können', 'will', 'wollen'},
+    'fr': {'le', 'la', 'les', "l'", 'un', 'une', 'des', 'du', 'de', "d'",
+           'et', 'ou', 'mais', 'donc', 'car', 'ni', 'à', 'au', 'aux', 'en',
+           'dans', 'sur', 'sous', 'pour', 'par', 'avec', 'sans', 'ce', 'cet',
+           'cette', 'ces', 'qui', 'que', "qu'", 'quoi', 'dont', 'où', 'ne',
+           'pas', 'plus', 'est', 'sont', 'était', 'étaient', 'sera', 'seront',
+           'a', 'ont', 'avait', 'avaient', 'il', 'elle', 'ils', 'elles', 'je',
+           'tu', 'nous', 'vous', 'on', 'se', "s'", 'me', 'te', 'lui', 'leur',
+           'leurs', 'y', 'son', 'sa', 'ses', 'mon', 'ma', 'mes', 'ton', 'ta',
+           'tes', 'notre', 'nos', 'votre', 'vos', 'comme', 'aussi', 'ainsi',
+           'alors', 'quand', 'si', 'tout', 'tous', 'toute', 'toutes',
+           'être', 'avoir', 'fait', 'faire', 'peut', 'doit'},
+    'en': {'the', 'a', 'an', 'and', 'or', 'but', 'of', 'to', 'in', 'on', 'at',
+           'by', 'for', 'with', 'from', 'is', 'are', 'was', 'were', 'be',
+           'been', 'has', 'have', 'had', 'will', 'shall', 'that', 'which',
+           'who', 'whom', 'not', 'he', 'she', 'it', 'they', 'i', 'you', 'we',
+           'his', 'her', 'its', 'their', 'my', 'your', 'our', 'as', 'so',
+           'then', 'when', 'if', 'all', 'also'},
+    'es': {'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del',
+           'y', 'o', 'pero', 'a', 'al', 'en', 'con', 'sin', 'por', 'para',
+           'que', 'quien', 'no', 'es', 'son', 'era', 'eran', 'ha', 'han',
+           'se', 'su', 'sus', 'mi', 'mis', 'tu', 'tus', 'él', 'ella', 'ellos',
+           'yo', 'tú', 'nosotros', 'vosotros', 'como', 'así', 'cuando', 'si',
+           'todo', 'todos', 'toda', 'todas'},
+}
+FUNKTION = FUNKTION_JE_SPRACHE.get(C.LANG, set())
 
 
 def analyse(nr, kap=None):
@@ -116,7 +145,7 @@ def analyse(nr, kap=None):
     for _, _, _, e in C.iter_corpus():
         if C.is_multi(e):
             continue
-        form_lesarten[e['form']][(e['lemma'], e['en'], e['es'], e['fr'], e['it'])] += 1
+        form_lesarten[e['form']][(e['lemma'],) + C.reihe(e)] += 1
         lemma_formen[e['lemma']].add(e['form'])
 
     stamm = collections.defaultdict(set)
@@ -127,8 +156,8 @@ def analyse(nr, kap=None):
     # Mehrheitsglosse je Form (für die Kollisionsprüfung)
     haupt = {}
     for f, c in form_lesarten.items():
-        (lemma, en, es, fr, it), _ = c.most_common(1)[0]
-        haupt[f] = (lemma, en, es, fr, it)
+        key, _ = c.most_common(1)[0]
+        haupt[f] = key
 
     # Gross-/Kleinschreibung: `form_lesarten` ist schreibungsgenau
     # indexiert, und substantivierte Adjektive wechseln staendig die
@@ -156,7 +185,9 @@ def analyse(nr, kap=None):
                     verwandt = _verwandt(f, stamm)
                     unbelegt[f] = (f'{k},{v}', verwandt)
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
-                    lesarten = {(lm, en) for (lm, en, _, _, _) in form_lesarten[f]}
+                    # k[0] ist das Lemma, k[1] die erste Glossenspalte —
+                    # welche das ist, haengt an LANGS und nicht mehr an 'en'.
+                    lesarten = {(k[0], k[1]) for k in form_lesarten[f]}
                     if len({lm for lm, _ in lesarten}) > 1 or len(lesarten) > 3:
                         # Erst je Lemma eine Lesart, dann auffuellen: sonst
                         # schneidet der Deckel ein ganzes Lemma weg
@@ -175,8 +206,8 @@ def analyse(nr, kap=None):
             nach_glosse = collections.defaultdict(set)
             for f in set(formen):
                 if f in haupt and f.lower() not in FUNKTION:
-                    lemma, en, es, fr, it = haupt[f]
-                    for lang, g in zip(C.LANGS, (en, es, fr, it)):
+                    lemma, glossen = haupt[f][0], haupt[f][1:]
+                    for lang, g in zip(C.LANGS, glossen):
                         nach_glosse[(lang, g.lower())].add((f, lemma))
             for (lang, g), paare in nach_glosse.items():
                 if len({lm for _, lm in paare}) > 1:
@@ -326,7 +357,8 @@ def bericht(nr, kap=None):
     L.append(f'## Mehrdeutige Formen im Bestand ({len(mehrdeutig)})')
     L.append('')
     for f, (wo, lesarten) in sorted(mehrdeutig.items()):
-        L.append(f'- **{f}** ({wo}): ' + ' · '.join(f'`{lm}` = *{en}*' for lm, en in lesarten))
+        L.append(f'- **{f}** ({wo}): '
+                 + ' · '.join(f'`{lm}` = *{g}*' for lm, g in lesarten))
     return '\n'.join(L)
 
 

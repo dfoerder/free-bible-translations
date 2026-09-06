@@ -1,4 +1,11 @@
-# SPEC — Wort-für-Wort-Annotation der deutschen Bibel (l1912mod → en/es/fr/it)
+# SPEC — Wort-für-Wort-Annotation einer Bibelausgabe
+
+Bis Maleachi galt diese Datei für genau eine Richtung: `deu/l1912mod` →
+en/es/fr/it. Seit dem französischen NT entscheidet `ANNO_EDITION`, welche
+Ausgabe der Quelltext ist und welche vier Sprachen die Glossen tragen
+(`common.py` führt die Tabelle). Alles hier Beschriebene gilt für jede
+Richtung; wo Beispiele deutsch sind, sind sie Beispiele und keine
+Einschränkung.
 
 Verbindliche Spezifikation für jeden Agentenlauf. Wer hiervon abweicht,
 liefert Daten, die der Validator zurückweist.
@@ -6,9 +13,10 @@ liefert Daten, die der Validator zurückweist.
 ## Was entsteht
 
 Zu jedem Kapitel eine Datei `{"<vers>": [<einträge>]}`. Der annotierte Text ist
-**Deutsch**; Englisch, Spanisch, Französisch und Italienisch sind die Glossen.
-Das ist die Gegenrichtung zu den übrigen Bibeln der App, wo Deutsch die
-Glossensprache ist.
+die Ausgabe aus `ANNO_EDITION`, die vier anderen Sprachen sind die Glossen:
+
+    deu/l1912mod     Quelltext deutsch,      Glossen en · es · fr · it
+    fra/lsg1910mod   Quelltext französisch,  Glossen de · en · es · it
 
 ## Einzelwort-Eintrag
 
@@ -23,8 +31,11 @@ Glossensprache ist.
 - `lemma` — Grundform. Artikel und Pronomen werden normalisiert
   (`das`/`dem`/`den` → `der`), Verben auf den Infinitiv, Substantive auf den
   Nominativ Singular
-- `level` — CEFR **aus Sicht von Deutschlernenden**, bezogen auf das **Lemma**,
-  einer von `A1 A2 B1 B2 C1 C2`
+- `level` — CEFR **aus Sicht dessen, der die Sprache des Quelltextes lernt**,
+  bezogen auf das **Lemma**, einer von `A1 A2 B1 B2 C1 C2`. Beim französischen
+  Text also aus Sicht von Französischlernenden — das Level eines Zeugen ist
+  **nicht** übertragbar, `mangera` steht im Französischen nicht dort, wo
+  `will eat` im Englischen steht
 - vier Glossen, **kontextuell** korrekt in Tempus, Numerus und Person
 
 **Jede Tokenposition bekommt genau einen Einzelwort-Eintrag.** Einzige Ausnahme:

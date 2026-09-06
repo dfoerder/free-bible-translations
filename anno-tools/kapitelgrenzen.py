@@ -28,6 +28,7 @@ steht dabei; ueber 0.25 ist die Auskunft nicht zu trauen.
 import glob, os
 import json
 import sys
+import common as C
 
 
 BASIS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -71,14 +72,13 @@ def abstand(de, fo, von, bis, d):
     return s / n if n else 9.9
 
 
-AUSGABEN = [('en', 'eng/web'), ('es', 'spa/rv1909mod'),
-            ('fr', 'fra/lsg1910'), ('it', 'ita/riv1927')]
+AUSGABEN = C.zeugen()
 
 
 def buch(nr):
-    de = flach(nr, 'deu/l1912mod')
+    de = flach(nr, C.EDITION)
     if de is None:
-        print(f'Buch {nr}: kein deutscher Quelltext.')
+        print(f'Buch {nr}: kein Quelltext in {C.EDITION}.')
         return
     kapitel = sorted({k for k, _, _ in de}, key=int)
     print(f'\n## Buch {nr} — {len(kapitel)} Kapitel, {len(de)} Verse\n')

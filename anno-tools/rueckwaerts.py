@@ -1,0 +1,363 @@
+#!/usr/bin/env python3
+"""Was der vorhandene Bestand ueber ein franzoesisches Wort schon weiss.
+
+    rueckwaerts.py <buchNr> <kapitel> [<vonVers> [<bisVers>]] [-o datei]
+    rueckwaerts.py --wort <wort> [<wort> ...]
+
+## Der Anlass
+
+Fuer die deutsche Annotation musste jedes Wort neu entschieden werden —
+es gab keinen Zeugen, der schon Wort fuer Wort glossiert war. Fuer die
+franzoesische gibt es zwei.
+
+`eng/web` und `deu/l1912mod` sind beide vollstaendig annotiert und tragen
+**beide eine `fr`-Spalte**. Zusammen decken sie genau die vier
+Zielsprachen ab:
+
+    eng/web        Quelltext = en,  Spalten de · es · fr · it
+    deu/l1912mod   Quelltext = de,  Spalten en · es · fr · it
+
+Jeder Eintrag ist damit eine vollstaendige Zeile **de · en · es · it**,
+und die `fr`-Spalte ist ihr Schluessel. Ueber das ganze NT gemessen sind
+so 98 Prozent der franzoesischen Tokens bereits belegt.
+
+## Vier Schichten, absteigend belastbar
+
+    VERS       das Token steht als fr-Glosse **in genau diesem Vers**
+               der Zeugen. Das ist die einzige Schicht, die nicht nur
+               das Wort, sondern die Stelle trifft — hier ist die Zeile
+               fast immer schon die richtige.
+    GLOSSE     das ganze Token steht irgendwo im Bestand als fr-Glosse
+    TEIL       es steht als Wort INNERHALB einer mehrwortigen fr-Glosse
+               (`des` in `de les`) — die ganze Glosse steht daneben
+    ELISION    nur die Haelften eines zusammengezogenen Wortes sind
+               belegt (`qu'ils` = `qu'` + `ils`); dann sind es zwei
+               Vorschlaege fuer EIN Token, und die Glosse muss beide
+               zusammenfassen
+
+Was in keiner Schicht steht, ist die eigentliche Arbeit. In Judas sind
+das 11 von 612 Tokens.
+
+**Die VERS-Schicht ersetzt das Nachschlagen nicht.** Sie setzt voraus,
+dass die Verszaehlung der Zeugen mit der franzoesischen uebereinstimmt.
+Wo `ausgaben.py` einen Versatz meldet, ist sie fuer dieses Kapitel
+wertlos — dann steht ueber dem Abschnitt eine Warnung.
+
+## Was dieses Werkzeug NICHT liefert
+
+**Kein Lemma.** Das Lemma im Zeugen ist englisch oder deutsch; das
+franzoesische muss gesetzt werden.
+
+**Kein Level.** Das Level im Zeugen ist CEFR fuer Englisch- oder
+Deutschlernende. `mangera` ist im Franzoesischen nicht dort, wo `will
+eat` im Englischen steht. Das Level steht nur zur Orientierung dabei,
+in Klammern und mit der Ausgabe, aus der es stammt.
+
+**Keine Entscheidung.** Wo mehrere Zeilen stehen, ist die haeufigste
+nicht automatisch die richtige — das ist die Lexikonfalle, die im
+deutschen Durchgang am meisten Fehler gekostet hat. Der Vers
+entscheidet.
+"""
+import argparse
+import collections
+import json
+import os
+import sys
+import unicodedata
+
+import common as C
+
+# Die beiden vierspaltigen Zeugen. `formlang` ist die Sprache ihres
+# Quelltextes — die liefert die vierte Spalte, die nicht als Glosse
+# dasteht, sondern als Wortform.
+ZEUGEN = [('eng/web', '_web_deu.json', 'en'),
+          ('deu/l1912mod', '_l1912mod_multi.json', 'de')]
+
+SPALTEN = ['de', 'en', 'es', 'it']
+MAX_ZEILEN = 6
+DECKUNG = 0.9
+
+
+def norm(s):
+    """Vergleichsschluessel: klein, ohne Akzente, ohne Randzeichen.
+
+    Akzente fallen weg, weil der Bestand sie nicht durchgehend setzt —
+    `a cause de christ` steht neben `à cause`. Der Apostroph bleibt: er
+    traegt in `qu'ils` die ganze Information.
+    """
+    s = unicodedata.normalize('NFD', (s or '').lower()).replace('’', "'")
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return s.strip(C.PUNCT.lower() + "'").strip()
+
+
+def _zeile(e, formlang):
+    """Ein Zeugeneintrag als Viererzeile de·en·es·it, plus Level."""
+    z = {formlang: C.strip_punct(e['form'])}
+    for l in SPALTEN:
+        if l != formlang:
+            z[l] = e.get(l, '')
+    return tuple(z[l] for l in SPALTEN), e.get('level', '')
+
+
+_index = None
+
+
+def index(buecher=None):
+    """{fr_schluessel: Counter{(zeile, level, zeuge): n}} ueber die Zeugen.
+
+    `buecher` schraenkt ein (Default: das ganze NT, 40-66). Das AT
+    mitzunehmen kostet Zeit und bringt fuer das NT wenig — die
+    Wortschaetze ueberschneiden sich, die Wendungen nicht.
+    """
+    global _index
+    if _index is not None:
+        return _index
+    ganz = collections.defaultdict(collections.Counter)
+    teil = collections.defaultdict(collections.Counter)
+    level = collections.defaultdict(collections.Counter)
+    stellen = collections.defaultdict(list)
+    for edition, suffix, formlang in ZEUGEN:
+        for nr in (buecher or range(40, 67)):
+            p = os.path.join(C.REPO, 'bibles', *edition.split('/'),
+                             'anno', f'{nr}{suffix}')
+            if not os.path.exists(p):
+                continue
+            d = json.load(open(p, encoding='utf-8'))
+            name = d.get('name', str(nr))
+            for kap, vv in d['chapters'].items():
+                for v, ee in vv.items():
+                    for e in ee:
+                        f = norm(e.get('fr', ''))
+                        if not f:
+                            continue
+                        zeile, lvl = _zeile(e, formlang)
+                        # Der Schluessel ist die VIERERZEILE allein. Dieselbe
+                        # Zeile aus beiden Zeugen ist ein Beleg, nicht zwei —
+                        # sonst steht sie zweimal untereinander und sieht aus
+                        # wie zwei Lesarten. Die Level beider Zeugen sammeln
+                        # sich daneben.
+                        ganz[f][zeile] += 1
+                        level[(f, zeile)][(lvl, formlang)] += 1
+                        if len(stellen[(f, zeile)]) < 3:
+                            stellen[(f, zeile)].append(f'{name} {kap},{v}')
+                        woerter = f.split()
+                        if len(woerter) > 1:
+                            for w in woerter:
+                                teil[w][(zeile, f)] += 1
+    _index = (ganz, teil, level, stellen)
+    return _index
+
+
+def verszeilen(nr, kap):
+    """{versnr: {fr_schluessel: [(zeile, level, zeuge, form)]}} — die
+    Glossen der Zeugen, Vers fuer Vers.
+
+    Der Schluessel ist wieder die normalisierte fr-Glosse; getroffen wird
+    aber nur, was im GLEICHEN Vers steht. Das ist der Unterschied
+    zwischen „dieses Wort kommt im NT vor" und „dieses Wort ist hier
+    gemeint".
+    """
+    out = collections.defaultdict(lambda: collections.defaultdict(list))
+    for edition, suffix, formlang in ZEUGEN:
+        p = os.path.join(C.REPO, 'bibles', *edition.split('/'),
+                         'anno', f'{nr}{suffix}')
+        if not os.path.exists(p):
+            continue
+        d = json.load(open(p, encoding='utf-8'))
+        for v, ee in d['chapters'].get(str(kap), {}).items():
+            for e in ee:
+                f = norm(e.get('fr', ''))
+                if not f:
+                    continue
+                zeile, lvl = _zeile(e, formlang)
+                out[str(v)][f].append((zeile, lvl, formlang))
+                for w in f.split():
+                    if w != f:
+                        out[str(v)][w].append((zeile, lvl, formlang))
+    return out
+
+
+def _kuerzen(paare):
+    """Die haeufigsten Zeilen, bis 90 % gedeckt sind, hoechstens MAX_ZEILEN."""
+    gesamt = sum(n for _, n in paare) or 1
+    zeigen, summe = [], 0
+    for p in paare:
+        zeigen.append(p)
+        summe += p[1]
+        if len(zeigen) >= MAX_ZEILEN or summe / gesamt >= DECKUNG:
+            break
+    return zeigen, len(paare) - len(zeigen)
+
+
+def _zeilentext(zeile, lvls, n, wo=None, anhang=''):
+    reihe = ' · '.join(f'{l} *{w}*' for l, w in zip(SPALTEN, zeile) if w)
+    lv = ', '.join(f'{l} fuer {z}' for (l, z), _ in lvls.most_common()) if lvls else ''
+    ort = f'   ({", ".join(wo)})' if wo else ''
+    return f'- {n}× · {reihe}' + (f'   [{lv}]' if lv else '') + anhang + ort
+
+
+def schicht(wort):
+    """('GLOSSE'|'TEIL'|'ELISION'|None, zeilen) fuer ein Token."""
+    ganz, teil, level, stellen = index()
+    k = norm(wort)
+    if not k:
+        return None, []
+    if k in ganz:
+        zeigen, rest = _kuerzen(sorted(ganz[k].items(), key=lambda x: -x[1]))
+        out = [_zeilentext(z, level[(k, z)], n, stellen.get((k, z)))
+               for z, n in zeigen]
+        if rest:
+            out.append(f'- … und {rest} weitere Lesart(en)')
+        return 'GLOSSE', out
+    if k in teil:
+        zeigen, rest = _kuerzen(sorted(teil[k].items(), key=lambda x: -x[1]))
+        out = [_zeilentext(z, level[(ganzfr, z)], n,
+                           anhang=f'   ← in der Glosse „{ganzfr}"')
+               for (z, ganzfr), n in zeigen]
+        if rest:
+            out.append(f'- … und {rest} weitere')
+        return 'TEIL', out
+    if "'" in k:
+        stuecke = [p for p in k.split("'") if p]
+        gefunden = []
+        for i, p in enumerate(stuecke):
+            if p not in ganz:
+                continue
+            zeigen, _ = _kuerzen(sorted(ganz[p].items(), key=lambda x: -x[1]))
+            marke = p + ("'" if i < len(stuecke) - 1 else '')
+            gefunden.append(f'  **{marke}**')
+            gefunden += ['  ' + _zeilentext(z, level[(p, z)], n)
+                         for z, n in zeigen[:3]]
+        if gefunden:
+            return 'ELISION', gefunden
+    return None, []
+
+
+def extract(nr, kap, von=None, bis=None):
+    verses = C.load_source(nr)['chapters'][str(kap)]
+    name = C.book_name(nr)
+    vz = verszeilen(nr, kap)
+
+    L = [f'# Rueckwaerts-Lexikon: {name} {kap}'
+         + (f',{von}–{bis}' if von else ''), '', '']
+    L.append('Was `eng/web` und `deu/l1912mod` in ihrer **fr-Spalte** zu den '
+             'Woertern dieses Abschnitts fuehren.')
+    L.append('')
+    L.append('**Level und Lemma der Zeugen sind nicht uebertragbar.** Das Level '
+             'steht in Klammern mit der Ausgabe, aus der es kommt — es ist CEFR '
+             'fuer Englisch- oder Deutschlernende, nicht fuer Franzoesisch. Das '
+             'Lemma steht gar nicht da; es ist im Zeugen englisch oder deutsch.')
+    L.append('')
+    if not vz:
+        L.append('**Keine Verszeilen** — die Zeugen haben zu diesem Kapitel '
+                 'nichts. Es gibt nur den Bestandsteil unten.')
+        L.append('')
+    else:
+        L.append('Die **VERS-Zeilen** stehen im selben Vers der Zeugen. Das gilt '
+                 'nur, solange die Verszaehlung uebereinstimmt — vorher '
+                 f'`ausgaben.py {nr} {kap}` lesen.')
+        L.append('')
+
+    gesehen, zaehl, offen, schon = {}, collections.Counter(), {}, {}
+
+    for v in sorted(verses, key=int):
+        if von is not None and not (von <= int(v) <= bis):
+            continue
+        toks = [t for t in C.tokens(verses[v]) if not C.is_punct_only(t)]
+        L.append(f'## {kap},{v}')
+        L.append('')
+        L.append(f'> {verses[v]}')
+        L.append('')
+        im_vers = vz.get(str(v), {})
+        for i, tok in enumerate(toks):
+            k = norm(tok)
+            if not k:
+                continue
+            zaehl[k] += 1
+            treffer = im_vers.get(k)
+            if treffer:
+                # Gleiche Viererzeile aus beiden Zeugen zusammenziehen
+                gebuendelt = collections.OrderedDict()
+                for zeile, lvl, zg in treffer:
+                    gebuendelt.setdefault(zeile, collections.Counter())[(lvl, zg)] += 1
+                zeilen = [_zeilentext(z, lv, 1).replace('- 1× · ', '- ')
+                          for z, lv in gebuendelt.items()]
+                # Dasselbe Wort mit derselben Zeilenliste nicht wieder
+                # ausschreiben. `de` und `et` stehen in Judas je 21× und
+                # tragen jedes Mal dieselben vier Zeilen — ausgeschrieben
+                # ist der Extrakt dreimal so gross und niemand liest ihn.
+                marke = (k, tuple(zeilen))
+                if marke in schon:
+                    L.append(f'**{i}** `{C.strip_punct(tok)}`   (wie {schon[marke]})')
+                    continue
+                schon[marke] = f'{kap},{v}'
+                L.append(f'**{i}** `{C.strip_punct(tok)}`')
+                L += zeilen
+            else:
+                L.append(f'**{i}** `{C.strip_punct(tok)}`   ← nicht in diesem '
+                         'Vers der Zeugen, siehe unten')
+                offen[k] = C.strip_punct(tok)
+        L.append('')
+
+    # --- Was der Vers nicht hergibt: der Bestand ueber das ganze NT
+    if offen:
+        L.append('# Nicht im Vers der Zeugen belegt')
+        L.append('')
+        L.append('Diese Woerter stehen im Vers der Zeugen nicht als fr-Glosse. '
+                 'Was der **ganze NT-Bestand** dazu fuehrt, steht hier — das '
+                 'ist ein Vorrat an Lesarten, keine Vorgabe. Welche davon hier '
+                 'gilt, entscheidet der Vers.')
+        L.append('')
+        gruppen = collections.defaultdict(list)
+        for k, form in offen.items():
+            art, zeilen = schicht(form)
+            gruppen[art].append((form, zeilen))
+            gesehen[k] = art
+        for art, titel in (
+                ('GLOSSE', 'GLOSSE — das Wort steht anderswo im Bestand'),
+                ('TEIL', 'TEIL — nur innerhalb einer mehrwortigen Glosse'),
+                ('ELISION', 'ELISION — nur die Haelften sind belegt'),
+                (None, 'UNBELEGT — hier ist die Arbeit')):
+            if art not in gruppen:
+                continue
+            L.append(f'## {titel} ({len(gruppen[art])})')
+            L.append('')
+            for form, zeilen in sorted(gruppen[art], key=lambda x: x[0].lower()):
+                n = zaehl[norm(form)]
+                L.append(f'### {form}' + (f'  ({n}× im Abschnitt)' if n > 1 else ''))
+                L += zeilen if zeilen else ['- kein Beleg']
+                L.append('')
+
+    tot = sum(zaehl.values())
+    imvers = tot - sum(zaehl[k] for k in offen)
+    unbelegt = sum(zaehl[k] for k, a in gesehen.items() if a is None)
+    L[1] = (f'{tot} Tokens · {imvers} im Vers der Zeugen belegt '
+            f'({imvers / tot:.0%}) · {tot - imvers - unbelegt} ueber den '
+            f'uebrigen Bestand · {unbelegt} unbelegt')
+    return '\n'.join(L)
+
+
+if __name__ == '__main__':
+    p = argparse.ArgumentParser()
+    p.add_argument('buch', type=int, nargs='?')
+    p.add_argument('kapitel', type=int, nargs='?')
+    p.add_argument('von', type=int, nargs='?')
+    p.add_argument('bis', type=int, nargs='?')
+    p.add_argument('--wort', nargs='+')
+    p.add_argument('-o', '--out')
+    a = p.parse_args()
+    if a.wort:
+        for w in a.wort:
+            art, zeilen = schicht(w)
+            print(f'## {w}   [{art or "UNBELEGT"}]')
+            print('\n'.join(zeilen) if zeilen else '- kein Beleg')
+            print()
+        sys.exit(0)
+    if a.buch is None or a.kapitel is None:
+        p.error('buch und kapitel fehlen (oder --wort benutzen)')
+    txt = extract(a.buch, a.kapitel, a.von, a.bis)
+    if a.out:
+        open(a.out, 'w', encoding='utf-8').write(txt)
+        print(f'{a.out} geschrieben ({len(txt)} Zeichen)')
+    else:
+        sys.stdout.write(txt)
