@@ -217,11 +217,12 @@ dem deutschen Text gefolgt.
 
 ## 7 · Befunde im Bestand und im Quelltext
 
-- **Amos 9,3 hat einen Fehler im deutschen Text:** `Verbuergen` statt
-  `Verbaergen` (Konjunktiv II von `verbergen`). Alle vier Ausgaben lesen
-  „verbergen/verstecken", die Form steht korpusweit nur hier. **Nicht
-  geaendert** — eine Textkorrektur ist eine andere Entscheidung als eine
-  Glossenkorrektur. `NACHLESE_BESTAND.md` D.
+- **Amos 9,3 hatte einen Fehler im deutschen Text:** `Verbuergen` statt
+  `Verbaergen` (Konjunktiv II von `verbergen`, parallel zum
+  „**Versteckten** sie sich" im selben Vers). Alle vier Ausgaben lesen
+  „verbergen/verstecken", die Form stand korpusweit nur hier.
+  **Inzwischen korrigiert**; Lemma und Glossen waren von Anfang an
+  richtig, nur die Wortform nicht. `NACHLESE_BESTAND.md` 10.
 - **Ps 78,9 traegt einen Artikel im falschen Genus** (`der` vor
   `Schlacht` als fr *du*, waehrend derselbe Vers *bataille* fuehrt) —
   derselbe Typ wie Ps 65,13 aus der Joel-Arbeit.

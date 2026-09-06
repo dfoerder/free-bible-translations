@@ -147,7 +147,7 @@ Nicht im Bestand und nicht in den Ausgaben, sondern im modernisierten
 `l1912mod` — der Grundlage aller Glossen. **Hier wurde nichts geaendert;
 eine Textkorrektur ist eine andere Entscheidung als eine Glossenkorrektur.**
 
-### 10. Amos 9,3 — `Verbuergen` statt `Verbaergen`
+### 10. ERLEDIGT — Amos 9,3: `Verbuergen` statt `Verbaergen`
 
 > „**Verbuergen** sie sich vor meinen Augen auf dem Grund des Meeres,
 > ich wuerde der Schlange befehlen, sie dort zu beissen."
@@ -165,8 +165,17 @@ Gemeint ist der Konjunktiv II von **`verbergen`** (`verbaergen`), nicht
 Im ganzen deutschen Korpus steht die Form **einmal** — hier. Die
 uebrigen Belege des Stammes sind `verbarg` (8×) und `verbargst` (1×).
 
-Die Glosse in Amos 9,3 folgt dem Sinn (*hide*), nicht der verschriebenen
-Form; das Lemma steht auf `verbergen`.
+Die Glosse in Amos 9,3 folgte von Anfang an dem Sinn (*hide*), nicht der
+verschriebenen Form; das Lemma stand bereits auf `verbergen`.
+
+**Korrigiert** auf `Verbaergen` — in beiden Repositories, denn der App
+liegt eine eigene Kopie des Textes bei. Nur die Wortform hat sich
+geaendert, Lemma und Glossen waren schon richtig.
+
+Beim ersten Anlauf hatte ich `Verbergen` gesetzt, den Infinitiv. Der
+Parallelsatz „**Versteckten** sie sich" verlangt aber den Konjunktiv II,
+und `WORTFELD_AMOS.md` sagt das ausdruecklich — ich hatte es nicht
+gelesen. Aufgefallen beim Nachziehen der Wortfelder.
 
 
 ---
@@ -219,7 +228,7 @@ Der eine Fall, in dem auch LSG nachgestellt `parle` liest
 einzelne Ausgabenstelle.
 
 
-### 12. Micha 2,11 — `Bier` steht einmal im ganzen Korpus
+### 12. ERLEDIGT — Micha 2,11: `Bier` stand einmal im ganzen Korpus
 
 > „Ich predige euch Wein und **Bier**!"
 
@@ -234,16 +243,25 @@ modernisiert**:
     Bier              1×   — nur Micha 2,11
 ```
 
-Vierzehn Stellen gegen eine. **Nicht geaendert** — eine Vereinheitlichung
-des Quelltextes ist eine andere Entscheidung als eine Glossenkorrektur,
-und `Bier` ist als deutsches Wort nicht falsch, nur allein.
+Vierzehn Stellen gegen eine.
 
-Die Glosse folgt dem Wort, das dasteht: `Bier` A2
-*beer · cerveza · bière · birra*. **Die App glossiert Deutsch — wer
-„Bier" liest, muss „Bier" lernen.** Alle vier Ausgaben lesen an der
-Stelle uebrigens dasselbe (*strong drink · bebida fuerte · boissons
-fortes · bevande forti*); die Abweichung besteht nicht zwischen den
-Ausgaben, sondern zwischen dem deutschen Text und allen vieren.
+**Geaendert.** Neu gemessen sind es **17** Stellen: 15× „starke(s/m/n)
+Getränk(e)", 2× „Rauschtrank", 1× „Bier" — und **alle siebzehn stehen
+mit `Wein`**. Micha 2,11 liest jetzt „Ich predige euch Wein und starkes
+Getränk!". Der Vers wird dadurch um ein Token laenger; die Glossen sind
+umpositioniert, `stark` A1 *strong · fuerte · forte · forte* und
+`Getränk` A2 *beverage · bebida · boisson · bevanda* nach den Vorlagen
+3. Mose 10,9 und Sprueche 20,1. Das Lemma `Bier` gibt es im Bestand
+nicht mehr.
+
+Der Grundsatz „die App glossiert Deutsch — wer ‚Bier' liest, muss
+‚Bier' lernen" bleibt richtig; er gilt fuer die **Glosse**. Hier war
+aber der **Quelltext** die Abweichung: alle vier Ausgaben lesen an der
+Stelle *strong drink · bebida fuerte · boissons fortes · bevande
+forti*, und der `l1912mod` selbst modernisiert dasselbe hebraeische
+Wort an sechzehn anderen Stellen anders. Die Aenderung stellt die
+Einheitlichkeit des deutschen Textes her, nicht die Treue zu einer
+Ausgabe.
 
 Gefunden vom Agenten fuer Micha 2.
 
@@ -511,7 +529,7 @@ Fehlerlage, sondern eine kleine, in sich stimmige Bindung.
 
 | erledigt | geprueft und bewusst belassen | offen |
 |---|---|---|
-| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · 11 · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 10 · 12 · 24 (Rest) · 27 · 28 |
+| 1 (zu 4/5) · 2 · 3 · 4 · 5 · 6 · 7 · 8a · **10** · 11 · **12** · 13 · 15 · 19 · 22 · 23 | 21 · 25 · 26 · 29 | 8 (`Rechtsstreit`) · 9 · 24 (Rest) · 27 · 28 |
 
 **Was offen bleibt und warum:**
 
@@ -520,10 +538,9 @@ Fehlerlage, sondern eine kleine, in sich stimmige Bindung.
   Eintrag nannte nie einen.
 - **9 · Wortpaare mit gemeinsamer Reihe** — kein Fehler, sondern eine
   Warnung fuer kuenftige Kapitel.
-- **10 · Amos 9,3 `Verbuergen`** und **12 · Micha 2,11 `Bier`** —
-  Befunde im **deutschen Quelltext**. Eine Textkorrektur ist eine
-  andere Entscheidung als eine Glossenkorrektur und gehoert dem
-  Herausgeber des `l1912mod`.
+- **10 und 12 sind inzwischen erledigt** — die beiden Quelltextbefunde
+  wurden auf ausdruecklichen Auftrag korrigiert, in **beiden**
+  Repositories (der App liegt eine eigene Kopie des Textes bei).
 - **24 (Rest) · 27 · 28** — `Jedaja` ist erledigt; was bleibt, sind die
   107 italienischen Namen, bei denen RIV **selbst schwankt** oder ganz
   anders schreibt, sowie `Kislev`, wo RIV die beiden Belegstellen

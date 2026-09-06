@@ -132,10 +132,16 @@ del tempio*; franzoesisch ist `la montagne` richtig). Der Agent hat den
 Block uebernommen und den Fehler **nicht** mituebernommen.
 `NACHLESE_BESTAND.md` 8a.
 
-**Micha 2,11 schreibt `Bier`** — das Wort steht genau einmal im ganzen
-deutschen Korpus. Dasselbe hebraeische Wort ist sonst 14× als „starkes
-Getraenk" oder „Rauschtrank" modernisiert. Nicht geaendert; die Glosse
-folgt dem Wort, das dasteht. `NACHLESE_BESTAND.md` 12.
+**Micha 2,11 schrieb `Bier`** — das Wort stand genau einmal im ganzen
+deutschen Korpus, waehrend dasselbe hebraeische Wort sonst 16× als
+„starke(s) Getraenk" oder „Rauschtrank" modernisiert ist. Damals nicht
+geaendert, weil eine Quelltextkorrektur eine andere Entscheidung ist
+als eine Glossenkorrektur.
+
+**Inzwischen korrigiert:** der Vers liest „Ich predige euch Wein und
+starkes Getraenk!". Der Vers wurde dadurch um ein Token laenger, die
+Glossen sind umpositioniert; `stark` A1 und `Getraenk` A2 nach den
+Vorlagen 3. Mose 10,9 und Sprueche 20,1. `NACHLESE_BESTAND.md` 12.
 
 ## 6 · Sieben RIV-Defekte in einem Buch — drei Klassen
 
@@ -173,7 +179,7 @@ Rest B1 remnant·remanente·reste·resto · Heerschar C1 hosts·ejércitos·arm�
 Zion A1 · Tochter A1 daughter·hija·fille·figlia · Assur A1 Assyria·Asiria·Assyrie·Assiria
 Neu gepraegt: Herdenturm C1 · Augenlust C1 · Kriegerin B2 woman warrior·guerrera·guerrière·guerriera
    Hinkender B2 · knapp B2 scant·escasa·petite·scarsa · beiseiteschaffen B2
-   Prediger B2 (Appellativ, neben der Buchtitel-Reihe) · Bier A2 beer·cerveza·bière·birra
+   Prediger B2 (Appellativ, neben der Buchtitel-Reihe)
    Feindin B2 · Treuer B2 · Bester B1 · Ehrlichster B2 · Hecke B1 hedge·seto·haie·siepe
    Wegkreuzung B2 · Ruhestatt C1 · Morgenlicht B2 · daherkommen B2 · zusammenfuehren B2
    Streit fuehren B2 · ausschauen nach B2 · weiden lassen B2 · Weh mir B2
