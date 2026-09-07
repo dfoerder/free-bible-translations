@@ -233,6 +233,53 @@ def schicht(wort):
     return None, []
 
 
+def versatzprobe(nr, kap, verses):
+    """Wo deckt der NACHBARVERS eines Zeugen besser als der eigene?
+
+    Die VERS-Schicht setzt voraus, dass Vers 13 der Zeugen derselbe Vers
+    ist. In Matthaeus 23 stimmt das fuer die Zaehlung, aber WEB fuehrt
+    die Inhalte von 23,13 und 23,14 **vertauscht** — dieselbe Nummer,
+    andere Perikope. `ausgaben.py` und `kapitelgrenzen.py` koennen das
+    nicht sehen, weil die Verse sich decken; `verszaehlung.py` auch
+    nicht. Gefunden vom Agenten fuer Matthaeus 23, der die kreuzweise
+    falschen en-Zeilen beim Lesen bemerkte.
+
+    Geprueft wird **je Zeuge einzeln** — zusammengelegt verschwindet der
+    Befund, weil der andere Zeuge richtig steht.
+    """
+    warnungen = []
+    for edition, suffix, _formlang in ZEUGEN:
+        p = os.path.join(C.REPO, 'bibles', *edition.split('/'),
+                         'anno', f'{nr}{suffix}')
+        if not os.path.exists(p):
+            continue
+        d = json.load(open(p, encoding='utf-8'))
+        proVers = {}
+        for v, ee in d['chapters'].get(str(kap), {}).items():
+            s = set()
+            for e in ee:
+                f = norm(e.get('fr', ''))
+                if f:
+                    s.add(f)
+                    s.update(f.split())
+            proVers[str(v)] = s
+        for v, txt in verses.items():
+            k = [x for x in (norm(t) for t in C.tokens(txt)) if x]
+            if len(k) < 8:
+                continue
+            eigen = sum(1 for x in k if x in proVers.get(str(v), ()))
+            for dd in (-1, 1):
+                nb = sum(1 for x in k
+                         if x in proVers.get(str(int(v) + dd), ()))
+                if nb > eigen + max(3, len(k) // 4):
+                    warnungen.append(
+                        f'{v}: in `{edition}` deckt Vers {int(v)+dd} '
+                        f'{nb} Tokens dieses Verses, Vers {v} nur {eigen} '
+                        '— dort stehen die Perikopen vertauscht. Die '
+                        'VERS-Zeilen dieses Zeugen hier NICHT uebernehmen.')
+    return warnungen
+
+
 def extract(nr, kap, von=None, bis=None):
     verses = C.load_source(nr)['chapters'][str(kap)]
     name = C.book_name(nr)
@@ -258,6 +305,13 @@ def extract(nr, kap, von=None, bis=None):
                  'nur, solange die Verszaehlung uebereinstimmt — vorher '
                  f'`ausgaben.py {nr} {kap}` lesen.')
         L.append('')
+        warnungen = versatzprobe(nr, kap, verses)
+        if warnungen:
+            L.append('## !! Vertauschte Verse in den Zeugen')
+            L.append('')
+            for w in warnungen:
+                L.append(f'- {w}')
+            L.append('')
 
     gesehen, zaehl, offen, schon = {}, collections.Counter(), {}, {}
 

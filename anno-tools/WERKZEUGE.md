@@ -39,7 +39,13 @@ selben Vers der Zeugen) · GLOSSE · TEIL · ELISION.
 **`belegt.py`** — belegt.py — ist dieses Wort im Bestand belegt, und unter welchem Lemma?
 
 **`fixgloss.py`** — Alle Lesarten eines Lemmas oder einer Wortform mit Belegstellen.
+Der dritte Modus, `verse`, druckt einen **ganzen Vers des Bestands** mit
+Positionen, Mehrwort-Spannen, Lemma und Level — das ist die Form, in der
+man eine Reihe uebernimmt. Zwei Agenten haben sich das nachgebaut, weil
+sie nur die ersten beiden Modi kannten.
     fixgloss.py show <lemma> [<lemma> …]
+    fixgloss.py showform <form> [<form> …]
+    fixgloss.py verse <buchNr> <kapitel> <vers>
 
 **`ausgaben.py`** — Die vier Referenzausgaben neben dem Vers des Quelltextes — ausgerichtet.
     ausgaben.py <buchNr> <kapitel> [<vonVers> [<bisVers>]]

@@ -143,8 +143,8 @@ die das Pilotbuch gepraegt hat.
     python3 artikel.py <NR> <KAP>
     python3 mehrwort.py <NR> --datei=$ANNO_OUT/<NR>/ch<KAP>.json --kapitel=<KAP>
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
-    python3 folgencheck.py <NR> --datei $ANNO_OUT/<NR>/ch<KAP>.json
-    python3 folgencheck.py <NR> --min 3 --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 folgencheck.py <NR> --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 folgencheck.py <NR> --min 3 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
@@ -155,6 +155,12 @@ Pakets gegeneinander** — es liest sie aus `$ANNO_OUT`, also auch, solange
 keins eingesammelt ist. Das ist das einzige Werkzeug, das sieht, was die
 Nachbaragenten gerade praegen; `folgencheck` kennt nur den fertigen
 Bestand. Lauf es, wenn die Nachbarn abgegeben haben.
+
+**`--kapitel <KAP>` ist bei `folgencheck` Pflicht, nicht Bequemlichkeit.**
+Ohne den Filter umfasst der `--min 3`-Lauf das ganze Buch — in Matthaeus
+sind das ueber 300 Bloecke, von denen ein Dutzend dein Kapitel angeht.
+Drei Agenten in Folge haben sich die eigenen mit einem Skript
+herausgezogen, und wer stattdessen `head` nimmt, sieht nur fremde.
 
 **`levelcheck.py` steht mit Absicht vor `folgencheck.py`:** eine
 Levelkorrektur loest nie eine Folgenkorrektur aus, umgekehrt aber schon.
