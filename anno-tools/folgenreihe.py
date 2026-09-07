@@ -143,7 +143,10 @@ def main():
         i = args.index('--buch')
         bis = int(args[i + 1])
         del args[i:i + 2]
-    if not args:
+    # `folgenreihe.py --help` hat die Zeichenkette `--help` im Quelltext
+    # gesucht und „0 Vorkommen" gemeldet — eine Hilfe, die wie ein
+    # sauberer Lauf aussieht. Gemeldet vom Agenten fuer Marc 11.
+    if not args or any(a in ('-h', '--help') for a in args):
         print(__doc__)
         return 2
     print(f'*{C.bestandsstand()}*')

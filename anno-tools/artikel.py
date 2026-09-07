@@ -105,6 +105,61 @@ def sammle():
     return zaehl
 
 
+# Der italienische Artikel richtet sich vor dem Nomen nach dem ANLAUT,
+# nicht nach dem Genus: vor Vokal, s+Konsonant, z, gn, ps, pn und x
+# stehen `gli`, `lo` und `uno` statt `i`, `il` und `un`. Das ist eine
+# Regel, keine Statistik — sie traegt vom ersten Buch an, waehrend die
+# Genusprobe oben erst ab 200 belegten Nomenformen etwas sagt.
+#
+# Ueber Judas, Matthaeus und Markus 1-11 gemessen: sieben Stellen mit
+# `i` vor `gli`-Anlaut (`i afflitti`, `i operai`, `i scribi` dreimal,
+# `i esattori` zweimal), und der italienische Zeuge liest an denselben
+# Stellen selbst `gli scribi`. Anlass war ein Hinweis des Agenten fuer
+# Marc 11, der `i` vor `anziani` in Mt 26,57 vermutet hatte — dort stand
+# es richtig, beim `scribi` daneben aber nicht.
+# Erste Fassung dieser Probe hat `un uomo` und `un angelo` angemahnt.
+# Falsch: `uno` steht NUR vor s+Konsonant, z, gn, ps, pn und x — vor
+# einem blossen Vokal ist `un` richtig. Und `il` wird vor Vokal nicht zu
+# `lo`, sondern elidiert zu `l’`. Nur der Plural `i` wird in BEIDEN
+# Faellen zu `gli`.
+IT_KONS = re.compile(r"^(?:s[^aeiouh]|z|gn|ps|pn|x|y)", re.I)
+IT_VOKAL = re.compile(r"^[aeiou]", re.I)
+
+
+def anlautprobe(ein, kap, vers, treffer):
+    """Italienische Artikel gegen den Anlaut des folgenden Nomens.
+
+    Eine Regel, keine Statistik — sie traegt vom ersten Buch an, waehrend
+    die Genusprobe oben erst ab 200 belegten Nomenformen etwas sagt.
+
+    Ueber Judas, Matthaeus und Markus 1-11 gemessen: sieben Stellen mit
+    `i` vor `gli`-Anlaut (`i afflitti`, `i operai`, `i scribi` dreimal,
+    `i esattori` zweimal), und der italienische Zeuge liest an denselben
+    Stellen selbst `gli scribi`. Anlass war ein Hinweis des Agenten fuer
+    Marc 11, der `i` vor `anziani` in Mt 26,57 vermutet hatte — dort
+    stand es richtig, beim `scribi` daneben aber nicht.
+    """
+    for pos, e in ein.items():
+        art = (e.get('it') or '').strip()
+        kl = art.lower()
+        if kl not in ('i', 'il', 'un'):
+            continue
+        nx = ein.get(pos + 1)
+        w = (nx.get('it') or '').strip() if nx else ''
+        if not w:
+            continue
+        if IT_KONS.match(w):
+            soll = {'i': 'gli', 'il': 'lo', 'un': 'uno'}[kl]
+        elif IT_VOKAL.match(w) and kl in ('i', 'il'):
+            soll = 'gli' if kl == 'i' else 'l’'
+        else:
+            continue
+        if art[:1].isupper():
+            soll = soll[0].upper() + soll[1:]
+        treffer.append((int(kap), int(vers), e.get('form'), art,
+                        nx.get('form'), w, soll))
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
@@ -120,6 +175,7 @@ def main():
     # Gemeldet vom Agenten fuer Matthaeus 1.
     tragfaehig = sum(1 for c in zaehl.values() if sum(c.values()) >= 5)
     treffer = []
+    anlaut = []
     for f in sorted(glob.glob(os.path.join(out, buch, 'ch*.json'))):
         if '.part' in f:
             continue
@@ -130,6 +186,7 @@ def main():
         for v, ents in d.items():
             ein = {e['pos']: e for e in ents
                    if 'pos_end' not in e and 'parts' not in e}
+            anlautprobe(ein, k, v, anlaut)
             for pos, e in ein.items():
                 nx = nomen_danach(ein, pos)
                 if not nx:
@@ -153,14 +210,21 @@ def main():
     for k, v, sp, f1, g1, f2, g2, soll, anz, ges in sorted(set(treffer)):
         print('  %s,%s,%-3s %s  %-10s %-8s | %-14s %-14s  Bestand: %s (%d/%d)'
               % (buch, k, v, sp, f1, g1, f2, g2, soll, anz, ges))
+    if anlaut:
+        print()
+        print('  Italienischer Anlaut — der Artikel richtet sich nach dem\n  ANLAUT des Nomens, nicht nach seinem Genus:')
+        for k, v, f1, a, f2, w, soll in sorted(set(anlaut)):
+            print('  %s,%s,%-3s %-8s it %-6s | %-12s it %-14s  → %s'
+                  % (buch, k, v, f1, a, f2, w, soll))
     print()
     if tragfaehig < 200:
         print(f'!! Der Bestand traegt erst {tragfaehig} Nomenformen mit '
               'mindestens 5 Belegen. Bei so wenig Referenz erreicht kaum '
               'etwas die Meldeschwelle — eine Null hier heisst NICHT '
               '"sauber", sondern "noch nichts gemessen".')
-    print('%d Verdachtsfaelle. Das Genus ist aus der Artikelverteilung des'
-          % len(set(treffer)))
+    print('%d Verdachtsfaelle%s. Das Genus ist aus der Artikelverteilung des'
+          % (len(set(treffer)),
+             f' und {len(set(anlaut))} Anlautfehler' if anlaut else ''))
     print('Bestands abgeleitet, nicht aus einem Woerterbuch — jeden Treffer')
     print('am Vers ansehen. Gemeldet wird nur ab 5 Belegen und 80 Prozent.')
     return 0
