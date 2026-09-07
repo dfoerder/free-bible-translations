@@ -5,7 +5,7 @@ in **Englisch, Deutsch, Italienisch und Spanisch**. Die Gegenrichtung zur
 bisherigen Arbeit: dort war Deutsch der annotierte Text und Franzoesisch
 eine Glossenspalte.
 
-**Stand: Werkzeugkette umgestellt, Judas als Pilot in Arbeit.**
+**Stand: Judas und Matthaeus fertig — 2 von 27 NT-Buechern.**
 
 ## Was da ist
 
