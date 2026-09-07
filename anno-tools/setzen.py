@@ -207,6 +207,47 @@ def neues_mehrwort(nr, kap, vers, pos, lemma, felder, bis=None, teile=None,
     return 1
 
 
+def loesche_mehrwort(nr, kap, vers, pos, lemma, grund=None, trocken=False,
+                     aus_out=False):
+    """Ein Mehrwort entfernen. Einzelwoerter bleiben unberuehrt.
+
+    Das Gegenstueck zu `--neu`. Anlass: `tout ce que` stand an sechs
+    Stellen als Dreier-Mehrwort und an dreissig als `tout` daneben
+    plus `ce que`; die sechs mussten weg, und dafuer gab es nur den
+    Weg ueber ein Skript.
+    """
+    p = pfad(nr, kap, aus_out)
+    d = json.load(open(p, encoding='utf-8'))
+    if str(vers) not in d:
+        raise SystemExit(f'Vers {vers} steht nicht in ch{kap}.json.')
+    treffer = [e for e in d[str(vers)] if C.is_multi(e) and e['pos'] == pos]
+    if not treffer:
+        raise SystemExit(f'{nr} {kap},{vers}: kein Mehrwort-Eintrag, der auf '
+                         f'Position {pos} beginnt.')
+    e = treffer[0]
+    if e.get('lemma') != lemma:
+        raise SystemExit(f'{nr} {kap},{vers} pos {pos}: dort steht das '
+                         f'Mehrwort {e.get("lemma")!r}, erwartet war '
+                         f'{lemma!r}. Nichts geloescht.')
+
+    # Jede Position, die es abgedeckt hat, muss als Einzelwort dastehen
+    # — sonst hinterlaesst das Loeschen eine Luecke, und `validate.py`
+    # meldet sie erst nach dem Bauen.
+    einzeln = {x['pos'] for x in d[str(vers)] if not C.is_multi(x)}
+    fehlt = [i for i in C.covered(e) if i not in einzeln]
+    if fehlt:
+        raise SystemExit(f'{nr} {kap},{vers}: nach dem Loeschen stuenden die '
+                         f'Positionen {", ".join(str(i) for i in fehlt)} ohne '
+                         'Eintrag da. Erst die Einzelwoerter setzen.')
+    if not trocken:
+        d[str(vers)].remove(e)
+        json.dump(d, open(p, 'w', encoding='utf-8'), ensure_ascii=False)
+    marke = '(trocken) ' if trocken else ''
+    print(f'{marke}{nr} {kap},{vers} pos {pos} {e["form"]!r} GELOESCHT: '
+          f'{lemma}' + (f'   — {grund}' if grund else ''))
+    return 1
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('buch', type=int)
@@ -216,7 +257,8 @@ def main():
     p.add_argument('form', help='die erwartete Oberflaechenform an dieser '
                                 'Position — sie wird hart geprueft; mit '
                                 '--mehrwort stattdessen das Lemma')
-    p.add_argument('felder', nargs='+', help='feld=wert, z. B. en="to you"')
+    p.add_argument('felder', nargs='*', help='feld=wert, z. B. en="to you" '
+                                           '— bei --loeschen keine')
     p.add_argument('--grund')
     p.add_argument('--trocken', action='store_true')
     p.add_argument('--mehrwort', action='store_true',
@@ -229,18 +271,33 @@ def main():
                    help='letzte Position eines zusammenhaengenden Mehrworts')
     p.add_argument('--teile', metavar='P,P,P',
                    help='die Positionen eines getrennten Mehrworts')
+    p.add_argument('--loeschen', action='store_true',
+                   help='das MEHRWORT auf dieser Position entfernen; <form> '
+                        'ist sein LEMMA. Braucht keine Felder.')
     p.add_argument('--out', action='store_true',
                    help='in $ANNO_OUT arbeiten statt in den Kapitelquellen '
                         '— das ist der Ort, an dem ein Agent seine Abgabe hat')
-    a = p.parse_args()
+    # `felder` steht als letztes Positional; sobald danach noch ein
+    # Schalter mit Wert kommt (`--neu --bis 12 de=…`), reisst argparse
+    # die Zuordnung auseinander und meldet nur „unrecognized
+    # arguments". Deshalb werden die `feld=wert`-Angaben hier
+    # eingesammelt, egal an welcher Stelle sie stehen.
+    a, rest = p.parse_known_args()
 
     felder = {}
-    for x in a.felder:
+    for x in list(a.felder) + list(rest):
         if '=' not in x:
             p.error(f'{x!r} ist kein feld=wert')
         f, w = x.split('=', 1)
         felder[f] = w
-    if a.neu:
+    if a.loeschen:
+        if a.neu or a.mehrwort:
+            p.error('--loeschen schliesst --neu und --mehrwort aus.')
+        if felder:
+            p.error('--loeschen nimmt keine Felder.')
+        ok = loesche_mehrwort(a.buch, a.kapitel, a.vers, a.pos, a.form,
+                              a.grund, a.trocken, a.out)
+    elif a.neu:
         if a.mehrwort:
             p.error('--neu und --mehrwort schliessen einander aus.')
         teile = ([int(x) for x in a.teile.replace(',', ' ').split()]

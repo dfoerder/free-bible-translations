@@ -289,18 +289,28 @@ def _eigentext(key, n, wo):
 # diese Schicht faenden die Agenten dort „UNBELEGT — hier ist die
 # Arbeit", obwohl Verb und Pronomen beide hundertfach dastehen.
 #
-# Laenge zuerst, damit `glielo` vor `lo` greift.
-KLITIKA = ['glielo', 'gliela', 'glieli', 'gliele', 'gliene',
+# **Kuerze zuerst.** Die erste Fassung ging von der laengsten Form aus,
+# damit `glielo` vor `lo` greift — und las `salvateli` als `salva` +
+# `teli`, weil `teli` (*Leinentuecher*) im Bestand steht und `salva`
+# auch. Richtig ist `salvate` + `li`. Von der kuerzesten aus faellt das
+# weg: `li` ergibt sofort den Stamm `salvate`, und die Doppelklitika
+# bleiben trotzdem erreichbar, weil ihre kurzen Enden keinen gueltigen
+# Stamm liefern (`gliene` → `ne` → `glie` steht nirgends). Gemeldet vom
+# Agenten des italienischen Pilotbuchs.
+KLITIKA = ['mi', 'ti', 'ci', 'vi', 'si', 'lo', 'la', 'li', 'le', 'ne',
+           'gli',
            'melo', 'mela', 'meli', 'mele', 'mene',
            'telo', 'tela', 'teli', 'tele', 'tene',
            'celo', 'cela', 'celi', 'cele', 'cene',
            'velo', 'vela', 'veli', 'vele', 'vene',
            'selo', 'sela', 'seli', 'sele', 'sene',
-           'gli', 'mi', 'ti', 'ci', 'vi', 'si', 'lo', 'la', 'li', 'le', 'ne']
+           'glielo', 'gliela', 'glieli', 'gliele', 'gliene']
 
 # Was beim Anhaengen am Stamm verlorengeht: der Infinitiv wirft sein
 # `-e` ab (`portare` + `gli` → `portargli`), sonst bleibt der Stamm.
-STAMMPROBEN = ('', 'e', 'i', 'o', 'a')
+# Das `e` steht mit Absicht VORNE: `dirgli` findet sonst den apokopierten
+# Stamm `dir`, den es im Bestand auch gibt, und zeigt ihn statt `dire`.
+STAMMPROBEN = ('e', '', 'i', 'o', 'a')
 
 # Was der Apostroph verschluckt hat. Franzoesisch bleibt das elidierte
 # Stueck als eigene Glosse stehen (`qu'`), italienisch nicht: `nell` ist
@@ -523,7 +533,8 @@ def extract(nr, kap, von=None, bis=None):
     if offen:
         L.append('# Nicht im Vers der Zeugen belegt')
         L.append('')
-        L.append('Diese Woerter stehen im Vers der Zeugen nicht als fr-Glosse. '
+        L.append('Diese Woerter stehen im Vers der Zeugen nicht als '
+                 f'{SCHLUESSEL}-Glosse. '
                  'Was der **ganze NT-Bestand** dazu fuehrt, steht hier — das '
                  'ist ein Vorrat an Lesarten, keine Vorgabe. Welche davon hier '
                  'gilt, entscheidet der Vers.')
@@ -533,11 +544,20 @@ def extract(nr, kap, von=None, bis=None):
             art, zeilen = schicht(form)
             gruppen[art].append((form, zeilen))
             gesehen[k] = art
+        # `KLITIKON` hat hier gefehlt, obwohl `schicht()` es liefert und
+        # `gruppen` es sammelt. Die betroffenen Woerter trugen im Vers die
+        # Marke „siehe unten" und standen unten dann NIRGENDS — in Judas
+        # `scrivervi`, `esortarvi`, `salvateli`, ueber das NT rund 800
+        # Tokens, die still verschwanden. Gemeldet vom Agenten des
+        # italienischen Pilotbuchs. Wer hier eine Schicht ergaenzt, muss
+        # sie an BEIDEN Stellen ergaenzen.
         for art, titel in (
-                ('BESTAND', 'BESTAND — die Form steht schon franzoesisch '
-                            'annotiert da (Lemma und Level sind gesetzt)'),
+                ('BESTAND', 'BESTAND — die Form steht schon annotiert da '
+                            '(Lemma und Level sind gesetzt)'),
                 ('GLOSSE', 'GLOSSE — das Wort steht anderswo im Bestand'),
                 ('TEIL', 'TEIL — nur innerhalb einer mehrwortigen Glosse'),
+                ('KLITIKON', 'KLITIKON — Verb und angehaengtes Pronomen sind '
+                             'einzeln belegt'),
                 ('ELISION', 'ELISION — nur die Haelften sind belegt'),
                 (None, 'UNBELEGT — hier ist die Arbeit')):
             if art not in gruppen:

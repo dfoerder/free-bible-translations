@@ -50,6 +50,13 @@ Die Spalten heissen **de · en · es · fr** — nicht en/es/fr/it. Eine
 Mehrwoerter tragen zusaetzlich `pos_end` (zusammenhaengend) **oder**
 `parts` (getrennte Positionen). Positionen zaehlen ueber `text.split()`.
 
+**`text.split()` ist der Massstab, nicht die Tokenzahl der
+Vorbereitung.** Die Extrakte lassen alleinstehende Satzzeichen weg und
+zaehlen deshalb weniger: in Giuda 1,4 stehen zwei einzelne Gedankenstriche
+auf eigenen Positionen, der Extrakt nennt 583 Tokens und `text.split()`
+585. Die Satzzeichen bekommen keinen Eintrag, aber ihre Position gehoert
+mitgezaehlt — `selfcheck.py` rechnet genau das gegen.
+
 ## Dein wichtigstes Werkzeug: `rueckwaerts.py`
 
     python3 rueckwaerts.py <NR> <KAP> -o $ANNO_OUT/../work/<KAP>/rw.md
@@ -132,37 +139,40 @@ Wort. Lies den Vers.
   *man* (*si dice*) und Passiversatz. Am Vers entscheiden; das Lemma ist
   in allen drei Faellen `si`, die Glossen sind es nicht.
 
-## Dies ist das Pilotbuch
+## Was Giuda festgelegt hat
 
-Der italienische Bestand ist **leer**. Das heisst konkret:
+**`BINDUNGEN_ITA_NT.md` ist Pflichtlektuere vor der Arbeit — und noch
+einmal vor der Abgabe.** Das Pilotbuch hat dort vierzehn Reihen gesetzt,
+jede mit der Stelle: wie Elisionen lemmatisiert werden (auf den
+**semantischen Kopf**: `nell'amore` → `amore`, aber `nelle` → `in`), wie
+die verschmolzene Praeposition glossiert wird, warum das Lemma eines
+angehaengten Pronomens immer der Infinitiv ist — auch bei Imperativ und
+Gerundium —, wann ein Reflexiv ein Mehrwort bekommt und warum das
+essere-Hilfsverb darin seine woertliche Kopula-Glosse behaelt.
 
-- `parallelen_<nr>_<kap>.md` und `lexicon.py` antworten leer — es gibt
-  noch nichts, womit dein Vers gleichlauten koennte.
-- `rueckwaerts.py` hat noch keine **BESTAND**-Schicht; alles kommt aus
-  den Zeugen.
-- `folgencheck.py --gegen` hat nichts zu vergleichen.
-- **`BINDUNGEN_ITA_NT.md` gibt es noch nicht — du schreibst sie.** Wie
-  Elisionen und Klitika lemmatisiert werden, wie die verschmolzenen
-  Praepositionen glossiert werden, wann ein Reflexiv ein Mehrwort
-  bekommt und wann nicht: was du entscheidest, praegt alle 27 Buecher.
-  Leg die Datei in `anno-tools/BINDUNGEN_ITA_NT.md` an und schreib jede
-  Reihe hinein, die du gepraegt hast, mit der Stelle, an der sie steht.
+**Welches Werkzeug welchen Bestand liest — hier irren sich alle.**
 
-Der Bestand der **anderen** Sprachen traegt dagegen voll: `belegt.py`,
-`folgenreihe.py` und `rueckwaerts.py` fragen ihn.
-
+- **`belegt.py`, `lexicon.py`, `hints.py` und `folgenreihe.py` lesen den
+  ITALIENISCHEN Bestand**, nicht den der Zeugen. `belegt.py Signore`
+  meldete im Pilotbuch eine Fehlanzeige, obwohl das Wort in jeder
+  anderen Ausgabe hundertfach steht — die italienische Anno war leer. Solange wenig fertig ist, ist ihre Null eine **leere Messung**,
+  kein Befund; `hints.py` fuehrt aus demselben Grund fast jede Wortform
+  unter den unbelegten. Sie werden mit jedem Buch nuetzlicher.
+- **Nur `rueckwaerts.py` fragt die it-Spalte der Zeugen.** Es ist in
+  dieser Phase deine einzige Verbindung zum vorhandenen Bestand — und
+  eine Zweitmeinung, die irrt: sie kennt den Vers nicht, sondern nur das
+  Wort. Wo ein Wort in keinem Zeugen eine it-Spalte hat, faellt sie ganz
+  aus; dann entscheidet der Vers.
 - **`belegt.py` nimmt ein WORT, keine Buchnummer** — `belegt.py signore`.
   Mit einer Zahl meldet es die Zahl als unbelegte Wortform, und das sieht
   wie ein sauberer Lauf aus.
-- **`folgenreihe.py "<folge>"` sucht die ZEICHENKETTE im Quelltext, nicht
-  das Lemma.** Solange der italienische Bestand leer ist, antwortet es
-  leer — das ist kein Befund.
-- **`hints.py`** nennt zu jeder unbelegten Form die stammverwandten
-  Belege mit Zahl und Level.
-- **`rueckwaerts.py` ist eine Zweitmeinung, und eine, die irrt:** sie
-  kennt den Vers nicht, sondern nur das Wort. Wo ein Wort in keinem
-  Zeugen eine it-Spalte hat, faellt sie ganz aus — dann entscheidet der
-  Vers.
+
+**Der spanische Zeuge steht durchgehend auf `ustedes`.** Die es-Spalte
+wird aus ihm nie uebernommen — hier gilt **vosotros**.
+
+**`glosskollision.py` vergleicht nur Einzelworteintraege.** Bei einer
+Mehrwortwendung ist eine geteilte Glosse keine Kollision, sondern die
+Wendung selbst. Das ist Absicht, kein blinder Fleck.
 
 ## Vor der Abgabe — jeder Lauf, jedesmal, mit DEINER Buchnummer
 
@@ -194,12 +204,18 @@ Levelkorrektur loest nie eine Folgenkorrektur aus, umgekehrt aber schon.
 Die Level der Zeugen sind CEFR fuer Englisch-, Deutsch- und
 Franzoesischlernende und verfuehren systematisch zum falschen Wert.
 
-**Im Pilotbuch sind mehrere dieser Laeufe notwendig leer** —
-`levelcheck`, `konvention`, `folgencheck` und `artikel` leiten ihre
-Referenz aus dem italienischen Bestand ab, und der ist leer. **Eine Null
-ist dort keine Freigabe, sondern eine leere Messung.** Was wirklich
-traegt, sind `selfcheck`, `qa`, `sweeplemma`, `glosskollision`,
-`mehrwort` und der Vers selbst.
+**Solange wenig italienischer Bestand dasteht, sind mehrere dieser
+Laeufe notwendig duenn** — `levelcheck`, `konvention`, `folgencheck`,
+`artikel` und `kongruenz` leiten ihre Referenz daraus ab. **Eine Null ist
+dort keine Freigabe, sondern eine schmale Messung**; `konvention.py`,
+`artikel.py` und `kongruenz.py` schreiben es inzwischen selbst dazu. Was
+von Anfang an traegt, sind `selfcheck`, `qa`, `sweeplemma`,
+`glosskollision`, `mehrwort` und der Vers selbst.
+
+**`folgencheck.py --gegen <GEGEN>` prueft die Bindung ueber die
+Buchgrenze** und ist ab dem zweiten Buch Pflicht:
+
+    python3 folgencheck.py <NR> --gegen <GEGEN> --min 5 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
 
 **`paketcheck.py <NR> <PAKET>` haelt die Kapitel eines Pakets
 gegeneinander** — es liest sie aus `$ANNO_OUT`, also auch, solange keins
@@ -241,6 +257,7 @@ Was du entschieden hast und warum; welche Prompt- oder Werkzeugangaben du
 am Quelltext **widerlegt** hast (der wertvollste Teil); welche
 Kollisionen du aufgeloest und welche du bewusst stehen gelassen hast;
 **was an der Werkzeugkette in der italienischen Richtung geklemmt hat**
-— dieses Buch ist der Pilot, und was dir auffaellt, kommt allen weiteren
-26 Buechern zugute; und welche Reihen du in `BINDUNGEN_ITA_NT.md`
-festgelegt hast.
+— die Richtung ist jung, und was dir auffaellt, kommt allen weiteren
+Buechern zugute; und welche Reihen dein Kapitel praegt und welche es
+uebernimmt. Reihen, die ueber dein Kapitel hinaus gelten, gehoeren in
+`BINDUNGEN_ITA_NT.md` — schreib sie dort hinein, mit der Stelle.

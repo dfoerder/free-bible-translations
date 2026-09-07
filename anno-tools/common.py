@@ -219,7 +219,14 @@ def multis(entries):
 
 
 def write_compact(path, data):
-    """Kompakt schreiben wie bibles/eng/web/anno/* — Einrückung kostet 39 %."""
+    """Kompakt schreiben wie bibles/eng/web/anno/* — Einrückung kostet 39 %.
+
+    Legt das Zielverzeichnis an. Bei den ersten drei Ausgaben gab es das
+    `anno/` schon; das erste italienische Buch ist am fehlenden
+    Verzeichnis gescheitert, nachdem `buildbook.py` die Datei bereits
+    fertig im Speicher hatte.
+    """
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     tmp = path + '.tmp'
     with open(tmp, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))

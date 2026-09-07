@@ -176,21 +176,38 @@ if not FUNKTION:
 SPRACHEN = tuple(C.LANGS)
 
 
-# Bestimmte und unbestimmte Artikel der vier Zielsprachen. Die Sprachen
-# werden ohnehin getrennt verglichen, eine gemeinsame Menge genuegt.
 IT_APOKOPE = {'di', 'da', 'fa', 'va', 'sta', 'de', 'to'}
 
-ARTIKEL = {
-    'der', 'die', 'das', 'den', 'dem', 'des',
-    'ein', 'eine', 'einen', 'einem', 'eines', 'einer',
-    'the', 'a', 'an',
-    'el', 'la', 'los', 'las', 'lo', 'un', 'una', 'unos', 'unas',
-    'il', 'i', 'gli', 'le', 'uno',
+# Bestimmte und unbestimmte Artikel — **je Zielsprache getrennt**. Hier
+# stand eine gemeinsame Menge, mit der Begruendung, die Sprachen wuerden
+# ohnehin getrennt verglichen. Das half nicht: falsch war nicht der
+# Vergleich, sondern die Normalisierung. In der Menge lagen das
+# englische `a`/`an` und das italienische `i`/`le`/`la` neben dem
+# deutschen Artikel — und `_norm` streicht das erste Wort jeder
+# mehrwortigen Glosse, wenn es darin steht. Also verlor die DEUTSCHE
+# Glosse „an die Menge" ihre Praeposition und die SPANISCHE „a la casa"
+# ihre. In der italienischen Richtung trifft das jede a-Verschmelzung;
+# drei der ersten Treffer des Pilotagenten waren Scheinkollisionen
+# daraus. Gemeldet vom Agenten des italienischen Pilotbuchs.
+ARTIKEL_JE_SPRACHE = {
+    'de': {'der', 'die', 'das', 'den', 'dem', 'des',
+           'ein', 'eine', 'einen', 'einem', 'eines', 'einer'},
+    'en': {'the', 'a', 'an'},
+    'es': {'el', 'la', 'los', 'las', 'lo',
+           'un', 'una', 'unos', 'unas'},
+    'fr': {'le', 'la', 'les', "l'", 'l’',
+           'un', 'une', 'des', 'du'},
+    'it': {'il', 'lo', 'la', 'i', 'gli', 'le', "l'", 'l’',
+           'un', 'uno', 'una', "un'", 'un’'},
 }
 
 
-def _norm(g):
+def _norm(g, sprache=None):
     """Vergleichsschlüssel einer Glosse: klein, ohne Rand-Satzzeichen.
+
+    `sprache` entscheidet, welche Artikelliste gilt. Ohne sie wird kein
+    Artikel gestrichen — lieber eine Kollision zu wenig zusammengefasst
+    als eine Praeposition verschluckt.
 
     **Akzente bleiben stehen.** `common.norm_key` entfernt sie, und damit fielen
     italienisch `e` (und) und `è` (ist) zusammen — vier erfundene Kollisionen
@@ -215,7 +232,7 @@ def _norm(g):
     # Nur bei mehrwortigen Glossen — eine Glosse, die NUR ein Artikel
     # ist, bleibt sie selbst.
     teile = k.split()
-    if len(teile) > 1 and teile[0] in ARTIKEL:
+    if len(teile) > 1 and teile[0] in ARTIKEL_JE_SPRACHE.get(sprache, ()):
         k = ' '.join(teile[1:])
     return k or None
 
@@ -250,7 +267,7 @@ def kollisionen_im_vers(entries):
             if not lem:
                 continue
             roh = e.get(sprache)
-            k = _norm(roh)
+            k = _norm(roh, sprache)
             if not k:
                 continue
             nach_gloss[k].setdefault(lem, (e.get('form') or lem, roh))

@@ -368,11 +368,15 @@ Nomen (Mt 13,6, Marc 4,6 — „faute de racines"). In Luc 8,6 heisst es
 `faute d’humidité`; das `de` ist mit dem Nomen verschmolzen, und ein
 Span ueber beide Tokens zoege das Nomen in die Praepositionalglosse.
 
-**Regel:** wo die Elision einem Mehrwort ein Token nimmt, wird es
-nicht gesetzt — die Teile stehen einzeln (`faute` = *Mangel*,
-`d’humidité` = *an Feuchtigkeit*). Das trifft jede Wendung, deren
-letztes Funktionswort `de` oder `que` ist, und wird in jedem weiteren
-Buch vorkommen. Gemeldet vom Agenten fuer Luc 8.
+**Regel:** hier wird es nicht gesetzt — die Teile stehen einzeln
+(`faute` = *Mangel*, `d’humidité` = *an Feuchtigkeit*). Was die
+Elision hier verschluckt, ist das **Inhaltswort**, das die Wendung
+ergaenzt; ein Span darueber zoege es in die Praepositionalglosse.
+
+**Der zweite Satz dieser Regel — „das trifft jede Wendung, deren
+letztes Funktionswort `de` oder `que` ist" — war falsch** und ist
+gestrichen. Siehe den naechsten Abschnitt; er ist am Bestand
+gemessen.
 
 ## Zwei Mehrwoerter duerfen sich ueberlappen — aber nur einmal zaehlen
 
@@ -418,6 +422,56 @@ ihm.
 Die Probe ist also nicht „ist ein Token verschmolzen", sondern
 **„gehoert das verschmolzene Wort in die Spanne oder hinter sie"**.
 
+## Nachgemessen: der Bestand setzt ueber die Elision hinweg
+
+Der Abschnitt oben war aus zwei Kapiteln geschlossen. Beim
+Einsammeln von Lukas Paket 5 ist er gegen den ganzen Bestand
+gehalten worden, und die Zahlen sind eindeutig: **`ce que` steht an
+39 Stellen als Mehrwort ueber der Elision** (`ce qu’il`, `ce qu’elle`,
+`ce qu’ils`, `ce qu’on`) und fehlte nur an dreien, die keine groessere
+Spanne deckte (Luc 10,7 · Jude 1,10 zweimal). Sie sind nachgetragen.
+
+**Wie es funktioniert:** die Spanne nimmt das verschluckte Wort mit,
+und die **Glosse des Mehrworts traegt seinen Inhalt** — `ce qu’il` =
+*was er · what he*, `ce qu’on` = *was man · what they*. Der Einzel-
+eintrag darunter behaelt seine eigene Glosse. Nur wo ein
+**Inhaltswort** verschluckt wird, das die Wendung ergaenzt
+(`faute d’humidité`), bleibt das Mehrwort aus.
+
+Dasselbe gilt fuer `parce qu’ils` (9 Stellen, alle mit Mehrwort),
+`jusqu’à ce qu’il`, `de peur qu’après` und `même s’il` — gemessen von
+den Agenten fuer Luc 13 und Luc 14, die beide zuerst der falschen
+Fassung gefolgt waren und sie am Bestand widerlegt haben.
+
+## `tout ce que` ist kein Mehrwort
+
+Sechs Stellen fuehrten `tout ce que` als Dreier-Mehrwort (Marc 6,30
+zweimal, Luc 2,20 · 2,39 · 9,10 · 9,43), dreissig fuehrten `tout`
+einzeln neben dem Mehrwort `ce que`. Die sechs sind aufgeloest.
+`tout` = *alles · all · todo · tutto* traegt sich selbst.
+
+Am deutlichsten war die Spaltung innerhalb **eines** Kapitels:
+Luc 2,27 und 2,39 haben beide `ce qu’ordonnait`, 2,27 mit dem
+Mehrwort, 2,39 ohne. Jetzt beide gleich.
+
+## `il y a`: `da` und `dort` sind zwei Lesarten, keine Spaltung
+
+Der Agent fuer Luc 13 hat gemeldet, die italienischen Einzelglossen
+unter `il y a` liefen auseinander (`y` = *ci* gegen *vi*). Sie tun es,
+aber **im Gleichschritt mit dem Deutschen**:
+
+    55 Stellen   il = es · esso    y = da · ci      das schlichte Es gibt
+     8 Stellen   il = es · ci      y = dort · vi    il y a ici plus que …
+
+Die zweite Reihe steht ausschliesslich dort, wo der Vers auf einen
+Ort zeigt (Mt 12,6 · 12,41 · 12,42 · Luc 11,31 · 11,32) oder eine
+Menge verortet (Mt 9,37 · Luc 10,2). Das ist eine Unterscheidung und
+kein Versehen — sie bleibt.
+
+Ebenfalls festgehalten, weil es nirgends stand: das Lemma **`il y a`**
+ist den drei verneinten Existenzsaetzen ohne `pas` vorbehalten
+(*es gibt nicht*); alles Uebrige traegt `il y avoir`.
+
 ## `ce que` traegt eine Reihe
 
 Der Bestand fuehrte 106 Vorkommen auf zwölf Reihen — 64 davon
@@ -452,3 +506,7 @@ sind ihr folgerichtig auseinandergelaufen.
 Jetzt einstimmig auf der Reihe des Plurals. *Schriftgelehrter*, was
 beide deutschen Zeugen sagen, ist nicht verfuegbar — das traegt
 `scribe` an 45 Stellen.
+
+**„Eine Reihe" heisst eine Glossenzeile, nicht ein Mehrwort.**
+`docteur de la loi` steht Wort fuer Wort; der Agent fuer Luc 14 hat
+den Satz oben als Mehrwortvorgabe gelesen und zu Recht widersprochen.
