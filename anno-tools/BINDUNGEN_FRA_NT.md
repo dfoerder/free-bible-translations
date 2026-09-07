@@ -360,3 +360,41 @@ Der Bestand ist hier asymmetrisch, und das ist keine Absicht:
 (Mt 10,11, Marc 8,26 stehen Wort fuer Wort). `sweeplemma` meldet
 folglich nur die `elle`-Faelle. Bis zur Vereinheitlichung gilt: **wie
 der Bestand es fuehrt** — gemeldet vom Agenten fuer Luc 1.
+
+## Ein Mehrwort, dem die Elision ein Token wegnimmt
+
+`faute de` steht im Bestand mit **drei** Tokens: `faute` + `de` +
+Nomen (Mt 13,6, Marc 4,6 — „faute de racines"). In Luc 8,6 heisst es
+`faute d’humidité`; das `de` ist mit dem Nomen verschmolzen, und ein
+Span ueber beide Tokens zoege das Nomen in die Praepositionalglosse.
+
+**Regel:** wo die Elision einem Mehrwort ein Token nimmt, wird es
+nicht gesetzt — die Teile stehen einzeln (`faute` = *Mangel*,
+`d’humidité` = *an Feuchtigkeit*). Das trifft jede Wendung, deren
+letztes Funktionswort `de` oder `que` ist, und wird in jedem weiteren
+Buch vorkommen. Gemeldet vom Agenten fuer Luc 8.
+
+## Zwei Mehrwoerter duerfen sich ueberlappen — aber nur einmal zaehlen
+
+Luc 7,30 traegt `ne pas` (Positionen 10–13) und `se faire baptiser`
+(Positionen 11, 12, 14) gleichzeitig; `selfcheck` und `mehrwort`
+nehmen das klaglos. Der erste Fall dieser Art im Bestand.
+
+**Regel:** die Ueberlappung ist erlaubt, aber der Verbinhalt steht nur
+in **einem** der beiden. Das kleinere, geschlossene Mehrwort faellt
+auf seine schlichte Bestandsreihe zurueck — hier `ne pas` = *nicht ·
+not · no · non* —, damit nicht zweimal dasselbe uebersetzt dasteht.
+Gemeldet vom Agenten fuer Luc 7.
+
+## `partout où` ist ein Mehrwort — an allen fuenf Stellen
+
+Der Bestand fuehrte es nur in Marc 6,55 und 6,56; Mt 8,19, Mt 26,13
+und Marc 14,9 standen Wort fuer Wort. Der Agent fuer Luc 7 hat die
+Luecke am Parallelvers zu Luc 9,57 gefunden.
+
+Es traegt echte Auskunft: `où` allein ist *wo · where · donde · dove*,
+`partout où` ist *ueberall wo · wherever · dondequiera que · dovunque*
+— drei der vier Zielsprachen haben dafuer ein eigenes Wort, das aus
+den Teilen nicht entsteht. Nachgetragen, alle fuenf Stellen tragen
+jetzt dieselbe Reihe; die Einzelglosse darunter bleibt gerichtet
+(`où` = *wohin · adonde*, wo ein Bewegungsverb folgt).
