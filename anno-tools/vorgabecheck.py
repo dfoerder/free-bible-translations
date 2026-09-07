@@ -313,15 +313,34 @@ def pruefe_zitate(pfad, nr):
 
 
 def fremdbuch_regex(nr):
-    namen = []
+    """Buchnamen ALLER Ausgaben, nicht nur der eigenen.
+
+    `C.book_name` gibt den Namen in der Sprache des Quelltextes — im
+    franzoesischen Durchgang also `Matthieu`. Der Baustein schreibt aber
+    deutsch: „in Matthaeus 15 meldete er zwei Abweichungen". Der
+    Fremdbuch-Schutz griff deshalb nicht, und `vorgabecheck.py` meldete
+    beim ersten Lukas-Prompt das Matthaeus-Beispiel
+    `qui souille l’homme` als Quelltextfehler — in jedem der drei
+    Prompts, also ab jetzt in jedem Buch. Ein Befund, der immer kommt,
+    wird nach dem zweiten Mal ueberlesen.
+    """
+    namen = set()
     for i in range(1, 67):
         if i == nr:
             continue
-        try:
-            namen.append(re.escape(C.book_name(i)))
-        except Exception:
-            pass
-    return re.compile(r'\b(?:' + '|'.join(namen) + r')\s+\d', re.I)
+        for ed in ('deu/l1912mod', 'eng/web', 'spa/rv1909mod',
+                   'ita/riv1927', 'fra/lsg1910mod'):
+            try:
+                with open(C.text_pfad(ed, i), encoding='utf-8') as f:
+                    n = json.load(f).get('name')
+                if n:
+                    namen.add(n)
+                    namen.add(ascii_um(n))
+            except Exception:
+                pass
+    namen = {re.escape(x) for x in namen if x}
+    return re.compile(r'\b(?:' + '|'.join(sorted(namen, key=len, reverse=True))
+                      + r')\s+\d', re.I)
 
 
 def pruefe_deutsch(pfad, nr):
