@@ -727,3 +727,31 @@ an vier Sprachen**, nicht an einer Regel. Wer hier maschinell
 vereinheitlicht, zerschlaegt die erzwungene Haelfte. Die Regel oben („wo
 es nicht dazwischensteht, bleibt es draussen") gilt als Voreinstellung,
 nicht als Gesetz.
+
+## Das zweite Token einer Konjunktion traegt die Konjunktion mit
+
+Bei `afin que`, `parce que`, `de peur que` und ebenso bei `ce qui` faellt die
+franzoesische Fuegung auf zwei Tokens, die Zielsprachen aber oft auf eines.
+Der Bestand loest das nach **einem** Muster, und zwar seit Matthaeus:
+
+- `afin` = *damit*, `qu’il` = ***dass er*** — nicht bloss *er*. 170 Stellen
+  gegen 26; alle vier Sprachen machen es gleich (*dass er · that he ·
+  que él · che egli*). 26 gezogen.
+- `ce` = *das*, `qui` = ***was*** — nicht *welches*. „das was" ist der
+  deutsche Ausdruck, „das welches" nicht, und das Mehrwort selbst liest an
+  allen 130 Stellen *was*. 55 gezogen.
+
+Die Einzelzeilen doppeln damit die Konjunktion („damit dass er"). **Das ist
+gewollt und die Regel des ganzen Bestandes** — `ne` und `pas` tragen genauso
+beide *nicht*. Die lesbare Fassung steht in der Mehrwortzeile; die
+Einzelzeilen sagen, welches franzoesische Wort welche Funktion traegt.
+
+## `être du monde` ist praedikativ, kein Genitiv
+
+`du monde` steht 22-mal, 17-mal als echter Genitiv („la fin du monde", „le
+prince du monde") — dort ist `du` = *der* richtig. Nach `être` ist es keiner:
+„Si vous étiez du monde" heisst nicht „wenn ihr der Welt waeret". Der Zeuge
+liest „wenn ihr zur Welt gehoeren wuerdet"; die verschmolzene Form traegt
+dann Praeposition **und** Artikel, ***von der***, wie der Bestand es fuer
+`vom` (21x) und `aus dem` (12x) ohnehin tut. Jean 15,19 zweimal gezogen;
+Jean 8,23 (`de ce monde`) stand schon richtig auf *von*.

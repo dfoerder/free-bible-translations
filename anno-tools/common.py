@@ -370,6 +370,14 @@ def bestandsstand():
     Jede Messung traegt jetzt ihren Stand im Kopf. Stimmt er nicht mehr
     mit `git -C bibles-translations rev-parse --short HEAD` ueberein,
     ist die Messung zu wiederholen.
+
+    Der Commit allein reicht nicht. Der Koordinator schreibt mit
+    `setzen.py` in den Arbeitsbaum und baut neu, oft ohne sofort zu
+    committen — dann sind die gelesenen Dateien neuer als HEAD, und der
+    Stempel behauptet einen Stand, gegen den gar nicht gemessen wurde.
+    Der Agent fuer Johannes 16 hat es gemeldet: seine Dateien waren 29
+    Minuten juenger als der genannte Commit. Steht in `anno-quellen/`
+    etwas Uncommittetes, sagt der Stempel das jetzt dazu.
     """
     import subprocess
     try:
@@ -379,6 +387,15 @@ def bestandsstand():
         stand = r.stdout.strip()
     except Exception:
         stand = ''
+    try:
+        r = subprocess.run(['git', '-C', TRANS, 'status', '--porcelain',
+                            '--', 'anno-quellen'],
+                           capture_output=True, text=True, timeout=5)
+        if r.stdout.strip():
+            n = len(r.stdout.strip().splitlines())
+            stand += f' + {n} uncommittete Datei(en) im Arbeitsbaum'
+    except Exception:
+        pass
     return f'Bestand: {EDITION} · {stand}' if stand else f'Bestand: {EDITION}'
 
 
