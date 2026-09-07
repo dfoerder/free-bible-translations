@@ -746,6 +746,22 @@ gewollt und die Regel des ganzen Bestandes** — `ne` und `pas` tragen genauso
 beide *nicht*. Die lesbare Fassung steht in der Mehrwortzeile; die
 Einzelzeilen sagen, welches franzoesische Wort welche Funktion traegt.
 
+**Nachgemessen ueber alle `… que`-Mehrwoerter.** `parce que` (131) und
+`afin que` (118) stehen zu hundert Prozent so; gespalten waren `pendant que`
+(29:16), `pour que` (23:5), `dès que` (16:4) und `tandis que` (13:3) — 27
+Stellen gezogen, die eine Ausnahme ist Luc 1,44, wo `dès` = *von* und nicht
+*sobald* gelesen wird.
+
+**Drei Gruppen bleiben ausdruecklich draussen:**
+- **`ce que`** liest 220 zu 13 *was* — das ist die Relativlesart und richtig;
+  die 13 sind der faktive Gebrauch („darueber, dass"), eine eigene Reihe.
+- **`ainsi que` (8), `ne que` (7), `tant que` (2), `où que` (1)** stehen
+  einstimmig ohne. Das sind Vergleichs- und Restriktivfuegungen, keine
+  Konjunktionen mit Nebensatzsubjekt.
+- Ein Agent hat aus drei `dès qu’il`-Stellen geschlossen, `dès que` folge der
+  Regel nicht. **Die Stichprobe war zu klein** — ueber alle Formen gemessen
+  steht es 16 zu 4 dafuer.
+
 ## `être du monde` ist praedikativ, kein Genitiv
 
 `du monde` steht 22-mal, 17-mal als echter Genitiv („la fin du monde", „le
@@ -755,3 +771,24 @@ liest „wenn ihr zur Welt gehoeren wuerdet"; die verschmolzene Form traegt
 dann Praeposition **und** Artikel, ***von der***, wie der Bestand es fuer
 `vom` (21x) und `aus dem` (12x) ohnehin tut. Jean 15,19 zweimal gezogen;
 Jean 8,23 (`de ce monde`) stand schon richtig auf *von*.
+
+## `chez lui` / `chez eux` sind Mehrwoerter wie `chez elle` / `chez elles`
+
+Der Bestand fuehrte `chez toi` (4x), `chez elle` und `chez elles` als
+Mehrwort = *nach Hause · to her house · a su casa · a casa sua*, die
+maskulinen Formen aber Wort fuer Wort. Dort las das Deutsche dann
+`chez` = *zu* + `lui` = *ihm*, also „er ging **zu ihm**" fuer „er ging
+nach Hause" — waehrend Spanisch mit `a casa de él` und Italienisch mit
+`da` die Wendung laengst richtig trugen. Die Spaltung lief allein am
+Genus des Pronomens, und das ist kein Grund.
+
+Sechs Mehrwoerter angelegt: Marc 8,3 · 8,26 · Luc 1,23 · 5,25 · 18,14 ·
+24,12. **Nicht angelegt** in Luc 16,4 (`qu'ils me reçoivent chez eux` =
+in ihre Haeuser aufnehmen, nicht selbst heimgehen — der Bestand
+markiert das schon durch it `presso` statt `da`) und ueberall dort, wo
+`chez` wirklich „bei" heisst (Jean 14,23 `notre demeure chez lui`,
+Luc 11,37, Mt 26,18).
+
+Gemeldet vom Agenten fuer Johannes 20, der die Luecke sah und der
+Weisung „wie der Bestand es fuehrt" folgend nichts gesetzt hat. Das
+war richtig — die Luecke gehoert dem Koordinator, nicht dem Kapitel.
