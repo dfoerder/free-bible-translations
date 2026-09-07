@@ -134,12 +134,14 @@ def umlaut(w):
 AUSGABEN = {'WEB': 'eng/web', 'RV': 'spa/rv1909mod', 'RV1909': 'spa/rv1909mod',
             'RV1909mod': 'spa/rv1909mod', 'LSG': 'fra/lsg1910mod',
             'RIV': 'ita/riv1927', 'RIV1927': 'ita/riv1927',
+            'RIV1927mod': 'ita/riv1927mod',
             'LUT': 'deu/l1912mod', 'L1912': 'deu/l1912mod',
             'Luther': 'deu/l1912mod'}
 # Die eigene Ausgabe ist kein Zeuge — sie wird unten als __quelle__
 # gefuehrt und traegt die QUELLTEXT-Probe.
 AUSGABEN = {k: v for k, v in AUSGABEN.items() if v != C.EDITION}
-NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927|RIV|L1912|LUT|Luther)\b')
+NENNUNG = re.compile(r'\b(WEB|RV1909mod|RV1909|RV|LSG|RIV1927mod|RIV1927|RIV|'
+                     r'L1912|LUT|Luther)\b')
 # Zitate stehen in Anfuehrungszeichen ODER kursiv. Der zweite Fall fehlte:
 # in Habakuk 1 stand im Prompt „RIV *Abacuc*" — eine Vermutung, als
 # Tatsache formuliert, und das Skript sah sie nicht, weil es nur
@@ -329,7 +331,7 @@ def fremdbuch_regex(nr):
         if i == nr:
             continue
         for ed in ('deu/l1912mod', 'eng/web', 'spa/rv1909mod',
-                   'ita/riv1927', 'fra/lsg1910mod'):
+                   'ita/riv1927', 'ita/riv1927mod', 'fra/lsg1910mod'):
             try:
                 with open(C.text_pfad(ed, i), encoding='utf-8') as f:
                     n = json.load(f).get('name')

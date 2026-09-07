@@ -63,6 +63,15 @@ FUNKTION_JE_SPRACHE = {
         'y', 'o', 'pero', 'a', 'al', 'en', 'con', 'sin', 'por', 'para',
         'que', 'quien', 'no', 'es', 'son', 'era', 'eran',
     },
+    'it': {
+        'il', 'lo', 'la', 'i', 'gli', 'le', "l'", 'un', 'uno', 'una',
+        "un'", 'di', 'del', 'dello', 'della', 'dei', 'degli', 'delle',
+        'a', 'al', 'allo', 'alla', 'ai', 'agli', 'alle', 'da', 'dal',
+        'dalla', 'in', 'nel', 'nella', 'nei', 'nelle', 'con', 'su',
+        'sul', 'sulla', 'per', 'tra', 'fra', 'e', 'ed', 'o', 'ma',
+        'che', 'chi', 'non', 'si', 'ne', 'ci', 'vi',
+        'è', 'sono', 'era', 'erano',
+    },
 }
 FUNKTIONSWOERTER = FUNKTION_JE_SPRACHE.get(C.LANG, set())
 # echte periphrastische Entsprechungen, die lang sein dürfen. Alle sechs sind

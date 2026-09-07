@@ -143,6 +143,28 @@ FUNKTION_JE_SPRACHE['es'] = {
     'ser', 'estar', 'haber', 'tener', 'hacer', 'poder', 'deber', 'querer',
     'dejar', 'mismo',
 }
+# Italienisch. Die Lemmata stehen so, wie die Agenten sie setzen: Artikel
+# auf `il`, Praepositionen samt ihren Verschmelzungen auf die blosse
+# Praeposition (`nella` → `in`, `dei` → `di`), Elisionen auf ihren
+# semantischen Kopf (`l'` → `il`, `un'` → `uno`).
+FUNKTION_JE_SPRACHE['it'] = {
+    'il', 'uno', 'questo', 'quello', 'codesto', 'tutto', 'alcuno',
+    'nessuno', 'ogni', 'ciascuno',
+    'io', 'tu', 'egli', 'ella', 'noi', 'voi', 'essi', 'esse', 'lui',
+    'lei', 'loro', 'si', 'sé', 'stesso', 'chi', 'che', 'cui',
+    'quale', 'ci', 'vi', 'ne',
+    'mio', 'tuo', 'suo', 'nostro', 'vostro',
+    'di', 'a', 'da', 'in', 'con', 'su', 'per', 'tra', 'fra', 'sopra',
+    'sotto', 'contro', 'senza', 'verso', 'presso', 'dentro', 'fuori',
+    'davanti', 'dietro', 'dopo', 'prima', 'fino', 'oltre', 'secondo',
+    'e', 'o', 'ma', 'però', 'dunque', 'anzi', 'né', 'se',
+    'come', 'quando', 'mentre', 'perché', 'poiché', 'affinché',
+    'non', 'mai', 'nulla', 'niente', 'più', 'meno',
+    'anche', 'così', 'allora', 'ancora', 'già', 'molto', 'bene',
+    'qui', 'qua', 'lì', 'là', 'sì', 'no', 'ecco',
+    'essere', 'avere', 'fare', 'andare', 'potere', 'dovere', 'volere',
+    'lasciare', 'stare',
+}
 
 FUNKTION = FUNKTION_JE_SPRACHE.get(C.LANG, set())
 if not FUNKTION:

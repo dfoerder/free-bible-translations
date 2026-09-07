@@ -45,6 +45,17 @@ AUSGABEN = {
     'ita/riv1927':    {'kurz': 'it', 'text': '_riv1927.json',
                        'anno': None,
                        'langs': []},
+    'ita/riv1927mod': {'kurz': 'it', 'text': '_riv1927mod.json',
+                       'anno': '_riv1927mod_multi.json',
+                       'langs': ['de', 'en', 'es', 'fr'],
+                       # Der franzoesische Zeuge ist hier die MODERNISIERTE
+                       # LSG, nicht die von 1910: die deutsche Arbeit hat
+                       # gegen die alte gearbeitet, aber der italienische
+                       # Durchgang steht neben dem franzoesischen, und dort
+                       # ist lsg1910mod der Quelltext. Wer die alte naehme,
+                       # legte eine `fr`-Glosse neben einen Text, den die
+                       # App gar nicht mehr zeigt.
+                       'zeugen': {'fr': 'fra/lsg1910mod'}},
     'fra/lsg1910mod': {'kurz': 'fr', 'text': '_lsg1910mod.json',
                        'anno': '_lsg1910mod_multi.json',
                        'langs': ['de', 'en', 'es', 'it']},
@@ -77,9 +88,12 @@ FIELDS = ['pos', 'form', 'lemma', 'level'] + LANGS
 def zeugen():
     """[(kuerzel, 'spr/edition')] — die Referenzausgaben neben dem Quelltext.
 
-    In der Reihenfolge von LANGS, ohne die eigene Ausgabe.
+    In der Reihenfolge von LANGS, ohne die eigene Ausgabe. `ZEUGE` gilt,
+    solange die annotierte Ausgabe nichts anderes sagt; ihr Schluessel
+    `zeugen` ueberschreibt einzelne Sprachen (siehe `ita/riv1927mod`).
     """
-    return [(l, ZEUGE[l]) for l in LANGS]
+    eigen = _E.get('zeugen', {})
+    return [(l, eigen.get(l, ZEUGE[l])) for l in LANGS]
 
 
 def text_pfad(edition, nr):

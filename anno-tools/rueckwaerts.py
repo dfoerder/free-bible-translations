@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Was der vorhandene Bestand ueber ein franzoesisches Wort schon weiss.
+"""Was der vorhandene Bestand ueber ein Wort des Quelltextes schon weiss.
 
     rueckwaerts.py <buchNr> <kapitel> [<vonVers> [<bisVers>]] [-o datei]
     rueckwaerts.py --wort <wort> [<wort> ...]
@@ -71,13 +71,47 @@ import unicodedata
 
 import common as C
 
-# Die beiden vierspaltigen Zeugen. `formlang` ist die Sprache ihres
-# Quelltextes — die liefert die vierte Spalte, die nicht als Glosse
-# dasteht, sondern als Wortform.
-ZEUGEN = [('eng/web', '_web_deu.json', 'en'),
-          ('deu/l1912mod', '_l1912mod_multi.json', 'de')]
+# Die vierspaltigen Zeugen. `formlang` ist die Sprache ihres Quelltextes
+# — die liefert die vierte Spalte, die nicht als Glosse dasteht, sondern
+# als Wortform.
+#
+# Bis zum italienischen Durchgang standen hier `eng/web` und
+# `deu/l1912mod` fest verdrahtet, weil der Schluessel fest `fr` war. Ein
+# Zeuge taugt hier genau dann, wenn er (a) annotiert ist, (b) seine
+# Quelltextsprache eine deiner Zielspalten ist und (c) er eine Spalte in
+# der Sprache DEINES Quelltextes fuehrt. Das ergibt fuer Franzoesisch
+# dieselben zwei wie bisher und fuer Italienisch drei — `fra/lsg1910mod`
+# kommt dazu, und mit ihm die einzige Quelle, die alle vier Zielsprachen
+# eines italienischen Wortes aus EINEM Eintrag liefert.
+def _zeugenliste():
+    # Nur Ausgaben, von denen wirklich etwas gebaut daliegt. Ohne die
+    # Probe stuende `ita/riv1927mod` im franzoesischen Kopf als Zeuge,
+    # solange kein einziges italienisches Kapitel existiert — eine
+    # Quellenangabe, die auf ein leeres Verzeichnis zeigt.
+    raus = []
+    for ed, cfg in C.AUSGABEN.items():
+        if not (cfg['anno'] and cfg['kurz'] in C.LANGS
+                and C.LANG in cfg['langs']):
+            continue
+        d = os.path.join(C.REPO, 'bibles', *ed.split('/'), 'anno')
+        if os.path.isdir(d) and any(f.endswith(cfg['anno'])
+                                    for f in os.listdir(d)):
+            raus.append((ed, cfg['anno'], cfg['kurz']))
+    # `eng/web` und `deu/l1912mod` zuerst: sie sind vollstaendig, die
+    # anderen wachsen erst. Die Reihenfolge entscheidet, welche Lesart in
+    # gleich haeufigen Faellen obenan steht.
+    rang = {'eng/web': 0, 'deu/l1912mod': 1}
+    return sorted(raus, key=lambda z: (rang.get(z[0], 2), z[0]))
 
-SPALTEN = ['de', 'en', 'es', 'it']
+
+ZEUGEN = _zeugenliste()
+
+# Die Zielspalten — immer die vier anderen Sprachen, nie die eigene.
+SPALTEN = list(C.LANGS)
+
+# Die Sprache, in der der Schluessel steht: die des Quelltextes. In den
+# Zeugen ist das eine GLOSSENSPALTE, hier ist es die Wortform.
+SCHLUESSEL = C.LANG
 MAX_ZEILEN = 6
 DECKUNG = 0.9
 
@@ -131,7 +165,7 @@ def index(buecher=None):
             for kap, vv in d['chapters'].items():
                 for v, ee in vv.items():
                     for e in ee:
-                        f = norm(e.get('fr', ''))
+                        f = norm(e.get(SCHLUESSEL, ''))
                         if not f:
                             continue
                         zeile, lvl = _zeile(e, formlang)
@@ -170,7 +204,7 @@ def verszeilen(nr, kap):
         d = json.load(open(p, encoding='utf-8'))
         for v, ee in d['chapters'].get(str(kap), {}).items():
             for e in ee:
-                f = norm(e.get('fr', ''))
+                f = norm(e.get(SCHLUESSEL, ''))
                 if not f:
                     continue
                 zeile, lvl = _zeile(e, formlang)
@@ -246,8 +280,62 @@ def _eigentext(key, n, wo):
             + (f'   ({", ".join(wo)})' if wo else ''))
 
 
+# ------------------------------------------------------- italienische Klitika
+# Italienisch haengt die unbetonten Pronomen ANS VERB: `dirgli`,
+# `vedendolo`, `svegliatosi`, `opponetevi`, `gliene`. Der Rueckwaerts-
+# Index kennt solche Formen nicht — die Zeugen glossieren `to tell him`
+# als zwei Woerter, nie als eines. Ueber das ganze NT sind das 756
+# Tokens in 547 Formen, also gut ein Fuenftel alles Unbelegten; ohne
+# diese Schicht faenden die Agenten dort „UNBELEGT — hier ist die
+# Arbeit", obwohl Verb und Pronomen beide hundertfach dastehen.
+#
+# Laenge zuerst, damit `glielo` vor `lo` greift.
+KLITIKA = ['glielo', 'gliela', 'glieli', 'gliele', 'gliene',
+           'melo', 'mela', 'meli', 'mele', 'mene',
+           'telo', 'tela', 'teli', 'tele', 'tene',
+           'celo', 'cela', 'celi', 'cele', 'cene',
+           'velo', 'vela', 'veli', 'vele', 'vene',
+           'selo', 'sela', 'seli', 'sele', 'sene',
+           'gli', 'mi', 'ti', 'ci', 'vi', 'si', 'lo', 'la', 'li', 'le', 'ne']
+
+# Was beim Anhaengen am Stamm verlorengeht: der Infinitiv wirft sein
+# `-e` ab (`portare` + `gli` → `portargli`), sonst bleibt der Stamm.
+STAMMPROBEN = ('', 'e', 'i', 'o', 'a')
+
+# Was der Apostroph verschluckt hat. Franzoesisch bleibt das elidierte
+# Stueck als eigene Glosse stehen (`qu'`), italienisch nicht: `nell` ist
+# keine Wortform, `nella` ist eine.
+ELISIONSPROBEN = {'it': ('a', 'o', 'e', 'i', 'he', 'la', 'lo')}
+
+
+def _klitikon(k, ganz, level):
+    """(zeilen, beschreibung) fuer Verb + angehaengtes Pronomen — oder ([], '')."""
+    if C.LANG != 'it':
+        return [], ''
+    for kl in KLITIKA:
+        if not k.endswith(kl) or len(k) - len(kl) < 3:
+            continue
+        stamm = k[:-len(kl)]
+        for probe in STAMMPROBEN:
+            kand = stamm + probe
+            if kand in ganz:
+                out = [f'  **{kand}** (Verb)']
+                zeigen, _ = _kuerzen(sorted(ganz[kand].items(),
+                                            key=lambda x: -x[1]))
+                out += ['  ' + _zeilentext(z, level[(kand, z)], n)
+                        for z, n in zeigen[:3]]
+                if kl in ganz:
+                    out.append(f'  **{kl}** (Pronomen)')
+                    zg, _ = _kuerzen(sorted(ganz[kl].items(),
+                                            key=lambda x: -x[1]))
+                    out += ['  ' + _zeilentext(z, level[(kl, z)], n)
+                            for z, n in zg[:2]]
+                return out, f'{kand} + {kl}'
+    return [], ''
+
+
 def schicht(wort):
-    """('BESTAND'|'GLOSSE'|'TEIL'|'ELISION'|None, zeilen) fuer ein Token."""
+    """('BESTAND'|'GLOSSE'|'TEIL'|'KLITIKON'|'ELISION'|None, zeilen)."""
     ganz, teil, level, stellen = index()
     eigen, eigenorte = eigenindex()
     k = norm(wort)
@@ -275,16 +363,27 @@ def schicht(wort):
         if rest:
             out.append(f'- … und {rest} weitere')
         return 'TEIL', out
+    kl, wie = _klitikon(k, ganz, level)
+    if kl:
+        return 'KLITIKON', [f'  *{wie}* — die beiden Teile einzeln:'] + kl
     if "'" in k:
         stuecke = [p for p in k.split("'") if p]
         gefunden = []
         for i, p in enumerate(stuecke):
-            if p not in ganz:
+            kand = p
+            if kand not in ganz:
+                # Italienisch ist das elidierte Stueck selbst keine
+                # Wortform: `nell'` steht nirgends, `nella` hundertfach.
+                for probe in ELISIONSPROBEN.get(C.LANG, ()):
+                    if p + probe in ganz:
+                        kand = p + probe
+                        break
+            if kand not in ganz:
                 continue
-            zeigen, _ = _kuerzen(sorted(ganz[p].items(), key=lambda x: -x[1]))
-            marke = p + ("'" if i < len(stuecke) - 1 else '')
+            zeigen, _ = _kuerzen(sorted(ganz[kand].items(), key=lambda x: -x[1]))
+            marke = kand if kand != p else p + ("'" if i < len(stuecke) - 1 else '')
             gefunden.append(f'  **{marke}**')
-            gefunden += ['  ' + _zeilentext(z, level[(p, z)], n)
+            gefunden += ['  ' + _zeilentext(z, level[(kand, z)], n)
                          for z, n in zeigen[:3]]
         if gefunden:
             return 'ELISION', gefunden
@@ -316,7 +415,7 @@ def versatzprobe(nr, kap, verses):
         for v, ee in d['chapters'].get(str(kap), {}).items():
             s = set()
             for e in ee:
-                f = norm(e.get('fr', ''))
+                f = norm(e.get(SCHLUESSEL, ''))
                 if f:
                     s.add(f)
                     s.update(f.split())
@@ -346,13 +445,21 @@ def extract(nr, kap, von=None, bis=None):
     L = [f'# Rueckwaerts-Lexikon: {name} {kap}'
          + (f',{von}–{bis}' if von else ''), '',
          f'*{C.bestandsstand()}*', '']
-    L.append('Was `eng/web` und `deu/l1912mod` in ihrer **fr-Spalte** zu den '
+    L.append('Was ' + ', '.join(f'`{z[0]}`' for z in ZEUGEN)
+             + f' in ihrer **{SCHLUESSEL}-Spalte** zu den '
              'Woertern dieses Abschnitts fuehren.')
     L.append('')
+    lernende = {'de': 'Deutsch', 'en': 'Englisch', 'es': 'Spanisch',
+                'fr': 'Franzoesisch', 'it': 'Italienisch'}
+    fremd = '-, '.join(lernende[z[2]] for z in ZEUGEN[:-1])
+    fremd = (fremd + '- oder ' if fremd else '') + lernende[ZEUGEN[-1][2]] \
+        if ZEUGEN else '?'
     L.append('**Level und Lemma der Zeugen sind nicht uebertragbar.** Das Level '
              'steht in Klammern mit der Ausgabe, aus der es kommt — es ist CEFR '
-             'fuer Englisch- oder Deutschlernende, nicht fuer Franzoesisch. Das '
-             'Lemma steht gar nicht da; es ist im Zeugen englisch oder deutsch.')
+             f'fuer {fremd}lernende, nicht fuer {lernende[SCHLUESSEL]}. Das '
+             'Lemma steht gar nicht da; es ist im Zeugen '
+             + ' oder '.join(lernende[z[2]].lower() for z in ZEUGEN) + '.')
+    del fremd
     L.append('')
     if not vz:
         L.append('**Keine Verszeilen** — die Zeugen haben zu diesem Kapitel '

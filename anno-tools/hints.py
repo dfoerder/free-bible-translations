@@ -133,6 +133,23 @@ FUNKTION_JE_SPRACHE = {
            'se', 'su', 'sus', 'mi', 'mis', 'tu', 'tus', 'él', 'ella', 'ellos',
            'yo', 'tú', 'nosotros', 'vosotros', 'como', 'así', 'cuando', 'si',
            'todo', 'todos', 'toda', 'todas'},
+    'it': {'il', 'lo', 'la', 'i', 'gli', 'le', "l'", 'un', 'uno', 'una',
+           "un'", 'di', "d'", 'del', 'dello', 'della', 'dei', 'degli',
+           'delle', 'a', 'ad', 'al', 'allo', 'alla', 'ai', 'agli', 'alle',
+           'da', 'dal', 'dallo', 'dalla', 'dai', 'dagli', 'dalle', 'in',
+           'nel', 'nello', 'nella', 'nei', 'negli', 'nelle', 'con', 'col',
+           'su', 'sul', 'sulla', 'sui', 'sulle', 'per', 'tra', 'fra',
+           'e', 'ed', 'o', 'ma', 'però', 'dunque', 'perché',
+           'che', 'chi', 'cui', 'quale', 'quali', 'non', 'né',
+           'è', 'sono', 'era', 'erano', 'sarà', 'saranno',
+           'ha', 'hanno', 'aveva', 'avevano', 'io', 'tu', 'egli', 'ella',
+           'noi', 'voi', 'essi', 'esse', 'lui', 'lei', 'loro', 'si',
+           'mi', 'ti', 'ci', 'vi', 'ne', 'lo', 'gli', 'suo', 'sua',
+           'suoi', 'sue', 'mio', 'mia', 'miei', 'mie', 'tuo', 'tua',
+           'nostro', 'nostra', 'vostro', 'vostra', 'come', 'anche',
+           'così', 'allora', 'quando', 'se', 'tutto', 'tutti',
+           'tutta', 'tutte', 'essere', 'avere', 'fare', 'può',
+           'deve'},
 }
 FUNKTION = FUNKTION_JE_SPRACHE.get(C.LANG, set())
 

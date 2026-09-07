@@ -49,6 +49,8 @@ HILFSVERBEN_JE_SPRACHE = {
            'let', 'go'},
     'es': {'ser', 'estar', 'haber', 'tener', 'poder', 'deber', 'querer',
            'hacer', 'dejar', 'ir'},
+    'it': {'essere', 'avere', 'stare', 'potere', 'dovere', 'volere',
+           'fare', 'lasciare', 'andare', 'venire'},
 }
 HILFSVERBEN = HILFSVERBEN_JE_SPRACHE.get(C.LANG, set())
 MIN_STAMM = 5

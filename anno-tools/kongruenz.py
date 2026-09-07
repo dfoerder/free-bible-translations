@@ -212,6 +212,25 @@ SEIN_IT = {'hanno': 'sono', 'ha': 'è', 'ho': 'sono', 'hai': 'sei',
            'avete': 'siete', 'abbiamo': 'siamo'}
 
 
+# Die Possessiv- und Artikelproben lesen die `it`-SPALTE. Bei
+# `ANNO_EDITION=ita/riv1927mod` gibt es die nicht — Italienisch ist dort
+# die `form`. Ohne diesen Schalter liest jede Probe `None`, findet nichts
+# und meldet „0 Verdachtsfaelle": dieselbe lautlose Null, an der schon
+# artikel.py und qa.py in der franzoesischen Richtung haengen geblieben
+# sind. Was bleibt, sind die es- und fr-Proben; die tragen dort.
+IT_SPALTE = 'it' in C.LANGS
+
+# Woran ein reflexives Mehrwort im QUELLTEXT zu erkennen ist.
+REFLEXIV_PRAEFIX = {'de': ('sich ',), 'fr': ('se ', "s'"),
+                    'it': ('si ', "s'"), 'es': ('se ', "se'"),
+                    'en': ('oneself ',)}
+
+PRAEFIX = REFLEXIV_PRAEFIX.get(C.LANG, ())
+HILFSLEMMA = {'de': ('haben', 'sein'), 'fr': ('avoir', 'être'),
+              'it': ('avere', 'essere'), 'es': ('haber', 'ser'),
+              'en': ('have', 'be')}.get(C.LANG, ())
+
+
 def hilfsverb_reflexiv(d, kap):
     """Reflexives Perfekt nimmt franzoesisch être und italienisch essere.
 
@@ -232,11 +251,18 @@ def hilfsverb_reflexiv(d, kap):
         for mw in ents:
             if 'pos_end' not in mw and 'parts' not in mw:
                 continue
-            if not (mw.get('lemma') or '').startswith('sich '):
+            lem = (mw.get('lemma') or '')
+            if not any(lem.startswith(p) for p in PRAEFIX):
                 continue
             fr, it = (mw.get('fr') or ''), (mw.get('it') or '')
+            # Bei italienischem Quelltext steht das essere-Perfekt in der
+            # FORM, nicht in einer Glosse — dann ist die Frage, ob die
+            # franzoesische Spalte mitzieht.
+            form = mw.get('form') or ''
             if not (re.search(r"\b(s'est|se sont|me suis|nous sommes|vous êtes|s'était)\b", fr)
-                    or re.search(r'\b(si è|si sono|mi sono|ci siamo|vi siete)\b', it)):
+                    or re.search(r'\b(si è|si sono|mi sono|ci siamo|vi siete)\b', it)
+                    or (C.LANG == 'it' and re.search(
+                        r'\b(si è|si sono|mi sono|ti sei|ci siamo|vi siete)\b', form))):
                 continue
             # Das Hilfsverb kann VOR dem Partizip stehen („hat sich
             # verunreinigt") oder dahinter — im Nebensatz ist die zweite
@@ -247,7 +273,7 @@ def hilfsverb_reflexiv(d, kap):
                         + [mw['pos'] + d for d in range(1, 9)])
             for p in nachbarn:
                 h = einzel.get(p)
-                if not h or h.get('lemma') not in ('haben', 'sein'):
+                if not h or h.get('lemma') not in HILFSLEMMA:
                     continue
                 hf, hi = (h.get('fr') or '').lower(), (h.get('it') or '').lower()
                 if hf in HABEN_FR or hi in HABEN_IT:
@@ -260,6 +286,7 @@ def hilfsverb_reflexiv(d, kap):
 
 geprueft = [0]
 stumm = [0]
+
 
 
 def main():
@@ -319,6 +346,8 @@ def main():
                 # Genau daran haben sie beim ersten Einbau geschwiegen.
                 itw = (e.get('it') or '').strip().lower()
                 dew = C.de_wort(e).lower()
+                if not IT_SPALTE:
+                    itw = ''
                 folge = (nx.get('it') or '').strip().lower().split()
                 # Nach einer Form von `essere` ist das Nomen Praedikativ
                 # und steht artikellos: „sarà vostro servitore" (20,26,
@@ -337,8 +366,9 @@ def main():
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx.get('it') or '',
                                     'Artikel fehlt vor loro'))
-                g = genus(nx.get('it') or '')
-                geprueft[0] += 1
+                g = genus(nx.get('it') or '') if IT_SPALTE else ''
+                if IT_SPALTE:
+                    geprueft[0] += 1
                 if not g:
                     # `genus()` raet aus der Endung und schweigt bei
                     # `-e`. Wie oft es schweigt, stand bisher nirgends —
@@ -348,6 +378,7 @@ def main():
                     stumm[0] += 1
                     continue
                 soll = None
+                if not IT_SPALTE: continue
                 if it in MASC_SG: soll = 'ms'
                 elif it in FEM_SG: soll = 'fs'
                 elif it in MASC_PL: soll = 'mp'
@@ -402,6 +433,11 @@ def main():
         print('Zum Artikel vor dem Possessiv: der VOKATIV steht artikellos')
         print('(„Mon ami" in 20,13 ist bei RIV „Amico") — das meldet dieses')
         print('Werkzeug mit, es kann ihn nicht sehen.')
+    if not IT_SPALTE:
+        print('Der Quelltext ist italienisch — es gibt keine `it`-Spalte.')
+        print('Die Possessiv- und Artikelproben am italienischen Genus sind')
+        print('deshalb NICHT gelaufen; geprueft wurden nur die spanische und')
+        print('die franzoesische Numerusprobe.')
     if geprueft[0]:
         print('Italienisches Genus: %d Nomen angesehen, bei %d konnte die '
               'Endung\ndas Genus nicht entscheiden (`-e` ist mehrdeutig) — '
