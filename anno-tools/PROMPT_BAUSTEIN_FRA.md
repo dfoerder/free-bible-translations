@@ -116,6 +116,13 @@ zweite.**
 - **`parallelen_<nr>_<kap>.md`** liegt in deiner Vorbereitung und zeigt,
   wo derselbe Wortlaut schon annotiert steht. Das ist die staerkste
   Bindung, die es gibt.
+- **`fixgloss.py verse <NR> <KAP> <VERS>`** zeigt einen annotierten Vers
+  **ganz** — jedes Token mit Lemma, Level und Glossen, und darueber die
+  Mehrwortspannen. Wenn `parallelen_<nr>_<kap>.md` dir einen Parallelvers
+  nennt, ist das der Griff, mit dem du ihn liest. `folgenreihe.py`
+  beantwortet nur, was du schon zu fragen weisst; der ganze Vers zeigt
+  auch die Mehrwoerter, die du sonst neu erfindest (`faire asseoir`,
+  `par terre` — der Agent fuer Marc 8 hat beide erst so gefunden).
 - **`folgenreihe.py "<folge>"`** misst die Glossen des Bestands zu genau
   dieser Folge. **Es sucht die ZEICHENKETTE im Quelltext, nicht das
   Lemma**: `folgenreihe.py "garder le silence"` meldete 0, obwohl das

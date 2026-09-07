@@ -285,3 +285,19 @@ RIV1927 hilft hier nicht weiter, weil es die Wortstellung dreht
 dem Nomen, im Franzoesischen davor. Eine Token-fuer-Token-Spiegelung
 gibt es also nicht; beide Fassungen waeren grammatisch. Entschieden
 wird nach der eigenen Regel, nicht nach dem Zeugen.
+
+## Der Teilungsartikel ueber zwei Tokens
+
+`du vin`, `du pain` sind **ein** Token, und der Bestand glossiert es
+zwanzigmal als *etwas · some · algo de · del*. Ueber zwei Tokens —
+`de la salive` (Marc 8,23), `de l’eau` — gab es bis Markus 8 keine
+Regel, weil kein Vers sie verlangt hatte.
+
+Sie folgt der Artikelregel: **die Praeposition traegt das Teilungswort,
+der Artikel bleibt Artikel.**
+
+    de   → *etwas · some · algo de · un po’ di*
+    la   → *den · the · la · la*   (Genus und Kasus nach dem Nomen)
+
+Entschieden nach Marc 8,23; der Agent hat die Stelle selbst als die
+schwaechste seines Kapitels benannt und um eine Entscheidung gebeten.

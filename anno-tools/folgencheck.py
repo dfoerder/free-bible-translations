@@ -179,6 +179,14 @@ def main():
 
     print(f'# Zeichengleichheit: {C.book_name(nr)}\n')
     gleich = abweichend = ohne = 0
+    # Dieselbe Abweichung erscheint in jedem Fenster, das sie enthaelt.
+    # Ueber die Buchgrenze sind das viele: der Agent fuer Marc 8 bekam
+    # EINEN Befund (8,2 `cette`) elfmal gemeldet, und zwei echte unter
+    # 22 Bloecken. Gezeigt wird jede Abweichung jetzt einmal — beim
+    # laengsten Block, der sie traegt, denn `folgen()` liefert absteigend
+    # nach Laenge.
+    gesehen_abw = set()
+    doppelt = 0
     for g, orte in folgen(quelle, minlen):
         gruppen = {}
         eigen = False
@@ -222,20 +230,36 @@ def main():
                     and not any(w.split(',')[0] in nurkap
                                 for w in haupt[1]):
                 continue
-            if kopf:
-                print(kopf)
-                kopf = ''
             for idx, (a, b) in enumerate(zip(haupt[0][0], sig[0])):
                 if a != b:
+                    marke = (tuple(wo), tuple(haupt[1]), g[idx], a, b)
+                    if marke in gesehen_abw:
+                        doppelt += 1
+                        continue
+                    gesehen_abw.add(marke)
+                    if kopf:
+                        print(kopf)
+                        kopf = ''
                     print(f'   {", ".join(wo)}  bei `{g[idx]}`:')
                     print(f'      hier  {b}')
                     print(f'      dort  {a}  ({", ".join(haupt[1])})')
             if haupt[0][1] != sig[1]:
-                print(f'   {", ".join(wo)}  Mehrwoerter: {sig[1] or "keine"}')
-                print(f'      dort  {haupt[0][1] or "keine"}')
+                marke = (tuple(wo), tuple(haupt[1]), 'MW', haupt[0][1], sig[1])
+                if marke in gesehen_abw:
+                    doppelt += 1
+                else:
+                    gesehen_abw.add(marke)
+                    if kopf:
+                        print(kopf)
+                        kopf = ''
+                    print(f'   {", ".join(wo)}  Mehrwoerter: {sig[1] or "keine"}')
+                    print(f'      dort  {haupt[0][1] or "keine"}')
         print()
     print(f'{gleich} Folgen zeichengleich, {abweichend} mit Abweichung'
           + (f', {ohne} noch nicht annotiert' if ohne else '') + '.')
+    if doppelt:
+        print(f'{doppelt} Wiederholungen derselben Abweichung in kuerzeren '
+              'Fenstern sind weggelassen.')
     if abweichend:
         print('Jede Abweichung am Vers pruefen — Satzposition, Kasus, '
               'Genus,\nNumerus und Funktion sind haeufige und richtige '
