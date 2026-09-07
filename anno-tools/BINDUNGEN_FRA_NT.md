@@ -296,8 +296,25 @@ Regel, weil kein Vers sie verlangt hatte.
 Sie folgt der Artikelregel: **die Praeposition traegt das Teilungswort,
 der Artikel bleibt Artikel.**
 
-    de   → *etwas · some · algo de · un po’ di*
-    la   → *den · the · la · la*   (Genus und Kasus nach dem Nomen)
+    de   → *etwas · some · algo de · **di***
+    la   → *den · the · la · **la***   (Genus und Kasus nach dem Nomen)
+
+**Nachgemessen und korrigiert (Johannes 13).** `un po’ di` war falsch: der
+Zeuge kennt es nicht, er liest `del denaro` (Marc 14,11 · Luc 22,5),
+`dell’olio e del vino` (Luc 10,34), `delle zizzanie` (Mt 13,25). Die Regel
+ist einfacher, als sie aussah, und der Bestand macht sie an 195 Stellen
+schon richtig:
+
+- **`de` vor einem Artikel** — gleich ob der Artikel ein eigenes Token ist
+  (`de la salive`) oder im Wort steckt (`de l’eau`) — traegt italienisch nur
+  **`di`**; der Artikel bleibt bei seinem eigenen Token (`la`, `l’acqua`).
+  Zusammengelesen ergibt das `di la` bzw. `di l’acqua`, also genau `della`
+  und `dell’acqua`.
+- **`de` vor einem blossen Nomen** (`de pain`, `de fruit`, `de bien`) traegt
+  den ganzen Teilungsartikel: **`del`/`della`** nach Genus. 60 Stellen, alle
+  einstimmig, unveraendert.
+
+29 Stellen gezogen. Wer `un po’ di` findet, hat eine Altlast vor sich.
 
 Entschieden nach Marc 8,23; der Agent hat die Stelle selbst als die
 schwaechste seines Kapitels benannt und um eine Entscheidung gebeten.
@@ -662,3 +679,51 @@ einmal „nach Numerus". Nachgemessen ist sie inhaltlich und richtig:
 Beide Zeugen machen denselben Unterschied, im selben Vers: Marc 15,44 liest
 deutsch „dass er schon **tot** war … ob Jesus schon lange **gestorben** sei",
 und der Bestand bildet genau das ab. Nichts zu vereinheitlichen.
+
+## `où je vais` spanisch: `adónde` in der indirekten Frage, `adonde` im Relativsatz
+
+Ein Agent hat die Spaltung fuer eine Altlast gehalten und wollte 8,14
+nachgezogen haben. **Sie ist richtig** — es ist die spanische
+Akzentorthographie, und die unterscheidet nicht Frage von Aussage, sondern
+Fragesatz von Relativsatz:
+
+- `je sais où je vais` → indirekte Frage → **`adónde`** (Jean 8,14 zweimal)
+- `vous ne pouvez venir où je vais` → Relativsatz → **`adonde`**
+  (Jean 8,21 · 8,22 · 13,33 · 13,36)
+- `où vas-tu?` → direkte Frage → **`adónde`** (Jean 13,36)
+
+Der Akzent haengt am Nebensatztyp, nicht am Fragezeichen. Nicht
+vereinheitlichen.
+
+## Der verneinte Teilungsartikel: `de` heisst deutsch `kein`, nicht `irgendein`
+
+`n'auriez pas de péché`, `ne porte pas de bons fruits`. Der Bestand war
+gespalten — 19 Stellen *keine*, 12 *irgendwelche/irgendein*. **Der Zeuge
+entscheidet einstimmig fuer `kein`:** „dann haettet ihr **keine** Suende"
+(Jean 9,41), „der **keine** guten Fruechte bringt" (Mt 7,19 · Luc 3,9),
+„in dem **keine** Falschheit ist" (Jean 1,47) — und er setzt daneben nie
+ein eigenes `nicht`. 12 Stellen gezogen.
+
+Spanisch und Italienisch bleiben unveraendert: `no … ningún` und
+`non … alcun` sind dort Negationskongruenz und richtig. Englisch steht
+etwa halb auf `any`, halb auf `no`; beides ist mit dem `not` des
+Mehrworts lesbar, deshalb nicht angefasst.
+
+## `ne pas` mit zusammengesetzter Zeit: die Spanne ist NICHT vereinheitlichbar
+
+Ein Agent hat gemeldet, der Bestand sei gespalten — mal liegt das Partizip
+in der `ne pas`-Spanne, mal daneben — und die 38 (nachgemessen: 96)
+Gegenbelege seien eine Altlast. **Nachgemessen ist es keine.**
+
+Die Spannenbreite haengt daran, ob die Zielsprachen an derselben Stelle
+teilbar sind. `n'avez pas dansé` muss das Partizip mitnehmen, weil
+Spanisch `no bailasteis` daraus **ein** Wort macht — `dansé` haette dann
+keine Entsprechung. `n'ai pas` + `trouvé` darf dagegen enden, weil alle
+vier Sprachen zusammengesetzt bleiben (`habe nicht` + `gefunden`).
+
+Rund die Haelfte der breiten Spannen ist so erzwungen, die andere Haelfte
+waere auch schmal moeglich — aber welche, entscheidet sich **am Vers und
+an vier Sprachen**, nicht an einer Regel. Wer hier maschinell
+vereinheitlicht, zerschlaegt die erzwungene Haelfte. Die Regel oben („wo
+es nicht dazwischensteht, bleibt es draussen") gilt als Voreinstellung,
+nicht als Gesetz.
