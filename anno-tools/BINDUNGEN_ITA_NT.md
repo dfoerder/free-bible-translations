@@ -999,3 +999,38 @@ Zwei `folgencheck --min 3`-Abweichungen bleiben mit Absicht stehen:
     Es meldet erst, wo die Glossen in mindestens zwei Sprachen den
     Wortstamm teilen — die essere-Perfekte aus Reihe 32 faellt es
     deshalb nicht an, obwohl genau dort die Entscheidung liegt.
+
+## 38 · Die franzoesische Spalte elidiert durchgehend
+
+**Entscheidung des Nutzers, 07.09.2026, beim Einsammeln von Matteo
+Paket 1.** Wo im Franzoesischen elidiert wird, steht die elidierte Form
+auch in der Glosse — auch dann, wenn die Glosse fuer sich allein steht:
+
+    di + Abraham    fr `d'`   nicht `de`    (1,1 und 19 weitere)
+    che + aillent   fr `qu'`  nicht `que`   (1,18)
+    il + enfant     fr `l'`   nicht `le`    (2,9 und 7 weitere)
+    si + arrêta     fr `s'`   nicht `se`    (2,9 und 5 weitere)
+    mi + appliquais fr `m'`   nicht `me`    (65,1,3)
+
+Elidierbar sind zehn Formen: `se me te ne le la de que ce je`.
+
+**Der Anlass.** `perché si adempisse` stand dreimal zeichengleich und
+trug zweimal *s'accomplisse*, einmal *se accomplisse*. `folgencheck.py`
+hat genau die eine Stelle gemeldet, weil sie in einer wiederholten Folge
+lag — die uebrigen 44 sah kein Werkzeug. Die Gegenprobe an den fertigen
+Ausgaben zeigte, dass es dort nie entschieden worden war: `deu/l1912mod`
+steht im NT 1754 zu 1313, `eng/web` 1992 zu 1344, beide also etwa 57 zu
+43 gespalten. Der italienische Bestand ist damit der erste einheitliche.
+
+**Das aspirierte h ist die Ausnahme:** `la hache` bleibt `la`, `l'homme`
+wird `l'`. Welches `h` aspiriert ist, misst `elision.py` am
+franzoesischen Quelltext — 156 Formen mit 641 Belegen, geraten wird
+nichts.
+
+**`elision.py` gehoert in die Pruefkette** und muss 0 melden.
+
+**Und `folgencheck.py` meldet die Elision als Abweichung, zu Recht.**
+`fu padre di` steht in der Genealogie 38-mal; 18-mal folgt ein
+vokalisch anlautender Name (`d'Abraham`) und 20-mal ein konsonantischer
+(`de Salomon`). `folgencheck` vergleicht die drei Tokens der Folge und
+sieht den Namen dahinter nicht — die Spaltung ist richtig und bleibt.

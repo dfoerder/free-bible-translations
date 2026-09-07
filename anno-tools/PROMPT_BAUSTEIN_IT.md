@@ -145,6 +145,14 @@ Wort. Lies den Vers.
   Einzelheiten in `BINDUNGEN_ITA_NT.md` §15. Das ist **kein** Verstoss
   gegen „nie ein Grammatik-Tag in Klammern" — die Regel gilt fuer die
   vier Glossenspalten, nicht fuer das Lemma.
+- **Die franzoesische Spalte elidiert durchgehend.** Wo das
+  Franzoesische elidiert, steht die elidierte Form auch in der Glosse:
+  `di` vor `Abraham` ist fr `d'`, nicht `de`; `il` vor `enfant` ist
+  `l'`; `si` vor `arrêta` ist `s'`. Zehn Formen sind betroffen —
+  `se me te ne le la de que ce je` —, das aspirierte `h` ist die
+  Ausnahme (`la hache`). **`elision.py` prueft das und muss 0 melden**;
+  es misst das aspirierte `h` am franzoesischen Quelltext, statt es zu
+  raten. Einzelheiten in Reihe 38.
 - **`si` ist mehrdeutig:** Reflexivpronomen (*si lavò*), unpersoenliches
   *man* (*si dice*) und Passiversatz. Am Vers entscheiden; das Lemma ist
   in allen drei Faellen `si`, die Glossen sind es nicht.
@@ -198,6 +206,7 @@ Wendung selbst. Das ist Absicht, kein blinder Fleck.
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --min 3 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 elision.py <NR>
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
