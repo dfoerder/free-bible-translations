@@ -127,6 +127,8 @@ DE_POSSESSIV_ALLE = DE_POSSESSIV | {
     'unser','unsere','unseren','unserem','unserer','unseres',
     'euer','eure','euren','eurem','eurer','eures'}
 # Italienische Possessive OHNE Artikel — genau die sind verdaechtig.
+IT_ARTIKEL = {'il', 'lo', 'la', "l'", 'l’', 'i', 'gli', 'le'}
+
 IT_POSSESSIV = {'mio','mia','miei','mie','tuo','tua','tuoi','tue',
                 'suo','sua','suoi','sue','nostro','nostra','nostri',
                 'nostre','vostro','vostra','vostri','vostre'}
@@ -355,14 +357,24 @@ def main():
                 vorher = einzel.get(pos - 1)
                 praedikativ = bool(vorher) and (vorher.get('it') or '').strip(
                     ).lower() in ESSERE
+                # In der franzoesischen Richtung steht der Artikel auf
+                # einem EIGENEN Token: `les siens` = `les` *i* +
+                # `siens` *suoi*. Das Possessivtoken ist dann zu Recht
+                # bar, und die Probe meldete es trotzdem — in Jean 1
+                # war das ihr einziger Treffer, und er war falsch.
+                # Gemeldet vom Agenten fuer Jean 1.
+                art_davor = bool(vorher) and (vorher.get('it') or '').strip(
+                    ).lower().split()[-1:] and (
+                    vorher.get('it') or '').strip().lower().split(
+                    )[-1] in IT_ARTIKEL
                 if itw in IT_POSSESSIV and dew in DE_POSSESSIV_ALLE \
-                        and not praedikativ \
+                        and not praedikativ and not art_davor \
                         and folge and folge[0] not in IT_VERWANDT:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx.get('it') or '',
                                     'Artikel fehlt vor dem Possessiv'))
                 if (itw == 'loro' or itw.startswith('loro ')) \
-                        and dew in DE_POSSESSIV:
+                        and dew in DE_POSSESSIV and not art_davor:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx.get('it') or '',
                                     'Artikel fehlt vor loro'))

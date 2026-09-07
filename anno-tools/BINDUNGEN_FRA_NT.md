@@ -536,3 +536,28 @@ Die Lage, wie sie gemessen ist:
 Die vierte Reihe ist die Ausweichlesart und gilt nur im
 Kollisionsvers; die dritte gilt ueberall, wo `maître` einen Besitz
 regiert.
+
+## `personne ne` traegt nur die Verneinung
+
+27 von 32 Stellen glossieren das Mehrwort als *niemand · no one ·
+nadie · nessuno* und lassen dem Verb daneben seine eigene Glosse —
+`Personne n’est bon` = [niemand] + `n’est` *ist*. Fuenf zogen das Verb
+hinein (*keiner wagte*, *niemand hatte*); sie sind gezogen, und in
+Mt 22,46 stand darunter auch noch `personne` selbst auf *keiner ·
+nobody · ninguno · alcuno* statt auf der Bestandsreihe.
+
+Das ist derselbe Grundsatz wie bei der Ueberlappung in Luc 7,30: der
+Verbinhalt steht **einmal**, und zwar dort, wo das Verb steht.
+
+## Wenn `sweeplemma` und `paketcheck` einander widersprechen
+
+`sweeplemma` haelt eine Reihe gegen den **Bestand**, `paketcheck`
+gegen die **Nachbarkapitel des laufenden Pakets**. Wo der Bestand
+selbst zwei Reihen fuehrt, koennen beide recht haben und sich
+widersprechen — der Agent fuer Jean 3 ist bei `rendre témoignage`
+zweimal umgestellt worden.
+
+**Dann entscheidet das Paket.** Zeichengleichheit innerhalb des
+Pakets ist teurer zu reparieren als eine Abweichung gegen eine von
+zwei Bestandsreihen; die Vereinheitlichung ueber die Buchgrenze ist
+Sache des Koordinators, nicht des Kapitels.
