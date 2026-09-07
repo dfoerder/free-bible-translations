@@ -122,7 +122,32 @@ def buch(nr):
             ziel = (f'{ziel_von[0]},{ziel_von[1]}-{ziel_bis[1]}'
                     if ziel_von[0] == ziel_bis[0]
                     else f'{ziel_von[0]},{ziel_von[1]} - {ziel_bis[0]},{ziel_bis[1]}')
+            # Welche Versnummern des Quelltextes fehlen der Ausgabe in
+            # DIESEM Kapitel? Das ist die genaue Auskunft, und sie
+            # unterscheidet die zwei Faelle, die dieses Skript bis
+            # Markus zusammengeworfen hat: einen durchgehenden
+            # KAPITELVERSATZ (Psalmen, Joel) von einer LUECKE oder einem
+            # geteilten Vers, bei dem die Kapitelgrenze steht.
+            # Marc 9 (fr teilt 9,50 in zwei) und Luc 17 (WEB hat keinen
+            # Vers 36) wurden beide als Versatz gemeldet und schickten
+            # den Vers des NAECHSTEN Kapitels neben den eigenen.
+            eigene = {e[1] for e in fo if e[0] == k}
+            fehlt = [e[1] for e in de[von:bis] if e[1] not in eigene]
             marke = ''
+            # `best == kanon` heisst: die Ausrichtung auf gleiche
+            # Versnummer haelt. Nur dann ist es eine Luecke. Wo ein
+            # anderer Versatz DEUTLICH besser liegt (Psalmen: die
+            # Ausgabe zaehlt die Ueberschrift nicht mit), ist es ein
+            # echter Versatz und gehoert in den Zweig darunter.
+            if fehlt and best == kanon and \
+                    len({e[0] for e in fo if e[0] == k}) <= 1:
+                marke = ('  << KEIN VERSATZ, sondern eine LUECKE: der '
+                         'Ausgabe fehlen in diesem Kapitel die Verse '
+                         + ', '.join(fehlt[:8])
+                         + (' …' if len(fehlt) > 8 else '')
+                         + '. Der Rest steht auf gleicher Nummer.')
+                zeilen.append(f'   {spr}  {quelle:<16}{marke}')
+                continue
             if best == kanon and ziel_von[0] == k and ziel_bis[0] != k:
                 # Kanonischer Anfang, aber das deutsche Kapitel ist laenger:
                 # die Ausgabe zieht Verse zusammen oder laesst einen aus.

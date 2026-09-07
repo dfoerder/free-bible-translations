@@ -1,0 +1,26 @@
+Lukas (42) — 24 Kapitel, 1151 Verse, 23 682 Tokens
+Franzoesischer Quelltext lsg1910mod, Glossen de/en/es/it.
+Pakete zu drei Kapiteln, ein Agent je Kapitel, drei Agenten gleichzeitig.
+
+Vorbereitung je Paket:
+    export ANNO_EDITION=fra/lsg1910mod
+    export ANNO_OUT=.../scratchpad/fra_lukas/out
+    python3 fravorb.py 42 <kap> <kap> <kap> --scratch .../scratchpad/fra_lukas
+    python3 vorgabecheck.py <prompt> --buch 42     (je Prompt, muss 0 melden)
+
+ 1   1  2  3    1407 + 980 + 739 =  3126 Tokens
+ 2   4  5  6     943 + 868 +1105 =  2916
+ 3   7  8  9    1155 +1334 +1327 =  3816
+ 4  10 11 12     922 +1239 +1309 =  3470
+ 5  13 14 15     796 + 784 + 704 =  2284
+ 6  16 17 18     711 + 700 + 822 =  2233
+ 7  19 20 21     921 + 865 + 756 =  2542
+ 8  22 23 24    1324 +1002 + 969 =  3295
+
+Kapitelgrenzen: eine einzige Abweichung, und sie betrifft nur EINEN
+  Zeugen — WEB hat in Kapitel 17 keinen Vers 36 (er fehlt in den
+  kritischen Textausgaben). Kein Versatz: der Rest steht auf gleicher
+  Nummer, und `ausgaben.py` richtet richtig aus. de/es/it zaehlen wie
+  LSG.
+Wiederholte Wortfolgen im Buch: 450 (wiederholungen_42.md).
+Bestand beim Start: Judas, Matthaeus und Markus — 36 200 Tokens.
