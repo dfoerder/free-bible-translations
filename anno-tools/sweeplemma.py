@@ -151,26 +151,30 @@ def neue_lemmata(kap, nr, kapitel):
     es, und danach fragt niemand von selbst.
     """
     form_lemma = collections.defaultdict(collections.Counter)
-    lemmata = set()
     for b, k, v, e in C.iter_corpus():
         if int(b) == int(nr) and str(k) == str(kapitel):
             continue
-        lemmata.add(e['lemma'])
         if not C.is_multi(e):
             form_lemma[e['form'].lower()][e['lemma']] += 1
 
+    # Die erste Fassung feuerte nur bei einem **neuen** Lemma. Der
+    # Agent fuer Jean 5 hat die Luecke gefunden: er setzte die Form
+    # `puis` unter `pouvoir`, waehrend der Bestand sie 75× unter dem
+    # Adverb `puis` fuehrt — `pouvoir` ist nicht neu, also schwieg der
+    # Lauf. Massgeblich ist nicht, ob das Lemma neu ist, sondern ob
+    # der Bestand DIESE FORM je unter ihm gefuehrt hat.
     treffer = []
     for vers in sorted(kap, key=int):
         for e in kap[vers]:
-            if C.is_multi(e) or e['lemma'] in lemmata:
+            if C.is_multi(e):
                 continue
             andere = form_lemma.get(e['form'].lower())
-            if andere:
+            if andere and e['lemma'] not in andere:
                 treffer.append((vers, e['form'], e['lemma'],
                                 andere.most_common(3)))
 
     print()
-    print('## Neue Lemmata, deren Wortform der Bestand schon fuehrt')
+    print('## Wortform unter einem Lemma, das der Bestand fuer sie nicht kennt')
     print()
     if not treffer:
         print('   keine.')
