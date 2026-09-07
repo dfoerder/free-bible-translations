@@ -119,6 +119,15 @@ for kap in kaps:
                     # die es nicht gibt.
                     if toks[j].lower()==a or C.is_punct_only(roh[j]):
                         break
+                    # Das zweite `ne` kann ELIDIERT dastehen (`n’avez`).
+                    # Ohne diese Probe paarte der Lauf das `ne` eines
+                    # Teilsatzes mit dem `pas` des naechsten: Jean 6,53
+                    # („si vous ne buvez son sang, vous n’avez pas la
+                    # vie") wurde als fehlendes `ne pas` gemeldet,
+                    # obwohl der Span daneben richtig sitzt. Gemeldet
+                    # vom Agenten fuer Jean 6.
+                    if a == 'ne' and toks[j].lower()[:2] in ("n’", "n'"):
+                        break
                     if toks[j].lower()==b:
                         if danach is not None and (
                                 j + 1 >= len(toks)
