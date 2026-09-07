@@ -2779,3 +2779,122 @@ dieselbe Lage wie `al tempo`/`à l'époque` in Reihe 30.10.
     Kopula-Glosse, waehrend `fu purificato` (8,3), `sarà guarito` (8,8),
     `saranno gettati` (8,12), `fu guarito` (8,13) und `ti sia fatto`
     (8,13) als Passivklammer die Hilfsverbglosse der Zielsprache tragen.
+
+## 85 · Beim Einsammeln von Paket 3 entschieden
+
+Die drei Agenten haben sich in `paketcheck.py` weitgehend selbst
+abgestimmt — Abschnitt A blieb bei neun Faellen, und sechs davon sind
+Flexion oder eine bewusste Trennung nach Reihe 83. Drei waren echte
+Divergenzen und sind auf die jeweils **frueheste Stelle** gezogen:
+
+    riva      9,1  en `shore` → `side`      all'altra riva steht 8,18 · 8,28 · 9,1
+    porco     7,6  fr `pourceaux` → `porcs`  eine Reihe je Lemma
+    guarito   9,21 en `made well` → `healed`  das Lemma steht ab 8,8 auf healed
+              9,22 de `gesund gemacht` → `geheilt`, en ebenso
+
+**`pourceaux` ist archaisch** und stand nur in 7,6, weil der
+franzoesische Zeuge dort selbst so liest; 8,30 · 8,31 · 8,32 tragen
+`porcs`. Das Register-Gebot (umgangssprachlich ok, nicht wuerdevoll)
+entscheidet hier zusaetzlich fuer die moderne Form.
+
+### `in verità` — buchweit entschieden, Reihe 56 gewinnt
+
+Reihe 81 hat die Frage vorgelegt: 5,18 und 5,26 trugen einen
+Mehrworteintrag `in verità` B1, 6,2 · 6,5 · 6,16 und 8,10 keinen.
+**Die beiden Mehrwoerter sind geloescht.** Reihe 56 ist die spaetere und
+die begruendete Entscheidung: „in Wahrheit · in truth · en verdad · en
+vérité" geht in allen vier Sprachen Wort fuer Wort auf, und ein
+Mehrwort waere Zierde. Damit stehen alle sechs Stellen gleich.
+
+### Sechs Level auf die Buchmehrheit gezogen
+
+`levelcheck.py` meldete sechs Stellen, an denen ein Lemma vom eigenen
+Buchwert abwich: `allora` dreimal A2 gegen 21 Belege A1, `egli` einmal
+A1 gegen 19 A2, `ne` zweimal A2 gegen 16 A1. Alle sechs auf die
+Mehrheit gesetzt; danach 0 Abweichungen. **`buildbook.py` vereinheitlicht
+das Level ohnehin ueber das Lemma** — der Lauf haelt nur die Quelldateien
+mit dem Gebauten in Deckung.
+
+### Fuenf Abweichungen aus `folgencheck --min 3`
+
+    5,18   de `Euch` → `euch`          6,2 · 6,5 · 6,16 stehen klein
+    8,20   es `del hombre` → `del Hombre`   Titel, wie 9,6 und die en-Spalte
+    9,1    es `a la` → `en la`         salire sulla barca, 8,23 praegt
+    4,9    de `alle` → `all`           6,32 · 6,33 stehen auf all
+    8,15   en `got up` → `arose`       alzarsi, 9,7 · 9,9 · 9,19
+
+Danach 1035 Folgen zeichengleich, 64 mit Abweichung — und diese 64 sind
+durchweg die Klassen, die das Werkzeug selbst als richtige Gruende
+nennt: deutscher Kasus (`il Padre vostro` als Subjekt, Dativ und
+Akkusativ), Richtung gegen Ort (`nel regno` 5,19 lokativ gegen 7,21
+direktiv, `sopra un monte` 4,8 gegen 5,14), franzoesische Elision nach
+dem Folgewort (`de`/`d'` im Geschlechtsregister, `que`/`qu'`, `te`/`t'`),
+Person und Numerus des Reflexivs, spanisches ser/estar, und die
+Mehrwortdecke (`mettersi` gegen `mettersi a`, `a tavola` unter
+`sedere a tavola`).
+
+**`il bambino` 2,9 gegen 2,13 · 2,14 · 2,20 · 2,21 sieht wie ein Fehler
+aus und ist keiner**: die vier tragen spanisch `al` (Personal-a am
+Objekt von `vedere`/`prendere`), 2,9 traegt `el`, weil das Kind dort
+Subjekt ist („dove stava il bambino").
+
+## 86 · `verschmelzung.py` — was `glosskollision.py` nicht sehen kann
+
+Reihe 68.3 hatte die Luecke benannt: `glosskollision.py` gruppiert nach
+LEMMA, und `su` und `sulla` stehen beide auf `su`. Die verschmolzene
+Form traegt aber Praeposition UND Artikel — faellt der Artikel in der
+Glosse weg, steht dort dasselbe wie bei der blossen Form.
+
+Das neue Werkzeug prueft zwei Dinge. **Abschnitt A** meldet, wo
+verschmolzene und blosse Form desselben Lemmas im selben Vers stehen und
+in mindestens zwei Sprachen dieselbe Glosse tragen. **Abschnitt B**
+(`--verdacht`) listet verschmolzene Formen, deren Glosse gar keinen
+Artikel enthaelt.
+
+**Vier Stellungen sind ausgenommen**, weil dort keine Zielsprache den
+Artikel setzen kann: vor dem Possessiv (Reihe 22, `dei suoi fratelli`),
+vor dem Eigennamen (`dalla Galilea`), vor dem Relativpronomen (`nel
+quale` — `la quale` traegt seinen Artikel selbst) und unter einer
+Mehrwortspanne (`al di là`). Ohne sie meldet der erste Lauf ueber
+Matteo 1-9 vierzehn Stellen in Abschnitt A, und **alle vierzehn sind
+richtig**; mit ihnen ist Abschnitt A leer und Abschnitt B faellt von
+145 auf 9.
+
+Drei echte Fehler hat der erste Lauf gefunden:
+
+    Matteo 5,39  en `on` → `on the`        sulla guancia
+    Matteo 8,23  en `into` → `into the`    sulla barca
+    Giuda 1,11   en `into` → `into the`    negli errori
+    Giuda 1,22   fr `dans` → `dans le`     nel dubbio — „dans doute" gibt es nicht
+
+**Die Nullantwort in Abschnitt B ist oft richtig** und begruendet keine
+Aenderung: bei Abstrakta und generischem Plural setzt das Englische
+keinen Artikel (`to life`, `of false prophets`, `from thorns`,
+`at pasture`), und `al di là` steht unter seinem Mehrwort.
+
+## 87 · `parallelen.py` zaehlte die leeren Treffer mit
+
+Beide Agenten des Pakets haben es unabhaengig gemessen: die Schlusszeile
+„19 von 38 Versen" (Matteo 9) bzw. „17 von 34" (Matteo 8) zaehlte
+Blockfunde, nicht belegte Bloecke. **Tragend waren 3 von 19 und 6 von
+17** — der Rest zeigte auf Matteo 12 bis 26, alle noch nicht annotiert
+und in der Datei selbst mit `⚠ NOCH NICHT ANNOTIERT` markiert.
+
+Der Koordinator hatte aus der einen Zahl im Prompt „die staerkste
+Bindung, die es gibt" gemacht. Das Werkzeug trennt die Zahlen jetzt und
+warnt, wenn die Mehrheit ins Leere zeigt; der Prompt-Baustein sagt die
+Einschraenkung selbst. **Beim Vorwaertsarbeiten durch ein Buch ist der
+Leeranteil systematisch hoch** — je frueher das Kapitel, desto hoeher.
+
+## 88 · Ein eigenes Hilfsskript erbt `ANNO_EDITION` nicht
+
+Der wichtigste Werkzeugbefund des Pakets, gefunden vom Agenten fuer
+Matteo 8 (Reihe 84): sein Bauskript in `work/8/` lief ohne die Variable,
+und `common.load_source(40)` gab ihm **den deutschen Matthaeus** — gleiche
+Kapitel- und Versschluessel, andere Verslaengen. Aufgefallen ist es nur an
+einem `IndexError` bei 8,9 (44 statt 38 Tokens). Waeren die deutschen
+Verse laenger gewesen, haette das Skript stumm falsche `form`-Werte
+gebaut und `selfcheck` haette es erst am Ende gefangen.
+
+**Jedes eigene Skript setzt `os.environ['ANNO_EDITION']` selbst, bevor es
+`common` importiert.** Der Prompt-Baustein fuehrt das jetzt.

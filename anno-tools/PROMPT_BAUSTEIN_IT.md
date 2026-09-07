@@ -39,6 +39,18 @@ Deine Abgabe: `$ANNO_OUT/<NR>/ch<KAP>.json`
 Dein Arbeitsverzeichnis fuer alles andere: `$ANNO_OUT/../work/<KAP>/` —
 jede Zwischendatei und jedes Hilfsskript dorthin, nicht neben die Abgabe.
 
+**Ein eigenes Hilfsskript erbt `ANNO_EDITION` nicht — und der Fehler ist
+stumm.** Wer `import common` ohne die Variable ausfuehrt, bekommt von
+`common.load_source(40)` den **deutschen** Matthaeus: gleiche Kapitel- und
+Versschluessel, andere Verslaengen. Beim Agenten fuer Matteo 8 fiel es nur
+an einem `IndexError` auf; waeren die deutschen Verse laenger gewesen,
+haette das Skript stumm falsche `form`-Werte gebaut. Deshalb in **jedem**
+eigenen Skript als erste Zeilen:
+
+    import os
+    os.environ['ANNO_EDITION'] = 'ita/riv1927mod'
+    import common as C
+
 ## Eintragsformat
 
     {"pos": 3, "form": "servitore", "lemma": "servitore", "level": "B1",
