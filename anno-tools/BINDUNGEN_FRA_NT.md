@@ -607,3 +607,58 @@ tomber revenir passer parvenir`.
   Englisch ist mit der Kopula richtig, waehrend Spanisch mit `hubo
   pasado` das passé antérieur nimmt. Zwei Sprachen, zwei Analysen,
   beide richtig.
+
+## Italienische Klitikahaeufung: `mi ti ci vi` werden vor `lo la li le ne` zu `me te ce ve`
+
+`vi l'ho detto` gibt es nicht — es heisst **`ve l'ho detto`**. Dasselbe fuer
+`me lo ha dato`, `te lo comando`, `ce ne sono`. Das ist Morphologie, keine
+Wortstellung: die Form des ersten Klitikons aendert sich, sobald ein zweites
+folgt. Der Zeuge liest `ve l'ho predetto` (Mt 24,25) und `ve l'ho gia detto`
+(Jean 9,27). **39 Stellen im Bestand korrigiert.**
+
+**`si` bleibt ausgenommen.** Beim unpersoenlichen `on le prit` dreht das
+Italienische die Reihenfolge (`lo si prese`), statt `si` zu `se` zu machen —
+`se lo` waere die reflexiv-dativische Lesart und etwas anderes. Eine Glosse
+Wort fuer Wort kann die Umstellung nicht abbilden; die Einzelglossen bleiben
+`si` und `lo`, und das ist die Wortstellung, nicht die Form.
+
+## `pouvoir` als Nomen: `authority`, ausser neben `autorité`
+
+11 Stellen gegen 3. Die eine berechtigte Ausnahme ist Marc 11,28, wo
+`autorité` im selben Vers steht und die Kollision aufgeloest werden muss.
+Jean 1,12 und 5,27 standen ohne Kollisionsanlass auf `power` — gezogen; in
+5,27 liest der Zeuge ausdruecklich `authority`.
+
+## `avoir` als Besitzverb ist spanisch `tener`, nicht `haber`
+
+`haber` ist im heutigen Spanisch nur noch Hilfsverb und das unpersoenliche
+`hay`. „habéis los pobres" ist kein Satz — es heisst `tenéis`. Der Bestand
+hatte an neun Stellen das Besitzverb mit `haber` glossiert; der Zeuge liest
+ueberall `tener` (`no tiene dónde recostar la cabeza` Mt 8,20 · Luc 9,58,
+`siempre tendrán pobres` Mt 26,11 · Marc 14,7, `te tenía miedo` Luc 19,21).
+Bemerkenswert: an drei dieser Stellen fuehrte **derselbe Vers** schon die
+richtige Form — Marc 14,7 glossiert `m'aurez` mit `me tendréis` und `avez`
+mit `habéis`.
+
+**Die Gegenprobe gilt genauso.** Unter dem Mehrwort `il y avoir` stand an
+**28 Stellen** `tener` oder `haber` als Vollverb (`aura` = *tendrá*, `avait`
+= *tenía*, `a` = *ha*), waehrend das Mehrwort darueber richtig `habrá`,
+`había`, `hay` las. Das Existenzverb ist `hay / había / hubo / habrá`, nie
+`tener`: „habrá guerras", nicht „tendrá guerras". Der Einzeleintrag traegt
+immer dasselbe Verb wie sein Mehrwort.
+
+## `mort` gegen `mourir`: Zustand gegen Ereignis — der Bestand hat recht
+
+Zwei Agenten haben die Lemmaspaltung nach `être` fuer eine Altlast gehalten,
+einmal „nach Numerus". Nachgemessen ist sie inhaltlich und richtig:
+
+- **`mort` (Adjektiv)** = *tot · dead · muerto · morto* — ein Zustand.
+  `Ta fille est morte` (Marc 5,35), `il est mort` (Marc 9,26),
+  `mon fils était mort` (Luc 15,24).
+- **`mourir` (Partizip)** = *gestorben · died · muerto · morto* — ein
+  Ereignis. `Abraham est mort` (Jean 8,52), `vos pères sont morts`
+  (Jean 6,49).
+
+Beide Zeugen machen denselben Unterschied, im selben Vers: Marc 15,44 liest
+deutsch „dass er schon **tot** war … ob Jesus schon lange **gestorben** sei",
+und der Bestand bildet genau das ab. Nichts zu vereinheitlichen.
