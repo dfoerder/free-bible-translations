@@ -160,11 +160,24 @@ def main():
             gleich += 1
             continue
         abweichend += 1
-        print(f'## „{" ".join(g)}"  ({len(g)} Tokens)\n')
         haupt = max(gruppen.items(), key=lambda x: len(x[1]))
+        # `--kapitel` filtert bisher nur, OB ein Block gedruckt wird.
+        # Gedruckt wurden dann alle seine Abweichungen, auch die fremder
+        # Kapitel — in Matthaeus 26 waren das 796 Zeilen fuer ein
+        # Dutzend eigene. Jetzt filtert es auch die Zeilen.
+        # Gemeldet vom Agenten fuer Matthaeus 26.
+        kopf = f'## „{" ".join(g)}"  ({len(g)} Tokens)\n'
         for sig, wo in gruppen.items():
             if sig is haupt[0]:
                 continue
+            if nurkap is not None and not any(
+                    w.split(',')[0] in nurkap for w in wo) \
+                    and not any(w.split(',')[0] in nurkap
+                                for w in haupt[1]):
+                continue
+            if kopf:
+                print(kopf)
+                kopf = ''
             for idx, (a, b) in enumerate(zip(haupt[0][0], sig[0])):
                 if a != b:
                     print(f'   {", ".join(wo)}  bei `{g[idx]}`:')
