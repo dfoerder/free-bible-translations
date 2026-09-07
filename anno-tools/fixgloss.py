@@ -61,8 +61,18 @@ if __name__ == '__main__':
         show(sys.argv[2:], per_form=True)
     elif modus == 'verse':
         if len(sys.argv) != 5:
-            print('Aufruf: fixgloss.py verse <buchNr> <kapitel> <vers>  '
-                  '— drei Argumente, einzeln')
+            # Drei Agenten hintereinander sind darueber gestolpert: in
+            # einer Shell-Schleife (`for a in "40 28 1"`) kommt alles als
+            # EIN Argument an, und die blosse Aufrufhilfe sagt nicht,
+            # dass das der Grund ist.
+            if len(sys.argv) == 3 and len(sys.argv[2].split()) == 3:
+                print(f'{sys.argv[2]!r} ist EIN Argument, nicht drei — in '
+                      'einer Shell-Schleife zerlegt zsh die Variable nicht '
+                      'am Leerzeichen.\nAufruf: fixgloss.py verse '
+                      + ' '.join(sys.argv[2].split()))
+            else:
+                print('Aufruf: fixgloss.py verse <buchNr> <kapitel> <vers>  '
+                      '— drei Argumente, einzeln')
             sys.exit(1)
         verse(*sys.argv[2:5])
     else:

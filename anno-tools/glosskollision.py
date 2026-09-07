@@ -294,7 +294,14 @@ def pruefe(kapitel_daten, nr, kap):
                 'a': a, 'b': b,
                 'forma': _form(formen, a, sprachen), 'formb': _form(formen, b, sprachen),
                 'sprachen': sorted(sprachen, key=SPRACHEN.index),
-                'glossen': {s: glossen.get((a, s)) for s in sorted(sprachen, key=SPRACHEN.index)},
+                # Beide Seiten, nicht nur die erste. Seit der Artikel
+                # beim Vergleich uebergangen wird, koennen die Glossen
+                # verschieden AUSSEHEN und trotzdem kollidieren: bei
+                # `les`/`aux` in Marc 16,18 stand hier „es: 'los'",
+                # waehrend die andere Seite `a los` trug — der Agent
+                # musste raten, welche der beiden gemeint war.
+                'glossen': {s: (glossen.get((a, s)), glossen.get((b, s)))
+                            for s in sorted(sprachen, key=SPRACHEN.index)},
                 'funktion': _ist_funktionspaar(a, b),
                 'nur_schreibung': nur_schreibung,
             })
@@ -303,7 +310,10 @@ def pruefe(kapitel_daten, nr, kap):
 
 def _zeile(f):
     sp = '/'.join(f['sprachen'])
-    g = ' · '.join(f'{s}: {f["glossen"][s]!r}' for s in f['sprachen'])
+    def _gl(s):
+        ga, gb = f['glossen'][s]
+        return f'{s}: {ga!r}' if ga == gb else f'{s}: {ga!r} / {gb!r}'
+    g = ' · '.join(_gl(s) for s in f['sprachen'])
     return (f'  {C.book_name(f["nr"])} {f["kap"]},{f["vers"]}: '
             f'`{f["forma"]}` / `{f["formb"]}` — {len(f["sprachen"])} von 4 ({sp})  {g}')
 
