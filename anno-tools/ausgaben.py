@@ -86,7 +86,24 @@ AUSGABEN = [(kurz, *ed.split('/')) for kurz, ed in C.zeugen()]
 # und nach Verslaengen entschied, hat Ps 13 richtig bekommen und dafuer Ps 21
 # (it), Ps 58 (es), Ps 76 (en) und Ps 142 (it) falsch. Die Laengen taugen
 # dafuer nicht.
+# Gemessene Ausnahmen: hier liegt der Versatz aus dem letzten Vers falsch,
+# und die Verslaengen sind zu schwach, um es allein zu entscheiden. Ein
+# automatischer Tausch waere gefaehrlich — er haette in Psalm 15 die
+# italienische Spalte um eins verschoben (dort scort der FALSCHE Versatz
+# 0.09 gegen 0.31 des richtigen, weil die Verslaengen zufaellig besser
+# zueinander passen). Deshalb von Hand, mit dem Grund daneben.
+#
+#   Marc 9 und 10: der franzoesische Text TEILT je einen Vers, den alle
+#   vier Zeugen zusammenlassen (fr 9,50+9,51 = Zeugenvers 9,50;
+#   fr 10,52+10,53 = Zeugenvers 10,52). Der ueberzaehlige Vers haengt
+#   also HINTEN, der Versatz aus dem letzten Vers schiebt ihn nach vorn
+#   und stellt jede Zeile des Kapitels eine Nummer daneben. Der Agent
+#   fuer Marc 9 hat sich die Zeugen deshalb selbst gebaut.
+#   Siehe BEFUND_MARKUS_TEILVERSE.md.
 AUSNAHMEN = {(19, '13', 'fr'): 0}
+for _kurz in ('de', 'en', 'es', 'it', 'fr'):
+    AUSNAHMEN[(41, '9', _kurz)] = 0
+    AUSNAHMEN[(41, '10', _kurz)] = 0
 
 SCHWACH = 0.30      # ab hier gilt die Ausrichtung als unsicher
 

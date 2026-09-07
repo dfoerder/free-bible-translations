@@ -51,3 +51,40 @@ Das steht als `--hinweis` in den Prompts von Kapitel 9 und 10.
 Fuer fr 9,50 und fr 10,52 gilt umgekehrt: der Zeugenvers derselben
 Nummer enthaelt **mehr** als der franzoesische — nur die erste Haelfte
 gehoert dazu.
+
+## Nachtrag: der zweite, verdeckte Versatz in 9,43-9,48
+
+Gefunden vom Agenten fuer Marc 9, am Quelltext nachgeprueft.
+
+Hier geht die **Zaehlung auf** — sechs Verse gegen sechs — und der
+Inhalt ist trotzdem verschoben:
+
+    fr 9,43   „Si ta main est … entrer manchot dans la vie"
+    fr 9,44   „plutôt que d’avoir les deux mains … dans le feu"
+    de 9,43   beides zusammen
+    de 9,44   „wo ihr Wurm nicht stirbt und ihr Feuer nicht erlischt"
+
+    fr 9,45 / 9,46   dieselbe Teilung noch einmal
+    fr 9,48          der Refrain, EINMAL, am Ende
+    de 9,44 · 9,46 · 9,48   der Refrain, dreimal
+
+Weil die Zahlen stimmen, kann `kapitelgrenzen.py` das nicht sehen —
+es zaehlt. `ausgaben.py` sieht es auch nicht, es misst Verslaengen.
+Gesehen hat es allein die **Versatzprobe von `rueckwaerts.py`**, die den
+Nachbarvers jedes Zeugen gegen den eigenen haelt: sie hat fuer 9,44 und
+9,46 unabhaengig „vertauschte Perikopen — VERS-Zeilen NICHT uebernehmen"
+gemeldet. Das ist die einzige Probe der Kette, die den Inhalt vergleicht
+statt die Zahlen.
+
+## Was `ausgaben.py` daraus gemacht hat
+
+Der Versatz kommt aus dem letzten Vers: fr 9,51 gegen Zeugenvers 9,50
+ergibt -1, und damit stand in `ausgaben_41_9.md` jede Zeugenzeile eine
+Nummer daneben. Die Datei warnt zwar laut vor sich selbst („Versatz +0
+liegt BESSER"), wendet aber den schlechteren an.
+
+Der automatische Tausch waere gefaehrlich: in Psalm 15 bewertet der
+FALSCHE Versatz 0.09 gegen 0.31 des richtigen, weil die Verslaengen dort
+zufaellig besser zueinander passen — ein Tausch nach dieser Zahl haette
+die italienische Spalte um eins verschoben. Marc 9 und 10 stehen deshalb
+als **gemessene Ausnahme** in `AUSNAHMEN`, mit dem Grund daneben.
