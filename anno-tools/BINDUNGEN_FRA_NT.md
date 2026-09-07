@@ -523,7 +523,11 @@ den *Besitzer* vom *Herrn*, unabhaengig von jeder Kollision.
 
 Die Lage, wie sie gemessen ist:
 
-    Anrede an Jesus       Meister · Teacher · Maestro · Maestro   (21×)
+    Anrede an Jesus       Meister · Teacher · Maestro · Maestro   (34×)
+      — direkt angesprochen: „Maître, …"
+    Rede ueber Jesus      Lehrer · Teacher · Maestro · Maestro    (6×)
+      — „le maître te dit" (Luc 22,11 · Marc 14,14 · Mt 26,18),
+        „n’importune plus le maître" (Luc 8,49 · Marc 5,35)
     Gleichnisherr         Herr · master · señor · padrone         (12×)
     Besitzer einer Sache  Herr · master · dueño · padrone         (12×)
       — `maître de la vigne`, `maître de maison`

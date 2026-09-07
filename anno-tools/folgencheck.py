@@ -116,12 +116,32 @@ def main():
     # Filter sind es fuer Matthaeus 304 — der Agent fuer Kapitel 16 musste
     # sich die vierzehn eigenen mit einem Skript herausziehen, und wer
     # stattdessen `head -40` nimmt, sieht ausschliesslich fremde Kapitel.
+    # `--kapitel 13 14 15` hat bis hierher NUR auf 13 gefiltert: die
+    # Trennung war das Komma, und die beiden uebrigen Zahlen fielen
+    # hinten als Positionsargumente an, wo sie stillschweigend
+    # weggeworfen wurden. Der Lauf sah aus wie ein Lauf ueber drei
+    # Kapitel. Jetzt zaehlen Komma UND Leerzeichen.
     nurkap = None
     while '--kapitel' in args:
         k = args.index('--kapitel')
-        nurkap = set((nurkap or set())) | {str(int(x)) for x in
-                                           args[k + 1].split(',')}
-        del args[k:k + 2]
+        j = k + 1
+        werte = []
+        while j < len(args) and not args[j].startswith('--'):
+            werte += [x for x in args[j].replace(',', ' ').split() if x]
+            j += 1
+        if not werte:
+            raise SystemExit('--kapitel ohne Kapitelnummer.')
+        nurkap = set(nurkap or set()) | {str(int(x)) for x in werte}
+        del args[k:j]
+    # Ohne diesen Schalter meldet der Kapitelfilter auch die Zeilen, in
+    # denen das eigene Kapitel die MEHRHEIT stellt und ein fremder Vers
+    # abweicht. Das ist wertvoll — mehrere Altlasten in Matthaeus sind
+    # nur so gefunden worden —, aber wer sein eigenes Kapitel abnehmen
+    # will, ertrinkt darin. Gewuenscht von den Agenten fuer Luc 16 und
+    # Luc 22.
+    nur_eigene = '--nur-eigene' in args
+    if nur_eigene:
+        args.remove('--nur-eigene')
     gegen = []
     while '--gegen' in args:
         k = args.index('--gegen')
@@ -140,6 +160,12 @@ def main():
     if not args:
         print(__doc__)
         return 2
+    if len(args) > 1:
+        raise SystemExit(
+            f'Zu viele Positionsargumente: {" ".join(args)}.\n'
+            'Bis heute wurden die ueberzaehligen stillschweigend '
+            'weggeworfen — ein Lauf mit `--kapitel 13 14 15` filterte '
+            'in Wahrheit nur auf 13 und sah trotzdem sauber aus.')
     nr = int(args[0])
     # `--gegen 41` beim Lauf ueber 41 waere derselbe Selbstvergleich, an
     # dem in Matthaeus jeder `paketcheck`-Lauf leer durchlief.
@@ -225,11 +251,12 @@ def main():
         for sig, wo in gruppen.items():
             if sig is haupt[0]:
                 continue
-            if nurkap is not None and not any(
-                    w.split(',')[0] in nurkap for w in wo) \
-                    and not any(w.split(',')[0] in nurkap
-                                for w in haupt[1]):
-                continue
+            if nurkap is not None:
+                eigen_wo = any(w.split(',')[0] in nurkap for w in wo)
+                eigen_haupt = any(w.split(',')[0] in nurkap
+                                  for w in haupt[1])
+                if not eigen_wo and (nur_eigene or not eigen_haupt):
+                    continue
             for idx, (a, b) in enumerate(zip(haupt[0][0], sig[0])):
                 if a != b:
                     marke = (tuple(wo), tuple(haupt[1]), g[idx], a, b)
