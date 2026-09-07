@@ -46,12 +46,13 @@ def _stammkey(wort):
     fuer jeden umlautenden Plural und fuer den Konjunktiv (`wuerde` gegen
     `wurde`, `haette` gegen `hatte`).
     """
-    return wort[:MIN_STAMM].lower().translate(UMLAUT)
+    return C.ohne_akzent(wort[:MIN_STAMM].lower().translate(UMLAUT))
 
 
 def _gemeinsam(a, b):
     """Länge des gemeinsamen Präfixes, ohne Rücksicht auf Groß-/Kleinschreibung."""
-    a, b = a.lower().translate(UMLAUT), b.lower().translate(UMLAUT)
+    a = C.ohne_akzent(a.lower().translate(UMLAUT))
+    b = C.ohne_akzent(b.lower().translate(UMLAUT))
     n = 0
     while n < min(len(a), len(b)) and a[n] == b[n]:
         n += 1

@@ -359,3 +359,17 @@ def bestandsstand():
     except Exception:
         stand = ''
     return f'Bestand: {EDITION} · {stand}' if stand else f'Bestand: {EDITION}'
+
+
+def ohne_akzent(s):
+    """Akzente wegfalten: `siégera` und `siège` bekommen denselben Stamm.
+
+    Der franzoesische Stammwechsel geht oft nur ueber den Akzent
+    (`siéger` → `siège`, `mener` → `mène`, `espérer` → `espère`). Wer
+    den Stamm zeichengenau vergleicht, findet die Verwandtschaft nicht —
+    `hints.py` meldete `siégera` als unbelegt, obwohl `siège` mit dem
+    Lemma `siéger` seit 23,22 im Bestand steht. Gemeldet vom Agenten
+    fuer Matthaeus 25.
+    """
+    s = unicodedata.normalize('NFD', s)
+    return ''.join(c for c in s if unicodedata.category(c) != 'Mn')

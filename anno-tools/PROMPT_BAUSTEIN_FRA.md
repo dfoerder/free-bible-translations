@@ -120,6 +120,13 @@ Beim ersten Buch ist die franzoesische Anno noch leer. Das heisst:
 - **`rueckwaerts.py` tritt an ihre Stelle**, bis der eigene Bestand
   traegt.
 
+**Ab etwa dem zwanzigsten Kapitel eines Buches kehrt sich das um.** Dann
+ist der eigene Bestand die erste Quelle und `rueckwaerts.py` nur noch die
+Zweitmeinung — und eine, die irrt: sie kennt den Vers nicht, sondern nur
+das Wort. Der Agent fuer Matthaeus 25 fand dort `sages` als *Weise* (die
+Magier aus Kapitel 2) statt adjektivisch *klug* und `entre` als
+Praeposition statt als Imperativ von `entrer`.
+
 ## Was Judas festgelegt hat
 
 **`BINDUNGEN_FRA_NT.md` ist Pflichtlektuere vor der Arbeit — und noch
