@@ -180,7 +180,12 @@ def neues_mehrwort(nr, kap, vers, pos, lemma, felder, bis=None, teile=None,
                          'ohne vollstaendige Reihe faellt jedem Pruefwerkzeug '
                          'auf.')
 
-    e = {'pos': pos, 'form': ' '.join(wort[i] for i in stellen),
+    # Die Oberflaeche kommt aus den EINZELEINTRAEGEN, nicht aus dem
+    # Quelltext: der Bestand fuehrt sie ohne Satzzeichen. Die erste
+    # Fassung baute sie aus `wort` und schrieb in Marc 12,3 ein
+    # Mehrwort `les mains vides.` mit Punkt — die einzige Stelle, an
+    # der die Spanne bis ans Versende reichte.
+    e = {'pos': pos, 'form': ' '.join(einzeln[i]['form'] for i in stellen),
          'lemma': lemma, 'level': felder['level']}
     if teile is None:
         e['pos_end'] = bis

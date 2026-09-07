@@ -510,3 +510,25 @@ beide deutschen Zeugen sagen, ist nicht verfuegbar — das traegt
 **„Eine Reihe" heisst eine Glossenzeile, nicht ein Mehrwort.**
 `docteur de la loi` steht Wort fuer Wort; der Agent fuer Luc 14 hat
 den Satz oben als Mehrwortvorgabe gelesen und zu Recht widersprochen.
+
+## `maître`: die drei Reihen, nachgemessen
+
+Der Prompt-Baustein hat bis Lukas Paket 7 gesagt, der Gleichnisherr
+trage *Herr · master · señor · padrone* und weiche nur bei `Seigneur`
+im selben Vers auf *dueño* aus. Der Agent fuer Luc 20 hat es
+gemessen: **`maître de la vigne` steht einstimmig auf *Herr · master ·
+dueño · padrone*** (Mt 20,8 · Mt 21,40 · Marc 12,9), und in keiner
+der drei Stellen steht ein `Seigneur`. Das Spanische unterscheidet
+den *Besitzer* vom *Herrn*, unabhaengig von jeder Kollision.
+
+Die Lage, wie sie gemessen ist:
+
+    Anrede an Jesus       Meister · Teacher · Maestro · Maestro   (21×)
+    Gleichnisherr         Herr · master · señor · padrone         (12×)
+    Besitzer einer Sache  Herr · master · dueño · padrone         (12×)
+      — `maître de la vigne`, `maître de maison`
+    neben `Seigneur`      Gebieter · master · dueño · padrone     (Luc 12,42 · 13,25)
+
+Die vierte Reihe ist die Ausweichlesart und gilt nur im
+Kollisionsvers; die dritte gilt ueberall, wo `maître` einen Besitz
+regiert.

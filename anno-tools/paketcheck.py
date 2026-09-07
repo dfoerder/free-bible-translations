@@ -80,6 +80,17 @@ def lade(args):
                 'naturgemaess nichts. Die ANDEREN Kapitel des Pakets '
                 'angeben.')
         out, eigene = [], set()
+        # Ohne `ANNO_OUT` findet der Lauf waehrend eines Pakets KEIN
+        # Kapitel und meldet fuer jedes „liegt noch nicht vor" — das
+        # sieht aus wie ein sauberer Lauf. Der Agent fuer Luc 20 ist
+        # darauf hereingefallen; dieselbe Falle wie `belegt.py` mit
+        # einer Zahl.
+        if not os.environ.get('ANNO_OUT'):
+            print('!! ANNO_OUT ist nicht gesetzt. Kapitel, die noch in '
+                  'einem Paket stehen, findet dieser Lauf dann nicht —\n'
+                  '   er meldet sie als „liegt noch nicht vor" und sieht '
+                  'sauber aus. Erst exportieren.', file=sys.stderr)
+        uebersprungen = []
         for kap in args[1:]:
             eigene.add((nr, str(int(kap))))
             # Waehrend ein Paket laeuft, liegen die Kapitel nur in
@@ -107,6 +118,7 @@ def lade(args):
                 print(f'   (Kapitel {kap} liegt noch nicht vor — '
                       'uebersprungen)', file=sys.stderr)
                 eigene.discard((nr, str(int(kap))))
+                uebersprungen.append(str(kap))
                 continue
             # Ein Kapitel, das noch im Bau ist, sieht sonst aus wie ein
             # fertiges — und wer daran bindet, bindet an einen halben
@@ -119,6 +131,14 @@ def lade(args):
                 print(f'   Kapitel {kap}: {len(data)} von {soll} Versen — '
                       'noch im Bau, nicht daran binden', file=sys.stderr)
             out.append((f'{C.book_name(nr)} {int(kap)}{marke}', data))
+        if not out:
+            raise SystemExit(
+                'Kein einziges der angegebenen Kapitel war zu finden '
+                f'(uebersprungen: {", ".join(uebersprungen)}).\n'
+                'Ohne Kapitel vergleicht dieser Lauf nichts — er waere '
+                'sonst leer ausgegangen und haette sauber ausgesehen.'
+                + ('\nANNO_OUT ist nicht gesetzt; das ist die haeufigste '
+                   'Ursache.' if not os.environ.get('ANNO_OUT') else ''))
         return out, eigene
     out = []
     for p in args:
