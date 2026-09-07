@@ -1,0 +1,25 @@
+Markus (41) — 16 Kapitel, 680 Verse, 13 684 Tokens
+Franzoesischer Quelltext lsg1910mod, Glossen de/en/es/it.
+Pakete zu drei Kapiteln, ein Agent je Kapitel, drei Agenten gleichzeitig.
+
+Vorbereitung je Paket:
+    export ANNO_EDITION=fra/lsg1910mod
+    export ANNO_OUT=.../scratchpad/fra_markus/out
+    python3 fravorb.py 41 <kap> <kap> <kap> --scratch .../scratchpad/fra_markus
+    python3 vorgabecheck.py <prompt> --buch 41     (je Prompt, muss 0 melden)
+
+ 1   1  2  3     828 + 642 + 621 =  2091 Tokens
+ 2   4  5  6     840 + 888 +1187 =  2915
+ 3   7  8  9     725 + 748 +1014 =  2487
+ 4  10 11 12    1109 + 683 + 982 =  2774
+ 5  13 14 15     747 +1473 + 796 =  3016
+ 6  16           401
+
+Kapitelgrenzen: ZWEI geteilte Verse, in allen vier Zeugen gleich —
+    fr 9,50 + 9,51  = ein Vers der Zeugen (9,50)
+    fr 10,52 + 10,53 = ein Vers der Zeugen (10,52)
+  Ab dort steht der Rest des Kapitels um eins versetzt; die Kapitel-
+  grenze selbst ist NICHT verschoben. `kapitelgrenzen.py` deutet beides
+  als Kapitelversatz und schickt den Zeugenvers 10,1 neben fr 9,51 —
+  das ist eine andere Perikope. Siehe BEFUND_MARKUS_TEILVERSE.md.
+Wiederholte Wortfolgen im Buch: 227 (wiederholungen_41.md).

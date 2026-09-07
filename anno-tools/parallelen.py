@@ -129,7 +129,13 @@ for v in sorted(quelle, key=int):
         if bl.size >= minblock:
             print(f'   Block A-pos {bl.a} ← B-pos {bl.b}, Länge {bl.size}, '
                   f'Versatz {bl.b - bl.a:+d}: `{" ".join(a[bl.a:bl.a + bl.size])}`')
-    if top_ratio[2] and top_ratio[2] != top_block[2]:
+    # `top_block` ist (blk, hat, ratio, ort) — `top_block[2]` ist die
+    # ZAHL, nicht der Ort. Der Vergleich gegen `top_ratio[2]` (ein
+    # Ort) war damit immer ungleich, und der Hinweis stand unter
+    # JEDEM Treffer — auch wo beide Masse denselben Vers meinen
+    # (Marc 1,3 ← Matthieu 3,3, Aehnlichkeitstreffer Matthieu 3,3).
+    # Gefunden beim ersten Lauf ueber Markus.
+    if top_ratio[2] and top_ratio[2] != top_block[3]:
         r2, blk2, (b2, k2, w2) = top_ratio
         print(f'   **Die Ähnlichkeit zeigt woanders hin**: {C.book_name(b2)} {k2},{w2} '
               f'(Ähnlichkeit {r2:.2f}, längster Block aber nur {blk2}). '

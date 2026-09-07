@@ -90,8 +90,13 @@ def main():
     lauf(['paketvorb.py', str(nr)] + kaps, bind)
 
     for kap in kaps:
+        # `parallelen.py` kam mit Markus dazu. In Matthaeus haette es
+        # nichts gefunden — es war das erste franzoesische Buch. Von
+        # Markus an steht der Synoptikerstoff annotiert daneben: Marc 1,3
+        # teilt mit Matthieu 3,3 siebzehn Tokens am Stueck.
         for werkzeug, name in (('rueckwaerts.py', 'rueckwaerts'),
                                ('ausgaben.py', 'ausgaben'),
+                               ('parallelen.py', 'parallelen'),
                                ('hints.py', 'hints')):
             lauf([werkzeug, str(nr), kap],
                  os.path.join(vorb, f'{name}_{nr}_{kap}.md'))
@@ -110,6 +115,8 @@ Die Dateien liegen in `{vorb}/`:
     rueckwaerts_{nr}_{kap}.md   was der Bestand zu jedem Wort deines
                             Kapitels fuehrt, vers fuer vers, vier Schichten
     ausgaben_{nr}_{kap}.md      die vier Zeugen neben deinem Vers
+    parallelen_{nr}_{kap}.md    wo derselbe Wortlaut schon annotiert
+                            im franzoesischen Bestand steht
     hints_{nr}_{kap}.md         unbelegte Formen, Kollisionen im Vers
     bindungen_{nr}_p{marke}.md  die Wortfolgen dieses Pakets
     kapitelgrenzen_{nr}.md      die Verszaehlung aller Zeugen
@@ -120,6 +127,13 @@ fuer das ganze Buch) von dem, was es **uebernimmt** (die Reihe steht
 schon, gemessen, nicht erinnert). Im Paket selbst wird zeichengleich
 gesetzt: sprich dich ueber die Folgen ab, die in mehreren Kapiteln des
 Pakets stehen — dein Bericht nennt sie ausdruecklich.
+
+Danach `parallelen_{nr}_{kap}.md`: **das ist die staerkste Bindung, die
+es gibt** — nicht ein Wort, sondern derselbe Wortlaut, schon annotiert.
+Wo ein Block dort steht, wird er zeichengleich uebernommen; gemessen
+wird er mit `folgenreihe.py "<der Block>"`, der die Glossen des Bestands
+zu genau dieser Folge zeigt. Weicht dein Vers vom Parallelvers ab, gilt
+**dein** Vers — die Parallele ist eine Vorlage, kein Gleichheitszeichen.
 
 Danach `rueckwaerts_{nr}_{kap}.md` und `ausgaben_{nr}_{kap}.md` ganz.
 
