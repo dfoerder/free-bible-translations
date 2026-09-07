@@ -137,6 +137,55 @@ def deckung_zaehlen(sig):
     return gesamt
 
 
+def neue_lemmata(kap, nr, kapitel):
+    """Ein NEUES Lemma, dessen Wortform der Bestand schon fuehrt.
+
+    Der Agent fuer Jean 2 hat `d’ici` als Lemma gesetzt; der Bestand
+    fuehrt dieselbe Form unter `ici`. Ebenso `Père` gegen das
+    kleingeschriebene `père`. Beides ist ein neu erfundenes Lemma neben
+    einem vorhandenen — und **keine** der Pflichtpruefungen sieht es:
+    `sweeplemma`s erster Abschnitt sucht Signaturen bekannter Lemmata,
+    `konvention` fehlende Mehrwoerter, `levelcheck` das Level eines
+    Lemmas, das es kennt. Ein Lemma, das der Bestand gar nicht hat,
+    faellt durch alle drei. Nur `belegt.py` auf der Einzelform zeigt
+    es, und danach fragt niemand von selbst.
+    """
+    form_lemma = collections.defaultdict(collections.Counter)
+    lemmata = set()
+    for b, k, v, e in C.iter_corpus():
+        if int(b) == int(nr) and str(k) == str(kapitel):
+            continue
+        lemmata.add(e['lemma'])
+        if not C.is_multi(e):
+            form_lemma[e['form'].lower()][e['lemma']] += 1
+
+    treffer = []
+    for vers in sorted(kap, key=int):
+        for e in kap[vers]:
+            if C.is_multi(e) or e['lemma'] in lemmata:
+                continue
+            andere = form_lemma.get(e['form'].lower())
+            if andere:
+                treffer.append((vers, e['form'], e['lemma'],
+                                andere.most_common(3)))
+
+    print()
+    print('## Neue Lemmata, deren Wortform der Bestand schon fuehrt')
+    print()
+    if not treffer:
+        print('   keine.')
+        return
+    for vers, form, lem, andere in treffer:
+        wie = ', '.join(f'`{l}` ({n}×)' for l, n in andere)
+        print(f'   {kapitel},{vers}  {form!r}: hier neu als `{lem}`, '
+              f'im Bestand {wie}')
+    print()
+    print(f'{len(treffer)} Faelle. Jeder ist zu pruefen: entweder ist das '
+          'Bestandslemma\ngemeint (dann uebernehmen), oder es ist wirklich '
+          'ein anderes Wort\n(dann bleibt es — `voler` fliegen gegen '
+          '`voler` stehlen).')
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('buch', type=int)
@@ -186,6 +235,7 @@ def main():
     if not befunde:
         print('0 ungedeckte Lemma-Signaturen.')
         bekannte_mehrwoerter(kap, a.buch, a.kapitel)
+        neue_lemmata(kap, a.buch, a.kapitel)
         return
     for vers, start, ende, s, n, quote in befunde:
         print(f'{a.kapitel},{vers} pos {start}–{ende}  '
@@ -195,6 +245,7 @@ def main():
     print(f'{len(befunde)} Verdachtsfälle. Jeder ist am Vers zu prüfen: steht die '
           'Wortfolge hier als Wendung oder wörtlich?')
     bekannte_mehrwoerter(kap, a.buch, a.kapitel)
+    neue_lemmata(kap, a.buch, a.kapitel)
 
 
 def bekannte_mehrwoerter(kap, nr, kapitel):
