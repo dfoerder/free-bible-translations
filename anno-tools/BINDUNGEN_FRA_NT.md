@@ -301,3 +301,39 @@ der Artikel bleibt Artikel.**
 
 Entschieden nach Marc 8,23; der Agent hat die Stelle selbst als die
 schwaechste seines Kapitels benannt und um eine Entscheidung gebeten.
+
+## Wo das reflexive Lemma sitzt
+
+Der Bestand sah zweigeteilt aus, und der Agent fuer Marc 10 hat ihn zur
+Vereinheitlichung vorgeschlagen. Gemessen ist er **nicht** gespalten,
+sondern folgt einer Regel:
+
+**Das reflexive Lemma sitzt dort, wo die reflexive Bedeutung getragen
+wird.** Gibt es ein Mehrwort, traegt es sie, und das Verbtoken behaelt
+das schlichte Lemma:
+
+    Mt 17,14  se jeter à genoux [MW]  ·  jeter   (Einzeleintrag)
+    Marc 10,17 se jeter à genoux [MW]  ·  jeter
+
+Gibt es keines, traegt sie das Verbtoken selbst:
+
+    Mt 26,39 · Marc 5,22 · 5,33 · 7,25   jeta / jeter  →  `se jeter`
+
+So stehen im Bestand **55 Stellen**: `se prosterner`, `se rendre`,
+`se souvenir`, `se repentir`, `se précipiter`, `s’approcher` und andere
+tragen ihr reflexives Lemma auf dem Verbtoken, waehrend `se` daneben
+seine eigene Glosse behaelt.
+
+## `pouvoir` und `autorité`
+
+Beide uebersetzen dasselbe griechische Wort, und der englische Zeuge
+sagt zu beiden *authority*. Der Bestand haelt sie im **Deutschen**
+auseinander — `autorité` = *Vollmacht* (11 Stellen), das Substantiv
+`pouvoir` = *Macht* (7 Stellen) — und laesst das Englische
+zusammenfallen.
+
+Nur wo beide **im selben Vers** stehen, wird aufgeloest: Marc 11,28
+(„Par quelle autorité … qui t’a donné le pouvoir") setzt `pouvoir`
+englisch auf *power*. Marc 10,42 und 13,34 haben je nur eines von
+beiden und bleiben auf der Bestandsreihe. Gepruefte Frage des Agenten
+fuer Marc 10.

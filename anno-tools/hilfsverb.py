@@ -60,6 +60,9 @@ def _stamm(g):
     return w[-1][:MIN_STAMM] if w else ''
 
 
+paare = [0]
+
+
 def pruefe(nrs, abstand=ABSTAND, datei=None, kapitel=None):
     if not HILFSVERBEN:
         print(f'!! Fuer die Quelltextsprache {C.LANG!r} sind keine '
@@ -77,6 +80,7 @@ def pruefe(nrs, abstand=ABSTAND, datei=None, kapitel=None):
                 einzel = [e for e in entries if not C.is_multi(e)]
                 hilfs = [e for e in einzel if e['lemma'] in HILFSVERBEN]
                 voll = [e for e in einzel if e['lemma'] not in HILFSVERBEN]
+                paare[0] += len(hilfs) * len(voll)
                 for h in hilfs:
                     for v in voll:
                         if abs(h['pos'] - v['pos']) > abstand:
@@ -106,7 +110,13 @@ def pruefe(nrs, abstand=ABSTAND, datei=None, kapitel=None):
         zeig(verdacht)
         print(f'\n{len(verdacht)} Verdachtsfälle.')
     if not treffer:
-        print('0 Treffer.')
+        print(f'0 Treffer — angesehen wurden {paare[0]} Paare aus Hilfsverb '
+              'und Vollverb\nim selben Vers. Gemeldet wird nur, wo die '
+              'Glossen in mindestens ZWEI\nSprachen denselben Wortstamm '
+              'teilen; eine Null heisst also nicht, dass\nkein Hilfsverb '
+              'sein Vollverb verschluckt, sondern nur, dass es dabei die\n'
+              'Sprachen nicht durchgaengig tut. Der Agent fuer Marc 10 hat '
+              'zu Recht\ngefragt, was die Null deckt.')
     return treffer
 
 
