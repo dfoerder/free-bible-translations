@@ -185,6 +185,7 @@ def main():
     print()
     if not befunde:
         print('0 ungedeckte Lemma-Signaturen.')
+        bekannte_mehrwoerter(kap, a.buch, a.kapitel)
         return
     for vers, start, ende, s, n, quote in befunde:
         print(f'{a.kapitel},{vers} pos {start}–{ende}  '
@@ -193,6 +194,76 @@ def main():
         print()
     print(f'{len(befunde)} Verdachtsfälle. Jeder ist am Vers zu prüfen: steht die '
           'Wortfolge hier als Wendung oder wörtlich?')
+    bekannte_mehrwoerter(kap, a.buch, a.kapitel)
+
+
+def bekannte_mehrwoerter(kap, nr, kapitel):
+    """Welche der gesetzten Mehrwoerter kennt der Bestand schon?
+
+    Die schaerfste Luecke der Kette, gefunden vom Agenten fuer Marc 15:
+    **ein neu erfundenes Mehrwort, dessen Lemma laengst im Bestand
+    steht, laeuft durch jede Pruefung sauber durch.** Struktur und Level
+    stimmen ja; `selfcheck`, `levelcheck`, `sweeplemma`, `mehrwort`,
+    `folgencheck` und `qa` melden nichts. Der Agent hatte drei solche
+    Faelle (`se remettre à`, `reprendre la parole`, `s’assurer` — der
+    letzte steht im Bestand sogar unter einem anderen Lemma,
+    `s’en assurer`) und hat sie nur gefunden, weil er am Ende jedes
+    selbst gesetzte Mehrwort-Lemma einzeln durch `fixgloss.py show`
+    geschickt hat.
+
+    Gezeigt wird deshalb zu jedem Mehrwort des Kapitels, was der Bestand
+    dazu fuehrt. Eine Abweichung ist kein Fehler — Flexion trennt die
+    Reihen zu Recht. Ein abweichendes LEVEL ist einer.
+    """
+    bestand = collections.defaultdict(collections.Counter)
+    orte = collections.defaultdict(list)
+    for b, k, v, e in C.iter_corpus():
+        if not C.is_multi(e):
+            continue
+        if int(b) == int(nr) and str(k) == str(kapitel):
+            continue          # das eigene Kapitel zaehlt nicht als Beleg
+        key = (e.get('level', ''), C.reihe(e))
+        bestand[e.get('lemma', '')][key] += 1
+        if len(orte[(e.get('lemma', ''), key)]) < 3:
+            orte[(e.get('lemma', ''), key)].append(f'{C.book_name(b)} {k},{v}')
+
+    eigen = {}
+    for vers in sorted(kap, key=int):
+        for e in kap[vers]:
+            if C.is_multi(e):
+                eigen.setdefault(e.get('lemma', ''), []).append((vers, e))
+
+    bekannt = [l for l in eigen if l in bestand]
+    print()
+    print(f'# Mehrwoerter dieses Kapitels, die der Bestand schon kennt '
+          f'({len(bekannt)} von {len(eigen)})')
+    print()
+    if not bekannt:
+        print('Keines — alle Mehrwort-Lemmata sind neu. Dann bitte jedes '
+              'einzeln\nmit `fixgloss.py show <lemma>` gegenpruefen: eine '
+              'Neupraegung, die den\nBestand doppelt, faellt sonst durch '
+              'jede Pruefung dieser Kette.')
+        return
+    stufe = []
+    for lem in sorted(bekannt):
+        print(f'## {lem}')
+        for key, n in bestand[lem].most_common(4):
+            print(f'   Bestand {n:3}×  [{key[0]}]  ' + ' · '.join(key[1])
+                  + '   ' + ', '.join(orte[(lem, key)]))
+        for vers, e in eigen[lem]:
+            key = (e.get('level', ''), C.reihe(e))
+            marke = '' if key in bestand[lem] else '   ← weicht ab'
+            print(f'   hier {kapitel},{vers:<4}  [{e.get("level","")}]  '
+                  + ' · '.join(C.reihe(e)) + marke)
+            lvls = {k[0] for k in bestand[lem]}
+            if e.get('level') not in lvls:
+                stufe.append((vers, lem, e.get('level'), sorted(lvls)))
+        print()
+    if stufe:
+        print('!! Abweichendes LEVEL — das ist ein Befund, keine Flexion:')
+        for vers, lem, lv, lvls in stufe:
+            print(f'   {kapitel},{vers}  {lem}: hier {lv}, im Bestand '
+                  + '/'.join(lvls))
 
 
 if __name__ == '__main__':
