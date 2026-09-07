@@ -345,3 +345,34 @@ Vom Piloten gemessen, noch nicht behoben:
    ihre „342 unbelegte Wortformen" sind die leere Messung, kein Befund.
 6. **`kongruenz.py` und `artikel.py` melden ihre eigene Blindheit** —
    beide sagen es im Lauf. `artikel.py` braucht 5 Belege je Nomenform.
+
+## 15 · Homographen — eigenes Lemma mit Klammerzusatz
+
+`buildbook.py` vereinheitlicht die CEFR-Level **ueber das Lemma**: gleiches
+Lemma, gleiches Level, buchuebergreifend. Wo zwei verschiedene Woerter
+dieselbe Buchstabenfolge tragen, zieht das den seltenen auf das Level des
+haeufigen herunter. In Giuda 1,8 ist `esseri` *Wesen* (B2) auf `essere`
+*sein* (A1) gefallen — 20 Kopula-Belege gegen einen Nomenbeleg.
+
+Die Spezifikation sagt dazu schon das Richtige (`SPEC.md`, „Anschluss an
+den Bestand"): **bei anderer Bedeutung eigene Glosse UND eigenes Lemma.**
+Fuer das Italienische heisst das:
+
+    esseri   → lemma `essere (sostantivo)`   B2   (1,8)  de *Wesen*
+    sono     → lemma `essere`                A1   (1,1)  de *sind*
+
+**Der Zusatz steht italienisch und in runden Klammern**, hinter dem
+Lemma, mit einem Leerzeichen davor. Er gilt fuer die **seltenere**
+Lesart; die haeufige behaelt das blosse Lemma. Gebraucht wird er nur, wo
+zwei Lesarten wirklich zeichengleich sind — nicht zur Verzierung.
+
+Die Faelle, die im NT wiederkehren, sind die substantivierten Infinitive:
+
+    potere · dovere · piacere · volere · essere
+
+Als Verb tragen sie das blosse Lemma, als Nomen `… (sostantivo)`.
+
+**Das ist kein Grammatik-Tag in einer Glosse** — die Regel „nie ein Tag
+in Klammern" gilt fuer die vier Glossenspalten, nicht fuer das Lemma. Das
+Lemma ist der Vokabelschluessel, und zwei Woerter brauchen zwei
+Schluessel.

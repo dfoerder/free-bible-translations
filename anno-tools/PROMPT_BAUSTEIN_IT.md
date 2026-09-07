@@ -135,6 +135,16 @@ Wort. Lies den Vers.
   Vers entscheiden.
 - **`glosskollision.py` vergleicht klein.** Ein Paar, das sich allein in
   der Grossschreibung trennt, ist **keine** Kollision — nicht aufloesen.
+- **Homographen bekommen ein eigenes Lemma.** `buildbook.py`
+  vereinheitlicht die Level ueber das Lemma; wo zwei verschiedene
+  Woerter zeichengleich sind, faellt das seltene auf das Level des
+  haeufigen. Die seltenere Lesart traegt deshalb einen italienischen
+  Klammerzusatz: `esseri` → `essere (sostantivo)` (B2) gegen `sono` →
+  `essere` (A1). Im NT betrifft das vor allem die substantivierten
+  Infinitive `potere`, `dovere`, `piacere`, `volere`, `essere`.
+  Einzelheiten in `BINDUNGEN_ITA_NT.md` §15. Das ist **kein** Verstoss
+  gegen „nie ein Grammatik-Tag in Klammern" — die Regel gilt fuer die
+  vier Glossenspalten, nicht fuer das Lemma.
 - **`si` ist mehrdeutig:** Reflexivpronomen (*si lavò*), unpersoenliches
   *man* (*si dice*) und Passiversatz. Am Vers entscheiden; das Lemma ist
   in allen drei Faellen `si`, die Glossen sind es nicht.
