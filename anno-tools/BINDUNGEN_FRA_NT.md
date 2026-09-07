@@ -337,3 +337,26 @@ Nur wo beide **im selben Vers** stehen, wird aufgeloest: Marc 11,28
 englisch auf *power*. Marc 10,42 und 13,34 haben je nur eines von
 beiden und bleiben auf der Bestandsreihe. Gepruefte Frage des Agenten
 fuer Marc 10.
+
+## `ne … plus` und das elidierte `ne` ohne eigene Verneinung
+
+Der Abschnitt oben nennt `ne pas`, `ne rien`, `ne personne` und `nul
+ne`. **`ne plus` fehlte** — es steht mit 13 Belegen im Bestand, und der
+Span umfasst das Verb (`ne pourras plus`, Luc 1,20; Marc 1,45). Der
+Agent fuer Luc 1 hatte es als kompositionell verworfen; der neue
+zweite Abschnitt von `sweeplemma.py` hat es zurueckgeholt.
+
+**Und eine Grenze der Regel „das elidierte Token traegt die Verneinung
+selbst":** sie gilt nur, wo das `ne` die einzige Verneinung ist. In
+`Car rien n’est impossible` (Luc 1,37) traegt `rien` die Verneinung
+vollstaendig; `n’est` = *ist*, nicht *ist nicht*. Der Unterschied zu
+Mt 17,20 (`rien ne`, dort ein Mehrwort `ne rien`) ist, dass das `ne`
+dort ein FREIES Token ist und hier verschmolzen.
+
+## `chez lui` und `chez elle`
+
+Der Bestand ist hier asymmetrisch, und das ist keine Absicht:
+`chez elle` steht als Mehrwort-Lemma (Marc 7,30), `chez lui` nicht
+(Mt 10,11, Marc 8,26 stehen Wort fuer Wort). `sweeplemma` meldet
+folglich nur die `elle`-Faelle. Bis zur Vereinheitlichung gilt: **wie
+der Bestand es fuehrt** — gemeldet vom Agenten fuer Luc 1.

@@ -3,6 +3,7 @@
     fixgloss.py show <lemma> [<lemma> …]
     fixgloss.py showform <form> [<form> …]
     fixgloss.py verse <buchNr> <kapitel> <vers> [--datei <ch.json>]
+    fixgloss.py mw [<teilwort> …]      alle Mehrwort-Lemmata
 
 Grundlage für jede korpusweite Entscheidung: **vor jedem Zug die Belegverse
 lesen.** Manche Spaltung sieht aus wie ein Fehler und ist richtig (`Herde` =
@@ -79,8 +80,50 @@ def verse(nr, kap, vers, datei=None):
               + ' · '.join(f'{l} {e[l]}' for l in C.LANGS))
 
 
+def mehrwoerter(woerter):
+    """Alle MEHRWORT-Lemmata des Bestands, gefiltert nach Teilwort.
+
+        fixgloss.py mw                 alle
+        fixgloss.py mw avoir monde     alle, die `avoir` ODER `monde` enthalten
+
+    Zwei Agenten hintereinander haben sich diese Liste selbst gebaut,
+    weil `folgenreihe.py` die ZEICHENKETTE des Quelltextes sucht: `"n’y
+    avait pas"` und `"mit au monde"` melden 0, obwohl `il y avoir` und
+    `mettre au monde` im Bestand stehen — die Oberflaeche ist gebeugt,
+    das Lemma nicht. Wer nur folgenreihe fragt, erfindet vorhandene
+    Mehrwoerter neu.
+    """
+    idx = collections.defaultdict(collections.Counter)
+    orte = collections.defaultdict(list)
+    for nr, k, v, e in C.iter_corpus():
+        if not C.is_multi(e):
+            continue
+        lem = e.get('lemma', '')
+        key = (e.get('level', ''),) + C.reihe(e)
+        idx[lem][key] += 1
+        if len(orte[(lem, key)]) < 3:
+            orte[(lem, key)].append(f'{C.book_name(nr)} {k},{v}')
+    such = [w.lower().replace("'", '\u2019') for w in woerter]
+    treffer = [l for l in idx
+               if not such or any(w in l.lower() for w in such)]
+    print(f'*{C.bestandsstand()}*')
+    print(f'\n{len(treffer)} Mehrwort-Lemmata'
+          + (f' mit {" oder ".join(woerter)}' if woerter else ' im Bestand')
+          + f' (von {len(idx)})\n')
+    for lem in sorted(treffer):
+        ges = sum(idx[lem].values())
+        print(f'## {lem}   {ges}×')
+        for key, n in idx[lem].most_common(4):
+            print(f'   {n:4}  [{key[0]}]  ' + ' · '.join(key[1:])
+                  + '   ' + ', '.join(orte[(lem, key)]))
+        if len(idx[lem]) > 4:
+            print(f'   … und {len(idx[lem]) - 4} weitere Reihen')
+        print()
+
+
 if __name__ == '__main__':
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 2 or (len(sys.argv) < 3
+                             and sys.argv[1] != 'mw'):
         print(__doc__)
         sys.exit(1)
     modus = sys.argv[1]
@@ -88,6 +131,8 @@ if __name__ == '__main__':
         show(sys.argv[2:])
     elif modus == 'showform':
         show(sys.argv[2:], per_form=True)
+    elif modus == 'mw':
+        mehrwoerter(sys.argv[2:])
     elif modus == 'verse':
         datei = None
         if '--datei' in sys.argv:
