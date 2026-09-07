@@ -2,6 +2,7 @@
 """Elidiert die franzoesische Glossenspalte, wo sie es muss?
 
     elision.py [<buchNr> ...] [--setzen]
+    elision.py --datei <pfad> <buchNr> <kapitel>
 
 ## Der Anlass
 
@@ -16,6 +17,19 @@ entschieden worden war: `deu/l1912mod` steht im NT 1754 zu 1313 und
 `eng/web` 1992 zu 1344 — beide etwa 57 zu 43 gespalten. Fuer den
 italienischen Durchgang ist entschieden worden, **durchgehend zu
 elidieren**; dieses Werkzeug haelt das nach.
+
+## Es liest die GEBAUTE Datei — ausser mit `--datei`
+
+Ohne `--datei` liest dieses Werkzeug `C.load_anno(nr)`, also die
+eingesammelte Anno-Datei. Fuer einen Agenten, dessen Kapitel noch in
+`$ANNO_OUT` liegt, ist seine Null damit **eine Aussage ueber fremde
+Kapitel**. Der Prompt hat den Lauf trotzdem als Pflicht gefuehrt, und
+der Agent fuer Matteo 4 hat gemerkt, dass er sein eigenes Kapitel gar
+nicht sieht — mit der Handprobe fand er darin eine nicht elidierte
+Stelle (4,9 `ti` vor *agenouilles*). Deshalb `--datei`, wie bei
+`glosskollision.py` und `hilfsverb.py`:
+
+    python3 elision.py --datei $ANNO_OUT/40/ch4.json 40 4
 
 ## Was geprueft wird
 
@@ -90,11 +104,14 @@ def vokalisch(w):
     return False
 
 
-def pruefe(buecher):
+def pruefe(buecher, datei=None, kapitel=None):
     treffer = []
     for nr in buecher:
         try:
-            d = C.load_anno(nr)['chapters']
+            if datei:
+                d = C.anno_wie_datei(nr, kapitel, datei)['chapters']
+            else:
+                d = C.load_anno(nr)['chapters']
         except Exception:
             continue
         for kap, vv in d.items():
@@ -120,9 +137,20 @@ def main():
     p.add_argument('buecher', nargs='*', type=int)
     p.add_argument('--setzen', action='store_true',
                    help='die Aufrufe fuer setzen.py ausgeben')
+    p.add_argument('--datei', help='eine Kapitel-Lieferdatei statt der '
+                                   'gebauten Anno-Datei pruefen: '
+                                   '--datei <pfad> <nr> <kap>')
     a = p.parse_args()
-    buecher = a.buecher or sorted(C.anno_books())
-    treffer = pruefe(buecher)
+    if a.datei:
+        if len(a.buecher) != 2:
+            p.error('mit --datei: <buchNr> <kapitel>')
+        nr, kap = a.buecher
+        buecher = [nr]
+        treffer = pruefe(buecher, a.datei, kap)
+        print(f'gelesen: {a.datei} — Buch {nr}, Kapitel {kap}')
+    else:
+        buecher = a.buecher or sorted(C.anno_books())
+        treffer = pruefe(buecher)
     if a.setzen:
         for nr, kap, v, pos, form, fr, soll, nach in treffer:
             print(f'python3 setzen.py {nr} {kap} {v} {pos} "{form}" '

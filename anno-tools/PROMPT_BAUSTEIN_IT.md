@@ -150,7 +150,9 @@ Wort. Lies den Vers.
   `di` vor `Abraham` ist fr `d'`, nicht `de`; `il` vor `enfant` ist
   `l'`; `si` vor `arrêta` ist `s'`. Zehn Formen sind betroffen —
   `se me te ne le la de que ce je` —, das aspirierte `h` ist die
-  Ausnahme (`la hache`). **`elision.py` prueft das und muss 0 melden**;
+  Ausnahme (`la hache`). **`elision.py` prueft das und muss 0 melden —
+  mit `--datei`, sonst liest es die gebaute Datei und sagt nichts ueber
+  dein Kapitel**;
   es misst das aspirierte `h` am franzoesischen Quelltext, statt es zu
   raten. Einzelheiten in Reihe 38.
 - **`si` ist mehrdeutig:** Reflexivpronomen (*si lavò*), unpersoenliches
@@ -206,7 +208,7 @@ Wendung selbst. Das ist Absicht, kein blinder Fleck.
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --min 3 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
-    python3 elision.py <NR>
+    python3 elision.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;

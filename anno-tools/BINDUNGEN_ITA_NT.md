@@ -1034,3 +1034,260 @@ nichts.
 vokalisch anlautender Name (`d'Abraham`) und 20-mal ein konsonantischer
 (`de Salomon`). `folgencheck` vergleicht die drei Tokens der Folge und
 sieht den Namen dahinter nicht — die Spaltung ist richtig und bleibt.
+
+---
+
+# Matteo 4
+
+*Angehaengt aus Matteo 4 (Paket 4·5·6). Naechste freie Nummer war 39;
+Kapitel 5 und 6 haengen parallel an, der Koordinator nummeriert durch.*
+
+## 39 · Mehrwoerter, die Matteo 4 praegt
+
+    4,2   ebbe fame          A2  bekam Hunger · was hungry · tuvo hambre ·
+                                 eut faim              (Lemma `avere fame`)
+    4,3   si avvicinò        B1  näherte sich · came near · se acercó ·
+                                 s'approcha            (Lemma `avvicinarsi`)
+    4,5   con sé             A2  mit sich · with him · consigo · avec lui
+                                 (auch 4,8)
+    4,5   più alto           A2  höchsten · highest · más alta · plus haut
+                                 (Lemma `il più alto`)
+    4,6   riguardo a te      B2  deinetwegen · concerning you · acerca de ti ·
+                                 à ton sujet           (Lemma `riguardo a`)
+    4,8   Di nuovo           A2  Wieder · Again · De nuevo · De nouveau
+    4,9   ti inginocchi      B2  niederfällst · fall down · te postras ·
+                                 te prosternes         (Lemma `inginocchiarsi`)
+    4,11  si misero a        B2  machten sich daran · began · se pusieron a ·
+                                 se mirent à           (Lemma `mettersi a`)
+    4,12  si ritirò          B1  zog sich zurück · withdrew · se retiró ·
+                                 se retira             (Lemma `ritirarsi`, 2,14)
+    4,14  si adempisse       B2  (Lemma `adempiersi`, 1,22)
+    4,14  quello che         A2  (Lemma `quello che`, 2,17)
+    4,15  al di là           B1  jenseits · beyond · más allá · au-delà
+                                 (Lemma `al di là di`)
+    4,21  più avanti         A2  weiter · farther on · más adelante · plus loin
+    4,24  si sparse          B2  verbreitete sich · spread · se difundió ·
+                                 se répandit           (Lemma `spargersi`)
+
+**`avere fame` folgt `avere paura`** (2,22, Reihe 31): die
+`avere`+Nomen-Fuegung bekommt einen Eintrag, weil Deutsch und Englisch
+das Nomen nicht behalten koennen (*bekam Hunger* / *was hungry* gegen
+woertlich „hatte Hunger"). Die Einzelwoerter bleiben woertlich
+(`ebbe` A1 de *hatte*, `fame` A2 de *Hunger*).
+
+**`con sé` ist ein Mehrwort wegen des Spanischen.** Deutsch *mit sich*,
+Englisch *with him* und Franzoesisch *avec lui* gehen Wort fuer Wort;
+spanisch ergaebe `con` + `sé` das ungrammatische „con sí" statt
+*consigo*. Die Einzelwoerter behalten `con` A1 de *mit* und `sé` A2
+de *sich* (Reihe: 1,24).
+
+**`al di là` und `oltre` teilen sich die Praeposition mit dem Artikel
+nach Reihe 35.** `al di là del Giordano` (4,15) und `da oltre il
+Giordano` (4,25) heissen spanisch *más allá del Jordán* und
+franzoesisch *au-delà du Jourdain*: die Wendung traegt nur
+*más allá* / *au-delà*, das folgende `del` bzw. `il` traegt *del* / *du*.
+Deutsch und Englisch dagegen setzen die Praeposition in der Wendung
+(*jenseits* / *beyond*) und lassen dem Artikel nur *des* / *the*.
+
+## 40 · `sta scritto` braucht kein Mehrwort — `stare` traegt die Kopula
+
+`sta scritto` (4,4 · 4,6 · 4,10) und `È scritto` (4,7) sind der haeufigste
+Formeltyp des Kapitels. Sie gehen Wort fuer Wort auf, sobald `sta` die
+**Kopula-Glosse mitsamt dem ausgelassenen Subjekt** traegt:
+
+    sta / Sta  → `stare` A1  de *es steht* · en *it is* · es *está* ·
+                              fr *il est*
+    È          → `essere` A1 de *Es ist*  · en *It is* · es *Está* ·
+                              fr *Il est*
+    scritto    → `scritto` A2 de *geschrieben* · en *written* ·
+                              es *escrito* · fr *écrit*
+
+Das ergibt „es steht geschrieben · it is written · está escrito · il est
+écrit" — viermal die Formel der Zielsprache, ohne Mehrwort. Das
+italienische Subjektpronomen fehlt, also gehoert es in die Glosse des
+Verbs; ein Mehrwort haette hier nur wiederholt, was die vier Einzelworte
+schon sagen. **Gross-/Kleinschreibung folgt dem Satz**, nicht dem
+Bestand.
+
+## 41 · Das Partizip assoluto steht auf der finiten Form
+
+`Lasciata Nazaret, andò…` (4,13) und `Ed essi, lasciate subito le reti,
+lo seguirono` (4,20 · 4,22) sind Partizipialkonstruktionen, deren
+Partizip mit dem **Objekt** kongruiert. Reihe 5 wuerde daraus ein
+attributives Partizip machen (`lasciato`). Das geht hier nicht: der Sinn
+ist aktiv und subjektbezogen, und ein Lemma `lasciato` neben `lasciare`
+waere ein zweites Lemma fuer dasselbe Wort.
+
+**Lemma bleibt der Infinitiv `lasciare` (A2), die Glosse ist die finite
+Form der Zielsprache:**
+
+    Lasciata  (4,13)        de *Er verließ* · en *He left* · es *Dejó* ·
+                            fr *Il quitta*
+    lasciate  (4,20 · 4,22) de *verließen* · en *left* · es *dejaron* ·
+                            fr *laissèrent*
+
+Alle vier Zeugen loesen die Konstruktion genauso auf. Eine Partizipglosse
+(*verlassen habend* / *having left*) waere in keiner der vier Sprachen
+der Satz, den der Vers meint.
+
+## 42 · Die 80 neuen Lemmata dieses Kapitels und ihre Level
+
+Gemessen: von 203 Lemmata standen 123 schon im Bestand (`levelcheck.py
+40 4` → 0 Abweichungen), 80 sind neu. Die Zeugen sind fuer das Level
+besonders unbrauchbar — `deserto` steht bei ihnen zwischen B1 und B2,
+`angeli` zwischen A2 und C1, `altissimo` zwischen A1 und C1; das ist
+CEFR fuer Englisch-, Deutsch- und Franzoesischlernende.
+
+    A1  cosa · dare · mondo · nuovo · pane · piede · quaranta
+        Namen: Andrea · Capernaum · Decapoli · Neftali · Pietro ·
+        Satana · Simone · Siria · Zabulon · Zebedeo
+    A2  alto · avanti · barca · camminare · cominciare · diventare ·
+        dolore · fame · fine · luce · lungo · malato · malattia ·
+        monte · mostrare · ordine · punto · servire · subito
+        Mehrwoerter: avere fame · con sé · di nuovo · il più alto ·
+        più avanti
+    B1  avvicinare · colpito · condurre · confine · fama · folla ·
+        guarire · oltre · ombra · pescatore · prigione · rendere ·
+        rete · riparare · tempio · tentare · tentato · vangelo · vario
+        Mehrwoerter: al di là di · avvicinarsi
+    B2  altissimo · culto · digiunare · giacere · infermità · pagano ·
+        riguardo · sinagoga · sostenere · spargere · urtare
+        Mehrwoerter: mettersi a · riguardo a · spargersi
+    C1  epilettico · indemoniato · paralitico · tentatore
+
+`lungo` steht als **Praeposition** (*entlang*, 4,18) auf A2 und nicht auf
+B1: das Adjektiv `lungo` (*lang*) ist A1-A2, und `buildbook.py`
+vereinheitlicht ueber das Lemma. Ein Klammerzusatz nach Reihe 15 ist
+nicht noetig — Praeposition und Adjektiv sind **ein** Wort, keine zwei
+(Reihe 12).
+
+`tentato` (4,1, Passivpartizip nach Reihe 5) und `tentare` (4,7) stehen
+beide auf B1, damit die beiden Lemmata nicht auseinanderlaufen.
+`avvicinare` (Einzelwort) und `avvicinarsi` (Mehrwort) ebenso, nach dem
+Muster `gettare`/`gettarsi` aus Reihe 6.
+
+## 43 · Stehengelassene Kollisionen in Matteo 4
+
+`glosskollision.py --datei 40 4` endet auf **8 Paare in einer Sprache**
+und **2 aus geschlossenen Wortarten**. Aufgeloest wurden vier
+(4,8 `gli`/`lo` en → `gli` *to him*; 4,8 `del`/`il` de → `del` *von der*;
+4,10 `Adora`/`culto` en → `culto` *homage*; 4,24 `da`/`per` es/fr →
+`da` *de*/*de*). Stehen bleiben:
+
+- **4,5 · 4,8 · 4,11 · 4,22 `il` / `lo`, fr beide *le*** — Artikel und
+  Objektklitikon sind im Franzoesischen dasselbe Wort. Genau das Paar
+  aus Reihe 36 (2,13), unveraendert.
+- **4,21 `le` / `li` und 4,24 `i` / `li`, fr *les* (4,24 auch es *los*)** —
+  dieselbe Klasse, im Plural. de *die*/*sie* und en *the*/*them*
+  trennen; spanisch trennt `le`/`li` (*las*/*los*), nicht aber `i`/`li`.
+- **4,6 `te` / `ti` / `tu`, en alle drei *you*** — Englisch hat fuer die
+  2. Person nur eine Form. de *dir* / *dich* / *du*, es *ti* / *te* /
+  *tú*, fr *toi* / *te* / *tu* trennen sauber. Reihe 20 (3,14) im
+  Dreierpack.
+- **4,10 `gli` / `lui`, de *ihm* · fr *lui*** — das Paar aus Reihe 29
+  (1,21), hier auch im Deutschen: `gli disse` und `a lui solo` sind
+  beide Dativ. en *to him* / *him* und es *le* / *él* trennen.
+- **4,15 `del` / `Il`, en *the*** — zwei bestimmte Artikel in einem Vers
+  („Il paese di Zabulon" und „al di là del Giordano"). `del` traegt hier
+  nur den Artikel, weil `al di là` das *beyond* schon hat (Reihe 35).
+- **4,23 `ogni` / `tutta`, es *toda* · fr *toute*** — „per tutta la
+  Galilea" und „ogni malattia". Spanisch und Franzoesisch haben fuer
+  *ganz* und *jede* im Femininum dasselbe Wort; de *ganz* / *jede* und
+  en *all* / *every* trennen.
+
+Und eine, die `glosskollision.py` gar nicht meldet, weil sie dasselbe
+Lemma betrifft: **4,25 `dalla` / `da`, en *from* · es *de* · fr *de***.
+Die vier Herkunftsangaben stehen italienisch dreimal mit und zweimal
+ohne Artikel; keine der vier Zielsprachen setzt vor einem Laendernamen
+einen Artikel. Nur Deutsch trennt, und auch nur weil `da oltre il
+Giordano` de *von jenseits* verlangt.
+
+## 44 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 4)
+
+15. **`elision.py` sieht die Abgabe nicht.** Es liest ausschliesslich
+    `C.load_anno(nr)`, also die **eingesammelte** Anno-Datei, und kennt
+    weder `--datei` noch `ANNO_OUT`. `python3 elision.py 40` meldete in
+    Matteo 4 eine saubere Null — gemessen hatte es Kapitel 1–3. Reihe 38
+    verlangt aber, dass der Lauf **vor** der Abgabe 0 meldet. Die
+    Gegenprobe mit derselben Logik gegen `ch4.json` fand **eine** Stelle
+    (4,9 `ti` fr *te* vor `inginocchi` fr *agenouilles* → *t'*). Bis
+    `elision.py` ein `--datei` bekommt, ist der Kettenlauf fuer das
+    eigene Kapitel wertlos; die Probe muss von Hand gegen die Abgabe
+    laufen:
+
+        python3 - <<'PY'
+        import json,sys; sys.path.insert(0,'.')
+        import elision as EL, common as C
+        d=json.load(open('<ANNO_OUT>/40/ch4.json'))
+        for v,ee in d.items():
+            einzel={e['pos']:e for e in ee if not C.is_multi(e)}
+            for pos,e in sorted(einzel.items()):
+                fr=(e.get('fr') or '').strip()
+                if fr.lower() not in EL.ELIDIERT: continue
+                nx=einzel.get(pos+1)
+                if nx and EL.vokalisch(nx.get('fr')):
+                    print(v,pos,e['form'],fr,'->',EL.ELIDIERT[fr.lower()])
+        PY
+
+16. **`folgenreihe.py` findet keine Folge, die am Versende steht.** Der
+    Abfrageschluessel wird nicht von nachgestellter Interpunktion
+    befreit: `folgenreihe.py "il regno dei cieli è vicino"` meldet 0
+    Vorkommen, obwohl Matteo 3,2 genau so lautet — der letzte Token
+    steht dort als `vicino».`. Ohne das letzte Wort
+    (`"perché il regno dei cieli è"`) findet es die Reihe auf Anhieb.
+    Wer die Null fuer einen Befund haelt, praegt eine Reihe neu, die
+    schon steht.
+17. **`belegt.py` ist auch in Paket 2 das schaerfste Werkzeug** (Reihe
+    30.8 bestaetigt). Ein Lauf ueber alle 260 Wortformen des Kapitels
+    lieferte 158 belegte mit Lemma und Level; sechs Level kamen nur
+    daher und haetten sich aus den Zeugen nicht ergeben: `giù` B1 (nicht
+    A1), `ecco` B1, `contro` A2, `sopra` A2, `egli` A2, `popolo` A2. Es
+    findet das Lemma auch ueber eine ganz andere Wortform
+    (`portarono` → `portare` A2 ueber `portargli` in 3,11;
+    `seguirono` → `seguire` A2 ueber `seguito` in Giuda 1,7).
+18. **`levelcheck.py` hat in Matteo 4 nichts gefunden** — 0
+    Abweichungen. Das ist diesmal kein duenner Bestand, sondern die
+    Folge von 17: wer vorher `belegt.py` ueber jede Form laufen laesst,
+    setzt die Level schon richtig. `levelcheck` ist die Gegenprobe, nicht
+    die Quelle.
+19. **`glosskollision.py` meldet keine Kollision zwischen zwei Formen
+    desselben Lemmas.** `dalla` und `da` stehen in 4,25 mit identischen
+    Glossen in drei Sprachen nebeneinander und tauchen im Lauf nicht
+    auf (siehe Reihe 43). Das ist meist richtig — bei `perché` de *denn*
+    / de *damit* im selben Vers waere eine Meldung Rauschen —, aber es
+    heisst, dass der verschmolzene Artikel gegen die blosse Praeposition
+    nie geprueft wird.
+20. **`hilfsverb.py` sah 485 Paare und meldete 0**, wie in Matteo 2
+    (Reihe 37.14). Die essere-Perfekte (`è sorta` 4,16) faellt es
+    weiterhin nicht an.
+
+## 45 · Zwei Werkzeugbefunde aus Matteo 4 — behoben
+
+**`elision.py` sah die eigene Abgabe nicht.** Es las nur
+`C.load_anno(nr)`, also die eingesammelte Datei; fuer einen Agenten war
+seine Null damit eine Aussage ueber **fremde** Kapitel. Der Prompt
+fuehrte den Lauf trotzdem als Pflicht. Es hat jetzt `--datei` wie
+`glosskollision.py` und `hilfsverb.py`:
+
+    python3 elision.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
+
+**`folgenreihe.py` fand keine Folge am Versende.** Es streifte die
+Randzeichen nach einer eigenen Liste ab (`.,;:!?„“"’`) und kannte weder
+`»` noch `«` noch die Klammern. Im italienischen Text steht die Rede in
+Guillemets, also endet jeder vierzwanzigste Vers auf ein Zeichen, das
+die Liste stehen liess: `folgenreihe.py "il regno dei cieli è vicino"`
+meldete 0, obwohl Matteo 3,2 genau so lautet. Ohne das letzte Wort fand
+es die Reihe sofort — und `bindungen_*.md` schrieb aus demselben Grund
+„im Bestand noch nicht vollstaendig belegt" ueber Folgen, die
+vollstaendig annotiert dastehen.
+
+Beide Stellen lesen jetzt `common.strip_punct`. Gemessen, wie viele
+Verse auf ein vorher nicht abgestreiftes Zeichen enden:
+
+    italienisch    1 409 von 31 039   4,5 %
+    deutsch          282 von 31 171   0,9 %
+    franzoesisch      91 von 31 170   0,3 %
+
+Der italienische Text ist am staerksten betroffen, aber es war nie ein
+italienisches Problem — die franzoesische Arbeit hat dieselbe Luecke
+mitgetragen, nur seltener.

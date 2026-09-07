@@ -38,7 +38,14 @@ def stellen(phr, bis=None):
     # Vorher fand `n'est pas` nichts und `n’est pas` alles — der Agent
     # fuer Matthaeus 18 hat einen Durchgang daran verloren.
     phr = phr.replace("'", '\u2019')
-    w = [x.strip('.,;:!?„“"') for x in phr.split()]
+    # Die Randzeichen kommen aus `common.PUNCT`, nicht aus einer eigenen
+    # Liste. Die eigene fuehrte `.,;:!?„“"` und kannte weder die
+    # franzoesischen noch die italienischen Anfuehrungszeichen: eine
+    # Folge am VERSENDE stand im Quelltext als `vicino».` da und wurde
+    # nie gefunden. `folgenreihe.py "il regno dei cieli è vicino"`
+    # meldete 0, obwohl Matteo 3,2 genau so lautet — ohne das letzte
+    # Wort fand es die Reihe sofort. Gemeldet vom Agenten fuer Matteo 4.
+    w = [C.strip_punct(x) for x in phr.split()]
     w = [x for x in w if x]
     # Eine Folge aus einer Bindungsdatei steht ohne Apostroph da
     # (`C est pourquoi`), der Quelltext hat ein Token (`C’est`). Ohne
@@ -64,7 +71,7 @@ def stellen(phr, bis=None):
             for v, t in vv.items():
                 if v not in anno[k] or wk[0] not in t.lower():
                     continue
-                toks = [x.strip('.,;:!?„“"’') for x in t.split()]
+                toks = [C.strip_punct(x) for x in t.split()]
                 E = {e['pos']: e for e in anno[k][v]
                      if 'pos_end' not in e and 'parts' not in e}
                 for i in range(len(toks) - len(w) + 1):
