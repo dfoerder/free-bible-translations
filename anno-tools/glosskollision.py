@@ -178,6 +178,8 @@ SPRACHEN = tuple(C.LANGS)
 
 # Bestimmte und unbestimmte Artikel der vier Zielsprachen. Die Sprachen
 # werden ohnehin getrennt verglichen, eine gemeinsame Menge genuegt.
+IT_APOKOPE = {'di', 'da', 'fa', 'va', 'sta', 'de', 'to'}
+
 ARTIKEL = {
     'der', 'die', 'das', 'den', 'dem', 'des',
     'ein', 'eine', 'einen', 'einem', 'eines', 'einer',
@@ -197,6 +199,14 @@ def _norm(g):
     if not g:
         return None
     k = g.strip().lower().strip('.,;:!?¡¿"\'’“”()[]…-–—')
+    # Der italienische verkuerzte Imperativ traegt den Apostroph als
+    # Teil des Wortes: `di’` (sag) ist nicht `di` (von), `va’` nicht
+    # `va`. Das Abstreifen oben hat sie zusammengeworfen und in
+    # Luc 12,13 eine Kollision gemeldet, die in der App als zwei
+    # sichtbar verschiedene Woerter dasteht. Gemeldet vom Agenten
+    # fuer Luc 12.
+    if k in IT_APOKOPE and (g.rstrip().endswith('’') or g.rstrip().endswith("'")):
+        k += '’'
     # Ein vorangestellter Artikel ist ein Kasus- oder Genusmarker, keine
     # Bedeutung: „dem Ufer" und „Ufer" sind dieselbe Glosse. Der Agent
     # fuer Marc 4 hat die einzige inhaltliche Kollision seines Kapitels

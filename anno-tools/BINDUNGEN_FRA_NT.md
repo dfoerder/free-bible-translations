@@ -398,3 +398,57 @@ Es traegt echte Auskunft: `où` allein ist *wo · where · donde · dove*,
 den Teilen nicht entsteht. Nachgetragen, alle fuenf Stellen tragen
 jetzt dieselbe Reihe; die Einzelglosse darunter bleibt gerichtet
 (`où` = *wohin · adonde*, wo ein Bewegungsverb folgt).
+
+## Die Elisionsregel gilt nur nach aussen
+
+Die Regel aus Luc 8,6 (`faute d’humidité`) heisst: wo die Elision
+einem Mehrwort ein Token nimmt, bleibt es ungesetzt. Zwei Kapitel
+haben ihre Grenze gefunden.
+
+**Sie greift** bei `ce qu’on` (Luc 10,7), `ce qu’il` (Luc 12,12): das
+verschluckte Wort — `on`, `il` — gehoert **nicht** zur Wendung, ein
+Span darueber zoege ein Subjekt in die Relativpronomen-Glosse. Die
+Teile stehen einzeln.
+
+**Sie greift nicht** bei `Même s’il` (Marc 14,31, Luc 12,15): das
+verschluckte `il` gehoert zum Nebensatz, den `même si` ohnehin
+einleitet. Der Bestand setzt das Mehrwort dort, und Luc 12,15 folgt
+ihm.
+
+Die Probe ist also nicht „ist ein Token verschmolzen", sondern
+**„gehoert das verschmolzene Wort in die Spanne oder hinter sie"**.
+
+## `ce que` traegt eine Reihe
+
+Der Bestand fuehrte 106 Vorkommen auf zwölf Reihen — 64 davon
+(60 Prozent) auf `ce` = *das · that · lo · ciò* und `que` = *was ·
+what · que · che*. Sechs Stellen in Matthaeus standen auf
+*dasjenige · welches* und waren Altlast des ersten Buchs; sie sind
+auf die Mehrheit gezogen (Mt 6,3 · 6,25 · 7,12 · 10,19 zweimal ·
+21,22).
+
+**Zwei Lesarten bleiben getrennt, und der Vers entscheidet:**
+wo `que` echtes Relativum ist (*was du verborgen hast*), gilt die
+Reihe oben. Wo es Konjunktion eines Tatsachensatzes ist — „ne vous
+réjouissez pas **de ce que** les esprits vous sont soumis" (Luc
+10,20) —, ergaebe sie „freut euch nicht ueber dasjenige, welches die
+Geister euch untertan sind". Dort steht `ce que` = *darueber, dass ·
+the fact that · de que · del fatto che*.
+
+Die beiden sehen gleich aus. Luc 12,29 („ne vous inquiétez pas de ce
+que vous mangerez") ist trotz derselben Wendung das Relativum — der
+Agent fuer Luc 10 hat das dem fuer Luc 12 vorausgesagt, und der Vers
+hat ihm recht gegeben.
+
+## `docteur de la loi` traegt eine Reihe
+
+Der Bestand fuehrte den Singular (Mt 22,35) auf *Gelehrter · lawyer ·
+doctor · dottore* und den Plural (Luc 2,46 · 5,17 · 7,30) auf
+*Lehrer · teachers · maestros · maestri*. Der franzoesische Text
+unterscheidet nichts; die Spaltung war ein Zufall der Reihenfolge, in
+der die Buecher entstanden, und die Agenten fuer Luc 10 und Luc 11
+sind ihr folgerichtig auseinandergelaufen.
+
+Jetzt einstimmig auf der Reihe des Plurals. *Schriftgelehrter*, was
+beide deutschen Zeugen sagen, ist nicht verfuegbar — das traegt
+`scribe` an 45 Stellen.
