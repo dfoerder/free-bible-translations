@@ -631,3 +631,30 @@ im Bestand (90 Prozent mit Artikel) gibt die Richtung vor.
   verschieden setzt (`Kisleu` in Nehemia 1,1, `Chisleu` in Sacharja
   7,1). Ohne Mehrheitsentscheid der Ausgabe gibt es nichts anzugleichen;
   eine Vereinheitlichung waere eine eigene Setzung, keine Korrektur.
+
+## 33 · Drei franzoesische Woerter fuer das Ufer, eines in den Zielsprachen
+
+Gefunden beim Einsammeln von Markus 4-6, nachdem `glosskollision.py`
+gelernt hatte, den vorangestellten Artikel zu uebergehen.
+
+Der Bestand fuehrt `bord`, `rive` und `rivage`. Alle drei standen auf
+*Ufer · shore · orilla · riva*, und in zwei Versen stossen je zwei davon
+zusammen:
+
+    Marc 4,1   „au bord de la mer" und „sur le rivage"
+    Marc 5,21  „l’autre rive" und „au bord de la mer"
+
+`rivage` ist inzwischen durchgehend *Strand · beach · playa · spiaggia*
+(Mt 13,2 · 13,48 · Marc 4,1). **Marc 5,21 bleibt offen**: dort stehen
+`rive` und `bord` beide auf *Ufer*, in allen vier Sprachen — die
+staerkste Kollisionsart, die das Werkzeug kennt.
+
+Aufloesbar waere sie nur ueber `bord` = *Rand* (so steht es in
+Mt 20,30, „au bord du chemin", und dazu passt auch `bord` = *Saum* in
+Mt 9,20 · 14,36 · Marc 6,56). Dann hiesse „au bord de la mer" aber „am
+Rand des Meeres", und alle vier Zeugen lesen dort schlicht „am Meer /
+by the sea / junto al mar / presso il mare" — sie haben fuer `bord`
+ueberhaupt kein eigenes Wort. Eine Aufloesung waere hier also nicht
+genauer, sondern nur verschieden.
+
+Offen, bis jemand eine Lesart findet, die beides traegt.

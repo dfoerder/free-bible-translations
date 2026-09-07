@@ -116,8 +116,16 @@ def main():
             p.error(f'{x!r} ist kein feld=wert')
         f, w = x.split('=', 1)
         felder[f] = w
-    sys.exit(0 if setze(a.buch, a.kapitel, a.vers, a.pos, a.form, felder,
-                        a.grund, a.trocken, a.out) >= 0 else 1)
+    ok = setze(a.buch, a.kapitel, a.vers, a.pos, a.form, felder,
+               a.grund, a.trocken, a.out)
+    # Die Aenderung steht in der KAPITELQUELLE. Jedes messende Werkzeug
+    # liest die gebaute Anno-Datei — bis `buildbook.py` gelaufen ist,
+    # misst es also den alten Stand. Ich bin heute selbst darauf
+    # hereingefallen: nach vierzehn Lemma-Korrekturen meldete die
+    # Gegenprobe alle vierzehn unveraendert.
+    if ok >= 0 and not a.trocken and not a.out:
+        print(f'   → noch nicht gebaut: python3 buildbook.py {a.buch}')
+    sys.exit(0 if ok >= 0 else 1)
 
 
 if __name__ == '__main__':
