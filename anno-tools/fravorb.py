@@ -59,6 +59,11 @@ def main():
     p.add_argument('buch', type=int)
     p.add_argument('kapitel', nargs='+')
     p.add_argument('--scratch', required=True)
+    p.add_argument('--hinweis', action='append', default=[],
+                   metavar='KAP:TEXT',
+                   help='ein kapitelspezifischer Hinweis, der IN DIE '
+                        'PROMPTDATEI geschrieben wird — nur dort sieht ihn '
+                        'vorgabecheck.py')
     a = p.parse_args()
 
     if C.EDITION != 'fra/lsg1910mod':
@@ -86,6 +91,8 @@ def main():
                  os.path.join(vorb, f'{name}_{nr}_{kap}.md'))
 
         prompt = baustein(nr, kap, buch, a.scratch)
+        eigene = [h.split(':', 1)[1].strip() for h in a.hinweis
+                  if h.split(':', 1)[0].strip() == str(kap)]
         prompt += f'''
 
 ---
@@ -110,10 +117,15 @@ Pakets stehen — dein Bericht nennt sie ausdruecklich.
 
 Danach `rueckwaerts_{nr}_{kap}.md` und `ausgaben_{nr}_{kap}.md` ganz.
 
-**Nichts in diesem Prompt behauptet etwas ueber den Text.** Was in Judas
-zweimal falsch war, waren meine eigenen Verszitate — deshalb stehen hier
-keine. Was du brauchst, misst du selbst.
+**Alles in diesem Prompt ist gemessen oder verweist auf eine Messung.**
+Was in Judas zweimal falsch war, waren meine eigenen Verszitate aus dem
+Gedaechtnis. Sollte hier dennoch eine Behauptung ueber den Text stehen
+und der Quelltext etwas anderes sagen, **gilt der Quelltext** — und der
+Widerspruch gehoert in deinen Bericht.
 '''
+        if eigene:
+            prompt += '\n## Zu diesem Kapitel\n\n'
+            prompt += '\n\n'.join(eigene) + '\n'
         ziel = os.path.join(a.scratch, f'prompt_{nr}_{kap}.md')
         open(ziel, 'w', encoding='utf-8').write(prompt)
         print(f'  {ziel}')
