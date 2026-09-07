@@ -171,6 +171,7 @@ die das Pilotbuch gepraegt hat.
     python3 hilfsverb.py <NR> <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --min 3 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
+    python3 folgencheck.py <NR> --gegen <GEGEN> --min 5 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
@@ -193,6 +194,16 @@ Levelkorrektur loest nie eine Folgenkorrektur aus, umgekehrt aber schon.
 In Matthaeus 21 hat es 24 Abweichungen gefunden, alle echt — die Level
 der Zeugen sind CEFR fuer Englisch- und Deutschlernende und verfuehren
 systematisch zum falschen Wert.
+
+**Der dritte Lauf, `--gegen <GEGEN>`, prueft die Bindung ueber die
+Buchgrenze.** Bis Markus verglich `folgencheck` nur innerhalb eines
+Buches — bei den Synoptikern ist das die kleinere Haelfte der Arbeit.
+Die Agenten fuer Marc 1 und Marc 2 haben sich diesen Vergleich beide
+selbst gebaut; einer davon mit einem Positionsversatz, der sechs
+Scheinabweichungen erzeugte. Jetzt macht es das Werkzeug. Eine
+Abweichung ist auch hier kein Fehler: `autour` steht in Mt 3,4 vor dem
+verschmolzenen `des` und in Marc 1,6 vor einem eigenen Artikeltoken,
+und `est` ist einmal Kopula und einmal Hilfsverb.
 
 **Der zweite `folgencheck`-Lauf mit `--min 3` ist kein Luxus.** Der
 Standardlauf sieht erst Folgen ab vier Tokens; in Matthaeus 15 meldete er

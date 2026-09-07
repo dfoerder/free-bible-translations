@@ -53,7 +53,12 @@ def baustein(nr, kap, buch, scratch, paket=()):
     # dreimal die eigene Nummer, und der Lauf verglich das Kapitel mit
     # sich selbst. Jeder Agent hielt den leeren Lauf fuer sauber.
     # Gemeldet vom Agenten fuer Matthaeus 27.
+    # `<GEGEN>` sind alle schon annotierten Buecher ausser dem eigenen.
+    # Fuer Markus ist das Matthaeus, fuer Lukas Matthaeus und Markus —
+    # die Liste waechst von selbst mit dem Bestand.
+    gegen = ' '.join(str(b) for b in sorted(C.anno_books()) if b != nr)
     for a, b in (('<NR>', str(nr)), ('<KAP>', str(kap)),
+                 ('<GEGEN>', gegen),
                  ('<PAKET>', ' '.join(str(x) for x in paket)),
                  ('<BUCH>', buch), ('<SCRATCH>', scratch)):
         s = s.replace(a, b)

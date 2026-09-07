@@ -2,6 +2,7 @@
 """Stehen die wiederkehrenden Wortfolgen eines Buches zeichengleich?
 
     folgencheck.py <buchNr> [--min 4] [--kapitel 16,17] [--datei <ch.json> ...]
+    folgencheck.py <buchNr> --gegen 40 [40 ...]      auch gegen andere Buecher
 
 ## Der Anlass
 
@@ -30,6 +31,20 @@ Haggai belegt:
 
 Gemeldet wird deshalb **jede** Abweichung mit dem Token, an dem sie
 haengt; die Entscheidung bleibt am Vers.
+
+## `--gegen`: die Bindung ueber die Buchgrenze
+
+Bis Markus verglich dieses Werkzeug nur **innerhalb** eines Buches. Bei
+den Synoptikern ist das die kleinere Haelfte der Arbeit: Marc 1,3 teilt
+mit Matthieu 3,3 siebzehn Tokens am Stueck, und ob die beiden
+zeichengleich stehen, hat kein Lauf geprueft — die Agenten fuer Marc 1
+und Marc 2 haben es sich beide selbst gebaut, einer davon mit einem
+Positionsversatz, der sechs Scheinabweichungen erzeugte.
+
+`--gegen 40` nimmt die Verse von Matthaeus mit in den Vergleich. Beide
+Buecher zusammen bilden EINEN Wortfolgenraum; gemeldet werden nur
+Bloecke, an denen das eigene Buch beteiligt ist. Die Stellen tragen
+ihren Buchnamen.
 """
 import sys, json, collections
 import common as C
@@ -107,6 +122,14 @@ def main():
         nurkap = set((nurkap or set())) | {str(int(x)) for x in
                                            args[k + 1].split(',')}
         del args[k:k + 2]
+    gegen = []
+    while '--gegen' in args:
+        k = args.index('--gegen')
+        j = k + 1
+        while j < len(args) and args[j].isdigit() and int(args[j]) < 67:
+            j += 1
+        gegen += [int(x) for x in args[k + 1:j]]
+        del args[k:j]
     extra = {}
     while '--datei' in args:
         k = args.index('--datei')
@@ -118,6 +141,9 @@ def main():
         print(__doc__)
         return 2
     nr = int(args[0])
+    # `--gegen 41` beim Lauf ueber 41 waere derselbe Selbstvergleich, an
+    # dem in Matthaeus jeder `paketcheck`-Lauf leer durchlief.
+    gegen = [b for b in gegen if b != nr]
     src = C.load_source(nr)
     ch = src['chapters'] if 'chapters' in src else src
     try:
@@ -127,27 +153,48 @@ def main():
     anno = dict(anno)
     anno.update(extra)
 
+    annos = {nr: anno}
     quelle = []
-    for k in sorted(ch, key=int):
-        for v in sorted(ch[k], key=int):
-            roh = ch[k][v].split()
-            toks, pos = [], []
-            for i, x in enumerate(roh):
-                t = x.strip('.,;:!?„“"’')
-                if t:
-                    toks.append(t)
-                    pos.append(i)          # die Originalposition merken
-            quelle.append(((k, v), toks, pos))
+
+    def einlesen(b, kapitel):
+        for k in sorted(kapitel, key=int):
+            for v in sorted(kapitel[k], key=int):
+                roh = kapitel[k][v].split()
+                toks, pos = [], []
+                for i, x in enumerate(roh):
+                    t = x.strip('.,;:!?„“"’')
+                    if t:
+                        toks.append(t)
+                        pos.append(i)      # die Originalposition merken
+                quelle.append(((b, k, v), toks, pos))
+
+    einlesen(nr, ch)
+    for b in gegen:
+        s2 = C.load_source(b)
+        try:
+            annos[b] = C.load_anno(b)['chapters']
+        except Exception:
+            continue
+        einlesen(b, s2['chapters'] if 'chapters' in s2 else s2)
 
     print(f'# Zeichengleichheit: {C.book_name(nr)}\n')
     gleich = abweichend = ohne = 0
     for g, orte in folgen(quelle, minlen):
         gruppen = {}
-        for (k, v), pp in orte:
-            if k not in anno or v not in anno[k]:
+        eigen = False
+        for (b, k, v), pp in orte:
+            a = annos.get(b, {})
+            if k not in a or v not in a[k]:
                 continue
-            gruppen.setdefault(signatur(anno[k][v], pp),
-                               []).append(f'{k},{v}')
+            marke = f'{k},{v}' if b == nr else f'{C.book_name(b)} {k},{v}'
+            if b == nr:
+                eigen = True
+            gruppen.setdefault(signatur(a[k][v], pp), []).append(marke)
+        # Ein Block, an dem das eigene Buch gar nicht beteiligt ist, ist
+        # eine Wiederholung INNERHALB des Vergleichsbuchs — nicht die
+        # Frage, die hier gestellt wird.
+        if gegen and not eigen:
+            continue
         if nurkap is not None and not any(
                 w.split(',')[0] in nurkap
                 for x in gruppen.values() for w in x):
