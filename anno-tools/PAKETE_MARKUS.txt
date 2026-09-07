@@ -23,3 +23,22 @@ Kapitelgrenzen: ZWEI geteilte Verse, in allen vier Zeugen gleich —
   als Kapitelversatz und schickt den Zeugenvers 10,1 neben fr 9,51 —
   das ist eine andere Perikope. Siehe BEFUND_MARKUS_TEILVERSE.md.
 Wiederholte Wortfolgen im Buch: 227 (wiederholungen_41.md).
+
+
+FERTIG. 16 Kapitel, 680 Verse, 13 684 Tokens, 830 Mehrwoerter.
+validate · qa · mehrwort · artikel · levelcheck ohne Befund.
+kongruenz: 4 Meldungen — zweimal `le loro reti` (das Werkzeug raet das
+    Genus aus der Endung, `rete` ist feminin) und zweimal der Vokativ
+    `Mon Dieu` in 15,34, den es nach eigener Auskunft nicht sehen kann.
+hilfsverb: 1 — die drei Plusquamperfekt-Hilfsverben in 5,16.
+glosskollision: 15 inhaltliche Paare, 13 davon in nur EINER Sprache.
+    Die zwei uebrigen sind bekannt: `me`/`moi` in 8,34 (Franzoesisch
+    trennt tonisch und klitisch, Deutsch und Englisch nicht) und
+    `bord`/`rive` in 5,21 — Nachlese 33.
+folgencheck:  512 Folgen zeichengleich /  93 Abweichungen (min 4)
+             1066 / 326 (min 3)
+             5873 / 211 gegen Matthaeus und Judas (min 5)
+    Jede von ihrem Agenten am Vers geprueft.
+
+Der Buchgrenzen-Vergleich ist mit Markus dazugekommen und traegt
+sofort: 5873 Folgen stehen ueber die Buchgrenze zeichengleich.
