@@ -150,9 +150,15 @@ schon, gemessen, nicht erinnert). Im Paket selbst wird zeichengleich
 gesetzt: sprich dich ueber die Folgen ab, die in mehreren Kapiteln des
 Pakets stehen — dein Bericht nennt sie ausdruecklich.
 
-Danach `parallelen_{nr}_{kap}.md`: **das ist die staerkste Bindung, die
-es gibt** — nicht ein Wort, sondern derselbe Wortlaut, schon annotiert.
-Wo ein Block dort steht, wird er zeichengleich uebernommen; gemessen
+Danach `parallelen_{nr}_{kap}.md`: **wo die Vorlage Glossen traegt, ist
+das die staerkste Bindung, die es gibt** — nicht ein Wort, sondern
+derselbe Wortlaut, schon annotiert. **Lies zuerst die Schlusszeile der
+Datei**: sie trennt die tragenden Treffer von denen, die auf noch nicht
+annotierte Verse zeigen. Beim Vorwaertsarbeiten durch ein Buch ist der
+Leeranteil hoch — in Matteo 9 trugen 3 von 19 Treffern. Ein Treffer mit
+`⚠ NOCH NICHT ANNOTIERT` ist keine Bindung, sondern nur der Hinweis, dass
+DU dort praegst.
+Wo ein Block mit Glossen steht, wird er zeichengleich uebernommen; gemessen
 wird er mit `folgenreihe.py "<der Block>"`, der die Glossen des Bestands
 zu genau dieser Folge zeigt. Weicht dein Vers vom Parallelvers ab, gilt
 **dein** Vers — die Parallele ist eine Vorlage, kein Gleichheitszeichen.

@@ -561,3 +561,49 @@ zweimal umgestellt worden.
 Pakets ist teurer zu reparieren als eine Abweichung gegen eine von
 zwei Bestandsreihen; die Vereinheitlichung ueber die Buchgrenze ist
 Sache des Koordinators, nicht des Kapitels.
+
+## `croire en`: italienisch `in` beim Glaubensobjekt, `a` beim Zeugnis — nachgemessen
+
+Der Bestand hatte die Praeposition nach `croire` italienisch fast durchweg
+auf `a` gesetzt (15 Stellen gegen 5). **Das war die Mehrheit und trotzdem
+falsch.** Der italienische Zeuge unterscheidet, und zwar sauber:
+
+- **Glaubensobjekt** — `croire en lui/moi/celui` von Jesus: riv1927 liest
+  `crede in lui` (Jean 3,15 · 3,16 · 3,18 · 4,39 · 6,29 · 6,35 · 6,40 ·
+  6,47 · 2,11), `credono in me` (Mt 18,6), `crederemo in lui` (Mt 27,42).
+- **Einer Aussage glauben** — `croire en lui` vom Taeufer und seiner
+  Botschaft: riv1927 nimmt den Dativ, `gli credeste` / `credere a lui`
+  (Mt 21,25 · Mt 21,32 viermal · Marc 11,31 · Luc 20,5), ebenso
+  `ti crediamo` in Jean 6,30 („dass wir dich sehen und dir glauben").
+- **`croire en son nom`** ist eine dritte Reihe: `credere nel nome`
+  (Jean 1,12 · 2,23 · Marc 16,17) — Artikelverschmelzung, nicht `a`.
+
+Die acht Johannes-Stellen sind auf `in` gezogen; die Taeufer-Stellen
+bleiben auf `a`. **Wer im Bestand nur zaehlt, zieht hier in die falsche
+Richtung** — deshalb steht die Regel hier und nicht die Mehrheit.
+
+## `être` + Partizip eines Bewegungsverbs ist das Perfekt, nicht die Kopula
+
+`je suis venu` heisst **nicht** „ich bin (jemand) Gekommenes", sondern
+„ich bin gekommen". Deutsch und Italienisch bilden das Perfekt der
+Bewegungsverben selbst mit `sein`/`essere` — dort ist `bin`/`sono`
+richtig. **Englisch und Spanisch nicht:** dort steht `have come` und
+`he venido`, nie `am come` / `soy venido`.
+
+Der Bestand hatte an **54 Stellen** die Kopula stehen (`suis` = *am ·
+soy*, `est venue` = *is · es*, `fut venu` = *was · fue*), obendrein in
+fuenf `ne suis pas`-Mehrwoertern (*am not · no soy*). Der Zeuge liest
+durchweg `no he venido` / `I have not come`. Alles korrigiert; die
+Betroffenen sind `venir aller arriver entrer sortir monter descendre
+tomber revenir passer parvenir`.
+
+**Zwei Fallen dabei:**
+- Das Partizip muss mitziehen. `est tombé` = *has **fallen***, nicht
+  *has fell* (Luc 8,14 · 8,15); spanisch ist es nach `haber`
+  unveraenderlich — `ha **llegado**`, nicht `ha llegada`, auch wenn
+  `l'heure` feminin ist (Marc 14,41 · Luc 22,14 · Jean 4,23 · Luc 13,4).
+- **`fut passé` in Marc 16,1 bleibt.** „Lorsque le sabbat fut passé" =
+  *when the Sabbath was past* — hier ist `passé` adjektivisch, und
+  Englisch ist mit der Kopula richtig, waehrend Spanisch mit `hubo
+  pasado` das passé antérieur nimmt. Zwei Sprachen, zwei Analysen,
+  beide richtig.

@@ -49,6 +49,15 @@ Die Spalten heissen **de · en · es · it** — nicht en/es/fr/it. Eine
 Mehrwoerter tragen zusaetzlich `pos_end` (zusammenhaengend) **oder**
 `parts` (getrennte Positionen). Das gilt unveraendert.
 
+**`form` traegt keine Satzzeichen.** Der Quelltext hat sie (`Dieu,`
+`vides.`), der Bestand fuehrt sie nicht — `form` ist immer das nackte
+Wort, so wie `common.strip_punct` es liefert. Wer den Rohtoken
+uebernimmt, bekommt von `selfcheck.py` dreihundert Scheinbefunde der
+Art `Dieu, != Dieu` und sucht den Fehler in der falschen Ecke. Bei
+Mehrwoertern gilt dasselbe doppelt: die Oberflaeche des Mehrworts wird
+aus den **Einzeleintraegen** zusammengesetzt, nie aus dem Quelltext,
+sonst wandert der Satzpunkt in ein Mehrwort, das am Versende endet.
+
 ## Dein wichtigstes Werkzeug: `rueckwaerts.py`
 
     python3 rueckwaerts.py <NR> <KAP> -o $ANNO_OUT/../work/<KAP>/rw.md

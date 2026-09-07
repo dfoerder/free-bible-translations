@@ -212,6 +212,7 @@ Wendung selbst. Das ist Absicht, kein blinder Fleck.
     python3 folgencheck.py <NR> --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 folgencheck.py <NR> --min 3 --kapitel <KAP> --datei $ANNO_OUT/<NR>/ch<KAP>.json
     python3 elision.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
+    python3 verschmelzung.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
@@ -222,6 +223,15 @@ Ohne den Filter umfasst der `--min 3`-Lauf das ganze Buch.
 
 **Der zweite `folgencheck`-Lauf mit `--min 3` ist kein Luxus.** Der
 Standardlauf sieht erst Folgen ab vier Tokens.
+
+**`verschmelzung.py` prueft, was `glosskollision.py` nicht sehen kann.**
+`nella` traegt Praeposition UND Artikel; `su` und `sulla` stehen aber auf
+demselben Lemma und fallen in `glosskollision.py` deshalb in denselben
+Topf, statt gegeneinander gemessen zu werden. Abschnitt A ist scharf und
+soll leer sein. Abschnitt B (`--verdacht`) ist eine Verdachtsliste, in
+der die Nullantwort oft richtig ist — vor dem Possessiv, vor dem
+Eigennamen und vor dem Relativpronomen kann keine Zielsprache den
+Artikel setzen, und diese drei Stellungen sind schon ausgenommen.
 
 **`levelcheck.py` steht mit Absicht vor `folgencheck.py`:** eine
 Levelkorrektur loest nie eine Folgenkorrektur aus, umgekehrt aber schon.

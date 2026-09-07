@@ -86,6 +86,7 @@ print('nicht die höchste Ähnlichkeit. Wo beide Maße auseinandergehen, steht d
 print('Ähnlichkeitstreffer daneben — dann selbst entscheiden.\n')
 
 gefunden = 0
+traegt = 0    # davon die, deren Vorlage wirklich Glossen hat
 for v in sorted(quelle, key=int):
     a = norm(quelle[v])
     if len(a) < minblock:
@@ -122,7 +123,11 @@ for v in sorted(quelle, key=int):
         continue
     gefunden += 1
     blk, _hat, r, (b, k, w) = top_block
-    leer = '' if k in annotiert.get(b, ()) else '   ⚠ NOCH NICHT ANNOTIERT — dort stehen keine Glossen'
+    if k in annotiert.get(b, ()):
+        leer = ''
+        traegt += 1
+    else:
+        leer = '   ⚠ NOCH NICHT ANNOTIERT — dort stehen keine Glossen'
     print(f'## {kap},{v} ← {C.book_name(b)} {k},{w}   Block {blk}, Ähnlichkeit {r:.2f}{leer}')
     sm = difflib.SequenceMatcher(None, a, norm(C.load_source(b)['chapters'][k][w]))
     for bl in sm.get_matching_blocks():
@@ -159,5 +164,14 @@ for v in sorted(quelle, key=int):
               f'Der lange Block oben ist der belastbarere Treffer — trotzdem selbst ansehen.')
     print()
 
+# Beide Zahlen, nicht nur die erste. Beim Vorwaertsarbeiten durch ein Buch
+# zeigen die meisten Treffer auf spaetere Kapitel, die noch leer sind: in
+# Matteo 9 waren 16 der 19 Treffer ohne Glossen, und der Koordinator hatte
+# dem Agenten aus der einen Zahl `19 von 38` eine tragende Bindung
+# versprochen, die es nicht gab. Der Agent hat es nachgemessen und gemeldet.
 print(f'{gefunden} von {len(quelle)} Versen haben eine Parallelstelle mit '
-      f'mindestens {minblock} gemeinsamen Tokens.')
+      f'mindestens {minblock} gemeinsamen Tokens — davon {traegt} mit '
+      f'Glossen in der Vorlage, {gefunden - traegt} noch ohne.')
+if gefunden and traegt * 2 < gefunden:
+    print(f'ACHTUNG: die Mehrheit der Treffer zeigt auf noch nicht '
+          f'annotierte Verse. Tragend sind {traegt}, nicht {gefunden}.')
