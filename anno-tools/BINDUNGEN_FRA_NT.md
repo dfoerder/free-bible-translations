@@ -40,9 +40,16 @@ ueber den Bestand:
     n’a · n’est · n’ont   → nur das Verb (*hat*, *ist*, *haben*)
 
 **`ne … personne` und `personne ne`** sind beide Mehrwoerter mit dem
-Lemma, das die **Wortstellung des Verses** hat: `personne ne` (9,30 ·
-11,27), `ne personne` (16,20 · 17,9). Der Span umfasst das Verb, wie bei
-`ne pas`.
+Lemma, das die **Wortstellung des Verses** hat: `personne ne` (9,16 ·
+9,30 · 11,27 · 12,19), `ne personne` (16,20 · 17,9).
+
+Der Span laeuft vom ersten Verneinungswort zum letzten — was
+dazwischenliegt, gehoert dazu. Bei `personne ne` stehen die beiden
+nebeneinander und das Verb folgt erst danach, der Span ist also zwei
+Tokens lang; bei `ne … personne` steht das Verb dazwischen und der Span
+umfasst es. Eine fruehere Fassung sagte pauschal „der Span umfasst das
+Verb"; der Agent fuer Matthaeus 20 hat alle Vorkommen nachgemessen und
+gezeigt, dass das fuer `personne ne` nicht stimmt.
 
 **Das gilt nur, solange ein `pas` da ist.** Wo die Verneinung ohne `pas`
 auskommt — `ils n’entendent ni ne comprennent` (13,13), `n’amassent

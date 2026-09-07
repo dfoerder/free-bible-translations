@@ -40,7 +40,7 @@ if not kaps:
         'Aufruf: %s <buchNr> <kapitel> [<kapitel> ...]' % sys.argv[0])
 
 lv=collections.defaultdict(collections.Counter)
-for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,'*_multi.json'))):
+for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,f'*{C.ANNO_SUFFIX}'))):
     d=json.load(open(p,encoding='utf-8'))
     for kap,verse in d['chapters'].items():
         for v,ee in verse.items():

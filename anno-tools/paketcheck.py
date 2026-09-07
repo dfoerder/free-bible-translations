@@ -102,7 +102,17 @@ def lade(args):
                       'uebersprungen)', file=sys.stderr)
                 eigene.discard((nr, str(int(kap))))
                 continue
-            out.append((f'{C.book_name(nr)} {int(kap)}', data))
+            # Ein Kapitel, das noch im Bau ist, sieht sonst aus wie ein
+            # fertiges — und wer daran bindet, bindet an einen halben
+            # Stand. Gemeldet vom Agenten fuer Matthaeus 20, dem
+            # Kapitel 21 mit 16 von 46 Versen vorlag.
+            soll = len(C.load_source(nr)['chapters'].get(str(int(kap)), {}))
+            marke = ''
+            if soll and len(data) < soll:
+                marke = f'  [{len(data)}/{soll} Verse — NOCH IM BAU]'
+                print(f'   Kapitel {kap}: {len(data)} von {soll} Versen — '
+                      'noch im Bau, nicht daran binden', file=sys.stderr)
+            out.append((f'{C.book_name(nr)} {int(kap)}{marke}', data))
         return out, eigene
     out = []
     for p in args:

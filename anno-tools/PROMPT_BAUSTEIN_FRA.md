@@ -162,10 +162,12 @@ zwei Abweichungen, mit `--min 3` waren es zwanzig — **sechs davon echte
 Anschlussfehler**, darunter eine dreiwortige Folge, die das Paket selbst
 praegt (`qui souille l'homme`).
 
-**`levelcheck.py` und `konvention.py` lesen den Bestand mit** und sagen
-mit einer Null nichts ueber deine Datei allein — anders als die
-`--datei`-Werkzeuge. `artikel.py` schreibt seinen Vorbehalt selbst dazu,
-diese beiden nicht.
+**`levelcheck.py` und `konvention.py` lesen deine Abgabe** aus
+`$ANNO_OUT/<NR>/ch<KAP>.json` und halten sie gegen den Bestand — sie
+brauchen kein `--datei` und ihre Null ist eine echte Aussage. (Der Agent
+fuer Matthaeus 20 hielt sie fuer reine Bestandslaeufe; sie sind es nicht.)
+Sie sind zusammen mit `folgencheck` die drei Werkzeuge, die in dieser
+Buchphase wirklich tragen.
 
 `kongruenz.py` und `artikel.py` leiten ihre Referenz aus dem **Bestand**
 ab — solange wenig fertig ist, sagt ihr sauberer Lauf ueber dein Kapitel
