@@ -104,28 +104,47 @@ Wort. Lies den Vers.
   entscheiden, welches gemeint ist; im Spanischen wird daraus in aller
   Regel **vosotros**, nicht `usted`.
 
-## Der Bestand waechst erst
+## Der Bestand traegt jetzt
 
-Beim ersten Buch ist die franzoesische Anno noch leer. Das heisst:
+Judas und Matthaeus stehen fertig annotiert — 22 500 Tokens. Der Satz,
+der hier bis Markus stand („beim ersten Buch ist die franzoesische Anno
+noch leer, `lexicon.py` und `parallelen.py` antworten leer"), stimmt
+nicht mehr; der Agent fuer Marc 3 hat ihn zu Recht widersprochen.
+Umgekehrt gilt: **der eigene Bestand ist die erste Quelle, nicht die
+zweite.**
 
-- **`hints.py` meldet alles als unbelegt** — das ist richtig und kein
-  Befund. Ab dem zweiten Buch wird es nuetzlich.
-- **`lexicon.py`, `parallelen.py <NR> <KAP>`, `levelcheck.py`,
-  `konvention.py`, `sweeplemma.py`** antworten leer, solange wenig
-  fertig ist. Trotzdem laufen lassen: ein leerer Lauf ist eine Aussage,
-  ein nicht gelaufener nicht.
+- **`parallelen_<nr>_<kap>.md`** liegt in deiner Vorbereitung und zeigt,
+  wo derselbe Wortlaut schon annotiert steht. Das ist die staerkste
+  Bindung, die es gibt.
+- **`folgenreihe.py "<folge>"`** misst die Glossen des Bestands zu genau
+  dieser Folge. **Es sucht die ZEICHENKETTE im Quelltext, nicht das
+  Lemma**: `folgenreihe.py "garder le silence"` meldete 0, obwohl das
+  Mehrwort im Bestand steht — dort in der Form `garda le silence`
+  (Mt 26,63). Wer nur folgenreihe fragt, erfindet ein vorhandenes
+  Mehrwort neu. Fuer Mehrwoerter ist **`sweeplemma.py`** der Finder: es
+  hat in Marc 3 sechs Mehrwoerter gemeldet, deren Bloecke zu kurz sind,
+  als dass `parallelen.py` sie zeigen koennte — fuenf standen laengst im
+  Bestand.
+- **`levelcheck.py`** ist in dieser Phase das schaerfste Werkzeug: in
+  Marc 3 hat es **alle vier** neu gesetzten Mehrwort-Level korrigiert.
+- **`hints.py`** ist jetzt nuetzlich: es nennt zu jeder unbelegten Form
+  die stammverwandten Belege mit Zahl und Level.
 - **`belegt.py` nimmt ein WORT, keine Buchnummer** — `belegt.py seigneur`.
   Mit einer Zahl meldet es die Zahl als unbelegte Wortform, und das sieht
   wie ein sauberer Lauf aus.
-- **`rueckwaerts.py` tritt an ihre Stelle**, bis der eigene Bestand
-  traegt.
+- **`rueckwaerts.py` ist die Zweitmeinung** — und eine, die irrt: sie
+  kennt den Vers nicht, sondern nur das Wort. Der Agent fuer Matthaeus 25
+  fand dort `sages` als *Weise* (die Magier aus Kapitel 2) statt
+  adjektivisch *klug* und `entre` als Praeposition statt als Imperativ
+  von `entrer`. Wo ein Wort in keinem Zeugen eine fr-Spalte hat, faellt
+  sie ganz aus (`d’Idumée`, Marc 3,8) — dann entscheidet der Vers.
 
-**Ab etwa dem zwanzigsten Kapitel eines Buches kehrt sich das um.** Dann
-ist der eigene Bestand die erste Quelle und `rueckwaerts.py` nur noch die
-Zweitmeinung — und eine, die irrt: sie kennt den Vers nicht, sondern nur
-das Wort. Der Agent fuer Matthaeus 25 fand dort `sages` als *Weise* (die
-Magier aus Kapitel 2) statt adjektivisch *klug* und `entre` als
-Praeposition statt als Imperativ von `entrer`.
+**Die Parallele ist eine Vorlage, kein Gleichheitszeichen.** Der Agent
+fuer Marc 3 hat den Block aus Mt 12,26 mit `lui-même` = *himself*
+gemessen und trotzdem *itself* gesetzt, weil bei ihm ein Koenigreich
+Subjekt ist und nicht Satan. Das ist richtig: wo dein Vers etwas anderes
+sagt als der Parallelvers, gilt **dein** Vers — und der Unterschied
+gehoert in deinen Bericht.
 
 ## Was Judas festgelegt hat
 

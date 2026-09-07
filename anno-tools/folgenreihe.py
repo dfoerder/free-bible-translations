@@ -97,6 +97,25 @@ def stellen(phr, bis=None):
     return w, voll, orte, unvollstaendig, mehrwort
 
 
+def als_lemma(phr):
+    """Steht die Folge als LEMMA eines Mehrworts im Bestand?
+
+    `stellen()` sucht die Zeichenkette im Quelltext. Ein Mehrwort steht
+    dort aber in seiner gebeugten Form: das Lemma `garder le silence`
+    erscheint als `garda le silence` (Mt 26,63), und die Suche meldete
+    dafuer 0 Vorkommen. Der Agent fuer Marc 3 hat es bemerkt — wer nur
+    diese Null liest, erfindet ein vorhandenes Mehrwort neu.
+    """
+    phr = phr.replace("'", '\u2019').strip('.,;:!?„“"')
+    treffer = collections.defaultdict(list)
+    for nr, k, v, e in C.iter_corpus():
+        if not C.is_multi(e) or e.get('lemma', '') != phr:
+            continue
+        treffer[(e.get('level', '?'),) + C.reihe(e)].append(
+            f'{C.book_name(nr)} {k},{v}')
+    return treffer
+
+
 def main():
     args = list(sys.argv[1:])
     bis = None
@@ -142,6 +161,22 @@ def main():
         elif unv:
             print(f'  Mehrwort an einer Position: {", ".join(unv[:8])}'
                   + (' …' if len(unv) > 8 else ''))
+        if not ges and not mehrwort:
+            lem = als_lemma(phr)
+            if lem:
+                n = sum(len(v) for v in lem.values())
+                print(f'  **Als LEMMA eines Mehrworts im Bestand: '
+                      f'{n} Vorkommen** — die Zeichenkette oben trifft '
+                      f'nicht, weil das Mehrwort dort gebeugt steht.')
+                print()
+                for key, wo in sorted(lem.items(), key=lambda x: -len(x[1])):
+                    print(f'  {len(wo):5}  [{phr}] {key[0]}  '
+                          + ' · '.join(key[1:]))
+                    print(f'      → {", ".join(wo[:6])}'
+                          + (' …' if len(wo) > 6 else ''))
+                print()
+            else:
+                print('  Auch nicht als Lemma eines Mehrworts im Bestand.')
     return 0
 
 
