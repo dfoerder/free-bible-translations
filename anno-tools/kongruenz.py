@@ -258,6 +258,10 @@ def hilfsverb_reflexiv(d, kap):
     return raus
 
 
+geprueft = [0]
+stumm = [0]
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
@@ -268,7 +272,24 @@ def main():
         raise SystemExit('ANNO_OUT ist nicht gesetzt.')
     treffer = []
     refl = []
-    for f in sorted(glob.glob(os.path.join(out, buch, 'ch*.json'))):
+    # `kongruenz.py 40` lief bis Markus **leer** und meldete „0
+    # Verdachtsfaelle": in `$ANNO_OUT` steht nur das Buch, an dem gerade
+    # gearbeitet wird, und fuer jedes andere gab es keine Kapiteldatei.
+    # Der Koordinator las diese Null als geprueft. Jetzt faellt der Lauf
+    # auf die Kapitelquellen zurueck und sagt in jedem Fall, woher er
+    # gelesen hat und wie viele Kapitel es waren.
+    quelle = out
+    dateien = sorted(glob.glob(os.path.join(out, buch, 'ch*.json')))
+    if not dateien:
+        quelle = os.path.dirname(C.quellen_dir(int(buch)))
+        dateien = sorted(glob.glob(os.path.join(quelle, buch, 'ch*.json')))
+    if not dateien:
+        raise SystemExit(
+            f'Keine Kapiteldatei fuer Buch {buch} — weder unter '
+            f'{out}/{buch}/ noch unter {quelle}/{buch}/. Es wurde NICHTS '
+            f'geprueft.')
+    print(f'gelesen: {quelle}/{buch}/ — {len(dateien)} Kapiteldatei(en)')
+    for f in dateien:
         if '.part' in f:
             continue
         k = re.search(r'ch(\d+)\.json$', f).group(1)
@@ -317,7 +338,14 @@ def main():
                                     nx['form'], nx.get('it') or '',
                                     'Artikel fehlt vor loro'))
                 g = genus(nx.get('it') or '')
+                geprueft[0] += 1
                 if not g:
+                    # `genus()` raet aus der Endung und schweigt bei
+                    # `-e`. Wie oft es schweigt, stand bisher nirgends —
+                    # und eine Null aus lauter Schweigen sieht aus wie
+                    # eine gepruefte Null. Die Agenten fuer Marc 4 und
+                    # Marc 5 haben beide danach gefragt.
+                    stumm[0] += 1
                     continue
                 soll = None
                 if it in MASC_SG: soll = 'ms'
@@ -374,6 +402,10 @@ def main():
         print('Zum Artikel vor dem Possessiv: der VOKATIV steht artikellos')
         print('(„Mon ami" in 20,13 ist bei RIV „Amico") — das meldet dieses')
         print('Werkzeug mit, es kann ihn nicht sehen.')
+    if geprueft[0]:
+        print('Italienisches Genus: %d Nomen angesehen, bei %d konnte die '
+              'Endung\ndas Genus nicht entscheiden (`-e` ist mehrdeutig) — '
+              'dort wurde NICHTS\ngeprueft.' % (geprueft[0], stumm[0]))
     print('%d Verdachtsfaelle. Jeder ist am Vers zu pruefen — die Endung'
           % len(treffer))
     print('eines italienischen Nomens sagt sein Genus nicht zuverlaessig.')

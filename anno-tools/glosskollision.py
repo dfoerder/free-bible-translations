@@ -154,6 +154,17 @@ if not FUNKTION:
 SPRACHEN = tuple(C.LANGS)
 
 
+# Bestimmte und unbestimmte Artikel der vier Zielsprachen. Die Sprachen
+# werden ohnehin getrennt verglichen, eine gemeinsame Menge genuegt.
+ARTIKEL = {
+    'der', 'die', 'das', 'den', 'dem', 'des',
+    'ein', 'eine', 'einen', 'einem', 'eines', 'einer',
+    'the', 'a', 'an',
+    'el', 'la', 'los', 'las', 'lo', 'un', 'una', 'unos', 'unas',
+    'il', 'i', 'gli', 'le', 'uno',
+}
+
+
 def _norm(g):
     """Vergleichsschlüssel einer Glosse: klein, ohne Rand-Satzzeichen.
 
@@ -164,6 +175,16 @@ def _norm(g):
     if not g:
         return None
     k = g.strip().lower().strip('.,;:!?¡¿"\'’“”()[]…-–—')
+    # Ein vorangestellter Artikel ist ein Kasus- oder Genusmarker, keine
+    # Bedeutung: „dem Ufer" und „Ufer" sind dieselbe Glosse. Der Agent
+    # fuer Marc 4 hat die einzige inhaltliche Kollision seines Kapitels
+    # (`bord` gegen `rivage`, beide *Ufer*, im selben Vers) von Hand
+    # finden muessen, weil dieser Unterschied die Zeichenketten trennte.
+    # Nur bei mehrwortigen Glossen — eine Glosse, die NUR ein Artikel
+    # ist, bleibt sie selbst.
+    teile = k.split()
+    if len(teile) > 1 and teile[0] in ARTIKEL:
+        k = ' '.join(teile[1:])
     return k or None
 
 

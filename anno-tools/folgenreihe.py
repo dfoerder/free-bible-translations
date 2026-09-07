@@ -46,6 +46,7 @@ def stellen(phr, bis=None):
     # einstimmig ist.
     if not any('\u2019' in x for x in w):
         w = C.elision_zurueck(w)
+    wk = [x.lower() for x in w]
     voll = collections.Counter()
     orte = collections.defaultdict(list)
     unvollstaendig = []
@@ -61,13 +62,20 @@ def stellen(phr, bis=None):
             if k not in anno:
                 continue
             for v, t in vv.items():
-                if v not in anno[k] or phr.split()[0] not in t:
+                if v not in anno[k] or wk[0] not in t.lower():
                     continue
                 toks = [x.strip('.,;:!?„“"’') for x in t.split()]
                 E = {e['pos']: e for e in anno[k][v]
                      if 'pos_end' not in e and 'parts' not in e}
                 for i in range(len(toks) - len(w) + 1):
-                    if toks[i:i + len(w)] != w:
+                    # Der Vergleich laeuft klein: `il y avait là` meldete
+                    # 0, `Il y avait là` zwei einstimmige Vorkommen —
+                    # dieselbe stille Null wie bei `garder/garda le
+                    # silence`, nur ueber die Satzposition. Die Zeilen
+                    # bleiben getrennt, wo die Glossen sich
+                    # unterscheiden; die Zaehlung deckt jetzt beide
+                    # Stellungen. Gemeldet vom Agenten fuer Marc 5.
+                    if [x.lower() for x in toks[i:i + len(w)]] != wk:
                         continue
                     # Ein Mehrwort, das die Folge umspannt, wird
                     # IMMER erfasst — auch wenn alle Positionen

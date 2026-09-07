@@ -20,6 +20,13 @@ Lemma ist der Kopf, nicht die Zeichenkette:
     au / aux → à
 
 `au`/`aux` folgen `du`/`des` — dieselbe Verschmelzung, dieselbe Regel.
+Und `d’un`/`d’une` folgen ihnen ebenso: **der Kopf ist die Praeposition**,
+nicht der Artikel. Der Bestand hatte das bis Markus 4 anders — `d’un`
+stand 13× auf `un`, `d’une` 8× auf `de`, also dieselbe Verschmelzung
+mit zwei Lemmata, getrennt nur nach dem **Genus des Artikels**. Gemessen
+und gemeldet vom Agenten fuer Marc 4, danach an allen 14 Stellen auf
+`de` gezogen. Zum Vergleich: `du`, `des`, `au` und `aux` stehen an 598
+Stellen einstimmig auf der Praeposition.
 
 **Die Regel greift nur, wo zwei verschiedene Woerter zusammenstossen.**
 Eine **zusammengesetzte Praeposition** behaelt ihre Woerterbuchform:
@@ -30,8 +37,16 @@ die Kapitel 1 und 3 (mit Judas) die Woerterbuchform.
 ## `ne … pas`
 
 Das Mehrwort mit dem Lemma `ne pas` traegt die Einheit, und **der Span
-umfasst das Verb mit** — `ne vivra pas`, `Ne vous inquiétez pas`, nicht
-nur die beiden Randtokens.
+umfasst das Verb mit, wo das Verb zwischen `ne` und `pas` steht** —
+`ne vivra pas`, `Ne vous inquiétez pas`, nicht nur die beiden
+Randtokens.
+
+**Wo es nicht dazwischensteht, bleibt es draussen.** Im verneinten
+Infinitiv stehen `ne pas` nebeneinander und das Verb folgt: `de ne pas
+le faire connaître` (Marc 3,12) traegt einen Span von zwei Tokens.
+Dieselbe Unterscheidung wie bei `personne ne` unten — nicht die Regel
+entscheidet, sondern die Wortstellung des Verses. Gemeldet vom Agenten
+fuer Marc 5.
 
 Die Einzelwoerter haengen davon ab, ob das `ne` elidiert ist. Gemessen
 ueber den Bestand:
