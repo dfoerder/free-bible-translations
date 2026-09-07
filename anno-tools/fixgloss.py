@@ -103,7 +103,15 @@ def mehrwoerter(woerter):
         idx[lem][key] += 1
         if len(orte[(lem, key)]) < 3:
             orte[(lem, key)].append(f'{C.book_name(nr)} {k},{v}')
+    # Ein Argument mit Leerzeichen ist ein Mehrwortlemma, kein Filter:
+    # `fixgloss.py mw se précipiter` fragt sonst `se` und `précipiter`
+    # einzeln und schuettet hundert `se`-Zeilen aus. Gemeldet vom
+    # Agenten fuer Luc 4.
     such = [w.lower().replace("'", '\u2019') for w in woerter]
+    if len(such) > 1 and all(' ' not in w for w in woerter):
+        print(f'(Hinweis: {len(woerter)} getrennte Teilwoerter, ODER-verknuepft. '
+              f'Fuer EIN Mehrwortlemma in Anfuehrungszeichen setzen: '
+              f'"{" ".join(woerter)}")')
     treffer = [l for l in idx
                if not such or any(w in l.lower() for w in such)]
     print(f'*{C.bestandsstand()}*')

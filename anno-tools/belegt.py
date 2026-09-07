@@ -40,6 +40,19 @@ import common as C
 ANNO = C.ANNO_DIR
 
 
+def apos(w):
+    """Der gerade Apostroph muss treffen wie der typografische.
+
+    `belegt.py s'assit` meldete „im Bestand NICHT belegt", `s’assit`
+    zwoelf Belege unter dem Lemma `s’asseoir`. Wer die Form aus einem
+    Prompt oder einer Shell mit `'` kopiert, erfindet ein vorhandenes
+    Lemma neu — und das trifft jede Elision, also den halben
+    franzoesischen Wortschatz. Gemeldet vom Agenten fuer Luc 4.
+    Dieselbe Korrektur hat `folgenreihe.py` seit Matthaeus 18.
+    """
+    return (w or '').replace("'", '\u2019')
+
+
 def bestand():
     """{wortform_klein: Counter{(lemma, level, *glossen): n}}, plus Belegstellen.
 
@@ -73,7 +86,7 @@ def bestand():
 
 def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
           lemmata_alle=None):
-    f = C.strip_punct(wort).lower()
+    f = C.strip_punct(apos(wort)).lower()
     c = formen.get(f)
     print(f'## Wortform `{wort}`')
     if not c and lemmata and f in lemmata:
@@ -135,10 +148,10 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
     lemma_index = lemmata            # {lemma_klein: Counter} — vor dem Ueberschreiben retten
     lemmata = {k[1] for k in c}
     schreibungen = {k[0] for k in c}
-    if C.strip_punct(wort) not in schreibungen:
+    if C.strip_punct(apos(wort)) not in schreibungen:
         print(f'   VORSICHT: im Bestand steht die Form nur als '
               + ', '.join(f'`{x}`' for x in sorted(schreibungen))
-              + f' — nicht als `{C.strip_punct(wort)}`.')
+              + f' — nicht als `{C.strip_punct(apos(wort))}`.')
         print('   Gross-/Kleinschreibung trennt hier womoeglich zwei Woerter')
         print('   (`Spross` das Substantiv gegen `spross` von `sprießen`).')
     # „belegt" ohne Zusatz ist dreimal missverstanden worden — in den
@@ -148,7 +161,7 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
     # dabei, was gezaehlt wurde.
     lsum = sum(sum(lemma_index.get(l.lower(), {}).values()) for l in lemmata) if lemma_index else 0
     zusatz = f' — das LEMMA hat {lsum}' if lsum > ges else ''
-    print(f'   die FORM `{C.strip_punct(wort)}` ist **{ges}× belegt**{zusatz}, '
+    print(f'   die FORM `{C.strip_punct(apos(wort))}` ist **{ges}× belegt**{zusatz}, '
           'Lemma: ' + ', '.join(f'`{l}`' for l in sorted(lemmata)))
     if len(lemmata) == 1 and list(lemmata)[0].lower() != f:
         print(f'   ACHTUNG: das Lemma heisst `{list(lemmata)[0]}`, nicht `{wort}` —')
@@ -235,7 +248,7 @@ def main():
         for k in s['chapters']:
             for v in s['chapters'][k].values():
                 for t in C.tokens(v):
-                    w = C.strip_punct(t).lower()
+                    w = C.strip_punct(apos(t)).lower()
                     if w and not w.isdigit():
                         zaehl[w] += 1
         unbelegt = [(w, n) for w, n in zaehl.items()
