@@ -135,6 +135,23 @@ for v in sorted(quelle, key=int):
     # JEDEM Treffer — auch wo beide Masse denselben Vers meinen
     # (Marc 1,3 ← Matthieu 3,3, Aehnlichkeitstreffer Matthieu 3,3).
     # Gefunden beim ersten Lauf ueber Markus.
+    # Der Parallelvers GANZ, mit Lemma, Level und allen vier Glossen —
+    # dieselbe Ausgabe wie `fixgloss.py verse`. Bis Markus 12 stand hier
+    # nur die Fundstelle, und jeder Agent hat sie einzeln nachgeschlagen;
+    # der Agent fuer Marc 12 hat vorgerechnet, dass 30 seiner 44 Verse
+    # damit direkt lesbar gewesen waeren. Die Mehrwortspannen sind der
+    # eigentliche Gewinn: sie stehen in keiner Blockzeile.
+    # Nur bei einem TRAGENDEN Treffer. Marc 13,2 findet in Mt 22,37 vier
+    # gemeinsame Tokens (`Jésus lui répondit Tu`) bei Aehnlichkeit 0.25 —
+    # eine Formel, keine Parallele. Den ganzen Vers dazu auszuschreiben
+    # waere genau das Rauschen, das den Rest unlesbar macht.
+    if k in annotiert.get(b, ()) and (blk >= 6 or r >= 0.40):
+        for e in C.load_anno(b)['chapters'][k][w]:
+            span = (f'{e["pos"]}-{e["pos_end"]}' if 'pos_end' in e
+                    else (str(e['parts']) if 'parts' in e else str(e['pos'])))
+            print(f'     {span:>9}  {e["form"]:<20} {e.get("lemma",""):<18} '
+                  f'{e.get("level","")}  '
+                  + ' · '.join(f'{l} {e.get(l,"")}' for l in C.LANGS))
     if top_ratio[2] and top_ratio[2] != top_block[3]:
         r2, blk2, (b2, k2, w2) = top_ratio
         print(f'   **Die Ähnlichkeit zeigt woanders hin**: {C.book_name(b2)} {k2},{w2} '

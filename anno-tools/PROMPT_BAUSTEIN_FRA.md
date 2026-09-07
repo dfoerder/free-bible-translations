@@ -97,6 +97,11 @@ Wort. Lies den Vers.
 - **Das negative Paar `ne … pas`** steht an zwei getrennten Positionen.
   Beide bekommen ihren Einzeleintrag; wo die Negation zusammen glossiert
   gehoert, kommt ein Mehrwort mit `parts` dazu.
+- **`glosskollision.py` vergleicht klein.** `Quant` = *Was* am
+  Versanfang und relatives `que` = *was* gelten ihm als dasselbe Wort,
+  obwohl die App beides sichtbar unterscheidet. Ein Paar, das sich
+  allein in der Grossschreibung trennt, ist **keine** Kollision — nicht
+  aufloesen. Gemeldet von den Agenten fuer Marc 11 und Marc 12.
 - **Grossschreibung.** Franzoesische Nomen sind klein. `artikel.py` und
   `kongruenz.py` finden das Nomen deshalb ueber die **deutsche** Glosse —
   das heisst: eine schlampige `de`-Spalte macht zwei Pruefungen blind.
