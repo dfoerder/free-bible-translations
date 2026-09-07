@@ -52,7 +52,14 @@ ihr: in Joel waeren beide Treffer ohne das Einsammeln stehen geblieben.
 import sys, re, collections
 import common as C
 
-TOKEN = re.compile(r'\b[\wÄÖÜäöüß-]+\b')
+# Die Elision gehoert INS Token. `\b[\w-]+\b` zerlegte `dell'uomo` in
+# `dell` und `uomo`: die gemeldete Folge „Figlio dell uomo è" steht so in
+# keinem Text, `folgenreihe.py` findet sie nicht, und die Laengenangabe
+# zaehlt ein Token zu viel. Italienisch trifft das 271 Stellen allein in
+# Matteo; franzoesisch traf es `qu'ils` und `d'un` die ganze Zeit mit,
+# ohne dass es jemandem aufgefallen waere.
+_WORT = r"[\wÄÖÜäöüß-]+"
+TOKEN = re.compile(rf"\b{_WORT}(?:['’]{_WORT})*\b")
 
 
 def folgen(quelle, minlen=4, maxlen=12):
