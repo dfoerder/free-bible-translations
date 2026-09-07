@@ -135,8 +135,8 @@ die das Pilotbuch gepraegt hat.
 
     cd anno-tools
     python3 selfcheck.py <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
-    python3 konvention.py <NR> <KAP>
     python3 levelcheck.py <NR> <KAP>
+    python3 konvention.py <NR> <KAP>
     python3 sweeplemma.py <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 glosskollision.py --datei <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 kongruenz.py <NR> <KAP>
@@ -155,6 +155,12 @@ Pakets gegeneinander** — es liest sie aus `$ANNO_OUT`, also auch, solange
 keins eingesammelt ist. Das ist das einzige Werkzeug, das sieht, was die
 Nachbaragenten gerade praegen; `folgencheck` kennt nur den fertigen
 Bestand. Lauf es, wenn die Nachbarn abgegeben haben.
+
+**`levelcheck.py` steht mit Absicht vor `folgencheck.py`:** eine
+Levelkorrektur loest nie eine Folgenkorrektur aus, umgekehrt aber schon.
+In Matthaeus 21 hat es 24 Abweichungen gefunden, alle echt — die Level
+der Zeugen sind CEFR fuer Englisch- und Deutschlernende und verfuehren
+systematisch zum falschen Wert.
 
 **Der zweite `folgencheck`-Lauf mit `--min 3` ist kein Luxus.** Der
 Standardlauf sieht erst Folgen ab vier Tokens; in Matthaeus 15 meldete er

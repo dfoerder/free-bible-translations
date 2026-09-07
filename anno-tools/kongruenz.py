@@ -131,6 +131,9 @@ IT_POSSESSIV = {'mio','mia','miei','mie','tuo','tua','tuoi','tue',
                 'suo','sua','suoi','sue','nostro','nostra','nostri',
                 'nostre','vostro','vostra','vostri','vostre'}
 # Verwandtschaftsnomen im Singular stehen ohne Artikel: `mio padre`.
+# Formen von `essere` — davor steht ein praedikatives Nomen ohne Artikel.
+ESSERE = {'è','sono','sei','siamo','siete','era','erano','sarà','saranno',
+          'sia','siano','fu','furono','essere','sarai','sarete'}
 IT_VERWANDT = {'padre','madre','figlio','figlia','fratello','sorella',
                'marito','moglie','zio','zia','nonno','nonna','cugino',
                'cugina','nipote','genero','nuora','suocero','suocera',
@@ -296,7 +299,14 @@ def main():
                 itw = (e.get('it') or '').strip().lower()
                 dew = C.de_wort(e).lower()
                 folge = (nx.get('it') or '').strip().lower().split()
+                # Nach einer Form von `essere` ist das Nomen Praedikativ
+                # und steht artikellos: „sarà vostro servitore" (20,26,
+                # so auch RIV1927). Gemeldet vom Agenten fuer Matthaeus 20.
+                vorher = einzel.get(pos - 1)
+                praedikativ = bool(vorher) and (vorher.get('it') or '').strip(
+                    ).lower() in ESSERE
                 if itw in IT_POSSESSIV and dew in DE_POSSESSIV_ALLE \
+                        and not praedikativ \
                         and folge and folge[0] not in IT_VERWANDT:
                     treffer.append(('it', k, v, e['form'], e['it'],
                                     nx['form'], nx.get('it') or '',
@@ -353,6 +363,17 @@ def main():
         print('  reflexives Partizip tragen („weil sie den Bund gebrochen')
         print('  und sich aufgelehnt haben"). Dann ist avoir/avere richtig.')
     print()
+    if any(t[7].startswith('Artikel fehlt') for t in treffer):
+        print()
+        print('Zum Artikel vor dem Possessiv: der VOKATIV steht artikellos '
+              '(`Amico mio`,\n„Mon ami" in Mt 20,13) — das meldet dieses '
+              'Werkzeug mit, es kann ihn nicht sehen.')
+    if any(len(t) > 7 and str(t[7]).startswith('Artikel fehlt')
+           for t in treffer):
+        print()
+        print('Zum Artikel vor dem Possessiv: der VOKATIV steht artikellos')
+        print('(„Mon ami" in 20,13 ist bei RIV „Amico") — das meldet dieses')
+        print('Werkzeug mit, es kann ihn nicht sehen.')
     print('%d Verdachtsfaelle. Jeder ist am Vers zu pruefen — die Endung'
           % len(treffer))
     print('eines italienischen Nomens sagt sein Genus nicht zuverlaessig.')
