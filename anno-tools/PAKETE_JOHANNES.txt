@@ -1,0 +1,28 @@
+Johannes (43) — 21 Kapitel, 879 Verse, 18 209 Tokens
+Franzoesischer Quelltext lsg1910mod, Glossen de/en/es/it.
+Pakete zu drei Kapiteln, ein Agent je Kapitel, drei Agenten gleichzeitig.
+
+Vorbereitung je Paket:
+    export ANNO_EDITION=fra/lsg1910mod
+    export ANNO_OUT=.../scratchpad/fra_johannes/out
+    python3 fravorb.py 43 <kap> <kap> <kap> --scratch .../scratchpad/fra_johannes
+    python3 vorgabecheck.py <prompt> --buch 43     (je Prompt, muss 0 melden)
+
+ 1   1  2  3     945 + 455 + 790 =  2190 Tokens
+ 2   4  5  6    1051 + 985 +1409 =  3445
+ 3   7  8  9     971 +1243 + 807 =  3021
+ 4  10 11 12     814 +1038 +1039 =  2891
+ 5  13 14 15     820 + 685 + 633 =  2138
+ 6  16 17 18     791 + 613 + 854 =  2258
+ 7  19 20 21     923 + 712 + 631 =  2266
+
+Kapitelgrenzen: KEINE Abweichung — alle vier Zeugen zaehlen wie LSG.
+  Das ist das erste Buch der Reihe, bei dem `kapitelgrenzen.py` gar
+  nichts meldet.
+
+Johannes ist kein Synoptiker. Der Buchgrenzen-Vergleich wird deutlich
+weniger tragen als in Markus und Lukas — erwartet werden Parallelen vor
+allem in der Passion (18-19) und in den Speisungs- und
+Seewandel-Perikopen (6). Dafuer wiederholt Johannes sich SELBST stark
+(„en vérité, en vérité, je vous le dis", „celui qui croit en moi"), also
+traegt `folgencheck` buchintern mehr.
