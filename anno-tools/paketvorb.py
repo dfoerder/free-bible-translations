@@ -64,22 +64,59 @@ def bericht(nr, kaps):
 
     L = [f'# Bindungen fuer Buch {nr}, Kapitel {", ".join(sorted(kaps, key=int))}',
          '']
-    praegt, uebernimmt, spaeter = [], [], []
+    eigen = C.book_name(nr)
+    praegt, uebernimmt, fremd, spaeter = [], [], [], []
     for phr, stellen in folgen(nr):
         beruehrt = [s for s in stellen if s[0] in kaps]
         if not beruehrt:
             continue
         erst = min(stellen, key=lambda s: (int(s[0]), int(s[1])))
         if erst[0] in kaps:
-            praegt.append((phr, stellen, erst))
+            # Bis Markus hiess „der frueheste Ort liegt hier" auch, dass
+            # die Folge noch nirgends steht. Das galt, solange Matthaeus
+            # das einzige Buch war. Jetzt kann dieselbe Folge laengst in
+            # einem ANDEREN Buch annotiert sein: `la tradition des
+            # anciens` stand hier als „7,3 legt fest" und steht in
+            # Mt 15,2. Gemeldet vom Agenten fuer Marc 7.
+            voll, orte, unvoll, mw = _reihe(phr)
+            auswaerts = sorted({x for xs in list(orte.values()) + list(mw.values())
+                                for x in xs if not x.startswith(eigen + ' ')})
+            if auswaerts:
+                fremd.append((phr, stellen, erst, auswaerts))
+            else:
+                praegt.append((phr, stellen, erst))
         elif erst[0] in fertig:
             uebernimmt.append((phr, stellen, erst))
         else:
             spaeter.append((phr, stellen, erst))
 
-    L.append(f'**{len(praegt)} praegt · {len(uebernimmt)} uebernimmt · '
+    L.append(f'**{len(praegt)} praegt · {len(uebernimmt)} uebernimmt aus '
+             f'diesem Buch · {len(fremd)} steht schon in einem anderen Buch · '
              f'{len(spaeter)} haengt an einem noch nicht annotierten Kapitel**')
     L.append('')
+
+    if fremd:
+        L.append('## STEHT SCHON IN EINEM ANDEREN BUCH')
+        L.append('')
+        L.append('Der frueheste Ort **in diesem Buch** liegt in deinem Paket — '
+                 'aber die Folge ist anderswo im Bestand schon annotiert. Dann '
+                 'praegst du nicht, sondern uebernimmst. Miss die Reihe mit '
+                 '`folgenreihe.py "<die Folge>"` nach und setze zeichengleich, '
+                 'wo dein Vers dasselbe sagt.')
+        L.append('')
+        for phr, stellen, erst, auswaerts in sorted(fremd,
+                                                    key=lambda x: -len(x[1])):
+            hier = [f'{k},{v}' for k, v in stellen if k in kaps]
+            L.append(f'### „{phr}"   (hier: {", ".join(hier)})')
+            L.append(f'- steht schon: {", ".join(auswaerts[:6])}'
+                     + (' …' if len(auswaerts) > 6 else ''))
+            voll, _orte, unvoll, mw = _reihe(phr)
+            for key, n in voll.most_common(3):
+                L.append('- %d×  %s' % (n, ' | '.join(' '.join(t) for t in key)))
+            for key, wo in sorted(mw.items(), key=lambda x: -len(x[1]))[:3]:
+                L.append(f'- {len(wo)}× MEHRWORT [{key[0]}]  '
+                         + ' · '.join(key[2:]))
+            L.append('')
 
     if uebernimmt:
         L.append('## UEBERNIMMT — die Reihe steht schon fest')
@@ -106,9 +143,10 @@ def bericht(nr, kaps):
     if praegt:
         L.append('## PRAEGT — dieses Paket entscheidet')
         L.append('')
-        L.append('Der frueheste Ort liegt hier. Was gesetzt wird, gilt fuer alle '
-                 'spaeteren Vorkommen im ganzen Buch — **innerhalb des Pakets '
-                 'zeichengleich**.')
+        L.append('Der frueheste Ort liegt hier, **und die Folge steht in '
+                 'keinem anderen Buch des Bestands** — beides gemessen. Was '
+                 'gesetzt wird, gilt fuer alle spaeteren Vorkommen im ganzen '
+                 'Buch, **innerhalb des Pakets zeichengleich**.')
         L.append('')
         for phr, stellen, erst in sorted(praegt, key=lambda x: -len(x[1])):
             hier = [f'{k},{v}' for k, v in stellen if k in kaps]

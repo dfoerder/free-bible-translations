@@ -91,10 +91,22 @@ def stellen(phr, bis=None):
                     for m in anno[k][v]:
                         sp = m.get('parts', list(range(
                             m['pos'], m.get('pos_end', m['pos']) + 1)))
-                        if len(sp) > 1 and min(sp) >= i \
-                                and max(sp) < i + len(w):
-                            mehrwort[(m['lemma'],) + C.reihe(m)].append(
-                                f'{C.book_name(nr)} {k},{v}')
+                        if len(sp) <= 1:
+                            continue
+                        # Frueher musste das Mehrwort GANZ in der Folge
+                        # liegen. `se mit à` meldete deshalb 16 Vorkommen
+                        # und KEIN Mehrwort, obwohl `se mettre à` 22x im
+                        # Bestand steht — der Span umfasst dort auch den
+                        # Infinitiv (`se mit à enseigner`) und ragt damit
+                        # ueber die Folge hinaus. Der Agent fuer Marc 7
+                        # haette danach in 7,35 ein etabliertes Mehrwort
+                        # weggelassen. Jetzt zaehlt jede UEBERSCHNEIDUNG;
+                        # was hinausragt, wird als solches gekennzeichnet.
+                        if max(sp) < i or min(sp) >= i + len(w):
+                            continue
+                        weiter = min(sp) < i or max(sp) >= i + len(w)
+                        mehrwort[(m['lemma'], weiter) + C.reihe(m)].append(
+                            f'{C.book_name(nr)} {k},{v}')
                     if not all(i + j in E for j in range(len(w))):
                         unvollstaendig.append(f'{C.book_name(nr)} {k},{v}')
                         continue
@@ -161,8 +173,10 @@ def main():
             print()
             for mkey, wo in sorted(
                     mehrwort.items(), key=lambda x: -len(x[1])):
-                lemma, glossen = mkey[0], mkey[1:]
-                print(f'  {len(wo):5}  [{lemma}]  ' + ' · '.join(glossen))
+                lemma, weiter, glossen = mkey[0], mkey[1], mkey[2:]
+                rand = '  ← reicht ueber die Folge hinaus' if weiter else ''
+                print(f'  {len(wo):5}  [{lemma}]  ' + ' · '.join(glossen)
+                      + rand)
                 print(f'      → {", ".join(wo[:6])}'
                       + (' …' if len(wo) > 6 else ''))
             print()
