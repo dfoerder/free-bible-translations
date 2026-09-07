@@ -30,6 +30,15 @@ import json
 import sys
 import common as C
 
+# Der Vergleichsmassstab ist der QUELLTEXT, nicht das Deutsche. Bis zum
+# italienischen Durchgang stand „deutsche Verse" ausgeschrieben da — bei
+# `ANNO_EDITION=ita/riv1927mod` verglich der Lauf richtig gegen RIV und
+# nannte das Ergebnis trotzdem deutsch.
+QUELLNAME = {'de': 'deutsche', 'en': 'englische', 'es': 'spanische',
+             'fr': 'franzoesische', 'it': 'italienische'}[C.LANG]
+QUELLNAME_G = {'de': 'deutschen', 'en': 'englischen', 'es': 'spanischen',
+               'fr': 'franzoesischen', 'it': 'italienischen'}[C.LANG]
+
 
 BASIS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -90,7 +99,7 @@ def buch(nr):
         zeilen = []
         if len(fo) != len(de):
             zeilen.append(f'   {spr}  GESAMTZAHL: {len(fo)} Verse gegen {len(de)} '
-                          'deutsche — die Ausgabe zaehlt insgesamt anders')
+                          f'{QUELLNAME} — die Ausgabe zaehlt insgesamt anders')
         for k in kapitel:
             von = next(i for i, e in enumerate(de) if e[0] == k)
             bis = von + sum(1 for e in de if e[0] == k)
@@ -149,7 +158,7 @@ def buch(nr):
                 zeilen.append(f'   {spr}  {quelle:<16}{marke}')
                 continue
             if best == kanon and ziel_von[0] == k and ziel_bis[0] != k:
-                # Kanonischer Anfang, aber das deutsche Kapitel ist laenger:
+                # Kanonischer Anfang, aber das Quelltextkapitel ist laenger:
                 # die Ausgabe zieht Verse zusammen oder laesst einen aus.
                 # Das ist KEIN Versatz — der naechste Kapitelanfang stimmt.
                 schluss = ('stehen dort im NAECHSTEN Kapitel'
@@ -158,7 +167,7 @@ def buch(nr):
                                 'insgesamt weniger Verse')
                 marke = (f'  << die Ausgabe hat nur '
                          f'{sum(1 for e in fo if e[0] == k)} Verse gegen {bis - von}'
-                         f' — die letzten deutschen Verse {schluss}')
+                         f' — die letzten {QUELLNAME_G} Verse {schluss}')
             elif ziel_von[0] != ziel_bis[0]:
                 marke = '  << LAEUFT UEBER DIE KAPITELGRENZE'
             elif ziel_von[0] != k:

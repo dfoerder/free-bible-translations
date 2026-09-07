@@ -2,8 +2,11 @@
 
     buildbook.py <buchNr> [--trocken]
 
-Quellen: bibles-translations/anno-quellen/deu/l1912mod/<nr>/ch<N>.json
-Ziel:    bible-reader/bibles/deu/l1912mod/anno/<nr>_l1912mod_multi.json
+Quellen: bibles-translations/anno-quellen/$ANNO_EDITION/<nr>/ch<N>.json
+Ziel:    bible-reader/bibles/$ANNO_EDITION/anno/<nr><ANNO_SUFFIX>.json
+
+Beide Pfade folgen `ANNO_EDITION` (Default `deu/l1912mod`); bis zum
+franzoesischen NT standen sie hier fest ausgeschrieben.
 
 Ein Kapitel wird nur aufgenommen, wenn es vollständig ist und der Validator
 es durchwinkt; unvollständige Stände (laufender Agent) werden mit Hinweis
