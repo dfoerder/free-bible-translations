@@ -122,6 +122,15 @@ def sammle():
 # einem blossen Vokal ist `un` richtig. Und `il` wird vor Vokal nicht zu
 # `lo`, sondern elidiert zu `l’`. Nur der Plural `i` wird in BEIDEN
 # Faellen zu `gli`.
+# `lo` und `gli` sind auch die klitischen Objektpronomen (`lo vide`,
+# `gli disse`). Die Gegenrichtung der Anlautprobe unterscheidet sie am
+# DEUTSCHEN Wort des Eintrags: ein Artikel glossiert zu `der`/`ein`,
+# ein Klitikon zu `ihn`/`ihm`. Ohne diese Probe meldete die
+# Gegenrichtung im ersten Lauf ueber tausend Pronomen.
+DE_ARTIKEL = {'der', 'die', 'das', 'den', 'dem', 'des',
+              'ein', 'eine', 'einen', 'einem', 'einer', 'eines',
+              'am', 'im', 'zum', 'zur', 'vom', 'beim', 'ins', 'ans'}
+
 IT_KONS = re.compile(r"^(?:s[^aeiouh]|z|gn|ps|pn|x|y)", re.I)
 IT_VOKAL = re.compile(r"^[aeiou]", re.I)
 
@@ -142,18 +151,47 @@ def anlautprobe(ein, kap, vers, treffer):
     for pos, e in ein.items():
         art = (e.get('it') or '').strip()
         kl = art.lower()
-        if kl not in ('i', 'il', 'un'):
+        if kl not in ('i', 'il', 'un', 'gli', 'lo', 'uno'):
             continue
         nx = ein.get(pos + 1)
         w = (nx.get('it') or '').strip() if nx else ''
         if not w:
             continue
-        if IT_KONS.match(w):
-            soll = {'i': 'gli', 'il': 'lo', 'un': 'uno'}[kl]
-        elif IT_VOKAL.match(w) and kl in ('i', 'il'):
-            soll = 'gli' if kl == 'i' else 'l’'
+        if kl in ('i', 'il', 'un'):
+            if IT_KONS.match(w):
+                soll = {'i': 'gli', 'il': 'lo', 'un': 'uno'}[kl]
+            elif IT_VOKAL.match(w) and kl in ('i', 'il'):
+                soll = 'gli' if kl == 'i' else 'l’'
+            else:
+                continue
         else:
-            continue
+            # Die Gegenrichtung. Die erste Fassung sah nur `i` vor
+            # `gli`-Anlaut; ein `uno` vor schlichtem Konsonanten kam
+            # durch. Der Agent fuer Luc 24 hat `uno fantasma` zweimal
+            # von Hand gefunden, nachdem dieser Lauf 0 gemeldet hatte.
+            #
+            # `lo` und `gli` sind im Italienischen auch die klitischen
+            # Objektpronomen — `lo vide`, `gli disse`. Ohne die
+            # Nomenprobe meldete diese Richtung im ersten Lauf mehr als
+            # tausend solcher Stellen und war damit unbrauchbar.
+            # Zwei Proben, beide noetig. Ohne die erste meldete diese
+            # Richtung ueber tausend klitische Pronomen (`lo vide`,
+            # `gli disse`); ohne die zweite fuenfzig Mal das Zahlwort
+            # `uno` in `uno di voi` — dort ist es kein Artikel, sondern
+            # „einer von euch", und `uno` ist richtig.
+            if erstes_wort(C.de_wort(e)) not in DE_ARTIKEL:
+                continue
+            if C.de_wort(nx)[:1].islower():
+                continue
+            if kl == 'uno' and not IT_KONS.match(w):
+                soll = 'un'
+            elif kl == 'gli' and not (IT_KONS.match(w)
+                                      or IT_VOKAL.match(w)):
+                soll = 'i'
+            elif kl == 'lo' and not IT_KONS.match(w):
+                soll = "l’" if IT_VOKAL.match(w) else 'il'
+            else:
+                continue
         if art[:1].isupper():
             soll = soll[0].upper() + soll[1:]
         treffer.append((int(kap), int(vers), e.get('form'), art,
