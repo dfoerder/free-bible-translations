@@ -36,7 +36,7 @@ import common as C
 
 
 def setze(nr, kap, vers, pos, form, felder, grund=None, trocken=False,
-          aus_out=False):
+          aus_out=False, mehrwort=False):
     """`aus_out` schreibt in $ANNO_OUT statt in die Kapitelquellen.
 
     Ein Agent arbeitet in `$ANNO_OUT`, der Koordinator in
@@ -63,16 +63,33 @@ def setze(nr, kap, vers, pos, form, felder, grund=None, trocken=False,
     if str(vers) not in d:
         raise SystemExit(f'Vers {vers} steht nicht in ch{kap}.json.')
 
-    treffer = [e for e in d[str(vers)]
-               if e['pos'] == pos and not C.is_multi(e)]
-    if not treffer:
-        raise SystemExit(f'{nr} {kap},{vers}: kein Einzelwort-Eintrag auf '
-                         f'Position {pos}.')
-    e = treffer[0]
-    if C.strip_punct(e['form']) != C.strip_punct(form):
-        raise SystemExit(f'{nr} {kap},{vers} pos {pos}: dort steht '
-                         f'{e["form"]!r}, erwartet war {form!r}. '
-                         'Nichts geaendert.')
+    # `--mehrwort` waehlt den MEHRWORT-Eintrag, der auf dieser Position
+    # beginnt, und prueft statt der Oberflaechenform sein LEMMA. Ohne
+    # das kam der Koordinator an eine Mehrwortreihe nur mit einem
+    # Wegwerfskript heran — und genau dabei ist in Matthaeus zweimal die
+    # falsche Stelle getroffen worden.
+    if mehrwort:
+        treffer = [e for e in d[str(vers)]
+                   if C.is_multi(e) and e['pos'] == pos]
+        if not treffer:
+            raise SystemExit(f'{nr} {kap},{vers}: kein Mehrwort-Eintrag, der '
+                             f'auf Position {pos} beginnt.')
+        e = treffer[0]
+        if e.get('lemma') != form:
+            raise SystemExit(f'{nr} {kap},{vers} pos {pos}: dort steht das '
+                             f'Mehrwort {e.get("lemma")!r}, erwartet war '
+                             f'{form!r}. Nichts geaendert.')
+    else:
+        treffer = [e for e in d[str(vers)]
+                   if e['pos'] == pos and not C.is_multi(e)]
+        if not treffer:
+            raise SystemExit(f'{nr} {kap},{vers}: kein Einzelwort-Eintrag auf '
+                             f'Position {pos}.')
+        e = treffer[0]
+        if C.strip_punct(e['form']) != C.strip_punct(form):
+            raise SystemExit(f'{nr} {kap},{vers} pos {pos}: dort steht '
+                             f'{e["form"]!r}, erwartet war {form!r}. '
+                             'Nichts geaendert.')
 
     unbekannt = [f for f in felder
                  if f not in C.LANGS + ['lemma', 'level', 'form']]
@@ -101,10 +118,14 @@ def main():
     p.add_argument('vers')
     p.add_argument('pos', type=int)
     p.add_argument('form', help='die erwartete Oberflaechenform an dieser '
-                                'Position — sie wird hart geprueft')
+                                'Position — sie wird hart geprueft; mit '
+                                '--mehrwort stattdessen das Lemma')
     p.add_argument('felder', nargs='+', help='feld=wert, z. B. en="to you"')
     p.add_argument('--grund')
     p.add_argument('--trocken', action='store_true')
+    p.add_argument('--mehrwort', action='store_true',
+                   help='den MEHRWORT-Eintrag auf dieser Position aendern; '
+                        '<form> ist dann sein LEMMA')
     p.add_argument('--out', action='store_true',
                    help='in $ANNO_OUT arbeiten statt in den Kapitelquellen '
                         '— das ist der Ort, an dem ein Agent seine Abgabe hat')
@@ -117,7 +138,7 @@ def main():
         f, w = x.split('=', 1)
         felder[f] = w
     ok = setze(a.buch, a.kapitel, a.vers, a.pos, a.form, felder,
-               a.grund, a.trocken, a.out)
+               a.grund, a.trocken, a.out, a.mehrwort)
     # Die Aenderung steht in der KAPITELQUELLE. Jedes messende Werkzeug
     # liest die gebaute Anno-Datei — bis `buildbook.py` gelaufen ist,
     # misst es also den alten Stand. Ich bin heute selbst darauf
