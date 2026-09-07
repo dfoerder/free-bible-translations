@@ -45,10 +45,16 @@ def lauf(argv, ziel):
     return len(r.stdout)
 
 
-def baustein(nr, kap, buch, scratch):
+def baustein(nr, kap, buch, scratch, paket=()):
     s = open(BAUSTEIN, encoding='utf-8').read()
     s = s[s.index('Du annotierst'):]
+    # `<PAKET>` sind ALLE Kapitel des Pakets. Vorher stand im Baustein
+    # `paketcheck.py <NR> <KAP> <KAP> <KAP>` — nach der Ersetzung also
+    # dreimal die eigene Nummer, und der Lauf verglich das Kapitel mit
+    # sich selbst. Jeder Agent hielt den leeren Lauf fuer sauber.
+    # Gemeldet vom Agenten fuer Matthaeus 27.
     for a, b in (('<NR>', str(nr)), ('<KAP>', str(kap)),
+                 ('<PAKET>', ' '.join(str(x) for x in paket)),
                  ('<BUCH>', buch), ('<SCRATCH>', scratch)):
         s = s.replace(a, b)
     return s
@@ -90,7 +96,7 @@ def main():
             lauf([werkzeug, str(nr), kap],
                  os.path.join(vorb, f'{name}_{nr}_{kap}.md'))
 
-        prompt = baustein(nr, kap, buch, a.scratch)
+        prompt = baustein(nr, kap, buch, a.scratch, kaps)
         eigene = [h.split(':', 1)[1].strip() for h in a.hinweis
                   if h.split(':', 1)[0].strip() == str(kap)]
         prompt += f'''

@@ -73,6 +73,12 @@ def lade(args):
     """
     if args[0].isdigit() and all(a.isdigit() for a in args[1:]):
         nr = int(args[0])
+        if len(args) > 2 and len(set(args[1:])) == 1:
+            raise SystemExit(
+                f'Alle Kapitel sind dasselbe ({args[1]}) — dieser Lauf '
+                'vergliche das Kapitel mit sich selbst und meldete '
+                'naturgemaess nichts. Die ANDEREN Kapitel des Pakets '
+                'angeben.')
         out, eigene = [], set()
         for kap in args[1:]:
             eigene.add((nr, str(int(kap))))

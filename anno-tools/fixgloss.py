@@ -60,6 +60,10 @@ if __name__ == '__main__':
     elif modus == 'showform':
         show(sys.argv[2:], per_form=True)
     elif modus == 'verse':
+        if len(sys.argv) != 5:
+            print('Aufruf: fixgloss.py verse <buchNr> <kapitel> <vers>  '
+                  '— drei Argumente, einzeln')
+            sys.exit(1)
         verse(*sys.argv[2:5])
     else:
         print(__doc__)

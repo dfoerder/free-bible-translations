@@ -157,7 +157,7 @@ die das Pilotbuch gepraegt hat.
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
 
-**`paketcheck.py <NR> <KAP> <KAP> <KAP>` haelt die drei Kapitel des
+**`paketcheck.py <NR> <PAKET>` haelt die drei Kapitel des
 Pakets gegeneinander** — es liest sie aus `$ANNO_OUT`, also auch, solange
 keins eingesammelt ist. Das ist das einzige Werkzeug, das sieht, was die
 Nachbaragenten gerade praegen; `folgencheck` kennt nur den fertigen
