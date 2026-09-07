@@ -21,12 +21,16 @@ Jeder Eintrag ist damit eine vollstaendige Zeile **de · en · es · it**,
 und die `fr`-Spalte ist ihr Schluessel. Ueber das ganze NT gemessen sind
 so 98 Prozent der franzoesischen Tokens bereits belegt.
 
-## Vier Schichten, absteigend belastbar
+## Fuenf Schichten, absteigend belastbar
 
     VERS       das Token steht als fr-Glosse **in genau diesem Vers**
                der Zeugen. Das ist die einzige Schicht, die nicht nur
                das Wort, sondern die Stelle trifft — hier ist die Zeile
                fast immer schon die richtige.
+    BESTAND    dieselbe Form steht **schon franzoesisch annotiert** im
+               eigenen Bestand, mit franzoesischem Lemma und Level. Ab
+               Markus die zweitstaerkste Schicht; vorher gab es sie
+               nicht, weil die franzoesische Anno leer war.
     GLOSSE     das ganze Token steht irgendwo im Bestand als fr-Glosse
     TEIL       es steht als Wort INNERHALB einer mehrwortigen fr-Glosse
                (`des` in `de les`) — die ganze Glosse steht daneben
@@ -196,12 +200,66 @@ def _zeilentext(zeile, lvls, n, wo=None, anhang=''):
     return f'- {n}× · {reihe}' + (f'   [{lv}]' if lv else '') + anhang + ort
 
 
+_eigen = None
+
+
+def eigenindex():
+    """{fr_schluessel: Counter{(lemma, level, zeile): n}} — der EIGENE Bestand.
+
+    Bis Markus fragte dieses Werkzeug nur die Zeugen: was in deren
+    `fr`-Spalte steht. Das war richtig, solange die franzoesische Anno
+    leer war. Judas und Matthaeus stehen aber fertig da, und ihre
+    Eintraege sind der bessere Beleg — eine an einem Vers entschiedene
+    Viererzeile mit franzoesischem Lemma und franzoesischem Level, nicht
+    die Rueckrechnung aus einer fremden Spalte.
+
+    Der Anlass ist ein Befund des Agenten fuer Marc 2: `dit-il`,
+    `mange-t-il`, `peut-il` und `jeuneront` standen hier unter
+    „UNBELEGT — hier ist die Arbeit", obwohl `belegt.py` sie alle vier
+    im Bestand findet. Die Zeugen fassen die Inversionsform anders, also
+    fehlt sie in ihrer fr-Spalte — und der Agent haette vier Reihen neu
+    gepraegt, die schon stehen.
+    """
+    global _eigen
+    if _eigen is not None:
+        return _eigen
+    idx = collections.defaultdict(collections.Counter)
+    orte = collections.defaultdict(list)
+    for nr, kap, v, e in C.iter_corpus():
+        if C.is_multi(e):
+            continue
+        k = norm(e.get('form', ''))
+        if not k:
+            continue
+        key = (e.get('lemma', ''), e.get('level', ''), C.reihe(e))
+        idx[k][key] += 1
+        if len(orte[(k, key)]) < 3:
+            orte[(k, key)].append(f'{C.book_name(nr)} {kap},{v}')
+    _eigen = (idx, orte)
+    return _eigen
+
+
+def _eigentext(key, n, wo):
+    lemma, lvl, zeile = key
+    reihe = ' · '.join(f'{l} *{w}*' for l, w in zip(SPALTEN, zeile) if w)
+    return (f'- {n}× · {reihe}   [{lemma}, {lvl}]'
+            + (f'   ({", ".join(wo)})' if wo else ''))
+
+
 def schicht(wort):
-    """('GLOSSE'|'TEIL'|'ELISION'|None, zeilen) fuer ein Token."""
+    """('BESTAND'|'GLOSSE'|'TEIL'|'ELISION'|None, zeilen) fuer ein Token."""
     ganz, teil, level, stellen = index()
+    eigen, eigenorte = eigenindex()
     k = norm(wort)
     if not k:
         return None, []
+    if k in eigen:
+        zeigen, rest = _kuerzen(sorted(eigen[k].items(), key=lambda x: -x[1]))
+        out = [_eigentext(key, n, eigenorte.get((k, key)))
+               for key, n in zeigen]
+        if rest:
+            out.append(f'- … und {rest} weitere Lesart(en)')
+        return 'BESTAND', out
     if k in ganz:
         zeigen, rest = _kuerzen(sorted(ganz[k].items(), key=lambda x: -x[1]))
         out = [_zeilentext(z, level[(k, z)], n, stellen.get((k, z)))
@@ -369,6 +427,8 @@ def extract(nr, kap, von=None, bis=None):
             gruppen[art].append((form, zeilen))
             gesehen[k] = art
         for art, titel in (
+                ('BESTAND', 'BESTAND — die Form steht schon franzoesisch '
+                            'annotiert da (Lemma und Level sind gesetzt)'),
                 ('GLOSSE', 'GLOSSE — das Wort steht anderswo im Bestand'),
                 ('TEIL', 'TEIL — nur innerhalb einer mehrwortigen Glosse'),
                 ('ELISION', 'ELISION — nur die Haelften sind belegt'),
