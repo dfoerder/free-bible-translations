@@ -1575,7 +1575,7 @@ Stehen bleiben:
 
 # Matteo 6
 
-## 46 · Die dreifache Vergeltungsformel — 6,4 legt fest
+## 55 · Die dreifache Vergeltungsformel — 6,4 legt fest
 
 „e il Padre tuo, che vede nel segreto, te ne darà la ricompensa"
 steht **6,4 · 6,6 · 6,18** zeichengleich. **Kein Mehrwort** — die Fuegung
@@ -1605,7 +1605,7 @@ es *en lo* / *secreto*, fr *dans le* / *secret*.
 **`te` ist fr `t'`.** Vor der `ne`-Glosse *en* elidiert das Franzoesische
 („t'en donnera"); `elision.py` meldet es an allen drei Stellen.
 
-## 47 · Die dreifache Heuchlerformel — 6,2 legt fest
+## 56 · Die dreifache Heuchlerformel — 6,2 legt fest
 
 „Vi dico in verità che questo è il premio che ne hanno già ricevuto"
 steht **6,2 · 6,5 · 6,16** zeichengleich. Auch hier **kein Mehrwort**:
@@ -1639,7 +1639,7 @@ sie: an allen drei Stellen dieselbe Verteilung.
 **`ricevuto` ist Aktiv-Perfekt → Lemma `ricevere`** (Reihe 5), A2 —
 nicht das Partizip `ricevuto`.
 
-## 48 · Das Vaterunser (6,9–6,13) — Wort fuer Wort, ohne Mehrwort
+## 57 · Das Vaterunser (6,9–6,13) — Wort fuer Wort, ohne Mehrwort
 
 Der bekannteste Text des Buches bekommt **keinen einzigen
 Mehrworteintrag**. Jede Zeile geht Wort fuer Wort auf; wo eine feste
@@ -1666,7 +1666,7 @@ deutsche und der englische Zeuge fuehren sie. Wer die Zeugen
 mitliest, findet dort Glossen ohne Token — das ist kein Fehler des
 Extrakts.
 
-## 49 · Mehrwoerter, die Matteo 6 praegt
+## 58 · Mehrwoerter, die Matteo 6 praegt
 
     6,1   davanti agli       A2  vor den · before the      → `davanti a`
     6,2   fai l'elemosina    B2  Almosen gibst · give alms → `fare l'elemosina`
@@ -1715,7 +1715,7 @@ Vier davon setzen etwas ueber das Kapitel hinaus:
   (`ne avete bisogno`). Der Mehrworteintrag umfasst beide Male nur
   `avete bisogno`; `sweeplemma.py` meldet die Abweichung zu Recht.
 
-## 50 · Homograph `vestito` — Nomen mit Klammerzusatz
+## 59 · Homograph `vestito` — Nomen mit Klammerzusatz
 
 Nach Reihe 15. `vestito` ist in Matteo 6 zweierlei:
 
@@ -1739,7 +1739,7 @@ A1; `il domani` (6,34, Nomen) und `domani` (6,30, Adverb) ebenso. Wo das
 Level nicht auseinandergeht, ist der Zusatz nach Reihe 15 nicht zu
 setzen.
 
-## 51 · `c'è` steht auf `esserci` — begruendete Abweichung von Reihe 33
+## 60 · `c'è` steht auf `esserci` — begruendete Abweichung von Reihe 33
 
 Reihe 33 sagt: wo in der Elision kein Inhaltswort steckt, faellt das
 Lemma auf das **elidierte erste Wort** (`dov'è` → `dove`). Nach dem
@@ -1755,7 +1755,7 @@ de *da ist* · en *exists* · es *está* · fr *existe*.
 Der Unterschied zu `dov'è`: dort ist `dove` ein eigenes, lernbares Wort,
 `ci` in `c'è` ist es nicht.
 
-## 52 · Stehengelassene Kollisionen in Matteo 6
+## 61 · Stehengelassene Kollisionen in Matteo 6
 
 `glosskollision.py --datei 40 6` endet auf **4 inhaltliche Paare** und
 10 aus geschlossenen Wortarten. Fuenf weitere wurden aufgeloest:
@@ -1803,7 +1803,7 @@ en (→ `per` en *in order to*), 6,34 `A`/`di` de (→ `A` de *An*),
   Spaltung. Ebenso „il Padre vostro" 6,1 (Dativ nach `presso`) gegen
   6,8 · 6,14 · 6,15 · 6,26 · 6,32 (Nominativ).
 
-## 53 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 6)
+## 62 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 6)
 
 15. **`elision.py 40` ohne `--datei` misst den Bestand, nicht die
     Abgabe.** Die Pruefkette im Prompt nennt `python3 elision.py 40` —
@@ -1832,3 +1832,39 @@ en (→ `per` en *in order to*), 6,34 `A`/`di` de (→ `A` de *An*),
     Eigennamen", „erst 8 Nomenformen mit mindestens 5 Belegen").
     `kongruenz.py` sagt es ebenfalls. Reihe 14.6 und 21 gelten
     unveraendert.
+
+## 63 · Beim Einsammeln von Paket 2 entschieden
+
+**`nei cieli` steht franzoesisch auf `dans les`, im Vaterunser auf
+`aux`.** „il Padre vostro che è nei cieli" steht in 5,16 · 5,45 · 6,1
+zeichengleich, und LSG liest an allen dreien *dans les cieux*; 6,1 trug
+*aux* und ist angeglichen. **Im Vaterunser (6,9) bleibt `aux`** — LSG
+liest dort *Notre Père qui es aux cieux*, die feste liturgische Form.
+Der Unterschied ist damit am Zeugen belegt und nicht willkuerlich.
+
+**`luce` steht auf A1.** Matteo 4 fuehrte A2, Matteo 5 und 6 A1; vier
+von sechs Belegen und der Grundwortschatz entscheiden.
+
+**Zwei Elisionen zurueckgenommen.** `lo si salerà` (5,13) und `la si
+mette` (5,15) tragen fr `le` und `la`, nicht `l'`: das unpersoenliche
+`si` wird franzoesisch `on` und steht dort **vor** dem Objektklitikon
+(„on le salera"). Der Agent hatte den Fall erkannt und trotzdem
+elidiert, weil der Prompt eine Null von `elision.py` verlangte. **Das
+war ein Fehler im Prompt, nicht im Urteil des Agenten** — die Null ist
+jetzt ein Ziel und kein Muss, und `elision.py` kennt die `on`-Ausnahme.
+
+**Was NICHT angeglichen wurde**, obwohl `folgencheck` es meldet — die
+44 Abweichungen des Pakets zerfallen in fuenf Klassen, alle richtig:
+
+- **deutscher Kasus** („den"/„dem"/„eures Vaters") — nur die de-Spalte
+  weicht ab, die anderen drei stehen gleich.
+- **Rektion** (`gli` en *him* nach `comandare`, *to him* nach
+  `apparve a`).
+- **Richtung gegen Ort** (`nel regno` *in das*/*into the* beim
+  Eintreten, *im*/*in the* beim Darinsein; `sopra un monte` *onto*
+  beim Hinauffuehren, *on* bei der Stadt).
+- **spanisches Genus und ser/estar** (`il sale` → *la sal*, `il occhio`
+  → *el ojo*; `quelli che sono in casa` → *están*, `perseguitati` →
+  *son*).
+- **die Elisionsspaltung aus Reihe 38** (`fu padre di` traegt `d'` vor
+  vokalischem und `de` vor konsonantischem Namen).

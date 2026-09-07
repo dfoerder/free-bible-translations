@@ -43,6 +43,18 @@ Franzoesischen.** Wo die Zielsprache umstellt, steht die gemeldete
 Glosse im fertigen Satz gar nicht nebeneinander — dann ist der Treffer
 falsch. Er ist ein Verdacht wie ueberall sonst.
 
+## Zwei Faelle, in denen der Treffer falsch ist
+
+**Das unpersoenliche `on`.** Es steht franzoesisch vor dem
+Objektklitikon, italienisch dahinter — `lo si salerà` ist „on le
+salera". Diese Paare werden nicht mehr gemeldet.
+
+**Jede andere Umstellung.** Wo die Zielsprache die beiden Woerter im
+fertigen Satz auseinanderzieht, ist der Treffer ebenfalls falsch. Das
+laesst sich nicht mechanisch erkennen. **Die Null dieses Werkzeugs ist
+deshalb kein Muss, sondern ein Ziel** — jeder Rest gehoert am Vers
+geprueft und im Bericht begruendet, wie bei `glosskollision.py` auch.
+
 ## Das aspirierte h
 
 `la hache` ist richtig, `l'homme` auch. Welches `h` aspiriert ist, wird
@@ -65,6 +77,18 @@ import common as C
 ELIDIERT = {'se': "s'", 'me': "m'", 'te': "t'", 'ne': "n'", 'le': "l'",
             'la': "l'", 'de': "d'", 'que': "qu'", 'ce': "c'", 'je': "j'"}
 VOKAL = set('aeiouáàâäéèêëíìîïóòôöúùûü')
+
+# Das unpersoenliche `si` wird franzoesisch `on` — und `on` ist ein
+# SUBJEKT, das im Franzoesischen VOR dem Objektklitikon steht. Der
+# italienische Satz stellt es dahinter: `lo si salerà` (5,13) ist
+# franzoesisch „on le salera", `la si mette` (5,15) „on la met". Die
+# beiden Glossen stehen im fertigen Satz also in umgekehrter Folge, und
+# elidiert wird gar nichts. Ohne diese Ausnahme meldet der Lauf beide
+# Stellen, und der Agent fuer Matteo 5 hat sie — weil der Prompt eine
+# Null verlangte — gegen sein eigenes Urteil gesetzt.
+#
+# `que` ist ausgenommen: `qu'on` ist richtig und haeufig.
+KEIN_ON = {'se', 'me', 'te', 'le', 'la', 'ne', 'ce', 'je'}
 
 _h = None
 
@@ -123,6 +147,10 @@ def pruefe(buecher, datei=None, kapitel=None):
                         continue
                     nx = einzel.get(pos + 1)
                     if not nx or not vokalisch(nx.get('fr')):
+                        continue
+                    nachwort = (nx.get('fr') or '').strip().lower()
+                    if nachwort.split()[:1] == ['on'] \
+                            and fr.lower() in KEIN_ON:
                         continue
                     soll = ELIDIERT[fr.lower()]
                     if fr[:1].isupper():

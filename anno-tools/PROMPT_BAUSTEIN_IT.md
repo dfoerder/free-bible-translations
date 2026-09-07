@@ -150,9 +150,12 @@ Wort. Lies den Vers.
   `di` vor `Abraham` ist fr `d'`, nicht `de`; `il` vor `enfant` ist
   `l'`; `si` vor `arrêta` ist `s'`. Zehn Formen sind betroffen —
   `se me te ne le la de que ce je` —, das aspirierte `h` ist die
-  Ausnahme (`la hache`). **`elision.py` prueft das und muss 0 melden —
-  mit `--datei`, sonst liest es die gebaute Datei und sagt nichts ueber
-  dein Kapitel**;
+  Ausnahme (`la hache`). **`elision.py` prueft das — mit `--datei`,
+  sonst liest es die gebaute Datei und sagt nichts ueber dein
+  Kapitel.** Seine Null ist ein Ziel, kein Muss: wo die Zielsprache
+  umstellt, steht die nicht elidierte Form zu Recht. `lo si salerà` ist
+  franzoesisch „on le salera" — `le`, nicht `l'`. Solche Reste
+  begruenden statt setzen;
   es misst das aspirierte `h` am franzoesischen Quelltext, statt es zu
   raten. Einzelheiten in Reihe 38.
 - **`si` ist mehrdeutig:** Reflexivpronomen (*si lavò*), unpersoenliches
