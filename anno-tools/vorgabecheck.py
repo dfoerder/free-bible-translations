@@ -85,6 +85,22 @@ def reihen_index():
     return lv, reihen, form2lem
 
 
+def ohne_akzent(s):
+    """Akzente wegfalten — fuer den zweiten Anlauf der Textprobe.
+
+    Eine Vorgabedatei ist in ASCII getippt, der franzoesische Quelltext
+    nicht: `les tenebres du dehors` gegen `les ténèbres du dehors`. Das
+    ist dasselbe Problem, das `ascii_um()` fuer die deutschen Umlaute
+    loest, nur mit einer anderen Umschrift — und es trifft in der
+    franzoesischen Richtung jede zweite Wendung.
+
+    Gefaltet wird auf BEIDEN Seiten und erst im zweiten Anlauf: so kann
+    die Faltung nur Fehlalarme wegnehmen, nie neue erzeugen.
+    """
+    s = unicodedata.normalize('NFD', s)
+    return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+
+
 def ascii_um(s):
     """Beide Seiten auf dieselbe Umschrift bringen: ue/oe/ae/ss.
 
@@ -376,10 +392,16 @@ def pruefe_deutsch(pfad, nr):
                     # Jede Ruecknahme der Umschrift zaehlt als Treffer.
                     if ascii_um(' '.join(such)) in ascii_um(deutsch):
                         continue
+                    if ohne_akzent(ascii_um(' '.join(such))) in \
+                            ohne_akzent(ascii_um(deutsch)):
+                        continue
                     # Ein Zitat, das in einer Ausgabe steht, ist ein
                     # Ausgabenzitat, dem die Nennung fehlt — nicht falsch.
                     if any(ascii_um(' '.join(such)) in ascii_um(x)
                            for x in fremd):
+                        continue
+                    if any(ohne_akzent(ascii_um(' '.join(such)))
+                           in ohne_akzent(ascii_um(x)) for x in fremd):
                         continue
                     befunde += 1
                     print(f'  QUELLTEXT „{teil.strip()}" steht so nicht '
