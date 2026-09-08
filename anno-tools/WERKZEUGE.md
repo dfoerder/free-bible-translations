@@ -99,6 +99,12 @@ jedesmal ein zweites, gleichlautendes Token mitgetroffen (`que` in 1,22,
 **`sweeplemma.py`** — Die Mehrwort-Luecken, die `sweep.py` prinzipiell nicht finden kann.
     sweeplemma.py <buchNr> <kapitel> <datei.json> [--deckung 0.6] [--alle]
 
+**`mehrwoerter.py`** — Die Mehrwoerter, bei denen der Bestand selbst geteilter Meinung ist.
+    mehrwoerter.py <buchNr> <kapitel> <datei.json> [--von 0.15] [--bis 0.6]
+    Meldet NUR das Mittelfeld unter den Schwellen von `sweep` und `sweeplemma`
+    und druckt beide Seiten mit Stellen und Wendungslemma — dort steht das
+    Kriterium, das nirgends aufgeschrieben ist.
+
 **`konvention.py`** — Feste Wendungen, die der Bestand als Mehrwort-Eintrag führt — fehlen sie?
     konvention.py <buchNr> <kapitel …>
 

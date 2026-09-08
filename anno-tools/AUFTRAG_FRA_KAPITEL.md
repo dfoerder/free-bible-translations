@@ -55,6 +55,19 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   `moi aussi`, `du milieu de` unter dem Lemmanamen `au milieu de`).
   **Der zweite und dritte Abschnitt von `sweeplemma` fangen das** — lauf
   sie vor der Abgabe, sie sind das eigentliche Mehrwort-Suchwerkzeug.
+- **Und darunter liegt noch eine Schicht: `mehrwoerter.py`.** `sweep` meldet
+  ab 75 Prozent Deckung, `sweeplemma` ab 60 — eine Wendung, die der Bestand
+  in der HAELFTE der Faelle fasst und in der anderen nicht, sehen beide
+  nicht. Das ist kein Rauschen, sondern ein Kriterium, das nirgends
+  aufgeschrieben steht: `un autre` steht 22-mal als Mehrwort und 33-mal
+  nicht, und die Grenze laeuft zwischen pronominalem Gebrauch (`épouse une
+  autre`) und dem Nomen dahinter (`une autre loi`). Der Agent fuer Roemer 7
+  hat sich dafuer ein eigenes Skript gebaut — er war der achte.
+  `mehrwoerter.py <buch> <kapitel> <deinedatei.json>` druckt zu jeder
+  geteilten Signatur BEIDE Seiten mit Stellen und Wendungslemma. Lauf es
+  nach `sweeplemma`. **Ein Treffer ist eine Frage, keine Anweisung** — oft
+  ist die Antwort „hier zu Recht nicht", und dann ist die Begruendung der
+  Ertrag.
 - `fixgloss.py verse` nimmt seine drei Argumente einzeln; in einer
   zsh-Schleife ueber eine Variable bricht es ab. Es sagt das sauber.
 - **`folgenreihe.py` verschweigt ausserdem den Mehrwort-Abschnitt selbst

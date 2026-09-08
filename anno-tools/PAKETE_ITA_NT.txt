@@ -1,0 +1,160 @@
+# Paketplan italienisches NT (ita/riv1927mod)
+
+Pakete zu drei Kapiteln, ein Agent je Kapitel, drei Agenten gleichzeitig.
+Matteo 1-9 sind fertig, 10-12 laufen. Reihenfolge kanonisch: so praegt
+Matteo die Synoptikerformeln, und Marco und Luca uebernehmen sie ueber
+`parallelen.py`, statt sie neu zu entscheiden.
+
+Vorbereitung je Paket:
+
+    export ANNO_EDITION=ita/riv1927mod
+    export ANNO_OUT=.../scratchpad/ita_<buch>/out
+    python3 itavorb.py <nr> <kap> <kap> <kap> --scratch .../scratchpad/ita_<buch>
+    python3 vorgabecheck.py <prompt> --buch <nr>     (je Prompt, muss 0 melden)
+
+## 40 Matteo — 6 Pakete, 12,554 Tokens
+    1  40  13 14 15      2,462 Tokens
+    2  40  16 17 18      1,881 Tokens
+    3  40  19 20 21      2,137 Tokens
+    4  40  22 23 24      2,342 Tokens
+    5  40  25 26 27      3,370 Tokens
+    6  40  28              362 Tokens
+
+## 41 Marco — 6 Pakete, 12,595 Tokens
+    7  41  1 2 3         1,922 Tokens
+    8  41  4 5 6         2,648 Tokens
+    9  41  7 8 9         2,352 Tokens
+   10  41  10 11 12      2,527 Tokens
+   11  41  13 14 15      2,766 Tokens
+   12  41  16              380 Tokens
+
+## 42 Luca — 8 Pakete, 21,599 Tokens
+   13  42  1 2 3         2,938 Tokens
+   14  42  4 5 6         2,675 Tokens
+   15  42  7 8 9         3,479 Tokens
+   16  42  10 11 12      3,160 Tokens
+   17  42  13 14 15      2,072 Tokens
+   18  42  16 17 18      2,029 Tokens
+   19  42  19 20 21      2,250 Tokens
+   20  42  22 23 24      2,996 Tokens
+
+## 43 Giovanni — 7 Pakete, 16,776 Tokens
+   21  43  1 2 3         2,066 Tokens
+   22  43  4 5 6         3,210 Tokens
+   23  43  7 8 9         2,804 Tokens
+   24  43  10 11 12      2,642 Tokens
+   25  43  13 14 15      1,928 Tokens
+   26  43  16 17 18      2,030 Tokens
+   27  43  19 20 21      2,096 Tokens
+
+## 44 Atti — 10 Pakete, 20,870 Tokens
+   28  44  1 2 3         2,053 Tokens
+   29  44  4 5 6         1,970 Tokens
+   30  44  7 8 9         2,895 Tokens
+   31  44  10 11 12      2,098 Tokens
+   32  44  13 14 15      2,390 Tokens
+   33  44  16 17 18      2,143 Tokens
+   34  44  19 20 21      2,505 Tokens
+   35  44  22 23 24      1,948 Tokens
+   36  44  25 26 27      2,178 Tokens
+   37  44  28              690 Tokens
+
+## 45 Romani — 6 Pakete, 8,900 Tokens
+   38  45  1 2 3         1,770 Tokens
+   39  45  4 5 6         1,518 Tokens
+   40  45  7 8 9         2,050 Tokens
+   41  45  10 11 12      1,550 Tokens
+   42  45  13 14 15      1,522 Tokens
+   43  45  16              490 Tokens
+
+## 46 1 Corinzi — 6 Pakete, 8,673 Tokens
+   44  46  1 2 3         1,416 Tokens
+   45  46  4 5 6         1,165 Tokens
+   46  46  7 8 9         1,789 Tokens
+   47  46  10 11 12      1,844 Tokens
+   48  46  13 14 15      2,069 Tokens
+   49  46  16              390 Tokens
+
+## 47 2 Corinzi — 5 Pakete, 5,873 Tokens
+   50  47  1 2 3         1,322 Tokens
+   51  47  4 5 6         1,215 Tokens
+   52  47  7 8 9         1,373 Tokens
+   53  47  10 11 12      1,655 Tokens
+   54  47  13              308 Tokens
+
+## 48 Galati — 2 Pakete, 2,881 Tokens
+   55  48  1 2 3         1,574 Tokens
+   56  48  4 5 6         1,307 Tokens
+
+## 49 Efesini — 2 Pakete, 2,938 Tokens
+   57  49  1 2 3         1,370 Tokens
+   58  49  4 5 6         1,568 Tokens
+
+## 50 Filippesi — 2 Pakete, 2,114 Tokens
+   59  50  1 2 3         1,657 Tokens
+   60  50  4               457 Tokens
+
+## 51 Colossesi — 2 Pakete, 1,904 Tokens
+   61  51  1 2 3         1,548 Tokens
+   62  51  4               356 Tokens
+
+## 52 1 Tessalonicesi — 2 Pakete, 1,770 Tokens
+   63  52  1 2 3         1,008 Tokens
+   64  52  4 5             762 Tokens
+
+## 53 2 Tessalonicesi — 1 Pakete, 998 Tokens
+   65  53  1 2 3           998 Tokens
+
+## 54 1 Timoteo — 2 Pakete, 2,231 Tokens
+   66  54  1 2 3           983 Tokens
+   67  54  4 5 6         1,248 Tokens
+
+## 55 2 Timoteo — 2 Pakete, 1,595 Tokens
+   68  55  1 2 3         1,195 Tokens
+   69  55  4               400 Tokens
+
+## 56 Tito — 1 Pakete, 881 Tokens
+   70  56  1 2 3           881 Tokens
+
+## 57 Filemone — 1 Pakete, 416 Tokens
+   71  57  1               416 Tokens
+
+## 58 Ebrei — 5 Pakete, 6,500 Tokens
+   72  58  1 2 3         1,116 Tokens
+   73  58  4 5 6         1,069 Tokens
+   74  58  7 8 9         1,623 Tokens
+   75  58  10 11 12      2,212 Tokens
+   76  58  13              480 Tokens
+
+## 59 Giacomo — 2 Pakete, 2,150 Tokens
+   77  59  1 2 3         1,370 Tokens
+   78  59  4 5             780 Tokens
+
+## 60 1 Pietro — 2 Pakete, 2,237 Tokens
+   79  60  1 2 3         1,552 Tokens
+   80  60  4 5             685 Tokens
+
+## 61 2 Pietro — 1 Pakete, 1,434 Tokens
+   81  61  1 2 3         1,434 Tokens
+
+## 62 1 Giovanni — 2 Pakete, 2,297 Tokens
+   82  62  1 2 3         1,369 Tokens
+   83  62  4 5             928 Tokens
+
+## 63 2 Giovanni — 1 Pakete, 268 Tokens
+   84  63  1               268 Tokens
+
+## 64 3 Giovanni — 1 Pakete, 280 Tokens
+   85  64  1               280 Tokens
+
+## 66 Apocalisse — 8 Pakete, 10,355 Tokens
+   86  66  1 2 3         1,782 Tokens
+   87  66  4 5 6         1,137 Tokens
+   88  66  7 8 9         1,221 Tokens
+   89  66  10 11 12      1,260 Tokens
+   90  66  13 14 15      1,223 Tokens
+   91  66  16 17 18      1,635 Tokens
+   92  66  19 20 21      1,624 Tokens
+   93  66  22              473 Tokens
+
+93 Pakete insgesamt.
