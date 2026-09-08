@@ -326,7 +326,8 @@ def bericht(nr, kap=None):
     L.append('')
     L.append('**Formbasiert** — das Lemma kann über eine andere Form längst im '
              'Bestand stehen. Wo eine stammverwandte Form existiert, steht sie '
-             'dabei; dann erst `lexicon.py` fragen, bevor etwas Neues erfunden wird.')
+             'dabei; dann erst `fixgloss.py show <lemma>` fragen, bevor etwas '
+             'Neues erfunden wird.')
     L.append('')
     # Zu jedem stammverwandten Wort die LEMMA-Belegzahl. Ohne sie liest
     # sich die Liste als „das Wort gibt es nicht", und genau so ist sie

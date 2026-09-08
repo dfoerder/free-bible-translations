@@ -80,6 +80,15 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   Zeile „im Bestand NICHT belegt" steht VOR den stammverwandten
   Lemmata). Diese Ausgaben sind so gebaut, dass die Antwort unter der
   Zusammenfassung steht. Lies sie ganz, oder schreibe sie in eine Datei.
+- **`hints_*.md` und `rueckwaerts` beantworten VERSCHIEDENE Fragen.**
+  `hints` fragt: steht diese Wortform im annotierten BESTAND?
+  `rueckwaerts` fragt: gibt es fuer dieses Token irgendeine Zeile —
+  aus dem Bestand ODER aus der `fr`-Spalte der Zeugen? Ein Wort kann
+  bei `hints` unter „unbelegt" stehen und bei `rueckwaerts` eine Zeile
+  haben, ohne dass eines von beiden falsch ist. Zwei Agenten haben das
+  als Werkzeugfehler gemeldet. Maßgeblich fuer Lemma und Level ist der
+  Bestand, also `belegt.py` — die Zeugenzeile ist ein Vorschlag, und
+  `levelcheck` widerlegt sie regelmaessig.
 - **Die Promptdateien sind Momentaufnahmen.** `hints_*.md`,
   `parallelen_*.md` und die uebrigen entstehen einmal bei der
   Vorbereitung; der Bestand und die Werkzeuge wandern waehrend deines
