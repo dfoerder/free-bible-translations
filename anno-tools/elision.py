@@ -96,6 +96,14 @@ VOKAL = set('aeiouáàâäéèêëíìîïóòôöúùûü')
 # `que` ist ausgenommen: `qu'on` ist richtig und haeufig.
 KEIN_ON = {'se', 'me', 'te', 'le', 'la', 'ne', 'ce', 'je'}
 
+# `ce` ist der einzige Eintrag mit ZWEI moeglichen Formen, und keine
+# Heuristik trennt sie zuverlaessig: das Pronomen wird `c'` (*c'est*),
+# das Demonstrativadjektiv `cet` (*cet enfant*). Der erste Versuch bot
+# `cet` an, sobald die italienische Form ein Demonstrativ war — und traf
+# damit 15,5 `Quello con cui` falsch, wo `quello` Pronomen ist und das
+# Mehrwort fr *ce dont* traegt. Also raet das Werkzeug hier nicht, es
+# nennt beide Formen und laesst den Agenten entscheiden.
+
 _h = None
 
 
@@ -158,9 +166,21 @@ def pruefe(buecher, datei=None, kapitel=None):
                     if nachwort.split()[:1] == ['on'] \
                             and fr.lower() in KEIN_ON:
                         continue
+                    # `ce` hat ZWEI Formen, und nur eine ist eine
+                    # Elision: das Pronomen wird `c'` (*c'est*), das
+                    # Demonstrativ-ADJEKTIV wechselt zu `cet`
+                    # (*cet enfant*). Das Werkzeug schlug fuer
+                    # `questo bambino` → *ce enfant* die Form `c'` vor,
+                    # und wer folgt, schreibt „c'enfant". Gemeldet vom
+                    # Agenten fuer Matteo 18, der `cet` gesetzt hat.
                     soll = ELIDIERT[fr.lower()]
                     if fr[:1].isupper():
                         soll = soll[:1].upper() + soll[1:]
+                    if fr.lower() == 'ce':
+                        soll = ('C' if fr[:1].isupper() else 'c') \
+                            + "' (Pronomen) / " \
+                            + ('C' if fr[:1].isupper() else 'c') \
+                            + 'et (Adjektiv)'
                     treffer.append((nr, kap, v, pos, e.get('form'), fr, soll,
                                     nx.get('fr')))
     return treffer
