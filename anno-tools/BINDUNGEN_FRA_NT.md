@@ -1177,6 +1177,11 @@ Token sind eine Spanne.
               → Mehrwort ueber die FREIEN Token, wenn es mindestens
                 zwei sind; sonst gar keines.
 
+    ACHTUNG: Diese Zaehlregel ist ueberholt. Sie gab an den sechs
+    gemessenen Stellen die richtige Antwort aus dem falschen Grund.
+    Was wirklich zaehlt, steht weiter unten unter „Die Elisionsregel,
+    zum zweiten Mal praezisiert".
+
 Gefunden hat die Spanne der Agent fuer Roemer 11 am Beleg Mt 5,32, und
 er hat ausdruecklich darum gebeten, sie hier festzuhalten. Beide
 Agenten haben dieselbe Konstruktion im selben Paket entgegengesetzt
@@ -1437,3 +1442,44 @@ naechsten Mal gefehlt.
 Der Agent hat sich uebrigens selbst geholfen (`re` vorinjiziert) und
 den Lauf nachgeholt. Gemeldet hat er es trotzdem, und das ist der
 Grund, warum es hier steht.
+
+## Die Elisionsregel, zum zweiten Mal praezisiert — und diesmal gemessen
+
+Meine bisherige Fassung zaehlte **freie Token**: „Mehrwort ueber die
+freien Token, wenn es mindestens zwei sind." Der Agent fuer
+1. Korinther 13 hat sie auf `au moyen d’un miroir` angewandt, den Span
+auf `au moyen` gekuerzt — und sich dann selbst widerlegt, indem er den
+ganzen Bestand gezaehlt hat:
+
+    92 Stellen  Verschmelzung IM Span
+                `au milieu des` 17 · `à cause des/du` 15 · `au nom du` 14
+                `le long du` 7 · `auprès des` 6 · `près d’une` 6 …
+
+     8 Stellen  Span GEKUERZT, das elidierte Wort steht daneben
+                `au sujet d’Hérodias` · `au sujet d’Israël`
+                `pour cause d’infidélité` · `pour cause d’incrédulité`
+                `à cause d’Hérodias` (2×)
+
+**`à cause de` steht in BEIDEN Listen** — fuenfzehnmal mit der
+Verschmelzung im Span, zweimal ohne. Dieselbe Wendung, zwei
+Behandlungen. Eine Zaehlregel kann das nicht erklaeren; das Kriterium
+ist, **womit** das `de` verschmilzt:
+
+    de + ARTIKEL      (du, des, d’un, d’une, au, aux)
+        → der verschmolzene Token gehoert zur Wendung, Span BIS dahin
+    de + INHALTSWORT  (d’Hérodias, d’Israël, d’infidélité)
+        → der Token gehoert zum Satz, nicht zur Wendung; Span davor zu Ende
+
+Das ist dieselbe Unterscheidung, die die vierzeilige Elisionstabelle
+oben schon macht — sie war nur nie auf das `de` der Wendung selbst
+angewandt worden.
+
+Warum die alte Zaehlregel trotzdem sechsmal richtig lag: bei
+`au sujet d’Israël` und `pour cause d’infidélité` gibt es keinen
+Artikel, also blieb genau ein freies Token uebrig, und die Zahl traf
+zufaellig. Bei `au moyen d’un miroir` traf sie nicht mehr.
+
+**Eine Regel, die aus dem falschen Grund richtig liegt, faellt beim
+ersten neuen Fall um.** Das ist der Grund, warum jede Regel hier eine
+Messung dabeistehen hat — und warum diese hier 100 Stellen zaehlt und
+nicht sechs.
