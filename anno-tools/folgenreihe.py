@@ -167,6 +167,53 @@ def als_lemma(phr):
     return treffer
 
 
+def nahe_lemmata(phr, wieviel=4):
+    """Mehrwortlemmata, deren Woerter denselben Stamm haben wie die Anfrage.
+
+    `als_lemma` sucht die Anfrage BUCHSTABENGLEICH als Lemmanamen. Das
+    verfehlt jedes Mehrwort, dessen Zitierform anders flektiert als der
+    Vers: `il vaut mieux` steht im Bestand unter `valoir mieux`, mit
+    zehn Belegen — und der Lauf schrieb dazu „Auch nicht als Lemma
+    eines Mehrworts im Bestand". Das ist keine unvollstaendige Auskunft,
+    sondern eine falsche, und sie laedt zur Neupraegung ein. Gemeldet
+    vom Agenten fuer 1. Korinther 7, der das Mehrwort nur deshalb nicht
+    verloren hat, weil `sweeplemma` es unabhaengig fand.
+
+    Verglichen werden die Stammschluessel der INHALTSWOERTER (vier
+    Zeichen, akzentfrei). `il` und `de` tragen nichts zur Unterscheidung
+    bei und wuerden die Liste fluten, also fallen sie heraus. Gemeldet
+    wird nur, was mindestens ein Inhaltswort teilt UND nicht mehr als
+    ein Inhaltswort mehr oder weniger hat.
+    """
+    klein = {'il', 'elle', 'le', 'la', 'les', 'de', 'du', 'des', 'a', 'à',
+             'en', 'y', 'ce', 'se', 's', 'l', 'd', 'un', 'une', 'que',
+             'qui', 'et', 'ne', 'pas', 'on', 'nous', 'vous', 'je', 'tu'}
+
+    def stamm(w):
+        return C.ohne_akzent(w.lower())[:4]
+
+    def inhalt(text):
+        w = [x for x in C.strip_punct(_apo(text)).split()
+             if x.lower() not in klein]
+        return {stamm(x) for x in w if len(x) >= 3}
+
+    ziel = inhalt(phr)
+    if not ziel:
+        return {}
+    gefunden = collections.defaultdict(list)
+    for nr, k, v, e in C.iter_corpus():
+        if not C.is_multi(e):
+            continue
+        lem = e.get('lemma', '')
+        s = inhalt(lem)
+        if not s or not (ziel & s):
+            continue
+        if abs(len(s) - len(ziel)) > 1:
+            continue
+        gefunden[lem].append(f'{C.book_name(nr)} {k},{v}')
+    return dict(sorted(gefunden.items(), key=lambda x: -len(x[1]))[:wieviel])
+
+
 def main():
     args = list(sys.argv[1:])
     bis = None
@@ -252,7 +299,21 @@ def main():
                           + (' …' if len(wo) > 6 else ''))
                 print()
             else:
-                print('  Auch nicht als Lemma eines Mehrworts im Bestand.')
+                nah = nahe_lemmata(phr)
+                if nah:
+                    print('  Diese ZEICHENKETTE steht nicht als Mehrwortlemma '
+                          'im Bestand.')
+                    print('  **Stammverwandte Mehrwortlemmata gibt es aber '
+                          '— pruefe sie, bevor du praegst:**')
+                    print()
+                    for lem, wo in nah.items():
+                        print(f'  {len(wo):5}  [{lem}]'
+                              f'      → {", ".join(wo[:5])}'
+                              + (' …' if len(wo) > 5 else ''))
+                    print()
+                else:
+                    print('  Auch nicht als Lemma eines Mehrworts im Bestand '
+                          '— auch nicht stammverwandt.')
     return 0
 
 

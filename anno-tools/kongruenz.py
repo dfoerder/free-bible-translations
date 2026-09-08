@@ -51,6 +51,10 @@ AUSNAHMEN = {
     # vostre membra` galt viermal als Fehler, weil die `-a`-Endung
     # feminin SINGULAR aussieht. RIV liest `le vostre membra`.
     'membro':'ms', 'membra':'fp',
+    # `le loro reti` galt als Fehler, weil `-i` maskulin aussieht.
+    # `rete` ist feminin (`la rete`, `le reti`) — dieselbe Falle wie
+    # `membra`, nur an der anderen Endung.
+    'rete':'fs', 'reti':'fp', 'chiave':'fs', 'chiavi':'fp',
     'migliaia':'fp', 'centinaia':'fp', 'paia':'fp',
     'radici':'fp', 'vesti':'fp', 'veste':'fs', 'capo':'ms', 'capi':'mp',
     'poeta':'ms', 'profeta':'ms', 'profeti':'mp', 'sacerdote':'ms',
@@ -283,7 +287,24 @@ def hilfsverb_reflexiv(d, kap):
             # Hosea 8,1; gefunden vom Agenten fuer Kapitel 14.
             nachbarn = ([mw['pos'] - d for d in (1, 2, 3)]
                         + [mw['pos'] + d for d in range(1, 9)])
+            # Das Fenster reicht acht Token weit und traf damit auch
+            # Hilfsverben, die zu einer ANDEREN Wendung im selben Vers
+            # gehoeren: 1. Korinther 7,28 hat `se marier` auf 12-13 und
+            # `n’a pas` (Lemma `ne pas`) auf 15-16, und der Lauf meldete
+            # das `n’a` als falsches Hilfsverb des Reflexivs. Gemeldet
+            # vom Agenten fuer 1. Korinther 7. Wer schon unter einer
+            # anderen Spanne liegt, gehoert nicht zu dieser hier.
+            fremd = set()
+            for m2 in ents:
+                if m2 is mw:
+                    continue
+                if 'pos_end' in m2:
+                    fremd |= set(range(m2['pos'], m2['pos_end'] + 1))
+                elif 'parts' in m2:
+                    fremd |= set(m2['parts'])
             for p in nachbarn:
+                if p in fremd:
+                    continue
                 h = einzel.get(p)
                 if not h or h.get('lemma') not in HILFSLEMMA:
                     continue
