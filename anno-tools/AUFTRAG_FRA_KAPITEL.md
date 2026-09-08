@@ -68,6 +68,12 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   nach `sweeplemma`. **Ein Treffer ist eine Frage, keine Anweisung** — oft
   ist die Antwort „hier zu Recht nicht", und dann ist die Begruendung der
   Ertrag.
+- **`folgenreihe` findet eine Wendung nur unter IHRER Spanne.** Der Agent
+  fuer 1. Korinther 2 hat `auprès de` beinahe neu erfunden, weil
+  `folgenreihe "auprès de vous"` 0 meldet: `vous` gehoert nicht zur
+  Spanne des Mehrworts, und die laengere Zeichenkette trifft deshalb
+  nichts. Frag im Zweifel die kurze Spanne allein ab — oder `sweeplemma`,
+  das ueber das Lemma sucht.
 - **Schneide keine Werkzeugausgabe ab.** Fuenf Agenten haben inzwischen
   einen „Werkzeugfehler" gemeldet, der ein `| head` war: `folgenreihe`
   dreimal (der Mehrwortabschnitt steht unten), `belegt.py` zuletzt (die

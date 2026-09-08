@@ -1280,3 +1280,55 @@ unveraendert. Der Agent fuer Roemer 16 hat richtig gehandelt: er hat
 den Zeugen gesetzt und den Verdacht gemeldet, statt ihn selbst zu
 ueberschreiben. **Einen nachgewiesenen Einzelfehler des Zeugen
 korrigiert das Einsammeln, nicht das Kapitel.**
+
+## `esprit`: meine Regel war zu absolut
+
+In den Prompts stand seit Johannes: „Lemma immer `esprit`, deutsch
+IMMER *Geist*; en/es/it folgen der franzoesischen Grossschreibung."
+Der Agent fuer 1. Korinther 2 hat den ersten Teil widerlegt.
+Nachgerechnet ueber alle **145** Eintraege:
+
+    138  *Geist* in allen Kasus und Numeri
+      7  *Sinn · Sinne · Verstand · Gemueter*
+         Lc 9,46 (`vint à l’esprit`) · Lc 21,14 (`mettez dans l’esprit`)
+         Lc 24,45 (`ouvrit l’esprit`) · Lc 8,35 · Mc 5,15 (`bon sens`)
+         Ac 14,2 (`aigrirent les esprits`) · Ac 14,22
+
+Alle sieben meinen den Sinn, nicht den Geist, und sind richtig gefasst.
+Die Regel lautet also:
+
+    Lemma            immer `esprit`, Level immer A2
+    Grossschreibung  en/es/it folgen dem franzoesischen Quelltext
+                     (54 von 145 gross; zwei Ausnahmen, Jean 4,24 und
+                     Jude 1,19)
+    Deutsch          folgt der BEDEUTUNG: *Geist*, wo es der Geist ist,
+                     *Sinn/Verstand/Gemuet*, wo es der Sinn ist.
+
+Die „116:2" aus den alten Prompts war die Zahl der **Ausnahmen** zur
+Grossschreibungsregel, nicht die der Belege — auch das ist korrigiert.
+
+## `Pour moi` / `Pour vous`: die Asymmetrie sass woanders
+
+Der Agent fuer 1. Korinther 2 hat gemeldet, der topikalisierende
+`Pour X` stehe fuer `vous` und `nous` als Mehrwort und fuer `moi` Wort
+fuer Wort, die Grenze laufe also an der Person. Nachgemessen ueber
+alle 133 `pour` + Pronomen liegt sie woanders — sie laeuft an der
+**Glosse**:
+
+    Mehrwort (5)     Mt 28,5 · Lc 9,44 · Lc 23,41 · Rm 16,19 · Jud 1,20
+    woertlich, aber
+    schon als Topik
+    glossiert (2)    Lc 24,52 `Pour eux` · Rm 8,9 `Pour vous`
+    woertlich, als
+    Zweck glossiert  alle uebrigen (`für`, `um`)
+
+**Roemer 8,9 und 16,19 sind dieselbe Wendung im selben Buch, tragen
+Wort fuer Wort dieselben vier Glossen (*Was · As for · En cuanto a ·
+Quanto a*), und nur eine hat das Mehrwort.** Dasselbe bei Lc 24,52
+gegen Lc 9,44. Beide nachgezogen; `pour eux` ist damit ein neues
+Mehrwortlemma neben `pour vous` und `pour nous`.
+
+Die neun `Pour moi`-Stellen bleiben, wie sie sind: sie lesen deutsch
+*Für*, nicht *Was*, und ob der Topikalisierer dort besser *Was mich
+angeht* hiesse, ist eine andere Frage als die nach dem Mehrwort. Sie
+ist gemessen und offen.
