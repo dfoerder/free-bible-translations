@@ -1332,3 +1332,42 @@ Die neun `Pour moi`-Stellen bleiben, wie sie sind: sie lesen deutsch
 *Für*, nicht *Was*, und ob der Topikalisierer dort besser *Was mich
 angeht* hiesse, ist eine andere Frage als die nach dem Mehrwort. Sie
 ist gemessen und offen.
+
+## `par` + Relativpronomen nimmt die Mittler-Reihe NIE
+
+Die drei Konstruktionen von `par` gelten fuer `par` + Nomen oder
+Personalpronomen. Vor einem **Relativum** (`par qui`, `par lequel`,
+`par laquelle`) liegt die Sache anders, und zwar einstimmig:
+
+    14 von 14 Stellen lesen spanisch `por` und italienisch `per`.
+    Keine einzige liest `por medio de` / `per mezzo di`.
+
+Deutsch und Englisch schwanken zwischen *durch · by* und *durch ·
+through* — das folgt dem Vers. Spanisch und Italienisch schwanken
+nicht.
+
+**Roemer 5,11 entscheidet es in einem einzigen Vers:** dort steht `par
+notre Seigneur Jésus-Christ` auf der Mittler-Reihe (*por medio de · per
+mezzo di*) und wenige Token weiter `par qui`, das auf **denselben
+Christus** zeigt, auf *por · per*. Der Ausloeser ist also weder der
+Referent noch das Verb davor, sondern die **grammatische Form der
+Ergaenzung**.
+
+Gefunden vom Agenten fuer 1. Korinther 8, der die Regel richtig als
+unanwendbar erkannt hat, statt sie zu erzwingen.
+
+## Eine Luecke, die kein Mehrwortwerkzeug sieht: die Spiegelwendung
+
+`de plus` steht im Bestand als Mehrwort (Luc 3,13 · 12,4). Sein
+Gegenstueck `de moins` stand nirgends — und 1. Korinther 8,8 stellt
+`rien de plus` und `rien de moins` symmetrisch nebeneinander.
+
+Keines der drei Werkzeuge kann das melden: `sweep` und `sweeplemma`
+brauchen Deckung ueber der Schwelle, `mehrwoerter` deckt das
+Mittelfeld ab — eine Signatur mit **null** Bestandsvorkommen faellt
+durch alle drei. Gefunden hat es der Agent, weil das Geschwister im
+selben Vers stand.
+
+Merksatz: **wo der Vers ein Paar bildet und der Bestand nur eine
+Haelfte kennt, ist die andere Haelfte zu pruefen** — kein Lauf fragt
+danach.

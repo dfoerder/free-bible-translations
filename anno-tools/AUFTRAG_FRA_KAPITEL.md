@@ -31,6 +31,18 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
 
 ## Handwerkliches, das jeden Vorgaenger einen Durchgang gekostet hat
 
+- **`pos` zaehlt ab NULL.** Das erste Token eines Verses ist `pos: 0`.
+  Es stand bisher nirgends — weder hier noch im Kapitelprompt, und das
+  Formatbeispiel verraet es nicht. Der Agent fuer 1. Korinther 8 hat es
+  sich aus `load_anno(46)` abgelesen.
+- **`load_anno(nr)` hat dieselbe Huelle wie `load_source(nr)`**:
+  `{'name': …, 'chapters': {kap: {vers: [eintraege]}}}`. Der Griff auf
+  einen annotierten Vers ist also `load_anno(nr)['chapters'][kap][vers]`,
+  parallel zum Quelltext.
+- **Ein eigenes Hilfsskript in `work/<kap>/` findet `common` nicht.**
+  Setz oben `sys.path.insert(0, '<repo>/anno-tools')`; `PYTHONPATH`
+  allein reicht nicht, weil das Arbeitsverzeichnis nach jedem
+  Bash-Aufruf zurueckfaellt.
 - **`form` traegt keine Satzzeichen** (`common.strip_punct`). Sonst meldet
   `selfcheck` dreihundert Scheinbefunde `Dieu, != Dieu`. Bei Mehrwoertern
   wird die Oberflaeche aus den **Einzeleintraegen** gebaut, nie aus dem
