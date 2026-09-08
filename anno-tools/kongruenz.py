@@ -144,6 +144,11 @@ ESSERE = {'è','sono','sei','siamo','siete','era','erano','sarà','saranno',
 IT_VERWANDT = {'padre','madre','figlio','figlia','fratello','sorella',
                'marito','moglie','zio','zia','nonno','nonna','cugino',
                'cugina','nipote','genero','nuora','suocero','suocera',
+               # `mio parente` (Roemer 16,7·11·21) galt als „Artikel fehlt".
+               # riv1927 liest es so, und die italienische Grammatik auch —
+               # `parente` ist ein Verwandtschaftsnomen wie die uebrigen.
+               # Gemeldet vom Agenten fuer Roemer 16.
+               'parente','parenti','consorte','coniuge',
                # Feste Wendungen ohne Artikel. `a tuo riguardo`
                # (Matthaeus 4,6) war der erste Fehlalarm dieser Art.
                'riguardo','casa','vita','avviso','parere','favore'}

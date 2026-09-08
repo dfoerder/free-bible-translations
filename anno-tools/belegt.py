@@ -62,6 +62,59 @@ def apos(w):
     return (w or '').replace('\u2019', "'")
 
 
+# Der Endungsabbau fuer die Stammsuche — **je Quelltextsprache**.
+#
+# Die erste Fassung war rein deutsch: sie loeste Umlaute auf, schnitt das
+# Partizip-`ge` ab und kannte `-ung`, `-ende`, `-sten`. Fuer Italienisch
+# traf davon nichts. `spezzò` blieb `spezzò`, `spezzare` wurde zu
+# `spezzar`, und das Werkzeug meldete „im Bestand NICHT belegt", obwohl
+# das Lemma `spezzare` mit B2 dasteht — der Agent fuer Matteo 15 hat es
+# gefunden, nachdem `levelcheck` nach dem Bauen anschlug. Dieselbe stille
+# Null wie bei `qa`, `hints`, `glosskollision`, `hilfsverb` und
+# `kongruenz`: eine Sprachliste, die nicht passt, meldet sauber und hat
+# nichts geprueft.
+#
+# Laengste Endung zuerst. Wo eine Sprache keine Liste hat, bleibt der
+# Vergleich beim Aehnlichkeitsmass — dann ist er schwaecher, aber nie
+# falsch.
+STAMM_ENDUNGEN = {
+    'de': ('esten', 'sten', 'ende', 'end', 'ten', 'ung',
+           'est', 'en', 'er', 'es', 'em', 'et', 'te', 'st',
+           'e', 't', 'n', 's'),
+    'it': ('issimo', 'issima', 'issimi', 'issime',
+           'eranno', 'iranno', 'arono', 'erono', 'irono',
+           'avano', 'evano', 'ivano', 'assero', 'essero', 'issero',
+           'iamo', 'ando', 'endo', 'anno', 'ente', 'enti',
+           'are', 'ere', 'ire', 'arsi', 'ersi', 'irsi',
+           'ato', 'ata', 'ati', 'ate', 'uto', 'uta', 'uti', 'ute',
+           'ito', 'ita', 'iti', 'ite', 'ano', 'ono',
+           'ava', 'eva', 'iva', 'avo', 'evo', 'ivo',
+           'rai', 'rei', 'rà', 'rò', 'ai', 'ei', 'ii',
+           'o', 'a', 'e', 'i', 'ò', 'à', 'ù', 'é'),
+    'fr': ('eraient', 'aient', 'erais', 'erait', 'ions', 'iez',
+           'ement', 'ant', 'ent', 'era', 'ons', 'ez', 'ai', 'as',
+           'er', 'ir', 'ée', 'és', 'ée', 'e', 's', 't'),
+    'es': ('abamos', 'aríamos', 'aron', 'ieron', 'ando', 'iendo',
+           'amos', 'aban', 'ían', 'aba', 'ado', 'ada', 'ados', 'adas',
+           'ido', 'ida', 'idos', 'idas', 'ar', 'er', 'ir',
+           'an', 'en', 'as', 'es', 'o', 'a', 'e', 's'),
+    'en': ('ingly', 'ing', 'edly', 'ies', 'ied', 'ed', 'es', 'ly', 's'),
+}
+
+
+def STAMM(w):
+    w = w.lower()
+    if C.LANG == 'de':
+        w = (w.replace('ä', 'a').replace('ö', 'o')
+              .replace('ü', 'u').replace('ß', 'ss'))
+        if w.startswith('ge') and len(w) > 5:
+            w = w[2:]
+    for e in STAMM_ENDUNGEN.get(C.LANG, ()):
+        if w.endswith(e) and len(w) - len(e) >= 3:
+            return w[:-len(e)]
+    return w
+
+
 def bestand():
     """{wortform_klein: Counter{(lemma, level, *glossen): n}}, plus Belegstellen.
 
@@ -122,16 +175,7 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
         # Endungsabbau, Umlautaufloesung, und ein Aehnlichkeitsmass.
         import difflib
         def stamm(w):
-            w = (w.replace('ä', 'a').replace('ö', 'o')
-                  .replace('ü', 'u').replace('ß', 'ss'))
-            if w.startswith('ge') and len(w) > 5:
-                w = w[2:]
-            for e in ('esten', 'sten', 'ende', 'end', 'ten', 'ung',
-                      'est', 'en', 'er', 'es', 'em', 'et', 'te', 'st',
-                      'e', 't', 'n', 's'):
-                if w.endswith(e) and len(w) - len(e) >= 3:
-                    return w[:-len(e)]
-            return w
+            return STAMM(w)
         sf = stamm(f)
         kandidaten = set()
         for x in list(formen) + list(lemmata or ()):

@@ -187,6 +187,15 @@ essere-Hilfsverb darin seine woertliche Kopula-Glosse behaelt.
 
 **Welches Werkzeug welchen Bestand liest — hier irren sich alle.**
 
+- **`fixgloss.py verse <NR> <KAP> <VERS>` zeigt den ganzen annotierten
+  Vers — mit den Mehrwortspannen.** Das ist die einzige Ansicht, in der
+  sichtbar wird, ob eine Wendung einen Mehrworteintrag traegt oder nicht;
+  `folgenreihe.py` zeigt die Wort-fuer-Wort-Reihe und die Mehrwoerter
+  getrennt, und wer die beiden Zahlen nicht selbst gegeneinanderhaelt,
+  sieht die Luecke nicht. Der Agent fuer Matteo 14 hat damit gefunden,
+  dass 2,16 `mandò a uccidere` **kein** Mehrwort traegt — und deshalb
+  zwei erfundene Mehrwoerter wieder eingespart. **Vor jeder Entscheidung
+  ueber ein Mehrwort den Vergleichsvers so ansehen, nicht nur die Reihe.**
 - **`belegt.py` ueber viele Formen: `--formen <datei>`, nie `xargs`.**
   `xargs` liest den Apostroph als Anfuehrungszeichen und klebt jede
   elidierte Form (`c'è`, `dell'uomo`, `l'albero`) mit ihren Nachbarn zu

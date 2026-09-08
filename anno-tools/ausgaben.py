@@ -318,6 +318,17 @@ def main():
                 else:
                     print(f'   {kurz} {n0:>3}   — kein Gegenstueck in dieser Ausgabe '
                           f'(Vers fehlt oder ist mit dem Nachbarn zusammengezogen)')
+                # Wo ein anderer Versatz DEUTLICH besser liegt, faellt der
+                # angewandte am Kapitelanfang leicht unter Vers 1 und die
+                # Spalte bleibt ganz leer — bei Roemer 16 fuer die Verse 1
+                # bis 3. Dann steht hier die Zeile des besseren Versatzes,
+                # ausdruecklich als solche bezeichnet. Ausgetauscht wird
+                # nichts; die Entscheidung bleibt am Vers.
+                if len(vs) > 3 and vs[3]:
+                    n1 = int(v) + vs[3][1]
+                    t1 = okap.get(str(n1))
+                    if t1:
+                        print(f'   {kurz} {n1:>3} >{t1}')
                 continue
             unsicher = vs[1] > SCHWACH
             # Der Verdacht auf den besseren Versatz stand bisher NUR im Kopf.
@@ -329,13 +340,29 @@ def main():
             # JEDER betroffenen Zeile.
             strittig_hier = len(vs) > 3 and vs[3]
             spanne = args.umgebung or (1 if (unsicher or strittig_hier) else 0)
-            for d in range(-spanne, spanne + 1):
+            # Die Nachbarn +-1 reichen nur, solange der bessere Versatz um
+            # eins danebenliegt. Roemer 16 ist der Gegenfall: WEB haengt die
+            # Doxologie an 14,23, hat also 24 statt 27 Verse, der Versatz aus
+            # dem letzten Vers wird -3 — und die englische Spalte steht im
+            # GANZEN Kapitel drei Verse daneben, ausserhalb jeder Umgebung.
+            # Gemeldet vom Agenten fuer Roemer 16, der die WEB-Datei deshalb
+            # von Hand aufschlagen musste. Ausgetauscht wird der Versatz
+            # weiterhin nicht (das hat in Ps 9, 15 und 19 danebengelegen);
+            # die Zeile des besseren Versatzes wird DANEBENGESTELLT.
+            zeigen = list(range(-spanne, spanne + 1))
+            if strittig_hier:
+                d_rival = vs[3][1] - vs[0]
+                if d_rival not in zeigen:
+                    zeigen.append(d_rival)
+            for d in sorted(set(zeigen)):
                 n = n0 + d
                 t = okap.get(str(n))
                 if t:
                     marke = ' ?' if d else '  '
                     if strittig_hier and not d:
                         marke = ' !'
+                    if strittig_hier and d == vs[3][1] - vs[0]:
+                        marke = ' >'
                     print(f'   {kurz} {n:>3}{marke}{t}')
         print()
 
