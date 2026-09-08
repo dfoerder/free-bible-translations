@@ -42,6 +42,29 @@ Das Arbeitsverzeichnis faellt nach jedem Aufruf zurueck.
   sie vor der Abgabe, sie sind das eigentliche Mehrwort-Suchwerkzeug.
 - `fixgloss.py verse` nimmt seine drei Argumente einzeln; in einer
   zsh-Schleife ueber eine Variable bricht es ab. Es sagt das sauber.
+- **`folgenreihe.py` verschweigt ausserdem den Mehrwort-Abschnitt selbst
+  dann, wenn die Zeichenkette trifft** — bei `c’est toi` (5 Belege) und
+  `près de` (25) druckt es nur die Einzelreihen. Das ist ein zweiter,
+  von der Zeichenkettensuche unabhaengiger Ausfall. Ohne `sweeplemma`
+  haettest du beide neu erfunden.
+- **`levelcheck` zaehlt Mehrworteintraege in die Lemma-Statistik mit.**
+  Bei `se trouver` (6 Einzel-, 26 Mehrworteintraege) zeigt eine eigene
+  Zaehlung ueber die Einzeleintraege deshalb in die falsche Richtung.
+  Wenn `levelcheck` dir widerspricht, hat es meistens recht.
+- **Den Quelltext holst du mit `common.load_source(nr)['chapters'][kap][vers]`**
+  — eine `load_text` gibt es nicht.
+- **`folgenreihe.py` vergleicht ohne Ruecksicht auf Gross-/Kleinschreibung**
+  und sagt es in der Ausgabe nicht. `folgenreihe "Les choses"` meldet die
+  Treffer von `les choses` mit. Wer daraus „einstimmig" liest, bindet an
+  die falsche Zeile — sieh dir die Glossenzeilen an, nicht nur die Zahl.
+- Die **Mehrwortliste steht am ENDE** der `folgenreihe`-Ausgabe. Drei
+  Agenten haben sie mit `| head` abgeschnitten und dem Werkzeug
+  vorgeworfen, es verschweige sie. Zeile fuenf sagt jetzt, ob es welche
+  gibt — aber schneide die Ausgabe trotzdem nicht ab.
+- **`reflexiv.py <buchNr> …`** meldet Verbtoken mit `se` davor, die ihr
+  reflexives Lemma nicht tragen, obwohl kein Mehrwort es traegt. Der
+  erste Abschnitt (reflexives Lemma existiert schon) ist sicher, der
+  zweite am Vers zu pruefen — dort ist `se` oft Objekt, nicht Reflexiv.
 
 ## Die Regeln dieser Arbeit — alle in `BINDUNGEN_FRA_NT.md`
 

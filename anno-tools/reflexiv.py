@@ -25,7 +25,10 @@ def lauf(nummern):
     vorhanden = set()
     stellen = []
     for nr in nummern:
-        d = common.load_anno(nr)
+        try:
+            d = common.load_anno(nr)
+        except Exception:
+            continue
         if not d:
             continue
         for kap, vv in d['chapters'].items():
@@ -54,9 +57,36 @@ def lauf(nummern):
 
 
 def main():
-    nummern = [int(x) for x in sys.argv[1:]]
+    try:
+        nummern = [int(x) for x in sys.argv[1:]]
+    except ValueError:
+        print(__doc__)
+        return 2
     if not nummern:
         print(__doc__)
+        return 2
+    # Der Agent fuer Actes 8 rief `reflexiv.py 44 8` — die 8 wurde als
+    # zweites Buch gelesen und das Skript starb mit einem Traceback.
+    # Kapitelnummern nimmt es nicht; es prueft immer ganze Buecher.
+    schlecht = [n for n in nummern if not 1 <= n <= 66]
+    if schlecht:
+        print(f'{schlecht} ist keine Buchnummer (1-66).')
+        print('reflexiv.py nimmt BUCHnummern, keine Kapitel — es prueft '
+              'immer ganze Buecher.')
+        return 2
+    def da(n):
+        try:
+            return bool(common.load_anno(n))
+        except Exception:
+            return False
+    fehlt = [n for n in nummern if not da(n)]
+    if fehlt:
+        print(f'nicht gebaut oder leer: {fehlt}')
+        if len(nummern) > len(fehlt):
+            print('Sieht nach einer KAPITELnummer aus — reflexiv.py nimmt '
+                  'nur Buchnummern und prueft immer ganze Buecher.')
+        else:
+            print('Erst `buildbook.py <nr>` laufen lassen.')
         return 2
     vorhanden, stellen = lauf(nummern)
     nach_lemma = collections.defaultdict(list)

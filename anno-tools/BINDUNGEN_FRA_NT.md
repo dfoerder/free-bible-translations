@@ -825,3 +825,21 @@ Nomen.**
 `avec des vases` = `con` + `delle vasi` ist richtig, denn `delle` ist dort
 kein verschmolzener Artikel, sondern das italienische Teilungswort. Die
 Regel greift nur, wenn ein **Possessiv** folgt.
+
+## `Fils de l’homme`: die eine Formel, die den Artikel in der Praeposition traegt
+
+Die Artikelregel („`de` vor einem Artikel traegt italienisch nur `di`, der
+Artikel bleibt bei seinem Token") hat **eine gemessene Ausnahme**, und sie
+ist einstimmig: `Fils de l’homme` steht **86 zu 0** auf `de` = *dell’* mit
+barem `l’homme` = *uomo*. Zusammengelesen ergibt beides dasselbe richtige
+`dell’uomo`; die Formel hat sich nur fuer die andere Aufteilung entschieden
+und haelt sie ohne Ausnahme durch.
+
+**Nicht angleichen.** Der Agent fuer Actes 7 hat den Widerspruch bemerkt,
+gemessen und zugunsten des Bestands entschieden — das war richtig. Beim
+Nachmessen fiel dabei die einzige Stelle auf, an der die Aufteilung
+schiefging: Jean 1,13 `volonté de l’homme` las `di` + bares `uomo`, also
+gar keinen Artikel. Gezogen.
+
+Ausserhalb der Formel gilt die Regel unveraendert: `hors de l’homme` und
+`au sujet de l’homme` stehen richtig auf `di` + `l’uomo`.

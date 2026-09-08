@@ -165,6 +165,15 @@ def main():
               f'{len(voll)} verschiedene Reihen'
               + (f', {len(unv)} mit Mehrwort an einer Position'
                  if unv else ''))
+        # Die Mehrwortliste steht weiter unten, und drei Agenten haben
+        # sie mit `| head` abgeschnitten und dem Werkzeug vorgeworfen,
+        # es „verschweige den Mehrwortabschnitt" (`c'est toi`,
+        # `près de`, `tout à coup` — alle drei standen da). Deshalb
+        # jetzt eine Zeile ganz oben, die auch ein `head -5` sieht.
+        if mehrwort:
+            print(f'**{sum(len(v) for v in mehrwort.values())} davon sind '
+                  f'im Bestand als MEHRWORT gefasst — die Liste steht '
+                  f'unten, NICHT abschneiden.**')
         if len(voll) == 1:
             print('**einstimmig**')
         print()
