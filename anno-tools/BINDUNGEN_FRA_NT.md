@@ -881,3 +881,32 @@ temples` = *nicht in einigen Tempeln*.
 Dass Deutsch den Artikel in der laufenden Uebersetzung fallen laesst,
 aendert daran nichts: die Glosse sagt, was das franzoesische Token
 leistet, und das Token ist da.
+
+
+## Die Elisionsregel gilt fuer verschluckte INHALTSWOERTER, nicht fuer Pronomen
+
+Die Regel „wo die Elision das Komplement verschluckt, steht kein
+Mehrwort" (der `faute d’humidité`-Fall) hat zwei Agenten in die Irre
+gefuehrt — sie haben bei `du milieu d’elles` und `s’empara d’eux` kein
+Mehrwort gesetzt und es ausdruecklich so begruendet.
+
+**Nachgemessen ist die Regel zu weit gefasst.** `au milieu de` steht mit
+elidiertem Pronomen (`d’eux`, `d’elles`) an **13 Stellen, und 12 tragen
+das Mehrwort** — Mt 18,2 · 18,20 · Marc 9,36 · Luc 4,30 · 24,36 ·
+Jean 20,19 · 20,26 · Actes 4,7 · 7,26 · 17,33 · 22,30 · 23,10 · 24,21.
+Die eine Ausnahme war Actes 15,14; sie ist gezogen.
+
+**Der Unterschied ist, was die Elision verschluckt:**
+
+- ein **Inhaltswort** (`faute d’humidité` — das Nomen, das die Wendung
+  ergaenzt): kein Mehrwort, die Wendung ist nicht vollstaendig da.
+- ein **Pronomen** (`d’eux`, `d’elles`): Mehrwort. Das Pronomen ist die
+  Ergaenzung selbst, nicht ein Teil der Wendung, und die Glosse des
+  Mehrworts nimmt es mit („aus ihrer Mitte").
+- ein **Relativpronomen** (`desquels`, Actes 20,25): kein Mehrwort — es
+  gehoert syntaktisch **hinter** die Spanne, nicht hinein.
+
+Nicht zu verwechseln mit `Vers le milieu de la fête` (Jean 7,14) und
+`Vers le milieu de la nuit` (Actes 16,25): dort heisst `milieu` die
+zeitliche Mitte, nicht „mitten unter". Beide stehen zu Recht Wort fuer
+Wort.
