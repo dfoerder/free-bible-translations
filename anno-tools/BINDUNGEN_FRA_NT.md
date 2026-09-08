@@ -1182,3 +1182,50 @@ er hat ausdruecklich darum gebeten, sie hier festzuhalten. Beide
 Agenten haben dieselbe Konstruktion im selben Paket entgegengesetzt
 entschieden — das ist der Beweis, dass die Regel fehlte und nicht nur
 missverstanden wurde.
+
+## `devant` spanisch: `ante` vor Gericht, `delante de` im Raum
+
+Gemeldet vom Agenten fuer Roemer 12 als Paket-gegen-Bestand-Konflikt
+(er stand auf *delante de*, das Nachbarkapitel auf *ante*). Gemessen
+ist es **kein** Konflikt, sondern ein Kriterium, das die
+Apostelgeschichte durchhaelt und die anderen Buecher nicht kannten:
+
+    Mt 27 : 0     Mc 12 : 0     Jn 4 : 0      →  nur `delante de`
+    Lc 43 : 9     Ac 15 : 34                  →  beide, nach Bedeutung
+
+Actes trennt sauber: `delante de` fuer Raum und Gegenwart (`devant la
+porte`, `devant moi`, `devant Dieu`), **`ante` fuer das Auftreten vor
+einer Instanz** (`ante Pilato`, `ante el sanedrín`, `ante el tribunal`,
+`ante reyes y gobernadores`). Lukas macht es an neun von elf Stellen
+mit.
+
+**Der Beweis, dass es dieselbe Sache ist und nicht zwei:** `devant des
+gouverneurs` steht dreimal, in derselben synoptischen Aussage — Lc
+21,12 liest `ante`, Mt 10,18 und Mc 13,9 lasen `delante de`. Vier
+Stellen nachgezogen (Mt 10,18 · Mt 27,11 · Mc 13,9 · Lc 23,1), alle
+vier das Auftreten vor einem Gericht oder Statthalter.
+
+Roemer 14,10 (`devant le tribunal de Dieu`) bleibt deshalb auf `ante`
+und 12,17 / 14,11 / 14,22 auf `delante de` — beide Agenten hatten
+recht, und der gemeldete Konflikt war die Regel.
+
+## `joie` spanisch: `gozo` war eine Drift, keine Lesart
+
+38 `alegría` gegen 5 `gozo`, ueber vier Buecher verstreut, ohne
+erkennbares Kriterium. Entschieden hat wieder die Parallele: **`avec
+joie` liest siebenmal `alegría` und einmal `gozo` — und dieses eine
+(Lc 8,13) ist das Gleichnis vom Saemann, dessen Parallelen Mt 13,20 und
+Mc 4,16 `alegría` lesen.** Alle fuenf nachgezogen.
+
+## Offen und gemessen: jussives `que` englisch
+
+`Que celui qui …` steht englisch 58× auf `may/May` und 21× auf
+`let/Let`. Ein Kriterium ist nicht zu sehen — die schaerfste Stelle ist
+das Vaterunser, wo **Mt 6,9 `May` und Mt 6,10 `let` liest**, zwei
+aufeinanderfolgende Zeilen desselben Gebets. Roemer ist in sich
+einstimmig auf `Let` (3,4 · 6,12 · 11,9 · 11,10), und Kapitel 14 ist
+dem gefolgt; `folgencheck` meldet die Zeichengleichheit mit Luc 3,11
+deshalb zu Recht als Abweichung.
+
+**Nicht angeglichen** — 79 Stellen, und ohne Kriterium waere es eine
+Muenze. Wer es anfasst, faengt am Vaterunser an.
