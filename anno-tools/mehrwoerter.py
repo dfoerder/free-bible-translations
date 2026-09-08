@@ -119,6 +119,8 @@ def bestand(nr, kapitel):
             for vers, entries in verses.items():
                 lem = {e['pos']: e['lemma']
                        for e in entries if not C.is_multi(e)}
+                form = {e['pos']: e['form']
+                        for e in entries if not C.is_multi(e)}
                 gedeckt = {}
                 spannen = {}
                 for e in entries:
@@ -135,14 +137,19 @@ def bestand(nr, kapitel):
                     for gef in _vorkommen(lem, s, abstand):
                         rec = sig[s]
                         wo = f'{C.book_name(b)} {kap},{vers}'
+                        # Die Lemma-Signatur ist blind fuer die FORM:
+                        # `à pied` (zu Fuss) und `aux pieds` (zu Fuessen)
+                        # sind dieselbe Signatur (`à`, `pied`) und stehen
+                        # im Bericht sonst als ein geteilter Fall da,
+                        # obwohl es zwei Wendungen sind. Deshalb steht die
+                        # Oberflaeche neben jeder Stelle.
+                        wort = ' '.join(form[p] for p in gef)
                         genau = spannen.get(frozenset(gef))
                         if genau is not None:
                             rec[1] += 1
                             rec[2] += 1
-                            # WELCHE Wendung dort liegt, ist die eigentliche
-                            # Auskunft.
                             if len(rec[3]) < 4:
-                                rec[3].append(f'{wo} (`{genau}`)')
+                                rec[3].append(f'{wo} „{wort}" (`{genau}`)')
                         elif any(p in gedeckt for p in gef):
                             # Eine ANDERE Wendung liegt darauf (`parce que`
                             # ueber der Signatur (`être`, `que`)). Diese
@@ -155,7 +162,7 @@ def bestand(nr, kapitel):
                         else:
                             rec[2] += 1
                             if len(rec[4]) < 4:
-                                rec[4].append(wo)
+                                rec[4].append(f'{wo} „{wort}"')
     return sig
 
 
