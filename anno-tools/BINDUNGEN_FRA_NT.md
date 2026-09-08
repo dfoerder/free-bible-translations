@@ -376,10 +376,30 @@ fuer Marc 10.
 ## `ne … plus` und das elidierte `ne` ohne eigene Verneinung
 
 Der Abschnitt oben nennt `ne pas`, `ne rien`, `ne personne` und `nul
-ne`. **`ne plus` fehlte** — es steht mit 13 Belegen im Bestand, und der
-Span umfasst das Verb (`ne pourras plus`, Luc 1,20; Marc 1,45). Der
+ne`. **`ne plus` fehlte** — es steht mit **53** Belegen im Bestand, und
+der Span umfasst das Verb (`ne pourras plus`, Luc 1,20; Marc 1,45). Der
 Agent fuer Luc 1 hatte es als kompositionell verworfen; der neue
-zweite Abschnitt von `sweeplemma.py` hat es zurueckgeholt.
+zweite Abschnitt von `sweeplemma.py` hat es zurueckgeholt. (Hier stand
+lange „13 Belege" — das war der Stand von Lukas 1. Der Agent fuer
+Roemer 6 hat nachgemessen; **Zahlen in dieser Datei altern**, und wer
+sich auf eine stuetzt, misst sie besser nach.)
+
+### `plus de` unter Verneinung: das `de` traegt das `kein`, nicht die Spanne
+
+`n’a plus de pouvoir` (Rm 6,9) sieht aus wie ein Sonderfall, ist aber
+nur der Teilungsartikel unter einer anderen Verneinung. Die 70 `pas
+de`-Stellen legen das `kein` einheitlich auf das **`de`** und lassen
+die Verneinungsspanne beim blossen *nicht*:
+
+    n’eut pas → *hatte nicht*   ·   de → *keinen · any · ninguna · alcun*
+
+Genau so ist `ne plus` zu fassen: `n’a plus` → *hat nicht mehr*, `de` →
+*keine*. **Jean 2,3 war die einzige Stelle, die es andersherum machte**
+(`n’ont plus` → „haben keinen mehr", `de` → *an*) — auf die 70
+gezogen. Nicht verwechseln mit dem **komparativen** `plus de` (`plus de
+quarante`, `plus de douze`), das `de` = *als · than* traegt und mit
+Verneinung nichts zu tun hat, auch wo eine im Vers steht (Actes 24,11
+`il n’y a pas plus de douze jours`).
 
 **Und eine Grenze der Regel „das elidierte Token traegt die Verneinung
 selbst":** sie gilt nur, wo das `ne` die einzige Verneinung ist. In
@@ -935,3 +955,63 @@ Damit sind es drei Faelle, und der Unterschied ist immer derselbe:
       aussen (Rektion, Verneinung)  →  Mehrwort       (`d’en appeler`)
     verschlucktes Relativpronomen   →  kein Mehrwort, es gehoert HINTER
                                        die Spanne     (`au milieu desquels`)
+
+## `par` vor Person und Pronomen: drei Konstruktionen, nicht eine Reihe
+
+Der Bestand las `par` vor `Jésus-Christ`, `lui`, `celui` in zwei Reihen,
+und die Grenze dazwischen war mit „personaler Mittler" begruendet. Der
+Agent fuer Roemer 7 hat gemeldet, dass Roemer sie selbst 3:2 verletzt
+(1,8 und 2,16 lesen die Sach-Reihe, obwohl Christus dort Mittler ist).
+
+**Am Zeugen nachgemessen ist die Begruendung falsch und die Meldung
+richtig.** riv1927 trennt nicht nach Person, sondern nach Konstruktion:
+
+    Passiv-Agens        `baptisés par lui`   → da lui
+                        von · by · por · da
+    Schwurformel        `jurer par celui`    → per colui
+                        bei · by · por · per
+    instrumental        alles uebrige        → per mezzo di
+                        durch · through · por medio de · per mezzo di
+
+In elf gemessenen Faellen liest der Zeuge zehnmal `per mezzo di`; der
+elfte (Actes 4,10) formuliert um (`per virtù sua`) und hat gar kein
+Gegenstueck. **Roemer 7,11 entscheidet die Frage**: dort meint `par
+lui` das GEBOT, keine Person, und riv liest trotzdem `per mezzo di`.
+Elf Zeilen nachgezogen (Jean 1,7 · 1,17 · 3,17 · Actes 2,22 · 4,10 ·
+10,36 · 13,38 · 13,39 · Roemer 1,8 · 2,16 · 7,11); Actes 10,36 war in
+sich gespalten (es *por*, it *per mezzo di*).
+
+Merksatz derselben Bauart wie die beiden aelteren: **eine Grenze, die
+sich aus der Bedeutung begruenden laesst, ist damit noch nicht die
+Grenze, die der Zeuge zieht.** Erst messen, dann begruenden.
+
+## Spanisch: nach `haber` stimmt das Partizip NIE ueberein
+
+Italienisch stimmt es ueberein, wenn ein Objektklitikon vorangeht (`li
+hanno dati`, `le avevano adempiute`) und darf es im Relativsatz
+(`la parola che ha pronunciata`) — **spanisch nie.** Nach jeder Form
+von `haber` steht das Partizip unveraendert auf `-o`.
+
+Gemeldet vom Agenten fuer Roemer 6 an einer Stelle des Nachbarkapitels
+(7,6 `habiendo muertos`); der Sweep fand **dreizehn**. Zwei davon waren
+kein Kongruenzfehler, sondern das falsche Hilfsverb: `étaient/furent
+réunies` ist Zustand, nicht Perfekt — spanisch `estaban`/`estuvieron`,
+nicht `habían` (der Zeuge liest `erano radunate`, `furono radunati`).
+
+Und eine Falle in der Gegenrichtung: bei Mt 27,10 stand it `hanno date`
+neben dem Klitikon `li`. Das Klitikon ist richtig — riv liest `li
+diedero`, `sicli` ist maskulin —, das Partizip musste ihm folgen
+(`dati`). **Franzoesisches und italienisches Genus laufen hier
+auseinander** (`les pièces` feminin, `i sicli` maskulin); wer die
+Kongruenz prueft, prueft sie innerhalb einer Sprache, nie gegen das
+Franzoesische.
+
+## `hints.py` sah nicht durch die Elision (behoben)
+
+Der Stammschluessel kam aus den ersten vier Zeichen, und `l’af…` landet
+in einem anderen Eimer als `affection`. Damit standen elidierte Nomen
+ohne „verwandt"-Zeile da, obwohl ihr Lemma dutzendfach belegt war —
+im Franzoesischen trifft das jedes vierte Nomen. Gefunden vom Agenten
+fuer Roemer 8, dem es beinahe ein falsches Level gekostet haette
+(`affection` B2 statt B1; `levelcheck` fing es). Gesucht wird jetzt in
+beiden Eimern; `d’abord` behaelt seinen eigenen.

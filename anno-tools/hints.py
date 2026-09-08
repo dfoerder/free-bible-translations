@@ -22,6 +22,7 @@ Jeder Hinweis ist eine **Hypothese**, auch wenn ein Skript ihn erzeugt hat.
 Der Quelltext hat immer recht.
 """
 import collections
+import re
 import sys
 
 import common as C
@@ -47,6 +48,28 @@ def _stammkey(wort):
     `wurde`, `haette` gegen `hatte`).
     """
     return C.ohne_akzent(wort[:MIN_STAMM].lower().translate(UMLAUT))
+
+
+# Eine vorangestellte Elision (`l’affection`, `d’abord`, `qu’il`) klebt am
+# Wortanfang und verdirbt damit den Stammschluessel, der aus den ERSTEN vier
+# Zeichen gebildet wird: `l’af…` landet in einem anderen Eimer als `affection`.
+# Gefunden hat es der Agent fuer Roemer 8: dort standen `l’affection`,
+# `l’image`, `l’adoption`, `l’espérer`, `l’attendons` und `l’enfantement` als
+# unbelegt und ganz ohne „verwandt"-Zeile da, obwohl `affection`, `image`,
+# `adoption`, `espérer` und `attendre` mit zusammen ueber vierzig Belegen im
+# Bestand stehen — die nicht-elidierte Form desselben Kapitels (`espérons`)
+# bekam ihre Zeile korrekt. Im Franzoesischen trifft das jedes vierte Nomen,
+# und es kostete dort beinahe ein falsches Level.
+#
+# Gesucht wird deshalb in BEIDEN Eimern. Abgezogen wird nichts: `d’abord` ist
+# ein eigenes Lemma des Bestands und muss seinen eigenen Eimer behalten.
+ELISION = re.compile(r"^[^\W\d_]{1,6}[’']")
+
+
+def _ohne_elision(wort):
+    """Das Wort ohne vorangestellte Elision, oder unveraendert."""
+    rest = ELISION.sub('', wort)
+    return rest or wort
 
 
 def _gemeinsam(a, b):
@@ -87,11 +110,18 @@ def _verwandt(form, stamm, wieviel=3):
     `Land`. Wer zusätzlich zählt, was am Kandidaten hängen bleibt, dreht das
     Verhältnis um: `Land` behält 0 übrig, `Landesgott` fünf.
     """
-    if len(form) < MIN_STAMM:
+    ohne = _ohne_elision(form)
+    if len(form) < MIN_STAMM and len(ohne) < MIN_STAMM:
         return []
-    kand = stamm.get(_stammkey(form), set())
-    gross = form[:1].isupper()
-    return sorted(kand, key=lambda x: (-(2 * _gemeinsam(form, x) - len(x)),
+    kand = set(stamm.get(_stammkey(form), ()))
+    if ohne != form:
+        kand |= set(stamm.get(_stammkey(ohne), ()))
+    gross = ohne[:1].isupper()
+
+    def naehe(x):
+        return max(_gemeinsam(form, x), _gemeinsam(ohne, x))
+
+    return sorted(kand, key=lambda x: (-(2 * naehe(x) - len(x)),
                                        0 if x[:1].isupper() == gross else 1,
                                        len(x), x))[:wieviel]
 

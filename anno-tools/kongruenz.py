@@ -47,6 +47,11 @@ AUSNAHMEN = {
     'miriade':'fs', 'miriadi':'fp',
     'braccia':'fp', 'labbra':'fp', 'dita':'fp', 'ginocchia':'fp',
     'corna':'fp', 'uova':'fp', 'mura':'fp', 'lenzuola':'fp',
+    # Dieselbe Klasse, vom Agenten fuer Roemer 6 gemeldet: `le
+    # vostre membra` galt viermal als Fehler, weil die `-a`-Endung
+    # feminin SINGULAR aussieht. RIV liest `le vostre membra`.
+    'membro':'ms', 'membra':'fp',
+    'migliaia':'fp', 'centinaia':'fp', 'paia':'fp',
     'radici':'fp', 'vesti':'fp', 'veste':'fs', 'capo':'ms', 'capi':'mp',
     'poeta':'ms', 'profeta':'ms', 'profeti':'mp', 'sacerdote':'ms',
     'sacerdoti':'mp', 'padre':'ms', 'padri':'mp', 'fratello':'ms',
