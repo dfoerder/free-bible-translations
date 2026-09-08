@@ -82,6 +82,7 @@ def stellen(phr, bis=None):
     orte = collections.defaultdict(list)
     unvollstaendig = []
     mehrwort = collections.defaultdict(list)
+    schreibungen = collections.Counter()
     for nr in range(1, bis or 67):
         try:
             s = C.load_source(nr)
@@ -145,7 +146,33 @@ def stellen(phr, bis=None):
                                 for j in range(len(w)))
                     voll[key] += 1
                     orte[key].append(f'{C.book_name(nr)} {k},{v}')
-    return w, voll, orte, unvollstaendig, mehrwort
+                    schreibungen[tuple(toks[i:i + len(w)])] += 1
+    return w, voll, orte, unvollstaendig, mehrwort, schreibungen
+
+
+def schreibungswarnung(w, schreibungen):
+    """Wo die Treffer sich in der GROSSSCHREIBUNG unterscheiden.
+
+    Der Vergleich laeuft absichtlich klein (`il y avait là` fand sonst
+    nichts). Am Satzanfang ist das harmlos. Mitten im Satz ist es das
+    nicht: `folgenreihe "même Esprit"` zeigte eine Reihe aus
+    1. Korinther 1,10, wo `un même **esprit**` kleingeschrieben steht
+    und „Gesinnung" heisst — und wer der Zahl folgt, setzt `Esprit` auf
+    *spirit · espíritu · spirito*. Beim Leitwort des Buches ist das der
+    teuerste denkbare Fehlgriff; gemeldet vom Agenten fuer
+    1. Korinther 12.
+
+    Der erste Token bleibt aussen vor — dort ist der Grossbuchstabe die
+    Satzposition, nicht ein anderes Wort.
+    """
+    if len(w) < 2:
+        return []
+    abweichend = collections.Counter()
+    for form, n in schreibungen.items():
+        for j in range(1, len(w)):
+            if j < len(form) and form[j] != w[j] and form[j].lower() == w[j].lower():
+                abweichend[(w[j], form[j])] += n
+    return sorted(abweichend.items(), key=lambda x: -x[1])
 
 
 def als_lemma(phr):
@@ -229,13 +256,18 @@ def main():
         return 2
     print(f'*{C.bestandsstand()}*')
     for phr in args:
-        w, voll, orte, unv, mehrwort = stellen(phr, bis)
+        w, voll, orte, unv, mehrwort, schreib = stellen(phr, bis)
         ges = sum(voll.values())
         print(f'\n# „{phr}"\n')
         print(f'{ges} vollstaendig glossierte Vorkommen, '
               f'{len(voll)} verschiedene Reihen'
               + (f', {len(unv)} mit Mehrwort an einer Position'
                  if unv else ''))
+        for (gefragt, gefunden), n in schreibungswarnung(w, schreib):
+            print(f'**ACHTUNG: {n} dieser Vorkommen lesen `{gefunden}`, '
+                  f'nicht `{gefragt}`.** Der Vergleich laeuft klein — '
+                  'mitten im Satz\nist das ein ANDERES Wort, und seine '
+                  'Reihe ist keine Bindung fuer deines.')
         # Die Mehrwortliste steht weiter unten, und drei Agenten haben
         # sie mit `| head` abgeschnitten und dem Werkzeug vorgeworfen,
         # es „verschweige den Mehrwortabschnitt" (`c'est toi`,

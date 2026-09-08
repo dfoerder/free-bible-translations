@@ -22,7 +22,7 @@ Abgabe wird dagegen gehalten. Der Agent fuer Actes 16 musste die Probe
 sonst von Hand nachbauen, weil `reflexiv.py` nur den gebauten Bestand
 las.
 """
-import sys, json, collections
+import sys, json, collections, re
 import common
 
 REFL = {'se', 's’', "s'"}
@@ -75,7 +75,14 @@ def lauf_datei(nummern, pfad, kapitel=None):
     # ist es ein einzelnes Kapitel.
     if ch and isinstance(next(iter(ch.values())), list):
         ch = {str(kapitel or '?'): ch}
-    kapitel_pruefen(ch, nummern[0] if nummern else 0, vorhanden, stellen)
+    # Die Buchnummer kam bisher aus `nummern[0]` — also aus dem ERSTEN
+    # Argument, nicht aus der Abgabedatei. Wer `reflexiv.py 40 41 … 46
+    # --datei …/46/ch10.json` ruft, bekam jeden Fund als „40 10,25"
+    # gemeldet. Gefunden vom Agenten fuer 1. Korinther 10. Der Pfad
+    # weiss es besser: `<…>/<buch>/ch<kap>.json`.
+    m = re.search(r'/(\d+)/ch(\d+)\.json$', pfad.replace('\\', '/'))
+    buch = int(m.group(1)) if m else (nummern[0] if nummern else 0)
+    kapitel_pruefen(ch, buch, vorhanden, stellen)
     return vorhanden, stellen
 
 

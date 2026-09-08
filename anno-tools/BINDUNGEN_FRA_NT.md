@@ -1371,3 +1371,44 @@ selben Vers stand.
 Merksatz: **wo der Vers ein Paar bildet und der Bestand nur eine
 Haelfte kennt, ist die andere Haelfte zu pruefen** — kein Lauf fragt
 danach.
+
+## Was `folgenreihe` seit dem letzten Paket kann — und was `sweeplemma` nicht kann
+
+Diese beiden Abschnitte fehlten. Ich habe drei Agenten in ihren
+Auftraegen auf sie verwiesen, bevor ich sie geschrieben hatte; der
+Agent fuer 1. Korinther 10 hat es gemerkt, weil er nachgeschlagen hat
+statt es zu glauben. **Ein Prompt, der auf einen Abschnitt verweist,
+ist kein Beleg dafuer, dass es ihn gibt.**
+
+**`folgenreihe` zeigt stammverwandte Mehrwortlemmata.** Wenn die
+Zeichenkette weder als Folge noch als Lemmaname trifft, sucht der Lauf
+nach Mehrwortlemmata, die dieselben Inhaltswoerter im Stamm haben.
+Anlass war `il vaut mieux`: der Lauf schrieb „Auch nicht als Lemma
+eines Mehrworts im Bestand", waehrend `valoir mieux` mit elf Belegen
+dasteht. `valu mieux` findet jetzt `valoir mieux` und `aimer mieux`,
+`garde le silence` findet `garder le silence`.
+
+**`sweeplemma` ist blind fuer Mehrwoerter, deren Lemmaname nicht die
+Verkettung der Einzellemmata ist.** Es baut die Signatur aus den
+Lemmata, die der Agent selbst gesetzt hat: `c’est moi` wird zu
+(`être`, `moi`), gesucht wird `être moi`, gefunden nichts. `c’est
+ainsi que` ebenso. **Sein Verdachtsblock ist deshalb wertvoller als
+sein Mehrwortblock** — er zeigt auf etwas, das er selbst nicht
+benennen kann; geh jedem Verdacht mit `folgenreihe` und `belegt.py`
+nach. Gemeldet vom Agenten fuer 1. Korinther 7, der `c’est moi` und
+`c’est ainsi que` nur so gefunden hat.
+
+## `folgenreihe` vergleicht klein — und warnt jetzt davor
+
+Der kleingeschriebene Vergleich ist gewollt (`il y avait là` fand
+sonst nichts, weil der Bestand `Il` schreibt). Am Satzanfang ist er
+harmlos. Mitten im Satz ist er es nicht:
+
+    folgenreihe "même Esprit"  →  zeigte eine Reihe aus 1 Ko 1,10,
+    wo `un même esprit` KLEIN steht und „Gesinnung" heisst.
+
+Beim Leitwort des Buches ist das der teuerste denkbare Fehlgriff — wer
+der Zahl folgt, setzt `Esprit` auf *spirit · espíritu · spirito*.
+Gemeldet vom Agenten fuer 1. Korinther 12. Der Lauf sagt jetzt
+ausdruecklich, wenn Treffer sich in der Grossschreibung eines NICHT
+ersten Wortes unterscheiden.
