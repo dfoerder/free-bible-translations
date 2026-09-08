@@ -792,3 +792,18 @@ Luc 11,37, Mt 26,18).
 Gemeldet vom Agenten fuer Johannes 20, der die Luecke sah und der
 Weisung „wie der Bestand es fuehrt" folgend nichts gesetzt hat. Das
 war richtig — die Luecke gehoert dem Koordinator, nicht dem Kapitel.
+
+## Italienisch: die Praeposition verschmilzt nie in ein Possessiv
+
+`de ses prophètes` heisst `di` + `i suoi profeti`, nicht `di` + `dei suoi`.
+Der Bestand fuehrt das an 36 Stellen richtig und hatte fuenf Ausreisser
+(Luc 1,70 `dei suoi`, Luc 1,77 `dei loro`, Marc 6,22 · Luc 5,7 · Luc 18,7
+`ai suoi`/`ai loro`) — zusammengelesen ergibt das `di dei suoi` und
+`a ai suoi`. Alle fuenf gezogen. Das ist dieselbe Artikelregel wie beim
+Teilungsartikel: **die Praeposition bleibt bar, der Artikel sitzt beim
+Nomen.**
+
+**Nicht zu verwechseln** mit dem Teilungsartikel nach einer Praeposition:
+`avec des vases` = `con` + `delle vasi` ist richtig, denn `delle` ist dort
+kein verschmolzener Artikel, sondern das italienische Teilungswort. Die
+Regel greift nur, wenn ein **Possessiv** folgt.
