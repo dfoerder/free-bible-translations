@@ -843,3 +843,22 @@ gar keinen Artikel. Gezogen.
 
 Ausserhalb der Formel gilt die Regel unveraendert: `hors de l’homme` und
 `au sujet de l’homme` stehen richtig auf `di` + `l’uomo`.
+
+## `avoir été` ist der Perfekt-Infinitiv von `être`, nicht von `avoir`
+
+`Après avoir été relâchés` heisst „nachdem sie freigelassen worden
+**waren**", nicht „hatten". Der Agent fuer Actes 15 hat sich zuerst an die
+57 Belege von `folgenreihe "Après avoir"` gehalten — **und die messen eine
+andere Konstruktion.** Dort steht der aktive Perfekt-Infinitiv (`après
+avoir dit`, `après avoir prié`), und da ist `hatten` richtig. Sobald `été`
+folgt, ist es Passiv oder Kopula, und Deutsch braucht `war`/`waren`.
+
+Der Bestand fuehrt es an zwei Stellen richtig (Actes 4,13 · 4,23) und hatte
+zwei Ausreisser: Luc 10,36 (`avoir été le prochain` = *zu haben* statt
+*zu sein*) und Luc 19,15 (`après avoir été fait roi` = *hatte* statt *war*).
+Beide gezogen.
+
+**Die allgemeine Lehre, und sie ist teuer bezahlt: die Mehrheit einer
+Zeichenkette ist keine Mehrheit einer Konstruktion.** `folgenreihe` sucht
+Zeichen, nicht Grammatik. Wo eine Folge zwei Konstruktionen mischt, zieht
+ihre Mehrheit in die falsche Richtung.

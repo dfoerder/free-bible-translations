@@ -135,6 +135,15 @@ IT_KONS = re.compile(r"^(?:s[^aeiouh]|z|gn|ps|pn|x|y)", re.I)
 IT_VOKAL = re.compile(r"^[aeiou]", re.I)
 
 
+# `dio` bildet den Plural unregelmaessig und nimmt trotz schlichtem
+# Anlaut `gli`: `gli dèi`, `degli dèi`. Die Anlautprobe meldete deshalb
+# `Gli dèi` (Actes 14,11) als Fehler und wollte `I dèi` — gemeldet vom
+# Agenten fuer Actes 14, bestaetigt durch riv1927 („Gli dèi") und durch
+# den Bestand selbst (Actes 7,40 `degli dèi`). Andere Woerter dieser Art
+# gehoeren hier dazu, sobald sie auftauchen.
+IT_GLI_UNREGELMAESSIG = re.compile(r'(?i)^(d[eè]i)\b')
+
+
 def anlautprobe(ein, kap, vers, treffer):
     """Italienische Artikel gegen den Anlaut des folgenden Nomens.
 
@@ -186,7 +195,8 @@ def anlautprobe(ein, kap, vers, treffer):
             if kl == 'uno' and not IT_KONS.match(w):
                 soll = 'un'
             elif kl == 'gli' and not (IT_KONS.match(w)
-                                      or IT_VOKAL.match(w)):
+                                      or IT_VOKAL.match(w)
+                                      or IT_GLI_UNREGELMAESSIG.match(w)):
                 soll = 'i'
             elif kl == 'lo' and not IT_KONS.match(w):
                 soll = "l’" if IT_VOKAL.match(w) else 'il'

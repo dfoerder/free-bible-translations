@@ -20,6 +20,15 @@ Das Arbeitsverzeichnis faellt nach jedem Aufruf zurueck.
 - Keinen Namen deuten, den der Text nicht selbst deutet.
 - Spanisch durchgehend **vosotros**, kein `ustedes`.
 
+## Die Abgabedatei
+
+`$ANNO_OUT/<NR>/ch<KAP>.json` ist **flach nach Versnummer**, ohne Huelle:
+
+    {"1": [ {…}, {…} ], "2": [ … ], … }
+
+Kein `chapters`, kein `book`, kein `verses`. `selfcheck` sagt es nicht,
+und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
+
 ## Handwerkliches, das jeden Vorgaenger einen Durchgang gekostet hat
 
 - **`form` traegt keine Satzzeichen** (`common.strip_punct`). Sonst meldet
