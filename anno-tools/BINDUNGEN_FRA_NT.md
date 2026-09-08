@@ -1483,3 +1483,25 @@ zufaellig. Bei `au moyen d’un miroir` traf sie nicht mehr.
 ersten neuen Fall um.** Das ist der Grund, warum jede Regel hier eine
 Messung dabeistehen hat — und warum diese hier 100 Stellen zaehlt und
 nicht sechs.
+
+## `même` spanisch: gemessen, geteilt, nicht erzwungen
+
+`même` = *sogar · even · … · perfino* steht spanisch **21× auf `aun`
+und 21× auf `incluso`** — exakter Gleichstand auf identischen Zeilen.
+Ein Kriterium ist nicht zu sehen, und **der Zeuge entscheidet nicht
+mit**: rv1909mod liest an den geprüften Stellen dreimal `aun`, zweimal
+`incluso` und formuliert siebenmal um.
+
+Damit ist es derselbe Fall wie das jussive `que` (58:21 `may` gegen
+`let`): **nicht angeglichen.** Zweiundvierzig Stellen auf eine Muenze
+zu setzen ist kein Ertrag.
+
+**Was aber gilt: innerhalb eines Buches muss es stimmen.** 1. Korinther
+stand 4:2 auf `incluso` und ist auf `incluso` gezogen (2,10 und 15,41,
+dazu 2,10 italienisch `anche` → `perfino`). 14,21 bleibt auf
+`aun`/`neppure` — dort ist der Kontext verneint, und `neppure` heisst
+„nicht einmal".
+
+    Regel:  wo der Bestand ohne Kriterium geteilt ist, entscheidet das
+            BUCH und nicht die Gesamtzahl. Der Leser liest ein Buch,
+            nicht den Bestand.
