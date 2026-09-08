@@ -910,3 +910,28 @@ Nicht zu verwechseln mit `Vers le milieu de la fête` (Jean 7,14) und
 `Vers le milieu de la nuit` (Actes 16,25): dort heisst `milieu` die
 zeitliche Mitte, nicht „mitten unter". Beide stehen zu Recht Wort fuer
 Wort.
+
+## Die Elisionsregel, dritte Richtung: was von AUSSEN verschluckt wird
+
+Zwei Agenten haben unabhaengig denselben neuen Fall gemeldet, und er
+gehoert zur Regel dazu:
+
+- **Actes 28,19 `d’en appeler`** — die Elision zieht das `de` mit hinein,
+  das `forcé de` regiert. Es gehoert nicht zur Wendung, sondern kommt von
+  aussen. Das Mehrwort steht trotzdem; das Token traegt die
+  `en`-Einzelreihe (*darauf · of it · de ello · ne*).
+- **Roemer 2,11 `point d’acception de personnes`** — hier verschluckt die
+  Elision den verneinten Teilungsartikel, der **vor** der Wendung steht.
+  Auch hier steht das Mehrwort; der Einzeleintrag traegt die Verneinung
+  (*kein Ansehen*), das Mehrwort bleibt unverneint wie in Actes 10,34.
+
+Damit sind es drei Faelle, und der Unterschied ist immer derselbe:
+**gehoert das verschluckte Wort zur Wendung oder nicht?**
+
+    verschluckt die Wendung selbst  →  kein Mehrwort  (`faute d’humidité`)
+    verschlucktes Pronomen ist die
+      Ergaenzung der Wendung        →  Mehrwort       (`du milieu d’eux`)
+    verschlucktes Wort kommt von
+      aussen (Rektion, Verneinung)  →  Mehrwort       (`d’en appeler`)
+    verschlucktes Relativpronomen   →  kein Mehrwort, es gehoert HINTER
+                                       die Spanne     (`au milieu desquels`)
