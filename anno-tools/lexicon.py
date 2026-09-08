@@ -244,7 +244,19 @@ def extract(nr, kap, von=None, bis=None):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
-    p.add_argument('buch', type=int)
+    # `lexicon.py tribun` bricht sonst mit „invalid int value" ab und
+    # sieht aus, als sei das Werkzeug kaputt. Es nimmt aber Buch und
+    # Kapitel, nicht ein Lemma — gemeldet vom Agenten fuer Actes 21.
+    def buchnr(x):
+        try:
+            return int(x)
+        except ValueError:
+            raise argparse.ArgumentTypeError(
+                f'{x!r} ist keine Buchnummer. lexicon.py nimmt '
+                '<buch> <kapitel>, kein Lemma — fuer ein Wort nimm '
+                '`belegt.py <wort>` oder `fixgloss.py show <lemma>`.')
+
+    p.add_argument('buch', type=buchnr)
     p.add_argument('kapitel', type=int)
     p.add_argument('von', type=int, nargs='?')
     p.add_argument('bis', type=int, nargs='?')

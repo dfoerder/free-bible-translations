@@ -74,6 +74,13 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   reflexives Lemma nicht tragen, obwohl kein Mehrwort es traegt. Der
   erste Abschnitt (reflexives Lemma existiert schon) ist sicher, der
   zweite am Vers zu pruefen — dort ist `se` oft Objekt, nicht Reflexiv.
+  **Fuer deine eigene Abgabe:**
+
+      python3 reflexiv.py 40 41 42 43 65 --datei $ANNO_OUT/<NR>/ch<KAP>.json --kapitel <KAP>
+
+  Die Buchnummern liefern die vorhandenen `se <lemma>`, die Datei wird
+  dagegen gehalten. Ohne `--datei` sieht das Werkzeug nur den gebauten
+  Bestand und sagt ueber dein Kapitel nichts.
 
 ## Die Regeln dieser Arbeit — alle in `BINDUNGEN_FRA_NT.md`
 

@@ -276,6 +276,9 @@ def main():
         print('!! Ueberschrift als Vers 1 mitzaehlt und die Ausgabe nicht (Ps 9, 15,')
         print('!! 19). Dann fehlt der Vers VORN und der Versatz ist richtig negativ.')
         print('!!')
+        print('!! In den Versbloecken unten traegt die betroffene Zeile ein `!`,')
+        print('!! und die Nachbarzeilen stehen mit `?` daneben — eine davon ist')
+        print('!! meist die richtige. Du musst also nicht hierher zurueckblaettern.')
         print('!! So oder so: NACHMESSEN. Die Kapiteldateien unter bibles/<sprache>/')
         print('!! <edition>/ direkt aufschlagen und Vers fuer Vers vergleichen.')
         print('!! Der Zahl hier nicht glauben — auch der Alternative nicht.\n')
@@ -317,12 +320,22 @@ def main():
                           f'(Vers fehlt oder ist mit dem Nachbarn zusammengezogen)')
                 continue
             unsicher = vs[1] > SCHWACH
-            spanne = args.umgebung or (1 if unsicher else 0)
+            # Der Verdacht auf den besseren Versatz stand bisher NUR im Kopf.
+            # Der Agent fuer Actes 19 hat gemeldet, dass die englische und die
+            # italienische Spalte dort im ganzen Kapitel eine Nummer daneben
+            # stehen (der Zeuge teilt 19,40 in zwei Verse, der Ueberhang haengt
+            # hinten) — und dass eine Warnung, die vierzig Verse weiter oben
+            # steht, beim Arbeiten nicht mehr da ist. Jetzt haengt sie an
+            # JEDER betroffenen Zeile.
+            strittig_hier = len(vs) > 3 and vs[3]
+            spanne = args.umgebung or (1 if (unsicher or strittig_hier) else 0)
             for d in range(-spanne, spanne + 1):
                 n = n0 + d
                 t = okap.get(str(n))
                 if t:
                     marke = ' ?' if d else '  '
+                    if strittig_hier and not d:
+                        marke = ' !'
                     print(f'   {kurz} {n:>3}{marke}{t}')
         print()
 
