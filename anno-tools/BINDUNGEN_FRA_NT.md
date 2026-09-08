@@ -862,3 +862,22 @@ Beide gezogen.
 Zeichenkette ist keine Mehrheit einer Konstruktion.** `folgenreihe` sucht
 Zeichen, nicht Grammatik. Wo eine Folge zwei Konstruktionen mischt, zieht
 ihre Mehrheit in die falsche Richtung.
+
+## Plural-`des` im Skopus einer Verneinung bleibt `einige`
+
+Der Agent fuer Actes 17 hat gefragt, ob `n’habite pas dans **des** temples`
+deutsch wirklich *einigen Tempeln* tragen soll — der Zeuge liest „wohnt
+nicht in Tempeln", ganz ohne Artikel. **Gemessen: der Bestand setzt die
+`einige`-Reihe in 96 verneinten Versen genauso wie in den 260
+unverneinten.** Die Verneinung steht am Verb, nicht am Artikel; das
+franzoesische `des` ist hier der schlichte unbestimmte Plural.
+
+**Nicht zu verwechseln mit `pas de`** — dort ersetzt `de` den Artikel und
+traegt die Verneinung mit, und dort heisst es deutsch `kein` (siehe den
+Abschnitt „Der verneinte Teilungsartikel"). Der Unterschied ist die
+Praeposition davor: `pas de temples` = *keine Tempel*, `pas dans des
+temples` = *nicht in einigen Tempeln*.
+
+Dass Deutsch den Artikel in der laufenden Uebersetzung fallen laesst,
+aendert daran nichts: die Glosse sagt, was das franzoesische Token
+leistet, und das Token ist da.
