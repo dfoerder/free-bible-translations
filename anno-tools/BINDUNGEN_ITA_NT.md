@@ -5340,3 +5340,96 @@ Bestand gezogen; die uebrigen sind die Klassen aus Reihe 63.
     Kapitel war zu finden". Es sagt den Grund inzwischen selbst dazu —
     das ist neu gegenueber Reihe 68.23 und gut so; wer die Warnung
     ueberliest, haelt eine leere Messung fuer eine saubere.
+
+## 149 · Beim Einsammeln von Paket 5 entschieden
+
+`paketcheck.py` Abschnitt A blieb bei sechs Faellen, fuenf davon Flexion
+oder Genus. Gezogen wurde einer: `comprendere` steht in Kapitel 13
+fuenfmal auf de *verstehen*, 15,10 trug *begreift* — Wortwahl, nicht
+Flexion.
+
+### `detto` — 1,22 und 2,15 nachgezogen
+
+Der Agent fuer Matteo 13 hat die Spaltung gemeldet, und die Messung gibt
+ihm recht, aber nur zur Haelfte: von 20 Vorkommen stehen 14 auf der
+Partizipform `detto` und 6 auf `dire`. **Vier der sechs sind richtig** —
+`chi avrà detto` (5,22 zweimal), `avranno detto` (12,36) und `Dio ha
+detto` (15,4) sind Aktivperfekte mit `avere` und gehoeren nach Reihe 5
+auf den Infinitiv. Falsch waren nur **1,22 und 2,15**, beide „quello che
+era stato detto" — Passiv, also Reihe 46, also `detto`.
+
+**Dieselbe Probe an `messo` und `seminato` fiel dagegen sauber aus**,
+obwohl `folgencheck` beide meldet: 1,23 · 4,12 Passiv → `messo`, 14,3
+`aveva … messo` Aktiv → `mettere`; 13,19 Passiv → `seminato`, 13,24 ·
+13,27 · 13,31 Aktiv → `seminare`. Die Meldung ist hier die Regel selbst,
+nicht ihre Verletzung. **Ein Lemma-Unterschied im `folgencheck` ist
+darum nie fuer sich ein Befund** — er verlangt die Probe auf Aktiv
+gegen Passiv.
+
+### Drei `quelli che`-Mehrwoerter entfernt
+
+Der Agent fuer Matteo 14 meldete 8,10 als Ausreisser ohne Eintrag. Die
+Messung ueber alle 34 Vorkommen im Buch dreht den Befund um:
+
+    quello/ciò che  (Neutrum, „das, was")   20 mit Mehrwort ·  0 ohne
+    quelli che      (Personen)               3 mit Mehrwort · 14 ohne
+
+Das Neutrum **braucht** den Eintrag — en *what*, es *lo que*, fr *ce que*
+gehen nicht Wort fuer Wort auf. `quelli che` geht auf
+(*those·who* · *aquellos·que* · *ceux·qui*) und faellt unter Reihe 56/85.
+Nicht 8,10 war der Ausreisser, sondern 2,20 · 12,3 · 12,4; die drei
+Eintraege sind geloescht.
+
+### Der spanische Leismo, dreimal
+
+`lo` fuer das Akkusativ-*ihn* steht 21× auf es `lo` und 3× auf `le`
+(8,5 · 8,31 · 8,34). Beides ist gutes Spanisch — `le` ist in Spanien bei
+maennlichen Personen sogar die haeufigere Form —, aber eine Reihe je
+Klitikon ist die Regel. Die drei stehen jetzt auf `lo`.
+
+### Was `elision.py` uebrig laesst, und warum die Begruendung praeziser wird
+
+Drei Reste, alle begruendet, aber **Reihe 104.25 war zu grob gefasst**.
+Sie sagte: eingeschobenes franzoesisches Subjektpronomen → Treffer
+falsch. Der Agent fuer Matteo 13 hat drei `che`-Treffer (13,12 · 13,44 ·
+13,46) trotzdem gesetzt, weil das eingeschobene Wort dort *il* ist —
+„ce **qu'il** a" elidiert sehr wohl. **Entscheidend ist der Anlaut des
+eingeschobenen Wortes, nicht die Tatsache der Einschiebung.** Die drei
+stehenden Reste (10,27 · 11,4 vor *entendez* mit eingeschobenem *vous*,
+15,5 `Ce` vor dem *dont* eines Mehrworts) erfuellen das Kriterium.
+
+## 150 · `belegt.py` suchte den Stamm auf Deutsch
+
+Der zweite Fehler derselben Familie wie Reihe 118, gefunden vom Agenten
+fuer Matteo 15: `belegt.py spezzò` meldete „im Bestand NICHT belegt",
+waehrend `hints.py` das Lemma `spezzare` mit B2 fuehrte.
+
+Die Stammsuche loeste Umlaute auf, schnitt das Partizip-`ge` ab und
+kannte `-ung`, `-ende`, `-sten`, `-est`. Fuer Italienisch traf davon
+nichts: `spezzò` blieb `spezzò`, `spezzare` wurde zu `spezzar`, und die
+beiden fanden nicht zueinander. **Dieselbe stille Null wie bei `qa`,
+`hints`, `glosskollision`, `hilfsverb` und `kongruenz`** — der sechste
+Fall dieser Klasse in dieser Werkzeugkette.
+
+Jede der fuenf Sprachen hat jetzt ihre eigene Endungsliste. `spezzò`
+findet `spezzare`, `rendono` findet `rendere`; die deutschen und
+franzoesischen Faelle, fuer die die Funktion gebaut wurde (`gehackt` →
+`hacken`, `saure` → `sauer`, `priaient` → `prier`), sind gegengeprueft.
+
+**`belegt.py` deckt Formen, `levelcheck.py` deckt Lemmata** — der Agent
+fuer Matteo 13 hat fuenf Level nur ueber `levelcheck` bekommen, weil die
+Formen im Bestand unter einer anderen Flexion stehen. Beide Laeufe sind
+noetig, und `levelcheck` gehoert nach dem Bauen wiederholt.
+
+## 151 · `fixgloss.py verse` gehoert in den Baustein
+
+Der Agent fuer Matteo 14 hat zwei Mehrwoerter gebaut und wieder
+eingespart, weil er 2,16 ganz angesehen hat: `mandò a uccidere` traegt
+dort **kein** Mehrwort. `folgenreihe.py` zeigt Wort-fuer-Wort-Reihe und
+Mehrwoerter getrennt — wer die beiden Zahlen nicht gegeneinanderhaelt,
+sieht die Luecke nicht. Nur `fixgloss.py verse` zeigt den Vers mit
+seinen Spannen. Der Baustein fuehrt es jetzt, mit der Anweisung, vor
+jeder Mehrwortentscheidung den Vergleichsvers so anzusehen.
+
+Dazu bleibt Reihe 89 auf die Idiomwendung `mandare a dire` beschraenkt:
+`mandare a` + Infinitiv ist kausativ und geht wortweise.
