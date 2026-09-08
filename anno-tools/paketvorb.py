@@ -51,7 +51,14 @@ def folgen(nr, minlen=4, ab=2):
 
 def _reihe(phr):
     """Die gemessenen Glossenreihen einer Folge im fertigen Bestand."""
-    _w, voll, orte, unvoll, mehrwort = F.stellen(phr)
+    # `*_` faengt ab, was `folgenreihe.stellen()` spaeter noch
+    # zurueckgibt. Die Grossschreibungswarnung hat dort ein sechstes
+    # Feld angehaengt, und dieser Aufruf ist mit einem ValueError
+    # gestorben — die Bindungsdateien des laufenden Pakets enthielten
+    # danach einen Traceback statt eines Berichts. Gefunden vom
+    # Agenten fuer 1. Korinther 16, der sich mit einem Shim beholfen
+    # hat, statt anno-tools anzufassen.
+    _w, voll, orte, unvoll, mehrwort, *_ = F.stellen(phr)
     return voll, orte, unvoll, mehrwort
 
 
