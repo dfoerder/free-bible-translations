@@ -1015,3 +1015,56 @@ im Franzoesischen trifft das jedes vierte Nomen. Gefunden vom Agenten
 fuer Roemer 8, dem es beinahe ein falsches Level gekostet haette
 (`affection` B2 statt B1; `levelcheck` fing es). Gesucht wird jetzt in
 beiden Eimern; `d’abord` behaelt seinen eigenen.
+
+## Der erste Durchgang von `mehrwoerter.py` ueber alle 145 Kapitel
+
+233 Treffer, geballt auf gut dreissig Signaturen. **Der weitaus groesste
+Teil war kein Fehler, sondern ein Kriterium**, das der Bestand richtig
+anwendet und das hier stehen soll, damit es niemand noch einmal
+herleitet:
+
+    à pied / aux pieds   dieselbe Signatur, zwei Wendungen: `à pied`
+                         (zu Fuss, 3× Mehrwort) gegen `aux pieds`
+                         (zu Fuessen, 14× woertlich). Kein Fall.
+    de quoi              Idiom vor Infinitiv (`n’ayant pas de quoi
+                         payer`) = Mehrwort; Fragewort (`de quoi
+                         discutez-vous`) = woertlich.
+    alors que            temporale Konjunktion (`Alors qu’il passait`)
+                         = Mehrwort; `alors` + jussives `que` (`alors
+                         que ceux de Judée fuient`) und die Spaltform
+                         (`c’est alors que`) = woertlich.
+    d’en haut            = Mehrwort (von oben); `du haut de` = woertlich.
+    faire lever          Sonne und Teig gehen auf = Mehrwort; einen
+                         Menschen aufrichten = woertlich.
+    en bas               ortsfest (`en bas sur la terre`) = Mehrwort,
+                         weil das Deutsche fuer `en` kein Wort hat;
+                         gerichtet (`jette-toi en bas`) teilt sich
+                         sauber in *nach · unten*. Ebenso `en haut`.
+    en tout              vor einer ZAHL (`en tout douze hommes`) =
+                         Mehrwort *insgesamt*; `en toute humilité` ist
+                         etwas anderes.
+    un autre             pronominal = Mehrwort, vor folgendem Nomen
+                         nicht (`une autre loi`).
+    bien des             = viele; `bien de` in `il n’est pas bien de`
+                         ist woertlich.
+
+**Sieben echte Uneinheitlichkeiten, alle angeglichen:**
+
+    Mt 21,30    `la même chose`  stand woertlich (*gleiche Ding*),
+                waehrend Mt 26,35 und Mc 14,31 dieselbe Form als
+                Mehrwort *dasselbe* fuehren.
+    Mt 23,30    `du temps de`    dieselbe Form und dieselbe Glosse wie
+    Mc 2,26                      die vier Mehrwortstellen.
+    Mc 1,26     `pousser un cri` vier Stellen woertlich gegen zwei als
+    Mc 5,38                      Mehrwort. **Der Zeuge entscheidet**:
+    Ac 7,57                      l1912mod liest an allen sechs ein
+    Ac 8,7                       einziges Verb (*schrie laut auf*,
+                                 *schrien*), riv ebenso (*gridando*,
+                                 *urlava*). Das Idiom ist ueberall da.
+
+**Offen gelassen:** `se trouver`. Mt 12,10 · Mc 3,1 · Lc 6,6 fuehren
+`s’y trouvait` als Mehrwort, Mt 10,11 dieselbe Form nicht. Beide
+Zeugen umschreiben an beiden Stellen (*Dort war ein Mann*, *wer dort
+es wert ist*) und entscheiden also nichts; die Konstruktionen sind
+zudem nicht ganz dieselbe (Existenzsatz gegen eingebetteten
+Fragesatz). Hier ist die Uneinheitlichkeit der Befund.
