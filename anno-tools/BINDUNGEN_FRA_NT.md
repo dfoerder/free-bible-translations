@@ -949,6 +949,9 @@ Damit sind es drei Faelle, und der Unterschied ist immer derselbe:
 **gehoert das verschluckte Wort zur Wendung oder nicht?**
 
     verschluckt die Wendung selbst  →  kein Mehrwort  (`faute d’humidité`)
+                                   ABER NUR, wenn danach WENIGER ALS
+                                   ZWEI freie Token uebrig sind — siehe
+                                   den Abschnitt unten
     verschlucktes Pronomen ist die
       Ergaenzung der Wendung        →  Mehrwort       (`du milieu d’eux`)
     verschlucktes Wort kommt von
@@ -1144,3 +1147,38 @@ hatte fuer `L’aîné` keine „verwandt"-Zeile. Das ist kein Fehler von
 von `fravorb.py`, und die Elisionskorrektur kam nach ihrer Erzeugung.
 Wo eine Promptdatei und ein Live-Aufruf sich widersprechen, hat der
 Live-Aufruf recht.
+
+## Die Elisionsregel, Zeile 1, praezisiert: es zaehlt, was FREI uebrig bleibt
+
+Zeile 1 der Tabelle („verschluckt die Wendung selbst → kein Mehrwort")
+war zu grob und hat gerade einen Fehler erzeugt. Der Agent fuer
+Roemer 10 hat sich auf sie berufen und `au sujet d’Israël` (10,21) ohne
+Mehrwort gelassen; `konvention.py` hat es gemeldet, und **das Werkzeug
+hatte recht**. Gemessen ueber den ganzen Bestand:
+
+    Mt 5,32    [pour cause de]  «pour cause»  + `d’infidélité`
+    Mt 14,3    [à cause de]     «à cause»     + `d’Hérodias`
+    Mc 6,17    [à cause de]     «à cause»     + `d’Hérodias`
+    Lc 3,19    [au sujet de]    «au sujet»    + `d’Hérodias`
+    Rm 9,27    [au sujet de]    «au sujet»    + `d’Israël`
+    Rm 11,20   [pour cause de]  «pour cause»  + `d’incrédulité`
+
+**Sechs von sechs setzen das Mehrwort und kuerzen den Span** auf die
+freien Token. Roemer 10,21 war die einzige Ausnahme im ganzen Bestand
+und ist nachgezogen.
+
+Der Unterschied zu `faute d’humidité` ist nicht die Elision, sondern
+die **Zahl der freien Token**: `faute de` hat zwei Token, eines davon
+wird verschluckt, und ein einziges Token traegt kein Mehrwort. `à cause
+de` und `au sujet de` haben drei, davon bleiben zwei frei — und zwei
+Token sind eine Spanne.
+
+    Regel:  Wendung verschluckt ihr eigenes letztes Wort
+              → Mehrwort ueber die FREIEN Token, wenn es mindestens
+                zwei sind; sonst gar keines.
+
+Gefunden hat die Spanne der Agent fuer Roemer 11 am Beleg Mt 5,32, und
+er hat ausdruecklich darum gebeten, sie hier festzuhalten. Beide
+Agenten haben dieselbe Konstruktion im selben Paket entgegengesetzt
+entschieden — das ist der Beweis, dass die Regel fehlte und nicht nur
+missverstanden wurde.
