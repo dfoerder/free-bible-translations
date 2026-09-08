@@ -35,10 +35,16 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   `selfcheck` dreihundert Scheinbefunde `Dieu, != Dieu`. Bei Mehrwoertern
   wird die Oberflaeche aus den **Einzeleintraegen** gebaut, nie aus dem
   Quelltext. `parts` nur bei getrennten Positionen, sonst `pos_end`.
-- **Der Bestand fuehrt durchgehend das typographische `’`.**
+- **Der Bestand fuehrt durchgehend das typographische `’`** — und ebenso die
+  **Ligatur `œ`**: `belegt.py oeuvres` meldet „NICHT belegt" und schlaegt
+  `odeur` vor, `belegt.py œuvres` findet alles. Dieselbe stille Falle, ein
+  anderes Zeichen.
   `belegt.py "d'eux"` findet nichts, `belegt.py "d’eux"` alles.
   `belegt.py` normalisiert, `folgenreihe.py` nicht — dort liefert ein
   gerades Apostroph stumm 0.
+- **Feste Woerterbuchformen mit Elision tragen die Elision im Lemma:**
+  `d’abord` (27 Belege) ist das Lemma, nicht `abord`; ebenso `jusqu’à`.
+  Die Regel „der Kopf ist das Inhaltswort" fuehrt dort in die Irre.
 - **`hints_*.md` gibt Zeugen-Level, keine Bestands-Level.** Nur
   `belegt.py <wort>` traegt. `levelcheck` hat bei jedem der letzten
   Agenten Level korrigiert, die aus den Zeugen geerbt waren.
