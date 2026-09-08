@@ -120,12 +120,18 @@ Wort. Lies den Vers.
 
 ## Der Bestand traegt jetzt
 
-Judas und Matthaeus stehen fertig annotiert — 22 500 Tokens. Der Satz,
+**Der eigene Bestand ist die erste Quelle, nicht die zweite.** Der Satz,
 der hier bis Markus stand („beim ersten Buch ist die franzoesische Anno
-noch leer, `lexicon.py` und `parallelen.py` antworten leer"), stimmt
-nicht mehr; der Agent fuer Marc 3 hat ihn zu Recht widersprochen.
-Umgekehrt gilt: **der eigene Bestand ist die erste Quelle, nicht die
-zweite.**
+noch leer, `lexicon.py` und `parallelen.py` antworten leer"), gilt nur
+noch fuer das allererste Buch einer Ausgabe; der Agent fuer Marc 3 hat
+ihm zu Recht widersprochen.
+
+**Wieviel schon steht, sagt dir kein Satz in dieser Datei, sondern der
+Lauf selbst:** jedes Werkzeug druckt den Bestandsstand in seine
+Kopfzeile (`Bestand: <ausgabe> · <commit> <datum>`), und
+`validate.py alle` zaehlt Buch fuer Buch auf. Eine Zahl, die hier
+eingetragen waere, altert mit dem naechsten Paket — der Agent fuer
+1. Korinther 6 hat genau die alte hier gefunden und gemeldet.
 
 - **`parallelen_<nr>_<kap>.md`** liegt in deiner Vorbereitung und zeigt,
   wo derselbe Wortlaut schon annotiert steht. Das ist die staerkste
