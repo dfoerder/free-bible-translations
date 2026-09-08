@@ -341,6 +341,24 @@ So stehen im Bestand **55 Stellen**: `se prosterner`, `se rendre`,
 tragen ihr reflexives Lemma auf dem Verbtoken, waehrend `se` daneben
 seine eigene Glosse behaelt.
 
+**Nachgemessen mit `reflexiv.py` (neu).** Die zweite Haelfte der Regel war
+an **69 Stellen** verletzt: Verbtoken mit `se` davor, kein Mehrwort
+darueber, und trotzdem das schlichte Lemma — obwohl derselbe Verbstamm
+anderswo im Bestand unter `se <lemma>` steht. Alle 69 gezogen, am
+haeufigsten `se trouver` (21), `se retirer` (14), `se mettre` (6),
+`se demander` (6).
+
+**Und eine Warnung aus eigenem Schaden.** Ich habe die Probe zuerst
+**ohne den Mehrwortfilter** gefahren und daraufhin Mt 17,14, Marc 4,37
+und Marc 10,17 „korrigiert" — also genau die drei Stellen, die dieser
+Abschnitt oben als richtig auffuehrt. Zurueckgenommen. Wer diese Regel
+misst, **muss** die Positionen unter einem Mehrwort ausschliessen, sonst
+meldet die Probe ihre eigenen Musterbeispiele als Fehler. `reflexiv.py`
+tut das und trennt ausserdem die sicheren Faelle (reflexives Lemma
+existiert schon) von den 95, die am Vers zu pruefen sind — dort ist `se`
+oft gar nicht reflexiv, sondern Objekt (`ils se disaient` = sagten
+zueinander).
+
 ## `pouvoir` und `autorité`
 
 Beide uebersetzen dasselbe griechische Wort, und der englische Zeuge
