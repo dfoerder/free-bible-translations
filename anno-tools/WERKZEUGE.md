@@ -186,3 +186,39 @@ jedesmal ein zweites, gleichlautendes Token mitgetroffen (`que` in 1,22,
 **`bindungen.py`** — Erzeugt die Bindungsliste für das Alte Testament aus dem Bestand.
     bindungen.py [-o BINDUNGEN_AT.md] [--min 8]
 
+
+## Welche Werkzeuge aneinander haengen
+
+In der Nacht auf den 09.09. sind zwei Werkzeuge an Aenderungen
+kaputtgegangen, die einem dritten galten: `reflexiv.py` an einem
+vergessenen Import, `paketvorb.py` an einem zusaetzlichen
+Rueckgabewert von `folgenreihe.stellen()`. Vier Agenten haben
+deshalb ohne ihre Bindungsdatei gearbeitet.
+
+Die Regel „Werkzeuge nicht anfassen, waehrend Agenten laufen" steht in
+BINDUNGEN. Hier steht, **welche** Datei wie weit reicht:
+
+    hints.py        ← ausreisser · crosscheck · konsistenz · kreuz
+                      mehrwort · paketcheck · unterwendung · vorab
+                      zweigleisig                        (NEUN Werkzeuge)
+    qa.py           ← mehrwort · zweigleisig
+    validate.py     ← buildbook · selfcheck
+    buildbook.py    ← remap
+    folgenreihe.py  ← paketvorb
+    wiederholungen  ← paketvorb
+    annovorb.py     ← fravorb · itavorb
+    common.py       ← alle
+
+**`hints.py` und `common.py` sind die beiden Dateien, an denen nichts
+beilaeufig geaendert wird.** Wer ihre Signatur anfasst, faellt neun
+bzw. allen Werkzeugen in den Ruecken — und der Ausfall zeigt sich
+nicht im geaenderten Werkzeug, sondern anderswo, oft erst in einer
+Vorbereitungsdatei, die niemand mehr liest.
+
+Wer eine Rueckgabe erweitert, packt beim Aufrufer mit `*_` aus:
+
+    _w, voll, orte, unvoll, mehrwort, *_ = F.stellen(phr)
+
+Dann kostet das naechste Feld keinen Lauf. `paketvorb.py` ist die
+einzige Stelle im Baum, die eine fremde Rueckgabe fest auspackte;
+sie ist umgestellt.
