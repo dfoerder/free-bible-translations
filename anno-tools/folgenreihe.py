@@ -32,12 +32,36 @@ import sys, collections
 import common as C
 
 
+def _apo(x):
+    """Beide Apostrophe auf EINE Form — den geraden.
+
+    Diese Funktion normalisierte urspruenglich auf den TYPOGRAFISCHEN
+    Apostroph, weil `lsg1910mod` ihn schreibt. `riv1927mod` schreibt den
+    geraden, und damit lief die Normalisierung im Italienischen in die
+    falsche Richtung: `folgenreihe.py "il Figlio dell'uomo"` meldete
+    **0 Vorkommen**, von Hand sind es NEUN mit einstimmiger Reihe. Und
+    weil nur die Anfrage normalisiert wurde, fand auch die typografische
+    Eingabe nichts — beide Schreibungen fielen aus.
+
+    Das trifft alle 2117 elidierten Tokens des italienischen NT in 580
+    Formen, und es trifft das Werkzeug, mit dem die Agenten
+    Zeichengleichheit messen: wer hier eine Null liest, praegt eine Reihe
+    neu, die einstimmig dasteht. Gemeldet vom Agenten fuer Matteo 16 —
+    derselbe Fehler wie in `belegt.py` (Reihe 118), an der dritten
+    Stelle.
+
+    Deshalb wird jetzt auf **beiden** Seiten normalisiert: Anfrage,
+    Quelltext und Mehrwortlemma.
+    """
+    return (x or '').replace('\u2019', "'")
+
+
 def stellen(phr, bis=None):
     # Der gerade Apostroph muss treffen wie der typografische: die
     # Vorbereitungsdateien und jede von Hand getippte Folge benutzen ihn.
     # Vorher fand `n'est pas` nichts und `n’est pas` alles — der Agent
     # fuer Matthaeus 18 hat einen Durchgang daran verloren.
-    phr = phr.replace("'", '\u2019')
+    phr = _apo(phr)
     # Die Randzeichen kommen aus `common.PUNCT`, nicht aus einer eigenen
     # Liste. Die eigene fuehrte `.,;:!?„“"` und kannte weder die
     # franzoesischen noch die italienischen Anfuehrungszeichen: eine
@@ -51,8 +75,8 @@ def stellen(phr, bis=None):
     # (`C est pourquoi`), der Quelltext hat ein Token (`C’est`). Ohne
     # diese Zeile meldet das Werkzeug „unbelegt", wo der Bestand
     # einstimmig ist.
-    if not any('\u2019' in x for x in w):
-        w = C.elision_zurueck(w)
+    if not any("'" in x for x in w):
+        w = [_apo(x) for x in C.elision_zurueck(w)]
     wk = [x.lower() for x in w]
     voll = collections.Counter()
     orte = collections.defaultdict(list)
@@ -69,9 +93,9 @@ def stellen(phr, bis=None):
             if k not in anno:
                 continue
             for v, t in vv.items():
-                if v not in anno[k] or wk[0] not in t.lower():
+                if v not in anno[k] or wk[0] not in _apo(t).lower():
                     continue
-                toks = [C.strip_punct(x) for x in t.split()]
+                toks = [_apo(C.strip_punct(x)) for x in t.split()]
                 E = {e['pos']: e for e in anno[k][v]
                      if 'pos_end' not in e and 'parts' not in e}
                 for i in range(len(toks) - len(w) + 1):
@@ -133,10 +157,10 @@ def als_lemma(phr):
     dafuer 0 Vorkommen. Der Agent fuer Marc 3 hat es bemerkt — wer nur
     diese Null liest, erfindet ein vorhandenes Mehrwort neu.
     """
-    phr = phr.replace("'", '\u2019').strip('.,;:!?„“"')
+    phr = C.strip_punct(_apo(phr))
     treffer = collections.defaultdict(list)
     for nr, k, v, e in C.iter_corpus():
-        if not C.is_multi(e) or e.get('lemma', '') != phr:
+        if not C.is_multi(e) or _apo(e.get('lemma', '')) != phr:
             continue
         treffer[(e.get('level', '?'),) + C.reihe(e)].append(
             f'{C.book_name(nr)} {k},{v}')

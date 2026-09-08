@@ -251,7 +251,22 @@ def main():
                         continue
                     ges = sum(c.values())
                     haupt, anz = c.most_common(1)[0]
-                    if ges >= 5 and anz / ges >= 0.8 and tab[a] != haupt:
+                    # Zwei Schwellen. Die prozentuale (>=5 Belege, >=80 %)
+                    # ist die alte. Die absolute kam dazu, weil `alimento`
+                    # sie um EINEN Prozentpunkt verfehlt hat: 11 richtige
+                    # `el` gegen 3 falsche `la` sind 79 %, und die drei
+                    # Fehler standen jahrelang da (Actes 9,19 · 27,33 ·
+                    # 27,34, gefunden vom Agenten fuer 1. Korinther 3).
+                    #
+                    # Eine grosse Stichprobe mit einer HANDVOLL Ausreisser
+                    # ist der typische Fehlerfall; eine kleine Stichprobe
+                    # mit vielen ist echte Uneinigkeit. Die zweite Schwelle
+                    # trennt genau danach. Ueber den ganzen Bestand gemessen
+                    # bringt sie null zusaetzliche Meldungen — sie faengt
+                    # den naechsten Fall, nicht heutiges Rauschen.
+                    stark = ges >= 5 and anz / ges >= 0.8
+                    knapp = ges >= 10 and ges - anz <= 3
+                    if (stark or knapp) and tab[a] != haupt:
                         treffer.append((int(k), int(v), sp, e['form'],
                                         e[sp], nx['form'], nx[sp],
                                         haupt, anz, ges))

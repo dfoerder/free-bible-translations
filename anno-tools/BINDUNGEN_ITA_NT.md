@@ -5433,3 +5433,269 @@ jeder Mehrwortentscheidung den Vergleichsvers so anzusehen.
 
 Dazu bleibt Reihe 89 auf die Idiomwendung `mandare a dire` beschraenkt:
 `mandare a` + Infinitiv ist kausativ und geht wortweise.
+
+---
+
+# Matteo 16
+
+*Angehaengt aus Matteo 16 (Paket 16·17·18). Naechste freie Nummer war 152;
+Kapitel 17 und 18 haengen parallel an, der Koordinator nummeriert durch.*
+
+## 152 · `il Figlio dell'uomo` — die Reihe steht, aber kein Werkzeug zeigt sie
+
+Die Wendung steht im Buch neunmal, und sie ist **einstimmig**. Gemessen
+ueber alle annotierten Buecher (8,20 · 9,6 · 10,23 · 11,19 · 12,8 ·
+12,40 · 13,37 nominativ, 12,32 und 13,41 abweichend im Artikel):
+
+    il          `il`     A1  der · the · el · le
+    Figlio      `figlio` A1  Sohn · Son · Hijo · Fils
+    dell'uomo   `uomo`   A1  des Menschen · of Man · del Hombre · de l'homme
+
+Matteo 16 traegt sie dreimal: 16,13 (Praedikatsnomen zu `sia`, `il`
+de *der*), 16,27 (Subjekt, `il` de *der*) und 16,28 (Objekt von
+`visto` — `il` de *den* · es *al*, das Personal-a nach Reihe 85, wie
+`il bambino` 2,13). **Kein Mehrwort** — `fixgloss.py verse 40 12 8`
+zeigt die drei Tokens einzeln, und es bleibt dabei.
+
+**Der Weg dorthin ist ein Werkzeugbefund, siehe Reihe 155:**
+`folgenreihe.py "il Figlio dell'uomo"` meldet **0 Vorkommen**.
+
+## 153 · Mehrwoerter, die Matteo 16 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 ·
+77 · 89 · 99 · 106 · 119 · 132.
+
+    16,1   mettere alla prova  B2  ihn auf die Probe zu stellen ·
+                                   to test him · ponerlo a prueba ·
+                                   le mettre à l'épreuve      (`metterlo alla prova`)
+    16,5   dimenticarsi        B1  hatten vergessen · had forgotten ·
+                                   se habían olvidado · avaient oublié
+    16,11  come mai            B1  Wie kommt es · How is it ·
+                                   Cómo es que · Comment se fait-il
+    16,21  da parte di         B2  von seiten der · from the ·
+                                   de parte de los · de la part des
+    16,22  Dio non voglia      B2  Gott bewahre · God forbid ·
+                                   Dios no lo quiera · À Dieu ne plaise
+    16,23  essere di ostacolo  B2  bist ein Hindernis · are a hindrance ·
+                                   eres un obstáculo · es un obstacle
+    16,24  dietro a            A2  hinter · after · tras · après
+
+**Jedes dieser sieben scheitert in mindestens einer Zielsprache am
+Wort-fuer-Wort** (Reihe 89: eine Sprache genuegt) — das ist die Probe,
+die Reihe 56 · 85 verlangen:
+
+- `mettere alla prova`: „ihn zu stellen … auf die Probe" haengt im
+  Deutschen auseinander; im Spanischen faellt der Artikel ganz weg
+  (*poner a prueba*), im Franzoesischen steht er (*à l'épreuve*).
+  Bauform wie `far morire` (2,13): das Klitikon steckt in den Glossen
+  des Mehrworts, das Lemma bleibt ohne.
+- `come mai`: englisch gibt es kein „How ever".
+- `da parte di`: englisch „from part of the elders" ist keins.
+  Die verschmolzene Praeposition `degli` steht **im** Span; das Mehrwort
+  traegt darum den Artikel mit (Muster `per mezzo di`, 1,22).
+- `Dio non voglia`: englisch „God not want" ist keins; die Wendung ist
+  ein festes Stossgebet. Ganzsatz-Lemma wie `il Signore ti sgridi`
+  (Giuda 1,9).
+- `essere di ostacolo`: englisch „you are of hindrance to me" ist keins.
+  Muster `essere in lutto` (9,15). `di` traegt fr `d'` (Reihe 38).
+- `dietro a`: englisch „come after to me" ist keins. Muster `davanti a`
+  (2,9) — das blosse `a` bekommt die Rollenfuellung `her · to · de · à`,
+  wie `intorno a` (8,18) sein *herum*.
+- `dimenticarsi`: pronominales Perfekt nach Reihe 6, Span vom Klitikon
+  bis zum Partizip; `erano` behaelt nach Reihe 32 die Kopula-Glosse
+  (de *waren* · en *were* · es *eran* · fr *étaient*).
+
+**Uebernommen aus dem Bestand** (14, mit `sweeplemma.py` gemessen):
+`avvicinarsi` (16,1), `farsi sera` (16,2), `se non` (16,4),
+`andarsene` (16,4), `gente di poca fede` (16,8), `ricordarsi` (16,9),
+`capo sacerdote` (16,21), `in disparte` (16,22), `non mai` (16,22),
+`andare via` (16,23), `voltarsi` (16,23), `sé stesso` (16,24),
+`per causa di` (16,25), `che cosa` (16,26), `tutto ciò che` (16,19,
+zweimal), `finché non` (16,28).
+
+## 154 · `avrai legato` gegen `sarà legato` — der Aktiv/Passiv-Split in einem Vers
+
+16,19 stellt die Zweiteilung aus Reihe 5 · 46 · 149 zweimal
+unmittelbar nebeneinander, und **das ist der Vers, an dem sichtbar
+wird, dass die identische Glosse dort richtig ist**:
+
+    16,19,13  avrai legato   → `legare`     B2  gebunden · bound · atado · lié
+    16,19,17  sarà legato    → `legato`     B2  gebunden · bound · atado · lié
+    16,19,25  avrai sciolto  → `sciogliere` B2  gelöst · released · desatado · délié
+    16,19,29  sarà sciolto   → `sciolto`    B2  gelöst · released · desatado · délié
+
+`glosskollision.py` meldet beide Paare als „4 von 4 — alle vier".
+**Sie bleiben stehen.** Es ist dieselbe Partizipform in derselben
+Bedeutung; was auseinandergeht, ist allein die Konstruktion, und die
+tragen `avrai` (de *wirst haben*) und `sarà` (de *wird*) schon. Eine
+kuenstliche Unterscheidung der Partizipglossen wuerde dem Lernenden
+einen Bedeutungsunterschied vorspiegeln, den der Vers nicht hat.
+
+Ebenso 16,21 `essere ucciso` → `ucciso` B1 (Passiv, Reihe 5) gegen
+`uccidere` B1 im Bestand (2,16 · 17,23, aktiv). `sweeplemma.py` meldet
+das neue Lemma; die Level sind gleich, ein Klammerzusatz nach Reihe 15
+ist darum nicht noetig.
+
+## 155 · `folgenreihe.py` findet keine einzige elidierte italienische Form
+
+**Der dritte Fehler der Apostroph-Familie** (nach Reihe 118 in
+`belegt.py` und Reihe 150 bei der Stammsuche), und der bisher
+folgenreichste, weil er die einzige Ansicht betrifft, die eine
+Wort-fuer-Wort-Reihe ueber das ganze Buch messen kann.
+
+`folgenreihe.py "il Figlio dell'uomo"` meldet:
+
+    0 vollstaendig glossierte Vorkommen, 0 verschiedene Reihen
+      Auch nicht als Lemma eines Mehrworts im Bestand.
+
+Von Hand nachgezaehlt sind es **9 Vorkommen mit einer einstimmigen
+Reihe** (8,20 · 9,6 · 10,23 · 11,19 · 12,8 · 12,40 · 13,37, dazu 12,32
+und 13,41 mit anderem Artikel). Die Ursache steht in `folgenreihe.py`
+in `stellen()`:
+
+    phr = phr.replace("'", '’')
+
+Die Zeile wurde fuer den **franzoesischen** Quelltext eingebaut —
+`lsg1910mod` schreibt `n’est`. Der italienische Quelltext
+`riv1927mod` schreibt den **geraden** Apostroph (`"dell'uomo"`,
+gepruefte Rohform aus `load_anno(40)`). Die Normalisierung laeuft also
+in die falsche Richtung: `dell'uomo` wird zu `dell’uomo` und findet
+nichts, und `dell’uomo` als Eingabe findet ebenfalls nichts. **Beide
+Schreibungen fallen aus.** Betroffen sind im NT alle 2 117 elidierten
+Tokens in 580 Formen — jede Folge, die eine davon enthaelt.
+
+`fixgloss.py verse` und `fixgloss.py show` sind nicht betroffen; sie
+haben die Reihe gezeigt. Der Umweg war: `fixgloss.py verse` an einer
+Belegstelle plus ein eigenes Skript, das die Reihe ueber alle Buecher
+zaehlt (in `work/16/`).
+
+**Die stille Null ist der siebte Fall dieser Klasse** in dieser
+Werkzeugkette. Vorschlag: statt einer Richtungsnormalisierung beide
+Apostrophe auf eine gemeinsame Form abbilden (`.replace("’", "'")`
+auf **Eingabe und Quelltext**), dann ist die Sprache gleichgueltig.
+
+## 156 · Was Matteo 16 gegen den Bestand stehen laesst — begruendet
+
+- **`Vattene` traegt hier nicht „Geh weg".** 4,10 setzt `Vattene` →
+  `andare` A1 de *Geh weg* · en *Go away* · es *Vete* · fr *Va-t'en*.
+  In 16,23 steht `via` daneben (`Vattene via da me`), und das „weg"
+  gehoert dorthin: `Vattene` de *Geh* · en *Go*, `via` de *weg* ·
+  en *away* · es *lejos* · fr *loin*. Das es *lejos* (nicht *fuera*)
+  ist die Reihe von 5,29 · 5,30, wo `via` ebenfalls vor `da` steht.
+  Darueber liegt das Bestandsmehrwort `andare via` A2 (9,27).
+- **`in disparte` traegt hier *beiseite · aside*.** 14,13 · 14,23
+  (`ritirarsi in disparte`) stehen auf *abseits · apart*. In 16,22 ist
+  das Verb `prendere`, und die Wendung ist „beiseite nehmen /
+  take aside"; „took him apart" ist kein Englisch. Zwei Reihen fuer ein
+  Mehrwortlemma, wie der Bestand sie auch sonst fuehrt.
+- **`farsi sera` traegt hier die finite Gegenwart.** 14,15 · 14,23
+  (`Facendosi sera`) stehen auf *Als es Abend wurde*. 16,2 lautet
+  `Quando si fa sera`; `Quando` traegt das „Wenn" schon, also
+  *es Abend wird · evening comes · atardece · le soir vient*.
+- **`gente di poca fede` steht gross.** 6,30 · 8,26 stehen mitten im
+  Satz, 16,8 eroeffnet die direkte Rede.
+- **`pietra` ist hier *Felsen · rock · roca*.** Der Bestand fuehrt
+  `pietra` A2 als *Stein · stone · piedra* (4,3 · 4,6). In 16,18 ist es
+  der Fels, auf dem gebaut wird. **Die franzoesische Spalte bleibt
+  *pierre*** — das Wortspiel des Verses. `Pietro` / `pietra` trennen
+  sich franzoesisch nur durch die Grossschreibung und sind darum nach
+  dem Baustein **keine** Kollision; nicht aufloesen.
+- **`la propria vita` traegt das Possessiv auf dem Artikel.**
+  10,39 hat `la sua vita` (`la` de *das*, `sua` de *sein*). 16,25 · 16,26
+  haben `la propria vita/anima` ohne Possessivpronomen: dort steht
+  `la` → de *sein* · en *his* · es *su* · fr *sa* und `propria` →
+  `proprio` A2 de *eigenes* · en *own* · es *propia* · fr *propre*.
+  Sonst stuende „the own life" / „la propre vie", was keine der beiden
+  Sprachen kennt. `folgencheck` meldet die Abweichung zu 10,39 zu Recht.
+- **`terzo` ist A2, nicht A1.** Die Ordinalzahlen des Bestands stehen
+  auf A2 (`primo`, `ultimo` 5,26, `settimo` — je A2), und Matteo 17,23
+  hatte A2 schon gesetzt. `paketcheck.py` Abschnitt C hat es gefunden.
+- **`da parte di` ist B2, nicht B1.** Erste Wahl war B1 (Klasse
+  `a causa di` · `per mezzo di`); Matteo 17,12 hatte B2 gesetzt, und ein
+  Lemma traegt ein Level. Auf B2 gezogen.
+
+## 157 · Stehengelassene Kollisionen in Matteo 16
+
+`glosskollision.py --datei 40 16` endet auf **5 inhaltliche Paare
+(davon 2 in nur einer Sprache) und 10 aus geschlossenen Wortarten**.
+Keins ist aufzuloesen:
+
+- **16,18 `Pietro` / `pietra`** fr *Pierre* / *pierre* — trennt sich nur
+  durch die Grossschreibung, nach dem Baustein keine Kollision, und der
+  Vers lebt davon.
+- **16,19 `legato` / `legato` und `sciolto` / `sciolto`** — Reihe 154.
+- **16,24 `me` / `mi`** de *mir* — tonisches und klitisches Pronomen
+  fallen im Deutschen zusammen (`dietro a me` / `mi segua`). Englisch
+  ist getrennt (*me* / *to me*). Im Nachbarvers 16,23 liess sich
+  dasselbe Paar aufloesen, weil `mi sei di ostacolo` „fuer mich /
+  pour moi" zulaesst; „folge fuer mich" gibt es nicht.
+- **16,1 `gli` / `lui`** en *him* · fr *lui* — `a lui` (tonisch, nach
+  `avvicinarsi`) und `gli` (klitischer Dativ nach `chiedere`) meinen
+  denselben Referenten, und Englisch wie Franzoesisch haben dafuer eine
+  Form. Unvermeidlich.
+- **16,1 `a` / `di`** 3 von 4 — `a lui` folgt der Reihe von 9,28
+  (dem fruehesten Ort, den `bindungen_40_p16_17_18.md` nennt),
+  `di mostrare` ist der Infinitivpartikel. Zeichengleichheit mit 9,28
+  wiegt schwerer.
+- **16,20 `ai` / `di`** de *zu* — Dativ gegen Infinitivpartikel. `di`
+  traegt darum en *of* statt *to*, damit es nur eine Sprache bleibt.
+- **16,6 · 16,11 `dal` / `dei`, 16,12 `dal` / `del`** — „beware of the
+  yeast of the Pharisees": Englisch (und in 16,12 Franzoesisch) hat fuer
+  beide Verhaeltnisse eine Form.
+- **16,3 `dei` / `il`** de *der*, **16,21 `che` / `quel`** en *that*,
+  **16,23 `da` / `di`** es *de*, **16,25 `per` / `Perché`** en
+  *for* / *For* (nur Grossschreibung) — durchweg Zusammenfaelle der
+  Zielsprache, die Klasse aus Reihe 36.
+
+## 158 · Begruendete Reste aus `elision.py` und `folgencheck --min 3`
+
+**`elision.py` laesst zwei Stellen stehen, beide dieselbe:**
+16,19 pos 11 und pos 23, `che` fr *que* vor `avrai` fr *auras*. Der
+franzoesische Satz ist „ce **que tu** auras lié" — das eingeschobene
+Wort ist *tu*, konsonantisch. Nach Reihe 149 entscheidet der Anlaut des
+eingeschobenen Wortes, nicht die Tatsache der Einschiebung; `que` ist
+richtig. (Zum Vergleich: 16,12 · 16,20 · 16,21 tragen `che` fr `qu'`,
+weil dort *il* eingeschoben ist — dieselbe Regel, andere Antwort.)
+
+**`folgencheck --min 3` endet auf 85 zeichengleiche Folgen und 22
+Abweichungen.** Die aus diesem Kapitel, alle begruendet:
+
+    16,17  `Padre mio` de Vater/mein gegen Vaters/meines (7,21 · 12,50)
+           — dort Genitiv nach `del`, hier Nominativ nach `il`
+    16,28  `che` fr que gegen qu' (11,11) — vor *quelques-uns*, Reihe 38
+    16,25  `la` de sein gegen das (10,39) — Reihe 156, `propria`
+    16,3   `del cielo` en of the / sky gegen of / heaven (11,25)
+           — „the appearance of the sky" gegen „Lord of heaven"
+    16,27  `i suoi angeli` de den/seinen/Engeln gegen die/seine/Engel
+           (13,41) — Dativ nach `con`
+    16,28  `quelli che sono` de denen, es los/están gegen jene,
+           aquellos/son (5,4) — deutscher Kasus, spanisches ser/estar
+    16,15  `loro` en to them gegen them (15,3) — `disse loro` gegen
+           `rispose loro`, zwei Verben
+    16,21  `capi sacerdoti` de Hohenpriestern gegen Hohenpriester
+           (2,4) — Flexion
+    16,14  `Giovanni il Battista` — hier auf die Bestandsreihe
+           (de *der*) gezogen; erste Fassung hatte de *den*
+    16,23  `voltò` — hier auf die Bestandsreihe (fr *retourna*)
+           gezogen; erste Fassung hatte fr *tourna*
+
+`mehrwort.py` meldet einmal: 16,21 `parte` fr *part* gegen die
+Bestandsmehrheit *partie* (13,4 „una parte cadde"). Innerhalb von
+`da parte di` ist *la part* die richtige franzoesische Form; die
+Mehrheit betrifft die andere Lesart des Nomens.
+
+## 159 · Was dieses Kapitel zum Paket beitraegt
+
+`paketcheck.py 40 16 17 18` (Kapitel 18 lag noch nicht vor) endet auf
+**0 Level-Divergenzen** und zwei Faellen in Abschnitt A, beide richtig:
+
+- **`da parte di`** — 16,21 `da parte degli anziani` (Praeposition +
+  Artikel im Span, Glosse *von seiten der*), 17,12 `da parte loro`
+  (Praeposition + Pronomen, *von ihrer Seite*). Verschiedene
+  italienische Bauformen, verschiedene Glossen; **ein** Level (B2).
+- **`domandare`** — 16,13 Singular, 17,10 Plural. Flexion.
+
+Zeichengleich innerhalb des Pakets gesetzt: `il terzo giorno`
+(16,21 · 17,23, `il` de *am* · en *on the* · es *al* · fr *le*),
+`risuscitare` B2, `uccidere` B1 fuer die aktive Form gegen `ucciso` B1
+fuer die passive.
