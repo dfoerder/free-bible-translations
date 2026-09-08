@@ -1104,3 +1104,43 @@ Das ist die zwoelfte meiner Prompt-Angaben, die ein Agent am Quelltext
 widerlegt hat, und die erste, die als *Regel* formuliert war statt als
 Beobachtung. **Eine Regel im Prompt ist so lange eine Behauptung, bis
 sie jemand gezaehlt hat.**
+
+## Konjunktion + elidierter EIGENNAME — die vierte Zeile der Elisionstabelle
+
+Gemessen vom Agenten fuer Roemer 9, nachgerechnet: im ganzen Bestand
+gibt es genau zwei annotierte Faelle, und beide machen es gleich.
+
+    Jean 12,39   `parce qu’Ésaïe`     Mehrwort [parce que] *weil Jesaja*
+                 Einzeleintrag        Lemma `Ésaïe`, Glosse *dass Jesaja*
+    Actes 19,1   `Pendant qu’Apollos` Mehrwort [pendant que] *Während Apollos*
+                 Einzeleintrag        Lemma `Apollos`, Glosse *dass Apollos*
+
+Der verschluckte Name ist das **Subjekt des Nebensatzes**, kommt also
+von aussen in die Wendung — das ist Zeile 3 der Tabelle (`d’en
+appeler`), nicht Zeile 1 (`faute d’humidité`). Das Mehrwort wird
+gesetzt, und der Einzeleintrag behaelt das Lemma des NAMENS, nicht das
+der Konjunktion.
+
+Ohne vorangehendes Konjunktionswort steht `qu’<Name>` allein und
+bekommt kein Mehrwort — so die uebrigen vierzehn Stellen (`qu’Élie`
+6×, `qu’Abraham` 3×, `qu’Archélaüs`, `qu’Énoch` …).
+
+## Fuenfmal jetzt: ein „Werkzeugfehler", der eine abgeschnittene Ausgabe war
+
+`folgenreihe` (dreimal `| head`), `folgenreihe` noch einmal
+(„doppelte Zeilen" — ein Artefakt des Aufrufs, nicht reproduzierbar)
+und zuletzt `belegt.py "L’aîné"` („meldet NICHT belegt und nennt das
+Lemma nicht"). Nachgeprueft nennt `belegt.py` das Lemma `aîné` in der
+dritten Zeile, mit geradem **und** typografischem Apostroph — die
+Meldung „im Bestand NICHT belegt" steht nur davor.
+
+**Die Ausgaben dieser Werkzeuge sind so gebaut, dass die Antwort UNTER
+der Zusammenfassung steht.** Wer sie abschneidet, sieht die Frage und
+nicht die Antwort.
+
+Richtig an derselben Meldung war die andere Haelfte: `hints_45_9.md`
+hatte fuer `L’aîné` keine „verwandt"-Zeile. Das ist kein Fehler von
+`hints.py`, sondern **Alter**: die Promptdateien sind Momentaufnahmen
+von `fravorb.py`, und die Elisionskorrektur kam nach ihrer Erzeugung.
+Wo eine Promptdatei und ein Live-Aufruf sich widersprechen, hat der
+Live-Aufruf recht.

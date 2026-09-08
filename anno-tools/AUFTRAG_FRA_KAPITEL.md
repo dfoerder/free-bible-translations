@@ -68,6 +68,17 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   nach `sweeplemma`. **Ein Treffer ist eine Frage, keine Anweisung** — oft
   ist die Antwort „hier zu Recht nicht", und dann ist die Begruendung der
   Ertrag.
+- **Schneide keine Werkzeugausgabe ab.** Fuenf Agenten haben inzwischen
+  einen „Werkzeugfehler" gemeldet, der ein `| head` war: `folgenreihe`
+  dreimal (der Mehrwortabschnitt steht unten), `belegt.py` zuletzt (die
+  Zeile „im Bestand NICHT belegt" steht VOR den stammverwandten
+  Lemmata). Diese Ausgaben sind so gebaut, dass die Antwort unter der
+  Zusammenfassung steht. Lies sie ganz, oder schreibe sie in eine Datei.
+- **Die Promptdateien sind Momentaufnahmen.** `hints_*.md`,
+  `parallelen_*.md` und die uebrigen entstehen einmal bei der
+  Vorbereitung; der Bestand und die Werkzeuge wandern waehrend deines
+  Laufs weiter. Wo eine Promptdatei und ein Live-Aufruf sich
+  widersprechen, hat der Live-Aufruf recht.
 - **Die `form` eines Mehrworts ist die mit Leerzeichen verbundene Kette
   ALLER Einzelformen seiner Spanne** — nicht das erste Token. Der Agent
   fuer Roemer 10 hat sich daran 33 `selfcheck`-Befunde eingehandelt
