@@ -49,8 +49,17 @@ def apos(w):
     Lemma neu — und das trifft jede Elision, also den halben
     franzoesischen Wortschatz. Gemeldet vom Agenten fuer Luc 4.
     Dieselbe Korrektur hat `folgenreihe.py` seit Matthaeus 18.
+
+    **Sie normalisierte urspruenglich auf den TYPOGRAFISCHEN Apostroph**,
+    weil die LSG ihn schreibt. Der italienische Quelltext schreibt den
+    geraden — und damit drehte dieselbe Korrektur den Fehler um: die
+    Anfrage `dell'uomo` wurde zu `dell’uomo`, im Bestand steht
+    `dell'uomo`, und der Lauf meldete „NICHT belegt" fuer eine Form mit
+    Belegen. Das trifft jede Elision, im Italienischen 2117 NT-Tokens.
+    Deshalb wird jetzt **auf beiden Seiten** auf den geraden Apostroph
+    normalisiert: `bestand()` beim Einlesen, `zeige()` bei der Anfrage.
     """
-    return (w or '').replace("'", '\u2019')
+    return (w or '').replace('\u2019', "'")
 
 
 def bestand():
@@ -69,7 +78,7 @@ def bestand():
         for k in ch:
             for v in ch[k]:
                 for e in ch[k][v]:
-                    f = C.strip_punct(e['form']).lower()
+                    f = C.strip_punct(apos(e['form'])).lower()
                     if not f:
                         continue
                     schluessel = ((C.strip_punct(e['form']), e['lemma'],
@@ -77,7 +86,7 @@ def bestand():
                     formen[f][schluessel] += 1
                     if len(stellen[f]) < 8:
                         stellen[f].append(f'{name} {k},{v}')
-                    l = e['lemma'].lower()
+                    l = apos(e['lemma']).lower()
                     lemmata[l][schluessel] += 1
                     if len(lstellen[l]) < 8:
                         lstellen[l].append(f'{name} {k},{v}')
@@ -240,7 +249,20 @@ def main():
     p.add_argument('woerter', nargs='*')
     p.add_argument('-d', '--durchsuchen', type=int, metavar='BUCHNR',
                    help='alle Wortformen dieses Buches gegen den Bestand halten')
+    # `xargs python3 belegt.py < formen.txt` verschluckt jede Form mit
+    # Apostroph: xargs liest `'` als Anfuehrungszeichen und zieht alles
+    # bis zum naechsten zusammen. Der Agent fuer Matteo 12 hat so 109
+    # Formen (`c'è`, `dell'uomo`, `l'albero` …) zu EINER Sammelzeile
+    # verklebt, die als eine unbelegte Wortform gemeldet wurde — der
+    # Lauf sah dabei sauber aus. Im Italienischen haengen daran 2117
+    # NT-Tokens. Deshalb dieser Schalter: eine Form je Zeile, ohne Shell.
+    p.add_argument('-f', '--formen', metavar='DATEI',
+                   help='Wortformen aus einer Datei lesen, eine je Zeile '
+                        '(sicher fuer Formen mit Apostroph — nie xargs)')
     a = p.parse_args()
+    if a.formen:
+        with open(a.formen, encoding='utf-8') as fh:
+            a.woerter += [z.strip() for z in fh if z.strip()]
     formen, stellen, lemmata, lstellen = bestand()
     if a.durchsuchen:
         s = C.load_source(a.durchsuchen)

@@ -187,6 +187,12 @@ essere-Hilfsverb darin seine woertliche Kopula-Glosse behaelt.
 
 **Welches Werkzeug welchen Bestand liest — hier irren sich alle.**
 
+- **`belegt.py` ueber viele Formen: `--formen <datei>`, nie `xargs`.**
+  `xargs` liest den Apostroph als Anfuehrungszeichen und klebt jede
+  elidierte Form (`c'è`, `dell'uomo`, `l'albero`) mit ihren Nachbarn zu
+  einer einzigen Sammelzeile zusammen — der Lauf sieht sauber aus und hat
+  nichts geprueft. Eine Form je Zeile in eine Datei, dann
+  `python3 belegt.py --formen work/<KAP>/formen.txt`.
 - **`belegt.py`, `lexicon.py`, `hints.py` und `folgenreihe.py` lesen den
   ITALIENISCHEN Bestand**, nicht den der Zeugen. `belegt.py Signore`
   meldete im Pilotbuch eine Fehlanzeige, obwohl das Wort in jeder

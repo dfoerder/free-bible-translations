@@ -75,7 +75,13 @@ import sys
 import common as C
 
 ELIDIERT = {'se': "s'", 'me': "m'", 'te': "t'", 'ne': "n'", 'le': "l'",
-            'la': "l'", 'de': "d'", 'que': "qu'", 'ce': "c'", 'je': "j'"}
+            'la': "l'", 'de': "d'", 'que': "qu'", 'ce': "c'", 'je': "j'",
+            # `jusque` kam mit Matteo Paket 4 dazu. Es stand zehnmal
+            # unelidiert vor `à`/`au`/`aux` — „jusque à" gibt es nicht.
+            # Reihe 35 hatte `jusque` gewaehlt, damit das `à` nicht
+            # zweimal steht; richtig ist `jusqu'`, das doppelt ebenfalls
+            # nichts und ergibt mit dem folgenden `à` die richtige Form.
+            'jusque': "jusqu'"}
 VOKAL = set('aeiouáàâäéèêëíìîïóòôöúùûü')
 
 # Das unpersoenliche `si` wird franzoesisch `on` — und `on` ist ein
