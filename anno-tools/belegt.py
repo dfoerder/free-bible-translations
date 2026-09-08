@@ -327,12 +327,14 @@ def main():
         return 0
     if not a.woerter:
         p.error('Wortform angeben oder -d <buchnr>')
-    fehlt = 0
     for w in a.woerter:
-        if not zeige(w, formen, stellen, lemmata, lstellen,
-                     set(lemmata or ())):
-            fehlt += 1
-    return 0 if fehlt == 0 else 1
+        zeige(w, formen, stellen, lemmata, lstellen, set(lemmata or ()))
+    # Frueher: Exitcode 1, wenn ein Wort unbelegt ist. „Unbelegt" ist
+    # aber die richtige Antwort auf eine gueltige Frage, kein Fehler —
+    # und in einer Schleife mit `&&` brach damit alles Folgende ab und
+    # sah wie ein Werkzeugabsturz aus. Gemeldet vom Agenten fuer
+    # 1. Korinther 11. Ein Fehler ist ein Fehler; eine Auskunft nicht.
+    return 0
 
 
 if __name__ == '__main__':

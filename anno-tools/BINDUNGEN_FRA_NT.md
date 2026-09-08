@@ -1412,3 +1412,28 @@ der Zahl folgt, setzt `Esprit` auf *spirit · espíritu · spirito*.
 Gemeldet vom Agenten fuer 1. Korinther 12. Der Lauf sagt jetzt
 ausdruecklich, wenn Treffer sich in der Grossschreibung eines NICHT
 ersten Wortes unterscheiden.
+
+## Werkzeuge nicht anfassen, waehrend Agenten laufen
+
+Der Agent fuer 1. Korinther 11 hat gemeldet, `reflexiv.py` sei
+**waehrend seines Laufs kaputtgegangen**: derselbe Aufruf lief um
+00:50 sauber durch und stuerzte ab 01:03 mit `NameError: name 're' is
+not defined`. Er hat recht. Ich hatte dem Skript eine
+Pfadauswertung eingebaut, den Import vergessen, den Fehler gesehen und
+zwei Minuten spaeter behoben — in genau diesen zwei Minuten hat er das
+Werkzeug aufgerufen. Betroffen war der `--datei`-Pfad, also genau der
+Aufruf, den der Auftrag vorschreibt.
+
+Das ist keine neue Erkenntnis, sondern eine vergessene: als
+`mehrwoerter.py` gebaut wurde, ist es **absichtlich als neue Datei**
+entstanden, statt `sweeplemma.py` zu erweitern, damit laufende
+Pruefketten nicht angefasst werden. Dieselbe Vorsicht hat beim
+naechsten Mal gefehlt.
+
+    Regel: solange Agenten laufen, werden ihre Werkzeuge nicht
+    geaendert. Neue Datei ja, Aenderung an einem Skript der
+    Pflichtkette nein — die wartet bis zum Einsammeln.
+
+Der Agent hat sich uebrigens selbst geholfen (`re` vorinjiziert) und
+den Lauf nachgeholt. Gemeldet hat er es trotzdem, und das ist der
+Grund, warum es hier steht.
