@@ -1229,3 +1229,54 @@ deshalb zu Recht als Abweichung.
 
 **Nicht angeglichen** — 79 Stellen, und ohne Kriterium waere es eine
 Muenze. Wer es anfasst, faengt am Vaterunser an.
+
+## `de notre Seigneur`: die Meldung war richtig gemessen und falsch gefolgert
+
+Der Agent fuer Roemer 15 hat gemeldet, `notre` stehe an den drei
+Bestandsstellen von `de notre Seigneur` auf *unserem*, obwohl es
+deutsche **Genitive** seien („im Namen unseres Herrn"), und hat 15,6
+abweichend auf *unseres* gesetzt.
+
+Die drei Stellen sind richtig gezaehlt. Die Folgerung geht daneben,
+weil sie das Nachbartoken nicht mitliest: **das `de` selbst steht auf
+*von***, und nach *von* verlangt das Deutsche den Dativ. „Vater von
+unserem Herrn" ist richtig, „Vater von unseres Herrn" ist es nicht.
+Sechs Stellen, fuenf auf *unserem* — 15,6 ist zurueckgenommen.
+
+Daraus die allgemeine Form: **eine Kasusfrage an einem Token ist nie
+an diesem Token allein zu entscheiden.** Der Kasus haengt an der
+Praeposition davor, und die traegt in dieser Ausgabe ihre eigene
+Glosse. Wer nur die Spalte des Possessivs vergleicht, sieht den Kasus
+nicht, der ihn regiert.
+
+## `par` nach `exhorter` und `prier` ist keine vierte Konstruktion
+
+Der Agent fuer Roemer 15 hat vorgeschlagen, die `par`-Tabelle um eine
+Zeile zu erweitern, weil `Je vous exhorte … par notre Seigneur`
+(15,30) nicht die Mittler-Reihe von 5,1/5,11 tragen kann. Gemessen
+ueber alle Stellen mit `exhorter`/`prier`/`supplier`/`conjurer` davor:
+
+    Rm 12,1    par les compassions de Dieu   durch · by · por · per
+    Rm 15,30   par notre Seigneur            durch · by · por · per
+    Ac 19,13   par Jésus (Beschwoerung)      bei · by · por · per
+    Ac 15,32   par plusieurs discours        mit · with · con · con
+
+Es braucht keine neue Zeile: 15,30 faellt auf die gewoehnliche
+Sach-Reihe, und Roemer ist mit 12,1 in sich einstimmig. Was die
+Konstruktion bestimmt, ist **das Verb davor, nicht das Nomen
+dahinter** — dieselbe Zeichenkette `par notre Seigneur` traegt in 5,1
+die Mittler-Reihe und in 15,30 die Sach-Reihe, weil dort `réconciliés`
+steht und hier `exhorte`.
+
+## Zeugenfehler: `Herodian` in l1912mod (Roemer 16,11)
+
+Der deutsche Zeuge liest `Herodian`, die drei anderen lesen `Herodion`,
+`Erodione`, `Herodión`. Die Form kommt im ganzen deutschen Zeugen
+**genau einmal** vor — an dieser Stelle. Das ist ein Ausrutscher der
+Modernisierung, keine deutsche Namensform; gesetzt ist `Herodion`.
+
+Die Regel „der Zeuge ist massgeblich" bleibt fuer die Agenten
+unveraendert. Der Agent fuer Roemer 16 hat richtig gehandelt: er hat
+den Zeugen gesetzt und den Verdacht gemeldet, statt ihn selbst zu
+ueberschreiben. **Einen nachgewiesenen Einzelfehler des Zeugen
+korrigiert das Einsammeln, nicht das Kapitel.**
