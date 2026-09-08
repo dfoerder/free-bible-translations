@@ -68,5 +68,24 @@ if __name__ == '__main__':
     p.add_argument('args', nargs='+')
     p.add_argument('--min', type=int, default=4)
     a = p.parse_args()
-    nrs = C.anno_books() if a.args[0] == 'alle' else [int(x) for x in a.args]
+    if a.args[0] == 'alle':
+        nrs = C.anno_books()
+    else:
+        nrs = [int(x) for x in a.args]
+        # `ausreisser.py 45 10` sah aus wie zwei Buecher und starb mit
+        # einem FileNotFoundError auf `10_…json`. Gemeldet vom Agenten
+        # fuer Roemer 10 — dieselbe Falle wie bei `reflexiv.py 44 8`
+        # und `lexicon.py tribun`: eine KAPITELnummer an der Stelle
+        # einer Buchnummer. Dieses Skript prueft immer ganze Buecher.
+        da = set(C.anno_books())
+        fehlt = [n for n in nrs if n not in da]
+        if fehlt:
+            print('Kein Bestand fuer Buch ' +
+                  ', '.join(str(n) for n in fehlt) + '.')
+            if len(nrs) > len(fehlt):
+                print('Sieht nach einer KAPITELnummer aus — '
+                      'ausreisser.py nimmt nur Buchnummern und '
+                      'prueft immer ganze Buecher. Fuer ein '
+                      'einzelnes Kapitel gibt es `folgencheck --kapitel`.')
+            raise SystemExit(1)
     pruefe(nrs, a.min)

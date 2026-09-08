@@ -68,6 +68,12 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   nach `sweeplemma`. **Ein Treffer ist eine Frage, keine Anweisung** — oft
   ist die Antwort „hier zu Recht nicht", und dann ist die Begruendung der
   Ertrag.
+- **Die `form` eines Mehrworts ist die mit Leerzeichen verbundene Kette
+  ALLER Einzelformen seiner Spanne** — nicht das erste Token. Der Agent
+  fuer Roemer 10 hat sich daran 33 `selfcheck`-Befunde eingehandelt
+  (`form 'rends' != Tokens 'rends le témoignage'`). Bei einem `parts`-
+  Mehrwort sind es genau die Formen der genannten Positionen, ohne die
+  uebersprungenen (`poussa cri` fuer `poussa de nouveau un grand cri`).
 - `fixgloss.py verse` nimmt seine drei Argumente einzeln; in einer
   zsh-Schleife ueber eine Variable bricht es ab. Es sagt das sauber.
 - **`folgenreihe.py` verschweigt ausserdem den Mehrwort-Abschnitt selbst

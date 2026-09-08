@@ -2898,3 +2898,403 @@ gebaut und `selfcheck` haette es erst am Ende gefangen.
 
 **Jedes eigene Skript setzt `os.environ['ANNO_EDITION']` selbst, bevor es
 `common` importiert.** Der Prompt-Baustein fuehrt das jetzt.
+
+---
+
+# Matteo 11 (Rede über Johannes den Täufer · Weheruf über die Städte)
+
+*Angehaengt vom Agenten fuer Matteo 11 (Paket 10·11·12). Naechste freie
+Nummer beim Anhaengen war 89; Kapitel 10 und 12 lagen zu keinem Zeitpunkt
+vor und haengen vermutlich parallel an. Der Koordinator nummeriert beim
+Einsammeln durch.*
+
+## 89 · Mehrwoerter, die Matteo 11 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 77.
+
+    11,2   mandare a dire    B2  ließ ihm sagen · sent word to him ·
+                                 le mandó a decir · lui fit dire
+    11,6   scandalizzarsi    B2  Anstoß nehmen wird · will take offense ·
+                                 se escandalizará · se scandalisera
+    11,11  più grande        A2  größer · greater · mayor · plus grand
+                                 (Reihe 18; auch 11,11b)
+    11,15  a chi             —   KEIN Mehrwort, siehe Reihe 91
+    11,20  la maggior parte  B1  die meisten · most · la mayoría · la plupart
+    11,21  pentirsi          B2  hätten bereut · would have repented ·
+                                 se habrían arrepentido · se seraient repenties
+    11,22  più tollerabile   B2  erträglicher · more tolerable ·
+                                 más tolerable · plus tolérable  (auch 11,24)
+    11,25  prendere a        B2  begann · began · comenzó · se mit à
+    11,29  su di voi         A2  auf euch · upon you · sobre vosotros · sur vous
+
+Uebernommen aus dem Bestand: `per mezzo di` (11,2), `colui che`
+(11,3 · 11,6), `quello che` (11,4), `andarsene` (11,7), `riguardo a`
+(11,7), `che cosa` (11,7 · 11,8), `il quale` (11,10 · 11,20 · 11,27),
+`davanti a` (11,10 zweimal), `il più piccolo` (11,11), `fino a`
+(11,12 · 11,13 · 11,23 dreimal), `guai a` (11,21 zweimal), `da tempo`
+(11,21), `ravvedersi` (11,20), `se non` (11,27 zweimal).
+
+Vier davon setzen etwas ueber das Kapitel hinaus:
+
+- **`mandare a dire` ist die Bauart von `far sapere`** (2,8, Reihe 31):
+  wo das Italienische ein Verb der Bewegung mit einem Infinitiv des
+  Sagens verbindet, loesen Deutsch und Franzoesisch es mit einem
+  Kausativ auf (*ließ ihm sagen* · *lui fit dire*). Die drei
+  Einzelwoerter bleiben woertlich (`mandò` *schickte*, `a` *zu*,
+  `dirgli` *ihm sagen*); der Infinitivpartikel bleibt nach Reihe 3 beim
+  `a`, also traegt `dirgli` **nicht** noch einmal ein „zu".
+- **`prendere a` + Infinitiv folgt `mettersi a`** (4,11, Reihe 39). Das
+  Mehrwort traegt de *begann*, `dire` bleibt auf der Bestandsreihe
+  *sagen · say · decir · dire*. **Nicht** zusaetzlich de *zu sagen* —
+  sonst stuende das „zu" zweimal, einmal am `a` und einmal am Infinitiv.
+- **`più tollerabile` bekommt ein Mehrwort, obwohl nur EINE Zielsprache
+  synthetisch steigert.** Reihe 18 hat den analytischen Komparativ an
+  `più forte` (3,11) gesetzt, wo Deutsch *und* Englisch synthetisieren.
+  Bei `tollerabile` steigert nur das Deutsche synthetisch (*erträglicher*
+  gegen *more tolerable* · *más tolerable* · *plus tolérable*). **Eine
+  Sprache genuegt**: „mehr erträglich" ist kein Deutsch, und die Regel
+  aus Reihe 18 haengt an der Zielsprache, nicht an ihrer Anzahl.
+- **`la maggior parte` ist die erste dreigliedrige Quantorwendung.**
+  `la maggior parte delle sue opere` heisst „die meisten seiner Werke" —
+  Deutsch und Englisch haben kein „der groesste Teil von" im Satzfluss.
+  Die drei Einzelwoerter bleiben woertlich (`la` *der*, `maggior` *größte*,
+  `parte` *Teil*); das Lemma von `maggior` ist nach Reihe 4 die volle Form
+  **`maggiore`**.
+
+## 90 · Was Matteo 11 zeichengleich setzt — die Reihen dieses Kapitels
+
+Gemessen mit `folgencheck.py 40 --min 3 --kapitel 11`: 67 Folgen
+zeichengleich, 11 mit Abweichung.
+
+    „Perciò vi dico che nel giorno del giudizio la sorte"
+        11,22 legt fest · 11,24 uebernimmt zeichengleich
+        Perciò *Darum/Therefore/Por eso/C'est pourquoi* · vi *euch/to you/os/vous* ·
+        dico *sage/tell/digo/dis* · che *dass/that/que/`qu'`* ·
+        nel *am/on the/en el/au* · giorno *Tag/day/día/jour* ·
+        del *des/of/del/du* · giudizio *Gerichts/judgment/juicio/jugement* ·
+        la *das/the/la/le* · sorte *Los/fate/suerte/sort*
+    „sarà più tollerabile della"      11,22 legt fest · 11,24
+        sarà *wird sein/will be/será/sera* · [Mehrwort `più tollerabile`] ·
+        della *als/than/que/que*   — vor dem Possessiv **ohne** Artikel
+        (Reihe 22); den Artikel traegt das Possessiv selbst
+        (`vostra` es *la vuestra* · fr *la vôtre*; `tua` es *la tuya* ·
+        fr *la tienne*).
+    „fossero state compiute le opere potenti fatte"
+        11,21 legt fest · 11,23 uebernimmt zeichengleich
+        fossero *wären/had/hubieran/avaient* · state *worden/been/sido/été* ·
+        compiute *vollbracht/accomplished/realizadas/accomplies* ·
+        le *die/the/las/les* · opere *Werke/works/obras/œuvres* ·
+        potenti *mächtigen/mighty/poderosas/puissantes* ·
+        fatte *getan/done/hechas/faites*
+    „cosa siete andati a vedere"      11,7 legt fest · 11,8
+        siete *seid/are/sois/êtes* (essere-Perfekt, Kopula nach Reihe 32) ·
+        andati *gegangen/gone out/idos/allés* · a *zu/to/a/pour* ·
+        vedere *sehen/see/ver/voir*
+    „nessuno conosce pienamente il"   11,27 legt fest · 11,27b
+    „Chi ha orecchi ascolti"          11,14 legt fest · spaeter 13,9 · 13,43
+        Chi *Wer/Whoever/Quien/Celui qui* (Reihe 48) · ha *hat/has/tiene/a* ·
+        orecchi *Ohren/ears/oídos/oreilles* ·
+        ascolti *soll hören/let him hear/oiga/qu'il entende*
+    „di Tiro e Sidone"                11,22 legt fest
+    „Guai a te"                       11,21 (zweimal)
+
+**`compiute` steht auf *vollbracht · accomplished · realizadas ·
+accomplies*, nicht auf *getan · done · hechas · faites*.** Der Grund ist
+der Vers: 11,21 und 11,23 stellen `compiute` und `fatte` nebeneinander
+(„fossero state compiute le opere potenti **fatte** tra voi"), und mit der
+naheliegenden Glosse fallen sie in drei Sprachen zusammen. `fatte` behaelt
+die Bestandsreihe von `fatto` A1 (Reihe 80), `compiute` weicht aus — das
+ist die Lesart, die `rueckwaerts.py` unter GLOSSE ohnehin fuehrt.
+
+**`fatte` und `compiute` bekommen zwei verschiedene Lemmata**, obwohl
+beide Partizipien im Passiv stehen: `fatto` A1 (Reihe 80) und
+**`compiuto` B2**. Das Bestandslemma `compiere` B2 gehoert zum
+**aktiven** Perfekt (7,22 „abbiamo … compiuto"); Reihe 5 trennt die
+beiden, und beide tragen B2, damit `buildbook.py` sie nicht auseinander-
+zieht (Muster `tentato`/`tentare`, Reihe 42).
+
+## 91 · Der interrogative `a chi` ist nicht der relative `a chi`
+
+`sweeplemma.py` meldet 11,15 („Ma **a chi** paragonerò questa
+generazione?") mit 100 % Deckung gegen den Mehrworteintrag `a chi` A2
+aus 5,40 · 5,42 · 7,8. **Der Treffer ist richtig gemessen und trotzdem
+kein Mehrwort.** Dort ist `a chi` das Relativum *dem, der · to him who ·
+al que · à celui qui*; hier ist es das Fragewort *mit wem · to whom · a
+quién · à qui*, und es geht Wort fuer Wort auf:
+
+    a    de *mit* · en *to*    · es *a*     · fr *à*
+    chi  de *wem* · en *whom*  · es *quién* · fr *qui*
+
+Dieselbe Zweiteilung wie `quello che` gegen `quelli che` (Reihe 37.10).
+Die Wendung erkennt man am Verb: `paragonare a` regiert die Praeposition
+selbst, `dare a chi` nicht.
+
+## 92 · Das gerundio composto — `avendo` traegt die Zielsprachenform, das Partizip das Tempus
+
+Matteo 4,12 hat `avendo saputo` schon gesetzt (`avendo` → `avere` A1,
+de *nachdem* · en *having* · es *habiendo* · fr *ayant*; `saputo` →
+de *erfahren hatte*). 11,2 („**avendo udito** parlare delle opere")
+uebernimmt das zeichengleich: `avendo` de *nachdem*, `udito` de *gehört
+hatte*. **Das deutsche Subjektpronomen steckt nicht in der Glosse** —
+anders als bei `sta scritto` (Reihe 40), weil `nachdem … gehört hatte`
+den Nebensatz auch ohne es traegt.
+
+`parlare` behaelt daneben seine woertliche Glosse als **Verb**
+(`parlare` A1, de *reden*) und **nicht** das Lemma
+`parlare (sostantivo)` B1 aus 5,37 (Reihe 52). `sweeplemma.py` meldet
+das, weil der italienische Bestand die Form bisher nur als Nomen fuehrt —
+`fixgloss.py show parlare` zeigt das Verb (Giuda 1,8 · 1,10, Matteo 3,3).
+**Wer nur `belegt.py <form>` fragt, sieht in dieser Richtung das falsche
+Lemma, sobald ein Homograph mit Klammerzusatz existiert.**
+
+## 93 · Drei Homographen ohne Klammerzusatz — die Lemmata trennen schon
+
+Nach Reihe 15 · 28 · 59 · 66 · 73 · 80. Alle drei von `sweeplemma.py`
+gemeldet, alle ohne Zusatz:
+
+    preso    11,12  Passivpartizip („è preso a forza")   → `preso`    A1
+             Bestand 8,17 gleich; gegen `prendere` A1 (11,25 `prese`)
+    pianto   11,17  Partizip von `piangere` („non avete pianto")
+                                                          → `piangere` A2
+             Bestand 2,18 fuehrt das **Nomen** `pianto` B1 (*Weinen*)
+    parlare  11,2   Verb (`parlare` A1) gegen
+                    `parlare (sostantivo)` B1 (5,37)
+
+`pianto` ist nach `caduta` (Reihe 66) der zweite Fall, in dem die Level
+auseinandergehen und trotzdem kein Zusatz noetig ist: Reihe 5 trennt die
+Schluessel schon (Partizip in aktiver zusammengesetzter Zeit →
+Infinitiv), und zwei verschiedene Lemmata koennen zwei Level tragen.
+
+Neu vergeben, weil die Zielsprache zwei Woerter braucht:
+**`profetare` C1** (11,13 `profetato`) neben `profetizzare` C1
+(7,22 `profetizzato`). Das sind zwei italienische Verben, nicht zwei
+Formen eines Verbs; RIV liest in 11,13 `profetato`. Gleiches Level,
+damit der Lernende nicht zwei Schwierigkeitsstufen fuer dieselbe Sache
+sieht.
+
+## 94 · Stehengelassene Kollisionen in Matteo 11
+
+`glosskollision.py --datei 40 11` endet auf **2 inhaltliche Paare**
+(beide in nur einer Sprache) und **10 aus geschlossenen Wortarten**.
+Aufgeloest wurden fuenf:
+
+    11,8   `siete`/`stanno` en *are*   → `stanno` en *stay*
+    11,12  `a`/`di` fr *de*            → `a` (in `a forza`) fr *par*
+    11,23  `te`/`tu` fr *toi*          → `tu` fr *tu*
+    11,25  `a`/`In` de *zu*/*Zu*       → `In quel tempo` de *In jener Zeit*
+    11,11 · 11,22 · 11,24 `che`/`di` bzw. `che`/`della` fr *que*
+           → `che` fr `qu'` (Elision, Reihe 38 — die Probe hat die
+             Kollision nebenbei mitgeloest)
+
+Stehen bleiben:
+
+- **11,21 `te`/`voi` und 11,23 `te`/`tu`, en *you*** — Englisch hat fuer
+  Singular und Plural, Subjekt und Objekt der 2. Person eine Form.
+  Reihe 20 (3,14) · 36 (2,6) · 43 (4,6) · 53 · 67 · 82, unveraendert.
+- **11,1 `loro`/`sue`, es *sus*** — **neu an dieser Klasse.** „le **sue**
+  istruzioni" und „nelle **loro** città": das Spanische hat fuer das
+  Possessiv der 3. Person Singular und Plural dasselbe Wort. de
+  *seine*/*ihren*, en *his*/*their*, fr *ses*/*leurs* trennen sauber; ein
+  Ausweichen auf *de él* / *de ellos* waere in einem Attribut falsches
+  Spanisch.
+- **11,10 `a`/`del`, es *de*** — das `a` in `davanti a` traegt nach
+  Reihe 17 · 8,2 es *de* (weil *delante* keine Praeposition ist), das
+  `del` in `del quale` den Genitiv. de *zu*/*von*, en *to*/*of*,
+  fr *à*/*de* trennen. Die `da`/`di`-Klasse aus Reihe 13, hier mit `a`.
+- **11,10 `che`/`quale`, fr *qui*** — zwei Relativa in einem Vers.
+  Ein Ausweichen auf `quale` fr *lequel* haette „de lequel" ergeben, was
+  es im Franzoesischen nicht gibt („de qui" und „dont" sind die Formen).
+  de *welcher*/*dem*, en *who*/*whom*, es *que*/*quien* trennen.
+- **11,11 und 11,19 `dei`/`il`, de *der*** — zwei Determinierer in einem
+  Vers. In 11,11 ist `dei` durch die einstimmige Reihe „il regno dei
+  cieli" (3,2) gebunden und `il` steht vor `Battista`; in 11,19 trennt
+  nur die Grossschreibung (*Der* Sohn gegen *der* Zöllner), was nach der
+  Prompt-Regel ohnehin keine Kollision ist. Reihe 20 · 29 · 36 · 61 · 67.
+- **11,11 · 11,22 · 11,24 `che`/`di` bzw. `che`/`della`, es *que*** — das
+  vergleichende *als/than* und das einleitende *dass/that* fallen im
+  Spanischen auf *que* zusammen. Franzoesisch ist ueber die Elision
+  getrennt (`qu'` gegen `que`), Deutsch und Englisch ohnehin.
+- **11,28 `vi`/`voi`, fr *vous*** — Klitikon gegen betontes Pronomen.
+  Reihe 20 (3,9) · 53 (5,11) · 67 (7,6). Englisch ist hier ueber das
+  dativische `vi` → *to you* getrennt (die Ausweichform aus Reihe 53).
+- **11,29 `da`/`di`, 3 von 4 (de *von* · es *de* · fr *de*)** — „imparate
+  **da** me", „su **di** voi" und „umile **di** cuore". Nur Englisch
+  trennt (*from* / *of* / *in*). Die Klasse aus Reihe 53 (5,29 · 5,30)
+  und 82 (8,29) zum dritten Mal mit drei Sprachen.
+
+**Elf `folgencheck`-Abweichungen bleiben mit Absicht stehen**, alle aus
+den in Reihe 63 benannten Klassen:
+
+- **„di Giovanni il Battista" 11,12 gegen 11,11** — 11,11 ist der
+  Vergleich („più grande **di** Giovanni **il** Battista", `di` *als*,
+  `il` *der*), 11,12 der Genitiv („Dai giorni **di** Giovanni **il**
+  Battista", `di` *von*, `il` *des*, `Battista` *Täufers*). Die Folge
+  steht zeichengleich, ihre Funktion nicht — **das Paket praegt hier
+  zwei Reihen, nicht eine**, und die spaeteren Vorkommen im Buch
+  entscheiden nach der Funktion, nicht nach der Zeichenkette.
+- **„il regno dei cieli è" 11,12 gegen 3,2 · 4,17** — 11,12 ist die
+  Passivklammer („è preso a forza", `è` de *wird*), 3,2 die Kopula
+  („è vicino", de *ist*). Reihe 32.
+- **„regno dei cieli è" 11,11 gegen 3,2** — spanisches ser/estar:
+  „è più grande" ist eine Eigenschaft (*es*), „è vicino" eine Lage
+  (*está*). Reihe 63, Klasse ser/estar.
+- **„davanti a te" 11,10 gegen 6,2** — `te` en *you* gegen *yourself*;
+  6,2 ist reflexiv („non far suonare la tromba davanti a te").
+- **„e il mio" 11,30 gegen 8,8** und **„il Figlio dell'uomo" 11,19 gegen
+  8,20 · 9,6** — deutsches Genus (*die* Last gegen *der* Knecht) und
+  Grossschreibung am Satzanfang.
+- **„nel regno dei cieli"** meldet nicht mein Kapitel, sondern 5,20 ·
+  7,21 (Richtung gegen Ort, Reihe 47). 11,11 steht bei der Mehrheit.
+
+## 95 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 11)
+
+25. **`ausgaben_40_11.md` meldet „Versatz +0" fuer alle vier Zeugen und
+    liegt fuer 11,14–11,16 trotzdem falsch.** RIV gliedert dort anders:
+    RIV 11,14 enthaelt **beides**, „egli è l'Elia che doveva venire"
+    *und* „Chi ha orecchi ascolti" (bei den Zeugen v14 + v15); RIV 11,15
+    traegt „Ma a chi paragonerò questa generazione?", was die Zeugen an
+    den Anfang von v16 stellen. Die Verslaengen sind zufaellig aehnlich
+    genug, dass die Ausrichtung keinen Versatz meldet. Die Folge steht
+    im Extrakt sichtbar da: `rueckwaerts_40_11.md` fuehrt fuer 11,15
+    **fuenf von sechs** Tokens als „nicht in diesem Vers der Zeugen" und
+    fuer 11,14 die drei Tokens `ha`, `orecchi`, `ascolti` ebenso.
+    **Der Extrakt ist damit nicht falsch, sondern still** — wer die
+    Haeufung der Fehlanzeigen nicht als Gliederungssignal liest, sucht
+    den Fehler bei sich. Ein Hinweis „ungewoehnlich viele Fehlanzeigen in
+    diesem Vers — Gliederung pruefen" waere hier das Richtige.
+26. **`elision.py --datei` hat vier von fuenf Treffern zu Recht
+    gemeldet** und dabei drei Kollisionen mitgeloest, die
+    `glosskollision.py` unabhaengig gefunden hatte (`che`/`di` 11,11,
+    `che`/`della` 11,22 · 11,24 — alle vier es/fr, nach der Elision nur
+    noch es). **Die beiden Werkzeuge greifen ineinander**: wer zuerst
+    elidiert, hat weniger aufzuloesen.
+    Der eine stehengebliebene Treffer ist der Umstellungsfall, den
+    Reihe 63 vorhergesagt hat: 11,4 `che` fr *que* vor `udite`
+    fr *entendez*. Franzoesisch heisst der Vers „ce que **vous**
+    entendez" — zwischen `que` und `entendez` steht das Subjektpronomen,
+    die beiden Glossen stehen im fertigen Satz **nicht** nebeneinander,
+    und `que` bleibt. **Die Null ist hier zu Recht nicht erreicht.**
+27. **`belegt.py` ueber alle 311 Wortformen ist weiterhin der schaerfste
+    Lauf vor `selfcheck`** (Reihe 30.8 · 44.17 · 68.20 · 75.27). Sieben
+    Level kamen nur daher und waeren aus den Zeugen nicht zu holen
+    gewesen: `guaio` B2, `forza` A2 (die Zeugen fuehren *force* auf B1),
+    `simile` B2, `eppure` B1, `legge` A2, `piazza` A2, `Battista` B2.
+    `levelcheck.py` meldete danach **0** — wie in Matteo 4 · 7 die Folge
+    des `belegt.py`-Laufs, nicht ein duenner Bestand.
+    **Aber:** `belegt.py parlare` nennt nur `parlare (sostantivo)` B1 und
+    verschweigt das Verb `parlare` A1, weil es die FORM fragt und die
+    Form im Bestand bisher nur unter dem Nomenlemma steht. Siehe
+    Reihe 92 — hier muss `fixgloss.py show <lemma>` daneben laufen.
+28. **`verschmelzung.py` Abschnitt A ist leer, Abschnitt B meldet sechs
+    Stellen, und alle sechs sind Nullantworten zu Recht** (Reihe 86):
+    `dei` in „amico dei pubblicani e dei peccatori" (generischer Plural,
+    en *of* · es *de*), `del` in „nel giorno del giudizio" (11,22 ·
+    11,24, Abstraktum) und `del`/`della` in „Signore del cielo e della
+    terra" (11,25). In keinem der sechs Faelle setzt das Englische einen
+    Artikel.
+29. **`hilfsverb.py` sah 1253 Paare und meldete 0** — wie in Matteo 2 ·
+    4 · 5 · 7 · 8 · 9. Die Entscheidungen dieses Kapitels liegen wieder
+    genau dort, wo es schweigt: `è venuto` (11,18 · 11,19), `è sorto`
+    (11,11), `si sarà scandalizzato` (11,6), `si erano ravvedute`
+    (11,20), `si sarebbero pentite` (11,21) und `sarebbe durata` (11,23)
+    tragen nach Reihe 32 die Kopula-Glosse, waehrend `sono purificati`
+    und `è annunciato` (11,5), `è preso` (11,12), `è stata giustificata`
+    (11,19), `erano state compiute` (11,20), `fossero state compiute`
+    (11,21 · 11,23), `sarai innalzata` (11,23) und `è stata affidata`
+    (11,27) als Passivklammer die Hilfsverbglosse der Zielsprache tragen.
+    **In einem Kapitel mit vierzehn essere-Klammern ist das die einzige
+    Entscheidung, die durchgehend zu treffen war — und kein Werkzeug
+    sieht sie.**
+30. **`parallelen_40_11.md` traegt fast nichts, und die Datei sagt es
+    selbst** (Reihe 87 bestaetigt): 5 Treffer, davon **einer** mit
+    Glossen in der Vorlage (11,12 ← 3,2, „il regno dei cieli è"). Die
+    vier uebrigen zeigen auf 12,36 · 13,9 · 16,28 — alle noch nicht
+    annotiert. Belastbar war stattdessen `folgenreihe.py "il regno dei
+    cieli"` (4 Vorkommen, einstimmig) und `bindungen_40_p10_11_12.md`.
+31. **`paketcheck.py 40 10 11 12` lief bis zuletzt ins Leere** —
+    Kapitel 10 und 12 lagen zu keinem Zeitpunkt vor („Mindestens zwei
+    Kapitel"). Die drei Folgen, die das Paket zeichengleich setzen
+    muesste, sind damit **ungeprueft**: „vi dico in verità" (10,23 ·
+    10,42 gegen mein „In verità vi dico" in 11,11 — dieselben vier
+    Woerter in anderer Stellung), „il Figlio dell'uomo è" (12,8 gegen
+    mein 11,19) und „nel giorno del giudizio" (12,36 gegen 11,22 ·
+    11,24). Der Koordinator sollte sie beim Einsammeln gegeneinander
+    halten.
+
+## 96 · Die 71 neuen Lemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand (Matteo 1–9 und Giuda): von
+251 Lemmata standen 180 schon da, 71 sind neu; `levelcheck.py 40 11`
+meldet 0 Abweichungen und es gibt keinen einzigen Levelkonflikt gegen den
+Bestand. Die Level kommen aus `belegt.py` ueber die jeweilige Wortform
+und aus dem italienischen Grundwortschatz, nicht aus den Zeugen — deren
+CEFR schwankt hier wieder weit (`canna` zwischen B2 und C1, `sacco`
+zwischen A2 und C2, `riposo` zwischen A2 und B1, `piazze` zwischen A2 und
+C1).
+
+    A1  Betsaida · Corazin · Elia · parte · Sidone · Tiro
+    A2  ballare · cantare · dolce · durare · leggero · nato · orecchio
+        Mehrwoerter: più grande · su di voi
+    B1  abito · accettare · anima · carico · compagno · elegante ·
+        intelligente · istruzione · maggiore · nascondere · palazzo ·
+        recuperare · riferire · riposo · sacco · sorte
+        Mehrwoerter: la maggior parte
+    B2  affaticato · affidato · annunciato · canna · cenere · compiuto ·
+        giustificato · impadronire · inferi · innalzato · lode ·
+        messaggero · mite · oppresso · paragonare · pentire · pienamente ·
+        ravvedere · rimproverare · risuscitare · rivelare · sapiente ·
+        sapienza · scandalizzare · scosso · sordo · tollerabile · umile ·
+        violento · zoppo
+        Mehrwoerter: mandare a dire · pentirsi · più tollerabile ·
+        prendere a · scandalizzarsi
+    C1  beone · giogo · mangione · profetare
+
+Uebernommen und **nicht** neu vergeben: `bere` A1 und `piangere` A2
+standen schon im Bestand — `belegt.py beve`/`beveva`/`pianto` findet sie
+nicht, weil es die FORM fragt; `fixgloss.py show bere` zeigt sie sofort.
+Reihe 75.27 in der Gegenrichtung.
+
+Vier Entscheidungen zum Level:
+
+- **`giogo` C1** wie `lebbroso` C1 — das Wort steht im Italienischen fast
+  nur in dieser Perikope und im Landwirtschaftsjargon. Dieselbe
+  Ueberlegung wie `messe` B2 in Reihe 76.
+- **`mangione` und `beone` C1** — beide sind umgangssprachliche
+  Augmentative und stehen im NT nur hier. Die Glossen sind bewusst
+  derb-alltaeglich (*Fresser* · *glutton* · *comilón* · *mangeur*,
+  *Säufer* · *drunkard* · *bebedor* · *buveur*): das Register-Gebot
+  erlaubt Umgangssprache, und der Vers zitiert einen Vorwurf.
+- **Die Paare aus Einzelwort und pronominalem Mehrwort tragen dasselbe
+  Level** (Reihe 42 · 69 · 76): `scandalizzare`/`scandalizzarsi` B2,
+  `pentire`/`pentirsi` B2, `ravvedere`/`ravvedersi` B2,
+  `impadronire`/`impadronirsi` B2. **`impadronire` und `ravvedere` gibt
+  es im Italienischen praktisch nur pronominal**; das Einzellemma steht
+  trotzdem, weil Reihe 6 verlangt, dass das Partizip des Mehrworts einen
+  eigenen Schluessel hat — dasselbe Zugestaendnis, das der Bestand mit
+  `accorgere`, `inchinare` und `meravigliare` schon gemacht hat.
+- **`inferi` bleibt im Plural.** Der Prompt-Baustein verlangt Nomen im
+  Singular; `gli inferi` ist ein Plurale tantum, und ein Lemma `infero`
+  gaebe dem Lernenden einen Schluessel, den kein Woerterbuch fuehrt.
+  Erster Fall dieser Art im italienischen Bestand.
+
+## 97 · Zwei Stellen, an denen der Bestand seine eigene Regel doppelt
+
+Zwei Beobachtungen fuer den Koordinator, beide **nicht** von mir
+geaendert, weil sie den Bestand betreffen und nicht mein Kapitel:
+
+- **Reihe 35 sagt „volle Glosse, es sei denn die Zielsprache stellt die
+  Praeposition dadurch zweimal hin" — der Bestand wendet das nur auf das
+  Franzoesische an.** In 1,17 steht `fino` es *hasta* neben `a` es *a*
+  und `alla` es *a la*; das ergibt „hasta a Davide" und „hasta a la
+  deportación". Nur das franzoesische *jusque* ist entdoppelt. Ich habe
+  mich dem Bestand angeschlossen (11,12 „hasta a ahora", 11,13 „hasta a
+  Juan", 11,23 „hasta al cielo" · „hasta a los infiernos" · „hasta a
+  hoy"), damit `folgencheck` nicht fuenf Abweichungen gegen 1,17 meldet —
+  aber **entweder gilt die Regel fuer alle vier Spalten oder fuer keine**.
+- **Reihe 22 laesst den alleinstehenden Artikel vor dem Possessiv seine
+  Glosse behalten** (`il suo popolo` 1,21 → `il` de *das*). Das ergibt in
+  11,29 „für **die** eure Seelen" und in 11,30 „**das** mein Joch" —
+  in keiner der vier Zielsprachen ein Satz. Die Regel ist trotzdem
+  richtig, weil das Token sonst ohne Glosse dastuende; sie kostet aber an
+  jedem `il mio`/`le vostre` einen Lesefehler. Sechs Stellen in diesem
+  Kapitel (11,1 · 11,10 zweimal · 11,29 zweimal · 11,30 zweimal).

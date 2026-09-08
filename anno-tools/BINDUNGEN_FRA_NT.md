@@ -1068,3 +1068,39 @@ Zeugen umschreiben an beiden Stellen (*Dort war ein Mann*, *wer dort
 es wert ist*) und entscheiden also nichts; die Konstruktionen sind
 zudem nicht ganz dieselbe (Existenzsatz gegen eingebetteten
 Fragesatz). Hier ist die Uneinheitlichkeit der Befund.
+
+## Die invertierte Verbform: meine Regel war falsch
+
+In den Prompts stand ueber Jahre: „die invertierte Verbform traegt das
+Subjekt in de/en/es, **nicht** im Italienischen". Der Agent fuer
+Roemer 10 hat sie an allen **720** invertierten Einzeltokens des
+Bestands nachgemessen und widerlegt. Nachgerechnet stimmt seine
+Zaehlung auf das Token genau:
+
+    312   nur de + en          (`serez-vous` → werdet ihr · will you)
+    231   alle vier            (`Es-tu` → Bist du · Are you · Eres tú · Sei tu)
+    112   keine                (Imperative: `Repentez-vous`)
+     51   de + en + it         (`vend-on` → verkauft man · does one · se venden · si vendono)
+      9   nur de   ·  2 nur en  ·  1 de+es+it
+      0   de + en + es OHNE it
+
+Die behauptete Kombination gibt es **kein einziges Mal**. Der einzige
+Beleg, der so aussieht, ist Marc 8,4 (`pourrait-on` → es *podría uno*,
+it *si potrebbe*) — und dort ist die italienische `si`-Konstruktion die
+richtige Wiedergabe des unpersoenlichen `on`, nicht ein fehlendes
+Subjekt.
+
+**Was wirklich gilt:** Deutsch und Englisch tragen das Subjekt fast
+immer, weil sie es muessen (Verbzweitstellung, `do`-Umschreibung).
+Spanisch und Italienisch tragen es nur, wo die franzoesische Inversion
+betont ist — und dann **gemeinsam**. Spanisch ohne Italienisch kommt
+nicht vor.
+
+Roemer selbst liest an allen fuenf eigenen Stellen alle vier
+(`ont-ils`, `régneront-ils`, `est-il`, `fut-elle`, `condamnera-t-il`),
+und die Fragekette in 10,14 folgt dem.
+
+Das ist die zwoelfte meiner Prompt-Angaben, die ein Agent am Quelltext
+widerlegt hat, und die erste, die als *Regel* formuliert war statt als
+Beobachtung. **Eine Regel im Prompt ist so lange eine Behauptung, bis
+sie jemand gezaehlt hat.**

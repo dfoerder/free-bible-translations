@@ -129,7 +129,11 @@ def bericht(nr, min_belege=3, alle=False):
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
-    p.add_argument('buch', type=int)
+    p.add_argument('buch', type=int,
+                   help='NUR die Buchnummer — dieses Skript prueft immer '
+                        'das ganze Buch. Eine zweite Zahl (Kapitel) nimmt '
+                        'es nicht; fuer ein Kapitel gibt es '
+                        '`folgencheck --kapitel`.')
     p.add_argument('--min', type=int, default=3)
     p.add_argument('--alle', action='store_true')
     a = p.parse_args()

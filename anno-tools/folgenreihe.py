@@ -189,6 +189,17 @@ def main():
             ges_mw = sum(len(v) for v in mehrwort.values())
             print(f'  Als MEHRWORT gefasst: {ges_mw} Vorkommen, '
                   f'{len(mehrwort)} Reihen')
+            # Die beiden Abschnitte zeigen DIESELBEN Vorkommen aus zwei
+            # Blickwinkeln — oben Wort fuer Wort, hier als Wendung. Wo
+            # alle gefasst sind, stehen dieselben Stellen zweimal da;
+            # der Agent fuer Roemer 10 hat das als doppelte Ausgabe
+            # gemeldet und gewarnt, dass man die Zahlen leicht addiert.
+            if ges_mw == ges:
+                print('  — dieselben Vorkommen wie oben, nicht zusaetzliche: '
+                      'jedes ist gefasst.')
+            elif ges_mw:
+                print(f'  — davon; die uebrigen {ges - ges_mw} stehen '
+                      'Wort fuer Wort.')
             print()
             for mkey, wo in sorted(
                     mehrwort.items(), key=lambda x: -len(x[1])):
