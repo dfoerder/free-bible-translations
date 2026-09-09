@@ -157,6 +157,14 @@ eingetragen waere, altert mit dem naechsten Paket — der Agent fuer
   hat in Marc 3 sechs Mehrwoerter gemeldet, deren Bloecke zu kurz sind,
   als dass `parallelen.py` sie zeigen koennte — fuenf standen laengst im
   Bestand.
+- **`lexicon.py <NR> <KAP> -o <datei>`** ist das Werkzeug, das die
+  Vorbereitung nicht mitliefert und das der Agent fuer Offenbarung 1 als
+  sein nuetzlichstes bezeichnet hat: es zeigt **jede** Wortform des
+  Kapitels mit Lemma, Level und den drei haeufigsten Bestandsreihen —
+  und darunter einen Block „MEHRWORT-EINTRAEGE, deren Teile hier
+  vorkommen". Der hat ihm `faire connaître`, `séjour des morts`,
+  `Ne crains pas` und `au milieu des` samt Reihe geliefert, bevor
+  `sweeplemma` sie bestaetigte. **Lauf es als Erstes.**
 - **`levelcheck.py`** ist in dieser Phase das schaerfste Werkzeug: in
   Marc 3 hat es **alle vier** neu gesetzten Mehrwort-Level korrigiert.
 - **`hints.py`** ist jetzt nuetzlich: es nennt zu jeder unbelegten Form
