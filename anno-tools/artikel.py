@@ -131,8 +131,14 @@ DE_ARTIKEL = {'der', 'die', 'das', 'den', 'dem', 'des',
               'ein', 'eine', 'einen', 'einem', 'einer', 'eines',
               'am', 'im', 'zum', 'zur', 'vom', 'beim', 'ins', 'ans'}
 
-IT_KONS = re.compile(r"^(?:s[^aeiouh]|z|gn|ps|pn|x|y)", re.I)
-IT_VOKAL = re.compile(r"^[aeiou]", re.I)
+# Die Vokalklasse muss die AKZENTE mitfuehren. Ohne sie las
+# `s[^aeiouh]` das Wort `sì` als unreines s und verlangte `lo sì`
+# statt `il sì` — gemeldet vom Agenten fuer 2. Korinther 1, wo `le oui`
+# und `le non` als Nomen stehen („il sì e il no"). Dasselbe traefe
+# jedes `sé`, `sù`, `già`.
+VOK = 'aeiouàáâäãéèêëíìîïóòôöõúùûüh'
+IT_KONS = re.compile(r"^s(?![" + VOK + r"])|^(?:z|gn|ps|pn|x|y)", re.I)
+IT_VOKAL = re.compile(r"^[" + VOK[:-1] + r"]", re.I)
 
 
 # `dio` bildet den Plural unregelmaessig und nimmt trotz schlichtem

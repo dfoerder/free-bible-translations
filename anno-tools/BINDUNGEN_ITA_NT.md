@@ -6777,3 +6777,307 @@ laesst den Agenten entscheiden.
 
 Nebenbefund desselben Agenten: `si` → `s'il` steht gar nicht in der
 Zehnerliste von `ELIDIERT`, und Reihe 38 sollte es sagen.
+
+---
+
+# Matteo 19
+
+*Angehaengt aus Matteo 19 (Paket 7 · Kapitel 19·20·21). Naechste freie
+Nummer war 187; die Nachbarkapitel haengen parallel an, der Koordinator
+nummeriert durch.*
+
+## 187 · Mehrwoerter, die Matteo 19 praegt
+
+Fuenf neue Wendungen, jede mit der Stelle. Alle mit `pos_end` ausser
+`quello … che` und `non … più`, die `parts` tragen.
+
+    19,5   unirsi        B1  wird sich verbinden · will join ·
+                             se unirá · s'attachera        (si unirà)
+    19,10  rispetto a    B2  gegenüber der · with the ·
+                             con la · à l'égard de la      (rispetto alla)
+    19,11  in grado di   B2  imstande zu · able to ·
+                             capaces de · capables d'      (auch 19,12, sg.)
+    19,19  te stesso     A2  dich selbst · yourself ·
+                             ti mismo · toi-même
+    19,23  a fatica      B1  nur schwer · with difficulty ·
+                             difícilmente · difficilement
+
+**`unirsi` ist ein Reihe-6-Fall, kein Reihe-79-Fall:** die zwei Tokens
+`si unirà` stehen getrennt, also traegt der Mehrworteintrag den
+pronominalen Infinitiv, das Einzeltoken `unirà` das schlichte `unire`.
+Gegenprobe im selben Kapitel: `sposarsi` (19,10) ist **ein** Token mit
+angehaengtem Klitikon und steht deshalb auf `sposare` — genau die
+Trennlinie aus Reihe 121.
+
+**`in grado di` braucht das `di`**, wie `per motivo di`, `a causa di`
+und `per amore di` es tragen: „in Grad von" gibt es in keiner der vier
+Zielsprachen. Die franzoesische Spalte elidiert nach Reihe 38 nach dem
+Folgewort — 19,11 `capables d'` vor *accueillir*, 19,12 `capable de`
+vor *l'accueillir*. `folgencheck --min 3` meldet das als Abweichung und
+hat recht damit.
+
+**`rispetto a` folgt Reihe 2 · 17 · 35:** die mehrwortige Praeposition
+traegt den Vorspann, das verschmolzene `alla` darunter nur den Artikel
+(de *der* · en *the* · es *la* · fr *la*). Nebenwirkung ist die
+Scheinkollision mit `I`/`la` desselben Verses — Reihe 13 · 35.
+
+**`te stesso` folgt `sé stesso` (Reihe 6 · 16,24) und `voi stessi`
+(Giuda 1,20):** der Span umfasst nur die beiden Pronomen, `come` behaelt
+seine eigene Glosse. 19,19 legt die Reihe fuer das ganze Buch fest
+(spaeter noch 22,39).
+
+**Zwei bestehende Mehrwortlemmata bekommen hier eine neue Lesart:**
+`a causa di` (19,12) und `per amore di` (19,29).
+
+    19,12  a causa del    wegen des · for the sake of the ·
+                          por causa del · à cause du     (3 Tokens)
+    19,29  per amore      wegen · for the sake of ·
+                          por causa de · à cause de      (2 Tokens)
+
+Die Spanne ist verschieden lang, und das ist gemessen, nicht gewaehlt:
+`a causa del regno` steht vor einem Nomen mit Artikel, und 13,21
+(`a causa della Parola`) fasst dort ebenfalls drei Tokens. `per amore
+del mio nome` steht vor einem **Possessiv**, und 10,22 (`a causa del mio
+nome`) fasst dort nur zwei — der Artikel faellt nach Reihe 22 ohnehin
+weg, `del` steht darunter auf de *des* · en *of* · es *de* · fr *de*.
+Die deutsche Glosse *wegen* ist an beiden Stellen dieselbe wie bei
+`a causa di`; die beiden Lemmata stehen nie im selben Vers, und nach der
+Regel „aufgeloest wird nur im Kollisionsvers" bleibt das so.
+
+## 188 · Was in Matteo 19 bewusst KEIN Mehrwort bekommt
+
+Nach Reihe 56 · 85: wo die Wendung in allen vier Zielsprachen Wort fuer
+Wort aufgeht, ist ein Mehrwort Zierde.
+
+    19,12  da soli          von selbst · by themselves ·
+                            por sí mismos · par eux-mêmes
+    19,26  guardò fisso     sah an · looked at + fest · intently
+    19,29  cento volte tanto  hundert · Mal · so viel /
+                            hundred · times · as much
+    19,30  molti primi / molti ultimi
+
+`da soli` war der knappste Fall: `da` de *von* · en *by* · es *por* ·
+fr *par* und `soli` de *selbst* · en *themselves* · es *sí mismos* ·
+fr *eux-mêmes* ergeben in allen vier Sprachen einen Satz. Der Preis ist
+die englische Kollision mit dem `si` desselben Verses (Reihe 192).
+
+## 189 · Das essere-Perfekt und die Passivklammer stehen in Matteo 19,12 nebeneinander
+
+Ein Vers, drei Bauformen mit `sono` — Reihe 32 in einem Vers geprueft:
+
+    19,12  ci sono eunuchi              Mehrwort `esserci` A2, `sono` Kopula
+           che sono nati                essere-Perfekt → Kopula-Glosse
+                                        de *sind* · en *are* · es *son* · fr *sont*
+           che sono stati resi          PASSIVKLAMMER → Hilfsverb der Zielsprache
+                                        de *sind* · en *have* · es *han* · fr *ont*
+                                        `stati` de *worden* · en *been* · es *sido* · fr *été*
+           che si sono fatti            reflexives Perfekt → Kopula-Glosse (Reihe 6)
+
+`folgencheck --min 3` meldet „che sono stati" gegen 5,12 (`che sono
+stati prima di voi`, de *gewesen*): dort ist `essere` das Vollverb im
+essere-Perfekt, hier die Passivklammer. Funktion, nicht Reihe.
+
+**`ci sono` traegt den Mehrworteintrag `esserci` A2**, dreimal
+zeichengleich mit Matteo 1,17 und 2,18 (de *gibt es* · en *there are* ·
+es *hay* · fr *il y a*).
+
+## 190 · Wo eine zeichengleiche Uebernahme an der Satzfunktion bricht
+
+Reihe 103 · 185 sagen es allgemein; 19,4 ist der Fall, in dem **zwei
+Bindungen des eigenen Pakets auf dasselbe Token zeigen**:
+
+    „Ma egli rispose loro"   (12,39 · 15,3 · 16,2)  loro en *them*
+    „loro Non avete letto"   (12,3)                 loro en *to them*
+
+19,4 ist „Egli rispose loro: «Non avete letto" und traegt beide Folgen.
+**Das regierende Verb entscheidet:** `rispondere` nimmt im Englischen
+ein direktes Objekt (*answered them*), `dire` ein indirektes (*said to
+them*). Gemessen: `folgenreihe.py "Egli rispose loro"` liefert 7
+Vorkommen, alle auf en *them*. 19,4 folgt dem Verb; `folgencheck`
+meldet die Stelle gegen 12,3, und die Meldung ist richtig und folgenlos.
+
+Ebenso im selben Kapitel: **`nel regno dei cieli`** steht 19,23 nach
+`entrare` (direktiv) und deshalb auf de *in das* · en *into the* —
+zeichengleich mit 7,21 · 18,3 · 5,20 und **nicht** mit dem lokativen
+5,19 · 8,11 · 11,11 · 18,4 (de *im* · en *in the*). Die Klasse steht
+seit Reihe 85.
+
+Und **`entrare nella vita`** (19,17) traegt de *eingehen*, wo 18,8 ·
+18,9 de *einzugehen* tragen: dort steht der Infinitiv nach
+`è meglio`, hier nach dem Modalverb `vuoi`. Deutsche Rektion, nicht
+Reihe.
+
+## 191 · `dallo` ist in 19,21 kein `da` — der Homograph, den kein Werkzeug trennt
+
+`dallo` steht im Bestand als verschmolzene Praeposition (`da` A1,
+Matteo 1,20 de *vom*). In 19,21 (`dallo ai poveri`) ist es der Imperativ
+`da'` + Klitikon `lo` und steht auf **`dare`** A1, de *gib es* ·
+en *give it* · es *dalo* · fr *donne-le* — die Lesart, die Matteo 17,27
+schon fuehrt. Beide Lemmata stehen auf A1, ein Klammerzusatz nach
+Reihe 15 ist deshalb nicht noetig (dieselbe Lage wie `udito`/`udire` in
+Reihe 46).
+
+**`verschmelzung.py` sieht das nicht:** es meldet `dallo` in Abschnitt B
+als „Glosse ohne Artikel", weil es die Form fuer eine Verschmelzung
+haelt. Das ist kein Fehler der Annotation, sondern ein blinder Fleck des
+Werkzeugs — siehe Reihe 194.
+
+Zweiter Homograph des Kapitels: `sposa` (19,9) ist das Verb und steht
+auf `sposare` B1; der Bestand fuehrt daneben das Nomen `sposa` B1
+(*Braut*, 1,18). Gleiches Level, kein Klammerzusatz.
+
+## 192 · Stehengelassene Kollisionen in Matteo 19
+
+`glosskollision.py --datei 40 19` endet auf **5 inhaltliche Paare, alle
+in genau einer Sprache**, und **11 aus geschlossenen Wortarten**.
+Aufgeloest wurde eines: 19,12 `fatti`/`resi` en *made* → `resi` en
+***rendered*** (das Verb ist `rendere`, und fr *rendus* liest es
+ebenso). Stehen bleiben:
+
+- **19,12 `fatti` / `resi`, de *gemacht*** — nach der englischen
+  Aufloesung bleibt Deutsch. „sono stati resi tali" und „si sono fatti
+  eunuchi" haben im Deutschen beide nur *machen*; en *rendered*/*made*,
+  es *hechos*/*hecho* und fr *rendus*/*faits* trennen. Von der
+  Zielsprache erzwungen.
+- **19,12 `si` / `soli`, en *themselves*** — das reflexive Objekt gegen
+  das emphatische *da soli*. Englisch hat eine Form; de *sich*/*selbst*,
+  es *se*/*sí mismos* und fr *se*/*eux-mêmes* trennen. Die Klasse aus
+  Reihe 103 (betontes Pronomen gegen Klitikon), hier im Plural.
+- **19,4 `li` / `loro`, en *them*** — Akkusativ (`li creò`) gegen Dativ
+  (`rispose loro`). Englisch hat eine Form; de *sie*/*ihnen*,
+  es *los*/*les* und fr *les*/*leur* trennen. Reihe 103.
+- **19,12 `ci` / `lo`, de *es*** — das expletive `ci` in `ci sono` gegen
+  das Objektklitikon in `lo accolga`. Deutsch hat fuer beide nur *es*;
+  en *there*/*it*, es *ahí*/*lo* und fr *y*/*l'* trennen.
+- **19,13 `gli` / `glieli`, fr *lui* / *les lui*** — kein echtes Paar:
+  `glieli` enthaelt `gli`, die Glossen sind verschieden lang. Das
+  Werkzeug meldet die Teilzeichenkette.
+- **19,10 `alla` / `I`,`la`** — das nach Reihe 2 · 17 · 35 nur den
+  Artikel glossierende `alla` unter `rispetto a` faellt mit den Artikeln
+  des Verses zusammen. Genau die Scheinkollision, die Reihe 35 fuer
+  `in base al` schon benannt hat.
+- **19,1 `dalla`/`della`, 19,8 `da`/`dei`, 19,11 `ai`/`di`,
+  19,12 `dal`/`del`, 19,28 `che`/`le`, 19,28 `in`/`su`** — geschlossene
+  Wortarten: zwei Praepositionen oder zwei Determinierer in einem Vers,
+  die Klasse aus Reihe 20 · 29 · 36 · 61 · 67 · 103.
+- **19,28 `Vi` / `voi`, fr *vous*** — Klitikon gegen betontes Pronomen;
+  Franzoesisch hat eine Form. de *euch*/*ihr* und es *os*/*vosotros*
+  trennen.
+- **19,12 `a`/`Perché` en *for*/*For*, 19,27 `Allora`/`dunque`
+  en *Then*/*then*** — Paare, die sich allein in der Grossschreibung
+  trennen. Nach dem Baustein keine Kollision.
+- **19,6 `Quello` / `una`, en *the one* / *one*** — verschiedene
+  Zeichenketten, geschlossene Wortart.
+
+## 193 · Begruendete Reste aus `elision.py` und `folgencheck`
+
+**`elision.py --datei` bleibt bei einer Stelle, und sie ist richtig so:**
+19,21 `ciò che hai` — die franzoesische Spalte liest *ce que* + *as*,
+und der Anlaut, auf den es ankommt, gehoert dem **ausgelassenen
+Subjekt**: „ce que **tu** as" elidiert nicht. Genau der Fall, den der
+Baustein mit „ce que vous entendez" beschreibt.
+
+**Drei Elisionen sind dagegen gesetzt worden**, alle nach Reihe 38:
+
+    19,11  di   fr `de` → `d'`    vor *accueillir*
+    19,12  lo   fr `le` → `l'`    vor *accueille*
+    19,23  che  fr `que` → `qu'`  vor *un riche*
+
+19,23 spaltet damit die elfmal zeichengleiche Folge „Vi dico in verità
+che". **Das ist die Spaltung, die Reihe 38 am Geschlechtsregister schon
+entschieden hat:** `folgencheck` vergleicht die fuenf Tokens und sieht
+das Folgewort nicht. 19,28 traegt in derselben Folge weiter `que`, weil
+dort *dans* folgt.
+
+Weitere gemeldete Abweichungen, alle begruendet:
+
+    19,10  `questa` fr *ceci* gegen 7,12 — gleich; `la` de *die* gegen
+           de *das* (7,12): das Genus des folgenden Nomens
+           (die Lage gegen das Gesetz).
+    19,11  `Non` en *Not* gegen 19,4 en *not* — 19,11 beginnt den
+           englischen Satz („Not all are able"), 19,4 steht mitten in
+           „Haven't you read".
+    19,12  `regno` de *Reiches* — Genitiv unter `del regno dei cieli`,
+           zeichengleich mit 13,11 · 16,19.
+
+## 194 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 19)
+
+1. **`verschmelzung.py` haelt `dallo` fuer eine Verschmelzung, auch wo es
+   `dare` + `lo` ist.** 19,21 steht in Abschnitt B mit „Glosse ohne
+   Artikel de *gib es*". Das Werkzeug prueft die Zeichenkette, nicht das
+   Lemma — **eine Ausnahme fuer Eintraege, deren Lemma nicht `a`, `di`,
+   `in`, `da` oder `su` ist, wuerde die Meldung sauber entfernen.** Das
+   waere der Vorschlag an das Werkzeug; dieselbe Falle steht bei
+   `dalla`/`dallo`/`dagli` in jedem Kapitel mit einem Imperativ von
+   `dare`.
+
+2. **Abschnitt B von `verschmelzung.py` war in diesem Kapitel sechsmal
+   richtig leer** — und zwar aus drei verschiedenen Gruenden, die Reihe
+   183 zusammen nennt: Partitiv (`Dei farisei` 19,3, `dei bambini`
+   19,13 — keine Zielsprache setzt dort einen Artikel), generischer
+   Plural im Englischen (`dagli uomini` 19,12 en *by*, `Agli uomini`
+   19,26 en *With*, beide nach 10,17) und das Abstraktum
+   (`nella vita` 19,17 en *into*, wortwoertlich der Fall aus Reihe 183).
+   Deutsch, Spanisch und Franzoesisch behalten den Artikel an allen
+   sechs Stellen.
+
+3. **`selfcheck.py` misst die `form` gegen `common.strip_punct`, nicht
+   gegen `text.split()`.** Wer den Token roh uebernimmt, bekommt 123
+   Befunde („form 'discorsi,' != Token 'discorsi'"). `PUNCT` in
+   `common.py` streift auch den **Apostroph**, weshalb `va',` zu `va`
+   wird, `un'altra` und `d'Israele` aber unangetastet bleiben (nur
+   Rand). Ein eigenes Hilfsskript muss `C.strip_punct` benutzen; die
+   Positionen zaehlen weiter ueber `text.split()`.
+
+4. **`sweeplemma.py` hat einen echten Mehrworteintrag gefunden, den ich
+   verworfen hatte:** `un tale` (19,16) steht im Bestand als Mehrwort
+   (9,8, A2, *eine solche · such · un tal · un tel*). 19,16 traegt es
+   jetzt mit eigener Lesart (de *einer* · en *a certain man* ·
+   es *uno* · fr *un homme*) — das Spanische geht dort Wort fuer Wort
+   nicht auf („un cierto"), also ist der Eintrag noetig.
+   **`folgenreihe.py "un tale"` haette es auch gezeigt; `sweeplemma` hat
+   es ohne Anfrage getan.**
+
+5. **`konvention.py` prueft in dieser Richtung nichts und sagt es
+   selbst** („Fuer die Quelltextsprache 'it' sind keine Wendungen
+   hinterlegt — dieser Lauf wuerde NICHTS pruefen und trotzdem 0
+   melden"). Der Hinweis ist da, der Lauf bleibt leer; er kostet nichts,
+   aber seine Null ist keine Messung.
+
+6. **Der Prompt-Hinweis „`parallelen_40_19.md` traegt 12 von 14
+   Treffern" stimmt und war brauchbar** — aber die Bloecke waren
+   durchweg schon in `bindungen_40_p19_20_21.md` als UEBERNIMMT-Reihen
+   gefuehrt. Der zusaetzliche Ertrag der Parallelendatei lag in den
+   **Nachbartokens** ausserhalb des Blocks (z. B. `all'adulterio`,
+   `mandata via` in 5,32), nicht in den Bloecken selbst.
+
+## 195 · Die 32 neuen Lemmata dieses Kapitels und ihre Level
+
+237 Lemmata stehen in Matteo 19, 205 davon fuehrt der Bestand schon.
+Die 32 neuen, mit der Stelle ihrer Erstsetzung — fuenf davon sind die
+Mehrwoerter aus Reihe 187:
+
+    A2   giovane (19,20) · glieli (19,13) · però (19,14) ·
+         principio (19,4) · te stesso (19,19)
+    B1   a fatica (19,23) · accogliere (19,11) · creare (19,4) ·
+         fatica (19,23) · femmina (19,4) · grado (19,11) ·
+         imporre (19,13) · interrogare (19,17) · mancare (19,20) ·
+         possibile (19,26) · reso (19,12) · ricco (19,23) ·
+         seno (19,12) · unire (19,5) · unirsi (19,5)
+    B2   ago (19,24) · creatore (19,4) · creazione (19,28) ·
+         fisso (19,26) · in grado di (19,11) · rispetto (19,10) ·
+         rispetto a (19,10) · sbigottito (19,25) · tribù (19,28)
+    C1   cruna (19,24) · durezza (19,8) · eunuco (19,12)
+
+**`glieli` bekommt ein eigenes Lemma**, wie der Bestand es fuer `glielo`
+(A2, 6,8) und `gliele` schon tut — die verschmolzenen Doppelklitika
+werden nicht auf ihre Teile zurueckgefuehrt. 19,14 traegt `glielo`
+zeichengleich mit dem Bestandslevel.
+
+**`reso` steht auf der Partizipform** (Reihe 5, Passiv), nicht auf
+`rendere`; `sbigottito` ebenso, als praedikatives Partizip nach
+`furono` — dieselbe Bauform wie `restavano stupite` (7,28).
+
+**`principio` ist A2**, nicht A1: der Bestand fuehrt kein `principio`,
+und die Zeugen geben A1 (en) gegen A2 (de/fr). A2 ist der Wert fuer
+Italienischlernende.

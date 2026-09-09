@@ -62,6 +62,17 @@ VERSCHMOLZEN = re.compile(
 
 BLOSS = {'a', 'di', 'da', 'in', 'su', 'con', 'per'}
 
+# Die Zeichenkette allein reicht nicht: `dallo` ist in 19,21 nicht
+# `da`+`lo`, sondern der Imperativ `da'` von `dare` mit angehaengtem
+# Klitikon — „gib es". Abschnitt B meldete ihn als „Glosse ohne
+# Artikel", und die Falle steht in jedem Kapitel mit einem
+# `dare`-Imperativ. Gemeldet vom Agenten fuer Matteo 19.
+#
+# Das Lemma entscheidet: eine echte Verschmelzung traegt eine der
+# sieben Praepositionen als Lemma. Wo etwas anderes steht, ist die
+# Uebereinstimmung zufaellig.
+LEMMA_PRAEP = {'a', 'di', 'da', 'in', 'su', 'con', 'per'}
+
 # Zwei Klassen, in denen die gleiche Glosse RICHTIG ist — beide beim
 # ersten Lauf ueber Matteo 1-9 gefunden, wo sie alle 14 Treffer des
 # Abschnitts A stellten und keiner davon ein Fehler war.
@@ -110,7 +121,9 @@ def pruefe(buecher, datei=None, kapitel=None):
                 einzel = [e for e in ee if not C.is_multi(e)]
                 verschm = [e for e in einzel
                            if VERSCHMOLZEN.match((e.get('form') or '')
-                                                 .rstrip("'’"))]
+                                                 .rstrip("'’"))
+                           and (e.get('lemma') or '').lower()
+                           in LEMMA_PRAEP]
                 blosse = [e for e in einzel
                           if (e.get('form') or '').lower() in BLOSS]
                 nach = {e['pos']: e for e in einzel}
