@@ -158,7 +158,11 @@ eingetragen waere, altert mit dem naechsten Paket — der Agent fuer
   die stammverwandten Belege mit Zahl und Level.
 - **`belegt.py` nimmt ein WORT, keine Buchnummer** — `belegt.py seigneur`.
   Mit einer Zahl meldet es die Zahl als unbelegte Wortform, und das sieht
-  wie ein sauberer Lauf aus.
+  wie ein sauberer Lauf aus. **Lies seine KOPFZEILE, nicht nur die
+  Vorschlagsliste darunter.** Der Agent fuer Jakobus 5 meldete, `belegt.py
+  plaignez` verschweige das Lemma `plaindre` — es steht in der Kopfzeile
+  (`das LEMMA hat 4, Lemma: plaindre`); nur die alphabetische
+  Aehnlichkeitsliste darunter nennt es nicht.
 - **`rueckwaerts.py` ist die Zweitmeinung** — und eine, die irrt: sie
   kennt den Vers nicht, sondern nur das Wort. Der Agent fuer Matthaeus 25
   fand dort `sages` als *Weise* (die Magier aus Kapitel 2) statt

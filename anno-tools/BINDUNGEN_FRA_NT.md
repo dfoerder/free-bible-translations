@@ -1802,3 +1802,22 @@ sauber.
 Gemeldet vom Agenten fuer 1. Petrus 1, der zwischenzeitlich `soient` =
 *seien* gesetzt hatte — `folgencheck --gegen` meldete daraufhin die
 Grussformel in ZEHN Buechern, und er hat es zurueckgenommen.
+
+## Spanisches Partizip: nach `haber` invariabel, nach `sido` kongruent
+
+Gemessen 2026-09-09 nach einer Meldung des Agenten fuer 1. Petrus 5.
+
+`Dieu vous a appelés` → es **`os ha llamado`**, nicht `llamados`. Nach
+`haber` bleibt das spanische Partizip unveraendert, ausnahmslos — auch
+wenn das franzoesische Partizip mit dem vorangestellten Klitikon
+kongruiert und das Italienische es mitmacht (`vi ha chiamati` ist dort
+richtig).
+
+`vous avez été appelés` → es **`habéis sido llamados`**, mit Kongruenz.
+Nach `sido` (Passiv) kongruiert es sehr wohl.
+
+Das ist **kein Vereinheitlichungsfall, sondern ein Konstruktionsfall**:
+1 Pe 1,15 und 2,9 (Aktivperfekt) standen falsch, 1 Pe 2,21 (Passiv) im
+selben Buch richtig. Zehn Stellen korpusweit korrigiert (46,1,9 · 47,5,5 ·
+48,1,6 · 49,2,5 · 51,2,13 · 52,2,4 · 52,5,24 · 54,4,3 · 60,1,15 · 60,2,9),
+acht Passivfaelle bewusst unangetastet gelassen.
