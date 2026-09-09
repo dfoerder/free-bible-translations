@@ -136,12 +136,24 @@ def bericht(nr, kaps):
             hier = [f'{k},{v}' for k, v in stellen if k in kaps]
             L.append(f'### „{phr}"   (zuerst {erst[0]},{erst[1]} — '
                      f'hier: {", ".join(hier)})')
-            voll, orte, unvoll, _ = _reihe(phr)
+            voll, orte, unvoll, mw = _reihe(phr)
             if not voll:
                 L.append('- im Bestand noch nicht vollstaendig belegt')
             for key, n in voll.most_common():
                 zeile = ' | '.join(' '.join(t) for t in key)
                 L.append(f'- {n}×  {zeile}')
+            # **Die Mehrwoerter gehoeren hierher, nicht nur in den
+            # Auswaerts-Block.** Bis Matteo 22 stand hier allein die
+            # Zeile „N Vorkommen unvollstaendig (dort liegt ein
+            # Mehrwort)" — sie sagt, DASS eins da ist, aber nicht
+            # welches. Der Agent fuer Matteo 22 hat nachgesehen: sechs
+            # der zehn Folgen seines Kapitels tragen im Bestand einen
+            # Mehrworteintrag (`simile a`, `di nuovo`, `meravigliarsi`,
+            # `quello che`, `mettere alla prova`, `te stesso`), und wer
+            # nur die Wort-fuer-Wort-Reihen liest, verliert sie alle.
+            for key, wo in sorted(mw.items(), key=lambda x: -len(x[1])):
+                L.append(f'- {len(wo)}× MEHRWORT [{key[0]}]  '
+                         + ' · '.join(key[2:]))
             if unvoll:
                 L.append(f'- {len(unvoll)} Vorkommen unvollstaendig '
                          '(dort liegt ein Mehrwort)')

@@ -170,6 +170,29 @@ def pruefe(buecher, datei=None, kapitel=None):
             continue
         for kap, vv in d.items():
             for v, ee in vv.items():
+                # **Auch die Mehrwortglossen.** Sie sind ganze
+                # Ausdruecke und tragen ihre Elision selbst — geprueft
+                # wurde sie nie. `non mai` (24,21) stand als
+                # fr *ne… jamais* statt *n'… jamais*, und gefunden hat
+                # es der Agent fuer Matteo 24 nur, weil das Einzelwort
+                # daneben gemeldet war.
+                for m in ee:
+                    if not C.is_multi(m):
+                        continue
+                    frm = (m.get('fr') or '')
+                    for wort, elid in ELIDIERT.items():
+                        mm = re.match(rf'({wort})(\s+|…\s*\S+\s+)(\S+)',
+                                      frm, re.I)
+                        if not mm or not vokalisch(mm.group(3)):
+                            continue
+                        soll_m = elid
+                        if frm[:1].isupper():
+                            soll_m = soll_m[:1].upper() + soll_m[1:]
+                        treffer.append((nr, kap, v, m['pos'],
+                                        m.get('form'), frm,
+                                        frm.replace(mm.group(1), soll_m, 1),
+                                        mm.group(3)))
+                        break
                 einzel = {e['pos']: e for e in ee if not C.is_multi(e)}
                 for pos, e in sorted(einzel.items()):
                     fr = (e.get('fr') or '').strip()

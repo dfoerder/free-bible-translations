@@ -237,7 +237,6 @@ Wendung selbst. Das ist Absicht, kein blinder Fleck.
     cd anno-tools
     python3 selfcheck.py <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 levelcheck.py <NR> <KAP>
-    python3 konvention.py <NR> <KAP>
     python3 sweeplemma.py <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 glosskollision.py --datei <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
     python3 kongruenz.py <NR> <KAP>
@@ -249,6 +248,22 @@ Wendung selbst. Das ist Absicht, kein blinder Fleck.
     python3 elision.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
     python3 verschmelzung.py --datei $ANNO_OUT/<NR>/ch<KAP>.json <NR> <KAP>
     python3 qa.py --kapitel <NR> <KAP> $ANNO_OUT/<NR>/ch<KAP>.json
+
+**Die Reihenfolge ist nicht beliebig.** `paketcheck.py` gehoert **hinter**
+`glosskollision.py`: der Agent fuer Matteo 22 hat eine Paketreihe
+uebernommen (`pronto` es *preparado*) und sich damit im selben Vers eine
+spanische Kollision mit `preparare` eingehandelt, die er zuruecknehmen
+musste. Wer zuerst die Kollisionen im eigenen Vers aufloest, zieht die
+Paketreihe nicht in eine neue hinein.
+
+**`konvention.py` steht nicht mehr in der Kette.** Es hat fuer die
+Quelltextsprache `it` keine Wendungsliste und sagt das selbst — der Lauf
+meldet eine Null, die nichts deckt. Zwei Agenten haben es unabhaengig
+angemerkt.
+
+**`common.load_source(<nr>)` gibt `{'name': …, 'chapters': {…}}`**, und
+die Kapitelschluessel sind **Strings**: `src['chapters']['22']`, nicht
+`src['22']` und nicht `[22]`.
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
