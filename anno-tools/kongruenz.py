@@ -150,6 +150,19 @@ DE_POSSESSIV_ALLE = DE_POSSESSIV | {
 # Italienische Possessive OHNE Artikel — genau die sind verdaechtig.
 IT_ARTIKEL = {'il', 'lo', 'la', "l'", 'l’', 'i', 'gli', 'le'}
 
+# Die verschmolzenen Formen tragen den Artikel MIT. `des vôtres` heisst
+# italienisch `dei vostri` — der Artikel steckt in `dei`, und das
+# Possessiv steht zu Recht bar. Ohne diese Menge meldete die Probe
+# genau das als „Artikel fehlt vor dem Possessiv" (Kol 4,9 und 4,12,
+# Vorbild 2 Ko 8,14 `aux vôtres` = `ai vostri`). Gemeldet vom Agenten
+# fuer Kolosser 4.
+IT_ARTIKEL |= {'del', 'dello', 'della', 'dei', 'degli', 'delle',
+               'al', 'allo', 'alla', 'ai', 'agli', 'alle',
+               'dal', 'dallo', 'dalla', 'dai', 'dagli', 'dalle',
+               'nel', 'nello', 'nella', 'nei', 'negli', 'nelle',
+               'sul', 'sullo', 'sulla', 'sui', 'sugli', 'sulle',
+               'col', 'coi'}
+
 IT_POSSESSIV = {'mio','mia','miei','mie','tuo','tua','tuoi','tue',
                 'suo','sua','suoi','sue','nostro','nostra','nostri',
                 'nostre','vostro','vostra','vostri','vostre'}

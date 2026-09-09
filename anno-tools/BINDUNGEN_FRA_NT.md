@@ -1703,3 +1703,20 @@ glich gegen einen Stand ab, den es Minuten spaeter nicht mehr gab —
 **`paketcheck` gehoert als LETZTER Lauf vor der Abgabe wiederholt**,
 nicht nur einmal in der Mitte. Derselbe Satz, der fuer den Bestand
 gilt, gilt auch fuer die Paketnachbarn.
+
+## Pronominalverben, die der Bestand schlicht fuehrt
+
+Dreimal gemeldet (2 Ko 11, Kolosser 3, und schon in Judas): `corrompre`
+und `plaindre` stehen im Bestand unter dem schlichten Lemma, obwohl die
+Belege reflexiv sind. Die Reflexiv-Regel legt `se corrompre` /
+`se plaindre` nahe.
+
+**Folg dem Bestand und melde es, praeg kein neues Lemma.** Zwei Gruende:
+`corrompre` traegt einen echten transitiven Beleg (1 Ko 15,33, „schlechter
+Umgang verdirbt gute Sitten"), das schlichte Lemma wird dort also
+gebraucht; und eine Umstellung muesste ALLE pronominalen Verben des
+Bestands zugleich erfassen — das ist ein eigener Arbeitsblock, keine
+Kapitelentscheidung.
+
+Fuer neu gepraegte Verben gilt die Reflexiv-Regel unveraendert:
+`se glorifier`, `s'elever`, `se persuader` sind so entstanden.
