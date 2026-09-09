@@ -1744,3 +1744,19 @@ Die fuenf `Fuer`-Mehrwoerter (Mt 28,5 · Lc 23,41 · 2 Ko 10,13 ·
 vereinheitlicht. Gemeldet vom Agenten fuer 1. Thessalonicher 2, der
 die alte Regel als „stimmt mit dem Bestand nicht ueberein" gemessen
 hat — zu Recht.
+
+## Korrektur: `ne rien` steht sehr wohl ueber der Elision
+
+Hier stand, bei verschmolzenem `ne` gebe es kein Mehrwort. Gemessen
+ist das falsch: `ne rien` steht **35× ueber einer elidierten Form**
+gegen 66× ueber einer freien — darunter sechsmal genau `n'a rien`
+(Lc 12,47 · 23,15 · 23,41 · Jn 14,30 · Ac 25,25 · 26,31), alle auf
+*hat nichts · has nothing · no ha nada · non ha nulla*.
+
+Die Luc-1,37-Regel, auf die sich der alte Satz stuetzte, betrifft
+`rien` **vor** `ne` — nicht die Elision als solche. Gemeldet vom
+Agenten fuer Hebraeer 2, gefunden von `sweeplemma`.
+
+Dasselbe gilt fuer `ne personne`: 2 Ko 7,2 setzt es dreimal ueber
+`n'avons … personne`, was schon im Kapitel-11-Bericht zu
+2. Korinther stand.
