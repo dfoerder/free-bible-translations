@@ -1842,3 +1842,19 @@ steht jetzt einstimmig.
 
 **Ein Mehrwort darf nie ueber ein Token spannen, dessen Bedeutung seine
 Glosse nicht enthaelt.** Das ist die allgemeine Regel dahinter.
+
+## Verwandtschaftsnomen: die Artikelregel gilt fuer JEDES Possessiv
+
+Der Abschnitt oben ist an `mon/mes frère(s)` gemessen und liest sich, als
+gaelte er nur fuer die erste Person. Er gilt fuer `son` genauso:
+italienisch steht vor einem Verwandtschaftsnomen im **Singular** kein
+Artikel — `suo fratello`, nicht `il suo fratello`, und nach `di` heisst es
+`di suo fratello`, nicht `di del suo`.
+
+Gemessen 2026-09-09: `son frère` stand 29x artikellos und 8x mit Artikel
+(Jn 11,2 · Hb 8,11 · Jc 4,11 · 1 Jn 3,10 · 3,12 zweimal · 3,15 · 3,17).
+Alle acht gezogen. Gemeldet vom Agenten fuer 1. Johannes 2, der die Regel
+selbst nachgemessen hat, weil `kongruenz.py` nur den Artikel vor dem
+Possessiv prueft und die artikellose Form deshalb nie meldet.
+
+Im **Plural** steht der Artikel sehr wohl: `i miei fratelli`.
