@@ -91,7 +91,27 @@ def bericht(nr, kaps):
             if auswaerts:
                 fremd.append((phr, stellen, erst, auswaerts))
             else:
-                praegt.append((phr, stellen, erst))
+                # Zweite Probe, bevor „PRAEGT" behauptet wird: steht ein
+                # MEHRWORTLEMMA im Bestand, das die Inhaltswoerter der
+                # Folge deckt? Die Suche oben laeuft ueber die
+                # Zeichenkette und ist blind, sobald ein Wort
+                # eingeschoben ist oder anders flektiert:
+                # „rendre continuellement grâces à Dieu" stand hier als
+                # PRAEGT und ist `rendre grâces` mit 43 Belegen,
+                # „devons à votre sujet" ist `au sujet de` mit 9.
+                # Dreimal gemeldet (Galater 1, 2. Thess. 1 und 2).
+                # Nur warnen, wo ALLE Inhaltswoerter des Lemmas in der
+                # Folge stecken. Sonst warnt die Vier-Zeichen-Heuristik
+                # bei `j'ai obtenu miséricorde` vor `mise au tombeau`
+                # (`mise` und `misé` teilen den Stamm) — Rauschen, das
+                # die Warnung entwertet.
+                nah = {l: o for l, o in F.nahe_lemmata(phr, wieviel=6).items()
+                       if F.inhalt_stamm(l) <= F.inhalt_stamm(phr)}
+                nah = dict(list(nah.items())[:2])
+                if nah:
+                    praegt.append((phr, stellen, erst, nah))
+                else:
+                    praegt.append((phr, stellen, erst, None))
         elif erst[0] in fertig:
             uebernimmt.append((phr, stellen, erst))
         else:
@@ -162,17 +182,28 @@ def bericht(nr, kaps):
     if praegt:
         L.append('## PRAEGT — dieses Paket entscheidet')
         L.append('')
-        L.append('Der frueheste Ort liegt hier, **und die Folge steht in '
-                 'keinem anderen Buch des Bestands** — beides gemessen. Was '
-                 'gesetzt wird, gilt fuer alle spaeteren Vorkommen im ganzen '
-                 'Buch, **innerhalb des Pakets zeichengleich**.')
+        L.append('Der frueheste Ort liegt hier, **und die Zeichenkette '
+                 'steht in keinem anderen Buch des Bestands** — beides '
+                 'gemessen. Was gesetzt wird, gilt fuer alle spaeteren '
+                 'Vorkommen im ganzen Buch, **innerhalb des Pakets '
+                 'zeichengleich**.')
         L.append('')
-        for phr, stellen, erst in sorted(praegt, key=lambda x: -len(x[1])):
+        L.append('Wo „**Achtung**" steht, deckt ein vorhandenes '
+                 'Mehrwortlemma die Inhaltswoerter der Folge: dann ist sie '
+                 'wahrscheinlich NICHT gepraegt, sondern gebunden, und die '
+                 'Zeichenkette hat sie nur wegen eines eingeschobenen oder '
+                 'anders flektierten Wortes verfehlt. Nachsehen, bevor du '
+                 'praegst.')
+        L.append('')
+        for phr, stellen, erst, nah in sorted(praegt, key=lambda x: -len(x[1])):
             hier = [f'{k},{v}' for k, v in stellen if k in kaps]
             spaet = len(stellen) - len(hier)
             L.append(f'- **„{phr}"** — {erst[0]},{erst[1]} legt fest · hier: '
                      f'{", ".join(hier)}'
-                     + (f' · spaeter noch {spaet}×' if spaet else ''))
+                     + (f' · spaeter noch {spaet}×' if spaet else '')
+                     + ('  \n  **Achtung**, im Bestand steht: '
+                        + ' · '.join(f'`{l}` ({len(o)}×)'
+                                     for l, o in nah.items()) if nah else ''))
         L.append('')
 
     if spaeter:

@@ -236,6 +236,39 @@ def als_lemma(phr):
     return treffer
 
 
+# Woerter, die nichts unterscheiden — sie wuerden jede Aehnlichkeitsliste
+# fluten. Die PRAEPOSITIONEN gehoeren dazu: ohne sie ging `par` als
+# Inhaltswort durch, und `folgenreihe "par la puissance de Dieu"` schlug
+# `par terre` und `deux par deux` vor. Gemeldet vom Agenten fuer 2 Ko 6.
+_KLEIN = {'il', 'elle', 'le', 'la', 'les', 'de', 'du', 'des', 'a', 'à',
+          'en', 'y', 'ce', 'se', 's', 'l', 'd', 'un', 'une', 'que',
+          'qui', 'et', 'ne', 'pas', 'on', 'nous', 'vous', 'je', 'tu',
+          'par', 'pour', 'dans', 'sur', 'sous', 'avec', 'sans',
+          'chez', 'entre', 'vers', 'depuis', 'aussi', 'plus', 'tout',
+          'même', 'comme', 'si', 'ou', 'mais', 'au', 'aux'}
+
+
+def _inhalt_stamm(text):
+    """Stammschluessel der Inhaltswoerter (vier Zeichen, akzentfrei).
+
+    `paketvorb` fragt sie von aussen ab, um zu pruefen, ob ein
+    Mehrwortlemma VOLLSTAENDIG in einer Folge steckt.
+    """
+    w = [x for x in C.strip_punct(_apo(text)).split()
+         if x.lower() not in _KLEIN]
+    return {C.ohne_akzent(x.lower())[:4] for x in w if len(x) >= 3}
+
+
+def inhalt_stamm(text):
+    """Die Stammschluessel der Inhaltswoerter — dieselbe Zerlegung, die
+    `nahe_lemmata` intern benutzt, nur von aussen abfragbar.
+
+    `paketvorb` braucht sie, um zu pruefen, ob ein Mehrwortlemma
+    VOLLSTAENDIG in einer Folge steckt.
+    """
+    return _inhalt_stamm(text)
+
+
 def nahe_lemmata(phr, wieviel=4):
     """Mehrwortlemmata, deren Woerter denselben Stamm haben wie die Anfrage.
 
@@ -260,22 +293,7 @@ def nahe_lemmata(phr, wieviel=4):
     # reines Rauschen. Gemeldet vom Agenten fuer 2. Korinther 6.
     # Dieselbe Einsicht wie beim Fenster in `sweeplemma`: was staendig
     # vorkommt, trennt nichts.
-    klein = {'il', 'elle', 'le', 'la', 'les', 'de', 'du', 'des', 'a', 'à',
-             'en', 'y', 'ce', 'se', 's', 'l', 'd', 'un', 'une', 'que',
-             'qui', 'et', 'ne', 'pas', 'on', 'nous', 'vous', 'je', 'tu',
-             'par', 'pour', 'dans', 'sur', 'sous', 'avec', 'sans',
-             'chez', 'entre', 'vers', 'depuis', 'aussi', 'plus', 'tout',
-             'même', 'comme', 'si', 'ou', 'mais', 'au', 'aux'}
-
-    def stamm(w):
-        return C.ohne_akzent(w.lower())[:4]
-
-    def inhalt(text):
-        w = [x for x in C.strip_punct(_apo(text)).split()
-             if x.lower() not in klein]
-        return {stamm(x) for x in w if len(x) >= 3}
-
-    ziel = inhalt(phr)
+    ziel = _inhalt_stamm(phr)
     if not ziel:
         return {}
     gefunden = collections.defaultdict(list)
@@ -283,13 +301,26 @@ def nahe_lemmata(phr, wieviel=4):
         if not C.is_multi(e):
             continue
         lem = e.get('lemma', '')
-        s = inhalt(lem)
+        s = _inhalt_stamm(lem)
         if not s or not (ziel & s):
             continue
-        if abs(len(s) - len(ziel)) > 1:
-            continue
         gefunden[lem].append(f'{C.book_name(nr)} {k},{v}')
-    return dict(sorted(gefunden.items(), key=lambda x: -len(x[1]))[:wieviel])
+    # Sortiert nach UEBERLAPPUNG, dann nach Belegzahl. Vorher stand hier
+    # ein Laengenfilter (`abs(len(s) - len(ziel)) > 1`) und die Sortierung
+    # lief allein ueber die Belegzahl — beides zusammen warf genau die
+    # richtige Antwort weg: auf `rendre continuellement grâces à Dieu`
+    # (vier Inhaltswoerter) kam `se mettre en garde contre` und NICHT
+    # `rendre grâces` (zwei Inhaltswoerter, Differenz 2, also
+    # aussortiert), obwohl das mit 43 Belegen dasteht und die Folge
+    # traegt. Die Bindungsdatei wies sie daraufhin als PRAEGT aus.
+    # Dreimal gemeldet: Galater 1, 2. Thessalonicher 1 und 2.
+    #
+    # Ein kuerzeres Lemma ist der NORMALFALL, nicht die Ausnahme: die
+    # Anfrage kommt aus dem Vers und traegt Adverbien und Objekte mit,
+    # die im Zitierlemma nichts zu suchen haben.
+    def rang(x):
+        return (-len(ziel & _inhalt_stamm(x[0])), -len(x[1]))
+    return dict(sorted(gefunden.items(), key=rang)[:wieviel])
 
 
 def main():
