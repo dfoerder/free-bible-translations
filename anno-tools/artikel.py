@@ -266,13 +266,19 @@ def anlautprobe(ein, kap, vers, treffer):
             # genauso sicher fern und laesst Zahlwoerter durch.
             # Gemeldet vom Agenten fuer Offenbarung 11, der die Regel
             # von Hand nachgemessen hat.
-            lem_nx = (nx.get('lemma') or '')
-            ist_verb = (len(lem_nx) > 3 and not lem_nx[:1].isupper()
-                        and lem_nx.endswith(('er', 'ir', 're', 'oir')))
-            if ist_verb:
-                continue
-            if C.de_wort(nx)[:1].islower() and not IT_GLI_ZAHLADJ.match(w):
-                continue
+            # Die Zahlwortprobe steht VOR der Verbprobe: `quatre` endet
+            # auf `-re` und gilt ihr sonst als Verb — genau daran ist
+            # `gli quattro` in Apk 7,11 dem ersten Anlauf dieses Fixes
+            # entgangen.
+            zahladj = bool(IT_GLI_ZAHLADJ.match(w))
+            if not zahladj:
+                lem_nx = (nx.get('lemma') or '')
+                ist_verb = (len(lem_nx) > 3 and not lem_nx[:1].isupper()
+                            and lem_nx.endswith(('er', 'ir', 're', 'oir')))
+                if ist_verb:
+                    continue
+                if C.de_wort(nx)[:1].islower():
+                    continue
             if kl == 'uno' and not IT_KONS.match(w):
                 soll = 'un'
             elif kl == 'gli' and not (IT_KONS.match(w)
