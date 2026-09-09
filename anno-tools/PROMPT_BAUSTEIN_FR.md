@@ -49,6 +49,11 @@ Die Spalten heissen **de · en · es · it** — nicht en/es/fr/it. Eine
 Mehrwoerter tragen zusaetzlich `pos_end` (zusammenhaengend) **oder**
 `parts` (getrennte Positionen). Das gilt unveraendert.
 
+**Auch ein Mehrworteintrag traegt `form`** — die Oberflaeche, aus den
+EINZELEINTRAEGEN zusammengesetzt, nie aus dem Quelltext. Ohne sie meldet
+`selfcheck.py` Dutzende Scheinbefunde („Eintrag pos=0 ohne Feld form")
+und der Durchgang ist verloren. Gemeldet vom Agenten fuer 2. Petrus 2.
+
 **`form` traegt keine Satzzeichen.** Der Quelltext hat sie (`Dieu,`
 `vides.`), der Bestand fuehrt sie nicht — `form` ist immer das nackte
 Wort, so wie `common.strip_punct` es liefert. Wer den Rohtoken
