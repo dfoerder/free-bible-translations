@@ -60,6 +60,14 @@ def erstes_wort(s):
     return m.group(0) if m else ''
 
 
+# Praepositionen und Konjunktionen, die eine Nominalphrase beenden —
+# dieselbe Liste, die kongruenz.py fuehrt.
+PHRASENENDE = {'en', 'à', 'au', 'aux', 'de', 'du', 'des', 'dans', 'pour',
+               'par', 'sur', 'sous', 'avec', 'sans', 'que', 'qui', 'et',
+               'ou', 'comme', 'chez', 'entre', 'vers', 'depuis', 'selon',
+               'contre', 'jusqu’à', 'afin'}
+
+
 def nomen_danach(einzel, pos):
     """Das erste grossgeschriebene deutsche Folgewort — das ist das Nomen.
 
@@ -74,13 +82,54 @@ def nomen_danach(einzel, pos):
             return None
         if C.de_wort(kand)[:1].isupper():
             return kand
+        # Eine Praeposition beendet die Phrase. Das Fenster ist fuer
+        # eingeschobene ADJEKTIVE da; laeuft es ueber eine Praeposition,
+        # trifft es das Nomen der naechsten Phrase und vergleicht zwei
+        # Woerter, die nichts miteinander zu tun haben. `le long du
+        # chemin` pruefte so `le` gegen `chemin` und meldete sechsmal
+        # ein falsches Genus, obwohl der Artikel des Nomens (`du` →
+        # `della`) richtig dasteht; `Le lendemain une foule` sprang von
+        # `Le` auf `foule`. Dieselbe Grenze fuehrt kongruenz.py.
+        if (kand.get('form') or '').lower() in PHRASENENDE:
+            return None
+        # Ein zweiter Artikel beendet die Phrase ebenso sicher. Noetig,
+        # wo die Grossschreibung nicht traegt: `Le lendemain une foule`
+        # glossiert `lendemain` als „nächsten Tag" — klein, also
+        # uebersprungen —, und der Lauf verglich `Le` mit `foule`,
+        # obwohl `Al día siguiente` / `Il giorno seguente` richtig ist.
+        if C.de_wort(kand).lower() in DE_ARTIKEL:
+            return None
     return None
 
 
+def artikelglosse(g, tab):
+    """Ist die Glosse WIRKLICH nur ein Artikel?
+
+    Zwei Woerter sind erlaubt, weil `de la`, `a los` und `di quelli`
+    Artikel bleiben — aber nur, wenn auch das zweite Wort eines ist.
+    Ohne diese Bedingung ging `ce` → `il fatto` / `el hecho` als
+    Artikel `il`/`el` durch und wurde gegen das uebernaechste Nomen
+    geprueft (Rm 1,8 und 2 Ko 7,9).
+    """
+    w = (g or '').split()
+    if len(w) == 1:
+        return True
+    if len(w) == 2:
+        return w[1].lower() in tab
+    return False
+
+
 def sammle():
-    """Artikelverteilung je (Sprache, Nomenform) aus dem ganzen Bestand."""
+    """Artikelverteilung je (Sprache, Nomenform) aus dem ganzen Bestand.
+
+    Gibt neben den Zahlen die Belegstellen zurueck — der Block
+    `gespalten()` zeigt beide Seiten, und ohne Orte kann sie niemand
+    nachschlagen.
+    """
     zaehl = collections.defaultdict(collections.Counter)
+    orte = collections.defaultdict(lambda: collections.defaultdict(list))
     for pfad in sorted(glob.glob(os.path.join(ANNO, f'*{C.ANNO_SUFFIX}'))):
+        nr = re.match(r'(\d+)', os.path.basename(pfad)).group(1)
         d = json.load(open(pfad))
         ch = d.get('chapters', d)
         for k, vv in ch.items():
@@ -98,11 +147,13 @@ def sammle():
                         continue
                     for sp, tab in ART.items():
                         a = erstes_wort(e.get(sp))
-                        if a in tab and len((e.get(sp) or '').split()) <= 2:
+                        if a in tab and artikelglosse(e.get(sp), tab):
                             n = erstes_wort(nx.get(sp))
                             if len(n) > 2:
                                 zaehl[(sp, n)][tab[a]] += 1
-    return zaehl
+                                orte[(sp, n)][tab[a]].append(
+                                    f'{nr} {k},{v}')
+    return zaehl, orte
 
 
 # Der italienische Artikel richtet sich vor dem Nomen nach dem ANLAUT,
@@ -214,6 +265,47 @@ def anlautprobe(ein, kap, vers, treffer):
                         nx.get('form'), w, soll))
 
 
+# Zweite Achse: dasselbe Zielnomen mit BEIDEN Artikeln.
+#
+# Die Probe oben braucht eine Mehrheit — sie fragt „welcher Artikel ist
+# hier der richtige?" und muss das aus dem Bestand erraten. Diese hier
+# fragt etwas anderes, das keine Mehrheit braucht: `conocimiento` hat
+# genau EIN Genus, also ist jede Spaltung ein Befund, auch bei 12:7.
+# Genau daran ist die erste vorbeigelaufen (63 % — unter beiden
+# Schwellen), waehrend sechs falsche `la conocimiento` dastanden;
+# gefunden vom Agenten fuer 2. Korinther 10, gemessen beim Einsammeln
+# des Pakets.
+#
+# Der Block URTEILT NICHT. Er zeigt beide Seiten mit Orten, denn welche
+# die falsche ist, sagt keine Zahl — bei `consuelo` stand die Mehrheit
+# (5:1) falsch. Und drei Arten von Spaltung sind RICHTIG:
+#   * Nomen gemeinsamen Geschlechts — `el joven` / `la joven`,
+#     `il giovane` / `la giovane`, `guida`, `guardia` (die Person
+#     ist maskulin, die Truppe feminin);
+#   * die spanische a-tonica-Regel — feminine Nomen mit betontem
+#     a-Anlaut nehmen im Singular `el`: `el arpa`, `el agua`;
+#   * Adjektive und Adverbien, die als Nomen durchgehen (`gran`,
+#     `mas`, `piu`, `ultimo`) — die richten sich nach ihrem Bezugswort.
+def gespalten(zaehl, orte, buchnomen):
+    """Nomen des geprueften Buches, die im Bestand beide Artikel tragen."""
+    raus = []
+    for (sp, n), c in zaehl.items():
+        if (sp, n) not in buchnomen:
+            continue
+        # Nur die SINGULAR-Genera. `len(c) < 2` reichte nicht: eine
+        # Zaehlung {'mp': 3, 'f': 1} hat zwei Schluessel und ist doch
+        # keine Spaltung — Plural und Singular schliessen einander
+        # nicht aus.
+        m, f = c.get('m', 0), c.get('f', 0)
+        if not (m and f):
+            continue
+        klein = 'm' if m <= f else 'f'
+        raus.append((sp, n, m, f, klein,
+                     orte[(sp, n)][klein], orte[(sp, n)]['f' if klein == 'm'
+                                                         else 'm']))
+    return sorted(raus)
+
+
 def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
@@ -221,7 +313,7 @@ def main():
     out = os.environ.get('ANNO_OUT')
     if not out:
         raise SystemExit('ANNO_OUT ist nicht gesetzt.')
-    zaehl = sammle()
+    zaehl, orte = sammle()
     # Das Genus kommt aus der Artikelverteilung des BESTANDS. Ist der
     # klein, erreicht keine Nomenform die Meldeschwelle, und '0
     # Verdachtsfaelle' heisst dann nicht 'sauber', sondern 'nichts
@@ -230,6 +322,7 @@ def main():
     tragfaehig = sum(1 for c in zaehl.values() if sum(c.values()) >= 5)
     treffer = []
     anlaut = []
+    buchnomen = set()
     for f in sorted(glob.glob(os.path.join(out, buch, 'ch*.json'))):
         if '.part' in f:
             continue
@@ -245,13 +338,27 @@ def main():
                 nx = nomen_danach(ein, pos)
                 if not nx:
                     continue
-                if (e.get('form') or '').lower() not in DE_ARTIKEL:
+                # `C.de_wort`, nicht `form`: in der franzoesischen und
+                # englischen Richtung steht das Deutsche in `de`, und
+                # `form` traegt dort `la`/`le`/`du`. Gegen eine Liste
+                # DEUTSCHER Artikel geprueft passte davon nur, was in
+                # beiden Sprachen gleich aussieht (`des`) — in 2 Kor
+                # 38 von 451 Artikeln, also 8 %. Die Genusprobe lief
+                # damit fuer fra/lsg1910mod jahrelang fast leer, und
+                # ihre Nullen hiessen nicht „sauber", sondern „nichts
+                # angesehen": 110 falsche Artikel standen unbemerkt im
+                # Bestand. `sammle()` machte es an derselben Stelle
+                # schon richtig — derselbe Fall, den der Docstring von
+                # `common.de_wort` beschreibt, eine Zeile weiter unten
+                # uebersehen.
+                if C.de_wort(e).lower() not in DE_ARTIKEL:
                     continue
                 for sp, tab in ART.items():
                     a = erstes_wort(e.get(sp))
-                    if a not in tab or len((e.get(sp) or '').split()) > 2:
+                    if a not in tab or not artikelglosse(e.get(sp), tab):
                         continue
                     n = erstes_wort(nx.get(sp))
+                    buchnomen.add((sp, n))
                     c = zaehl.get((sp, n))
                     if not c:
                         continue
@@ -272,6 +379,16 @@ def main():
                     # den naechsten Fall, nicht heutiges Rauschen.
                     stark = ges >= 5 and anz / ges >= 0.8
                     knapp = ges >= 10 and ges - anz <= 3
+                    # Nur bei GLEICHEM Numerus. `du temps` heisst
+                    # italienisch `ai tempi` — Plural, voellig richtig,
+                    # und ueber das Genus sagt der Vergleich mit einem
+                    # Bestand im Singular nichts. Ohne diese Zeile war
+                    # rund die Haelfte der Meldungen aus der ersten
+                    # fra-Messung genau das (`ai tempi` 5x, `los
+                    # espiritus` 6x, `el discipulo` gegen `los
+                    # discipulos`).
+                    if (tab[a][-1:] == 'p') != (haupt[-1:] == 'p'):
+                        continue
                     if (stark or knapp) and tab[a] != haupt:
                         treffer.append((int(k), int(v), sp, e['form'],
                                         e[sp], nx['form'], nx[sp],
@@ -285,15 +402,30 @@ def main():
         for k, v, f1, a, f2, w, soll in sorted(set(anlaut)):
             print('  %s,%s,%-3s %-8s it %-6s | %-12s it %-14s  → %s'
                   % (buch, k, v, f1, a, f2, w, soll))
+    gesp = gespalten(zaehl, orte, buchnomen)
+    if gesp:
+        print()
+        print('  Gespaltenes Genus — dasselbe Zielnomen traegt im Bestand\n'
+              '  BEIDE Artikel. Kein Urteil, eine Frage: welche Seite ist\n'
+              '  falsch? (Richtig gespalten sind Nomen gemeinsamen\n'
+              '  Geschlechts, `el arpa` und Adjektive.)')
+        for sp, n, m, f, klein, wenig, viel in gesp:
+            print('  %-3s %-16s m=%-3d f=%-3d   %s: %s%s'
+                  % (sp, n, m, f, klein, ', '.join(wenig[:5]),
+                     ' …' if len(wenig) > 5 else ''))
+            print('  %-3s %-16s              %s: %s%s'
+                  % ('', '', 'f' if klein == 'm' else 'm',
+                     ', '.join(viel[:5]), ' …' if len(viel) > 5 else ''))
     print()
     if tragfaehig < 200:
         print(f'!! Der Bestand traegt erst {tragfaehig} Nomenformen mit '
               'mindestens 5 Belegen. Bei so wenig Referenz erreicht kaum '
               'etwas die Meldeschwelle — eine Null hier heisst NICHT '
               '"sauber", sondern "noch nichts gemessen".')
-    print('%d Verdachtsfaelle%s. Das Genus ist aus der Artikelverteilung des'
+    print('%d Verdachtsfaelle%s%s. Das Genus ist aus der Artikelverteilung des'
           % (len(set(treffer)),
-             f' und {len(set(anlaut))} Anlautfehler' if anlaut else ''))
+             f' und {len(set(anlaut))} Anlautfehler' if anlaut else '',
+             f' und {len(gesp)} gespaltene Nomen' if gesp else ''))
     print('Bestands abgeleitet, nicht aus einem Woerterbuch — jeden Treffer')
     print('am Vers ansehen. Gemeldet wird nur ab 5 Belegen und 80 Prozent.')
     return 0
