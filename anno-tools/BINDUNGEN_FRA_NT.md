@@ -1768,3 +1768,20 @@ Wo `plus` und `aucun` in derselben Verneinung stehen, setzt der Bestand
 „ne fit plus aucune réponse". Gemeldet vom Agenten fuer Hebraeer 10,
 der zuerst `ne plus` gesetzt hatte; `sweeplemma`s Verdachtsblock
 (`avoir aucun`, 80 % gedeckt) hat ihn hingefuehrt.
+
+## Praezisierung: Verwandtschaftsnomen, Artikel und NUMERUS
+
+Hier stand, der Vokativ stehe italienisch artikellos. Gemessen an
+`mon/mes frère(s)` ist die Trennlinie eine andere — der Numerus:
+
+    mon frère   → `mio`      bar        13 Belege
+    mes frères  → `i miei`   mit Artikel 15 Belege
+
+Das ist die italienische Regel fuer Verwandtschaftsnomen: im SINGULAR
+artikellos (`mio fratello`), im PLURAL mit Artikel (`i miei
+fratelli`). Der Vokativ aendert daran nichts — die 15 Plurale stehen
+gerade in Anreden (Rm 7,4 · Rm 15,14 · 1 Ko 11,33 · 1 Ko 15,58 ·
+Phi 3,1).
+
+Gemeldet vom Agenten fuer Jakobus 1, der `kongruenz.py` folgte statt
+der alten Regel und damit richtig lag.
