@@ -1785,3 +1785,20 @@ Phi 3,1).
 
 Gemeldet vom Agenten fuer Jakobus 1, der `kongruenz.py` folgte statt
 der alten Regel und damit richtig lag.
+
+## Deutsche Homonymie: `devenir` und das Passiv-Hilfsverb
+
+Wie `ne`/`pas` beide *nicht* tragen, tragen `deviennent` und `soient`
+beide *werden* — das Deutsche hat fuer „become" und das
+Passiv-Hilfsverb EIN Wort. `glosskollision` meldet das Paar als
+1-von-4-Verdacht; es ist keiner.
+
+Beide Seiten sind gemessene Bindungen: `vous soient` steht 11:0 auf
+*werden* (die zehn paulinischen Grussverse plus Jude 1,2, der
+wortgleiche Zwilling), `deviennent` 5:0 (Mt 4,3 · 19,5 · 1 Ko 6,16 ·
+Eph 5,31 · Jn 9,39). Englisch, Spanisch und Italienisch trennen
+sauber.
+
+Gemeldet vom Agenten fuer 1. Petrus 1, der zwischenzeitlich `soient` =
+*seien* gesetzt hatte — `folgencheck --gegen` meldete daraufhin die
+Grussformel in ZEHN Buechern, und er hat es zurueckgenommen.
