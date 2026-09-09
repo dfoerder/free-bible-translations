@@ -201,7 +201,13 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
     lemma_index = lemmata            # {lemma_klein: Counter} — vor dem Ueberschreiben retten
     lemmata = {k[1] for k in c}
     schreibungen = {k[0] for k in c}
-    if C.strip_punct(apos(wort)) not in schreibungen:
+    # Verglichen wird NORMALISIERT. Vorher stand die Bestandsschreibung
+    # typografisch und die Anfrage gerade gegenueber, und die Warnung
+    # feuerte fuer jede franzoesische Elision — mit einem Text, der sich
+    # selbst widersprach („steht nur als `d’homme` — nicht als
+    # `d'homme`"). Gemeldet vom Agenten fuer 2. Korinther 4. Die Probe
+    # soll die GROSSSCHREIBUNG trennen, nicht den Apostroph.
+    if C.strip_punct(apos(wort)) not in {apos(x) for x in schreibungen}:
         print(f'   VORSICHT: im Bestand steht die Form nur als '
               + ', '.join(f'`{x}`' for x in sorted(schreibungen))
               + f' — nicht als `{C.strip_punct(apos(wort))}`.')

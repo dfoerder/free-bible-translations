@@ -212,9 +212,18 @@ def nahe_lemmata(phr, wieviel=4):
     wird nur, was mindestens ein Inhaltswort teilt UND nicht mehr als
     ein Inhaltswort mehr oder weniger hat.
     """
+    # Die Liste muss die PRAEPOSITIONEN mitfuehren. Ohne sie ging `par`
+    # als Inhaltswort durch, und `folgenreihe "par la puissance de Dieu"`
+    # schlug `par terre` und `deux par deux` als stammverwandt vor —
+    # reines Rauschen. Gemeldet vom Agenten fuer 2. Korinther 6.
+    # Dieselbe Einsicht wie beim Fenster in `sweeplemma`: was staendig
+    # vorkommt, trennt nichts.
     klein = {'il', 'elle', 'le', 'la', 'les', 'de', 'du', 'des', 'a', 'à',
              'en', 'y', 'ce', 'se', 's', 'l', 'd', 'un', 'une', 'que',
-             'qui', 'et', 'ne', 'pas', 'on', 'nous', 'vous', 'je', 'tu'}
+             'qui', 'et', 'ne', 'pas', 'on', 'nous', 'vous', 'je', 'tu',
+             'par', 'pour', 'dans', 'sur', 'sous', 'avec', 'sans',
+             'chez', 'entre', 'vers', 'depuis', 'aussi', 'plus', 'tout',
+             'même', 'comme', 'si', 'ou', 'mais', 'au', 'aux'}
 
     def stamm(w):
         return C.ohne_akzent(w.lower())[:4]

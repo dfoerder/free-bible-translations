@@ -1505,3 +1505,48 @@ dazu 2,10 italienisch `anche` → `perfino`). 14,21 bleibt auf
     Regel:  wo der Bestand ohne Kriterium geteilt ist, entscheidet das
             BUCH und nicht die Gesamtzahl. Der Leser liest ein Buch,
             nicht den Bestand.
+
+## Die dritte Blindheit: ein eingeschobenes Wort
+
+`folgenreihe` sucht die Zeichenkette, `sweeplemma` die Lemmasignatur —
+und beide leiten die erlaubte **Lueckenweite aus der Bestandsspanne**
+ab. Steht eine Wendung im Bestand zusammenhaengend, kann sie im
+Kapitel auseinandergezogen nie gefunden werden.
+
+Gefunden hat es der Agent fuer 2. Korinther 2 an `qui nous fait
+**toujours** triompher`: das Mehrwort `faire triompher` steht in
+Mt 12,20 zusammenhaengend, und weder Zeichenkette noch Signatur
+trafen. Einziger Finder war der Parallelvers von Hand.
+
+Der Bestand traegt den Beweis, dass die Luecke alt ist:
+
+    `c’est pour cela que`  steht 7× als Mehrwort — und genau die
+    achte Stelle, Luc 7,7, hat KEINS. Sie ist die einzige mit einem
+    eingeschobenen Wort: `C’est pour cela **aussi** que`.
+
+Nachgetragen als `parts` [0,1,2,4].
+
+**Die Korrektur, und warum die naheliegende falsch war.** Das Fenster
+in `sweeplemma` wird auf drei erweitert — aber **nur fuer Signaturen
+aus lauter Inhaltswoertern**. Pauschal erweitert kostet es:
+
+    Roemer      3 → 8 Treffer      1. Korinther   5 → 18
+    davon echt: keiner             davon echt: keiner
+
+Es sind durchweg `ce qui`, `ce que`, `selon que`, `afin de` — Paare, deren
+beide Lemmata sich staendig zufaellig in drei Token Abstand treffen. Mit
+der Stoppliste:
+
+    Roemer      3 → 3               1. Korinther   5 → 6
+
+Die eine zusaetzliche Meldung ist echt (`quelque autre chose`,
+1 Ko 10,31, wo der Bestand `quelque chose` 30× fuehrt).
+
+Dieselbe Einsicht gilt fuer die stammverwandten Mehrwortlemmata in
+`folgenreihe`: dort ging `par` als Inhaltswort durch, und
+`"par la puissance de Dieu"` schlug `par terre` und `deux par deux`
+vor. Praepositionen stehen jetzt mit in der Stoppliste.
+
+    Merksatz: was staendig vorkommt, trennt nichts. Ein weiteres
+    Fenster gehoert nur dorthin, wo ein zufaelliges Zusammentreffen
+    unwahrscheinlich ist.

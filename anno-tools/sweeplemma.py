@@ -57,6 +57,14 @@ import sys
 
 import common as C
 
+FUNKTION = {'ce', 'que', 'qui', 'de', 'à', 'le', 'la', 'les', 'en', 'y',
+            'se', 'ne', 'pas', 'un', 'une', 'selon', 'afin', 'pour',
+            'par', 'tel', 'et', 'ou', 'si', 'il', 'elle', 'on', 'ils',
+            'je', 'tu', 'nous', 'vous', 'me', 'te', 'lui', 'leur', 'son',
+            'mon', 'ton', 'notre', 'votre', 'celui', 'ceci', 'cela',
+            'plus', 'tout', 'même', 'aussi', 'comme', 'quand', 'dans',
+            'avec', 'sur', 'sous', 'entre', 'chez', 'avoir', 'être'}
+
 MAXLEN = 5      # laengere Signaturen tragen nichts bei
 MAXGAP = 14     # weiter auseinander steht kein Verbzusatz im Bestand
 
@@ -89,7 +97,18 @@ def signaturen():
                         continue
                     s = tuple(lem[p] for p in pos)
                     rec = sig.setdefault(s, [0, 0])
-                    rec[0] = max(rec[0], spanne)
+                    # Eine im Bestand ZUSAMMENHAENGENDE Wendung kann im
+                    # Kapitel auseinandergezogen sein (`fait *toujours*
+                    # triompher`) — dann findet die aus der Bestandsspanne
+                    # abgeleitete Lueckenweite sie nie. Das Fenster wird
+                    # deshalb auf drei erweitert, ABER nur fuer Signaturen
+                    # aus lauter Inhaltswoertern: bei `ce qui`, `selon que`
+                    # oder `afin de` treffen sich die beiden Lemmata
+                    # staendig zufaellig, und die Erweiterung erzeugt dort
+                    # nur Rauschen (in 1. Korinther 5 zusaetzliche
+                    # Fehlalarme, kein einziger Fund).
+                    rec[0] = max(rec[0], spanne,
+                                 3 if all(x not in FUNKTION for x in s) else 0)
                     rec[1] += 1
     return sig
 

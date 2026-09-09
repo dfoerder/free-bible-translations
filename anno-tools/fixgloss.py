@@ -29,13 +29,28 @@ def _zeig(idx, titel):
     print()
 
 
+def _apo(w):
+    """Gerader und typografischer Apostroph muessen gleich treffen.
+
+    `belegt.py` gibt seine Vorschlaege mit dem GERADEN aus (es
+    normalisiert intern darauf, damit das italienische `dell'uomo`
+    trifft), der franzoesische Bestand schreibt den typografischen.
+    Wer `s'efforcer` aus der einen Ausgabe in die andere kopierte,
+    bekam „nichts gefunden" fuer ein Lemma mit sechs Belegen.
+    Gemeldet von den Agenten fuer 2. Korinther 4 und 5.
+    """
+    return (w or '').replace('\u2019', "'")
+
+
 def show(lemmata, per_form=False):
     for ziel in lemmata:
+        zielk = _apo(ziel)
         idx = collections.defaultdict(list)
         for nr in C.anno_books():
             name = C.load_source(nr)['name']
             for _, kap, vers, e in C.iter_corpus([nr]):
-                treffer = (e['form'] == ziel) if per_form else (e['lemma'] == ziel)
+                treffer = (_apo(e['form']) == zielk) if per_form \
+                    else (_apo(e['lemma']) == zielk)
                 if treffer:
                     key = (e['lemma'], e['level']) + C.reihe(e)
                     idx[key].append(f'{name} {kap},{vers}')
