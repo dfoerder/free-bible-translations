@@ -1760,3 +1760,11 @@ Agenten fuer Hebraeer 2, gefunden von `sweeplemma`.
 Dasselbe gilt fuer `ne personne`: 2 Ko 7,2 setzt es dreimal ueber
 `n'avons … personne`, was schon im Kapitel-11-Bericht zu
 2. Korinther stand.
+
+## `ne … plus aucun` traegt EIN Mehrwort, nicht zwei
+
+Wo `plus` und `aucun` in derselben Verneinung stehen, setzt der Bestand
+`ne aucun` ueber die ganze Spanne und KEIN `ne plus`. Beleg: Marc 15,5
+„ne fit plus aucune réponse". Gemeldet vom Agenten fuer Hebraeer 10,
+der zuerst `ne plus` gesetzt hatte; `sweeplemma`s Verdachtsblock
+(`avoir aucun`, 80 % gedeckt) hat ihn hingefuehrt.
