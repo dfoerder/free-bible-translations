@@ -150,6 +150,26 @@ for v in sorted(quelle, key=int):
     # gemeinsame Tokens (`Jésus lui répondit Tu`) bei Aehnlichkeit 0.25 —
     # eine Formel, keine Parallele. Den ganzen Vers dazu auszuschreiben
     # waere genau das Rauschen, das den Rest unlesbar macht.
+    # **Unterhalb der Schwelle wenigstens die Mehrwoerter.** Die
+    # Schwelle haelt Rauschen ab (vier gemeinsame Tokens bei
+    # Aehnlichkeit 0.25 sind eine Formel, keine Parallele) — sie haelt
+    # aber auch die Mehrworteintraege zurueck, und die sind genau das,
+    # was sonst nirgends steht. 25,19 ← 18,23 hat Block 4 und
+    # Aehnlichkeit 0.35, verfehlt beide Schwellen, und der Vorlagevers
+    # traegt `fare i conti`. Der Agent fuer Matteo 25 hat es gemeldet —
+    # dieselbe Luecke wie in `paketvorb.py` (Reihe 259), nur hier.
+    if (k in annotiert.get(b, ()) and not (blk >= 6 or r >= 0.40)):
+        spannen = [e for e in C.load_anno(b)['chapters'][k][w]
+                   if C.is_multi(e)]
+        if spannen:
+            print('   unter der Schwelle — aber der Vorlagevers traegt '
+                  'diese Mehrwoerter:')
+            for e in spannen:
+                span = (f'{e["pos"]}-{e["pos_end"]}' if 'pos_end' in e
+                        else str(e['parts']))
+                print(f'     {span:>9}  {e["form"]:<20} '
+                      f'{e.get("lemma",""):<18} {e.get("level","")}  '
+                      + ' · '.join(f'{l} {e.get(l,"")}' for l in C.LANGS))
     if k in annotiert.get(b, ()) and (blk >= 6 or r >= 0.40):
         for e in C.load_anno(b)['chapters'][k][w]:
             span = (f'{e["pos"]}-{e["pos_end"]}' if 'pos_end' in e

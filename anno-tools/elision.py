@@ -81,7 +81,18 @@ ELIDIERT = {'se': "s'", 'me': "m'", 'te': "t'", 'ne': "n'", 'le': "l'",
             # Reihe 35 hatte `jusque` gewaehlt, damit das `à` nicht
             # zweimal steht; richtig ist `jusqu'`, das doppelt ebenfalls
             # nichts und ergibt mit dem folgenden `à` die richtige Form.
-            'jusque': "jusqu'"}
+            'jusque': "jusqu'",
+            # `si` ist der Sonderfall: es elidiert **nur** vor `il` und
+            # `ils` („s'il est"), vor jedem anderen Vokal bleibt es
+            # („si elle", „si on", „si un homme"). Der Agent fuer
+            # Matteo 27 hat die Luecke gemeldet und vermutet, sie
+            # betreffe alle 88 `se`-Stellen des Buches — gemessen ist es
+            # **eine** (27,42). Deshalb steht `si` hier zusammen mit
+            # `NUR_VOR`, das die Bedingung traegt.
+            'si': "s'"}
+
+# Glossen, die nur vor bestimmten Woertern elidieren.
+NUR_VOR = {'si': ('il', 'ils')}
 # `y` steht hier, weil das franzoesische Adverbialpronomen vokalisch
 # anlautet: „il n'y a pas". Es ist der einzige Konsonantbuchstabe, vor
 # dem elidiert wird, und es kommt nur als eigenes Wort vor.
@@ -241,6 +252,11 @@ def pruefe(buecher, datei=None, kapitel=None):
                     # `questo bambino` → *ce enfant* die Form `c'` vor,
                     # und wer folgt, schreibt „c'enfant". Gemeldet vom
                     # Agenten fuer Matteo 18, der `cet` gesetzt hat.
+                    if fr.lower() in NUR_VOR:
+                        erst = nachwort.split()[:1]
+                        if not erst or erst[0].strip('.,;:!?') \
+                                not in NUR_VOR[fr.lower()]:
+                            continue
                     soll = ELIDIERT[fr.lower()]
                     if fr[:1].isupper():
                         soll = soll[:1].upper() + soll[1:]

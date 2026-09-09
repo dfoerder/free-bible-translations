@@ -47,6 +47,13 @@ for p in sorted(glob.glob(os.path.join(C.ANNO_DIR,f'*{C.ANNO_SUFFIX}'))):
             for e in ee:
                 if e.get('lemma') and e.get('level'): lv[e['lemma']][e['level']]+=1
 
+# Eine blanke „0 Abweichungen" sieht gleich aus, ob der Lauf den
+# Bestand gefunden hat oder nicht. Der Agent fuer Matteo 25 hat es
+# gemeldet: die Kopfzeile sagt jetzt, wogegen gemessen wurde.
+print(f'# levelcheck: {len(lv)} Lemmata im Bestand von '
+      f'{C.EDITION}, geprueft werden Kapitel '
+      + ', '.join(str(k) for k in kaps) + f' aus {OUT}{nr}/\n')
+
 n=0
 for kap in kaps:
     p=f'{OUT}{nr}/ch{kap}.json'

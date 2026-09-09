@@ -261,9 +261,12 @@ Quelltextsprache `it` keine Wendungsliste und sagt das selbst — der Lauf
 meldet eine Null, die nichts deckt. Zwei Agenten haben es unabhaengig
 angemerkt.
 
-**`common.load_source(<nr>)` gibt `{'name': …, 'chapters': {…}}`**, und
-die Kapitelschluessel sind **Strings**: `src['chapters']['22']`, nicht
-`src['22']` und nicht `[22]`.
+**`common.load_source(<nr>)` und `common.load_anno(<nr>)` geben beide
+`{'name': …, 'chapters': {…}}`**, und die Kapitelschluessel sind
+**Strings**: `src['chapters']['22']`, nicht `src['22']` und nicht `[22]`.
+Bei `load_anno` ist der Fehler **stumm** — wer `anno[kap][vers]` schreibt,
+bekommt keinen `KeyError`, sondern „nicht annotiert" fuer vollstaendig
+annotierte Verse.
 
 `qa.py --kapitel` will die drei Argumente **in dieser Reihenfolge**;
 anders aufgerufen bricht es ab.
