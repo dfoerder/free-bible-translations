@@ -55,6 +55,10 @@ AUSNAHMEN = {
     # `rete` ist feminin (`la rete`, `le reti`) — dieselbe Falle wie
     # `membra`, nur an der anderen Endung.
     'rete':'fs', 'reti':'fp', 'chiave':'fs', 'chiavi':'fp',
+    # `le vostre agapi` (Judas 1,12) galt als Fehler — `agape` ist
+    # feminin, der Plural `agapi` sieht maskulin aus. Dieselbe
+    # `-i`-Falle wie `reti`.
+    'agape':'fs', 'agapi':'fp',
     'migliaia':'fp', 'centinaia':'fp', 'paia':'fp',
     'radici':'fp', 'vesti':'fp', 'veste':'fs', 'capo':'ms', 'capi':'mp',
     'poeta':'ms', 'profeta':'ms', 'profeti':'mp', 'sacerdote':'ms',
@@ -126,6 +130,14 @@ FR_SG = {'mon','ma','ton','ta','son','sa','notre','votre','leur'}
 # `leur` ist franzoesisch zugleich Dativpronomen ("ich gab ihnen"). Diese
 # deutschen Formen schliessen den Possessiv-Fall aus.
 DATIV = {'ihnen','ihm','ihr','mir','dir','uns','euch','sich','sie','ihn'}
+# Woerter, die eine Nominalphrase beenden: hinter ihnen steht das
+# Nomen eines NEUEN Syntagmas und gehoert nicht mehr zum Possessiv
+# davor.
+PHRASENENDE = {'en', 'à', 'au', 'aux', 'de', 'du', 'des', 'dans',
+               'pour', 'par', 'sur', 'sous', 'avec', 'sans', 'que',
+               'qui', 'et', 'ou', 'comme', 'chez', 'entre', 'vers',
+               'depuis', 'selon', 'contre', 'jusqu’à', 'afin'}
+
 DE_POSSESSIV = {'ihr','ihre','ihren','ihrem','ihrer','ihres',
                 'Ihr','Ihre','ihr'}
 # Alle deutschen Possessivformen — Anker fuer die Artikelprobe unten.
@@ -366,6 +378,15 @@ def main():
                 for d in (1, 2, 3):
                     kand = einzel.get(pos + d)
                     if kand is None:
+                        break
+                    # Das Fenster von drei Token ist fuer eingeschobene
+                    # ADJEKTIVE da (`mes bien-aimés frères`). Es darf
+                    # keine PRAEPOSITION ueberspringen: `aux vôtres en
+                    # sorte que` paarte sonst das absolute Possessiv
+                    # `vôtres` mit `sorte` zwei Positionen weiter und
+                    # meldete einen fehlenden Artikel, den `aux` traegt.
+                    # Gemeldet vom Agenten fuer 2. Korinther 8.
+                    if (kand.get('form') or '').lower() in PHRASENENDE:
                         break
                     form = C.de_wort(kand)
                     if form[:1].isupper():
