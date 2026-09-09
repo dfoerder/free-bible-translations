@@ -1550,3 +1550,30 @@ vor. Praepositionen stehen jetzt mit in der Stoppliste.
     Merksatz: was staendig vorkommt, trennt nichts. Ein weiteres
     Fenster gehoert nur dorthin, wo ein zufaelliges Zusammentreffen
     unwahrscheinlich ist.
+
+## AT-Zitate: die Null gilt fuer den INHALT, nicht fuer den Rahmen
+
+Ich habe seit Roemer 9 in jeden Prompt geschrieben, die Bilanz fuer
+alttestamentliche Zitate mit Bestandsparallele stehe „bei null". Drei
+Agenten haben das inzwischen halb widerlegt, zuletzt der fuer
+2. Korinther 9, und sie haben recht. Die Aussage ist zu trennen:
+
+    Der ZITATINHALT hat keine Parallele.  Bis 2. Korinther 9 ist ueber
+    ein Dutzend Zitate gemessen worden; keines fand seinen Wortlaut
+    anderswo im Bestand. Das Neue Testament zitiert das Alte, und das
+    Alte steht in dieser Ausgabe nicht annotiert.
+
+    Der RAHMEN steht durchgaengig.  `selon que` traegt 24 Mehrwort-
+    belege, `comme il est écrit` und `dit le Seigneur` stehen ebenso
+    fest. Roemer 3,10 liefert fuer 2 Kor 9,9 sogar die fuenf
+    Eroeffnungstoken zeichengleich MIT Glossen.
+
+Wer die Null hoert und die Vorbereitungsdatei gar nicht erst
+aufschlaegt, verliert also genau den Teil, der zu holen ist. Der
+richtige Satz lautet: **den Rahmen uebernehmen, den Inhalt praegen.**
+
+Nebenbei dieselbe Sorgfalt bei einer zweiten Verallgemeinerung von
+mir: „`sweeplemma`s Verdachtsblock ist wertvoller als sein
+Mehrwortblock" gilt nicht immer. In 2. Korinther 9 war der
+Verdachtsblock leer und der Mehrwortblock hat alle vierzehn Wendungen
+samt Reihen bestaetigt. Beide Bloecke sind zu lesen.
