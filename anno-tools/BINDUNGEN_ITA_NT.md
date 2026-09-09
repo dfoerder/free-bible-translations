@@ -7081,3 +7081,959 @@ zeichengleich mit dem Bestandslevel.
 **`principio` ist A2**, nicht A1: der Bestand fuehrt kein `principio`,
 und die Zeugen geben A1 (en) gegen A2 (de/fr). A2 ist der Wert fuer
 Italienischlernende.
+
+---
+
+# Matteo 20
+
+*Angehaengt aus Matteo 20 (Paket 7: 19·20·21). Naechste freie Nummer war
+196; die Nachbarkapitel haengen parallel an, der Koordinator nummeriert
+durch.*
+
+## 196 · Mehrwoerter, die Matteo 20 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 77 ·
+89 · 99 · 106 · 119 · 132 · 140 · 153 · 160 · 170.
+
+    20,1        sul far del giorno  B2  bei Tagesanbruch · at daybreak ·
+                                        al amanecer · dès le matin
+    20,3 · 20,6 senza far nulla     B1  ohne etwas zu tun · doing nothing ·
+                                        sin hacer nada · sans rien faire
+    20,6        starsene            B2  steht ihr · do you stand ·
+                                        estáis · vous tenez-vous   (`ve ne state`)
+    20,24       indignarsi          B2  wurden unwillig · were indignant ·
+                                        se indignaron · s'indignèrent
+    20,25       su di esse          A2  über sie · over them ·
+                                        sobre ellas · sur elles
+
+**`sul far del giorno` behaelt die verschmolzenen Formen im Lemma.** Nach
+dem Muster von `al di là di` (4,15) und `al posto di` (2,22): wo die
+Verschmelzung Teil der festen Wendung ist, wird sie im Mehrwortlemma
+nicht auf die blosse Praeposition normalisiert. Die vier Einzelwoerter
+bleiben woertlich, `far` steht nach Reihe 4 auf `fare`.
+
+**`senza far nulla` ist kein Zierde-Mehrwort.** Reihe 56/85 verlangt, dass
+die Wendung in mindestens einer Sprache Wort fuer Wort scheitert; hier
+scheitern zwei: `senza` *ohne* + `far` *zu tun* + `nulla` *nichts* ergaebe
+„ohne nichts zu tun" und „without doing nothing" — beide falsch, weil die
+Negationskonkordanz nur romanisch aufgeht (es *sin hacer nada*, fr *sans
+rien faire* stehen richtig da). Dieselbe Begruendung wie `in disparte`
+(Reihe 131), wo eine Sprache genuegte.
+
+**`starsene`** ist der erste pronominale Eintrag mit **zwei** Klitika im
+Span (`ve` + `ne` + Verb). Nur das Franzoesische haelt das Reflexiv
+(*vous tenez-vous*); Deutsch, Englisch und Spanisch loesen es auf — der
+„Ja"-Zweig aus Reihe 6.
+
+**`su di esse` folgt `su di lei` · `su di essa` · `su di voi` · `su di
+lui`** (9,18 · 10,13 · 11,29 · 12,18), alle A2, alle dreitokenig. Die
+Glosse traegt hier *über*, weil `esercitare potere su` Herrschaft und
+nicht Ort meint; die Einzelwoerter bleiben auf ihrer Bestandsreihe
+(`su` *auf*, `di` *von*).
+
+## 197 · `padrone` bleibt im Weinbergsgleichnis fr *seigneur* · es *señor*
+
+Der Bestand ist bei `padrone` B1 gespalten: 10,24 · 10,25 (2×) · 13,52
+tragen es *señor* · fr *seigneur*, 13,27 traegt es *dueño* · fr *maître*,
+6,24 · 15,27 den Plural *maîtres*. Matteo 20 hat das Wort dreimal
+(20,1 · 20,8 · 20,11) und entscheidet fuer die Mehrheit:
+
+    padrone  B1  Herr(n) · master · señor · seigneur
+
+**Gemessen, nicht gewaehlt:** 20,1 uebernimmt den Elfblock aus 13,52
+(`regno dei cieli è simile a un padrone di casa che`) zeichengleich, 20,11
+den Vierblock aus 10,25 (`il padrone di casa`) — beide tragen
+*señor*/*seigneur*. 20,8 mit demselben Wort daneben abweichen zu lassen,
+haette das Kapitel gespalten. **13,27 bleibt damit der einzige Ausreisser
+im Buch**; `folgencheck --min 3` meldet ihn seit diesem Kapitel
+ausdruecklich („padrone di casa": 13,27 gegen 10,25 · 13,52 · 20,1 ·
+20,11) — eine Stelle fuer den Koordinator.
+
+Die Vorbedingung aus Reihe 102 · 174 ist geprueft und trifft nicht zu:
+**in keinem Vers von Matteo 20 steht `padrone` neben `maestro` oder
+`signore`.** `Signore` steht nur in 20,30 · 20,31 · 20,33 als Anrede an
+Jesus und traegt dort A2 · *Herr · Lord · Señor · Seigneur*.
+
+## 198 · Wo die zeichengleiche Uebernahme an der Satzfunktion bricht
+
+Zwei Bloecke dieses Kapitels stehen im Bestand woertlich, und beide
+duerfen **nicht** zeichengleich uebernommen werden (Reihe 103 · 185 ·
+190):
+
+- **`il padrone di casa` (20,11 gegen 10,25).** 10,25 traegt spanisch
+  `il` → *al*, weil das Nomen dort direktes Objekt von `chiamato` ist
+  (Personal-a, Reihe 85). In 20,11 steht es nach `contro`: „murmuraban
+  **contra el** dueño de casa" — es *el*. Genau der Fall `il bambino`
+  2,9 gegen 2,13.
+- **`il Figlio dell'uomo` (20,18 · 20,28 gegen 12,32).** 12,32 traegt
+  de *den* (Objekt nach `contro`), hier ist die Fuegung Subjekt →
+  de *der*. Damit stehen 13 Belege auf de *der* und nur 12,32 · 16,28
+  abweichend, beide zu Recht.
+
+## 199 · `potere (sostantivo)` — der Klammerzusatz greift zum ersten Mal ausserhalb von Kapitel 9
+
+Reihe 15 nennt `potere` unter den substantivierten Infinitiven, die im
+NT wiederkehren. 20,25 „esercitano **potere** su di esse" ist ein solcher
+Fall und steht auf dem schon gesetzten Lemma
+
+    potere (sostantivo)  B1  Macht · authority · autoridad · pouvoir   (9,6 · 9,8 · 14,2)
+
+gegen `potere` A1 im selben Kapitel (20,22 `Potete`, `possiamo`). Zwei
+Verse Abstand, kein Kollisionsvers — der Split ist trotzdem noetig, weil
+`buildbook.py` das Level ueber das Lemma vereinheitlicht.
+
+## 200 · `vattene` steht auf `andare`, nicht auf `andarsene` — der Bestand hat es schon entschieden
+
+Reihe 79 nennt `andarsene` als die Ausnahme, in der ein Einzeltoken mit
+Klitikon doch den pronominalen Infinitiv traegt. **Gemessen ist das
+Gegenteil:** die Form `vattene` steht im Bestand zweimal, und beide Male
+unter `andare` A1 —
+
+    vattene  →  `andare`  A1  geh · go · vete · va-t'en   (2,20 · 9,6)
+
+`sweeplemma.py` hat 20,14 genau deshalb gemeldet („hier neu als
+`andarsene`, im Bestand `andare`"), und die Bestandslesart gewinnt: sie
+ist zweifach belegt, zeichengleich und aelter. `andarsene` bleibt fuer
+die **getrennte** Bauform reserviert (`se ne andarono` 8,32, `se ne
+andavano` 11,7). **Reihe 79 sollte das nachtragen:** die Ausnahme gilt
+fuer den Infinitiv `andarsene` selbst (8,34), nicht fuer jede finite Form
+mit angehaengtem `-ne`.
+
+Dieselbe Pruefung fuehrt bei `sedersi` (20,23) zum Regelfall: das
+Klitikon ist nicht lexikalisiert (`sedere` und `sedersi` heissen beide
+*sitzen*), also traegt das Einzeltoken nach Reihe 79 · 130 das schlichte
+Lemma `sedere` A2 — obwohl `sedersi` als **Mehrwort**lemma im Bestand
+steht (13,1 · 13,2 · 14,19 · 15,35).
+
+## 201 · Was Matteo 20 zeichengleich uebernimmt
+
+Alles mit `folgenreihe.py` und `fixgloss.py verse` gemessen, nicht
+erinnert:
+
+    20,1   regno dei cieli è simile a un padrone di casa che   ← 13,52 (11 Tokens)
+    20,1   simile a  B2                                        ← 13,24 · 13,31 · 13,44 · 13,52 · 18,23
+    20,4   e disse loro «Andate                                ← 2,8
+    20,5   lo stesso  A2                                       ← 5,46 · 5,47
+    20,7   Egli disse loro «Andate                             ← 8,32
+    20,8   farsi sera  B1                                      ← 14,15 · 14,23
+    20,8   fino a  A2                                          ← 1,17 u. a.
+    20,10  di più  A2                                          ← 6,30
+    20,11  il padrone di casa (ausser es, Reihe 198)           ← 10,25
+    20,13  Ma egli rispose a                                   ← 12,48
+    20,13  con me  A2                                          ← 15,32 · 18,26 · 18,29
+    20,17  i suoi dodici discepoli                             ← 10,1
+    20,17  in disparte  B2  *beiseite · aside*                 ← 16,22
+    20,18  capo sacerdote  B2                                  ← 16,21
+    20,19  il terzo giorno risusciterà                         ← 17,23
+    20,20  avvicinarsi B1 · inginocchiarsi B2                   ← 8,2
+    20,20  con i suoi  (`i` de *den*, `suoi` de *ihren*)       ← 9,10 · 9,19 · 16,27 · 18,23
+    20,23  il quale  B1  *denen · to whom*                     ← 6,5
+    20,25  chiamò a sé e                                       ← 18,32
+    20,30  si misero a → mettersi a  B2                        ← 8,29
+    20,30  a gridare «Abbi pietà di · Signore figlio di Davide ← 15,22
+    20,30  lungo la strada                                     ← 13,4 · 13,19
+    20,31  Abbi pietà di noi                                   ← 9,27
+    20,32  fermarsi  A2                                        ← 2,9
+    20,33  aprirsi  B1                                         ← 3,16 · 9,30
+    20,34  mosso a compassione                                 ← 18,27
+    20,34  in quell'istante                                    ← 8,3
+
+**Die drei Parallelen mit `⚠ NOCH NICHT ANNOTIERT`** (20,8 ← 21,40,
+20,18 ← 26,2, 20,20 ← 27,56) tragen nichts; dort praegt Matteo 20.
+Von den 14 Treffern in `parallelen_40_20.md` haben damit 11 getragen —
+genau die Zahl, die die Schlusszeile nennt.
+
+## 202 · Stehengelassene Kollisionen in Matteo 20
+
+`glosskollision.py --datei 40 20` endet auf **10 inhaltliche Paare**
+(5 davon in nur einer Sprache) und **6 aus geschlossenen Wortarten**.
+Aufgeloest wurden vier: 20,2 `al`/`un` en (ueber `al` → en *per*),
+20,8 `i`/`ai` en/es (ueber `i` → es *a los*, Personal-a nach Reihe 85,
+und `ai` → en *to the*), 20,12 `che`/`il` de (ueber `che` → de *welche*)
+und 20,23 `a`/`per` en (ueber `sta a me` → en *is up to me*).
+Stehen bleiben:
+
+- **20,2 · 20,25 `i` / `li`, es *los* · fr *les*** und **20,19 `il`/`lo`,
+  fr *le*** — Artikel gegen Objektklitikon, die Klasse aus Reihe 53 · 61 ·
+  67 · 74 · 103.
+- **20,25 `esse` / `li`, de *sie* · en *them*; 20,31 `essi` / `li`,
+  de *sie*; 20,20 `gli` / `lui`, en *him* · fr *lui*** — betontes Pronomen
+  gegen Klitikon, die Klasse aus Reihe 103 (10,38 · 10,40 `me`/`mi`).
+  es und fr bzw. de und es trennen jeweils.
+- **20,21 `gli` / `le`, es *le* · fr *lui*** — **neu an dieser Klasse**:
+  zwei Dativklitika verschiedenen Genus in einem Vers. Spanisch und
+  Franzoesisch haben im Dativ nur eine Form; de *ihm*/*sie* und
+  en *to him*/*her* trennen. Von der Zielsprache erzwungen.
+- **20,15 `che` / `ciò`, en *that*** — der Komplementierer („che io sia
+  buono") gegen das Demonstrativ in `ciò che`. `ciò` steht neunmal auf
+  en *that* (Reihe 103); ein Ausweichen haette die Reihe gebrochen.
+  de *dass*/*das*, es *que*/*lo*, fr *que*/*ce* trennen.
+- **20,5 `la` / `lo`, en *the*; 20,23 `al` / `il`, en *the*** — zwei
+  Determinierer in einem Vers, Reihe 20 · 29 · 36 · 61 · 67 · 103.
+- **20,1 `a` / `per`, fr *pour*; 20,20 `a` / `di`, fr *de*;
+  20,23 `ai` / `per`, de *für*** — zwei Praepositionen in einem Vers,
+  dieselbe Klasse. Bei 20,23 kommt hinzu, dass `ai quali` aus 6,5
+  zeichengleich uebernommen ist (`ai` de *für*); die anderen drei
+  Sprachen trennen.
+- **20,4 `vi` / `voi`, fr *vous*** — Klitikon gegen betontes Pronomen der
+  2. Person Plural; Franzoesisch hat nur *vous*.
+- **20,17 `a` / `per`, en *to* · es *a*** — das `per` der Periphrase
+  `stare per` gegen das direktionale `a` vor `Gerusalemme`. Die
+  Mehrwortdecke aus 17,22 gibt die Aufteilung vor (`sta` *is about* /
+  `per` *to*); sie zu brechen haette die Reihe gekostet. de und fr
+  trennen.
+- **20,21 `Ella` / `le`, de *Sie*/*sie*** ist **keine** Kollision: das
+  Paar trennt sich allein in der Grossschreibung, und `glosskollision.py`
+  vergleicht klein.
+
+## 203 · Begruendete Abweichungen aus `folgencheck`, `elision.py` und `verschmelzung.py`
+
+- **`a uno di` 20,13 gegen 10,42** — dreifach gemeldet und dreifach
+  richtig: `a` de *dem* folgt dem Viererblock aus 12,48 („Ma egli
+  rispose a"), `uno` de *einem* ist Dativ gegen den Akkusativ in 10,42,
+  und `di` fr *d'* elidiert vor `loro` → *eux*, waehrend 10,42 `questi`
+  vor sich hat. Genau die Klasse, die Reihe 103 an „uno di questi"
+  5,19/10,42 schon getrennt hat.
+- **`che io sia` 20,15 gegen 5,17 · 10,34** — dort Konjunktiv nach
+  `pensare` (de *sei*, en *be*), hier eine Tatsachenaussage („dass ich
+  gut bin"). Franzoesisch bleibt *sois*, Spanisch *sea*.
+- **`lecito fare del` 20,15 gegen 12,12** — `del` traegt hier
+  de *mit dem* · es *con lo*, weil `fare del mio` „mit dem Meinen
+  verfahren" heisst; 12,12 hat den Partitiv (`fare del bene`, de *etwas*).
+  Zwei Funktionen, zwei Reihen. **Nebenbefund fuer den Koordinator:**
+  12,12 traegt `fare` fr *faire* ohne das von `permis` verlangte `de` —
+  „il est permis faire du bien" ist kein Franzoesisch. 20,15 steht auf
+  fr *de faire*.
+- **`i suoi figli` 20,20 gegen 2,18** — Kasus (Dativ nach `con` gegen
+  Akkusativ) und Sache (Zebedaeus' Soehne gegen Rachels Kinder).
+- **`verschmelzung.py` Abschnitt B: 20,2 `al` de *pro* · en *per* ·
+  fr *par*** — richtige Nullantwort. „un denaro **al giorno**" ist die
+  distributive Zeitangabe, keine Ortsangabe: keine der drei Sprachen
+  setzt dort einen Artikel (nur Spanisch behaelt *al*). Das ist die
+  Gegenprobe zu Reihe 183, wo `sulla terra` den Artikel braucht.
+- **`elision.py` meldet nach der Korrektur 0.** Zwei Stellen waren echt:
+  `di` vor `esse` → fr *d'* (zeichengleich mit `su di essa` 10,13) und
+  `al` vor `sedersi`. Die zweite ist ueber die **Glosse** geloest, nicht
+  ueber die Elision: `sedersi` steht fr auf *s'asseoir* (die Form, die
+  14,19 · 15,35 schon tragen), damit steht `le` vor einem Konsonanten.
+
+## 204 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 20)
+
+37. **`selfcheck.py` verlangt die Kapiteldatei als flaches
+    `{vers: [...]}`, nicht als `{book, chapter, verses}`.** Wer den
+    Umschlag mitschreibt, bekommt „Verse ohne Entsprechung im
+    Quelltext: ['verses','book','chapter']" und „34 Verse fehlen" —
+    eine Meldung, die wie ein Ausrichtungsproblem aussieht und keins
+    ist. Ein Blick in eine Nachbardatei klaert es in zehn Sekunden.
+38. **`form` muss `common.strip_punct` durchlaufen sein.** Die
+    Positionen zaehlen ueber `text.split()`, die `form` aber steht ohne
+    umschliessende Satzzeichen da (`«Abbi` → `Abbi`, `esse.` → `esse`).
+    `selfcheck.py` meldet das sauber und vollstaendig — es ist der
+    zweite Stolperstein fuer ein eigenes Bauskript, direkt nach der
+    fehlenden `ANNO_EDITION` (Reihe 88).
+39. **`sweeplemma.py` hat in diesem Kapitel dreimal geliefert, was kein
+    anderes Werkzeug sieht:** den fehlenden Mehrworteintrag `con me`
+    (20,13, es *conmigo*), den falschen Lemmagriff `andarsene` statt
+    `andare` (20,14, Reihe 200) und den richtig **abgelehnten** Treffer
+    `prendere a` (20,7). Der letzte ist der lehrreiche: 100 Prozent
+    Deckung und trotzdem falsch — `prendere a` B2 ist im Bestand
+    „begann zu" (11,25 · 12,38 · 15,15 · 17,4), `ci ha presi a giornata`
+    ist „hat uns auf Tagelohn genommen".
+40. **`konvention.py` sagt es jetzt selbst:** „Fuer die Quelltextsprache
+    'it' sind keine Wendungen hinterlegt — dieser Lauf wuerde NICHTS
+    pruefen und trotzdem 0 melden." Der Lauf gehoert weiter in die
+    Kette, seine Null ist aber keine.
+41. **`paketcheck.py` Abschnitt A traegt in dieser Richtung am
+    meisten**, weil fast jedes Kapitel neue Lemmata praegt: fuer Paket 7
+    meldet er `indignare`, `indignarsi`, `lavoratore` (es *obreros*
+    gegen *trabajadores*) und `trattare` zwischen Matteo 20 und 21.
+    Nach der Paketregel praegt der **fruehere** Ort; Matteo 20 laesst
+    seine Lesarten deshalb stehen und meldet die drei Stellen an den
+    Koordinator. Abschnitt C nennt zusaetzlich `lavorare` A1 (20) gegen
+    A2 (21).
+
+## 205 · Die 39 neuen Lemmata dieses Kapitels und ihre Level
+
+    Gerico              A1      caldo               A2
+    dieci               A1      cammino             A2
+    lavorare            A1      giornata            A2
+    seduto              A2      preparato           A2
+    sesto               A2      su di esse          A2
+    calice              B1      certamente          B1
+    coloro              B1      concedere           B1
+    lavoratore          B1      nono                B1
+    peso                B1      prezzo              B1
+    senza far nulla     B1      servito             B1
+    tacere              B1      trattare            B1
+    undicesimo          B1      vigna               B1
+    recuperare          B1      crocifisso          B2
+    dominare            B2      esercitare          B2
+    fattore             B2      flagellato          B2
+    governante          B2      indignare           B2
+    indignarsi          B2      malo                B2
+    mercede             B2      mormorare           B2
+    riscatto            B2      schernito           B2
+    starsene            B2      sul far del giorno  B2
+    torto               B2
+
+**`recuperare` B1 und `forte` A1 stammen aus `levelcheck.py`**, nicht aus
+meiner Schaetzung: beide standen zunaechst eine Stufe hoeher und sind auf
+den Bestandswert (11,5 bzw. 3,11 · 12,29) gezogen. Danach 0 Abweichungen.
+
+**`malo` B2 ist ein Lemmasplit ohne Klammerzusatz** (Reihe 66 · 73 · 93 ·
+143 · 162 · 175): `mal occhio` (20,15) ist die Apokope des Adjektivs
+`malo`, nicht das Nomen/Adverb `male` A2 (5,11 · Giuda 1,8 · 1,10). Zwei
+verschiedene Zeichenketten, also kein Zusatz noetig.
+
+**`preparato`, `servito`, `crocifisso`, `flagellato`, `schernito`,
+`seduto`, `consegnato`** stehen nach Reihe 5 auf der **Partizipform**,
+weil sie alle im Passiv oder attributiv stehen (`sarà consegnato`,
+`perché sia schernito`, `è stato preparato`, `per essere servito`,
+`seduti lungo la strada`). Die aktiven Perfekte desselben Kapitels stehen
+dagegen auf dem Infinitiv: `hanno lavorato` → `lavorare`,
+`hai trattati` → `trattare`, `abbiamo sopportato` → `sopportare`,
+`ha presi` → `prendere`, `avendo udito` → `udire`.
+
+---
+
+# Matteo 21 (Einzug · Tempelreinigung · Feigenbaum · Vollmachtsfrage · zwei Söhne · böse Weingärtner)
+
+*Angehaengt vom Agenten fuer Matteo 21 (Paket 19·20·21). Hoechste
+gesehene Nummer beim Schreiben: 205 — Kapitel 19 hatte 187–195, Kapitel 20
+196–205. Ich zaehle bei 206 weiter; der Koordinator nummeriert beim
+Einsammeln durch.*
+
+## 206 · Mehrwoerter, die Matteo 21 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 77 ·
+89 · 99 · 106 · 119 · 132 · 140 · 160 · 170 · 187 · 196. Nur **vier** sind
+neu; die uebrigen **zwanzig** uebernimmt der Bestand zeichengleich
+(24 Mehrwortlemmata im Kapitel; `sweeplemma.py` meldet 20 von 24).
+
+    21,2   di fronte        B1  gegenüber · opposite · enfrente de · en face de
+    21,15  indignarsi       B2  wurden unwillig · were indignant ·
+                                se indignaron · s'indignèrent   (Reihe 6)
+    21,19  non altro che    B2  nichts als · nothing but · nada sino ·
+                                ne… que        [parts 9, 12, 13]
+    21,42  pietra angolare  B2  Eckstein · cornerstone · piedra angular ·
+                                pierre angulaire
+
+Uebernommen aus dem Bestand, zeichengleich: `vicino a` (21,1),
+`adempiersi` (21,4), `sedersi` (21,7), `la maggior parte` (21,8),
+`colui che` (21,9), `capo sacerdote` (21,15 · 21,23 · 21,45),
+`quello che` (21,16 · 21,21), `non mai` (21,16 · 21,19 · 21,42),
+`avere fame` (21,18), `avvicinarsi` (21,19 · 21,23 · 21,28 · 21,30 ·
+21,34), `meravigliarsi` (21,20), `tutto quello che` (21,22),
+`da dove` (21,25), `che ve ne pare` (21,28), `lo stesso` (21,30),
+`pentirsi` (21,32), `di nuovo` (21,36),
+`allo stesso modo` (21,36), `far morire` (21,41),
+`avere bisogno di` (21,3).
+
+Drei der vier neuen setzen etwas ueber das Kapitel hinaus:
+
+- **`non altro che` ist die Schwester von `non che`** (15,24, Reihe 119)
+  mit eingeschobenem `altro`. „non vi trovò **altro che** foglie" geht
+  spanisch Wort fuer Wort auf (*no halló otra cosa sino hojas*), deutsch
+  und englisch nicht („fand nicht anderes als"). Der Eintrag traegt
+  `parts: [9, 12, 13]`, weil `vi` und `trovò` dazwischenstehen; die
+  `form` ist `"non altro che"` (Reihe 37.12). Ein zweites Lemma neben
+  `non che` — dieselbe Begruendung wie `a causa di` neben
+  `per causa di` (Reihe 99).
+- **`pietra angolare` braucht das Mehrwort nur wegen des Deutschen.**
+  Spanisch *piedra angular* und franzoesisch *pierre angulaire* gehen
+  Wort fuer Wort, englisch *corner stone* waere moeglich — deutsch ist
+  der Eckstein **ein** Wort. Eine Sprache genuegt (Reihe 89,
+  `più tollerabile`). Die Einzelwoerter bleiben woertlich: `pietra` A2
+  de *Stein*, `angolare` B2 de ***der Ecke*** · en *of the corner* ·
+  es *angular* · fr *angulaire* — **kein** „Eck-", weil eine Glosse ein
+  echtes Wort der Zielsprache sein muss.
+- **`di fronte` ist eine adverbiale Fuegung ohne woertliche Auf­loesung.**
+  `di` *von* + `fronte` *Stirn* ergibt in keiner der vier Sprachen den
+  Satz. Der Mehrworteintrag traegt es *enfrente de* · fr *en face de*
+  **mit** der Praeposition, und das `vi` desselben Verses steht deshalb
+  auf es ***vosotros*** · fr *vous* statt auf dem Klitikon es *os* —
+  im Spanischen und Franzoesischen ist es dort Objekt einer Praeposition.
+  Das ist Reihe 103 · 185 an einem Klitikon: dieselbe Form, andere
+  Satzfunktion, andere Glosse.
+
+## 207 · Was Matteo 21 bewusst KEIN Mehrwort bekommt
+
+Fortschreibung von Reihe 72 · 107 · 141 · 173 · 188.
+
+- **`ed egli li guarì` (21,14)** — die Folge ist mit `folgenreihe.py`
+  einstimmig aus 4,24 · 12,15 · 15,30 uebernommen und traegt dort
+  **keinen** Mehrworteintrag. Zeichengleich gesetzt.
+- **`Sta scritto` (21,13)** — Reihe 40 unveraendert: `Sta` traegt
+  de *Es steht* · en *It is* · es *Está* · fr *Il est*, `scritto` das
+  Partizip.
+- **`Vi dico in verità` (21,21 · 21,31)** — Reihe 85 hat es buchweit
+  entschieden; `folgenreihe.py "Vi dico in verità"` meldet 11
+  einstimmige Vorkommen ohne Eintrag.
+- **`il padrone di casa` (21,33)** — Reihe 99 · 141, unveraendert.
+- **`il regno di Dio` (21,31 · 21,43)** — 2 einstimmige Vorkommen
+  (6,33 · 12,28), Wort fuer Wort.
+- **`c'era` (21,33)** ist **ein** Token und bekommt einen Einzeleintrag
+  auf dem Lemma `esserci` A2 (Reihe 60), keinen Mehrworteintrag —
+  anders als die getrennt geschriebenen `ci sono` / `ci saranno`.
+- **`non solo … ma` (21,21)** — franzoesisch ergibt `non` *ne… pas* +
+  `solo` *seulement* „vous ne feriez **pas seulement**", und das ist
+  genau der Satz. Alle vier Sprachen gehen auf; Reihe 56/85.
+- **`vi farò una domanda` (21,24)** — „werde euch eine Frage stellen" ·
+  „will ask you one question" · „os haré una pregunta" · „vous
+  adresserai une question": vier Sprachen, kein Bruch. Der Rektionsteil
+  sitzt im Verb (`farò` de *werde stellen* · en *will ask*), nicht in
+  einer Wendung — dieselbe Lage wie `fare … domanda` in 12,10
+  (Reihe 107).
+- **`Avranno rispetto per` (21,37)** — die `avere`+Nomen-Reihe greift
+  nicht: „Achtung haben" · „have respect" · „tener respeto" ·
+  „avoir du respect" behalten das Nomen alle vier. Genau
+  `Abbi pazienza` aus Reihe 173.
+- **`Alla fine` (21,37)** — „Am Ende" · „At the end" · „Al fin" ·
+  „À la fin" stehen in allen vier Sprachen.
+- **`a suo tempo` (21,41)**, **`cacciarono fuori` (21,39)**,
+  **`Come mai` (21,20)** und **`in numero maggiore` (21,36)** ebenso.
+- **`sul quale` (21,44)** — Reihe 16 (`nel quale`, 3,17), nicht Reihe 23:
+  „auf welchen · on whom · sobre quien · sur qui" teilt sich sauber,
+  also kein `il quale`-Eintrag. Der Artikel steckt im Relativum, `sul`
+  traegt nur die Praeposition; `verschmelzung.py` nimmt die Stellung vor
+  dem Relativpronomen ohnehin aus.
+- **`tutti quelli che` (21,12)** — `sweeplemma.py` meldet 64 % Deckung
+  gegen `tutto quello che`. Der Treffer ist richtig gemessen und
+  trotzdem kein Mehrwort: Reihe 149 hat gezaehlt, dass das persoenliche
+  `quelli che` 14-mal **ohne** und nur 3-mal mit Eintrag steht.
+
+## 208 · `secondo (numerale)` — der Klammerzusatz beim Ordinalzahlwort
+
+Nach Reihe 15 · 34 · 59 · 73 · 80 · 110 · 199. Der Bestand fuehrt
+`secondo` B1 sechsmal als **Praeposition** (*nach · according to · según ·
+selon*; 9,29 · 16,23 zweimal · 16,27 · Giuda 1,16 · 1,18). In 21,30
+(„Si avvicinò al secondo") ist dieselbe Zeichenfolge das **Ordinalzahl-
+wort**, und die Ordinalia des Bestands stehen durchgehend auf A2
+(`primo`, `terzo`, `ultimo`, `settimo`). Ohne Zusatz zoege `buildbook.py`
+das eine auf das Level des anderen.
+
+    secondo (numerale)  A2  (21,30)  de *zweiten* · en *second* ·
+                                     es *segundo* · fr *second*
+    secondo             B1  Bestand  die Praeposition
+
+**Die Praeposition behaelt das blosse Lemma**, weil sie es schon belegt
+hat — das ist die Ausnahmeklausel aus Reihe 34 (`posto (sostantivo)`),
+nicht die Wortart-Hierarchie aus Reihe 15. `sweeplemma.py` meldet den
+Fall und hat recht damit, dass man hinsehen muss.
+
+## 209 · `gliene` — das doppelte Klitikon bekommt ein eigenes Lemma
+
+Der Bestand fuehrt `gliele` A2 (*sie von ihm · them of him · se las ·
+les lui*) und `glielo` A2 (*es ihm · it of him · se lo · le lui*).
+`gliene` (21,41, „che gliene renderanno il frutto") ist dieselbe Bauart
+mit `ne` als zweitem Glied und bekommt darum ein **eigenes Lemma**, kein
+Klammerzusatz und dasselbe Level:
+
+    gliene  A2  de *ihm davon* · en *him of it* · es *le de ello* ·
+                fr *lui en*
+
+Es ist **kein** Fall von Reihe 3: dort haengt das Klitikon am Verb und
+geht darin auf; hier stehen zwei Klitika als eigenes Token **vor** dem
+Verb, und `renderanno` behaelt seine eigene Glosse (`rendere` B1,
+de *werden geben*). Der Bestand hat die Bauart mit `gliele`/`glielo`
+schon so entschieden.
+
+## 210 · Das Partizip absolut in Matteo 21 — fuenf Belege, ein Zweig
+
+Reihe 70 in Reinform; die Zielsprachen bilden das Partizip alle fuenf
+Male, also steht es (und **nicht** die finite Form aus Reihe 41):
+
+    21,15  viste       → `vedere`   A1  gesehen · having seen ·
+                                        habiendo visto · ayant vu
+    21,17  lasciatili  → `lasciare` A2  sie verlassen · having left them ·
+                                        habiéndolos dejado · les ayant quittés
+                                        (zeichengleich 16,4)
+    21,20  veduto      → `vedere`   A1  (zeichengleich 9,8 · 9,11 · 12,2 · 18,31)
+    21,38  visto       → `vedere`   A1  (zeichengleich)
+    21,45  udite       → `udire`    A2  gehört · having heard ·
+                                        habiendo oído · ayant entendu  (Reihe 70, 2,3)
+
+**`pentitosi` (21,30) steht auf dem schlichten Infinitiv `pentire` B2**,
+nicht auf `pentirsi`. Reihe 79 gilt ohne Ausnahme — ein einzelnes Token
+mit angehaengtem Klitikon bekommt nie den pronominalen Infinitiv —, und
+der Bestand hat `pentire` B2 in 11,21 als Einzeleintrag schon gesetzt.
+Der Mehrworteintrag `pentirsi` B2 desselben Kapitels (21,32
+`vi siete pentiti`, drei getrennte Tokens) steht daneben; das ist genau
+die Zweiteilung, die Reihe 121 an `si sedette`/`sedersi` gezeigt hat.
+Die Glosse ist die Partizipglosse: de *bereut* · en *having repented* ·
+es *habiéndose arrepentido* · fr *s'étant repenti*.
+
+## 211 · Das essere-Perfekt und die Passivklammer in Matteo 21
+
+Reihe 32 · 65 · 133 · 144 · 163 · 176 · 189 in Anwendung; `hilfsverb.py`
+sieht davon nichts (1359 Paare, 0 Meldungen).
+
+**Kopula-Glosse (essere-Perfekt):** `è seccato` (21,20) → `è` de *ist* ·
+en *is* · es *es* · fr *est* · `è venuto` (21,32) → `è` de *ist* ·
+`è diventata` (21,42) → `è` de *ist* · `vi siete pentiti` (21,32) →
+`siete` de *seid* · en *are* · es *sois* · fr *êtes* (pronominales
+Perfekt, Reihe 6).
+
+**Hilfsverbglosse der Zielsprache (Passiv- und Zeitklammer):**
+`fu scossa` (21,10) → `fu` de *wurde* · en *was* · es *fue* · fr *fut* ·
+`sarà chiamata` (21,13) → `sarà` de *wird* · `è stato fatto`
+(21,21 · 21,42) → `è` de *ist* · en *has* · es *ha* · fr *a* und `stato`
+de *worden* · en *been* · es *sido* · fr *été* · `sarà tolto` ·
+`sarà dato` (21,43) · `sarà sfracellato` · `sarà stritolato` (21,44) →
+`sarà` de *wird* · en *will be*.
+
+**Das Aktivperfekt bleibt bei der Zielsprache:** `aveva ordinato`
+(21,6), `aveva compiuto` (21,15), `hai tratto` (21,16), `ha dato`
+(21,23), `avete creduto` · `hanno creduto` (21,25 · 21,32), `avete
+visto` (21,32), `hanno scartato` (21,42).
+
+**`sarebbe fatto` (21,21) traegt das ausgelassene Subjekt im Hilfsverb**
+(Reihe 40 · 112): `sarebbe` de *es würde* · en *it would be* ·
+es *sería* · fr *ce serait*.
+
+## 212 · Homographen und Lemmasplits in Matteo 21 — ohne Klammerzusatz
+
+Nach Reihe 15 · 28 · 59 · 66 · 73 · 80 · 93 · 109 · 120 · 135 · 143 ·
+162 · 175. Alle **ohne** Zusatz, weil die Lemmata schon trennen:
+
+    letto     21,16 · 21,42  Partizip von `leggere` A2 (Reihe 109)
+                             gegen das Nomen `letto` A1 im Bestand
+    fatto     21,21 (2×) · 21,42  Passivpartizip → `fatto` A1,
+                             gegen `fare` A1 im Aktivperfekt (21,6 · 21,31)
+    dato      21,23 Aktivperfekt („ti ha dato") → `dare` A1
+              21,43 Passiv („sarà dato")        → `dato` A1
+                             Reihe 5 in Reinform, in EINEM Kapitel beide Seiten
+    seccato   21,20 essere-Perfekt              → `seccare` B2
+    compiuto  21,15 Aktivperfekt                → `compiere` B2 (7,22)
+    scartato  21,42 Aktivperfekt                → `scartare` B2 (neu)
+    montato   21,5  praedikatives Partizip      → `montato` B1 (neu, Reihe 5)
+    legata    21,2  Attributpartizip            → `legato` B2 (Bestand 16,19 · 18,18)
+    chiamata  21,13 Passiv                      → `chiamato` A2 (Bestand 2,23)
+
+**Zwei Lesarten unter einem Lemma (Reihe 12, kein Zusatz):**
+`banco` B1 als *Tisch* der Geldwechsler (21,12) gegen den Zollstand
+(9,9); `stendere` B1 als *breitete aus* (21,8 · Kleider) gegen
+*streckte aus* (8,3 · die Hand); `pietra` A2 als *Stein* (21,42 · 21,44)
+gegen *Felsen* (16,18, Reihe 156); `figlio` A1 als *Junges* vom Tier
+(21,5 „un puledro figlio d'asina") gegen *Sohn* — das ist die dritte
+Lesart neben *Sohn* und *Kinder* (Reihe 19) und dieselbe Klasse.
+
+## 213 · Was Matteo 21 zeichengleich uebernimmt und was es praegt
+
+Gemessen mit `folgencheck.py 40 --min 3 --kapitel 21`: 73 Folgen
+zeichengleich, 29 mit Abweichung, 85 noch nicht annotiert.
+`folgencheck --gegen 65 --min 5`: 7 zeichengleich, 2 mit Abweichung.
+
+**Uebernommen, zeichengleich (mit `folgenreihe.py` gemessen):**
+
+    „ed egli li guarì"                 4,24 · 12,15 · 15,30 → 21,14
+    „Che ve ne pare"                   18,12 → 21,28  (samt Mehrwort)
+    „i capi sacerdoti e gli scribi"    2,4   → 21,15  (samt `capo sacerdote`)
+    „avvenne perché si adempisse"      1,22  → 21,4
+    „ragionavano tra loro dicendo"     16,7  → 21,25
+    „a questo monte: Spostati"         17,20 → 21,21
+    „il regno di Dio"                  6,33 · 12,28 → 21,31 · 21,43
+    „un padrone di casa che"           13,52 → 21,33  (nur `un` im Kasus)
+    „disse loro Non avete"             12,3  → 21,42
+    „Ma egli rispose loro"             12,39 — steht in 21 NICHT;
+                                       21,21 · 21,24 lauten „Gesù rispose loro"
+    „Vi dico in verità"                11 einstimmige Vorkommen → 21,21 · 21,31
+
+**Gepraegt (der frueheste Ort liegt hier):**
+
+    „Ma i capi sacerdoti"                    21,15 legt fest
+    „i capi sacerdoti e gli anziani del popolo si"  21,23 legt fest
+    „Benedetto colui che viene nel nome del Signore" 21,9 legt fest · spaeter 23,39
+        Benedetto *Gesegnet/Blessed/Bendito/Béni* · [Mehrwort `colui che`] ·
+        viene *kommt/comes/viene/vient* · nel *im/in the/en el/au* ·
+        nome *Namen/name/nombre/nom* · del *des/of the/del/du* ·
+        Signore *Herrn/Lord/Señor/Seigneur*
+    „con quale autorità faccio queste cose"  21,24 legt fest · 21,27
+        Con *Mit/By/Con/Par* · quale *welcher/what/qué/quelle* ·
+        autorità *Vollmacht/authority/autoridad/autorité* ·
+        faccio *ich tue/I do/hago/je fais* (ausgelassenes Subjekt,
+        Reihe 40 · 112) · queste *diese/these/estas/ces* ·
+        cose *Dinge/things/cosas/choses*
+    „fecero come Gesù aveva loro ordinato"   21,6 legt fest · spaeter 26,19
+    „Mandò di nuovo altri servitori"         21,36 legt fest · spaeter 22,4
+    „i pubblicani e le prostitute"           21,31 legt fest · 21,32
+        pubblicani *Zöllner/tax collectors/publicanos/publicains* ·
+        prostitute ***Prostituierten***/prostitutes/prostitutas/prostituées
+        — de *Huren* ist vermieden (Register-Gebot)
+    „Non avete mai letto"                    21,16 legt fest · 21,42
+    „e gli disse Non"                        21,19 legt fest
+    „ciò si meravigliarono e"                21,20 legt fest
+    „capi sacerdoti e i farisei"             21,45 legt fest · spaeter 27,62
+    „non gli avete creduto"                  21,25 legt fest · 21,32
+    „il padrone della vigna"                 20,8 legt fest → 21,40 zeichengleich
+        (`padrone` es *señor* · fr *seigneur*, Reihe 197)
+
+## 214 · `padrone` — 21,33 und 21,40 folgen der Mehrheit, nicht der LSG
+
+`folgencheck --min 3` meldete „padrone di casa" 21,33 gegen 10,25 ·
+13,52 und „il padrone della vigna" 21,40 gegen 20,8. **Der erste Entwurf
+stand auf fr *maître*, und das ist am Zeugen belegt:** LSG liest 21,33
+„Il y avait un homme, **maître de maison**" und 21,40 „lorsque le
+**maître** de la vigne viendra". Trotzdem steht jetzt fr *seigneur* ·
+es *señor* — Reihe 197 hat die Frage im selben Paket schon entschieden
+und dabei mehr gemessen: 10,24 · 10,25 (2×) · 13,52 · 20,1 · 20,8 ·
+20,11 tragen *seigneur*, nur 13,27 weicht ab. Eine achte Stelle daneben
+zu stellen haette das Paket gespalten.
+
+**Fuer den Koordinator:** damit stehen im Buch acht `padrone`-Belege auf
+fr *seigneur* und drei (6,24 · 13,27 · 15,27) auf *maître(s)*, und die
+LSG selbst liest an fuenf dieser Stellen *maître*. Reihe 174 hat fuer
+`signore` genau den umgekehrten Weg genommen (menschlicher Herr →
+fr *maître*). **Die beiden Reihen widersprechen einander**; wo `padrone`
+und `signore` je einmal im selben Kapitel stehen — wie hier (21,29
+`signore` als Anrede des Sohnes an den Vater, fr *seigneur*) —, tragen
+sie dieselbe franzoesische Glosse. Das ist buchweit zu entscheiden, nicht
+kapitelweise.
+
+## 215 · Stehengelassene Kollisionen in Matteo 21
+
+`glosskollision.py --datei 40 21` endet auf **4 inhaltliche Paare**
+(eines in nur einer Sprache) und **6 aus geschlossenen Wortarten**.
+Aufgeloest wurden vorher vier:
+
+    21,5   `alla` / `il`   de *der*   → `alla` de *zur*
+    21,33  `a` / `per`     en *to*    → `per` (in `per pigiare`) en *for*
+    21,33  `di` / `per`    es *de*    → `per` (in `partì per`) es *para*
+    21,11  `costui` / `Questi`  fr *celui-ci*  → `Questi` fr **`C'`**
+           (Elision des Pronomens `ce`, Reihe 38 · 182 · 186 —
+           „C'est Jésus" ist genau der LSG-Wortlaut)
+
+Stehen bleiben:
+
+- **21,33 `le` / `la`, en *it*** — Dativklitikon („le fece intorno una
+  siepe") gegen Objektklitikon („la affidò"). Englisch hat fuer beides
+  *it*; de *ihm*/*ihn*, es *le*/*la*, fr *lui*/*la* trennen sauber.
+  Von der Zielsprache erzwungen.
+- **21,8 `i` / `li`, es *los* · fr *les*** — Artikel gegen
+  Objektklitikon. Die Klasse aus Reihe 53 · 61 · 67 · 74 · 103 · 123,
+  unveraendert; de *die*/*sie* und en *the*/*them* trennen.
+- **21,11 `costui` / `Questi`, de *dieser*/*Dieser* · es *este*/*Este***
+  — beide Paare trennen sich **allein in der Grossschreibung** und sind
+  nach der Prompt-Regel keine Kollision. Englisch (*this man*/*This*)
+  und Franzoesisch (*celui-ci*/`C'`) trennen ohnehin.
+- **21,23 `gli` / `lui`, de *ihm* · fr *lui*** — Dativklitikon gegen
+  betontes Pronomen. Reihe 29 (1,21) · 43 · 74, unveraendert;
+  en *to him*/*him* und es *le*/*él* trennen.
+- **21,8 `della` / `La`, de *der*/*Der*** — Grossschreibung am
+  Satzanfang; keine Kollision.
+- **21,9 `al` / `nel`, fr *au*** — „Osanna **al** Figlio" und
+  „**nel** nome": das Franzoesische verschmilzt `à`+`le` und `en`+`le`
+  beide zu *au*. de *dem*/*im*, en *to the*/*in the*, es *al*/*en el*
+  trennen. **Neu an dieser Klasse** und nicht ausweichbar.
+- **21,14 `egli` / `lui`, es *él*** — Subjektpronomen gegen betontes
+  Objekt nach `a`. Reihe 20 (3,16), unveraendert.
+- **21,25 `da` / `di`, es *de*** — die `da`/`di`-Klasse aus Reihe 13 ·
+  29 · 36 · 53 · 67 · 74 · 82, unveraendert.
+- **21,36 `allo` / `in`, en *in*** — zwei Praepositionen in einem Vers.
+  `allo` ist durch `allo stesso modo` an Giuda 1,7 · 1,8 gebunden
+  (en *in*), `in numero maggiore` ist en *in*. Geschlossene Wortart.
+- **21,32 `vi` / `voi`, de *euch* · fr *vous*** — Klitikon gegen
+  betontes Pronomen; es *os*/*vosotros* und en *yourselves*/*you*
+  trennen. Reihe 20 (3,9) · 53 · 67 · 94.
+
+## 216 · Begruendete Abweichungen aus `folgencheck`, `elision.py` und `verschmelzung.py`
+
+**`elision.py --datei` laesst genau eine Stelle stehen:** 21,39 pos 0
+`Lo` fr *Le* vor `presero` fr *ils prirent*, Vorschlag `L'`. **Die
+Nullantwort ist richtig**: im fertigen franzoesischen Satz steht „Ils le
+prirent" — das Subjektpronomen tritt vor das Objektklitikon, und `le`
+folgt auf einen Konsonanten. Genau die `on`-Ausnahme aus Reihe 63 · 149,
+nur mit `ils` statt `on`. Zwei echte Treffer sind gesetzt worden: 21,7
+`il` → fr `l'` vor *ânon* und (aus der Kollisionsprobe) 21,11 `Questi`
+→ fr `C'`.
+
+**`verschmelzung.py` Abschnitt A ist leer, Abschnitt B meldet sieben
+Stellen — sechs richtige Nullen und einen echten Fehler.** Der Prompt
+warnt zu Recht davor, den Abschnitt abzutun:
+
+    21,32  della  fr *de* → ***de la***   ← echter Fehler, gezogen
+           LSG liest „dans la voie **de la** justice"; deutsch (*der*)
+           traegt den Artikel ohnehin, spanisch („camino de justicia")
+           und englisch („way of righteousness") nicht.
+
+Die sechs richtigen Nullen: `nella preghiera` (21,22, Abstraktum —
+en *in* · es *en*), `Dal cielo` (21,25 zweimal, en *From*),
+`dagli/Dagli uomini` (21,25 · 21,26, generischer Plural — Reihe 101) und
+`a dei lavoratori` (21,33, Partitiv — de *einigen* · en *some* ·
+es *unos*).
+
+**Die begruendeten `folgencheck`-Abweichungen** (29 bei `--min 3`,
+davon 21 reiner Kasus, Numerus oder Grossschreibung). Die uebrigen acht:
+
+- **„Quando entrò a" 21,10 gegen 8,5** und **„entrò nel tempio" 21,23
+  gegen 21,12** — dem italienischen Verb fehlt das Subjekt; Deutsch,
+  Englisch und Franzoesisch brauchen es, und es gehoert nach Reihe 40 ·
+  112 in die Glosse des Verbs (*er ging* · *he entered* · *il entra*).
+  8,5 und 21,12 nennen das Subjekt im Text und tragen es deshalb nicht.
+- **„a Gerusalemme e" 21,1 gegen 2,1 · 16,21** — das `a` gehoert hier
+  zu `vicino a` („nahe bei Jerusalem"), nicht zur Richtung („nach
+  Jerusalem"). Andere Fuegung, andere Glosse.
+- **„e gli disse" · „gli si avvicinò" 21,19 gegen zwoelf Stellen** —
+  `gli` steht auf en *to it* statt *to him*: der Bezug ist der
+  Feigenbaum. Genus des Bezugs, nicht die Reihe.
+- **„ma non vi" 21,29 gegen 21,19** und **„vi si sedette" 21,7 gegen
+  13,2** — `vi (avverbio)` ist einmal *dorthin* (der Weinberg), einmal
+  *daran* (der Feigenbaum), einmal *darauf* (die Tiere). Der Bezug
+  entscheidet.
+- **„la volontà del" 21,31 gegen 7,21 · 10,29 · 12,50** — dort folgt ein
+  Possessiv (`del Padre mio`, Reihe 22, kein Artikel), hier nicht
+  (`del padre`): en *of the* · es *del* · fr *du*.
+- **„la parola del" 21,4 gegen 13,19** — 13,19 ist „la parola del
+  regno" (de *vom*), hier „del profeta" (de *des*).
+- **„su questa pietra" 21,44 gegen 16,18** — 16,18 ist der Fels, auf dem
+  gebaut wird (de *Felsen*), 21,42 · 21,44 der Stein des Psalmzitats
+  (de *Stein*). Reihe 156 hat 16,18 ausdruecklich so gesetzt.
+- **„tutto quello che" 21,22 und „Perciò vi dico che" 21,43** — `che`
+  fr *que* statt `qu'`: das folgende franzoesische Wort ist
+  *demanderez* bzw. *le royaume*, beide konsonantisch. Reihe 38
+  verlangt genau diese Spaltung.
+
+**`sweeplemma.py` laesst fuenf Abweichungen stehen**, alle Person, Tempus
+oder Grossschreibung (`avere bisogno di` 3. Person, `far morire` Futur,
+`la maggior parte` satzeinleitend, `pentirsi` 2. Person Plural,
+`vicino a` ohne verschmolzenen Artikel — 13,1 ist `vicino al mare`,
+hier steht ein Eigenname und keine der vier Sprachen setzt dort einen
+Artikel).
+
+## 217 · Befunde an der Werkzeugkette (Nachtrag aus Matteo 21)
+
+Fortschreibung von Reihe 14 · 21 · 30 · 37 · 44 · 54 · 62 · 68 · 75 ·
+84 · 95 · 104 · 115 · 127 · 139 · 148 · 169 · 181 · 194 · 204.
+
+1. **`selfcheck.py` erwartet die Form OHNE Randzeichen — der Prompt sagt
+   es nicht.** Der Baustein sagt „Positionen zaehlen ueber
+   `text.split()`", und `text.split()` liefert `figlio,` mit Komma. Mein
+   Bauskript hat die Tokens genau so gesetzt und 130 Meldungen der Form
+   „form 'figlio,' != Token 'figlio'" bekommen. Richtig ist
+   `common.strip_punct` auf jedes Token. **Der Baustein sollte den
+   Halbsatz „…, die `form` ist das mit `common.strip_punct` gesaeuberte
+   Token" fuehren** — die Positionen zaehlen ueber `split()`, die Form
+   nicht.
+2. **`paketcheck.py` war in diesem Paket der schaerfste Lauf** —
+   `levelcheck.py` meldete 0, `paketcheck` Abschnitt A sechs neu
+   gepraegte Lemmata, die drei Agenten verschieden entschieden hatten:
+   `indignare` · `indignarsi` · `lavoratore` (es *trabajadores* gegen
+   *obreros*) · `rispetto` (fr *du respect* gegen *respect*) ·
+   `lavorare` (A2 gegen A1) · `trattare`. Alle sechs sind auf Kapitel
+   19/20 als den frueheren Ort gezogen; danach Abschnitt A nur noch
+   Tempus, Abschnitt C leer. Reihe 54.18 · 68.23 · 84.22 unveraendert:
+   **der Lauf gehoert unmittelbar vor die Abgabe wiederholt.**
+3. **`verschmelzung.py` Abschnitt B hat einen echten Fehler geliefert**
+   (21,32 `della` fr *de* → *de la*, siehe Reihe 216) und sechs richtige
+   Nullen. Reihe 183 ist damit bestaetigt: bei einer Ortsangabe oder
+   einem konkreten Nomen sitzt der Artikel, bei Abstraktum, generischem
+   Plural und Partitiv nicht. **Die franzoesische Spalte ist dabei die
+   verraeterische** — Deutsch traegt den Artikel im verschmolzenen
+   *der/vom/im* ohnehin mit, Englisch und Spanisch lassen ihn oft zu
+   Recht weg, und nur das Franzoesische zeigt den Fehler offen.
+4. **`elision.py` sieht die `non`-Elision nicht.** Die franzoesische
+   Glosse des `non` ist die Wortklammer *ne… pas* (Reihe 10), und die
+   steht nicht in der Zehnerliste `ELIDIERT`. Der Bestand elidiert sie
+   trotzdem: 242 Belege auf *ne… pas*/*Ne… pas* gegen 12 auf
+   *n'… pas*/*N'… pas*, und die zwoelf stehen genau dort, wo die
+   folgende franzoesische Glosse vokalisch anlautet (12,3 · 12,23 ·
+   14,16 · 19,4 vor *avez*). Ich habe die Regel an vier Stellen
+   angewandt (21,16 · 21,42 vor *avez*, 21,19 · 21,29 vor *y*);
+   `folgencheck` hat zwei davon gemeldet und damit gefunden, kein
+   Werkzeug sonst. **`ne` gehoert mit seiner Klammerform in
+   `ELIDIERT`** — sonst bleibt die Stelle unsichtbar, an der sie am
+   haeufigsten vorkommt.
+5. **`hints.py` hat eine Kollision vorhergesagt, die keine wurde:**
+   „`quello` ↔ `questo` — 21,21 (fr *cela*)". Am Vers steht `quello`
+   auf fr *cela* (Neutrum, „das, was") und `questo` auf fr *cette*
+   (Adjektiv vor *montagne*) — die Wortarten trennen sie von selbst.
+   Die Probe vergleicht Bestandslesarten, nicht die Funktion im Vers;
+   ihre Treffer sind Anlaesse zum Nachsehen, keine Befunde.
+6. **`rueckwaerts_40_21.md` traegt hier besonders gut** — 626 von 911
+   Tokens (69 %) stehen im **selben Vers** der Zeugen, nur 7 sind
+   voellig unbelegt (`attimo` · `gliene` · `otterrete` · `pigiare` ·
+   `precedono` · `scartato` · `tana`), und `tana` steht in Wahrheit als
+   Lemma da (8,20 `tane`), was `belegt.py` auch meldet. Die
+   KLITIKON-Schicht hat `catturarlo` · `credergli` · `pentitosi` ·
+   `prendiamoci` · `scioglieteli` sauber getrennt (Reihe 14.2 hat nicht
+   zugeschlagen).
+7. **`parallelen_40_21.md` traegt 8 von 18 Treffern** — die Datei sagt
+   es in ihrer Schlusszeile selbst (Reihe 87 · 194). Die zehn leeren
+   zeigen auf 22,4 · 23,39 · 26,3 · 26,19 · 26,62 · 27,62 und auf 20,8,
+   das erst im selben Paket entsteht. Die acht tragenden habe ich alle
+   zeichengleich uebernommen; drei davon (4,24 · 2,4 · 18,12) tragen
+   ihre Reihe samt Mehrwort.
+8. **`konvention.py`, `kongruenz.py`, `artikel.py` und `qa.py` melden
+   weiter ihre eigene Blindheit** — `artikel.py` kennt inzwischen 85
+   Nomenformen mit mindestens fuenf Belegen (Reihe 75.29: 20), `qa.py`
+   „0 Eigennamen". Die Schwelle waechst, ist aber noch nicht erreicht.
+
+## 218 · Die 46 neuen Lemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand **plus** die Abgaben von
+Kapitel 19 und 20: von 311 Lemmata standen 265 schon da, **46 sind neu**.
+`levelcheck.py 40 21` meldet 0 Abweichungen, `paketcheck.py 40 19 20 21`
+Abschnitt C ebenfalls 0. Die Level kommen aus `belegt.py --formen` ueber
+alle 435 Wortformen des Kapitels und aus dem italienischen
+Grundwortschatz, nicht aus den Zeugen — deren CEFR schwankt hier wieder
+weit (`puledro` zwischen B2 und C1, `Osanna` zwischen C1 und C2,
+`lattanti` zwischen A1 und C1, `numero` B1 gegen den italienischen
+Grundwortschatz).
+
+    A1  Betania · Betfage · Sion · numero · sentire
+    A2  gliene · secondo (numerale) · sedia
+    B1  colombo · foglia · fronte · montato · ottenere · scavare ·
+        torre · ulivo · venditore
+        Mehrwoerter: di fronte
+    B2  Scrittura · affidare · angolare · asina · attimo · bastonare ·
+        benedetto · catturare · costruttore · erede · eredità ·
+        meraviglia · meraviglioso · pigiare · prostituta · puledro ·
+        rovesciare · scartare · siepe
+        Mehrwoerter: non altro che · pietra angolare
+    C1  Osanna · cambiavalute · lapidare · lattante · miseramente ·
+        sfracellato · stritolato
+
+**`numero` steht auf A1** und nicht auf dem B1 der Zeugen: das
+italienische Wort gehoert zu den ersten hundert. Dieselbe Ueberlegung
+wie `sabato` A1 in Reihe 111 — deren CEFR gilt der englischen bzw.
+franzoesischen Bedeutung, nicht dem italienischen Wort.
+
+**`sentire` steht auf A1** neben `udire` A2 und `ascoltare` A1
+(Reihe 69). Drei Lemmata, drei Register: `sentire` ist das
+Alltagsverb des Hoerens, `udire` die gehobene Form.
+
+**Die Paare tragen dasselbe Level** (Reihe 42): `erede`/`eredità` B2,
+`meraviglia`/`meraviglioso` B2 (und `meravigliare`/`meravigliarsi` B2 im
+Bestand), `costruttore` B2 gegen `costruire` A2 — hier gehen sie
+auseinander, und das ist richtig: der Handwerkername ist seltener als
+das Verb, und Reihe 66 (`caduta`/`cadere`) deckt genau diesen Fall.
+
+**`asina` und `puledro` stehen beide auf B2.** Die Zeugen fuehren
+`puledro` auf C1, weil *colt* und *ânon* im Englischen und
+Franzoesischen selten sind; im Italienischen ist `puledro` ein
+gewoehnliches Wort. `asina` ist die feminine Form zu einem A2-Wort und
+darum nicht hoeher.
+
+## 219 · Eine falsche Prompt-Angabe, am Quelltext widerlegt
+
+Reihe 185 in Anwendung. Der Prompt fuer Matteo 21 nannte vier Reihen,
+die „ausdruecklich in dein Kapitel" fielen — drei stimmen
+(„ed egli li guarì" 21,14 · „Che ve ne pare" 21,28 ·
+„Gesù disse loro Non" 21,42), **die vierte nicht**:
+
+    „Ma egli rispose loro" (12,39)
+
+**Gemessen:** die Folge steht in Matteo 21 nirgends. `rispose loro`
+kommt zweimal vor (21,21 · 21,24), beide Male als **„Gesù rispose
+loro"**, und `Ma egli rispose` gar nicht. Die Vorbereitungsdatei
+`bindungen_40_p19_20_21.md` sagt es selbst richtig: „zuerst 12,39 —
+**hier: 19,11**" — die Reihe faellt in Kapitel 19, nicht in 21. Beim
+Uebertragen in den Prompt ist die Stellenangabe verlorengegangen.
+
+**Fuer den Koordinator:** die Zeile „hier: N,M" der Bindungsdatei ist die
+Angabe, die in den Prompt gehoert; ohne sie sieht eine Reihe des Pakets
+wie eine Reihe des Kapitels aus. Eine zeichengleiche Uebernahme haette
+hier nichts kaputtgemacht (es gab nichts zu uebernehmen) — aber der
+Agent sucht die Stelle, und in Paket 6 (Reihe 185) hat dieselbe Art
+Fehler ein falsches Franzoesisch erzwungen.
+
+## 220 · Beim Einsammeln von Paket 7 entschieden
+
+`paketcheck.py` Abschnitt A blieb bei zwei Faellen (`lavorare`,
+`trattare`), beides Flexion; Abschnitt C leer. Die drei Agenten haben
+sich vollstaendig selbst abgestimmt.
+
+### `padrone` steht franzoesisch auf `maître` — am Zeugen gemessen
+
+Der Agent fuer Matteo 21 hat die Frage buchweit vorgelegt, statt sie
+kapitelweise zu loesen. Die Messung an der LSG entscheidet sie:
+
+    RIV-Stelle   6,24 10,24 10,25 13,27 13,52 15,27 20,1 20,8 20,11 21,33 21,40
+    LSG liest    maîtres · maître · maître · maître · maître · maîtres
+                 · maître · maître · maître · maître · maître
+
+**An allen elf Stellen `maître`, an keiner `seigneur`.** Die zehn
+Singularstellen sind gezogen. Damit steht:
+
+    padrone            → fr *maître*        (11 Stellen)
+    signore menschlich → fr *maître*        (Reihe 174, Kapitel 18)
+    signore goettlich  → fr *Seigneur*      (39 Stellen)
+
+`padrone` und `signore` tragen im Menschenbezug dieselbe franzoesische
+Glosse — sie stehen nie im selben Vers, und die LSG macht es genauso.
+21,29 (`signore` als Anrede des Sohnes an den Vater) bleibt auf dem
+kleingeschriebenen *seigneur*: die LSG hat dort eine andere Textform und
+ist kein Zeuge.
+
+### 12,12 fehlte dem Franzoesischen eine Praeposition
+
+`è lecito fare del bene` stand als *permis* + *faire*; „il est permis
+faire du bien" ist kein Franzoesisch. 20,15 traegt *de faire*.
+
+## 221 · `elision.py` sah die haeufigste Elision des Franzoesischen nie
+
+Der Agent fuer Matteo 21 hat gemeldet, dass die `non`-Elision dem
+Werkzeug entgeht, und `folgencheck` hatte sie ihm gezeigt. Die Ursache:
+**`non` traegt franzoesisch die KLAMMER `ne… pas`** (Reihe 10), und
+`elision.py` verglich die ganze Glosse gegen `ELIDIERT`. `ne` steht
+dort seit jeher — die Klammer aber nie.
+
+Gemessen ueber Matteo: **68 Stellen** standen unelidiert vor einem
+vokalischen Wort, sieben elidiert. Das ist mehr als alle bisherigen
+Elisionskorrekturen des Buches zusammen.
+
+Zwei Regeln waren dafuer noetig, beide am Vers gefunden:
+
+**Das Subjektpronomen steht VOR der Verneinung.** Bei `que` steht es
+dahinter („ce **que vous** entendez" — keine Elision), bei `ne` davor
+(„il **n'est** pas" — Elision). Fuer `ne` entscheidet darum nicht das
+erste Wort der Folgeglosse, sondern das erste **nach** einem etwaigen
+Subjektpronomen: `il y a` elidiert, `il brisera` nicht. Dieselbe
+Stellung haben die Objektklitika `le`, `la`, `se`, `me`, `te` — sie
+stehen jetzt alle in `NACH_SUBJEKT`. 21,39 `Lo` vor „ils prirent" ist
+damit zu Recht kein Treffer mehr.
+
+**`y` laeutet vokalisch an.** „il n'y a pas" elidiert, obwohl `y` ein
+Konsonantbuchstabe ist. Es ist der einzige und steht in `VOKALWORT`.
+
+Von 77 gemeldeten Stellen bleiben **9**, alle begruendet: sechsmal `que`
+mit eingeschobenem Subjektpronomen, einmal `Ce`/`Cet` (Reihe 186),
+einmal `je` vor einer Umstellung. Der franzoesische Bestand ist
+gegengeprueft — `elision.py` meldet fuer Marc weiterhin 0.
+
+## 222 · Zum dritten Mal ein Fehler im Prompt des Koordinators
+
+Reihe 185 hatte die Regel gesetzt: was nicht gemessen ist, gehoert nicht
+in den Prompt. Paket 7 hat sie befolgt — und trotzdem stand ein Fehler
+darin, diesmal ein Uebertragungsfehler.
+
+`bindungen_40_p19_20_21.md` schreibt korrekt:
+
+    ### „Ma egli rispose loro"   (zuerst 12,39 — hier: 19,11)
+
+Im Prompt fuer Matteo 21 stand die Folge als eine der vier, die
+„ausdruecklich in dein Kapitel" fallen. **Die Stellenangabe `hier:
+19,11` ist beim Uebertragen verlorengegangen**, und in Matteo 21 kommt
+`Ma egli rispose` gar nicht vor. Der Agent hat es gemessen und
+zurueckgewiesen.
+
+**Die Zeile „hier: N,M" gehoert mit in den Prompt**, sonst sieht eine
+Paketreihe wie eine Kapitelreihe aus. Besser noch: die Bindungsdatei
+wird nicht zitiert, sondern genannt — der Agent liest sie ohnehin
+zuerst.
+
+## 223 · `verschmelzung.py` prueft jetzt das Lemma, nicht die Zeichenkette
+
+`dallo` in 19,21 ist nicht `da`+`lo`, sondern der Imperativ `da'` von
+`dare` mit angehaengtem Klitikon — „gib es". Abschnitt B meldete ihn als
+„Glosse ohne Artikel", und die Falle steht in jedem Kapitel mit einem
+`dare`-Imperativ. Gemeldet vom Agenten fuer Matteo 19.
+
+Eine echte Verschmelzung traegt eine der sieben Praepositionen als
+**Lemma**; wo etwas anderes steht, ist die Uebereinstimmung der
+Zeichenkette zufaellig. Der Fehlalarm ist damit weg, und der Lauf ueber
+das ganze Buch aendert sich sonst nicht.
+
+Derselbe Agent hat den Hinweis aus Reihe 183 richtig angewandt: er hat
+seine sechs Verdachtsfaelle einzeln am Vers geprueft statt pauschal
+abgetan — und dabei genau den einen als Werkzeugfehler erkannt.

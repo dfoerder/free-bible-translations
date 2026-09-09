@@ -82,7 +82,11 @@ ELIDIERT = {'se': "s'", 'me': "m'", 'te': "t'", 'ne': "n'", 'le': "l'",
             # zweimal steht; richtig ist `jusqu'`, das doppelt ebenfalls
             # nichts und ergibt mit dem folgenden `à` die richtige Form.
             'jusque': "jusqu'"}
+# `y` steht hier, weil das franzoesische Adverbialpronomen vokalisch
+# anlautet: „il n'y a pas". Es ist der einzige Konsonantbuchstabe, vor
+# dem elidiert wird, und es kommt nur als eigenes Wort vor.
 VOKAL = set('aeiouáàâäéèêëíìîïóòôöúùûü')
+VOKALWORT = {'y'}
 
 # Das unpersoenliche `si` wird franzoesisch `on` — und `on` ist ein
 # SUBJEKT, das im Franzoesischen VOR dem Objektklitikon steht. Der
@@ -95,6 +99,16 @@ VOKAL = set('aeiouáàâäéèêëíìîïóòôöúùûü')
 #
 # `que` ist ausgenommen: `qu'on` ist richtig und haeufig.
 KEIN_ON = {'se', 'me', 'te', 'le', 'la', 'ne', 'ce', 'je'}
+
+# Franzoesische Subjektpronomen. Sie stehen VOR der Verneinung, also
+# entscheidet fuer `ne` erst das Wort dahinter ueber die Elision.
+SUBJEKT = {'il', 'ils', 'elle', 'elles', 'je', 'tu', 'nous', 'vous', 'on'}
+
+# Diese Glossen sind KLITIKA und stehen im franzoesischen Satz hinter
+# dem Subjekt („ils le prirent", „il n'est pas"), also entscheidet erst
+# das Wort nach dem Pronomen ueber die Elision. `que`, `ce`, `de` und
+# `je` stehen davor und sind darum nicht dabei.
+NACH_SUBJEKT = {'ne', 'le', 'la', 'se', 'me', 'te'}
 
 # `ce` ist der einzige Eintrag mit ZWEI moeglichen Formen, und keine
 # Heuristik trennt sie zuverlaessig: das Pronomen wird `c'` (*c'est*),
@@ -134,6 +148,8 @@ def vokalisch(w):
     w = (w or '').lstrip('«»"\'’ ').lower()
     if not w:
         return False
+    if w.split()[:1] and w.split()[0].strip(".,;:!?") in VOKALWORT:
+        return True
     if w[0] in VOKAL:
         return True
     if w[0] == 'h':
@@ -157,12 +173,41 @@ def pruefe(buecher, datei=None, kapitel=None):
                 einzel = {e['pos']: e for e in ee if not C.is_multi(e)}
                 for pos, e in sorted(einzel.items()):
                     fr = (e.get('fr') or '').strip()
+                    # `non` traegt franzoesisch die KLAMMER `ne… pas`
+                    # (Reihe 10), und `ne` allein stand deshalb nie in
+                    # `ELIDIERT` — das Werkzeug hat die haeufigste
+                    # Elision des Franzoesischen ueberhaupt nie gesehen.
+                    # Gefunden hat sie `folgencheck`, gemeldet vom
+                    # Agenten fuer Matteo 21. Die Klammer wird hier auf
+                    # ihr erstes Glied reduziert und danach wie jede
+                    # andere Elision geprueft; der Vorschlag traegt den
+                    # Rest der Klammer wieder mit.
+                    klammer = ''
+                    if '…' in fr:
+                        kopf, klammer = fr.split('…', 1)
+                        if kopf.strip().lower() in ELIDIERT:
+                            fr = kopf.strip()
+                        else:
+                            continue
                     if fr.lower() not in ELIDIERT:
                         continue
                     nx = einzel.get(pos + 1)
-                    if not nx or not vokalisch(nx.get('fr')):
+                    nachwort_roh = (nx.get('fr') or '') if nx else ''
+                    # **Nur bei `ne`**: das franzoesische Subjektpronomen
+                    # steht VOR der Verneinung („il n'est pas"), waehrend
+                    # es bei `que` dahinter steht („ce que vous
+                    # entendez"). Fuer `ne` entscheidet darum nicht das
+                    # erste Wort der Folgeglosse, sondern das erste nach
+                    # einem etwaigen Subjektpronomen: „il y a" elidiert
+                    # (`n'y a`), „il brisera" nicht (`ne brisera`).
+                    if fr.lower() in NACH_SUBJEKT:
+                        w = nachwort_roh.split()
+                        while w and w[0].lower() in SUBJEKT:
+                            w = w[1:]
+                        nachwort_roh = ' '.join(w)
+                    if not nx or not vokalisch(nachwort_roh):
                         continue
-                    nachwort = (nx.get('fr') or '').strip().lower()
+                    nachwort = nachwort_roh.strip().lower()
                     if nachwort.split()[:1] == ['on'] \
                             and fr.lower() in KEIN_ON:
                         continue
@@ -181,6 +226,9 @@ def pruefe(buecher, datei=None, kapitel=None):
                             + "' (Pronomen) / " \
                             + ('C' if fr[:1].isupper() else 'c') \
                             + 'et (Adjektiv)'
+                    if klammer:
+                        fr = fr + '…' + klammer
+                        soll = soll + '…' + klammer
                     treffer.append((nr, kap, v, pos, e.get('form'), fr, soll,
                                     nx.get('fr')))
     return treffer

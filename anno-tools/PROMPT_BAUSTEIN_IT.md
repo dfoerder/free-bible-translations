@@ -187,6 +187,14 @@ essere-Hilfsverb darin seine woertliche Kopula-Glosse behaelt.
 
 **Welches Werkzeug welchen Bestand liest — hier irren sich alle.**
 
+- **Die Positionen zaehlen ueber `text.split()`, die `form` nicht.**
+  `split()` liefert `figlio,` mit Komma; die `form` steht **ohne**
+  umschliessende Satzzeichen, also durch `common.strip_punct`. Zwei
+  Agenten desselben Pakets sind darueber gestolpert und haben von
+  `selfcheck.py` 123 bzw. 130 Meldungen bekommen, die wie ein
+  Ausrichtungsproblem aussehen und keins sind. Ein eigenes Bauskript
+  braucht ausserdem `sys.path.insert(0, 'anno-tools')` **und**
+  `os.environ['ANNO_EDITION']` vor `import common` (Reihe 88).
 - **`fixgloss.py verse <NR> <KAP> <VERS>` zeigt den ganzen annotierten
   Vers — mit den Mehrwortspannen.** Das ist die einzige Ansicht, in der
   sichtbar wird, ob eine Wendung einen Mehrworteintrag traegt oder nicht;
