@@ -1577,3 +1577,38 @@ mir: „`sweeplemma`s Verdachtsblock ist wertvoller als sein
 Mehrwortblock" gilt nicht immer. In 2. Korinther 9 war der
 Verdachtsblock leer und der Mehrwortblock hat alle vierzehn Wendungen
 samt Reihen bestaetigt. Beide Bloecke sind zu lesen.
+
+## Die Bilanz der Werkzeugmeldungen — und warum sie weitergehen sollen
+
+Der Agent fuer 2. Korinther 7 hat vermutet, `fixgloss.py verse`
+schreibe seine Ausgabe auf stdout **und** stderr, und daraus die
+Regel abgeleitet, man duerfe es nie mit `2>/dev/null` aufrufen. Er
+hat auch die frueher als „nicht reproduzierbar" abgelegte Meldung
+ueber doppelte Zeilen damit erklaeren wollen.
+
+Nachgemessen in Dateien statt in einer Pipe: **stdout 36 Zeilen /
+3880 Bytes, stderr 0 Bytes.** Der exakt gemeldete Aufruf liefert seine
+dreissig Zeilen. Die Hypothese traegt nicht; die urspruengliche
+Beobachtung bleibt unerklaert.
+
+**Die Bilanz dieser Nacht, damit niemand die falsche Lehre zieht:**
+
+    rund 22 gemeldete Werkzeugfehler waren echt und sind behoben —
+      artikel (viermal), kongruenz (viermal), ausgaben, reflexiv
+      (zweimal), lexicon, ausreisser, konsistenz, hints (zweimal),
+      belegt (zweimal), fixgloss, folgenreihe (zweimal), sweeplemma,
+      paketvorb, PROMPT_BAUSTEIN
+
+    rund 6 haben sich nicht bestaetigt — dreimal ein `| head`,
+      einmal nicht reproduzierbare Dopplung, einmal eine
+      abgeschnittene `belegt`-Ausgabe, einmal diese stderr-Vermutung
+
+Das Verhaeltnis ist der Grund, warum jede Meldung willkommen ist: auf
+eine, die sich nicht bestaetigt, kommen fast vier echte. **Melden ist
+richtig, auch wenn man sich irrt.**
+
+Und die Gegenregel fuer den Koordinator: **eine Meldung ist eine
+Vermutung, keine Diagnose.** Sie wird nachgemessen, bevor etwas
+geaendert wird — sonst „repariert" man ein Werkzeug, das gesund ist,
+und richtet dabei den Schaden an, den die echten Meldungen dieser
+Nacht zweimal dokumentiert haben.
