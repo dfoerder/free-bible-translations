@@ -493,13 +493,23 @@ def extract(nr, kap, von=None, bis=None):
     for v in sorted(verses, key=int):
         if von is not None and not (von <= int(v) <= bis):
             continue
-        toks = [t for t in C.tokens(verses[v]) if not C.is_punct_only(t)]
+        # Satzzeichen bleiben in der Liste und werden erst in der
+        # Schleife uebersprungen — sonst zaehlt `enumerate` sie weg und
+        # jede Position hinter einem alleinstehenden Satzzeichen ist
+        # verschoben, waehrend die Abgabe sie mitzaehlt. In Galates 2,6
+        # stehen zwei Gedankenstriche; wer die Nummern von hier
+        # uebernahm, verschob den halben Vers um eins bzw. zwei.
+        # Gemeldet vom Agenten fuer Galates 2. Betroffen sind 67
+        # Kapitel des Bestands, im verbleibenden NT nur noch Hebraeer.
+        toks = list(C.tokens(verses[v]))
         L.append(f'## {kap},{v}')
         L.append('')
         L.append(f'> {verses[v]}')
         L.append('')
         im_vers = vz.get(str(v), {})
         for i, tok in enumerate(toks):
+            if C.is_punct_only(tok):
+                continue
             k = norm(tok)
             if not k:
                 continue

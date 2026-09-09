@@ -214,3 +214,15 @@ Genus, Satzfunktion, oder eine andere Konstruktion mit demselben Wort.
 Und **miss ueber alle Formen**, nicht nur ueber die, die in deinem Vers
 steht: eine Stichprobe von drei Stellen hat zuletzt in die falsche
 Richtung gezeigt.
+
+## Alleinstehende Satzzeichen zaehlen als Position mit
+
+Ein Gedankenstrich, der als eigenes Wort im Vers steht, ist ein Token
+und belegt eine Position — er bekommt nur keinen Eintrag. Die Abgabe
+springt dort also (…5, 7, 8…), und `validate.py` besteht darauf.
+
+`rueckwaerts_*.md` zaehlte diese Tokens frueher weg; wer die Nummern
+von dort uebernahm, verschob alles dahinter. Der Fehler ist behoben
+(gemeldet vom Agenten fuer Galates 2, dessen Vers 2,6 zwei
+Gedankenstriche traegt) — aber **pruef die Position immer am eigenen
+Vers nach**, nicht an einer Vorbereitungsdatei.

@@ -1654,3 +1654,23 @@ nennt beide Werkzeuge, die ihn schon einmal hatten. Eine Zeile weiter
 unten stand er noch. **Wo eine Null verdaechtig glatt ist, zaehle
 nach, wie viele Faelle die Probe ueberhaupt erreicht haben** — die
 Zahl steht in keinem Bericht, aber sie ist mit sechs Zeilen gemessen.
+
+## AT-Zitate, dritte Fassung
+
+Bisher stand hier: den Rahmen uebernehmen, den Inhalt praegen. Der
+Agent fuer Galater 3 hat die zweite Haelfte widerlegt. Wo eine ANDERE
+neutestamentliche Stelle dieselbe alttestamentliche Stelle zitiert,
+steht der Zitatinhalt bereits glossiert im Bestand — und zwar Token
+fuer Token:
+
+    Hab 2,4     Gal 3,11  ← Rm 1,17    sechs Token zeichengleich
+    3 Mo 18,5   Gal 3,12  ← Rm 10,5    neun Token, samt Mehrwort
+    1 Mo 15,6   Gal 3,6   ← Rm 4,3     praktisch der ganze Vers
+    5 Mo 21,23  Gal 3,13  — keine Parallele
+
+Der Ort dafuer ist nicht das AT (das steht in einer anderen Ausgabe),
+sondern die zweite NT-Stelle. Dasselbe Muster traegt schon 2 Ko 13,1,
+wo Mt 18,16 dieselben Worte aus 5 Mo 19,15 zitiert.
+
+**Also: erst suchen, wer sonst noch zitiert, dann praegen.** Nur wenn
+niemand sonst dieselbe Stelle zitiert, ist der Inhalt wirklich neu.
