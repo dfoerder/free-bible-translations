@@ -69,7 +69,17 @@ def baustein(nr, kap, buch, scratch, paket=()):
     # `<GEGEN>` sind alle schon annotierten Buecher ausser dem eigenen.
     # Fuer Markus ist das Matthaeus, fuer Lukas Matthaeus und Markus —
     # die Liste waechst von selbst mit dem Bestand.
-    gegen = ' '.join(str(b) for b in sorted(C.anno_books()) if b != nr)
+    # ABER: sie waechst nur bis zum ERZEUGUNGSZEITPUNKT. Wer sechs
+    # Buecher parallel bearbeitet, bekommt eine Liste, die schon beim
+    # Lesen veraltet ist — dem Agenten fuer 2. Johannes fehlten 61, 62
+    # und 64, und ein selbstgebauter Zusatzlauf gegen genau diese drei
+    # fand vier echte Bindungen (`demeurer` = `dimora`, das persoenliche
+    # `a` vor `al Padre`, `one another`, `dès le commencement`).
+    # Deshalb: ALLE Buecher desselben Testaments ausser dem eigenen.
+    # `folgencheck` ueberspringt ein noch leeres Buch klaglos („noch
+    # nicht annotiert"), die Liste kostet also nichts.
+    bereich = range(40, 67) if nr >= 40 else range(1, 40)
+    gegen = ' '.join(str(b) for b in bereich if b != nr)
     for a, b in (('<NR>', str(nr)), ('<KAP>', str(kap)),
                  ('<GEGEN>', gegen),
                  ('<PAKET>', ' '.join(str(x) for x in paket)),
