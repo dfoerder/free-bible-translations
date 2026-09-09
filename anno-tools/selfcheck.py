@@ -14,6 +14,42 @@ import common as C
 import validate as V
 
 
+def spannenlaenge(eintraege, ort, errs):
+    """`form` eines Mehrworts muss so viele Woerter haben wie die Spanne Token.
+
+    Eine harte Regel, keine Statistik: `form` gibt die Spanne woertlich
+    wieder. Ueber den ganzen Bestand gemessen halten sie alle 2500
+    Mehrwoerter ein.
+
+    Anlass: ein Bauskript machte aus dem Tupel `(6, 10)` still ein
+    `pos_end` statt `parts`. Gemeldet vom Agenten fuer Philipper 3, der
+    ihn selbst fand: „keine Probe vergleicht die Laenge einer
+    Mehrwortglosse mit der Laenge ihrer Spanne."
+
+    WIE WEIT DAS TRAEGT: Wer `form` von Hand setzt und die Spanne
+    danebenlegt, faellt hier auf — und `validate` faengt denselben Fall
+    ohnehin ueber den Vergleich von `form` mit dem Quelltext. Wer
+    `form` dagegen aus der falschen Spanne MITBAUT, bleibt in beiden
+    Proben unsichtbar: dann stimmt alles mit sich selbst ueberein, nur
+    nicht mit der Absicht. Diese Probe praezisiert die Meldung
+    („pos_end statt parts?"), sie schliesst die Luecke nicht.
+    """
+    for e in eintraege:
+        w = len((e.get('form') or '').split())
+        if 'pos_end' in e:
+            soll = e['pos_end'] - e['pos'] + 1
+            wie = f"pos_end-Spanne {soll}"
+        elif 'parts' in e:
+            soll = len(e['parts'])
+            wie = f"parts {soll}"
+        else:
+            continue
+        if w != soll:
+            errs.append(f'{ort}: Mehrwort {e.get("form")!r} deckt {wie} '
+                        f'Token, `form` hat aber {w} Woerter — '
+                        f'`pos_end` statt `parts` gesetzt?')
+
+
 def main():
     if len(sys.argv) < 4:
         print(__doc__)
@@ -28,6 +64,8 @@ def main():
         data = data['chapters'][str(kap)]
 
     errs = V.validate_chapter(nr, kap, data, partial=False, von=von, bis=bis)
+    for v in sorted(data, key=lambda x: int(x)):
+        spannenlaenge(data[v], f'{nr} {kap},{v}', errs)
     src = C.load_source(nr)['chapters'][str(kap)]
     soll = [v for v in src if von is None or von <= int(v) <= bis]
     tok = sum(len(C.tokens(src[v])) for v in soll)

@@ -1674,3 +1674,32 @@ wo Mt 18,16 dieselben Worte aus 5 Mo 19,15 zitiert.
 
 **Also: erst suchen, wer sonst noch zitiert, dann praegen.** Nur wenn
 niemand sonst dieselbe Stelle zitiert, ist der Inhalt wirklich neu.
+
+## Praeposition und Artikel: die Praeposition bleibt bar
+
+Wo im Franzoesischen Praeposition und Artikel zwei Token sind (`à la`,
+`dans le`, `depuis le`), traegt die romanische Glosse den Artikel
+GENAU EINMAL — auf dem Artikeltoken. Die Praeposition bleibt bar:
+
+    à la     → `a` + `la`        NICHT `alla` + `la`
+    dans le  → `in` + `il`       NICHT `nel` + `il`
+    depuis le→ `da` + `il`       NICHT `dal` + `il`
+
+Der Bestand haelt das 2403:32. Die 32 Ausnahmen waren Fehler und sind
+gezogen; gemeldet vom Agenten fuer Philipper 1 an `depuis le premier
+jour` (Ac 20,18), wo „dal il primo giorno" stand.
+
+Nur wo das Franzoesische selbst verschmilzt (`du`, `au`, `aux`, `des`),
+verschmilzt auch die Glosse — dort gibt es kein zweites Token.
+
+## paketcheck ist ein bewegliches Ziel
+
+Dreimal gemeldet (Epheser 2, Philipper 2 und 4): waehrend eines Laufs
+hat ein Nachbarkapitel seine Glosse geaendert, und wer frueh abglich,
+glich gegen einen Stand ab, den es Minuten spaeter nicht mehr gab —
+`Épaphrodite` stand um 14:54 als *Epafrodito*, um 14:58 als
+*Epafròdito*.
+
+**`paketcheck` gehoert als LETZTER Lauf vor der Abgabe wiederholt**,
+nicht nur einmal in der Mitte. Derselbe Satz, der fuer den Bestand
+gilt, gilt auch fuer die Paketnachbarn.
