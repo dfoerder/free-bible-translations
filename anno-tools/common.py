@@ -22,6 +22,7 @@ Quelltextes** lernt — bei `fra/lsg1910mod` also Franzoesischlernende.
 import json
 import os
 import re
+import sys
 import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -45,6 +46,7 @@ if os.environ.get('ANNO_OUT'):
         _kand = os.path.join(TRANS, _ao)
         if os.path.isdir(_kand):
             os.environ['ANNO_OUT'] = _kand
+
 
 # Alle fuenf Ausgaben, die im Repo liegen. `anno` ist None, wo keine
 # Annotation existiert (RIV1927) — dann taugt der Eintrag nur als Zeuge.
@@ -86,6 +88,28 @@ ZEUGE = {'de': 'deu/l1912mod', 'en': 'eng/web', 'es': 'spa/rv1909mod',
          'it': 'ita/riv1927', 'fr': 'fra/lsg1910'}
 
 EDITION = os.environ.get('ANNO_EDITION', 'deu/l1912mod')
+
+# Widerspricht `ANNO_OUT` der aktiven Ausgabe, dann fehlt fast immer
+# `ANNO_EDITION`. Das Werkzeug antwortet dann klaglos zur falschen
+# Ausgabe: `levelcheck.py` mass einmal gegen `deu/l1912mod`, waehrend
+# `ANNO_OUT` auf die franzoesischen Dateien zeigte, und meldete zehn
+# Scheinabweichungen (`Christ` A1 gegen B2). Die Kopfzeile nennt die
+# Ausgabe, aber sie ist die einzige Stelle, an der man es sieht.
+# Gemeldet vom Agenten fuer Epheser 5.
+#
+# Geprueft wird die SPRACHKENNUNG im Pfad, nicht die ganze Edition —
+# ein legitimes Scratch-Verzeichnis heisst `scratchpad/fra_eph/out`
+# und traegt `lsg1910mod` nirgends.
+if os.environ.get('ANNO_OUT'):
+    import re as _re
+    _spr = {'deu', 'eng', 'fra', 'ita'}
+    _imp = {t for t in _re.split(r'[/_.-]', os.environ['ANNO_OUT']) if t in _spr}
+    if _imp and EDITION.split('/')[0] not in _imp:
+        sys.stderr.write(
+            f'!! ANNO_OUT nennt `{"/".join(sorted(_imp))}`, gearbeitet wird '
+            f'aber auf `{EDITION}`.\n'
+            f'   Fehlt `export ANNO_EDITION`? Dieser Lauf antwortet sonst '
+            f'zur falschen Ausgabe.\n')
 if EDITION not in AUSGABEN:
     raise SystemExit(f'ANNO_EDITION={EDITION!r} ist keine bekannte Ausgabe. '
                      f'Bekannt: {", ".join(sorted(AUSGABEN))}')

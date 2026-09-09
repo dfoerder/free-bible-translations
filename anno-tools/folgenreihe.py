@@ -56,6 +56,21 @@ def _apo(x):
     return (x or '').replace('\u2019', "'")
 
 
+def _norm_akz(w):
+    """Akzente weg und `œ`/`æ` aufgeloest — nur zum VERGLEICHEN.
+
+    Akzente sind im Franzoesischen bedeutungstragend (`a`/`à`,
+    `ou`/`où`), also wird hier nichts zusammengefasst; die Funktion
+    dient allein dem Hinweis „du hast X gefragt, im Text steht Y".
+    Die Ligatur gehoert dazu: `de l'oeuvre` fand 0, `de l’œuvre`
+    den Beleg — dieselbe Falle, die `belegt.py` fuer den Apostroph
+    laengst abfaengt. Gemeldet vom Agenten fuer Epheser 4.
+    """
+    w = w.replace('œ', 'oe').replace('Œ', 'OE')
+    w = w.replace('æ', 'ae').replace('Æ', 'AE')
+    return C.ohne_akzent(w)
+
+
 def stellen(phr, bis=None):
     # Der gerade Apostroph muss treffen wie der typografische: die
     # Vorbereitungsdateien und jede von Hand getippte Folge benutzen ihn.
@@ -83,6 +98,14 @@ def stellen(phr, bis=None):
     unvollstaendig = []
     mehrwort = collections.defaultdict(list)
     schreibungen = collections.Counter()
+    # Varianten, die sich nur in Akzenten oder in der Ligatur `œ`
+    # unterscheiden, im SELBEN Durchlauf mitzaehlen. Als eigener Lauf
+    # (nur bei 0 Treffern) war der Hinweis zu schwach: `a cause de`
+    # liefert 2 Treffer statt 91 und schwieg deshalb — und genau der
+    # Nicht-Null-Fall ist der gefaehrliche, weil er wie ein Ergebnis
+    # aussieht. Gemeldet vom Agenten fuer Epheser 4.
+    varianten = collections.Counter()
+    wn = [_norm_akz(x) for x in wk]
     for nr in range(1, bis or 67):
         try:
             s = C.load_source(nr)
@@ -100,6 +123,10 @@ def stellen(phr, bis=None):
                 E = {e['pos']: e for e in anno[k][v]
                      if 'pos_end' not in e and 'parts' not in e}
                 for i in range(len(toks) - len(w) + 1):
+                    stueck = toks[i:i + len(w)]
+                    if ([_norm_akz(x.lower()) for x in stueck] == wn
+                            and [x.lower() for x in stueck] != wk):
+                        varianten[' '.join(stueck)] += 1
                     # Der Vergleich laeuft klein: `il y avait là` meldete
                     # 0, `Il y avait là` zwei einstimmige Vorkommen —
                     # dieselbe stille Null wie bei `garder/garda le
@@ -147,38 +174,8 @@ def stellen(phr, bis=None):
                     voll[key] += 1
                     orte[key].append(f'{C.book_name(nr)} {k},{v}')
                     schreibungen[tuple(toks[i:i + len(w)])] += 1
-    return w, voll, orte, unvollstaendig, mehrwort, schreibungen
-
-
-def akzentvarianten(w, bis=None):
-    """Dieselbe Folge, nur anders akzentuiert — was steht wirklich da?
-
-    Akzente sind im Franzoesischen bedeutungstragend (`a`/`à`,
-    `ou`/`où`), der Vergleich darf sie also nicht einfach ignorieren.
-    Aber wer eine Folge aus einer Bindungsdatei oder von Hand tippt,
-    laesst den Akzent auf einem GROSSBUCHSTABEN leicht weg: `A cause
-    de cela` fand 0, `À cause de cela` findet 3, und die
-    Vorbereitungsdatei fuehrte die Folge daraufhin als ungepraegt —
-    obwohl sie in Jean 5,18 steht. Gemeldet vom Agenten fuer Epheser 3.
-
-    Laeuft nur bei 0 Treffern, kostet also nie etwas.
-    """
-    wk = [C.ohne_akzent(x.lower()) for x in w]
-    gefunden = collections.Counter()
-    for nr in range(1, bis or 67):
-        try:
-            s = C.load_source(nr)
-        except Exception:
-            continue
-        ch = s['chapters'] if 'chapters' in s else s
-        for k, vv in ch.items():
-            for v, t in vv.items():
-                toks = [_apo(C.strip_punct(x)) for x in t.split()]
-                for i in range(len(toks) - len(wk) + 1):
-                    stueck = toks[i:i + len(wk)]
-                    if [C.ohne_akzent(x.lower()) for x in stueck] == wk:
-                        gefunden[' '.join(stueck)] += 1
-    return gefunden
+    return (w, voll, orte, unvollstaendig, mehrwort, schreibungen,
+            varianten)
 
 
 def schreibungswarnung(w, schreibungen):
@@ -296,19 +293,19 @@ def main():
         return 2
     print(f'*{C.bestandsstand()}*')
     for phr in args:
-        w, voll, orte, unv, mehrwort, schreib = stellen(phr, bis)
+        (w, voll, orte, unv, mehrwort, schreib,
+         varianten) = stellen(phr, bis)
         ges = sum(voll.values())
         print(f'\n# „{phr}"\n')
         print(f'{ges} vollstaendig glossierte Vorkommen, '
               f'{len(voll)} verschiedene Reihen'
               + (f', {len(unv)} mit Mehrwort an einer Position'
                  if unv else ''))
-        if ges == 0:
-            for form, n in akzentvarianten(w, bis).most_common(3):
-                if form.lower() != ' '.join(w).lower():
-                    print(f'**0 Treffer fuer `{" ".join(w)}`, aber {n} fuer '
-                          f'`{form}`.** Akzente werden mitverglichen — '
-                          'pruef die Schreibung.')
+        for form, n in varianten.most_common(3):
+            print(f'**{ges} Treffer fuer `{" ".join(w)}`, aber {n} fuer '
+                  f'`{form}`.** Der Unterschied sind nur Akzente oder die '
+                  'Ligatur `œ`\n— dieselbe Wendung, andere Schreibung. '
+                  'Beide Zahlen gehoeren zusammengezaehlt.')
         # Der erste Token bleibt aus `schreibungswarnung()` heraus,
         # weil dort der Grossbuchstabe die Satzposition ist und nicht
         # ein anderes Wort. Fuer die GLOSSE ist er trotzdem

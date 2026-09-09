@@ -52,8 +52,13 @@ und der Agent fuer Actes 13 musste es aus einer Nachbardatei ablesen.
   `odeur` vor, `belegt.py œuvres` findet alles. Dieselbe stille Falle, ein
   anderes Zeichen.
   `belegt.py "d'eux"` findet nichts, `belegt.py "d’eux"` alles.
-  `belegt.py` normalisiert, `folgenreihe.py` nicht — dort liefert ein
-  gerades Apostroph stumm 0.
+  Beide normalisieren den Apostroph inzwischen; die alte Warnung
+  „`folgenreihe` liefert bei geradem Apostroph stumm 0" ist ueberholt
+  (nachgemessen vom Agenten fuer Epheser 4: `folgenreihe "c'est
+  pourquoi"` findet alle 75 Treffer). Was `folgenreihe` weiterhin
+  NICHT zusammenfasst, sind Akzente und die Ligatur `œ` — dort weist
+  es aber jetzt von selbst auf die andere Schreibung hin und nennt
+  beide Zahlen.
 - **Feste Woerterbuchformen mit Elision tragen die Elision im Lemma:**
   `d’abord` (27 Belege) ist das Lemma, nicht `abord`; ebenso `jusqu’à`.
   Die Regel „der Kopf ist das Inhaltswort" fuehrt dort in die Irre.

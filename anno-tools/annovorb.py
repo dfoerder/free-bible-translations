@@ -73,7 +73,19 @@ def baustein(nr, kap, buch, scratch, paket=()):
     for a, b in (('<NR>', str(nr)), ('<KAP>', str(kap)),
                  ('<GEGEN>', gegen),
                  ('<PAKET>', ' '.join(str(x) for x in paket)),
-                 ('<BUCH>', buch), ('<SCRATCH>', scratch)):
+                 ('<BUCH>', buch),
+                 # ABSOLUT. Der Prompt sagt zugleich „alle Werkzeuge aus
+                 # `anno-tools/` heraus aufrufen" und setzte `ANNO_OUT`
+                 # relativ zur Repo-Wurzel — wer beides befolgte, bekam
+                 # `FileNotFoundError`. `common.py` repariert seine
+                 # eigene `os.environ`-Kopie, aber die Shell expandiert
+                 # `$ANNO_OUT` in ARGUMENTEN, und neun der dreizehn
+                 # Kettenglieder bekommen den Pfad genau so uebergeben
+                 # (`selfcheck`, `sweeplemma`, `qa`, `mehrwort` …).
+                 # Zweimal gemeldet: Agent Epheser 1 (fuer die
+                 # Umgebungsvariable), Agent Epheser 6 (fuer die
+                 # Argumente, wo die Reparatur nicht hinreicht).
+                 ('<SCRATCH>', os.path.abspath(scratch))):
         s = s.replace(a, b)
     return s
 
