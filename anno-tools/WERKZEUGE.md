@@ -222,3 +222,16 @@ Wer eine Rueckgabe erweitert, packt beim Aufrufer mit `*_` aus:
 Dann kostet das naechste Feld keinen Lauf. `paketvorb.py` ist die
 einzige Stelle im Baum, die eine fremde Rueckgabe fest auspackte;
 sie ist umgestellt.
+
+## Die Kette lief immer nur auf dem aktuellen Buch
+
+Beim Einsammeln von 2. Korinther Paket 4 lief sie zum ersten Mal ueber
+ALLE Buecher. Ergebnis: Treffer in Matthaeus, Markus, Lukas, Johannes
+und Apostelgeschichte, die keiner Aenderung dieses Pakets entstammen —
+italienische Hilfsverben bei Reflexiva (`si e gettato`, nicht `si ha
+gettato`) und einige Mehrwortglossen. Sie liegen in
+`scratchpad/befunde/altlasten_kette.md`.
+
+Ein Werkzeug, das nur das Buch sieht, an dem gerade gearbeitet wird,
+findet nichts, was vor seiner eigenen Entstehung annotiert wurde. Nach
+jedem fertigen Buch lohnt ein Lauf ueber den ganzen Bestand.

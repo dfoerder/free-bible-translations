@@ -1612,3 +1612,45 @@ Vermutung, keine Diagnose.** Sie wird nachgemessen, bevor etwas
 geaendert wird — sonst „repariert" man ein Werkzeug, das gesund ist,
 und richtet dabei den Schaden an, den die echten Meldungen dieser
 Nacht zweimal dokumentiert haben.
+
+## Artikel und Genus in der Zielsprache
+
+Ein spanisches oder italienisches Nomen hat genau EIN Genus. Steht
+dasselbe Zielwort einmal mit `el` und einmal mit `la`, ist das ein
+Fehler — unabhaengig davon, wie die Mehrheit steht. Zweimal stand die
+Mehrheit falsch: `la consuelo` 5:1 und `la pensiero` 3:2.
+
+Das FRANZOESISCHE Wort sagt darueber nichts. `la montagne` darf
+spanisch `el monte` oder `la montaña` heissen, beides richtig — der
+Befund entsteht erst, wenn man nach dem ZIELWORT aufschluesselt.
+
+Drei Spaltungen sind richtig und bleiben:
+
+    Nomen gemeinsamen Geschlechts   el joven / la joven, il giovane /
+                                    la giovane, el guardia (die Person)
+                                    gegen la guardia (die Truppe)
+    spanische a-tonica-Regel        feminine Nomen mit betontem
+                                    a-Anlaut nehmen im Singular `el`:
+                                    el arpa, el agua, el alma
+    Adjektive und Adverbien         gran, mas, piu, ultimo richten sich
+                                    nach ihrem Bezugswort, nicht nach
+                                    sich selbst
+
+Nicht jedes Wort gemeinsamen Geschlechts im Spanischen ist eines im
+Italienischen: `guida` ist immer feminin, auch fuer einen Mann — `la
+guida dei ciechi` (Rm 2,19), waehrend spanisch `el guía` richtig ist.
+
+## Eine Null ist erst eine Aussage, wenn das Werkzeug etwas angesehen hat
+
+`artikel.py` meldete Buch fuer Buch „0 Verdachtsfaelle" und hatte in
+2. Korinther 38 von 451 Artikeln geprueft — 8 %. Sie filterte mit
+`e['form']` gegen eine Liste DEUTSCHER Artikel, und in der
+franzoesischen Richtung steht in `form` das Franzoesische. Es passte
+nur, was in beiden Sprachen gleich aussieht (`des`). 125 falsche
+Artikel standen dahinter.
+
+Der Docstring von `common.de_wort` beschreibt genau diesen Fehler und
+nennt beide Werkzeuge, die ihn schon einmal hatten. Eine Zeile weiter
+unten stand er noch. **Wo eine Null verdaechtig glatt ist, zaehle
+nach, wie viele Faelle die Probe ueberhaupt erreicht haben** — die
+Zahl steht in keinem Bericht, aber sie ist mit sechs Zeilen gemessen.
