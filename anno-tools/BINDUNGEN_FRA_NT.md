@@ -1821,3 +1821,24 @@ Das ist **kein Vereinheitlichungsfall, sondern ein Konstruktionsfall**:
 selben Buch richtig. Zehn Stellen korpusweit korrigiert (46,1,9 · 47,5,5 ·
 48,1,6 · 49,2,5 · 51,2,13 · 52,2,4 · 52,5,24 · 54,4,3 · 60,1,15 · 60,2,9),
 acht Passivfaelle bewusst unangetastet gelassen.
+
+## `afin de` traegt ein Mehrwort, `afin d’` + Infinitiv nicht
+
+Gemessen 2026-09-09 nach einer Meldung des Agenten fuer 1. Petrus 3.
+
+    afin de   →  70 von 70 Vorkommen als Mehrwort [afin de] = *um zu*
+    afin d’   →  22 von 22 Vorkommen Wort fuer Wort
+
+Das sieht wie eine Spaltung nach Schreibung aus, hat aber ein sachliches
+Kriterium: bei `afin de trouver` sind **beide** Token Funktionswoerter,
+das Mehrwort fasst genau die Konjunktion. Bei `afin d’obtenir` steckt der
+Infinitiv **im zweiten Token** — ein Mehrwort darueber muesste *um zu
+erlangen* lesen, nicht *um zu*.
+
+Genau das war der Fehler an den zwei Ausreissern (Hb 4,16 · Hb 11,35):
+das Mehrwort `[afin d’obtenir]` las *um zu*, waehrend seine
+Einzeleintraege *damit* + *zu erlangen* lasen. Beide entfernt; die Reihe
+steht jetzt einstimmig.
+
+**Ein Mehrwort darf nie ueber ein Token spannen, dessen Bedeutung seine
+Glosse nicht enthaelt.** Das ist die allgemeine Regel dahinter.

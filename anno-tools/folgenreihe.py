@@ -145,8 +145,16 @@ def stellen(phr, bis=None):
                     # Stellungen. Gemeldet vom Agenten fuer Marc 5.
                     klein = [x.lower() for x in toks[i:i + len(w)]]
                     if praefix:
+                        # Der Apostroph MUSS mitgeprueft werden. `wk[-1]`
+                        # ist strip_punct'ed — bei `afin d’` steht dort
+                        # `d`, und ein blosses startswith('d') trifft
+                        # `afin de`, `afin dans`, `afin dire`: 89 Treffer
+                        # statt 21. Der Elisionsrest ist nur dann
+                        # gemeint, wenn im Quelltext wirklich der
+                        # Apostroph folgt. Mein eigener Fehler,
+                        # aufgefallen an `afin d’` in 1. Petrus 3.
                         if (klein[:-1] != wk[:-1]
-                                or not klein[-1].startswith(wk[-1])):
+                                or not klein[-1].startswith(wk[-1] + "'")):
                             continue
                     elif klein != wk:
                         continue
