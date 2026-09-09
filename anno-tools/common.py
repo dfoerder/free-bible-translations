@@ -28,6 +28,24 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 TRANS = os.path.dirname(HERE)                              # bibles-translations
 REPO = os.path.join(os.path.dirname(TRANS), 'bible-reader')
 
+# `ANNO_OUT` einmal absolut machen — hier, nicht in den elf Stellen,
+# die es lesen. Der Auftrag sagt „alle Werkzeuge aus `anno-tools/`
+# heraus aufrufen" und setzt zugleich einen Pfad relativ zur
+# Repo-Wurzel; wer beides befolgte, bekam `FileNotFoundError` von
+# `levelcheck.py` und von `konvention.py` die Auskunft, die Datei
+# „gibt es noch nicht" — fuer eine Datei, die es gab. Gemeldet vom
+# Agenten fuer Epheser 1, den es einen Durchgang kostete.
+#
+# Ein Pfad, der vom aktuellen Verzeichnis aus existiert, bleibt
+# unangetastet; nur was von dort ins Leere zeigt, wird gegen die
+# Repo-Wurzel aufgeloest.
+if os.environ.get('ANNO_OUT'):
+    _ao = os.environ['ANNO_OUT']
+    if not os.path.isabs(_ao) and not os.path.isdir(_ao):
+        _kand = os.path.join(TRANS, _ao)
+        if os.path.isdir(_kand):
+            os.environ['ANNO_OUT'] = _kand
+
 # Alle fuenf Ausgaben, die im Repo liegen. `anno` ist None, wo keine
 # Annotation existiert (RIV1927) — dann taugt der Eintrag nur als Zeuge.
 # Die Dateinamen sind historisch gewachsen und nicht einheitlich:

@@ -150,6 +150,37 @@ def stellen(phr, bis=None):
     return w, voll, orte, unvollstaendig, mehrwort, schreibungen
 
 
+def akzentvarianten(w, bis=None):
+    """Dieselbe Folge, nur anders akzentuiert — was steht wirklich da?
+
+    Akzente sind im Franzoesischen bedeutungstragend (`a`/`à`,
+    `ou`/`où`), der Vergleich darf sie also nicht einfach ignorieren.
+    Aber wer eine Folge aus einer Bindungsdatei oder von Hand tippt,
+    laesst den Akzent auf einem GROSSBUCHSTABEN leicht weg: `A cause
+    de cela` fand 0, `À cause de cela` findet 3, und die
+    Vorbereitungsdatei fuehrte die Folge daraufhin als ungepraegt —
+    obwohl sie in Jean 5,18 steht. Gemeldet vom Agenten fuer Epheser 3.
+
+    Laeuft nur bei 0 Treffern, kostet also nie etwas.
+    """
+    wk = [C.ohne_akzent(x.lower()) for x in w]
+    gefunden = collections.Counter()
+    for nr in range(1, bis or 67):
+        try:
+            s = C.load_source(nr)
+        except Exception:
+            continue
+        ch = s['chapters'] if 'chapters' in s else s
+        for k, vv in ch.items():
+            for v, t in vv.items():
+                toks = [_apo(C.strip_punct(x)) for x in t.split()]
+                for i in range(len(toks) - len(wk) + 1):
+                    stueck = toks[i:i + len(wk)]
+                    if [C.ohne_akzent(x.lower()) for x in stueck] == wk:
+                        gefunden[' '.join(stueck)] += 1
+    return gefunden
+
+
 def schreibungswarnung(w, schreibungen):
     """Wo die Treffer sich in der GROSSSCHREIBUNG unterscheiden.
 
@@ -272,6 +303,12 @@ def main():
               f'{len(voll)} verschiedene Reihen'
               + (f', {len(unv)} mit Mehrwort an einer Position'
                  if unv else ''))
+        if ges == 0:
+            for form, n in akzentvarianten(w, bis).most_common(3):
+                if form.lower() != ' '.join(w).lower():
+                    print(f'**0 Treffer fuer `{" ".join(w)}`, aber {n} fuer '
+                          f'`{form}`.** Akzente werden mitverglichen — '
+                          'pruef die Schreibung.')
         # Der erste Token bleibt aus `schreibungswarnung()` heraus,
         # weil dort der Grossbuchstabe die Satzposition ist und nicht
         # ein anderes Wort. Fuer die GLOSSE ist er trotzdem

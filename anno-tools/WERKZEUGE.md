@@ -255,3 +255,30 @@ Zwei Agenten haben die Meldung gesehen und beide richtig eingeordnet.
 Eine Falschmeldung pro Buch ist billiger als eine Regel, die echte
 Treffer frisst. **Wer sie sieht: am Vers nachsehen, ob hinter dem
 Adjektiv ein Nomen steht. Steht keines, ist es kein Artikel.**
+
+## Regel fuer den Koordinator: keine Textstelle zitieren, die ich nicht gelesen habe
+
+Im Epheser-Paket haben die Agenten fuenf meiner Prompt-Angaben
+widerlegt, alle aus derselben Ursache — ich hatte aus dem Gedaechtnis
+zitiert statt den Quelltext zu lesen:
+
+    „par la grâce vous êtes sauvés, par le moyen de la foi"
+        → 2,8 ist ein Spaltsatz und liest schlicht `par la foi`;
+          2,5 liest `par grâce` OHNE Artikel
+    `abolir`, `justifier`          → kommen im Kapitel nicht vor
+    „non par les œuvres hat in Roemer 3 eine Entsprechung"
+        → steht genau einmal im Bestand, Galater 2,16
+    „2,14-22: dort steht viel Neues"
+        → von 469 Tokens waren fuenf formunbelegt
+
+Dasselbe in Galater: mein Zitat von 6,11 stammte aus der
+UNMODERNISIERTEN LSG. Und `rueckwaerts` fuehrt die fr-Spalte der
+ZEUGEN als Glosse — `rémission` sieht dort belegt aus, steht aber im
+ganzen lsg1910mod nur in Eph 1,7; ueberall sonst modernisiert zu
+`pardon`.
+
+Die Agenten haben jedes Mal richtig gemessen, bevor sie folgten. Aber
+es ist Arbeit, die ich ihnen aufgeladen habe. **Wo ich im Prompt einen
+Wortlaut nenne, lese ich ihn vorher im Quelltext nach — oder ich nenne
+ihn nicht.** Ein Hinweis „pruef, ob X vorkommt" kostet nichts; ein
+falsches Zitat kostet einen Durchgang.

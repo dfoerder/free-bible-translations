@@ -222,7 +222,13 @@ def zeige(wort, formen, stellen, lemmata=None, lstellen=None,
     zusatz = f' — das LEMMA hat {lsum}' if lsum > ges else ''
     print(f'   die FORM `{C.strip_punct(apos(wort))}` ist **{ges}× belegt**{zusatz}, '
           'Lemma: ' + ', '.join(f'`{l}`' for l in sorted(lemmata)))
-    if len(lemmata) == 1 and list(lemmata)[0].lower() != f:
+    # Beide Seiten normalisiert vergleichen. Vorher stand hier das
+    # unnormalisierte Lemma gegen die normalisierte Eingabe `f`, und
+    # bei `aujourd'hui` erschien die Warnung „das Lemma heisst
+    # `aujourd'hui`, nicht `aujourd'hui`" — zwei optisch identische
+    # Strings, weil der Unterschied nur im Apostroph-Zeichen lag.
+    # Gemeldet vom Agenten fuer Epheser 3.
+    if len(lemmata) == 1 and apos(list(lemmata)[0]).lower() != f:
         print(f'   ACHTUNG: das Lemma heisst `{list(lemmata)[0]}`, nicht `{wort}` —')
         print(f'   `fixgloss.py show {wort}` schweigt deshalb. Genau die Falle,')
         print('   fuer die dieses Werkzeug gebaut ist.')
