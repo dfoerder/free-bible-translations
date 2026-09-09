@@ -201,6 +201,15 @@ IT_VOKAL = re.compile(r"^[" + VOK[:-1] + r"]", re.I)
 IT_GLI_UNREGELMAESSIG = re.compile(r'(?i)^(d[eè]i)\b')
 
 
+# Zahlwoerter und Adjektive, die zwischen Artikel und Nomen stehen
+# koennen — die deutsche Glosse ist dort klein, der italienische Artikel
+# richtet sich aber nach ihnen.
+IT_GLI_ZAHLADJ = re.compile(
+    r'(due|tre|quattro|cinque|sei|sette|otto|nove|dieci|dodici|venti|'
+    r'ventiquattro|cento|mille|santi|santo|altri|altro|stessi|stesso|'
+    r'primi|primo|ultimi|ultimo|grandi|grande|veri|vero)$', re.I)
+
+
 def anlautprobe(ein, kap, vers, treffer):
     """Italienische Artikel gegen den Anlaut des folgenden Nomens.
 
@@ -247,7 +256,22 @@ def anlautprobe(ein, kap, vers, treffer):
             # „einer von euch", und `uno` ist richtig.
             if erstes_wort(C.de_wort(e)) not in DE_ARTIKEL:
                 continue
-            if C.de_wort(nx)[:1].islower():
+            # Die Nomenprobe („deutsche Glosse gross") haelt die
+            # klitischen Pronomen fern, schliesst aber auch ZAHLWOERTER
+            # und Adjektive aus: `gli sette` (Apk 8,2 · 8,6) und
+            # `gli santi` sind dieser Probe entgangen, weil *sieben* und
+            # *heiligen* klein stehen. Der Artikel richtet sich aber nach
+            # dem unmittelbar folgenden Wort, nicht nach dem Nomen
+            # dahinter. Die Verbprobe haelt `gli disse`/`lo vide`
+            # genauso sicher fern und laesst Zahlwoerter durch.
+            # Gemeldet vom Agenten fuer Offenbarung 11, der die Regel
+            # von Hand nachgemessen hat.
+            lem_nx = (nx.get('lemma') or '')
+            ist_verb = (len(lem_nx) > 3 and not lem_nx[:1].isupper()
+                        and lem_nx.endswith(('er', 'ir', 're', 'oir')))
+            if ist_verb:
+                continue
+            if C.de_wort(nx)[:1].islower() and not IT_GLI_ZAHLADJ.match(w):
                 continue
             if kl == 'uno' and not IT_KONS.match(w):
                 soll = 'un'
