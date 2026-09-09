@@ -93,6 +93,15 @@ def stellen(phr, bis=None):
     if not any("'" in x for x in w):
         w = [_apo(x) for x in C.elision_zurueck(w)]
     wk = [x.lower() for x in w]
+    # Endet die Folge auf einen Apostroph (`afin d’`, `de l’`), dann ist
+    # das letzte Glied ein PRAEFIX: kein Token heisst `d’`, und die
+    # Suche meldete 0, obwohl `afin d’aller` sehr wohl gefunden wird.
+    # Gefragt ist dort das Muster „`afin d’` + beliebiger Infinitiv" —
+    # genau die Konstruktion, um die sich die Elisionsregel dreht.
+    # Gemeldet vom Agenten fuer 1. Thessalonicher 3.
+    # Aus der ROHphrase bestimmen: `strip_punct` hat den Apostroph
+    # oben schon abgeschnitten, `d’` ist dort laengst `d`.
+    praefix = phr.rstrip().endswith(('’', "'"))
     voll = collections.Counter()
     orte = collections.defaultdict(list)
     unvollstaendig = []
@@ -134,7 +143,12 @@ def stellen(phr, bis=None):
                     # bleiben getrennt, wo die Glossen sich
                     # unterscheiden; die Zaehlung deckt jetzt beide
                     # Stellungen. Gemeldet vom Agenten fuer Marc 5.
-                    if [x.lower() for x in toks[i:i + len(w)]] != wk:
+                    klein = [x.lower() for x in toks[i:i + len(w)]]
+                    if praefix:
+                        if (klein[:-1] != wk[:-1]
+                                or not klein[-1].startswith(wk[-1])):
+                            continue
+                    elif klein != wk:
                         continue
                     # Ein Mehrwort, das die Folge umspannt, wird
                     # IMMER erfasst — auch wenn alle Positionen
@@ -335,7 +349,7 @@ def main():
         # `près de`, `tout à coup` — alle drei standen da). Deshalb
         # jetzt eine Zeile ganz oben, die auch ein `head -5` sieht.
         if mehrwort:
-            print(f'**{sum(len(v) for v in mehrwort.values())} davon sind '
+            print(f'**{sum(len(v) for k, v in mehrwort.items() if not k[1])} davon sind '
                   f'im Bestand als MEHRWORT gefasst — die Liste steht '
                   f'unten, NICHT abschneiden.**')
         if len(voll) == 1:
@@ -350,7 +364,15 @@ def main():
                 print(f'      → {", ".join(orte[r][:5])}')
             print()
         if mehrwort:
-            ges_mw = sum(len(v) for v in mehrwort.values())
+            # Nur die Reihen zaehlen, die die Folge WIRKLICH decken.
+            # `weiter` markiert Wendungen, die darueber hinausreichen —
+            # die decken die gefragte Folge nicht und gehoeren nicht in
+            # dieselbe Summe. Bei `sans cesse` standen so 8 Mehrwoerter
+            # gegen 7 Vorkommen, und die Differenzzeile las sich „die
+            # uebrigen -1 stehen Wort fuer Wort". Gemeldet vom Agenten
+            # fuer 1. Thessalonicher 1.
+            ges_mw = sum(len(v) for k, v in mehrwort.items() if not k[1])
+            ges_ueber = sum(len(v) for k, v in mehrwort.items() if k[1])
             print(f'  Als MEHRWORT gefasst: {ges_mw} Vorkommen, '
                   f'{len(mehrwort)} Reihen')
             # Die beiden Abschnitte zeigen DIESELBEN Vorkommen aus zwei
@@ -364,6 +386,10 @@ def main():
             elif ges_mw:
                 print(f'  — davon; die uebrigen {ges - ges_mw} stehen '
                       'Wort fuer Wort.')
+            if ges_ueber:
+                print(f'  Dazu {ges_ueber} Vorkommen unter einer Wendung, '
+                      'die ueber die Folge HINAUSreicht —\n'
+                      '  die decken deine Folge nicht.')
             print()
             for mkey, wo in sorted(
                     mehrwort.items(), key=lambda x: -len(x[1])):

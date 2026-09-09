@@ -283,10 +283,19 @@ def kollisionen_im_vers(entries):
                     formen[(b, sprache)] = fb
                     glossen[(a, sprache)] = ga
                     glossen[(b, sprache)] = gb
+                    # Der Schluessel traegt die FORMEN mit, nicht nur
+                    # die Lemmata. Sonst vereinigt der Lauf zwei
+                    # verschiedene Tokenpaare desselben Lemmapaars zu
+                    # einem Treffer und meldet „4 von 4", wo zweimal
+                    # „2 von 4" steht: in 1 Th 4,1 trifft `en`(45) das
+                    # `à`(16) nur in de+en und `à`(40) nur in es+it —
+                    # zwei harmlose Paare, in die oberste Verdachtsstufe
+                    # gehoben. Gemeldet vom Agenten fuer 1. Thess. 4.
+                    schl = (a, b, fa, fb)
                     if ga != gb and _ist_konvention(ga, gb):
-                        nurschreibung[(a, b)].add(sprache)
+                        nurschreibung[schl].add(sprache)
                     else:
-                        treffer[(a, b)].add(sprache)
+                        treffer[schl].add(sprache)
     return treffer, nurschreibung, formen, glossen
 
 
@@ -335,9 +344,10 @@ def pruefe(kapitel_daten, nr, kap):
     out = []
     for vers in sorted(kapitel_daten, key=lambda v: int(v) if v.isdigit() else 0):
         treffer, nurschr, formen, glossen = kollisionen_im_vers(kapitel_daten[vers])
-        for (a, b), sprachen in list(treffer.items()) + [
+        for schl, sprachen in list(treffer.items()) + [
                 (k, v) for k, v in nurschr.items() if k not in treffer]:
-            nur_schreibung = (a, b) not in treffer
+            a, b = schl[0], schl[1]
+            nur_schreibung = schl not in treffer
             out.append({
                 'nr': nr, 'kap': str(kap), 'vers': vers,
                 'a': a, 'b': b,

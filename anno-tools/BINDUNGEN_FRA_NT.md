@@ -1720,3 +1720,27 @@ Kapitelentscheidung.
 
 Fuer neu gepraegte Verben gilt die Reflexiv-Regel unveraendert:
 `se glorifier`, `s'elever`, `se persuader` sind so entstanden.
+
+## `Pour moi/nous/vous` am Satzanfang — die alte Regel war falsch
+
+Hier stand, die Grenze laufe an der Glosse und die Nachzuegler seien
+alle nachgezogen. Gemessen (139 `pour` + Personalpronomen im ganzen
+Bestand) stimmt das nicht:
+
+    Glosse *Was … betrifft*   4 von 4 als MEHRWORT
+        (Lc 9,44 · Rm 16,19 · Rm 8,9 · Gal 4,28)
+    Glosse *Fuer …*           5 als Mehrwort, 16 WOERTLICH
+        (woertlich u.a. Jn 11,42 · Ac 20,6 · Ac 20,13 · Rm 7,9 ·
+         1 Ko 2,1 · 3,1 · 4,3 · 5,3 · 9,15 · Gal 5,5 · 5,11)
+
+**Das Kriterium ist die Glosse, nicht die Satzposition** — aber nur in
+einer Richtung: wo die deutsche Wiedergabe *Was … betrifft* lautet,
+gehen die Einzelglossen nicht auf („Fuer euch" ist etwas anderes), also
+Mehrwort. Wo sie *Fuer …* lautet, tragen die Einzeltoken den Sinn, und
+der Bestand steht 16:5 auf woertlich.
+
+Die fuenf `Fuer`-Mehrwoerter (Mt 28,5 · Lc 23,41 · 2 Ko 10,13 ·
+1 Th 2,17 · Jude 1,20) sind damit die Minderheit und nicht
+vereinheitlicht. Gemeldet vom Agenten fuer 1. Thessalonicher 2, der
+die alte Regel als „stimmt mit dem Bestand nicht ueberein" gemessen
+hat — zu Recht.

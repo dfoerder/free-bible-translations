@@ -74,7 +74,7 @@ AUSNAHMEN = {
     'nave':'fs', 'navi':'fp',
     'immagine':'fs', 'immagini':'fp',
     # Aus Hosea: `viti` (Weinstoecke) ist feminin, die Endung sagt maskulin.
-    'vite':'fs', 'viti':'fp', 'sentiero':'ms', 'sentieri':'mp',
+    'viti':'fp', 'sentiero':'ms', 'sentieri':'mp',
     # Franzoesische Unveraenderliche auf -s: die Endung sagt Plural,
     # das Wort ist im Singular gleich (`puits`, `corps`, `pays`, `bois`).
     'puits':'ms', 'corps':'ms', 'pays':'ms', 'bois':'ms', 'temps':'ms',
@@ -103,6 +103,13 @@ STUMM = {
     'schiavitù', 'schiavitu', 'tribù', 'tribu', 'crisi', 're', 'sposa',
     'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto', 'nove',
     'dieci', 'undici', 'dodici', 'venti', 'trenta', 'cento', 'mille',
+    # `vite` stand hier einmal als `fs` — das ist die Weinrebe (la
+    # vite). Es ist zugleich der Plural von `vita` (le vite), und die
+    # Probe kann die beiden nicht auseinanderhalten: sie meldete
+    # `le nostre vite` („unser Leben", Plural) als Numerusfehler.
+    # Homographen gehoeren hierher, nicht in AUSNAHMEN. Gemeldet vom
+    # Agenten fuer 1. Thessalonicher 2.
+    'vite',
 }
 # Endungen, die auf -ione/-ioni gehen, sind praktisch immer feminin.
 def genus(nomen):
