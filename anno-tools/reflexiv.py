@@ -155,7 +155,13 @@ def main():
         except Exception:
             return False
     fehlt = [n for n in nummern if not da(n)]
-    if fehlt:
+    # Mit `--datei` ist das ungebaute Buch der NORMALFALL, nicht der
+    # Fehler: die Abgabe wird gegen den Bestand gehalten, und `lauf_datei`
+    # ueberspringt ein fehlendes Buch von sich aus. Die Vorpruefung brach
+    # deshalb genau im ersten Kapitel jedes neuen Buches ab — gemeldet vom
+    # Agenten fuer 1. Johannes 1, der die Reflexivfrage von Hand messen
+    # musste.
+    if fehlt and not datei:
         print(f'nicht gebaut oder leer: {fehlt}')
         if len(nummern) > len(fehlt):
             print('Sieht nach einer KAPITELnummer aus — reflexiv.py nimmt '
