@@ -272,6 +272,24 @@ def main():
               f'{len(voll)} verschiedene Reihen'
               + (f', {len(unv)} mit Mehrwort an einer Position'
                  if unv else ''))
+        # Der erste Token bleibt aus `schreibungswarnung()` heraus,
+        # weil dort der Grossbuchstabe die Satzposition ist und nicht
+        # ein anderes Wort. Fuer die GLOSSE ist er trotzdem
+        # entscheidend: sie folgt der Satzposition mit. Wer `Parce que
+        # vous` gross fragt, sieht 12 kleines *weil* gegen 6 *Weil* und
+        # nimmt die Mehrheit — mitten in einen Satzanfang hinein.
+        # Gemeldet vom Agenten fuer Galates 4, zweiter Beleg derselben
+        # Klasse nach `même Esprit`.
+        erst = collections.Counter()
+        for form, n in schreib.items():
+            if form:
+                erst[form[0] == w[0]] += n
+        if erst[False] and erst[False] > erst[True]:
+            print(f'**ACHTUNG: `{w[0]}` so gefragt, aber '
+                  f'{erst[False]} von {erst[False] + erst[True]} Treffern '
+                  f'schreiben das erste Wort anders.**\nAm Satzanfang '
+                  'folgt die deutsche Glosse der Satzposition — sieh dir '
+                  'die\nReihen der gleich geschriebenen Treffer getrennt an.')
         for (gefragt, gefunden), n in schreibungswarnung(w, schreib):
             print(f'**ACHTUNG: {n} dieser Vorkommen lesen `{gefunden}`, '
                   f'nicht `{gefragt}`.** Der Vergleich laeuft klein — '

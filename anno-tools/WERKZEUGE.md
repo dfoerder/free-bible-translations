@@ -235,3 +235,23 @@ gettato`) und einige Mehrwortglossen. Sie liegen in
 Ein Werkzeug, das nur das Buch sieht, an dem gerade gearbeitet wird,
 findet nichts, was vor seiner eigenen Entstehung annotiert wurde. Nach
 jedem fertigen Buch lohnt ein Lauf ueber den ganzen Bestand.
+
+## `un seul` — ein Fehlalarm der Anlautprobe, den ich stehen lasse
+
+`artikel.py` meldet in Galates 3,20 `uno solo` → soll `un solo`. Der
+Vers ist „Dieu est un seul" und riv liest woertlich „Dio è **uno
+solo**": `uno` ist dort Pronomen, `solo` Adjektiv, ein Nomen gibt es
+nicht. Die Probe haelt `solo` fuer das Nomen, weil die deutsche Glosse
+gross ist (*ein Einziger*) — substantiviert, aber kein Nomen.
+
+Gemessen: `seul` steht im Bestand 94x klein und 3x gross. Die Regel
+„meist klein glossiert, hier gross → Substantivierung, kein Nomen"
+waere also datengetragen — aber sie verschluckt `le pauvre` = *der
+Arme* und `les morts` = *die Toten*, wo der Artikel sich sehr wohl auf
+das substantivierte Adjektiv bezieht und die Probe zu Recht greift.
+Strukturell sind die beiden Faelle nicht zu trennen.
+
+Zwei Agenten haben die Meldung gesehen und beide richtig eingeordnet.
+Eine Falschmeldung pro Buch ist billiger als eine Regel, die echte
+Treffer frisst. **Wer sie sieht: am Vers nachsehen, ob hinter dem
+Adjektiv ein Nomen steht. Steht keines, ist es kein Artikel.**
