@@ -393,6 +393,11 @@ def main():
                   f'unten, NICHT abschneiden.**')
         if len(voll) == 1:
             print('**einstimmig**')
+        # Die Prozentzahl bezieht sich auf ALLE Vorkommen, Zaehler wie
+        # Nenner — sie ist in sich stimmig. Ein Versuch, sie auf die
+        # woertlichen zu beziehen, ergab 121 Prozent: die Reihen zaehlen
+        # die Mehrwortpositionen mit. Der Hinweis „13 davon sind als
+        # MEHRWORT gefasst" steht darueber und sagt, was zu trennen ist.
         print()
         for r, n in voll.most_common():
             anteil = f'{100 * n / ges:.0f}%' if ges else '—'
@@ -442,6 +447,28 @@ def main():
         elif unv:
             print(f'  Mehrwort an einer Position: {", ".join(unv[:8])}'
                   + (' …' if len(unv) > 8 else ''))
+        # Der Lemma-Block lief frueher NUR bei null Treffern. Genau der
+        # Nicht-Null-Fall ist aber der gefaehrliche: `venir de` zeigt
+        # zwei woertliche Treffer und verschwieg vierzehn Mehrwort-
+        # belege des Lemmas — zwei Treffer sehen wie ein Ergebnis aus.
+        # Gemeldet vom Agenten fuer Hebraeer 8, bestaetigt beim
+        # Altlastendurchgang. Er kostet einen Lemma-Index-Zugriff.
+        lem_immer = als_lemma(phr)
+        if ges and lem_immer:
+            n_l = sum(len(v) for v in lem_immer.values())
+            if n_l > ges:
+                print(f'  **Als LEMMA eines Mehrworts steht die Wendung '
+                      f'{n_l}x im Bestand** — mehr als die {ges} '
+                      f'Zeichenkettentreffer oben. Das Mehrwort steht '
+                      f'dort gebeugt; sieh dir die Lemma-Reihen an, '
+                      f'bevor du praegst.')
+                for key, wo in sorted(lem_immer.items(),
+                                      key=lambda x: -len(x[1]))[:4]:
+                    print(f'  {len(wo):5}  [{phr}] {key[0]}  '
+                          + ' · '.join(key[1:]))
+                    print(f'      → {", ".join(wo[:5])}'
+                          + (' …' if len(wo) > 5 else ''))
+                print()
         if not ges and not mehrwort:
             lem = als_lemma(phr)
             if lem:
