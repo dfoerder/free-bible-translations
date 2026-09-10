@@ -78,7 +78,7 @@ AUSNAHMEN = {
     # Franzoesische Unveraenderliche auf -s: die Endung sagt Plural,
     # das Wort ist im Singular gleich (`puits`, `corps`, `pays`, `bois`).
     'puits':'ms', 'corps':'ms', 'pays':'ms', 'bois':'ms', 'temps':'ms',
-    'mezzo':'ms', 'greggi':'fp', 'gregge':'ms', 'fonti':'fp', 'fonte':'fs',
+    'mezzo':'ms', 'greggi':'mp', 'gregge':'ms', 'fonti':'fp', 'fonte':'fs',
     # Feminina auf -i im Plural: die Endung sagt hier Maskulinum, das Genus
     # ist feminin. `merci` und `torri` machten allein 12 der 12 Fehlalarme im
     # Tyrus-Kapitel aus (`le tue merci`, `le tue torri`).
@@ -93,7 +93,7 @@ AUSNAHMEN = {
     'arma':'fs', 'armi':'fp', 'legge':'fs', 'leggi':'fp',
     'parete':'fs', 'pareti':'fp', 'palude':'fs', 'paludi':'fp', 'porta':'fs', 'porte':'fp',
     'soglia':'fs', 'soglie':'fp', 'camera':'fs', 'camere':'fp',
-    'greggi':'fp', 'gregge':'ms', 'carne':'fs', 'carni':'fp',
+    'greggi':'mp', 'gregge':'ms', 'carne':'fs', 'carni':'fp',
 }
 # Nomen, deren Singular und Plural gleich lauten — das Possessiv ist die
 # einzige Numerus-Angabe, also nie ein Fehler. Ebenso Zahlwoerter, die
