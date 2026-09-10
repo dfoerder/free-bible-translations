@@ -82,7 +82,7 @@ def _gemeinsam(a, b):
     return n
 
 
-def _verwandt(form, stamm, wieviel=3):
+def _verwandt(form, stamm, wieviel=3, belege=None):
     """Die stammverwandten Lemmata zu einer unbelegten Wortform.
 
     **Sortiert nach dem längsten gemeinsamen Präfix**, nicht alphabetisch. Die
@@ -121,9 +121,21 @@ def _verwandt(form, stamm, wieviel=3):
     def naehe(x):
         return max(_gemeinsam(form, x), _gemeinsam(ohne, x))
 
+    # Dritte Stufe: die BELEGZAHL. Ohne sie fiel das gesuchte Lemma
+    # regelmaessig aus den ersten dreien heraus, obwohl es das
+    # belegteste im selben Stamm-Eimer war: `souffertes` bekam
+    # `souffle, soufre, souffler` angeboten, waehrend `souffrir` mit 63
+    # Belegen danebenlag. Alle vier haben bei `2·gemeinsam − Laenge`
+    # denselben Wert, und der Laengen-Tiebreak drueckte das laengste —
+    # also gerade das Verb — auf Rang vier. `nahe_lemmata` sortiert seit
+    # dem 2-Th-Paket ebenso. Viermal gemeldet (souffrir, veau, amer,
+    # plaindre), zuletzt vom Agenten fuer die offenen Befunde.
+    def zahl(x):
+        return (belege or {}).get(x, 0)
+
     return sorted(kand, key=lambda x: (-(2 * naehe(x) - len(x)),
                                        0 if x[:1].isupper() == gross else 1,
-                                       len(x), x))[:wieviel]
+                                       -zahl(x), len(x), x))[:wieviel]
 
 # Funktionswoerter des QUELLTEXTES. Sie werden aus den Meldungen
 # herausgehalten — bei ihnen ist die Mehrdeutigkeit der Normalfall und
@@ -190,11 +202,13 @@ def analyse(nr, kap=None):
 
     form_lesarten = collections.defaultdict(collections.Counter)
     lemma_formen = collections.defaultdict(set)
+    lemma_belege = collections.Counter()
     for _, _, _, e in C.iter_corpus():
         if C.is_multi(e):
             continue
         form_lesarten[e['form']][(e['lemma'],) + C.reihe(e)] += 1
         lemma_formen[e['lemma']].add(e['form'])
+        lemma_belege[e['lemma']] += 1
 
     stamm = collections.defaultdict(set)
     for lemma in lemma_formen:
@@ -230,7 +244,7 @@ def analyse(nr, kap=None):
                         schreibvariante[f] = (f'{k},{v}', andere,
                                               haupt[andere][0])
                         continue
-                    verwandt = _verwandt(f, stamm)
+                    verwandt = _verwandt(f, stamm, belege=lemma_belege)
                     unbelegt[f] = (f'{k},{v}', verwandt)
                 elif f in form_lesarten and f not in mehrdeutig and f.lower() not in FUNKTION:
                     # k[0] ist das Lemma, k[1] die erste Glossenspalte —

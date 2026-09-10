@@ -94,6 +94,7 @@ AUSNAHMEN = {
     'parete':'fs', 'pareti':'fp', 'palude':'fs', 'paludi':'fp', 'porta':'fs', 'porte':'fp',
     'soglia':'fs', 'soglie':'fp', 'camera':'fs', 'camere':'fp',
     'greggi':'mp', 'gregge':'ms', 'carne':'fs', 'carni':'fp',
+    'lite':'fs', 'liti':'fp',
 }
 # Nomen, deren Singular und Plural gleich lauten — das Possessiv ist die
 # einzige Numerus-Angabe, also nie ein Fehler. Ebenso Zahlwoerter, die
