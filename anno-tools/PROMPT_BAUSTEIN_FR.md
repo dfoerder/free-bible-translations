@@ -67,9 +67,10 @@ sonst wandert der Satzpunkt in ein Mehrwort, das am Versende endet.
 
     python3 rueckwaerts.py <NR> <KAP> -o $ANNO_OUT/../work/<KAP>/rw.md
 
-`eng/web` und `deu/l1912mod` sind **beide vollstaendig annotiert und
-tragen beide eine fr-Spalte**. Zusammen decken sie genau deine vier
-Zielsprachen ab. Ueber die fr-Spalte als Schluessel liegt fuer 98 Prozent
+`eng/web`, `deu/l1912mod` und `ita/riv1927mod` sind annotiert und
+**tragen alle eine fr-Spalte**. Zusammen decken sie deine vier
+Zielsprachen mehrfach ab — der Extrakt nennt bei jeder Zeile, aus
+welcher Ausgabe sie stammt. Ueber die fr-Spalte als Schluessel liegt fuer 98 Prozent
 der franzoesischen Tokens bereits eine vollstaendige Viererzeile vor —
 und fuer etwa die Haelfte sogar aus **genau deinem Vers**.
 

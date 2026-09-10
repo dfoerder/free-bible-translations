@@ -8,14 +8,20 @@
 
 Fuer die deutsche Annotation musste jedes Wort neu entschieden werden —
 es gab keinen Zeugen, der schon Wort fuer Wort glossiert war. Fuer die
-franzoesische gibt es zwei.
+franzoesische gibt es drei.
 
-`eng/web` und `deu/l1912mod` sind beide vollstaendig annotiert und tragen
-**beide eine `fr`-Spalte**. Zusammen decken sie genau die vier
-Zielsprachen ab:
+`eng/web`, `deu/l1912mod` und `ita/riv1927mod` sind annotiert und tragen
+**alle eine `fr`-Spalte**. Zusammen decken sie die vier Zielsprachen
+mehrfach ab:
 
     eng/web        Quelltext = en,  Spalten de · es · fr · it
     deu/l1912mod   Quelltext = de,  Spalten en · es · fr · it
+    ita/riv1927mod Quelltext = it,  Spalten de · en · es · fr
+
+`ZEUGEN` wird zur Laufzeit aus den vorhandenen Ausgaben gebaut
+(`_zeugenliste()`), die Liste waechst also von selbst. Der Text hier
+nannte lange zwei, obwohl das Werkzeug schon drei fuehrte — gemeldet
+vom Agenten fuer die offenen Befunde.
 
 Jeder Eintrag ist damit eine vollstaendige Zeile **de · en · es · it**,
 und die `fr`-Spalte ist ihr Schluessel. Ueber das ganze NT gemessen sind

@@ -158,10 +158,26 @@ def bestandslemmata(ohne=()):
 
 
 def main():
-    if len(sys.argv) < 3:
+    # `--kapitel N` filtert die Ausgabe auf die Bloecke, in denen dieses
+    # Kapitel vorkommt. Ohne ihn umfasst Abschnitt B bei einem Buch mit
+    # 22 Kapiteln in einem Paket ueber 340 Lemmata und 33 KB, und der
+    # weitaus groesste Teil sind Flexionsunterschiede fremder Kapitel.
+    # Vier Agenten (Offb 3, 9, 13, 20) haben sich unabhaengig voneinander
+    # ihre eigenen Bloecke mit einem Skript herausgezogen; `folgencheck`
+    # hat den Filter laengst. Der VERGLEICH laeuft weiter ueber alle
+    # Kapitel — gefiltert wird nur, was gedruckt wird.
+    argv = sys.argv[1:]
+    nur_kap = None
+    if '--kapitel' in argv:
+        i = argv.index('--kapitel')
+        if i + 1 >= len(argv):
+            raise SystemExit('--kapitel braucht eine Kapitelnummer.')
+        nur_kap = argv[i + 1]
+        argv = argv[:i] + argv[i + 2:]
+    if len(argv) < 2:
         print(__doc__)
         return 2
-    kapitel, eigene = lade(sys.argv[1:])
+    kapitel, eigene = lade(argv)
     if len(kapitel) < 2:
         raise SystemExit('Mindestens zwei Kapitel — sonst gibt es nichts zu vergleichen.')
 
@@ -187,6 +203,13 @@ def main():
                 stellen = ', '.join(verse[:4]) + (' …' if len(verse) > 4 else '')
                 print(f'    {name:<16} {" · ".join(reihe)}   — V. {stellen}')
 
+    def betrifft(byk):
+        """Kommt das gefilterte Kapitel in diesem Block vor?"""
+        if nur_kap is None:
+            return True
+        return any(n.rsplit(' ', 1)[-1] == nur_kap or n.endswith(f',{nur_kap}')
+                   or n == nur_kap for n in byk)
+
     def ohne_gemeinsame_reihe(byk):
         mengen = [set(g) for g in byk.values()]
         return not set.intersection(*mengen)
@@ -206,7 +229,8 @@ def main():
           f'{len(gemeinsam)} davon in mehr als einem Kapitel.')
 
     neu = {lm: byk for lm, byk in gemeinsam.items()
-           if lm not in bestand and ohne_gemeinsame_reihe(byk)}
+           if lm not in bestand and ohne_gemeinsame_reihe(byk)
+           and betrifft(byk)}
     print('\n## A — neu gepraegte Lemmata, verschieden entschieden\n')
     if not neu:
         print('    keine — jedes neue Lemma des Pakets traegt in allen '
@@ -216,7 +240,7 @@ def main():
         zeilen(byk)
 
     alt = [(sprachen_verschieden(byk), lm, byk) for lm, byk in gemeinsam.items()
-           if lm in bestand and ohne_gemeinsame_reihe(byk)]
+           if lm in bestand and ohne_gemeinsame_reihe(byk) and betrifft(byk)]
     print(f'\n## B — belegte Lemmata ohne gemeinsame Reihe ({len(alt)})\n')
     for n_spr, lemma, byk in sorted(alt, key=lambda x: (-x[0], x[1])):
         print(f'`{lemma}`  — {n_spr} von 4 Sprachen verschieden')
@@ -225,7 +249,7 @@ def main():
     print('\n## C — Level-Divergenzen\n')
     n_lvl = 0
     for lemma, byk in sorted(level.items()):
-        if len(byk) < 2:
+        if len(byk) < 2 or not betrifft(byk):
             continue
         alle = set().union(*byk.values())
         if len(alle) > 1:
