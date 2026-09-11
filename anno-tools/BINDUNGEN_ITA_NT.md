@@ -11505,3 +11505,17 @@ Der Bestand fuehrt **2185 Lemmata** und **3322 verschiedene
 Wortformen**. Damit deckt er 92,3 % der Tokens von Marco als Wortform
 ab. Das naechste Buch faengt nicht mehr bei null an — es faengt bei
 einem ganzen Evangelium an.
+
+## 321 · 26,57 `radunati` nachgezogen — Reihe 316.2 erledigt
+
+Das Partizip des pronominalen Perfekts steht auf dem Infinitiv (Reihe 5).
+26,57 `si erano radunati` trug als einziger von neun Belegen die
+Partizipform `radunato`; jetzt `radunare`. Die vier `radunato`-Belege
+(18,20 · 22,41 · 25,32 · 27,17) sind Passiv oder attributiv und bleiben
+richtig (Reihe 46). Das Mehrwort `si erano radunati` → `radunarsi`
+darueber war schon in Ordnung.
+
+Von den sieben Punkten in Reihe 316 sind damit 2 und 3 erledigt; 4
+(Nebensatz, Reihe 308), 5 (Reihe 97: Entdoppelung nur fr) und 6
+(`esserci` im Relativsatz) bleiben offen und gelten fuer Marco weiter —
+wer dort auf den Fall trifft, entscheidet und traegt es ein.
