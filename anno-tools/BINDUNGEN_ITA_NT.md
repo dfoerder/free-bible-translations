@@ -13922,3 +13922,190 @@ Bemerkenswert (Reihe 399.4): der Agent hat `levelcheck.py`s
 Meldungsrichtung zunaechst verwechselt („A1 gegen A2" als „meins soll
 A1 werden" statt „meins ist A1, Bestand sagt A2" gelesen) und es
 selbst bemerkt und korrigiert, bevor er abgab.
+
+## 401 · Mehrwoerter sind eine ZUSAETZLICHE Schicht, keine Ersatzschicht — `validate.py` verlangt fuer jede Spanne auch die Einzelwoerter
+
+Der wichtigste Fund aus Marco 14 (72 Verse, laengstes Kapitel des
+Buches): eine `pos_end`/`parts`-Spanne markiert die Positionen, die sie
+abdeckt, NICHT als „erledigt" fuer `validate.py`s Vollstaendigkeitsprobe.
+`seen[pos]` wird in `validate_verse()` nur im Einzelwort-Zweig gesetzt
+(`else:`-Zweig, validate.py Zeile ~88); der `parts`/`pos_end`-Zweig
+schreibt nichts in `seen`. Am Ende prüft die Funktion `elif i not in
+seen: ... 'hat keinen Einzelwort-Eintrag'` — jede Position, die NUR
+durch ein Mehrwort gedeckt ist, faellt durch.
+
+Das ist keine Inkonsistenz, sondern Absicht: `ch13.json` (bereits
+eingesammelt) zeigt es an `Sono io` (6,6-7) — Position 6 traegt DREI
+Eintraege im Array: den Einzeleintrag `Sono -> essere`, den Einzeleintrag
+`io -> io`, UND den Mehrworteintrag `6-7 Sono io -> sono io`. Alle drei
+stehen nebeneinander in derselben Liste.
+
+**Wer das nicht weiss** (wie mein erster Zusammenbau-Durchlauf), baut
+fuer jede Mehrwortspanne nur den einen kombinierten Eintrag und laesst
+die Einzelpositionen ohne eigene Glosse — `selfcheck.py` meldet dann pro
+Mehrwort zwei bis vier „Position X hat keinen Einzelwort-Eintrag".
+Marco 14 hatte davon 52 Mehrwoerter mit zusammen ~120 fehlenden
+Einzeleintraegen, bevor das aufgefallen ist.
+
+**Folge fuer eigene Bauskripte:** wer `parallelen.py`- oder
+`rueckwaerts.py`-Extrakte automatisiert in eine Kapitel-Datei giesst,
+muss fuer jede erkannte Mehrwortspanne ZUSAETZLICH die Einzelwort-
+Eintraege der beteiligten Positionen erzeugen — nicht nur den
+Kombieintrag. Die Extrakte selbst zeigen das uebrigens vor: eine Zeile
+wie `13-15 verso di me ...` steht in `parallelen.py`s Ausgabe immer
+NEBEN den Einzelzeilen `13 verso ...`, `14 di ...`, `15 me ...` fuer
+dieselben Positionen — wer beim Parsen nur nach `bstart` einen Dict
+fuehrt, ueberschreibt eine der beiden Zeilen mit der anderen (Reihe 402
+beschreibt genau diesen Parser-Fallstrick).
+
+## 402 · Eigener Extrakt-Parser: Mehrwortzeile und Einzelzeile teilen denselben `bstart` — nicht in denselben Dict-Schluessel schreiben
+
+Ein selbstgebautes Parse-Skript, das `parallelen.py`s Tabellenzeilen per
+`rows[bstart] = {...}` in ein Dict sammelt, verliert stumm die Haelfte
+der Information: die Mehrwortzeile (`13-15 verso di me ...`, `bstart=13,
+bend=15`) und die nachfolgende Einzelzeile (`13 verso ...`, `bstart=13,
+bend=13`) landen auf demselben Schluessel `13` — die zweite ueberschreibt
+die erste beim Parsen. Sichtbarer Fehler: die aus `bend > bstart`
+abgeleitete Mehrwort-Erkennung schlaegt an genau den Stellen fehl, wo
+sie am zuverlaessigsten sein sollte (etablierte, oft wiederholte
+Wendungen), weil `rows[bstart]['bend']` am Ende nur noch der
+Einzelwert ist. Der Bau-Agent bemerkt es erst, wenn `folgencheck.py
+--gegen` gegen den Buchbestand fehlende Mehrwoerter meldet, die im
+eigenen Extrakt sichtbar dagestanden haetten (`per mezzo di`, `guai a`,
+`fino a`, `anche se`, `prima che`, `contro di lui/te`, `verso di me`,
+`sommo sacerdote`+`alzarsi` im selben Vers, `capo sacerdote` — alle
+sieben bis neun Faelle in Marco 14 betroffen). Wer selbst so einen
+Parser baut: pro `bstart` eine LISTE fuehren, nicht einen einzelnen
+Wert, oder Mehrwortzeilen (erkennbar am `X-Y`-Praefix) in eine eigene
+Struktur trennen, bevor Einzelzeilen eingelesen werden.
+
+## 403 · `padrone` (fr *maître*, Reihe 220/299) kollidiert mit `maestro` (fr *Maître*) in Marco 14,14 — geloest per Mehrwort, nicht per Reihen-Widerruf
+
+„Il Maestro dice: ... dite al padrone di casa" — beide Woerter im
+selben Vers, beide fest auf franzoesisch *maître* gebunden (Reihe 220
+fuer `padrone`, 15 Belege buchweit; `maestro` durchgehend als
+Anrede Jesu). Reihe 299 verbietet ausdruecklich, `padrone` zurueck auf
+*seigneur* zu drehen. Geloest, ohne die Reihe anzutasten: `padrone di
+casa` (die drei Woerter zusammen) traegt als MEHRWORT die franzoesische
+Redewendung *maître de maison* — die uebliche franzoesische Fuegung
+fuer „Hausherr" ohnehin. `maestro` allein bleibt bei *Maître*. Die
+EINZELWORT-Ruecklage von `padrone` (Reihe 401 verlangt sie) bleibt bei
+*maître*, traegt die Kollision also weiter — das ist hier bewusst so
+gelassen: die Mehrwortzeile ist die, die ein Leser zuerst sieht, und
+sie ist eindeutig. Wer einen anderen Vers mit dieser Kollision trifft
+und dort kein passendes Mehrwort zur Hand hat, muss neu entscheiden.
+
+## 404 · `capo sacerdote` fehlte als Mehrwort an fuenf Stellen des Buches — durch Reihe 402 verursacht
+
+`i capi sacerdoti` (1,11-12 · 10,7-8 · 43,23-24 · 53,10-11 · 55,1-2 in
+Marco 14) hatte ueberall die korrekten Einzelwoerter (`capo`, `sacerdote`),
+aber nirgends die zusaetzliche Mehrwortspanne `capo sacerdote` (B2,
+etabliert aus Matteo 2,4/26,14/26,47/26,59), weil der Parser-Fehler aus
+Reihe 402 sie beim automatischen Uebernehmen verschluckt hat. Alle fuenf
+nachgetragen, mit dem zum Kasus passenden Deutsch (`Hohepriester`
+Nominativ, `Hohenpriestern` nach `dai`/dativisch).
+
+## 405 · `far morire` (B2, Matteo 26,59) traf denselben Parser-Fehler in Marco 14,55
+
+„per farlo morire" hatte `farlo`+`morire` einzeln richtig, aber nicht
+die Mehrwortspanne `far morire` (B2, *ihn umzubringen* / *to put him to
+death* / *matarlo* / *le faire mourir*), obwohl der Vergleichsvers sie
+traegt. Nachgetragen.
+
+## 406 · `secondo (numerale)` — Homograph-Lemma bereits gesetzt, nicht `secondo` allein verwenden
+
+14,72 `per la seconda volta` — `levelcheck.py` widersprach zunaechst
+sich selbst (erst B1 gegen ein `secondo`-Lemma gemeldet, das gar nicht
+das gemeinte war). Der Bestand fuehrt den Ordinalzahl-Sinn bereits unter
+dem eigenen Lemma `secondo (numerale)` (A2, Matteo 21,30 · 22,26 · 22,39
+· 26,42; homograph zur Praeposition „gemaess/laut" `secondo`). Reihe 15
+(Homographen-Konvention) gilt hier exakt wie beschrieben — der Fehler
+lag daran, zuerst gegen das falsche Zwillingslemma zu pruefen statt
+`fixgloss.py show "secondo (numerale)"` direkt zu fragen.
+
+## 407 · Bare `quelli che` (ohne `tutti`) als Mehrwort — Reihe 149/323/340/353 trifft auf einen widerspruechlichen Altfall
+
+Marco 14,69/70 „quelli che erano lì (presenti)" — Reihe 149 sagt: bare
+`quelli che` (kein `tutti` davor) bekommt die Mehrwortspanne. Der
+Bestand selbst zeigt an Matteo 26,71 (`disse a quelli che erano lì`)
+einen Fall, wo dieselbe Fuegung NUR als Einzelwoerter steht (`quelli`
+→ *denen/those/aquellos/ceux*, `che` → *welche/who/que/qui*, keine
+9-10-Zeile). Ich bin der REIHE gefolgt (nicht dem Altfall) und habe in
+14,69/70 zusaetzlich die Mehrwortspanne mit `quello che`s eigener
+Pluralform gesetzt (*die, die* / *those who* / *los que* / *ceux qui*,
+bereits als etablierte Lesart des Lemmas vorhanden — keine neue Reihe
+noetig). Wer Matteo 26,71 spaeter nachzieht, sollte dieselbe Spanne
+nachtragen; ich habe es nicht selbst getan (fremdes Kapitel, nur lesend
+zugaenglich).
+
+## 408 · Marco 14 eingesammelt — laengstes Kapitel des Buches, zweiter Anlauf nach Sitzungsabbruch
+
+72 Verse, 1333 Tokens, 1333 Einzel- + 67 Mehrwort-Eintraege. Voriger
+Versuch war nach 20 Versen am Sitzungslimit gescheitert und wurde
+verworfen (zu wenig zum Retten). Zweiter Anlauf: 55 von 72 Versen hatten
+eine tragende Parallele (Matteo 26 fast durchgehend, dazu Marco 9,2 und
+11,1), gemessen mit `fixgloss.py verse` gegen jede Referenzstelle statt
+nur gegen `parallelen.py`s automatischen Extrakt — der Extrakt allein
+haette wegen Reihe 402 mehrere etablierte Mehrwoerter verschluckt.
+`levelcheck.py` fing 16 falsche Level in einem ersten Durchlauf (u.a.
+`per`, `egli`, `sopra`, `ancora`, `più`, `sapere`, `seduto` — durchweg
+Level aus den Zeugen-Spalten statt aus dem italienischen Bestand
+uebernommen); zweiter Lauf 0 Abweichungen. `elision.py` fand 13
+unelidierte franzoesische Glossen vor benachbarten Vokalanlauten,
+alle behoben. `verschmelzung.py --verdacht` fand zwei echte fehlende
+Artikel (`nel piatto`, `delle serve`/`del sommo sacerdote`), Rest
+Nullantwort korrekt. Stehen gelassen: die `padrone`/`maestro`-Kollision
+in 14,14 (Reihe 403), `serva` gegen `servire` in `sweeplemma` (echte
+Wortarten-Verschiedenheit, kein Fehler), und mehrere geschlossene-
+Wortart-Kollisionen aus `glosskollision.py` (il/lo, gli/lo je auf
+franzoesisch/spanisch *le* — Reihe 912/949 bereits bekannt).
+
+## 409 · Matteo 26,71 nachgezogen — `quelli che` als Mehrwort
+
+Reihe 407 (Marco 14) hat den Widerspruch nur benannt, nicht behoben
+(fremdes, bereits annotiertes Kapitel). Nachgetragen: Matteo 26,71
+`a quelli che erano lì` bekommt jetzt dieselbe Mehrwortspanne wie
+Marco 14,69/70 (`quello che`, „die, die"/„those who"/„los que"/„ceux
+qui"), die Einzelworteintraege bleiben unveraendert stehen.
+
+## 410 · Drei weitere Genus-Ausreisser gefunden — `alma`/`sangre`/`cour`
+
+Ueber `artikel.py` beim Einsammeln von Marco 14 sichtbar geworden
+(Reihe 348/354/360/370/380-Muster):
+
+- **`alma` es ist die `el arpa`-Ausnahme**: feminine Substantive mit
+  betontem Anlaut-A nehmen im Singular den maskulinen Artikel `el`
+  (`el alma`, `el arpa`, `el agua`) — grammatisch korrekt, unabhaengig
+  vom Kontext. Marco 14,34 (`La mia anima` → `El`) war der einzige
+  Beleg, der das schon richtig machte; Matteo 22,37 und Marco 12,30
+  trugen faelschlich `la`. Beide auf `el` korrigiert.
+- **`sangre` ist feminin** (`la sangre`) — Matteo 23,35 trug an einer
+  von drei Stellen im selben Vers (`al sangue`) maskulin `al` statt
+  `a la`, waehrend die anderen beiden Belege im selben Vers schon
+  korrekt feminin waren. Korrigiert. (Der verbleibende Ausreisser,
+  Matteo 27,25 `suo sangue`, ist derselbe Possessiv-Fehlalarm wie bei
+  `camilla`, Reihe 348 — `su` zeigt kein Genus, kein echter Fehler.)
+- **`cour` fr ist feminin** (`la cour`) — Matteo 26,58 trug `au
+  cortile` statt `à la cortile` (`cortile`→`cour`); Marco 14,54 hatte
+  es schon richtig. Korrigiert.
+
+**Werkzeugbefund fuer den Koordinator:** `artikel.py` liest offenbar
+den GEBAUTEN Bestand (`buildbook.py`-Ausgabe), nicht direkt
+`ANNO_OUT` — ein Fix in `anno-quellen/` wird erst nach einem
+erneuten `buildbook.py <Buch>`-Lauf sichtbar. Zweimal in dieser
+Sitzung fälschlich für „nicht verfangen" gehalten, bis der Rebuild
+nachgeholt wurde.
+
+## 411 · Marco 14 eingesammelt — laengstes Kapitel, zweiter Anlauf, jetzt 14 von 16
+
+72 Verse, 1333 + 67 Eintraege. Erster Anlauf war nach 20 Versen am
+Sitzungslimit gescheitert und verworfen worden. Zweiter Anlauf komplett
+durchgelaufen, sehr gruendlicher Bericht (Reihen 401-408): ein
+Parser-Bug im eigenen Bauskript hatte anfangs ~120 Einzelwort-Eintraege
+und mehrere etablierte Mehrwoerter verschluckt (Reihe 402), von
+`folgencheck --gegen` aufgedeckt und vollstaendig nachgetragen.
+`padrone`/`maestro`-Kollision in 14,14 sauber ueber ein Mehrwort
+geloest, ohne Reihe 220/299 zu widerrufen. Beim Einsammeln: Matteo
+26,71 nachgezogen (Reihe 409) und drei weitere Genus-Ausreisser
+gefunden (Reihe 410). `selfcheck`/`validate`/`elision`/
+`verschmelzung A`/`qa` je 0.
