@@ -12660,3 +12660,28 @@ Neue Mehrwoerter/Lemmata: nichts buchweit Uneinheitliches gefunden
 (`paketcheck 41 1..7` Abschnitt A unveraendert bei den bekannten,
 bereits geprueften Tempus-/Numerus-Varianten — neu dazu `divulgare`,
 ebenfalls nur Tempus).
+
+## 357 · Marco 7,32 `lo`/Leísmo behoben — vom Marco-8-Agenten gemeldet
+
+Der Agent fuer Marco 8 hat beim Uebernehmen von `e lo pregarono di`
+(zeichengleich zu Marco 3,10/7,32) bewusst NICHT den aelteren Fehler
+wiederholt: Marco 7,32 traegt an derselben Bauart `lo` (Akkusativobjekt
+von `pregare`, „sie baten IHN") es faelschlich als `le` (Leísmo) statt
+`lo` (Standardspanisch). Geprueft: `pregare qualcuno di fare qualcosa`
+nimmt das Akkusativobjekt, kein Dativ. Marco 3,10 `gli si gettavano
+addosso` ist ein echter Dativ (anderer Fall, `le` dort korrekt).
+Marco 7,32 auf `lo` korrigiert. Der Agent hat richtig entschieden, den
+Fehler nicht zu uebernehmen, und ihn korrekt lokalisiert — sauberes
+Beispiel dafuer, dass "zeichengleich uebernehmen" immer noch am
+eigenen Massstab (hier: kein Leísmo) geprueft werden muss.
+
+## 358 · Marco 8 eingesammelt — Marco jetzt 8 von 16 Kapiteln
+
+38 Verse, 689 + 24 Eintraege. Agent hat vollstaendig durchlaufen (kein
+Abbruch), Bericht und Selbstkorrekturen (2 eigene Lemma-Fehlgriffe vor
+Abgabe behoben: `sedersi`→`sedere`, `indurito`→`indurire`; 11 Elisionen,
+2 Verschmelzungen) waren bereits sauber. Beim Einsammeln nur die
+Marco-7,32-Korrektur aus Reihe 357 noetig, sonst nichts zu aendern.
+`selfcheck`/`validate`/`elision`/`verschmelzung A`/`qa` je 0,
+`glosskollision` 5 Paare (alle Klassenfaelle), `paketcheck 41 1..8`
+Abschnitt A ein neuer Tempus-Fall (`sospirare`, kein Fehler).
