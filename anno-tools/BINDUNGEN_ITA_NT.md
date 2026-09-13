@@ -13061,3 +13061,290 @@ Abbruch). Beim Einsammeln: ein Partizip-Grenzfall (Reihe 362) und drei
 buchuebergreifende Konsistenzkorrekturen (Reihe 363) gefunden und
 behoben, sonst nichts zu aendern — `selfcheck`/`validate`/`elision`/
 `verschmelzung A`/`qa` je 0.
+
+---
+
+# Marco 11 (Einzug in Jerusalem · der verdorrte Feigenbaum · Tempelreinigung · die Vollmachtsfrage)
+
+*Angehaengt vom Agenten fuer Marco 11 (Paket 10-12, allein gelaufen — kein
+Geschwisterkapitel lief gleichzeitig). Hoechste gesehene Nummer beim
+Anhaengen war 371; ich zaehle bei 372 weiter. 33 Verse, 610 Tokens,
+629 Eintraege (19 Mehrwort). Matteo ist vollstaendig, Marco 1-10 stehen;
+die Synoptiker-Parallelen (`parallelen_41_11.md`) trugen fuer 21 von 33
+Versen (19 davon mit Glossen in der Vorlage) — mehrere Bloecke deckten
+5-9 Tokens am Stueck (11,15 ← Matteo 21,12: 12 Tokens; 11,31 ← Matteo
+21,25: 9 Tokens).*
+
+## 372 · Mehrwoerter, die Marco 11 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 89 ·
+99 · 106 · 119 · 132 · 140 · 153 · 160 · 170 · 187 · 196 · 206 · 224 ·
+234 · 244 · 265 · 274 · 288 · 304 · 322 · 331 · 339 · 362. Fuenf sind
+echt neu; vierzehn der neunzehn Mehrwortspannen uebernimmt der Bestand
+zeichengleich (`vicino a` ← Matteo 21,1 · `di fronte` ← Matteo 21,2 ·
+`avere bisogno di` · `quello che` [personal, 3×] · `avere fame` ← Matteo
+21,18 · `capo sacerdote` [2×] · `mettersi a` · `avvicinarsi` · `di
+nuovo`).
+
+    11,13  per caso        A2  zufällig · by chance · por casualidad · par hasard
+    11,13  niente altro che B1  nichts als · nothing but · nada más que · rien que
+    11,14  in eterno       —   Bestandsreihe (Marco 3,29) uebernommen, s. Reihe 373
+    11,18  dato che        B1  da · because · ya que · parce que
+    11,25  mettersi a      B2  Bestandsreihe uebernommen (macht euch daran ·
+                               set about · os ponéis a · vous mettez à),
+                               Numerus/Person an 2. Pl. Praesens angepasst
+    11,11  ogni cosa       A1  alles · everything · todo · tout
+
+**`nient'altro` ist EIN Token** (elidiert `niente`+`altro`) und bekommt
+mit dem folgenden `che` zusammen den Mehrworteintrag — das italienische
+Original hat hier keine dreiteilige `non…altro che`-Klammer wie Matteo
+21,19, sondern die einwortige Verschmelzung plus `che`. Lemma `niente
+altro che`, Kopf `niente` (Reihe 1-Logik: das Inhaltswort traegt).
+
+**`per caso`** ("se per caso vi trovasse qualcosa") ist eine echte
+Wortfuer-Wort-Bruchstelle (*zufaellig* laesst sich nicht aus *fuer* +
+*Fall* zusammensetzen); die Einzelwoerter bleiben daneben woertlich
+stehen (`per` *fuer*, `caso` *Zufall*, neues Lemma).
+
+**`ogni cosa`** ("guardò ogni cosa tutt'intorno") ist im Bestand noch
+nicht als Mehrwort gefuehrt, obwohl `ogni` + `cosa` in allen vier
+Sprachen eigentlich wortweise aufgeht (*jede* + *Sache* = *jede Sache*);
+gesetzt, weil *everything* im Englischen ein einziges Wort ist und die
+Formel `ogni cosa` = "alles" haeufig genug wiederkehrt, um als Einheit
+zu gelten (Reihe 56/85 zaehlt hier den englischen Bruch als
+ausreichend).
+
+## 373 · Was Marco 11 bewusst KEIN Mehrwort bekommt
+
+- **`in eterno` (11,14) ist eine reine Bestandsuebernahme (Marco 3,29),
+  nicht neu gepraegt** — aber die franzoesische Glosse weicht bewusst
+  von der Bestandsreihe ab: `jamais` (Bestand) haette mit dem `mai`
+  desselben Verses kollidiert (siehe Reihe 377). Lokal auf `à jamais`
+  gesetzt — **die Bestandsreihe selbst bleibt unveraendert**, das ist
+  eine Kollisionsaufloesung im Einzelvers, keine Korrektur der Reihe.
+- **`andare avanti` / `venire dietro` (11,9)** — "quelli che andavano
+  avanti/venivano dietro" geht in allen vier Sprachen wortweise auf
+  (*gehen* + *voran*, *kommen* + *hinterher*); kein Mehrwort, obwohl
+  `rueckwaerts.py` die Kombination als Einheit fuehrt.
+- **`fare del bene`-Typ gibt es hier nicht**, aber dieselbe Vorsicht
+  gilt bei `farlo morire` (11,18): der Kausativ `fare` + Infinitiv
+  bekommt nach Reihe 8 keinen eigenen Eintrag, weil `farlo` bereits das
+  Klitikon traegt und `morire` woertlich "sterben/umbringen" bleibt —
+  `sweeplemma.py` markiert die Folge zu Recht als Bestandsuebernahme
+  (Matteo 26,4 u. a., 12 Belege).
+- **`tutta la folla` (11,18) bleibt kompositional** — jedes Wort geht
+  woertlich auf, wie an den Bestandsstellen (Matteo 2,13, Marco 4,1).
+
+## 374 · Das subjektlose Verb in Marco 11 — Reihe 300 · 308 angewandt
+
+Vier Stellen, alle im Hauptsatz ohne jedes Subjekt im Satz:
+
+    11,4   trovarono        sie fanden · they found · —  · ils trouvèrent
+    11,7   gettarono        sie warfen · they threw  · —  · ils jetèrent
+    11,27  dissero          sagten sie · they said   · —  · ils dirent
+    11,29  farò             ich werde stellen · I will ask · —  · poserai
+
+**Spanisch bekommt in allen vier Faellen nichts** (Reihe 300). Zwei
+Grenzfaelle bewusst OHNE Pronomen gelassen: 11,6 `risposero` (Subjekt
+"Essi" steht im selben Satz direkt davor) und 11,31 `ragionavano`
+(ebenso, "Essi" im Satz). Der subjektlose Prophetenvers-Typ (Reihe 112)
+kommt in diesem Kapitel nicht vor.
+
+## 375 · Was die Synoptiker-Parallelen getragen haben — und wo Marco anders liest
+
+21 von 33 Versen haben eine Parallelstelle ab 4 gemeinsamen Tokens, 19
+davon bereits mit Glossen (`parallelen_41_11.md`, Schlusszeile). Die
+staerksten Bloecke: 11,15 ← Matteo 21,12 (12 Tokens, Tempelreinigung),
+11,31 ← Matteo 21,25 (9 Tokens), 11,9 ← Matteo 21,9 (8 Tokens, Hosanna),
+11,29 ← Matteo 21,27 (8 Tokens), 11,17 ← Matteo 21,13 (9 Tokens).
+
+**Ein Fund, der zwei Kapitel praegt:** `alcuni dei suoi discepoli`
+(Marco 7,2, bereits annotiert) zeigt, dass **Reihe 22 (Artikel vor
+Possessiv faellt) nur fuer die BARE Fuegung `dei/dai + Possessiv +
+Nomen` gilt — nicht, wenn ein Quantor (`alcuni`, `due`, …) davorsteht.**
+Mein erster Entwurf hatte `due dei suoi discepoli` (11,1) faelschlich
+nach Reihe 22 auf `von` (ohne Artikel) gesetzt; `folgencheck --gegen 40`
+zeigte den Widerspruch zu Marco 7,2 (`dei` → *von den*, `suoi` →
+*seiner*, `discepoli` → *Jünger*, alle mit Artikel/im Kasus des
+Quantors). Auf die Bestandsreihe gezogen. **Wert fuer kuenftige
+Kapitel:** Reihe 22 pruefen, ob ein Zahlwort oder `alcuni`/`molti`
+davorsteht — dann gilt die Partitiv-Form mit Artikel, nicht die
+Possessiv-Ellipse.
+
+**`vicino a` (11,1) ist zeichengleich aus Matteo 21,1 uebernommen**,
+inklusive Mehrwort-Status (`nahe bei · near · cerca de · près de`) —
+mein erster Entwurf hatte die beiden Woerter einzeln woertlich
+geglosst; `folgencheck --gegen` zeigte die fast wortgleiche Eroeffnung
+beider Verse ("Quando furono vicino a Gerusalemme … Gesù mandò due …").
+Ebenso `presso` (11,1): Matteo 21,1 glossiert es *an/at/junto a/auprès
+de*, nicht *bei/near/cerca de*; uebernommen.
+
+**Wo Marco bewusst NICHT zeichengleich mit Matteo geht:**
+
+- **11,1 `mandò due DEI SUOI discepoli`** hat keine Entsprechung in
+  Matteo 21,1 (`mandò due discepoli`, ohne Possessiv) — die Fuegung ist
+  in diesem Kapitel neu gepraegt (s. o.), nicht uebernommen.
+- **11,3 `ne ha bisogno`**: `ne` bleibt *of it* (Singular, bezieht sich
+  auf den einen Esel Markus'), waehrend Matteo 21,3 (zwei Tiere) *of
+  them* traegt — verschiedene Referenten, keine Abweichung von der
+  Regel.
+- **11,10 `il regno di Davide`**: `regno` fr *royaume* (nicht *règne*)
+  gesetzt, zeichengleich mit den vier Bestandsstellen (4,30 · 9,1 ·
+  10,14 · 10,15) — mein erster Entwurf hatte *règne* und ist auf die
+  Mehrheit gezogen.
+
+## 376 · Homographen und Lemmasplits in Marco 11
+
+Nach Reihe 5 · 15 · 46 · 66 · 73 · 93 · 109 · 135 · 143 · 162 · 175 ·
+212 · 238 · 246 · 268 · 279 · 292 · 309 · 326 · 335 · 343 · 365.
+
+- **`tagliato` (11,8, „avevano tagliato") ist Aktiv-Perfekt mit
+  `avere` → Lemma `tagliare`** (Infinitiv, Reihe 5 Zweig 1) — der
+  Bestand fuehrt `tagliato` bisher nur fuer das Passiv (Matteo 3,10 ·
+  7,19, „è tagliato"). Derselbe Fall wie `guarire`/`guarito` (Reihe
+  341); `sweeplemma.py` meldet ihn zu Recht als Neubildung, es ist
+  keine.
+- **`ricevute` (11,24, „di averle ricevute") ist ebenfalls
+  Aktiv-Perfekt mit `avere` → Lemma `ricevere`**, nicht das im Bestand
+  gefuehrte `ricevuto` (Passiv/attributiv). Dieselbe Zweiteilung.
+- **`gettati` (11,23, Imperativ „gettati nel mare") ist das
+  pronominale Verb `gettarsi`** (wirf DICH), nicht `gettare` — die
+  Klitikon-Endung `-ti` ist hier Reflexivpronomen 2. Sg., kein
+  Objektklitikon.
+- **`mettete` (11,25, „vi mettete a pregare") ist das pronominale Verb
+  `mettersi`** (stellt EUCH), Teil des Mehrworts `mettersi a` (Reihe
+  372) — nicht das transitive `mettere`, das der Bestand einmal
+  fuehrt.
+- **`Osanna` behaelt die Grossschreibung als Lemma** (C1, Interjektion,
+  zeichengleich mit dem dreifach bestehenden Bestandslemma) — mein
+  erster Entwurf hatte `osanna` klein und waere als neues Lemma
+  durchgegangen, `sweeplemma.py` hat den Fehlgriff gefunden.
+- **`tutt'intorno` (11,11) steht auf dem Bestandslemma `intorno`**,
+  nicht auf einem neuen `tutt'intorno` — die Elision `tutto`+`intorno`
+  verstaerkt nur, das Kopfwort bleibt `intorno` (Reihe 1-Logik
+  uebertragen auf Adverb+Intensivierer statt Praeposition+Nomen).
+
+## 377 · Stehengelassene Kollisionen in Marco 11
+
+`glosskollision.py --datei 41 11` endet auf **5 inhaltliche Paare** (4
+in nur einer Sprache) und **22 aus geschlossenen Wortarten**. Vorher
+aufgeloest (alle im Kollisionsvers):
+
+- **11,1 `presso`/`vicino`, beide en *near*** → `presso` auf en *at*
+  gezogen (deckt sich mit Reihe 375s Matteo-21,1-Uebernahme).
+- **11,10 `luoghi`/`altissimi`, beide en *highest*** → eigener
+  Fehlgriff (`luogo` sollte *heights* tragen, nicht *highest*, das dem
+  Adjektiv `altissimo` gehoert); korrigiert.
+- **11,14 `mai`/`in eterno`, fr beide *jamais*** → `in eterno` lokal auf
+  *à jamais* gesetzt (Reihe 373), `mai` behaelt *jamais* — die
+  Redundanz spiegelt die dreifache Verstaerkung des Urtexts ("nie mehr
+  … in Ewigkeit"), nur die Zeichenkette musste getrennt werden.
+- **11,27 `gli`/`lui`, de+fr *ihm*/*lui`** → `gli` (Klitikon vor
+  `dissero`) auf de *zu ihm* gezogen; fr bleibt bei *lui*, weil
+  Franzoesisch fuer Dativklitikon und Praepositionalpronomen an dieser
+  Stelle kein zweites Wort hat (geschlossene Wortart, unvermeidbar).
+
+Stehen bleiben, alle in bekannten Klassen (Artikel/Klitikon-Ambiguitaet
+Reihe 36 · 53 · 61 · 67 · 327): `Il`/`lo` fr *Le*/*le* (11,3), `Essi`/
+`li` de *Sie*/*sie* (11,6), `il`/`lo` fr *le* (11,18), `le`/`le` es/fr
+*las*/*les* (11,24, Artikel gegen Objektklitikon), `gli`/`lui` fr *lui*
+(11,27, Rest aus dem oben aufgeloesten Paar).
+
+## 378 · Die 15 neuen Lemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand (Matteo + Giuda + Marco 1-10,
+`fixgloss.py show` je Lemma): von 237 Lemmata des Kapitels standen 222
+schon da, 15 sind neu — zehn Einzelwoerter, fuenf Mehrwoerter (Reihe
+372).
+
+    A1  Mehrwoerter: ogni cosa
+    A2  caso · oggetto · stagione
+        Mehrwoerter: per caso
+    B1  attraverso · covo · montare
+        Mehrwoerter: dato che · in verità (Bestandsuebernahme,
+        s. Reihe 372) · niente altro che
+    B2  ammirazione · asino · rapire · ritenere
+
+- **`asino` B2** — nicht `asina` (B2, bereits als *Eselin* gefuehrt):
+  `d'asino` (11,2, „un puledro d'asino") ist das generische Maskulinum
+  in einer Genitivfuegung („ein Fohlen eines Esels"), ein anderes Wort
+  als die konkrete *Eselin* aus Matteo 21,2.
+- **`caso`, `per caso`** — Grundwortschatz-Zufall, A2/A2.
+- **`ritenere` B2** — "tutti ritenevano che Giovanni fosse …" (hielten
+  fuer); `hints.py` fand es faelschlich mit `ritegno` (C1) verwandt,
+  aber es ist das gaengige Verb "halten fuer/considered", nicht der
+  seltene juristische Begriff.
+
+## 379 · Befunde an der Werkzeugkette (Nachtrag aus Marco 11)
+
+Fortschreibung von Reihe 14 · 21 · 30 · 37 · 44 · 54 · 62 · 68 · 75 ·
+84 · 95 · 104 · 115 · 127 · 139 · 148 · 169 · 181 · 194 · 204 · 217 ·
+232 · 242 · 255 · 273 · 286 · 298 · 317 · 330 · 338 · 347 · 368.
+
+1. **`selfcheck.py` zaehlt die Positionen INNERHALB eines Mehrworts
+   NICHT als gedeckt, wenn nur der Mehrwort-Eintrag selbst dasteht —
+   jede Position, auch die vom `pos_end`/`parts` eines Mehrworts
+   uebernommene, braucht ZUSAETZLICH einen eigenen Einzelwort-Eintrag
+   mit dem woertlichen Sinn.** Das war aus dem Prompt-Baustein nicht
+   ersichtlich; `ch10.json` (Nachbarkapitel) bestaetigt das Muster
+   (z. B. `si alzò` als Mehrwort UND `si`/`alzò` einzeln, alle mit
+   demselben `pos`). Mein erster Lauf hatte fuer alle 18 Mehrwoerter
+   nur den einen Eintrag gesetzt und bekam 36 Meldungen
+   ("hat keinen Einzelwort-Eintrag") — nach Nachbau aus dem
+   Nachbarkapitel behoben. **Das gehoert in den Prompt-Baustein**, denn
+   kein Prosatext sagt es, nur das Beispiel einer fertigen Datei zeigt
+   es.
+2. **`folgencheck --gegen 40 …` hat den Reihe-22-Ausreisser gefunden**
+   (Reihe 375) — ohne den Lauf waere `due dei suoi discepoli` (11,1)
+   fehlerhaft ohne Artikel geblieben, weil Reihe 22 auf den ersten
+   Blick genau zu passen schien.
+3. **`elision.py --datei` fand sechs echte Stellen**, alle vor Vokal in
+   laufender Prosa (`que`→`qu'` dreimal, `le`→`l'` zweimal, `ne… pas`→
+   `n'… pas` einmal vor `y`) — keine Ausnahmefaelle wie in Marco 5/6.
+4. **`verschmelzung.py --verdacht` fand zwei echte Luecken**: `sulla`
+   (11,4 · 11,8, „auf der Strasse") hatte den Artikel in drei von vier
+   Sprachen verloren, `dalla` (11,19, „aus der Stadt") ebenso — beide
+   nachgetragen. Die uebrigen Verdachtsstellen (`dei`/`delle` vor
+   Partitiv-Nomen, `dal`/`dagli` vor `cielo`/`uomini`) sind korrekte
+   Nullantworten: das Englische braucht bei generischen Referenzen
+   ("from heaven", "some branches") keinen Artikel.
+5. **`sweeplemma.py` hat wieder das schaerfste Werkzeug fuer
+   Partizip-Lemmata und Homographen geliefert** (Reihe 376): drei von
+   fuenf gemeldeten "neuen" Formen waren korrekte Aktiv/Passiv-Splits
+   (Reihe 5), eine ein Grossschreibungsfehler (`Osanna`), eine eine
+   Elisions-Kopfwahl (`intorno`) — kein einziger Fehlalarm.
+6. **`kongruenz.py`, `artikel.py`, `qa.py` bestaetigen erneut ihre
+   duenne Referenz** (0 Verdachtsfaelle; `artikel.py` meldet weiterhin
+   nur den vorbestehenden `mañana`-Ausreisser aus Matteo, ausserhalb
+   dieses Kapitels). `paketcheck.py` faellt hier weg (kein
+   Geschwisterkapitel im Lauf).
+7. **Der Prompt hat nichts behauptet, was der Quelltext widerlegt.** 33
+   Verse und 610 Tokens gegen `text.split()` stimmen exakt; „34 noch
+   nicht belegte Wortformen" (`hints_41_11.md`) und „21 Parallelstellen"
+   (`parallelen_41_11.md`) stimmen gegen die Dateien.
+
+## 380 · Marco 11,13 `higuera`-Genus im selben Vers uneinheitlich — behoben
+
+`fico` → es `higuera` ist feminin (`la higuera`). Vers 13 nennt den
+Feigenbaum zweimal: an pos3 korrekt `una` (fem.), an pos21 (`arrivato
+al fico`) faelschlich `al` (mask.) — derselbe Vers, derselbe Baum,
+zwei Genera. Auf `a la` korrigiert; `fr` war an beiden Stellen bereits
+richtig maskulin (`figuier` ist franzoesisch maskulin, anders als das
+spanische `higuera`). **Reihe 348/354/360/370-Muster**, diesmal
+innerhalb eines einzigen Verses statt ueber Kapitel verteilt.
+
+Die `mañana`-Spaltung (es, 2/2) ist **kein Fehler**: Matteo 6,34 nutzt
+das substantivierte `el mañana` (maskulin, „die Zukunft" — Standard-
+spanisch, vgl. „el mañana pertenece a quienes..."), Matteo 27,1/Marco
+11,20 die woertliche `la mañana` („der Morgen", feminin). Zwei echte
+Bedeutungen derselben Form, korrekt getrennt geblieben — gepruft und
+nicht angefasst.
+
+## 381 · Marco 11 eingesammelt — Marco jetzt 11 von 16 Kapiteln
+
+33 Verse, 610 + 19 Eintraege. Agent vollstaendig durchgelaufen. Eigene
+Fehlgriffe vor Abgabe gefunden und korrigiert (Reihe 375: Artikel vor
+Possessiv nach Quantor `due dei suoi discepoli`, `mai`/`ustedes`×2).
+Beim Einsammeln: `higuera`-Genus im selben Vers uneinheitlich (Reihe
+380), sonst nichts zu aendern — `selfcheck`/`validate`/`elision`/
+`verschmelzung A`/`qa` je 0.
