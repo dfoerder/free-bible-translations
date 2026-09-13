@@ -13348,3 +13348,295 @@ Possessiv nach Quantor `due dei suoi discepoli`, `mai`/`ustedes`×2).
 Beim Einsammeln: `higuera`-Genus im selben Vers uneinheitlich (Reihe
 380), sonst nichts zu aendern — `selfcheck`/`validate`/`elision`/
 `verschmelzung A`/`qa` je 0.
+
+---
+
+# Marco 12 (Gleichnis von den Weingärtnern · Steuerfrage · Auferstehungsfrage ·
+das größte Gebot · Davids Sohn · das Scherflein der Witwe)
+
+*Angehaengt vom Agenten fuer Marco 12 (Paket 10-12, allein gelaufen — kein
+Geschwisterkapitel lief gleichzeitig). Hoechste gesehene Nummer beim
+Anhaengen war 381; ich zaehle bei 382 weiter. 44 Verse, 916 Tokens, 940
+Eintraege (24 Mehrwort). Matteo ist vollstaendig, Marco 1-11 stehen; die
+Synoptiker-Parallelen (`parallelen_41_12.md`) trugen fuer 27 von 44 Versen,
+alle 27 bereits mit Glossen in der Vorlage — der hoechste Anteil bisher in
+diesem Buch.*
+
+## 382 · Mehrwoerter, die Marco 12 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 89 · 99 ·
+106 · 119 · 132 · 140 · 153 · 160 · 170 · 187 · 196 · 206 · 224 · 234 · 244 ·
+265 · 274 · 288 · 304 · 322 · 331 · 339 · 362 · 372. Sechs sind echt neu
+(`fixgloss.py show` gegen den vollen Bestand geprueft, kein Treffer);
+achtzehn der vierundzwanzig Mehrwortspannen uebernimmt der Bestand
+zeichengleich (`quello che` [2×] · `mettere alla prova` · `di nuovo` ·
+`lo stesso` · `avvicinarsi` · `come mai` · `per mezzo di` · `di fronte` ·
+`sedersi` · `te stesso` · `più grande` · `chiamare a sé` · `tutto ciò che` ·
+`tutto quello che` · `pietra angolare`).
+
+    12,3   a mani vuote        B1  mit leeren Händen · empty-handed ·
+                                   con las manos vacías · les mains vides
+    12,6   per ultimo          B1  als Letzten · last of all · por último ·
+                                   pour finir
+    12,17  restare meravigliato B1 waren erstaunt · were amazed ·
+                                   quedaron asombrados · furent étonnés
+    12,23  tutti e sette       A2  alle sieben · all seven · los siete ·
+                                   tous les sept
+    12,32  oltre a             B1  außer · besides · fuera de · en dehors de
+    12,33  se stesso (Plural `se stessi`)  A2  sich selbst · oneself ·
+                                   uno mismo · soi-même
+
+- **`a mani vuote`** bricht in Englisch am staerksten (*empty-handed*, ein
+  Kompositum) — Deutsch/Spanisch/Franzoesisch gehen zwar Wort fuer Wort
+  ("mit leeren Händen"), aber die Einheit lohnt sich wegen des englischen
+  Bruchs (Reihe 56/85).
+- **`tutti e sette`** ist die italienische Fuegung "alle UND sieben" — das
+  `e` verschwindet in allen vier Zielsprachen (*all seven*, nicht *all and
+  seven*); klassischer Fall fuer Reihe 56/85.
+- **`se stesso`** fuehrt der Bestand bereits als `sé stesso` (Reihe, mit
+  Akut) fuer die 3. Person; die hier gebrauchte generische Reflexivform
+  `se stessi` ("wie sich selbst/wie einen selbst", verallgemeinerndes
+  Subjekt zu `amare il prossimo`) ist eine eigene Formvariante desselben
+  Lemmafeldes. Ich habe sie unter dem eigenen Eintrag `se stesso` (ohne
+  Akut, wie im Text) gefuehrt statt unter `sé stesso` — beide Schreibungen
+  kommen im NT vor; ob sie ein Lemma teilen sollten, ist eine offene Frage
+  fuers naechste Kapitel mit einem weiteren Beleg.
+
+## 383 · Was Marco 12 bewusst KEIN Mehrwort bekommt
+
+- **`prese moglie`** (12,20, "nahm eine Frau" = "heiratete") geht in allen
+  vier Sprachen wortweise auf (nahm+Frau, took+wife, tomó+esposa,
+  prit+femme); kein Idiombruch, kein Eintrag (Reihe 56/85).
+- **`fare del bene`-Typ gibt es hier nicht**, aber `fare lunghe preghiere`
+  (12,40, "lange Gebete sprechen") ist derselbe Fall: alle vier Sprachen
+  gehen Wort fuer Wort ("machen"+"lange"+"Gebete").
+- **`prendono né danno moglie`** (12,25) — anders als Matteos reflexiv-
+  passive Fassung (`non si sposa né si dà in moglie`, dort Mehrwort) ist
+  Marcos Wortlaut aktiv (`prendono`/`danno`) und einfach: "nehmen"/"geben"
+  je woertlich, `moglie` einmal fuer beide Verben (Ellipse im Italienischen
+  selbst, keine Zielsprachen-Bruchstelle).
+
+## 384 · Homographen und Lemmasplits in Marco 12
+
+Nach Reihe 5 · 15 · 46 · 66 · 73 · 93 · 109 · 135 · 143 · 162 · 175 · 212 ·
+238 · 246 · 268 · 279 · 292 · 309 · 326 · 335 · 343 · 365 · 376.
+
+- **`sentiti`/`visto`/`risposto`/`detto`/`gettato` (12,6 · 12,28 · 12,32 ·
+  12,44) sind alle aktive avere-Perfekte → Lemma auf dem Infinitiv**
+  (`sentire`, `vedere`, `rispondere`, `dire`, `gettare`), nicht auf der
+  Partizipform — Reihe 5 wieder angewandt, u. a. an `gettato` (12,44,
+  „ha … gettato"), das `hints_41_12.md` selbst als Kollisionskandidat
+  gegen das Bestandslemma `gettato` (Passiv) genannt hatte. Die Probe
+  (aktives `avere` + Objekt) loest die Kollision zugunsten `gettare`.
+- **`Guardatevi` (12,38) steht auf dem SCHLICHTEN Infinitiv `guardare`**,
+  nicht auf `guardarsi` — mein erster Entwurf hatte die reflexive
+  Enklise wie ein pronominales Verb behandelt, aber der Bestand fuehrt
+  `guardarsi` in dieser Bedeutung nicht und `guardare` bereits viermal
+  genau mit dieser Glosse (`Hütet euch/Beware/Guardaos/Gardez-vous`,
+  Matteo 7,15 u. a.) — Reihe 79/142: Einzeltoken mit angehaengtem
+  Klitikon bekommt den schlichten Infinitiv, `guardarsi` gehoert nicht zu
+  der kleinen Lexikalisierungsliste (`andarsene`, `farsi`, `recarsi`).
+  `sweeplemma.py` hat den Fehlgriff gefunden.
+- **`posti` (12,39, „i primi posti", „i posti d'onore") steht auf
+  `posto (sostantivo)`**, nicht auf dem schlichten `posto` — der Bestand
+  trennt das Nomen „Platz/Sitz" (B1) vom Partizip „gestellt/gelegt" schon
+  (Matteo 2,22 u. a.); `levelcheck.py` hat den Unterschied (A2 gegen B1)
+  gefunden.
+- **`Costoro` (12,40, „Diese") steht auf dem eigenen Bestandslemma
+  `costoro`**, nicht auf `costui` (Singular) — der Bestand fuehrt beide
+  getrennt (`costui` Singular, `costoro` Plural), `sweeplemma.py` hat den
+  Fehlgriff gefunden.
+- **`glielo` (12,16, „Essi glielo portarono") steht auf dem eigenen
+  Bestandslemma `glielo`**, nicht zerlegt auf `lo` — der Bestand fuehrt
+  die verschmolzene Doppelklitik bereits achtfach als eigenes Lemma
+  (Reihe, „ihn ihm"/„es ihm").
+- **`scritta` (12,16, „questa scritta" = „diese Aufschrift") bekommt ein
+  eigenes Lemma, getrennt von `scritto`** (das Partizip/Nomen „geschrieben/
+  das Geschriebene", 1× im Bestand). Beide sind verschiedene Woerter
+  (`scritta` ist das feminine Substantiv „Aufschrift/Inschrift", `scritto`
+  das maskuline „Schriftstueck"), keine blosse Schreibvariante —
+  `sweeplemma.py` meldet die Formtrennung zu Recht als Verdacht, aber die
+  Pruefung am Vers bestaetigt zwei Woerter.
+
+## 385 · Was die Synoptiker-Parallelen getragen haben — und wo Marco anders liest
+
+27 von 44 Versen haben eine Parallelstelle ab 4 gemeinsamen Tokens, alle 27
+bereits mit Glossen (`parallelen_41_12.md`, Schlusszeile) — der bisher
+hoechste Anteil im Buch, weil Marco 12 fast vollstaendig Stoff aus
+Matteo 21-22 nacherzaehlt (Weingaertner-Gleichnis, Steuerfrage,
+Auferstehungsfrage, groesstes Gebot, Davids Sohn).
+
+**Ein Fund, den die Blockschwelle verfehlte, `fixgloss.py show` aber
+zeigte:** `per mezzo di` (12,36 „per mezzo dello Spirito Santo") matchte
+in `parallelen_41_12.md` keinen 4-Token-Block gegen Matteo 22,43 (der
+dortige Wortlaut „parlando per mezzo dello Spirito" unterscheidet sich zu
+stark in der Umgebung), aber `fixgloss.py show "per mezzo di"` fand die
+Reihe trotzdem — inklusive der exakt gleichen Elisionsform `dello`/`de l'`
+aus genau diesem Vers (Matteo 22,43). Zeichengleich uebernommen. **Wert
+fuer kuenftige Kapitel:** wo die Blockschwelle nichts liefert, lohnt sich
+zusaetzlich `fixgloss.py show <erwartetes Mehrwortlemma>` — Reihe 302
+kannte das schon fuer Mehrwoerter unterhalb der Schwelle, hier war die
+Umgebung selbst der Grund, nicht die Laenge.
+
+**Wo Marco bewusst NICHT zeichengleich mit einer scheinbar passenden
+Bindung geht:**
+
+- **`gli domandò «Qual è il primo comandamento»` (12,28)** — die
+  Bindungsdatei fuehrte die Zeichenkette „gli domandò Qual è il" als
+  Uebernahme aus Marco 5,9 („Qual è il tuo nome?" = „Wie heißt du?").
+  Am Vers gemessen passt das NICHT: 5,9 fragt nach einem Namen (deutsches
+  Idiom „wie heißt du"), 12,28 fragt nach einem von mehreren Geboten
+  („welches ist das erste"). `Qual` bekommt hier `Welches/Which/Cuál/Quel`
+  statt der 5,9-Reihe `Wie/What/Cuál/Quel`. **Wert fuer den Koordinator:**
+  eine Zeichenketten-Bindung ohne semantische Pruefung waere hier falsch
+  gewesen — „Wie ist das erste Gebot" ist kein Deutsch.
+- **`a parlare loro in parabole` (12,1)** — `parallelen_41_12.md` matchte
+  keinen Block gegen Matteo 22,1 (dort erst spaeter beginnt der gemeinsame
+  Text „un padrone di casa che piantò"), aber `folgencheck.py` fand die
+  Uebereinstimmung nachtraeglich: Matteo 22,1 traegt exakt denselben
+  Versauftakt „e prese a parlare loro in parabole" mit `parlare` →
+  *sprechen* (nicht *reden*) und `loro` → *ihnen* (nicht *zu ihnen*).
+  Nachgezogen.
+- **`Non avete letto neppure questa Scrittura` (12,10)** — Matteo 21,42
+  fragt „Non avete mai letto" (mit `mai`), Marco „Non avete letto neppure"
+  (mit `neppure`, „nicht einmal"). Die Reihe `[Non … mai]` → *nie* aus
+  Matteo passt hier nicht, weil `mai` im Vers gar nicht steht; `neppure`
+  bekommt eine eigene Glosse (*auch nicht/not even/ni siquiera/pas même*),
+  keine Uebernahme erzwungen.
+
+## 386 · Das subjektlose Verb in Marco 12 — Reihe 300 · 308 angewandt
+
+    12,6   Aveva ancora un figlio      Er hatte · He had · Tenía · Il avait
+    12,9   Verrà e distruggerà         Er wird kommen · He will come ·
+                                       Vendrá · Il viendra
+    12,34  che aveva risposto          dass er … hatte · that he … had ·
+                                       que … había · qu'il … avait
+    12,38  Diceva inoltre              Er sagte · He said · Decía ·
+                                       Il disait
+
+Alle vier Stellen beginnen einen neuen Hauptsatz (12,9 · 12,38) oder einen
+Nebensatz, dessen Subjekt in KEINEM Teil des Satzes genannt ist (12,34:
+das Subjekt von „aveva risposto" ist der Schriftgelehrte aus 12,32,
+nicht Teil von 12,34s eigenem Satz) — Reihe 300/308 angewandt.
+**Spanisch bekommt in allen vier Faellen nichts** (Reihe 300).
+
+**Ein Grenzfall bewusst OHNE Pronomen belassen:** `sappiamo` (12,14, „wir
+wissen") ist 1. Person Plural, nicht von Reihe 300/308 erfasst (die gilt
+fuer die 3. Person); der Bestand fuehrt die Uebernahme aus Matteo 22,16
+ohnehin ohne „wir"/"nous" (`fixgloss.py show` bestaetigt), zeichengleich
+uebernommen.
+
+## 387 · Ein begruendeter Elisionsrest — Reihe 104.25/149.25 an einer neuen Stelle bestaetigt
+
+`elision.py --datei` fand zehn echte Stellen (alle korrigiert: `da`, `lo`
+[×2], `che` [×5], `non`, `di`) und liess einen Rest stehen:
+
+    12,24  che  fr 'que' (nicht elidiert) vor 'êtes'
+
+„Non è forse per questo che siete in errore" → fr „que **vous** êtes".
+Das eingeschobene Subjektpronomen `vous` beginnt mit einem Konsonanten —
+nach Reihe 104.25/149.25 (Matteo 13) elidiert `que` nur, wenn das
+unmittelbar folgende Wort mit einem Vokal beginnt, nicht schon wegen der
+blossen Einschiebung. Begruendeter Rest, keine Korrektur.
+
+## 388 · Vier fehlende Artikel in Zielsprachen-Glossen gefunden und ergaenzt
+
+`verschmelzung.py --verdacht` listete acht Verdachtsstellen; vier waren
+echte Luecken (Genus/Numerus der Zielsprache erlaubte den Artikel, er
+fehlte nur in der Glosse), vier korrekte Nullantworten (generische/
+indefinite Referenz ohne Artikel, z. B. `dei` vor unbestimmtem Plural):
+
+    12,8   dalla vigna       „aus dem" statt „aus" (de) · „out of the"
+                             statt „of" (en) · „de la" statt „de" (es/fr)
+    12,38  dagli scribi      „of the" statt „of" (en; de/es/fr hatten
+                             den Artikel schon)
+    12,38  nelle piazze      „auf den/in the/en las/dans les" ergaenzt
+                             (vorher artikel-los in allen vier Sprachen)
+    12,39  nelle sinagoghe · nei banchetti  ebenso ergaenzt
+
+`delle vedove` (12,40, „le case delle vedove") blieb bewusst ohne
+englischen Artikel (`of`, nicht `of the`) — generischer Plural („devour
+widows' houses", keine bestimmten Witwen), zeichengleich mit der
+uebernommenen Matteo-23,14-Reihe.
+
+## 389 · Befunde an der Werkzeugkette (Nachtrag aus Marco 12)
+
+Fortschreibung von Reihe 14 · 21 · 30 · 37 · 44 · 54 · 62 · 68 · 75 · 84 ·
+95 · 104 · 115 · 127 · 139 · 148 · 169 · 181 · 194 · 204 · 217 · 232 · 242 ·
+255 · 273 · 286 · 298 · 317 · 330 · 338 · 347 · 368 · 379.
+
+1. **Ein eigenes Mehrwort mit `pos_end` braucht `form` = die GANZE
+   Wortfolge, nicht nur das erste Wort.** Ein liegen gelassener
+   Rest-Baustein aus einem fruehen Entwurf (`work/12/build.py`) hatte
+   fuenf Mehrwoerter mit `form="se"` (statt `"se ne andò"`) bzw.
+   `form="Di"` (statt `"Di nuovo"`) gesetzt — `selfcheck.py` meldete das
+   exakt und sofort mit „`pos_end` deckt N Token, `form` hat aber 1
+   Wort" — sehr genau lokalisiert, schnell behoben.
+2. **`common.strip_punct` gehoert in die eigene Baufunktion, nicht ins
+   Kopf-Zeichen des Autors.** Ein direkt aus `text.split()` kopiertes
+   `form` (mit Komma/Punkt/Guillemet) faellt bei `selfcheck.py` als
+   „form != Token" auf — am einfachsten behoben, indem die eigene
+   `E()`-Helferfunktion `C.strip_punct(form)` selbst aufruft, statt es an
+   jeder der 940 Zeilen von Hand zu tun.
+3. **`sweeplemma.py` fand zwei echte Fehlgriffe unter „Wortform unter
+   einem Lemma, das der Bestand nicht kennt"** (`Guardatevi`→`guardarsi`
+   statt `guardare`, `Costoro`→`costui` statt `costoro`) und einen
+   dritten, legitimen Fall (`scritta` gegen `scritto` — zwei Woerter,
+   keine Korrektur). Schaerfstes Werkzeug fuer genau diese Klasse von
+   Fehlern, wieder bestaetigt (Reihe 379.5).
+4. **`folgencheck.py` ohne `--gegen` fand `Qual` gegen Marco 5,9 —
+   die semantische Pruefung drehte den erwarteten Befund um** (Reihe 385):
+   eine reine Zeichenketten-Bindung waere hier falsch gewesen.
+5. **Alle anderen Laeufe (`kongruenz`, `artikel`, `mehrwort`, `hilfsverb`,
+   `qa`) bestaetigen erneut ihre duenne Referenz** (0 Verdachtsfaelle;
+   `paketcheck.py` faellt hier weg — kein Geschwisterkapitel im Lauf).
+6. **Der Prompt hat nichts behauptet, was der Quelltext widerlegt.** 44
+   Verse und 916 Tokens gegen `text.split()` stimmen exakt; „58 noch
+   nicht belegte Wortformen" (`hints_41_12.md`) und „27 Parallelstellen"
+   (`parallelen_41_12.md`) stimmen gegen die Dateien.
+
+## 390 · Marco 12 abgeschlossen — Marco jetzt 12 von 16 Kapiteln
+
+44 Verse, 916 + 24 Eintraege. `selfcheck`/`levelcheck`/`mehrwort`/
+`hilfsverb`/`kongruenz`/`artikel`/`verschmelzung A`/`qa` je 0 nach
+Korrektur. `sweeplemma` 1 begruendeter Rest (`scritta`, Reihe 384).
+`glosskollision` 11 inhaltliche Paare (7 in einer Sprache, 3 in zwei, 1 in
+allen vier — alle gepruft und als Kasus-/Homonymie-Artefakte der
+Zielsprachen stehen gelassen, keins davon im selben Vers aufloesbar ohne
+eine Glosse falsch zu machen) + 19 aus geschlossenen Wortarten.
+`elision` 1 begruendeter Rest (Reihe 387). `folgencheck --min 3` und
+`--gegen` je gepruft, zwei echte Korrekturen gezogen (Reihe 385: `parlare
+loro`, `Qual`), der Rest sind vorbestehende Abweichungen in ANDEREN
+Kapiteln (nicht meins zu beheben) oder grammatisch begruendete
+Divergenzen (Kasus/Genus/Numerus, am Vers gepruft).
+
+## 391 · Marco 12 eingesammelt — Marco jetzt 12 von 16 Kapiteln, Paket 10-12 komplett
+
+44 Verse, 916 + 24 Eintraege. Agent vollstaendig durchgelaufen (zweiter
+Anlauf — der erste war am Sitzungslimit gescheitert, bevor er ueber
+Vers 2 hinauskam; nichts zu retten, sauber neu gestartet). Sehr
+sorgfaeltiger Bericht (Reihe 382-390): eine Zeichenketten-Bindung
+korrekt semantisch verworfen (`Qual è il primo comandamento`, Reihe
+385), vier fehlende Zielsprachenartikel ergaenzt (Reihe 388), zwei
+sweeplemma-Fehlgriffe vor Abgabe selbst korrigiert.
+
+**Eine eigene Korrektur beim Einsammeln zurueckgenommen:** Ich hatte den
+von `elision.py` gemeldeten Rest an 12,24 (`que` vor `êtes`) zunaechst
+elidiert, ohne die Begruendung in Reihe 387 zu lesen — dort steht das
+franzoesische Original „que **vous** êtes" mit eingeschobenem
+Subjektpronomen; `que` grenzt an `vous` (Konsonant), nicht an `êtes`.
+Reihe 104.25/149.25 wieder bestaetigt: elidiert wird nach dem
+tatsaechlich angrenzenden Wort im Zielsatz, nicht nach der italienischen
+Token-Nachbarschaft. **Lehre fuer den Koordinator:** einen begruendeten
+Elisionsrest immer erst in der Bindungsdatei nachlesen, bevor er
+"korrigiert" wird.
+
+Eine buchuebergreifende Konsistenzkorrektur: `possedere` (12,44) trug en
+`possessed` gegen die identische Wortform `possedeva` in Marco 10,22
+(`owned`) — angeglichen. `in eterno` (11,14 `à jamais` gegen 3,29
+`jamais`) ist **kein Fehler** — bereits in Marco 11s eigenem Bericht als
+bewusste Kollisionsvermeidung im selben Vers begruendet.
+
+`selfcheck`/`validate`/`verschmelzung A`/`qa` je 0, `glosskollision` 11
+Paare (Klassenfaelle), `paketcheck 41 1..12` Abschnitt A keine neuen
+echten Ausreisser (Tempus-/Synonymvarianten).
