@@ -12576,3 +12576,57 @@ Marco 4,5,6 einzeln neu gestartet sind beide am Sitzungslimit
 hatten ihre Abgabe schon geschrieben (siehe Reihe 350), Marco 6 nicht.
 Dritter Anlauf fuer Marco 6 laeuft **allein**, nicht mehr parallel, bis
 sich die Kapazitaet wieder klarer zeigt.
+
+## 353 · Marco 6 eingesammelt — dritter Anlauf, solo, sauber durchgelaufen
+
+56 Verse, 1072 + 58 (nach Korrektur 57) Eintraege. Selbstbericht des
+Agenten war vollstaendig (kein Abbruch diesmal); zwei Korrekturen beim
+Einsammeln, eine davon buchuebergreifend:
+
+1. **`tutti quelli che` (6,56)** bekam ein Mehrwort, obwohl Reihe
+   149/323/340 diese Bauart mit vorangestelltem `tutti` ausdruecklich
+   kompositionell laesst — anders als das BARE `quelli che` ohne `tutti`
+   (6,44 · Matteo 14,21/33/36 · 24,16), das die Mehrwortspanne behaelt.
+   Die Mehrwortzeile an 6,56 entfernt, die Einzelglosse `quelli` auf die
+   Reihe-3,10-Konvention (`die`, nicht `jene`) gebracht — `che` trug die
+   passende Glosse (`welche`) schon.
+2. **`campagna` (6,36 · 6,56)** — `paketcheck.py` fand die Neupraegung
+   ueber drei Kapitel verteilt uneinheitlich: Marco 5,14 traegt `Land`
+   (richtig, deckt sich mit dem einhelligen en *countryside*/es
+   *campo(s)*/fr *campagne(s)*), Marco 6 hatte stattdessen `Landgüter`
+   (Gutshoefe — falsche Bedeutung) und `Länder` (Staaten — falsche
+   Bedeutung). Beide auf `Land` vereinheitlicht.
+
+Die vom Agenten selbst gemeldeten Genusfehler in Marco 1,28 (`la
+sua fama` → de `der`) und Matteo 14,8 (`la testa` → de `den`) sind
+**gemessen und geprueft — kein Fehler**: Reihe 22 verlangt, dass der
+alleinstehende Artikel vor dem Possessiv das Genus/den Kasus des
+**deutschen** Zielnomens traegt, nicht des italienischen. `Ruf` ist im
+Deutschen maskulin (`der Ruf`), `Kopf` ist maskulin und hier Akkusativ
+(`den Kopf`, Objekt von `Dammi`) — beide Bestandseintraege sind bereits
+korrekt. Der Agent hat die Regel umgekehrt angewandt. **Wert fuer den
+Koordinator:** Reihe 22 sollte in einem kuenftigen Prompt-Baustein
+staerker betont werden — das ist der zweite Agent, der das Genus des
+Zielnomens mit dem des italienischen Quellnomens verwechselt (Reihe 348
+war der erste, dort tatsaechlich ein Fehler; hier faelschlich vermutet).
+
+## 354 · `cabeza` es an Matteo 27,37 — Genus-Ausreisser, ueber Marco 6 sichtbar geworden
+
+`artikel.py` erreicht die Meldeschwelle (5 Belege) erst mit wachsendem
+Bestand — Matteo 27,37 `il suo capo` → es `el suo cabeza` trug seit dem
+Pilotbuch einen maskulinen Artikel gegen zehn feminine Belege
+(`cabeza` ist im Spanischen feminin, `la cabeza`). Franzoesisch hatte
+an derselben Stelle schon korrekt `la` (`tête` fem.). Auf `la`
+korrigiert. Reihe 348/351 zeigen dasselbe Muster: der wachsende
+Bestand macht Fehler sichtbar, die unter der Meldeschwelle unsichtbar
+blieben.
+
+## 355 · Marco 6 abgeschlossen — Marco jetzt 6 von 16 Kapiteln
+
+248 Verse, 4570 Einzelwort- + 212 Mehrwort-Eintraege. `validate` 0 ·
+`paketcheck 41 1..6` Abschnitt A nach Korrektur 4 Restfaelle (alle
+gemessen: Tempus-/Numerus-Varianten, kein Fehler) · Abschnitt B 188
+kontextuelle Varianten (nicht einzeln durchgeprueft, Standardvolumen) ·
+Abschnitt C 0 · `glosskollision` 12 Paare, alle Klassenfaelle ·
+`elision`/`verschmelzung` A je 0 · `qa`/`mehrwort`/`kongruenz`/
+`hilfsverb` 0 bzw. erwartete Nullen.
