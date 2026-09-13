@@ -12685,3 +12685,55 @@ Marco-7,32-Korrektur aus Reihe 357 noetig, sonst nichts zu aendern.
 `selfcheck`/`validate`/`elision`/`verschmelzung A`/`qa` je 0,
 `glosskollision` 5 Paare (alle Klassenfaelle), `paketcheck 41 1..8`
 Abschnitt A ein neuer Tempus-Fall (`sospirare`, kein Fehler).
+
+## 359 · Marco 9,50 traegt einen echten Versgrenzen-Marker `(9:51)` — kein Fehler
+
+Der italienische Quelltext (`riv1927mod` UND das unmodernisierte
+`riv1927`) traegt mitten in Vers 50 die Klammer `(9:51)` — ein
+Versifikations-Hinweis: Franzoesisch (`lsg1910mod`) teilt denselben
+Inhalt in zwei Verse (50 und 51), Deutsch und Englisch fassen ihn wie
+Italienisch in einem Vers zusammen (`kapitelgrenzen_41.md` hatte das
+schon vor der Annotation gemeldet: „fr hat 51 Verse gegen 50"). Der
+Marker ist **im Original-Digitalisat vorhanden, nicht durch dieses
+Projekt entstanden** — anders als Reihe 318 (Boanerges) ist das kein
+Transkriptionsfehler, sondern eine editorische Konvention der
+Riveduta-Ausgabe.
+
+Der Agent hat den Marker sinnvoll behandelt: `form`/`lemma` "9:51",
+Level A1, `de` "9,51" (deutsches Zitierkomma), `en`/`es`/`fr` "9:51"
+(Doppelpunkt-Konvention). `qa.py` meldet den Doppelpunkt zu Recht als
+„fremdes Zeichen" — geprueft und bestaetigt: kein Fehler, eine
+Versziffer braucht keine Uebersetzung. Einziger Fall in Buch 41.
+
+## 360 · Drei weitere Genus-Ausreisser gefunden — `montagne`/`récompense`
+
+`artikel.py` meldete nach Marco 9 sechs statt drei gespaltene Nomen.
+Drei sind neu, alle derselbe Fehlerklasse wie Reihe 348/354 (Zielsprachen-
+statt Quellsprachengenus):
+
+- **`montagne` fr ist feminin** (`la montagne`), stand aber an drei
+  Stellen maskulin: Matteo 17,9 `dal monte` → `du` (jetzt `de la`),
+  Matteo 26,30 `al monte` → `au` (jetzt `à la`), **Marco 9,9** `dal
+  monte` → `du` (jetzt `de la`, zeichengleich aus 17,9 uebernommen —
+  der Fehler ist mit der Uebernahme mitgewandert). Matteo 21,1 hatte
+  bereits korrekt `la` — die Mehrheit war hier die falsche Seite.
+- **`récompense`/`recompensa` sind feminin** (`la récompense`/`la
+  recompensa`), Matteo 5,12 `il vostro premio` (Reihe 22, Artikel vor
+  Possessiv) trug es/fr maskulin `el`/`le` gegen acht feminine Belege
+  in Matteo 6. Auf `la`/`la` korrigiert.
+
+Damit wieder bei drei gespaltenen Nomen (`chemin`/`parole`, die
+laufende Hintergrundaufgabe deckt sie ab).
+
+## 361 · Marco 9 eingesammelt — Marco jetzt 9 von 16 Kapiteln, Paket 7-9 (NT-Plan) komplett
+
+50 Verse, 988 + 46 Eintraege. Agent kam bis kurz vor der letzten
+Verifikation, dann Sitzungslimit — Abgabe war fertig. Beim Einsammeln:
+15 Elisionsstellen gesetzt (alle echte Vokal-Anschluesse in laufender
+Prosa, keine der `se non`-Ausnahmefaelle aus Reihe 350), fuenf
+`sweeplemma`-Verdachtsfaelle geprueft und als korrekte Reihe-5/46-
+Anwendungen bestaetigt (`venuto` attributiv, `vestiti (sostantivo)`
+Homograph, `O (interiezione)` Homograph, `scosse` aktiv gegen `scosso`
+passiv, `gettato` aktiv gegen `gettato` passiv — zwei verschiedene
+Lemmata unter demselben Wort, korrekt getrennt). `validate`/`elision`/
+`verschmelzung A`/`glosskollision` je sauber bzw. Klassenfaelle.
