@@ -12737,3 +12737,327 @@ Homograph, `O (interiezione)` Homograph, `scosse` aktiv gegen `scosso`
 passiv, `gettato` aktiv gegen `gettato` passiv — zwei verschiedene
 Lemmata unter demselben Wort, korrekt getrennt). `validate`/`elision`/
 `verschmelzung A`/`glosskollision` je sauber bzw. Klassenfaelle.
+
+---
+
+# Marco 10 (Ehescheidung · Kindersegnung · der reiche Jüngling · dritte Leidensankündigung · Bartimäus)
+
+*Angehaengt vom Agenten fuer Marco 10 (Paket 10-12, allein gelaufen — keine
+Geschwisterkapitel liefen gleichzeitig). Hoechste gesehene Nummer beim
+Anhaengen war 361; ich zaehle bei 362 weiter. 52 Verse, 1001 Tokens,
+1052 Eintraege (51 Mehrwort). Matteo ist vollstaendig, Marco 1-9 stehen;
+die Synoptiker-Parallelen trugen fuer 34 von 52 Versen mit Glossen in
+der Vorlage — der Bestand deckte vor der Arbeit bereits ueber 90 % der
+Wortformen des Kapitels.*
+
+## 362 · Mehrwoerter, die Marco 10 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 89 ·
+99 · 106 · 119 · 132 · 140 · 153 · 160 · 170 · 187 · 196 · 206 · 224 ·
+234 · 244 · 265 · 274 · 288 · 304 · 322 · 331 · 339. Sechs sind echt neu
+(keine Bestandsreihe davor, auch nicht in Matteo); die uebrigen 45 der 51
+Mehrwortspannen uebernimmt der Bestand zeichengleich (`avvicinarsi` 10,2 ·
+10,35 · `mettere alla prova` 10,2 · `mandare via` 10,2 · 10,4 · 10,11 ·
+`radunarsi` 10,1 · `presso di lui` 10,1 · `di nuovo` 10,1 · 10,10 · 10,32 ·
+`che cosa` 10,3 · 10,17 · 10,36 · `non più` 10,8 · `quello che` 10,9 ·
+10,21 · 10,35 · 10,38 · `quelli che` (bare) 10,13 · 10,23 · 10,32 · 10,42 ·
+`tutto quello che` 10,21 · `se non` 10,18 · `prendere a` 10,28 ·
+`per causa di` 10,29 · `avere paura` 10,32 · `in disparte` 10,32 ·
+`capo sacerdote` 10,33 · `più facile` 10,25 · `su di esse` 10,42 ·
+`quanto a` 10,40 · `chiamare a sé` 10,42 · `in braccio` 10,16 ·
+`avere pietà` 10,47 · 10,48 · `insieme a` 10,30 · `fermarsi` 10,49).
+
+    10,11  verso di lei     B1  ihr gegenüber · against her · contra ella ·
+                                envers elle
+    10,26  si dicevano … tra loro  — zwei getrennte Mehrwoerter im selben
+                                Vers: `dirsi` B1 (sagten sich · said ·
+                                se decían · se disaient) und `tra loro`
+                                B1 (zueinander · to one another · entre
+                                sí · entre eux); beide reflexiv/reziprok,
+                                aber unterschiedliche Koepfe
+    10,30  cento volte tanto B2  hundertfach · a hundredfold ·
+                                cien veces más · cent fois plus
+    10,38 · 10,39  con cui   B1  womit · with which · con que · dont
+    10,50  gettato via       B1  warf ab · cast away · arrojó · jeta
+                                (folgt `mandare via`/`andare via`/
+                                `strappare via`, Reihe 65: die Fuegung
+                                Verb + `via` bekommt einen Eintrag, weil
+                                Spanisch/Franzoesisch das „weg" in den
+                                Verbstamm ziehen, waehrend Deutsch/
+                                Englisch es als eigenes Wort behalten)
+
+**`verso di lei` folgt `su di lui`/`su di esse` (Reihe 2):** die
+verschmolzene Praeposition traegt den Kern woertlich, das Pronomen bleibt
+als eigenes Wort daneben — hier musste die Fuegung neu geglosst werden,
+weil `hacia`/`toward`/`envers` in diesem Vers „gegen sie" statt „zu ihr"
+meinen (Ehebruch **gegen** die Frau, nicht **zu** ihr hin).
+
+**`con cui` ist der Bindungsanschluss von `il quale`/`ai quali` (Reihe
+23/40):** wo die Fuegung selbst das Relativpronomen traegt (nicht nur
+den nachgestellten Artikel), bekommt sie ihren eigenen Mehrworteintrag.
+Zwei Belege im selben Kapitel (10,38 · 10,39), zeichengleich gesetzt.
+
+## 363 · Was Marco 10 bewusst KEIN Mehrwort bekommt
+
+- **`fare del bene` u.ae. gibt es hier nicht, aber dieselbe Vorsicht
+  gilt fuer `più forte` (10,48).** Reihe 322 fuehrt `più forte` B1
+  bereits als Mehrwort — dort fuer *mightier* (1,7, Vergleich mit
+  Christus). 10,48 „gridava ancora più forte" meint aber *lauter*
+  (Komparativ der Lautstaerke), eine andere Bedeutung derselben
+  Zeichenkette. Kein Eintrag — die Einzelwoerter `più` und `forte`
+  gehen in allen vier Sprachen Wort fuer Wort auf (*mehr/more/más/plus*
+  + *laut/loudly/fuerte/fort*). Genau der Fehlalarm-Typ aus Reihe 332.
+- **`tutti quelli che` (10,23) bekommt nach Reihe 149/323/340 KEIN
+  Mehrwort** — nur das BARE `quelli che` (10,13 · 10,32 · 10,42) traegt
+  die Spanne. Ein automatischer Fenster-Scan gegen die Bestandsform
+  „quelli che" haette hier denselben Fehlalarm gezeigt wie in Marco 2
+  (Reihe 332).
+- **`in viso` (10,21) bekommt keinen Mehrworteintrag**, obwohl alle vier
+  Zeugen die Wendung ganz auslassen („Jesus looked at him and loved
+  him" ohne „ins Gesicht"). Die Einzelwoerter bleiben woertlich
+  (`in` *ins*, `viso` *Gesicht*) — der Quelltext sagt es, die Zeugen
+  paraphrasieren nur.
+- **`in piedi` (10,50) traegt sein Mehrwort aus Reihe 329 (Marco 9,27)
+  zeichengleich**, aber `balzò` selbst bekommt keinen eigenen
+  Kausativ- oder Bewegungs-Mehrworteintrag — „balzò in piedi" ist kein
+  `fare`-Kausativ, nur ein Bewegungsverb mit Ortsangabe.
+
+## 364 · Das subjektlose Verb in Marco 10 — Reihe 300 · 308 angewandt
+
+Zwei Stellen, beide im Hauptsatz ohne jedes Subjekt im Satz:
+
+    10,16  benediceva     er segnete · he blessed · —  · il bénissait
+                          (Satz „E, presili in braccio, imponendo loro
+                          le mani, li benediceva" nennt in keinem seiner
+                          drei Verbteile ein Subjekt; nur das finite
+                          `benediceva` bekommt das Pronomen, die beiden
+                          Partizip-/Gerundiumformen `presili`/`imponendo`
+                          nicht — Reihe 300 gilt nur fuer finite Verben)
+    10,49  Chiamarono     sie riefen · they called · —  · ils appelèrent
+                          (Subjekt bleibt implizit „die Umstehenden/
+                          Molti" aus 10,48; neuer Satz nach Punkt, kein
+                          `e`-Anschluss)
+
+**Spanisch bekommt in beiden Faellen nichts** (Reihe 300).
+
+Zwei participia assoluta wurden dagegen bewusst NICHT nach Reihe 70
+mit Partizipglosse versehen, sondern mit der finiten Form, weil alle
+vier Zeugen selbst finit uebersetzen (Reihe 41's Ausnahme):
+
+    10,22  presi … i dodici, cominciò   → prendere, A1, „nahm/took/
+                                          tomó/prit" (nicht „habend
+                                          genommen") — vgl. Matteo
+                                          26,37, wo dieselbe Konstruktion
+                                          die Partizipglosse traegt, weil
+                                          DORT die Zeugen es so machen
+    10,52  gettato via il mantello       → das Verb selbst bleibt woertlich
+                                          im Mehrwort (Reihe 362); die
+                                          Einzelglosse `gettato` folgt der
+                                          PASSIVEN Lesart des Partizip
+                                          absolut (Reihe 70, zweiter Zweig:
+                                          das Partizip absolut mit
+                                          patiensbezogenem Subjekt bleibt
+                                          auf der Partizipform, nicht dem
+                                          Infinitiv — „[der Mantel] weg-
+                                          geworfen", nicht „er warf weg")
+
+**Das ist eine Praezisierung von Reihe 41/70**: ob ein participio
+assoluto die Partizip- oder die finite Glosse traegt, entscheidet der
+tatsaechliche Wortlaut der vier Zeugen AN GENAU DIESER STELLE, nicht die
+Konstruktion allein — dieselbe Konstruktion (`presi` + Objekt) traegt an
+verschiedenen Stellen des Bestands unterschiedliche Loesungen, weil die
+Zielsprachen selbst unterschiedlich uebersetzen.
+
+## 365 · Homographen und Lemmasplits in Marco 10 — eine echte Kollision aufgeloest
+
+Nach Reihe 5 · 15 · 46 · 66 · 73 · 93 · 109 · 135 · 143 · 162 · 175 ·
+212 · 238 · 246 · 268 · 279 · 292 · 309 · 326 · 335 · 343.
+
+- **`rattristato`/`addolorato` (10,22) — zwei verschiedene Woerter mit
+  bestandsseitig identischer DE/EN-Glosse, die im selben Vers
+  kollidierten.** `rattristato` steht seit Marco 6,26 auf *betrübt ·
+  grieved · entristecido · attristé*; mein erster Entwurf hatte dafuer
+  faelschlich ein neues Lemma `rattristare` erfunden — `sweeplemma.py`
+  hat den Fehlgriff gefunden. Uebernommen auf die Bestandsreihe. Die
+  Kollision mit `addolorato` (Marco 3,5: *betrübt · grieved · apenado ·
+  affligé*) bestand dann nur noch in DE/EN (ES/FR trennen von selbst).
+  Aufgeloest **nur in diesem Vers**: `addolorato` traegt hier *traurig ·
+  sorrowful* statt *betrübt · grieved* — die Reaktion (`rattristato`,
+  durch die Worte ausgeloest) gegen den fortdauernden Zustand
+  (`addolorato`, beim Weggehen). Die Bestandsreihen selbst bleiben
+  unangetastet.
+- **`gettato` (10,50) — passives Partizip absolut, Lemma bleibt die
+  Partizipform** (Reihe 70, zweiter Zweig), nicht der Infinitiv
+  `gettare` wie im ersten Entwurf — siehe Reihe 364.
+- **`considerato` (10,42, „sono considerati capi") — echtes Passiv,
+  Lemma die Partizipform**, nicht der Infinitiv. Analog `battezzato`
+  (10,38 · 10,39, „essere/sono battezzato/i") und `servito` (10,45,
+  „essere servito") — alle drei sind PASSIVE Infinitive/Praesens, keine
+  aktiven zusammengesetzten Zeiten, und bekommen deshalb nach Reihe 5
+  die Partizipform als Lemma, nicht `considerare`/`battezzare`/`servire`.
+- **`fino` (10,20, Form `fin`) — Apokope, aber KEIN eigenes Lemma.**
+  Mein erster Entwurf hatte `fin` als eigenes Lemma gefuehrt;
+  `sweeplemma.py` fand, dass der Bestand `fino` schon fuehrt (Marco
+  9,22 `Fin` → *Seit · Since · Desde · Depuis*, zeichengleich
+  uebernommen). Das nachfolgende `dalla` verliert dabei seinen
+  Artikel-Anteil (Reihe 22: Artikel vor Possessiv `mia giovinezza`
+  faellt), traegt also nur noch *von · from · desde · depuis*.
+
+## 366 · Was die Synoptiker-Parallelen getragen haben — und wo Marco anders liest
+
+`parallelen_41_10.md` nennt 35 von 52 Versen mit einer Parallelstelle ab
+4 gemeinsamen Tokens, davon 34 mit Glossen in der Vorlage (1 noch nicht
+annotiert: 10,36 ← Marco 15,12). Fast alle Parallelen liegen in Matteo 19
+und 20 (Ehescheidung, reicher Juengling, Zebedaeussoehne) — Matteo ist
+vollstaendig, entsprechend hoch war die Deckung.
+
+**Wo Marco bewusst NICHT zeichengleich mit Matteo geht:**
+
+- **10,29 `per causa mia e del vangelo` traegt nur `per causa di`
+  als Mehrwort, nicht das ganze „e del vangelo".** Marco fuegt „und des
+  Evangeliums" hinzu, was Matteo an der Parallelstelle nicht hat — die
+  Woerter `e` und `del vangelo` bleiben eigene, woertliche Eintraege.
+- **10,33 `capi sacerdoti e degli scribi`**: der Bestand (Matteo 20,18)
+  traegt `capo sacerdote` als Mehrwort und `dei`/`agli` als Artikel;
+  Marco hat stattdessen `dei`/`degli`, beide auf `di` — die Struktur
+  ist parallel, aber Marco verwendet **zwei parallele Genitiv-Praepo-
+  sitionen** (`dei capi sacerdoti E DEGLI scribi`) statt Matteos
+  gemischter Konstruktion. Beide `dei`/`degli` bekommen dieselbe Glosse
+  (*der/of the/de los/des*), zeichengleich untereinander.
+- **10,42 `chiamatili a sé` traegt die FINITE Glosse aus Marco 3,23
+  zeichengleich**, obwohl die Konstruktion (Partizip absolut mit
+  Klitikon) an sich der aus Reihe 306 entspricht — hier zaehlt die
+  bereits gesetzte Bestandsreihe vor der abstrakten Regel.
+- **10,5 `per la durezza` traegt `per` als *wegen/for/por/à cause de*
+  (Ursache), nicht wie Marco 3,5 als *über/at/por/par* (Gefuehlsobjekt
+  nach einem Emotionsverb).** Gleicher Wortlaut, andere Satzfunktion:
+  10,5 ist eine Spaltsatz-Konstruktion („Es ist WEGEN eurer Herzens-
+  haerte, dass..."), 3,5 ein einfaches „betruebt UEBER". `folgencheck`
+  meldet das zu Recht als Abweichung — sie ist begruendet, nicht
+  korrigiert.
+
+## 367 · Stehengelassene Kollisionen in Marco 10
+
+`glosskollision.py --datei 41 10` endet nach drei echten Korrekturen
+(Reihe 365 sowie zwei Kasus-/Leismo-Fehler unten) auf **13 inhaltliche
+Paare** (9 in nur einer Sprache) und **23 aus geschlossenen Wortarten**
+— alle in den bekannten Klassen (Artikel/Objektklitikon-Homographie in
+fr `le/les`, Subjekt-/Objektpronomen-Zusammenfall in en `you`, `de/di`-
+Klasse in es/fr). Zwei echte Fehler VOR dem Kollisionslauf gefunden und
+korrigiert, nicht von `glosskollision.py` selbst gemeldet, sondern beim
+Gegenlesen aufgefallen:
+
+- **10,32 `lo` („lo seguivano", Akkusativobjekt von `seguire`) trug
+  faelschlich `ihm`/dativisch statt `ihn`/akkusativisch auf Deutsch, UND
+  `le` statt `lo` auf Spanisch — waere ein Leismo-Ausrutscher gewesen
+  (Reihe 357 verbietet das ausdruecklich).** Beide korrigiert.
+- **10,45 `la` (Artikel vor `sua` in „la sua vita") trug faelschlich
+  dieselbe Glosse wie `sua` selbst („sein/his/su/sa") statt die eigene
+  Artikelglosse („das/the/...")** — der alleinstehende Artikel vor dem
+  Possessiv behaelt nach Reihe 101 seine eigene Glosse. Beim Setzen des
+  spanischen/franzoesischen Genus (`vita`/`vida`/`vie` sind feminin,
+  nicht wie im ersten Entwurf `el`/`le` maskulin gesetzt) hat
+  `artikel.py` den zweiten Fehler in derselben Stelle gefunden.
+
+## 368 · Befunde an der Werkzeugkette (Nachtrag aus Marco 10)
+
+Fortschreibung von Reihe 14 · 21 · 30 · 37 · 44 · 54 · 62 · 68 · 75 · 84 ·
+95 · 104 · 115 · 127 · 139 · 148 · 169 · 181 · 194 · 204 · 217 · 232 ·
+242 · 255 · 273 · 286 · 298 · 317 · 330 · 338 · 347.
+
+1. **Ein selbstgebauter Fenster-Scan gegen alle zusammenhaengenden
+   Mehrwort-FORMEN des Bestands (Reihe 303 · 317.1 · 330.5) hat fuenf
+   Treffer geliefert, drei davon echte Luecken** — `in braccio` (9,36),
+   `abbi pietà` (×2, aus `avere pietà`, 9,22) waren im ersten Entwurf
+   nur als Einzelwoerter gesetzt, obwohl der Bestand die Mehrwortform
+   schon fuehrt. Die anderen zwei Treffer (`quello che` in 10,21, `più
+   forte` in 10,48) waren Fehlalarme aus denselben Gruenden wie Reihe
+   332/338.6 — ueberlappende Mehrwortspanne bzw. andere Bedeutung
+   derselben Zeichenkette. **Dieser Lauf gehoert in die Pflichtkette**,
+   er ist der einzige, der ein komplett fehlendes Mehrwort zuverlaessig
+   findet (Reihe 303).
+2. **`sweeplemma.py` hat zwei echte Lemma-Fehler gefunden, die kein
+   anderer Lauf gesehen haette**: `rattristare` statt `rattristato`
+   (Reihe 365) und `fin` statt `fino` (Reihe 365) — beide neu erfundene
+   Lemmata fuer Formen, die der Bestand schon unter einem anderen Namen
+   fuehrt. Beide waeren ohne den Lauf als eigene, verwaiste Lemmata ins
+   Buch gegangen.
+3. **`levelcheck.py` meldete 35 von 239 Lemmata beim ersten Lauf** — der
+   hoechste Anteil seit Marco 3 (Reihe 347.3), aus demselben Grund: viele
+   Grundwortschatzwoerter (`cuore`, `entrare`, `solo`, `cielo`, `volere`)
+   tragen in den Zeugen ein zu hohes CEFR-Level (Referenz ist Englisch-/
+   Deutsch-/Franzoesischlernende, nicht Italienischlernende).
+4. **`elision.py --datei` hat vierzehn Stellen gefunden, alle echt** —
+   die hoechste Zahl in einem Einzelkapitel bisher (vorher meist 1-6).
+   Kein einziger Fehlalarm; alle vierzehn waren simple uebersehene
+   Vokalanschluesse in `si`/`di`/`che`/`non`/`mi`/`lo`/`ti`.
+5. **`verschmelzung.py` Abschnitt A fand einen echten Treffer**: `nel`
+   (10,30, „nel tempo che verrà") trug in allen vier Sprachen dieselbe
+   Glosse wie das blosse `in` (10,30, „in questo tempo") — der Artikel
+   fehlte. Abschnitt B (`--verdacht`) nannte sieben Verdachtsfaelle,
+   sechs davon echte Nullen (Partitiv `delle`/`dei`, generischer Plural
+   `nelle ricchezze`/`Agli uomini`, sowie eine bereits gesetzte
+   Bestandsreihe aus Matteo 26,45 mit absichtlich artikelosem `es`/`en`)
+   — nur einer (`del vangelo` 10,29, franzoesisch `d'` statt `de l'`)
+   war ein echter Fehler.
+6. **`folgencheck --gegen 40 …` bestaetigte eine bewusste Abweichung
+   von der Matteo-Parallele** (Reihe 366, `per la durezza`) und fand
+   sonst nur Kapitalisierungs-/Registerrauschen (`Kingdom`/`kingdom`,
+   `to them`/`them`) — funf Stellen wurden dabei auf die haeufigere
+   Bestandsform gezogen (`kingdom` klein, da 8 von 9 Bestandsbelegen es
+   so fuehren; nur Matteo 1,15 hat den vereinzelten Grossbuchstaben).
+7. **`kongruenz.py`, `artikel.py`, `qa.py` melden weiterhin ihre eigene
+   Blindheit** bei diesem Bestandsstand; `artikel.py` hat aber diesmal
+   trotzdem einen echten Fehler in MEINEM Kapitel gefangen (Reihe 367,
+   `vita`-Genus), nicht nur in fremden Kapiteln wie in Reihe 348/354/360.
+8. **Der Prompt hat nichts behauptet, was der Quelltext widerlegt.**
+   52 Verse und 1001 Tokens gegen `text.split()` stimmen exakt; die 52
+   Wortformen aus `hints_41_10.md` und die 35 Parallelstellen aus
+   `parallelen_41_10.md` stimmen gegen die Dateien. Der Hinweis in
+   `kapitelgrenzen_41.md` („fr 53 Verse gegen 52") betrifft nur die
+   Verszaehlung am Kapitelende (10,52/53 vs. it 10,52 in einem Vers) —
+   kein eingebetteter Versgrenzen-Marker wie bei Reihe 359 (Marco 9,50);
+   im italienischen Quelltext selbst steht keine Klammer.
+
+
+## 369 · Marco 10,50 `gettato` — Reihe 41/70 an einem Grenzfall nachgemessen
+
+Der Agent hatte `gettato` (10,50, `gettato via il mantello, balzò in
+piedi`) auf die Partizipform als Lemma gesetzt und das mit Reihe 70s
+"passivem Zweig" begruendet. **Nachgemessen: falsch begruendet UND
+falsch entschieden.** Reihe 70s Beispiel `Scacciato il demonio, il muto
+parlò` (Matteo 9,33) ist echt passiv — Subjekt der Partizipialphrase
+(`il demonio`) und Subjekt des Hauptsatzes (`il muto`) sind
+**verschieden**, niemand im Satz ist Agens der Partizipialhandlung.
+An 10,50 ist es umgekehrt: der Blinde wirft **sein eigenes** Mantel
+weg UND springt selbst auf — Agens der Partizipialphrase und Subjekt
+des Hauptsatzes sind **dieselbe Person**. Das ist exakt Reihe 41s
+Muster (`Lasciata Nazaret, andò`), nicht Reihe 70s Ausnahme. Die
+Mehrwortspanne `gettato via` → `gettare via` mit finiter Glosse
+(„warf ab") war schon richtig; das Einzelwort `gettato` (pos 2) trug
+faelschlich das Partizip-Lemma `gettato` mit partizipialer Glosse
+(„geworfen") — auf Infinitiv `gettare` mit finiter Glosse („warf",
+Muster `presi`→`prendere`→„nahm") korrigiert. **Die Trennlinie fuer
+Reihe 70 ist die Agens-Kontinuitaet zum Hauptsatz, nicht "klingt
+passiv"** — das gehoert in den naechsten Prompt-Baustein.
+
+## 370 · Zwei Konsistenzkorrekturen ueber `paketcheck` gefunden
+
+- **`istruire` (Marco 9,31)** trug fuer dieselbe Wortform `istruiva`
+  wie an zwei anderen Stellen (2,13 · 10,1) abweichend `unterrichtete/
+  instructed/instruía/instruisait` statt der Mehrheitslesart `lehrte/
+  taught/enseñaba/enseignait`. Angeglichen.
+- **`addolorato` (Marco 10,22)** trug de/en `traurig/sorrowful` gegen
+  die fruehere Festlegung `betrübt/grieved` (Marco 3,5, gleiche
+  Wortform, gleicher Sinn). Auf die frühere Lesart angeglichen.
+- **`visage` fr ist maskulin** (`le visage`) — Matteo 18,10 trug es
+  gegen sieben maskuline Belege feminin (`la`). Korrigiert (Reihe
+  348/354/360-Muster: die Meldeschwelle deckt es erst jetzt auf).
+
+## 371 · Marco 10 eingesammelt — Marco jetzt 10 von 16 Kapiteln
+
+52 Verse, 1001 + 51 Eintraege. Agent vollstaendig durchgelaufen (kein
+Abbruch). Beim Einsammeln: ein Partizip-Grenzfall (Reihe 362) und drei
+buchuebergreifende Konsistenzkorrekturen (Reihe 363) gefunden und
+behoben, sonst nichts zu aendern — `selfcheck`/`validate`/`elision`/
+`verschmelzung A`/`qa` je 0.
