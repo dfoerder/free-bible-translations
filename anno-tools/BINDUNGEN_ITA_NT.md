@@ -12630,3 +12630,33 @@ kontextuelle Varianten (nicht einzeln durchgeprueft, Standardvolumen) ·
 Abschnitt C 0 · `glosskollision` 12 Paare, alle Klassenfaelle ·
 `elision`/`verschmelzung` A je 0 · `qa`/`mehrwort`/`kongruenz`/
 `hilfsverb` 0 bzw. erwartete Nullen.
+
+## 356 · Marco 7 eingesammelt — Agent kam bis zur Endpruefung, dann Sitzungslimit
+
+37 Verse, 675 + 31 Eintraege. Bericht fehlte wieder (Sitzungslimit kurz
+vor der letzten Verifikation), Abgabedatei war aber fertig und sauber
+— `selfcheck` 0, `elision` 1 begruendeter Rest, `verschmelzung` A 0,
+`glosskollision` 0, `qa` 0.
+
+**Der eine Elisionsrest** (7,11 `Quello con cui` → Einzelglosse `Quello`
+fr `Ce` vor `avec`): `elision.py` markiert `ce` grundsaetzlich als
+zweideutig (Reihe: Pronomen `c'` gegen Adjektiv `cet`, siehe
+`PROMPT_BAUSTEIN_IT.md`). Hier ist keins von beidem einschlaegig — `ce`
+elidiert im Franzoesischen nur vor einer Form von `être`, nicht vor
+jeder Vokalglosse; `avec` ist eine Praeposition. Begruendeter Rest, wie
+die 13 aus Matteo.
+
+**Drei `sweeplemma`-Verdachtsfaelle geprueft, alle korrekte Anwendungen
+von Reihe 5/46**, keine Aenderung noetig:
+- 7,4 `purificati` (`non si sono purificati`, pronominales Perfekt) →
+  `purificare` (Infinitiv, wie `radunare`/`diffondere`).
+- 7,30 `uscito` (`il demonio uscito da lei`, Partizip attributiv ohne
+  Hilfsverb) → bleibt auf der Partizipform, wie `guarito`/`seminato`.
+- 7,33 `saliva` ist ein reiner Homograph zum Bestandslemma `salire`
+  (Imperfekt „stieg") — hier das Nomen „Speichel". Verschiedene
+  Lemmata, keine Kollision.
+
+Neue Mehrwoerter/Lemmata: nichts buchweit Uneinheitliches gefunden
+(`paketcheck 41 1..7` Abschnitt A unveraendert bei den bekannten,
+bereits geprueften Tempus-/Numerus-Varianten — neu dazu `divulgare`,
+ebenfalls nur Tempus).
