@@ -13640,3 +13640,285 @@ bewusste Kollisionsvermeidung im selben Vers begruendet.
 `selfcheck`/`validate`/`verschmelzung A`/`qa` je 0, `glosskollision` 11
 Paare (Klassenfaelle), `paketcheck 41 1..12` Abschnitt A keine neuen
 echten Ausreisser (Tempus-/Synonymvarianten).
+
+---
+
+# Marco 13 (die kleine Apokalypse — Zerstoerung des Tempels · Endzeitrede · Feigenbaum-Gleichnis · Wachsamkeit)
+
+*Angehaengt vom Agenten fuer Marco 13 (Paket 13-15, allein gelaufen — kein
+Geschwisterkapitel lief gleichzeitig). Hoechste gesehene Nummer beim
+Anhaengen war 391; ich zaehle bei 392 weiter. 37 Verse, 668 Tokens,
+702 Eintraege (35 Mehrwort). Matteo ist vollstaendig, Marco 1-12 stehen;
+die Synoptiker-Parallelen (`parallelen_41_13.md`) trugen fuer 31 von 37
+Versen, alle 31 bereits mit Glossen in der Vorlage.*
+
+## 392 · Mehrwoerter, die Marco 13 praegt
+
+Fortschreibung von Reihe 8 · 18 · 25 · 31 · 39 · 51 · 58 · 64 · 71 · 89 ·
+99 · 106 · 119 · 132 · 140 · 153 · 160 · 170 · 187 · 196 · 206 · 224 ·
+234 · 244 · 265 · 274 · 288 · 304 · 322 · 331 · 339 · 362 · 372 · 382.
+Drei sind echt neu (`fixgloss.py show` gegen den vollen Bestand
+geprueft, kein Treffer); der Rest uebernimmt zeichengleich, vor allem
+aus Matteo 10 (Aussendungsrede) und Matteo 24-25 (die Endzeitrede
+selbst), die diesem Kapitel Wort fuer Wort am naechsten stehen.
+
+    13,9   voi stessi        A2  euch selbst · yourselves · vosotros mismos ·
+                                 vous-mêmes                 (← Matteo 23,31 u. a.)
+    13,11  quello che        A2  das, was · what · lo que · ce que
+    13,11  ciò che           A2  das, was · what · lo que · ce que
+    13,11  essere voi a parlare  B2  ihr seid es, die reden · it is you who
+                                 speak · sois vosotros los que habláis ·
+                                 c'est vous qui parlez        (← Matteo 10,20,
+                                 Reihe 99 — im ersten Entwurf uebersehen,
+                                 erst `folgencheck --gegen` hat die Luecke
+                                 gefunden, siehe Reihe 399)
+    13,19  fino a            A2  bis · until · hasta · jusqu'  (← Matteo 24,21,
+                                 dieselbe Wendung „fino ad ora"; ebenfalls erst
+                                 durch `folgencheck --gegen` nachgetragen)
+    13,23 · 13,33  state attenti  B1  seid wachsam · watch · estén atentos ·
+                                 soyez attentifs             (NEU — kein
+                                 Praezedenzfall im Bestand; `attento` selbst
+                                 ist ein neues Lemma. Englisch bricht hart
+                                 auf ein einziges Wort, „watch" — Reihe 56/85)
+    13,11  in anticipo       B1  im Voraus · beforehand · de antemano ·
+                                 à l'avance                  (NEU — bricht in
+                                 allen vier Sprachen: „im Voraus" ist im
+                                 Deutschen die einzige zusammengesetzte
+                                 Form, en/es/fr wechseln die Praeposition)
+
+**Drei neue Lemmata ohne Mehrwort, aber mit eigener Reihe, weil sie das
+Kapitel praegt:** `abominio` C1 (`l'abominio della desolazione`, ELISION,
+Kopf `abominio` — anders als `abominazione` C1 in Matteo 24,15, ein
+eigenes italienisches Wort fuer dieselbe Sache, Reihe 12/1 angewandt,
+nicht dasselbe Lemma); `autorità` B1 (`l'autorità`, ELISION); `portinaio`
+B2 (kein Praezedenzfall, `Türhüter · doorkeeper · portero · portier`).
+
+## 393 · Was Marco 13 bewusst KEIN Mehrwort bekommt
+
+- **„e chi si trova" (13,15 · 13,16) — die Vorbereitung warnte zu
+  Recht.** `bindungen_41_p13_14_15.md` listete das als PRAEGT-Kandidat,
+  aber mit dem Hinweis, dass der Bestand `trovarsi` (5×) und `a chi` (5×)
+  bereits fuehrt. Am Vers gemessen ist es keine atomare Wendung: `chi`
+  bleibt das eigene Wort „wer" (A1, bereits 25-fach belegt), `si trova`
+  ist der Reihe-6-Fall — ein pronominales Verb, das seinen Mehrworteintrag
+  auf `trovarsi` traegt (B1, „sich befindet"). Kein eigener Eintrag fuer
+  die Dreierfolge; die Zerlegung deckt sie vollstaendig.
+- **„perché non sapete quando" (13,33 · 13,35)** ist reine Wort-fuer-Wort-
+  Kompositionalitaet in allen vier Sprachen — kein Bruch, kein Eintrag.
+  Die vier Einzelglossen sind zwischen beiden Versen identisch gehalten
+  (Vorgabe der Paketbindung), das war der einzige Zweck der PRAEGT-
+  Meldung.
+- **„andarono a cercarlo"-Typ gibt es hier nicht**, aber dieselbe
+  Vorsicht gilt bei `faccia attenzione` (13,14): `fare` + `attenzione`
+  geht in allen vier Sprachen wortweise auf, sobald `fare` die
+  Aufforderungslesart „gebe/pay/preste/fasse" traegt (Reihe 56/85 zaehlt
+  hier NICHT — kein Bruch).
+- **„un uomo che" (13,34) bleibt kompositionell**, zeichengleich mit
+  Matteo 4,26/25,14 — kein Idiombruch.
+
+## 394 · Homographen und Lemmasplits in Marco 13
+
+Nach Reihe 5 · 15 · 46 · 66 · 73 · 93 · 109 · 135 · 143 · 162 · 175 ·
+212 · 238 · 246 · 268 · 279 · 292 · 309 · 326 · 335 · 343 · 365 · 376 ·
+384.
+
+- **`posto` (13,14, „posto dove non deve stare") ist das Partizip von
+  `porre` (setzen/stellen), attributiv — eigenes Lemma `posto`,
+  getrennt vom bereits gefuehrten `posto (sostantivo)` B1 („Platz",
+  Matteo 2,22 u. a.).** Zwei verschiedene Woerter, `sweeplemma.py`
+  meldet den Fall zu Recht als Verdacht; die Pruefung am Vers bestaetigt
+  die Trennung — kein Klammerzusatz noetig, die Lemmata trennen schon
+  (Reihe 12).
+- **`abbreviare` (13,20, „avesse abbreviato" / „ha abbreviato") ist
+  aktives avere-Perfekt → Lemma auf dem Infinitiv, getrennt vom
+  bestehenden `abbreviato` B2 (Passiv, „fossero abbreviati", Matteo
+  24,22).** Derselbe Fall wie `guarire`/`guarito` (Reihe 341) und
+  `tagliare`/`tagliato` (Reihe 376) — hier zum dritten Mal.
+- **`creare` (13,19, „Dio ha creato") ist ebenfalls aktives
+  avere-Perfekt → Infinitiv-Lemma**, mit der Glosse des bereits
+  gefuehrten `creare` B1 (Matteo 19,4, dort einfaches Praeteritum)
+  uebernommen — dasselbe Lemma passt hier schon, kein Split noetig.
+- **`percosso` (13,9, „sarete percossi") ist echtes Passiv → Lemma die
+  Partizipform**, neu (kein Praezedenzfall fuer `percuotere` im
+  Passiv — nur die aktive Form B2 aus Matteo 24,49 stand schon da).
+
+## 395 · Was die Synoptiker-Parallelen getragen haben — und wo Marco anders liest
+
+`parallelen_41_13.md` nennt 31 von 37 Versen mit einer Parallelstelle ab
+4 gemeinsamen Tokens, **alle 31 bereits mit Glossen** — der bisher
+hoechste Anteil im Buch, weil diese Rede in Matteo 10 und 24-25 fast
+wortgleich vorliegt. Mehrere Bloecke decken den ganzen Vers
+(13,12 ← Matteo 10,21, 91 % Aehnlichkeit; 13,13 ← Matteo 10,22, 92 %;
+13,28 ← Matteo 24,32, 100 %; 13,31 ← Matteo 24,35, 100 %).
+
+**Wo Marco bewusst NICHT zeichengleich mit der naheliegenden Parallele
+geht:**
+
+- **13,1 `Maestro` traegt fr/en die Mehrheitslesart `Meister`/`Teacher`,
+  nicht die Marco-11,21-Reihe `Meister`/`Rabbi`.** Der Bestand fuehrt
+  `Maestro` 28-fach ueberwiegend als `Meister/Teacher/Maestro/Maître`
+  (22 von 28) — 11,21 ist mit `Rabbi` die Ausnahme, an dieser Stelle
+  vom Zeugen selbst getragen (WEB uebersetzt Mark 11:21 tatsaechlich
+  mit „Rabbi", Mark 13:1 dagegen mit „Teacher"). Genau die Regel aus
+  dem Prompt-Baustein („der Zeuge fuer den eigenen Vers gilt vor der
+  Parallelenempfehlung", Reihe 333 an neuer Stelle) — hier am
+  englischen Zeugen gemessen, nicht am franzoesischen wie in Reihe 333.
+  **Wert fuer den Koordinator:** ob 11,21s `Rabbi` seinerseits ein
+  Ausreisser ist oder bewusst so steht, habe ich nicht gepruft — es
+  liegt ausserhalb meines Kapitels.
+- **13,9 `sarete percossi` (Passiv) ersetzt Matteo 10,17s `vi
+  flagelleranno` (Aktiv) — anderes Verb, andere Diathese**, keine
+  Uebernahme moeglich; `ai tribunali`/`nelle sinagoghe` davor sind
+  dagegen zeichengleich aus genau diesem Vers uebernommen.
+- **13,12 `il fratello ... a morte` steht in Marco NACH dem zweiten
+  `fratello`, in Matteo 10,21 DAVOR** (`consegnerà a morte il
+  fratello`) — umgekehrte Wortstellung im Quelltext selbst. Die
+  Einzelglossen bleiben trotzdem identisch (`a`→„dem/to/a/à",
+  `morte`→„Tod/death/muerte/mort"), nur ihre Position im Satz
+  verschiebt sich; kein Fehler, reine Wortstellung.
+- **13,19 `che Dio ha creato` (13,19) und `che il gallo canti` (14,30)
+  sind Erweiterungen, die Matteo an denselben Stellen nicht hat** —
+  eigene Glossen, keine erzwungene Uebernahme.
+- **13,14 `posto dove non deve stare` ersetzt Matteo 24,15s `posta nel
+  luogo santo` komplett** — andere Konstruktion (Ort durch Relativsatz
+  statt durch Nomen), nur `posto`/`posta` teilen das Lemma (Genus
+  angepasst).
+
+## 396 · Das subjektlose Verb in Marco 13 — Reihe 300 · 308 angewandt
+
+Zwei klare Faelle, ein Grenzfall bewusst nicht markiert:
+
+    13,27  manderà     er wird senden · he will send · enviará · il enverra
+                        (Subjekt „il Figlio dell'uomo" steht nur im
+                        VORIGEN Vers, 13,26 — Satz ueber die Versgrenze,
+                        Reihe 324; das zweite Verb desselben Satzes,
+                        `raccoglierà`, bekommt KEIN wiederholtes
+                        Pronomen — ein Subjekt traegt zwei koordinierte
+                        Verben)
+    13,20  ha (zweites) hat er · he has · ha · il a
+                        („ha abbreviato quei giorni", zweiter
+                        Hauptsatz nach Semikolon ohne eigenes Subjekt;
+                        „il Signore" steht nur im ERSTEN Hauptsatz
+                        desselben Verses)
+
+**Spanisch bekommt in beiden Faellen nichts** (Reihe 300).
+`si vedrà` (13,26) ist dagegen KEIN Fall von Reihe 300 — es ist
+passivierendes `si` (Reihe 7), kein subjektloser Hauptsatz; `si` selbst
+traegt die Glosse `man/they/se/on`.
+
+## 397 · Stehengelassene Kollisionen in Marco 13
+
+`glosskollision.py --datei 41 13` endet auf **4 inhaltliche Paare** (2
+in nur einer Sprache) und **12 aus geschlossenen Wortarten**. Vier echte
+Treffer vorher aufgeloest (alle im Kollisionsvers):
+
+    13,11  ciò / quello, de beide 'das'   → quello auf de 'dasjenige'
+           gezogen (Reihe-8/15-Konvention aus Matteo 10,19 selbst
+           uebernommen, im ersten Entwurf uebersehen)
+    13,37  lo / Quello, es beide 'lo'/'Lo' → Quello (individuell, innerhalb
+           von `quello che`) auf die etablierte Reihe „Aquello/The
+           one/Dasjenige/Cela" gezogen
+    13,14  allora / poi, de+en beide 'dann'/'then' → poi auf
+           'danach/afterward/luego/ensuite' gezogen — echte Synonymie
+           zweier verschiedener italienischer Woerter im selben Vers
+
+Stehen bleiben, alle in bekannten Klassen (Reihe 13 · 36 · 53 · 61 · 67 ·
+94 · 136 · 146 · 178 · 271 · 327):
+
+- **13,19 `ha`/`n'è`, fr beide 'a'** — `avere` 3.Sg. und die
+  franzoesische `esserci`-Form treffen sich grammatisch auf derselben
+  Zeichenkette; keine Zielsprache trennt hier, echt unvermeidlich.
+- **13,32 `il`/`lo`, fr beide 'le'`** — Artikel gegen Objektklitikon,
+  die Klasse aus Reihe 36 · 53 · 61 · 67 · 327.
+- **13,11/13,23 `vi`/`voi`, en/fr** — Objektklitikon gegen betontes
+  Pronomen, dieselbe Klasse.
+- **13,35 `al`/`di`, de/fr** — zwei Zeitangaben („am Abend"/„um
+  Mitternacht" — 'am'/'au') im selben Vers, unvermeidlich.
+
+## 398 · Der Bestand hat sich waehrend meines Laufs geaendert — zwei Korrekturen nachgezogen
+
+Der Prompt-Baustein warnt ausdruecklich davor („Jede Messung traegt
+ihren Stand im Kopf... miss die Reihen vor der Abgabe noch einmal
+nach") — und genau das ist eingetreten. Ich hatte `13,12` fruehzeitig
+aus der Vorbereitungsdatei `parallelen_41_13.md` zeichengleich mit
+Matteo 10,21 gesetzt (`figlio`→„Kind/child", `i`→„Kinder/Children",
+`figli`→„Kinder/children"). Ein `fixgloss.py verse 40 10 21` kurz vor
+Abgabe zeigte einen ANDEREN, bereits korrigierten Stand: `figlio`→
+„Sohn/son/hijo/fils", `i`→„die/the/los/les", `figli`→
+„Kinder/children/hijos/enfants" — offensichtlich hat der Koordinator
+oder ein anderer Lauf Matteo 10,21 zwischen meiner Vorbereitung und
+meiner Abgabe korrigiert. Auf den aktuellen Stand gezogen. **Wert fuer
+den Koordinator:** die Vorbereitungsdatei ist ein Foto vom Start des
+Laufs — bei einem so langen Kapitel wie diesem lohnt sich der
+`fixgloss.py verse`-Gegencheck der laengsten zeichengleichen Bloecke
+unmittelbar vor der Abgabe, nicht nur einmal am Anfang.
+
+## 399 · Befunde an der Werkzeugkette (Nachtrag aus Marco 13)
+
+Fortschreibung von Reihe 14 · 21 · 30 · 37 · 44 · 54 · 62 · 68 · 75 · 84 ·
+95 · 104 · 115 · 127 · 139 · 148 · 169 · 181 · 194 · 204 · 217 · 232 ·
+242 · 255 · 273 · 286 · 298 · 317 · 330 · 338 · 347 · 368 · 379 · 389.
+
+1. **`folgencheck --gegen` hat zwei fehlende Mehrwoerter gefunden, die
+   `sweeplemma.py`, `mehrwort.py` und der eigene `--min 3`-Lauf alle
+   uebersehen haben**: `essere voi a parlare` (13,11, Reihe 99) und
+   `fino a` (13,19, mehrheitlich als Mehrwort gefasst). Beide waren im
+   ersten Entwurf als vier bzw. zwei Einzelglossen gesetzt — grammatisch
+   nicht falsch, aber nicht zeichengleich mit der bestehenden Reihe. Der
+   `--gegen`-Lauf bleibt damit das schaerfste Werkzeug fuer genau diese
+   Fehlerklasse (Reihe 338.2 bestaetigt erneut).
+2. **`elision.py --datei` fand sechs echte Stellen** (alle korrigiert:
+   `il`→`l'` vor *évangile*, `di`→`d'` vor *une*, drei `non`→`n'… pas`
+   vor Vokal) und liess einen begruendeten Rest stehen: `io`→`je` vor
+   `et` — „je" elidiert im Franzoesischen nur vor einem folgenden Verb
+   (oder *y*/*en*), nicht vor der Konjunktion *et*; der Fall entsteht,
+   weil das Einzeltoken `io` innerhalb des Mehrworts `sono io` liegt und
+   in der laufenden Kette eigentlich nie direkt neben `et` zu stehen
+   kommt — dieselbe Klasse wie Reihe 328s `mandò via`-Fall (der Rest
+   ist ein Artefakt der Einzeltoken-Pflichtangabe neben dem Mehrwort,
+   nicht der echten Wortfolge).
+3. **`verschmelzung.py --verdacht` nannte eine Stelle, und die
+   Nullantwort war richtig**: `nelle` (13,9, „sarete portati... nelle
+   sinagoghe") bleibt ohne bestimmten Artikel in allen vier Sprachen —
+   generische Synagogen, kein bestimmter Bezug (der englische Zeuge
+   selbst hat „in synagogues", nicht „in the synagogues").
+4. **`levelcheck.py`s Meldungsrichtung ist leicht zu verwechseln.** Bei
+   der ersten Korrektur habe ich `usciva` faelschlich von A2 auf A1
+   gesetzt, weil ich „A1 gegen A2" als „meins sollte A1 sein" gelesen
+   habe — es bedeutet aber „meins ist A1, der Bestand sagt A2". Zweiter
+   Blick, richtig korrigiert. **Wert fuer kuenftige Kapitel:** die
+   Ausgabe nennt IMMER zuerst den eigenen, dann den Bestandswert — das
+   gehoert klarer in den naechsten Prompt-Baustein.
+5. **`sweeplemma.py` fand den einzigen echten Homographen-Fall** (`posto`
+   gegen `posto (sostantivo)`, Reihe 394) und bestaetigte sonst nur
+   erwartete Neubildungen (neue Konjugationen bestehender Mehrwort-
+   Lemmata wie `trovarsi` im Praesens, `stare per` im 3. Pl. Futur) —
+   keine davon war ein Fehlgriff.
+6. **`kongruenz.py` und `artikel.py` bestaetigen weiterhin ihre duenne
+   Referenz** (0 Verdachtsfaelle bei 196 Nomenformen mit ≥5 Belegen);
+   `paketcheck.py` faellt hier weg (kein Geschwisterkapitel im Lauf,
+   wie im Auftrag vorgegeben).
+7. **Der Prompt hat eine Zahl genannt, die der Quelltext bestaetigt,
+   und eine, die er leicht korrigiert.** 37 Verse und 668 Tokens gegen
+   `text.split()` stimmen exakt; „28 noch nicht belegte Wortformen"
+   (`hints_41_13.md`) und „31 Parallelstellen" (`parallelen_41_13.md`)
+   stimmen gegen die Dateien. Die im Prompt-Baustein zitierte Zahl „31
+   von 37 Versen ... davon 31 mit Glossen" traf zum Zeitpunkt meines
+   Laufs noch zu — siehe aber Reihe 398 fuer die Stelle, an der sich
+   der Bestand selbst zwischen Vorbereitung und Abgabe geaendert hat.
+
+## 400 · Marco 13 eingesammelt — Marco jetzt 13 von 16 Kapiteln
+
+37 Verse, 668 + 35 Eintraege. Agent vollstaendig durchgelaufen, sehr
+gruendlicher Bericht (Reihen 392-399): der eine verbliebene
+Elisionsrest (13,6 `io` vor `et`) ist derselbe Artefakt-Typ wie Reihe
+328 (`mandò via`) — das Einzeltoken neben einem Mehrwort steht nie
+wirklich neben dem naechsten laufenden Wort — **ungepruft
+uebernommen, nicht angefasst**, richtig so. `paketcheck 41 1..13`
+Abschnitt A/B nur bekannte Tempus-/Kontextvarianten, keine neuen
+Ausreisser. `selfcheck`/`validate`/`verschmelzung A`/`qa` je 0.
+
+Bemerkenswert (Reihe 399.4): der Agent hat `levelcheck.py`s
+Meldungsrichtung zunaechst verwechselt („A1 gegen A2" als „meins soll
+A1 werden" statt „meins ist A1, Bestand sagt A2" gelesen) und es
+selbst bemerkt und korrigiert, bevor er abgab.
