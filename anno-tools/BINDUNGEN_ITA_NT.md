@@ -12520,3 +12520,59 @@ begruendeter Verdacht (`sommo`, Grad-Frage) · `hilfsverb` 0 ·
 geschlossene Wortarten · `elision` 0 · `verschmelzung` A 1 richtige
 Null (`des Donners`) · `folgencheck --min 3` 50/10, keine neuen
 Auffaelligkeiten. Reihen 339-347 vom Agenten, 348-349 beim Einsammeln.
+
+## 350 · Marco 4 und 5 eingesammelt — beide Agenten am Nutzungslimit abgebrochen
+
+Beide Agentenlaeufe wurden vom Sitzungslimit beendet, bevor sie ihren
+Bericht schreiben und die Bindungen anhaengen konnten — die Abgabedateien
+selbst waren aber fertig und vollstaendig (`selfcheck` beide 0). Ich habe
+die Pruefkette und die Korrekturen deshalb selbst gefahren, ohne die
+Begruendungen des Agenten. Reihen 350-353 fassen zusammen, was zu tun war.
+
+**Marco 4** (41 Verse, 779 + 27 Eintraege): drei Korrekturen beim
+Einsammeln.
+1. **Elision an 4,24** (`che` fr vor `entendez`) — auf `qu'` gesetzt.
+2. **`stiamo per affogare` (4,38)** — der Agent hatte die ganze Wendung
+   auf das Funktionswort `per` gehaengt (`per` allein trug `sur le point
+   de`/`a punto de`) statt sie wie die sechs bestehenden `stare per`-Belege
+   gleichmaessig auf `stare` und `per` zu verteilen. Auf das Muster von
+   `sto per`/`sta per` gebracht (`stiamo` → `sind`/`vamos`/`allons`, `per`
+   → `im Begriff`/`a`/`bientôt`); danach eine Folgeelision an 4,38
+   (`che` vor `allons`) mit korrigiert.
+3. **`si convertano` (4,12)** fehlte als Mehrwort — Matteo 13,15 (dieselbe
+   Jesaja-Stelle, wortgleich) traegt sowohl das Mehrwort `si convertano`
+   → `convertirsi` als auch das Einzelwort `convertano` → `convertire`
+   getrennt. Marco 4,12 hatte nur die Einzelglosse, mit dem falschen
+   Lemma `convertirsi` darauf. Nachgetragen und korrigiert — jetzt
+   zeichengleich mit Matteo 13,15.
+
+**Marco 5** (43 Verse, 797 + 34 Eintraege): vier Korrekturen.
+1. **Elision an 5,7** (`Ti` fr vor `adjure`) → `t'`.
+2. **Elision an 5,29** (`di` fr vor `était`) → `qu'`.
+3. **`se non` an 5,37** trug `si ce n'est` statt des in zehn Belegen
+   durchgehenden `sinon`/`sauf` (Reihe: gleiche Wendung, gleiche
+   Uebersetzung wo moeglich) — auf `sinon` vereinheitlicht, das
+   Einzelwort `non` auf die Bestandskonvention `ne… pas` gebracht (die
+   Reste-Klasse aus Matteo 17,8 — ein Platzhalter, der bewusst nicht
+   elidiert wird, siehe dortiges Vorbild).
+4. **`voltarsi` an 5,30** trug de `wandte sich` gegen zwei bestehende
+   Belege mit `drehte sich um` (Matteo 9,22, 16,23) — en/es/fr trafen
+   bereits exakt. Auf `drehte sich um`/`drehte` vereinheitlicht.
+
+## 351 · Ein Reihe-5-Ausreisser in Matteo gefunden und behoben (unabhaengig von Marco)
+
+Matteo 27,19 `sofferto` (`ho sofferto molto oggi in sogno`, Pilatus'
+Frau) ist ein avere-Perfekt (aktiv) wie die neue Bildung in Marco 5,26
+(`aveva sofferto`) — nach Reihe 5 gehoert das Lemma auf den Infinitiv
+`soffrire`, stand aber auf der Partizipform `sofferto`. Beim Vergleich
+mit Marco 5,26 aufgefallen und korrigiert; derselbe Fehlertyp wie
+Reihe 316.2 (`radunati`, 26,57).
+
+## 352 · Marco 6 — zweiter Anlauf nach zwei Rate-Limit-Abbruechen
+
+Der erste Sechser-Batch (Marco 4,5,6, 3 parallel) und danach nochmal
+Marco 4,5,6 einzeln neu gestartet sind beide am Sitzungslimit
+(5-Stunden-Fenster, nicht das Wochenbudget) gescheitert; Marco 4 und 5
+hatten ihre Abgabe schon geschrieben (siehe Reihe 350), Marco 6 nicht.
+Dritter Anlauf fuer Marco 6 laeuft **allein**, nicht mehr parallel, bis
+sich die Kapazitaet wieder klarer zeigt.
