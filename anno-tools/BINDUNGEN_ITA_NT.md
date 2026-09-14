@@ -14306,3 +14306,22 @@ eigener Kapitel.
 
 Der Bestand fuehrt jetzt **5128 Wortformen** und deckt Luca (naechstes
 Buch, 42) entsprechend besser ab, als Marco es zu Buchbeginn vorfand.
+
+## 422 · Lukas 1 eingesammelt — erstes Kapitel des dritten Evangeliums
+
+80 Verse, 1317 + 78 Eintraege — eines der laengsten NT-Kapitel.
+Agent kam bis kurz vor der Endverifikation, dann Sitzungslimit;
+Abgabe war vollstaendig und sauber (`selfcheck` 0). Acht
+sweeplemma-Verdachtsfaelle geprueft: alle korrekte Homographen-
+Splits oder Reihe-5-Anwendungen (u. a. `innalzare` aktiv gegen das
+bestehende `innalzato` passiv — derselbe Mechanismus wie `guarire`/
+`guarito`), keine Korrektur noetig.
+
+**Ein Genus-Ausreisser gefunden**: `nacimiento` es ist maskulin
+(`el nacimiento`) — Luca 1,14 trug feminin gegen Matteo 1,18.
+Korrigiert (14. Fall dieser Klasse seit Projektbeginn).
+
+`validate`/`elision`/`kongruenz`/`hilfsverb`/`mehrwort`/`qa` je 0,
+`verschmelzung A` 1 richtige Null, `glosskollision` 5 inhaltliche
+Paare (Klassenfaelle) + 45 geschlossene Wortarten (viele `davanti`-
+Praeposition, typisch fuer den gehobenen Lukas-Stil).
