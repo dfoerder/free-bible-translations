@@ -14150,3 +14150,159 @@ Possessiv.
 
 `selfcheck`/`validate`/`verschmelzung A`/`qa`/`kongruenz`/`hilfsverb`
 je 0 bzw. erwartete Nullen, `glosskollision` 10 Paare (Klassenfaelle).
+
+---
+
+# Marco 16 (Auferstehung · das leere Grab · die Erscheinungen · der Missionsbefehl · Himmelfahrt)
+
+*Angehaengt vom Agenten fuer Marco 16 — das letzte Kapitel des Buches.
+Hoechste gesehene Nummer beim Anhaengen war 412; ich zaehle bei 413
+weiter. 20 Verse, 380 Tokens, 392 Eintraege (12 Mehrwort). Mit diesem
+Kapitel ist Marco vollstaendig, 16 von 16 Kapiteln.*
+
+## 413 · Mehrwoerter, die Marco 16 praegt
+
+Fortschreibung von Reihe 8 (Kausativ) · 65 (Verb + `via`) · 382 u. a.
+Ein Mehrwort ist echt neu: **`far rotolare via`** (16,3, „Chi ci farà
+rotolare via la pietra?" = „Wer wird uns den Stein wegwälzen?"), B2 —
+es verbindet den Kausativ-Zweig aus Reihe 8 (`far`/`farà` + Infinitiv)
+mit dem Direktional-Zweig aus Reihe 65 (Verb + `via`). Der Bestand
+fuehrte beide Bauarten bisher getrennt: `far rotolare` OHNE `via`
+(Matteo 27,60 · Marco 15,46 — den Stein VOR das Grab waelzen) und
+`rotolare via` OHNE Kausativ (Matteo 28,2 — der Engel waelzt selbst,
+kein `far`). 16,3 braucht beides zugleich. Die Einzelwoerter
+`farà`/`rotolare`/`via` bleiben woertlich daneben (Reihe 401).
+
+Die uebrigen elf Mehrwoerter uebernimmt der Bestand zeichengleich:
+`dirsi`/`tra loro` (← 10,26), `avere paura` (← 9,32/10,32), `quello
+che` (bare Plural, 3×: 16,10 · 16,14 · 16,17, ← 14,21 u. a.), `il
+quale` (Plural `i quali`, 16,10, ← 6,7/9,4), `essere in lutto` (←
+Matteo 9,15), `a tavola` (← 14,18), `sedersi` (← Matteo 28,2 u. a.).
+**`più tardi`** (16,14, NEU, B1, „Schließlich · Afterward · Por
+último · Enfin") ist die Ausnahme: alle vier Zeugen loesen mit
+„endlich/zuletzt" auf, keiner mit dem woertlichen „mehr spät".
+
+## 414 · `mattina del primo giorno della settimana` — 16,2 legt fest
+
+Die Fuegung als Ganzes steht zum ersten Mal im Buch (Marco erzaehlt
+die Auferstehung eigenstaendig), aber jedes Einzelwort ist ueber
+Matteo 28,1 bereits gebunden (`primo giorno della settimana`,
+einstimmig `ersten/first/primer/premier` · `Tages/day/día/jour` ·
+`der/of the/de la/de la` · `Woche/week/semana/semaine`). Das
+Achtung-Signal aus der Vorbereitung (Bestand fuehrt `prima di` 5×) ist
+ein Fehlalarm: `prima` (Adverb „zuerst", 16,9) und `primo`
+(Ordinalzahl „erste", 16,2 · 16,9) sind verschiedene Woerter, keine
+Ueberschneidung mit dieser Fuegung — geprueft und verworfen, bevor
+geglosst wurde. 16,9 uebernimmt die Fuegung zeichengleich aus 16,2.
+
+## 415 · `posto`/`porre` — Reihe 5 an einem versteckten Homographen
+
+16,6 „Ecco il luogo dove lo avevano posto" sieht wie das
+Bestandsnomen `posto (sostantivo)` aus — genau die Kollision, die
+`hints_41_16.md` mit `luogo` vorhersagte —, ist aber das aktive
+avere-Perfekt von `porre` („legen"): „sie hatten [ihn] gelegt". Nach
+Reihe 5 Zweig 1 gehoert das Lemma auf den Infinitiv `porre`, nicht auf
+`posto`. Dieselbe Analyse loest die gemeldete Kollision von selbst
+auf: `posto` ist in diesem Vers gar kein Nomen, sie entsteht nicht.
+
+Analog, alle drei erst am Vers erkannt: `scacciato` (16,9, „aveva
+scacciato" = aktives Perfekt) → Lemma `scacciare`, nicht `scacciato`;
+`visto` (16,11, „era stato visto" = echtes Passiv) → **neues**
+Partizip-Lemma `visto`, getrennt vom aktiven `vedere` (16,14, „lo
+avevano visto" = aktiv → `vedere`) — derselbe Vers-fuer-Vers-Schnitt
+wie `guarire`/`guarito` (Reihe 341) und `tagliare`/`tagliato` (Reihe
+376), hier zum ersten Mal an `vedere`/`visto` angewandt; `danno`
+(16,18, Nomen „Schaden") ist ein reiner Zeichenketten-Zufall gegen die
+3.-Pl.-Form von `dare` („sie geben") — zwei verschiedene Woerter,
+keine Korrektur noetig (Reihe 12).
+
+## 416 · Das subjektlose Verb in Marco 16 — Reihe 300/308 an Satzgrenzen
+
+`apparve` steht dreimal mit unterschiedlichem Subjektstatus: 16,9
+nennt „Gesù" im selben Satz (kein Pronomen, zeichengleich mit dem
+Bestand); 16,12 und 16,14 eroeffnen dagegen neue Saetze ganz ohne
+genanntes Subjekt — dort verlangt Reihe 300 das Pronomen (de „erschien
+er" · en „he appeared" · fr „il apparut"; Spanisch bleibt ohne). Genau
+derselbe Verbstamm, zwei verschiedene Loesungen, weil der Satz
+entscheidet, nicht das Wort.
+
+## 417 · Was die Matteo-28-Parallele getragen hat — und ein Fehlgriff, der sie fast verfehlt haette
+
+`parallelen_41_16.md` nennt 8 von 20 Versen mit einer Parallelstelle
+ab 4 gemeinsamen Tokens (alle 8 bereits mit Glossen), vor allem
+Matteo 27,56 · 28,1 · 28,2 · 28,7 (dieselbe Ostergeschichte).
+`folgencheck --gegen 40 … --min 5` fand zwei zunaechst uebersehene
+Anpassungen an 16,7: `precede` fehlte das Pronomen (Reihe 416 traegt
+hier nicht automatisch, weil `che` grammatisch das Subjekt ist — die
+Matteo-28,7-Parallele setzt es trotzdem, und ich bin ihr gefolgt); und
+`a dire` trug „sagen/say" statt der Matteo-28,7-Lesart „sagen/tell"
+mit franzoesisch `pour` statt `à` (Zweck-Infinitiv, staerker
+markiert). Beide auf die Bestandsreihe gezogen.
+
+## 418 · Stehengelassene Kollisionen in Marco 16
+
+`glosskollision.py --datei 41 16` endet auf **2 inhaltliche Paare**
+(beide in nur einer Sprache) und **10 aus geschlossenen Wortarten** —
+alle in den bekannten Klassen (Reihe 27/36/53/61/67/327): `essi`/
+`loro` es beide *ellos* (Subjektpronomen gegen Praepositionalobjekt-
+Pronomen, 16,20), `le`/`lei` de/en *ihr*/*her* (Dativklitikon gegen
+betontes Pronomen, 16,11). Keine davon ist aufloesbar, ohne eine der
+beiden Glossen grammatisch falsch zu machen.
+
+## 419 · Marco 16 abgeschlossen — Marco vollstaendig, 16 von 16 Kapiteln
+
+20 Verse, 380 + 12 Eintraege. `selfcheck`/`levelcheck`/`sweeplemma`
+(0 ungedeckte Signaturen, 6 begruendete Homographen-Faelle, Reihe 415)/
+`kongruenz`/`artikel` (0 im Kapitel; zwei buchuebergreifende
+gespaltene Nomen — `mañana` es, `parole` fr — ausserhalb des Kapitels
+notiert, nicht neu)/`mehrwort`/`hilfsverb`/`elision`/`verschmelzung A`/
+`qa` je 0 nach Korrektur. `folgencheck --min 3` und `--gegen` je
+gepruft, die echten Funde gezogen (Reihe 416 · 417), der Rest sind
+grammatisch begruendete Kasus- oder Funktionsunterschiede
+(dokumentiert, nicht korrigiert).
+
+## 420 · Marco 16 eingesammelt — die vom Prompt verlangte Buchabschluss-Reflexion fehlte, hier nachgetragen
+
+Der Agent hat den Zusatzauftrag „nenne, was dir beim Lesen der Reihen
+322-412 als offen oder widerspruechlich aufgefallen ist" nicht
+beantwortet — sein Bericht deckt nur sein eigenes Kapitel (Reihen
+413-419, alle vier Pflichtlaeufe sauber, keine Korrektur beim
+Einsammeln noetig). Ich trage die Reflexion hier als Koordinator nach,
+gemessen statt erinnert:
+
+1. **Reihe 316/321 aus Matteo (drei offene Punkte, "gelten fuer Marco
+   weiter") sind durch Marco NICHT systematisch, sondern nur einzelfall-
+   weise beantwortet worden** — genau wie vorgesehen: Reihe 386 (Marco
+   12) und Reihe 416 (Marco 16) haben das subjektlose Verb im Neben-
+   satz je am eigenen Vers entschieden, ohne eine buchweite Regel zu
+   erzwingen. Reihe 97s zweiter Teil (Entdoppelung nur im Franzoesischen)
+   und Reihe 243s `esserci`-im-Relativsatz-Frage sind **in Marco kein
+   einziges Mal aufgetreten** — bleiben fuer Luca/Giovanni offen.
+2. **`se stesso`/`sé stesso`** (Reihe 382, Marco 12): zwei Schreibungen
+   desselben Reflexivpronomens stehen im Bestand nebeneinander, noch
+   nicht entschieden, ob sie ein Lemma teilen sollten. Mit einem
+   weiteren Beleg in Luca/Giovanni zu klaeren.
+3. **Zwei gespaltene franzoesische Genera bleiben unbehoben** (`chemin`
+   19/1, `parole` 1/19) — dafuer laeuft seit Reihe 348 eine
+   Hintergrundaufgabe (`task_297037b3`), noch nicht ausgefuehrt.
+4. **Alle anderen bis Marco 15 offenen Fragen (Reihe 333s `Seigneur`-
+   Nachpruefung an Matteo 12,8, Reihe 375s Quantor-Ausnahme, Reihe
+   407/409 zu `quelli che`) sind erledigt oder dokumentiert**, keine
+   neuen aufgetreten.
+
+## 421 · Marco vollstaendig — 16 von 16 Kapiteln
+
+678 Verse, 13 155 Eintraege (12 595 Einzelwort + 560 Mehrwort).
+**12 595 Tokens gegen `text.split()` — exakt der im NT-Plan
+vorausberechnete Wert, keine Abweichung ueber 16 Kapitel.**
+`validate`/`selfcheck`/`elision`/`verschmelzung A`/`qa`/`kongruenz`/
+`hilfsverb` je 0 ueber das ganze Buch. `artikel` 5 gespaltene Nomen
+(2 benigne Possessiv-/Wortwahl-Fehlalarme des Werkzeugs, 2 mit
+Hintergrundaufgabe fuer Matteo offen, 1 fuer Marco selbst geprueft und
+korrekt). **13 alte Bestandsfehler** (Genus/Perfektlemma) wurden ueber
+den wachsenden Bestand sichtbar und behoben (Reihe 348/351/354/357/
+360/363/370/380/410/412) — davon 11 in Matteo, 2 innerhalb Marcos
+eigener Kapitel.
+
+Der Bestand fuehrt jetzt **5128 Wortformen** und deckt Luca (naechstes
+Buch, 42) entsprechend besser ab, als Marco es zu Buchbeginn vorfand.
