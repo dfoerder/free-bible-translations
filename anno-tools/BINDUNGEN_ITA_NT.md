@@ -14109,3 +14109,44 @@ geloest, ohne Reihe 220/299 zu widerrufen. Beim Einsammeln: Matteo
 26,71 nachgezogen (Reihe 409) und drei weitere Genus-Ausreisser
 gefunden (Reihe 410). `selfcheck`/`validate`/`elision`/
 `verschmelzung A`/`qa` je 0.
+
+## 412 · Marco 15 eingesammelt — Marco jetzt 15 von 16 Kapiteln
+
+47 Verse, 765 + 39 Eintraege. Agent kam bis kurz vor der Endverifikation
+(„No MISSING lines reported... rebuild and re-run levelcheck"), dann
+Sitzungslimit — Abgabe war komplett und strukturell sauber. Beim
+Einsammeln:
+
+- **6 echte Elisionen** (`lo`→`l'`, `di`→`d'`, alle in laufender
+  Prosa ohne Mehrwort-Naehe) gesetzt.
+- **`essi`** trug ein eigenes Lemma statt der Bestandskonvention
+  `esso` (65 Belege) — vereinheitlicht.
+- **`adempì`** trug `adempire` statt der im Bestand durchgehenden
+  Schreibung `adempiere` (13 Belege, u. a. dieselbe Form an Matteo
+  2,17/27,9) — vereinheitlicht.
+- **`Preparazione`** (15,42, „der Ruesttag") trug ein eigenes
+  Gross-Lemma statt `preparazione` und `Vorbereitung` statt der
+  etablierten deutschen Fachglosse `Rüsttag` (Matteo 27,62, exakt
+  dieselbe Form) — beides angeglichen.
+- **`tra loro`/`trovarsi`**: kleinere Wortwahl-Angleichung an
+  bestehende Belege derselben Form.
+- **`nulla` A1→A2** (levelcheck, 22 Belege).
+
+**Zwei weitere Genus-Ausreisser** (Reihe 348/354/360/370/380/410-
+Muster): `motivo` es ist maskulin (`el motivo`) — Matteo 27,37 trug
+feminin, Marco 15,26 hatte es schon richtig; korrigiert. `cour` fr ist
+feminin — Marco 15,16 trug maskulin gegen Marco 14,54 (feminin,
+richtig); korrigiert. Insgesamt jetzt 13 gefundene und behobene
+Genus-/Perfektlemma-Ausreisser seit Projektbeginn.
+
+**Ein gepruefter Nicht-Fehler:** `artikel.py` meldet `vestiti`(9,3)
+`i`→`los` gegen eine erwartete feminine Mehrheit — der Bestand
+uebersetzt dasselbe italienische Lemma je nach Kontext mit *vestido*
+(mask., „Gewand") ODER *ropa* (fem., „Kleidung"); an 9,3 ist *vestidos*
+(mask.) der tatsaechlich gewaehlte Begriff, `los` stimmt damit lokal —
+derselbe Tool-Blindfleck wie bei `camilla`/Possessiven (Reihe 348),
+hier durch wechselnde Wortwahl statt durch ein gender-neutrales
+Possessiv.
+
+`selfcheck`/`validate`/`verschmelzung A`/`qa`/`kongruenz`/`hilfsverb`
+je 0 bzw. erwartete Nullen, `glosskollision` 10 Paare (Klassenfaelle).
