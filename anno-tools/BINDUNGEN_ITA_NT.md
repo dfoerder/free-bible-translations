@@ -14441,3 +14441,122 @@ fu messo IL NOME di Gesù" schiebt den Artikel `il` zwischen `messo` und
 bleibt es bei Einzelwoertern. Luca 2,9 „ebbero GRANDE paura" schiebt
 ebenso ein Adjektiv zwischen `avere` und `paura`. Beides gepruefte,
 bewusste Nicht-Uebernahmen, keine uebersehenen Bindungen.
+
+## 431 · Luca 3 eingesammelt — Taeufer, Taufe Jesu, Stammbaum
+
+38 Verse, 711 + 11 Eintraege. Allein gelaufen (kein Geschwisterkapitel
+gleichzeitig). `selfcheck`/`levelcheck`/`sweeplemma`(bis auf gepruefte
+Restfaelle)/`glosskollision`/`kongruenz`/`artikel`/`mehrwort`/
+`hilfsverb`/`elision`/`verschmelzung`/`qa`/`paketcheck` alle sauber
+bzw. auf 0 korrigiert. Die Kettenlesung (Reihe 428/Lukas-1-Lektion) hat
+zwei Faelle derselben Fehlerklasse gefunden, die kein Werkzeug meldet:
+
+- **3,16 `di slacciare`**: `di` trug bereits die Bestandsreihe (de *zu*,
+  aus Matteo 3,11 uebernommen), das folgende `slacciare` trug ZUSAETZLICH
+  ein eigenes `zu` in der Infinitiv-Glosse (`zu lösen`) — direkt
+  aneinandergrenzend ergab das „zu zu lösen". Bei Matteo 3,11 faellt das
+  nicht auf, weil dort `portargli` (mit angehaengtem Pronomen) dazwischen
+  noch `ihm` einschiebt. Korrektur: das isoliert stehende Verb ohne
+  Klitikon traegt nur die bloße Infinitiv-Glosse (`lösen`), das
+  vorausgehende `di` behaelt sein `zu`.
+- **3,7 `che` (relativisch, bezogen auf `ira`)**: `dall'ira` trug
+  bewusst die deutsche Zielsprachen-Glosse `Zorn` (maskulin), das
+  folgende Relativpronomen `che` aber die am italienischen Genus
+  orientierte Glosse `die` (fem., wie `ira`) — genau das Reihe-348-Muster
+  (Zielsprachgenus statt Quellsprachgenus), nur beim Relativpronomen
+  statt beim Artikel. Auf `der` (bezogen auf `Zorn`) korrigiert.
+
+## 432 · `impero` traegt zwei getrennte Bedeutungen unter demselben Lemma — „Reich" (2,1) und „Herrschaft" (3,1)
+
+`impero` stand bislang nur in Luca 2,1 (Volkszaehlung „im ganzen
+Reich"). Luca 3,1 „Nell'anno quindicesimo dell'impero di Tiberio
+Cesare" verlangt eine andere Lesart: alle vier Zeugen lesen hier
+uebereinstimmend „Herrschaft/reign/reinado/règne", nicht „Reich/empire/
+imperio/empire" — es geht um die Dauer von Tiberius' Regierungszeit,
+nicht um das Territorium. Beide Lesarten bleiben unter demselben Lemma
+`impero` (kein Homograph im Sinn von Reihe 15, nur zwei Bedeutungs-
+schattierungen desselben Wortes, wie bei vielen anderen mehrdeutigen
+Lemmata im Bestand) — de *der Herrschaft* · en *of the reign* · es *del
+reinado* · fr *du règne* an 3,1, unveraendert *des Reiches*/*of the
+empire*/*del imperio*/*de l'empire* an 2,1.
+
+## 433 · `Anna`/`Signore`/`più forte` — Homonyme und Erstpraegungen aus Luca 3
+
+- **`Anna`** steht in Luca 2,36 fuer die Prophetin (weiblich) und in
+  Luca 3,2 fuer den Hohepriester Hannas (maennlich) — zwei verschiedene
+  Personen, zufaellig derselbe italienische Name. Bewusst NICHT
+  vereinheitlicht: 2,36 *Hanna/Anna/Ana/Anne*, 3,2 *Hannas/Annas/Anás/
+  Anne*. `paketcheck.py` markiert das zu Recht in Abschnitt A — die
+  Trennung ist beabsichtigt, nicht uebersehen.
+- **`signore`** (Gottestitel „Herr") stand vor Luca 3 im italienischen
+  Bestand noch gar nicht (siehe Prompt-Baustein: `belegt.py signore`
+  meldet in der jungen Richtung eine leere Messung, keinen Befund).
+  Erstpraegung an 3,4/3,16 u. a.: Lemma `signore` (klein, Nomen-
+  Grossschreibung gilt im Italienischen nicht), A2, de *Herr*/*Herrn*
+  (nie *HERR* in Versalien, auch wenn `deu/l1912mod` an dieser Stelle
+  grossschreibt — Reihe siehe Lukas-1-Konvention), en *Lord*, es
+  *Señor*, fr *Seigneur*.
+- **`più forte`** (3,16, „uno più forte di me") ist NICHT neu zu
+  praegen — direkt mit `fixgloss.py show "più forte"` gegen den Bestand
+  gemessen: 2 Belege (Matteo 3,11, Marco 1,7) tragen bereits A2 *stärker*/
+  *mightier*/*más fuerte*/*plus puissant* fuer genau diesen Sinn
+  (Vergleich mit dem Kommenden), getrennt von der „lauter"-Lesart bei
+  Matteo 20,31 u. a. Zeichengleich uebernommen.
+
+## 434 · Genealogie Luca 3,23-38: zwei Namen mit zwei Traegern, und das franzoesische h an 18 Stellen gemessen
+
+- **`Cainam`** (3,36, Sohn Arfacsads) und **`Cainam`** (3,37, Sohn Enos')
+  sowie **`Sala`** (3,32, = Salmon) und **`Sala`** (3,35, = Schelach)
+  sind im italienischen Text zeichengleich, bezeichnen aber je zwei
+  verschiedene Gestalten der Ahnenliste. Bewusst NICHT vereinheitlicht —
+  jede Stelle traegt die fuer ihre Generation richtige Uebersetzung
+  (z. B. fr *Kaïnam* vs. *Caïnan*, de *Schelach* vs. *Salmon*).
+  `folgencheck.py --min 3` markiert „figlio di Cainam"/„figlio di Sala"
+  deshalb zu Recht als Abweichung — keine zu korrigierende Inkonsistenz.
+- **Proper-Name-Homographen mit gemeinlateinischen Woertern**: `Resa`
+  (3,27, Ahnenname) und `Sala` (s. o.) kollidieren in `sweeplemma.py`
+  mit den bestehenden Lemmata `reso`/`sala` (Partizip „zurueckgegeben"
+  bzw. Substantiv „Saal"). Da Gross-/Kleinschreibung im Lemma-String
+  unterscheidet (`Resa` vs. `resa`, `Sala` vs. `sala`), sind das bereits
+  zwei verschiedene Lemmata ohne weiteren Klammerzusatz — dieselbe
+  Loesung wie bei anderen Eigennamen, die zufaellig wie ein
+  gemeinsprachliches Wort aussehen.
+- **Franzoesische Elision vor Namen**: `elision.py --datei` hat 18
+  `di`-vor-Name-Stellen in der Genealogie gemessen, die vor Vokal
+  bzw. „h muet" auf `d'` elidieren (Amos, Esli, Addi, Elmadam, Er,
+  Éliézer, Éliakim, Aminadab, Admin, Arni, Hesron, Isaac, Abraham,
+  Arphaxad, Hénoc, Énos, Adam) — **aber nicht** vor `Héber` (3,35): der
+  franzoesische Zeuge selbst behandelt dieses „h" als aspiriert, `de
+  Héber` bleibt richtig. Reihe fuer kuenftige Genealogien: das `h` ist
+  nicht pauschal stumm, jedes Vorkommen einzeln mit `elision.py`
+  nachmessen.
+
+## 435 · `dentro di sé`/`farsi battezzare`/`riguardo a`/`su di lui` an neue Person/Numerus angepasst — Lemma bleibt, Glosse folgt dem Vers
+
+Vier Mehrwoerter aus Matteo/Marco tragen im Bestand nur die 3. Person
+(`dentro di sé` fuer „bei sich") oder den Singular (`farsi battezzare`
+„sich taufen LASSEN", einmal an Matteo 3,13). Luca 3,8 braucht dieselbe
+Fuegung fuer 2. Person Plural (`dentro di voi` — deckt sich zeichengleich
+mit dem bereits an Matteo 3,9 gemessenen Einzelfall „bei EUCH selbst"),
+Luca 3,7/3,12/3,21 fuer Plural-Subjekte bzw. Imperfekt (`ser bautizadoS`,
+„ließ sich taufen" statt „sich taufen LASSEN"). Das Lemma bleibt
+identisch, nur Person/Numerus/Tempus der Glosse folgt dem eigenen Vers
+— `sweeplemma.py` markiert das als „weicht ab", was hier keine
+Inkonsistenz, sondern die erwartete Flexion ist.
+
+## 436 · Namen im Stammbaum: die Schreibung des Zeugen am Vers, nicht die eigene Identifikation
+
+Lukas 3,23-38 trug 34 Namensglossen, die vom Zeugen der jeweiligen Sprache
+abwichen — meist eine modernere oder aus dem AT hergeleitete Schreibung
+(de *Salmon* fuer `Sala` 3,32, wo Luther *Salma* hat; *Schelach* 3,35 statt
+*Salah*; *Metuschelach* statt *Methusalah*; fr *Lémec*, *Jéred*, *Hénoc*
+statt LSG *Lamech*, *Jared*, *Énoch*). Der Bestand folgt durchgehend dem
+Zeugen des Verses: Matteo 1 fuehrt de *Salma*, *Sealthiel*, *Jesse*, fr
+*Isaï*, *Esrom*. Alle 34 gezogen, dazu fr `di` vor *Isaï*/*Éber* auf `d'`.
+**Wo die Zeugen einen anderen Text haben** (3,26 WEB/RV *Joseph*/*José*
+fuer `Iosec`; 3,33 `Admin`/`Arni` gegen einmal *Ram*/*Aram*), bleibt die
+Transliteration des italienischen Namens — dort gibt es keine Schreibung
+des Zeugen fuer dieses Wort. Gleichnamige verschiedene Personen (`Sala`
+3,32/3,35, `Cainam` 3,36/3,37) bekommen, was der Zeuge an ihrem Vers
+schreibt — gleiche oder verschiedene Schreibung, nicht selbst geschieden
+(de beide *Kenan*, fr *Kaïnam*/*Kaïnan*).
