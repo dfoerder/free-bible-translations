@@ -14587,3 +14587,82 @@ geteilt: Artikel + Possessiv mit gleicher Glosse (`i loro` → *their their*,
 Marco 11,7 u. a.), Pronomendopplung (`lui gli`), `che cosa`, `quello che`
 en *that that*, und `per`/`di` + Infinitiv en *to to* (Bestand ~9:9
 gespalten). Das ist eine eigene Konventionsfrage, keine Altlast.
+
+## 438 · Luca 4: reflexives „si + Verb" auf zwei Positionen — Mehrwort traegt das reflexive Lemma, der blosse Verb-Einzeleintrag das nicht-reflexive
+
+Wo `si` und das Verb als **getrennte** Positionen stehen (nicht als
+angehaengtes Klitikon wie bei `gettati`), gilt durchgehend das Muster, das
+schon `si allontanò` (Matteo 12,15/27,5, Luca 1,38) gesetzt hatte, hier
+aber neun weitere Male auftrat, ohne dass `sweeplemma.py` es vorher als
+Regel genannt haette — jedes hat sich erst am Lauf gezeigt:
+
+- **Mehrwortspanne** (`si` + Verb, zwei Positionen) traegt das
+  **reflexive** Lemma (`allontanarsi`, `spargersi`, `alzarsi`, `sedersi`,
+  `meravigliarsi`, `trovarsi`, `chinarsi`).
+- Der **Einzeleintrag** unter der Verb-Position allein traegt das
+  **nicht-reflexive** Infinitiv-Lemma (`allontanare`, `spargere`,
+  `alzare`, `sedere`, `meravigliare`, `trovare`, `chinare`) — mit einer
+  Glosse, die dieselbe wie die der Spanne ist, nur ohne das
+  reflexiv-Wort (de „entfernte sich" → „entfernte", es „se apartó" →
+  „apartó").
+- `mettersi a` (drei Positionen `si`+Verb+`a`) traegt ebenso das
+  reflexive Mehrwort-Lemma; der Einzeleintrag unter dem Verb bleibt
+  `mettere`.
+
+Betroffen in Luca 4: `si allontanò` (4,13), `si sparse` (4,14), `si alzò`
+(4,16, 4,39 zweimal), `si sedette` (4,20), `si meravigliavano` (4,22),
+`Si alzarono` (4,29), `si trovava` (4,33), `si chinò` (4,39), `si mise a`
+(4,39). Wer hier den Einzeleintrag versehentlich mit dem reflexiven
+Lemma belegt (wie der erste Durchgang dieses Kapitels es neunmal tat),
+bekommt von `sweeplemma.py` „Wortform unter einem Lemma, das der
+Bestand nicht kennt" — das ist der einzige Ort, an dem der Fehler
+sichtbar wird.
+
+## 439 · Luca 4: drei Partizip-Lemmata am Bestand ausgerichtet, ein Homograph bewusst getrennt gelassen
+
+- **`data`/`dato`** (4,6/4,17): der Bestand fuehrt das Partizip von
+  `dare` ueberwiegend unter dem eigenen Lemma `dato` (5×), nicht unter
+  dem Infinitiv `dare` — an beide Stellen in Luca 4 angeglichen.
+- **`chiuso`** (4,25, „il cielo rimase chiuso"): der Bestand lemmatisiert
+  das prädikative Partizip auf den Infinitiv `chiudere` (4× bereits,
+  z. B. Matteo 13,15), nicht auf ein eigenes Adjektiv-Lemma `chiuso`.
+- **`tormentata`** (4,38): umgekehrt fuehrt der Bestand hier ein
+  Adjektiv-Lemma `tormentato`, nicht den Infinitiv `tormentare`.
+  Keine erkennbare Regel trennt die beiden Faelle — am Bestand
+  gemessen, nicht selbst entschieden.
+- **`cura`** (4,23, „Medico, cura te stesso" — Imperativ von `curare`,
+  „heile") bewusst **nicht** unter dem vorhandenen Lemma `cura`
+  (Substantiv „Sorgfalt", Matteo 2,8/Marco 7,3) gefuehrt — zwei
+  verschiedene Woerter, die nur als Zeichenkette zusammenfallen
+  (Imperativ vs. Substantiv), analog zu den Eigennamen-Homographen aus
+  Reihe 434.
+- **`gettati`** (4,9, „gettati giù" — Imperativ + enklitisches `ti`):
+  Matteo 4,6 fuehrt dasselbe Wort in derselben Szene unter dem
+  **nicht-reflexiven** Infinitiv `gettare`, nicht `gettarsi` — obwohl es
+  reflexiv aussieht. Uebernommen; `gettarsi` bleibt reserviert fuer
+  echte reflexive Faelle wie „sich niederwerfen" (Matteo 18,26 u. a.).
+
+## 440 · `riguardo a`: zwei parallele Konventionen im Bestand, nicht aufgeloest
+
+`riguardo a` traegt im Bestand zwei verschiedene Spannenlaengen fuer denselben
+Sinn „bezueglich": ein **zweiwoertiges** Mehrwort (`riguardo`+`a`, B2,
+„über/concerning/acerca de/au sujet de" — Matteo 11,7, Luca 2,17, Luca
+3,19) und ein **dreiwoertiges**, das das folgende Pronomen mit
+einschliesst (`riguardo`+`a`+`te`, B2, „deinetwegen/concerning
+you/acerca de ti/à ton sujet" — Matteo 4,6). Luca 4,10 hat exakt denselben
+Wortlaut „riguardo a te" wie Matteo 4,6, folgt hier aber der **lokalen**
+Konvention aus dem eigenen Buch (Luca 3,19, zweiwoertig) statt der
+aelteren dreiwoertigen aus Matteo. Beide Lesarten bleiben im Bestand
+stehen — welche sich durchsetzt, ist eine Entscheidung fuer den
+Koordinator, keine, die dieses Kapitel treffen sollte.
+
+## 441 · `tutto quello che` ist ein eigenes Mehrwort — nicht `tutto` + `quello che`
+
+`tutto quello che` („alles, was") steht im Bestand 18× als **eigenes**
+dreiwoertiges Mehrwort-Lemma (B1), getrennt von der blossen Wendung
+`quello che` (A2, „das, was"). Luca 4,23 haette beim ersten Zugriff nur
+die zweiwoertige Spanne gesetzt (mit `tutto` als eigenem, unverbundenem
+Vorwort) — falsch, weil `folgencheck.py`/`fixgloss.py verse` am
+konkreten Vers (Luca 2,20, „per tutto quello che avevano udito") zeigen,
+dass der Bestand die drei Woerter zusammen fuehrt. Wer nur `quello che`
+prueft und `tutto` einzeln davorstellt, uebersieht das.
