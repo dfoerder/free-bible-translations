@@ -14666,3 +14666,69 @@ Vorwort) — falsch, weil `folgencheck.py`/`fixgloss.py verse` am
 konkreten Vers (Luca 2,20, „per tutto quello che avevano udito") zeigen,
 dass der Bestand die drei Woerter zusammen fuehrt. Wer nur `quello che`
 prueft und `tutto` einzeln davorstellt, uebersieht das.
+
+## 442 · Luca 5 eingesammelt — Fischzug, Aussaetziger, Gelaehmter, Levi, Fastenfrage
+
+**Reihe 438 (reflexives „si + Verb" auf zwei Positionen) traegt weiter, mit
+fuenf neuen Verben.** Jedes davon war beim ersten Zugriff unbelegt; die
+Mehrwortspanne (`si`+Verb, zwei Positionen) bekam das reflexive Lemma, der
+blosse Verb-Einzeleintrag daneben das nicht-reflexive Infinitiv-Lemma:
+`si accalcava` → `accalcarsi`/`accalcare` (5,1, „drängte sich"),
+`si rompevano` → `rompersi`/`rompere` (5,6, „rissen"), `si trovava` →
+`trovarsi`/`trovare` (5,12, deckt sich mit dem schon aus Luca 4,33
+bekannten Muster), `si ritirava` → `ritirarsi`/`ritirare` (5,16, „zog sich
+zurueck"), `si adatta` → `adattarsi`/`adattare` (5,36, „passt"), `si versa`
+→ `versarsi`/`versare` (5,37 — `versarsi` stand schon einmal in Matteo
+9,17, dort aber ohne die Mehrwort-Verdoppelung; hier zum ersten Mal mit).
+
+**Aber: `si diffondeva` (Luca 4,37, „la sua fama si diffondeva") folgt
+Reihe 438 NICHT** — dort traegt die Verbposition selbst direkt das
+reflexive Lemma `diffondersi`, ohne eigene Mehrwortspanne und ohne
+nicht-reflexiven Einzeleintrag; `si` daneben bleibt ein gewoehnlicher
+Einzeleintrag „sich". Luca 5,15 uebernimmt diese (aeltere, abweichende)
+Konvention zeichengleich, weil die Folge dort bereits feststand. Zwei
+oberflaechlich gleich aussehende Konstruktionen („si" + Verb, getrennte
+Positionen) haben also zwei verschiedene Kodierungen im Bestand — welche
+gilt, entscheidet der fruehste Beleg, nicht die Konstruktion selbst. Wer
+`radunarsi` (5,15, „si radunavano") danach glossiert, tappt nicht in die
+Falle, weil dafuer schon Marco 4,1 nach Reihe 438 vorliegt.
+
+**`pubblicano`: der Bestand fuehrt es als einfaches Lehnwort, nicht als
+Umschreibung.** Alle bisherigen Belege (u. a. Matteo 9,11, Marco 2,16)
+stehen es *publicano(s)* · fr *publicain(s)* — nicht *cobrador(es) de
+impuestos* / *collecteur(s) d'impôts*, wie es die moderne RV1909- bzw.
+LSG1910-Umschreibung an einigen Stellen nahelegt. Der erste Durchgang
+dieses Kapitels hatte an allen drei Stellen (5,27/5,29/5,30) die
+Umschreibung uebernommen; `folgencheck.py --gegen` hat es gegen Matteo
+9,11 aufgedeckt. Betrifft vermutlich auch `imposta`/`banco` in
+aehnlichen Zoellner-Szenen.
+
+**`vestito` ist ein Homograph** (Reihe zu `essere (sostantivo)` u. Ä.
+passend): das Adjektiv „gekleidet" (A2, `vestito`) und das Substantiv
+„Gewand/Kleid" (B1, `vestito (sostantivo)`) fuehren getrennte Lemmata.
+Luca 5,36 (zweimal „un vestito nuovo/vecchio") braucht die
+Substantiv-Lesart.
+
+**Kettenlesung gefangen:** ein Tippfehler haette `rompevano` (5,6) die
+spanische Glosse *rompían* auch in die franzoesische Spalte kopiert
+(„rompían" statt „rompaient") — nur beim lautem Durchlesen der
+Wortkette sichtbar, kein Werkzeug der Kette prueft Sprachidentitaet
+pro Spalte.
+
+## 443 · Einsammeln Lukas 5: Artikel vor Possessiv glossiert den ARTIKEL; `si diffondeva` wie Matteo/Marco
+
+1. **Artikel + Possessiv ist keine Bestandskonvention fuer Doppelglossen.**
+   Der Agent las Reihe 428 so, als sei `i loro` → *their their* gewollt,
+   und setzte es siebenmal (5,7/14/19/20/22/30/33). Reihe 428 handelt von
+   doppelter Markierung als FEHLER; der Bestand glossiert den Artikel als
+   Artikel im Genus/Kasus des Zielnomens (Lukas 1,47 *der mein Geist*,
+   Matteo passim *the his*). Die ~10 Marco-Stellen mit Doppelglosse
+   (Reihe 437) sind Ausreisser, keine Regel. Alle sieben gezogen, dazu
+   5,19 de *seiner Bahre*, 5,33 `i tuoi` → *die Deinen*.
+2. **`si diffondeva`** (Lukas 4,37, 5,15) trug das Reflexiv-Lemma direkt
+   auf der Verbposition, ohne Mehrwort. Matteo 9,26/28,15 und Marco
+   1,28/6,14 fuehren alle vier Belege als Mehrwort `diffondersi` plus
+   Einzeleintrag `diffondere` (Reihe 438). Beide Stellen angeglichen.
+3. Zwei alte Genusfehler, sichtbar durch den gewachsenen Bestand
+   (16./17. Fall der Klasse): es *el camilla* Marco 2,12 → *la*, es *la
+   rostro* Matteo 18,10 → *el*.
