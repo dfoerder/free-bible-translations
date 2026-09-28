@@ -14337,3 +14337,107 @@ Die Glosse gibt das Wort wieder, nicht die Typographie einer Ausgabe;
 ob `Signore` Gott oder Jesus meint (Lk 1,43), entscheidet ohnehin der
 Leser. **Alle 17 Stellen auf *Herr*/*Herrn* gezogen.** Gilt fuer das
 ganze NT, auch fuer Lk 2 (2,9, 2,22-23, 2,39) und Lk 4,18.
+
+## 424 · Luca 2 eingesammelt — `Signore`/`salvatore` als Lemma immer klein, auch bei grossgeschriebener Form
+
+52 Verse, 910 + 32 Eintraege. Der Bestand fuehrt `signore` (A2) und
+`salvatore` durchgehend klein als Lemma, auch wo die `form` am
+Satzanfang oder nach Doppelpunkt gross steht (`Signore:` in 2,10.11 usw.,
+`Salvatore,` in 2,11). Ein eigener erster Durchlauf hatte das Lemma an
+die Grossschreibung der `form` angeglichen (`"Signore"` elfmal,
+`"Salvatore"` einmal) — `sweeplemma.py` faengt das zuverlaessig ab
+(„hier neu als `Signore`, im Bestand `signore`"), aber nur, wenn man
+seinen Lauf tatsaechlich ausfuehrt und die Zeile ernst nimmt. Gilt fuer
+jedes grossgeschriebene Substantiv am Satzanfang: die `form` behaelt die
+Grossschreibung, das Lemma nicht.
+
+## 425 · Bestimmte Partizipien fuehren ihr eigenes Lemma statt des Infinitivs
+
+`accaduto`, `compiuto`, `concepito`, `seduto`, `annunciato` (wie schon
+`posto (sostantivo)`, Reihe unbekannt) stehen im Bestand NICHT unter dem
+Infinitiv (`accadere`, `compiere`, `concepire`, `sedere`, `annunciare`),
+sondern unter sich selbst als eigenes Lemma. Ein eigener erster
+Durchlauf hatte konsequent den Infinitiv gesetzt — `sweeplemma.py`
+listet das unter „Wortform unter einem Lemma, das der Bestand fuer sie
+nicht kennt". Betroffen sind Partizipien, die adjektivisch oder
+substantivisch stehen (`era accaduto`, `furono compiuti i giorni`, `nel
+grembo concepito`, `seduto in mezzo`, `stato annunciato`) — nicht jede
+Form desselben Verbs: `compì` (Luca 2,6, finit) und `compiere` (2,27,
+Infinitiv) bleiben auf `compiere`. Vor jedem neuen Partizip erst
+`fixgloss.py show <Partizip>` oder `belegt.py <Partizip>` fragen, bevor
+der Infinitiv gesetzt wird.
+
+## 426 · Pronomen-Lemmata: `essi` faellt auf `esso`, `ti` bleibt eigenes Lemma
+
+Zwei Faelle, gegensaetzlich: `essi`/`Essi` (sie, 3. Pl.) fuehrt im
+Bestand KEIN eigenes Lemma, sondern faellt auf `esso` (70 Belege) —
+ebenso wie `Esso` selbst. Umgekehrt bleibt `ti` (dich/dir) ein EIGENES
+Lemma (85 Belege), obwohl es formal zu `tu` gehoert. Nicht nach Analogie
+vereinheitlichen — `sweeplemma.py` zeigt fuer jedes Pronomen die
+tatsaechliche Bestandsreihe.
+
+## 427 · `presentare`/`presentarsi` kollabieren im Bestand auf ein Lemma — anders als `trovare`/`trovarsi`
+
+Jede Form von `presentò`/`presentarono` (reflexiv „si presentò" UND
+transitiv) steht im Bestand unter `presentare`, nie unter `presentarsi`
+(Matteo 25,20.22, Matteo 26,60, Matteo 27,58, Marco 15,43). Das
+widerspricht der sonst gültigen Praxis, ein reflexives Verb als eigenes
+Lemma zu fuehren (`trovarsi` steht z. B. eigenstaendig, Matteo 1,18).
+Luca 2,9 („Un angelo... si presentò a loro") folgt jetzt der
+Bestandsreihe (`presentare`, B1) — **ungeklaert, ob das eine bewusste
+Entscheidung war oder eine Luecke aus der Pilotphase.** Fuer den
+Koordinator: pruefen, ob `presentarsi` als eigenes Lemma nachtraeglich
+gesetzt werden soll, oder ob `presentare` fuer beide Richtungen bleibt.
+
+## 428 · Zwei weitere Funde der Kettenlesung (Klasse: doppelte Markierung unter einer Spanne)
+
+Die Kettenlesung (Reihe siehe Lukas-1-Lektion) hat in Luca 2 sechs
+Faelle derselben Fehlerklasse gefunden, die kein Werkzeug meldet — vier
+in fruehen, schon laufenden Versen (1,7 `il`/`suo` beide *ihren*; 1,8
+`quella`/`stessa` beide „selben"/„misma"/„même" auf Englisch, Spanisch
+UND Franzoesisch dreifach; 1,9 `a`/`loro` trugen beide die volle
+Personalpronomen-Glosse *them*/*ellos*/*eux* statt einer Restglosse;
+1,13 `insieme`/`all'angelo` ergaben franzoesisch „avec à l'ange" — zwei
+Praepositionen hintereinander), alle behoben. **Dieselbe Fehlerklasse
+wurde ausserhalb dieses Kapitels gefunden, nicht behoben (ausserhalb der
+Zustaendigkeit dieses Agenten):**
+
+- **Luca 1,6** traegt `a` unter `davanti a` noch auf de *vor* · en
+  *before* · es *delante* · fr *devant* — identisch mit `davanti`
+  selbst. Die Lukas-1-Durchsicht (Reihe in `projekt`/Auftrag genannt)
+  hat 1,19/1,75/1,76 auf die Bestandsreihe (`a` → de *zu* · en *to* ·
+  es *de*) gezogen, 1,6 aber nicht erfasst — 1,6 ist selbst der
+  frueheste Ort der Folge „davanti a Dio e" (Luca 2,52 uebernimmt
+  davon), traegt den Fehler also womoeglich als Ursprung weiter.
+- **Marco 9,1** traegt `prima`/`di` unter `prima di` beide auf de *vor*
+  · en *before* · es *antes de* · fr *avant* — dieselbe Verdopplung,
+  hier bei einer zusammengesetzten Praeposition statt eines Pronomens.
+  Luca 2,26 („prima di aver visto") folgt stattdessen der ueblichen
+  Restglosse (`prima` traegt die volle Bedeutung, `di` nur *zu*/*to*/
+  *de*/*d'*) und weicht damit von Marco 9,1 bewusst ab.
+
+Empfehlung: eine gezielte Suche nach „Kompositum-Praeposition, deren
+zweiter Teil dieselbe Glosse wie der erste traegt" ueber das ganze NT,
+nicht nur bei `davanti a`.
+
+## 429 · `tutto quello che` / `tutto ciò che`: `quello`/`ciò` UND `che` tragen beide „that" im Englischen — Bestandskonvention, kein Fehler
+
+Anders als beim BAREN `quello che`/`ciò che` (dort `quello` → en *the
+one*, `che` → en *which*, sauber getrennt) traegt die Folge mit `tutto`
+davor im Bestand beide Teile auf en *that* (Marco 6,30 u. a.) —
+`glosskollision.py` meldet das folgerichtig als Kollision, `sweeplemma`
+bestaetigt aber die Bestandsreihe. Englisch hat fuer „all that which"
+keine dritte Form; Deutsch/Spanisch trennen weiterhin (*alles*/*das*,
+*todo*/*aquello*). Luca 2,20 und 2,39 folgen dem zeichengleich — nicht
+aufloesen.
+
+## 430 · `mettere nome` und `avere paura` bewusst NICHT gesetzt
+
+Beide Mehrwoerter stehen im Bestand (`mettere nome`: Matteo 1,21.23.25,
+Luca 1,13.31.59 direkt gefolgt vom Namen ohne Artikel; `avere paura`:
+Matteo 2,22 u. v. a., Verb direkt gefolgt von `paura`). Luca 2,21 „gli
+fu messo IL NOME di Gesù" schiebt den Artikel `il` zwischen `messo` und
+`nome` — eine andere Konstruktion als die bestehende Bindung, deshalb
+bleibt es bei Einzelwoertern. Luca 2,9 „ebbero GRANDE paura" schiebt
+ebenso ein Adjektiv zwischen `avere` und `paura`. Beides gepruefte,
+bewusste Nicht-Uebernahmen, keine uebersehenen Bindungen.
