@@ -14325,3 +14325,15 @@ Korrigiert (14. Fall dieser Klasse seit Projektbeginn).
 `verschmelzung A` 1 richtige Null, `glosskollision` 5 inhaltliche
 Paare (Klassenfaelle) + 45 geschlossene Wortarten (viele `davanti`-
 Praeposition, typisch fuer den gehobenen Lukas-Stil).
+
+## 423 · `Signore` de: *Herr*, nicht *HERR* — auch wo Luther Versalien setzt
+
+Lukas 1 trug 17-mal `HERR`/`HERRN` in der de-Spalte (1,6 … 1,76) — der
+Agent war dem deutschen Zeugen gefolgt, der in Lk 1–2 die Versalien der
+Jahwe-Stellen setzt (`deu/l1912mod` Lk 2,9 „Engel des HERRN"). Der
+Bestand stand vorher 81 zu 0 auf *Herr*/*Herrn*, auch dort, wo Luther
+genauso Versalien hat (Matteo 1,20 „Engel des HERRN" → Glosse *Herrn*).
+Die Glosse gibt das Wort wieder, nicht die Typographie einer Ausgabe;
+ob `Signore` Gott oder Jesus meint (Lk 1,43), entscheidet ohnehin der
+Leser. **Alle 17 Stellen auf *Herr*/*Herrn* gezogen.** Gilt fuer das
+ganze NT, auch fuer Lk 2 (2,9, 2,22-23, 2,39) und Lk 4,18.
