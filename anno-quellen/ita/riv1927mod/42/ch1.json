@@ -1102,10 +1102,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante",
-   "fr": "devant"
+   "de": "zu",
+   "en": "to",
+   "es": "de",
+   "fr": "à"
   },
   {
    "pos": 5,
@@ -1508,10 +1508,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "zu",
+   "en": "to",
+   "es": "de",
+   "fr": "à"
   },
   {
    "pos": 11,
@@ -2607,10 +2607,10 @@
    "form": "al",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "dem",
+   "en": "the",
+   "es": "del",
+   "fr": "le"
   },
   {
    "pos": 5,
@@ -2923,7 +2923,7 @@
    "level": "A2",
    "de": "vor",
    "en": "before",
-   "es": "delante de",
+   "es": "delante",
    "fr": "devant"
   },
   {
@@ -2942,10 +2942,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "zu",
+   "en": "to",
+   "es": "de",
+   "fr": "à"
   },
   {
    "pos": 3,
@@ -3416,7 +3416,7 @@
    "level": "A1",
    "de": "ist",
    "en": "is",
-   "es": "es",
+   "es": "está",
    "fr": "est"
   },
   {
@@ -3426,8 +3426,8 @@
    "level": "A2",
    "de": "vorangeschritten",
    "en": "advanced",
-   "es": "avanzados",
-   "fr": "avancés"
+   "es": "avanzada",
+   "fr": "avancée"
   },
   {
    "pos": 14,
@@ -3549,7 +3549,7 @@
    "level": "A2",
    "de": "vor",
    "en": "before",
-   "es": "delante de",
+   "es": "delante",
    "fr": "devant"
   },
   {
@@ -3568,10 +3568,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "zu",
+   "en": "to",
+   "es": "de",
+   "fr": "à"
   },
   {
    "pos": 10,
@@ -4983,10 +4983,10 @@
    "form": "di",
    "lemma": "di",
    "level": "A1",
-   "de": "auf",
-   "en": "at",
-   "es": "en",
-   "fr": "sur"
+   "de": "von",
+   "en": "of",
+   "es": "de",
+   "fr": "de"
   },
   {
    "pos": 19,
@@ -6687,10 +6687,10 @@
    "form": "di",
    "lemma": "di",
    "level": "A1",
-   "de": "auf",
-   "en": "on",
-   "es": "sobre",
-   "fr": "sur"
+   "de": "von",
+   "en": "of",
+   "es": "de",
+   "fr": "de"
   },
   {
    "pos": 9,
@@ -6858,7 +6858,7 @@
    "lemma": "essere",
    "level": "A1",
    "de": "wird",
-   "en": "will",
+   "en": "will be",
    "es": "será",
    "fr": "sera"
   },
@@ -8852,7 +8852,7 @@
    "lemma": "esultare",
    "level": "B2",
    "de": "freut sich",
-   "en": "has rejoiced",
+   "en": "rejoices",
    "es": "se alegra",
    "fr": "se réjouit"
   },
@@ -9492,10 +9492,10 @@
    "form": "disperso",
    "lemma": "disperdere",
    "level": "B2",
-   "de": "zerstreute",
+   "de": "zerstreut",
    "en": "scattered",
-   "es": "dispersó",
-   "fr": "dispersa"
+   "es": "dispersado",
+   "fr": "dispersé"
   },
   {
    "pos": 9,
@@ -9706,9 +9706,9 @@
    "form": "innalzato",
    "lemma": "innalzare",
    "level": "B2",
-   "de": "erhöhte",
+   "de": "erhöht",
    "en": "exalted",
-   "es": "exaltó",
+   "es": "exaltado",
    "fr": "élevé"
   },
   {
@@ -9750,8 +9750,8 @@
    "level": "B2",
    "de": "gefüllt",
    "en": "filled",
-   "es": "colmó",
-   "fr": "a comblé"
+   "es": "colmado",
+   "fr": "comblé"
   },
   {
    "pos": 2,
@@ -9820,7 +9820,7 @@
    "level": "B1",
    "de": "weggeschickt",
    "en": "sent away",
-   "es": "despidió",
+   "es": "despedido",
    "fr": "renvoyé"
   },
   {
@@ -9902,9 +9902,9 @@
    "lemma": "soccorrere",
    "level": "B1",
    "de": "geholfen",
-   "en": "given help to",
-   "es": "ayudó",
-   "fr": "est venu en aide"
+   "en": "helped",
+   "es": "ayudado",
+   "fr": "secouru"
   },
   {
    "pos": 2,
@@ -9995,8 +9995,8 @@
    "level": "B1",
    "de": "versprochen",
    "en": "promised",
-   "es": "prometió",
-   "fr": "avait promis"
+   "es": "prometido",
+   "fr": "promis"
   },
   {
    "pos": 3,
@@ -10573,10 +10573,10 @@
    "form": "di",
    "lemma": "di",
    "level": "A1",
-   "de": "gegenüber",
-   "en": "toward",
-   "es": "hacia",
-   "fr": "envers"
+   "de": "von",
+   "en": "of",
+   "es": "de",
+   "fr": "d'"
   },
   {
    "pos": 16,
@@ -10624,7 +10624,7 @@
    "form": "rallegravano",
    "lemma": "rallegrare",
    "level": "B1",
-   "de": "freuten sich",
+   "de": "freuten",
    "en": "rejoiced",
    "es": "alegraban",
    "fr": "réjouissaient"
@@ -12336,7 +12336,7 @@
    "level": "B2",
    "de": "erweckt",
    "en": "raised up",
-   "es": "levantó",
+   "es": "levantado",
    "fr": "suscité"
   },
   {
@@ -12591,7 +12591,7 @@
    "de": "wird retten",
    "en": "will save",
    "es": "salvará",
-   "fr": "délivre"
+   "fr": "sauvera"
   },
   {
    "pos": 4,
@@ -12641,7 +12641,7 @@
    "de": "aus den",
    "en": "from the",
    "es": "de las",
-   "fr": "de la"
+   "fr": "des"
   },
   {
    "pos": 9,
@@ -12821,10 +12821,10 @@
    "form": "ricorda",
    "lemma": "ricordarsi",
    "level": "A2",
-   "de": "denkt",
-   "en": "to remember",
-   "es": "y acordarse",
-   "fr": "il se souvient"
+   "de": "erinnert",
+   "en": "remembers",
+   "es": "acuerda",
+   "fr": "souvient"
   },
   {
    "pos": 10,
@@ -13048,7 +13048,7 @@
    "de": "könnten",
    "en": "should",
    "es": "podamos",
-   "fr": "de"
+   "fr": "puissions"
   },
   {
    "pos": 10,
@@ -13129,7 +13129,7 @@
    "level": "A2",
    "de": "vor",
    "en": "before",
-   "es": "delante de",
+   "es": "delante",
    "fr": "devant"
   },
   {
@@ -13148,10 +13148,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "zu",
+   "en": "to",
+   "es": "de",
+   "fr": "à"
   },
   {
    "pos": 6,
@@ -13169,7 +13169,7 @@
    "lemma": "per",
    "level": "A1",
    "de": "für",
-   "en": "all",
+   "en": "for",
    "es": "por",
    "fr": "pour"
   },
@@ -13281,7 +13281,7 @@
    "lemma": "essere",
    "level": "A1",
    "de": "wirst",
-   "en": "will",
+   "en": "will be",
    "es": "serás",
    "fr": "seras"
   },
@@ -13342,7 +13342,7 @@
    "level": "A2",
    "de": "vor",
    "en": "before",
-   "es": "delante de",
+   "es": "delante",
    "fr": "devant"
   },
   {
@@ -13361,10 +13361,10 @@
    "form": "al",
    "lemma": "a",
    "level": "A1",
-   "de": "vor",
-   "en": "before",
-   "es": "delante de",
-   "fr": "devant"
+   "de": "dem",
+   "en": "the",
+   "es": "del",
+   "fr": "le"
   },
   {
    "pos": 12,
@@ -13503,7 +13503,7 @@
    "form": "della",
    "lemma": "di",
    "level": "A1",
-   "de": "der",
+   "de": "des",
    "en": "of",
    "es": "de la",
    "fr": "du"
@@ -13513,7 +13513,7 @@
    "form": "salvezza",
    "lemma": "salvezza",
    "level": "B2",
-   "de": "Heil",
+   "de": "Heils",
    "en": "salvation",
    "es": "salvación",
    "fr": "salut"
@@ -13656,7 +13656,7 @@
    "lemma": "per",
    "level": "A1",
    "de": "durch",
-   "en": "whereby",
+   "en": "by",
    "es": "con",
    "fr": "par"
   },
@@ -13677,8 +13677,8 @@
    "lemma": "il",
    "level": "A1",
    "de": "die",
-   "en": "which",
-   "es": "que",
+   "en": "the",
+   "es": "la",
    "fr": "la"
   },
   {
@@ -13688,7 +13688,7 @@
    "level": "B1",
    "de": "welche",
    "en": "which",
-   "es": "que",
+   "es": "cual",
    "fr": "laquelle"
   },
   {
@@ -13840,7 +13840,7 @@
    "lemma": "ombra",
    "level": "B1",
    "de": "im Schatten",
-   "en": "the shadow",
+   "en": "in the shadow",
    "es": "en sombra",
    "fr": "dans l'ombre"
   },

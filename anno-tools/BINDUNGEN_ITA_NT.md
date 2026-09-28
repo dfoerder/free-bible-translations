@@ -14560,3 +14560,30 @@ des Zeugen fuer dieses Wort. Gleichnamige verschiedene Personen (`Sala`
 3,32/3,35, `Cainam` 3,36/3,37) bekommen, was der Zeuge an ihrem Vers
 schreibt — gleiche oder verschiedene Schreibung, nicht selbst geschieden
 (de beide *Kenan*, fr *Kaïnam*/*Kaïnan*).
+
+## 437 · Nachlese Lukas 1 und Marco: die drei Fehlerklassen der Opus-Durchsicht gezogen (101 Glossen)
+
+Gefunden mit einer maschinellen Kettenlesung (benachbarte Einzeleintraege
+mit gleicher Glosse) ueber den ganzen Bestand plus Lesung von Magnificat
+und Benedictus.
+1. **Doppelte Praeposition** — das zweite Wort traegt seine eigene Glosse
+   nach Bestandsmehrheit: `davanti a` → `a` *zu · to · de · à* (21x;
+   spanisch dann `delante` + `de`), `davanti al` → `al` *dem · the · del ·
+   le* (wie `davanti alla`/`agli`: die verschmolzene Form traegt den
+   Artikel), `su di`/`verso di`/`contro di` → `di` *von · of · de · de/d'*
+   (15x), `prima di` + Infinitiv → *zu · to · de · d'*, `intorno a` → *zu ·
+   to*. Lukas 1,6/8/15/17/19/25/35/58/75/76, Marco 3,11, 5,6, 5,21, 9,1,
+   10,20 (`fin dalla` → Artikel), 12,12, 15,39.
+2. **Partizip hinter eigens glossiertem Hilfsverb** — Magnificat und
+   Benedictus: es *ha dispersó/exaltó/colmó/despidió/ayudó/prometió/levantó*
+   → Partizip, fr *a dispersa*, *a a comblé*, *avait avait promis*, de *hat
+   zerstreute/erhöhte* → Partizip; en 1,47 *has rejoiced* → *rejoices*.
+3. **Kongruenz 1,18** — `mia moglie è avanti`: es *está avanzada*, fr
+   *avancée* (fem. Sg.).
+Dazu Kettenbrueche in denselben Versen (1,35/1,76 en *will* → *will be*;
+1,72 `si ricorda`; 1,74 fr `potessimo`; 1,77/1,78/1,79).
+**Bewusst stehen gelassen**, weil Bestandskonvention oder ohne Kriterium
+geteilt: Artikel + Possessiv mit gleicher Glosse (`i loro` → *their their*,
+Marco 11,7 u. a.), Pronomendopplung (`lui gli`), `che cosa`, `quello che`
+en *that that*, und `per`/`di` + Infinitiv en *to to* (Bestand ~9:9
+gespalten). Das ist eine eigene Konventionsfrage, keine Altlast.
