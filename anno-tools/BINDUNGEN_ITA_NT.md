@@ -15248,3 +15248,268 @@ Abweichungen. Die Level kommen aus dem italienischen Grundwortschatz, nicht aus 
    Wer eine Quelle zurueckschreibt, muss das Format der Datei erhalten — sonst
    waechst ein 1-Zeilen-Fix zu 10 000 Diffzeilen (in 309bd01 passiert, hier
    zurueckgenommen).
+
+---
+
+# Lukas 8 (Frauen im Gefolge · Sämann und Deutung · Licht · wahre Verwandte · Sturmstillung · Besessener von Gerasa · Jairus und die blutflüssige Frau)
+
+*Angehängt vom Agenten für Luca 8 (allein gelaufen). Höchste gesehene Nummer
+beim Anhängen war 459; ich zähle bei 460 weiter. 56 Verse, 1207 Tokens, 1207
+Einzelwort- + 58 Mehrwort-Einträge; 30 neue Einzellemmata. Synoptiker-Parallelen:
+45 von 56 Versen haben eine Vorlage ab 4 Tokens, 37 davon mit Glossen (Marco 4 · 5,
+Matteo 8 · 9 · 12 · 13, Luca 4 · 5 · 7) — der Start-Prompt nennt 36, die Datei
+`parallelen_42_8.md` zählt 37. Jede Vorlage am Vergleichsvers gelesen
+(`fixgloss.py verse` / eigene Kettenansicht `work/8/cv2.py`), nicht nur gegen den
+Extrakt.*
+
+## 460 · Mehrwörter, die Lukas 8 prägt und übernimmt
+
+Übernommen (zeichengleich, am Vergleichsvers gemessen): `in seguito` (8,1 ← Luca 7,11),
+`in mezzo a` (8,7, Form `in mezzo alle` ← Matteo 10,16; `alle` de *die* · en *the* · es
+*de los* — Genus des Zielnomens *espinos* — · fr *des*), `insieme a` (8,7, `al` trägt nur den
+Artikel: de *dem* · es *la* für *semilla*), `che cosa` (8,9 ← Marco 9,10), `portare via`
+(8,12 ← Marco 4,15), `portare frutto` (8,15, Plural *bringen Frucht* · *portent du fruit* ←
+Matteo 13,8), `a chi` (8,18 ×2 ← Matteo 25,29), `quello che` (8,18 · 8,56 ← Matteo 28,11),
+`a causa di` (8,19, Form `a causa della` ← Luca 5,19), `mettere in pratica` (8,21 ← Luca 6,47,
+Plural), `tanto che` (8,23), `riempirsi` (8,23 ← Marco 4,37), `avvicinarsi` (8,24 · 8,44),
+`stare per` (8,24 · 8,42 ← Luca 7,2), `l'un l'altro` (8,25 ← Luca 4,36), `di fronte`
+(8,26 ← Marco 12,41, `alla` daneben nur Artikel), `prostrarsi` (8,28 ← Marco 5,6),
+`a gran voce` (8,28 ← Luca 4,33), `andarsene` (8,14 · 8,39), `gettarsi` + `a precipizio`
+(8,33 ← Matteo 8,32), `quelli che` als Spanne mit dem Bestandslemma `quello che`
+(8,34 · 8,36 · 8,45; Reihe 407), `in perfetto senno` (8,35, angelehnt an `in sé`, Marco 5,15),
+`avere paura` (8,35), `tornarsene` (8,37 ← Luca 1,23), `a casa` (8,39 · 8,41), `di nome`
+(8,41), `da ogni parte` (8,42 ← Marco 5,24), `tutto ciò che` (8,43), `fermarsi` (8,44 ←
+Marco 5,29), `davanti a` (8,47; `a` daneben de *zu* · en *to* · es *de* · fr *à*, Reihe 437),
+`non più` (8,49, `parts` [17,19]), `per mano` (8,54), `alzarsi` (8,55), `da mangiare` (8,55).
+
+Neu geprägt oder an die Fügung angepasst:
+
+    8,6   per mancanza di      B2  aus Mangel an · for lack of · por falta de · faute de
+    8,8   nata che fu          B2  als sie aufgegangen war · when it had sprung up · al brotar · quand elle eut poussé
+    8,8   cento volte tanto    B2  hundertfach · a hundredfold · cien veces más · cent fois plus  (← Marco 10,30)
+    8,13  tirarsi indietro     B2  ziehen sich zurück · draw back · se echan atrás · reculent   [si tirano indietro, 3 Tokens]
+    8,22  prendere il largo    B2  fuhren hinaus · put out to sea · se hicieron a la mar · prirent le large
+    8,23  addormentarsi        A2  schlief ein · fell asleep · se durmió · s'endormit  (Reihe 438: Einzeleintrag `addormentare`)
+    8,24  calmarsi             B1  legten sich · died down · se calmaron · tombèrent   (Wind/Wellen, Matteo 14,32 · Marco 6,51)
+    8,29  molte volte          B1  oftmals · many times · muchas veces · souvent   (Schwester von `più volte`, Marco 5,4)
+    8,29  impadronirsene       B2  hatte sich seiner bemächtigt · had seized him · se había apoderado de él · s'était emparé de lui  [se n'era impadronito]
+    8,42  vi si recava         B2  ging dorthin · was going there · se dirigía allí · s'y rendait   (Lemma `recarsi`)
+    8,43  perdite di sangue    B2  Blutungen · bleeding · hemorragias · pertes de sang
+    8,45  si accalca           B2  drängt sich · crowds · se agolpa · se presse   (Reihe 438, Schwester von Luca 5,1)
+    8,47  passata inosservata  B2  unbemerkt geblieben · gone unnoticed · pasado inadvertida · passé inaperçue
+    8,52  facevano lutto       B2  trauerten · were mourning · hacían duelo · menaient le deuil
+    8,54  ad alta voce         B1  mit lauter Stimme · in a loud voice · en voz alta · à haute voix  (Schwester von `a gran voce`)
+
+`mwself.py` (Selbstvergleich der Spannen gegen die Kapitelwortfolgen) hat `cento volte
+tanto` als fehlend gemeldet — die Kandidatenliste von `draft.py` hatte es angezeigt, ich hatte es
+bei 8,8 übersehen. **Ein Fensterlauf gegen das eigene Kapitel (`mwself.py`) ist deshalb kein
+Luxus**, auch wenn `mehrwort.py` 0 meldet.
+
+## 461 · Was Lukas 8 bewusst KEIN Mehrwort bekommt
+
+- **`di città in città e di villaggio in villaggio` (8,1)**: Einzelwörter, *von Stadt zu Stadt · from
+  city to city* — Matteo 23,34 trägt `di città in città` ohne Spanne, `di` de *von* · `in` de *zu*.
+  Die zweite Hälfte spiegelt die erste (Prompt-Liste „prägt": keine Achtung-Meldung).
+- **`da molto tempo` (8,27)**: `sweeplemma.py` meldet `da tempo` (3 Belege, 60 %). `molto` steht
+  dazwischen — wörtlich (`da` de *seit*, `molto` *langer*, `tempo` *Zeit*), wie Reihe 430
+  (`avere paura` mit eingeschobenem Adjektiv).
+- **`coloro che` (8,12 · 8,14 · 8,15 · 8,21)**: Einzelwörter wie Marco 4,15-20 (`coloro` de
+  *diejenigen* · `che` de *die*); der Bestand kennt nur `colui che`.
+- **`si dicevano` (8,25)**: zwei Einzelwörter + Spanne `l'un l'altro`, wie Luca 4,36 (`mwself` meldet
+  `dirsi` aus Marco 10,26 · 16,3 als fehlend — absichtlich).
+- **`se ne` (8,10 `se ne parla`)**: kein `tornarsene`-Teilstück (Luca 2,20); `se` de *man* · `ne` de
+  *davon*, unpersönlich (Reihe 52).
+- **`fare attenzione` (8,18)**, **`portare alla luce` (8,17)**, **`abbi fede` (8,50)**, **`venire
+  incontro` (8,27)**: Einzelwörter wie Marco 4,24 · 4,22 · 5,36 · 5,2.
+- **`ai piedi di` (8,35 · 8,41 · 8,47)**: kein Mehrwort, keine Verwechslung mit `in piedi`; `ai piedi
+  di Gesù` de *zu den Füßen von* (Artikel bleibt), `ai suoi piedi` (8,47) de *zu* (Artikel vor
+  Possessiv fällt weg, Reihe 22).
+- **`in pericolo` (8,23)**, **`a terra` (8,27)**, **`sotto sorveglianza` (8,29)**: wörtlich.
+
+## 462 · Das subjektlose Verb in Lukas 8 — Reihe 300 · 308 · 420 · 446.1 · 452 angewandt
+
+Pronomen (de/en/fr; **es nie**) dort, wo das Subjekt gegenüber der unmittelbar vorangehenden Klausel
+wechselt oder im ganzen Satz nirgends steht (Nebensatz-Fall Reihe 308):
+
+    8,23  Mentre navigavano   sie segelten · they sailed · navegaban · ils naviguaient   (fr *Tandis qu'* davor)
+    8,25  Poi disse           sagte er · he said · dijo · il dit   (8,24 endet auf `tornò la bonaccia`)
+    8,29  spezzava            zerriss er · he tore apart · rompía · il rompait   (Subjekt vorher `si`/`lo` nur als Objekt)
+    8,49  Mentre parlava      er redete · he was speaking · hablaba · il parlait   (wie Marco 5,35; fr *Tandis qu'*)
+    8,53  E lo deridevano     verspotteten sie · they mocked · ridiculizaban · ils raillaient   (Subjektwechsel von `egli`)
+    8,53  che era morta       sie war · she was · estaba · elle était
+    8,18  che pensa di avere  denkt er · he thinks · piensa · il pense   (fr `che` *qu'*)
+
+**Kein Pronomen**, wo die Erzählung das Subjekt fortführt (Reihe 446.1): 8,4 `Gesù disse` · 8,5 `mentre
+seminava` (`Il seminatore` im Satz) · 8,8 `esclamava` (Jesus setzt nach dem Gleichnis fort) · 8,22 `disse loro` ·
+8,26 `Navigarono` (die Jünger/Jesus aus 8,25 laufen weiter) · 8,27 `non indossava` (`un uomo` im Satz) ·
+8,28 `disse` · 8,43 `possedeva` (`Una donna` im Satz) · 8,54 `disse ad alta voce` (`egli` steht davor).
+
+## 463 · Was die Synoptiker-Parallelen getragen haben — und wo Lukas 8 anders liest
+
+37 von 56 Versen tragen eine glossierte Vorlage; gelesen: **Marco 4,3-25 (8,4-18)** und **Marco 5,1-43
+(8,26-56)** haben zeichengleich getragen bis auf die Abweichungen mit Grund:
+
+- **8,5 `lungo la strada`**: Matteo 13,4 fr *le long de* + *du*, Marco 4,4 *le long de* + *le* — hier
+  *le long de* + *le* (Marco), de *dem*, es *del* (Matteo).
+- **8,7 `cresciute`**: Lemma `crescere`, en *having grown* (gleiches Agens wie `soffocarono`, Reihe 70).
+- **8,16 `accesa`** (Partizip absolut, gleiches Agens `Nessuno`) → `accendere`, *angezündet · having lit ·
+  habiendo encendido · ayant allumé*; nicht `acceso`.
+- **8,17 `nascosto`/`segreto`**: Marco 4,22 *hidden · oculto*, Matteo 10,26 trägt `nascosto` *covered ·
+  encubierto* und `segreto` *hidden · oculto*. Hier `nascosto` *Verborgenem · hidden · oculto · caché*,
+  `segreto` *Geheimem · secret · secreto · secret* — die Glosse gibt das italienische Wort wieder, und
+  ohne die Trennung stünde *hidden · oculto* zweimal im selben Vers.
+- **8,18 `Fate attenzione a come ascoltate`**: Marco 4,24 (*Achtet · acht · auf*), aber `come` de *wie* · en
+  *how* · es *cómo* · fr *comment* (indirekte Frage, nicht Vergleich) und `ascoltate` Indikativ (*hört* ·
+  *you listen* · *escucháis*), nicht Imperativ.
+- **8,18 `che pensa di avere`**: `di` de *zu* · en *to* · es *de* · fr *d'* (Reihe 446.2), `avere` bare.
+- **8,29 `spezzava`**: Marco 5,4 `spezzato` de *zerrissen* · en *torn apart* — hier *zerriss er · he tore
+  apart · rompía · il rompait* (`spezzare` sonst *brach*, Brot).
+- **8,33 `nei porci`**: Marco 5,13 trägt en *into* · es *en* ohne Artikel; Matteo 8,32 en *into the* — hier
+  *into the* · *en los* (Reihe 2). `branco` es *piara* (Matteo 8,30, Luca 8,32 · 8,33), nicht *manada*
+  (Marco 5,11 · 5,13).
+- **8,34 `portarono`**: Marco 5,14 fr *répandirent* → hier *portèrent* (die Glosse gibt das italienische
+  Wort wieder, Reihe 449).
+- **8,36 `Quelli che`**: Marco 5,16 einzeln (*Diejenigen · die*), hier Spanne `quello che` (Reihe 407) mit
+  denselben Einzelwörtern.
+- **8,37 `andarsene`** (Einzeltoken mit Klitikon, Reihe 79) de *fortgehen* · en *go away* · es *irse* · fr *s'en
+  aller*: Matteo 8,34 trägt *wegzugehen* · *to depart* (mit eigenem *zu* — nach `di` *zu* wäre das *zu zu*).
+- **8,48 `salvata`** es *salvada* (Frau/Tochter, Marco 5,34); Luca 7,50 trägt *salvado* für dieselbe Fügung.
+- **8,51 `tranne`** fr *sauf* (Matteo 12,39 trägt *sinon*): `tranne` ist *außer/sauf*, nicht *sinon*.
+- **8,54 `presala per mano`** Marco 5,41 (*Er nahm sie* — mit Pronomen, weil dort kein Subjekt vorangeht); hier
+  `egli` davor → *nahm sie · taking her · tomándola · la saisissant*.
+
+## 464 · Homographen, Lemmasplits und Partizipien in Lukas 8
+
+Nach Reihe 5 · 46 · 70 · 369 · 425 · 427 · 438 · 439:
+
+    Passiv/attributiv → Partizip-Lemma:
+      guarite 8,2 · 8,43 · 8,47 → `guarito` (nicht `guarire` wie Luca 5,15; Reihe 446.4)
+      calpestata 8,5 → `calpestato` · soffocati 8,14 → `soffocato` (neu) · salvati 8,12 · salvata 8,50 → `salvato`
+      conosciuto 8,17 (neu) · portato 8,17 · dato/tolto 8,18 · riferito 8,20 (neu) · liberato 8,36 (neu)
+      accolto 8,40 (neu; Bestand `accogliere` steht nur bei aktivem `abbiamo accolto`, Matteo 25,38)
+      trascinato 8,29 (neu) · presi 8,37 → `preso` · posseduto 8,27 · caduto 8,14 (attributiv) · seduto 8,35 ·
+      vestito 8,35 (Adjektiv, A2) · `l'accaduto` 8,34 · 8,35 · `era accaduto` 8,56 → `accaduto` (Reihe 425)
+      impaurito 8,25 (neu Lesart *frightened*) · stupito 8,25 · sbigottito 8,56 (*atónitos · stupéfaits* wie Luca 2,48)
+    Partizip absolut, gleiches Agens → Infinitiv-Lemma, Partizipglosse:
+      accesa 8,16 (`accendere`) · sceso 8,27 · arrivata 8,35 · Arrivato 8,51 (`arrivare`) · usciti 8,33 ·
+      udito 8,50 · svegliatosi 8,24 · gettatosi 8,41 · gettatasi 8,47 (`gettare`, Reihe 79/439) · presala 8,54
+    avere-/essere-Perfekt auf dem Infinitiv:
+      hanno udito → `udire` · ha speso → `spendere` · ha toccato → `toccare` · ho sentito → `sentire` ·
+      sono entrati → `entrare` · sono usciti → `uscire` · è uscita → `uscire` (en *has* · es *ha*, Reihe 459) ·
+      lo si fosse legato/tenuto → `legare`/`tenere` (Aktiv mit unpersönlichem `si`) · se n'era impadronito →
+      `impadronire` (Einzeleintrag unter Spanne `impadronirsene`, `n'era` → `ne`, Reihe 33)
+    è morta (8,49 · 8,52 · 8,53) → Adjektiv `morto` (Marco 5,35 · 5,39), es *está muerta* (nicht *ha muerta*)
+
+Homograph-Lesarten unter einem Lemma (Reihe 12): `cura` *Behandlungen · treatments · curas · soins*
+(neben *Sorgfalt*), `medico` Adjektiv *ärztlich · medical · médicas · médicaux*, `poiché` *Da · Since · Ya
+que · Puisque* (Luca 1,1), `prova` *Prüfung · trial · prueba · épreuve* (neben *Probe*), `largo`
+*Weite · open sea · alta mar · large* unter der Spanne `prendere il largo` (Luca 5,4 trägt die
+Idiomglossen *auf den See · into the deep* auf dem Einzelwort), `quanto` *was · what · cuanto · ce que*,
+`piacere` Nomen *Vergnügungen* (Marco 12,37), `vestiti` 8,27 → `vestito (sostantivo)`
+*Kleider · clothes · vestidos · vêtements* (Marco 9,3).
+
+## 465 · Kollisionen in Lukas 8 (`glosskollision.py`): aufgelöst und stehen gelassen
+
+Aufgelöst, alle im Kollisionsvers: `arrivare`/`venire` de *kommen* 8,41 (Vorhersage von `hints.py`) →
+`arrivare` *ankommen*; `recava`/`stava` es *iba* 8,42 → `recava` *dirigía*; `c'erano`/`erano` de
+*waren*, fr *étaient* 8,2 → `c'erano` *gab es · there were · había · il y avait* (Bestand Luca 2,8);
+`nascosto`/`segreto` 8,17 (s. 463); `stringe`/`accalca` de *drängt* · fr *presse* 8,45 → `accalca`
+*drängelt · jostles · agolpa · bouscule*; `tutto ciò che` → keine Änderung (Reihe 429).
+
+Stehen gelassen: `al`/`la` es *la* (8,7), `il`/`lo` fr *le* (8,24), `la`/`la` es/fr (8,5 · 8,13 · 8,15) —
+Artikel gegen Objektklitikon (Reihe 36/53/61); `diventare`/`essere` de *werden* (8,17, wie Matteo 10,26:
+Passivklammer gegen Vollverb); `lo`/`lui` en *him* (8,38 = Marco 5,18), `gli`/`lui` de *ihn* · en *him* · fr
+*lui* (8,30 = Marco 5,9), `me`/`mi` en *me* (8,46 = Marco 5,30) — Klitikon gegen Tonpronomen; `le`/`suo` de
+*ihr* (8,55, Dativ gegen Possessiv); `che`/`ciò` en *that* (8,43, Reihe 429); `che`/`cosa` (8,9, Spanne, Reihe 8
+Bauart `che cosa`); 44 geschlossene Wortarten (`a`/`di`, `che`/`la` de *die* usw.).
+
+## 466 · Befunde an der Werkzeugkette (Nachtrag aus Lukas 8)
+
+1. **Die Kettenlesung hat gefunden, was kein Werkzeug findet** (Reihe 428 · 437 · 456): `zu zu` in
+   8,37 (`di` *zu* + `andarsene` *wegzugehen*, aus Matteo 8,34), `go out out of` in 8,29 · 8,33 (`da` en
+   *of*, nicht *out of*), *setzt* gegen *stellt* für `mette` im selben Vers (8,16), `Die Leute ging` /
+   fr `gens sortit` (8,4 · 8,35: das Verb folgt dem Zielsprachennumerus von `gente`), *einen Mann* statt *ein Mann*
+   (`un uomo` ist Subjekt, 8,27), `mit Leute` (Dativ, 8,4), `la épreuve` (8,13, fr `l'`), `Des
+   Gleichnis` (8,11), `war gewesen geheilt` statt *worden* (8,47), `sondern` für `ma` (8,38, aus dem Entwurf
+   übernommen; Reihe 448.3), `nicht elidiert` fr `che` vor `une` (8,46) und `ne… pas` vor `ordonner`
+   (8,31, `elision.py` fand beide).
+2. **`draft.py` (Bauansatz aus dem Bestand) großschreibt jedes Vers-erste Token**, auch wenn der Quelltext
+   klein anfängt (`con lui c'erano` 8,2). Gemessen am Bestand: 238 kleine gegen 46 große Glossen bei
+   kleinem Quellanfang; nach Doppelpunkt 70 klein gegen 11 groß. In `stock.sent_start` auf „Satzanfang nur bei
+   groß geschriebenem Quelltoken" umgestellt (`work/8/stock.py`); `work/8/caps.py` (5 Zeilen) prüft das
+   Ergebnis (nur `Most High`/`Altísimo` als legitime Treffer).
+3. **`folgencheck.py` meldete `quelli che` gegen `quello che` als Mehrwort-Abweichung** — mein
+   Lemma war `quelli che`, der Bestand normalisiert die Spanne auf `quello che` (33×). `sweeplemma.py` hatte
+   das nicht gemeldet, weil die Spanne im Bestand unter dem anderen Lemma steht. Bei jeder neuen Spanne die
+   Lemmaschreibung mit `fixgloss.py mw <Teilwort>` gegenprüfen.
+4. **`artikel.py 42 8` und `kongruenz.py 42 8` lesen den gebauten Bestand**, nicht `ANNO_OUT` (Reihe
+   410): Null bei `kongruenz` deckt nur die Numerusprobe, `artikel.py` meldet zwei gespaltene Nomen (`chemin`,
+   `parole`), beide aus Matteo. Die Genusprobe musste am Vers gemacht werden (jedes Nomen mit Artikel/
+   Possessiv/Adjektiv in de/es/fr gegen das Zielnomen gelesen): gefunden nur Kopierfehler (`la épreuve`,
+   fr `une` statt `Une`, `los ataduras`, `el semilla`, `un/una`).
+5. **`elision.py` liest Einzelglossen-Nachbarn**: 8,53 `lo` fr *le* + `deridevano` fr *ils raillaient* meldet
+   nur mein eigenes `frel.py`; im Französischen steht das Objektpronomen vor dem Verb und das Subjektpronomen
+   danach, die Kette „le ils" ist ein Artefakt der Pronomen-in-der-Verbglosse-Konvention (Reihe 452).
+6. **zsh: eine Zeile `echo ====` wird als `=cmd`-Expansion gelesen** („= not found") und bricht den ganzen
+   Aufruf ab, auch die Befehle davor in derselben Zeile. `printf '\n---\n'` benutzen.
+7. **`fixgloss.py show <lemma>` zeigt die Lesarten, `showform <form>` die Form** — für `ho`/`ne`/`lo` ist
+   `showform` das richtige Werkzeug (die Formen tragen 3–6 Lesarten je nach Funktion).
+
+## 467 · Bestandsauffälligkeiten aus Lukas 8 (NICHT geändert — Sache des Koordinators)
+
+Alle gelesen, keine angefasst (fremde Kapitel):
+
+- **Luca 7,50 `salvata`** es *salvado* — die Frau: *salvada* (Marco 5,34 · Luca 8,48).
+- **Marco 4,38 `affogare`** de *zu ertrinken* · es *ahogarnos* (Klitikon eingebaut) · fr *de périr*: Luca 8,24
+  übernimmt zeichengleich (Bindung); `affogare` = *se noyer*, *périr* ist Wort des Zeugen (Reihe 449).
+- **Marco 5,14 `portarono`** fr *répandirent* (Zeugenwort); **Marco 5,13 `nei`** en *into* · es *en* ohne Artikel.
+- **Marco 5,12 · 5,18 · 5,23 · 7,26 · 9,18 · 14,64 · Luca 5,3 · 5,12 `lo`** es *le* (Leísmo an `pregare
+  qualcuno`; Reihe 357 hat nur Marco 7,32 korrigiert): Luca 8,32 · 8,38 · 8,41 tragen *lo*.
+- **Marco 5,16 · 5,40 · 5,14 `Quelli che`** als Einzelwörter (Reihe 407/409 offen).
+- **Marco 4,25** ohne Spannen `a chi` / `quello che` (Matteo 25,29 trägt sie).
+- **Marco 5,35 `è morta`** es *ha* + *muerta* (Hilfsverb und Adjektiv gemischt): *está muerta* oder *ha muerto*.
+- **Marco 5,23 `sia salvata`** Lemma `salvare` (Passiv) gegen Reihe 5 (`salvato`); ebenso Marco 5,34 `ti ha
+  salvata` (aktiv, richtig).
+- **Luca 5,4 `Prendi il largo`**: Einzelwörter tragen die Idiomglossen (*hinaus* · *auf den See* · *into the
+  deep*), keine Spanne; Luca 8,22 setzt `prendere il largo` als Spanne mit wörtlichen Einzelglossen —
+  `mwself`/`folgencheck --gegen` melden Luca 5,4 als „fehlend", sobald 8,22 eingesammelt ist.
+- **Matteo 10,26 `nascosto`** en *covered* · es *encubierto* (Marco 4,22 *hidden* · *oculto*).
+- **`Iairo` (Luca 8) / `Giairo` (Marco 5,22)**: zwei Lemmata für denselben Namen (Schreibung des Textes);
+  de *Jaïrus* (Luca, Zeuge) gegen *Jairus* (Marco).
+- **Matteo 12,39 `tranne`** fr *sinon* (ist *sauf*).
+
+## 468 · Die 30 neuen Einzellemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand (2873 Lemmata): `levelcheck.py 42 8` 0 Abweichungen.
+
+    A1  Giovanna · Cuza · Susanna · Iairo
+    A2  senso
+    B1  mancanza · onesto · conosciuto · riferito · navigare · pericolo · lanciare · liberato · accolto · perdita
+    B2  amministratore · umidità · soffocato · maturazione · perseveranza · manifesto · sorveglianza · legame ·
+        trascinato · abisso · annegare · popolazione · recare · inosservato
+    C1  senno
+
+- **Namen A1** (`Giovanna` neben `Giovanni`): die Schreibung der Zeugen am Vers — de *Johanna · Chuza ·
+  Susanna · Jaïrus*, en *Joanna · Chuza · Susanna · Jairus*, es *Juana · Cuza · Susana · Jairo*, fr *Jeanne ·
+  Chuza · Susanne · Jaïrus* — keine Deutung (`Cuza` de *Chuza*, kein Amt).
+- **`amministratore`** en *administrator*, fr *administrateur* (die Zeugen sagen *steward · intendant*: Wort
+  des Zeugen, Reihe 449).
+- **`abisso`** ist der einzige Elisionsfall mit Präposition + Nomen (`nell'abisso` → `abisso`, Reihe 1).
+- **`ne`** (8,29 `n'era`) als Elisionslemma des Adverbs (Reihe 33), nicht `essere`.
+
+## 469 · Einsammeln Lukas 8: Reihe 467 abgearbeitet, `parole` nicht mehr gespalten
+
+Gezogen: Lukas 7,50 `salvata` es *salvada* (die Frau); Marco 5,35 `è morta` es
+*está* (`morta` ist Adjektiv, *ha muerta* gibt es nicht); Marco 5,23 `sia
+salvata` Lemma `salvato` (Passiv, Reihe 5), en *saved*, es *salvada* statt der
+Zeugenwoerter *healed*/*sane*; Marco 5,13 `nei` *into the · en los*; Matteo
+10,26 `nascosto` *hidden · escondido* (war *covered · encubierto*); Matteo 12,39
+`tranne` fr *sauf*; Marco 4,38 `affogare` fr *de nous noyer* (war *de périr*);
+Matteo 5,37 `il vostro parlare` fr *parler* (war *parole* — daher das letzte
+gespaltene Nomen `parole` in `artikel.py`, jetzt 0).
+**Nicht gezogen:** `lo` es *le* (Leismo, Marco 5,12 u. a.) — fuer maennliche
+Personen von der RAE zugelassen, kein Fehler; `Iairo`/`Giairo` — zwei
+Schreibungen im italienischen Text, das Lemma folgt der Form; bares `quelli
+che` als Einzelwoerter in Marco 5,14/5,16/5,40 (Strukturfrage wie Reihe 449).
+`draft.py`-Grossschreibung der Vers-ersten Glossen in den Agentenkopien: der
+Befund steht, die betroffenen Kapitel sind nicht nachgezogen.
