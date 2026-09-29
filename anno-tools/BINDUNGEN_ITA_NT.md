@@ -14957,3 +14957,294 @@ an allen Stellen (Reihe 436). Dazu: es *el consuelo* Lukas 2,25 (war
 **Offen gelassen:** bares `quelli che` als Einzelwoerter in Matteo
 12,3/12,4 und Marco 1,36/2,25/2,26/5,40 gegen Reihe 407/409 (Struktur-
 aenderung, eigene Nachlese).
+
+---
+
+# Lukas 7 (Hauptmann von Kapernaum · Jüngling zu Nain · Anfrage des Täufers · die Sünderin)
+
+*Angehängt vom Agenten für Luca 7 (Paket 7·8·9, allein gelaufen). Höchste
+gesehene Nummer beim Anhängen war 449; ich zähle bei 450 weiter. 50 Verse,
+1075 Tokens, 1075 Einzelwort- + 53 Mehrwort-Einträge; 21 neue Einzellemmata.
+Synoptiker-Parallelen: 26 von 50 Versen tragen eine glossierte Vorlage
+(Matteo 8,5-13 und 11,2-19), jede Vorlage am Vergleichsvers gelesen
+(`fixgloss.py verse` / eigene Kettenansicht), nicht nur gegen den Extrakt.*
+
+## 450 · Mehrwörter, die Lukas 7 prägt und übernimmt
+
+Übernommen (am Vergleichsvers gemessen): `stare per` (7,2 ← Matteo 20,17),
+`con insistenza` (7,4), `per questo` (7,7 · 7,47), `sotto di me` (7,8 ←
+Matteo 8,9), `a casa` (7,10), `in seguito` (7,11 ← Giuda 1,5), `avere pietà`
+(7,13, Form `ebbe pietà`), `avvicinarsi` (7,14), `fermarsi` (7,14),
+`diffondersi` (7,17), `chiamare a sé` (7,19 ← Marco 3,23), `colui che` (7,19 ·
+7,20 · 7,23), `andarsene` (7,24 ← Luca 2,15), `riguardo a` (7,24), `che cosa`
+(7,24-26), `quello che` (7,22 · 7,25 · 7,49, bares `quelli che` nach Reihe 407),
+`del quale` (7,27), `davanti a` (7,27 ×2), `più grande` / `il più piccolo`
+(7,28 ← Matteo 11,11), `simile a` (7,32 ← Matteo 23,27), `a tavola` (7,36 ·
+7,37 · 7,49), `mettersi` (`si mise`, 7,36 ← Matteo 26,20), `trovarsi` (7,37),
+`più volte` (7,38 ← Marco 5,4), `tra sé` (7,39), `di che` (7,42 ← Matteo
+18,25), `di più` (7,42 · 7,43), `dentro di sé` (7,49), `a chi` (7,47),
+`farsi battezzare` (7,29 · 7,30), `entrare in casa di` (7,36), `vicino a`
+(7,12).
+
+Neu geprägt oder an die Fügung angepasst:
+
+    7,6   si incamminò        B2  brach auf · set out · se puso en camino · se mit en route
+    7,7   mi sono … ritenuto  B2  habe mich gehalten · have considered myself ·
+                                   me he considerado · me suis jugé   [parts 3,4,6]
+    7,11  si avviò            B2  begab sich · set off · se dirigió · se dirigea
+    7,15  si alzò a sedere    B2  setzte sich auf · sat up · se incorporó · se redressa
+    7,38  dietro di lui       B1  hinter ihm · behind him · detrás de él · derrière lui
+    7,45  da quando           B1  seit · since · desde que · depuis que
+
+- **`ritenersi` ist ein Mehrwort mit `parts`** ([3,4,6]) — `nemmeno` steht
+  dazwischen und behält seine eigene Glosse (Reihe 8, `fece in seguito
+  perire`). Das Hilfsverb `sono` bleibt bei der wörtlichen Kopula (*bin · am ·
+  soy · suis*, Reihe 6), das Partizip `ritenuto` traegt *gehalten · considered ·
+  considerado · jugé*, das Klitikon `mi` *mich · myself · me · me*.
+- **`si alzò a sedere` ist ein 4-Token-Mehrwort statt `si alzò` (22×, *stand
+  auf*) + `a sedere`**: wörtlich hieße das „stand auf, um zu sitzen"; das
+  Italienische meint „richtete sich auf". Die Einzelwörter bleiben wörtlich
+  (`alzò` *erhob · raised · levantó · leva*, `sedere` wie im Bestand).
+- **`dietro di lui`** folgt `contro di lui` / `su di lui` (Reihe 437): die
+  Präposition + `di` + Pronomen ist ein Mehrwort, `di` darunter trägt *von ·
+  of · de · de*.
+- **`vicino alla`** ist `vicino a` (Matteo 21,1 · Marco 11,1) mit verschmolzenem
+  Artikel; das Einzelwort `alla` trägt nur den Artikel im Ziel (*dem · the ·
+  de la · de la*), sonst stünde *nahe bei* zweimal (Reihe 2, Ausnahme).
+- **`entrò in casa del fariseo`** ist `entrare in casa di` (Lukas 1,40 · 4,38)
+  mit verschmolzenem `del`; die Mehrwortglosse folgt der Fügung (*kam in das
+  Haus des · entered into the house of the · entró en casa del · entra dans la
+  maison du*), Lemma bleibt (Reihe 435).
+
+## 451 · Was Lukas 7 bewusst KEIN Mehrwort bekommt
+
+- **`a chi` als Frage (7,31 ×2)**: Reihe 444 (6,47). Das Mehrwort `a chi` ist die
+  Relativlesart (*dem, der*, 7,47 `a chi poco è perdonato`); `A chi dunque
+  paragonerò` ist wörtlich *Mit wem · To whom* — genau wie Matteo 11,15.
+  `mwself.py` meldet die beiden Stellen zu Recht als „fehlt", sie fehlen mit Absicht.
+- **`si mise a tavola` (7,36) ist `si mise` + `a tavola`, nicht `mettersi a`**
+  (Reihe 322-Bauart): Matteo 26,20 hat dieselbe Fügung mit zwei Spannen; `mettersi
+  a` (*machte sich daran*, 11×) ist der Beginn einer Handlung.
+- **`sei tu` (7,19 · 7,20)**: der Bestand kennt `sei tu` nur als *es bist du*
+  (Matteo 14,28); die Frage `Sei tu colui che deve venire` ist Matteo 11,3
+  einstimmig ohne Spanne.
+- **`non più` [7,10] und `non che` [0,4] (7,28 · 7,42)** sind Zufallsfolgen des
+  Fensterlaufs (`non c'è nessuno più grande`; `non avendo essi di che`).
+- **`se ne` (7,24) als `tornarsene`**: das Fenster meldet ein Teilstück von
+  `se ne furono andati` (Spanne `andarsene`).
+- **`in casa di` (7,37 `in casa del fariseo`)**: nur nach `entrare` ein Mehrwort
+  (Reihe 435); nach `si trovava a tavola` bleibt es bei drei Einzelwörtern.
+- **`gli uni agli altri` (7,32)**: Einzelwörter wie Matteo 25,32 · Marco 9,50
+  (*die einen · den anderen*), kein Mehrwort nach `l'un l'altro`.
+
+## 452 · Das subjektlose Verb in Lukas 7 — Reihe 300 · 308 · 420 · 446.1 angewandt
+
+Pronomen (de/en/fr; **es nie**) dort, wo das Subjekt gegenüber der unmittelbar
+vorangehenden Klausel wechselt oder im ganzen Satz nirgends steht:
+
+    7,4   È degno          Er ist · He is · Es · Il est    (Subjekt: der Hauptmann; Satzsubjekt `Questi` = die Ältesten)
+    7,12  fu               er war · he was · estuvo · il fut  (7,11 endet auf den Plural `discepoli … folla`)
+    7,12  portavano        trugen sie · they were carrying · llevaban · ils portaient
+    7,32  Sono simili      Sie sind · They are · Son · Ils sont
+    7,37  si trovava       er befand sich · he was · se hallaba · il se trouvait   (Mehrwort UND Einzeleintrag)
+    7,42  condonò          erließ er · he forgave · perdonó · il remit
+    7,43  Penso            Ich denke · I think · Pienso · Je pense   (wie Matteo 8,7 `Verrò`)
+
+**Kein Pronomen**, wo das Subjekt im Satz steht oder die Erzählung es fortführt
+(Reihe 446.1): 7,13 `ebbe`/`disse` (`Il Signore`), 7,14 `Si avvicinò e toccò`
+(7,13 nennt es), 7,15 `cominciò`, 7,38 `cominciò` (Subjekt `una donna` steht im
+selben Satz, 7,37), 7,44 `disse` und 7,48 `disse` (Jesus fährt fort; 7,50 hat
+`egli` und trägt es).
+
+**7,37 `saputo che si trovava`** ist der Grenzfall: Reihe 308 (Nebensatz,
+Subjekt nirgends im Satz) verlangt das Pronomen, der französische Anschluss
+verlangt dann `qu'` vor `il se trouvait` — `che` steht deshalb auf *qu'* und das
+Einzelwort `si` auf *se*; die Kettenlesung zeigt „qu' se il trouvait", der fertige
+Satz „qu'il se trouvait".
+
+## 453 · Was die Synoptiker-Parallelen getragen haben — und wo Lukas 7 anders liest
+
+26 von 50 Versen tragen eine Vorlage; alle gelesen, **Matteo 8,8-10 (7,6-9) und
+Matteo 11,3-19 (7,19-34) haben zeichengleich getragen**: 7,8 ← 8,9 (bis auf
+`all'autorità altrui`), 7,19/7,20 ← 11,3, 7,22 ← 11,4-5, 7,24-27 ←
+11,7-10, 7,28 ← 11,11, 7,32 ← 11,17, 7,34 ← 11,19. Abweichungen mit Grund
+(`folgencheck --gegen … --min 5`: 288 Folgen zeichengleich, 23 Abweichungen):
+
+- **`è venuto` (7,33 · 7,34): *ist · has · ha · est*, Partizip *gekommen · come ·
+  venido · venu*.** Matteo 11,18 · 11,19 · 18,11 · 20,28 · 21,32 tragen *ist · is ·
+  es · est*; Marco 10,45 · Giuda 1,14 und Reihe 6 tragen *has · ha*. Ein Perfekt mit
+  `es venido` gibt es im Spanischen nicht. **Matteo 11,11 (`è sorto`), 11,18, 11,19,
+  12,28, 18,11, 20,28, 21,32 sind die Ausreißer und sollten nachgezogen werden.**
+- **`avendo sentito parlare di Gesù` (7,3): `parlare` en *spoken*, nicht *spoken of*.**
+  Marco 5,27 · 7,25 tragen `parlare` *spoken of* UND `di` *of* — *heard spoken of of
+  Jesus*, die Klasse „doppelte Präposition" aus Reihe 437. Beide Marco-Stellen
+  sollten auf *spoken* gezogen werden.
+- **`salvata` (7,50): *gerettet · saved · salvado · sauvée*** wie Marco 10,52; Marco
+  5,34 trägt für dieselbe Fügung *gesund gemacht · well · sanada* (Wort der Zeugen,
+  nicht des Italienischen, Reihe 449). Nachziehen.
+- **`a tavola` en *to* (7,36 · 7,37 · 7,49)**: Bestand 10× *to*, 2× *at* (Luca 5,29).
+  Ich folge der Mehrheit; Luca 5,29 ist der Ausreißer.
+- **`presi da timore` (7,16) en *by*, es *por*, fr *par*** — zeichengleich Luca 1,65;
+  Luca 4,36 · 5,26 tragen *with · de · de*. Dieselbe Fügung, zwei Lesarten im Buch.
+- **`Signore` (7,6) als Anrede**: en *Lord* (Matteo 8,6), nicht *Sir*.
+- **Bares `quelli che` (7,25 · 7,49)** trägt die Spanne (Reihe 407); Matteo 11,8 hat
+  dieselbe Fügung noch als Einzelwörter (Reihe 449 „offen gelassen").
+- **`di quella città` (7,37) de *aus*, `vicino alla porta` (7,12)**: nach Bestandsreihe
+  (`di alabastro` *aus*), ohne Vorlage.
+
+## 454 · Homographen, Lemmasplits und Partizipien in Lukas 7
+
+Nach Reihe 5 · 46 · 369 · 425 · 427 · 438 · 439:
+
+    presentatisi   7,4 · 7,20  Partizip assoluto, gleiches Agens → `presentare` B1 (Reihe 427:
+                               `presentare`/`presentarsi` kollabieren), *hingetreten · having
+                               presented themselves · habiéndose presentado · s'étant présentés*
+    voltosi        7,44        gleiches Agens → `voltarsi` B1 wie Matteo 8,33 `voltatosi`
+    rivolto        7,9         gleiches Agens → `rivolgersi` B1 wie Marco 14,48 (nicht `rivolgere`, Luca 1,25)
+    chiamati       7,19        gleiches Agens, unter der Spanne `chiamare a sé` → `chiamare` A1
+    udito          7,9         Partizip assoluto, gleiches Agens → `udire`; 7,22 · 7,29 `avete
+                               visto e udito` / `ha udito` avere-Perfekt → `udire`
+    saputo         7,37        gleiches Agens → `sapere`, *erfahren · having learned*
+    mandati        7,20        `ci ha mandati` avere-Perfekt → `mandare` (Matteo 23,37 `mandato` ist Passiv)
+    amato          7,47        `ha molto amato` avere-Perfekt → `amare`, NICHT `amato` (*geliebt*, Matteo 3,17)
+    giudicato      7,43        `hai giudicato` → `giudicare` (Bestand `giudicato` ist Passiv, Matteo 7,1)
+    dato           7,44 · 7,45 `mi hai dato` → `dare` (12× im Bestand), nicht `dato` (Reihe 439, Passiv)
+    unto           7,46        beide Belege → `ungere` (Bestand Luca 4,18)
+    guariti        7,22        Passiv → `guarito`; `guarito` 7,10 Zustandspassiv → `guarito`
+    perdonati/o    7,47 ×3     Passiv → `perdonato` wie Matteo 9,2 · 12,31
+    reso           7,35        `è stata resa giustizia` Passiv → `reso` B1 (Matteo 24,14 `resa`, *rendered*)
+    annunciata     7,22        Passiv → `annunciato` (Matteo 11,5, aber *announced*, nicht *preached*: das Wort
+                               ist italienisch `annunciare`, Luca 2,20)
+    facendosi      7,29 · 7,30 Einzeleintrag → `fare` (nicht `farsi`, wie Matteo 3,13 · Luca 3,7 `farsi`
+                               unter `farsi battezzare`); Bestand `farsi` (2×) ist `facendosi sera`
+    rifiutato → `rifiutare`, invitato → `invitare`, `conceda` → `concedere`, `costruirci` → `costruire`:
+                               avere-Perfekt / Infinitiv → Infinitiv-Lemma
+
+Homograph-Lesarten unter einem Lemma (Reihe 12): `profumo` *Duftöl · perfume · perfume ·
+parfum* (7,46) neben *Räucherwerk · incense* (Luca 1,9 · 1,10); `peccatore` als Nomen
+*Sünderin · sinner · pecadora · pécheresse* (7,37 · 7,39) neben *sündiger · sinful* (Luca 5,8);
+`maligno` als Adjektiv *bösen · evil · malignos · malins* (7,21) neben *Bösen · evil one* (Matteo
+5,37); `caro` *lieb · dear · querido · cher* (7,2) neben *hohem · high* (Matteo 26,9, `di
+grande valore`); `ormai` *schon · already · ya · déjà* (7,6) neben *jetzt · now*; `motivo` *Grund ·
+reason · motivo · motif* (7,23, wie Luca 6,7); `disturbo` B1 (der Bestand führt es schon so).
+
+## 455 · Kollisionen in Lukas 7 (`glosskollision.py`): aufgelöst und stehen gelassen
+
+Aufgelöst, alle im Kollisionsvers: `abito`/`veste` 7,25 (Vorhersage von `hints.py`):
+`abiti` *Kleider · clothes · ropas · habits*, `vesti` *Gewänder · garments · vestiduras ·
+vêtements*; `ciò`/`quello` 7,39 (Vorhersage): `ciò` en *it*, `quella` en *the one*;
+`agli`/`gli` en *the* 7,32 → `agli` *to the* (Bestand 12× *den · to the · a los · aux*);
+`da`/`a` fr *à* 7,20 → `da te` fr *vers* (wie 7,7 · Matteo 8,5); `che`/`chi` en *who* 7,39 ·
+7,49 → relatives `che` en *that* (Reihe 327, 1,34); `quella`/`che` en *that* 7,37 stehen
+gelassen (Demonstrativ und Konjunktion, fünf Tokens auseinander).
+
+Stehen gelassen: `la`/`lo` fr *le*, `Il`/`lo` fr *le* (7,14 · 7,15 · 7,39), `i`/`li` es *los* fr
+*les* (7,38 · 7,44) — Artikel gegen Objektklitikon (Reihe 36/53/61); `te`/`tu` en *you* (7,20);
+`lo`/`lui` en *him* (7,36); `essi`/`loro` es *ellos* (7,42) und `essa`/`lei` es *ella* fr *elle*
+(7,12), `lei`/`li` de *sie* (7,44) — Subjekt gegen Objekt, dieselbe Form; `che`/`Chi` fr
+*qui* (7,49), `che`/`quale` fr *qui* (7,27, wie Matteo 11,10); `a`/`di` es *de* (7,24 ·
+7,27); `da`/`di` de *von* (7,30); `alla`/`della` es/fr *de la* (7,12, `cerca de la puerta de
+la ciudad`); `a`/`di` und `da`/`di` de *zu* en *to* (7,3 · 7,7, `a pregarlo di venire` = *to
+ask him to come*); `con`/`di` de *mit* en *with* (7,38 · 7,44 · 7,46, drei gleichrangige
+Mittel: Tränen, Haare, Öl); `hai`/`Sono` en *have* (7,44 · 7,45, Zeitklammer, Reihe 6);
+`a`/`da` de/en/es (7,20, `presentatisi a Gesù` / `mandati da te`); `era`/`stava` de *war*
+(7,2, `stava` steht unter der Spanne `stare per`).
+
+## 456 · Befunde an der Werkzeugkette (Nachtrag aus Lukas 7)
+
+1. **Die Kettenlesung hat gefunden, was kein Werkzeug findet** (Reihe 428 · 437): `spoken of
+   of` (7,3, aus Marco 5,27 kopiert), `beaucoup aveugles` statt *beaucoup d'aveugles*
+   (7,21), *Zöllnern* statt *Zöllner* und *Kinder* nach `mit` statt *Kindern* (7,29 · 7,32,
+   Kasus des Zielwortes), *Junge Mann* im Vokativ, `è venuto` stand im Entwurf auf *is · es
+   venido* (7,33), `suoi` mit *seine* statt *ihre* in
+   `i suoi molti peccati` (7,47) und `i suoi figli` der `sapienza` (7,35) — das Possessiv
+   folgt dem Besitzer, nicht dem Erzähler —, fr *le écoutait* / *le a entendu* / *le invita* /
+   *le aimera* (`l'` vor Vokal, `elision.py` meldet es nur, wenn das Einzelwort daneben
+   steht), en *not having* am Satzanfang klein (Bestandsvorlage Matteo 18,25 `not`).
+   **Die maschinelle Nachbarpaar-Probe** (`work/7/adj.py`) fand am Ende 0 Treffer.
+2. **`elision.py` liest Einzelglossen-Nachbarn und sieht die Pronomen in Verbglossen nicht**:
+   `che` fr *qu'* vor `si` fr *se* (7,37) meldet niemand, im fertigen Satz „qu'il se trouvait" ist
+   es richtig. Ich habe die Gegenprobe (über-elidiert: `'` vor Konsonant) als eigenes
+   Skript gebaut (`work/7/frel.py`): 1 Treffer (`che` *qu'* vor `si` *se*, 7,37, begruendet).
+3. **`verschmelzung.py` Abschnitt A fand `della legge` (7,30) en *of* · es *de* · fr *de*** —
+   Luca 5,17 hat dieselbe Fügung ohne Artikel (`della legge` en *of*, `dottori` … es *de ley*,
+   fr *de loi*); der Lauf hat den Bestand nicht gelesen (liest `--datei`). 7,30 trägt *of the ·
+   de la · de la*. **Luca 5,17 ist der Ausreißer.**
+4. **`mwcheck` (Fensterlauf, `work/7/mwcheck.py`, rund 20 Zeilen)** meldete 9 Fenster; alle geprüft:
+   `si alzò` (überdeckt von `si alzò a sedere`), `sei tu` (Matteo 14,28 ist anderes Wort),
+   `se ne` (Teil von `andarsene`), `non più`/`non che` (Zufall), `a chi` ×2 (Frage), `si mise a`
+   (Reihe 451). Damit ist kein fehlendes Mehrwort im Kapitel offen.
+5. **`weak.py` (Entwurfstokens, die ich unverändert aus dem Bestand übernommen habe und die
+   nur mit Bewertung ≤ 3 stützen)** hat 251 Zeilen ergeben; ich habe sie alle noch einmal am
+   Vers gelesen (Aenderungen vor allem Kasus, Satzanfang, Genus, Possessor, Hilfsverb-Reihe 6
+   statt Matteo-Stand).
+6. **`glosskollision.py` meldet weiter Grossschreibungs-Paare und Artikel/Klitikon-Paare
+   als „inhaltlich"** (10 Paare, davon 7 in nur einer Sprache): alle Reihe 36/53/61 oder
+   Reihe 327; die einzige echte Kollision war `abito`/`veste`, von `hints.py` vorhergesagt.
+7. **`artikel.py 42 7` und `kongruenz.py 42 7` melden 0/2 gespaltene Nomen (`chemin`,
+   `justice`) — beide aus Matteo, nicht Lukas 7** (Reihe 410: liest den gebauten Bestand,
+   nicht `ANNO_OUT`). Die Genusprobe musste am Vers von Hand gemacht werden, jedes Nomen mit
+   Artikel/Possessiv/Adjektiv in de/es/fr gegen das Zielnomen gelesen; gefunden: nur die
+   Fälle aus 456.1.
+
+## 457 · Bestandsauffälligkeiten aus Lukas 7 (NICHT geändert — Sache des Koordinators)
+
+Alle gelesen, keine angefasst (fremde Kapitel):
+
+- **`è venuto` (Matteo 11,11 · 11,18 · 11,19 · 12,28 · 18,11 · 20,28 · 21,32)** *is · es* statt
+  *has · ha* (Reihe 453, Marco 10,45 und Giuda 1,14 tragen das Perfekt).
+- **`parlare` + `di` (Marco 5,27 · 7,25)** en *spoken of* + *of* (doppelte Präposition).
+- **`salvata` Marco 5,34** *gesund gemacht · well · sanada* — Wort der Zeugen.
+- **Luca 5,17 `della legge`** ohne Artikel in en/es/fr (Reihe 456.3).
+- **Luca 2,15 `se ne furono andati`**: `se` fr *s'en* UND `ne` fr *en* — *s'en en*; Luca 4,42 ·
+  Marco 7,24 tragen *s'* + *en*.
+- **Luca 5,29 `a tavola`** en *at* gegen 10× *to*.
+- **`presi da timore` Luca 4,36 · 5,26** en *with* · es *de* · fr *de* gegen Luca 1,65 · 7,16 *by ·
+  por · par* (dieselbe Fügung).
+
+## 458 · Die 21 neuen Einzellemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand (2846 Lemmata): `levelcheck.py 42 7` 0
+Abweichungen. Die Level kommen aus dem italienischen Grundwortschatz, nicht aus den Zeugen.
+
+    A1  Nain
+    A2  bacio · cinquecento · invitare
+    B1  asciugare · bagnare · disegno · genere · lacrima · lusso · smettere
+    B2  agitato · avviare · bara · creditore · incamminare · inviato · portatore · raffinato
+    C1  altrui · sontuoso
+
+- **`bacio` A2, nicht B1** neben `baciare` B1 (Bestand): das Nomen steht in jedem A2-Text.
+- **`disturbo` B1**, nicht B2: der Bestand führt es schon mit B1 (`levelcheck` meldete B2).
+- **`sontuoso` C1, `altrui` C1**: literarische Wörter, in keiner Grundliste.
+- **`invitare` A2** neben `invitato` B2 (Gäste, Matteo 22): zwei Lemmata, weil `invitato` dort
+  substantiviert steht und der Bestand `invitare` nicht führt.
+- **`Nain` ist ein eigenes Lemma, keine Deutung**: der Text nennt den Ort, die Glosse gibt
+  die Schreibung des Zeugen (de *Nain* · en *Nain* · es *Naín* · fr *Naïn*).
+
+## 459 · Einsammeln Lukas 7: essere-Perfekt nach Reihe 6 nachgezogen (93 Glossen), Reihe 457 abgearbeitet
+
+1. **`è venuto` & Co. — Reihe 6 gilt fuer den ganzen Bestand.** Die reine
+   Zeitklammer traegt das Hilfsverb der Zielsprache; Matteo (und einige
+   Marco/Lukas-Stellen) standen bei `essere` + intransitivem Partizip auf
+   en *is/are* · es *es/son* — spanisch *es venido* gibt es nicht. Gezogen:
+   en *is/are/am* → *has/have*, es *es/son/soy/eres/somos/sois* → *ha/han/he/
+   has/hemos/habéis*, dazu die spanische Partizipendung auf die unveraenderliche
+   Form (*ha caído*, nicht *ha caída*; *han ido*, nicht *idos*). **de und fr
+   bleiben** (*ist gekommen*, *est venu* — beide Sprachen bilden dieses Perfekt
+   selbst mit sein/être). **Ausgenommen:** Hilfsverb innerhalb einer
+   Reflexiv-Spanne (Reihe 6: Kopula bleibt) und `è nato` (en *is born*; *has
+   born* waere falsch).
+2. **Reihe 457 abgearbeitet:** Marco 5,27/7,25 `parlare` en *spoken* (nicht
+   *spoken of* vor `di` *of*); Marco 5,34 `salvata` *gerettet · saved · salvada*
+   wie Marco 10,52; Lukas 5,17 `della legge` *of the · de la · de la*; Lukas 2,15
+   `se` fr *s'* (nicht *s'en* vor `ne` *en*); Lukas 5,29 `a tavola` `a` en *to*.
+   **Nicht angeglichen:** `presi da` en *with/by* (Lukas 4,36/5,26 gegen 1,65/7,16)
+   — beides richtiges Englisch, kein Kriterium.
+3. **Genus-Ausreisser 18/19:** fr *la chemin* Matteo 21,32 → *le*; Matteo 23,23
+   `giudizio` fr *justice* → *jugement* (Bestand 10:1). `mort` m Lukas 7,15 ist
+   richtig (*le mort*, der Tote).
+4. **Werkzeuglehre fuer den Koordinator:** Matteo-Quellen liegen KOMPAKT
+   (eine Zeile, teils ohne Leerzeichen nach `,`/`:`), Marco/Lukas eingerueckt.
+   Wer eine Quelle zurueckschreibt, muss das Format der Datei erhalten — sonst
+   waechst ein 1-Zeilen-Fix zu 10 000 Diffzeilen (in 309bd01 passiert, hier
+   zurueckgenommen).
