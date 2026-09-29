@@ -14732,3 +14732,228 @@ pro Spalte.
 3. Zwei alte Genusfehler, sichtbar durch den gewachsenen Bestand
    (16./17. Fall der Klasse): es *el camilla* Marco 2,12 → *la*, es *la
    rostro* Matteo 18,10 → *el*.
+
+---
+
+# Lukas 6 (Ähren am Sabbat · verdorrte Hand · Zwölferwahl · Feldrede)
+
+*Angehängt vom Agenten für Luca 6 (Paket 4·5·6, allein gelaufen). Höchste
+gesehene Nummer beim Anhängen war 443; ich zähle bei 444 weiter. 49 Verse,
+1039 Tokens, 1039 Einzelwort- + 44 Mehrwort-Einträge; 25 neue Lemmata von
+334. Synoptiker-Parallelen: 32 von 49 Versen haben eine Vorlage ab 4 Tokens, 30
+davon mit Glossen (Matteo 12, 5, 7, 10, 23 · Marco 2, 3); jede am Vergleichsvers
+gelesen (Kettenansicht des Quellstands), nicht nur gegen den Extrakt.*
+
+## 444 · Mehrwörter, die Lukas 6 prägt und übernimmt
+
+Übernommen (zeichengleich, am Vergleichsvers gemessen): `quello che` (6,2 ·
+6,3 · 6,46 „das, was"), `avere fame` (6,3 ← Matteo 12,3), `chiamare a sé`
+(6,13), `mettersi a` (6,6), `alzarsi` (6,8), `in piedi` (6,8 ← Lukas 1,11,
+Zustand), `pieno di` (6,11 ← 5,26), `tra loro` (6,11 ← Marco 14,4), `anche se`
+(6,4 „obwohl" ← Giuda 1,5), `se non` (6,4), `il quale` (6,13 ← Marco 3,17),
+`insieme a` (6,17), `fermarsi` (6,17), `guai a voi` (6,24-26 ← Matteo 23,13),
+`accorgersi` (6,41 ← Matteo 7,3), `lo stesso` (6,23 · 6,26 · 6,33), `mettere in
+pratica` (6,47 · 6,49 ← Matteo 7,24), `a causa di` (6,22, Form `a causa del`
+← Matteo 19,12), `a chi` (6,29 · 6,30 ← Matteo 5,40/42), `ciò che` (6,30,
+fr *ce qui*, da `che` Subjekt ist).
+
+Neu: `somigliare a` B2 (6,48 · 6,49: *gleicht · is like · se parece a ·
+ressemble à*, Schwester von `simile a`; `a` trägt einzeln *mit · to · a · à*,
+wie unter `simile a`), `in cambio` B1 (6,35 · 6,38: *im Tausch · in exchange ·
+a cambio · en échange*; **Anlass war eine Kollision**: ohne Spanne hätte
+`a voi in cambio` es *a vosotros a cambio* — die Spanne setzt `in` es *en*).
+
+**Bewusst KEIN Mehrwort:**
+
+- **`di sabato`** (6,1 · 6,2 · 6,7 · 6,9): im Bestand 3× als Spanne, alle in
+  Marco (2,24 · 3,2 · 3,4); Matteo 12 (6 Stellen) und Lukas 4,16/4,31 führen
+  Einzelwörter. Ich habe für alle vier Stellen dieselbe Entscheidung
+  getroffen (Einzelwörter *am · on · en · le jour du* + *Sabbat*), damit das
+  Kapitel in sich stimmt; 6,1 `Un giorno di sabato` folgt ohnehin Marco 2,23
+  (*de · de*).
+- **`a chi somiglia`** (6,47): eine Spanne `a chi` existiert (Reihe: *dem, der*),
+  ist aber die Relativlesart; hier ist es die indirekte Frage *wem · to whom ·
+  a quién · à qui* und wörtlich (`a` *zu*, `chi` *wem*). Der Mehrwort-Fensterlauf
+  meldet die Stelle — Fehlalarm der Bauart aus Reihe 332.
+- **`anche se non` / `non che`** (6,4 · 6,3 · 6,42): `se non` gilt nur an 6,4
+  Position 29-30 („se non ai soli sacerdoti"); das erste `se non` gehört zu
+  `anche se`. `non … che` in 6,3/6,42 ist zufällige Folge (Relativsatz).
+- **`con cui`** (6,38): zeichengleich Matteo 7,2 — dort Einzelwörter, gegen
+  die Spanne aus Marco 10,38.
+
+## 445 · Was der Kapitelvergleich am Bestand sichtbar gemacht hat (NICHT geändert — Sache des Koordinators)
+
+Die Kettenlesung und `folgencheck --gegen` haben fremde Stellen gezeigt;
+ich habe sie nicht angefasst (fremdes Kapitel), sie gehören nachgezogen:
+
+- **Marco 3,4, pos 15**: `una` fr *una* — das ist Spanisch; muss *une* sein
+  (`persona` fr *personne*). In Lukas 6,9 steht *une*. Klasse
+  „Zielsprachengenus", diesmal ein spanisches Wort in der französischen Spalte.
+- **Lukas 4,2, `quei`**: fr *esos* (spanisch) statt *ces* — dasselbe.
+- **Lukas 5,34, `Gesù`**: de/en/fr *Er · He · Il* statt des Namens
+  (*Jesus · Jesus · Jésus*); `disse` fr *répondit*.
+- **Lukas 5,36, `Disse`**: Satzanfang, aber kleingeschrieben (*erzählte · told
+  · contó · dit*); Lukas 6,39 trägt *Erzählte · Told · Contó · Dit*.
+- **Matteo 5,12, `vostro`**: der Artikel steht seit Reihe 360 auf *la*, das
+  Possessiv aber noch auf *vuestro* (Genus des Zielnomens verlangt *vuestra*);
+  Lukas 6,23 und 6,35 tragen *la vuestra*.
+- **Matteo 12,35**: es `malvagio` vor Nomen *malo tesoro* — Apokope
+  *mal tesoro* wäre Spanisch (Lukas 6,45 trägt *mal*); analog *buen* für
+  `buon`, das der Bestand schon setzt.
+- **Matteo 7,16**: `rovi` de/en/es/fr *Disteln · thistles · abrojos ·
+  chardons* — `rovo` ist der Brombeer-/Dornstrauch (*bramble*). Lukas 6,44
+  trägt *Dornbusch · bramble · zarza · ronce*. Zwei Lesarten unter einem
+  Lemma (Reihe 12), aber die ältere ist die schwächere.
+- **Lukas 4,29 `costruita`** (passiv, „era costruita"): Lemma `costruire`;
+  nach Reihe 5 (Passiv auf der Partizipform) gehörte es auf `costruito`, wie in
+  Lukas 6,48 gesetzt. `sweeplemma.py` meldet den Unterschied zu Recht.
+- **Lukas 5,15 `per`**: de *um zu* + `ascoltarlo` *zu hören* ergibt *um zu ihn
+  zu hören* (zu zu); Lukas 6,18 trägt `per` *um · in order*.
+- **`Iscariota` fr**: Bestand 4× *Iscariote* (Matteo 10,4 · 26,14 · Marco 3,19 · 14,10),
+  der französische Zeuge (LSG) schreibt an allen diesen Stellen *Iscariot*
+  (Reihe 436); Lukas 6,16 trägt *Iscariot*. Spaltet den Bestand, bis
+  Matteo/Marco nachgezogen sind.
+- **Bare `quelli che`**: Reihe 407/409 verlangt die Spanne; u. a. Matteo 12,3 ·
+  12,4 · Marco 1,36 · 2,25 · 2,26 · 5,40 tragen noch Einzelwörter (Lukas 6 trägt die
+  Spanne an allen 9 Stellen).
+
+## 446 · Entscheidungen an Lukas 6, die über das Kapitel hinausreichen
+
+1. **Subjektloses Verb (Reihe 300/308/420)**: in Lukas 6 an jedem Vers
+   einzeln entschieden — wo das Subjekt (Jesus) in der Erzählung fortläuft und
+   nur der Verbbeginn fehlt (6,5 `diceva` · 6,6 `entrò` · 6,10 `disse` · 6,13
+   `chiamò` · 6,17 `si fermò` · 6,20 `diceva` · 6,39 `Disse` · 6,48 `Somiglia`)
+   **kein Pronomen**, wie Lukas 5,3 (`Salì`) und 5,27 (`uscì`); das Pronomen
+   bleibt Subjektwechseln vorbehalten (Lukas 2,16 · 2,51). Reihe 324 (Marco 1)
+   ist die strengere Praxis; beides steht im Bestand.
+2. **`per` + Infinitiv** (6,7 ×2 · 6,18 ×2 · 6,42): `per` de *um* · en *in
+   order* · es *para* · fr *pour*, der Infinitiv trägt *zu X · to X*. Ergebnis:
+   kein *to to*, kein *zu zu*, und *in order to see* ist Englisch. Lukas 5,15
+   (*um zu* + *zu hören*) und Matteo 7,5 (`per` en *to*) weichen ab.
+   `di` + Infinitiv: `di` trägt *zu · to · de*, der Infinitiv daneben *bare*
+   (6,19 `cercava di toccarlo` → *versuchte zu ihn berühren · tried to touch
+   him*; 6,34 `sperate di ricevere` → *hofft zu empfangen · hope of receiving*),
+   wie Reihe 431. 6,7 `motivo di accusarlo` de *Grund dazu ihn anzuklagen*
+   (Kollision `di`/`per` de *um*).
+3. **Absolutes Partizip** (Reihe 369): `Sceso con loro, si fermò` (6,17) gleiche
+   Person wie der Hauptsatz → Lemma `scendere`, finite Lesung *Hinabgestiegen ·
+   Having come down*; `venuta una piena` (6,48) hat eigenes Subjekt, aber
+   essere-Perfekt aktiv → Lemma `venire` wie Matteo 8,16 · 26,20 · Marco 15,33
+   (*Gekommen · Having come · Habiendo llegado*), nicht das Nomen `venuta`.
+4. **Passiv/attributiv auf der Partizipform** (Reihe 5): `guariti` 6,18 · 6,19
+   → `guarito` (nicht `guarire` wie Lukas 5,15), `tormentati` → `tormentato`,
+   `giudicati`/`condannati`/`perdonati`/`misurato`/`versata` → Partizip-Lemma,
+   `pigiata`/`scossa`/`traboccante` attributiv, `costruita` 6,48 passiv →
+   `costruito`. avere-Perfekt auf dem Infinitiv: `ha scavato` → `scavare`,
+   `ha posto` → `porre` (Reihe 415), `ha investito`/`l'ha investita` →
+   `investire` (fr *heurtée* nach vorangehendem Objekt `l'`), `ha messo in
+   pratica`; essere-Perfekt `è riuscito`/`è crollata` → Infinitiv (wie
+   `riusciti`, `caduta`).
+5. **Artikel vor Possessiv (Reihe 443/22)**: durchgehend Artikel im Genus/Kasus
+   des Zielnomens, Possessiv daneben: `il vostro nome` → *den euren Namen ·
+   el vuestro nombre*, `la vostra consolazione` → *den euren Trost · el
+   vuestro consuelo · la votre consolation*, `il vostro premio` → *der euer
+   Lohn · la vuestra recompensa · la votre récompense*. Bare Fügung
+   `dei suoi discepoli` (6,17) → `dei` *von*, `suoi` *seinen* (Reihe 22),
+   `del tuo fratello` → *von deines Bruders* (wie 1,42 `del tuo grembo`).
+   `dal proprio frutto` ist kein Possessiv → Artikel bleibt (*an der eigenen*).
+6. **Seligpreisungen/Weherufe**: `voi che` immer *welche · who · que · qui*
+   (Matteo 7,11), `Beati voi che ora` und `Guai a voi che ora` je zeichengleich
+   in beiden Hälften; `perché` (kausal) durchgehend *denn · because* (Matteo 5;
+   Marco 10,14 trägt *for*). `avere fame` bekommt die Spanne auch im Präsens
+   (*habt Hunger · are hungry · tenéis hambre*) und Futur (*werdet Hunger haben
+   · will be hungry · tendréis hambre*).
+7. **Spanisch/Französisch**: 2. Pl. Imperativ vs. Indikativ (`fate` es *haced*
+   6,27 · 6,31 · 6,35 gegen *hacéis* 6,2 · 6,33 · 6,46); `voi che ascoltate` es
+   *oís* (Indikativ). `quel mérite` fr *quel* (mask.) gegen Matteo 5,46 *quelle*
+   (`premio` fem.).
+8. **Namen (Reihe 436)**: Zeuge des Verses — fr `Giuda figlio di Giacomo`
+   *Jude* (LSG), `Giuda Iscariota` *Judas · Iscariot*; de *Judas* an beiden;
+   `Zelota` *Zelot · Zealot · Zelote · Zélote*.
+9. **Bestandslesung `chiederlo`/`chiede`** (6,30, Hinweis „gebunden"): zwei
+   verschiedene Verben-Formen, Fall (1) des Hinweises: `chiede` *bittet*,
+   `chiederlo` *es fordern* (`chiedere` A2, zweite Lesart *fordern*).
+10. **Neue Lesarten unter alten Lemmata (Reihe 12)**: `grembo` *Schoß · lap ·
+    regazo · giron* neben *Mutterleib* (Lukas 1,15 …); `prestare` *leihen*
+    neben *Aufmerksamkeit schenken*; `rovo` s. 445; `piena` (Flut) als eigenes
+    Nomen-Lemma, nicht `pieno`.
+
+## 447 · Kollisionen in Lukas 6 (`glosskollision.py`): aufgelöst und stehen gelassen
+
+Aufgelöst, alle im Kollisionsvers: `bene`/`buono` 6,35 (en *good* → `buono`
+*kind*, wie der Zeuge), 6,45 (`il bene`/`il male` en *good thing · evil thing*,
+es *el bien · la maldad*; die adjektivischen `buono`/`malvagio` behalten
+*good* · *evil*); `misura`/`misurare` 6,38 (en *measure* / *measure out*);
+`guariva`/`guariti` 6,19 (en *was healing* / *healed*); `condannate`/
+`condannati` 6,37 (de *verdammt* / *verurteilt*); `alzò`/`stette` 6,8 (`alzò`
+*erhob · raised* wie 12× im Bestand, `stette` *stand · stood*); `di`/`per` de
+*um* 6,7 (→ *dazu*); `a`/`dalla` de *aus* 6,22 (→ *wegen*); `a`/`di` de *über* 6,26
+(→ *von*); `a`/`di` en *to* 6,34 (→ *of* + *receiving*); `cui`/`la` de *dem*
+6,38 (→ *welchem*); `cui`/`quelli` de *denen* 6,34 (→ `quelli` *jenen*);
+`che`/`la` de *die* 6,19 (→ *welche*); `al`/`per` en *to* 6,42 (→ `per` *in
+order*); `quantità`/`folla` de *Menge* 6,17 (→ `quantità` *Anzahl*; das
+weicht von Lukas 5,6 · 5,9 *Menge* ab, gleicher Grund).
+
+Stehen gelassen: `le`/`le` es *las* fr *les* (6,1, 6,47) und `i`/`le` fr *les*
+(6,1), `i`/`li` es *los* fr *les* (6,32), `la`/`lo` en *the* es *la* (6,10) —
+Artikel gegen Objektklitikon (Reihe 36/53/61); `ti`/`tu` en *you* (6,42);
+`vi`/`voi` en/fr (6,22 · 6,27 · 6,38); `da`/`di` es/fr *de* (6,17 · 6,19 · 6,34 ·
+6,42 · 6,45); `a`/`con` 4 von 4 (6,17: das zweite `a` steht unter der
+`insieme a`-Fügung); `che`/`chi` fr *qui* (6,30, beide Bestandteile einer
+Spanne, Bestand Matteo 5,40 + 1,20); `della`/`la` de *den* (6,41, zeichengleich
+Matteo 7,3); `bene`/`buono` und `male`/`malvagio` de *Gute/gute* · *Böse/böse*
+6,45 (nur Großschreibung); `male`/`malvagio` es sind getrennt (`male`
+*maldad*, `malvagio` *mal* durch Apokope vor dem Nomen).
+
+## 448 · Befunde an der Werkzeugkette (Nachtrag aus Lukas 6)
+
+1. **`elision.py` meldet `non` fr *ne… pas* vor *aux* (6,4 pos 30)** — Artefakt
+   der Einzeltoken-Pflichtangabe neben der Spanne `se non` fr *sinon* (Reihe
+   328/399.2), im fertigen Satz „… sinon aux seuls prêtres". Stehen gelassen.
+2. **`glosskollision.py` fand `di`/`per` de *um* (6,7)**, sagt aber nichts
+   dazu, dass `per`+`vedere` en *to to see* und de *zu zu* (Lukas 5,15) dieselbe
+   offene Konventionsfrage sind; die Kettenlesung „einen Grund um ihn
+   anzuklagen" neben *um zu sehen · um zu finden* zeigte beides sofort.
+3. **Maschinelle Nachbarpaar-Probe (Aufgabe 4 des Auftrags)**: 8 Treffer in 4
+   Paaren, alle Quellwiederholung (`Signore, Signore` 6,46; `fratello`/`Fratello`
+   6,42) — keine Altlast. Die Klassen 1-3 der Opus-Durchsicht (doppelte
+   Präposition unter einer Spanne, Partizip hinter Hilfsverb, Kongruenz nach
+   Kopieren) haben die **Kettenlesung** gefangen: `an an einem Ort` (6,17),
+   `um zu zu werden` (6,18, aus Lukas 5,15 kopiert), `die Hemd` (6,29,
+   Artikel nicht an das Zielnomen angepasst), `des Herzen` (6,45), `zu zu`
+   (6,19),
+   `sondern` statt *aber* für `ma` (6,40, aus Matteo 21,21 kopiert),
+   `hacéis`/`haced` (6,27 · 6,35), `vuestro` vor *recompensa* (6,23 · 6,35, aus
+   Matteo 5,12 kopiert), fr `una` (6,9, aus Marco 3,4 kopiert), `bene`
+   (6,45, Lemma nicht auf `bene (sostantivo)` gezogen).
+4. **`artikel.py 42 6` und `kongruenz.py 42 6` melden 0** (Reihe 410: `artikel.py`
+   liest den gebauten Bestand, nicht `ANNO_OUT`; `kongruenz.py` prüft in
+   dieser Richtung nur Numerus). Die Genusprobe musste am Vers von Hand
+   gemacht werden — jedes Nomen mit Artikel/Possessiv in es/fr/de gegen das
+   Zielnomen gelesen (siehe 446.5); gefunden: nur die oben genannten
+   Kopierfehler, keine weiteren Ausreißer im eigenen Kapitel.
+5. **Bauansatz (Vorschlag aus dem Bestand, Vers für Vers geprüft)**: 972 von
+   1039 Tokens bekamen einen Kontextvorschlag aus Matteo/Marco/Lukas 1-5/Giuda
+   (gleiche Form, Vor- und Nachwort gleich = +3 je Seite, gleiche Satzanfangs-
+   lage); 67 Formen blieben unbelegt. Von den 972 Vorschlägen wurden **221
+   geändert** (bei Bewertung ≤ 3: 123 von 376) — Kasus des Zielwortes,
+   Satzanfang-Großschreibung, Genus, Hilfsverben (`ha` es *tiene*, `ha` de *hat
+   sie*), Nachbarkontexte (`di sabato` fr *le jour du*). Wer den Vorschlag
+   ungeprüft übernimmt, schreibt die in 448.3 genannten Fehler fest.
+
+## 449 · Einsammeln Lukas 6: die neun Bestandsfehler aus Reihe 445 gezogen, Iscariot nach dem Zeugen
+
+Alle am Vers geprueft und gezogen: Marco 3,4 fr *una* → *une*; Lukas 4,2
+fr *esos* → *ces*; Lukas 5,34 `Gesù` *Er/He* → *Jesus*; Lukas 5,36
+Satzanfang gross, en *an garment* → *a*; Matteo 5,12 es *vuestra
+recompensa*; Matteo 12,35 es *mal tesoro* (Apokope); Matteo 7,16 `rovi`
+→ *Dornstraeuchern · brambles · zarzas · ronces* (die Glosse gibt das
+italienische Wort wieder, nicht die Disteln der Zeugen; es *de las*);
+Lukas 4,29 `era costruita` passiv → Lemma `costruito` (Reihe 5); Lukas
+5,15 `per` de *um* (nicht *um zu* vor *zu hoeren*). `Iscariota` fr in
+Matteo 10,4/26,14 und Marco 3,19/14,10 *Iscariote* → *Iscariot* wie LSG
+an allen Stellen (Reihe 436). Dazu: es *el consuelo* Lukas 2,25 (war
+*la*), `guarigione` es Lukas 5,17 *curaciones* wie 6,7 *curación*.
+**Offen gelassen:** bares `quelli che` als Einzelwoerter in Matteo
+12,3/12,4 und Marco 1,36/2,25/2,26/5,40 gegen Reihe 407/409 (Struktur-
+aenderung, eigene Nachlese).
