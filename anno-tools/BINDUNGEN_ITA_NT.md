@@ -15513,3 +15513,248 @@ Schreibungen im italienischen Text, das Lemma folgt der Form; bares `quelli
 che` als Einzelwoerter in Marco 5,14/5,16/5,40 (Strukturfrage wie Reihe 449).
 `draft.py`-Grossschreibung der Vers-ersten Glossen in den Agentenkopien: der
 Befund steht, die betroffenen Kapitel sind nicht nachgezogen.
+
+---
+
+# Lukas 9 (Aussendung der Zwölf · Herodes · Speisung · Petrusbekenntnis · Verklärung · besessener Knabe · Rangstreit · Aufbruch nach Jerusalem · Nachfolge)
+
+*Angehängt vom Agenten für Luca 9 (allein gelaufen). Höchste gesehene Nummer beim Anhängen war 469; ich
+zähle bei 470 weiter. 62 Verse, 1197 Tokens (`text.split()`), 1196 Einzelwort- + 56 Mehrwort-Einträge; 18 neue
+Einzellemmata, 5 neue Mehrwortlemmata. 45 von 62 Versen tragen eine Parallele ab 4 Tokens (Matteo 10 · 14 · 16 ·
+17 · 18 · 8, Marco 6 · 8 · 9), jede am Vergleichsvers gelesen (`cv2.py`, Kettenansicht des Quellstands).*
+
+## 470 · Mehrwörter, die Lukas 9 prägt und übernimmt
+
+Übernommen (zeichengleich, am Vergleichsvers gemessen): `di ricambio` (9,3 ← Marco 6,9), `finché non` (9,4 · 9,27),
+`quello che` als Spanne für bares `quelli che` (9,5 · 9,11 · 9,32 ← Luca 8,45; Reihe 407), `far decapitare` (9,9 ←
+Marco 6,16, Form `fatto decapitare`), `il quale` (9,9 `del quale` ← Luca 7,27, Einzelwörter `del` *von* · `quale`
+*dem*), `tutto quello che` (9,10 ← Marco 6,30, fr *tout ce qu'*; Reihe 441), `con sé` (9,10 · 9,28), `ritirarsi`
+(9,10), `in disparte` (9,10 · 9,18 ← Matteo 14,13), `avvicinarsi` (9,12), `da mangiare` (9,13 ← Marco 6,36),
+`far sedere` (9,14 · 9,15 ← Marco 6,39), `capo sacerdote` (9,22), `dietro a` (9,23), `sé stesso` (9,23 · 9,25),
+`in verità` (9,27), `stare per` (9,31 · 9,44), `avere bisogno di` (9,11 `ne avevano bisogno`, Form `avevano bisogno`, ← Matteo 6,8 · 6,32 `avete bisogno`), `avere paura` (9,34 · 9,45 ← Luca 8,35 / Marco 9,32),
+`ciò che` (9,36 ← Marco 9,9), `incontro a` (9,37 ← Matteo 8,34, derselbe Wortlaut `incontro a Gesù`; Marco 14,13 führt `venire incontro` als Spanne, Luca 8,27 · Marco 5,2 als Einzelwörter — alle drei Lesarten stehen im Bestand), `a fatica` (9,39 ← Matteo 19,23), `fino a quando`
+(9,41 ← Matteo 17,17), `il più grande` (9,46), `colui che` (9,48), `il più piccolo` (9,48), `contro di voi` (9,50),
+`in cui` (9,51; Bestand *an dem/an denen* → hier fem. *an der*), `davanti a` (9,52; `a` daneben de *zu* · en *to* ·
+es *de* · fr *à*, Reihe 437), `voltarsi` (9,55), `andarsene` (9,56 ← Matteo 8,32), `meravigliarsi` (9,44 ← Luca 4,22),
+`allontanarsi` (9,33), `trovarsi` (9,36), `incamminarsi` (9,51 ← Luca 7,6), `vergognarsi` (9,26).
+
+Neu geprägt oder an die Fügung angepasst:
+
+    9,5    contro di loro         B1  gegen sie · against them · contra ellos · contre eux     (Schwester von `contro di voi/lui/noi`)
+    9,13   a meno che             B2  es sei denn · unless · a menos que · à moins que        [3 Tokens; `non` daneben einzeln, fr *n'*]
+    9,39   far schiumare          C1  ihn schäumen lassend · making him foam · haciéndolo echar espuma · le faisant écumer  (`facendolo schiumare`)
+    9,44   tenere a mente         B2  behaltet gut im Sinn · keep well in mind · tened bien en mente · gardez bien à l'esprit  [`Tenete bene a mente`, 4 Tokens]
+    9,45   così da                B2  sodass · so as to · de modo que · de sorte à           (`da` einzeln: dass · as to · que · à)
+
+## 471 · Was Lukas 9 bewusst KEIN Mehrwort bekommt (und was `mehrwort.py`/`sweeplemma.py`/`draft.py` fälschlich vorschlagen)
+
+- **`ci sono riusciti` (9,40)**: `sweeplemma.py` meldet `esserci` (15 Belege, 83 %). Hier ist `ci` das Adverb
+  („darin/dabei“) und `sono riusciti` essere-Perfekt von `riuscire` — wie Marco 9,18 (Einzelwörter `ci` *es · y* +
+  `sono` + `riusciti`). Kein Existentialsatz.
+- **`prima di` (9,59 · 9,61)**: bei `permettimi prima di andare/congedarmi` ist `prima` das Adverb *zuerst* und `di` die
+  Infinitivpartikel (Matteo 8,21 `andare prima a seppellire`: `prima` *zuerst · first · primero · d'abord*), nicht die
+  Präposition *vor*. `sweeplemma.py` (6 Belege, 75 %) und `mwcheck.py` melden es trotzdem.
+- **`tra loro` (9,46)**: `sorse tra loro una disputa` ist lokal (*unter ihnen*), nicht reziprok (*zueinander*, Marco 10,26
+  `dicevano tra loro`). Einzelwörter `tra` *unter · among · entre · parmi* + `loro`.
+- **`volere dire` (9,54)**: `vuoi che diciamo` ist wörtlich („willst du, dass wir sagen“), nicht *bedeuten*.
+- **`non che` (9,45)**: die Spanne `[2, 6]` aus Matteo 15,24 (`non … che` *nur*) liegt hier über einem Relativsatz
+  (`non capivano queste parole, che restavano`) — Zufallstreffer über fünf Positionen.
+- **`quello che` [7,8] in 9,10** (`mwself.py`): steckt in `tutto quello che` (Reihe 441), kein zweiter Eintrag.
+- **`vicine a` (9,12)**: der eigene Lauf `mwlemma.py` (Reihe 476.3) meldet `vicino a` (4 Belege, Matteo 13,1 `vicino al mare`); hier steht `vicine`
+  als Adjektiv zu `campagne` und `a trovare` ist der Zweckinfinitiv — Einzelwörter.
+- **`a un altro` (9,56 · 9,59 · 9,61)**: `mwlemma.py` meldet die Lemmafolge `l'un l'altro` (`uno` + `altro`) — reziprok gemeint ist dort nichts;
+  `un altro` bleibt Einzelwörter wie Matteo 8,9 · 8,21 (`un`  en *an*, `altro` *other*).
+- **`se lo mise accanto` (9,47)**: `se` ist das Dativreflexiv (*neben sich*), kein `mettersi`-Verb — Einzelwörter.
+- **`per la via` (9,57)**, **`a terra` (9,42)**, **`di casa mia` (9,61)**: wörtlich.
+
+## 472 · Das subjektlose Verb in Lukas 9 — Reihe 300 · 308 · 420 · 446.1 · 452 · 462 angewandt
+
+Pronomen (de/en/fr; **es nie**) dort, wo das Subjekt gegenüber der vorangehenden Klausel wechselt oder im ganzen Satz
+nirgends steht (Nebensatz-Fall Reihe 308):
+
+    9,13  Risposero    Sie antworteten · They answered · Respondieron · Ils répondirent   (Jesus → Jünger)
+    9,15  fecero sedere  ließen sie setzen · they made sit down · hicieron sentar · ils firent asseoir   (Subjekt `Egli` → Jünger, MW + `fecero`)
+    9,19  Risposero    Sie antworteten …   (Jesus fragt → Jünger)
+    9,33  che diceva   sagte er · he said · decía · il disait   (Relativsatz, Reihe 308; Subjekt Petrus steht im Hauptsatz)
+    9,38  prego · ho · 9,40 Ho pregato   bitte ich · I beg · ruego · je supplie · ich habe · j'ai   (1. Person, kein `io` im Satz;
+          9,40 Ho pregato: Ich habe · I have · He · J'ai)
+
+**Kein Pronomen**, wo die Erzählung das Subjekt fortführt (Reihe 446.1): 9,3 `Disse` (nach 9,2 `Li mandò`) · 9,9 `cercava` ·
+9,11 `parlava` / `guariva` (`egli` steht davor) · 9,17 `raccolsero` (wie Marco 6,43 `portarono via`) · 9,21 `aggiunse` · 9,23
+`Poi disse` (nach der Leidensankündigung, Subjekt Jesus) · 9,28 `salì` · 9,29 `pregava` · 9,34 `parlava` (Petrus setzt fort) ·
+9,45 `avevano paura` · 9,47 `disse` · 9,52 `Mandò` · 9,56 `se ne andarono` (Wechsel `egli` → Gruppe **mit** Jesus: als
+Fortführung gelesen, Grenzfall) · 9,57 `camminavano` · 9,59 `disse`.
+
+## 473 · Was die Synoptiker-Parallelen getragen haben — und wo Lukas 9 anders liest
+
+- **9,1-6 ← Matteo 10,1 · 10,7-14, Marco 6,7-13**: `finché non`, `di ricambio`, `scuotete la polvere dai vostri piedi`
+  zeichengleich; `portate` (9,3) de *tragt* · en *carry* · es *llevéis* · fr *portez* — Marco 6,8 `portare` trägt *mitzunehmen*
+  (dort Infinitiv, hier Imperativ, kein *mit-* im Deutschen). **Marco 6,9 `una tunica` de *eine Hemd*** ist ein alter
+  Genusfehler (Hemd n.) — hier *ein*, Marco nicht angefasst.
+- **9,7-9 ← Marco 6,14-16, Matteo 14,1-2**: `fatti` (9,7) als `fatto (sostantivo)` *Ereignissen · matters · hechos ·
+  événements* (Luca 1,1), nicht als `fare`-Partizip (draft.py hatte *gemachten*); `è apparso` (9,8) `apparire`, essere-Perfekt
+  *Ist · Has · Ha · Est* (Reihe 459); `l'ho fatto decapitare io` (9,9) `l'ho` de *habe ihn* · en *have him* · es *lo he* · fr
+  *l'ai* — **ohne** Subjektpronomen, weil `io` im Satz steht (fr `io` dann *moi*).
+- **9,10-17 ← Marco 6,30-44, Matteo 14,13-21**: `gli occhi al cielo` (Bindung, 3×), `tutto quello che`, `da mangiare`,
+  `far sedere` zeichengleich. **Abweichungen**: 9,12 `nei villaggi`/`nelle campagne` es *a las aldeas* · *a los campos*,
+  `vicine` es *vecinos* (Marco 6,36 trägt *a los … aldeas* — `aldea` ist fem.; Nachlese-Kandidat); 9,15 `fecero sedere`
+  MW (Marco 6,39 `far sedere` ist ein Infinitiv-Kausativ); 9,14 `Fateli sedere` MW `far sedere`, Klitikon in `Fateli` *Lasst sie*.
+- **9,18-27 ← Marco 8,27-9,1, Matteo 16,13-28**: `chi dite che io sia` (9,20) folgt Marco 8,29 (*wer · sagt* — ohne das *ihr*
+  von Matteo 16,15, weil `voi` schon davorsteht); `salvare la propria vita la perderà` (9,24) zeichengleich Matteo 16,25
+  (`la` *sein* · `propria` *eigenes*, die Bestandskonvention *Artikel = Possessiv-Glosse* bei `propria`, nicht Reihe 443);
+  `avrà perduto` (9,24) Lemma `perdere` mit Partizipglosse (avere-Perfekt, Reihe 5) statt des Adjektivs `perduto`
+  (Matteo 18,11); `uno degli antichi profeti` (9,8 · 9,19) *einer der alten Propheten* zweimal gleich, `antichi` *alten ·
+  old* (Adjektiv, nicht das Nomen *Alten*).
+- **9,28-36 ← Marco 9,2-8, Matteo 17,1-8**: `con sé`, `in verità`, `Questo è il mio Figlio … ascoltatelo` zeichengleich;
+  `sul monte a pregare` (Marco 6,46). `quelli che erano con lui` 9,32 = Luca 8,45 (nur die Spanne `quelli che`, keine
+  Spanne über `Pietro e … lui` — der Prompt sagt „geprägt“, 8,45 trägt nur `quello che` + Einzelwörter).
+- **9,37-50 ← Marco 9,14-41, Matteo 17,14-23 · 18,1-5**: `Ho pregato i tuoi discepoli di scacciarlo` (9,40 ← Marco 9,18):
+  **`di` de *zu* · en *to*, `scacciarlo` de *ihn austreiben* · en *cast him out*** — Marco 9,18 und Matteo 17,16 trugen
+  *zu … ihn auszutreiben* / *of … to cast him out* (doppeltes *zu/to*, Reihe 3); `ci sono riusciti` s. Reihe 471, `sono` de
+  *sind* · en *have* · es *han* (Reihe 459; Marco 9,18 trägt *are*/*son*). `colui che mi ha mandato` (9,48) Bindung.
+  `demonio lo gettò a terra` (9,42) folgt Luca 4,35 (*zu Boden*), nicht Luca 5,12 (*zur Erde*).
+- **9,51-62 ← Matteo 8,19-22**: `ti seguirò dovunque tu vada` (9,57) `dovunque` de *wohin auch immer* · es *adondequiera que* ·
+  fr *partout où* wie Matteo 8,19 `ovunque`; `le volpi hanno … i nidi` (9,58) mit Partitiv `delle`/`dei` de *einige* · en *some* ·
+  es *unas/unos* · fr *des* (Bestand 20×; Matteo 8,20 hat `le loro tane`, dort steht das Possessiv statt des Partitivs);
+  `permettimi … prima di andare a seppellire` (9,59) `prima` *zuerst* (s. Reihe 471), `a` de *zu* + `seppellire` de
+  *begraben* (Matteo 8,21 *um* · *zu begraben*: doppelt); `lascia che i morti seppelliscano i loro morti` zeichengleich
+  Matteo 8,22.
+
+## 474 · Homographen, Lemmasplits und Partizipien in Lukas 9
+
+Nach Reihe 5 · 46 · 70 · 369 · 425 · 438 · 439:
+
+    Passiv/attributiv → Partizip-Lemma:
+      respinto 9,22 · ucciso 9,22 · saziati 9,17 (`saziato`) · avanzati 9,17 · oppressi 9,32 (`oppresso`; hier *beschwert ·
+      weighed down · agobiados · accablés*, nicht Matteo 11,28 *beladen*) · stupiti 9,43 · consegnato 9,44 (Reihe 5) ·
+      coperte 9,45 (`coperto`, *bedeckt · covered · cubiertas · couvertes*) · elevato 9,51 (neu) · diretto 9,53 (neu)
+    Partizip absolut, Agens = Subjekt des Hauptsatzes → Infinitiv-Lemma, Partizipglosse:
+      riuniti 9,1 (`riunire`, neu) · tornati 9,10 · saputolo 9,11 (Matteo 14,13) · apparsi 9,31 · svegliatisi 9,32 ·
+      Visto 9,54 (`vedere`, *Gesehen · Having seen · Habiendo visto · Ayant vu*, Matteo 14,13 `Udito`)
+      scesi 9,37 (`scendere`, *hinabgestiegen · having come down · bajados · descendus*): der Agens (Jesus mit Jüngern)
+      steht **nicht** im Subjekt, sondern im Dativobjekt (`a Gesù`) — wie Luca 8,27 `sceso … gli venne incontro un uomo`
+      (Reihe 464 führt dort `sceso` unter „gleiches Agens“). Ich habe Luca 8,27 gefolgt; Reihe 369 wörtlich gelesen, wäre
+      hier das Partizip-Lemma `sceso` zu setzen — **Grenzfall, vom Koordinator zu entscheiden**.
+    avere-/essere-Perfekt auf dem Infinitiv:
+      avrà perduto → `perdere` · ho pregato → `pregare` (*gebeten · begged · rogado · supplié*) · abbiamo visto → `vedere` ·
+      abbiamo vietato → `vietare` · ha mandato → `mandare` · è risuscitato / è apparso → `risuscitare` / `apparire` ·
+      sono riusciti → `riuscire` (en *have succeeded* · es *han logrado*) · l'ho fatto decapitare → `avere` + MW
+    Reflexiv: MW trägt das reflexive Lemma, der Einzeleintrag das einfache (Reihe 438): `avvicinare`, `ritirare`,
+      `allontanare`, `trovare`, `meravigliare`, `incamminare`, `voltare`; **`vergognarsi` → Einzeleintrag `vergognare`**
+      (neu; analog `ravvedere` neben `ravvedersi`, Marco 6,12 — Marco 8,38 führt den Einzeleintrag noch unter `vergognarsi`).
+
+Homograph-Lesarten unter einem Lemma (Reihe 12): `ancora` *noch · still · aún · encore* (9,8 · 9,61); `bene`
+Adverb A1 *gut · well · bien · bien* (9,44) neben `bene (sostantivo)`; `fatti` s. o.; `porta` (9,41) ist der Imperativ von
+`portare` (*Bring · Bring · Trae · Amène*), nicht das Nomen `porta` (Tür); `rovina` (9,25) Verb `rovinare` *ruiniert ·
+ruins · arruina · ruine* neben dem Nomen `rovina` *Einsturz*; `scuote/scosse` (9,39 · 9,42) `scuotere` *schüttelt · convulses
+· sacude · secoue* (Marco 9,20 `scosse`); `potere (sostantivo)` 9,1 en *power* (Bestand *authority*, s. Reihe 475).
+
+**`se stesso`/`sé stesso` (Reihe 279 · 382)**: 9,23 und 9,25 tragen die Spanne `sé stesso` (sich selbst · himself · sí mismo ·
+lui-même) und für `se` den Einzeleintrag mit Lemma **`sé`** (A2) — de *sich* · en *himself* · es *sí* · fr *soi* — nach Reihe 279
+(Matteo 27,42: tonisches `se` in `se stesso` → `sé`) und Marco 15,31. Matteo 16,24 · Marco 8,34 führen dasselbe `se` noch unter
+`si` mit es *se* · fr *lui* (Reihe 477). Die Schreibfrage aus Reihe 382 (`se stesso` gegen `sé stesso` als Spannenlemma) bleibt
+offen; der Bestand normalisiert die Spanne auf `sé stesso`.
+
+## 475 · Kollisionen in Lukas 9 (`glosskollision.py`): aufgelöst und stehen gelassen
+
+Aufgelöst, alle im Kollisionsvers: `potere`/`autorità` en *authority* 9,1 → `potere` *power* (Bestand 7×
+*authority*; de *Macht*/*Vollmacht* trennen ohnehin); `ciò`/`che` en *that* 9,54 → `ciò` *this* (Matteo 14,13);
+`per`/`a` en *to* 9,52 → `per` *in order to* (`a` in `davanti a` bleibt *to*, Reihe 437); `a` (Gerusalemme)/`in` de *in* 9,31 →
+`a` de *zu* (es *en*/*en* bleibt: geschlossene Wortart); `stavano`/`erano` es *estaban* 9,32 → `stavano` *se encontraban*; `da`/`di` fr *de* 9,45 → `da` in `così da` fr *à*.
+
+Stehen gelassen: `il`/`lo` fr *le* (9,42) · `i`/`li` es *los* / fr *les* (9,2 · 9,10 · 9,16 · 9,34 · 9,54) · `le`/`le` (9,11) —
+Artikel gegen Objektklitikon (Reihe 36/53/61); `gli`/`glielo` fr *lui* / *le lui* (9,49 · 9,50, wie Marco 9,38/9,39); `me`/`mi` de
+*mir*/en *me* (9,23) und *mich*/*me*/es *me* (9,48) — Klitikon gegen Tonpronomen, wie Marco 8,34 und Marco 9,37; `Ti`/`tu` en *You/you*
+(9,57, wie Matteo 8,19); `essi`/`loro` de *sie* / es *ellos* (9,45: `per loro` de *für sie* — Akkusativ nach *für*, kein
+*ihnen* möglich); `egli`/`lui` es *él* (9,18: beide sind Textwörter); `quello`/`che` en *that* (9,10, Reihe 429); `dai`/`di` und
+weitere 21 geschlossene Wortarten (`a`/`da` in Mehrwörtern u. ä.).
+
+## 476 · Befunde an der Werkzeugkette (Nachtrag aus Lukas 9)
+
+1. **Die Kettenlesung hat gefunden, was kein Werkzeug findet** (Reihe 428 · 437 · 456 · 466): `An einem Tages` (9,18: `giorno` trug
+   das Draft-*Tages* aus Luca 1,8 statt *Tag*), `in die Land umliegenden` (9,12: `nelle campagne` — jetzt *in das Land
+   umliegende*), `los aldeas`/`las campos` und `vicinas` (9,12, von Marco 6,36 kopiert), `eine Streit` (9,46, Draft-Genus),
+   `zu ihn austreiben`/`um zu ihn vorbereiten` (`di`/`per` + Klitikon-Infinitiv mit doppeltem *zu*: Reihe 3), `Er sagte`
+   großgeschrieben mitten im Satz (9,44 · 9,59, aus dem Marco-Draft; `caps.py`), fr `le accueillirent` ohne Elision (9,53),
+   `sagte er` in 9,3 (Draft aus Matteo 13,33, dort Subjektwechsel, hier Fortführung: Reihe 446.1), de `auf den Weg` (9,57, Dativ
+   *auf dem Weg*). Die Genusprobe (jedes Nomen mit Artikel/Determinierer in de/es/fr gegen das Zielnomen) ergab nach diesen
+   Korrekturen keinen Rest.
+2. **`draft.py` (Bauansatz aus dem Bestand) wählt den Kasus/Numerus der Vorlage, nicht des Verses**: Dativ `dem Menschen` für
+   ein Subjekt, `anyone` für ein `qualcuno gli disse`, `wem` für `chi`, `bene (sostantivo)` für das Adverb in `Tenete bene`,
+   `porta` (Tür) für den Imperativ in 9,41, `rovina` (Nomen) für das Verb in 9,25, `es` *son* für `sono riusciti`. `weak.py`
+   (Draft-Einträge mit Score ≤ 3, die ich nicht angefasst habe) listet 260 Positionen; ich habe sie durchgesehen und keine
+   falsche gefunden — der Bestand trägt die häufigen Formen zuverlässig, die Fehler liegen bei den **seltenen** Wörtern und Kasus.
+3. **`mwcheck.py` (Kandidaten aus dem Bestand) hat vier Mehrwörter gefunden, die `mehrwort.py` nicht sehen kann** (`si
+   avvicinarono` 9,12, `da mangiare` 9,13, `finché non` 9,27, `a fatica` 9,39 — im Draft als Kandidaten angezeigt und beim
+   Bauen ausgelassen), und **sechs falsche** (Reihe 471). `mwself.py` hat nur `finché non` und das verschachtelte `quello che`
+   gemeldet. **Ein fünftes fehlte allen dreien**: `avere bisogno di` (9,11 `avevano bisogno`) — der Bestand führt es unter dem
+   Lemma `avere bisogno di` mit Formen ohne `di` (`avete bisogno`, `hanno bisogno`); warum `sweeplemma` und `mwcheck` es nicht
+   zeigen, habe ich nicht ergründet (vermutlich das fehlende `di` beziehungsweise die nie belegte Form `avevano bisogno`). Gefunden mit einem eigenen Lauf **Lemmafolgen aller Bestandsmehrwörter
+   gegen die Lemmafolge des Kapitels** (`work/9/mwlemma.py`, 30 Zeilen): der Lauf meldet außer `avere bisogno` nur die in Reihe 471
+   begründeten Nicht-Spannen — er gehört in die Werkzeugkette.
+4. **`sweeplemma.py`** meldet `volere dire` und `ci essere` als Verdacht, obwohl die Wortfolge wörtlich steht; es kennt weder
+   die Adverb/Infinitivpartikel-Lesung von `prima di` noch die Perfektlesung von `ci sono`.
+5. **`elision.py`** (aus dem fertigen Text, aspiriertes h am Quelltext gemessen) meldet 0; mein eigenes `frel.py`
+   meldete `se` + `honte` (9,26) — `honte` hat aspiriertes h, *se honte* ist richtig.
+6. **`folgencheck.py --min 3`/`--gegen`** zeigt bei jeder Abweichung auf die **andere** Stelle: die meisten Treffer in dieser
+   Runde (`quelli che erano con lui` Luca 5,9/6,3/6,4 ohne Spanne, `del regno di Dio` Luca 8,10 *des Reiches*,
+   `mi ha mandato` Luca 4,18 *gesandt*, `in quei giorni` Luca 5,35 *an · on*) sind Bestandsabweichungen in **fremden** Kapiteln —
+   s. Reihe 477.
+7. **Die Zeugen schneiden Lukas 9,43/9,44 und 9,55/9,56 anders als RIV**, obwohl die Verszahl stimmt (`kapitelgrenzen_42.md` meldet
+   für Kapitel 9 nichts, nur 17,1-37): de/en/es/fr tragen in 9,43 den Anfang von RIV 9,44 (*Während sich noch alle wunderten …*)
+   mit, und in 9,55/9,56 den längeren Text (*Wisst ihr nicht, wes Geistes Kinder ihr seid?* · *Der Menschensohn ist nicht gekommen …*),
+   den RIV nicht hat. `rueckwaerts.py`/`ausgaben.py` zeigen dort die VERS-Schicht am falschen Vers; die Abweichung ist
+   textkritisch, kein Zählfehler, und deshalb für die Kapitelgrenzen-Karte unsichtbar.
+
+## 477 · Bestandsauffälligkeiten aus Lukas 9 (NICHT geändert — Sache des Koordinators)
+
+- **Matteo 16,24 · Marco 8,34 `se` in `se stesso`**: Einzeleintrag unter `si`, es *se* · fr *lui* (Reihe 279: `sé`, es *sí* · fr *soi*).
+- **Marco 6,9 `una`** de *eine* zu `tunica` de *Hemd* (n.) → *ein*.
+- **Marco 6,36 `nei villaggi`** es *a los* zu `aldeas` (fem.) → *a las*; `vicini` es *vecinos* → *vecinas*.
+- **Luca 8,34 `nelle campagne`** de *auf dem* · es *campo* (Sg.) neben Marco 6,36 *Land · campos* (Pl.).
+- **Luca 8,10 `del regno`** de *des* + *Reiches* gegen *vom Reich* (Luca 4,43 · 8,1 · 9,11).
+- **Luca 4,18 `mandato`** de *gesandt* gegen *geschickt* (Marco 9,37 · Matteo 10,40 · Luca 9,48).
+- **Luca 5,9 · 6,3 · 6,4 `quelli che erano con lui`** ohne Spanne `quello che` (8,45 · 9,32 tragen sie); 5,9 `con` *mit* gegen *bei*.
+- **Marco 9,18 `ci sono riusciti`** en *are* · es *son* (essere-Perfekt, Reihe 459) — Matteo 17,16 `non hanno potuto` in Ordnung.
+- **Marco 9,18 · Matteo 17,16 `di scacciarlo`** *zu … ihn auszutreiben* / *of … to cast him out* (doppelt, Reihe 3).
+- **Marco 8,38 `vergognarsi`**: die beiden Spannen tragen *will be ashamed* und *… of* (Doppelmarkierung gegen die folgende Präposition),
+  der Einzeleintrag steht unter `vergognarsi` (Reihe 438: `vergognare`).
+- **Matteo 8,34 `incontro a`** fr `a` *à* → *à la rencontre à Jésus*; hier (9,37) *de*.
+- **Matteo 8,20 `le loro tane`** trägt Possessiv, Lukas 9,58 das Partitiv `delle tane` — verschiedene Texte, keine Abweichung.
+- **`discorso`** en *saying* (Matteo 15,12) neben *speech* (Luca 9,28): zwei Lesarten eines Wortes, kein Fehler.
+
+## 478 · Die 18 neuen Einzellemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den eingesammelten Bestand: `levelcheck.py 42 9` 0 Abweichungen.
+
+    B1  accanto · adatto · diretto · intero · riunire
+    B2  alloggio · aratro · cinquantina · decisamente · declinare · disputa · elevato · giovare · grandezza ·
+        rovinare · vergognare
+    C1  dipartita · sfiancare
+
+- **`vergognare`** (Einzeleintrag unter der Spanne `vergognarsi`, Reihe 438/474) ist das einzige Lemma, das kein italienisches
+  Wörterbuch als Infinitiv kennt (`vergognarsi` ist nur reflexiv) — der Bestand hat dieselbe Bauart bei `ravvedere`. Falls der
+  Koordinator das nicht will: `vergognarsi` auf dem Einzeleintrag lassen, wie Marco 8,38.
+- **`alloggio`** (9,12 · 9,52, auch als `l'alloggio`, Reihe 1) de *Unterkunft* (9,52 mit Artikel: *die Unterkunft*) · en *lodging* ·
+  es *alojamiento* · fr *logement* (in 9,52 *le logement*) — dasselbe sagen alle vier Zeugen.
+- **`dipartita`** (9,31) de *Abschied* · en *departure* · es *partida* · fr *départ* — es · en · fr sagen es auch in den Zeugen,
+  de-Zeuge *Ende*; C1, weil selten und literarisch.
+- **`aratro`** (`all'aratro`, Reihe 1) de *an den Pflug* · en *to the plow* · es *al arado* · fr *à la charrue*.
+- **Namen**: `Betsaida` de *Betsaida* · en *Bethsaida* · es *Betsaida* · fr *Bethsaïda* (Schreibung der Zeugen); `Giacomo` de
+  *Jakobus* · en *James* · es *Jacobo* · fr *Jacques*; `Mosè` *Mose* · *Moses* · *Moisés* · *Moïse* — keine Deutung.
+- **`Signore`** de *Herr* (9,54 · 9,61), Reihe 423.
+
+## 479 · Einsammeln Lukas 9: Reihe 477 teilweise abgearbeitet
+
+Gezogen: Marco 6,9 de *ein Hemd*; Marco 6,36 es *a los campos · a las aldeas
+vecinas* (Artikel und Adjektiv nach dem Zielnomen); Marco 9,18 essere-Perfekt
+en *have* · es *han* (Reihe 459) und de *ihn austreiben* hinter `di` *zu*;
+Matteo 8,34 fr `incontro` *à la rencontre* + `a` *de* (war *à la rencontre de
+à*); Marco 8,38 Einzeleintrag `vergognerà` Lemma `vergognare` (Reihe 438 —
+die Spanne traegt `vergognarsi`).
+**Offen gelassen:** `sceso`/`scesi` Lukas 8,27/9,37 (Agens im Dativobjekt —
+Reihe 369 spraeche fuer das Partizip-Lemma `sceso`, beide Stellen stehen
+einheitlich auf `scendere`; eine Entscheidung fuer alle Faelle dieser Art,
+nicht zwei Einzelzuege); `se stesso` Matteo 16,24/Marco 8,34 (Reihe 382);
+Lukas 5,9/6,3/6,4 und weitere bare `quelli che` ohne Spanne (Reihe 449);
+Lukas 4,18 *gesandt*/*geschickt*, Lukas 8,10/8,34 — Wortwahl, kein Fehler.
