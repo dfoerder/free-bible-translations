@@ -15983,3 +15983,186 @@ pure` (zwei Lesarten). **Offen fuer den Koordinator:** 1.-Person-Pronomen
 (Reihe 482: `dico` formelhaft ohne, sonst mit) — so stehen lassen, bis ein
 Kapitel mit vielen Belegen die Regel prueft; `imbattere`/`imbattersi` wie
 vorgelegt angenommen.
+# Lukas 11 (Vaterunser · bittender Freund · Bitten–Suchen–Anklopfen · Beelzebul-Streit · Rückkehr des unreinen Geistes · Seligpreisung der Mutter · Zeichen des Jona · Lampe und Auge · Weherufe über Pharisäer und Gesetzeslehrer)
+
+*Angehängt vom Agenten für Luca 11 (allein gelaufen, Paket 10·11·12). Höchste gesehene Nummer beim Anhängen war 490; ich
+zähle bei 491 weiter. 54 Verse, 1119 Tokens (`text.split()`), 1119 Einzelwort- + 53 Mehrwort-Einträge; 21 neue
+Einzellemmata, 7 neue Mehrwortlemmata. Parallelen: Matteo 6,9-13 (11,2-4) · 7,7-11 (11,9-13) · 9,32-34 (11,14-15) ·
+12,22-30 (11,14-23) · 12,43-45 (11,24-26) · 12,38-42 (11,29-32) · 6,22-23 (11,34-36) · 23,4-35 (11,42-52), Marco 3,22-26 ·
+8,12 · 12,38-39 · 13,1, Luca 5,17 · 5,21 · 7,31 · 7,36 · 8,16 · 8,18 · 8,21 · 3,16 — jede am Vergleichsvers gelesen
+(`cb.py`: Kettenansicht des Quellstands), nicht nur gegen den Extrakt.*
+
+## 491 · Mehrwörter, die Lukas 11 prägt und übernimmt
+
+Übernommen (zeichengleich, am Vergleichsvers gemessen): `a chi` (11,10 · 11,13 ← Matteo 5,40/7,8), `quanto più` (11,13 ← Matteo 7,11),
+`si meravigliarono` → `meravigliarsi` (11,14 ← Matteo 9,33; 11,38 im Singular `staunte`), `mettere alla prova` (11,16 ← Matteo 16,1 · Luca 10,25),
+`sé stesso` (11,17 ×2 · 11,18 ← Matteo 12,25/12,26), `per questo` (11,19 ← Matteo 12,27; 11,49), `fino a` (11,20 ← Matteo 12,28; 11,51 `fino al`),
+`ciò che` (11,21), `più forte` (11,22 ← Luca 3,16), `con me` (11,7 · 11,23 ×2), `contro di me` (11,23 ← Matteo 12,30), `con sé` (11,26 ← Matteo 12,45),
+`quello che` (11,28 · 11,52 als `quelli che`; 11,41), `intorno a` (11,29 ← Matteo 13,2), `alzarsi` (11,8 ×2 · 11,31 · 11,32), `insieme a` (11,31 `insieme agli` ←
+Luca 8,7 · 11,32 ← Matteo 12,41), `ravvedersi` (11,32 ← Matteo 12,41), `mettersi` + `a tavola` (11,37 ← Luca 7,36), `prima di` (11,38 ← Matteo 8,29),
+`pieno di` (11,39 ← Luca 5,26 · 10,17), `colui che` (11,40), `ogni cosa` (11,41 ← Marco 11,11 · Luca 10,22), `guai a` (11,42 · 43 · 44 · 46 · 47 · 52 als
+`guai a voi`; 11,46 mit eingeschobenem `anche` als `parts` [2,4,5]), `anche se` (11,8 ← Matteo 26,33 · 26,35: *auch wenn · even if · aunque · même si*,
+nicht die *obwohl*-Lesart von Luca 6,4).
+
+Neu geprägt:
+
+    11,7    darmi fastidio              B2  belästige mich · bother me · me molestes · me dérange      (`dare fastidio`, Klitikon-Token als Span-Anfang; Einzelwörter `darmi` gib mir · give me · me des · me donne / `fastidio` Belästigung · bother · molestia · dérangement)
+    11,8    per il fatto di             B2  wegen der Tatsache · because of the fact · por el hecho de · du fait de   (Einzelwörter *für die Tatsache zu* · *for the fact of* · *por el hecho de* · *pour le fait d'*)
+    11,21   al sicuro                   B2  in Sicherheit · safe · a salvo · en sécurité
+    11,29   si affollavano              B2  drängten sich · crowded · se apiñaban · se pressaient      (`affollarsi`, Einzelwort `affollavano` = `affollare`)
+    11,41   in elemosina                B2  als Almosen · as alms · como limosna · en aumône
+    11,53   fargli domande              B1  ihm Fragen stellen · ask him questions · hacerle preguntas · lui poser des questions   (`fare domande`, Klitikon-Token als Span-Anfang)
+    11,53   tendendogli trappole        B2  ihm Fallen stellend · setting traps for him · tendiéndole trampas · lui tendant des pièges   (`tendere trappole`)
+
+## 492 · Was Lukas 11 bewusst KEIN Mehrwort bekommt (und was `mehrwort.py`/`sweeplemma.py`/`mwcheck.py` fälschlich vorschlagen)
+
+- **`se non` (11,8 `anche se non si alzasse`)**: `mwcheck` meldet die 22 Bestandsbelege *außer*; hier steht `se` + Negation (*auch wenn er nicht aufstünde*) — wie Reihe 481.
+- **`in cui` (11,22 `le armi in cui confidava`)**: `sweeplemma` 85 %, `mwcheck` 11 Belege. Die Bestandsspanne ist die **Zeitangabe** (*an dem · when · en que · où*, `nel giorno in cui`); hier ist es *auf die vertraute · in which trusted* (Ort/Objekt der Zuversicht) — Einzelwörter `in` auf · in · en · en, `cui` die · which · las que · lesquelles.
+- **`di là` (11,53 `uscì di là`)**: die eine Bestandsspanne (Marco 15,21 `passava di là`: *vorbei · that way*) ist ein anderes Wort; hier *von dort*.
+- **`per questo` (11,30 `per questa generazione`)**: nur die Lemmafolge stimmt (`per` + `questo`), der Wortlaut ist `questa` — Einzelwörter.
+- **`si mise a` (11,37 `si mise a tavola`)**: nicht `mettersi a` (*machte sich daran*), sondern `mettersi` + `a tavola` wie Luca 7,36.
+- **`guai a` als Teilspanne** von `guai a voi` (11,42 · 43 · 44 · 47 · 52) — die längere Spanne deckt sie.
+- **`con l'aiuto di Beelzebù` (Paketfolge, 11,15 · 11,18 · 11,19; Achtung `con sé`/`con me`)**: nicht geprägt, kein Mehrwort — die Einzelwörter stehen wie Matteo 12,24/12,27 (`con` mit · `l'aiuto` der Hilfe · `di` von, Lemma `aiuto` per Reihe 1).
+- **`tutto il tuo corpo è illuminato` (Paketfolge, 11,34 · 11,36)**, **`anche il Figlio dell'uomo lo` (11,30)**, **`a voi dottori della legge perché` (11,46 · 11,52)**,
+  **`a voi farisei perché` (11,42 · 11,43)**: Zufallsfolgen der Zeichenkette; die Inhaltswörter tragen Einzelglossen bzw. die Spanne `guai a voi`.
+- **`ne uccideranno alcuni e ne perseguiteranno altri` (11,49)**: `ne` partitiv *davon · of them · de ellos · en*, kein Mehrwort.
+- **`Un giorno Gesù stava` (11,1 · 11,14)**: kein Mehrwort; `Un giorno` *An einem · On a* + `giorno` *Tag · day · día · jour* wie Luca 8,22, beide Stellen zeichengleich.
+- **`in un certo luogo` (11,1)**, **`non darmi fastidio` als ganzer Satz**, **`andare in rovina` (11,17 `va in rovina`)**, **`alzare la voce` (11,27)**, **`dopo aver acceso` (11,33)**,
+  **`fare attenzione` (11,35 `Fa' dunque attenzione`)**, **`per cogliere` (11,54)**: wörtlich verständlich, Einzelwörter wie Marco 4,24 · Luca 8,18 · Matteo 12,1.
+- **`dopo aver acceso` (11,33)**: kein Mehrwort, `dopo` *nachdem · after · después de · après*, `aver` *hatte · having · haber · avoir*, `acceso` Lemma `accendere` *angezündet · lit* (wie Matteo 4,2 · 27,26).
+
+## 493 · Das subjektlose Verb und die 1. Person in Lukas 11 — Reihe 300 · 308 · 420 · 446.1 · 452 · 462 · 472 · 482 angewandt
+
+Pronomen (de/en/fr; **es nie**) dort, wo das Subjekt gegenüber der unmittelbar vorangehenden Klausel wechselt oder im ganzen Satz nirgends steht:
+
+    11,15  che scaccia         dass er austreibt … · he casts out · expulsa · il chasse     (Spaltsatz `È con l'aiuto di Beelzebù … che scaccia`; Marco 3,22 setzt das Pronomen auf `che` — hier auf das Verb, Reihe 308)
+    11,26  ed entrano          sie ziehen ein · they enter · entran · ils entrent          (Wechsel: der Geist → die sieben Geister)
+    11,29  cominciò a dire     er begann · he began · comenzó · il commença                (Nebensatz `Mentre le folle si affollavano` mit anderem Subjekt davor; Luca 4,21 hat kein Pronomen, dort Fortführung)
+    11,38  che non si fosse … lavato   er hätte · he had · hubiera · il fût               (Wechsel im Daß-Satz: der Pharisäer → Jesus)
+    11,49  ne uccideranno      sie werden töten · they will kill · matarán · ils tueront   (`ne perseguiteranno` danach ohne, Fortführung)
+    11,53  Quando uscì di là   er ging hinaus · he went out · salió · il sortit            (Jesus steht im Satz nirgends; das Hauptsatzsubjekt sind die Schriftgelehrten)
+
+**Kein Pronomen**, wo die Erzählung/Rede das Subjekt fortführt (Reihe 446.1): 11,5 `Poi disse loro` (Jesus wie 11,2) · 11,24 `dice` · 11,25 `trova` · 11,26 `va, prende` (der Geist)
+· 11,27 `diceva` · 11,31 `venne` (die Königin) · 11,32 `si ravvidero` (die Niniviten) · 11,37 `parlava` · 11,45 `disse` (`uno dei dottori` steht) · 11,52 `volevano` (Relativsatz).
+Ausdrücklich `Egli disse loro` (11,2) · `Egli entrò` (11,37) · `Egli disse` (11,46) · `Ma egli, conoscendo …` (11,17) · `Ma egli disse` (11,27) — Wechsel des Subjekts, das Pronomen steht im Text.
+
+**11,8 `anche se non si alzasse` bewusst OHNE Pronomen**: das Subjekt (der Freund, 11,7 `quello`) bleibt Diskurssubjekt; ein *er* vor dem Reflexivspan wäre *sich er würde erheben*.
+`si alzerà` folgt ohne.
+
+**1. Person ohne `io`/`noi` im Satz — Reihe 482 fortgeführt, im Bericht gezählt:** mit Pronomen (Reihe 472) **5×**: `ho` 11,6 *ich habe · I have · tengo · j'ai* (es *tengo* als Besitz-Verb, nicht *he*),
+`posso` 11,7 *ich kann · I can · puedo · je peux*, `sono uscito` 11,24 *ich bin · I have · he · je suis*, `Ritornerò` 11,24 (Matteo 12,44 zeichengleich), `Manderò` 11,49 *Ich werde schicken · I will send · Enviaré · J'enverrai*.
+Formelhaft ohne Pronomen **3×**: `dico` 11,8 · 11,9 · 11,51 (*sage · tell · digo · dis*, 93× im Bestand). 1. Person MIT ausgeschriebenem Pronomen im Text: `noi perdoniamo` 11,4, `io scaccio` 11,18 · 11,19 · 11,20 — dort trägt das Verb kein zweites.
+Der Bestand bleibt gespalten (Matteo 12,44 `sono` ohne, `Ritornerò` mit); die Koordinatorfrage aus Reihe 482/490 ist damit um fünf Belege reicher, nicht entschieden.
+
+## 494 · Was die Synoptiker-Parallelen getragen haben — und wo Lukas 11 anders liest
+
+- **11,2-4 ← Matteo 6,9-13**: `sia santificato il tuo nome` / `venga il tuo regno` zeichengleich (*werde geheiligt* · `il` **der** vor *Name*, **das** vor *Reich*); Lukas hat eigene Formen: `dacci ogni giorno` (*Gib uns jeden Tag*, `ogni` *jeden · every · cada · chaque*),
+  `perdonaci` (Klitikon, Lemma `perdonare` B1) statt `rimetti`, `ad ogni nostro debitore` (`ad` de **an**, wie Matteo 6,12 `a`; `ogni` de *jedem* im Dativ), `perdoniamo` statt `abbiamo rimessi`, **kein** `liberaci`. `non esporci alla tentazione` zeichengleich (`non` fr *n'… pas*, `esporci` *setze uns aus · expose us · nos expongas · nous expose*).
+- **11,9-13 ← Matteo 7,7-11**: 11,9 `e vi sarà dato … bussate e vi sarà aperto` und 11,10 tragen zeichengleich; 11,11-12 `il figlio gli chiede un pesce` (`gli` *ihn · him · le · lui* als Objekt von `chiede`, `gli darebbe` *ihm*), `invece` *vielmehr · instead · más bien · plutôt*
+  (Luca 5,38; Matteo 7,14 *dagegen* wäre die Gegenlesart), `serpe` neu (Matteo 7,10 `serpente`), `uovo`/`scorpione` neu; 11,13 `Se dunque voi, che siete malvagi` bis `doni` zeichengleich, aber `dunque` *also · therefore* (Bestand 55×; Matteo 7,11 steht als einziger auf *nun · then*), `Padre` **Vater · Father · Padre · Père** mit Großschreibung im Text, `lo Spirito Santo` Akkusativ *den … Heiligen*.
+- **11,14-15 ← Matteo 9,32-34 / 12,22-24**: `il muto parlò, e le folle si meravigliarono` zeichengleich; `demonio` *Dämon* durchgehend; **`Beelzebù` *Beelzebub · Beelzebul · Beelzebú · Béelzébul*** (Marco 3,22; Zeugenschreibung je Sprache, Reihe 436), nicht Matteo 12,24 `Beelzebul`.
+- **11,17-23 ← Matteo 12,25-30** (11,23 = Block 16, Ähnlichkeit 1.00): `conoscendo i loro pensieri, disse loro` (Luca 5,22), `diviso … in se stesso va in rovina` (`in` *in · in · en · en*), `se stessa` MW wie Matteo 12,25; `Voi dite che è con l'aiuto di Beelzebù che io scaccio i demoni` — `che` **dass**, `è` *es ist · it is · es · c'est* (Matteo 12,28); 11,20 `è arrivato` *ist · has · ha · est* … *gekommen · come* (Reihe 459), `regno` en **kingdom** klein (der Entwurf brachte *Kingdom* aus Matteo 12,28 mit; die 11 Luca-Belege 6,20 … 10,11 stehen klein).
+- **11,24-26 ← Matteo 12,43-45**: `immondo` *unreine · unclean · inmundo · impur* (Nominativ), `va vagando` neu (`vagare`), `non trovandone` Klitikon-Gerundium (*davon findend · finding any · hallando de ello · en trouvant*, fr `non` *n'… pas* vor Vokal), `e arrivato` Partizip absolut mit gleichem Agens (Reihe 46/369): Lemma `arrivare`, *angekommen · having arrived · habiendo llegado · étant arrivé*.
+- **11,29-32 ← Matteo 12,38-42**: `Questa generazione … chiede un segno` (Marco 8,12 `chiede` *verlangt*), `nessun segno le sarà dato, tranne il segno di Giona` (`di` *des · of · de · de*); `la regina del sud`: `sud` kleingeschrieben *Südens · south · sur · sud*, `si alzerà` MW `alzarsi` (Matteo 12,42 hat `risorgerà`); `insieme agli uomini` MW `insieme a` mit dem Artikel im Einzelwort `agli` *mit den · with the · con los · avec les*;
+  **`per ascoltare`: `per` en *in order*, `ascoltare` *to hear*** (Matteo 12,42 hat *to* + *to hear*, s. Reihe 498); `qui c'è più di` = Matteo 12,41/42 zeichengleich (`c'è` Lemma `esserci` *ist · is · hay · il y a*, Hauptsatz, Reihe 243/420 nicht berührt).
+- **11,34-36 ← Matteo 6,22-23**: `del tuo corpo` → `del` *von* nach Reihe 22 (`tuo` *deines*, `corpo` *Körpers*, wie Luca 1,42 `del tuo grembo`); `tutto il tuo corpo` *ganzer der dein Körper* (Matteo 6,22); **`illuminato` en *illuminated*** (Matteo 6,22 trägt *full of light*, s. Reihe 498); `è nelle tenebre` es *está* (Ort), `è sano` es *es* (Bestand).
+- **11,42-52 ← Matteo 23,4-35**: 11,42 ist bis auf `Ma guai a voi, farisei` und `ruta` (Matteo 23,23: `aneto`) Matteo 23,23 zeichengleich (`Queste sono le cose che bisognava fare`); 11,43 `i primi posti nelle sinagoghe e i saluti nelle piazze` = Marco 12,39 + Matteo 23,7 (`piazze` *Marktplätzen · marketplaces*, nicht Matteo 12,19 *Plätzen · squares*);
+  11,46 `pesi` Matteo 23,4; 11,50-51 `fin dalla fondazione del mondo` = Matteo 13,35 (`fin` *schon · from · desde · depuis*, `dalla` *seit der · the · la · la*), `dal sangue di Abele fino al sangue di Zaccaria` = Matteo 23,35 (aber es *hasta la* — Genus, s. 498; `Zaccaria` *Zacharias · Zachariah · Zacarías · Zacharie*).
+
+## 495 · Homographen, Lemmasplits und Partizipien in Lukas 11
+
+Nach Reihe 5 · 46 · 70 · 121 · 122 · 369 · 425 · 438 · 439 · 459:
+
+    Passiv/attributiv → Partizip-Lemma:
+      santificato 11,2 · dato 11,9 · 11,29 (`dato`) · aperto 11,9 · 11,10 (`aperto`) · chiusa 11,7 (`chiuso`) · diviso 11,17 · 11,18 · divisa 11,17 (`diviso`) · nascosto 11,33 · illuminato 11,34 · 11,36 · spazzata 11,25 (`spazzato`) ·
+      versato 11,50 (`versato`, *vergossen · shed · derramada · versé*) · richiesto 11,50 · 11,51 (neu B2, es **requerida** — Bezugswort `sangue` = es *sangre* f.) · ucciso 11,51 · armato 11,21 (`armato`);
+      das finite Verb `illumina` 11,36 → `illuminare` (neu B1, de *beleuchtet*), nicht `illuminato`
+    Partizip absolut/Gerundium, Agens = Subjekt des Hauptsatzes → Infinitiv-Lemma, Partizipglosse:
+      arrivato 11,25 (`arrivare`, Agens der Geist) · vedendo 11,38 (`vedere`, Agens der Pharisäer) · conoscendo 11,17 · parlando 11,45 (`parlare`, Agens = der Angeredete = Subjekt von `offendi`) · tendendogli 11,53 (`tendere`) ·
+      trovandone 11,24 (`trovare`) · cercando 11,24 · scacciando 11,14 · pregando 11,1 · vagando 11,24
+    avere-Perfekt auf dem Infinitiv, Partizipglosse:
+      ebbe finito → `finire` 11,1 · ha insegnato → `insegnare` 11,1 (*gelehrt · taught · enseñado · enseigné* — der Entwurf brachte fr *appris* mit) · ha detto → `dire` 11,49 · ha portato → `portare` · ha allattato → `allattare` 11,27 (en **borne** · **nursed**) · ha fatto → `fare` 11,40 (*gemacht · made*) ·
+      avete tolto → `togliere` 11,52 (Bestand `tolto` steht nur für Passivformen, `sweeplemma` meldet den Unterschied) · avete impedito → `impedire` 11,52 · dopo aver acceso → `accendere` 11,33
+    essere-Perfekt (Reihe 459): `mi è arrivato` 11,6 · `è arrivato` 11,20 · `sono uscito` 11,24 · `siete entrati` 11,52 → en *has/have* · es *ha/he/habéis* (Partizip unveränderlich), de/fr *ist/sind · est/suis/êtes*;
+      `si fosse lavato` 11,38: kein Mehrwort (Matteo 27,24 `si lavò` trägt keins), `si` *sich · himself · se · se*, `fosse` de **hätte** · en *had* · es *hubiera* · fr **fût** (Reflexiv-Perfekt geht im Deutschen mit *haben*, im Französischen mit *être*), `lavato` Lemma `lavare` A2.
+    Reflexiv: Spanne trägt das reflexive Lemma, der Einzeleintrag das einfache (Reihe 438): `alzarsi`/`alzare` · `affollarsi`/`affollare` neu · `meravigliarsi`/`meravigliare` · `ravvedersi`/`ravvedere` · `mettersi`/`mettere`
+    passivierender `si` (Reihe 122): 11,44 `che non si vedono` *welche nicht **man** sieht · which not **they** see · que no se ven · qui ne… pas **on** voit*, Lemma `si`.
+    Klitikon-Token (Reihe 3): insegnaci · dacci · perdonaci · esporci · prestami · offrirgli · darmi · alzarmi · dartelo · darglieli · gliene · glielo · metterlo · incalzarlo · fargli · tendendogli · trovandone · abitarci — Lemma auf dem Verb, die Glosse gibt beides wieder (`darglieli` *sie ihm geben · give them to him · dárselos · les lui donner*, `abitarci` *dort wohnen · live there · habitar allí · y habiter*, `trovandone` s. o.).
+    Reihe 3, Apokope: `Fa'` (11,35) → `form` **Fa** (`strip_punct` nimmt den Apostroph mit), Lemma `fare`, *Achte · Take · Presta · Prends* (Imperativ 2. Sg. wie Luca 8,18 `Fate` *Achtet · Take heed · Prestad · Prenez*).
+
+Homograph-Lesarten unter einem Lemma (Reihe 12): `fatto (sostantivo)` (11,8 `il fatto`, *Tatsache · fact · hecho · fait*; Matteo 16,8 *Umstand*, dasselbe Lemma, andere Lesart) · `interno` (11,7 `dall'interno` Elisionstoken, Lemma nach Reihe 1 der Inhaltskopf, *von innen*; 11,39 `il vostro interno` Nomen *Innere · inside · interior · intérieur*; 11,40 `l'interno` *das Innere*, Level B1 wie Matteo 23,26) ·
+`seno` (11,27 *Brust · breast · pecho · mamelle*; Matteo 19,12 *Leib · womb*, dasselbe Lemma) · `grembo` 11,27 *Leib · womb · vientre · sein* (Luca 1,42/1,44 unverändert) · `pranzo` (11,37 · 11,38 *Mittagessen · lunch · almuerzo · déjeuner*; Matteo 22,4 `pranzo` *Mahl · dinner · banquete · festin* ist das Hochzeitsmahl).
+
+## 496 · Kollisionen in Lukas 11 (`glosskollision.py`): aufgelöst und stehen gelassen
+
+Aufgelöst, alle im Kollisionsvers: `illumina`/`illuminato` de *erleuchtet* 11,36 → `illumina` *beleuchtet*; `grembo`/`seno` fr *sein* 11,27 → `seno` *mamelle* (LSG: *les mamelles*), `grembo` bleibt *sein* (Luca 1,42/44).
+
+Stehen gelassen (13 inhaltliche Paare, 10 davon in nur einer Sprache; alles Pronomen/Artikel oder unvermeidlich): `li`/`loro` de *sie* (11,19 wie Matteo 12,27) · `gli`/`lui` fr *lui* (11,22: `più forte di lui` gegen `gli toglie`; 11,29 `le` *lui* gegen `intorno a lui`) · `il`/`lo` fr *le* (Artikel gegen Objektklitikon, 11,22 · 11,30) ·
+`la`/`la` es *la* (11,28 Artikel gegen Pronomen) · `lo`/`lui` en *him* (11,37) · `essi`/`li` · `le`/`li` de *sie* (11,48) · `a`/`di` de *zu* (11,8 zwei Infinitivpartikeln) · `essere`/`suo` de *sein* (11,8 *zu sein sein Freund*) · `cui`/`le` de *die* · `cui`/`di` es *que* · `in`/`ne` fr *en* (11,22) ·
+`che`/`la` de *der* (11,27) · `quando`/`Se` de *wenn* (11,36 `come quando`) · `da`/`di` es *de* (11,46) · `con`/`di` de *mit* (11,46: `caricate … di pesi` gegen `con un dito`) · `avete`/`siete` en *have* · es *habéis* (11,52 zwei Hilfsverben) · `vi`/`voi` (11,44).
+
+## 497 · Befunde an der Werkzeugkette (Nachtrag aus Lukas 11)
+
+1. **Die Kettenlesung hat gefunden, was kein Werkzeug findet** (Reihe 428 · 437 · 456 · 466 · 476 · 487): Genus nach dem Kopieren — `il dito` es *la* (der Entwurf holte es aus Marco 3,15 `il potere`, es *autoridad* f.), `dal viaggio` de *vom* (Reise f.), `il fatto` de *der* (Tatsache f.), `quei pesi` es *aquellos* (cargas f.), `una serpe` fr *une* (serpent m.), `un uovo` en *a* (vor Vokal *an*), `il grembo`/`il seno` de *das/der* (Leib m., Brust f.), `il sangue` es *el* (sangre f., später `requerida`);
+   Kasus — `mit der Finger`, `einer von den Lehrer`, `des Becher`, `um zu ihn` (unter `a` verlangt Dativ), `ein/eine Haus`; Doppelmarkierung — `per` en *to* + Infinitiv *to X* (`in order to to put him to the test` 11,16 und `to to hear` 11,31 im Entwurf), `insistenza` fr *instance*, `ha portato` en *bore* (Partizip *borne*), `ha insegnato` fr *appris*, `sarà dato` es *dada* (Bezug auf `segno` f. ist hier richtig, `dato` generell nicht);
+   Besitz-Verb — `ha un amico` es *ha* → *tiene*, `ho nulla` es *he* → *tengo* (der Bestand ist gespalten: `ho` 28× *he/He*, 6× *tengo/Tengo*; hier für den Besitz durchgehend *tengo/tiene*, wie Matteo 11,18 `ha un` *Tiene*);
+   fr Elisionen, die `elision.py` gefunden hat (zwei echte, keine Artefakte): `non trovandone` *n'… pas* (vor *en*) und `di Abele` *d'* (`che`/`la` vor Vokal `qu'`/`l'` hatte ich schon von Hand gesetzt: `l'observent`, `s'il`); dazu `essere`-Perfekt fr *êtes/suis* korrekt (être-Verben), `si` reflexiv fr *s'* vor Vokal.
+2. **`mwcheck.py`/`mwlemma.py`/`mwself.py` (eigene Läufe, aus Lukas 10 übernommen; Reihe 476.3/303)**: fanden zwei ganz fehlende Spannen (11,19 `per questo`, 11,32 `insieme a`) und eine fehlende `pieno di` (11,39), die die Standardwerkzeuge nicht melden — `mehrwort.py` blieb bei 0, `sweeplemma.py` meldete nur `in cui` (begründet abgelehnt, Reihe 492). **Der Entwurf-Extrakt (`draft.py`) listet die Mehrwortkandidaten zwar, doch wer sie beim Zusammenbau nicht abhakt, verliert sie.**
+3. **`levelcheck.py`** fand neun Levelabweichungen bei Lemmata, die im Bestand schon standen (`rispondere` A1 · `possedere` B1 · `sopraggiungere` B2 · `vincere` B2 · `seno` B1 · `accendere` B1 · `erba` B1 · `toccare` B1 · `impedire` B2) — geschätzte Level für „neue" Lemmata **immer** erst gegen `levelcheck` lassen, viele Wörter stehen schon in Matteo/Marco.
+4. **`artikel.py`** meldet `sangre` m=1 f=7 (Matteo 27,25) — der eine Ausreißer ist Bestand, nicht meiner. **`kongruenz.py`** las alle elf `chN.json` in `$ANNO_OUT/42/`, nicht nur ch11 (Meldung „11 Kapiteldatei(en)"), und sagt die fehlende `it`-Spalte selbst; Null = keine Numerusfehler es/fr.
+5. **`folgencheck.py --gegen`**: die Deviation-Liste wird von Bestand-Lücken dominiert (`con me` Matteo 12,30 ohne Mehrwort, dazu 40 Zeilen Fenstervarianten), nicht von eigenen Abweichungen — gelesen und die echten Abweichungen (11,20 `Kingdom`, 11,36 `è` es, 11,28 `la` Lemma/Glossen) angepasst.
+6. **`zsh`**: `echo ====…` in einem Skriptaufruf wird als Befehl expandiert (`=…`), der Rest der Zeile fällt still aus — kein `====` als Trennlinie in Tool-Aufrufen.
+
+## 498 · Bestandsauffälligkeiten aus Lukas 11 (NICHT geändert — Sache des Koordinators)
+
+- **Matteo 12,30 `con me` ×2 ohne Mehrwort**, obwohl der Bestand `con me` 8× als Spanne führt (Matteo 15,32 · 18,26 · 18,29 · 20,13 …) und Luca 11,7 · 11,23 ×2 sie tragen; `contro di me` steht dort korrekt.
+- **Matteo 23,35 `fino al` es *hasta el*** (Bezug `sangue` = es *sangre* f.) → *hasta la*; **Matteo 27,25 `il sangue` es *el*** (`artikel.py`: `sangre` m=1 f=7).
+- **Matteo 12,42 `per ascoltare` en *to* + *to hear*** (doppeltes *to*, Reihe 446.2) — und Matteo 23,14 `per apparire` *in order to* + *to appear*; **Matteo 16,1 `per` en *in order to*** + *to put him* (in Luca 10,25 · 11,16 jetzt *in order*).
+- **Luca 8,18 `Fate dunque attenzione` en *Take heed therefore heed***, de *Achtet also acht* — `Fate` trägt das *heed* schon (Marco 4,24 *Take heed*), `attenzione` hat es noch einmal.
+- **Luca 8,30 `il tuo nome` de *das*** → **der** (Name m.); Luca 3,14 `Egli disse loro` en *them* (4× *to them* sonst: 4,23 · 9,20 · 10,18 · 11,2).
+- **Luca 8,21 (u. a., 5 Stellen) Pronomen `la` mit Lemma `il`** gegen 51× `lo` — Lemma-Ausreißer; die Glossen *es · it · la · la* sind richtig.
+- **Luca 1,44 `il bambino` es *el criatura*** → *la criatura* (Genus).
+- **Marco 5,10 `insistenza` de *Nachdruck* · fr *instance*** (falscher Freund: *instance* = Bitte, Drängen; Luca 11,8 trägt *Beharrlichkeit · insistance*).
+- **Matteo 6,22 `illuminato` en *full of light*** gegen Luca 11,34/11,36 *illuminated* — die Glosse gibt das italienische Wort wieder (Reihe 449/453); beide sind vertretbar.
+- **Matteo 7,11 `dunque` de *nun* · en *then*** (1×) gegen 55× *also · therefore*; Luca 11,13 folgt der Mehrheit.
+- **Matteo 12,44 / Matteo 12,45 (1. Person ohne Pronomen `sono`)**: Reihe 472/482, s. 493.
+
+## 499 · Die 21 neuen Einzellemmata dieses Kapitels und ihre Level
+
+Gemessen gegen den Bestand: `levelcheck.py 42 11` 0 Abweichungen.
+
+    A2  sicuro · uovo
+    B1  approvare · arma · caricare · coppa · duramente
+    B2  affollare · fastidio · offendere · rapina · richiesto · serpe · sorvegliare · tendere · trappola · vagare
+    C1  bottino · incalzare · ninivita · ruta
+
+- **Mehrwortlemmata neu** (7): `dare fastidio` B2 · `per il fatto di` B2 · `al sicuro` B2 · `affollarsi` B2 · `in elemosina` B2 · `fare domande` B1 · `tendere trappole` B2.
+- **Namen**: `Beelzebù` de *Beelzebub* · en *Beelzebul* · es *Beelzebú* · fr *Béelzébul* (Zeugenschreibung je Sprache, Reihe 436; Marco 3,22), `Giona` *Jona · Jonah · Jonás · Jonas*, `Salomone` *Salomo · Solomon · Salomón · Salomon*, `Abele` *Abel* ×4, `Zaccaria` *Zacharias · Zachariah · Zacarías · Zacharie* (Matteo 23,35), `ninivita` *Niniviten · Ninevites · ninivitas · Ninivites* (de `Niniviten` gewählt, l1912mod umschreibt *Menschen von Ninive*).
+- **`Signore`** de *Herr* (11,1 · 11,39), nie *HERR* (Reihe 423).
+- **Wortwahl neuer Lemmata**: `ruta` *Raute · rue · ruda · rue* (LSG/RV: *la rue · la ruda*), `coppa` *Becher · cup · copa · coupe* (nicht *Kelch*), `seno` *Brust · breast · pecho · mamelle*, `bottino` *Beute · loot · botín · butin*, `sopraggiungere` *hinzukommt · comes upon · sobreviene · survient*, `vagare` *umherirrend · wandering · vagando · errant*, `offendere` *beleidigst · offend · ofendes · offenses*, `pranzo` *Mittagessen · lunch · almuerzo · déjeuner*.
+
+## 500 · Was Lukas 11 mit dem Paket 10·11·12 abgleicht und was es an die Nachbarn abgibt
+
+- **Prägt für das Paket (frühester Ort hier)**: `richiesto a questa generazione` (11,50 · 11,51: `richiesto` de *gefordert* · en *required* · es *requerida* · fr *demandé*, `a` *an · to · a · à* — Luca 11,50/51 sind die einzigen Belege, die Paketfolge hat Luca 12 nicht), `Guai a voi perché` (11,44 · 11,47 = Spanne `guai a voi` + `perché` *denn*), `tutto il tuo corpo è illuminato` (11,34 · 11,36, Einzelwörter, *ganzer der dein Körper ist erleuchtet*), `anche il Figlio dell'uomo lo` (11,30, Einzelwörter), `a voi farisei perché` (11,42 · 11,43 = `guai a voi` + `farisei` + `perché`), `a voi dottori della legge perché` (11,46 · 11,52), `Mentre diceva queste cose` (11,27), `Un giorno Gesù stava` (11,1 · 11,14).
+- **Zeichengleich innerhalb des Pakets**: `per metterlo alla prova` (Luca 10,25 · 11,16: `per` *um · in order*, Spanne `mettere alla prova`, `alla` *auf die · to the · a · à l'*); `regno di Dio è` (Luca 6,20 → 11,20); `ed ecco qui c'è più di` (Matteo 12,41/42 → 11,31 · 11,32 zeichengleich); `che io scaccio i demoni` (Matteo 12,28 → 11,18 · 11,20 · 11,19 `io scaccio i demoni`).
+- **Übernimmt aus Lukas 10**: `mettere alla prova`, `guai a`, `pieno di`, `ogni cosa`, `colui che` (Reihe 480); `se non`-Ablehnung (Reihe 481) wie 11,8.
+- **Offen an Luca 12**: `quello che` (Bestand 108×, Reihe 441) und `Beati piuttosto quelli che` — 11,28 · 11,52 sind bare `quelli che` und tragen **die Spanne** `quello che` *die, die · those who · los que · ceux qui* (Reihe 149/323/340/353/407); Lukas 5,9 · 6,3 · 6,4 stehen ohne (Reihe 449/477/479) — die Koordinatorfrage bleibt, 11,28 · 11,52 sind zwei weitere Belege **mit** Spanne (Singles bei `a quelli che`: Luca 6,4/6,27/6,33 *denen · welche* übernommen, `quelli che` als `jene · die` nach Reihe 149).
+- **Reihe 382 (`se stesso`)**: gemessen — der Bestand normalisiert die Spanne auf das Lemma `sé stesso`, die Einzeltoken stehen auf `sé` (`se`) + `stesso`; Luca 9,23 · 9,25 (*himself*), Matteo 12,25 (*itself*, **auch `se stessa` bereits als Spanne** *sich selbst · itself · sí misma · elle-même*). Lukas 11,17 `se stesso`/`se stessa` und 11,18 `se stesso` folgen dem — **die feminine Form ist also kein neuer Fall** (Matteo 12,25 trägt sie), en *itself* für das Reich/das Haus, *himself* für Satan. Reihe 382 bleibt in der Namensfrage (ein gemeinsames Lemma `sé stesso` steht schon) entschieden; offen bleibt nur Marco 12,31 / Matteo 10,40 (Reihe 490).
+- **`loro stessi` (11,19) und `voi stessi` (11,46 · 11,52)**: gemessen, nicht neu geprägt. `loro stessi` *sie selbst · they themselves · ellos mismos · eux mêmes* = Matteo 12,27 (Einzelwörter). `voi stessi` trägt im Bestand 4× die Spanne mit *euch selbst · yourselves* (alle Objektfälle: Matteo 23,31 · Marco 9,50 · 13,9 …); in Lukas 11 steht es **nominativisch** (`voi stessi non toccate`, `Voi stessi non siete entrati`) → Spanne `voi stessi` mit **ihr selbst · yourselves · vosotros mismos · vous-mêmes** (de im Nominativ, Rest wie der Bestand), Einzelwörter `voi` *ihr · you · vosotros · vous*, `stessi` *selbst · selves · mismos · mêmes* (Bestand 5×). `sweeplemma` markiert das zu Recht als „weicht ab" (Kasus).
+
+## 501 · Einsammeln Lukas 11: Reihe 498 abgearbeitet, `sangre` weiblich
+
+Gezogen: Matteo 27,25 `Il` (vor `suo sangue`) es *La*; Matteo 23,35 Spanne
+`fino al` es *hasta la* (`sangre` f., jetzt 0 gespaltene Nomen in
+`artikel.py`); `per` + Infinitiv en *in order* statt *to*/*in order to* in
+Matteo 12,42 · 16,1 · 23,14 (Reihe 446.2); Matteo 12,30 Spanne `con me` zweimal
+wie Lukas 11,23; Lukas 8,18 `Fate` en *Take* (wie 11,35 `Fa'`, war *Take heed*
++ *heed*); Lukas 8,30 `il` (vor `tuo nome`) de *der*; Lukas 1,44 `il` (vor
+`bambino`) es *la* (*la criatura*); Marco 5,10 `insistenza` fr *insistance*.
+**Nicht gezogen:** `scorpione` Lukas 10,19 Plural gegen 11,12 Singular (kein
+Widerspruch, `paketcheck` A); Lukas 3,14 en *them* gegen *to them*; Pronomen
+`la` unter Lemma `il` (Luca 8,21 u. a., Lemmafrage, gesammelt fuer einen
+eigenen Lauf); Matteo 6,22 *full of light* gegen Lukas 11,34 *illuminated*.
+**Werkzeugfalle beim Zurueckschreiben:** Matteo ist NICHT einheitlich kompakt —
+ch23 und ch27 stehen mit indent=1. Format je Datei an der ersten Zeile
+erkennen, nicht je Buch annehmen.
