@@ -16399,3 +16399,88 @@ KJV-Wortwahl). **Nicht gezogen:** `raccogliere` fr *amasser* bei den Kueken
 traegt sie mit. Prompt-Korrektur angenommen: `Vattene via` ist `andare via`,
 kein `andarsene`. **Werkzeugfalle:** Matteo ch25 ist kompakt OHNE Leerzeichen
 (`separators=(',',':')`) — beim Zurueckschreiben den Trenner der Datei treffen.
+
+---
+
+# Lukas 14 (Wassersüchtiger · Platzwahl · großes Abendmahl · Nachfolge · Salz)
+
+*Angehängt vom Agenten für Luca 14 (Paket 14·15, allein gelaufen). Höchste
+gesehene Nummer beim Anhängen war 517; ich zähle bei 518 weiter. 35 Verse,
+691 Tokens, 691 Einzelwort- + 25 Mehrwort-Einträge; 26 neue Lemmata
+(darunter 8 Mehrwörter). Synoptiker-Parallelen: 17 von 35 Versen haben eine
+Vorlage ab 4 Tokens (Matteo 10,38 · Markus 9,50 · Markus 4,9 tragen),
+am Vergleichsvers gelesen.*
+
+## 518 · Mehrwörter, die Lukas 14 prägt und übernimmt
+
+Übernommen (am Vergleichsvers gemessen): `entrare in casa di` (14,1 = Lukas
+1,40) · `davanti a` (14,2 · 14,10, `a` einzeln *zu · to · de · à*, Lehre 1) ·
+`a tavola` (14,8 · 14,10 = Lukas 11,37) · `colui che` (14,12 = Matteo 12,48
+*demjenigen, der*) · `più importante` (14,8 = Matteo 23,17) · `più avanti`
+(14,10 = Matteo 4,21) · `tutto quello che` (14,33, *alles, was*) · `per questo`
+(14,20, *darum*) · `con te` (14,10 = Matteo 14,4/18,16/26,35, Lukas 1,28) ·
+`che cosa` (14,34 = Markus 9,50, beide Einzelwörter *was · what · qué · quoi*) ·
+`buttare via` (14,35 = Matteo 13,48, Singular *wirft weg · throws away · echa
+fuera · jette*) · `tirare fuori` (14,5, `parts` [18,20] wegen `subito` dazwischen;
+Lukas 10,35) · `sedersi` (14,28 · 14,31, Präsens *setzt sich · sits down · se
+sienta · s'assied*, Einzelwort `siede` → `sedere` *setzt · sits down · sienta ·
+assied* nach Reihe 438).
+
+Neu geprägt:
+
+    14,6    in contrario          B2  dagegen · to the contrary · en contra · au contraire
+    14,11   si innalza            B2  erhebt sich · exalts himself · se enaltece · s'élève   (`innalzarsi`; Einzelwort `innalza` → `innalzare` *erhebt · exalts · enaltece · élève*)
+    14,11   si abbassa            B1  demütigt sich · humbles himself · se humilla · s'abaisse   (`abbassarsi`; Einzelwort `abbassa` → `abbassare` *demütigt*; Passiv `abbassato` *erniedrigt · humbled*, `innalzato` *erhöht · exalted* — alle vier de-Glossen verschieden, keine Kollision)
+    14,12   a loro volta          B1  ihrerseits · in turn · a su vez · à leur tour   (Einzelwörter `loro` *ihrem · their · su · leur*, `volta` *Mal · time · vez · fois*)
+    14,18   come un sol uomo      B2  wie ein Mann · as one man · como un solo hombre · comme un seul homme   (`sol` → Lemma `solo` *einziger · single · solo · seul*)
+    14,20   Mi sono … sposato     B1  ich habe geheiratet · I have married · me he casado · je me suis marié   (`sposarsi`, `parts` [3,4,6] wegen `appena` dazwischen; Einzelwörter `Mi` *mich*, `sono` *bin* (Kopula, Reihe 6), `appena` *gerade · just · recién · tout juste*, `sposato` → `sposare` *verheiratet*)
+    14,26   in confronto a        B2  im Vergleich zu · in comparison with · en comparación con · en comparaison de
+    14,31   muovere guerra a      B2  Krieg führen gegen · wage war against · hacer la guerra a · faire la guerre à   (Einzelwörter literal: `muovere` *zu führen · to wage*, `a` *zu · to · a · à*)
+    14,32   se no                 B1  andernfalls · otherwise · si no · sinon
+
+## 519 · Entscheidungen und Koordinatorfragen aus Lukas 14
+
+1. **`padrone` 14,21 · 14,23: Herr/señor, NICHT Hausherr/amo — der Prompt (Reihe 515/517 „14,21 trägt das mit") am Bestand widerlegt.** `Hausherr`/`amo` stand in 12,42 und 13,25 nur, weil dort `Signore` im selben Vers die Kollision `herr`/`señor` erzwang. 14,21 hat kein `Signore` (das steht in 14,22, anderer Vers). Gemessen: 29× *Herr/Herrn · señor* gegen 2× *Hausherr · amo* (12,42 · 13,25). 14,21 trägt deshalb `padrone` überall *Herrn/Herr · master · señor · maître*, auch `il padrone di casa` (= Matteo 10,25, Lukas 12,39); 14,23 `Il padrone` ebenso. **Koordinator:** 13,25 und 12,42 bleiben die kollisionsbedingten Ausnahmen — oder Reihe 515.1 zurückziehen.
+2. **Passivpartizip `invitato`**: `sei invitato` 14,8 · 14,10 und `essere stato invitato` 14,8 auf `invitare` (Bestandslemma der Form, `sweeplemma` Abschnitt 2 hat die erste Fassung auf `invitato` gefangen); `invitati` (14,7 · 14,17 Substantiv, 14,24 `erano stati invitati` Passiv) auf `invitato`, wie der Bestand die Form führt. `reso` → `rendere` (Bestandsform), mit **Genus des Zielnomens**: `il contraccambio ti sarà reso` es *devuelta* · fr *rendue* (Zielnomen *recompensa/récompense* weiblich), 14,12 + 14,14.
+3. **Partizip assoluto 14,15 `udite` · 14,21 `adiratosi` · 14,25 `voltandosi`** (Agens = Subjekt des Hauptsatzes → Infinitivlemma, Reihe 5/46/321/369): `udite` → `udire` *gehört · having heard · habiendo oído · ayant entendu*; `adiratosi` → `adirare` (Bestand `adirare`/`adirarsi`/`adirato`) *erzürnt · having become angry · habiéndose enojado · s'étant mis en colère*; `voltandosi` → **`voltarsi`** *sich umdrehend · turning around · volviéndose · se retournant* — der Bestand führt `voltatosi` (Markus 8,33 · Lukas 7,44) auf `voltarsi`, die Reihe 5/46 allein hätte `voltare` verlangt; Bestandsform schlägt Regel (wie Lehre 14). **Offene Frage:** `svegliatosi` steht auf `svegliare`, `voltatosi` auf `voltarsi` — dieselbe Konstruktion, zwei Linien.
+4. **`scusarsi` · `scusami` 14,18 · 14,19** → Lemma `scusare` (neu, B1): `scusarsi` *sich entschuldigen · excuse themselves · excusarse · s'excuser* (nach `a`: `a` *zu*, Verb ohne eigenes *zu*, Reihe 513); `scusami` *entschuldige mich · excuse me · discúlpame · excuse-moi*.
+5. **`per` + Infinitiv (14,1 · 14,28 ×2 · 14,31 · 14,35)**: Lehre 12 — `per` *um · in order · para · pour*, der Infinitiv bringt sein *zu/to* (*zu essen · to eat*). **Weicht in 14,35 von Lukas 8,8 und Markus 4,9 ab** (`per` en *to*, `udire` *hören · hear*): die Formel `Chi ha orecchi per udire oda` steht dort zweimal auf *to · hear*, `folgencheck` meldet die Abweichung. Ich habe nach Lehre 12 gesetzt („nie *to*"); **Koordinator: alle drei zusammen ziehen** (Lukas 8,8 + Markus 4,9 auf *in order* / *zu hören · to hear*).
+6. **`è riuscito` 14,30 en *has* · es *ha*** (Reihe 459, essere-Perfekt, fr *est* weil *parvenir* mit *être*); die Paketzeile `non è riuscito a` aus Lukas 6,48 steht noch auf *is · es* — **Altlast Lukas 6,48**, beim Einsammeln ziehen. Folge: in 14,30 teilen `ha cominciato` und `è riuscito` en *has* · es *ha* — `glosskollision` meldet es; bewusst stehen gelassen (zwei Hilfsverben verschiedener Verben, beide in der Zielsprache so; das Alternativ-`is` wäre falsches Englisch).
+7. **`la propria vita` / `la propria croce` 14,26 · 14,27**: Artikel glossiert ARTIKEL (*das · the · la · la*), `propria` *eigene · own · propia · propre* (Reihe 443). Lukas 9,24 (+ Matteo 16,25, Markus 8,35) führt `la` auf *sein · his · su · sa* + `propria` *eigenes* — das hätte in 14,26 mit `suo`/`sua` desselben Verses (*seinen/seine · his · su · son/sa*) kollidiert (en *his*, es *su*, fr *sa*, de `essere` *sein*). **Bestandsfrage für den Koordinator**: 9,24 / 16,25 / 8,35 auf die Artikelglosse ziehen oder die Zwei-Linien-Lage dokumentieren.
+8. **`i primi posti` 14,7** en *seats* · es *asientos* · fr *sièges* (Lukas 11,43, Markus 12,39), nicht Matteo 23,6 *places · puestos · places*; Einzahl `posto` 14,8–14,22 *Platz · place · lugar · place* (Platzsinn: *room · sitio* nur 14,22 `c'è ancora posto`). Zwei Linien im Bestand.
+9. **`cena` = *Abendessen · dinner · cena · dîner*** (14,12 · 14,16 · 14,17 · 14,24), gegen `pranzo` *Mittagessen · lunch · almuerzo · déjeuner* (Lukas 11,37); Genus nach dem Zielnomen: es *una gran cena* (fem), fr *un grand dîner*, *le mon dîner* (masc), de *ein großes Abendessen*; Genitiv 14,17 *des Abendessens*. Matteo 26,17 `la cena di Pasqua` (*Mahl · meal · repas*) bleibt unberührt (Pesach-Mahl).
+10. **Genus/Numerus/Kasus des Zielnomens — in dieser Runde nur über Kettenlesung gefunden** (kein Werkzeug sieht es): es *las caminos/setos* → *los* (14,23), es *devuelto* / fr *rendu* → *devuelta/rendue* (14,12 · 14,14), es `te` im Vergleich *ti* → *tú* (14,8 `più importante di te`; Bestand Lukas 3,16 hat *mí* für `me` — **Altlast**, da Nominativ nach *que* *yo/tú* verlangt), de 14,17 `il suo servo` Akkusativ *den seinen Knecht* (Erstentwurf *der sein*, von `folgencheck --min 3` gefangen), 14,17 `della cena` Genitiv *Abendessens*.
+11. **1. Person (Reihe 482)**: mit Pronomen `devo` 14,18 · `vado` 14,19 · `posso` 14,20 · `Mi sono … sposato` (Spanne) · `prego` ×2 (*bitte ich · I beg · ruego · je supplie* nach Lukas 8,28/9,38); Hilfsverb ohne Pronomen `Ho` ×2 (14,18 · 14,19); formelhaft `dico` 14,24 (*sage*, = Lukas 3,8). Zähler: 6 mit, 3 ohne.
+12. **`esserci` 14,2 `c'era`** *gab es · there was · había · il y avait*, **14,22 `c'è`** *gibt es · there is · hay · il y a*, beide Hauptsatz-Existential (Reihe 243/420: der offene Fall `esserci` im Relativsatz ist in Lukas 14 nicht aufgetreten).
+13. **`Va'` 14,10 · 14,21 · 14,23** → `andare` *geh · go · ve · va* / satzanfangs *Geh · Go · Ve · Va* (Form `Va`, Bestand 35×); `costringili` → `costringere` *zwinge sie · compel them · oblígalos · force-les*; `finirla`/`vederlo`/`provarli`/`deriderlo`/`dirti`/`invitarti`/`ricambiarti` Lemma auf dem Verb, Glosse beide Teile; Klitikon-Bezug nach Zielgenus (`finirla`, Turm: de *ihn zu beenden* · es *terminarla* · fr *la finir*).
+14. **`tutti quelli che` 14,10 · 14,29** kompositionell (Reihe 149/323/340/353/407): 14,10 *allen · denen · die* (= Lukas 2,38), 14,29 *alle · jene · die*; keine `quello che`-Spanne.
+15. **Unpersönliches `si` 14,34 `gli si darà` · 14,35 `lo si butta via`**: `si` *man · one · se · on* (Reihe 122/13,14), fr `lo` in `lo si butta` *le* (nicht *l'*, „on le jette", Reihe-Vorbild `lo si salerà`) — der einzige bewusst nicht elidierte Rest, `elision.py` 0.
+16. **`che cosa` 14,34**: beide Einzelwörter *was · what · qué · quoi*, wie Markus 9,50 (Bestand, `glosskollision` Abschnitt „4 von 4"): Doppelgloss bewusst übernommen (Spanne trägt die Wendung, Vorlage zeichengleich).
+17. **`di sabato`** Einzelwörter *am · on · en · le jour du* (Lukas 13,14 · Matteo 12,11), 14,1 `Un giorno di sabato` zeichengleich Lukas 6,1 (*am · on · de · de*).
+
+## 520 · Neue Lemmata aus Lukas 14 und ihre Level
+
+Gemessen gegen den Bestand (`levelcheck.py 42 14`: 0 Abweichungen); wo der Bestand das Lemma führt, dessen Level (Bestand schon führend: `siepe` · `fondamento` · `porre` · `notare` · `sposarsi`; abweichende Schätzungen verworfen: `scegliere` B1, `paio` A2, `adirare` B2, `muovere` B2, `condizione` B2 gegen meine Schätzungen).
+
+    A2  provare · spesa · abbastanza · ventimila
+    B1  occupare · organizzare · scusare · calcolare · onore · notare (Bestand)
+    B2  idropico C1 · pozzo · cedere · ricambiare · contraccambio C1 · valutare · affrontare · ambasciata · concime · confronto
+    Mehrwörter: in contrario B2 · innalzarsi B2 · abbassarsi B1 · a loro volta B1 · come un sol uomo B2 · in confronto a B2 · muovere guerra a B2 · se no B1 · sposarsi B1
+
+**Werkzeugbefunde** (italienische Richtung): `sweeplemma.py` Abschnitt „Wortform unter einem Lemma, das der Bestand nicht kennt" fing `invitato` (Reihe 2); `folgencheck --min 3` fing den Kasusfehler `il suo servo`; `glosskollision.py` trennt Artikel/Pronomen nicht (14,35 `la`/`lo`, `il`/`lo` — korrekt verschieden, grammatisch). **Kein Werkzeug sieht** Genus/Numerus von es/fr-Partizipien und -Artikeln vor nachgestellten Nomen (`las caminos`, `devuelto` zu fem. `recompensa`), die Kettenlesung hat sechs solche Fälle gefunden. `kongruenz.py`/`artikel.py` laufen ohne it-Spalte nur auf Numerus bzw. Bestandsverteilung und schwiegen. `paketcheck` entfällt bei Einzelagent.
+
+## 521 · Einsammeln Lukas 14: Reihe 519 abgearbeitet, Reihe 515.1 zurueckgezogen
+
+**`padrone`**: Lukas 14 hat recht — der Bestand fuehrt 29× *Herr · master ·
+señor · maître* gegen 2× *Hausherr · amo*, und die zwei (12,42 · 13,25) stehen
+nur wegen `Signore` im selben Vers. Das sind Kollisionsausnahmen, keine
+Paketreihe; die Angabe aus Reihe 515/517 („14,21 traegt das mit") ist
+zurueckgezogen. Gezogen: `per udire` ueberall nach Lehre 12 — `per` *um · in
+order*, `udire` *zu hören · to hear* (Marco 4,9 · 4,23 · 7,16, Lukas 5,1 · 8,8,
+wie 14,35); Lukas 6,48 `è riuscito` en *has* · es *ha* (Reihe 459; fr bleibt
+*est parvenu*); Lukas 3,16 `di me` es *yo* (Vergleich, *más fuerte que yo*, wie
+14,8 *tú*). **Offen:** `la propria vita/croce` — Artikel als Artikel (Lukas 14)
+gegen Artikel als Possessiv (Lukas 9,24 · Matteo 16,25 · Marco 8,35);
+`voltatosi` (`voltarsi`) gegen `svegliatosi` (`svegliare`) — zwei Lemmalinien
+beim Partizip assoluto mit `si`. Lukas 13 kostete 19, Lukas 14 rund 20 Punkte im
+5h-Fenster (beide unter 750 Tokens).
