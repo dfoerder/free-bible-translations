@@ -16328,3 +16328,74 @@ weil `sacca` *bolsa* traegt). `richiesto` variiert nur im Genus des Bezugsworts.
 `in verità` mit/ohne Spanne (Luca 4,24 · 9,27 gegen Reihe 56/85), `autorità`
 Plural de *Behörden*, passives `chiesto` als eigenes Lemma, `a` unter `davanti
 al` (Matteo 10,32 *zu* gegen Mehrheit *dem*), 1.-Person-Pronomen (Reihe 482).
+
+## 513 · Mehrwörter, die Lukas 13 prägt und übernimmt (Paket 13·14·15, erstes Kapitel)
+
+Übernommen (am Vergleichsvers gemessen, zeichengleich): `allo stesso modo` (13,3 · 13,5 = Matteo 21,36/25,17 · Giuda 1,7/1,8 *ebenso · in the same way · del mismo modo · de la même manière*),
+`quello che` (13,23 · 13,34, BARES `quelli che`, Reihe 149/323/340/353/407) · `colui che` (13,35 = Matteo 23,39) · `che cosa` (13,18 ×2 · 13,20 = Marco 4,30; `A` *Mit · To · A · À* daneben einzeln) ·
+`chiamare a sé` (13,12 = Marco 3,13) · `su di lei` (13,13 = Matteo 9,18) · `simile a` (13,19) / `simile al` (13,21 = Matteo 13,33 *gleich dem · like the · semejante a la · semblable au*) ·
+`esserci` (13,14 · 13,30, getrennte Bauform wie Luca 12,52) · `in cui` (13,14 · 13,35, Reihe 1,25/12,46) · `non più` (13,35, `parts` [12,15]) · `stare per` (13,35 = Matteo 23,38) ·
+`di nuovo` (13,20) · `andare via` (13,31) · `alzarsi` (13,25) · `rallegrarsi` (13,17) · `salvarsi` (13,23) · `cercare di` (13,24 = Luca 12,58) · `ravvedersi` (13,3 · 13,5).
+
+Neu geprägt oder an die Fügung angepasst:
+
+    13,1    il cui                B2  dessen · whose · cuya · dont le       (Einzelwörter `il` *das · the · la · le*, `cui` *dessen · whose · cuya · dont*; Reihe `la cui` Marco 7,25)
+    13,3    vi ravvedete          B2  ihr umkehrt · you repent · os arrepentís · vous repentez   (`ravvedersi`; Einzelwörter `vi` *euch · yourselves · os · vous*, `ravvedete` → `ravvedere` *kehrt um · repent · arrepentís · repentez* — OHNE `os`/`vous`, sonst „os os“)
+    13,11   in alcun modo         B1  auf keine Weise · in no way · de ningún modo · d'aucune manière
+    13,12   Vedutala              —   Einzelwort `vedere` *sie gesehen · having seen her · habiéndola visto · l'ayant vue* (Partizip assoluto, Agens = Gesù wie im Hauptsatz → Infinitiv; Reihe 5/46/321/369, Vorbild 42.2,48 `Vedutolo`)
+    13,13   si raddrizzò          B2  richtete sich auf · straightened up · se enderezó · se redressa   (`raddrizzarsi`; Einzelwort `raddrizzò` → `raddrizzare`)
+    13,14   farvi guarire         B1  euch heilen lassen · be healed · ser sanados · vous faire guérir   (`farsi guarire` nach `farsi battezzare`/`farsi vedere`; `a` davor einzeln *zu*)
+    13,25   si sarà alzato        A2  wird aufgestanden sein · will have gotten up · se habrá levantado · se sera levé   (Hilfsverb `sarà` in der Spanne mit Kopula-Glosse *wird · will be · será · sera*, Reihe 6)
+    13,25   di dove               B1  woher · where … from · de dónde · d'où   (zu `da dove` 4×; Einzelwörter `di` *von · from · de · d'*, `dove` *wo · where · dónde · où*; auch 13,27)
+    13,29   siederanno a mensa    B1  werden zu Tisch sitzen · will sit at the table · se sentarán a la mesa · seront à table   (= Matteo 8,11 `siederanno a tavola`; `mensa` Einzelwort *Tisch*)
+    13,33   del resto             B1  im Übrigen · besides · por lo demás · du reste
+    13,33   può darsi che         B2  es kann sein, dass · it can be that · puede ser que · il se peut que   (`non` davor Einzelwort; `darsi` → Lemma `darsi`)
+    13,22   si dirigeva           B1  begab sich · was heading · se dirigía · se dirigeait   (`dirigersi`; Einzelwort `dirigeva` → `dirigere`)
+    13,9    in futuro             B1  künftig · in the future · en el futuro · à l'avenir
+
+## 514 · Was Lukas 13 bewusst KEIN Mehrwort bekommt — und was der Prompt falsch angesagt hat
+
+- **`se non` (13,3 · 13,5)**: Einzelwörter *wenn · nicht* (se + Negation, „wenn ihr euch nicht bekehrt“). Die Bestandsspanne `se non` (22×) ist *ausser · except*; `sweeplemma` meldet die zwei Stellen als Verdacht — zu Recht geprüft, hier wörtlich.
+- **`stesso` als Adjektiv (13,1 · 13,31)**: `quello stesso tempo`/`momento` bleiben Einzelwörter *jener/jenem · selben* wie Luca 10,21 und Matteo 10,19 — keine Spanne.
+- **Prompt-Angabe `Vattene` → Lemma `andarsene` am Bestand widerlegt**: der Bestand führt `Vattene` auf `andare` (Matteo 4,10 · 16,23, Marco 8,33), und `Vattene via` ist dort die Spanne `andare via` (Matteo 16,23 · Marco 8,33 *Geh weg · Go away · Vete · Va-t'en*). 13,31 trägt genau das.
+- **`ci sono` 13,14 ist kein Relativsatz-Fall** (Reihe 243/420): Hauptsatz-Existential → Spanne `esserci` *gibt es*. Der offene Fall `esserci` im Relativsatz ist in Lukas 13 nicht aufgetreten.
+- **`di sabato` (13,10 · 14 ×2 · 15 · …)** Einzelwörter `di` *am · on · en · le jour du* (9× Mehrheit im Bestand); die 3 Marco-Spannen bleiben ein Altbefund. `padrone di casa` 13,25 Einzelwörter (Reihe 510).
+- **`in quell'istante` 13,13**: Einzelwörter (Bestand 9×), keine Spanne.
+- **`per portarlo a bere`**: `per` *um · in order · para · pour* (Reihe 501), `portarlo` → `portare` *ihn zu bringen · to bring him · llevarlo · l'emmener*, `a` einzeln *zu*.
+- **`a` vor Infinitiv (`a riferirgli`, `a cercarvi`, `a farvi`)**: `a` bleibt *zu · to · a · à*; das Verb trägt dann KEIN eigenes *zu* (`riferirgli` *ihm berichten · tell him*, `cercarvi` *dort suchen · seek there*) — sonst steht *zu zu* in der Kette.
+
+## 515 · Entscheidungen und Koordinatorfragen aus Lukas 13
+
+1. **`padrone`/`Signore` 13,25 (Kollision `herr`/`señor`)**: aufgelöst am `padrone`: de *Hausherr* · es *amo* (wie 12,42, Reihe 263); `di casa` dann *des · of · de · de* / *Hauses*. 12,39 trägt *Herr*/*señor* — das Paket (14,21 `il padrone di casa`) muss die Entscheidung mittragen.
+2. **`il pianto` 13,28**: fr *les pleurs* (Plural des Zielnomens, Lehre 10). Der Bestand führt Matteo 8,12 · 13,42 · 13,50 · 22,13 · 24,51 · 25,30 mit *le pleurs* — **Altlast, Koordinator**.
+3. **`quello` als Subjekt** (13,8 `Ma quello rispose`): de *jener* · en *that one* · es *aquel* · fr *celui-là* (nicht *dasjenige · cela*, das ist das neutrale Pronomen).
+4. **1. Person (Reihe 482/472)**: *mit* Pronomen de/en/fr bei `vengo` 13,7 · `trovo` 13,7 · `so` 13,25 · 13,27 · `devo` 13,33 · `giungo` 13,32 (6 Fälle); formelhaft ohne `dico` 13,3 · 5 · 24 · 27 · 35 (5 Fälle); `io scaccio … e compio` ohne zweites Pronomen (Subjekt `io` im Satz); `ho voluto` 13,34 (Hilfsverb, Matteo 23,37 zeichengleich) und `Abbiamo` 13,26 (1. Pl. Hilfsverb, Bestand 22×) ohne Pronomen.
+5. **Matteo 23,37 als Vorlage für 13,34**: 35 Tokens zeichengleich übernommen (Block 17/5/11), Abweichungen nur bei `raccogliere`/`raccoglie` (Bestand `sammeln · gather · recoger · amasser`, nicht `radunare`) und `gallina` (Bestand `chioccia` → neu `gallina` A2). Matteo hat dort **keine** Spanne `quelli che`, Lukas 13,34 trägt sie (Reihe 149/353/407, wie Lukas 11,28/52 · 12,4); `non` fr vor *avez* ist *n'… pas* (Matteo 23,37 ungeelidiert — **Altlast**).
+6. **`farina` en *meal*** (Matteo 13,33 zeichengleich) ist nicht das italienische Wort (*flour*). Übernommen, um die Vorlage zu halten — **Koordinatorfrage**, beide Stellen zusammen.
+7. **Lukas 13,18 `a`** *mit · to · a · à* (nicht *zu*, wie das Paket aus 9,2 führt): `a che cosa` ist Dativ der Vergleichs-Frage, 9,2 `e a guarire` ist Infinitiv-Anschluss.
+8. **`cui` in `il cui sangue`** 13,1: Spanne `il cui` nach `la cui` (Marco 7,25); Einzelwort `cui` hier *dessen · whose · cuya · dont*, nicht *dem · which · que · lequel* (das ist das Relativ der Präposition).
+9. **`passivo`/Partizip-Lemma**: `sciolta` → `sciogliere`, `piantato` → `piantare`, `legata` → `legato`, `liberata` → `liberato` — wo der Bestand die Partizipform führt, wurde sein Lemma genommen (Lukas 12 `accese`); `indignato` 14 neu auf `indignato` (adjektivisch), `mescolato` 13,1 aktiv → `mescolare` (Bestand führt nur das Passiv `mescolato`).
+10. **Elision fr `elision.py`**: 10 Funde im ersten Lauf (*qu'étaient* · *l'aie* · *d'aucune* · *l'appela* · *qu'il* · *d'entrer* ×2 · *d'ici* · *qu'un* · *n'avez*), alle echt, Null im Endstand.
+
+## 516 · Neue Lemmata aus Lukas 13 und ihre Level
+
+Gemessen gegen den Bestand (`levelcheck.py 42 13`: 0 Abweichungen); Level nie geschätzt, wo der Bestand das Lemma führt (Bestand: `riferire` · `perire` · `crollare` · `uccidere` · `tagliare` · `cercare` · `venire` · `trovare` · `lasciare` · `giungere` · `glorificare` · `salvare` · `compiere` · `bussare` · `volpe` …).
+
+    A1  diciotto (Zahlwörter A1 wie `dodici` · `undici`) · Siloe · sei (numerale, Bestand) · Galileo (Bestand)
+    A2  nord (Bestand `sud` A2) · gallina (Bestand `gallo` A2) · bue (Bestand)
+    B1  futuro · confuso · presenza · mensa · attraversare (Bestand) · dirigere
+    B2  vignaiolo · improduttivo · zappare · concimare · infermo · curvo · incapace · slegare · sforzarsi · darsi · indignato · legame (Bestand) · asino (Bestand)
+    Mehrwörter: il cui B2 · in alcun modo B1 · farsi guarire B1 · sedere a mensa B1 · del resto B1 · può darsi che B2 · di dove B1 · in futuro B1 · dirigersi B1
+
+## 517 · Einsammeln Lukas 13: Reihe 515 abgearbeitet
+
+Gezogen: `il` vor `pianto` fr *les* (*les pleurs*) in Matteo 8,12 · 13,42 ·
+13,50 · 22,13 · 24,51 · 25,30, wie Lukas 13,28; Matteo 23,37 `non` vor
+`avete` fr *n'… pas*; `farina` en *flour* statt *meal* (Matteo 13,33 und Lukas
+13,21 zusammen — die Glosse gibt das italienische Wort wieder, nicht die
+KJV-Wortwahl). **Nicht gezogen:** `raccogliere` fr *amasser* bei den Kueken
+(13,34 = Matteo 23,37 zeichengleich, Bestandsreihe). `padrone` 13,25 de
+*Hausherr* · es *amo* gegen die Paketzeile aus 12,39 — angenommen, Lukas 14,21
+traegt sie mit. Prompt-Korrektur angenommen: `Vattene via` ist `andare via`,
+kein `andarsene`. **Werkzeugfalle:** Matteo ch25 ist kompakt OHNE Leerzeichen
+(`separators=(',',':')`) — beim Zurueckschreiben den Trenner der Datei treffen.
