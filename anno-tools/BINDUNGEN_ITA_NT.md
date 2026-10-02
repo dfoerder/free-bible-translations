@@ -16704,3 +16704,14 @@ hung* war die Wortwahl einer Uebersetzung). **Offen fuer den Nutzer:**
 `la propria vita` — Lukas 14,26 · 17,33 Artikel als Artikel (Reihe 443) gegen
 Lukas 9,24, Matteo 16,25, Marco 8,35 Artikel als Possessiv; Lukas 1,1 `in
 mezzo a`. Unpersoenliches `si` en *one* (Reihe 52, 38×) bleibt.
+
+## 537 · `la propria vita`: Artikel als Artikel (Nutzerentscheidung 02.10.)
+
+Der Nutzer hat entschieden: Reihe 443 gilt auch hier — der freie Artikel vor
+`propria` glossiert den Artikel im Zielgenus, nicht das Possessiv. Angeglichen
+an Lukas 14,26 · 17,33 (9 Positionen): Matteo 16,25 (×2) · 16,26 · 20,28, Marco
+8,35 (×2) · 8,36, Lukas 9,24 (×2) — `la` *das/die · the · la · la* (vor
+`vita`/`anima`), `propria` de *eigene* (schwach nach dem Artikel, war *eigenes*
+nach *sein*). Unveraendert bleiben Praeposition + Artikel vor `proprio`
+(`al proprio`, `della propria`, Lehre 16) und die Stellen, an denen `proprio`
+selbst das Possessiv mittraegt (Matteo 22,5 · 27,60, Lukas 2,3).
