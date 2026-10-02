@@ -16634,3 +16634,73 @@ angenommen; Reihe 243/420 bleibt fuer `c'è` im Relativsatz offen. Gezogen:
 nuevas* (Lukas 4,18 · 4,43 · 8,1 · 9,6 · 16,16) gegen *buena noticia* (3,18 ·
 7,22); `portato` *getragen · carried* (16,22) gegen Bestand *gebracht ·
 brought* — dem Zusammenhang nach richtig, keine Reihe.
+
+
+---
+
+# Lukas 17 (Ärgernis · Vergebung · Senfkorn · unnütze Knechte · zehn Aussätzige · Kommen des Reiches · Tage Noahs und Lots)
+
+*Angehängt vom Agenten für Luca 17 (Paket 17, allein gelaufen). Höchste gesehene Nummer
+beim Anhängen war 530; ich zähle bei 531 weiter. 37 Verse, 635 Tokens, 635 Einzelwort- +
+37 Mehrwort-Einträge; 20 neue Lemmata (davon 4 Mehrwörter). Parallelen: Marco 9,42 (17,2),
+Matteo 18,7 (17,1), Matteo 24,17–41 (17,24–37), Luca 9,24/9,26, Luca 12,46, Luca 1,42,
+Luca 8,35 · 5,12 (17,15–16).*
+
+## 531 · Mehrwörter, die Lukas 17 prägt und übernimmt
+
+Übernommen (am Vergleichsvers gemessen): `guai a` (17,1) · `contro di te` (17,4) · `a casa` (17,7, hier im Sinn *nach Hause* — die Bestandsspanne passt, anders als 16,27 `a casa di`) · `a tavola` (17,7) · `fermarsi` (`si fermarono` 17,12) · `avere pietà` (17,13, `di` *mit · on · de · de*) · `gettarsi` (17,16) · `a gran voce` (17,15 = Luca 1,42, `a` *mit · with · a · d'*) · `tutto ciò che` (17,10, Subjekt: fr *tout ce qui*) · `quello che` (17,9 Subjekt *ce qui*; 17,10 Objekt *ce qu'*) · `in mezzo a` (17,21 = Matteo 18,2) · `in cui` (17,22 plur. *an denen*; 17,27 · 17,29 · 17,30 sing. *an dem*) · `fino a` (17,27) · `allo stesso modo` (17,28 · 17,31) · `lo stesso` (17,30) · `far perire` (17,27 = 17,29, Giuda 1,5) · `radunarsi` (17,37 = Matteo 24,28) · `sposarsi` (17,27 = Matteo 24,38) · `macina da mulino` (17,2) · `piuttosto che` (17,2 = Luca 16,17) · `recarsi` (17,11, ohne `vi` de *begab sich* gegen 8,42 *ging dorthin*) · `pentirsi` (`si pente` 17,3, `Mi pento` 17,4 — Bestand Matteo 27,3) · `manifestarsi` (`si manifesterà` 17,30; Bestand führt es einmal als *sich zu zeigen*) · `state attenti` · `voi stessi` (17,3, `voi` *euch · you*, wie Matteo 23,31).
+
+Neu geprägt:
+
+    17,8    mettersi in ordine   B2  *mach dich zurecht · get yourself ready · arréglate · apprête-toi*   (Einzelwörter `mettiti` *stell dich · put yourself · ponte · mets-toi* wie Marco 3,3 [en *put* statt *stand*], `in`, `ordine` *Ordnung · order · orden · ordre*)
+    17,12   a distanza           B1  *in der Ferne · at a distance · a distancia · à distance*   (Einzelwörter `a` *zu · to · a · à*, `distanza` *Entfernung · distance*)
+    17,15   tornare indietro     B1  `tornò indietro` *kehrte um · went back · volvió atrás · retourna en arrière* · 17,31 `torni indietro` *kehre um · turn back · vuelva atrás · retourne en arrière*   (Einzelwörter `tornò` *ging · went · volvió · retourna* nach Luca 8,37, `torni` *gehe · go · vuelva · retourne*, `indietro` *zurück · back*: Matteo 24,18 `torni` *kehre zurück · return* + `indietro` *zurück* trägt de *kehre zurück zurück*)
+    17,20   in modo da            B2  *so dass · in such a way as to · de manera que · de manière à*   (Einzelwörter `in` *in*, `modo` *Weise · way · manera · manière*, `da` *von · from · de · de/d'*)
+
+Bewusst KEIN Mehrwort: `motivi di scandalo` (Einzelwörter, `motivo` *Gründe · reasons · motivos · motifs*) · `venire incontro` (`vennero incontro`: Matteo 8,28 · Marco 5,2 · Luca 8,27 führen `venire` + `incontro` einzeln *kamen · entgegen*) · `sette volte al giorno` (`al` *pro · per · al · par* nach Matteo 20,2) · `a metterti a tavola` · `con la faccia a terra` und `ai piedi di Gesù` sind Bestandsblöcke ohne Spanne (Einzelwörter kopiert) · `Eccolo qui/là` (Einzelwörter).
+
+## 532 · Entscheidungen und Koordinatorfragen aus Lukas 17
+
+1. **Prompt-Punkt (b) unpersönliches `si` — am Bestand gemessen:** `si` de *man* · en *one* · es *se* · fr *on* steht 38× (Reihe 52), *they* nur 3× (Reihe 122, `si passivante` mit Plural-Subjekt). 17,27/28 `si mangiava, si beveva, si comprava …` sind unpersönliches `si` ohne Subjekt, also *man · one · se · on* — zeichengleich mit Matteo 24,38 (die Parallele trägt `si mangiava e si beveva` ebenso). **Konsequenz im Englischen:** *one ate · one drank · one bought* (kein *people*). Wer lieber *they* will, muss alle Stellen von Reihe 52 ändern. 17,18 `Non si è trovato nessuno` *man · one · se · on* + `è` *ist · has · ha · a* (wie Matteo 9,33 `Non si è mai vista`), 17,20 `non si dirà` *man · one · se · on*, `dirà` *wird sagen · will say · dirá · dira*.
+2. **`ci si sposava` 17,27 — neu entschieden, Bestand widerlegt:** italienisch ist das **erste** Klitikon (`ci`) das unpersönliche `si` (wegen *si si → ci si*), das **zweite** (`si`) das Reflexiv (*ci si lava* = man wäscht sich). Matteo 22,30 (`ci si sposa`) hat das richtig: `ci` *man · one · uno · on*, `si` *sich · themselves · se · se*. **Matteo 24,38 (`ci si sposava`) hat es vertauscht** (`ci` *sich · se*, `si` *man · on*) und trägt dadurch es *se se* und fr *se on mariait* — in Lukas 17,27 deshalb nach 22,30 gesetzt (Spanne `sposarsi` aus 24,38 *man heiratete · they were marrying · se casaban · on se mariait* behalten). Das Skript `chain.py` fand das Doppelwort *se se*. **Koordinator:** Matteo 24,38 `ci`/`si` an 22,30 angleichen.
+3. **Passiv/Partizip (Reihe 5, Prompt-Punkt c):** passive Partizipien auf der **Partizipform**: `messa` → **`messo`** (Marco 9,42 trägt `mettere`; Bestand `messo` 5× passiv *gesetzt · put*; hier *gelegt · put · puesta · mise* — Marco 9,42 hat *gehängt · hung*, die KJV-Wahl, nicht das italienische Wort) · `gettato` (Bestand `gettato` 12×) · `comandato` (`era stato comandato` · `vi è comandato`, **neu als passives Lemma**; die vier `comandato` im Bestand sind alle `ha comandato`, aktiv, unter `comandare`) · `guariti/guarito` (`furono guariti` · `era guarito` · `sono stati guariti`; `guarito` 6×) · `respinto` (9,22-Linie) · `preso` · `lasciato` (Matteo 24,40) · **`interrogato`** (17,20 `Interrogato dai farisei`: Partizip assoluto, das Subjekt von `rispose` ist der Befragte, nicht der Fragende — passiv, Reihe 70; neu, B1; *befragt · asked · interrogado · interrogé*). **Aktiv/pronominal auf dem Infinitiv:** `ha fatto` `fare` · `si è trovato` `trovare` (si passivante, Matteo 9,33/Marco 14,4-Linie: `fare`) · `avrete fatto` · `sarebbe venuto` `venire`. `sarebbe` en *would have* · es *habría* · fr *serait* (Reihe 9: Hilfsverb der Zielsprache; fr behält *être*).
+4. **`eravamo tenuti a fare` 17,10:** anderes Wort als Lukas 16,15 `tenuto` (*gehalten · held*) — Lemma **`tenuto (obbligato)`** B2, de *verpflichtet* · en *obliged* · es *obligados* · fr *tenus*; `a` *zu · to · a · à*, `fare` *tun · do · hacer · faire*.
+5. **`la propria vita` 17,33 — Reihe 443 gewählt, Unterschied zu 9,24 gemeldet:** Artikel als Artikel (`la` *das · the · la · la*, `propria` *eigene · own · propia · propre*), nicht als Possessiv. Lukas 9,24, Matteo 16,25 und Marco 8,35 tragen `la` *sein · his · su · sa* (Possessiv) und `propria` *eigenes*; Lukas 14,26 folgt schon 443. Die Folgenreihe zeigt jetzt die Abweichung gegen 9,24/Matteo 16,25/Marco 8,35. **Koordinator:** drei Stellen im Evangelium ziehen oder 443 für diese Wendung zurücknehmen. Dazu `salvare` hier en *save* (nicht *to save*), weil `cercherà di` *zu · to* schon das *to* trägt.
+6. **Eccolo qui / Eccolo là 17,21 = 17,23 (Prompt-Punkt a):** Bestand `eccolo` es *Helo aquí* (3×, Matteo 24,25/26, Marco 13,21) ergäbe vor `qui` *Helo aquí aquí*. Gesetzt: **es `eccolo` *helo***, `qui` *aquí*, `là` *allí*; de *siehe ihn* · en *behold him* · fr *le voici* unverändert (fr *le voici ici* ist ein Pleonasmus, aber kein Doppelwort). 17,21 = 17,23 zeichengleich.
+7. **`Aumentaci la fede` 17,5:** `aumentare` neu B1, `Aumentaci` *vermehre uns · increase for us · auméntanos · augmente-nous*; `fede` de **`den`** Glauben (Maskulinum; Kettenlesung fand *die Glauben*). **`Sradicati` 17,6:** Imperativ + Klitikon → Lemma **`sradicare`** (Infinitiv, Reihe 6); der Bestand führt nur `sradicato` (Partizip). `trapiantati` → `trapiantare`. `sicomoro` de *Maulbeerfeigenbaum* (maskulin, *diesem*), es *sicómoro* · fr *sycomore*, beide maskulin.
+8. **`roba` 17,31:** Plural-Glossen wegen der Possessivkette: de *Sachen* · en *belongings* · es *pertenencias* · fr *affaires* (`la` de *die* · es *las* · fr *les*; `prenderla` *sie holen · take them · tomarlas · les prendre*). `a prenderla` `a` *zu · to · a · **pour*** (Matteo 24,17/18 `a prendere`).
+9. **Genus nach Zielnomen, durch die Kettenlesung gefunden (Prompt (e)/Lehre 3):** `il gregge` de *die* Herde · `la cena` fr *le* dîner · `una macina` ok · `uno` (es) *una* aldea · `questo straniero` fr *cet* · `gli altri nove` de *anderen* · `il diluvio` de *die* Sintflut (+ `che` de *welche*). **`allo stesso modo` es: Matteo 27,41 · 27,44 · Marco 15,31 tragen es `stesso` *mismo* + `modo` *manera* (Genus-Fehler, Giuda 1,7 hat *misma manera*)** — in Lukas 17,28 · 17,31 *misma manera*, Matteo 27,41 · 27,44 · Marco 15,31 anzugleichen (**Koordinator**).
+10. **Namen (Reihe 436, Zeuge je Sprache am Vers):** Samaria de *Samarien* · en *Samaria* · es *Samaria* · fr *Samarie*; Galilea de *Galiläa* · fr *Galilée*; `Lot` *Lot* in allen vier; `Sodoma` de *Sodom* · fr *Sodome*; `Noè` *Noah* · es/fr *Noé*. Artikel vor Landesnamen nach Bestand (`la Galilea` de *das* · en *the* · es *la* · fr *la*).
+11. **`1.-Person-Pronomen` (Reihe 482):** `Mi pento` mit Pronomen (`mi` *mich · myself · me · me*, `pento` de *bereue ich* · fr *je repens*, Spanne *bereue · repent · me arrepiento · me repens*); `dico` 17,34 formelhaft ohne (*sage · tell · digo · dis*); `io abbia mangiato` 17,8 *ich · I · yo · j'* (fr elidiert). Zähler: 2 mit · 1 ohne.
+12. **Wiederholungen (Prompt-Punkt a) im Kapitel Feld für Feld gemessen (`rep.py`, 3- und 4-Token-Folgen):** `perdonagli` 17,3 = 17,4 · `Eccolo qui/là` 17,21 = 17,23 · `come avvenne ai giorni di` 17,26 = 17,28 · `si mangiava, si beveva` 17,27 = 17,28 · `che li fece perire tutti` 17,27 = 17,29 · `nel giorno in cui` 17,29 = 17,30 (`fino al giorno in cui` 17,27 gleicher Rest) · `uno sarà preso e l'altro lasciato` 17,34 = 17,36 · `una … presa … lasciata` 17,35 (nur Genus) · `allo stesso modo` 17,28 = 17,31 — alle GLEICH. **Bewusst verschieden:** `giorni` 17,22 *Tage* (nach `dei` *der Tage*) gegen 17,26 *Tagen* (`ai` *in den Tagen*; Kasus); `Figlio` 17,26 *Sohnes* (nach `del`) gegen 17,30 *Sohn* (nach `il`); Satzanfangs-Großschreibung.
+
+## 533 · Neue Lemmata aus Lukas 17 und ihre Level
+
+`levelcheck.py 42 17`: 0 Abweichungen (zwei Korrekturen im ersten Lauf: `sradicare` B2 gegen meine Schätzung C1, `pascolare` B1 gegen B2).
+
+    A1/A2  Samaria · Lot · nove (A1) · ringraziare (A2)
+    B1  aumentare · interrogato · roba · distanza · a distanza · tornare indietro
+    B2  tenuto (obbligato) · attirare · arare · aquila · in modo da · mettersi in ordine
+    C1  sicomoro · trapiantare · balenare · zolfo
+
+## 534 · Was Lukas 17 mit dem Paket abgleicht
+
+Paket 17 steht allein; Lukas 15·16 sind im Bestand. Übernommen und gemessen: `avere pietà` aus 16,24 · `piuttosto che` aus 16,17 · `Chi di voi avendo` aus 15,4 · `a casa` im Sinn *nach Hause* (16,27 `a casa di` bleibt ohne Spanne). Neu für Lukas 18ff.: `in modo da`, `a distanza`, `tornare indietro`, `mettersi in ordine`.
+
+## 535 · Einsammeln Lukas 17
+
+Werkzeugläufe: `selfcheck` sauber · `levelcheck` 0 · `sweeplemma` 0 ungedeckte Signaturen (zwei Lemmaabweichungen `messo` und `sradicare` s. 532.3/7; `metterti` → `mettere` nach Bestand 2×, `mettiti` → `mettersi` nach Marco 3,3/Lukas 6,8) · `glosskollision`: 3 inhaltliche Paare in nur einer Sprache (`gli`/`lui` fr *lui* = Marco 9,42-Block, `te`/`ti` de *dir* · *dir* in 17,4 `contro di te`/`da te` gegen `ti dice` — Reihe 20-Muster, stehen gelassen, `la`/`la` es/fr 17,33 Artikel gegen Pronomen, natürliche Sprache) · `kongruenz`/`artikel`/`mehrwort`/`hilfsverb` 0 · `elision` 1 Rest im ersten Lauf (`Non` fr *N'… pas* vor *ont* 17,17), Endstand 0 · `verschmelzung` A leer · `folgencheck` (alle drei Läufe): 17,33 gegen 9,24 (532.5), `giorni` 17,22/17,26 (Kasus), `che` fr *qui* gegen Luca 12,47 *qu'* (anderer Folgewortanfang), Marco 9,42 `messa`/`nel` (532.3/9). **Kettenlesung fand elf Fehler, die keine Werkzeugkette meldet:** de *die Glauben*, de *die Herde* (statt *das*), fr *la dîner*, es *un aldea*, fr *ce étranger*, de *die andere neun*, de *der Sintflut* (statt *die*), es *mismo manera* (aus Matteo 27,41 mitkopiert), es *se se casaba* (aus Matteo 24,38), es *Helo aquí aquí*, en *went out out of* (`uscì da` *aus* + *out of*) — alle am Vers korrigiert. `miss.py` (jede zusammenhängende Bestandsspanne gegen den Kapiteltext, Pfade angepasst nach `work/16/stock.py`): nur `ciò che` — von `tutto ciò che` mitgedeckt, kein Fehlbefund. **Offen/gemeldet:** Marco 9,42 `messa` (*gehängt · hung*, Lemma `mettere`); Matteo 24,38 `ci`/`si`; Matteo 27,41/27,44/Marco 15,31 es *mismo manera*; Lukas 1,1 `in mezzo a` (Einzelwörter `a` *zu · to* gegen *unter · of* der Matteo-Reihe); 9,24/Matteo 16,25/Marco 8,35 `la propria vita` (Artikel/Possessiv, 532.5).
+
+## 536 · Einsammeln Lukas 17
+
+Wiederholungen gemessen (`wiederholt.py`): 17,26 = 17,28, 17,27 = 17,28,
+17,27 = 17,29, 17,29 = 17,30, 17,34 = 17,36 gleich; einzige Abweichung `giorni`
+*Tage*/*Tagen* (Kasus). Gezogen aus Reihe 535: Matteo 24,38 `ci si sposava` —
+`ci` *man · one · uno · on*, `si` *sich · themselves · se · se* (wie Matteo
+22,30 und Lukas 17,27; die beiden Einzelzeilen waren vertauscht); `allo stesso
+modo` `stesso` es *misma* (vor *manera*) in Matteo 27,41 · 27,44, Marco 15,31;
+Marco 9,42 `messa` Lemma `messo`, *gelegt · put* (wie Lukas 17,2; *gehängt ·
+hung* war die Wortwahl einer Uebersetzung). **Offen fuer den Nutzer:**
+`la propria vita` — Lukas 14,26 · 17,33 Artikel als Artikel (Reihe 443) gegen
+Lukas 9,24, Matteo 16,25, Marco 8,35 Artikel als Possessiv; Lukas 1,1 `in
+mezzo a`. Unpersoenliches `si` en *one* (Reihe 52, 38×) bleibt.
