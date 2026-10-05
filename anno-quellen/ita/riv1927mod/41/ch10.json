@@ -3270,7 +3270,7 @@
    "level": "B2",
    "de": "begehen",
    "en": "commit",
-   "es": "cometas",
+   "es": "cometer",
    "fr": "commettre"
   },
   {
@@ -3301,7 +3301,7 @@
    "de": "stehlen",
    "en": "steal",
    "es": "robar",
-   "fr": "dérober"
+   "fr": "voler"
   },
   {
    "pos": 11,
@@ -3319,9 +3319,9 @@
    "lemma": "dire",
    "level": "A1",
    "de": "sagen",
-   "en": "give",
+   "en": "say",
    "es": "decir",
-   "fr": "porter"
+   "fr": "dire"
   },
   {
    "pos": 13,
@@ -4674,7 +4674,7 @@
    "form": "un",
    "lemma": "uno",
    "level": "A1",
-   "de": "ein",
+   "de": "einen",
    "en": "a",
    "es": "un",
    "fr": "un"
@@ -5356,7 +5356,7 @@
    "lemma": "esserci",
    "level": "A2",
    "de": "gibt es",
-   "en": "is",
+   "en": "is there",
    "es": "hay",
    "fr": "y a"
   },
@@ -5810,7 +5810,7 @@
    "form": "nel",
    "lemma": "in",
    "level": "A1",
-   "de": "im",
+   "de": "in der",
    "en": "in the",
    "es": "en el",
    "fr": "dans le"
@@ -9517,7 +9517,7 @@
    "form": "la",
    "lemma": "il",
    "level": "A1",
-   "de": "der",
+   "de": "dem",
    "en": "the",
    "es": "el",
    "fr": "le"
@@ -9927,6 +9927,17 @@
    "en": "Have mercy",
    "es": "Ten compasión",
    "fr": "Aie pitié"
+  },
+  {
+   "pos": 9,
+   "pos_end": 10,
+   "form": "più forte",
+   "lemma": "più forte",
+   "level": "A2",
+   "de": "lauter",
+   "en": "louder",
+   "es": "más fuerte",
+   "fr": "plus fort"
   }
  ],
  "49": [
@@ -10443,8 +10454,8 @@
    "lemma": "recuperare",
    "level": "B1",
    "de": "wiedererlange",
-   "en": "may receive",
-   "es": "recupere",
+   "en": "recover",
+   "es": "recobre",
    "fr": "recouvre"
   },
   {
@@ -10595,7 +10606,7 @@
    "lemma": "recuperare",
    "level": "B1",
    "de": "erlangte wieder",
-   "en": "received",
+   "en": "recovered",
    "es": "recobró",
    "fr": "recouvra"
   },
