@@ -359,7 +359,7 @@
    "form": "un",
    "lemma": "uno",
    "level": "A1",
-   "de": "einen",
+   "de": "ein",
    "en": "a",
    "es": "un",
    "fr": "un"
@@ -421,8 +421,8 @@
    "level": "A1",
    "de": "ist",
    "en": "has",
-   "es": "se ha",
-   "fr": "s'est"
+   "es": "ha",
+   "fr": "est"
   },
   {
    "pos": 18,
@@ -439,10 +439,10 @@
    "form": "salito",
    "lemma": "salire",
    "level": "A2",
-   "de": "gesessen",
-   "en": "sat",
-   "es": "montado",
-   "fr": "assis"
+   "de": "gestiegen",
+   "en": "climbed",
+   "es": "subido",
+   "fr": "monté"
   },
   {
    "pos": 20,
@@ -469,10 +469,10 @@
    "form": "portatemelo",
    "lemma": "portare",
    "level": "A2",
-   "de": "bringt es her",
-   "en": "bring it",
-   "es": "tráiganlo",
-   "fr": "amenez-le"
+   "de": "bringt es mir",
+   "en": "bring it to me",
+   "es": "traédmelo",
+   "fr": "apportez-le-moi"
   }
  ],
  "3": [
@@ -1150,10 +1150,10 @@
    "form": "i",
    "lemma": "il",
    "level": "A1",
-   "de": "ihre",
-   "en": "their",
-   "es": "sus",
-   "fr": "leurs"
+   "de": "die",
+   "en": "the",
+   "es": "los",
+   "fr": "les"
   },
   {
    "pos": 9,
@@ -1252,10 +1252,10 @@
    "form": "i",
    "lemma": "il",
    "level": "A1",
-   "de": "ihre",
-   "en": "their",
-   "es": "sus",
-   "fr": "leurs"
+   "de": "die",
+   "en": "the",
+   "es": "los",
+   "fr": "les"
   },
   {
    "pos": 3,
@@ -3356,7 +3356,7 @@
   {
    "pos": 23,
    "form": "fatto",
-   "lemma": "fatto",
+   "lemma": "fare",
    "level": "A1",
    "de": "gemacht",
    "en": "made",
@@ -3398,8 +3398,8 @@
    "form": "ladri",
    "lemma": "ladro",
    "level": "B1",
-   "de": "Räubern",
-   "en": "robbers",
+   "de": "Dieben",
+   "en": "thieves",
    "es": "ladrones",
    "fr": "voleurs"
   }
