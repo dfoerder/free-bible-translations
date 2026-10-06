@@ -714,7 +714,7 @@
    "de": "mit",
    "en": "with",
    "es": "con",
-   "fr": "les"
+   "fr": "avec"
   },
   {
    "pos": 10,
@@ -1645,10 +1645,10 @@
    "form": "distruggerà",
    "lemma": "distruggere",
    "level": "B2",
-   "de": "wird umbringen",
+   "de": "wird vernichten",
    "en": "will destroy",
    "es": "destruirá",
-   "fr": "fera périr"
+   "fr": "détruira"
   },
   {
    "pos": 10,
@@ -2317,6 +2317,17 @@
    "en": "went",
    "es": "fueron",
    "fr": "allèrent"
+  },
+  {
+   "pos": 17,
+   "form": "contro di loro",
+   "lemma": "contro di loro",
+   "level": "B1",
+   "de": "gegen sie",
+   "en": "against them",
+   "es": "contra ellos",
+   "fr": "contre eux",
+   "pos_end": 19
   }
  ],
  "13": [
@@ -3913,7 +3924,7 @@
    "level": "A1",
    "de": "Frau",
    "en": "wife",
-   "es": "mujer",
+   "es": "esposa",
    "fr": "femme"
   },
   {
@@ -3983,7 +3994,7 @@
    "level": "A1",
    "de": "Frau",
    "en": "wife",
-   "es": "mujer",
+   "es": "esposa",
    "fr": "femme"
   },
   {
@@ -4125,7 +4136,7 @@
    "level": "A1",
    "de": "eine Frau",
    "en": "a wife",
-   "es": "mujer",
+   "es": "esposa",
    "fr": "femme"
   },
   {
@@ -4552,7 +4563,7 @@
    "level": "A1",
    "de": "Frau",
    "en": "wife",
-   "es": "mujer",
+   "es": "esposa",
    "fr": "femme"
   },
   {
@@ -4643,7 +4654,7 @@
    "level": "A1",
    "de": "Frau",
    "en": "wife",
-   "es": "mujer",
+   "es": "esposa",
    "fr": "femme"
   }
  ],
@@ -8160,7 +8171,7 @@
    "level": "A1",
    "de": "in",
    "en": "in",
-   "es": "con",
+   "es": "en",
    "fr": "en"
   },
   {
