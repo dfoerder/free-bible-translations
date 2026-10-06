@@ -8637,19 +8637,19 @@
    "form": "alla",
    "lemma": "a",
    "level": "A1",
-   "de": "der",
+   "de": "dem",
    "en": "the",
-   "es": "la",
-   "fr": "la"
+   "es": "al",
+   "fr": "au"
   },
   {
    "pos": 6,
    "form": "cassa",
    "lemma": "cassa",
    "level": "B2",
-   "de": "Opferkasten",
-   "en": "treasury",
-   "es": "arca de las ofrendas",
+   "de": "Kasten",
+   "en": "chest",
+   "es": "arca",
    "fr": "tronc"
   },
   {
@@ -8811,6 +8811,17 @@
    "en": "much",
    "es": "mucho",
    "fr": "beaucoup"
+  },
+  {
+   "pos": 6,
+   "form": "cassa delle offerte",
+   "lemma": "cassa delle offerte",
+   "level": "B2",
+   "de": "Opferkasten",
+   "en": "treasury",
+   "es": "arca de las ofrendas",
+   "fr": "tronc",
+   "pos_end": 8
   }
  ],
  "42": [
@@ -9162,19 +9173,19 @@
    "form": "nella",
    "lemma": "in",
    "level": "A1",
-   "de": "in die",
+   "de": "in den",
    "en": "into the",
-   "es": "en la",
-   "fr": "dans la"
+   "es": "en el",
+   "fr": "dans le"
   },
   {
    "pos": 21,
    "form": "cassa",
    "lemma": "cassa",
    "level": "B2",
-   "de": "Opferkasten",
-   "en": "treasury",
-   "es": "arca de las ofrendas",
+   "de": "Kasten",
+   "en": "chest",
+   "es": "arca",
    "fr": "tronc"
   },
   {
@@ -9246,6 +9257,17 @@
    "en": "others",
    "es": "otros",
    "fr": "autres"
+  },
+  {
+   "pos": 21,
+   "form": "cassa delle offerte",
+   "lemma": "cassa delle offerte",
+   "level": "B2",
+   "de": "Opferkasten",
+   "en": "treasury",
+   "es": "arca de las ofrendas",
+   "fr": "tronc",
+   "pos_end": 23
   }
  ],
  "44": [
