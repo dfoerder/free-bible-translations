@@ -17358,3 +17358,48 @@ verità` Einzelwoerter mit `dico` ohne Pronomen, `per mezzo di` Spanne
 Gezogen: Marco 14,59 `la` (vor `loro testimonianza`) *das · the · el · le*
 (Zielgenus *Zeugnis · testimonio · témoignage*; `artikel.py` meldete es durch
 Johannes 1,19). **Offen:** Giuda 1,25 `di` *des* vor Namen.
+
+
+---
+
+# Johannes 2 (Hochzeit zu Kana · Tempelreinigung · Tempelwort)
+
+*Angehaengt vom Agenten fuer Giovanni 2 (Paket 2·3, allein gelaufen). Hoechste gesehene Nummer beim Anhaengen war 575; ich zaehle bei 576 weiter. 25 Verse, 450 Tokens, 448 Einzelwort- + 23 Mehrwort-Eintraege.*
+
+## 576 · Johannes 2 — Entscheidungen
+
+1. **`volerci` 2,20 `Ci sono voluti quarantasei anni`:** Spanne `volerci` (B2) *hat gedauert · it took · han hecho falta · il a fallu*; Einzelwoerter woertlich `ci` *da · there · ahi · y*, `sono` *sind · are · son · sont*, `voluti` Lemma `volere` *noetig · needed · necesarios · necessaires* (nicht `esserci`, das Bestand-`ci sono` *gibt es* haette den Sinn verfehlt). 1.-Person/2.-Person-Pronomen: `farò` mit Pronomen (*ich werde · I will · haré · je ferai*), `faresti` ohne (`tu` steht davor).
+2. **Kausatives `fare risorgere`** 2,19 · 2,20: Spanne `fare risorgere` B2 (*ich werde auferstehen lassen · I will raise up · haré resucitar · je ferai ressusciter*; 2,20 *würdest … · would … · harías … · ferais …*), Einzelwoerter `fare` *ich werde lassen · I will make · haré · je ferai* bzw. *würdest lassen · would make · harías · ferais*, `risorgere` *auferstehen · rise · resucitar · ressusciter* (Bestand Marco 8,31). Neues Lemma, Bestand fuehrte kein Kausativ.
+3. **`fu risuscitato` 2,22 ist Passiv:** `fu` *wurde · was · fue · fut* (Reihe 46), `risuscitato` Lemma `risuscitare` *auferweckt · raised · resucitado · ressuscité* — der Bestand (16×) fuehrt nur das Aktiv-Perfekt `è risuscitato` *auferstanden · risen*.
+4. **`si è bevuto` 2,10:** unpersoenliches `si` *man · one · se · on* (Reihe 52, singulaer, nicht Reihe 122), Hilfsverb nach der Zielsprache: `è` *hat · has · ha · a* (Reihe 490: *boire* geht mit *avoir*).
+5. **`ebbe assaggiato` 2,9** Trapassato remoto: `ebbe` *hatte · had · hubo · eut*, `assaggiato` *gekostet · tasted · probado · goûté*. **`diventata vino`** attributiv, Bestandslemma `diventare` (nicht `diventato`), es *llegada a ser* (Genus von *agua*; Bestand 3× *llegado*).
+6. **`Venuto a mancare il vino` 2,3:** Spanne `venire a mancare` B2 (*ausgegangen · having run out · habiendo faltado · ayant manqué*), Einzelwoerter `venire` *gekommen · come · venido · venu*, `a` *zu · to · a · à*, `mancare` *fehlen · lack · faltar · manquer*. Partizip mit EIGENEM Subjekt (`il vino`), essere-Perfekt eines intransitiven Verbs: Lemma `venire`, nicht Partizipform (Reihe 369 betrifft echte Passiva).
+7. **`maestro di tavola`** 2,8 · 2,9 Spanne B2 *Speisemeister · master of the feast · maestresala · maître du repas* (Einzelwoerter *Meister · master · maestro · maître* / *von · of · de · de* / *Tisch · table · mesa · table*). **`casa di mercato`** 2,16 Spanne B2 *Kaufhaus · marketplace · mercado · lieu de commerce*. **`avere bisogno di`** 2,25 Bestandsspanne (`aveva` *hatte · had · tenía · avait*, `bisogno` *Bedarf · need · necesidad · besoin* wie Matteo 21,3). **`dare testimonianza`** 2,25 neue Spanne B2 *Zeugnis gebe · give testimony · diera testimonio · donne témoignage* (≠ `rendere testimonianza`, das heisst *ablegen/bear witness*). **`avere il diritto di`** 2,18 neue Spanne B2. **`fidarsi di`** 2,24 Spanne B2 *vertraute · trusted · se fiaba de · se fiait à* + Einzelwoerter `si`, `fidava` (Lemma `fidare`, *vertraute · trusted · fiaba · fiait*), `di` *von · of · de · d'*. **`ricordarsi`** 2,17 · 2,22 (Bestand, `si` + `ricordarono` einzeln). **`portare via`** 2,16 (Bestand, Imperativ *tragt weg · take away · llevaos · emportez*). **`da dove`** 2,9, **`da parte`** 2,10 (Bestand, de *zur Seite*), **`fino a`** 2,10 (Bestand `fino ad`), **`quello che`** 2,14 · 2,16 · 2,25 und **`tutto quello che`** 2,5 (Bestand), **`non più`** 2,3 `parts` [11,13] (en *no more*, fr *n'… plus*).
+8. **Nicht gespannt, bewusst:** `festa di nozze` (Matteo 25,10: `di` *der*), `tre giorni dopo` (`dopo` *darauf · after · después · après* wie Matteo 17,1/Marco 9,2), `fino all'orlo` (Einzelwoerter: `fino` en *up to*, `all'orlo` *zum Rand · the brim · el borde · au bord* — das `a` steckt in `all'orlo`, `fino` traegt es nicht noch einmal; sonst *hinaus hinaus*/*until to*), `di qui` (*von hier*), `a terra` (Matteo 18,26 *zu Boden*), `si ricordarono che`.
+9. **Doppelte Praeposition/Partikel unter Spannen vermieden:** `scacciò tutti fuori dal tempio` — `scacciò` nur *vertrieb · drove · echó · chassa* (Bestand *trieb hinaus · drove out*, aber `fuori` traegt *hinaus · out · fuera · dehors*); `dal` *aus dem · of the · del · du*.
+10. **Namen:** `Cana` *Kana · Cana · Caná · Cana* A1; `Capernaum` Bestandslemma `Capernaum` (nicht `Cafarnao`); `Giudei` es *judíos* klein; `Pasqua` *Passah · Passover · Pascua · Pâque*; `a Cana di Galilea` `a` *in · in · en · à*, `di` *in · of · de · en* (wie Matteo 21,11).
+11. **Artikel/Zielgenus:** `una festa` de *ein* (Fest n.), `una frusta`: `frusta` de *Peitsche* f., es *látigo* m., fr *fouet* m., also `una` de *eine*, es/fr *un*; `i colombi` es *las*, `i loro banchi` es *las* (mesas); `alla parola` de *dem*, `alla Scrittura` fr *à l'*; `lo sposo` fr *l'*, `il denaro` fr *l'*; `la mia ora` *die meine · the my · la mi · la mon* (Muster Marco 14,34).
+12. **`c'era` 2,1 vs 2,25:** 2,1 `c'era la madre` Existenz *gab es · there was · había · il y avait* (Reihe 542); 2,25 `quello che c'era nell'uomo` Relativsatz-`esserci`, aber eindeutig lokativ → *war · was · estaba · était* (wie Matteo 23,20 `c'è` *ist · is · está · est*). Das ist die erste Entscheidung zu Reihe 243/420 fuer den Relativsatz-Fall mit `c'era` + Ortsangabe.
+13. **`credettero in lui` 2,11** `in` *an · in · en · en*; `nel suo nome` 2,23 `nel` *in · in · en · en* (wie 1,12 `nel suo nome`, dort Bestand — ob de *an ihn/an seinen Namen* ueberall gemeint ist, bleibt offen). `quelli` es *aquellos* (Marco 11,15) gegen 1,12 *los*.
+14. **Prompt-Angaben widerlegt:** (a) der Prompt nannte `esserci` fuer 2,20 nur als Warnung — bestaetigt `volerci`; (b) `Cana` ist nicht `cananeo`-verwandt, neues Lemma; (c) der Bestandsparallelblock `a Gerusalemme per la festa di Pasqua` (Luca 2,41) wird nicht zeichengleich uebernommen: dort `a` *nach*, `la` *dem*, `di` *von* — hier ist 2,23 statisch (`a` *in*), `la` *das*, `di` *des* (Matteo 27,15).
+
+**Praegt neue Lemmata:** Cana A1, giara B2, destinato B2, contenere (Imperfekt *enthielten*), orlo B2, attingere B2, frusta B2, cordicella B2, zelo B2, mercato A2, dimostrare B1 (*beweist · prove · demuestras · prouves*), quarantasei A2, fidare B2, alcuno (Form `alcuno` *jemand · anyone · alguien · quelqu'un*), seduto (Bestand), Spannen `venire a mancare`, `maestro di tavola`, `casa di mercato`, `volerci`, `fare risorgere`, `dare testimonianza`, `avere il diritto di`, `fidarsi di`.
+
+**Kollisionen bewusst stehen gelassen** (geschlossene Wortarten): 2,7 `essi`/`le` de *sie · sie* (*Und sie füllten sie* ist so deutsch); 2,9 `il`/`lo` fr *le*; 2,15 `i`/`li` es *los*, `le`/`li` fr *les*; 2,24 `li`/`loro` en *them*; 2,23 `a`/`nel` 3 von 4.
+
+**Werkzeugkette:** `folgencheck --gegen` meldet Luca 2,41 (Begruendung oben) und 1,12 `diritto di` de *zu*/en *of* (Johannes 1,12 `il diritto di diventare` traegt en *of*; 2,18 en *to* wie Bestand `di avere`/`di fare` — 1,12 waere anzugleichen). `miss.py`/`stock.py` (Lukas-Skripte, nach `scratchpad/ita_giovanni/work/2/` kopiert) liefen sauber; `miss.py` nannte nur `quello che`/`ci sono`, beide durch groessere Spannen ersetzt. Die Kettenlesung fand: doppeltes *hinaus hinaus*/*out out*/*fuera fuera* in 2,15 (`scacciò` + `fuori`), *una látigo*/*une fouet*, fr *le époux*/*le argent*/*à la Écriture*/*de eux* (alle ohne Elision, die `elision.py` mit 0 meldete, weil ich sie vorher schon gefunden hatte).
+
+## 577 · Einsammeln Johannes 2
+
+Paketabgleich 1·2 leer, `artikel.py` 0. Wiederholungen gleich bis auf
+Kasus (`e i suoi discepoli` 2,11/2,12, `pecore` 2,14/2,15). Angenommen aus
+Reihe 576: `Ci sono voluti` = Spanne `volerci` (nicht `esserci`); `fu
+risuscitato` Passiv *wurde auferweckt · was raised*; `fare risorgere` Spanne;
+**2,25 `quello che c'era nell'uomo` lokativ** *war · was · estaba · était*
+(wie Matteo 23,20) — damit hat Reihe 243/420 beide Seiten: Existenz (*gibt
+es*, Reihe 542) und Ort (*ist/war*), am Vers entschieden. Gezogen: Johannes
+1,12 `di diventare` `di` en *to*, `diventare` en *become* (war *of* + *to
+become*; Bestand fuer `di` + Infinitiv). **Offen:** `quelli` unter der Spanne
+es *los* (1,12) gegen *aquellos* (2,14/2,16, Marco 11,15); `credere in` de
+*an* (2,11) gegen *in* (1,12, 2,23); `diventata` es *llegada a ser* (Genus von
+*agua*) gegen Bestand *llegado a ser* (3×).
