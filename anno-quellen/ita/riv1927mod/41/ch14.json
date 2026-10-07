@@ -11357,10 +11357,10 @@
    "form": "in",
    "lemma": "in",
    "level": "A1",
-   "de": "auf",
-   "en": "on",
+   "de": "in",
+   "en": "in",
    "es": "en",
-   "fr": "en"
+   "fr": "au"
   },
   {
    "pos": 7,
@@ -11377,10 +11377,10 @@
    "form": "a",
    "lemma": "a",
    "level": "A1",
-   "de": "zu",
-   "en": "to",
-   "es": "a",
-   "fr": "à"
+   "de": "unter",
+   "en": "of",
+   "es": "de",
+   "fr": "d'"
   },
   {
    "pos": 9,
@@ -11553,6 +11553,17 @@
    "en": "you",
    "es": "ti",
    "fr": "toi"
+  },
+  {
+   "pos": 6,
+   "form": "in mezzo a",
+   "lemma": "in mezzo a",
+   "level": "B1",
+   "de": "mitten unter",
+   "en": "in the midst of",
+   "es": "en medio de",
+   "fr": "au milieu d'",
+   "pos_end": 8
   }
  ],
  "61": [

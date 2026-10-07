@@ -17222,3 +17222,109 @@ entschieden** (Reihe 382/420.2): Spanne mit Lemma `sé stesso`, `se` einzeln auf
 27,45 · 27,59, Marco 14,1 · 15,33 (Einzelglossen, Wortwahl/Kasus — beim
 Buchabschluss gesammelt ansehen); `accaduto`/`accadere` als Lemma beim
 essere-Perfekt gespalten (7:2).
+
+
+---
+
+# Lukas 24 (leeres Grab · Emmausjünger · Erscheinung vor den Elf · Auftrag · Himmelfahrt)
+
+*Angehängt vom Agenten für Luca 24 (Paket 23·24, letztes Kapitel des Buchs, allein gelaufen). Höchste gesehene Nummer beim Anhängen war 568; ich zähle bei 569 weiter.
+53 Verse, 900 Tokens, 900 Einzelwort- + 43 Mehrwort-Einträge; 17 neue Lemmata. Abgabe: `scratchpad/ita_luca/out/42/ch24.json`.*
+
+## 569 · Mehrwörter, die Lukas 24 prägt und übernimmt
+
+Übernommen (am Bestand gemessen, `sweeplemma`): `a tavola` 24,30 · `alzarsi` 24,12 · 24,33 · `andarsene` 24,12 · `aprirsi` 24,31 · `avvicinarsi` 24,15 · 24,28 · `capo sacerdote` 24,20 (Nominativ *Hohenpriester*) ·
+`che cosa` 24,17 (wie Marco 9,16: `Di` *Über · About · Sobre · De*, Spanne *was · what · qué · que*) · `compiersi` 24,44 · `da mangiare` 24,41 · `da quando` 24,21 · `davanti a` 24,4 · 24,19 · 24,43 ·
+`di nome` 24,18 · `dirsi` 24,32 · `farsi sera` 24,29 (Matteo 16,2) · `fermarsi` 24,17 · `finché non` 24,49 · `in mezzo a` 24,36 · `l'un l'altro` 24,32 · `lungo la strada` 24,35 · `mettersi` 24,30 (`si fu messo`, wie 19,41) ·
+`quanto a` 24,49 · `quello che` 24,10 (bares `Quelle che`, feminin: *Die, die · Those who · Las que · Celles qui*) · 24,12 · 24,18 · 24,33 (bares `quelli che`) · 24,35 · 24,49 · `recarsi` 24,1 · `ricordarsi` 24,8 · `su di voi` 24,49 ·
+`tanto da` 24,16 · `tra loro` 24,14 · `tra sé` 24,12 · `tutto quello che` 24,14 · 24,25 · 24,44.
+Neu gepraegt: **`riposarsi`** 24,1 *ruhten sich aus · rested · descansaron · se reposèrent* (B1) · **`separarsi`** 24,51 *trennte sich · separated · se separó · se sépara* (B2) ·
+**`cammin facendo`** 24,17 *unterwegs · while walking · caminando · chemin faisant* (B2; Einzelwoerter `cammino` *Weg · way · camino · chemin* + `fare` *machend · making · haciendo · faisant*).
+**`che erano con loro`** (24,10 · 24,33, vom Paket gefragt): keine Spanne, Einzelwoerter `che` *welche · who · que · qui*, `erano` *waren · were · estaban · étaient* (es 24,10 *estaban*), `con` *mit · with · con · avec*
+(Reihe 563: *mit*, nicht *bei*), `loro` *ihnen · them* + es/fr nach dem Bezug (24,10 *ellas · elles*, die Frauen; 24,33 *ellos · eux*). Das `quelli che` davor ist die Spanne `quello che` (Reihe 553/556).
+Bewusst KEIN Mehrwort: `per questo` 24,4 (Bestand 7× *Darum · Therefore* = „deshalb"; hier „darüber": Einzelwoerter `per` *über · about · por · à cause de* + `questo` *dies · this · esto · cela*) ·
+`si sarebbe predicato` 24,47 (unpersoenliches `si`: *man · one · se · on*, Reihe 52/122) · `se ne` ist Teil von `andarsene` · `sei tu` 24,18 (Bestand-Spanne meint *du es bist* = „du bist es"; hier Frage, Einzelwoerter wie Matteo 11,3 · 27,11) ·
+`come se` · `proseguire oltre` · `quello stesso giorno/momento` · `la mattina molto presto` · `il primo giorno della settimana` · `rotolata via` · `Pace a voi` · `dall'alto` (Elision-Einzeltoken, Lemma `alto`).
+
+## 570 · Entscheidungen und Widerlegungen aus Lukas 24
+
+1. **`vi è accaduto` 24,18 — `vi` ist ORTSBEZOGEN** (Zeugen: de *dort* · en *there* · es *allí* · fr *y*), nicht dativisches *euch*; Lemma `vi (avverbio)` A2 *dort · there · allí · y*. Der Prompt („Person/Tempus angepasst") legte das Pronomen nahe — am Quelltext widerlegt.
+2. **`chinatosi` 24,12 ist maskulin Singular** (Petrus), nicht feminin Plural wie der Prompt unter (b) einreihte: *sich gebückt · having bent down · habiéndose inclinado · s'étant penché* (Lemma `chinare`, Klitikon-Lemma = Infinitiv, Reihe 321/524).
+   Dasselbe `alzate le mani` 24,50: Agens ist **Jesus**, das Partizip kongruiert mit `mani` — *erhoben · having raised · habiendo alzado · ayant levé* (Lemma `alzare`), nicht feminin Plural der Frauen. Feminin Plural tragen nur 24,3 `entrate` (fr *étant entrées*), 24,9 `tornate` (fr *étant revenues*), 24,22 `essendo andate` (es *idas* · fr *allées*), 24,23 `sono venute` (fr *venues*).
+3. **Partizip assoluto vs. Zustand** (Reihe 5/46/321/369): Agens-Kontinuität → Infinitiv (`entrate` `entrare` · `tornate` `tornare` · `chinatosi` `chinare` · `alzate` `alzare` · `detto` `dire` · `avendo trovato` / `essendo andate` Gerundium-Lemma `avere`/`essere`+Infinitiv);
+   Zustand/Passiv → Partizipform: `impaurite` `impaurito` · `perplesse` `perplesso` · `sconvolti` `sconvolto` · `impediti` **`impedito`** · `turbati` **`turbato`** · `rivestiti` **`rivestito`** (neu) · `chiamato` · `scritto` · `consegnato` · `crocifisso` · `diretti` `diretto` · `portato` · `arrostito` · `rotolata` `rotolato`.
+   `riuniti` 24,33 bleibt auf `riunire` (Bestand führt genau diese Form dort; Zustand hier, 1× im Bestand).
+4. **essere-Perfekt** (Lehre 9): `è risorto` · `è apparso` · `è già finito` · `è accaduto` (24,18) · `sono accadute` · `sono venute` · `sono andati` → de/fr *ist/sind · est/sont*, en/es *has/have · ha/han* (Partizip invariabel *venido*, *ido*; fr nach Genus *venues* · *arrivées*).
+   Passiv/Zustand `rotolata` · `erano impediti` · `è scritto` · `siate rivestiti` · `fu portato` mit *ist/wurde · is/was · está/fue* ohne Perfekt-Hilfsverb. `accadere`: 24,18 `è accaduto` Lemma `accaduto` (wie Luca 2,15), 24,21 `sono accadute` Lemma `accadere` (wie Marco 13,30 · Luca 23,48) — die Spaltung 7:2 aus Reihe 568 bleibt.
+5. **Konditional Perfekt** 24,46 `avrebbe sofferto e sarebbe risorto` *hätte gelitten · would have suffered · habría sufrido · aurait souffert* + *wäre auferstanden · would have risen · habría resucitado · serait ressuscité*; 24,47 `si sarebbe predicato`: `si` *man · one · se · on*, `sarebbe` *hätte · would have · habría · aurait*, `predicato` (Bestandslemma, 4×) *gepredigt · preached · predicado · prêché*.
+6. **`si fu messo a tavola` 24,30** wie 19,41 `si fu avvicinato`: Spanne `mettersi` *hatte sich gesetzt · had sat down · se había sentado · s'était mis* + Spanne `a tavola`; Einzelwoerter `si` *sich · himself · se · se*, `fu` *war · was · fue · fut*, `messo` (Lemma `mettere`) *gesetzt · put · puesto · mis*.
+7. **Wiederholungen (Prompt a) gemessen mit `wiederholt.py` / `folgencheck`, alle gleich:** `quello che era accaduto` 24,12 = 24,35 (Spanne `quello che` *ce qui*; `era` *war · had · había · était* wie Reihe 567; `accaduto` *geschehen · happened · sucedido · arrivé*), 24,14 mit Spanne `tutto quello che` *alles, was · everything that · todo lo que · tout ce qui* (Matteo 28,11 · Luca 15,31);
+   `al sepolcro` 24,1 · 24,12 · 24,22 · 24,24 *zum · to the · al · au* · `dal sepolcro` 24,2 · 24,9 *vom · from the · del · du*; `il terzo giorno` 24,7 = 24,46 (*am · on the · al · le* / *dritten* / *Tag*); `Gesù stesso` 24,15 = 24,36 (*selbst · self · mismo · même*);
+   `le Scritture` 24,27 · 24,32 · 24,45 (*Schriften · Scriptures · Escrituras · Écritures*, Kasus nach Umgebung); `tornarono a Gerusalemme` 24,33 = 24,52; `riconoscere` 24,16 *ihn erkennen* (Infinitiv) · 24,31 *erkannten* · 24,35 *erkannt* (avere-Perfekt, Lemma `riconoscere`); 24,30 `lo spezzò e lo diede loro` Feld für Feld wie Luca 22,19.
+8. **Wortwahl nach dem Italienischen, nicht nach den Zeugen:** `vaneggiamento` *Unsinn · nonsense · desvarío · délire* (Zeugen: *dummes Gerede* · *idle talk*), `forestiero` *Fremder · stranger · forastero · étranger*, `sfolgorante` *glänzend · dazzling · resplandeciente · éblouissant*,
+   `bende` *Binden · bandages · vendas · bandelettes* (Zeugen *Leinentücher · linen cloths*), `ardeva` *brannte · burned · ardía · brûlait*, `liberare` 24,21 *befreien · liberate · liberar · libérer* (nicht *freilassen · release* — Reihe 567.4: zwei Bedeutungen), `discutevano` 24,15 en *were discussing* (Bestand Marco 9,14 *were arguing*: andere Bedeutung).
+9. **Genus/Kasus der Zielsprache:** `una aldea llamada` (aldea f.) · `las especias` · `los sus ojos` / `les leurs yeux` (Artikel glossiert den Artikel, Reihe 443) · `Quelle che` es *Las que* / *aquellas*, fr *celles* · `gente insensata/lenta` es feminin, fr *gens insensés/lents* (masc. Plural) ·
+   `potente` (profeta, mask.) *mächtig · poderoso · puissant* · `la mente` fr *la pensée* (Bestand 3×) · `i loro occhi` `i` *die · los · les*, `loro` *ihre · sus · leurs*. Namen nach Bestand/Zeugen: `Cleopa` *Kleophas · Cleopas · Cleofas · Cléopas*, `Emmaus` *Emmaus · Emmaus · Emaús · Emmaüs*,
+   `Betania` *Betanien · Bethany · Betania · Béthanie* (Bestand 7×), `Maddalena` *Magdalena · Magdalene · Magdalena · Madeleine* (Bestand 8×, Zeugen *Magdala*), `Giacomo` *Jakobus · James · Jacobo · Jacques*, `Giovanna` *Johanna · Joanna · Juana · Jeanne*, `Simone` *Simon*.
+10. **1.-Person-Pronomen (Reihe 482 fortgeführt, gezählt):** mit Pronomen (de/en/fr, es nie) **2**: `dicevo` 24,44 *ich sagte · I said · decía · je disais* · `ero` 24,44 *ich war · I was · estaba · j'étais*;
+    ohne (weil das Pronomen als eigenes Token folgt oder voransteht): `Noi speravamo` *hofften* · `io mando` *sende* · `sono proprio io` *bin* · `ho io` *habe* (Vollverb `ho` es *tengo*, fr *ai*).
+11. **Kollisionen (`glosskollision.py`), stehen gelassen:** 6 inhaltliche Paare, 5 davon in einer Sprache und natürliche Sprache (`essi`/`loro` es *ellos*, `il`/`lo` fr *le*, `le`/`li` fr *les*, `li`/`loro` en *them*, `che`/`quanto` de *was*) plus `che`/`cosa` 4/4 = die Bestandsform von Marco 9,16.
+    Nachbar-Dubletten (7, `dupscan`): `che cosa` (Spanne-Doppel wie Marco 9,16), `noi ci` 24,22 (*uns uns* — echte Wiederholung im Italienischen). `elision.py`: 1 Rest `cosa` fr *que* vor *êtes* = Artefakt der Einzeltoken-Pflicht neben der Spanne `che cosa` (Reihe 328/399.2), nicht korrigiert.
+
+## 571 · Neue Lemmata aus Lukas 24 und ihre Level
+
+    A1  Cleopa · Emmaus
+    B1  chilometro · riposarsi (Spanne)
+    B2  ardere · arrostito · benda · cammin facendo (Spanne) · distante · forestiero · impedito · rivestito · separarsi (Spanne) · sorprendere · turbato
+    C1  insensato · sfolgorante · vaneggiamento
+
+`levelcheck.py`: 0 Abweichungen nach Angleichung (8 Lemmata standen zuerst auf den Zeugen-Leveln: `morte` A1→A2 · `vero` A1→A2 · `carne` A2→B1 · `qualcosa` A2→A1 · `comprendere` A2→B1 · `peccato` A2→B1 · `continuamente` B2→B1 · `tempio` A2→B1).
+Lemma-Angleichung nach `sweeplemma`: `predicato` (nicht `predicare`), `padre` (nicht `Padre`), `lo` für `li`.
+
+## 572 · Einsammeln Lukas 24 — Werkzeugbefunde, Altlasten und die offenen Lukas-Reihen für den Abschlusslauf
+
+1. **Kettenlesung (Pflicht):** fand rund ein Dutzend Fehler (nicht einzeln durchgezählt), die kein Werkzeug sah: es *la aldea … llamado* (Genus) · de *die Stein* · de *die Morgen* · fr *la matin* · fr *la esprit* statt *la pensée* (`la mente`) · de *zu ein Dorf* · fr *que il* statt *qu'il* (*il fallait* 24,44 · *il est* 24,23 · *en son nom* 24,47 · *ai* 24,39 — alle vier schon beim Schreiben der Kettenlesung aufgefallen; ob `elision.py` sie gemeldet hätte, habe ich nicht gemessen) ·
+   fr *je envoie* · de *in der Gesetz* · de *die Verstand* · es *a la aldea*/*al aldea* · de *alle die Schriften* (Dativ nach `in`). `elision.py` fand zusätzlich `di` fr *de* vor *eux* (24,13); den Rest `cosa` *que* vor *êtes* habe ich begründet stehen lassen.
+2. **Werkzeugbefunde:** (a) `mehrwort.py` und `sweeplemma.py` melden die Bestandsspannen, die dem Kapitel ganz fehlen, weiterhin nicht — `work/24/miss.py` (aus `work/23/miss.py`) war Pflichtlauf und fand `per questo` · `di che (cosa)` · `sei tu` (alle als andere Bedeutung bzw. anderes Muster begründet NICHT gesetzt). (b) `sweeplemma` zeigt bei `quello che` 24,10 und `riposarsi`/`recarsi`/`ricordarsi`/`compiersi`/`mettersi` »weicht ab« nur wegen Person/Tempus — Fehlalarm. (c) `folgencheck --gegen` meldet `che il Figlio dell'uomo doveva` gegen Marco 8,31 (`doveva` en *must* · hier *must* angeglichen).
+   (d) `qa.py` Kanarienvogel kennt 1 Eigennamen — Probe sagt hier nichts aus. (e) `chain.py`/`dif.py`/`stock.py` (aus Lukas 23, nur Kapitelnummer geändert) liegen in `work/24/`; `dif.py` (jede Einzelzeile gegen die Bestandsformen) war das schnellste Mittel, Wortwahl-Abweichungen zu sehen.
+3. **Altlasten, die der Abgleich sichtbar machte (NICHT geändert — Sache des Koordinators):** (a) **Marco 14,60 `in mezzo a loro`** trägt keine Spanne `in mezzo a` (`in` *auf · on*, `a` *zu · to*) gegen 5× Spanne *mitten unter* sonst — Altlast, ziehen. (b) **Matteo 28,11 `tutto quello che era accaduto`**: `era` en *was* · `quello` de *dasjenige* gegen Lukas 23,47/24,12/24,14/24,35 `era` *had · había* (Reihe 567) — angleichen. (c) Giuda 1,15 `condannare` en *convict* · fr *convaincre* (1×, gemessen) gegen *condemn* · *condamner* sonst; Lukas 24,20 steht auf *condemn · condenar · condamner*. (d) Marco 14,1 `capi sacerdoti` de *Hohepriester* (bereits 567.3).
+   (e) `peccatore` de *Sünder/Sündern* durchgehend — Lukas 24,7 `uomini peccatori` als Apposition stehen gelassen.
+4. **Offen (Koordinator) — Reihen, die für Lukas ausdrücklich noch OFFEN sind (Stichworte, Reihe):**
+   - **482 · 490 · 493 · 504** — 1.-Person-Pronomen: Bestand uneinheitlich (`ho`/`dico`/`prego`/`dirò`, Luca 8–9 gegen Matteo/Marco); Lukas 24 zählt 2 mit / 4 ohne Pronomen (570.10).
+   - **488 · 490** — Bestandsauffälligkeiten aus Lukas 10 (Reihe 382 `mí` — inzwischen entschieden in 568, `Così pure` zwei Lesarten).
+   - **503 · 510 · 511 · 538** — `in verità`: Spanne (Luca 4,24 · Marco 11,23) gegen Einzelwörter (20 von 23); in Lukas 24 kein Vorkommen.
+   - **509 · 510 · 512** — `autorità` Plural, `chiesto` als eigenes Lemma gegen `chiedere`, `dato che` (`dato` Lemma `dare`).
+   - **515.6** — `farina` en *meal* (Matteo 13,33 · Lukas 13,21).
+   - **519 · 527 · 530** — `la propria vita` (entschieden 537), es *buenas …* (Reihe 530), restliche Marco-Altlasten.
+   - **541** — Marco 10,19 · 10,20 · 10,25 · 10,30 (Marco-10-Altlasten, in 542 teils gezogen).
+   - **547** — `sposarsi` 3. Person Plural (Bestand nur impersonal `ci si sposa(va)`).
+   - **561 · 563** — `che erano con lui` Lukas 22,49 `con` *mit* gegen *bei* in Lukas 5,9 · 6,3 · 6,4 · 8,45 · 9,32; die bare `quelli che`-Stellen 5,9 · 6,3 · 6,4 ohne Spanne (Reihe 556) — derselbe Altlastlauf; Lukas 24,33 folgt der Spanne.
+   - **567.4** — `fino alle`/`fino ai` : die Spanne `fino a` trägt das Artikelgenus teils falsch; in Lukas 24 `fino verso` 24,50 ohne Spanne (Einzelwörter `fino` *bis · until · hasta · jusqu'à*, `verso` *gegen · toward · hacia · vers*).
+   - **568** — `accaduto`/`accadere` Lemma beim essere-Perfekt gespalten (7:2); Lukas 24 folgt dem Bestand je Form (24,18 `accaduto`, 24,21 `accadute` → `accadere`).
+   - **Neu aus Lukas 24:** (i) `liberare` *befreien · liberate* (24,21) gegen *freilassen · release* (Lukas 23) — zwei Bedeutungen, kein Konflikt; (ii) `proprio` adverbial (24,24 *genau · just · justo · exactement*, 24,39 *eben · the very · precisamente · précisément*) unter dem Lemma `proprio` A2 neben Adjektiv *eigen* — Homograph-Frage (Reihe 15): Level gleich, kein Klammerzusatz gesetzt;
+     (iii) `forse` fr *par hasard* (Bestand 14×, in Frage-Sätzen wie 24,26 *peut-être* näher) · (iv) `stesso` en *self* (Bestand 24×, nach Namen unglücklich: *Jesus self*); (v) `sarebbe` 24,47 (si-Passiv, Konditional Perfekt) *hätte · would have · habría · aurait* gegen `sarebbe` *wäre · would be · sería · serait* (7×) im Bestand.
+
+## 573 · Einsammeln Lukas 24 und Buchabschluss Luca
+
+**Luca ist fertig: 24 von 24 Kapiteln, 21 599 Tokens, 1072 Mehrwort-
+Eintraege**, `validate.py 42` ohne Befund. Lukas 24: Wiederholungen
+(`quello che era accaduto` 24,12 = 24,14 = 24,35) gleich; `loro` 24,10/24,33
+*ellas*/*ellos* nach dem Bezug (Frauen/Elf) — begruendet.
+**Abschlusslauf** `paketcheck.py 42 1…24`: Abschnitt A nur Beugung (Person,
+Tempus, Numerus, Kasus) — ausser `grembo` 23,29 de *Schöße* gegen *Leib*
+(Lukas 1/2/11), angeglichen auf *Leiber* (fr *ventres* bleibt, weil `seni`
+*seins* im selben Vers steht). `artikel.py`: nur *el mañana* (Matteo 6,34,
+"das Morgen", richtig) und *el alma*/*la propia alma* (beides richtig).
+**Reihe 561/563 erledigt:** die baren `quelli che erano con lui` tragen alle
+die Spanne (Lukas 6,3 · 6,4 · 8,45 · 9,32 · 22,49 · 24,10 · 24,33; 5,9 ist
+`tutti quelli che`, kompositionell); `con` de vereinheitlicht auf *bei* (*die
+bei ihm waren*; 5,9 · 22,49 · 24,10 · 24,33 von *mit* nachgezogen, Mehrheit
+4:2). Gezogen aus Reihe 572: Marco 14,60 Spanne `in mezzo a` (wie Lukas
+22,55; `in` *in · in · en · au*, `a` *unter · of · de · d'*); Matteo 28,11
+`quello` de *das*, `era` (Plusquamperfekt) en *had* · es *había*.
+**Fuer Lukas bewusst offen** (Konventionsfragen, kein Fehler): 1.-Person-
+Pronomen (Reihe 482: `dico` formelhaft ohne, sonst mit — durchgehend so
+angewandt); `in verità` als Einzelwoerter (Reihe 541, 20:3 im Bestand; die 3
+Spannen Lukas 4,24 · Marco 11,23 · Lukas 9,27 sind Rest); `accaduto`/`accadere`
+beim essere-Perfekt (7:2). **Kosten:** Lukas 23 und 24 je rund 23 Punkte im
+5h-Fenster. Weiter mit Giovanni (43), Vorbereitung in scratchpad/ita_giovanni/.
