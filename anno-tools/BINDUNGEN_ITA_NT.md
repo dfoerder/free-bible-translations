@@ -17098,3 +17098,127 @@ war `annoverare`). **Offen (Reihe 561):** `che erano con lui` — Lukas 22,49
 `quelli che`-Stellen 5,9/6,3/6,4 ohne Spanne (Reihe 556) sind derselbe
 Altlastlauf. 1.-Person-Pronomen weiter nach Reihe 482. Lukas 22 kostete rund
 33 Punkte im 5h-Fenster (1184 Tokens).
+
+
+---
+
+# Lukas 23 (Jesus vor Pilatus und Herodes · Barabba · Kreuzweg · Kreuzigung · Tod · Grablegung)
+
+*Angehaengt vom Agenten fuer Luca 23 (Paket 23·24, allein gelaufen, erstes Kapitel des Pakets).
+Hoechste gesehene Nummer beim Anhaengen war 563; ich zaehle bei 564 weiter. 56 Verse, 912 Tokens,
+912 Einzelwort- + 37 Mehrwort-Eintraege; 24 neue Lemmata. Synoptiker-Bloecke aus Matteo 4,12 ·
+20,17 · 27,37 · 27,38 · 27,45 · 27,58 · Marco 15,14 · 15,38 · 15,46 · Luca 2,43 · 5,29 · 7,17 · 9,23 · 19,2
+uebernommen und Position fuer Position gelesen.*
+
+------
+## 564 · Entscheidungen und Widerlegungen aus Lukas 23
+
+1. **Prompt-Angaben am Quelltext/Bestand widerlegt.** (a) `Fa' morire` 23,18: Die Spanne `far morire`
+   steht im Bestand 15x (Matteo 2,13 … 27,20), aber nur als Infinitiv (*umbringen · put to death · matar ·
+   faire mourir*); fuer den Imperativ gab es keine Reihe — gesetzt: Spanne *bring um · put to death · mata ·
+   fais mourir* (`form` ohne Apostroph-Rest: `Fa morire`, siehe 567.2), Einzelwoerter `Fa` *lass · make · haz ·
+   fais* + `morire` *sterben · die · morir · mourir*. (b) Der Prompt fuehrt `tirare a sorte`, `sentir parlare di`,
+   `a destra`/`a sinistra` als "erst messen": gemessen sind es **Einzelwoerter** im Bestand (Matteo 27,35 / Marco 15,24 ·
+   Marco 5,27 / 7,25 / Luca 7,3 · Matteo 27,38), ich habe sie so gesetzt. (c) `fare lutto`, `da lontano`,
+   `da tempo`, `a gran voce`, `colui che`, `tra loro` sind im Bestand **Spannen** (1x · 3x · 4x · 5x · 20x · 7x) — der Prompt
+   nannte sie nicht, `mehrwort.py` und `sweeplemma.py` meldeten sie **nicht** als fehlend; erst `work/23/miss.py`
+   (Bestandsspannen gegen den Kapiteltext) fand sechs fehlende. (d) `in occasione di`, `avere il sopravvento`,
+   `condurre via` sind im Bestand **nicht** gefuehrt — neu gepraegt (siehe 566). (e) `timore di Dio`, `in presenza vostra`,
+   `membro del consiglio`: keine Spanne im Bestand, Einzelwoerter. (f) Der Prompt (d) fuehrt `era accaduto` /
+   `accadute` als essere-Perfekt auf dem Infinitiv; der Bestand fuehrt `era accaduto` 7x auf dem Lemma `accaduto`
+   (Lukas 8,56 …), `accadute` 2x auf `accadere` — ich habe den Bestand nachgezogen (23,47 `accaduto`, 23,48 `accadere`),
+   die Spaltung selbst (Reihe 5 verlangt `accadere`) bleibt **offen**.
+2. **Partizip assoluto, Position fuer Position (Agens-Kontinuitaet, Reihe 5/46/321/369):** `Udito` 23,6 `udire`
+   *gehoert · having heard · habiendo oido · ayant entendu* · `Saputo` 23,7 `sapere` *erfahren · having learned ·
+   habiendo sabido · ayant appris* · `radunati` 23,13 `radunare` *versammelt · having gathered · habiendo reunido ·
+   ayant reuni* · `voltatosi` 23,28 `voltarsi` (Bestand Marco 8,33, nicht `voltare`) *umgedreht · having turned around ·
+   habiendose vuelto · s'etant retourne* · `divise` 23,34 `dividere` *geteilt · having divided · habiendo repartido ·
+   ayant partage* (eigenes Objekt, Agens = die Soldaten) · `detto questo` 23,46 `dire` *gesagt · having said · habiendo
+   dicho · ayant dit* · `viste` 23,48 `vedere` *gesehen · having seen · habiendo visto · ayant vu*.
+3. **Passiv/Zustand auf der Partizipform:** `era stato messo` 23,19 · 23,25 (Block Matteo 4,12 `era stato messo in prigione`:
+   *war · worden · gesetzt · ins Gefaengnis*) · `fosse crocifisso` 23,23 · `fosse fatto` 23,24 · `sara fatto` 23,31
+   (Lemma `fatto`) · `venivano condotti` 23,32 (`condotto`, *wurden · geführt*) · `messi` 23,32 (`messo`) · `detto` 23,33
+   (*genannt · called · llamado · appele*) · `appesi` 23,39 (`appeso`) · `scavata` 23,53 (`scavato`) · `era ancora stato deposto` 23,53
+   · `era stato posto` 23,55 (`posto`, *gelegt · laid · puesto · mis*) · `obbligato` 23,17. **essere-Perfekt:** `e arrivato` 23,5 (en *has arrived*,
+   es *ha llegado*) · `erano stati` 23,12 (*waren gewesen · had been · habian estado · avaient ete*) · `avvenuta` 23,19
+   (`avvenire`, *geschehen · occurred · ocurrida · survenue*) · `venute` 23,55 (`venire`) · pronominal `si erano radunate` 23,48 ·
+   `si era oscurato` 23,44 (beide mit Reflexiv-Spanne, Hilfsverb darin woertlich: es `estaban`/`era`).
+4. **`stesso` (Reihe 382/477):** `salvi se stesso` 23,35 Spanne `sé stesso` *sich selbst · himself · sí mismo · lui-même*,
+   `se` einzeln auf `sé` *sich · himself · sí · soi*; `salva te stesso` 23,37 = 23,39 Feld fuer Feld (Spanne `te stesso`);
+   `voi stesse` 23,28 Spanne `voi stessi` *euch selbst · yourselves · vosotras mismas · vous-mêmes* (feminin, Lemma wie Bestand
+   `voi stessi`, Einzelwort `stesso` es *mismas*); `nello stesso supplizio` 23,40 Adjektiv *selben · same · mismo · même*.
+   **Damit ist die offene Frage aus Reihe 420.2 entschieden:** zwei Schreibungen, ein Lemma `sé stesso` (Spanne), `se` einzeln auf `sé`.
+5. **Genus der Zielsprache:** `colli` es *a las colinas* (erst *los* gesetzt, Kettenlesung) · `il Teschio` es *la Calavera* (Witness) ·
+   `vesti` es *los … vestidos* · `lo` (= le vesti) es *los* · `messi` es *puestos* · `la tomba` fr *le* (tombeau m.) · `il petto` fr *la poitrine* ·
+   `il sole` de *die Sonne* · `la morte` de *den Tod* / es *la muerte* · `la pena` de *die Strafe*. Artikel+Possessiv glossiert den Artikel
+   (`la nostra nazione` *das · unser*, `le loro grida` *die · ihre* / es *los · sus*, `per i vostri figli` *die · eure*); verschmolzene
+   Praeposition vor Possessiv nur bare Praeposition (`alla loro volonta` *zu · ihrem*, `nel tuo regno` *in · deinem*, `nelle tue mani` *in · deine*).
+6. **1.-Person-Pronomen (Reihe 482 fortgefuehrt, gezaehlt):** mit Pronomen (de/en/fr, es nie) **10**: `Abbiamo` 23,2 *wir haben · we have · hemos ·
+   nous avons* · `trovo` 23,4 · `ho` 23,14 · 23,22 *ich habe · I have · he · j'ai* · `libererò` 23,16 · 23,22 · `riceviamo` · `meritiamo` · `abbiamo`
+   23,41 · `affido` 23,46; ohne (formelhaft): `dico` 23,43. `Non hai nemmeno timore` 23,40: `hai` Vollverb de *hast*, es *tienes*, fr *as*.
+7. **Namen nach dem Zeugen am Vers (Reihe 436):** `Giuseppe` de **Josef** (23,50 Zeuge; Bestand 15x *Joseph*, 4x *Josef* — hier wie Marco 15,43),
+   `Arimatea` de **Arimathia** (Zeuge 23,51; Bestand `d'Arimatea` Marco 15,43 *aus Arimathäa*), `Simone di Cirene` *Simon von Kyrene ·
+   Simon of Cyrene · Simón de Cirene · Simon de Cyrène*, `il Teschio` *der Schädel · the Skull · la Calavera · le Crâne*, `Barabba`
+   *Barabbas · Barabbas · Barrabás · Barabbas*, `Erode`/`Pilato`/`Cesare` wie Bestand.
+8. **Wiederholungen (Prompt a) gemessen mit `wiederholt.py`, alle gleich:** `Lo libererò dunque, dopo averlo castigato` 23,16 = 23,22 (*ich werde
+   freilassen · I will release · soltaré · je relâcherai* — Bestand `liberare` im Sinn *freilassen* steht fr auf *relâcher*, nicht *libérer*) ·
+   `non ho trovato in lui` 23,14 = 23,22 (`in` de *an*, en *in*) · `nulla che meriti la morte` 23,15 = 23,22 · `era stato messo in prigione per` 23,19 = 23,25
+   · `il re dei giudei` 23,3 = 23,37 = 23,38 (de *der*, wie Marco 15,2/15,9/15,12; 23,38 in Versalien wie Marco 15,26) · `Crocifiggilo, crocifiggilo` 23,21 ·
+   `stava/stavano a guardare` 23,35 · 23,49 (Numerus im Verb) · `insistevano` 23,5 = 23,23 · `capi sacerdoti` Spanne 23,4 *Hohenpriestern* (Dativ) · 23,10 · 23,13 *Hohenpriester*.
+9. **Wortwahl nach dem Italienischen, nicht nach den Zeugen:** `sovvertire` *zerrüttete · was subverting · subvertía · bouleversait* (Zeugen: *aufwiegelt · perverting*),
+   `sollevare` 23,5 *wiegelt auf · stirs up · subleva · soulève*, `tributi` *Steuern · taxes · tributos · impôts*, `rimandare` *schickten zurück · sent back · devolvieron · renvoyèrent*
+   (Bestand 20,10 *schickten weg* meint *entlassen*), `sobillatore` *Aufwiegler · agitator*, `supplizio` *Qual · torment · suplicio · supplice*, `operato` *das Handeln · the conduct · la actuación · l'agissement*,
+   `deridere` *verspotteten · were mocking · ridiculizaban · raillaient*, `avvicinandosi` auf `avvicinare` (Klitikon-Lemma = Infinitiv, wie `svegliatosi`).
+10. **Kollision `deposto` ↔ `porre` 23,53 (en *laid*, vom Vorbereitungstool vorhergesagt):** aufgeloest im Kollisionsvers — `deposto` en *deposited* (de *gelegt*, es *puesto*, fr *déposé* unveraendert),
+    `pose` bleibt *legte · laid · puso · déposa* (Block Marco 15,46).
+
+## 565 · Neue Lemmata aus Lukas 23 und ihre Level
+
+    A2  legno
+    B1  esaminare · mezzogiorno · miracolo · paradiso · pomeriggio · condurre via (Spanne)
+    B2  assemblea · castigare · decisione · in occasione di (Spanne) · inimicizia · operato · secco · spettacolo · splendido · umiliare
+    C1  avere il sopravvento (Spanne) · giurisdizione · sobillatore · sopravvento · sovvertire · supplizio · veemenza
+
+`levelcheck.py`: 0 Abweichungen nach Angleichung (16 Lemmata standen zuerst auf den Zeugen-Leveln: `ecco` A2→B1 · `prendere` A2→A1 · `paese` A2→A1 · `detto` A2→A1 ·
+`spirito` A2→B1 · `accadere`/`accaduto` B1→B2 · `grembo`/`partorire`/`seno`/`colle` B2→B1 · `approvare` B2→B1 · `da tempo` B2→B1 · `con me` A1→A2).
+
+## 566 · Was Lukas 23 mit dem Paket 23·24 abgleicht — und was Lukas 24 uebernehmen muss
+
+**Gepraegt (Lukas 24 setzt gleich):** `Lo liberero dunque, dopo averlo castigato` (kein Treffer in 24) · `che erano con loro` 24,10/24,33 hat Lukas 23 nicht
+(gehoert zu Lukas 24, von mir nicht gemessen). **Neue Spannen:** `in occasione di`
+*anlaesslich · on the occasion of · con ocasión de · à l'occasion de* (23,17, Einzelwoerter `in` *bei · on · con · à* · `occasione` *Gelegenheit · occasion · ocasión · occasion* · `della` *des · of the · de la · de la*);
+`avere il sopravvento` *gewannen die Oberhand · gained the upper hand · se impusieron · l'emportèrent* (23,23); `condurre via` *führten weg · led away · llevaban · emmenaient* (23,26, parallel zu `portare via` Marco 15,1);
+`far morire` Imperativ (23,18). **Uebernommen und fuer 24 gemessen:** `quello che` Spanne (23,34/23,41 *ce que* · 23,47 *ce qui*: Lukas 24,12/24,14/24,35 `quello che era accaduto` → *das, was · what · lo que · ce qui* + `era` de *war* · en *had* · es *había* · fr *était*, `accaduto`
+*geschehen · happened · sucedido · arrivé*); `davanti a`, `in mezzo a`, `di nome` (23,50 = Bestand, Spanne *namens · named · llamado · nommé*); `il corpo di Gesù` 23,52 = Matteo 27,58 (*bat um* fuer `chiese`, *den Leichnam*), 23,55 *der* (Nominativ);
+`il re dei giudei` de **der** (Marco 15,2/9/12), nicht *von den* (Matteo 2,2/27,11) — 5 gegen 2; `tornare indietro` Spanne (Lukas 17,15, hier Plural *kehrten um · went back · volvieron atrás · retournèrent en arrière*);
+`tirare a sorte` Einzelwoerter *durchs Los* (Matteo/Marco); `sentire parlare di` Einzelwoerter.
+
+## 567 · Einsammeln Lukas 23 — Werkzeugbefunde und Altlasten des Bestands
+
+1. **Kettenlesung (Pflicht, Lehre aus Lukas 1):** fand neun Fehler, die kein Werkzeug sah: es *a los colinas* (colle ist feminin) · es *el Calavera* · es *las … vestidos* (Kopie aus Marco 15,24; `artikel.py` meldet die Altlast
+   erst jetzt: `vesti` es *vestidos* tritt im Bestand 5x mit *las* auf, 1x mit *los* — **Genus-Altlast in Matteo 27,35 · Marco 15,24 und den uebrigen `artikel.py`-Treffern (5), fuer den Koordinator**) · es *puesto* statt *puestos* (Plural) · de *mit einen Mantel*
+   (Kasus nach `con`) · de *ihn folgte* (`seguire` + Dativ) · fr *los magistrats* (Tippfehler) · fr *Lorsque arrivèrent* (Elision) · fr *le insultait*. **`elision.py` fand zusaetzlich vier Reste** (`lo interrogea`, `que appartenait`, `lo envoya`, `Ne… pas es`) —
+   die Elision von `Lorsque` meldet es **nicht** (nicht in der Zehnerliste), `Lorsqu'` selbst pruefen.
+2. **Werkzeugbefunde:** (a) Das Bauskript muss die `form` einer Spanne aus den **einzeln** gestrippten Token zusammensetzen (`' '.join(strip_punct(t))`), nicht den zusammengesetzten String strippen — sonst bleibt der Apostroph von `Fa'` in der Mitte stehen
+   und `selfcheck` meldet `form "Fa' morire" != Tokens 'Fa morire'`. (b) `folgenreihe.py` ohne `ANNO_EDITION` liest `deu/l1912mod` und meldet fuer alle Phrasen *"0 Vorkommen"* — in einer frischen Shell erst exportieren. (c) `mehrwort.py` (0 Verdacht) und `sweeplemma.py` sehen
+   keine Bestandsspannen, die dem Kapitel **ganz** fehlen; `work/23/miss.py` (aus `work/20/miss.py`) fand `tra loro` · `colui che` · `fare lutto` · `a gran voce` · `da lontano` · `da tempo` — Pflichtlauf neben `mehrwort.py`. (d) `glosskollision.py`: 7 inhaltliche Paare, alle natuerliche Sprache
+   (`il`/`lo` fr *le*, `lo`/`lui` en *him*, `la`/`la` es/fr, `le`/`le`) und `ad`/`di` de *zu* en *to* (Konvention a/di + Infinitiv) — stehen gelassen. (e) `artikel.py`: 1 Treffer (`vesti`, s.o.) + `mort` fr gespalten (4x f. `la mort`, 1x m. = Person, Luca 7,15) — richtig.
+3. **Altlasten, die der Abgleich sichtbar machte (NICHT geaendert):** Marco 15,21 `un` es *a un* gegen Matteo 27,32 *un* · Marco 15,43 `Gesù` de *Jesu* gegen Matteo 27,58 *Jesus* · Matteo 27,59 `lo` en *it* gegen Lukas 23,53 *him* · Marco 15,33/Matteo 27,45 `tutta` en *all* gegen Lukas 4,25 *whole* ·
+   Matteo 27,9 `che` en *whom* gegen *who* · Marco 14,1 `capi sacerdoti` de *Hohepriester* gegen *Hohenpriester*.
+4. **Offen (Koordinator):** `fino alle` — die Spanne `fino a` traegt im Bestand fuer `fino ai/alla` das Artikelgenus teils falsch (es *hasta el* fuer `alla`); in 23,44 *hasta las* gesetzt. `in verità` als Spanne (2x *wahrlich · truly*) gegen Einzelwoerter bei `In verità ti dico` (Matteo 26,34 · Marco 14,30 · hier): Einzelwoerter weitergefuehrt.
+   `liberare` en *release* (hier 17/18/20/22/25) gegen `liberaci` Matteo 6,13 *deliver us*: zwei Bedeutungen, kein Konflikt.
+
+## 568 · Einsammeln Lukas 23
+
+Wiederholungen gemessen (`wiederholt.py`): 23,14 = 23,22, 23,15 = 23,22 (11
+Tokens: `nulla che meriti la morte; lo libererò dunque, dopo averlo
+castigato`), 23,19 = 23,25, 23,15 = 23,41, 23,37 = 23,38 gleich; `il corpo di
+Gesù` 23,52/23,55 nur im Kasus. Paketabgleich 22·23 leer; `artikel.py` meldet
+nur fr *le mort* 7,15 (der Tote, richtig) gegen *la mort*. **`se stesso`
+entschieden** (Reihe 382/420.2): Spanne mit Lemma `sé stesso`, `se` einzeln auf
+`sé` — Lukas fuehrt es durchgehend so. Gezogen: `le` vor `vesti` es *los*
+(*vestidos* m.) in Matteo 27,31 · 27,35, Marco 5,28 · 15,20 · 15,24 (war
+*las*). **Nicht gezogen (Reihe 567):** Marco 15,21 · 15,43, Matteo 27,9 ·
+27,45 · 27,59, Marco 14,1 · 15,33 (Einzelglossen, Wortwahl/Kasus — beim
+Buchabschluss gesammelt ansehen); `accaduto`/`accadere` als Lemma beim
+essere-Perfekt gespalten (7:2).
