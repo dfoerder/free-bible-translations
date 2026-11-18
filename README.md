@@ -151,3 +151,18 @@ Die zugrunde liegenden Bibeltexte sind gemeinfrei bzw. in Klärung
 ([SOURCES.md](SOURCES.md)). Für die Sammlung selbst und die modernisierten
 Bearbeitungen ist noch **keine Lizenz festgelegt** — vor einer
 Veröffentlichung nachtragen.
+
+
+## Für die Bibel-App
+
+Die Bibel-App (`dfoerder/bible-reader`) lädt die Übersetzungen von hier herunter (GitHub Pages,
+`https://dfoerder.github.io/free-bible-translations/`). Zusätzlich zum Text liegen dafür bei den
+App-Übersetzungen Wort-für-Wort-Daten (`anno/`) und Trainingsdaten (`train/`), dazu der **Urtext**:
+hebräisches AT `hbo/wlc/` (STEPBible TAHOT, CC BY 4.0) und griechisches NT `grc/n1904/`
+(MACULA Greek, CC BY 4.0) — Quellen je in `QUELLE.md`.
+
+- `catalog.json` — welche Übersetzungen die App anbietet: Dateien, Grösse, Version (Hash).
+  Wird bei jedem Push von der Action „Katalog für die Bibel-App“ neu erzeugt
+  (`tools/build_catalog.py`, Auswahl in `tools/catalog-config.json`).
+- Text und `anno/` gehören zusammen: die Wort-Daten sind über die Wortposition im Vers an den
+  Text gebunden. Wer einen Vers ändert, muss die Annotation desselben Verses mit anpassen.

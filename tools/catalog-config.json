@@ -1,0 +1,9 @@
+{
+  "_hinweis": "Übersetzungen, die die Bibel-App (dfoerder/bible-reader) herunterladen kann. Schlüssel = ID in der BIBLES-Registry der App, paths = Ordner relativ zum Repo. Daraus erzeugt tools/build_catalog.py die Datei catalog.json.",
+  "eng-web":        {"paths": ["eng/web/"]},
+  "spa-rv1909mod":  {"paths": ["spa/rv1909mod/"]},
+  "fra-lsg1910mod": {"paths": ["fra/lsg1910mod/"]},
+  "ita-riv1927mod": {"paths": ["ita/riv1927mod/"]},
+  "deu-l1912mod":   {"paths": ["deu/l1912mod/"]},
+  "urtext":         {"paths": ["hbo/wlc/", "grc/n1904/"]}
+}
